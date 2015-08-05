@@ -1,0 +1,131 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 1 - Building Blocks of Programming</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 1<br>Building Blocks of Programming</h1>
+<hr>
+
+<h2>Overview</h2>
+<img class="entryimageright" src="../images/scratch.png">
+In this lab, you will learn how to use Scratch and communicate using a prespecified 
+graphical language.  Specifically, 
+you will be writing algorithms for drawing geometric shapes.
+
+<h2>Materials</h2>
+<ul>
+<li><a href="http://scratch.mit.edu/">Scratch</a>
+<li><a href="http://coitweb.uncc.edu/~krs/courses/1214/software_tools/scratch/ScratchReferenceGuide.pdf">Scratch Reference Guide</a>
+</ul>
+REDO THIS VIDEO WITH WEB SCRATCH
+<p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/s0AkeEn896o" frameborder="0" allowfullscreen></iframe>
+<h2>Description</h2>
+We will be learning how to give specific commands to a cat named Scratch.  Unlike many real-life
+cats, Scratch actually listens when you give her commands.  
+<p>
+When you open Scratch, the screen is divided into three sections.  In the middle, you will find
+the different commands we can use to instruct Scratch.  On the far right, we have an open Script
+pane where our commands are added and linked.  And on the far left, we see Scratch in the middle of
+the stage, waiting for our instructions.
+
+<h3>Motion</h3>
+<img class="entryimageright" src="../images/scratch_move.png">
+First, our goal is to get Scratch to move around the screen.  In the middle panel, click on the
+Motion button near the top of the screen.  You should find a collection of dark blue instructions
+that look and work similar to LEGO blocks.
+<p>
+Drag the "move (10) steps" block to the scripts portion of the screen and drop it.  Then double
+click on this block.  You should see Scratch start to move.  Every time you double-click, the 
+instruction will be executed and Scratch should react accordingly.
+<p>
+Next, drag over the "turn right (15) degrees" block.  As before, when double-clikced, Scratch will
+react.  You can link these two block together by placing one near enough to the other such that
+a white line will appear between them.  When the block is released, the two blocks will be joined.
+And when double-clicked, they will be executed together, first the one on the top, then the one on 
+the bottom.
+<p>
+If you want to change how far Scratch moves or turns, click inside the white bubble where the number
+is found, and then type in your new number.
+<p>
+<b>Task:</b>
+With one mouse click, move Scratch to the edge of the screen, then have her move in a square.
+<h3>Pen</h3>
+<img class="entryimageright" src="../images/scratch_pen.png">
+Besides moving, Scratch also knows how to draw.  She carries a pen with her, and will place the pen
+down on the screen and pick it back up if you ask.  These blocks are found under the Pen panel
+on the left side of the screen, as "pen up" and "pen down", and can be linked with our previous 
+"move" and "turn" blocks.
+<p>
+<b>Task</b> Have Scratch draw your initials on the screen with one mouse click. As you test out your command blocks, you might
+find the "clear" button helpful.
+<h3>Control</h3>
+<img class="entryimageright" src="../images/scratch_repeat.png">
+If you have any repeated letters in your initials, such as "JJR", you may have discovered the "duplicate"
+tool, which let you copy and paste blocks of code in your script. Scratch offers a better way to
+do this repetition of tasks, with the use of the "Control" blocks.
+<p>
+Find the "repeat (10)" block and drag it to your script screen.  Any blocks placed inside the 
+"repeat" block with be executed as many times as are specified, and the number can be changed 
+by clicking on it and typing in a new one.
+<p>
+<b>Task:</b> Use the repeat block to have Scratch draw a square.  Alter this block to have her 
+draw an octagon.
+<h3>Variables and Numbers</h3>
+<img class="entryimageright" src="../images/scratch_variables.png">
+If we want to draw regular shapes in general, like a square, pentagon, octagon, etc, you'll soon notice
+there is a relationship between the number of sides of the shape we wish to draw, and the 
+angle Scratch needs to turn between each edge.  Take a square for example, with 4 sides, each turn 
+is 90 degrees.  For a pentagon with 5 sides, each turn is 72 degrees.
+<p>
+<b>Task: </b>
+What is the general formula for the angle given the number of sides?
+<p>
+To plug this formula into Scratch, we need two items, Variables and Numbers.  Under the Variables
+tab you will see a button called "Make a Variable".  Click this and name the variable "sides".  
+Create another variable called "angle".
+<p>
+<img class="entryimageright" src="../images/scratch_numbers.png">
+We now have new blocks to use in our programs.  First, drag over a "set ___ to 0" block, 
+add it to the top of your drawing segment. Select 
+"angle" as the variable, and type 72 into the block.  Next, drag over the "angle" block, and place
+it in the "turn right ___ degrees" block.  We've now separated and generalized this number, so
+whatever we set the angle variable to, the "turn right ___ degrees" block will use that same
+number.
+<p>
+One more step, and we can have the angle depend on the number of sides.  Drag over a "set ___ to 0"
+block, select sides, and type 5 into the block.  Add it to the top before the 
+"set angle to 72" block.
+<p>
+Now, select the Numbers tab.  You'll find at the top your common mathematical operators, 
++, -, *, /, with a place on the left and the right.  Drag over the division block and 
+place it inside the "set angle to ___" block.  Use the formula you devised up above
+to relate angle and the number of sides, adding blocks and numbers as necessary.
+<p>
+<h3>What to turn in</h3>
+Use <a href="http://moodle.hendrix.edu">Moodle</a> to turn in your solutions.
+<p>
+To earn a D on this lab, hand in the work for having Scratch draw your initials on the screen.
+<p>
+To earn a C, do the above, and write a program to draw a spiral.
+<br>
+<img src="../images/spiralsmall.png">
+<br>
+To earn a B, do the above, and write a program to draw a pie with 5 pieces as shown below. <br>
+To earn an A, do the above, and write a program to draw a pie with <i>n</i> pieces, using variables and repetition blocks.
+<p>
+<img src="../images/pies.png">
+<p>
+To earn a 100, do the above, and write a program to draw a flower when given the number of petals.
+<p>
+<img src="../images/flowers.png">
+<p>
+<h3>Hints</h3>
+Use the process shown in the lab to help you formulate solutions. Start off with hardcoding 
+many of the pieces, and the look for levels of abstraction you can use to simplify your solution.
+<hr>
+<small>&copy; Mark Goadrich, Hendrix College</small>
+
+</body>

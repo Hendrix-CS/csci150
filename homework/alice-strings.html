@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>CSC207 - Lab 8 - Strings of Text</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSC207</a> - Lab 8<br>Strings of Text</h1>
+<hr>
+
+<h2>Overview</h2>
+In this lab we examine some of the methods for manipulating strings of text.
+
+<h2>Materials</h2>
+
+<ul>
+	<li><a href="http://docs.python.org/3.1/library/stdtypes.html#string-methods">String Methods</a> in Python
+	<li><a href="../data/alice-chapter-one.txt">Alice in Wonderland</a>
+	<li>Lab Partner
+</ul>
+
+<h3>Step 1</h3>
+Our first text for today comes from Lewis Carroll's poem <a href="http://en.wikipedia.org/wiki/The_Walrus_and_the_Carpenter">"The Walrus and the Carpenter."</a>
+<p>
+<pre>
+s = """The sun was shining on the sea,
+Shining with all his might:
+He did his very best to make
+The billows smooth and bright--
+And this was odd, because it was
+The middle of the night."""
+</pre>
+<p>
+As text is a major way of communicating with the user and storing information in a manner we can
+easily understand, we will examine the built-in methods Python includes for manipulating these
+strings.<p>
+
+<h3>Step 2</h3>
+Now that you have some familiarity with string processing in Python, we will analyze a much
+larger string from a file.
+<p>
+Download <a href="../data/alice-chapter-one.txt"><code>alice-chapter-one.txt</code></a> to your
+working directory (the default where your files are saved).
+<p>
+Perform the following steps on the string, and record the results in a Google Doc for this lab:
+<ol>
+<li>Open this file through the interpreter and read in the data into a string.
+<p>
+This can be accomplished by typing 
+<pre>
+file = open("alice-chapter-one.txt", "r")
+s = file.read()
+</pre>
+<p>
+<li>Convert this string to uppercase and record
+the last 10 characters.
+<li>Remove all spaces and carriage returns from the string.
+<li>Find and record the percent of remaining characters that are the letter E.
+<li>Find and record the percent of remaining characters that are the letter T.
+<li>How many sentences are there in this text?
+<li>Where is the third mention of the word "SHE"?
+<li>What is the ordinal value of the middle character of the text?
+</ol>
+<p>
+<h2>What to Hand In</h2>
+Write up the answers to the above questions for Part 1 and Part 2 in a Google Doc, and share
+this with me.
+<hr>
+<small>&copy; Mark Goadrich, Centenary College of Louisiana</small>
+
+</body>

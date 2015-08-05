@@ -1,0 +1,187 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 2 - Kepler and Newton</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 2<br>Kepler and Newton</h1>
+<hr>
+
+<h2>Overview</h2>
+In this lab you will write a program to help the user explore Kepler's Third Law of 
+Planetary motion, using both Kepler's original equation and Newton's reformulation. This
+will give you practice writing, testing and maintaining simple Python programs that 
+follow the Python style guide.
+
+<h2>Materials</h2>
+
+<ul>
+	<li>IDLE Python 2
+	<li>Lab Partner
+	<li><a href="http://docs.python.org/2.7/library/math.html">Math module</a>
+	<li><a href="../python_style_guide.html">Python Style Guide</a>
+</ul>
+
+<h2>Description</h2>
+A first step in searching for intelligent life elsewhere in the universe is to find
+other planets that may harbor life.  While much time is being spent to analyze the closest
+possibility of Mars, researchers have made progress in recent years toward finding
+planets outside our solar system orbiting other stars. The first few of these 
+<a href="http://exoplanet.eu/">extrasolar planets</a> found were as large or larger than
+Jupiter with wildly eccentric orbits, however as our methods of detection become more
+precise we are starting to find Earth-sized planets that may provide a good foundation for life.
+In this lab we'll discuss planetary motion in general and apply our computing skills to 
+study one particular star system called Gliese 581.
+<p>
+<h3>Kepler</h3>
+<img class="entryimageleft" src="../images/kepler_pic.jpg">
+One astronomer who made a major advance in the understanding of our solar system and
+astrophysics in general was 
+<a href="http://en.wikipedia.org/wiki/Johannes_Kepler">Johannes Kepler</a>. 
+In fact, NASA launched a satellite to search for habitable planets in 2009, and has
+named this <a href="http://kepler.nasa.gov/">mission</a> after Kepler.
+In the early 1600s he published his now-famous three laws of planetary motion.
+These laws, based on years of stellar and planetary observation by 
+<a href="http://en.wikipedia.org/wiki/Tycho_Brahe">Tycho Brahe</a>, 
+finally fixed any lingering anomalies in the 
+<a href="http://en.wikipedia.org/wiki/Copernican_system">Copernican theory</a>
+that the Earth and other planets 
+revolved around the Sun. The first law states that the planets orbited the Sun in ellipses with
+the Sun at one foci.  The second law states that planets would travel faster the closer they are
+to the sun and slower when farther away.
+<p>
+The third law describes the relationship Kepler observed between a planet's distance from the 
+sun and the time it takes to make one complete orbit around the sun.  
+Kepler stated that the square of a planet's orbital period in years was equal to that planet's
+distance from the sun in Astronomical Units (AU) cubed, where and AU is the 
+average distance of the Earth to
+the Sun (149 million kilometers).
+<p>
+<div align="center">
+<b>Kepler's Third Law of Planetary Motion</b><p>
+<img src="../images/kepler.jpg">
+</div>
+<h3>Step 1</h3>
+Write a program called <code>orbit_kepler.py</code> for Kepler's Third Law
+of planetary motion. 
+This program will ask the user for the name of the planet
+and its orbital period in years.
+It should then calculate the average distance from the sun in astronomical units (AU) 
+of this planet and display the result to the user.  Make sure to follow
+the Python Style Guide when writing your program.
+<p>
+Test your code with the following values for planets orbiting the Sun:
+<p>
+<div align="center">
+<b>Table 1: Planets and their Orbital Period</b><p>
+<table border="1"><tr><th>Planet</th><th>AU from Sun</th><th>Period</th></tr>
+<tr><td>Earth</td><td>1</td><td>1</td></tr>
+<tr><td>Saturn</td><td>9.58201720</td><td>29.660974748248961</td></tr>
+<tr><td>Mercury</td><td>0.38709821</td><td>0.24084173359179098</td></tr>
+</td></table>
+</div>
+<p>
+<h3>Newton</h3>
+<img class="entryimageleft" src="../images/newton_pic.jpg">
+In 1687, <a href="http://en.wikipedia.org/wiki/Isaac_Newton">Isaac Newton</a> followed 
+up on the laws of Kepler to publish his 
+<i>Principia Mathematica</i>. In this work, he explained that it was the 
+universal force of gravity which tied together the motion of the planets and the motion
+of objects here on Earth.  Kepler's third law was found to be a special case of a more general
+law about the gravitational attraction between two objects in space, M1 and M2. Now, instead
+of Kepler's law being tied to the Earth and the Sun, we can now calculate the orbital
+period of any planet around any star as long as we know both their masses and the 
+average distance of the star from the planet.
+<p>
+<div align="center">
+<b>Newton's Revised Law of Planetary Motion</b><p>
+<img src="../images/newton.jpg">
+</div>
+<p>
+The big G in Newton's equation is the 
+<a href="http://en.wikipedia.org/wiki/Gravitational_constant">Gravitational Constant</a>
+from physics, and is in terms of meters cubed over kilograms times seconds squared.
+<div align="center">
+<img src="../images/grav_constant.jpg">
+</div>
+
+<h3>Step 2</h3>
+Revise your program <code>orbit_kepler.py</code> into <code>orbit_newton.py</code>
+to use Newton's reformulation of Kepler's Third Law.  The user will be asked to enter the
+name of the planet, the orbital period of the planet in days, the mass of the star in kilograms,
+and the mass of the planet in kilograms. Your formula requires the period in <b>seconds</b>, you will
+need to convert your input. Calculate the distance of the star from the planet next, 
+and output the result to the user. Since Newton's law uses <b>meters</b> instead of 
+AU, you will have to convert the output into the appropriate value, using the 
+definition of 1 AU as 149 million kilometers.  
+<p>
+REDO WITH UPDATED DATA FROM MORE STAR SYSTEMS
+<p>
+Evaluate <code>orbit_newton.py</code> using the following data about the red dwarf star 
+<a href="http://en.wikipedia.org/wiki/Gliese_581">Gliese 581</a> and the four planets 
+detected so far which orbit this star.  Current scientific research is 
+focused on this star system since 
+<a href="http://en.wikipedia.org/wiki/Gliese_581_c">planet c</a> is close in size to Earth and is
+a comparable distance from Gliese 581 (reported in April 2007), meaning it may lie in the 
+<a href="http://en.wikipedia.org/wiki/Habitable_zone">Habitable Zone</a> for life.  Report your
+results for the orbital period of these planets in the <code>Lab3 Evaluation Google Doc</code>
+described below.
+<p>
+<div align="center">
+<b>Table 2: Planets orbiting Gliese 581 (Mass = 6.1645 X 10^29 kg)</b><p>
+<table border="1"><tr><th>Planet</th><th>Orbital Period in Days</th><th>Mass in kg</th></tr>
+<tr><td>e</td><td>3.149</td><td>1.015 X 10^25</td></tr>
+<tr><td>b</td><td>5.369</td><td>9.436 X 10^25</td></tr>
+<tr><td>c</td><td>12.914</td><td>3.285 X 10^25</td></tr>
+</td></table>
+</div>
+<p>
+
+<h3>Step 3</h3>
+Your programs were dependent on the value used in Python for <code>math.pi</code>, 
+namely 3.1415926535897931. This is only an estimate of Pi; others have calculated
+<a href="http://www.eveandersson.com/pi/digits/1000000">
+1,000,000 digits</a> of Pi, but this is still only an estimate of this irrational number.
+Test out the sensitivity of your calculations above to different values of Pi, using 3.14 and 
+3.14159, and record your results in <code>Lab Evaluation</code>. <b>Be sure to return your
+code to use the original <code>math.pi</code> before you turn in your code</b>.
+
+<h2>Evaluation</h2>
+Answer the following questions in a file called <code>Lab Evaluation</code>:
+<ol>
+	<li>How much of your code were you able to reuse from <code>orbit_kepler.py</code>
+	when writing <code>orbit_newton.py</code>?
+	<li>What are the AUs for planets e, b, and c orbiting Gliese 581?
+	<li>Which do you think had a larger influence on the final calculation of the AU 
+	in <code>orbit_newton.py</code>, the Mass of the planet or the distance from the star?  Why?
+	<li>What was the effect of changing the value used for Pi in <code>orbit_newton.py</code>?
+	<li>What other sources for numerical error (like that from estimating Pi) 
+	do you see in the code you wrote?
+</ol>
+
+<h2>What to Hand In</h2>
+You will be handing in the three files you wrote today and the lab evaluation document.  
+<ul>
+ 	<li>orbit_kepler.py
+	<li>orbit_newton.py
+	<li>Lab Evaluation
+</ul>
+Log into your account at <a href="moodle.hendrix.edu">Moodle</a>, and turn in the python files there.
+<p>
+Make sure you run <code>orbit_kepler.py</code> and <code>orbit_newton.py</code>
+through the <a href="../python_style_guide.html">Python 
+style guide</a> checking program before you turn in your work.  If you worked with a 
+partner, you both must hand in the files you wrote, with both of your names in the header
+at the top of the file.
+<h2>Grading</h2>
+<ul>
+<li>To earn a C, do the above and turn in a working version of <code>orbit_kepler.py</code>
+<li>To earn a B, do the above and turn in a working version of <code>orbit_newton.py</code>
+<li>To earn an A, do the above and complete the evaluation document.
+<li>To earn a 100, do the above and follow the style guide exactly.
+</ul>
+<hr>
+<small>&copy; Mark Goadrich, Hendrix College</small>
+
+</body>

@@ -1,0 +1,112 @@
+<html>
+<head>
+  <title>CSC207 - Project 2 - Geography Game</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSC207</a> - Project 2<br>Geography Game</h1>
+<h3>Assigned Oct 14th<br>
+Due October 23 Midnight</h3>
+<hr>
+
+<h2>Overview</h2>
+For this project, we will explore more complex interactions with the user by implementing
+control statements and loops.  We will create a program for one user to play the Geography
+word game.
+<p>
+In particular, this project will cover the following concepts we have discussed in class:
+<ul>
+	<li>Booleans
+	<li>Functions
+	<li>Control Statements
+	<li>Sentinel Loops
+	<li>Definite Loops
+	<li>Lists
+	<li>Randomness
+</ul>
+
+<h2>Description</h2>
+<img src="../images/worldmap.gif" width=400>
+<p>
+To play the Geography game, two players alternately say the names of a country in the world.
+There are a few restrictions. A player must respond by saying the name of a country where
+the first letter matches the last letter of the country said by the other player. 
+Also, once a country name is chosen, it cannot be used again. The first player to be 
+stumped loses the game.
+<p>
+You will program this game for a user to play against a computer opponent.
+An example game is as follows:
+<p>
+<pre>
+User: Botswana
+Computer: Algeria
+User: Afganistan
+Computer: Norway
+User: Yemen
+Computer: Nigeria
+User: Angola
+Computer: Albania
+User: I GIVE UP
+Computer: I Win! You could have said Austria.
+</pre>
+
+<h2>Computer Players</h2>
+You will program three types of computer players, and the user will choose the difficulty 
+of each game they play.
+<ul>
+<li>EASY
+<p>
+The computer will choose the first valid word in the country list that matches alphabetically.
+<li>MEDIUM
+<p>
+The computer will choose a random valid country.
+<li>HARD
+<p>
+Both the user and computer cannot choose countries that end in O, Q, W, X, Y or Z. If 
+possible, the computer will choose a random valid country that has no possible response from the user, 
+otherwise the computer will choose a random valid country.
+</ul>
+<h2>Coding</h2>
+For this assignment we will be writing a Python program to let a user repeatedly play 
+Geography against the computer.
+<p>
+You must create a python program 
+called <code>geography.py</code>.  It will:
+<ol>
+<li>Tell the user about the game.
+<li>Ask the user what level of difficulty, EASY, MEDIUM or HARD.
+<li>Have the user type in a country name.
+<li>Have the computer respond according to its strategy.
+<li>Repeat playing the game between the user and computer until either the computer is stumped or the user gives up by typing "I GIVE UP".
+<li>If the user gave up prematurely, have the computer display a country that would have worked.
+<li>When the game is over, ask the user if they would like to play again. If so, start all over.
+</ol>
+<p>
+Your code should make good use of functions, as there are clear pieces of the game which
+are repeated. Using functions will reduce the amount of code you need
+to write as well as make your program easier to debug.  However, do not write <a href="http://en.wikipedia.org/wiki/Spaghetti_code">spaghetti code</a>, 
+where functions call each other back and forth to continue execution of the program; 
+let your functions naturally return values and use loops to repeat the game turns.
+<p>
+Your code <b>must check all user input</b> for validity and reprompt them for correct input if
+any mistakes are made. 
+
+
+<h2>What to Hand In</h2>
+Log in to <code>cs.centenary.edu</code> through either Secure FTP or WinSCP using your
+cs login and password.  Copy your <code>geography.py</code> project into the project2 
+directory, along with any other files
+you need to run your code.  Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+ 	<li>geography.py
+ 	<li><a href="../data/countries.txt">countries.txt</a>
+</ul>
+and any other files necessary to run your code.
+<hr>
+<small>&copy; Mark Goadrich, Centenary College of Louisiana</small>
+
+</body>

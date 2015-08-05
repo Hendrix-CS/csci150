@@ -1,0 +1,145 @@
+<html>
+<head>
+  <title>CSC207 - Project 3 - Peg Solitaire</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSC207</a> - Project 3<br>Peg Solitaire</h1>
+<h3>Assigned Dec 1st 2 p.m.<br>
+Part 1 Due Dec 5th 4 p.m.</h3>
+Part 2 Due Dec 15th 7 p.m.</h3>
+<hr>
+
+<h2>Overview</h2>
+For this project, we will explore more object-oriented and event-driven programming in the 
+context of graphical applications.  We will create a program for one person to solve the
+Peg Solitaire game.
+<p>
+In particular, this project will cover the following concepts we have discussed in class:
+<ul>
+	<li>Lists
+	<li>Dictionaries
+	<li>Control Statements
+	<li>Sentinel Loops
+	<li>Definite Loops
+	<li>Objects and Classes
+	<li>Event-Driven Programming
+</ul>
+
+<h2>Description</h2>
+Peg Solitaire is a puzzle found in gift shops across the country and especially 
+<a href="http://www.crackerbarrel.com/games-kids.cfm?doc_id=42">Cracker Barrel</a>.
+<p>
+<img src="../images/CrackerBarrelPuzzle_lg1.jpg">
+<p>
+A good description of the game is detailed by
+<a href="http://ai.stanford.edu/~chuongdo/satpage/index.html">Chuong Do</a>
+<p>
+<blockquote>
+ Peg solitaire describes a general class of peg-jumping games in which a player is initially presented with a board containing holes and wooden pegs filling a subset of these holes. For any given move, a player must select one of the pegs on the board which has an adjacent peg and an empty hole following that adjacent peg. The original peg is moved to the empty hole and the adjacent "jumped" peg is removed from the board. The game ends when no more legal "jumps" may be made. The object of the game is to remove all pegs from the board except one. 
+</blockquote>
+<p>
+A sample move is shown below, where the peg in the middle of the left side of the triangle is moved
+to the top hole, and the peg inbetween is removed.
+
+<pre>
+
+		        O                       #         
+		       / \                     / \        
+		      # - O                   O - O          # = peg
+		     / \ / \                 / \ / \         O = empty hole
+		    # - # - #     ---->     O - # - #
+		   / \ / \ / \             / \ / \ / \
+		  O - # - # - O           O - # - # - O
+		 / \ / \ / \ / \         / \ / \ / \ / \
+		O - O - O - O - O       O - O - O - O - O
+
+</pre>
+
+<p>
+<h2>Part 1: Design - 6%</h2> 
+For this project, you will create a python program using <a href="http://www.pygame.org">Pygame</a>
+to let the user try to solve the peg game and simulate the jumping of pegs.
+<p>
+There will be three portions to the display, the board, the buttons, and the peg cup.
+<p>
+When the game is launched, it will display the board, with all but the top hole filled with pegs.
+There will be two buttons on the left side of the screen, one for RESET, one for QUIT.  On the
+bottom right-hand side of the screen, there will be a cup, represented by two concentric circles,
+where jumped pegs are placed.
+<p>
+The user should be able to click on the RESET button or the QUIT button at any time.  The RESET
+button will return all pegs to their initial hole.  The QUIT button will immediately quit the game.
+<p>
+The user
+is also allowed to click on pegs that have a possible place to jump.  When selected, the pegs will
+change colors, and the avaialble holes to jump into will also change colors. Holes are only
+available when a peg is inbetween the selected peg and the empty hole. The user can now either
+deselect that peg, or select an available hole.  If the peg is deselected, all items revert to their
+normal colors.  If an available hole is selected, the peg will move to the hole, and the jumped peg
+will move to the peg cup in the lower right-hand side. All items will return to their normal colors.
+<p>
+When there are no more possible pegs to be jumped, the game will display the following messages
+underneath the board,
+depending on how many pegs remain.
+<ul>
+<li>4 or more pegs - "Too Bad, try again."
+<li>3 pegs - "Good try, keep working at it."
+<li>2 pegs - "Almost, give it one more shot."
+<li>1 peg - "Congratulations! You won!"
+</ul>
+<p>
+The user can then select to RESET, or to QUIT.
+<p>
+For part 1 of the assignment, create a design document detailing all the objects you will need to 
+represent the display and interactions necessary to carry out the game. Be as detailed as possible,
+discussing the components and functionality needed for each part of the game.
+
+<h2>Part 2: Implementation - 12%</h2>
+
+
+I will release my design document on Friday December 5th, when Part 1 is due.  It will have a 
+sample implementation scheme to help you complete the project.
+
+<h2>Extensions</h2>
+You must choose one of the following extensions to your implementation.  You can choose to 
+implement the other extensions for extra credit, each worth an additional 2% of your final grade.
+
+<h3>Choose Startup</h3>
+The board always starts with the empty peg in the same position. Add a START button which lets
+the user choose a hole to be the initial empty hole.
+
+<h3>Undo</h3>
+There is not a way for the user to undo a mistake made, they can only reset the puzzle and start over.
+Add an UNDO button to your interface which will take back the immediately previous move,
+and makes it possible to backtrack all the way to the beginning of the game.
+
+<h3>Solver</h3>
+Your current implementation for this assignment allows one player to complete the 
+solitaire puzzle.  Create a SOLVE button that will reset the puzzle, then step through the 
+solution, waiting 1 second between each jump.  Note, this is not a general solver, going from
+any possible configuration, but from the basic initial setup.
+
+<h3>Other Boards</h3>
+We currently have one configuration, the triangle, available for play with our implementation.
+Research other configurations at <a href="http://en.wikipedia.org/wiki/Peg_solitaire">Wikipedia</a>
+and add buttons to let the user choose a different board.
+
+<h2>What to Hand In</h2>
+Log in to <code>cs.centenary.edu</code> through either Secure FTP or WinSCP using your
+cs login and password.  Create a subdirectory from <code>csc207</code> 
+called <code>project3</code>.  Copy your <code>solitaire.py</code> and <code>pieces.py</code> project into this directory, along with any other files
+you need to run your code.  Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+ 	<li>pieces.py
+ 	<li>solitaire.py
+</ul>
+and any other files necessary to run your code.
+<hr>
+<small>&copy; Mark Goadrich 2008, Centenary College of Louisiana</small>
+
+</body>

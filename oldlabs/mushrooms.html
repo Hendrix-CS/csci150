@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>CSC207 - Lab 6 - Edible Mushroom Detector</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSC207</a> - Lab 6<br>Edible Mushroom Detector</h1>
+
+<h2>Overview</h2>
+This lab
+we investigate some pieces of "intelligence," using our ability to divide objects into categories.
+
+<hr>
+<h2>Materials</h2>
+<ul>
+<li>Python
+<li>Tables below on Mushrooms
+</ul>
+
+<h2>Description</h2>
+<img class="entryimageright" src="../images/mushroom.jpeg">While the formal system of Boolean logic was developed by
+<a href="http://en.wikipedia.org/wiki/George_Boole">George Boole</a>, 
+the study of logic has roots as far back as Ancient Greece and 
+<a href="http://en.wikipedia.org/wiki/Aristotle">Aristotle</a> and his foundational work on
+<a href="http://en.wikipedia.org/wiki/Syllogism">Syllogisms</a>.  Our ability to reason
+logically and rationally is often cited as a primary indicator of our intelligence, not only on an
+individual level as measured by SAT and IQ tests, but also on a species level to distinguish our
+actions and behaviors from other organisms. As we search for life in the universe, we
+ultimately hope to find intelligent life elsewhere capable of communication; today we will spend
+our first lab understanding the basics of intelligence.
+<p>
+<a href="http://www.alanturing.net/turing_archive/pages/Reference%20Articles/What%20is%20AI.html#Int">
+Artificial Intelligence</a> (AI) is a field within computer science with the goal of recreating, through 
+the user of a computer, the 
+intelligence we see in human behavior. The goal of AI has yet to be achieved on a broad sense,
+but much progress has been made in the fields of logic and categorization.  We tackled
+<a href="http://en.wikipedia.org/wiki/Deductive_reasoning">deductive reasoning</a> 
+last lab with <a href="http://www.welovepuzzles.com">logic puzzles</a>, 
+deducing a conclusion of what must be true from the facts presented to us.  Today we'll focus on
+<a href="http://en.wikipedia.org/wiki/Inductive_reasoning">inductive logic</a>: our ability
+to make generalizations based on data and apply these general rules to new situations.
+<h3>Step 1</h3>
+<div align="center">
+<b>Table of Mushrooms Training Data</b>
+<p>
+<table border=1>
+<tr><th>edible?</th><th>gill_spacing (in mm)</th><th>cap_shape</th><th>color</th><th>bruises</th><th>ring_number</th></tr>
+<tr><td>edible</td><td>10</td><td>"flat"</td><td>"gray"</td><td>True</td><td>2</td></tr>
+<tr><td>edible</td><td>17</td><td>"conical"</td><td>"gray"</td><td>False</td><td>0</td></tr>
+<tr><td>edible</td><td>9</td><td>"sunken"</td><td>"brown"</td><td>True</td><td>1</td></tr>
+<tr><td>edible</td><td>15</td><td>"knobbed"</td><td>"red"</td><td>False</td><td>2</td></tr>
+<tr><td>edible</td><td>1</td><td>"conical"</td><td>"brown"</td><td>True</td><td>0</td></tr>
+<tr><td>poisonous</td><td>5</td><td>"flat"</td><td>"red"</td><td>True</td><td>0</td></tr>
+<tr><td>poisonous</td><td>8</td><td>"bell"</td><td>"brown"</td><td>False</td><td>1</td></tr>
+<tr><td>poisonous</td><td>24</td><td>"knobbed"</td><td>"red"</td><td>False</td><td>0</td></tr>
+<tr><td>poisonous</td><td>16</td><td>"flat"</td><td>"yellow"</td><td>False</td><td>1</td></tr>
+<tr><td>poisonous</td><td>4</td><td>"knobbed"</td><td>"brown"</td><td>True</td><td>1</td></tr>
+</table>
+</div>
+<p>
+Imagine you are tasked by the <a href="http://www.audubon.org/">Audobon Society</a> to develop
+an electronic field guide on mushrooms.  They present you with the following ten example mushrooms 
+above, listing a few of their attributes.  The most important category is if a mushroom is edible
+or not, however, this is the only category you cannot directly observe from the mushroom without
+eating it.  They would like a way to make decisions about newly found mushrooms which is 
+based on the information above, and simple enough for someone to remember the edible rule even
+without the field guide.
+<p>
+Using what you know about <code>if-elif-else</code> statements, write a python program called
+<code>mushroom_detector.py</code>.  First, ask the user to input the data they observe on a 
+single mushroom, using <code>gill_spacing</code>, <code>cap_shape</code>, <code>color</code>, 
+<code>bruises</code> and <code>ring_number</code>.   Using this data, construct three
+if-elif-else statements that will correctly categorize all of the above training data mushrooms, 
+using the following restrictions for each statement:  
+
+<ol>
+<li>Only use color and bruises
+<li>Only use gill_spacing
+<li>Only use cap_shape and ring_number
+</ol>
+Output to the user the classification found by each statement, either "edible" or "poisonous", so
+that you will have four independent judgements made, saying "edible" or "poisonous" for each one.
+<p>
+<h3>Step 2</h3>
+We now wish to evaluate how your field guide will work on unseen data.
+Test your <code>mushroom_detector.py</code> program with the following data.  What is the predicted 
+value for edible/poisonous for each mushroom on each statement?  Which statement would you recommend using?
+<div align="center">
+<b>Table of Mushrooms Test Data</b>
+<p>
+<table border=1>
+<tr><th>gill_spacing (in mm)</th><th>cap_shape</th><th>color</th><th>bruises</th><th>ring_number</th></tr>
+<tr><td>4</td><td>"sunken"</td><td>"red"</td><td>False</td><td>1</td></tr>
+<tr><td>13</td><td>"bell"</td><td>"red"</td><td>True</td><td>2</td></tr>
+</table>
+</div>
+<p>
+<h3>What To Hand In</h3>
+Log in to <code>cs.centenary.edu</code> through either Secure FTP or WinSCP using your
+cs login and password, putting your code in the directory called 
+called <code>lab6</code>.  Write up your four if-elif-else statements from step 1 in a file 
+called <code>mushroom_detector.py</code>. Write the results of 
+each test example in step 2 with each if-elif-else statement above into a Google Doc 
+and share it with me.
+<p>
+
+You must hand in:
+<ul>
+ 	<li>mushroom_detector.py
+ 	<li>Lab 6 Evaluation Google Doc
+</ul>
+
+<hr>
+<small>&copy; Mark Goadrich 2010, Centenary College of Louisiana</small>
+
+</body>

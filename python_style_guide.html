@@ -1,0 +1,721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>CSC 104 Python Style Guide</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="http://mark.goadrich.com/courses/style.css"> 
+</head><body>
+
+<center>
+<h1>CSC 104: Python Style Guide</h1>
+</center>
+<hr>
+
+<p>There are a number of different ways to format python code. Many
+programmers abuse this freedom and write code that is difficult to read and
+thus hard to maintain.  While there is more than one way to properly format
+code, here is a set of guidelines which I have found useful in practice.
+You are not required to abide by them religiously, but I will take marks off
+for poor formatting.  Some of these guidelines may seem amazingly anal, but
+they really make a difference when reading code.</p>
+
+<p>In the following, each item has a code associated with it to the left of
+the description of the item.  I will use this code to specify the problem
+when correcting your code.  It is up to you to match the code with the item.
+Hopefully this will encourage you to read this style guide :) As a general
+rule, the earlier items in a section are more important than the later ones
+and/or represent more common errors.</p>
+
+<p>In addition, to help catch the simplest style violations I have an 
+<a href="code/python_style_check.py">automatic style checker</a> program.  It won't
+catch all style errors by any means, but it will catch many of the more
+common ones.  You should run your code through the style checker
+before you submit it; if it fails, You need to make changes until
+your code passes, or you convince me that there is a bug in the
+checker.  The python style checker is written (of course) in python
+;).</p>
+
+<p>Here is what you have to do to get the style checker working:</p>
+
+<ul>
+
+<li><p>Download the style checker from <a href="code/python_style_check.py">this
+page</a> onto your home machine.  The easiest way to do this is to come
+to the CS lab, log on to a computer, start a web browser (<i>e.g.</i>
+Firefox), surf to this page, and then do "Save Page As" in the "File" menu
+(this works for Firefox; other browsers have similar commands).  It will
+suggest you save the file under the name <code>python_style_check.py</code> and
+you should agree.  This will put the style checker program into one of your
+directories or on a disk.</p></li>
+
+<li><p>Start up IDLE for Python. Under the File menu, select Open... and find 
+where you saved <code>python_style_check.py</code>.  Open this file.</p>
+</li>
+
+<li><p>Now go to the Run menu and run the module (alternately you can hit F5).
+This will start the file checker.  Input the name of the file you want to check. 
+If it is in the same directory as the <code>python_style_check.py</code> program,
+you only have to type in the name of the file, otherwise put in the full path to the file.
+If you file is found, the style checker will report any errors found in your program.</p>
+</li>
+
+</ul>
+
+<p>Don't be alarmed if there are a lot of errors reported; just go through
+the file and fix them.  Some lines will probably have multiple style
+violations; you should fix all of them.  You'll probably hate this program at
+first, but your code will become much more readable as a result.  If you
+think you've found a bug in it, let us know at once; this is a work in
+progress.  Note that the style checker may sometimes be too stupid to know
+when it's in the middle of a comment or a literal string, so it may report
+errors that aren't really errors in those cases.  If so, just disregard
+them.</p>
+
+<hr>
+
+<h2>The most common style mistakes</h2>
+
+<p>These mistakes occur so often that they're almost universal.  Therefore,
+please pay particular attention to avoiding them.  Follow the links to get to
+the descriptions below.  Style mistakes followed by an asterisk (<b>*</b>)
+are caught by the style checker.</p>
+
+<ul>
+
+<li><a href="#TABS">TABS</a><b>*</b>&nbsp;&nbsp; Using tab characters in your
+code.</li>
+
+<li><a href="#OPSPACE">OPERATOR_SPACE</a><b>*</b>&nbsp;&nbsp; Not putting
+spaces between operators.</li>
+
+<li><a href="#COMMA_SPACE">COMMA_SPACE</a><b>*</b>&nbsp;&nbsp; Not putting a
+space after a comma.</li>
+
+<li><a href="#LINE_LENGTH">LINE_LENGTH</a><b>*</b>&nbsp;&nbsp; Writing lines
+longer than 78 characters.</li>
+
+<li><a href="#IDENTIFIERS">IDENTIFIERS</a>&nbsp;&nbsp; Inconsistent style for
+identifiers.</li>
+
+<li> <a href="#BLANK_LINES">BLANK_LINES</a>&nbsp;&nbsp;  Using too few or
+too many empty (blank) lines in functions or in programs.
+
+<li><a href="#COMMENTS_HEADER">COMMENTS_HEADER</a>&nbsp;&nbsp; Forgetting
+to put a header comment in your code.</li>
+
+</li><li><a href="#COMMENTS_FULL_SENTENCES">COMMENTS_FULL_SENTENCES</a>&nbsp;&nbsp;
+Writing comments that are not full sentences.</li>
+
+<li><a href="#COMMENTS_GRAMMATICAL">COMMENTS_GRAMMATICAL</a>&nbsp;&nbsp;
+Writing comments that are not grammatically correct or are misspelled.</li>
+
+<li><a href="#COMMENT_SPACE">COMMENT_SPACE</a><b>*</b>&nbsp;&nbsp;
+Not putting a space after the open-comment symbol "#".</li>
+
+<li><a href="#DOCSTRINGS">DOCSTRINGS</a>&nbsp;&nbsp;
+Not writing a proper docstring comment at the head of a function, class, or
+module.</li>
+
+<li><a href="#EXCEPTIONS_CATCH_ALL">EXCEPTIONS_CATCH_ALL</a>&nbsp;&nbsp;
+Using catch-all exception handling.</li>
+
+</ul>
+
+<hr>
+
+<h2>Catalog of style mistakes</h2>
+
+<h3>General</h3>
+
+<ul>
+
+<li><a name="TABS"><b>[TABS]</b></a>
+
+<p>Never, ever, ever use the tab character (ascii 0x9)!  Different people use
+different tab settings, and code that looks just fine with a tab width of 2
+becomes illegible with a tab width of 8.  IDLE should make the proper tabs for you 
+and save them as spaces.  If you write your code somewhere else, be on the lookout
+for errant tabs.
+
+</li>
+
+<li> <a name="OPSPACE"><b>[OPERATOR_SPACE]</b></a>
+
+<p>ALWAYS surround these binary operators with a single space on either side:
+assignment (=, +=, etc.), comparisons (==, &lt;, &gt;, !=, &lt;&gt;, &lt;=, &gt;=, in,
+not in, is, is not), booleans (and, or, not), and arithmetic operators.
+Example:</p>
+
+<pre>        i = j + 1               # NOT i=j+1
+        submitted += 1          # NOT submitted+=1
+        x = x * 2 - 1           # NOT x=x*2-1
+        hypot2 = x * x + y * y  # NOT hypot2=x*x+y*y
+        c = (a + b) * (a - b)   # NOT c=(a+b)*(a-b)
+</pre>
+
+<p>Some people prefer to omit the space around * or / but leave it around +
+and - as a hint about precedence, but we discourage this.  However, it's OK
+to leave out spaces in array subscripts for simple increments/decrements:</p>
+
+<pre>    b = a[i-1]
+</pre>
+
+<p>Unfortunately the current version of the style checker will flag this
+anyway.</p>
+
+</li><li><a name="COMMA_SPACE"><b>[COMMA_SPACE]</b></a>
+
+<p>Always put a space after a comma.</p>
+
+</li>
+
+<li><a name="LINE_LENGTH"><b>[LINE_LENGTH]</b></a>
+
+<p>There are still many devices around (especially printers) that are limited
+to 80 character lines.  The default wrapping on such devices looks
+ugly. Therefore, please limit all lines to a maximum of 78 characters.</p>
+
+<p>The preferred way of wrapping long lines is by using python's implied line
+continuation inside parentheses, brackets and braces. If necessary, you can
+add an extra pair of parentheses around an expression, but sometimes using a
+backslash looks better. Make sure to indent the continued line appropriately.
+Some examples:</p>
+
+<pre>    class Rectangle(Blob):
+
+        def __init__(self, width, height,
+                     color='black', emphasis=None, highlight=0):
+            if width == 0 and height == 0 \
+               and color == 'red' and emphasis == 'strong' \
+               or highlight &gt; 100:
+                raise ValueError, "sorry, you lose"
+
+            if width == 0 and height == 0 and (color == 'red' \
+                                               or emphasis is None):
+                raise ValueError, "I don't think so"
+
+            Blob.__init__(self, width, height,
+                          color, emphasis, highlight)
+</pre>
+
+<p>In some cases, explicit line continuation characters are unnecessary. When in
+doubt, use them anyway. Also, for long chains of booleans (a and b and c...)
+try to put the "and" or "or" at the start of a line rather than at the end of
+a line; this makes it clear that the expression is continued from the last
+line.</p>
+
+</li>
+
+<li><a name="IDENTIFIERS"><b>[IDENTIFIERS]</b></a>
+
+<p>The identifiers you use for variable names and modules should all be lowercase.  If you have
+more than one word in the identifier, separate them by underscores, like this:</p>
+<pre>    foo
+    foo_bar
+    big_foo_bar
+</pre>
+<p>For class names, these should begin with a Capital letter and otherwise be lowercase,
+such as:</p>
+<pre>    Rectange
+    Large_Water_Bottle
+</pre>
+</li>
+
+<li><a name="BLANK_LINES"><b>[BLANK_LINES]</b></a>
+
+<p>Separate top-level function and class definitions with at least two blank
+lines. We like to separate method definitions inside a class by two blank
+lines as well. but one is sometimes OK. Extra blank lines may be used to
+separate groups of related functions (but don't overdo it). It's also good to
+put comments to separate groups of functions <i>e.g.</i></p>
+
+<pre>    # These functions provide internet access for the Widget class.
+</pre>
+
+<p>For really significant sections, or for class headers, do this:</p>
+
+<pre>    #
+    # The class Widget implements objects that can do all kinds of neat
+    # stuff.
+    #
+</pre>
+
+<p><i>I.e.</i> have one empty comment line at the top and bottom of the
+header.</p>
+
+<p>For long functions, or long sections within a function, it is often a good
+idea to have comments at the end of the function/block, <i>e.g.</i></p>
+
+<pre>    def foobar(x, y, z):
+        # 2000 lines of code follow...
+        return 1
+    # end foobar
+</pre>
+
+<p>Similarly, you can have "# end if", "# end while", etc. A better solution
+is to keep functions and blocks short enough so that this isn't needed.</p>
+
+<p>Use blank lines in functions to indicate logical sections. We also like to
+have blank lines before each if/while/for statement to set them off logically
+from the rest of the surrounding code, which we find makes the code more
+readable.</p>
+
+<p>Do not put large numbers of empty lines (&gt; 2) between code sections
+unless there is a clear need to distinguish different sections of the
+code.</p>
+
+</li>
+
+<li><b>[INDENT_CONSISTENT]</b>
+
+<p>Indentation levels should be consistent.  We prefer 4 spaces for one
+indent level.</p>
+
+</li>
+
+<li><b>[MAGIC_NUMBER]</b>
+
+<p>Avoid putting a large number into a file which has no obvious relevance to
+the surrounding code.  This is known as a "magic number".  Instead, define it
+as a variable at the top of the file.</p>
+
+</li>
+
+<li><b>[USELESS_CODE]</b>
+
+<p>Don't put in code that has no function or no effect.  If it's code that's
+was only used for debugging purposes, it should be removed before you submit
+your lab.</p>
+
+</li>
+
+<li><b>[STMTS_ON_LINE]</b>
+
+<p>Do not put multiple statements on one line, not even very simple
+ones. It's just confusing and hard to read. Similarly, we dislike this:</p>
+
+<pre>    if not line: break
+</pre>
+
+<p>and prefer:</p>
+
+<pre>    if not line:
+        break
+</pre>
+
+<p>Remember: there is no tax on newlines. Do not try to cram as much as you
+can on one line.</p>
+
+</li>
+
+<li><b>[BAD WHITESPACE]</b>
+
+<p>Don't use whitespace in the following places:</p>
+
+<ul>
+
+<li><p> Immediately inside parentheses, brackets or braces, as in:</p>
+
+<pre>    spam( ham[ 1 ], { eggs: 2 } )
+</pre>
+
+<p>Always write this as:</p>
+
+<pre>    spam(ham[1], {eggs: 2})
+</pre>
+
+</li>
+
+<li><p>Immediately before a comma, semicolon, or colon, as in:</p>
+
+<pre>    if x == 4 :
+        print x , y
+        x , y = y , x
+</pre>
+
+<p>Always write this as:</p>
+
+<pre>    if x == 4:
+        print x, y
+        x, y = y, x
+</pre>
+
+</li>
+
+<li><p>Immediately before the open parenthesis that starts the argument list of
+a function call, as in</p>
+
+<pre>    spam (1)
+</pre>
+
+<p>Always write this as</p>
+
+<pre>    spam(1)
+</pre>
+
+</li>
+
+<li><p>Immediately before the open parenthesis that starts an indexing or
+slicing, as in:</p>
+
+<pre>    dict ['key'] = list [index]
+</pre>
+
+<p>Always write this as</p>
+
+<pre>    dict['key'] = list[index]
+</pre>
+
+</li>
+
+<li><p>Excessive amounts of space around an assignment (or other) operator to
+align it with another, <i>e.g.</i>:</p>
+
+<pre>    x             = 1
+    y             = 2
+    long_variable = 3
+</pre>
+
+<p>A good rule of thumb is: if you have to move the operator eight or more
+spaces, don't waste your time. Otherwise, do the alignment.  <i>E.g.</i>,
+change:</p>
+
+<pre>    x = 1
+    foo = 2
+    fudge = 5
+</pre>
+
+<p>to</p>
+
+<pre>    x     = 1
+    foo   = 2
+    fudge = 5
+</pre>
+
+<p>but leave</p>
+
+<pre>    x = 1
+    y = 2
+    this_variable_name_is_really_long = 3
+</pre>
+
+<p>alone. This is a bit of a judgment call.</p>
+
+</li>
+
+</ul>
+
+</li>
+
+<li><b>[KEYWORD_SPACES]</b>
+
+<p>Don't use spaces around the '=' sign when used to indicate a keyword
+argument or a default parameter value. For instance, instead of:</p>
+
+<pre>    def complex(real, imag = 0.0):
+        return magic(r = real, i = imag)
+</pre>
+
+<p>write:</p>
+
+<pre>    def complex(real, imag=0.0):
+        return magic(r=real, i=imag)
+</pre>
+
+<p>This may make the style checker complain; don't worry about it.  The style
+checker isn't perfect.</p>
+
+</li>
+
+<li><b>[PRECEDENCE]</b>
+
+<p>Use parentheses to show operator precedence in all cases except that of
+multiplication/division over addition/subtraction and assignment
+statements.</p>
+
+</li>
+
+<li><b>[IMPORT]</b>
+<p>Always place import statements at the top of your program, right beneath
+the docstring and header comment.  Import statements should never be in the 
+middle of your program.
+
+<p>In general, avoid using "from X import *"; either do this:</p>
+
+<pre>    from X import Y  # For a single function that's used a lot.
+</pre>
+
+<p>or do this:</p>
+
+<pre>    import X   # For a module where we need a lot of functions.
+</pre>
+
+<p>Also, do not use "import X" or "from X import Y" inside a class or
+function. We've never seen a case where it's necessary, and it just makes
+things confusing. Put all import statements at the toplevel and at the
+beginning of the file. That way, we know where to look for them. It's up to
+you whether to format them as</p>
+
+<pre>    import X, Y, Z
+</pre>
+
+<p>or</p>
+
+<pre>    import X
+    import Y
+    import Z
+</pre>
+
+<p>We tend to use the former for quick throwaway scripts and the latter for
+larger projects.</p>
+
+</li>
+
+</ul>
+
+
+<h3>Comments</h3>
+
+<ul>
+
+<li><a name="COMMENTS_HEADER"><b>[COMMENTS_HEADER]</b></a>
+
+<p>Each of your files should include the standard header comment, detailing the
+name of the file, your name, the course name, and anything else you feel is 
+relevant to understanding your code. You should format your header comment 
+like this:</p>
+<pre>
+    ##############################
+    # CSC 104 Fall 2007
+    # Mark Goadrich
+    # Drake Equation
+    ##############################
+</pre>
+<p />
+
+</li>
+
+<li><a name="COMMENTS_FULL_SENTENCES"><b>[COMMENTS_FULL_SENTENCES]</b></a>
+
+<p>If a comment is a phrase or sentence, its first word should be capitalized,
+unless it is an identifier that begins with a lower case letter (never alter
+the case of identifiers!).  We prefer comments that are complete sentences.
+You should use two spaces after a sentence-ending period.  Ideally, refer to
+identifiers with surrounding quotes, <i>e.g.</i></p>
+
+<pre>    # The variable 'nitems' represents the number of items in the stack.
+</pre>
+
+<p>If a comment is very short, it doesn't have to be a full sentence or end
+in a period <i>e.g.</i></p>
+
+<pre>    i = 1  # loop index
+</pre>
+
+<p>This is called an "inline comment".  Use these only when describing
+something <i>i.e.</i> in the above code snippet you're saying "The variable
+'i' represents a loop index."</p>
+
+</li>
+
+<li><a name="COMMENTS_GRAMMATICAL"><b>[COMMENT_GRAMMATICAL]</b></a>
+
+<p>Comments should be correctly spelled (no typos) and be grammatically
+correct.  We don't want to sound like your high school English teacher, but
+it's rilly unplesant to read coments that hav speling or grmatacial or
+tpyogarphic rrors.</p>
+
+</li>
+
+<li><a name="COMMENT_SPACE"><b>[COMMENT_SPACE]</b></a>
+
+<p>Always leave a space after the open-comment sign, <i>e.g.</i></p>
+
+<pre>    # This comment is easy to read.
+    #This comment is harder to read.
+</pre>
+
+</li>
+
+<li><b>[COMMENT_NON_OBVIOUS]</b>
+
+<p>Write comments for anything that isn't completely obvious from the
+context.  In particular, write comments for any tricky algorithm or code you
+are using.  Also put a comment at the beginning of each function describing
+what it does.  When in doubt, comment more rather than less.</p>
+
+</li>
+
+<li><b>[COMMENT_REDUNDANT]</b>
+
+<p>Comments should not restate the obvious.  This is especially common with
+inline comments.  Example:</p>
+
+<pre>    x = x + 1   # increment x
+</pre>
+
+</li>
+
+<li> <b>[COMMENT_MEANINGLESS]</b>
+
+<p>Don't make meaningless comments <i>e.g.</i></p>
+
+<pre>    i = 1   # i
+</pre>
+
+<p>Don't laugh; we've actually seen this sort of thing.</p>
+
+</li>
+
+<li><b>[COMMENTS_CONSISTENT_WITH_CODE]</b>
+
+<p>Comments that contradict the code are worse than no comments. ALWAYS MAKE
+A PRIORITY OF KEEPING THE COMMENTS UP-TO-DATE WHEN THE CODE CHANGES!</p>
+
+</li>
+
+<li><b>[COMMENT_INDENT]</b>
+
+<p>Always indent your code to the same degree as the surrounding code.</p>
+
+</li>
+
+<li><b>[COMMENT_INLINE]</b>
+
+<p>Try to line up inline comments where convenient. In other words, don't do
+this:</p>
+
+<pre>    x = x + 1       # some cool comment about x
+    y = y + 1   # some even cooler comment about y
+</pre>
+
+<p>Instead, do this:</p>
+
+<pre>    x = x + 1       # some cool comment about x
+    y = y + 1       # some even cooler comment about y
+</pre>
+
+</li>
+
+<li><b>[COMMENT_PRECEDING]</b>
+
+<p>Do not write comments that apply to the preceding code if you can possibly
+avoid it.  Try to write comments that refer to the current line of code or to
+the lines of code which immediately follow.</p>
+
+</li>
+
+<li><b>[COMMENT_BLOCK]</b>
+
+<p>Block comments generally apply to some (or all) code that follows them,
+and are indented to the same level as that code. Each line of a block comment
+starts with a # and a single space (unless it is indented text inside the
+comment). Paragraphs inside a block comment are separated by a line
+containing a single #. Block comments are best surrounded by a blank line
+above and below them (or two lines above and a single line below for a block
+comment at the start of a a new section of function definitions).  We always
+like to start and end a block comment with a line containing a single #; this
+is a matter of personal preference. In other words, a block comment looks
+like this:</p>
+
+<pre>    #
+    # The first line comes after an empty line.
+    #
+    # Separate paragraphs are also separated by an empty line,
+    # and there's an empty line at the end.
+    #
+</pre>
+
+<p>Block comments at the top of a file or at the beginning of a class or
+function should be turned into docstrings (see below).</p>
+
+</li>
+
+</ul>
+
+
+<h3>Documentation Strings</h3>
+
+<ul>
+
+<li><a name="DOCSTRINGS"><b>[DOCSTRINGS]</b></a>
+
+<p>All modules should normally have docstrings, and all functions and classes
+exported by a module should also have docstrings. Public methods (including
+the __init__ constructor) should also have docstrings. When in doubt, add a
+docstring to all functions. Otherwise, you'd have to add a comment indicating
+the purpose of the function anyway, so why not have docstrings?</p>
+
+<p>The docstring of a script (a stand-alone program) should be usable as its
+"usage" message, printed when the script is invoked with incorrect or missing
+arguments (see above).</p>
+
+<p>For consistency, always use """triple double quotes""" around docstrings.
+This allows the docstring to span multiple lines.</p>
+
+</li>
+
+</ul>
+
+<h3>Functions</h3>
+
+<ul>
+
+<li><b>[FUNCTION_DECOMPOSITION]</b>
+
+<p>Don't hesitate to decompose your functions into lots of smaller functions
+where appropriate.  Don't write functions that are pages and pages of text in
+length.</p>
+
+</li>
+
+</ul>
+
+
+<h3>Exception handling</h3>
+
+<ul>
+
+<li><a name="EXCEPTIONS_CATCH_ALL"><b>[EXCEPTIONS_CATCH_ALL]</b></a>
+
+<p>Don't do this:</p>
+
+<pre>    try:
+        # code goes here
+    except: # catch all exceptions
+        pass
+</pre>
+
+<p>If you plan to implement error handling code that is specific to the
+current situation, but don't want to do it now, write</p>
+
+<pre>    try:
+        # code goes here
+    except:  # catch all exceptions
+        raise  # reraise the exception
+</pre>
+
+<p>and rely on your code up-stack of this module to catch the error and deal
+with it in a generic way. Even better, do this for each exception
+individually and add a comment to the effect that you need to fix this
+later:</p>
+
+<pre>    try:
+        # code goes here
+    except FooError:
+        # FIXME: implement proper error handling later.
+        raise FooError # reraise the exception
+</pre>
+
+<p>If you don't want to deal with errors at all, don't put a 'try: except:'
+condition in at all, but add a comment for later:</p>
+
+<pre>    # FIXME: catch FooError that could be raised by function bar().
+</pre>
+
+</li>
+
+</ul>
+
+<hr>
+
+This style guide was borrowed and modified by Mark Goadrich from a similar version at Caltech, which was modified 
+from the Python Style Guide at <a href="http://python.org">http://python.org</a>
+</body></html>

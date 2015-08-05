@@ -1,0 +1,108 @@
+<html>
+<head>
+  <title>CSC207 - Project 2 - The Word of the Day</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSC207</a> - Project 2<br>The Word of the Day</h1>
+<h3>Assigned Oct 19th 12 p.m.<br>
+Due October 28th 5 p.m.</h3>
+<hr>
+
+<h2>Overview</h2>
+For this project, we will explore more complex interactions with the user by implementing
+control statements and loops.  We will create a program for one user to play the game COMBINATION.
+<p>
+In particular, this project will cover the following concepts we have discussed in class:
+<ul>
+	<li>Booleans
+	<li>Functions
+	<li>Control Statements
+	<li>Sentinel Loops
+	<li>Definite Loops
+	<li>Lists
+	<li>File input
+	<li><a href="http://docs.python.org/3.1/library/time.html">Time</a>
+</ul>
+
+<h2>Description</h2>
+The game of COMBINATION is a timed exercise similar to <a href="http://en.wikipedia.org/wiki/Boggle">
+Boggle</a>.  A player is given a word and a time limit, and the player must write down all 
+possible words of three letters or more that can be made using the individual letters in the original word.  At the end of the time limit,
+a player's score is the number of unique words they found divided by the total number of possible
+words.  A letter can only be used once, unless
+there are multiple copies of the letter in the original word.
+<p>
+For example the player is given the word JUDGING.  In the course of a minute, the player identifies
+<pre>
+dig
+gun
+jug
+ding
+</pre>
+<p>
+The player missed the following words:
+<p>
+<pre>
+din
+dug
+dun
+dung
+gig
+gin
+gnu
+jig
+</pre>
+<p>
+for a score of 4 / 12 = 33%
+<h2>Coding</h2>
+For this assignment we will be writing a Python program to let a user play a timed version of 
+COMBINATION.  
+<p>
+Download the text file <code><a href="../data/english2.txt">english2.txt</a></code> 
+and the python module <code>
+<a href="../code/dictionary.py">dictionary.py</a></code> files.
+<p>
+You must create a python program 
+called <code>combination.py</code>.  It will:
+<ul>
+<li>Tell the user about the game.
+<li>Ask the user what level of difficulty they would like to play. Easy difficulty is with
+starting words of length 5-6, medium is with starting words of length 7-10, and hard is with 
+starting words of length 11 or greater.
+<li>Generate a random starting word of the proper difficulty, and start the timer. Our implementation will give the player 1 minute.
+<li>While there is still time left, tell the user how much time is left and ask the user for a word.  If it is possible to create this word
+using letters from the starting word, it is a valid word, it is long enough, and has not been
+given before by the user, accept it and add it to the list of found words.
+<li>When time is up, print the player's score (i.e. the number of unique valid subwords they found divided by the total number of possible words)
+<li>Tell the user which words they missed.
+<li>Finally, ask the player if they would like to play again.  If so, play the game again.</ul>
+<p>
+Your code should make good use of functions, as there are clear pieces of the game which
+are common to all the above variants.  Additional dictionary functions should be added
+to <code>dictionary.py</code>. Using functions will reduce the amount of code you need
+to write as well as make your program easier to debug.  However, do not write spaghetti code, 
+where functions call each other back and forth to continue execution of the program; 
+let your functions naturally return values and use loops to repeat the game turns.
+<p>
+Your code <b>must check all user input</b> for validity and reprompt them for correct input if
+any mistakes are made. 
+
+<h2>What to Hand In</h2>
+Log in to <code>cs.centenary.edu</code> through either Secure FTP or WinSCP using your
+cs login and password.  Create a subdirectory from <code>csc207</code> 
+called <code>project2</code>.  Copy your <code>combination.py</code> project into this directory, along with any other files
+you need to run your code.  Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+ 	<li>combination.py
+ 	<li>dictionary.py
+</ul>
+and any other files necessary to run your code.
+<hr>
+<small>&copy; Mark Goadrich 2009, Centenary College of Louisiana</small>
+
+</body>

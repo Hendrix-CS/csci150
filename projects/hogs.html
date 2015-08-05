@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>CSC207 - Project 2 - Rolling Hogs</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSC207</a> - Project 2<br>Rolling Hogs</h1>
+<h3>Assigned Oct 18th 12 p.m.<br>
+Due October 27th 5 p.m.</h3>
+<hr>
+
+<h2>Overview</h2>
+For this project, we will explore more complex interactions with the user by implementing
+control statements and loops.  We will create a program for one user to play the game HOG
+versus the computer.
+<p>
+In particular, this project will cover the following concepts we have discussed in class:
+<ul>
+	<li>Booleans
+	<li>Functions
+	<li>Control Statements
+	<li>Sentinel Loops
+	<li>Definite Loops
+	<li>Lists
+	<li>Randomness
+</ul>
+
+<h2>Description</h2>
+The game of Hog is played as follows.  On your turn, you choose to roll as many six-sided dice as
+you want, then roll them.  If you roll a 1 on any of the die, you score zero points, otherwise,
+you score the total of the dice you rolled.  The first player to score 100 points wins the game.
+<p>
+For example, the first few turns of the game might be as follows:
+<p>
+<pre>
+You: 0
+Computer: 0
+How many dice would you like to roll? 3
+You rolled 3, 4, 6
+You: 13
+Computer: 0
+Computer rolled 5, 6, 2, 3
+You: 13
+Computer: 16
+How many dice would you like to roll? 5
+You rolled 4, 2, 1, 4, 5
+You: 13
+Computer: 16
+Computer rolled 2, 3
+You: 13
+Computer: 21
+.
+.
+</pre>
+<h2>Coding</h2>
+For this assignment we will be writing a Python program to let a user Hog versus
+the computer
+<p>
+You must create a python program 
+called <code>hog.py</code>.  It will:
+<ol>
+<li>Tell the user about the game.
+<li>Tell the user their score and the computer's score.
+<li>Ask the user how many die they would like to roll. For our game, this will be a number between
+1 and 30.
+<li>Simulate rolling that many die, and show the rolls to the user. 
+<li>If any rolls are a 1, the score is 0, otherwise sum up the score and add it to the user's total.
+<li>If the game has not been won by the user by earning 100 points, the computer gets to roll.
+<li>The computer chooses a random number of dice between 1 and 10 inclusive, and scores accordingly.
+<li>If the game has not been won by the computer, repeat from step 2.
+<li>When the game is over, tell the user who was the winner.
+<li>Finally, ask the player if they would like to play again.  If so, play the game again.
+</ol>
+<p>
+Your code should make good use of functions, as there are clear pieces of the game which
+are repeated. Using functions will reduce the amount of code you need
+to write as well as make your program easier to debug.  However, do not write spaghetti code, 
+where functions call each other back and forth to continue execution of the program; 
+let your functions naturally return values and use loops to repeat the game turns.
+<p>
+Your code <b>must check all user input</b> for validity and reprompt them for correct input if
+any mistakes are made. 
+
+<h2>What to Hand In</h2>
+Log in to <code>cs.centenary.edu</code> through either Secure FTP or WinSCP using your
+cs login and password.  Copy your <code>hog.py</code> project into the project2 directory, along with any other files
+you need to run your code.  Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+ 	<li>hog.py
+</ul>
+and any other files necessary to run your code.
+<hr>
+<small>&copy; Mark Goadrich 2010, Centenary College of Louisiana</small>
+
+</body>

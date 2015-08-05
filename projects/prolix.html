@@ -1,0 +1,188 @@
+<html>
+<head>
+  <title>CSC207 - Project 2 - Prolix</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSC207</a> - Project 2<br>Prolix</h1>
+<h3>Assigned Oct 17th 12 p.m.<br>
+Due October 26th 5 p.m.</h3>
+<hr>
+
+<h2>Overview</h2>
+For this project, we will explore more complex interactions with the user by implementing
+control statements and loops.  We will create a program for one user to play the game Prolix,
+designed and used with permission by Gil Hova.
+<p>
+In particular, this project will cover the following concepts we have discussed in class:
+<ul>
+	<li>Booleans
+	<li>Functions
+	<li>Control Statements
+	<li>Sentinel Loops
+	<li>Definite Loops
+	<li>Lists
+	<li>Randomness
+</ul>
+
+<h2>Description</h2>
+<img src="../images/prolix.jpg">
+<p>
+
+Prolix is a word game where players compete to find words using a weighted mix of consonants.
+The full rules are available <a href="http://www.zmangames.com/cardgames/files/prolix/Prolix_Rules.pdf">online</a>
+and more information can be found at
+<a href="http://boardgamegeek.com/boardgame/39635/prolix">BoardGameGeek</a> and 
+<a href="http://www.zmangames.com/cardgames/prolix.htm">Z-Man Games</a>.
+<p>
+<p>A solo game of Prolix lasts 6 rounds.  Each round, you are trying to come up with the best word for the current board.</p>
+<p>Letter tiles are shuffled into a bag, and then drawn out and placed on the board. There are five each of the letters
+B, C, D, F, G, H, L, M, N, P, R, S, and T, two each of K, V, W, and Y, and one each of J, Q, X, and Z.</p>
+<p>As letters are placed on the board, you must ensure that <b>there are no more than two non-common letters out on the 
+board at any time, nor can you have more than two of the same letter out on the board at any time.</b></p>
+<p>There are always eight letters on the board, divided into four columns.  The two leftmost columns score 4 points each, 
+the third column scores 3 points, and the fourth column scores 2 points.</p>
+
+<table border=1 cellpadding=5>
+<tr>
+<td>V (+1)</td>
+<td>G</td>
+<td>F</td>
+<td>S</td>
+</tr>
+<tr>
+<td>J (+2)</td>
+<td>B</td>
+<td>H</td>
+<td>T</td>
+</tr>
+
+<tr>
+<td>4 points</td>
+<td>4 points</td>
+<td>3 points</td>
+<td>2 points</td>
+</tr></table>
+
+<p>When you enter a word, you score points based on how many letters you used from the board.  
+<b>You don't need all the letters in your word to be on the board in order to use that word.</b>  
+Your word can be as long as you'd like.  The letters don't need to be in any particular order.</p>
+
+<p>As seen above, some letters are rarer than others.  For these rare letters, there are fewer letters that 
+come out onto the board, but they give you bonus points if you use them. K, V, W and Y are worth one
+extra point, and J, Q, X, and Z are worth two extra points.</p>
+
+<table border=1 cellpadding=5>
+<tr>
+<td><b>V (+1)</b></td>
+<td>G</td>
+<td>F</td>
+<td><b>S</b></td>
+</tr>
+<tr>
+<td><b>J (+2)</b></td>
+<td><b>B</b></td>
+<td>H</td>
+<td><b>T</b></td>
+</tr>
+
+<tr>
+<td>4 points</td>
+<td>4 points</td>
+<td>3 points</td>
+<td>2 points</td>
+</tr></table>
+
+<p>For example, the word "subjective" scores 19 points on the board above.  Note that the V and the J score bonus points.</p>
+
+<p>You only get to use each letter once for each letter in your word.  If a letter is repeated in your word,
+you can only score the extra letters if there are corresponding extra letters on the board.</p>
+
+<p>Each round, your total score for the game must meet or exceed a minimum score.</p>
+
+<table border=1 cellpadding=5>
+<tr>
+<th>Round</th>
+<th>Minimum Score</th>
+</tr>
+<tr>
+<td>1</td>
+<td>15</td>
+</tr>
+<tr>
+<td>2</td>
+<td>31</td>
+</tr>
+<tr>
+<td>3</td>
+<td>48</td>
+</tr>
+<tr>
+<td>4</td>
+<td>66</td>
+</tr>
+<tr>
+<td>5</td>
+<td>85</td>
+</tr>
+<tr>
+<td>6</td>
+<td>105</td>
+</tr>
+</table>
+
+<p>If you don't make the minimum score for a round, you immediately lose the game.</p>
+
+<p>If you do make the minimum score for a round, you get to play another round.  The letters on the 
+board move two spaces to the right, and four new letters are drawn into the two leftmost columns.</p>
+
+<p><b>You are not allowed to re-use any word you already used, so keep a list of used words.</b></p>
+
+<p>If you have 105 points or more at the end of the game, you win!</p>
+
+<h2>Coding</h2>
+For this assignment we will be writing a Python program to let a user repeatedly play solitaire Prolix.
+<p>
+You must create a python program 
+called <code>prolix.py</code>.  It will:
+<ol>
+<li>Tell the user about the game.
+<li>Shuffle the letter tiles to create the initial board, and display this to the user.
+<li>For six rounds, ask the user what word they would like to use. Make sure the user inputs a valid English word.
+<li>Calculate the score for this word. If the cumulative score is too low for that round, end the game.
+<li>If the cumulative score is high enough, shift the tiles and refill the board for the next round.
+<li>If the user makes it through all six rounds, congratulate the user!
+<li>Ask the user if they would like to play again. If so, return to step 1.
+</ol>
+<p>
+Your code should make good use of functions, as there are clear pieces of the game which
+are repeated. Using functions will reduce the amount of code you need
+to write as well as make your program easier to debug.  However, do not write spaghetti code, 
+where functions call each other back and forth to continue execution of the program; 
+let your functions naturally return values and use loops to repeat the game turns.
+<p>
+Your code <b>must check all user input</b> for validity and reprompt them for correct input if
+any mistakes are made. 
+
+<h2>Extra Credit</h2>
+Write a function that calculates the three highest scoring words that could be created from the current board.
+Print these words along with their scores to the user after they have finished their turn.
+
+<h2>What to Hand In</h2>
+Log in to <code>cs.centenary.edu</code> through either Secure FTP or WinSCP using your
+cs login and password.  Copy your <code>prolix.py</code> project into the project2 directory, along with any other files
+you need to run your code.  Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+ 	<li>prolix.py
+ 	<li><a href="../data/english2.txt">english2.txt</a>
+ 	<li><a href="../code/dictionary.py">dictionary.py</a>
+</ul>
+and any other files necessary to run your code.
+<hr>
+<small>&copy; Mark Goadrich 2011, with rules from Gil Hova, Centenary College of Louisiana</small>
+
+</body>

@@ -1,0 +1,136 @@
+﻿<html>
+<head>
+  <title>CSC207 - Lab 12 - Predictive Text Messaging</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSC207</a> - Lab 12<br>Predictive Text Messaging</h1>
+<h3>Assigned Oct 28th 2 p.m.<br>
+Due Nov 2nd 12 p.m.</h3>
+<hr>
+
+<h2>Overview</h2>
+This lab will make extensive use of dictionaries to demonstrate how text entry on cell phones
+is feasible.
+
+<h2>Materials</h2>
+<ul>
+<li><a href="http://docs.python.org/3.0/library/stdtypes.html#typesmapping">Python dictionaries</a>
+<li><a href="../data/all.num.o5">BNC word frequency list</a>
+</ul>
+
+
+<h2>Description</h2>
+<img class="entryimageright" src="../images/keypad.jpg">
+One of the most popular modules of any cell phone is the text messaging abilities.  
+<a href="http://en.wikipedia.org/wiki/Predictive_text">Predictive Text</a> is a fast and easy
+text entry system for cell phones, the most common algorithms being <a href="http://www.t9.com/us/">t9</a>
+and <a href="http://en.wikipedia.org/wiki/ITap">iTap</a>.  This lab will examine the details of
+predictive text algorithms and some of the unexpected consequences.
+<p>
+As society moves to smart phones like the iPhone and Palm Pre with software Qwerty keyboards,
+this interesting piece of computer science will become a forgotten artifact, but the lessons of
+predictive text will still be applicable when faces with similar limitations.
+
+
+<h3>Step 1</h3>
+The standard <a href="http://en.wikipedia.org/wiki/Telephone_keypad">telephone pad</a> includes
+12 keys, 10 for numbers 0-9, plus the * and # symbols. Along with the numbers printed on the keys,
+most phones include three to four letters, in the following pattern:
+<p>
+<table border=1 cellpadding=5 cellspacing=5>
+<tr><th>Number</th><th>Letters</th><tr>
+<tr><td>1</td><td></td></tr>
+<tr><td>2</td><td>ABC</td></tr>
+<tr><td>3</td><td>DEF</td></tr>
+<tr><td>4</td><td>GHI</td></tr>
+<tr><td>5</td><td>JKL</td></tr>
+<tr><td>6</td><td>MNO</td></tr>
+<tr><td>7</td><td>PQRS</td></tr>
+<tr><td>8</td><td>TUV</td></tr>
+<tr><td>9</td><td>WXYZ</td></tr>
+</table>
+<p>
+Write a function called <code>text_to_nums(text)</code> which will translate a given string of 
+text into the numbers which should be pressed on the keypad to create this text.  You should use a 
+dictionary with the letters as keys and the numbers as values.  Be sure to remove all punctuation
+from the text, capitalize all the incoming text, and translate the space character as "*".
+
+<h3>Step 2</h3>
+Translation from letters to numbers is relatively straight forward.  However, the task of 
+translating back from numbers into letters is more challenging.  Given the numbers 2665, it is
+not immediately clear which word the user intended, since each digit maps to three or four
+letters.
+<p>
+A <a href="http://www.urbandictionary.com/define.php?term=textonym">textonym</a> is a word that
+is composed of the same underlying numeric key.  For example, "cool" is mapped to 2665, which 
+is also the same number for "book".
+<p>
+To automatically make a choice between these two words we need some more information.  Predictive
+text algorithms use the relative likelihood of the words in the English language.  We will be using
+statistics gathered from the <a href="http://www.kilgarriff.co.uk/bnc-readme.html">British 
+National Corpus</a>, a 100 million word collection of samples of written and spoken language 
+from a wide range of sources.  We have a <a href="../data/all.num.o5">BNC word frequency list</a>,
+with each line listing the word count followed by the word and some extra information on the part
+of speech.
+<p>
+Now, we can translate a number back into it's most likely word choice.
+Since "book" is more popular in this corpus than "cool", it will be the first 
+word returned when typing in those numbers.
+<p>
+Write a function called <code>nums_to_text(nums)</code> which will translate a given string of
+numbers separated by "*" into the most likely words that created this string of numbers. Use a
+dictionary with the numbers as keys and the most likely word as the value.
+<p>
+Use your function to translate the following numbers back into the most likely text.
+<p>
+<ul>
+<li>84373*47*6684464*97664*9484*9687*8353847466*738*36*668*2883678*86*235878*843*7428873
+<li>2633*666539*8379*746753*626
+</ul>
+<h3>Step 3</h3>
+Write a separate function called <code>textonyms(text)</code> to find all textonyms for a given word.
+<p>
+Use your function to find the textonyms of the following words:
+<ul>
+<li>barmaid
+<li>awake
+</ul>
+Incorporate this into your <code>nums_to_text</code> function above, such that all possible
+text messages are printed out.
+<h3>Step 4</h3>
+So far we have been translating complete texts.  One other way to speed up our entry of words
+is to add some predictive element to our text entry.  For example, if a user types in 
+637, your program should prompt them that "message" is the most likely word.  This way you need
+fewer key presses to make longer words.
+<p>
+Write a function called <code>predict_text()</code> to allow the user to enter numbers and create
+a text message. This function will repeatedly ask the user for individual
+numbers, and after each letter, will display the most likely word that starts with the sequence of 
+numbers entered.  If the user hits enter without a number, add this most likely word to a 
+growing text message and start the next word from scratch.  If the user hits enter without a 
+number twice in a row, print the written text message for the user and exit the function.
+
+<h2>Extensions</h2>
+Our algorithm above is feasible, but can be improved in many ways.  Suggest a few 
+improvements and what changes they will require in your code.
+
+<h2>Evaluation</h2>
+Write up your found answers for each of the steps above in a file called <code>lab12_evaluation.txt</code>
+
+<h2>What to Hand In</h2>
+Log in to <code>cs.centenary.edu</code> through either Secure FTP or WinSCP using your
+cs login and password.  Create a subdirectory from <code>csc207</code> 
+called <code>lab12</code>.  Copy your <code>substitution.py</code> project into this directory.  Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+ 	<li>texting.py
+	<li>lab12_evaluation.txt
+</ul>
+<hr>
+<small>&copy; Mark Goadrich 2009, Centenary College of Louisiana</small>
+
+</body>

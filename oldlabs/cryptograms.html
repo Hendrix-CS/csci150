@@ -1,0 +1,203 @@
+﻿<html>
+<head>
+  <title>CSC207 - Lab 9 - Substitution Decipherment</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSC207</a> - Lab 9<br>Cryptogram Decipherment</h1>
+<h3>Assigned October 27th 2 p.m.<br>
+Due October 29th 4 p.m.</h3>
+<hr>
+
+<h2>Overview</h2>
+Continuing on the topic of decipherment, we now look at more complicated substitution ciphers.
+We will build a program to assist us in deciphering cryptograms using Python dictionaries.
+
+<h2>Materials</h2>
+<ul>
+<li><a href="http://docs.python.org/lib/typesmapping.html">Python dictionaries</a>
+<li><a href="../data/alice-chapter-one.txt">Alice Chapter One</a>
+<li>frequency_count(s) function from <a href="lab8.html">Lab 8</a>
+</ul>
+
+<h2>Description</h2>
+Last lab, we explored finding automatic solutions to the Caesar Cipher, where the alphabet
+was rotated to provide a rudimentary form of encryption.  We demonstrated
+that messages encoded in a Caesar Cipher are easily decoded.  A stronger encryption
+method is the
+<a href="http://en.wikipedia.org/wiki/Substitution_cipher">Substitution Cipher</a>.
+Examples of substitution ciphers can be found in the Sherlock Holmes short story called 
+<a href="http://en.wikisource.org/wiki/The_Adventure_of_the_Dancing_Men">The Dancing Men</a>, and in
+the <a href="http://www.omniglot.com/writing/futurama.htm">Alien</a>
+<a href="http://www.gotfuturama.com/Interactive/AlienCodec/">languages</a> from the
+cartoon <a href="http://en.wikipedia.org/wiki/Futurama">Futurama</a>.
+<p>
+In a substitution cipher, a letter can be replaced by any other letter or symbol, 
+such that each letter is only used once per original letter. For example, given the 
+mapping for Alien Language 1 below:
+<p>
+<div align="center">
+<img src="http://futurama.yellopants.com/al1/images/desc01.jpg"><p>
+<b>Alien Language 1</b>
+</div>
+<p>
+We can decode the sign behind Bender here to say
+<p>
+<div align="center">
+<img src="http://futurama.yellopants.com/al1/images/DVDfutur005.JPG"><p>
+<b>TASTY HUMAN BURGERS</b>
+</div>
+<p>
+If we know the mapping for substitution, decipherment is easy, however, we are often
+given encrypted text, and we must discover the map on our own.
+In this lab, we will be building a program to assist the user in decoding 
+<a href="http://en.wikipedia.org/wiki/Cryptogram">Cryptograms</a>, a common version
+of a substitution cipher found in the daily newspapers.  The program will use 
+<a href="http://docs.python.org/lib/typesmapping.html">Python dictionaries</a>
+to map one character to another for translation, and provide the current best mapping
+based on character frequencies.
+
+<h3>Data</h3>
+<blockquote>
+Quote 1:
+<p>
+GPYTKM! YLNDQ GPBQVF KBOBQV BQ D LQMPCVCTLQM JDOP, RYBJY YDF D NTLIY TWPQ ITRDCMF IYP KBVYI DQM CPDJYBQV DKK DKTQV IYP JDOP; YPCP IYPX YDOP GPPQ SCTN IYPBC JYBKMYTTM, DQM YDOP IYPBC KPVF DQM QPJHF JYDBQPM FT IYDI IYPX JDQQTI NTOP, DQM JDQ TQKX FPP GPSTCP IYPN, GPBQV WCPOPQIPM GX IYP JYDBQF SCTN ILCQBQV CTLQM IYPBC YPDMF. DGTOP DQM GPYBQM IYPN D SBCP BF GKDABQV DI D MBFIDQJP, DQM GPIRPPQ IYP SBCP DQM IYP WCBFTQPCF IYPCP BF D CDBFPM RDX; DQM XTL RBKK FPP, BS XTL KTTH, D KTR RDKK GLBKI DKTQV IYP RDX, KBHP IYP FJCPPQ RYBJY NDCBTQPIIP WKDXPCF YDOP BQ SCTQI TS IYPN, TOPC RYBJY IYPX FYTR IYP WLWWPIF.
+<p>
+Quote 2:
+<p>
+JUVR GBJU W ZAHR ZSJ VXAYENRU WYAVR WUE PJP DJGUE W VWCR.  WYAVR QWAE: "QBYRUEAE! A SAYY RWZ ZXR VWCR." PJP QWAE: "UJ, ZXWZ AQ UJZ DWAN! SR DJGUE ZXR VWCR ZJFRZXRN, WUE SR QXJGYE QXWNR WUE QXWNR WYACR; XWYD DJN OJG WUE XWYD DJN HR." WU WNFGHRUZ RUQGRE PRZSRRU ZXRH. WYJUF VWHR WU WEGYZ SXJ QWAE: "OJG QXJGYEUZ DAFXZ WPJGZ ZXAQ; OJG QXJGYE VJHBNJHAQR, WUE FATR WYAVR ZXNRR-KGWNZRNQ JD ZXR VWCR." BWNWBXNWQRE DNJH NWOHJUE QHGYYOWU
+</blockquote>
+
+<h3>Step 1</h3>
+As with a Caesar cipher, information will be leaked from the ciphertext in the form of 
+the frequency counts of each letter.  Recall the standard frequency counts for words
+in the English language:
+<p>
+<div align="center">
+<img src="http://upload.wikimedia.org/wikipedia/commons/4/41/English-slf.png"><p>
+<b>Figure 1: English letter frequencies</b>
+</div>
+<p>
+However, we no longer have only 25 possibilities for decryption, since we are substituting letters
+individually instead of rotating them as a whole. In fact, there are 1.551121 x 10 ^ 25 (25!)
+possible ways to decrypt the text, since A can stand for any of the 25 other letters, B then
+stands for one of the 24 left, etc.
+<p>
+Our approach here will be what is called a greedy search. We will select the letter-match that looks the 
+most probable, then the second most probable, until we have chosen 26 matchings, one for each
+letter in the alphabet. We will choose the most probable match by saying the highest-frequency
+letter in the ciphertext will be mapped to the highest-frequency letter in the reference text,
+and then remove these letters from being selected in subsequent matchings.
+This will not be a great solution, but will give us somewhere to start.
+<p>
+<div align="center">
+<img src="../images/crypto.jpg">
+<p>
+<b>Figure 2: Ciphertext letter frequencies</b>
+</div>
+<p>
+For example, if we were using the greedy search on the above frequencies from Figure 2 from a ciphertext and the 
+earlier reference frequencies of Figure 1, we would first pick P stand for E since they are both the highest peaks.
+The next two highest peaks are Y and T, then D and A, etc, matching them one by one until
+all 26 letters are matched.
+<p>
+Create a function <code>frequency_map(o_freq, e_freq)</code> that will return a dictionary 
+mapping of characters based on the above greedy search. 
+<p>Test your function in the interpreter. Use 
+<a href="../code/alice-chapter-one.txt">Chapter One of Alice's Adventures
+in Wonderland</a> as your reference text to calculate expected frequencies in e_freq, 
+and Quote 1 from the Evaluation section below as your ciphertext to calculate o_freq.
+Your returned frequency map should be
+<p>
+<pre>
+{'A': 'J', 'C': 'S', 'B': 'I', 'E': 'Q', 'D': 'T', 'G': 'U', 'F': 'L', 'I': 'H', 
+ 'H': 'V', 'K': 'D', 'J': 'W', 'M': 'R', 'L': 'C', 'O': 'Y', 'N': 'B', 'Q': 'A', 
+ 'P': 'E', 'S': 'P', 'R': 'G', 'U': 'X', 'T': 'N', 'W': 'K', 'V': 'F', 'Y': 'O', 
+ 'X': 'M', 'Z': 'Z'}
+</pre>
+<h3>Step 2</h3>
+The next function we create will use the map from <code>frequency_map</code> and 
+translate our ciphertext into plaintext.  For each character in our text that is a letter in
+<code>"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</code>, look up that letter as a key in the map and substitute the 
+associated value into the text.  Write a function <code>decrypt_sub(s, map)</code> to decrypt the 
+string s with the substitution map.
+<p>
+Test your code on Quote 1 and the frequency map you calculated in Step 1.  It should 
+return the following text:
+<blockquote>
+UEONDR! OCBTA UEIAFL DIYIAF IA T CARESFSNCAR WTYE, GOIWO OTL T BNCHO NKEA HNGTSRL HOE DIFOH TAR SETWOIAF TDD TDNAF HOE WTYE; OESE HOEM OTYE UEEA PSNB HOEIS WOIDRONNR, TAR OTYE HOEIS DEFL TAR AEWVL WOTIAER LN HOTH HOEM WTAANH BNYE, TAR WTA NADM LEE UEPNSE HOEB, UEIAF KSEYEAHER UM HOE WOTIAL PSNB HCSAIAF SNCAR HOEIS OETRL. TUNYE TAR UEOIAR HOEB T PISE IL UDTJIAF TH T RILHTAWE, TAR UEHGEEA HOE PISE TAR HOE KSILNAESL HOESE IL T STILER GTM; TAR MNC GIDD LEE, IP MNC DNNV, T DNG GTDD UCIDH TDNAF HOE GTM, DIVE HOE LWSEEA GOIWO BTSINAEHHE KDTMESL OTYE IA PSNAH NP HOEB, NYES GOIWO HOEM LONG HOE KCKKEHL.
+</blockquote>
+
+<h3>Step 3</h3>
+This may be the mapping that is likely according to frequency counts, but as we see above, this is 
+not perfect, the message is still unintelligible. Almost always, this will not
+be the right translation. To find the correct message, we must 
+revise our map by interacting with the user.  
+<p>
+Write a function called <code>user_map(map)</code> which brings in a current map from the 
+user and prompts them to add one more character key and value to this map.  This augmented map
+is then returned.
+<p>
+One restriction we will place on the user is that they are not allowed to map
+two different letters to the same letter.  In other words, a letter cannot appear
+twice in the list of values inside our character map.  If the user tries to do this,
+you should tell them that is an invalid mapping, and prompt them again for a new mapping.
+<p>
+Test out your function by starting with the empty map {} and adding a new character key-value map
+of G -> B.
+Then use this map as your input and add a new mapping of Y -> H.
+<h3>Step 4</h3>
+With this new incremental map from the user, we need to use that and revise our previous 
+map-creation function.
+Revise <code>frequency_map(o_freq, e_freq)</code> from Step 1 into 
+<code>frequency_map(map, o_freq, e_freq)</code>to take into account the user map.  It should
+remove from consideration any characters mappings the user has specified, and fill in the rest 
+based on the remaining frequency counts, to return a full map.
+<p>
+Test your code with your frequencies from Step 1 and the map from Step 3.  Your function should
+generate the following frequency map:
+<p>
+<pre>
+{'A': 'J', 'C': 'S', 'B': 'I', 'E': 'Q', 'D': 'T', 'F': 'L', 'I': 'A', 'H': 'V', 
+ 'K': 'D', 'J': 'W', 'M': 'R', 'L': 'F', 'O': 'C', 'N': 'M', 'Q': 'O', 'P': 'E', 
+ 'S': 'P', 'R': 'U', 'U': 'X', 'T': 'N', 'W': 'K', 'V': 'G', 'X': 'Y', 'Z': 'Z',
+ 'G': 'B', 'Y': 'H'}
+</pre>
+<h3>Step 5</h3>
+Now that we have all our basic functions built and tested, we can create the final main function to
+power this Cryptogram Assistant. Your main function should at least do:
+<ul>
+<li>Ask the user for the string they wish to decrypt.
+<li>Find the expected frequency counts and the observed frequency counts.
+<li>Create an initial greedy mapping based on these count.
+<li>Display the first guess at decryption to the user along with the original string.
+<li>While the user still wishes to make changes:
+<ul>
+<li>Get from the user an additional character map.
+<li>Revise the greedy mapping, and redisplay the new guess at decryption.
+</ul>
+</ul>
+You may find more pieces of information useful as the user; add these as you feel appropriate in 
+a format that you can understand.
+
+<h2>Evaluation</h2>
+Use your interactive program to solve the two cryptoquotes in the Data section.
+You might find <a href="http://www.wikihow.com/Solve-a-Cryptogram">some tips on solving
+Cryptoquotes</a> helpful. Write up your found answers and the character map in a file called 
+<code>lab9_evaluation.txt</code>
+<h2>What to Hand In</h2>
+Log in to <code>cs.centenary.edu</code> through either Secure FTP or WinSCP using your
+cs login and password.  Create a subdirectory from <code>csc207</code> 
+called <code>lab9</code>.  Copy your <code>substitution.py</code> project into this directory.  Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+ 	<li>substitution.py
+	<li>lab9_evaluation.txt
+</ul>
+<hr>
+<small>&copy; Mark Goadrich 2007, Centenary College of Louisiana</small>
+
+</body>

@@ -1,0 +1,104 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 9 - Gibberish Generator</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 9<br>Gibberish Generator</h1>
+<hr>
+
+<h2>Materials</h2>
+<ul>
+<li>Pythnon <a href="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict">dict</a> object.
+<li><a href="../data/english2.txt">English Word List</a>
+<li><a href="../data/latin2.txt">Latin Word List</a>
+<li><a href="../data/spanish2.txt">Spanish Word List</a>
+</ul>
+
+<h2>Overview</h2>
+<blockquote>
+'Twas brillig, and the slithy toves<br>
+Did gyre and gimble in the wabe;<br>
+All mimsy were the borogoves,<br>
+And the mome raths outgrabe.<br>
+</blockquote>
+This assignment explores the use of the dictionary object to generate pronounceable nonsense words, 
+known as <a href="http://en.wikipedia.org/wiki/Pseudoword">pseudowords</a> or 
+<a href="http://en.wikipedia.org/wiki/Logatome">logatomes</a>, similar to those found in 
+<a href="http://en.wikipedia.org/wiki/Jabberwocky">The Jabberwocky</a> 
+by <a href="http://en.wikipedia.org/wiki/Lewis_Carroll">Lewis Carroll</a>, using three 
+probabilistic models of word creation that become progressively more accurate. 
+
+<H2>Naive Design</H2>
+As a first approach, we can start by selecting characters from the alphabet uniformly at random. 
+To determine how many letters will be in the word, write a function called <code>word_length</code> 
+to calculate a histogram 
+of word lengths based on a comprehensive list of words in the English language. We can see in the 
+figure below that this is not a uniform distribution. This
+function should return a dictionary with integer lengths as keys and the frequency counts as values. 
+<p>
+<center><img width=600 src="../images/wordlength.png"></center>
+<p>
+Next, write a second function called <code>proportionalprob</code> that takes a 
+histogram as a parameter and returns a key proportional to the histogram counts. For example, if
+words of length 4 comprised 17% of the word list, your function should return 4 on average 17% of the time.
+<p>
+Finally, write a function called <code>nonsense</code> that will bring in a count of how many words to 
+generate. Calculate the word length frequency dictionary, then for each word, randomly select a length,
+and then uniformly select random characters for this word.
+<h2>Letter Frequency</h2>
+The words generated naively above are still unpronounceable. Our second approach is to 
+change the letter selection from uniform to proportional as well. Recall that the frequency 
+of letters in English is not uniform: E is the most frequent letter, followed by, T, A, O, I, N...
+Write a function called <code>letter_freq</code> which will
+calculate a histogram dictionary with letters as keys and letter frequency counts as values.
+<p>
+<center><img width=600 src="../images/English-slf.png"></center>
+<p>
+Revise your naive function above to use the  
+proportional probability function twice, once for length, and then once for letters, 
+to generate the words.
+<h2>Markov Chains</h2>
+We are getting closer to pronounceability, but to really make the right kind of words, we need to 
+care about the arrangement of the letters along 
+with their frequency. For example, the letter T is much more likely to be followed by an H
+than by a Z. To do this, we create a 
+<a href="http://en.wikipedia.org/wiki/Markov_chain">Markov Chain</a> to generate the next letter in a 
+sequence based on the previous letters. 
+<p>
+<center><img width=400 src="../images/26vertex.png"></center>
+<p>
+We start with a Markov Chain of order 1. The order of the Markov Chain is how many of these 
+previous letters to use. This generates the graph above, where each letter is connected to every
+other letter, including itself, and the edges are the probability of choosing the connected
+letter next. If we also include "\n" as a possible 
+character, our words will naturally terminate. 
+<p>
+Write a function <code>markov</code> that brings in a word list and an order n.
+This function will create a dictionary with the previous n letters of a word as the key, 
+and a second dictionary as the value. These inner dictionaries are similar to the previous letter 
+frequency dictionaries and can be used in the same way to generate the next letter. Revise your 
+function above to use this dictionary to generate words. When you generate a "\n" character,
+start with the next word.
+<p>
+<center><img width=400 src="../images/YO-DAWG.jpg"></center>
+<p>
+Experiment with your function to find the order which best creates nonsense words. What happens
+when the order is very large?
+
+<h2>Spells</h2>
+As a final task, substitute the English word list with Latin to generate nonsense 
+spells, such as "patuscus immoveo" or "stulor oportus."
+<p>
+TRY TO CREATE TEXTS FROM NOVELS
+<p>
+WRITE DEFINITIONS FOR TWO OF YOUR RANDOM WORDS
+<p>
+ADD WHAT TO TURN IN
+<p>
+ADD GRADING SCHEME
+<hr>
+<small>&copy; Mark Goadrich, Hendrix College</small>
+</BODY>
+</HTML>
