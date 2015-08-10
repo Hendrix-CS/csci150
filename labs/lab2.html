@@ -32,7 +32,7 @@ planets outside our solar system orbiting other stars. The first few of these
 Jupiter with wildly eccentric orbits, however as our methods of detection become more
 precise we are starting to find Earth-sized planets that may provide a good foundation for life.
 In this lab we'll discuss planetary motion in general and apply our computing skills to 
-study one particular star system called Gliese 581.
+study various exoplanets.
 <p>
 <h3>Kepler</h3>
 <img class="entryimageleft" src="../images/kepler_pic.jpg">
@@ -75,7 +75,7 @@ Test your code with the following values for planets orbiting the Sun:
 <p>
 <div align="center">
 <b>Table 1: Planets and their Orbital Period</b><p>
-<table border="1"><tr><th>Planet</th><th>AU from Sun</th><th>Period</th></tr>
+<table border="1" cellpadding="3"><tr><th>Planet</th><th>AU from Sun</th><th>Period</th></tr>
 <tr><td>Earth</td><td>1</td><td>1</td></tr>
 <tr><td>Saturn</td><td>9.58201720</td><td>29.660974748248961</td></tr>
 <tr><td>Mercury</td><td>0.38709821</td><td>0.24084173359179098</td></tr>
@@ -116,27 +116,35 @@ and output the result to the user. Since Newton's law uses <b>meters</b> instead
 AU, you will have to convert the output into the appropriate value, using the 
 definition of 1 AU as 149 million kilometers.  
 <p>
-REDO WITH UPDATED DATA FROM MORE STAR SYSTEMS
-<p>
-Evaluate <code>orbit_newton.py</code> using the following data about the red dwarf star 
-<a href="http://en.wikipedia.org/wiki/Gliese_581">Gliese 581</a> and the four planets 
-detected so far which orbit this star.  Current scientific research is 
-focused on this star system since 
-<a href="http://en.wikipedia.org/wiki/Gliese_581_c">planet c</a> is close in size to Earth and is
-a comparable distance from Gliese 581 (reported in April 2007), meaning it may lie in the 
+Evaluate <code>orbit_newton.py</code> using the following data, based on the best
+estimates we have about recently
+discovered exoplanets that may fall into the
 <a href="http://en.wikipedia.org/wiki/Habitable_zone">Habitable Zone</a> for life.  Report your
 results for the orbital period of these planets in the <code>Lab3 Evaluation Google Doc</code>
 described below.
 <p>
 <div align="center">
-<b>Table 2: Planets orbiting Gliese 581 (Mass = 6.1645 X 10^29 kg)</b><p>
-<table border="1"><tr><th>Planet</th><th>Orbital Period in Days</th><th>Mass in kg</th></tr>
-<tr><td>e</td><td>3.149</td><td>1.015 X 10^25</td></tr>
-<tr><td>b</td><td>5.369</td><td>9.436 X 10^25</td></tr>
-<tr><td>c</td><td>12.914</td><td>3.285 X 10^25</td></tr>
+<b>Table 2: Promising Exoplanets</b><p>
+<table border="1" cellpadding="3"><th>Planet</th><th>Orbital Period in Days</th><th>Star Mass in kg</th><th>Planet Mass in kg</th></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_667_Cc">Gliese 667 C c</a></td><td>28.143</td><td>6.1659 * 10^29</td><td>2.2693 * 10^25</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Kepler-22b">Kepler 22 b</a></td><td>289.86</td><td>1.9293 * 10^30</td><td>3.1532 * 10^26</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/HD_40307_g">HD 40307 g</a></td><td>197.8</td><td>1.4917 * 10^30</td><td>4.891 * 10^25</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_163_c">Gliese 163 c</a></td><td>25.631</td><td>7.956 * 10^29</td><td>4.359 * 10^25</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_581_d">Gliese 581 d</a></td><td>66.87</td><td>6.1659 * 10^29</td><td>2.2693 * 10^25</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Kepler-452b">Kepler 452 b</a></td><td>384.843</td><td>2.0626 * 10^30</td><td>2.986 * 10^25</td></tr>
 </td></table>
 </div>
 <p>
+
+<!--
+Answers: 
+Gliese 667 C c = 0.1251 AU
+Kepler 22 b = 0.849 AU
+HD 40307 g = 0.6 AU
+Gliese 163 c = 0.12536 AU
+Gliese 581 d = 0.218 AU
+Kepler 452 b = 1.046 AU
+-->
 
 <h3>Step 3</h3>
 Your programs were dependent on the value used in Python for <code>math.pi</code>, 
@@ -152,7 +160,7 @@ Answer the following questions in a file called <code>Lab Evaluation</code>:
 <ol>
 	<li>How much of your code were you able to reuse from <code>orbit_kepler.py</code>
 	when writing <code>orbit_newton.py</code>?
-	<li>What are the AUs for planets e, b, and c orbiting Gliese 581?
+	<li>What are the AUs for the above exoplanets?
 	<li>Which do you think had a larger influence on the final calculation of the AU 
 	in <code>orbit_newton.py</code>, the Mass of the planet or the distance from the star?  Why?
 	<li>What was the effect of changing the value used for Pi in <code>orbit_newton.py</code>?
