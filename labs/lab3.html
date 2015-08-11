@@ -16,7 +16,7 @@ we investigate some pieces of "intelligence," using our ability to divide object
 <ul>
 <li>Python 2.7
 <li><a href="../data/cleveland-training.csv">Patient Training File</a>
-<li><a href="../data/cleveland-testing.csv">Patient Training File</a>
+<li><a href="../data/cleveland-testing.csv">Patient Testing File</a>
 <li><a href="../code/analysis.py">analysis.py</a>
 </ul>
 
@@ -41,7 +41,51 @@ with <a href="https://en.wikipedia.org/wiki/Logic_puzzle">logic puzzles</a>,
 deducing a conclusion of what must be true from the facts presented to us.  Today we'll focus on
 <a href="http://en.wikipedia.org/wiki/Inductive_reasoning">inductive logic</a>: our ability
 to make generalizations based on data and apply these general rules to new situations.
+
 <h3>Step 1</h3>
+Imagine you are tasked by the <a href="http://my.clevelandclinic.org/">Cleveland Clinic</a> to 
+help them train new doctors to diagnose patients with heart disease. They have been
+reviewing their <a href="https://archive.ics.uci.edu/ml/datasets/Heart+Disease
+">past patient histories</a> and started to notice some patterns after narrowing their
+focus to a few key features of each patient. They show you some histograms,
+where the patients with heart disease are labeled red, and those without are labeled blue.
+<p>
+<center><img width=700 src="../images/heart-disease-histograms.png"></center>
+<p>
+They also give you some more detailed information about these features.
+<ul>
+<li>age: age in years (integer)
+<li>female: true if female patient (boolean)
+<li>chest_pain: four types of chest pain were recorded (string)
+	<ul>
+ 		<li>typical angina
+ 		<li>atypical angina
+ 		<li>non-anginal pain
+ 		<li>asymptomatic
+ 	</ul>
+<li>rest_bps: resting blood pressure in mm Hg on admission to the 
+        hospital (integer)
+<li>cholesterol: serum cholesterol in mg/dl (integer)
+<li>high_fasting_blood_sugar: true if  > 120 mg/dl (boolean)
+<li>rest_ecg: resting electrocardiographic results (string)
+	<ul>
+ 		<li>normal
+ 		<li>wave abnormality
+ 		<li>hypertrophy
+ 	</ul>
+<li>maximum_heart_rate: maximum heart rate achieved (integer)
+<li>exercise_angina: exercise induced angina (boolean)
+<li>vessels: number of major vessels (0-3) colored by flourosopy (integer)
+<li>heart_disease: diagnosis of heart disease.
+</ul>
+
+The final piece of data, heart_disease, is what they would like to summarize based on 
+the other 10 features.
+<p>
+They present you with the following ten example patients 
+above, listing off their features. They would like a way to make decisions about newly admitted patients which is 
+based on the information above, and simple enough for someone to remember the rule.
+
 <div align="center">
 <b>Table of Patients Training Data</b>
 <p>
@@ -60,13 +104,8 @@ to make generalizations based on data and apply these general rules to new situa
 </table>
 </div>
 <p>
-Imagine you are tasked by the <a href="http://my.clevelandclinic.org/">Cleveland Clinic</a> to 
-help them train new doctors to diagnose patients with heart disease.  They present you with the following ten example patients 
-above, listing off their attributes. They would like a way to make decisions about newly admitted patients which is 
-based on the information above, and simple enough for someone to remember the rule.
-<p>
-<center><img width=700 src="../images/heart-disease-histograms.png"></center>
-<p>
+
+
 We will be adding our logical rules to a file called
 <code>analysis.py</code>. Using what you know about <code>if-elif-else</code> statements, 
 edit this python program where directed to classify a given patient.
