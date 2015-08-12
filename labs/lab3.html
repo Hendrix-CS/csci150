@@ -92,13 +92,15 @@ hypothesis or inferences to summarize these charts, and record them in a Lab Eva
 <p>
 They next present you with the following ten example patients, 
 listing off their features. They would like a way to make decisions about newly admitted patients which is 
-based on the information above, and simple enough for someone to remember the rule.
+based on this table, and simple enough for someone to remember the rule. They are 
+hoping that the rules you generate on these ten patients will generalize to their whole 
+dataset of over 300 patients.
 
 <div align="center">
 <b>Table of Patients Training Data</b>
 <p>
 <table border=1 cellpadding=3>
-<tr><th>age</th><th>female</th><th>chest_pain</th><th>rest_bps</th><th>cholesterol</th><th>high_fasting_blood_sugar</th><th>rest_ecg</th><th>maximum_heart_rate</th><th>exercise_angina</th><th>vessels</th><th>heart_disease</th></tr>
+<tr><th>age</th><th>female</th><th>chest_pain</th><th>rest_bps</th><th>cholesterol</th><th>high_fasting_blood_sugar</th><th>rest_ecg</th><th>maximum_heart_rate</th><th>exercise_angina</th><th>vessels</th><th bgcolor="#EEEEEE">DISEASE</th></tr>
 <tr bgcolor="#DDDDFF"><td>63</td><td>False</td><td>typical angina</td><td>145</td><td>233</td><td>True</td><td>hypertrophy</td><td>150</td><td>False</td><td>0</td><td>False</td></tr>
 <tr bgcolor="#FFDDDD"><td>67</td><td>False</td><td>asymptomatic</td><td>160</td><td>286</td><td>False</td><td>hypertrophy</td><td>108</td><td>True</td><td>3</td><td>True</td></tr>
 <tr bgcolor="#FFDDDD"><td>67</td><td>False</td><td>asymptomatic</td><td>120</td><td>229</td><td>False</td><td>hypertrophy</td><td>129</td><td>True</td><td>2</td><td>True</td></tr>
@@ -159,18 +161,33 @@ a few features shown here.
 <li>vessels, exercise_angina, and rest_ecg
 </ol>
 After writing each rule, observe the analysis results on the training and testing sets. 
-How accurate are your rules?
+How accurate are your rules? How do they differ on the positive and negative examples?
+Which examples do you think are more important to classify correctly, positive or 
+negative examples, and why?
 <p>
 <h3>Step 5</h3>
-DISCUSS OVERFITTING AND RULE DESCRIPTION LENGTH
+You should notice above that you can get very high accuracy on the training set and still
+have low accuracy on the testing set. In fact, you could write a rule individually for each example
+in the training set to get 100%, but this would have very low generalization. This is known
+as <a href="https://en.wikipedia.org/wiki/Overfitting">overfitting</a>.
 <p>
-SET THEM LOOSE TRYING TO GET HIGHEST ACCURACY IN LEAST LINES OF CODE
+A common way to combat overfitting is to recognize that you are also
+trying to minimize the 
+<a href="https://en.wikipedia.org/wiki/Minimum_description_length">description length</a>
+of your rule set, similar to the idea of 
+<a href="https://en.wikipedia.org/wiki/Occam%27s_razor">Occam's razor</a> that the
+simplest explanation is often the best.
+<p>
+As the final piece of this lab, try to find the highest accuracy ruleset on the testing
+set, but limiting yourself by the number of lines of code you write. What is the highest
+accuracy you can achieve with 10 lines of code? How about 20? Feel free to look at the
+whole dataset to try and generate your hypotheses, and record your solutions in your writeup.
 <p>
 <h3>What To Hand In</h3>
 Hand in your files on <a href="http://moodle.hendrix.edu">Moodle</a>.  
-Write up your four if-elif-else statements from step 1 in a file 
+Write up your code in a file 
 called <code>analysis.py</code>. Write the results of 
-each test example in step 2 with each if-elif-else statement above into 
+each step above in 
 an evaluation document.
 <p>
 
