@@ -50,13 +50,13 @@ for line in data:
         heart_disease = False
 
     ##################################
-    # TYPE YOUR DECISON CODE HERE
+    # BEGIN PREDICTION CODE
     ##################################
 
     prediction = True
     
     ##################################
-    # END OF DECISION CODE
+    # END PREDICTION CODE
     ##################################
 
     # Saving the results

@@ -44,46 +44,54 @@ to make generalizations based on data and apply these general rules to new situa
 
 <h3>Step 1</h3>
 Imagine you are tasked by the <a href="http://my.clevelandclinic.org/">Cleveland Clinic</a> to 
-help them train new doctors to diagnose patients with heart disease. They have been
+help them train new doctors to diagnose patients with <a href="https://en.wikipedia.org/wiki/Cardiovascular_disease">heart disease</a>. They have been
 reviewing their <a href="https://archive.ics.uci.edu/ml/datasets/Heart+Disease
 ">past patient histories</a> and started to notice some patterns after narrowing their
 focus to a few key features of each patient. They show you some histograms,
 where the patients with heart disease are labeled red, and those without are labeled blue.
+
 <p>
 <center><img width=700 src="../images/heart-disease-histograms.png"></center>
 <p>
+<p>
 They also give you some more detailed information about these features.
+For example, the "female" attribute can be True or False. False is shown on the left of
+this figure, since the values are sorted alphabetically.
 <ul>
-<li>age: age in years (integer)
-<li>female: true if female patient (boolean)
-<li>chest_pain: four types of chest pain were recorded (string)
+<li><b>age</b>: age in years (<i>int</i>)
+<li><b>female</b>: true if female patient (<i>bool</i>)
+<li><b>chest_pain</b>: four types of chest pain were recorded (<i>string</i>)
 	<ul>
- 		<li>typical angina
- 		<li>atypical angina
- 		<li>non-anginal pain
- 		<li>asymptomatic
+ 		<li><code>asymptomatic</code>
+ 		<li><code>atypical angina</code>
+ 		<li><code>non-anginal pain</code>
+ 		<li><code>typical angina</code>
  	</ul>
-<li>rest_bps: resting blood pressure in mm Hg on admission to the 
-        hospital (integer)
-<li>cholesterol: serum cholesterol in mg/dl (integer)
-<li>high_fasting_blood_sugar: true if  > 120 mg/dl (boolean)
-<li>rest_ecg: resting electrocardiographic results (string)
+<li><b>rest_bps</b>: resting blood pressure in mm Hg on admission to the 
+        hospital (<i>int</i>)
+<li><b>cholesterol</b>: serum cholesterol in mg/dl (<i>int</i>)
+<li><b>high_fasting_blood_sugar</b>: true if  > 120 mg/dl (<i>bool</i>)
+<li><b>rest_ecg</b>: resting electrocardiographic results (<i>string</i>)
 	<ul>
- 		<li>normal
- 		<li>wave abnormality
- 		<li>hypertrophy
+ 		<li><code>hypertrophy</code>
+ 		<li><code>normal</code>
+ 		<li><code>wave abnormality</code>
  	</ul>
-<li>maximum_heart_rate: maximum heart rate achieved (integer)
-<li>exercise_angina: exercise induced angina (boolean)
-<li>vessels: number of major vessels (0-3) colored by flourosopy (integer)
-<li>heart_disease: diagnosis of heart disease.
+<li><b>maximum_heart_rate</b>: maximum heart rate achieved (<i>int</i>)
+<li><b>exercise_angina</b>: exercise induced angina (<i>bool</i>)
+<li><b>vessels</b>: number of major vessels (0-3) colored by flourosopy (<i>integer</i>)
+<li><b>heart_disease</b>: doctor's diagnosis of heart disease (<i>bool</i>)
 </ul>
 
 The final piece of data, heart_disease, is what they would like to summarize based on 
 the other 10 features.
 <p>
-They present you with the following ten example patients 
-above, listing off their features. They would like a way to make decisions about newly admitted patients which is 
+What conclusions can you draw about the data from the histograms above? Write at least three
+hypothesis or inferences to summarize these charts, and record them in a Lab Evaluation document.
+<h3>Step 2</h3>
+<p>
+They next present you with the following ten example patients, 
+listing off their features. They would like a way to make decisions about newly admitted patients which is 
 based on the information above, and simple enough for someone to remember the rule.
 
 <div align="center">
@@ -91,36 +99,72 @@ based on the information above, and simple enough for someone to remember the ru
 <p>
 <table border=1 cellpadding=3>
 <tr><th>age</th><th>female</th><th>chest_pain</th><th>rest_bps</th><th>cholesterol</th><th>high_fasting_blood_sugar</th><th>rest_ecg</th><th>maximum_heart_rate</th><th>exercise_angina</th><th>vessels</th><th>heart_disease</th></tr>
-<tr><td>63</td><td>False</td><td>typical angina</td><td>145</td><td>233</td><td>True</td><td>hypertrophy</td><td>150</td><td>False</td><td>0</td><td>False</td></tr>
-<tr><td>67</td><td>False</td><td>asymptomatic</td><td>160</td><td>286</td><td>False</td><td>hypertrophy</td><td>108</td><td>True</td><td>3</td><td>True</td></tr>
-<tr><td>67</td><td>False</td><td>asymptomatic</td><td>120</td><td>229</td><td>False</td><td>hypertrophy</td><td>129</td><td>True</td><td>2</td><td>True</td></tr>
-<tr><td>37</td><td>False</td><td>non-anginal pain</td><td>130</td><td>250</td><td>False</td><td>normal</td><td>187</td><td>False</td><td>0</td><td>False</td></tr>
-<tr><td>41</td><td>True</td><td>atypical angina</td><td>130</td><td>204</td><td>False</td><td>hypertrophy</td><td>172</td><td>False</td><td>0</td><td>False</td></tr>
-<tr><td>56</td><td>False</td><td>atypical angina</td><td>120</td><td>236</td><td>False</td><td>normal</td><td>178</td><td>False</td><td>0</td><td>False</td></tr>
-<tr><td>62</td><td>True</td><td>asymptomatic</td><td>140</td><td>268</td><td>False</td><td>hypertrophy</td><td>160</td><td>False</td><td>2</td><td>True</td></tr>
-<tr><td>57</td><td>True</td><td>asymptomatic</td><td>120</td><td>354</td><td>False</td><td>normal</td><td>163</td><td>True</td><td>0</td><td>False</td></tr>
-<tr><td>63</td><td>False</td><td>asymptomatic</td><td>130</td><td>254</td><td>False</td><td>hypertrophy</td><td>147</td><td>False</td><td>1</td><td>True</td></tr>
-<tr><td>53</td><td>False</td><td>asymptomatic</td><td>140</td><td>203</td><td>True</td><td>hypertrophy</td><td>155</td><td>True</td><td>0</td><td>True</td></tr>
+<tr bgcolor="#DDDDFF"><td>63</td><td>False</td><td>typical angina</td><td>145</td><td>233</td><td>True</td><td>hypertrophy</td><td>150</td><td>False</td><td>0</td><td>False</td></tr>
+<tr bgcolor="#FFDDDD"><td>67</td><td>False</td><td>asymptomatic</td><td>160</td><td>286</td><td>False</td><td>hypertrophy</td><td>108</td><td>True</td><td>3</td><td>True</td></tr>
+<tr bgcolor="#FFDDDD"><td>67</td><td>False</td><td>asymptomatic</td><td>120</td><td>229</td><td>False</td><td>hypertrophy</td><td>129</td><td>True</td><td>2</td><td>True</td></tr>
+<tr bgcolor="#DDDDFF"><td>37</td><td>False</td><td>non-anginal pain</td><td>130</td><td>250</td><td>False</td><td>normal</td><td>187</td><td>False</td><td>0</td><td>False</td></tr>
+<tr bgcolor="#DDDDFF"><td>41</td><td>True</td><td>atypical angina</td><td>130</td><td>204</td><td>False</td><td>hypertrophy</td><td>172</td><td>False</td><td>0</td><td>False</td></tr>
+<tr bgcolor="#DDDDFF"><td>56</td><td>False</td><td>atypical angina</td><td>120</td><td>236</td><td>False</td><td>normal</td><td>178</td><td>False</td><td>0</td><td>False</td></tr>
+<tr bgcolor="#FFDDDD"><td>62</td><td>True</td><td>asymptomatic</td><td>140</td><td>268</td><td>False</td><td>hypertrophy</td><td>160</td><td>False</td><td>2</td><td>True</td></tr>
+<tr bgcolor="#DDDDFF"><td>57</td><td>True</td><td>asymptomatic</td><td>120</td><td>354</td><td>False</td><td>normal</td><td>163</td><td>True</td><td>0</td><td>False</td></tr>
+<tr bgcolor="#FFDDDD"><td>63</td><td>False</td><td>asymptomatic</td><td>130</td><td>254</td><td>False</td><td>hypertrophy</td><td>147</td><td>False</td><td>1</td><td>True</td></tr>
+<tr bgcolor="#FFDDDD"><td>53</td><td>False</td><td>asymptomatic</td><td>140</td><td>203</td><td>True</td><td>hypertrophy</td><td>155</td><td>True</td><td>0</td><td>True</td></tr>
 </table>
 </div>
 <p>
 
-
 We will be adding our logical rules to a file called
-<code>analysis.py</code>. Using what you know about <code>if-elif-else</code> statements, 
-edit this python program where directed to classify a given patient.
-
-
-<ol>
-<li>THREE SUBSETS TO ANALYZE
-</ol>
-Observe the analysis results on the training set given above. How accurate is your rule?
-
+<code>analysis.py</code>. This program will ask the user for a data file, and then try
+predict if each patient in the file has heart disease. The results will display the 
+percent accuracy of these predictions. In addition, it will break down the predictions
+into four categories:
+<ul>
+<li>True Positives - These patients have heart disease and were predicted correctly
+<li>False Positives - These patients do <b>not</b> have heart disease and were predicted <b>incorrectly</b>
+<li>True Negatives - These patients do <b>not</b> have heart disease and were predicted correctly
+<li>False Negatives - These patients have heart disease and were predicted <b>incorrectly</b>
+</ul>
 <p>
-<h3>Step 2</h3>
-We now wish to evaluate how your program will work on unseen data.
-Test your edited <code>analysis.py</code> program with the testing data.  
+Find the section labeled BEGIN PREDICTION CODE.
+Notice that there is one line in this section, which
+will predict that every patient will have heart disease.
+<p>
+Run this code with the training data given (saved in <code>cleveland-training.csv</code>). 
+What is the accuracy? Also run this code with the testing data given (saved in <code>cleveland-testing.csv</code>).
 
+<h3>Step 3</h3>
+We will now use what you know about <code>if-elif-else</code> statements to
+edit this python program and better classify a given patient.
+<p>
+Think back to the hypothesis and conclusions you drew from the histograms above. Are
+there ways to state these as a collection of logical statement? For example, if we 
+wish to explore the hypothesis that females do not get heart disease while males do, we would write
+<p>
+<pre>
+if female:
+    prediction = False
+else:
+    prediction = True
+</pre>
+<p>
+Run the analysis code with this rule, and record the accuracy on the training and testing set.
+<h3> Step 4</h3>
+While this is an improvement over the default answer, we can do better. Write
+three separate attempts at a rule, looking at the training data given above, and 
+in each case limiting yourself to only use
+a few features shown here.
+<ol>
+<li>age and female
+<li>maximum_heart_rate and chest_pain
+<li>vessels, exercise_angina, and rest_ecg
+</ol>
+After writing each rule, observe the analysis results on the training and testing sets. 
+How accurate are your rules?
+<p>
+<h3>Step 5</h3>
+DISCUSS OVERFITTING AND RULE DESCRIPTION LENGTH
+<p>
+SET THEM LOOSE TRYING TO GET HIGHEST ACCURACY IN LEAST LINES OF CODE
 <p>
 <h3>What To Hand In</h3>
 Hand in your files on <a href="http://moodle.hendrix.edu">Moodle</a>.  
