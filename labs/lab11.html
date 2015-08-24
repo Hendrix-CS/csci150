@@ -12,11 +12,12 @@
   mathematics, instantiable classes, and bone-chilling terror. ;) Always
   a famous puzzle in the Artifical Intelligence circles, the WaterJug 
   problem recently came to popular culture through the classic action
-  movie <A HREF="http://us.imdb.com/Title?Die+Hard%3A+With+a+Vengeance+(1995)">Die Hard III</A>.  In Die Hard III, a mad bomber is chasing Bruce Willis
+  movie <A HREF="http://us.imdb.com/Title?Die+Hard%3A+With+a+Vengeance+(1995)">Die Hard III</A>.  
+  In Die Hard III, a mad bomber is chasing Bruce Willis
   and Samuel L. Jackson.  They must solve different puzzles or else
   things will explode and people will die.  
 
-  <H3>Design</H3>
+  <H3>Example</H3>
   <p>
   The WaterJug puzzle can be explained as follows:<br> 
   You have two jugs, A and B, and an infinite supply of water. There are 
@@ -43,9 +44,9 @@
   <p>
   We now have exactly 2 gallons of water jug A.  (Try it!).  Phew, we're
   still alive!  Wouldn't it be nice to have a computer program to help us
-  solve this?  We can do that using Python, by simulating the physical world
-  using mathematical calculations inside Objects called WaterJugs.  Now let's 
-  design the general WaterJug class.
+  solve this? 
+   
+  <h2>Design</h2>
   <p>
   Each WaterJug will need to have two components that we can think of as the state 
   of that WaterJug.
@@ -65,110 +66,15 @@
   <code>empty( )</code> to completely empty the WaterJug<br>
   <code>pour( other )</code> to pour as much of the contents of this WaterJug into the other as are allowed<br>
   </UL><p>
-  
-  <H3>Components and Constructors</H3>
-  REVISE TO BE THE STUDENTS IMPLEMENTING THIS PART
+  Implement this object in Python. Don't forget where to use the <code>self</code> keyword.
+  Be careful with your methods, and also with your constructor, 
+  to make sure a malicious programmer cannot violate the integrity of your class. 
   <p>
-  To create a class in Python, we begin with a new keyword <code>class</code>.
-  <p><PRE>
-  class WaterJug():
-  </PRE>
-  <p>
-  Our constructor sets up the components of the object, so it can be used
-  later.  In general, we bring in a parameter for each component and assign them
-  to a piece of a special variable called <code>self</code> using dot notation.
-  <p>
-  But we must be careful with our methods, and also with our constructors, 
-  to make sure we don't violate the integrity of our class.  In our
-  constructor method, 
-  there could be serious problems when we're not careful.  If we
-  write the following constructor:
-  <p><PRE>
-     def __init__(self, cap, cont):
-        self.capacity = cap
-        self.contents = cont
-  </PRE><p>
-  We've opened ourselves up to a problem.  A malicious user 
-  could call <CODE>george = WaterJug(7, 23)</CODE> , and 
-  we have a physically impossible WaterJug.  We can avoid creating
-  invalid WaterJug objects by raising an exception.
-  <p><PRE>
-     def __init__(self, cap, cont):
-        if cap < 0 or cont < 0 or cap < cont:
-           raise NameError("Invalid parameters for WaterJug")
-        self.capacity = cap
-        self.contents = cont
-  </PRE><p>This exception can then be caught by whomever is using this class. These are 
-  things you need to watch for as a programmer.  Be defensive. 
-  <H3>The <code>__str__</code> method</H3>
-  <p>
-  The next common method you will see in an instantiable object is the <code>__str__</code>
-  method.  If we try to print a WaterJug without this method, we will only see
-  <code>
-  <__main__.WaterJug instance at 0x90e7b0>
-  </code>
-  <p>
-  To get a better notion of the contents of this WaterJug, we can write the following method
-  <p>
-  <PRE>
-     def __str__(self):
-        return "(" + str(self.capacity) + "," + str(self.contents) + ")"
-  </PRE>
-  <p>
-  Now, when we print a WaterJug, the output is <code>(4,3)</code> for a WaterJug with capacity 4 and contents 3.
-  <p>
-  <H3>The fill method</H3>
-  Let's work on the "fill" method next.  We want to take a variable amount of 
-  water, changing the contents inside of the WaterJug, and return any overflow
-  of water that will not fit.  First, we somehow must update the contents,
-  and this can be achieved by the line 
-  <p><PRE>
-     def fill(self, amount):
-        self.contents += amount
-        return 0
-  </PRE><p>
-  This works fine when <CODE>amount + self.contents <= self.capacity</CODE>.  However, it
-  fails if <CODE>amount + self.contents > self.capacity</CODE>.  So we must do more.  
-  <p><PRE>
-     def fill(self, amount):
-        self.contents += amount
-        if self.contents >= self.capacity:
-           overflow = self.contents - self.capacity
-           self.contents -= overflow
-           return overflow
-        else:
-           return 0
-  </PRE><p>
-  Wonderful, now we take care of the overflow when more is added than 
-  possible for this WaterJug to hold.
-
-  <H3>The empty method</H3>
-  For our empty method, we want to erase the contents from a WaterJug 
-  and return the contents.  Now this can be a little tricky too, and
-  and illustrates a basic idea in computer science, the <b>swap</b>.  
-  We can't simply <CODE>return self.contents</CODE> as our method body, 
-  since this misses the point of emptying a WaterJug, namely that the 
-  contents go to zero.  Also, we cannot use the following code:
-  <p><PRE>
-     def empty(self):
-        self.contents = 0
-        return self.contents
-  </PRE><p>
-  We want to place a zero in contents and get back the value, but this code
-  squashes the value of contents first.  All we will ever return is zero.
-  So we must do more.  We need a temporary place to put the value
-  of contents so that it is not squashed by our method, so we can swap 
-  zero and the value of contents.  This temporary value can then be returned,
-  and our method succeeds.
-  <p><PRE>
-     def empty(self):
-        temp = self.contents
-        self.contents = 0
-        return temp
-  </PRE><p>
+  Write a small main method to test that your WaterJug object works according to
+  the description above.
 
   <h2>Puzzle Implementation</h2>
-  For this lab, you will implement a main function that allows the user to set up and then 
+  Finally, implement a main function that allows the user to set up and then 
   solve a WaterJugs puzzle.  Your function should:
   <UL>
   <li>Ask the user the capacity of the first WaterJug
@@ -183,6 +89,10 @@
   </ul>
   <li>When the goal is met, print the solution path found by the user to reach the goal
   </ul>
+ <p>
+ Make sure you are consistent in the way that you tell the user to select an option.
+ Whatever they type in, your code must be robust enough to handle and prompt them 
+ again when they make input errors.
  <p>
 You never know when a Python class
   could save your life.  And remember, "Think fast, Look alive, 
