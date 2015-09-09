@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>CSCI 150 - Lab 3 - Diagnosing Heart Disease</title>
-  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
 </head>
 
 <body>
@@ -22,8 +22,8 @@ we investigate some pieces of "intelligence," using our ability to divide object
 
 <h2>Description</h2>
 <img class="entryimageright" src="../images/heart.jpg">While the formal system of Boolean logic was developed by
-<a href="http://en.wikipedia.org/wiki/George_Boole">George Boole</a>, 
-the study of logic has roots as far back as Ancient Greece and 
+<a href="http://en.wikipedia.org/wiki/George_Boole">George Boole</a>,
+the study of logic has roots as far back as Ancient Greece and
 <a href="http://en.wikipedia.org/wiki/Aristotle">Aristotle</a> and his foundational work on
 <a href="http://en.wikipedia.org/wiki/Syllogism">Syllogisms</a>.  Our ability to reason
 logically and rationally is often cited as a primary indicator of our intelligence, not only on an
@@ -32,18 +32,18 @@ actions and behaviors from other organisms. Today we will spend
 our first lab understanding the basics of intelligence.
 <p>
 <a href="http://www.alanturing.net/turing_archive/pages/Reference%20Articles/What%20is%20AI.html#Int">
-Artificial Intelligence</a> (AI) is a field within computer science with the goal of recreating, through 
-the user of a computer, the 
-intelligence we see in human behavior. The goal of AI has yet to be achieved on a broad sense,
+Artificial Intelligence</a> (AI) is a field within computer science with the goal of recreating, through
+the use of a computer, the
+intelligence we see in human behavior. The goal of AI has yet to be achieved in a broad sense,
 but much progress has been made in the fields of logic and categorization.  We tackled
-<a href="http://en.wikipedia.org/wiki/Deductive_reasoning">deductive reasoning</a> 
-with <a href="https://en.wikipedia.org/wiki/Logic_puzzle">logic puzzles</a>, 
+<a href="http://en.wikipedia.org/wiki/Deductive_reasoning">deductive reasoning</a>
+with <a href="https://en.wikipedia.org/wiki/Logic_puzzle">logic puzzles</a>,
 deducing a conclusion of what must be true from the facts presented to us.  Today we'll focus on
 <a href="http://en.wikipedia.org/wiki/Inductive_reasoning">inductive logic</a>: our ability
 to make generalizations based on data and apply these general rules to new situations.
 
 <h3>Step 1</h3>
-Imagine you are tasked by the <a href="http://my.clevelandclinic.org/">Cleveland Clinic</a> to 
+Imagine you are tasked by the <a href="http://my.clevelandclinic.org/">Cleveland Clinic</a> to
 help them train new doctors to diagnose patients with <a href="https://en.wikipedia.org/wiki/Cardiovascular_disease">heart disease</a>. They have been
 reviewing their <a href="https://archive.ics.uci.edu/ml/datasets/Heart+Disease
 ">past patient histories</a> and started to notice some patterns after narrowing their
@@ -67,7 +67,7 @@ this figure, since the values are sorted alphabetically.
  		<li><code>non-anginal pain</code>
  		<li><code>typical angina</code>
  	</ul>
-<li><b>rest_bps</b>: resting blood pressure in mm Hg on admission to the 
+<li><b>rest_bps</b>: resting blood pressure in mm Hg on admission to the
         hospital (<i>int</i>)
 <li><b>cholesterol</b>: serum cholesterol in mg/dl (<i>int</i>)
 <li><b>high_fasting_blood_sugar</b>: true if  > 120 mg/dl (<i>bool</i>)
@@ -83,17 +83,17 @@ this figure, since the values are sorted alphabetically.
 <li><b>heart_disease</b>: doctor's diagnosis of heart disease (<i>bool</i>)
 </ul>
 
-The final piece of data, heart_disease, is what they would like to summarize based on 
+The final piece of data, heart_disease, is what they would like to summarize based on
 the other 10 features.
 <p>
 What conclusions can you draw about the data from the histograms above? Write at least three
 hypothesis or inferences to summarize these charts, and record them in a Lab Evaluation document.
 <h3>Step 2</h3>
 <p>
-They next present you with the following ten example patients, 
-listing off their features. They would like a way to make decisions about newly admitted patients which is 
-based on this table, and simple enough for someone to remember the rule. They are 
-hoping that the rules you generate on these ten patients will generalize to their whole 
+They next present you with the following ten example patients,
+listing off their features. They would like a way to make decisions about newly admitted patients which is
+based on this table, and simple enough for someone to remember the rule. They are
+hoping that the rules you generate on these ten patients will generalize to their whole
 dataset of over 300 patients.
 
 <div align="center">
@@ -117,7 +117,7 @@ dataset of over 300 patients.
 
 We will be adding our logical rules to a file called
 <code>analysis.py</code>. This program will ask the user for a data file, and then try
-predict if each patient in the file has heart disease. The results will display the 
+predict if each patient in the file has heart disease. The results will display the
 percent accuracy of these predictions. In addition, it will break down the predictions
 into four categories:
 <ul>
@@ -131,7 +131,7 @@ Find the section labeled BEGIN PREDICTION CODE.
 Notice that there is one line in this section, which
 will predict that every patient will have heart disease.
 <p>
-Run this code with the training data given (saved in <code>cleveland-training.csv</code>). 
+Run this code with the training data given (saved in <code>cleveland-training.csv</code>).
 What is the accuracy? Also run this code with the testing data given (saved in <code>cleveland-testing.csv</code>).
 
 <h3>Step 3</h3>
@@ -139,7 +139,7 @@ We will now use what you know about <code>if-elif-else</code> statements to
 edit this python program and better classify a given patient.
 <p>
 Think back to the hypothesis and conclusions you drew from the histograms above. Are
-there ways to state these as a collection of logical statement? For example, if we 
+there ways to state these as a collection of logical statements? For example, if we
 wish to explore the hypothesis that females do not get heart disease while males do, we would write
 <p>
 <pre>
@@ -152,7 +152,7 @@ else:
 Run the analysis code with this rule, and record the accuracy on the training and testing set.
 <h3> Step 4</h3>
 While this is an improvement over the default answer, we can do better. Write
-three separate attempts at a rule, looking at the training data given above, and 
+three separate attempts at a rule, looking at the training data given above, and
 in each case limiting yourself to only use
 a few features shown here.
 <ol>
@@ -160,9 +160,9 @@ a few features shown here.
 <li>maximum_heart_rate and chest_pain
 <li>vessels, exercise_angina, and rest_ecg
 </ol>
-After writing each rule, observe the analysis results on the training and testing sets. 
+After writing each rule, observe the analysis results on the training and testing sets.
 How accurate are your rules? How do they differ on the positive and negative examples?
-Which examples do you think are more important to classify correctly, positive or 
+Which examples do you think are more important to classify correctly, positive or
 negative examples, and why?
 <p>
 <h3>Step 5</h3>
@@ -172,9 +172,9 @@ in the training set to get 100%, but this would have very low generalization. Th
 as <a href="https://en.wikipedia.org/wiki/Overfitting">overfitting</a>.
 <p>
 A common way to combat overfitting is to recognize that you are also
-trying to minimize the 
+trying to minimize the
 <a href="https://en.wikipedia.org/wiki/Minimum_description_length">description length</a>
-of your rule set, similar to the idea of 
+of your rule set, similar to the idea of
 <a href="https://en.wikipedia.org/wiki/Occam%27s_razor">Occam's razor</a> that the
 simplest explanation is often the best.
 <p>
@@ -184,10 +184,10 @@ accuracy you can achieve with 10 lines of code? How about 20? Feel free to look 
 whole dataset to try and generate your hypotheses, and record your solutions in your writeup.
 <p>
 <h3>What To Hand In</h3>
-Hand in your files on <a href="http://moodle.hendrix.edu">Moodle</a>.  
-Write up your code in a file 
-called <code>analysis.py</code>. Write the results of 
-each step above in 
+Hand in your files on <a href="http://moodle.hendrix.edu">Moodle</a>.
+Write up your code in a file
+called <code>analysis.py</code>. Write the results of
+each step above in
 an evaluation document.
 <p>
 
