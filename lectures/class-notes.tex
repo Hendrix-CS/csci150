@@ -154,4 +154,50 @@ everyone log in \& try it out.
 \item Wander around and make sure everyone can do it.
 \end{itemize}
 
+\section{XXX}
+
+\section{XXX}
+
+\section{XXX}
+
+\section{Conditionals (Wednesday, 9 September)}
+
+Review prior week material. Everyone should know how to type python
+code now.
+
+\textbf{Quiz 2}
+
+We saw Boolean values {\tt True} and {\tt False}, in the puzzles, with
+operators {\tt and}, {\tt or}, {\tt not} last time.  How else can we get
+Booleans?
+
+\textbf{Comparison operators}: \verb|>|, \verb|<|, \verb|>=|,
+\verb|<=|, \verb|!=|, \verb|==|.  Demonstrate on numbers, strings, all
+generate Booleans.
+
+Now, the computer has a basis to make decisions.  Sets up branches in
+the code, execute this or that.
+
+\begin{verbatim}
+passwd = input("What is the password? ")
+if (passwd == "lemur"):
+    print "Here be secrets."
+\end{verbatim}
+
+Tabbing is important!  Colon is important!
+
+Introduce random module. ({\tt from random import *})
+\begin{itemize}
+\item {\tt random()} is number in $[0,1)$. Uniform.
+\item {\tt randint(n)} is random integer between $0$ and $n$
+  (inclusive).  (Aside: how can we write this in terms of {\tt
+    random()}?)
+\end{itemize}
+Do coin flip.  Conditionally do... something.  Needs to include
+\begin{itemize}
+\item {\tt else}
+\item {\tt elif}
+\item nested {\tt if}  (flip two coins in a row)
+\end{itemize}
+
 \end{document}
