@@ -217,6 +217,7 @@ Do coin flip.  Conditionally do... something.  Needs to include
 \item NB: exam 1 a week from today.  In class, closed notes, closed
   computer.  Covers material through today and Monday.  Wednesday will
   be exam review.
+\item Collect any remaining logic puzzle HW!
 \end{itemize}
 
 \subsection*{Ada Lovelace}
@@ -224,14 +225,14 @@ Do coin flip.  Conditionally do... something.  Needs to include
 How many of you have heard of Ada Lovelace?  How about Charles
 Babbage?
 
-Ada Lovelace: 1815-1852, first programmer.  Wrote programs for Charles
-Babbage's Analytical Engine (never built, but definitely works in
-principle).  Babbage's purpose for the AE was limited to making tables
-of numbers, but Lovelace had a much more expansive and far-seeing
-vision:
+Ada Lovelace: 1815 (December 10!)--1852, first programmer.  Wrote
+programs for Charles Babbage's Analytical Engine (never built, but
+definitely works in principle).  Babbage's purpose for the AE was
+limited to making tables of numbers, but Lovelace had a much more
+expansive and far-seeing vision:
 
 \begin{quote}
-[The Analytical Engine] might act upon other things besides number,
+``[The Analytical Engine] might act upon other things besides number,
 were objects found whose mutual fundamental relations could be
 expressed by those of the abstract science of operations, and which
 should be also susceptible of adaptations to the action of the
@@ -241,13 +242,13 @@ Supposing, for instance, that the fundamental relations of pitched
 sounds in the science of harmony and of musical composition were
 susceptible of such expression and adaptations, the engine might
 compose elaborate and scientific pieces of music of any degree of
-complexity or extent.
+complexity or extent.''
 \end{quote}
 
 She saw potential for computers to operate on many kinds of
-information instead of just making tables of numbers (what Babbage
-wanted to do).  Over the next 2 classes we will consider some of the
-fundamentals that make this possible.
+information instead of just making tables of numbers.  Over the next 2
+classes we will consider some of the fundamentals that make this
+possible.
 
 \subsection*{Binary}
 
@@ -262,8 +263,14 @@ the same but
 \item We use $2$ digits $(0,1)$ instead of $10$.  Called \emph{bits} =
   \emph{bi}nary dig\emph{its}.
 \end{itemize}
+Computers do everything in binary since (1) it is no less expressive
+than e.g. decimal and (2) from a physical point of view, it is easier
+to design hardware that can distinguish two different states
+(e.g. high and low voltage) than 10.
+
 Converting base $2$ to base $10$: have them do some
-examples. e.g. $10110100_2 = ?$
+examples. e.g. $10110100_2 = ?$  Then do one example together on the
+board, \[ 10110100_2 = 1 \times 2^7 + 1 \times 2^5 + \dots \]
 
 Note 1 \emph{byte} = 8 bits.  Incidentally, one \emph{kilobyte} is not
 $1000$ bytes, but actually $2^{10} = 1024$ bytes!  Megabyte is
@@ -278,12 +285,39 @@ Questions for students (pair \& share etc):
 \item How many bits are required to count up to $n$?
 \end{enumerate}
 
+Algorithm for converting from $n$ in base $10$ to binary:
+\begin{itemize}
+\item Find largest power of two $\leq n$, say, $2^k$.
+\item As long as $n > 0$:
+  \begin{itemize}
+  \item If $2^k \leq n$, subtract $2^k$ from $n$ and write a $1$
+    (in the $2^k$ place). Else, write a $0$.
+  \item Decrease $k$ by $1$.
+  \end{itemize}
+\end{itemize}
+
+(This has all five usual aspects of algorithms: input, output, math,
+conditionals, repetition.  We can't quite write this algorithm in
+Python yet because we don't know how to do repetition.  Soon!)  Do an
+example, e.g. $103_{10}$.
+
 \subsection*{Representing integers}
 
-Integers are represented like this inside the computer.  Most modern
-computers use $64$ bits to represent an integer (\emph{how big is
-  that?}). What about negative numbers?  One possibility: use one bit
-for sign (plus or minus).  (Turns out there is a better way, ``$2$'s
+Integers are represented like this inside the computer.  Show entering
+binary numbers directly into Python using \verb|0b10110| notation.
+
+Most modern computers use $64$ bits to represent an integer (\emph{how
+  big is that?}); some use $32$. Show Python switching from \verb|int|
+to \verb|long|:
+\begin{itemize}
+\item Some small and very big examples
+\item \verb|2**62|
+\item \verb|2**63|
+\item Apply \verb|type| to each of the above.
+\end{itemize}
+
+What about negative numbers?  One possibility: use one bit for sign
+(plus or minus).  (Turns out there is a better way, ``$2$'s
 complement''; learn about it in CSO or ask if you are curious.)
 
 \subsection*{Representing floating-point numbers}
@@ -352,6 +386,9 @@ Note, we can group the binary digits into 4s.  $16 = 2^4$.  So each 4
 bits corresponds to 1 hexadecimal digit.  Conversion back and forth is
 super easy.  We often use hexadecimal as a more convenient way to read
 and write binary.  Easier for humans to read and remember.
+
+Show entering hexadecimal directly into Python using \verb|0xace|
+notation.
 
 Show example of RGB colors expressed in hexadecimal: show
 \verb|style.css| from course website.
