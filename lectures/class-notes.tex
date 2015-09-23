@@ -502,6 +502,79 @@ expressions for arguments.
 Variables created inside functions are local!  Parameters are also
 local. Note that \verb|F| and \verb|temp_C| are not defined afterwards.
 
+\section*{Functions II (Wednesday, 23 Sep)}
+
+\subsection*{Setup/administrivia}
+\begin{itemize}
+\item Music:
+\item Send me your exam grades!
+\item Does anyone know all their classmates' names?
+\end{itemize}
+
+\subsection*{Quiz: arguments \& parameters}
+
+\subsection*{Fruitful functions}
+
+Recall function from last time:
+\begin{verbatim}
+def C_to_F(temp_C):
+    F = C * 9.0 / 5.0 + 32
+    print "The temperature in degrees Fahrenheit is ", F
+\end{verbatim}
+This function is actually really awkward.  Takes \verb|temp_C| as a
+parameter, but then \emph{prints} the result.  What if we want to
+compute this but not print anything?  Make each function do ONE job.
+Better:
+\begin{verbatim}
+def C_to_F(temp_C):
+    F = C * 9.0 / 5.0 + 32
+    return F
+\end{verbatim}
+Book calls it a \emph{fruitful function}.  (As a mathematician I would
+just call it a \emph{function}\dots) Note we could also get rid of the
+\verb|F| and just return the whole expression; matter of
+taste/experience.
+
+\verb|return| means ``stop execution of the function right now and
+return this value''.  What will this do?
+
+\begin{verbatim}
+def C_to_F(temp_C):
+    F = C * 9.0 / 5.0 + 32
+    return F
+    print "The temperature is", F
+\end{verbatim}
+
+OK to have multiple return statements.  Let's try a function to tell
+us about the temperature (\emph{do something like this, students can
+  come up with details}):
+\begin{verbatim}
+def F_to_qualitative(temp_F):
+    if F < 32:
+        return "freezing"
+    elif F < 50:
+        return "cold"
+    elif F < 75:
+        return "warm"
+    elif F < 90:
+        return "hot"
+    else:
+        return "scorching"
+\end{verbatim}
+
+Functions can take multiple parameters.
+
+\begin{verbatim}
+def is_divisible(x, y):
+    if (x % y == 0):
+        return True
+    else:
+        return False
+\end{verbatim}
+
+Try some examples.  Note this is actually written in a redundant way.  We
+can just return \verb|x % y == 0| directly.
+
 \subsection*{Flow of execution \& stack diagrams}
 
 Execution starts at the first line of a program and continues.  But
@@ -515,22 +588,13 @@ old books, with bookmarks, in a pile.  When done, pick up the next
 book from the top of the pile and continue.
 
 Do an example. Write a function that calls \verb|C_to_F| on several
-temperatures.  Then write another function which does that twice.
-Then trace execution.  Introduce an error and see the ``traceback''.
-Draw a stack diagram with local variables.
-
-\section*{Functions II (Wednesday, 23 Sep)}
-\begin{itemize}
-\item Quiz on arguments vs parameter
-\item Fruitful functions --- see Chapter 6.
-\item return statements.
-\item Nested function calls
-\item Mention recursion =)
-\end{itemize}
+temperatures.  Then write another function which does that twice, and
+so on.  Then trace execution.  Introduce an error and see the
+``traceback''.  Draw a stack diagram with local variables.
 
 \section*{While loops (Friday, 25 Sep)}
 \begin{itemize}
-\item while loops
+\item While loops
 \item Guess My Number (human guesses)
 \item HW: computer guesses
 \end{itemize}
