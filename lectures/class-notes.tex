@@ -635,9 +635,143 @@ make another function to get valid int input from user in a loop.
 
 \textbf{Homework} (due Monday): write version where computer guesses!
 
-\section*{Monday}
+\section*{Strings (Monday, September 28)}
 
-\url{http://www.qwantz.com/index.php?comic=2883}
+\subsection*{Setup}
+\begin{itemize}
+\item Music: Giant Steps
+\item Classmates' names?  New rules: MOST by end of semester
+\item Show dinosaur comic: \url{http://www.qwantz.com/index.php?comic=2883}
+\end{itemize}
+
+\subsection*{Guess My Number review}
+
+Open code from last time.  Talk about modifying it for other version.
+
+Remember:
+\begin{itemize}
+\item Variables are local!
+\item No recursion, just loops.  Talk about recursion later.
+\end{itemize}
+
+\subsection*{Strings}
+
+We sort of know about strings, but the only thing we can do with them
+so far is concatenate them with \verb|+|.
+
+\begin{itemize}
+\item Strings are \emph{sequences of characters}.
+
+\item We can reference individual characters in a string by their
+  \emph{index}: \verb|mystring[3]|.  Note that \emph{indices start at 0}.
+
+\item We can calculate the length of a string with \verb|len()|.
+  (Relationship of \verb|len| to valid indices?)
+
+\item String slices: \verb|mystr[a:b]|.  Have students play around to
+  figure out details?
+  \begin{itemize}
+  \item Characters starting at index $a$, up to \emph{but not
+      including} index $b$.
+  \item Can leave off first, or second, or both.
+  \item Negative indices count backwards from the end.
+  \end{itemize}
+
+\item We've seen \verb|+|: concatenation.
+\item \verb|*| does repetition.
+
+\item Strings have \emph{methods}, i.e. functions you can call on
+  strings.  Do \verb|help(str)|, \verb|help(str.upper)| etc.
+\item Show some useful meethods: \verb|upper|, \verb|count|,
+  \verb|replace|, \verb|find|, \verb|isdigit|
+\end{itemize}
+
+\subsection{More while loop \& function practice}
+
+First, function to ``explode'' a string.  Write it collaboratively.
+
+\begin{verbatim}
+def explode(s):
+    i = 0
+    while i < len(s):
+        print s[i]
+        i += 1
+\end{verbatim}
+
+Even better if they make some bugs in the above, run it and see what
+is wrong.
+
+\section*{While loop \& string practice (Wednesday, Sep 30)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Music:
+\item Show next dinosaur comic
+\item Classmate names record to beat: 7 (Mason)
+\item Lab today/tomorrow.  Not easy!  Please take the pre-coding
+  design component seriously.
+\end{itemize}
+
+\subsection*{More while loop practice}
+
+Start using docstrings.  From now on they should always write them for
+their functions.  Show them that we can type \verb|help(int_input)| at
+a prompt.
+\begin{verbatim}
+def int_input(prompt):
+    """Repeatedly prompt the user for a number using the
+    given prompt, until they enter a valid integer.
+    """
+    valid = False
+    while (not valid):
+        uinput = raw_input(prompt)
+        if uinput.isdigit():
+            valid = True
+        else:
+            print "That's not a valid integer"
+    return int(uinput)
+\end{verbatim}
+
+\begin{verbatim}
+import time
+def countdown(n):
+    """Count down from n to zero."""
+    while n > 0:
+        print str(n) + "..."
+        time.sleep(1)
+        n = n - 1
+    print "BLASTOFF!"
+\end{verbatim}
+
+Talk about \verb|n -= 1| syntax (``decrement'') and \verb|n += 1|
+(``increment'').  Can also use \verb|*=|, \verb|/=| etc.
+
+Collatz Conjecture.  Idea: write a program to test the conjecture.
+What functions will we need?  Bottom-up approach.  Write each function
+and then test it independently.  (Use docstrings.)
+\begin{verbatim}
+def hailstone(n):
+    if n % 2 == 0:
+        return (n/2)
+    else:
+        return (3*n + 1)
+
+def collatz(n):
+    count = 0
+    while n != 1:
+        n = hailstone(n)
+        count += 1
+    return count
+
+def check_collatz_up_to(max):
+    n = 1
+    while n <= max:
+        print n, collatz(n)
+        n += 1
+\end{verbatim}
+
+(What happens if we take out \verb|max| check and just say
+\verb|while true|?  A legitimate use of an infinite loop!)
 
 \end{document}
 
