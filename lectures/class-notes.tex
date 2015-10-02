@@ -773,22 +773,107 @@ def check_collatz_up_to(max):
 (What happens if we take out \verb|max| check and just say
 \verb|while true|?  A legitimate use of an infinite loop!)
 
+\newpage
 \section*{Lists I (Friday, 2 Oct)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Music:
+\item Music: Melody of Rhythm
 \item Open Quiz 5 form
-\item Hand back HW \& Quiz
+\item Hand back HW \& quiz
+\item Distribute binary cards.  Learn the name of 0-bit pairing.
 \end{itemize}
 
 \subsection*{Quiz 5 (Strings)}
 
 \subsection*{Lab (Doublets) review/hints}
 
+1-bit pairing with binary cards and discuss lab.  Questions?
+
 \subsection*{Lists}
 
+Lists are a lot like strings, but hold arbitrary data instead of
+characters.
+\begin{itemize}
+\item \verb|[]| is the empty list, like \verb|""| is the empty string
+\item Can hold numbers, strings, anything you want.  Show
+  \verb|[1,2,3]| syntax.  Show \verb|type| on lists.
+\item Elements are ordered, in a sequence.  Indexed from zero.
+\item Show \verb|range| function.
+\item \verb|+|, \verb|*|, \verb|len()|, slices all work the same
+\end{itemize}
+
+\subsection*{Mutating lists}
+
+Strings are \emph{immutable}, lists are \emph{mutable}.
+
+\begin{verbatim}
+animals = ['cat', 'dog', 'bird']
+animals[1] = 'lemur'
+print animals
+\end{verbatim}
+Draw a stack diagram of the above situation.
+
+Other list mutation methods:
+\begin{itemize}
+\item \verb|t.append(element)| for adding to end
+\item Removal:
+  \begin{itemize}
+  \item \verb|t.pop(index)| by index, returns deleted elt
+  \item \verb|t.remove(element)| by element
+  \item \verb|del t[index]| by index, doesn't return anything BUT
+	\verb|del t[slice]| works too
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Lists and strings}
+
+Lists of characters are different than strings.
+
+\begin{itemize}
+\item Converting strings to list:
+  \begin{itemize}
+  \item \verb|list| function.
+  \item \verb|split()| method.
+  \end{itemize}
+\item List to string: \verb|join()| method on delimiter.
+\begin{verbatim}
+	s = “banana”
+	t = s.split(“n”)
+	t is [“ba”, “a”, “a”]
+can join together a list into a string
+	t = [‘fun’, ‘sun’, ‘sub’, ‘rub’]
+	delimiter = “ -> “
+\end{verbatim}
+\end{itemize}
+
+
 \section*{Lists II / For Loops I (Monday, 5 Oct)}
+
+\subsection*{Setup}
+
+\subsection*{Lists and aliasing}
+
+Need to flesh this out!
+\begin{verbatim}
+equality.  Not the same as strings.  Can have same elements, but be different objects in space.
+How do they work in functions?
+	If you change a list inside a function, it changes the value outside the function too. 
+	You’re accessing the same spot in memory.
+def animal_release(animals):
+	while len(animals) > 2:
+		animals.pop(0)
+
+print animals
+animal_release(animals)
+print animals
+
+copying lists
+[:] does the trick
+
+\end{verbatim}
+
+\subsection*{Intro to for loops}
 
 \section*{For Loops II (Wednesday, 7 Oct)}
 
