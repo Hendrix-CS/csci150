@@ -835,7 +835,12 @@ Other list mutation methods:
 \item Music: Roomful of Teeth
 \item Project 1 is graded.  Let us know of any questions.  Let me know
   if you want more feedback.
+\item Hand out bit cards.
 \end{itemize}
+
+\subsection*{Review}
+Find bit-2 partner. \verb|animals| is a list, how to append 3 copies
+of \verb|"gerbil"| onto the end?  Go over possibilities.
 
 \subsection*{Lists and strings}
 
@@ -861,6 +866,16 @@ Yields \verb|["ba", "a", "a"]|.
 \end{itemize}
 
 \subsection*{Mutability, objects, and aliasing}
+
+Warm-up: what happens here?  Find bit-3 partner \& decide.
+\begin{verbatim}
+nums  = [1,2,3]
+nums2 = nums
+del nums[1]
+print nums2
+\end{verbatim}
+
+Try it at IDLE prompt.  This is really weird.
 
 As hinted last time, the fact that lists are mutable opens a huge can
 of worms.  Let's start by pulling back the curtain a little bit.  Up
@@ -924,13 +939,22 @@ print animals
 
 Ask: what gets printed?  Draw stack diagram to understand.
 
-One last thing: what if you really \emph{do} want to make a
-\emph{copy} of a list, so modifying it doesn't modify the original?
-You can write \verb|some_list[:]|.  This is a dirty, terrible,
-disgusting hack.  Perhaps someday you will understand why I feel this
-way.
+Some related things:
+\begin{itemize}
+\item What if you really \emph{do} want to make a \emph{copy} of a
+  list, so modifying it doesn't modify the original?  You can write
+  \verb|some_list[:]|.  This is a dirty, terrible, disgusting hack.
+  Perhaps someday you will understand why I feel this way.
+\item Be careful about methods that modify vs functions that make a
+  new thing.  e.g. \verb|list.sort()| modifies the list.  But
+  \verb|sorted(list)| makes a new list!  And of course
+  \verb|string.upper()| makes a new string because strings are
+  immutable.  Confusing, don't memorize: the point is you should be
+  careful and look up help to see what things do.  Show
+  \verb|help(list.sort)|, \verb|help(sorted)|, \verb|help(str.upper)|.
+\end{itemize}
 
-INSERT RANT ABOUT MUTABILITY HERE
+[INSERT RANT ABOUT MUTATION HERE]
 
 \subsection*{Intro to for loops}
 
