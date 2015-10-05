@@ -828,9 +828,18 @@ Other list mutation methods:
   \end{itemize}
 \end{itemize}
 
+\section*{Lists II / For Loops I (Monday, 5 Oct)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Music: Roomful of Teeth
+\item Project 1 is graded.  Let us know of any questions.  Let me know
+  if you want more feedback.
+\end{itemize}
+
 \subsection*{Lists and strings}
 
-Lists of characters are different than strings.
+Lists of characters are different than strings!
 
 \begin{itemize}
 \item Converting strings to list:
@@ -840,45 +849,149 @@ Lists of characters are different than strings.
   \end{itemize}
 \item List to string: \verb|join()| method on delimiter.
 \begin{verbatim}
-	s = “banana”
-	t = s.split(“n”)
-	t is [“ba”, “a”, “a”]
-can join together a list into a string
-	t = [‘fun’, ‘sun’, ‘sub’, ‘rub’]
-	delimiter = “ -> “
+  s = "banana"
+  t = s.split("n")
+\end{verbatim}
+Yields \verb|["ba", "a", "a"]|.
+\begin{verbatim}
+  t = ['fun', 'sun', 'sub', 'rub']
+  delimiter = " -> "
+  delimiter.join(t)
 \end{verbatim}
 \end{itemize}
 
+\subsection*{Mutability, objects, and aliasing}
 
-\section*{Lists II / For Loops I (Monday, 5 Oct)}
+As hinted last time, the fact that lists are mutable opens a huge can
+of worms.  Let's start by pulling back the curtain a little bit.  Up
+until now we have talked about variables having values, but we need to
+be more precise.  Draw stack diagram with variables referencing two
+different lists.  Write these definitions on the board:
 
-\subsection*{Setup}
+\begin{itemize}
+\item Variables reference \emph{objects} which have a \emph{value}.
+\item Variables which reference objects that have the same value are
+  \emph{equal}.  You can test equality with \verb|==|.
+\item Variables which reference the \emph{same object} are
+  \emph{identical}. You can test identity with \verb|is|.
+\end{itemize}
 
-\subsection*{Lists and aliasing}
-
-Need to flesh this out!
+Do this at the REPL, with accompanying pictures:
 \begin{verbatim}
-equality.  Not the same as strings.  Can have same elements, but be different objects in space.
-How do they work in functions?
-	If you change a list inside a function, it changes the value outside the function too. 
-	You’re accessing the same spot in memory.
+>>> a = [1,2,3]
+>>> b = [1,2,3]
+>>> a == b
+True
+>>> a is b
+False
+>>> del a[0]
+>>> a
+[2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+False
+>>> a = b
+>>> a
+[1, 2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+True
+>>> a is b
+True
+>>> del a[0]
+>>> a
+[2, 3]
+>>> b
+[2, 3]
+\end{verbatim}
+Note in particular that the assignment \verb|a = b| does not copy the
+value of \verb|b| into \verb|a|, but just makes \verb|a|
+\emph{reference the same thing as} \verb|b|.
+
+This has implications for function parameters as well.  Consider:
+
+\begin{verbatim}
 def animal_release(animals):
-	while len(animals) > 2:
-		animals.pop(0)
+  while len(animals) > 2:
+  animals.pop(0)
 
 print animals
 animal_release(animals)
 print animals
-
-copying lists
-[:] does the trick
-
 \end{verbatim}
+
+Ask: what gets printed?  Draw stack diagram to understand.
+
+One last thing: what if you really \emph{do} want to make a
+\emph{copy} of a list, so modifying it doesn't modify the original?
+You can write \verb|some_list[:]|.  This is a dirty, terrible,
+disgusting hack.  Perhaps someday you will understand why I feel this
+way.
+
+INSERT RANT ABOUT MUTABILITY HERE
 
 \subsection*{Intro to for loops}
 
+Recall our \verb|explode| function from a week or two ago:
+\begin{verbatim}
+def explode(s):
+  index = 0
+  while index < len(s):
+    print s[index]
+\end{verbatim}
+Recall how easy it was to make errors like starting index at the wrong
+place, using \verb|<=| instead of \verb|<|, and so on.  Well, it turns
+out there is a better way!
+\begin{verbatim}
+def explode(s):
+  for c in s:
+    print c
+\end{verbatim}
+Simply loops through each character in the string one at a time.  Each
+time through the loop the next character is assigned to \verb|c|.
+This also works for lists:
+\begin{verbatim}
+animals = ["cow", "chicken", "pig", "rabbit"]
+for animal in animals:
+  print "And on this farm he had a " + animal + "!"
+\end{verbatim}
+What do we lose, as compared to a \verb|while| loop?  The index. But
+actually, we don't!  Just have to cleverly put together a few things
+we have already seen:
+\begin{verbatim}
+for i in range(len(numbers)):
+  numbers[i] *= 2
+\end{verbatim}
+This is way better than using a \verb|while| loop since it rules out
+errors putting the starting or ending the indices at the wrong number.
+
 \section*{For Loops II (Wednesday, 7 Oct)}
 
+\subsection*{Setup}
+\begin{itemize}
+\item Music:
+\item Hand out bit-cards.
+\end{itemize}
+
+With bit-partners:
+\begin{itemize}
+\item Function to take list of strings, print each string but with all
+  characters replaced by \verb|*|
+\item Function to find the sum of a list of ints.
+\end{itemize}
+
+With a new bit-partner:
+\begin{itemize}
+\item Function to find the \emph{average} of
+a list of ints.
+\item Function to create list of first \verb|n| powers of 2
+\end{itemize}
+
+\begin{itemize}
+\item Function to compute nth triangular number
+\end{itemize}
 
 \end{document}
 
