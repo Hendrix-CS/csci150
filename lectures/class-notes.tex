@@ -999,6 +999,60 @@ errors putting the starting or ending the indices at the wrong number.
 \item Hand out bit-cards.
 \end{itemize}
 
+Possible functions to write with for loops
+\begin{verbatim}
+def print_each(s):
+    index = 0
+    while index < len(s):
+        c = s[index]
+        print(c)
+        index += 1
+
+
+def print_each_for(s):
+    for c in s:
+        print(c)
+
+def count(s, c):
+    num = 0
+    for c2 in s:
+        if c2 == c:
+            num += 1
+    return num
+
+def find(s, c):
+    for i in range(len(s)):
+        if s[i] == c:
+            return i
+    return -1
+
+def find_all(s, c):
+    all_the_things = []
+    for i in range(len(s)):
+        if s[i] == c:
+            all_the_things.append(i)
+    return all_the_things
+
+def nos(s):
+    news = ""
+    for c in s:
+        if c != "s":
+            news += c
+    return news
+
+def mean(t):
+    total = 0
+    for n in t:
+        total += n
+    return total / len(t)
+
+def vacation(s):
+    for i in range(len(s) - 1):
+        if s[i] == s[i + 1]:
+            return True
+    return False
+\end{verbatim}
+
 With bit-partners:
 \begin{itemize}
 \item Function to take list of strings, print each string but with all
