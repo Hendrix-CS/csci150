@@ -1,26 +1,28 @@
-# Monday, 5 October 2015
-# Lists, mutability & aliasing, for loops
+# CSCI 150 - Lists
+# 2 October, 2015
 
-# Strings are different than lists of characters
+# String is a sequence of characters
+# List is a sequence of whatever you want.
 
-# String -> list of characters:
-#   list() function
-#   string.split(sep)
+# String things that also work on lists:
+#   indexing  ( some_list[3] )
+#   slices    ( some_list[a:b] )
+#   len() function
+#   + function (concatenation)
+#   * function (repetition)
 
-# list -> string:
-#   sep.join(list)
+# Strings are immutable
+# current_word[2] = 'x'  # not allowed!
 
-## What will this print??
-nums = [1,2,3]
-nums2 = nums
-del nums[1]
-print nums2
+# Lists *are* mutable
+#   change an index:  list[i] = new_thing
+#   change a sublist:  list[a:b] = new_list
+#   add to end:  list.append(new_thing)
+#   add to middle: list.insert(index, new_thing)
+#   list.pop(index): delete and return
+#     removed thing
+#   list.remove(thing): delete a thing from
+#     a list, wherever it is
+#   del list[index] or del list[a:b]
 
-def animal_release(zoo):
-    while len(zoo) > 2:
-        zoo.pop(0)
 
-animals = ['kookaburra', 'lion', 'tiger']
-print animals
-animal_release(animals)
-print animals
