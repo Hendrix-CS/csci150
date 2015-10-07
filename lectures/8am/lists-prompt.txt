@@ -1,0 +1,132 @@
+Python 2.7.9 (default, Apr  2 2015, 15:33:21) 
+[GCC 4.9.2] on linux2
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+>>> animals = ['cow', 'horse', 'pig']
+>>> animals.append('gerbil' * 3)
+>>> animals
+['cow', 'horse', 'pig', 'gerbilgerbilgerbil']
+>>> animals = ['cow', 'horse', 'pig']
+>>> animals.append('gerbil') * 3
+
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    animals.append('gerbil') * 3
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+>>> ['x', 'y'] * 3
+['x', 'y', 'x', 'y', 'x', 'y']
+>>> animals
+['cow', 'horse', 'pig', 'gerbil']
+>>> animals = ['cow', 'horse', 'pig']
+>>> animals + 'gerbil'
+
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    animals + 'gerbil'
+TypeError: can only concatenate list (not "str") to list
+>>> animals + ['gerbil', 'gerbil', 'gerbil']
+['cow', 'horse', 'pig', 'gerbil', 'gerbil', 'gerbil']
+>>> animals
+['cow', 'horse', 'pig']
+>>> animals += ['gerbil'] * 3
+>>> animals
+['cow', 'horse', 'pig', 'gerbil', 'gerbil', 'gerbil']
+>>> animals.append(['gerbil'] * 3)
+>>> animals
+['cow', 'horse', 'pig', 'gerbil', 'gerbil', 'gerbil', ['gerbil', 'gerbil', 'gerbil']]
+>>> animals = ['cow']
+>>> animals.extend(['gerbil'] * 3)
+>>> animals
+['cow', 'gerbil', 'gerbil', 'gerbil']
+>>> animals
+['cow', 'gerbil', 'gerbil', 'gerbil']
+>>> animals += ['horse', 'dog', 'aardvark']
+>>> animals.sort()
+>>> animals
+['aardvark', 'cow', 'dog', 'gerbil', 'gerbil', 'gerbil', 'horse']
+>>> help(sort)
+
+Traceback (most recent call last):
+  File "<pyshell#24>", line 1, in <module>
+    help(sort)
+NameError: name 'sort' is not defined
+>>> help(list.sort)
+Help on method_descriptor:
+
+sort(...)
+    L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
+    cmp(x, y) -> -1, 0, 1
+
+>>> animals.sort(reverse = True)
+>>> animals
+['horse', 'gerbil', 'gerbil', 'gerbil', 'dog', 'cow', 'aardvark']
+>>> list("horse")
+['h', 'o', 'r', 's', 'e']
+>>> s = "this is a string"
+>>> s.split(" ")
+['this', 'is', 'a', 'string']
+>>> "banana".split("a")
+['b', 'n', 'n', '']
+>>> "banana".split("an")
+['b', '', 'a']
+>>> 
+>>> 
+>>> 
+>>> 
+>>> " ".join(["This", "is", "a", "list"])
+'This is a list'
+>>> "banana".join(["This", "is", "a", "list"])
+'Thisbananaisbananaabananalist'
+>>> " -> ".join(['fun', 'sun', 'sub', 'rub'])
+'fun -> sun -> sub -> rub'
+>>> ================================ RESTART ================================
+>>> 
+[1, 3]
+>>> a = [1,2,3]
+>>> b = [1,2,3]
+>>> a == b
+True
+>>> a is b
+False
+>>> del a[0]
+>>> a
+[2, 3]
+>>> b
+[1, 2, 3]
+>>> a is b
+False
+>>> a == b
+False
+>>> a = b
+>>> a
+[1, 2, 3]
+>>> a == b
+True
+>>> a is b
+True
+>>> del a[0]
+>>> a
+[2, 3]
+>>> b
+[2, 3]
+>>> a is b
+True
+>>> str1 = 'abc'
+>>> str2 = 'abc'
+>>> str1 is str2
+True
+>>> ================================ RESTART ================================
+>>> 
+[1, 3]
+['kookaburra', 'lion', 'tiger']
+
+Traceback (most recent call last):
+  File "/home/brent/list.py", line 25, in <module>
+    animals_release(animals)
+NameError: name 'animals_release' is not defined
+>>> ================================ RESTART ================================
+>>> 
+[1, 3]
+['kookaburra', 'lion', 'tiger']
+['lion', 'tiger']
+>>> 

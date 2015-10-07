@@ -1,0 +1,133 @@
+Python 2.7.9 (default, Apr  2 2015, 15:33:21) 
+[GCC 4.9.2] on linux2
+Type "copyright", "credits" or "license()" for more information.
+>>> nums1 = [1,2,3]
+>>> nums2 = nums1
+>>> del nums1[0]
+>>> nums1
+[2, 3]
+>>> nums2
+[2, 3]
+>>> nums1 = [1,2,3]
+>>> nums2 = nums1[:]
+>>> nums1
+[1, 2, 3]
+>>> del nums1[0]
+>>> nums1
+[2, 3]
+>>> nums2
+[1, 2, 3]
+>>> nums = [3,7,2,1,8]
+>>> nums.sort()
+>>> nums
+[1, 2, 3, 7, 8]
+>>> nums = [3,7,2,1,8]
+>>> sorted_nums = nums.sort()
+\
+>>> sorted_nums = nums.sort()
+>>> sorted_nums
+>>> sorted_nums[0]
+
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    sorted_nums[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+>>> nums = [3,7,2,1,8]
+>>> sorted(nums)
+[1, 2, 3, 7, 8]
+>>> help(sorted)
+Help on built-in function sorted in module __builtin__:
+
+sorted(...)
+    sorted(iterable, cmp=None, key=None, reverse=False) --> new sorted list
+
+>>> help(list.sort)
+Help on method_descriptor:
+
+sort(...)
+    L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
+    cmp(x, y) -> -1, 0, 1
+
+>>> ================================ RESTART ================================
+>>> 
+>>> explode("master")
+m
+a
+s
+t
+e
+r
+>>> explode_for("master")
+m
+a
+s
+t
+e
+r
+>>> explode_for(["duck", "platypus", "koala"])
+duck
+platypus
+koala
+>>> ================================ RESTART ================================
+>>> 
+>>> double([1,2,3])
+>>> nums = [1,2,3]
+>>> double(nums)
+>>> nums
+[2, 4, 6]
+>>> ================================ RESTART ================================
+>>> 
+>>> nums
+
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    nums
+NameError: name 'nums' is not defined
+>>> nums = [1,2,3]
+>>> double_for(nums)
+>>> nums
+[1, 2, 3]
+>>> ================================ RESTART ================================
+>>> 
+>>> nums = [1,2,3]
+>>> double(nums)
+>>> nums
+[2, 4, 6]
+>>> nums = [1,2,3]
+>>> double_for(nums)
+
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    double_for(nums)
+  File "/home/brent/teaching/150/class/for-loops.py", line 44, in double_for
+    nums[n] *= 2
+IndexError: list index out of range
+>>> range(6)
+[0, 1, 2, 3, 4, 5]
+>>> ================================ RESTART ================================
+>>> 
+>>> nums = [19,4,7]
+>>> double_for2(nums)
+>>> nums
+[38, 8, 14]
+>>> ================================ RESTART ================================
+>>> 
+>>> double_string("cat")
+'ccaatt'
+>>> help(str.count)
+Help on method_descriptor:
+
+count(...)
+    S.count(sub[, start[, end]]) -> int
+    
+    Return the number of non-overlapping occurrences of substring sub in
+    string S[start:end].  Optional arguments start and end are interpreted
+    as in slice notation.
+
+>>> "banana".count('a')
+3
+>>> ================================ RESTART ================================
+>>> 
+>>> count('banana','n')
+2
+>>> 
