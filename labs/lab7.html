@@ -63,41 +63,62 @@ arrows in reverse.
 <img src="../images/320px-Caesar3.svg.png">
 </div>
 <p>
-Open a new python program called <code>caesar.py</code>. In this file, you will 
-first write two functions for encryption and decryption of strings.  
+Open a new python program called <code>caesar.py</code>. In this file,
+you will first write two functions for encryption and decryption of
+strings.
 <p>
-<code>encrypt(plain_text, rot)</code> will take a string and an integer rotation between 
-0 and 25, (where 1 means A -> B, 2 means A -> C, etc) and return the rotated string.
+<code>encrypt(plain_text, rot)</code> will take a string and an
+integer rotation between 0 and 25, (where 1 means A -> B, 2 means A ->
+C, etc) and return the rotated string.
 <p>
-<code>decrypt(cipher_text, rot)</code> will also take a string and an integer rotation
-between 0 and 25 signifying the number of rotations backwards (where 1 means B -> A, 
-2 mean C -> A, etc), and return the reverse-rotated string.
+<code>decrypt(cipher_text, rot)</code> will also take a string and an
+integer rotation between 0 and 25 signifying the number of rotations
+backwards (where 1 means B -> A, 2 mean C -> A, etc), and return the
+reverse-rotated string.
 <p>
-You can test your functions using string="GREEN" and rot=13; your answer should be "TERRA".  Also,
-any string encrypted with rot should decrypt back with the same rot, such that
+You can test your functions using string="GREEN" and rot=13; your
+answer should be "TERRA".  Also, any string encrypted with rot should
+decrypt back with the same rot, such that
 <p>
 <pre>decrypt(encrypt("TESTING", i), i)
 </pre>
 <p>
 should return "TESTING" for all feasible values of i.
 
+Some notes:
+<ul>
+  <li>You may assume that the input strings only contain uppercase
+    letters, and no lowercase letters.</li>
+  <li>Remember that the functions <code>ord</code>
+    and <code>chr</code> can be used to convert characters to and from
+    their numeric ASCII code.
+  <li>Any characters which are not letters (punctuation, space, etc.)
+    should be unchanged by <code>encrypt</code>
+    and <code>decrypt</code>.  For example, <code>encrypt("HI,
+    THERE!", 13)<code> should yield <code>"URYYB, GURER!"</code>.
+</ul>
+
 <h3>Step 2</h3>
-When faced with an encrypted text, we will not know what rotation was used for the encryption.
-But since there are only 26 possible alignments (actually 25 since we know that our text is 
-encrypted), we can iterate through them all in a reasonable amount of time.
+When faced with an encrypted text, we will not know
+what rotation was used for the encryption.  But since there are only
+26 possible alignments (actually 25 since we know that our text is
+encrypted), we can iterate through them all in a reasonable amount of
+time.
 <p>
-Write a brute force function <code>brute_decrypt(string)</code> to print out all possible
-Caesar rotations for a given string.  Use this function to decrypt the following lines 
-of poetry (note: all four lines are encrypted with the same rotation).
+Write a brute force function <code>brute_decrypt(string)</code> to
+print out all possible Caesar rotations for a given string.  Use this
+function to decrypt the following lines of poetry (note: all four
+lines are encrypted with the same rotation).
 <p>
 <pre>
 WZDV EULOOLJ DQG WKH VOLWKB WRYHV
-GLG JBUH DQG JLPEOH LQ WKH ZDEH 
-DOO PLPVB ZHUH WKH ERURJRYHV 
+GLG JBUH DQG JLPEOH LQ WKH ZDEH
+DOO PLPVB ZHUH WKH ERURJRYHV
 DQG WKH PRPH UDWKV RXWJUDEH
 </pre>
 <p>
-Record the correct decryption and the rotation which was used in a Lab Evaluation.
+Record the correct decryption and the rotation which was used in a Lab
+Evaluation.
 
 <h3>Step 3</h3>
 The above brute-force method requires there to be a human to examine each of the 
@@ -140,41 +161,55 @@ Chi-square statistic</a>, shown below.
 <img src="http://upload.wikimedia.org/math/5/4/6/5468d5913b7b4c1cb7eb6034f658bfed.png">
 </div>
 <p>
-Given two frequency distributions (O for Observed, E for Expected), 
-the Chi-square statistic will tell us how good of a fit 
-there is between these two distributions.  Every observed frequency is compared to the expected
-frequency and squared, then divided by the expected frequency.  These are summed
-to return the Chi-square statistic.
+Given two frequency distributions (O for Observed, E for Expected),
+the Chi-square statistic will tell us how good of a fit there is
+between these two distributions.  Every observed frequency is compared
+to the expected frequency and squared, then divided by the expected
+frequency.  These are summed to return the Chi-square statistic.
 <p>
-For our purposes, we do not need to compare this
-statistic to a table to see the probability of the match, we only need to find the rotation
-that produces the minimum Chi-square statistic (note that a perfect match will result in 
-a statistic of 0, and any differences will result in a positive increase).
+For our purposes, we do not need to compare this statistic to a table
+to see the probability of the match, we only need to find the rotation
+that produces the minimum Chi-square statistic (note that a perfect
+match will result in a statistic of 0, and any differences will result
+in a positive increase).
 <p>
-Write a function <code>chi_square(observed_freq, expected_freq)</code> in your 
-<code>caesar.py</code> to return the Chi-square statistic given the two frequency distributions.
-This function should work as long as the two frequency distributions are the same length,
-and also not be dependent on our specific use where the frequencies will be of length 26.
-For example,
+Write a function <code>chi_square(observed_freq, expected_freq)</code>
+in your
+<code>caesar.py</code> to return the Chi-square statistic given the
+two frequency distributions.  This function should work as long as the
+two frequency distributions are the same length, and also not be
+dependent on our specific use where the frequencies will be of length
+26.  For example,
 <p>
 <pre>
 chi_square([0.3, 0.1, 0.6], [0.1, 0.2, 0.7])
 </pre>
 <p>
-should return 0.46428571428571419.
+should return <code>0.4642857142857142</code>.
 
 <h3>Step 5</h3>
 Using your functions from the previous steps, write a new function
-<code>auto_decrypt(s, base_text)</code> which takes an encrypted string and 
-the file name of a base reference text.
-Your function will calculate the character frequencies for the encrypted string
-and the reference text, then iteratively calculate the Chi-square statistic for 
-each possible reverse rotation.
-Your function should print out the most likely rotation (minimum Chi-square statistic) 
-and decrypted message 
-along with the chi-squared statistic for that rotation.
+<code>auto_decrypt(s, base_text)</code> which takes an encrypted
+string and the file name of a base reference text.  Your function will
+calculate the character frequencies for the encrypted string and the
+reference text, then iteratively calculate the Chi-square statistic
+for each possible reverse rotation.  Your function should print out
+the most likely rotation (minimum Chi-square statistic) and decrypted
+message along with the chi-squared statistic for that rotation.
 <p>
-Use <a href="../code/alice-chapter-one.txt">Chapter 1 of Alice's Adventures In Wonderland</a> as
+Note: to read in the contents of a file as a string, you can write
+something like the following:
+<p><pre>
+f = open(file_name)
+file_contents = f.read()
+f.close()   # polite but not really necessary
+</pre></p>
+If <code>file_name</code> is a <code>string</code> containing the name
+of a file (for example, <code>"alice-chapter-one.txt"</code>), then
+after running the above code, <code>file_contents</code> will be a
+string containing the entire contents of the file.
+<p>
+Use <a href="../data/alice-chapter-one.txt">Chapter 1 of Alice's Adventures In Wonderland</a> as
 the base text to decrypt the three messages below.
 <p>
 <pre>
@@ -182,10 +217,10 @@ V SBE BAR JRYPBZR BHE ARJ VAFRPG BIREYBEQF XRAG OEBPXZNA
 
 P DVBSK YHAOLY IL MPYZA PU H ZTHSS CPSSHNL PU NHBS AOHU ZLJVUK PU JVTTHUK PU YVTL QBSPBZ JHLZHY
 
-NDIXZ DI OCZ GJIB MPI ZQZMT KGVIZOVMT XDQDGDUVODJI RDGG WZ ZIYVIBZMZY WT DHKVXON AMJH NKVXZ 
-ZQZMT NPMQDQDIB XDQDGDUVODJI DN JWGDBZY OJ WZXJHZ NKVXZAVMDIB IJO WZXVPNZ JA ZSKGJMVOJMT JM 
-MJHVIODX UZVG WPO AJM OCZ HJNO KMVXODXVG MZVNJI DHVBDIVWGZ NOVTDIB VGDQZ DA JPM GJIB-OZMH 
-NPMQDQVG DN VO NOVFZ RZ CVQZ V WVNDX MZNKJINDWDGDOT OJ JPM NKZXDZN OJ QZIOPMZ OJ JOCZM RJMGYN 
+NDIXZ DI OCZ GJIB MPI ZQZMT KGVIZOVMT XDQDGDUVODJI RDGG WZ ZIYVIBZMZY WT DHKVXON AMJH NKVXZ
+ZQZMT NPMQDQDIB XDQDGDUVODJI DN JWGDBZY OJ WZXJHZ NKVXZAVMDIB IJO WZXVPNZ JA ZSKGJMVOJMT JM
+MJHVIODX UZVG WPO AJM OCZ HJNO KMVXODXVG MZVNJI DHVBDIVWGZ NOVTDIB VGDQZ DA JPM GJIB-OZMH
+NPMQDQVG DN VO NOVFZ RZ CVQZ V WVNDX MZNKJINDWDGDOT OJ JPM NKZXDZN OJ QZIOPMZ OJ JOCZM RJMGYN
 XVMG NVBVI
 </pre>
 <p>
