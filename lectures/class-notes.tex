@@ -1078,5 +1078,41 @@ def triangle(n):
     return total
 \end{verbatim}
 
+\section*{For loop practice (Friday, 9 Oct)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Music: Waltz for Debby
+\item Pass out binary cards
+\end{itemize}
+
+\subsection*{For loops: reading exercises}
+
+CLOSE COMPUTERS.
+Find bit-partners. Different one for each exercise.
+Go over each and try it.
+
+\begin{verbatim}
+def oogie(m):
+    p = m[0]
+    for g in m:
+        if g > p:
+            p = g
+    return p
+
+def yayaya(q):
+    for y in range(len(q) - 1):
+        if q[y] == q[y + 1]:
+            return True
+    return False
+
+def pulu(r):
+    b = []
+    for k in range(r):
+        b.append(k ** 3)
+    return b
+\end{verbatim}
+
+
 \end{document}
 
