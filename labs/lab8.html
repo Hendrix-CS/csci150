@@ -19,55 +19,79 @@ into the mathematics of fractals and how some of their properties can be describ
 </ul>
 
 <h2>Description</h2>
-We will be using the Turtle module in python for our fractals today, like
-<a href="http://en.wikipedia.org/wiki/Sierpinski_triangle">Sierpinski's Triangle</a>,
-<a href="http://en.wikipedia.org/wiki/Koch_snowflake">Koch Snowflake</a>, and the
+Today we will be using Python's <code>Turtle</code> module to draw fractals such as
+<a href="http://en.wikipedia.org/wiki/Sierpinski_triangle">Sierpinski's
+Triangle</a>,
+the <a href="http://en.wikipedia.org/wiki/Koch_snowflake">Koch
+Snowflake</a>, and the
 <a href="http://en.wikipedia.org/wiki/Dragon_curve">Dragon Curve</a>.
 <p>
-To access the Turtle module
-and define a turtle, we use the following lines of code:
+To access the <code>Turtle</code> module and define a turtle, you
+can use the following lines of code:
 <p>
 <pre>
 import turtle
 t = turtle.Turtle()
 </pre>
 <p>
-With our turtle t, we can make this turtle navigate around the screen, similar to our
-programming with <a href="lab2.html">Scratch</a>.
+By calling methods on the variable <code>t</code>, we can make the
+turtle navigate around the screen and draw lines, similar to our
+programming with <a href="lab2.html">Scratch</a>.  (If you want to
+know why it is called a "turtle", you can read
+about <a href="https://en.wikipedia.org/wiki/Turtle_(robot)">turtles</a>
+and <a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a>
+and <a href="https://en.wikipedia.org/wiki/Seymour_Papert">Seymour Papert</a>.)
 <p>
-Some commands for the turtle are:
+Some turtle commands you might find useful:
 <ul>
-<li>movement around the screen: <code>t.forward(n)</code>, <code>t.back(n)</code> will move the
-turtle <code>n</code> pixels in the current direction, <code>t.goto(x, y)</code> will go to a
-particular location on the screen.
-<li>changing direction: <code>t.right(d)</code>, <code>t.left(d)</code> will turn the turtle left or right
-by <code>d</code> degrees.
+<li>movement around the screen: <code>t.forward(n)</code>
+and <code>t.back(n)</code> will move the turtle forward or
+backwards <code>n</code> pixels in the current
+direction. <code>t.goto(x, y)</code> will go to a particular location
+on the screen.
+<li>changing
+direction: <code>t.right(d)</code>, <code>t.left(d)</code> will turn
+the turtle left or right by <code>d</code> degrees.
 <li>draw a dot on the screen of a certain size: <code>t.dot(size)</code>
 <li>put the pen down or pick the pen up: <code>t.penup(),
     t.pendown()</code>
 <li>change the turtle's speed: <code>t.speed(s)</code>, where 1 =
   slowest and 10 = fastest
 </ul>
-<h3>Step 1</h3>
-XXX rewrite this section
+There are lots of other turtle commands, and you are free to use any
+of them you like; see
+the <a href="http://docs.python.org/3.0/library/turtle.html#module-turtle">Turtle
+  module documentation</a>.
 
+<h3>Step 1</h3>
 The first type of fractal we will examine uses a simple rewrite rule.
 The idea is to replace a straight line segment with four smaller line
-segments, each 1/3 the length of the original, as depicted below.
+segments, each 1/3 the length of the original, as shown below.
 
 <p>
 <img src="../images/koch.png">
 <p>
-Now we can repeat, at each level, replacing these four new lines in the
-same manner.  Write a recursive function in a file
-called <code>fractal.py</code> to have the turtle draw this
-replacement, with the base case being to draw a line, and the
-recursive case being to draw these four lines at 1/3 the original
-distance.
-<h3>Step 2</h3>
-Try your recursive coding skills out with a new replacement curve shown here.
+(Note that the angles are 60 and 120 degrees; the green turtle shows
+where the turtle starts and the red turtle shows where it ends.)  If
+we repeat this replacement operation, again replacing each of the four
+line segments, we obtain something like this:
 <p>
-ADD DOTS TO THESE IMAGES, SHOW START AND END POINT AND ANGLE OF THE TURTLE
+  <img src="../images/koch-iter2.png">
+<p>
+Continuing to repeat this process yields an ever more detailed
+"snowflake" curve.  For example, here is the result after iterating 4 times:
+<p>
+  <img src="../images/koch-iter4.png">
+<p>
+  In a file called <code>fractal.py</code>, write a recursive function
+<code>koch(n, size)</code> which draws an order-<code>n</code> Koch
+curve, that is, the result of iterating this process <code>n</code>
+times.  In the base case (when <code>n == 0</code>), simply
+draw a line of length <code>size</code>; in the recursive case, draw
+four smaller copies of an order-(<code>n - 1</code>) Koch curve,
+arranged as shown in the replacement rule above.
+<h3>Step 2</h3>
+Try your recursive coding skills out with the replacement curve shown below.
 <p>
 <a href="http://en.wikipedia.org/wiki/File:Quadratic_Koch_2.png">Koch 2</a>
 <p>
@@ -78,15 +102,27 @@ Create functions for the following transformations:
 <p>
 <a href="http://en.wikipedia.org/wiki/File:Quadratic_Koch.png">Koch 3</a>
 <p>
-<img src="../images/koch3.png">
+  <img src="../images/koch3.png">
+<p>
+Note that in the middle of the above replacement pattern there is a
+  long vertical segment. This can either be replaced by a single
+  half-sized copy, or by two quarter-sized copies.  These different
+  methods yield different (but related) fractals.  Use whichever one
+  you like better!
 <p>
 <a href="http://en.wikipedia.org/wiki/File:Levy_C_construction.png">C-curve</a>
 <p>
-<img src="../images/c-curve.png">
+  <img src="../images/c-curve.png">
+<p>
+Note the direction the turtle is facing at the beginning and end of
+  the replacement above!
 <p>
 <h3>Step 4</h3>
-These next two are a little different. They each require two functions for
-replacement instead of just one above.
+These next two are a little different. They each <b>require two functions</b> for
+replacement instead of just one above.  The first function is
+indicated by blue lines, and the second function by orange lines.  (The
+color simply distinguishes the functions; you do not need to draw
+colored lines.)
 <p>
 <a href="http://en.wikipedia.org/wiki/File:Dragon_curve_iterations_(2).svg">Dragon Curve</a>
 <p>
@@ -96,11 +132,13 @@ replacement instead of just one above.
 <p>
 <img src="../images/sierpinski.png">
 <p>
+This one is a bit strange since the turtle ends up facing in a
+different direction after the replacement.  Just go with it!
 <h3>Step 5</h3>
 Create your own replacement rule for your personal
 fractal, and write code to draw this new fractal.
 <h2>What to Hand In</h2>
-Log in to Moodle and handin your code.  Make sure
+Log in to Moodle and turn in your code.  Make sure
 you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
 have run your project through the Automated Style Checker.<p>
 You must hand in:
