@@ -1121,9 +1121,120 @@ def pulu(r):
 
 \section*{Exam wrap-up, demo project (Monday, 19 Oct)}
 
+\subsection{Exam wrap-up}
+
+Hand back exams; quickly go over exam solutions.
+
+\subsection{Demo project}
+
+Introduce Project 2 (word games).
+
+Livecode the beginning of an exemplary Doublets lab.  Things to focus
+on:
+\begin{itemize}
+\item Start with \verb|main|.  Hierarchical decomposition; write stub
+  functions.
+\item Think about what information each function needs to do its job,
+  and what information it returns.
+\item Write \verb|get_starting_word| function.
+\item Start writing \verb|get_ending_word| function, realize that they
+  are going to have a lot of similar code.
+\item Abstract common part out into a new function, \verb|get_word|,
+  that takes a parameter describing the desired word.
+\item Stub out a single round of the game, then talk about adding a
+  while loop.
+\end{itemize}
+
 \section*{Recursion I: intro (Wednesday, 21 Oct)}
 
+\subsection*{Setup}
+\begin{itemize}
+\item Write stone-counting rules somewhere (see below)?
+\end{itemize}
+
+\subsection*{Stone counting}
+
+Rules:
+\begin{enumerate}
+\item You may not look inside the bowl.
+\item You may only touch one stone.
+\item If someone gives you the bowl and asks you how many stones it
+  contains, you must eventually give the bowl back and answer
+  truthfully.
+\item You may give the bowl to someone else and ask them how many
+  stones it contains.
+\end{enumerate}
+Hand the bowl to a student and ask how many stones it contains.
+
+Recursion!  Functions that call themselves.  In a sense you were all
+``the same function'' because you were running the same program
+(rules).
+
+Factorial function: $n! = 1 \times 2 \times \dots \times (n-1) \times
+n$.  Let's implement in Python.
+\begin{verbatim}
+def fact(n):
+    product = 1
+    for k in range(1,n+1):
+        product *= k
+    return product
+\end{verbatim}
+Now consider $n! = (1 \times 2 \times \dots \times (n-1)) \times n =
+(n-1)! \times n$.  Also need to define $0! = 1$.  Can we translate
+this directly into Python?
+\begin{verbatim}
+def fact_rec(n):
+    if n == 0:
+        return 1
+    else:
+        result = fact_rec(n-1)
+        return result * n
+\end{verbatim}
+It works!
+
+Show call stack.  Every recursive call has its own copy of local
+variables!
+
+Big idea: transform a problem into a slightly simpler version, solve
+that simpler problem, do a bit of work to compute an answer to the
+original problem.
+
+Typically:
+\begin{itemize}
+\item Base case(s): simple case where we know the answer without doing
+  any work.  Always do this first!
+\item Recursive case(s): make a recursive call to solve a slightly
+  simpler (i.e. closer to the base case) problem.
+\end{itemize}
+
+Another example: Fibonacci function.  Show mathematical definition,
+implement in Python.  Show how slow it is, show call tree.  In fact
+recursion is not always the best way to do things.
+
+If time, brief intro to Python turtle library and Kock snowflake (in
+preparation for fractal lab).
+
 \section*{Recursion II: recursive functions (Fri, 23 Oct)}
+
+Start by reinforcing ``base case + recursive case''.  Talk about
+``leap of faith'': trust that recursive calls will work without
+thinking about how.  Trust your future self.
+
+Re-code factorial function live, adding a bunch of comments and
+narrating thought process.
+
+Up until now all the examples we've done have been math functions.
+Let's do a few more ``computer-sciency'' examples processing strings
+and lists.  Note, in Python this is not the best way to implement
+these functions (though in some languages it is).  Just for
+illustration purposes.  If you take 151 you will start to see real,
+legitimate uses of recursion, e.g. processing trees.
+
+\begin{itemize}
+\item Do example together: list sum.
+\item Have them work in pairs to implement string \verb|reverse|.
+\item Have them work in (different) pairs to implement \verb|is_palindrome|.
+\end{itemize}
 
 \section*{File I/O, dictionaries (intro) (Mon, 26 Oct)}
 
