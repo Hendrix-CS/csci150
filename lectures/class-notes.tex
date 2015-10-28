@@ -1238,6 +1238,55 @@ legitimate uses of recursion, e.g. processing trees.
 
 \section*{File I/O, dictionaries (intro) (Mon, 26 Oct)}
 
+Our programs have no state between each time they are called.
+Everything is stored in memory during the program, but afterwords,
+it’s all gone.  This is RAM.  We need hard drive storage to keep it
+around.  Save and read things in files.
+
+To write to a file:
+
+\begin{verbatim}
+fout = open("myfile.txt", "w")
+\end{verbatim}
+
+then to save data in the file, write out as strings
+
+\begin{verbatim}
+fout.write("hello\n")
+fout.write("world\n")
+fout.close()
+\end{verbatim}
+Note the newline characters.
+
+To read from a file:
+
+\begin{verbatim}
+fin = open("myfile.txt", "r")
+\end{verbatim}
+
+Two ways to get stuff out of the file.
+
+\begin{verbatim}
+s = fin.read()
+\end{verbatim}
+
+which returns a string that includes all the carriage returns, or
+
+\begin{verbatim}
+s = ""
+for line in fin.readlines():
+    s += line.strip()
+\end{verbatim}
+
+which strips them out of each line as it is added. \verb|readlines()|
+returns a list of strings.
+
+After both, say \verb|fin.close()| to finish accessing the file.
+
+Then do basic intro to dictionaries?  Next time, need to figure out
+some kind of activity to get them used to the idea.  Covering
+technical details does not take 1.5 lectures.
+
 \newpage
 
 \section*{Dictionaries (Wed, 28 Oct)}
