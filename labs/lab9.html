@@ -30,7 +30,7 @@ known as <a href="http://en.wikipedia.org/wiki/Pseudoword">pseudowords</a> or
 by <a href="http://en.wikipedia.org/wiki/Lewis_Carroll">Lewis Carroll</a>, using three
 probabilistic models of word creation that become progressively more accurate.
 
-<h2>Naive Design</h2>
+<h2>Step 1: Naive Design</h2>
 <p>As a first approach, we can start by selecting
 characters from the alphabet uniformly at random.  However, we will
 randomly choose the lengths of our nonsense words according to the
@@ -57,7 +57,7 @@ example, if words of length 4 comprised 17% of the word list, your
 function should return 4 on average 17% of the time.  Be sure that
 your function only returns keys which are actually in the dictionary!
 For example, <code>proportional_choice({ 3 : 0.5, 6 : 0.5 })</code>
-should return 3 half the time on average and 6 the other half of the
+should return 3 half the time (on average) and 6 the other half of the
 time.
 <p>
 Finally, write a function called <code>nonsense</code> that takes as a
@@ -65,12 +65,16 @@ parameter a count of how many words to generate. It should first
 calculate the word length frequency dictionary
 using <code>word_lengths</code>.  Then, for each word, randomly select
 a length using <code>proportional_choice</code>, and uniformly select
-random characters for this word.  Finally, it should return a string
-with the generated words, separated by spaces.  For
+random characters for this word (<i>hint</i>: use
+the <code>random.choice(...)</code> function to choose an element of a
+list or string uniformly at random).  Finally, it should return a
+string with the generated words, separated by spaces.  For
 example, <code>nonsense(5)</code> might return <code>'gcennufgr
-    wmpclprgv nfsmlms bhilnqtugxz sbutwswctyk'</code>.
+wmpclprgv nfsmlms bhilnqtugxz sbutwswctyk'</code>. (<i>Hint</i>: to
+turn a list of words into a space-separated string, use <code>"
+".join(words)</code>.)
 
-<h2>Letter Frequency</h2>
+<h2>Step 2: Letter Frequency</h2>
 
 The words generated naively above are not really pseudowords because
 they tend to be unpronounceable. Our second approach will be to change
@@ -82,64 +86,186 @@ dictionary with letters as keys and letter frequency counts as values.
 <p>
 <center><img width=600 src="../images/English-slf.png"></center>
 <p>
-Revise your naive <code>nonsense</code> function above to use the
-proportional probability function twice&mdash;once for length, and
-then once for letters&mdash;to generate the words.  For
-example, <code>nonsense(5)</code> might now
+Make a copy of your <code>nonsense</code> function
+called <code>nonsense2</code>, and modify it to use the proportional
+probability function twice&mdash;once for length, and then once for
+letters&mdash;to generate the words.  For
+example, <code>nonsense2(5)</code> might
 return <code>'ilaregicmsaedlmel sesiyeh irrnsclanr iinstosrrom
 dsilzigcsieiird'</code>.
 
-<h2>Markov Chains</h2>
+<h2>Step 3: Markov Chains</h2>
 
 We are getting closer to pronounceability, but to really make the
 right kind of words, we need to care about the arrangement of the
 letters along with their frequency. For example, the letter T is much
-more likely to be followed by an H than by a Z. To do this, we create
-a
-<a href="http://en.wikipedia.org/wiki/Markov_chain">Markov chain</a> to generate the next letter in a
-sequence based on the previous letters.
+more likely to be followed by an H than by a Z. To take this into
+account, we can create a
+<a href="http://en.wikipedia.org/wiki/Markov_chain">Markov chain</a>
+to generate the next letter in a sequence with probabilities
+determined by the previous letters.
+
 <p>
-<center><img width=400 src="../images/26vertex.png"></center>
+Consider the string <code>'abracadabra\n'</code>. (For reasons that
+will become clear later, we include a newline character at the end of
+the word.)  In this string, the letter <code>'b'</code> is always
+followed by the letter <code>'r'</code>, the
+letters <code>'r'</code>, <code>'c'</code>, and <code>'d'</code> are
+always followed by <code>'a'</code>, and <code>'a'</code> is followed
+2/5 of the time by <code>'b'</code>, and 1/5 of the time each
+by <code>'c'</code>, <code>'d'</code>, and <code>'\n'</code>. We can
+represent this information with the following picture:
+
+<p><center><img src="Markov-graph.png" /></center>
+
 <p>
-We start with a Markov chain of order 1. The order of the Markov chain
-is how many of these previous letters to use. This generates the graph
-above, where each letter is connected to every other letter, including
-itself, and the edges are the probability of choosing the connected
-letter next. If we also include "\n" as a possible character, our
-words will naturally terminate.
+This is called a <i>Markov chain of order 1</i>. For each letter,
+it specifies the frequencies of the letters that come after it.
+In Python, we can represent this Markov chain using a dictionary.  The
+keys of the dictionary are letters.  The value associated with each
+letter is another dictionary representing the frequency counts of
+letters that follow the original letter.  For example, the Markov
+chain above would be represented like this:
+
+<p>
+<center>
+  <img src="markov.png" style="padding-right: 50px" />
+  <img width=400 src="../images/YO-DAWG.jpg">
+</center>
+
+<p>Or, using Python syntax, <code>{'a': {'\n': 0.2, 'c': 0.2, 'b': 0.4, 'd': 0.2}, 'r': {'a': 1.0}, 'b': {'r': 1.0}, 'c': {'a': 1.0}, 'd': {'a': 1.0}}</code>.
+
+<p>
+In general, an <i>order-n Markov chain</i> records the probability of
+what letter comes next after not just a single letter, but after any
+particular combination of <i>n</i> letters.  For example, consider the
+list of words <code>['HIPY\n', 'PAPY\n', 'BTHUTHDTH\n', 'THUTHDA\n',
+    'BTHUTHDY\n']</code>.  An <i>order-2</i> Markov chain for this
+collection of words could be represented in Python like this:
+
+<pre>
+{ 'DY': {'\n': 1.0}
+, 'IP': {'Y': 1.0}
+, 'PY': {'\n': 1.0}
+, 'HU': {'T': 1.0}
+, 'BT': {'H': 1.0}
+, 'AP': {'Y': 1.0}
+, 'PA': {'P': 1.0}
+, 'HI': {'P': 1.0}
+, 'TH': {'\n': 0.14285714285714285, 'U': 0.42857142857142855, 'D': 0.42857142857142855}
+, 'UT': {'H': 1.0}
+, 'DT': {'H': 1.0}
+, 'DA': {'\n': 1.0}
+, 'HD': {'A': 0.3333333333333333, 'Y': 0.3333333333333333, 'T': 0.3333333333333333}
+}</pre>
+This Markov chain says, for example, that <code>'H'</code> is the
+only letter that comes after the two-letter
+sequence <code>'BT'</code>; and that after <code>'TH'</code> can come
+either <code>'\n'</code>, <code>'U'</code>, or <code>'D'</code>, with
+certain probabilities.
 <p>
 Write a function <code>markov</code> that takes two parameters, a list
 of words and an <code>int</code> value called <code>n</code>
-representing the order.  This function will create a dictionary whose
-keys are strings of <code>n</code> letters, and whose values are more
-dictionaries.  These inner dictionaries are similar to the previous
-letter frequency dictionaries and can be used in the same way to
-generate the next letter. For example, for an order-1 Markov chain XXX
+representing the order.  This function should return a dictionary
+representing an order-n Markov chain, as in the examples above. Assume
+that the words in the input list already end with a <code>'\n'</code>
+character.
 
-Revise your function above to use this dictionary to generate
-words. When you generate a <code>"\n"</code> character, start with the next word.
 <p>
-<center><img width=400 src="../images/YO-DAWG.jpg"></center>
+Once we have a Markov chain, we can use it to generate words as
+follows.  Randomly select one of the keys in the Markov chain to
+start. For example, using the order-2 Markov chain above as an
+example, we might select <code>'TH'</code>. Next,
+use <code>proportional_choice</code> to randomly select a next letter,
+based on the frequency counts associated with the starting string.  In
+this example, we randomly choose
+either <code>'\n'</code>, <code>'U'</code>, or <code>'D'</code>.
+Suppose we choose <code>'U'</code>.  Add this to the end of the string
+being built, so we now have <code>'THU'</code>.  Now take the last n
+characters of this string (in this case, <code>'HU'</code>) and choose
+a letter to follow: in this example the only choice
+is <code>'T'</code>.  Continue in this way until
+encountering <code>'\n'</code> and then stop; for example, we might
+end up generating <code>'THUTHDTHDTHDA'</code>.
+
+<p>
+Write a function <code>markov_gen</code> which takes as input a Markov
+chain and returns a random word generated according to the above
+procedure.
+
+<p>
+Now make a copy of your <code>nonsense2</code> function and call
+it <code>nonsense3</code>. Modify it so that it:
+<ul>
+  <li>takes <code>n</code> as an
+    extra input,</li>
+  <li>creates an order-<code>n</code> Markov chain using the words
+    in <code>english2.txt</code>,</li>
+  <li>generates the requested number
+    of words using <code>markov_gen</code>, and</li>
+  <li>writes the generated words to an output file.</li>
+</ul>
+
 <p>
 Experiment with your function to find the order which creates the best
 nonsense words. What happens when the order is very large?
+<p>
+Pick two of your generated nonsense words and make up definitions for
+them. Include them as a comment in your Python code, in the following
+format:
 
-<h2>Spells</h2>
-As a final task, substitute the English word list with Latin to generate nonsense
-spells, such as "patuscus immoveo" or "stulor oportus."
-<p>
-TRY TO CREATE TEXTS FROM NOVELS
-<p>
-WRITE DEFINITIONS FOR TWO OF YOUR RANDOM WORDS
 <dl>
 <dt>
 <b>arbility (n.)</b>
-<dd>the ability of keeping arguing with other people without making any sense. 
+<dd>the ability of keeping arguing with other people without making any sense.
 </dl>
-<p>
-ADD WHAT TO TURN IN
-<p>
-ADD GRADING SCHEME
+
+<p>If you like, <i>instead of</i> submitting definitions for two
+  pseudo-English words, use <code>latin2.txt</code> instead
+  of <code>english2.txt</code> to generate nonsense "spells" such as
+  "patuscus immoveo" or "stulor oportus".  Pick your two favorite
+  spells and explain what they do.
+
+<h2>Step 4: Generating Random Texts</h2>
+
+COMING SOON
+
+<h2>What to Hand In</h2>
+
+Log in to Moodle and turn in your code.  Make sure you have followed
+the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>  You
+must hand in:
+<ul>
+  <li><code>gibberish.py</code>
+</ul>
+Within <code>gibberish.py</code>, you should include:
+<ul>
+  <li><code>word_lengths</code></li>
+  <li><code>proportional_choice</code></li>
+  <li><code>nonsense</code>
+  <li><code>letter_freqs</code></li>
+  <li><code>nonsense2</code></li>
+  <li><code>markov</code></li>
+  <li><code>markov_gen</code>
+  <li><code>nonsense3</code></li>
+  <li>Your two nonsense word or nonsense spell definitions</li>
+</ul>
+
+<h2>Grading</h2>
+<ul>
+  <li>To earn a D on this lab, complete the <code>word_lengths</code>
+    and <code>proportional_choice</code> functions from Step 1.</li>
+  <li>To earn a C on this lab, do the above and complete
+    the <code>nonsense</code> function from Step 1.</li>
+  <li>To earn a B on this lab, do the above and
+  complete <code>letter_freqs</code> and <code>nonsense2</code> from
+    Step 2.</li>
+  <li>To earn an A on this lab, do the above and complete Step 3
+    (<code>markov</code> and <code>nonsense3</code> functions, along
+    with definitions for two of your nonsense words or nonsense spells).</li>
+  <li>To earn a 100 on this lab, do the above and complete Step 4.</li>
+</ul>
 <hr>
 <small>&copy; Mark Goadrich and Brent Yorgey, Hendrix College</small>
 </BODY>
