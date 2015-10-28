@@ -1,0 +1,33 @@
+
+\documentclass[convert={size=400x400,outext=.png}]{standalone}
+
+\usepackage{amsmath}
+
+\begin{document}
+\( \def\arraystretch{1.1} 
+  \begin{Bmatrix} \verb|'a'| & \mapsto &
+  \begin{Bmatrix}
+    \verb|'b'| & \mapsto & 2/5 \\
+    \verb|'c'| & \mapsto & 1/5 \\
+    \verb|'d'| & \mapsto & 1/5 \\
+    \verb|'\n'| & \mapsto & 1/5
+  \end{Bmatrix} \\
+  \verb|'b'| & \mapsto &
+  \begin{Bmatrix}
+    \verb|'r'| & \mapsto & 1
+  \end{Bmatrix} \\
+  \verb|'r'| & \mapsto &
+  \begin{Bmatrix}
+    \verb|'a'| & \mapsto & 1
+  \end{Bmatrix} \\
+  \verb|'c'| & \mapsto &
+  \begin{Bmatrix}
+    \verb|'a'| & \mapsto & 1
+  \end{Bmatrix} \\
+  \verb|'d'| & \mapsto &
+  \begin{Bmatrix}
+    \verb|'a'| & \mapsto & 1
+  \end{Bmatrix} \\
+   \end{Bmatrix}
+\)
+\end{document}

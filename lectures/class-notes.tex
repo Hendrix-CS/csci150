@@ -1238,8 +1238,128 @@ legitimate uses of recursion, e.g. processing trees.
 
 \section*{File I/O, dictionaries (intro) (Mon, 26 Oct)}
 
+Our programs have no state between each time they are called.
+Everything is stored in memory during the program, but afterwords,
+it’s all gone.  This is RAM.  We need hard drive storage to keep it
+around.  Save and read things in files.
+
+To write to a file:
+
+\begin{verbatim}
+fout = open("myfile.txt", "w")
+\end{verbatim}
+
+then to save data in the file, write out as strings
+
+\begin{verbatim}
+fout.write("hello\n")
+fout.write("world\n")
+fout.close()
+\end{verbatim}
+Note the newline characters.
+
+To read from a file:
+
+\begin{verbatim}
+fin = open("myfile.txt", "r")
+\end{verbatim}
+
+Two ways to get stuff out of the file.
+
+\begin{verbatim}
+s = fin.read()
+\end{verbatim}
+
+which returns a string that includes all the carriage returns, or
+
+\begin{verbatim}
+s = ""
+for line in fin.readlines():
+    s += line.strip()
+\end{verbatim}
+
+which strips them out of each line as it is added. \verb|readlines()|
+returns a list of strings.
+
+After both, say \verb|fin.close()| to finish accessing the file.
+
+Then do basic intro to dictionaries?  Next time, need to figure out
+some kind of activity to get them used to the idea.  Covering
+technical details does not take 1.5 lectures.
+
+\newpage
+
 \section*{Dictionaries (Wed, 28 Oct)}
 
+\subsection*{Setup}
+\begin{itemize}
+\item Music: Trio Medieval
+\item HW: read Section 1 from Zen for Friday
+\end{itemize}
 
+Recall lists.  Draw an alternate picture of lists as a mapping from
+indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
+can be thought of as
+\begin{verbatim}
+0 -> 'tapir'
+1 -> 'ferret'
+2 -> 'alligator'
+\end{verbatim}
+$0$, $1$, $2$ are \emph{keys}, animal names are \emph{values}.  A
+\emph{mapping} or \emph{association} between keys and values.  A
+\emph{dictionary} is the obvious generalization of this to arbitrary
+keys instead of just 0, 1, 2 \dots.  For example, suppose we are
+keeping these animals in a zoo and we want to keep track of them by
+their habitat ID numbers.
+\begin{verbatim}
+'A23' -> 'tapir'
+'B19' -> 'ferret'
+'B12' -> 'alligator'
+\end{verbatim}
+Or we could use numbers as keys.  Important point: keys have to be
+immutable.  So we can't use lists or dictionaries.
+
+Show how to make this dictionary.
+\begin{itemize}
+\item Write using curly braces and colons.
+\item Alternatively, start with empty one and add them.
+\end{itemize}
+Other things we can do with a dictionary:
+\begin{itemize}
+\item Get all keys with \verb|keys()|
+\item Get all values with \verb|values()|
+\item Check if a key is in the dictionary using \verb|in|
+\item Ask for the number of keys with \verb|len|
+\item Delete a mapping with \verb|del|
+\item Iterate over keys with \verb|for|
+\end{itemize}
+
+Show
+\url{https://docs.python.org/2.7/library/stdtypes.html#mapping-types-dict}.
+
+Rewrite \verb|frequency_counts(s)| to return a dictionary.  Why this is
+better: directly look up by letter value.  No need to use \verb|ord|
+or alphabet string etc.
+
+\begin{verbatim}
+def frequency_counts(s):
+    freqs = {}
+    for c in s:
+        if c not in freqs:
+            freqs[c] = 0
+        freqs[c] += 1
+
+    normalize(freqs)
+    return freqs
+
+def normalize(d):
+    total = 0
+    for k in d:
+        total += d[k]
+
+    for k in d:
+        d[k] /= float(total)
+\end{verbatim}
+Go over idea for \verb|proportional_choice| function on lab.
 \end{document}
 
