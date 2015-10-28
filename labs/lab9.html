@@ -14,6 +14,7 @@
 <li><a href="../data/english2.txt">English Word List</a>
 <li><a href="../data/latin2.txt">Latin Word List</a>
 <li><a href="../data/spanish2.txt">Spanish Word List</a>
+<li><a href="../data/books.zip">50 most downloaded books from Project Gutenberg</a>
 </ul>
 
 <h2>Overview</h2>
@@ -226,9 +227,23 @@ format:
   "patuscus immoveo" or "stulor oportus".  Pick your two favorite
   spells and explain what they do.
 
-<h2>Step 4: Generating Random Texts</h2>
+<h2>Step 4: Generating Random Text</h2>
 
-COMING SOON
+Pick one or more books from the <a href="../data/books.zip">list of 50
+  most downloaded books from Project Gutenberg</a>, and use it to
+  create a Markov chain.  In order to generate random text, instead of
+  random words, you will not want to break up the book into words.
+  Instead, just treat the book as one giant word, that is, include
+  spaces, punctuation, and so on in your Markov chain.  Alternatively,
+  you can experiment with working at the level of words insteaed of
+  characters: that is, an order-1 Markov chain will predict which
+  <i>word</i> can follow a given word; an order-2 Markov chain will
+  predict the next word based on the previous two words, and so on.
+
+Write a function <code>generate_text</code> which uses a Markov chain
+to create some random text based on the text(s) that you chose.  If
+  you are successful, you should end up with text that has a similar
+  "style" to the starting texts, but yet is complete nonsense.
 
 <h2>What to Hand In</h2>
 
@@ -250,6 +265,7 @@ Within <code>gibberish.py</code>, you should include:
   <li><code>markov_gen</code>
   <li><code>nonsense3</code></li>
   <li>Your two nonsense word or nonsense spell definitions</li>
+  <li>Your function
 </ul>
 
 <h2>Grading</h2>
