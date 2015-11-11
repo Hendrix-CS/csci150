@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>CSCI 150 - Lab 11 - Die Hard III</title>
-  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
 </head>
 
 <body>
@@ -10,26 +10,26 @@
 <h2>Overview</h2>
   This lab will combine
   mathematics, instantiable classes, and bone-chilling terror. ;) Always
-  a famous puzzle in the Artifical Intelligence circles, the WaterJug 
+  a famous puzzle in the Artifical Intelligence circles, the WaterJug
   problem recently came to popular culture through the classic action
-  movie <A HREF="http://us.imdb.com/Title?Die+Hard%3A+With+a+Vengeance+(1995)">Die Hard III</A>.  
+  movie <A HREF="http://us.imdb.com/Title?Die+Hard%3A+With+a+Vengeance+(1995)">Die Hard III</A>.
   In Die Hard III, a mad bomber is chasing Bruce Willis
   and Samuel L. Jackson.  They must solve different puzzles or else
-  things will explode and people will die.  
+  things will explode and people will die.
 
   <H3>Example</H3>
   <p>
-  The WaterJug puzzle can be explained as follows:<br> 
-  You have two jugs, A and B, and an infinite supply of water. There are 
+  The WaterJug puzzle can be explained as follows:<br>
+  You have two jugs, A and B, and an infinite supply of water. There are
   three types of actions that you can use: (1) you can fill a jug to capacity,
-  (2) you 
-  can completely empty a jug, and (3) you can pour from one jug to the other. 
-  Pouring from one jug to the other stops when the first jug is empty 
-  or the second jug is full, whichever comes first. For example, if A 
-  has 5 gallons and B has 6 gallons and a capacity of 8, then pouring 
-  from A to B leaves B full and 3 gallons in A. 
+  (2) you
+  can completely empty a jug, and (3) you can pour from one jug to the other.
+  Pouring from one jug to the other stops when the first jug is empty
+  or the second jug is full, whichever comes first. For example, if A
+  has 5 gallons and B has 6 gallons and a capacity of 8, then pouring
+  from A to B leaves B full and 3 gallons in A.
   <p>
-  For this demonstration, we'll state that A has capacity 4 and 
+  For this demonstration, we'll state that A has capacity 4 and
   B has capacity 3.  Our goal, which we must complete in less than one
   minute, is to somehow get exactly 2 gallons of water in jug A.  We need
   to find a set of operations, filling, emptying, and pouring, where
@@ -44,11 +44,11 @@
   <p>
   We now have exactly 2 gallons of water jug A.  (Try it!).  Phew, we're
   still alive!  Wouldn't it be nice to have a computer program to help us
-  solve this? 
-   
+  solve this?
+
   <h2>Design</h2>
   <p>
-  Each WaterJug will need to have two components that we can think of as the state 
+  Each WaterJug will need to have two components that we can think of as the state
   of that WaterJug.
   <p>
   components:
@@ -67,14 +67,14 @@
   <code>pour( other )</code> to pour as much of the contents of this WaterJug into the other as are allowed<br>
   </UL><p>
   Implement this object in Python. Don't forget where to use the <code>self</code> keyword.
-  Be careful with your methods, and also with your constructor, 
-  to make sure a malicious programmer cannot violate the integrity of your class. 
+  Be careful with your methods, and also with your constructor,
+  to make sure a malicious programmer cannot violate the integrity of your class.
   <p>
   Write a small main method to test that your WaterJug object works according to
   the description above.
 
   <h2>Puzzle Implementation</h2>
-  Finally, implement a main function that allows the user to set up and then 
+  Finally, implement a main function that allows the user to set up and then
   solve a WaterJugs puzzle.  Your function should:
   <UL>
   <li>Ask the user the capacity of the first WaterJug
@@ -91,13 +91,13 @@
   </ul>
  <p>
  Make sure you are consistent in the way that you tell the user to select an option.
- Whatever they type in, your code must be robust enough to handle and prompt them 
+ Whatever they type in, your code must be robust enough to handle and prompt them
  again when they make input errors.
  <p>
 You never know when a Python class
-  could save your life.  And remember, "Think fast, Look alive, 
+  could save your life.  And remember, "Think fast, Look alive,
   Die hard."
-  
+
 <h2>What to Hand In</h2>
 Turn in your code via Moodle. Make sure
 you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
