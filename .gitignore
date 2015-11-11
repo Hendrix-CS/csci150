@@ -3,5 +3,6 @@
 *.log
 *.out
 .~lock*
+*~
 
 lectures/class-notes.pdf
