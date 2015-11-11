@@ -25,6 +25,7 @@ def int_input(prompt):
             valid = True
         else:
             try_again(s + " is not an integer.")
+    return int(s)
 
 def show_options(options):
     """Present the user with a list of options."""
