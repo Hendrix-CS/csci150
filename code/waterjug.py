@@ -1,7 +1,6 @@
 # CSCI 150
 # Lab 11: Die Hard III
 
-
 ######################################################################
 # Below are some utility functions you may use in implementing the
 # WaterJug game.  We are providing them because you already know how
