@@ -1461,19 +1461,215 @@ on board) and address all 5 of the above things.
 
 \section*{Intro to classes \& objects (Wednesday, 4 Nov)}
 
-Birthday cake problem.
+Birthday cake problem:
+\begin{verbatim}
+  # If n lit candles, blow out a random # between
+  #   1 and n
+  # How many blows does it take (on average)
+  #   before they are all out?
+\end{verbatim}
+
+\begin{itemize}
+\item Introduce idea of objects:
+\begin{verbatim}
+# We can package up data into "objects"
+# Objects have functions, i.e. things they
+#   can do. aka "Methods".
+
+# Python "classes" allow us to design our
+#   own new kinds of objects.
+\end{verbatim}
+\item Introduce idea of classes:
+\begin{verbatim}
+# class = template for objects
+# an object is an "instance of" a class
+# e.g. class = Car, object = my car
+\end{verbatim}
+\item Make empty \verb|Cake| class.
+\item Show how we can make a \verb|Cake| object.
+\item Show how we can set a variable, \verb|num_candles|, inside it.
+  Draw stack/memory diagram.
+\item Create an \verb|__init__| method with a parameter. (Explain
+  \verb|self|; explain \verb|__init__|.)
+\item Create \verb|blowout| and \verb|allout| methods.
+\item Fill out the rest of the simulation:
+\begin{verbatim}
+class Cake:
+
+    # __init__ is a special method
+    #   that gets called when a
+    #   new object is created.
+    #   i.e. when Cake() is called.
+    def __init__(self, num_candles):
+        # self is a special first parameter
+        # that gets filled in by Python
+
+        # self.candles is a variable in the
+        #   object being created
+        #   (candles = ... would make a local var)
+        self.candles = num_candles
+
+    # Methods = things that all Cakes can do
+
+    def blowout(self):
+        n = random.randint(1, self.candles)
+        self.candles -= n
+
+    def allout(self):
+        return (self.candles == 0)
+
+
+def happy_birthday(c):
+    count = 0
+    while not c.allout():
+        c.blowout()
+        count += 1
+
+    return count
+
+def average_blows(num_candles, trials):
+    total = 0
+    for i in range(trials):
+        c = Cake(num_candles)
+        total += happy_birthday(c)
+    return total / float(trials)
+
+def main():
+    for num_candles in range(100):
+        print num_candles, average_blows(num_candles, 10000)
+
+main()
+\end{verbatim}
+\item Run it and paste output into Excel, do a regression to show that
+  it is close to natural log.
+\end{itemize}
 
 \section*{More classes \& objects (Friday, 6 Nov)}
 
-Traffic light example.
+Traffic light example.  Main point: encapsulation, abstraction.
+
+\begin{verbatim}
+# Traffic light
+#
+# How would you model it in Python?
+# What functions should it have?
+# How would it work?
+
+# Possible functions:
+#   - separate red, green, yellow light functions
+#   - interval function
+#   - sensor
+#   - change to next color
+#   - say what the current color is
+#   - run
+# Variables / state:
+#   - current color
+#   - timer (time left until next change?)
+
+
+# Version 1:
+#   - easy to write
+#   - tedious (imagine cycling through 20 colors)
+#   - difficult to change
+class TrafficLight:
+
+    # Variables:
+    #   - current_color (string)
+
+    # Create a new red traffic light
+    def __init__(self):
+        self.current_color = "RED"
+
+    # Change to next color
+    def change(self):
+        if self.current_color == "RED":
+            self.current_color = "GREEN"
+        elif self.current_color == "GREEN":
+            self.current_color = "YELLOW"
+        elif self.current_color == "YELLOW":
+            self.current_color = "ORANGE"
+        elif self.current_color == "ORANGE":
+            self.current_color = "RED"
+        else:
+            print "The sky is falling!!"  # This should never happen
+
+    # Return the current color
+    def color(self):
+        return self.current_color
+
+# Version 2:
+# Use a dictionary of colors
+class TrafficLight2:
+
+    # Variables:
+    #   - current_color
+    #   - color_dict
+
+    def __init__(self):
+        self.current_color = "RED"
+        self.color_dict = \
+          { "RED" : "GREEN",
+            "GREEN" : "YELLOW",
+            "YELLOW" : "ORANGE",
+            "ORANGE" : "RED" }
+
+    def change(self):
+        self.current_color = self.color_dict[self.current_color]
+
+    def color(self):
+        return self.current_color
+
+# Version 3: list of colors
+class TrafficLight3:
+
+    # Variables:
+    #   - color_list
+    #   - current_index
+
+    def __init__(self):
+        self.color_list = ["RED", "GREEN", "YELLOW", "ORANGE"]
+        self.current_index = 0
+
+    def change(self):
+        self.current_index += 1
+        self.current_index %= len(self.color_list)
+
+    def color(self):
+        return self.color_list[self.current_index]
+
+def main():
+    t = TrafficLight3()
+    print t.color()
+    for i in range(10):
+        t.change()
+        print t.color()
+
+main()
+\end{verbatim}
 
 \section*{Yet More classes \& objects (Monday, 9 Nov)}
 
-Mechanical pencil exercise.
+Mechanical pencil exercise.  Have them work in teams to code a class
+representing a mechanical pencil.  Paste code into Google doc, look
+through it together.
 
 \section*{Yet Even More classes \& objects (Wednesday, 11 Nov)}
 
 Card and Deck examples.
+\begin{itemize}
+\item Make \verb|Card| class with \verb|rank|, \verb|suit| (strings),
+  and \verb|face_up| (boolean).  Though can leave \verb|face_up| until
+  later.  Just has getter methods.  Write \verb|__repr__|. (If usung
+  \verb|face_up|, \verb|__repr__| should return \verb|**| or something
+  like that if face down.)
+\item Start making \verb|Deck| class with list of cards.  Make
+  \verb|__init__| (create 52-card deck), \verb|shuffle| (use
+  \verb|random.shuffle|), \verb|draw| (draw one card), \verb|deal(n)|
+  (draw $n$ cards)
+\end{itemize}
 
+\section*{Still Yet Even More classes \& objects (Friday, 13 Nov)}
+
+Finish Deck, make Hand, Player, HumanPlayer, ComputerPlayer.
 \end{document}
 
