@@ -14,21 +14,25 @@
 </ul>
 
 <h2>Overview</h2>
-We have created graphics and patterns using the turtle module in Python. This lab 
-explores a complete graphical animation framework called Processing, using the Python
-module.
-<p>
-For today's lab, download the latest version of Processing (3.0.1) for your operating
-system. Once downloaded and opened, you will find in the upper-left corner of the 
-screen a box that says "Java". Select this box, and choose "Add Mode". Select 
-"Python Mode for Processing 3" and then click "Install" in the lower-right 
-portion of the Mode window. You are now ready to work through the lab.
 
-<h2>Step 1 - Faces</h2>
-When we draw on the screen, we first need to be familiar with the
-coordinate system. We denote the width as x and the height as y.
-Most computer graphics modules, Processing included,
-specify that the x, y origin (0,0) is located in the upper-left corner of the screen.
+We have created graphics and patterns using the
+turtle module in Python. This lab explores a complete graphical
+animation framework called Processing, using the Python module.
+<p>
+For today's lab, <a href="https://processing.org/download/">download
+the latest version of Processing (3.0.1)</a> for your operating
+system. Once downloaded and opened, you will find in the upper-left or
+upper-right corner of the screen a box that says "Java". Select this
+box, and choose "Add Mode". Select "Python Mode for Processing 3" and
+then click "Install" in the lower-right portion of the Mode
+window. After it finishes installing, click on the "Java" box again
+and select "Python".  You are now ready to work through the lab.
+
+<h2>Step 1 - Faces</h2> When we draw on the screen, we first need to
+be familiar with the coordinate system. We denote the width as x and
+the height as y.  Most computer graphics modules, Processing included,
+specify that the x, y origin (0,0) is located in the upper-left corner
+of the screen.
 <p>
 There are three common things to draw in Processing, an ellipse, a rectangle, and a line.
 Write the following lines of code in Processing and press the Play button.
@@ -50,13 +54,13 @@ by width and height. A line takes four arguments, the first two being
 the starting x, y coordinate, and the last two being the ending x, y coordinate.
 <p>
 Also, notice that the first thing to be drawn is covered by the images
-that follow. This indicates that the way that images are drawn, 
+that follow. This indicates that the way that images are drawn,
 their <a href="https://en.wikipedia.org/wiki/Z-order">Z-order</a>, is based on time.
 <p>
 
 <h3>Task</h3>
 Use ellipse, rect, and line to draw a face on the screen. At a minimum, the face should
-have eyes, ears, a mouth and a nose. You can find more shapes on the 
+have eyes, ears, a mouth and a nose. You can find more shapes on the
 <a href="http://py.processing.org/reference/">Python Reference for Processing</a> page.
 
 <h2>Step 2 - Colors</h2>
@@ -65,10 +69,10 @@ the hexadecimal representation of colors discussed earlier in class, where the
 computer understands a color to be composed of three components, Red, Green, and Blue.
 Each of the three functions below take a hex string as an argument denoting the color.
 <p>
-The background function will paint the whole screen the given color. The fill 
-function changes the color to be painted within the ellipse or rect images. The
-stroke function changes the color to be painted as the border for all three
-images above.
+The <tt>background</tt> function will paint the whole screen the given color. The <tt>fill</tt>
+function changes the color to be painted within an <tt>ellipse</tt> or <tt>rect</tt>. The
+<tt>stroke</tt> function changes the color to use for making
+a <tt>line</tt> or for making the border of an <tt>ellipse</tt> or <tt>rect</tt>.
 <p>
 <pre>
 background("#FFFFFF")
@@ -85,7 +89,8 @@ It will be convenient to have some of our basic colors defined in a dictionary.
 COLORS = {"black":"#000000", "white":"#FFFFFF",
           "red":"#FF0000", "green":"#00FF00",
           "blue":"#0000FF", "yellow":"#FFFF00",
-          "orange":"#FFA500", "purple":"#9B30FF"}
+          "orange":"#FFA500", "hendrixorange":"#F58025",
+          "purple":"#9B30FF"}
 </pre>
 
 <h3>Task</h3>
@@ -138,61 +143,63 @@ be representing Faces floating in space.
 <p>
 We will represent a Face with a class in Python. The face will need to remember
 the x,y coordinates for the center of the face. We will also remember the base color
-use for the case, in the example above, this was red. Notice how the draw function
-abstracts away the initial face to be centered around any x,y coordinates. This will 
-let us move the face around the screen.
+used for the face. In the example above, this was red. Notice how the draw function
+abstracts away the initial face to be centered around any x,y coordinates. This will
+let us move the face around the screen.  Of course, you should use
+your own face-drawing code in place of the example code shown below.
 <p>
 <pre>
 class Face:
-	def __init__(self, x, y, color):
-		self.x = x
-		self.y = y
-		self.color = color
-		
-	def draw(self):
-		fill(self.color)
-		stroke(COLORS["green"])
-		ellipse(self.x, self.y, 100, 100)
-		fill(COLORS["yellow"])
-		ellipse(self.x - 25, self.y - 25, 35, 35)
-		ellipse(self.x + 25, self.y - 25, 35, 35)
-		stroke(COLORS["orange"])
-		line(self.x - 20, self.y + 30, self.y + 20, self.y + 30)
+    def __init__(self, x, y, color):
+        self.x = x
+        self.y = y
+        self.color = color
+
+    def draw(self):
+        fill(self.color)
+        stroke(COLORS["green"])
+        ellipse(self.x, self.y, 100, 100)
+        fill(COLORS["yellow"])
+        ellipse(self.x - 25, self.y - 25, 35, 35)
+        ellipse(self.x + 25, self.y - 25, 35, 35)
+        stroke(COLORS["orange"])
+        line(self.x - 20, self.y + 30, self.y + 20, self.y + 30)
 </pre>
 <p>
-We will collect our Face instances in a list called faces, declared outside of any
+We will collect our <tt>Face</tt> instances in a list called <tt>faces</tt>, declared outside of any
 of the above functions.
 <p>
 <pre>
 faces = []
 </pre>
 <p>
-And change our setup and draw functions to initialize the face and draw it, respectively.
+We will also change our <tt>setup</tt> and <tt>draw</tt> functions to
+add a single face to the list and draw it, respectively.
 <p>
 <pre>
 def setup():
     size(640, 480)
     faces.append(Face(50, 50, COLORS["red"]))
-    
+
 def draw():
     background("#000000")
     for f in faces:
         f.draw()
 </pre>
 <p>
-Try moving your face around the screen, and changing its color, 
-by altering the arguments you use to 
-create the Face in the setup function.
+Try moving your face around the screen, and changing its color, by
+altering the arguments you use to create the <tt>Face</tt> in the
+setup function.
 
 <h3>Task</h3>
-Change the setup function to add multiple faces at random locations and
+Change the <tt>setup</tt> function to add multiple faces at random locations and
 with random colors around the screen. Make sure your locations are chosen so that
 the face is always completely visible on the screen.
 
-<h3>Task</h3>
-Add a size component to your Face, so the setup method can also initialize the
-size. Change your draw method of Face to account for this new size component, and
-test it out by drawing random smaller and larger faces.
+<h3>Task</h3> Add a size component to your <tt>Face</tt>, so
+the <tt>setup</tt> method can also initialize the size. Change
+your <tt>draw</tt> method of <tt>Face</tt> to account for this new
+size component, and test it out by drawing smaller and larger faces.
 
 <h2>Step 5 - Movement</h2>
 With the faces being drawn by an object, we can now make these objects move. Add
