@@ -94,7 +94,7 @@ COLORS = {"black":"#000000", "white":"#FFFFFF",
 </pre>
 
 <h3>Task</h3>
-Use the above shapes and color functions, along with any others you might 
+Use the above shapes and color functions, along with any others you might
 find useful on the
 <a href="http://py.processing.org/reference/">Python Processing Reference</a>
 page, to enhance your earlier image of a face.
@@ -221,7 +221,7 @@ the values of self.x and self.y by the velocity, and thus simulate movement.
         self.y += self.vely
 </pre>
 <p>
-Finally, inside the main draw function, add a call to the update method of each face 
+Finally, inside the main draw function, add a call to the update method of each face
 before the individual draw method. Your draw should now look like this:
 <p>
 <pre>
@@ -233,30 +233,30 @@ def draw():
 </pre>
 <p>
 Woah, it is moving! This illusion happens because for each frame, the window
-is completely wiped out through the call to the background function, and then 
+is completely wiped out through the call to the background function, and then
 the face is drawn at the new location. Verify this is happening by commenting out
 the call to background. Now you will see the face repeatedly drawn, but shifted down
 and to the left by 1 pixel each iteration.
 
 <h3>Task</h3>
-Currently, the face disappears after a while, because it moves off the screen. 
+Currently, the face disappears after a while, because it moves off the screen.
 We would like to keep it bouncing inside
 the window. Add in checks to the update method to reverse the appropriate velocity
 when the face hits a wall, by multiplying the velocity in that dimension by -1.
 
 <h3>Task</h3>
-Abstract the velocities so they are initialized by parameters in the __init__ method, 
+Abstract the velocities so they are initialized by parameters in the __init__ method,
 and augment your setup function to choose random velocities between -1 and 1 for both
 the x and y dimension for each Face created. You should now have faces moving
 in all directions and bouncing off of all the walls of the window.
 
 <h2>Step 6 - Extensions</h2>
-Research two of the following extensions on the 
+Research two of the following extensions on the
 <a href="http://py.processing.org/reference/">Python Processing Reference</a>
 page and augment your animation above.
 
 <h3>Task</h3>
-Make your animations interactive by reacting to input from the 
+Make your animations interactive by reacting to input from the
 mouse and the keyboard. For example you could have new Faces appear
 when and where the mouse is clicked. You could increase or
 decrease the velocity of all the Faces when certain keys are pressed.
