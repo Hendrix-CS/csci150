@@ -111,7 +111,7 @@ function call at the beginning of your code, for example, to make a screen
 with a width of 640 pixels and height of 480 pixels:
 <pre>
 def setup():
-	size(640, 480)
+    size(640, 480)
 </pre>
 
 <h3>Draw</h3>
@@ -120,15 +120,15 @@ Put your earlier face code in this draw function, and press play. For example:
 <p>
 <pre>
 def draw():
-	background(COLORS["black"])
-	fill(COLORS["red"])
-	stroke(COLORS["green"])
-	ellipse(50, 50, 100, 100)
-	fill(COLORS["yellow"])
-	ellipse(25, 25, 35, 35)
-	ellipse(75, 25, 35, 35)
-	stroke(COLORS["orange"])
-	line(30, 80, 70, 80)
+    background(COLORS["black"])
+    fill(COLORS["red"])
+    stroke(COLORS["green"])
+    ellipse(50, 50, 100, 100)
+    fill(COLORS["yellow"])
+    ellipse(25, 25, 35, 35)
+    ellipse(75, 25, 35, 35)
+    stroke(COLORS["orange"])
+    line(30, 80, 70, 80)
 </pre>
 <p>
 It should look
@@ -208,17 +208,17 @@ Face. For now, initialize them to 1, so they will be moving at a speed
 of 1 pixel per update, as shown here:
 <p>
 <pre>
-		self.velx = 1.0
-		self.vely = 1.0
+        self.velx = 1.0
+        self.vely = 1.0
 </pre>
 <p>
 Next, add a new method to your Face called update. When called, this function will change
 the values of self.x and self.y by the velocity, and thus simulate movement.
 <p>
 <pre>
-	def update(self):
-		self.x += self.velx
-		self.y += self.vely
+    def update(self):
+        self.x += self.velx
+        self.y += self.vely
 </pre>
 <p>
 Finally, inside the main draw function, add a call to the update method of each face 
