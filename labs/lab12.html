@@ -101,10 +101,13 @@ page, to enhance your earlier image of a face.
 
 <h2>Step 3 - Functions</h2>
 As our program is about to get more complicated, it is a good idea to start using
-functions. There are two important functions that come with Processing by default.
+functions. There are two important functions that are treated
+specially by Processing.
 <h3>Setup</h3>
-The setup function is the first thing called by your program. In this function, you
-should first set up the screen size.
+
+If you define a <tt>setup</tt> function, Processing will call it first
+when running your sketch. In this function, you should first set up
+the screen size.
 <p>
 The default screen size is 100 x 100. This can be changed by adding the following
 function call at the beginning of your code, for example, to make a screen
@@ -115,7 +118,8 @@ def setup():
 </pre>
 
 <h3>Draw</h3>
-The draw function is called by Processing for every frame of the animation.
+
+The <tt>draw</tt> function is called by Processing for every frame of the animation.
 Put your earlier face code in this draw function, and press play. For example:
 <p>
 <pre>
@@ -131,9 +135,9 @@ def draw():
     line(30, 80, 70, 80)
 </pre>
 <p>
-It should look
-exactly the same as it did above, but now we will have the ability to change the face
-for each frame.
+(You should use your own face code; the above is just an example.)
+It should look exactly the same as it did above, but now we will have
+the ability to change the face for each frame.
 
 <h2>Step 4 - Faces in Space</h2>
 All of our images so far have been static. To add animations, we need to start
@@ -163,7 +167,7 @@ class Face:
         ellipse(self.x - 25, self.y - 25, 35, 35)
         ellipse(self.x + 25, self.y - 25, 35, 35)
         stroke(COLORS["orange"])
-        line(self.x - 20, self.y + 30, self.y + 20, self.y + 30)
+        line(self.x - 20, self.y + 30, self.x + 20, self.y + 30)
 </pre>
 <p>
 We will collect our <tt>Face</tt> instances in a list called <tt>faces</tt>, declared outside of any
@@ -182,7 +186,7 @@ def setup():
     faces.append(Face(50, 50, COLORS["red"]))
 
 def draw():
-    background("#000000")
+    background(COLORS["black"])
     for f in faces:
         f.draw()
 </pre>
@@ -191,29 +195,33 @@ Try moving your face around the screen, and changing its color, by
 altering the arguments you use to create the <tt>Face</tt> in the
 setup function.
 
-<h3>Task</h3>
+<h3>Task 4.1: Multiple faces</h3>
 Change the <tt>setup</tt> function to add multiple faces at random locations and
 with random colors around the screen. Make sure your locations are chosen so that
 the face is always completely visible on the screen.
 
-<h3>Task</h3> Add a size component to your <tt>Face</tt>, so
-the <tt>setup</tt> method can also initialize the size. Change
-your <tt>draw</tt> method of <tt>Face</tt> to account for this new
-size component, and test it out by drawing smaller and larger faces.
+<h3>Task 4.2: Face sizes</h3> Add a size component to
+your <tt>Face</tt>, so the <tt>setup</tt> method can also initialize
+the size. Change your <tt>draw</tt> method of <tt>Face</tt> to account
+for this new size component, and test it out by drawing smaller and
+larger faces.  Make sure your locations are still chosen so that the
+face is always completely visible on the screen!
 
-<h2>Step 5 - Movement</h2>
-With the faces being drawn by an object, we can now make these objects move. Add
-new components to your Face, called velx and vely, to capture the velocity of the
-Face. For now, initialize them to 1, so they will be moving at a speed
-of 1 pixel per update, as shown here:
+<h2>Step 5 - Movement</h2> With the faces being drawn by an object, we
+can now make these objects move. Add new components to
+your <tt>Face</tt>, called <tt>velx</tt> and <tt>vely</tt>, to capture
+the velocity of the <tt>Face</tt>. For now, initialize them to 1, so they will
+be moving at a speed of 1 pixel per update, as shown here:
 <p>
 <pre>
         self.velx = 1.0
         self.vely = 1.0
 </pre>
 <p>
-Next, add a new method to your Face called update. When called, this function will change
-the values of self.x and self.y by the velocity, and thus simulate movement.
+  Next, add a new method to your <tt>Face</tt>
+  called <tt>update</tt>. When called, this function will change the
+  values of <tt>self.x</tt> and <tt>self.y</tt> by the velocity, and
+  thus simulate movement.
 <p>
 <pre>
     def update(self):
@@ -221,65 +229,72 @@ the values of self.x and self.y by the velocity, and thus simulate movement.
         self.y += self.vely
 </pre>
 <p>
-Finally, inside the main draw function, add a call to the update method of each face
-before the individual draw method. Your draw should now look like this:
+  Finally, inside the main <tt>draw</tt> function, add a call to
+  the <tt>update</tt> method of each face before the
+  individual <tt>draw</tt> method. Your <tt>draw</tt> function should
+  now look like this:
 <p>
 <pre>
 def draw():
-    background("#000000")
+    background(COLORS["black"])
     for f in faces:
         f.update()
         f.draw()
 </pre>
 <p>
-Woah, it is moving! This illusion happens because for each frame, the window
-is completely wiped out through the call to the background function, and then
-the face is drawn at the new location. Verify this is happening by commenting out
-the call to background. Now you will see the face repeatedly drawn, but shifted down
-and to the left by 1 pixel each iteration.
+Woah, it is moving! This illusion happens because for each frame, the
+window is completely wiped out through the call to
+the <tt>background</tt> function, and then the faces are drawn at the
+new locations. Verify this is happening by commenting out the call
+to <tt>background</tt>. Now you will see the faces repeatedly drawn,
+but shifted down and to the left by 1 pixel each iteration.
 
-<h3>Task</h3>
-Currently, the face disappears after a while, because it moves off the screen.
-We would like to keep it bouncing inside
-the window. Add in checks to the update method to reverse the appropriate velocity
-when the face hits a wall, by multiplying the velocity in that dimension by -1.
+<h3>Task 5.1: Bouncing</h3> Currently, the faces disappear after a
+while, because they moves off the bottom of the screen.  We would like
+to keep them bouncing inside the window. Add in checks to
+the <tt>update</tt> method to reverse the appropriate velocity
+component when a face hits a wall, by multiplying the velocity in
+that dimension by -1.
 
-<h3>Task</h3>
-Abstract the velocities so they are initialized by parameters in the __init__ method,
-and augment your setup function to choose random velocities between -1 and 1 for both
-the x and y dimension for each Face created. You should now have faces moving
-in all directions and bouncing off of all the walls of the window.
+<h3>Task 5.2: Random speeds</h3>
+
+Abstract the velocities so they are initialized by parameters in
+the <tt>__init__</tt> method, and augment your setup function to
+choose random velocities between -1 and 1 for both the x and y
+dimension for each <tt>Face</tt> created. You should now have faces
+moving in all directions and bouncing off of all the walls of the
+window.
 
 <h2>Step 6 - Extensions</h2>
 Research two of the following extensions on the
 <a href="http://py.processing.org/reference/">Python Processing Reference</a>
 page and augment your animation above.
 
-<h3>Task</h3>
+<h3>Task 6.1: Mouse and keyboard input</h3>
 Make your animations interactive by reacting to input from the
 mouse and the keyboard. For example you could have new Faces appear
 when and where the mouse is clicked. You could increase or
 decrease the velocity of all the Faces when certain keys are pressed.
 
-<h3>Task</h3>
+<h3>Task 6.2: Animated faces</h3>
 Alter your update method of the Face to change the internal pieces of the face
 in a cyclic pattern. For example, the face could smile for a few timesteps, then frown,
 and then go back to smiling. Or the eyeballs could be moving up and down, left and right.
 
-<h3>Task</h3>
+<h3>Task 6.3: Face collisions</h3>
 Right now all the faces pass through each other when they move.
 Add a collision detection method, that checks each pair of faces to see if they
 are intersecting, and if so, makes the smaller one disappear.
 
-<h3>Task</h3>
+<h3>Task 6.4: Images</h3>
 Learn how to import images into your Processing sketch, and make them move around the
 screen as we did with the Face above.
 
-<h3>Task</h3>
+<h3>Task 6.5: Other transformations</h3>
 Learn about rotations and translations, and apply these dynamically to your images,
 making the Faces spin and shift.
 
-<h3>Task</h3>
+<h3>Task 6.6: General Sprite class</h3>
 The movement functionality of the Face above should really be abstracted, since
 we can imagine many types of objects that could be moving around the screen.
 Create a general Sprite class that only worries about the movement, and make
@@ -290,13 +305,16 @@ from Sprite and avoid duplicating this update code in each object. Try making an
 object that moves.
 
 <h2>What to Hand In</h2>
-Turn in your code via Moodle. Make sure
-you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+
+Save your project in some known location.  Note that Processing will
+save your project not as a file, but as a <i>folder</i> containing
+multiple files.  You should make this folder into a zip archive (ask
+for help if you do not know how to do this) and turn in the resulting
+zip file via Moodle. M
+
+ake sure you have followed
+the <a href="../python_style_guide.html">Python Style Guide</a>, and
 have run your project through the Automated Style Checker.<p>
-You must hand in:
-<ul>
-  <li><code>????</code> The whole sketch folder? Or just pyde? Not sure yet.</li>
-</ul>
 
 <h2>Grading</h2>
 <ul>
