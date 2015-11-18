@@ -30,7 +30,7 @@ coordinate system. We denote the width as x and the height as y.
 Most computer graphics modules, Processing included,
 specify that the x, y origin (0,0) is located in the upper-left corner of the screen.
 <p>
-There are three main things to draw in Processing, an ellipse, a rectangle, and a line.
+There are three common things to draw in Processing, an ellipse, a rectangle, and a line.
 Write the following lines of code in Processing and press the Play button.
 <p>
 <pre>
@@ -53,16 +53,11 @@ Also, notice that the first thing to be drawn is covered by the images
 that follow. This indicates that the way that images are drawn, 
 their <a href="https://en.wikipedia.org/wiki/Z-order">Z-order</a>, is based on time.
 <p>
-The default screen size is 100 x 100. This can be changed by adding the following
-function call at the beginning of your code, for example, to make a screen
-with a width of 640 pixels and height of 480 pixels:
-<pre>
-size(640, 480)
-</pre>
-<p>
+
 <h3>Task</h3>
 Use ellipse, rect, and line to draw a face on the screen. At a minimum, the face should
-have eyes, ears, a mouth and a nose. Save this as <code>face.py</code>.
+have eyes, ears, a mouth and a nose. You can find more shapes on the 
+<a href="http://py.processing.org/reference/">Python Reference for Processing</a> page.
 
 <h2>Step 2 - Colors</h2>
 Three different portions of our drawing can be altered to include colors. Recall
@@ -91,38 +86,117 @@ COLORS = {"black":"#000000", "white":"#FFFFFF",
           "red":"#FF0000", "green":"#00FF00",
           "blue":"#0000FF", "yellow":"#FFFF00",
           "orange":"#FFA500", "purple":"#9B30FF"}
-
 </pre>
 
 <h3>Task</h3>
-Use the above shapes and color functions, along with any others you might find useful on the
+Use the above shapes and color functions, along with any others you might 
+find useful on the
 <a href="http://py.processing.org/reference/">Python Processing Reference</a>
-page, to draw a child's image of their house, the sun, and a tree.
+page, to enhance your earlier image of a face.
 
-<h2>Step 3 - Pigs in Space</h2>
+<h2>Step 3 - Functions</h2>
+As our program is about to get more complicated, it is a good idea to start using
+functions. There are two important functions that come with Processing by default.
+<h3>Setup</h3>
+The setup function is the first thing called by your program. In this function, you
+should first set up the screen size.
+<p>
+The default screen size is 100 x 100. This can be changed by adding the following
+function call at the beginning of your code, for example, to make a screen
+with a width of 640 pixels and height of 480 pixels:
+<pre>
+def setup():
+	size(640, 480)
+</pre>
+
+<h3>Draw</h3>
+The draw function is called by Processing for every frame of the animation.
+Put your earlier face code in this draw function, and press play. For example:
+<p>
+<pre>
+def draw():
+	background(COLORS["black"])
+	fill(COLORS["red"])
+	stroke(COLORS["green"])
+	ellipse(50, 50, 100, 100)
+	fill(COLORS["yellow"])
+	ellipse(25, 25, 35, 35)
+	ellipse(75, 25, 35, 35)
+	stroke(COLORS["orange"])
+	line(30, 80, 70, 80)
+</pre>
+<p>
+It should look
+exactly the same as it did above, but now we will have the ability to change the face
+for each frame.
+
+<h2>Step 4 - Faces in Space</h2>
 All of our images so far have been static. To add animations, we need to start
 remembering the state of our images and creating methods for how it will change.
+The natural way to do this is to create new object, and in particular, we will
+be representing Faces floating in space.
 <p>
-setup function
+We will represent a Face with a class in Python. The face will need to remember
+the x,y coordinates for the center of the face. We will also remember the base color
+use for the case, in the example above, this was red. Notice how the draw function
+abstracts away the initial face to be centered around any x,y coordinates. This will 
+let us move the face around the screen.
+<p>
+<pre>
+class Face:
+	def __init__(self, x, y, color):
+		self.x = x
+		self.y = y
+		self.color = color
+		
+	def draw(self):
+		fill(self.color)
+		stroke(COLORS["green"])
+		ellipse(self.x, self.y, 100, 100)
+		fill(COLORS["yellow"])
+		ellipse(self.x - 25, self.y - 25, 35, 35)
+		ellipse(self.x + 25, self.y - 25, 35, 35)
+		stroke(COLORS["orange"])
+		line(self.x - 20, self.y + 30, self.y + 20, self.y + 30)
+</pre>
+<p>
+We will collect our Face instances in a list called faces, declared outside of any
+of the above functions.
+<p>
+<pre>
+faces = []
+</pre>
+<p>
+And change our setup and draw functions to initialize the face and draw it, respectively.
+<p>
+<pre>
+def setup():
+    size(640, 480)
+    faces.append(Face(50, 50, COLORS["red"]))
+    
+def draw():
+    background("#000000")
+    for f in faces:
+        f.draw()
+</pre>
+<p>
+Try moving your face around the screen, and changing its color, 
+by altering the arguments you use to 
+create the Face in the setup function.
 
-draw function
+<h3>Task</h3>
+Add a size component to your Face, so the setup method can also initialize the
+size. Change your draw method of Face to account for this new size component, and
+test it out by drawing smaller and larger faces.
 
-create Pig
-	x, y to start
+<h2>Step 5 - Movement</h2>
+update to add 1 to x and y
 	
-	update to add 1 to x and y
-	
-assign g as a list outside any function
-
-append new pigs to g in setup
-
-update them in draw
-
 Add in velocity
 
 Add in wall bouncing
 
-<h2>Step 4 - Interaction</h2>
+<h2>Step 6 - Interaction</h2>
 Mouse
 
 keyboard
