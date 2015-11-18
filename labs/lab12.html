@@ -185,76 +185,91 @@ by altering the arguments you use to
 create the Face in the setup function.
 
 <h3>Task</h3>
+Change the setup function to add multiple faces at random locations and
+with random colors around the screen. Make sure your locations are chosen so that
+the face is always completely visible on the screen.
+
+<h3>Task</h3>
 Add a size component to your Face, so the setup method can also initialize the
 size. Change your draw method of Face to account for this new size component, and
-test it out by drawing smaller and larger faces.
+test it out by drawing random smaller and larger faces.
 
 <h2>Step 5 - Movement</h2>
-update to add 1 to x and y
-	
-Add in velocity
+With the faces being drawn by an object, we can now make these objects move. Add
+new components to your Face, called velx and vely, to capture the velocity of the
+Face. For now, initialize them to 1, so they will be moving at a speed
+of 1 pixel per update, as shown here:
+<p>
+<pre>
+		self.velx = 1.0
+		self.vely = 1.0
+</pre>
+<p>
+Next, add a new method to your Face called update. When called, this function will change
+the values of self.x and self.y by the velocity, and thus simulate movement.
+<p>
+<pre>
+	def update(self):
+		self.x += self.velx
+		self.y += self.vely
+</pre>
+<p>
+Finally, inside the main draw function, add a call to the update method of each face 
+before the individual draw method. Your draw should now look like this:
+<p>
+<pre>
+def draw():
+    background("#000000")
+    for f in faces:
+        f.update()
+        f.draw()
+</pre>
+<p>
+Woah, it is moving! This illusion happens because for each frame, the window
+is completely wiped out through the call to the background function, and then 
+the face is drawn at the new location. Verify this is happening by commenting out
+the call to background. Now you will see the face repeatedly drawn, but shifted down
+and to the left by 1 pixel each iteration.
 
-Add in wall bouncing
+<h3>Task</h3>
+Currently, the face disappears after a while, because it moves off the screen. 
+We would like to keep it bouncing inside
+the window. Add in checks to the update method to reverse the appropriate velocity
+when the face hits a wall, by multiplying the velocity in that dimension by -1.
+
+<h3>Task</h3>
+Abstract the velocities so they are initialized by parameters in the __init__ method, 
+and augment your setup function to choose random velocities between -1 and 1 for both
+the x and y dimension for each Face created. You should now have faces moving
+in all directions and bouncing off of all the walls of the window.
 
 <h2>Step 6 - Interaction</h2>
 Mouse
 
 keyboard
 
+<h2>Things to try when all the above works</h2>
+<h3>Task</h3>
+The movement functionality of the Face above should really be abstracted, since
+we can imagine many types of objects that could be moving around the screen.
+Create a general Sprite class that only worries about the movement, and make
+Face inherit from Sprite to add the draw method.
+<p>
+With this abstract, you can now easily create other moving objects by inheriting
+from Sprite and avoid duplicating this update code in each object. Try making another
+object that will.
 
+<h3>Task</h3>
+Alter your update method of the Face to change the internal pieces of the face
+in a cyclic pattern. For example, the face could smile for a few timesteps, then frown,
+and then go back to smiling. Or the eyeballs could be moving up and down, left and right.
 
+<h3>Task</h3>
+Learn how to import images into your Processing sketch, and make them move around the
+screen as we did with the Face above.
 
-import random
-
-class Ball():
-    
-    def __init__(self, pos, size, bcolor):
-        self.x = pos[0]
-        self.y = pos[1]
-        self.vx = 10 * (random.random() - .5)
-        self.vy = 10 * (random.random() - .5)
-        self.size = size
-        self.bcolor = bcolor
-        
-    def update(self):
-        self.x += self.vx
-        self.y += self.vy
-        if self.x >= WIDTH - self.size/2 or self.x <= self.size/2:
-            self.vx *= -1        
-        if self.y >= HEIGHT - self.size/2 or self.y <= self.size/2:
-            self.vy *= -1
-        self.draw()
-            
-    def draw(self):
-        fill(self.bcolor[0], self.bcolor[1], self.bcolor[2])
-        ellipse(self.x, self.y, self.size, self.size)
-        ellipse(self.x - 5, self.y - 4, self.size/5, self.size/5)
-        ellipse(self.x + 5, self.y - 4, self.size/5, self.size/5)
-        ellipse(self.x, self.y +3, self.size/3, self.size/3)
-
-g = []
-WIDTH = 640
-HEIGHT = 480
-
-def setup():
-    size(WIDTH, HEIGHT)
-    for i in range(1000):
-        s = random.randint(10, 50)
-        g.append(Ball((random.randint(s, WIDTH - s), random.randint(s, HEIGHT - s)),
-                   s,
-                   (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))))
-
-def draw():
-    background(255,255,255)
-    for b in g:
-        b.update()
-
-def mouseClicked():
-    s = random.randint(10, 50)
-    g.append(Ball((mouseX, mouseY),
-                   s,
-                   (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))))
-        
+<h3>Task</h3>
+Learn about rotations and translations, and how these can be applied to your images.
 
 <h2>What to Hand In</h2>
 Turn in your code via Moodle. Make sure
