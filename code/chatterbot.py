@@ -1,6 +1,6 @@
 ############
 # Creating an Eliza Chatterbot
-# 11/24/2014
+# 11/28/2015
 # Mark Goadrich
 ############
 
@@ -29,8 +29,12 @@ class Eliza(Chatter):
     def __init__(self):
         Chatter.__init__(self, "ELIZA")
 
+    ### BEGIN CHANGES HERE ###
+        
     def get_response(self, text):
         return "What makes you say that?"
+
+    ### END CHANGES HERE ###
 
 class User(Chatter):
 
