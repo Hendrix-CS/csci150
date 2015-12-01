@@ -18,16 +18,17 @@ class Chatter:
     def outro(self):
         return self.name.upper() + ": Goodbye!"
 
-    def get_response(self, text):
+    def response(self, text):
         pass
 
-    def response(self, text):
-        return self.name.upper() + ": " + self.get_response(text)
 
 class Eliza(Chatter):
 
     def __init__(self):
         Chatter.__init__(self, "ELIZA")
+
+    def response(self, text):
+        return self.name.upper() + ": " + self.get_response(text)
 
     ### BEGIN CHANGES HERE ###
         
