@@ -85,7 +85,7 @@ of all matches found.
 <p>
 But regular expressions are much more powerful than just strings.
 We can easily combine multiple things for a match with the pipe symbol <tt>|</tt>.
-Test our the following command to see what it returns.
+Test out the following command to see what it returns.
 <p>
 <p>
 <pre>re.findall(r"a|b|c", "abracadabra")</pre>
@@ -122,7 +122,7 @@ pattern, while * will match 0 or more.
 <p>
 <pre>re.findall(r"\d*", "I like the number 12 and 47!")</pre>
 <p>
-
+The + will be more useful for us in this lab.
 <h3>Task 2.1</h3>
 Write a concise regular expression to look for any of the following words
 <p>
@@ -139,13 +139,28 @@ response as above.
 To make our responses more aligned with the exact match found in the conversation, 
 we can use the <tt>sub</tt> function. There are now three parameters, the first
 is still the pattern, the last is the text to search, and the middle is 
-a replacement regular expression to return when a match is found.
+a replacement regular expression to return when a match is found. Try out the 
+following command in the shell.
 <p>
-<pre>match = re.sub(r"I('m| am) (sad|\w+py)",
-                           r"Why are you \2?",
-                           text)
+<pre>re.sub(r"cat", r"dog", "I love cats!")</pre>
+<p>
+If we want to use a portion of the match in our replacement, we can divide up our 
+pattern with parenthesis. Each part of the parenthesized pattern can be retrieved by
+using a \ followed by a number. For example, to search for someone talking about 
+emotions, we might type the following:
+<p>
+<pre>
+re.sub(r"I('m| am) (sad|\w+py)", r"Why are you \2?", "I'm happy")
 </pre>
 <p>
+This will take whatever matches the second parenthesized portion, denoted
+with \2, in this case "happy",  and use it in the replacement.
+<h3>Task 3.1</h3>
+Augment Eliza to look for emotions
+in the text as shown above. You will know if the regular expression matches
+the text if what is returned by <tt>sub</tt> is different than the 
+original text. Add another if statement to the <tt>get_response</tt> method,
+and return the result of <tt>sub</tt> when matches are found.
 <h2>Step 4 - Memory</h2>
 Often, it will be useful to have a chatterbot move beyond a reflexive response. To 
 add a memory to your chatterbot, you will need to give it more components in the 
@@ -153,17 +168,17 @@ add a memory to your chatterbot, you will need to give it more components in the
 These could be Booleans, string, integers, however you want to track the state of 
 your conversation.
 <h3>Task 4.1</h3>
-You want to remember that the user is interested in cats, you could add
-a Boolean to track this.
+You want to remember that the user is interested in cats. Add
+a Boolean to the <tt>__init__</tt> method to track this.
 <p>
-<pre>self.catlover = False</pre>
+<pre>self.ailurophile = False</pre>
 <p>
 When the if statement you wrote in Task 2.1 is true, flip this flag to <tt>True</tt>.
 <p>
 Now, when Eliza does not find a match in the conversation for her topics, if
 she knows that the user is a cat lover, she should reply with random
 cat questions or 
-<a href="http://knowyourmeme.com/memes/events/cat-facts-text-trolling">facts</a>.
+<a href="http://imgur.com/gallery/uWqpr">facts</a>.
 
 <h2>Step 5 - Personal Chatterbot</h2>
 Create a new chatterbot with a name and a distinct personality as a subclass
