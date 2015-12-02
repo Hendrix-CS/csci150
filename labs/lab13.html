@@ -16,17 +16,17 @@
 <h2>Overview</h2>
 One essential piece of computer science we have explored this semester has been
 communication with the computer. Programming languages can be exacting and tedious,
-and much work has been done to teach a computer to understand natural languages 
+and much work has been done to teach a computer to understand natural languages
 such as English.
 <p>
-Early efforts in this area were in the form of 
+Early efforts in this area were in the form of
 <a href="https://en.wikipedia.org/wiki/Chatterbot">Chatterbots</a>,  a famous example
 being <a href="https://en.wikipedia.org/wiki/ELIZA">ELIZA</a>, a computational
 psychotherapist. While not terribly complex, Eliza was able to have plausible interactions
 and convince users of her ability to understand the conversation.
 <p>
-More recently, with advanced algorithms in statistical pattern matching and 
-natural language processing, we have seen the rise of 
+More recently, with advanced algorithms in statistical pattern matching and
+natural language processing, we have seen the rise of
 <a href="http://www.apple.com/ios/siri/">Siri</a>,
 <a href="http://windows.microsoft.com/en-us/windows-10/getstarted-what-is-cortana">Cortana</a>,
 <a href="https://www.google.com/landing/now/">Google Now</a>, and
@@ -35,9 +35,9 @@ natural language processing, we have seen the rise of
 Today we will learn some of the basics of pattern matching with
 regular expressions and building a chatterbot.
 
-<h2>Step 1 - Chatter</h2> 
+<h2>Step 1 - Chatter</h2>
 To get started, we have provided you with the basic framework for a text-based chatterbot.
-Download the 
+Download the
 <a href="../code/chatterbot.py">chatterbot.py</a> file and load it up in IDLE.
 You should be able to have a very limited conversation with Eliza.
 
@@ -51,11 +51,11 @@ and return the chosen string.
 Test your code to make sure you get random responses in your conversation.
 
 <h2>Step 2 - Find All Matches </h2>
-To make our conversation more interactive, we need to have Eliza respond to the 
+To make our conversation more interactive, we need to have Eliza respond to the
 content of the <tt>text</tt> parameter of our <tt>get_response</tt> method. Using
 the skills we currently have in Python, we could
-try to match exact strings, but this would be too brittle and not account for the 
-various ways we could say the same thing.  
+try to match exact strings, but this would be too brittle and not account for the
+various ways we could say the same thing.
 <p>
 Alternatively, we could try to
 find if a string is a substring of <tt>text</tt>.
@@ -63,12 +63,12 @@ For example if we are looking for a conversation on cats, we could write
 <p>
 <pre>if "cat" in text:</pre>
 <p>
-This would find all places of the substring cat, even if the text was 
+This would find all places of the substring cat, even if the text was
 <tt>"catastrophe"</tt>. We could also look for <tt>"kitten"</tt>, <tt>"kitty"</tt>,
 etc., but this would easily become a long and complicated if statement.
 <p>
 Python, like most programming languages, includes a module to help with this
-pattern matching, called 
+pattern matching, called
 <a href="https://docs.python.org/2/library/re.html">Regular Expressions</a>.
 <p>
 In the shell, import the regular expression module, by typing
@@ -100,20 +100,20 @@ expression to the following one.
 <pre>re.findall(r"(c|a)(o|t)", "There is a cat on the cot")</pre>
 <p>
 We can also generalize our strings into patterns, such as alphabetic characters
-or digits. 
-To look for the alphanumeric characters in a given text string, we can use 
+or digits.
+To look for the alphanumeric characters in a given text string, we can use
 <tt>\w</tt>.
 <p>
 <pre>re.findall(r"\w", "I like the numbers 12 and 47!")</pre>
 <p>
-To look for the digits in a given text string, we can use 
+To look for the digits in a given text string, we can use
 <tt>\d</tt>.
 <p>
 <pre>re.findall(r"\d", "I like the numbers 12 and 47!")</pre>
 <p>
 This returns the individual digits 1, 2, 4 and 7. Not exactly what we were hoping for.
-To match a continuous repeating pattern, there are two options, the 
-<tt>+</tt> and the <tt>*</tt> symbols. + will match 1 or more repetitions of the 
+To match a continuous repeating pattern, there are two options, the
+<tt>+</tt> and the <tt>*</tt> symbols. + will match 1 or more repetitions of the
 pattern, while * will match 0 or more.
 <p>
 <pre>re.findall(r"\w+", "I like the number 12 and 47!")</pre>
@@ -130,23 +130,36 @@ Write a concise regular expression to look for any of the following words
 cat, kit, kitten, kitty
 </ul>
 <p>
-Alter your <tt>get_response</tt> method to look for this regular expression in 
+Alter your <tt>get_response</tt> method to look for this regular expression in
 the <tt>text</tt> parameter. If the list is not empty, you know there was a match
 found, so you can return an appropriate response. Otherwise, return a random
 response as above.
 
+<h3>Task 2.2</h3>
+Alter your <tt>get_response</tt> method to look for numbers in
+the <tt>text</tt> parameter.  If it finds any, it should interpret the
+first number as a temperature, and make some sort of appropriate comment.  For
+example:
+
+<p>
+<pre>
+BRENT: I have 35 minutes until class starts
+ELIZA: Brrr, that's cold!
+</pre>
+
+
 <h2>Step 3 - Tailored Responses</h2>
-To make our responses more aligned with the exact match found in the conversation, 
+To make our responses more aligned with the exact match found in the conversation,
 we can use the <tt>sub</tt> function. There are now three parameters, the first
-is still the pattern, the last is the text to search, and the middle is 
-a replacement regular expression to return when a match is found. Try out the 
+is still the pattern, the last is the text to search, and the middle is
+a replacement regular expression to return when a match is found. Try out the
 following command in the shell.
 <p>
 <pre>re.sub(r"cat", r"dog", "I love cats!")</pre>
 <p>
-If we want to use a portion of the match in our replacement, we can divide up our 
+If we want to use a portion of the match in our replacement, we can divide up our
 pattern with parenthesis. Each part of the parenthesized pattern can be retrieved by
-using a \ followed by a number. For example, to search for someone talking about 
+using a \ followed by a number. For example, to search for someone talking about
 emotions, we might type the following:
 <p>
 <pre>
@@ -155,17 +168,22 @@ re.sub(r"I('m| am) (sad|\w+py)", r"Why are you \2?", "I'm happy")
 <p>
 This will take whatever matches the second parenthesized portion, denoted
 with \2, in this case "happy",  and use it in the replacement.
+
+<p>Try replacing <tt>"happy"</tt> in the above example
+  with each of <tt>"sad"</tt>, <tt>"snappy"</tt>, and <tt>"mad"</tt>.  Make sure
+  you understand the output in each case.
+
 <h3>Task 3.1</h3>
 Augment Eliza to look for emotions
 in the text as shown above. You will know if the regular expression matches
-the text if what is returned by <tt>sub</tt> is different than the 
+the text if what is returned by <tt>sub</tt> is different than the
 original text. Add another if statement to the <tt>get_response</tt> method,
 and return the result of <tt>sub</tt> when matches are found.
 <h2>Step 4 - Memory</h2>
-Often, it will be useful to have a chatterbot move beyond a reflexive response. To 
-add a memory to your chatterbot, you will need to give it more components in the 
+Often, it will be useful to have a chatterbot move beyond a reflexive response. To
+add a memory to your chatterbot, you will need to give it more components in the
 <tt>__init__</tt> method, and then alter these components when a response is relevant.
-These could be Booleans, string, integers, however you want to track the state of 
+These could be Booleans, string, integers, however you want to track the state of
 your conversation.
 <h3>Task 4.1</h3>
 You want to remember that the user is interested in cats. Add
@@ -177,14 +195,16 @@ When the if statement you wrote in Task 2.1 is true, flip this flag to <tt>True<
 <p>
 Now, when Eliza does not find a match in the conversation for her topics, if
 she knows that the user is a cat lover, she should reply with random
-cat questions or 
+cat questions or
 <a href="http://imgur.com/gallery/uWqpr">facts</a>.
 
 <h2>Step 5 - Personal Chatterbot</h2>
 Create a new chatterbot with a name and a distinct personality as a subclass
 of <tt>Chatter</tt>. Your new chatterbot should have the ability to discuss
 at least four different topics of conversation, and have at least 25 unique responses
-for the user.
+for the user.  Of course, your chatterbot must use regular expressions
+to analyze the user's input.
+
 <h2>What to Hand In</h2>
 Turn in your completed <tt>chatterbot.py</tt> file on Moodle.
 <h2>Grading</h2>
@@ -193,7 +213,7 @@ Turn in your completed <tt>chatterbot.py</tt> file on Moodle.
   <li>To earn a C on this lab, do all the above and complete Step 3.</li>
   <li>To earn a B on this lab, do all the above and complete Step 4.</li>
   <li>To earn an A on this lab, do all the above and complete Step 5.</li>
-  <li>To earn a 100 on this lab, do all the above and complete at least six different topics and 
+  <li>To earn a 100 on this lab, do all the above and complete at least six different topics and
   have at least 35 unique responses.</li>
 </ul>
 
