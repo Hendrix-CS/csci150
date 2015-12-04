@@ -1,6 +1,6 @@
 ############
 # Creating an Eliza Chatterbot
-# 11/24/2014
+# 11/28/2015
 # Mark Goadrich
 ############
 
@@ -18,19 +18,24 @@ class Chatter:
     def outro(self):
         return self.name.upper() + ": Goodbye!"
 
-    def get_response(self, text):
+    def response(self, text):
         pass
 
-    def response(self, text):
-        return self.name.upper() + ": " + self.get_response(text)
 
 class Eliza(Chatter):
 
     def __init__(self):
         Chatter.__init__(self, "ELIZA")
 
+    def response(self, text):
+        return self.name.upper() + ": " + self.get_response(text)
+
+    ### BEGIN CHANGES HERE ###
+        
     def get_response(self, text):
         return "What makes you say that?"
+
+    ### END CHANGES HERE ###
 
 class User(Chatter):
 
