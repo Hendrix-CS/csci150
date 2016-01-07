@@ -6,3 +6,8 @@
 *~
 
 lectures/class-notes.pdf
+_cache
+_site
+web/hakyll
+*.hi
+*.o
