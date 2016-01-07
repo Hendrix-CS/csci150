@@ -1,6 +1,8 @@
 HW: function reading practice
 -----------------------------
 
+XXX probably should add one more (harder) exercise
+
 You should complete the following exercises *without* using a
 computer!
 
