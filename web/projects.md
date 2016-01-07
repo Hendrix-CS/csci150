@@ -14,11 +14,9 @@ also technique, documentation and evaluation of your solution. Further
 details on the grading standards and handin instructions for each
 project will be given when they are assigned.
 
-XXX
-
-  Project   Name                                                                                                                  Pct Assigned   Due
-  --------- --------------------------------------------------------------------------------------------------------------------- --- ---------- ---------------------
-  1         [Today in History](projects/project1.html)                                                                            5%  Sep 16     Sep 25
-  2         [Word Games](projects/project2.html)                                                                                  10% Oct 19     Oct 26
-  3         [Your Choice](https://docs.google.com/document/d/1DbCAsuCjVHmMDTXCQwlAIQUrn0FNtdu4h3C30girjv4/edit?usp=sharing)       20% Nov 23     Finals Day (Dec 14)
+  Project   Name                                                Pct Assigned   Due
+  --------- --------------------------------------------------- --- ---------- --------------------
+  1         [Today in History](projects/project1.html)          5%  Feb 9      Feb 16
+  2         [Word Games](projects/project2.html)                10% Mar 8      Mar 15
+  3         Final Project                                       20% Apr 11     Finals Day
 

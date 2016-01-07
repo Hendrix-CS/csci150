@@ -26,20 +26,16 @@ included in each lab.
 On these labs, you may work with a partner on the lab assignments if you
 choose. Their name must be listed on any code you hand in as joint work.
 
-XXX
-
   Lab   Name                                               Assigned
   ----- -------------------------------------------------- ----------
-  1     [Building Blocks of Programming](labs/lab1.html)   Aug 26
-  2     [Kepler and Newton](labs/lab2.html)                Sep 3
-  3     [Diagnosing Heart Disease](labs/lab3.html)         Sep 10
-  4     [Arduino Circuits](labs/lab4.html)                 Sep 17
-  5     [CodingBat](labs/lab5.html)                        Sep 24
-  6     [Mutation is the Word](labs/lab6.html)             Oct 1
-  7     [Caesar's Secrets](labs/lab7.html)                 Oct 8
-  8     [Fractal Recursion](labs/lab8.html)                Oct 22
-  9     [Gibberish Generator](labs/lab9.html)              Oct 29
-  10    [App Inventor](labs/lab10.html)                    Nov 5
-  11    [Die Hard III](labs/lab11.html)                    Nov 12
-  12    [Processing](labs/lab12.html)                      Nov 19
-  13    [Eliza](labs/lab13.html)                           Dec 3
+  2     [Kepler and Newton](labs/lab2.html)                Jan 26
+  3     [Diagnosing Heart Disease](labs/lab3.html)         Feb 2
+  5     [CodingBat](labs/lab5.html)                        Feb 16
+  6     [Mutation is the Word](labs/lab6.html)             Feb 23
+  7     [Caesar's Secrets](labs/lab7.html)                 Mar 1
+  8     [Fractal Recursion](labs/lab8.html)                Mar 15
+  9     [Gibberish Generator](labs/lab9.html)              Mar 29
+  10    [App Inventor](labs/lab10.html)                    Apr 5
+  11    [Die Hard III](labs/lab11.html)                    Apr 12
+  12    [Processing](labs/lab12.html)                      Apr 19
+  13    [Eliza](labs/lab13.html)                           Apr 26
