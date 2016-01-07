@@ -1,0 +1,35 @@
+<h2 id="hw-function-reading-practice">HW: function reading practice</h2>
+<p>You should complete the following exercises <em>without</em> using a computer!</p>
+<ol style="list-style-type: decimal">
+<li><p>Consider the functions defined below. What does <code>main()</code> print?</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> foo(a):
+    b = <span class="dv">3</span>*a + <span class="dv">2</span>
+    <span class="kw">return</span> b
+    <span class="dt">print</span> <span class="st">&quot;In mystery1&quot;</span>
+
+<span class="kw">def</span> bar(x,y):
+    <span class="kw">return</span> foo(x) + foo(y)
+
+<span class="kw">def</span> main():
+    <span class="dt">print</span> <span class="st">&quot;The value is &quot;</span> + <span class="dt">str</span>(bar(<span class="dv">2</span>,<span class="dv">3</span>))</code></pre></li>
+<li><p>Consider the functions defined below. What is printed by <code>main2()</code>?</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> f1():
+    <span class="dt">print</span> <span class="st">&quot;mushroom&quot;</span>
+
+<span class="kw">def</span> f2():
+    f1()
+    <span class="dt">print</span> <span class="st">&quot;badger&quot;</span>
+    f1()
+
+<span class="kw">def</span> f3(n):
+    f2()
+    <span class="kw">if</span> n &gt; <span class="dv">5</span>:
+        <span class="dt">print</span> <span class="st">&quot;snake&quot;</span>
+        f1()
+    <span class="kw">else</span>:
+        <span class="dt">print</span> <span class="st">&quot;snaaaaake&quot;</span>
+
+<span class="kw">def</span> main2():
+    f3(<span class="dv">2</span>)
+    f3(<span class="dv">6</span>)</code></pre></li>
+</ol>
