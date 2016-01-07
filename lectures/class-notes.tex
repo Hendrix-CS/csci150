@@ -1682,9 +1682,10 @@ supermarket or at a bank, and determine why each has a different way of
 organizing people (multiple lines with one checkout person each, vs one
 line with multiple tellers).
 
-I then walk through the methods of a queue (add, remove, size, is_empty)
-and some important words (front, back) and write up the super class Queue
-with all the method bodies being “pass”.
+I then walk through the methods of a queue
+(\verb|add, remove, size, is_empty|) and some important words (front,
+back) and write up the super class Queue with all the method bodies
+being “pass”.
 
 Easiest way to implement a queue is to use a list, in terms of lines of
 code. List already do everything we need, and we’re just constraining the
@@ -1714,11 +1715,11 @@ recursive function.
 How do we use this to make a Queue? Make the NodeQueue class, and have two
 components in init, the front and back, which start off as None.
 
-Write size, very simple,  and is_empty, base it on self.front being empty.
+Write size, very simple,  and \verb|is_empty|, base it on self.front being empty.
 
 First, I try to complete add and remove the natural, but wrong, way. A node
 is then someone standing in line. When people stand in lines, they look at
-the person in front of them. So we start with the is_empty case, and set
+the person in front of them. So we start with the \verb|is_empty| case, and set
 set.front = Node(e) and self.back = self.front. This is ok.
 
 We then write the case when there are already people in line. We have a new
