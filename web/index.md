@@ -5,7 +5,8 @@ CSCI 150: Foundations of Computer Science (F'16)
 =======================================
 
 Lecture: MWF 11:10-12, MC Reynolds 317  
-Lab: T 8:10-11, Snoddy Computer Lab
+Lab: T 8:10-11, Snoddy Computer Lab  
+
 Instructor: [Brent Yorgey](http://www.cs.hendrix.edu/~yorgey/)
 
 * Email: `yorgey@hendrix.edu`

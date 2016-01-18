@@ -1,3 +1,7 @@
+---
+title: Grading
+---
+
 Your final grade for this course will be based on the Labs, Projects,
 Quizzes, Exams and Participation described above.
 

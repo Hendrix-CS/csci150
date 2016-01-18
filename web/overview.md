@@ -58,42 +58,22 @@ Julie Brown in the Office of Academic Success (505.2954;
 seeking accommodation in relation to a recognized disability should
 inform the instructor at the beginning of the course.
 
-### Academic Honor
+### Academic Integrity
 
-XXXX
+All Hendrix students must abide by the College’s [Academic Integrity
+Policy](https://www.hendrix.edu/studentlife/handbook.aspx?id=67121) as
+well as [the College’s Computer
+Policy](https://www.hendrix.edu/studentlife/handbook.aspx?id=42308),
+both of which are outlined in the Student Handbook.
 
-As stated in the [Hendrix Academic Integrity
-Policy](http://www.hendrix.edu/studentlife/handbook.aspx?id=67121), all
-students have agreed to adhere to the following principles:
+For specific ways the Academic Integrity policy applies in this course,
+please refer to the [Computer Science Academic Integrity
+Policy](http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html).
 
--   All students have an equal right to their opinions and to receive
-    constructive criticism.
--   Students should positively engage the course material and encourage
-    their classmates to do the same.
--   No students should gain an unfair advantage or violate their peers'
-    commitment to honest work and genuine effort. It follows that any
-    work that a student submits for class will be that student's own
-    work. The amount of cooperation undertaken with other students, the
-    consistency and accuracy of work, and the test-taking procedure
-    should adhere to those guidelines that the instructor provides.
--   Members of the Hendrix community value and uphold academic integrity
-    because we recognize that scholarly pursuits are aimed at increasing
-    the shared body of knowledge and that the full disclosure of sources
-    is the most effective way to ensure accountability to both ourselves
-    and our colleagues.
+The short version is that academic integrity violations such as copying
+code from another student or the Internet are **easy to detect**, will
+be **taken very seriously**, and carry a default recommended sanction of
+**failure in the course**.
 
-We will provide guidelines for the amount of cooperation allowed on each
-assignment as they are posted. In general, you may discuss topics with
-other students and tutors, but **all code you write must be your own,
-and you must be able to explain to your instructor how it works. In this
-course, it is a violation of the honor code to look at code from other
-students.**
-
-### Extensions
-
-Extensions and rescheduling for labs, projects, exams and quizzes are
-only given when circumstances beyond your control (e.g. being sick,
-choir or sports travel) prevent you from completing a project on time.
-You must notify your instructor either by email or phone of your
-circumstances well in advance of the due date. No extensions are given
-for requests made within three days of the due date.
+If you have any questions about how the Academic Integrity policy
+applies in a particular situation, please contact me.
