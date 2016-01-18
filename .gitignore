@@ -11,3 +11,4 @@ _site
 web/hakyll
 *.hi
 *.o
+*.pdf
