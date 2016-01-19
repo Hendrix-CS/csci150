@@ -12,3 +12,7 @@ over the weekend.
 
 These quizzes, participation, and homework assignments will comprise
 15% of your final grade.
+
+HW                                                                                                                 Due
+------------------                                                                                                 ----
+0: [Who Are You](https://docs.google.com/forms/d/1SnjoPxOy-06Y-17AYReFbwOEAzGr1FGVvIB5C4gsqCc/viewform) &nbsp;     January 20

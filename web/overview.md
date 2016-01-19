@@ -77,3 +77,13 @@ be **taken very seriously**, and carry a default recommended sanction of
 
 If you have any questions about how the Academic Integrity policy
 applies in a particular situation, please contact me.
+
+### Laptops
+
+Please **do not bring laptops to lecture**.  This may seem strange in
+a computer science class.  But lab is the place where you will get
+plenty of experience working on the computer; lecture is a time for
+thinking and learning without the distraction of a computer.
+
+I will make an exception if you can prove to me that you really do
+benefit from using your laptop to take notes.
