@@ -15,3 +15,4 @@ Instructor: [Brent Yorgey](http://www.cs.hendrix.edu/~yorgey/)
   [By appointment on youcanbook.me](https://byorgey.youcanbook.me/),
   or whenever my door is open
 
+[code.org video](https://www.youtube.com/watch?v=qYZF6oIZtfc)
