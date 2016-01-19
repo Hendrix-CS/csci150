@@ -1,0 +1,1 @@
+rsync -r _site/* yorgey@ozark.hendrix.edu:ozark/150/
