@@ -4,6 +4,19 @@
 
 \usepackage{hyperref}
 
+\newsavebox{\reflectbox}
+
+\newenvironment{reflect}[1]
+{
+  \begin{lrbox}{\reflectbox}
+    \begin{minipage}[t]{\textwidth}
+      \textbf{#1}:
+}{
+    \end{minipage}
+  \end{lrbox}
+  \fbox{\usebox{\reflectbox}}
+}
+
 \begin{document}
 
 \title{CSCI 150: Foundations of Computer Science \\ Spring 2016 Lecture Notes}
@@ -85,6 +98,13 @@ Basic intro to Scratch for first lab.
 
 \subsection*{Minecraft Hour of Code (?)}
 
+\section*{Reflections}
+
+\begin{reflect}{Brent, S'16}
+  Doing the first lecture together with Hour of Code lab worked really
+  well in S'16.
+\end{reflect}
+
 \newpage
 
 \section{Algorithms and language}
@@ -147,6 +167,17 @@ Basic intro to Scratch for first lab.
 \item Show video \& instruction image on the screen at the same time.
 \item Wander around and make sure everyone can do it.
 \end{itemize}
+
+\subsection*{Reflections}
+
+\begin{reflect}{Brent, S'16}
+  This whole lecture feels sort of disjointed and unmotivated.  The
+  concepts are important but maybe
+
+  In F'15 we were scrambling to finish our dinosaurs right at the end.
+  In S'16 I therefore tried to go a bit faster and apparently overdid
+  it---everyone was done with dinosaurs 10--15 minutes early!
+\end{reflect}
 
 \newpage
 
