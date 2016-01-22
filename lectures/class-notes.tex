@@ -2,9 +2,11 @@
 
 \documentclass{article}
 
-\usepackage{hyperref}
+\usepackage{hyperref, amsmath, xspace}
 
 \newsavebox{\reflectbox}
+
+\newcommand{\etc}{\emph{etc.}\xspace}
 
 \newenvironment{reflect}[1]
 {
@@ -51,7 +53,7 @@ component separately.
 \item \textbf{What do computers do?}  Lots of things.  Commonality:
   information.  Communicating, transforming, analyzing, storing.
 \item \textbf{What is science?}  Get some responses.  Scientists use
-  rational investigation \& analysis, mathematics, etc. to study the
+  rational investigation \& analysis, mathematics, \etc to study the
   natural world.
 \end{itemize}
 
@@ -181,9 +183,150 @@ Basic intro to Scratch for first lab.
 
 \newpage
 
-\section{XXX}
+\section{Drake Equation, Python I}
 
-\section{XXX}
+\subsection*{Setup}
+
+\begin{itemize}
+\item \textbf{Quiz}: list 4 of the 5 elements of any algorithm.
+\item For this week, read Ch 2 and 3. Probably quiz Wednesday.
+\item Remember dinosaurs are due on Monday.  Turn in document on
+  Moodle, dinosaurs in class.
+\end{itemize}
+
+\subsection*{Drake Equation}
+
+Today, we want the computer to calculate a simple formula for us.  The
+class is about communication and intelligence.  Frank Drake, founder
+of SETI, came up with an equation to help us see if it's actually
+feasible that we'll find ETs to communicate with.
+\[ N = R^* f_p n_e f_l f_i f_c L \]
+where
+\begin{align*}
+R^* &= \text{average rate of star formation} \\
+F_p &= \text{fraction that have planets} \\
+N_e &= \text{number of planets per star} \\
+F_l &= \text{fraction that have life} \\
+F_i &= \text{fraction that develop intelligence} \\
+F_c &= \text{fraction of civs that release to space} \\
+L &= \text{how long the signals are transmitted}
+\end{align*}
+
+Many people have different numbers for this equation, how to quickly
+calculate the answer?  This is our problem, let's use python to solve
+it.  Here are the steps we will go through, 
+
+\begin{enumerate}
+\item Analyze Problem
+\item Determine Input/Output
+\item Create Pseudocode
+\item Implement in Code
+\item Test/Debug
+\item Maintain
+\end{enumerate}
+
+OK, let's go through the steps.
+
+\begin{enumerate}
+\item Analyze: We want the user to tell us values for the right hand
+  side of the equation, and we will tell them the expected number of
+  civs we will encounter.
+
+\item I/O: Inputs are $R^*$, $f_p$, \etc  The output is $N$.
+
+\item Design: Here's our algorithm in psedocode/English:
+
+  Tell the user about the equation \\
+  Ask for $R^*$ \\
+  Store $R^*$ \\
+  Ask for $f_p$ \\
+  Store $f_p$ \\
+  \etc \\
+  Calculate $N$ \\
+  Display $N$ to the user.
+
+\item Implement: use Python, but how?
+
+\end{enumerate}
+
+\subsection*{Python I (Strings, Numbers, Variables)}
+
+Show \url{python.org} website.  Load up IDLE, Python 2.7.
+
+\texttt{>>>} is the prompt.  This gives you direct access to the
+interpreter.  You say commands one line at a time, and get immediate
+answers.  Great for testing simple lines of code and seeing what they
+do.
+
+What kinds of things does Python give us?
+
+\begin{itemize}
+\item \textbf{Strings}!
+
+  Chunks of text, in quotes. Just like you're reading a book:
+  ``Brilliant!'' Harry said.
+
+  Use \texttt{type} to ask what type it is.
+
+  Both types of quotes work (single, double), must end with same you
+  start with. And for really big strings, use triple quotes like
+  \texttt{""" lkwjelrkjwe """}
+
+  How can we break this? \texttt{'haven't you heard?'}  Use one to
+  enclose the other.  If we need both, use \texttt{"""}, or the escape
+  character \texttt{\textbackslash}: \texttt{\textbackslash ", \textbackslash t,
+    \textbackslash n, \textbackslash\textbackslash}. These are special.
+
+  The red text we see when things go wrong are examples of Syntax
+  Errors.
+
+\item \textbf{Numbers}!
+
+  2, 5, 10, integers, \etc  Use \texttt{type}.
+
+  Simple math with numbers like $2+5$. \texttt{"2 + 5"}? not so much.
+  Great as a quick calculator. Use () to force order of operations
+  differences.
+
+  Integers are great, but what about fractions? \texttt{2.5}
+  \texttt{0.95}, \texttt{3e23}.
+
+  One gotcha: $3 / 4$ vs $3.0 / 4.0$.
+
+\item \textbf{Variables}!
+  
+  For keeping stuff around in short-term memory.
+  \begin{verbatim}
+  x = 3
+  name = "Brent"
+  \end{verbatim}
+  These are \emph{assignment} statements.  No output any more. Before,
+  any value returned from the interpreter to us, now it goes into
+  memory.  Type \texttt{x}, it spits back 3.
+
+  Draw pictures, \texttt{x} points to $3$, it's just a name for the
+  value $3$.
+
+  \texttt{x = 4} reassigns \texttt{x} to be a new number.  \texttt{x =
+    "Brent"} works too.
+
+  \texttt{y} is a runtime error, give us an \emph{exception}, which
+  means something is not right (the \emph{other} meaning of
+  ``exceptional''). So doublecheck your names!
+
+  Some names are reserved, we'll see them as we go.
+  Names can't be anything, letter or underscore first, then letter,
+  number or underscore.
+
+  Be descriptive, a, b, c, d, e, don't really help
+  Use \texttt{width}, \texttt{height}, \texttt{num\_of\_cats}, \etc
+\end{itemize}
+
+\newpage
+
+\section{Python II, Drake}
+
+\newpage
 
 \section{XXX}
 
@@ -1267,7 +1410,7 @@ legitimate uses of recursion, e.g. processing trees.
 
 Our programs have no state between each time they are called.
 Everything is stored in memory during the program, but afterwords,
-it’s all gone.  This is RAM.  We need hard drive storage to keep it
+it's all gone.  This is RAM.  We need hard drive storage to keep it
 around.  Save and read things in files.
 
 To write to a file:
@@ -1408,7 +1551,7 @@ classical vs romantic understanding
 underlying form vs appearance
 negative views of each side (dull, uninteresting for classical, frivolous, erratic for romantic)
 masculine vs feminine association? Sexist?
-generous interpretations, because of culture? 70’s mentality?
+generous interpretations, because of culture? 70's mentality?
 in any case, this stereotype should not persist, obviously wrong
 women can be engineers, men can be artists and have feelings
 how is CSCI related to these understandings? Why did we read this?
@@ -1715,14 +1858,14 @@ back) and write up the super class Queue with all the method bodies
 being “pass”.
 
 Easiest way to implement a queue is to use a list, in terms of lines of
-code. List already do everything we need, and we’re just constraining the
+code. List already do everything we need, and we're just constraining the
 interactions to be with the front [0] and back [-1]. We code up the
 ListQueue class together.
 
 Then we test the ListQueue with the tester function and the main function.
-As we put stress on the queue with larger numbers, we see it’s not a linear
+As we put stress on the queue with larger numbers, we see it's not a linear
 relationship, but quadratic. 10 ** 7 is a good number to stop, since it
-takes about 100 seconds to complete. I haven’t in the past, but I think I
+takes about 100 seconds to complete. I haven't in the past, but I think I
 will make a log-log plot of the size vs the time.
 
 So, maybe a list, because it is very flexible and can access any element,
@@ -1730,9 +1873,9 @@ is too much for this Queue task, and we could do better with another way of
 implementing a Queue where we only really care about the front and back.
 
 Then, I discuss the Node abstraction. Break up a list into individual
-pieces that fit together like Legos. It’s a recursive data type, something
+pieces that fit together like Legos. It's a recursive data type, something
 that stores an element and another Node as components.  This requires a
-discussion of the word None. We’ve seen it as the return value of a void
+discussion of the word None. We've seen it as the return value of a void
 function. Python has a word for “nothing”, and we can use that word when we
 need a variable but it has no value.
 
@@ -1758,7 +1901,7 @@ self.back = temp
 
 to reset the back pointer. All looks good so far.
 
-But we can’t remove people from the queue easily. We can get the element we
+But we can't remove people from the queue easily. We can get the element we
 need from self.front, but who is the next self.front? self.front.next ==
 None, and this is a problem. We could walk from the back to get the element
 right behind self.front, with complicated two-finger algorithm, and it
@@ -1767,7 +1910,7 @@ takes a long time. Booo.
 So instead, we reverse the orientation of everyone in line. You stand in
 line backwards and stare at the person behind you. They are your next. If
 you do this in real life, people will get a little uncomfortable. Just go
-with it, computer scientists are weird sometimes because it’s the right
+with it, computer scientists are weird sometimes because it's the right
 thing to do, like starting to count at 0…
 
 Then we rewrite add to match the code in the queuestuff.py file, and
@@ -1779,7 +1922,7 @@ expensive. The overhead of making new Node objects all the time is seen.
 
 But as it gets larger, the time is linear with the size. for 10 ** 6 and
 beyond, NodeQueue will beat ListQueue hands down. You can go back to plot
-them in excel.  I’ve included an image in the code directory of these two
+them in excel.  I've included an image in the code directory of these two
 lines on the log-log plot.
 
 I finish with discussing how this analysis and construction of data
