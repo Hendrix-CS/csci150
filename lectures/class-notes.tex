@@ -291,7 +291,9 @@ What kinds of things does Python give us?
   Integers are great, but what about fractions? \texttt{2.5}
   \texttt{0.95}, \texttt{3e23}.
 
-  One gotcha: $3 / 4$ vs $3.0 / 4.0$.
+  One gotcha: $3 / 4$ vs $3.0 / 4.0$.  Use \verb|type| to see the
+  types of different things.  Maybe mention mod operator \verb|%|,
+  exponentiation \verb|**|.
 
 \item \textbf{Variables}!
 
@@ -322,13 +324,206 @@ What kinds of things does Python give us?
   Use \texttt{width}, \texttt{height}, \texttt{num\_of\_cats}, \etc
 \end{itemize}
 
+\begin{reflect}{Brent, S' 16}
+  Didn't make it to variables.
+\end{reflect}
+
 \newpage
 
 \section{Python II, Drake}
 
+\subsection*{Setup}
+\begin{itemize}
+\item Collect dinosaurs.  Write your name on it!
+\item Read Chapters 2 \& 3 --- quiz on Wednesday!
+\item Start reading Chapter 4 for Wednesday.
+\end{itemize}
+
+\subsection*{Variables}
+
+[Finish up variables.  Show @ prompt in IDLE.  See notes from previous
+lecture.]
+
+\subsection*{I/O, .py files}
+
+\verb|print|.  The interpreter is great, but we don’t want the user
+having to type python code, we make it easier for them.  We do
+calculations, and tell the computer to print the output to the user.
+
+\begin{itemize}
+\item \verb|print <expr>| --- instructs Python to display information
+  to the user.
+\item For example:
+  \begin{itemize}
+  \item \verb|print "Hello world"|
+  \item
+\begin{verbatim}
+x = 3
+y = 4
+print x, y
+\end{verbatim}
+  \item
+\begin{verbatim}
+print """ kjbwer
+Lkjwelrkj
+Lkjwelkrj
+"""
+\end{verbatim}
+  \end{itemize}
+
+\item Put stuff in a \verb|.py| file with \verb|print| and run it.
+
+\item \verb|raw_input()|, lets us talk to the user and ask questions
+  at the same time.  Example:
+\begin{verbatim}
+raw_input(“What is your name?”)
+\end{verbatim}
+\item Note it doesn’t give you back the prompt \verb|>>>|, but waits
+  for you to type; whatever you type comes back as a string.
+
+\item  To do anything with this we need to save the result in a variable:
+\begin{verbatim}
+name = raw_input(“What is your name?”)
+\end{verbatim}
+
+\item  But what if we want numbers? Functions to convert strings into
+  integers or floating point numbers:
+\begin{verbatim}
+int("23")
+float("32.4")
+\end{verbatim}
+
+\item So to get numbers from the user, we can do something like:
+\begin{verbatim}
+age_st = raw_input("What is your age?")
+age = int(age_st)
+\end{verbatim}
+\end{itemize}
+
+\subsection*{REPLs, PROGRAMS, etc.}
+
+Mark: Useful here to talk about the difference between the REPL loop,
+and the input and print connections to the user. Draw diagram. What we
+type in python at the \verb|>>>| is the PROGRAM, it goes to the CPU,
+and the answers are returned to the PROGRAM. What happens when the
+PROGRAM says print and input, these questions come from the CPU to the
+USER and the input from the USER goes back to the CPU, which then
+returns it to the PROGRAM.
+
+Brent prefers something like the following: in a PROGRAM (saved in a
+file) we have to be explicit about I/O: input only comes via
+\verb|raw_input| and output only produced via \verb|print|.  The REPL
+handles input and ouptut for us: \verb|>>>| prompt does input and
+everything is implicitly \verb|print|ed for us.  Draw box representing
+program with inputs coming in, outputs going out via these functions.
+REPL is like a little wrapper around a smaller box where we don't have
+to worry about those things.  [A little confusing to think about what
+happens when we e.g. call \verb|raw_input| at the REPL prompt but you
+don't really need to worry about that!]
+
+\subsection*{Our first program!}
+
+Let's start programming.  We need a place to save our commands, as a
+script, so they are all run at once.  This file is produced by a
+programmer.  The user will then take this file and run the program.
+
+New file, open this up, save as \verb|drake.py|, so that the colors
+will show up in the code to help us out.
+
+First, put name, class, date at top, in a comment block \verb|#######|.
+
+Add in pseudocode, use \verb|#| to mark comments, python will ignore
+these lines.
+
+First just do one value, make the equation for \verb|N| very simple.
+Calculate and run with F5, or through menus.
+
+Then revise to make it complete.  Get as far as we can, then let them
+finish on their own. [In F'15 this was a HW assignment since it
+fell over a weekend; in S'16 this lecture was on Monday, with the
+Kepler-Newton lab the next day, so not really any point to making it a HW.]
+
 \newpage
 
-\section{XXX}
+\section{More Math and Functions}
+
+\textbf{NOTE: this is here as a separate lecture, but really needs to
+  just be done as a mini-lecture at the beginning of the Kepler/Newton
+  lab!}
+
+\subsection*{Setup}
+\begin{itemize}
+\item For next time, read chapter 4.
+\end{itemize}
+
+Talk about types again.  Review, or show again, use of \verb|type()|
+to determine what python thinks the type of a literal or variable is.
+For example:
+\begin{verbatim}
+type("hello") = str
+type(3) = int
+type(3.14) = float
+x = 3
+type(x) = int
+x = 3.14
+type(x) = float
+\end{verbatim}
+
+Other types of formulas.  Remember, () very important in math.
+Mention exponents are with \verb|**| if not already mentioned. Recall
+order of operations.
+
+Mention \verb|%|, mod operator, if not already mentioned.
+Talk about \verb|5 / 2 = 2| if not already mentioned.
+
+We saw last time string conversion to \verb|int| and \verb|float|: Can
+also use these to go from \verb|float| to \verb|int| and back.  Also,
+we can go from either to string with e.g. \verb|str(3)|.
+
+What we've been using are \emph{functions}.  Some come standard with
+python, like \verb|print|, \verb|raw_input|, \verb|type|, and type
+conversion functions like \verb|int|, \verb|float|, \verb|str|.
+
+Many more possible, and in the near future, you will write your own!
+For now, if you want to use functions someone else wrote, you have to
+import them.
+
+\textbf{DO THIS AT THE TOP OF THE FILE, NOT SOMEWHERE IN THE MIDDLE!}
+It helps clarify what you'll need for the code, and is good etiquette.
+
+Our first \emph{module} today, \verb|math|:
+\begin{verbatim}
+import math
+\end{verbatim}
+
+Lots of nice functions in there.  See
+\url{http://docs.python.org/lib/module-math.html}.  For example,
+\verb|log|, \verb|arctan|, \verb|ceil|, \verb|degrees|, \verb|sqrt|
+and constants like \verb|e|, \verb|pi|
+
+Can access them with dot notation: \verb|module.function|
+
+\verb|math.log(y)| is \emph{natural} log (base $e$). If you want
+e.g. base 2, do \verb|math.log(10, 2)|.
+
+Do more examples, e.g. \verb|math.sqrt(math.log(math.pi))|.  Function
+composition!
+
+\begin{verbatim}
+dist = int(input(“What is the distance?”))
+\end{verbatim}
+
+On to Lab 3.  You will write scripts like with Drake equation, use
+this as a template for your work.
+
+Python Style Check.  Download this and use it.
+
+Follow instructions at the end of the lab.  Email me with questions,
+I'll try to check email regularly, work with a partner, good luck,
+Wrap up Lab 3. Demonstrate the python Style Checker.  Do this 15
+minutes, write up code for orbit_newton.py remind to write up
+lab3_evaluation.txt as a TXT file.
+
 
 \newpage
 \section{Conditionals (Wednesday, 9 September)}
