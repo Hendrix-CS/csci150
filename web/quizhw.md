@@ -17,3 +17,4 @@ HW                                                                              
 ------------------                                                                                                 ----
 0: [Who Are You](https://docs.google.com/forms/d/1SnjoPxOy-06Y-17AYReFbwOEAzGr1FGVvIB5C4gsqCc/viewform) &nbsp;     January 20
 1: [Communication and Origami](http://mgoadric.github.io/csci150/homework/origami.html)                            January 25
+2: [Logic puzzles](http://mgoadric.github.io/csci150/homework/logic-puzzles.html)                                  February 1
