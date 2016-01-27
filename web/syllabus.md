@@ -11,7 +11,7 @@ be assigned before material will be covered in class. You are expected
 to review the material and come to class prepared.
 
 * Chapter 1: Weds, Jan 20
-* Chapter 2: Fri, January 22
+* Chapter 2: Fri, January 22 [ [drake.py](static/drake.py) ]
 * Chapter 3: Fri, January 22
 * Chapter 4: Weds, January 27
 * Chapter 5: Weds, February 10
