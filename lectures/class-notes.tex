@@ -532,35 +532,91 @@ this as a template for your work.
 Python Style Check.  Download this and use it.
 
 \newpage
-\section{Logic Puzzles}
+\section{Logic Puzzles \& Boolean logic}
 
-Write me!
+\subsection*{Setup}
+\begin{itemize}
+\item \textbf{Quiz (S'16)}: what is the value of each of the following
+  Python expressions?
+  \begin{itemize}
+  \item \verb|3 + 4 * 2 - 1|
+  \item \verb|3 ** (11 % 3)|
+  \item \verb|7.0/2.0 + float(7/2)|
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Logic puzzles}
+
+Logic puzzle time!  Hand out. Explain rules for Cidouri: connect each
+black dot with a single white dot with a horizontal or vertical line.
+Lines cannot pass through dots or cross each other.  Have them work
+for 5 minutes, then get responses/explanations.
+
+This is a logic puzzle.  Things are true or false, and they have
+implications for the other parts of the puzzle.  Find an end that HAS
+to be true, work from there.
+
+True and False are part of python too, and lie at the heart of
+computer programming.  Line up well with binary numbers, 1 and 0, True
+and False.
+
+Propositions can be true or false.
+\begin{itemize}
+\item Label the columns with letters, rows with numbers.
+\item Is there an edge between circle $A_1$ and $B_1$?  Write as $A_1
+  \times B_1$. Is there an edge between $A_1$ and $A_3$? Write as $A_1
+  \times A_3$.
+\end{itemize}
+A statement can be made about the puzzle in general, combining these
+with logical operators "and", "or", "not".  Use parenthesis again, like
+with math:
+
+\newcommand{\orr}{\mathbin{\mathbf{or}}}
+\newcommand{\andd}{\mathbin{\mathbf{and}}}
+\newcommand{\nott}{\mathbin{\mathbf{not}}}
+
+\[ (A_1 \times B_1 \orr A_1 \times A_3) \andd \nott (A_1 \times B_1 \andd A_1
+\times A_3) \]
+
+We write many of these, and we could have a program that verifies if a
+solution is a good one or not.
+
+Same sort of thing with other puzzles.
+
+Make sure to leave time to explain all puzzles.  HW2 (due Monday) is
+to complete all puzzles.
 
 \newpage
 
-\section{Conditionals (Wednesday, 9 September)}
+\section{Conditionals}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item Music: Whitacre ``i thank You God''. 6:56.  Start at 8:03.
-\item Talk about Fabienne Serriere.  Show website.
-\item Collect puzzle HW.
+\item{} [S '16: Next time: Quiz on chapter 4.]
+\item{} [F'15: logic puzzle HW due today]
+\item{} [F'15: quiz 2 today]
 \end{itemize}
 
-\subsection*{Quiz}
-\textbf{Quiz 2}
+\subsection*{Booleans}
+
+Today: a new Python type!
 
 We saw Boolean values {\tt True} and {\tt False}, in the puzzles, with
-operators {\tt and}, {\tt or}, {\tt not} last time.  How else can we get
-Booleans?
+operators {\tt and}, {\tt or}, {\tt not} last time.  Show these in
+Python, at prompt.  Note semantics of {\tt or}.
+
+How else can we get Booleans?
 
 \textbf{Comparison operators}: \verb|>|, \verb|<|, \verb|>=|,
 \verb|<=|, \verb|!=|, \verb|==|.  Demonstrate on numbers, strings, all
 generate Booleans.
 
-Now, the computer has a basis to make decisions.  Sets up branches in
-the code, execute this or that.
+\subsection*{Conditionals}
+
+You already know about conditionals.  Here's how we do them in Python.
+The computer has a basis to make decisions.  Sets up branches in the
+code, execute this or that.
 
 \begin{verbatim}
 passwd = input("What is the password? ")
@@ -570,19 +626,38 @@ if (passwd == "lemur"):
 
 Tabbing is important!  Colon is important!
 
-Introduce random module. ({\tt from random import *})
+Introduce random module. ({\tt import random})
 \begin{itemize}
-\item {\tt random()} is number in $[0,1)$. Uniform.
-\item {\tt randint(n)} is random integer between $0$ and $n$
+\item {\tt random.random()} is number in $[0,1)$. Uniform.
+\item {\tt random.randint(n)} is random integer between $0$ and $n$
   (inclusive).  (Aside: how can we write this in terms of {\tt
-    random()}?)
+    random.random()}?)
 \end{itemize}
-Do coin flip.  Conditionally do... something.  Needs to include
+Do coin flip.  Conditionally do something.  Needs to include
 \begin{itemize}
 \item {\tt else}
 \item {\tt elif}
 \item nested {\tt if}  (flip two coins in a row)
 \end{itemize}
+For example:
+\begin{verbatim}
+import random
+
+passwd = raw_input("Enter the password: ")
+r = random.random()
+print "The random number is", r
+
+if (r < 0.2):
+    print "You got heads!"
+elif (r >= 0.2 and r < 0.6):
+    print "You got tails!"
+else:
+    print "You got pickles!"
+    if (passwd == "pass"):
+        print "Here be secrets"
+    else:
+        print "No secrets for you"
+\end{verbatim}
 
 \newpage
 
@@ -595,8 +670,12 @@ Do coin flip.  Conditionally do... something.  Needs to include
 \item NB: exam 1 a week from today.  In class, closed notes, closed
   computer.  Covers material through today and Monday.  Wednesday will
   be exam review.
-\item Collect any remaining logic puzzle HW!
+\item Collect logic puzzle HW
 \end{itemize}
+
+\subsection*{Quiz}
+\textbf{Quiz 2}
+
 
 \subsection*{Ada Lovelace}
 
