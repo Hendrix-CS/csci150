@@ -12,8 +12,8 @@ to review the material and come to class prepared.
 
 * Chapter 1: Weds, Jan 20
 * Chapter 2: Fri, January 22 [ [drake.py](static/drake.py) ]
-* Chapter 3: Fri, January 22
-* Chapter 4: Weds, January 27
+* Chapter 3: Fri, January 22 [ [input-output.py](static/input-output.py) ]
+* Chapter 4: Weds, January 27 [ [conditionals.py](static/conditionals.py) ]
 * Chapter 5: Weds, February 10
 * Chapter 6: Weds, February 10
 * Chapter 7: Fri, February 12
