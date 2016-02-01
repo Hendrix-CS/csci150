@@ -675,21 +675,18 @@ else:
 
 \newpage
 
-\section{Information encoding I (Friday, 11 September)}
+\section{Information encoding I}
 
 \subsection*{Setup/administrivia}
 
 \begin{itemize}
-\item Music: Dave Brubeck Quartet, Kathy's Waltz
-\item NB: exam 1 a week from today.  In class, closed notes, closed
-  computer.  Covers material through today and Monday.  Wednesday will
-  be exam review.
+\item PUT OFF quiz until Wednesday (after conditional lab).  Hint:
+  about finding errors.
 \item Collect logic puzzle HW
+\item NB: exam 1 a week from today!  In class, closed notes, closed
+  computer.  Covers material through today and next class. Class
+  before exam will be review.
 \end{itemize}
-
-\subsection*{Quiz}
-\textbf{Quiz 2}
-
 
 \subsection*{Ada Lovelace}
 
@@ -717,9 +714,12 @@ complexity or extent.''
 \end{quote}
 
 She saw potential for computers to operate on many kinds of
-information instead of just making tables of numbers.  Over the next 2
-classes we will consider some of the fundamentals that make this
-possible.
+information instead of just making tables of numbers, and we know that
+they can indeed do just that!  In fact, she even missed one very
+important development, that computers can not only \emph{operate} on
+these kinds of information, but allow us to \emph{communicate} using
+these kinds of information as well.  Over the next 2 classes we will
+consider some of the fundamentals that make this possible.
 
 \subsection*{Binary}
 
@@ -747,7 +747,7 @@ Note 1 \emph{byte} = 8 bits.  Incidentally, one \emph{kilobyte} is not
 $1000$ bytes, but actually $2^{10} = 1024$ bytes!  Megabyte is
 $2^{20}$ bytes, and so on.
 
-Questions for students (pair \& share etc):
+Questions for students (pair \& share etc, using binary cards!):
 \begin{enumerate}
 \item How many different binary numbers using $n$ bits are there?
   (Write out 16 binary numbers using $4$ bits.)
@@ -761,8 +761,15 @@ Algorithm for converting from $n$ in base $10$ to binary:
 \item Find largest power of two $\leq n$, say, $2^k$.
 \item As long as $n > 0$:
   \begin{itemize}
-  \item If $2^k \leq n$, subtract $2^k$ from $n$ and write a $1$
-    (in the $2^k$ place). Else, write a $0$.
+  \item If $2^k \leq n$
+    \begin{itemize}
+    \item subtract $2^k$ from $n$
+    \item write a $1$ (in the $2^k$ place)
+    \end{itemize}
+  \item else
+    \begin{itemize}
+    \item  write a $0$ in the $2^k$ place
+    \end{itemize}
   \item Decrease $k$ by $1$.
   \end{itemize}
 \end{itemize}
@@ -791,13 +798,12 @@ What about negative numbers?  One possibility: use one bit for sign
 (plus or minus).  (Turns out there is a better way, ``$2$'s
 complement''; learn about it in CSO or ask if you are curious.)
 
-\newpage
-\section{Information encoding II (Monday, 14 September)}
+\section{Information encoding II}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Music: ?
-\item Quiz 3
+\item Quiz: program with conditionals, ask them to identify five
+  errors.
 \end{itemize}
 
 \subsection*{Representing floating-point numbers}
