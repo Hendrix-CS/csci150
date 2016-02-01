@@ -40,17 +40,17 @@ You will be handing in your lab work via
 [Moodle](http://moodle.hendrix.edu). Instructions to do so will be
 included in each lab.
 
-  Lab   Name                                                                    Assigned
-  ----- --------------------------------------------------                      ----------
-  1     [Minecraft Hour of Code](https://studio.code.org/join/LLMHVB)           Jan 19
-  2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)   Jan 26
-  3     [Diagnosing Heart Disease](labs/lab3.html)                              Feb 2
-  5     [CodingBat](labs/lab5.html)                                             Feb 16
-  6     [Mutation is the Word](labs/lab6.html)                                  Feb 23
-  7     [Caesar's Secrets](labs/lab7.html)                                      Mar 1
-  8     [Fractal Recursion](labs/lab8.html)                                     Mar 15
-  9     [Gibberish Generator](labs/lab9.html)                                   Mar 29
-  10    [App Inventor](labs/lab10.html)                                         Apr 5
-  11    [Die Hard III](labs/lab11.html)                                         Apr 12
-  12    [Processing](labs/lab12.html)                                           Apr 19
-  13    [Eliza](labs/lab13.html)                                                Apr 26
+  Lab   Name                                                                          Assigned
+  ----- --------------------------------------------------                            ----------
+  1     [Minecraft Hour of Code](https://studio.code.org/join/LLMHVB)                 Jan 19
+  2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)         Jan 26
+  3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Feb 2
+  5     [CodingBat](labs/lab5.html)                                                   Feb 16
+  6     [Mutation is the Word](labs/lab6.html)                                        Feb 23
+  7     [Caesar's Secrets](labs/lab7.html)                                            Mar 1
+  8     [Fractal Recursion](labs/lab8.html)                                           Mar 15
+  9     [Gibberish Generator](labs/lab9.html)                                         Mar 29
+  10    [App Inventor](labs/lab10.html)                                               Apr 5
+  11    [Die Hard III](labs/lab11.html)                                               Apr 12
+  12    [Processing](labs/lab12.html)                                                 Apr 19
+  13    [Eliza](labs/lab13.html)                                                      Apr 26
