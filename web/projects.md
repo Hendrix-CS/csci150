@@ -14,9 +14,8 @@ also technique, documentation and evaluation of your solution. Further
 details on the grading standards and handin instructions for each
 project will be given when they are assigned.
 
-  Project   Name                                                Pct Assigned   Due
-  --------- --------------------------------------------------- --- ---------- --------------------
-  1         [Today in History](projects/project1.html)          5%  Feb 9      Feb 16
-  2         [Word Games](projects/project2.html)                10% Mar 8      Mar 15
-  3         Final Project                                       20% Apr 11     Finals Day
-
+  Project   Name                                                                                  Pct Assigned   Due
+  --------- ---------------------------------------------------                                   --- ---------- --------------------
+  1         [Today in History](http://mgoadric.github.io/csci150/projects/project1.html)          5%  Feb 9      Feb 16
+  2         [Word Games](projects/project2.html)                                                  10% Mar 8      Mar 15
+  3         Final Project                                                                         20% Apr 11     Finals Day
