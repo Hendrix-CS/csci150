@@ -1039,6 +1039,9 @@ local. Note that \verb|F| and \verb|temp_C| are not defined afterwards.
 \section{Functions II}
 
 \subsection*{Setup/administrivia}
+\begin{itemize}
+\item Reminder: project 1 due soon
+\end{itemize}
 
 \subsection*{Quiz: arguments \& parameters}
 
@@ -1079,16 +1082,40 @@ us about the temperature (\emph{do something like this, students can
   come up with details}):
 \begin{verbatim}
 def F_to_qualitative(temp_F):
-    if F < 32:
+    if temp_F < 32:
         return "freezing"
-    elif F < 50:
+    elif temp_F < 50:
         return "cold"
-    elif F < 75:
+    elif temp_F < 75:
         return "warm"
-    elif F < 90:
+    elif temp_F < 90:
         return "hot"
     else:
         return "scorching"
+\end{verbatim}
+
+Now have the students work in pairs to write a function
+\verb|discuss_weather()| which prompts for temperature in C, converts
+to F, and makes an appropriate comment.
+
+\begin{verbatim}
+def discuss_weather():
+    temp_C = int(raw_input("What is the temperature in degrees C? "))
+    temp_F = C_to_F(temp_C)
+    word = F_to_qualitative(temp_F)
+    print "It's very " + word + " today, don't you think?"
+\end{verbatim}
+
+Then go through series of variants showing how you can nest function
+calls, culminating in
+
+\begin{verbatim}
+# DO NOT TRY THIS AT HOME
+def discuss_weather_4():
+    print "It's very " +\
+     F_to_qualitative(C_to_F(int(raw_input("What is the temperature in\
+     degrees C? ")))) +\
+     " today, don't you think?"
 \end{verbatim}
 
 Functions can take multiple parameters.
@@ -1103,6 +1130,13 @@ def is_divisible(x, y):
 
 Try some examples.  Note this is actually written in a redundant way.  We
 can just return \verb|x % y == 0| directly.
+
+\subsection*{Reflections}
+
+\begin{reflect}{Brent, S'16}
+  This class went well, we had a lot of fun.  Didn't make it to stack
+  diagrams (below) but that's OK.
+\end{reflect}
 
 \subsection*{Flow of execution \& stack diagrams}
 
@@ -1121,15 +1155,12 @@ temperatures.  Then write another function which does that twice, and
 so on.  Then trace execution.  Introduce an error and see the
 ``traceback''.  Draw a stack diagram with local variables.
 
-\section*{While loops (Friday, 25 Sep)}
+\section{While loops}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Music: Carmina Burana
-\item Announce TAs!
-\item Reminder: Project 1 due today
-\item Announce office hours after class---projects
-\item Anyone know classmates' names?
+\item Reminder: Project 1 due soon! [In S'16 it was due the day
+  \emph{before} this lecture, due to winter break.]
 \end{itemize}
 
 \subsection*{Guess my number game}
