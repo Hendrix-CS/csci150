@@ -1,10 +1,9 @@
-HW: function reading practice
------------------------------
-
-XXX probably should add one more (harder) exercise
+CSCI 150 HW 3: function reading practice
+----------------------------------------
 
 You should complete the following exercises *without* using a
-computer!
+computer, though you may consult your textbook.  You should write your
+answers by hand and turn them in on paper.
 
 1. Consider the functions defined below.  What does `main()` print?
 
@@ -12,7 +11,7 @@ computer!
     def foo(a):
         b = 3*a + 2
         return b
-        print "In mystery1"
+        print "In foo"
 
     def bar(x,y):
         return foo(x) + foo(y)
