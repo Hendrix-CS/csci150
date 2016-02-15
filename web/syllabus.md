@@ -15,9 +15,9 @@ to review the material and come to class prepared.
 * Chapter 3: Fri, January 22 [ [input-output.py](static/input-output.py) ]
 * Chapter 4: Weds, January 27 [ [conditionals.py](static/conditionals.py) ]
 * Chapter 5: Weds, February 10
-* Chapter 6: Weds, February 10
+* Chapter 6: Weds, February 10 [ [func-demo.py](static/func-demo.py) ]
 * Chapter 7: Fri, February 12
-* Chapter 8: Fru, February 19
+* Chapter 8: Fri, February 19
 * Chapter 9: Weds, February 24
 * Chapter 10: Mon, February 29
 * Chapter 11: Fri, March 11
