@@ -19,3 +19,4 @@ HW                                                                              
 1: [Communication and Origami](http://mgoadric.github.io/csci150/homework/origami.html)                            January 25
 2: [Logic puzzles](http://mgoadric.github.io/csci150/homework/logic-puzzles.html)                                  February 1
 3: [Function reading](static/function-reading.html)                                                                February 17
+4: [DNA Strings](static/dna-strings.html)                                                                          February 24
