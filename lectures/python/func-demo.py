@@ -57,7 +57,7 @@ def better_C_to_F(temp_C):
 # Book calls these "fruitful functions" (Chapter 5)
     
 def better_C_to_F_2(temp_C):
-    F = 1.8*temp_C + 32
+    F = (1.8*temp_C + 32) / 0
     # F has the same name as F from C_to_F but they
     #   are completely unrelated.
 
@@ -126,3 +126,7 @@ def is_divisible(x, y):
 
 def better_is_divisible(x, y):
     return (x % y == 0)
+
+def main():
+    discuss_weather_in_metric()
+    discuss_weather_in_metric()
