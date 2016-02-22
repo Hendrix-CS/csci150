@@ -46,7 +46,7 @@ included in each lab.
   2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)         Jan 26
   3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Feb 2
   5     [CodingBat](http://mgoadric.github.io/csci150/labs/lab5.html)                 Feb 16
-  6     [Mutation is the Word](labs/lab6.html)                                        Feb 23
+  6     [Mutation is the Word](http://mgoadric.github.io/csci150/labs/lab6.html)      Feb 23
   7     [Caesar's Secrets](labs/lab7.html)                                            Mar 1
   8     [Fractal Recursion](labs/lab8.html)                                           Mar 15
   9     [Gibberish Generator](labs/lab9.html)                                         Mar 29
