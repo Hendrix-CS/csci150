@@ -18,6 +18,7 @@ to review the material and come to class prepared.
 * Chapter 6: Weds, February 10 [ [func-demo.py](static/func-demo.py) ]
 * Chapter 7: Weds, February 17 [ [while-loops.py](static/while-loops.py), [guess-number.py](static/guess-number.py) ]
 * Chapter 8: Fri, February 19 [ [strings.py](static/strings.py), [strings-repl.txt](static/strings-repl.txt) ]
+* Mon, February 22 [ [while-practice.py](static/while-practice.py) ]
 * Chapter 9: Weds, February 24
 * Chapter 10: Mon, February 29
 * Chapter 11: Fri, March 11
