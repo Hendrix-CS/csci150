@@ -1185,21 +1185,29 @@ so on.  Then trace execution.  Introduce an error and see the
 
 \subsection*{While loops}
 
-Introduce while loops.  Explain basics of how they work.
-Using them, three important things:
+Introduce while loops---this is a momentous day!  Once we add while
+loops you can (in theory) write \emph{any program you can imagine}.
+Explain syntax.  Syntax and semantics are very much like \verb|if|
+(without \verb|else|): difference is that \verb|if| executes 0 or 1
+time, \verb|while| executes any number of times (0 or more).
+
+Do an example: count from 1 to 10.  Play with boundary conditions,
+order of statements inside the loop.
+
+Point out three usual components:
 \begin{itemize}
 \item Declare and initialize variable(s) you need
 \item Write the condition with those variables
-\item Change those variables somewhere in the loop
+\item Change those variables somewhere in the loop (often at the
+  end)
 \end{itemize}
 
-Do a few examples.
-\begin{itemize}
-\item Count from 1 to 10.
-\item Keep printing ``hi'' until user wants to stop --- have students
-  write this code together on their computers.  Then have two or three
-  share code?
-\end{itemize}
+Do another example: keep printing ``hi'' and asking ``Do you want to
+stop?'' until says yes --- have students write this code together on
+their computers/paper.  Then have two or three share code?  There are
+two ways to write this --- using input variable to control loop (but
+then you have to initialize it with a bogus value), or using a boolean
+(sentinel).
 
 Back to Guess My Number.  Introduce a loop.  Make hi/lo checking into
 a function.  Promise: after we learn a bit more about strings we can
@@ -1210,7 +1218,9 @@ make another function to get valid int input from user in a loop.
 \begin{reflect}{Brent, S'16}
   I don't really like the above homework, I think it's actually too
   hard for most of them at this point, and they already have enough
-  coding assignments.
+  assignments where they get practice coding.  I just got them to
+  think briefly about how one might implement it.  One student took me
+  up on it and implemented a very nice version.
 \end{reflect}
 
 \newpage
