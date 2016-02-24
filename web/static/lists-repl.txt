@@ -1,0 +1,102 @@
+Python 2.7.9 (default, Apr  2 2015, 15:33:21) 
+[GCC 4.9.2] on linux2
+Type "copyright", "credits" or "license()" for more information.
+>>> []
+[]
+>>> len([])
+0
+>>> [1,2,3]
+[1, 2, 3]
+>>> len([1,2,3])
+3
+>>> type([1,2,3])
+<type 'list'>
+>>> [1, 'dog', True]
+[1, 'dog', True]
+>>> [1, 'dog', True]   # DO NOT DO THIS
+[1, 'dog', True]
+>>> myList = ['emu', 'bear', 'horse', 'chicken']
+>>> myList[0]
+'emu'
+>>> myList[3]
+'chicken'
+>>> myList + ['cow', 'cat']
+['emu', 'bear', 'horse', 'chicken', 'cow', 'cat']
+>>> myList * 2
+['emu', 'bear', 'horse', 'chicken', 'emu', 'bear', 'horse', 'chicken']
+>>> range(10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> myList[2] = 'pony'
+>>> myList
+['emu', 'bear', 'pony', 'chicken']
+>>> myString = "Hello"
+>>> myString[0] = 'J'
+
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    myString[0] = 'J'
+TypeError: 'str' object does not support item assignment
+>>> myList.append('snake')
+>>> myList
+['emu', 'bear', 'pony', 'chicken', 'snake']
+>>> myList.append('platypus')
+>>> myList.append('axtoltl')
+>>> myList
+['emu', 'bear', 'pony', 'chicken', 'snake', 'platypus', 'axtoltl']
+>>> myList.pop(2)
+'pony'
+>>> myList
+['emu', 'bear', 'chicken', 'snake', 'platypus', 'axtoltl']
+>>> 
+>>> 
+
+
+>>> 
+>>> myList.pop()
+'axtoltl'
+>>> myList.append('axtoltl')
+>>> myList.remove('bear')
+>>> myList
+['emu', 'chicken', 'snake', 'platypus', 'axtoltl']
+>>> myList.remove('horse')
+
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    myList.remove('horse')
+ValueError: list.remove(x): x not in list
+>>> del myList[0]
+>>> myList
+['chicken', 'snake', 'platypus', 'axtoltl']
+>>> nums = range(10)
+>>> nums
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> del nums[-3:]
+>>> nums
+[0, 1, 2, 3, 4, 5, 6]
+>>> 
+>>> ================================ RESTART ================================
+>>> 
+>>> read_inputs()
+Enter another input, or quit: capybara
+Enter another input, or quit: koala
+Enter another input, or quit: gnu
+Enter another input, or quit: polar bear
+Enter another input, or quit: penguin
+Enter another input, or quit: arctic tern
+Enter another input, or quit: quit
+['capybara', 'koala', 'gnu', 'polar bear', 'penguin', 'arctic tern']
+>>> read_inputs()
+Enter another input, or quit: Quit
+Enter another input, or quit: quit
+['Quit']
+>>> ================================ RESTART ================================
+>>> 
+>>> read_inputs()
+Enter another input, or quit: Quit
+[]
+>>> ================================ RESTART ================================
+>>> 
+Enter another input, or quit: hog
+Enter another input, or quit: pig
+Enter another input, or quit: quit
+>>> 
