@@ -1166,6 +1166,35 @@ so on.  Then trace execution.  Introduce an error and see the
   were at various points.  Only one or two were really struggling.
 \end{reflect}
 
+\begin{reflect}{Brent, S'16}
+  \textbf{(CRAZY?) IDEA}: Maybe we should switch the order of loops
+  and functions.  The basic outline would be to replace the Coding bat
+  lab with a version of Doublets where they \emph{don't} use any
+  functions.  Then, we learn about functions and give them another lab
+  where they get to practice taking existing top-level code and
+  abstracting it into functions.  We probably can't have them actually
+  work on Doublets because they might not be able to use their own
+  code and we don't want to distribute a solution.  So instead we
+  could give them a similar sort of word-game program, written as all
+  top-level code, and have a lab which walks them through abstracting
+  out more and more functions until the whole thing is composed of
+  functions.  I'm imagining something where we provide a lot of
+  hand-holding with the first few functions they extract, and then
+  give them more and more autonomy as the lab proceeds.
+
+  What's the motivation? Students can get the basic concept of writing
+  a function that takes inputs and gives an output (with Coding Bat),
+  but this does not at all mean that they understand how a function is
+  used to abstract out some common pattern, and how information needs
+  to flow between functions (into parameters and back out through the
+  return value).  Telling them ``do this complicated lab'' and ``you
+  have to use only functions'' actually gets them off on the wrong
+  foot: they \emph{start} the lab by trying to write functions (which
+  often do inconsistent or nonsensical things) rather than starting by
+  writing working code and then thinking about how to abstract it into
+  functions.
+\end{reflect}
+
 \newpage
 \section{While loops}
 
@@ -1443,6 +1472,12 @@ def check_collatz_up_to(max):
   tried to talk about ``managing information flow'' explicitly it
   would just go over their heads until they had actually grappled with
   it in a real program.  So perhaps the shock is unavoidable.
+
+  However, see \textbf{(CRAZY?) IDEA} in reflections above, after
+  coding bat lab.  Maybe switch loops and functions, so the doublets
+  lab is just writing top-level code with a bunch of loops---really
+  focusing on just the loops.  Then the next lab will get them to
+  think about abstracting functions from existing code.
 \end{reflect}
 
 \newpage
@@ -1452,6 +1487,7 @@ def check_collatz_up_to(max):
 \begin{itemize}
 \item Quiz (strings)
 \item Distribute binary cards.  Learn the name of 0-bit pairing.
+\item REMINDER: you have late days you can spend on labs!
 \end{itemize}
 
 \subsection*{Quiz 5 (Strings)}
