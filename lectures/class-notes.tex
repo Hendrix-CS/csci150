@@ -1430,6 +1430,21 @@ def check_collatz_up_to(max):
 
 \section*{LAB: Mutation is the Word (Doublets)}
 
+\begin{reflect}{Brent S'16}
+  This lab is a lot harder than the previous labs.  Definitely worth
+  warning them to start early, emphasizing that they probably won't
+  finish within the alloted lab time, can come and ask questions, etc.
+
+  One of the biggest confusions typically has to do with managing
+  information flow.  That is, now that we are using functions for
+  everything, variables are local, so need to pass things as
+  parameters and return values back.  I keep thinking about whether
+  there is a gentler way to introduce this but I'm not sure.  If we
+  tried to talk about ``managing information flow'' explicitly it
+  would just go over their heads until they had actually grappled with
+  it in a real program.  So perhaps the shock is unavoidable.
+\end{reflect}
+
 \newpage
 \section{Lists I}
 
@@ -1440,6 +1455,13 @@ def check_collatz_up_to(max):
 \end{itemize}
 
 \subsection*{Quiz 5 (Strings)}
+\begin{verbatim}
+t = "PLEASEREADME"
+r = "astory"
+p = t[-2:] * 2
+r = r[(19 % 5) - 1:]
+z = p[:3] + r
+\end{verbatim}
 
 \subsection*{Lab (Doublets) review/hints}
 
@@ -1450,7 +1472,7 @@ def check_collatz_up_to(max):
 Lists are a lot like strings, but hold arbitrary data instead of
 characters.
 \begin{itemize}
-\item \verb|[]| is the empty list, like \verb|""| is the empty string
+\item \verb|[]| is the empty list, like \verb|""| is the empty string.
 \item Can hold numbers, strings, anything you want.  Show
   \verb|[1,2,3]| syntax.  Show \verb|type| on lists.
 \item Elements are ordered, in a sequence.  Indexed from zero.
@@ -1487,7 +1509,6 @@ Other list mutation methods:
 \begin{itemize}
 \item Project 1 is graded.  Let us know of any questions.  Let me know
   if you want more feedback.
-\item Hand out bit cards.
 \end{itemize}
 
 \subsection*{Review}
@@ -1608,6 +1629,7 @@ Some related things:
 
 [INSERT OPTIONAL RANT ABOUT MUTATION HERE]
 
+\newpage
 \section*{For Loops (Wednesday, 7 Oct)}
 
 \subsection*{Setup}
