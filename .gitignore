@@ -12,3 +12,7 @@ web/hakyll
 *.hi
 *.o
 *.pdf
+
+exams-solutions/
+ThinkPython/
+16S/
