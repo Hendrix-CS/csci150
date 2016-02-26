@@ -1583,6 +1583,53 @@ a while.  Try to get a bunch of different approaches from different
 groups.  Talk about \verb|append|, list repetition operator \verb|*|,
 concatenation operator \verb|+|, etc.
 
+\begin{reflect}{Brent, S'16}
+  As an illustration, here are all the suggestions my students came up
+  with:
+\begin{verbatim}
+animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
+
+# Ways to add 3 gerbils to the end of the list
+
+# Doesn't quite work:
+# animals.append('gerbil ' * 3)
+
+# Runtime error:
+# animals.append('gerbil') * 3
+
+# Works!
+# while len(animals) < 8:
+#    animals.append('gerbil')
+
+# Runtime error (too many arguments to append):
+# animals.append('gerbil', 'gerbil', 'gerbil')
+
+# Works!
+# animals.append('gerbil')
+# animals.append('gerbil')
+# animals.append('gerbil')
+
+# Same as 'gerbil' * 3
+# animals.append('gerbil' + 'gerbil' + 'gerbil')
+
+# Doesn't change animals
+# animals + ['gerbil', 'gerbil', 'gerbil']
+
+# Works!
+# animals = animals + ['gerbil', 'gerbil', 'gerbil']
+
+# Works!
+# gerbil_list = ['gerbil']
+# animals = animals + gerbil_list * 3
+
+# Almost works but not quite.
+# animals.append(['gerbil'] * 3)
+\end{verbatim}
+
+  I think this is a really great exercise. It really helps develop
+  their intuition and their grasp of the details.
+\end{reflect}
+
 \subsection*{Lists and strings}
 
 Lists of characters are different than strings!
@@ -1633,6 +1680,14 @@ different lists.  Write these definitions on the board:
   \emph{identical}. You can test identity with \verb|is| (though you
   won't need this in the rest of the course).
 \end{itemize}
+
+\begin{reflect}{Brent, S'16}
+  Only made it to here---exercise with adding gerbils took a while,
+  but I think it was worth it.  Plan to quickly finish up the rest of
+  this lecture at the beginning of next class before starting on for
+  loops.  I can't take too long, though, since they need for loops for
+  their lab on the next day.
+\end{reflect}
 
 Do this at the REPL, with accompanying pictures:
 \begin{verbatim}
