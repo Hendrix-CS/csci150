@@ -42,3 +42,69 @@ def read_inputs():
             inputs.append(word)
 
     return inputs
+
+animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
+
+# Ways to add 3 gerbils to the end of the list
+
+# Doesn't quite work:
+# animals.append('gerbil ' * 3)
+
+# Runtime error:
+# animals.append('gerbil') * 3
+
+# Works!
+# while len(animals) < 8:
+#    animals.append('gerbil')
+
+# Runtime error (too many arguments to append):
+# animals.append('gerbil', 'gerbil', 'gerbil')
+
+# Works!
+# animals.append('gerbil')
+# animals.append('gerbil')
+# animals.append('gerbil')
+
+# Same as 'gerbil' * 3
+# animals.append('gerbil' + 'gerbil' + 'gerbil')
+
+# Doesn't change animals
+# animals + ['gerbil', 'gerbil', 'gerbil']
+
+# Works!
+# animals = animals + ['gerbil', 'gerbil', 'gerbil']
+
+# Works!
+# gerbil_list = ['gerbil']
+# animals = animals + gerbil_list * 3
+
+# Almost works but not quite.
+# animals.append(['gerbil'] * 3)
+
+#############################
+## Lists and strings
+
+# Strings and lists of characters are not the same!
+
+# Converting string -> list:
+#   - list(...)
+#   - s.split(...)  : splits a string s into a list of strings
+
+# Converting list -> string:
+#   - glue.join(list)   # opposite of split
+
+#############################
+## Mutability, objects, and aliasing
+
+nums = [1,2,3]
+nums2 = nums
+del nums[1]
+print nums2
+
+# The above code prints [1,3]! Weird!
+
+# Variables don't contain values.
+# Variables contain *references* to *objects* which have values.
+
+# So the above code creates num and nums2 which both hold a reference
+# to the same list object.  Changing one of them affects both.
