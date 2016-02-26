@@ -1166,6 +1166,7 @@ so on.  Then trace execution.  Introduce an error and see the
   were at various points.  Only one or two were really struggling.
 \end{reflect}
 
+\noindent
 \begin{reflect}{Brent, S'16}
   \textbf{(CRAZY?) IDEA}: Maybe we should switch the order of loops
   and functions.  The basic outline would be to replace the Coding bat
@@ -1539,17 +1540,48 @@ Other list mutation methods:
   \end{itemize}
 \end{itemize}
 
+\begin{reflect}{Brent, S'16}
+  Got through this lecture way faster than last time, leaving a good
+  10--15 minutes at the end.  So on the fly I came up with another
+  exercise as an example of while loops and building a list.  We wrote
+  the following code all together.
+\end{reflect}
+
+\begin{verbatim}
+# Inputs: none
+# Output: a list of strings entered by the user
+#
+# Repeatedly prompt user for inputs until they type
+# 'quit', then return a list of all inputs.
+def read_inputs():
+    inputs = []
+    done = False
+    while not done:
+        word = raw_input('Enter another input, or quit: ')
+        if word.lower() == 'quit':
+            done = True
+        else:
+            inputs.append(word)
+
+    return inputs
+\end{verbatim}
+
+\newpage
 \section{Lists II}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Project 1 is graded.  Let us know of any questions.  Let me know
+\item Project 1 is graded.  Let me know of any questions.  Let me know
   if you want more feedback.
+\item Announce Exam 2.
 \end{itemize}
 
 \subsection*{Review}
-Find bit-2 partner. \verb|animals| is a list, how to append 3 copies
-of \verb|"gerbil"| onto the end?  Go over possibilities.
+Find partner. \verb|animals| is a list, how to append 3 copies of
+\verb|"gerbil"| onto the end?  Go over possibilities.  This might take
+a while.  Try to get a bunch of different approaches from different
+groups.  Talk about \verb|append|, list repetition operator \verb|*|,
+concatenation operator \verb|+|, etc.
 
 \subsection*{Lists and strings}
 
@@ -1560,13 +1592,14 @@ Lists of characters are different than strings!
   \begin{itemize}
   \item \verb|list| function.
   \item \verb|split()| method.
-  \end{itemize}
-\item List to string: \verb|join()| method on delimiter.
 \begin{verbatim}
   s = "banana"
   t = s.split("n")
 \end{verbatim}
 Yields \verb|["ba", "a", "a"]|.
+
+  \end{itemize}
+\item List to string: \verb|join()| method on delimiter.
 \begin{verbatim}
   t = ['fun', 'sun', 'sub', 'rub']
   delimiter = " -> "
@@ -1576,7 +1609,7 @@ Yields \verb|["ba", "a", "a"]|.
 
 \subsection*{Mutability, objects, and aliasing}
 
-Warm-up: what happens here?  Find bit-3 partner \& decide.
+Warm-up: what happens here?  Find partner \& decide.
 \begin{verbatim}
 nums  = [1,2,3]
 nums2 = nums
@@ -1597,7 +1630,8 @@ different lists.  Write these definitions on the board:
 \item Variables which reference objects that have the same value are
   \emph{equal}.  You can test equality with \verb|==|.
 \item Variables which reference the \emph{same object} are
-  \emph{identical}. You can test identity with \verb|is|.
+  \emph{identical}. You can test identity with \verb|is| (though you
+  won't need this in the rest of the course).
 \end{itemize}
 
 Do this at the REPL, with accompanying pictures:
@@ -1666,13 +1700,9 @@ Some related things:
 [INSERT OPTIONAL RANT ABOUT MUTATION HERE]
 
 \newpage
-\section*{For Loops (Wednesday, 7 Oct)}
+\section{For Loops}
 
 \subsection*{Setup}
-\begin{itemize}
-\item Music:
-\item Announce: exam 2 next Wednesday
-\end{itemize}
 
 \subsection*{For Loops}
 
@@ -1788,13 +1818,9 @@ def triangle(n):
     return total
 \end{verbatim}
 
-\section*{For loop practice (Friday, 9 Oct)}
+\section{For loop practice}
 
 \subsection*{Setup}
-\begin{itemize}
-\item Music: Waltz for Debby
-\item Pass out binary cards
-\end{itemize}
 
 \subsection*{For loops: reading exercises}
 
@@ -1823,11 +1849,23 @@ def pulu(r):
     return b
 \end{verbatim}
 
-\section*{Exam 2 review (Monday, 12 Oct)}
+\section{Exam 2 review}
 
-\section*{Exam 2 (Wednesday, 14 Oct)}
+Spend a lecture doing and going over a practice exam.  See
+\[ \verb|byorgey/csci150-exams-solutions| \] repository on Bitbucket.
 
-\section*{(Fall Break)}
+\section{Exam 2}
+
+\begin{reflect}{Brent, S'16}
+  In the Fall 2015 semester, Exam 2 was on the Wednesday right before
+  Fall Break.  In Spring 2016, it was on a Tuesday two weeks before
+  spring break. (The ``normal'' thing would have been to have the exam
+  review day on Friday, then the exam on Monday, and no lab on
+  Tuesday, but I was at SIGCSE on the Friday, so I gave them the
+  practice exam over the weekend while I was at SIGCSE, spent Monday
+  reviewing the practice exam, and held the exam during the lab slot
+  for that week.)
+\end{reflect}
 
 \section*{Exam wrap-up, demo project (Monday, 19 Oct)}
 
