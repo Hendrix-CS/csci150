@@ -1,4 +1,4 @@
-CSCI 150 HW 3: while loop, string, and list reading practice
+CSCI 150 HW 5: while loop, string, and list reading practice
 ------------------------------------------------------------
 
 *Due: Wednesday, March 2*
