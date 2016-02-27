@@ -15,8 +15,9 @@ These quizzes, participation, and homework assignments will comprise
 
 HW                                                                                                                 Due
 ------------------                                                                                                 ----
-0: [Who Are You](https://docs.google.com/forms/d/1SnjoPxOy-06Y-17AYReFbwOEAzGr1FGVvIB5C4gsqCc/viewform) &nbsp;     January 20
+0: [Who Are You](https://docs.google.com/forms/d/1SnjoPxOy-06Y-17AYReFbwOEAzGr1FGVvIB5C4gsqCc/viewform)            January 20
 1: [Communication and Origami](http://mgoadric.github.io/csci150/homework/origami.html)                            January 25
 2: [Logic puzzles](http://mgoadric.github.io/csci150/homework/logic-puzzles.html)                                  February 1
 3: [Function reading](static/function-reading.html)                                                                February 17
 4: [DNA Strings](static/dna-strings.html)                                                                          February 24
+5: [While, string, and list reading](static/loop-string-reading.html)                                              March 2
