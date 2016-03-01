@@ -108,3 +108,10 @@ print nums2
 
 # So the above code creates num and nums2 which both hold a reference
 # to the same list object.  Changing one of them affects both.
+
+# == tells you whether two objects have the same value.
+
+def release_animals(a):
+    while len(a) > 2:
+        a.pop(0)
+
