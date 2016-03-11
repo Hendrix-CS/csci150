@@ -1896,7 +1896,13 @@ def yayaya(q):
         if q[y] == q[y + 1]:
             return True
     return False
+\end{verbatim}
 
+Then have them write \verb|is_sorted| function.
+
+Additional practice:
+
+\begin{verbatim}
 def pulu(r):
     b = []
     for k in range(r):
@@ -1922,7 +1928,7 @@ Spend a lecture doing and going over a practice exam.  See
   for that week.)
 \end{reflect}
 
-\section*{Exam wrap-up, demo project (Monday, 19 Oct)}
+\section*{Exam wrap-up, demo project}
 
 \subsection{Exam wrap-up}
 
@@ -1948,7 +1954,7 @@ on:
   while loop.
 \end{itemize}
 
-\section*{Recursion I: intro (Wednesday, 21 Oct)}
+\section*{Recursion I: intro}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -2010,14 +2016,21 @@ Typically:
   simpler (i.e. closer to the base case) problem.
 \end{itemize}
 
-Another example: Fibonacci function.  Show mathematical definition,
-implement in Python.  Show how slow it is, show call tree.  In fact
-recursion is not always the best way to do things.
+If time, could do one of the following:
+\begin{itemize}
+\item Re-code factorial function live, adding a bunch of comments and
+  narrating thought process.
+\item List sum.
+\end{itemize}
 
-If time, brief intro to Python turtle library and Kock snowflake (in
-preparation for fractal lab).
+% Another example: Fibonacci function.  Show mathematical definition,
+% implement in Python.  Show how slow it is, show call tree.  In fact
+% recursion is not always the best way to do things.
 
-\section*{Recursion II: recursive functions (Fri, 23 Oct)}
+% If time, brief intro to Python turtle library and Kock snowflake (in
+% preparation for fractal lab).
+
+\section*{Recursion II: recursive functions}
 
 Start by reinforcing ``base case + recursive case''.  Talk about
 ``leap of faith'': trust that recursive calls will work without
@@ -2039,6 +2052,7 @@ legitimate uses of recursion, e.g. processing trees.
 \item Have them work in (different) pairs to implement \verb|is_palindrome|.
 \end{itemize}
 
+\newpage
 \section*{File I/O, dictionaries (intro) (Mon, 26 Oct)}
 
 Our programs have no state between each time they are called.
