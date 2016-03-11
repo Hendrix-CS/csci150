@@ -21,7 +21,7 @@ to review the material and come to class prepared.
 * Mon, February 22 [ [while-practice.py](static/while-practice.py) ]
 * Chapter 9: Weds, February 24 [ [lists.py](static/lists.py), [lists-repl.txt](static/lists-repl.txt), [lists2-repl.txt](static/lists2-repl.txt) ]
 * Chapter 10: Mon, February 29 [ [for-loops.py](static/for-loops.py) ]
-* Chapter 11: Fri, March 11
+* Chapter 11: Fri, March 11 [ [recursion.py](static/recursion.py) ]
 * Chapter 12: Fri, March 18
 * Chapter 15: Weds, April 6
 * Chapter 16: Weds, April 6
