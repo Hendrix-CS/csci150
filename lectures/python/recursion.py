@@ -35,4 +35,31 @@ def our_sum(nums):
         s = nums[0] + our_sum(nums[1:])
         return s
 
+# Input: a list of numbers
+# Output: product of all the numbers in the list.
+def product(nums):
+    if (nums==[]):
+        return 1
+    else:
+        p = nums[0] * product(nums[1:])
+    return p
 
+# Input: a string s
+# Output: the reverse of s
+def reverse(s):
+    if s == '':
+        return s
+    else:
+        r = s[-1] + reverse(s[:-1])
+        return r
+
+def reverse2(s):
+    if len(s) <= 1:
+        return s
+    else:
+        return reverse2(s[1:]) + s[0]
+
+# Input: string s
+# Output: whether s is a palindrome
+def ispalindrome(s):
+    
