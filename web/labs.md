@@ -48,7 +48,7 @@ included in each lab.
   5     [CodingBat](http://mgoadric.github.io/csci150/labs/lab5.html)                 Feb 16
   6     [Mutation is the Word](http://mgoadric.github.io/csci150/labs/lab6.html)      Feb 23
   7     [Caesar's Secrets](http://mgoadric.github.io/csci150/labs/lab7.html)          Mar 1
-  8     [Fractal Recursion](labs/lab8.html)                                           Mar 15
+  8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 15
   9     [Gibberish Generator](labs/lab9.html)                                         Mar 29
   10    [App Inventor](labs/lab10.html)                                               Apr 5
   11    [Die Hard III](labs/lab11.html)                                               Apr 12
