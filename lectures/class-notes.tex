@@ -2036,9 +2036,6 @@ Start by reinforcing ``base case + recursive case''.  Talk about
 ``leap of faith'': trust that recursive calls will work without
 thinking about how.  Trust your future self.
 
-Re-code factorial function live, adding a bunch of comments and
-narrating thought process.
-
 Up until now all the examples we've done have been math functions.
 Let's do a few more ``computer-sciency'' examples processing strings
 and lists.  Note, in Python this is not the best way to implement
@@ -2047,13 +2044,94 @@ illustration purposes.  If you take 151 you will start to see real,
 legitimate uses of recursion, e.g. processing trees.
 
 \begin{itemize}
-\item Do example together: list sum.
+\item Work in pairs to implement \verb|product|.
 \item Have them work in pairs to implement string \verb|reverse|.
 \item Have them work in (different) pairs to implement \verb|is_palindrome|.
 \end{itemize}
 
 \newpage
-\section*{File I/O, dictionaries (intro) (Mon, 26 Oct)}
+
+\section*{Dictionaries}
+
+Recall lists.  Draw an alternate picture of lists as a mapping from
+indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
+can be thought of as
+\begin{verbatim}
+0 -> 'tapir'
+1 -> 'ferret'
+2 -> 'alligator'
+\end{verbatim}
+$0$, $1$, $2$ are \emph{keys}, animal names are \emph{values}.  A
+\emph{mapping} or \emph{association} between keys and values.  A
+\emph{dictionary} is the obvious generalization of this to arbitrary
+keys instead of just 0, 1, 2 \dots.  For example, suppose we are
+keeping these animals in a zoo and we want to keep track of them by
+their habitat ID numbers.
+\begin{verbatim}
+'A23' -> 'tapir'
+'B19' -> 'ferret'
+'B12' -> 'alligator'
+\end{verbatim}
+Or we could use numbers as keys.  Important point: keys have to be
+immutable.  So we can't use e.g. lists or dictionaries as keys.
+
+Show how to make this dictionary.
+\begin{itemize}
+\item Write using curly braces and colons.
+\item Alternatively, start with empty one and add them.
+\end{itemize}
+
+Other things we can do with a dictionary:
+\begin{itemize}
+\item Get list of all keys with \verb|keys()|
+\item Get list of all values with \verb|values()|
+\item Check if a key is in the dictionary using \verb|in|
+\item Ask for the number of keys with \verb|len|
+\item Delete a mapping with \verb|del|
+\item Iterate over keys with \verb|for|
+\end{itemize}
+
+Show
+\url{https://docs.python.org/2.7/library/stdtypes.html#mapping-types-dict}.
+
+Rewrite \verb|frequency_counts(s)| to return a dictionary.  Why this is
+better: directly look up by letter value.  No need to use \verb|ord|
+or alphabet string etc.
+
+\newpage
+\begin{verbatim}
+# Input: ...
+# Output: ...
+def frequency_counts(s):
+    freqs = {}
+    for c in s:
+        if c not in freqs:
+            freqs[c] = 0
+        freqs[c] += 1
+
+    normalize(freqs)
+    return freqs
+
+# Input: ...
+# Output: ...
+def normalize(d):
+    total = 0
+    for k in d:
+        total += d[k]
+
+    for k in d:
+        d[k] /= float(total)
+\end{verbatim}
+
+\newpage
+\section*{Dictionaries practice}
+
+What to do here?  Need an interactive practice session.  Maybe also
+prepare some practice problems for them to work on over the break.
+
+\newpage
+
+\section*{File I/O}
 
 Our programs have no state between each time they are called.
 Everything is stored in memory during the program, but afterwords,
@@ -2099,85 +2177,6 @@ which strips them out of each line as it is added. \verb|readlines()|
 returns a list of strings.
 
 After both, say \verb|fin.close()| to finish accessing the file.
-
-Then do basic intro to dictionaries?  Next time, need to figure out
-some kind of activity to get them used to the idea.  Covering
-technical details does not take 1.5 lectures.
-
-\newpage
-
-\section*{Dictionaries (Wed, 28 Oct)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Music: Trio Medieval
-\item HW: read Section 1 from Zen for Friday
-\end{itemize}
-
-Recall lists.  Draw an alternate picture of lists as a mapping from
-indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
-can be thought of as
-\begin{verbatim}
-0 -> 'tapir'
-1 -> 'ferret'
-2 -> 'alligator'
-\end{verbatim}
-$0$, $1$, $2$ are \emph{keys}, animal names are \emph{values}.  A
-\emph{mapping} or \emph{association} between keys and values.  A
-\emph{dictionary} is the obvious generalization of this to arbitrary
-keys instead of just 0, 1, 2 \dots.  For example, suppose we are
-keeping these animals in a zoo and we want to keep track of them by
-their habitat ID numbers.
-\begin{verbatim}
-'A23' -> 'tapir'
-'B19' -> 'ferret'
-'B12' -> 'alligator'
-\end{verbatim}
-Or we could use numbers as keys.  Important point: keys have to be
-immutable.  So we can't use lists or dictionaries.
-
-Show how to make this dictionary.
-\begin{itemize}
-\item Write using curly braces and colons.
-\item Alternatively, start with empty one and add them.
-\end{itemize}
-Other things we can do with a dictionary:
-\begin{itemize}
-\item Get all keys with \verb|keys()|
-\item Get all values with \verb|values()|
-\item Check if a key is in the dictionary using \verb|in|
-\item Ask for the number of keys with \verb|len|
-\item Delete a mapping with \verb|del|
-\item Iterate over keys with \verb|for|
-\end{itemize}
-
-Show
-\url{https://docs.python.org/2.7/library/stdtypes.html#mapping-types-dict}.
-
-Rewrite \verb|frequency_counts(s)| to return a dictionary.  Why this is
-better: directly look up by letter value.  No need to use \verb|ord|
-or alphabet string etc.
-
-\begin{verbatim}
-def frequency_counts(s):
-    freqs = {}
-    for c in s:
-        if c not in freqs:
-            freqs[c] = 0
-        freqs[c] += 1
-
-    normalize(freqs)
-    return freqs
-
-def normalize(d):
-    total = 0
-    for k in d:
-        total += d[k]
-
-    for k in d:
-        d[k] /= float(total)
-\end{verbatim}
-Go over idea for \verb|proportional_choice| function on lab.
 
 \section*{Zen Reading discussion (Friday, 30 Oct)}
 
