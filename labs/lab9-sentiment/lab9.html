@@ -1,0 +1,142 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 9 - Sentiment Analysis</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 9<br>Sentiment Analysis</h1>
+<hr>
+
+<h2>Materials</h2>
+<ul>
+<li>Python <a href="https://docs.python.org/2.7/library/stdtypes.html#mapping-types-dict">dict</a> object.
+<li><a href="../data/movieReviews.txt">Movie review data</a>
+</ul>
+
+<h2>Overview</h2>
+
+<p>
+Sentiment Analysis is a Big Data problem which seeks to determine the
+general attitude of a writer given some text they have written. For
+instance, we would like to have a program that could look at the text
+"The film was a breath of fresh air" and realize that it was a
+positive statement, while "It made me want to poke out my eyeballs" is
+negative.</p>
+
+<p>
+One algorithm that we can use for this is to assign a numeric value to
+any given word based on how positive or negative that word is and then
+score the statement based on the values of the words. But, how do we
+come up with our word scores in the first place? </p>
+
+<p>
+That's the problem that we'll solve in this assignment. You are going
+to search through a file containing movie reviews from the Rotten
+Tomatoes website which have both a numeric score as well as
+text. You'll use this to learn which words are positive and which are
+negative. The <a href="../data/movieReviews.txt">data file</a> looks
+like this:
+</p>
+
+<pre>
+1 A series of escapades demonstrating the adage that what is good for the goose is also good for the gander , some of which occasionally amuses but none of which amounts to much of a story .
+4 This quiet , introspective and entertaining independent is worth seeking .
+1 Even fans of Ismail Merchant 's work , I suspect , would have a hard time sitting through this one .
+3 A positively thrilling combination of ethnography and all the intrigue , betrayal , deceit and murder of a Shakespearean tragedy or a juicy soap opera .
+1 Aggressive self-glorification and a manipulative whitewash .
+4 A comedy-drama of nearly epic proportions rooted in a sincere performance by the title character undergoing midlife crisis .
+1 Narratively , Trouble Every Day is a plodding mess .
+3 The Importance of Being Earnest , so thick with wit it plays like a reading from Bartlett 's Familiar Quotations
+1 But it does n't leave you with much .
+1 You could hate it for the same reason .
+...
+</pre>
+
+Note that each review starts with a number 0 through 4 with the following meaning:
+<ul>
+<li>0 : negative</li>
+<li>1 : somewhat negative</li>
+<li>2 : neutral</li>
+<li>3 : somewhat positive</li>
+<li>4 : positive</li>
+</ul>
+
+<h2>Step 1: XXX</h2>
+
+Idea: Prompt the user for a word. Go through entire review database and
+compute average score of all reviews containing the word.
+
+Specifically, you should write two functions. XXX <tt>score_word(word)</tt>.
+This function should:
+<ul>
+  <li>Open the <tt>movieReviews.txt</tt> file, loop through it, and
+    compute the average rating for reviews containing the given word.</li>
+  <li>Return the average rating, or <tt>None</tt> if the word does
+    not occur in any reviews.</li>
+</ul>
+
+XXX Then write <tt>score_user_word()</tt>.  This function should:
+<ul>
+  <li>Prompt the user for a word.</li>
+  <li>Call <tt>score_word</tt> to compute the average score for
+    ratings containing the user's word.</li>
+  <li>Report the average rating to the user.</li>
+</ul>
+
+For example, XXX two normal runs, one run with word not found
+
+Some hints:
+<ul>
+  <li><tt>score_word</tt> should not prompt the user or print
+    anything!</li>
+  <li>Use the string <tt>split()</tt> method to split each line of the
+  file into words.  If <tt>words = line.split()</tt>,
+  then <tt>words[0]</tt> will be the review score,
+    and <tt>words[1:]</tt> will be all the words in the review.</li>
+</ul>
+
+<h2>Step 2: XXX</h2>
+
+XXX Generalize: prompt user for a whole phrase.  Compute the average score
+of all words in the phrase (careful to handle words resulting
+in <tt>None</tt>).
+
+Print out average score, along with positive/negative (bigger/smaller
+than 2).
+
+Notice how it is slow.  Also hard to generalize to analyze review data
+more generally.
+
+<h2>Step 3: XXX</h2>
+
+<tt>read_movie_reviews(review_file)</tt>: read in review file and
+return a dictionary mapping from words to average scores.
+
+Idea: keep two dictionaries, one word -> count, one word -> total
+score.  Then go through and normalize one by the other.
+
+Write <tt>score_user_word2(word_scores)</tt>.
+Like <tt>score_user_word</tt> but uses dictionary of computed scores
+instead of looking through review data each time.
+
+<h2>Step 4: XXX</h2>
+
+Write <tt>main()</tt> which calls <tt>read_movie_reviews</tt>, then
+repeatedly prompts user for phrases and scores them.
+
+XXX what else? Something with file output?
+
+<h2>Grading</h2>
+<ul>
+  <li>To earn a D on this lab,</li>
+  <li>To earn a C on this lab,</li>
+  <li>To earn a B on this lab,</li>
+  <li>To earn an A on this lab,</li>
+  <li>To earn a 100 on this lab,</li>
+</ul>
+<hr>
+XXX attribution --- nifty assignments
+<small>&copy; Mark Goadrich and Brent Yorgey, Hendrix College</small>
+</BODY>
+</HTML>

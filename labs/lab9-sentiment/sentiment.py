@@ -1,3 +1,6 @@
+def score_word():
+    word = raw_input(
+
 def read_movie_reviews(review_file):
     word_scores = {}
     word_counts = {}
