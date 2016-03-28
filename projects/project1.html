@@ -102,17 +102,39 @@ multiple of four, except when it is also a multiple of 100 but not 400. So, 1900
 For this assignment, you will write a Python program called <code>dow.py</code>.
 This program will first tell the user about the program, and then take as input from the user 
 the date they wish to use for finding the day of the week.  This input must be in the
-form of three questions to the user, first the year, then the day, then the month.
-You would type in 2015, then 23, then 2 for 
+form of three questions to the user, first the year, then the month
+(as a number),
+then the day.  For example, you would type in 2015, then 2, then 23 for
 February 23rd, 2015.
 <p>
 With correct input, your program will then parse this input into the year, month and day,
 follow the above algorithm to compute the day of the week, and output this to the user
-in the following format exactly (using February 23rd, 2015 as an example):
+in the following format <b>exactly</b> (using February 23rd, 2015 as an example):
 <p>
 <code>In the Gregorian Calendar, February 23rd, 2015 falls on a Monday.</code>
 <p>
-For dates, use st, nd, rd and th suffixes appropriately.
+For dates, use st, nd, rd and th suffixes appropriately. (If English is
+not your first language, feel free to ask your instructor for help
+understanding the rules for these suffixes. English is very strange!).
+<p>
+<b>Be sure to use <i>exactly</i> the right input and output formats as
+  described above!</b>  You are free to be creative in the text you
+  display when prompting the user, and in any other text your program
+  displays before the final day of the week output, but part of your
+  grade will be based on your adherence to the input and output format
+  requirements.  For example, a program receiving full credit might
+have output like the following:
+
+<pre>
+Welcome to the Day of the Week Finder!
+This program will... etc.
+Please enter the year: 2013
+Please enter the month, as a number between 1-12: 2
+Please enter the day of the month: 23
+Calculating...
+Other exciting and creative output here...
+In the Gregorian Calendar, February 23rd, 2015 falls on a Monday.
+</pre>
 
 <h2>Testing</h2>
 Test your code on the following dates to ensure you are getting the right answers.  I will be 
