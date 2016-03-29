@@ -92,6 +92,18 @@ Some hints:
     containing the word.</li>
   <li>Be careful to handle words with different capitalizations, for
     example, by converting everything to lowercase.</li>
+  <li>Be careful to look only for <i>entire</i> words.  For example,
+  the word "bad" does not occur in the review <tt>"This is a movie
+  about a troubadour."</tt>, even though the letters "bad" do occur as
+  a substring.  The easiest way to deal with this is to split the
+  review into a list words, and check whether the given word exists as
+  an element of the list (for example, using Python's <tt>in</tt>
+    operator).</li>
+  <li>Even if the word occurs multiple times in a review, you should
+    only count the review once. (You probably don't have to do
+    anything special to make this work; you will get this behavior by
+    default if you just check for the presence of the word in the
+    review.)
 </ul>
 
 The second function, <tt>score_user_word()</tt>, should:
@@ -185,6 +197,12 @@ track of <i>two</i> dictionaries: one maps from words to
 a <i>count</i> of how many reviews each word has appeared in; the
 other maps from words to the <i>total score</i> of reviews the word
 has appeared in.</p>
+
+<p>Hints:
+<ul>
+  <li>For each line in the database,
+</ul>
+</p>
 
 <!-- XXX For example, -->
 

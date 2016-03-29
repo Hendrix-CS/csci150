@@ -83,15 +83,14 @@ def parse_movie_reviews(review_file):
 
     f = open(review_file, 'r')
     for line in f.readlines():
-        words = line.split()
+        words = line.lower().split()
         score = int(words[0])
-        for word in words[1:]:
-            word_l = word.lower()
-            if word_l not in word_scores:
-                word_scores[word_l] = 0
-                word_counts[word_l] = 0
-            word_scores[word_l] += score
-            word_counts[word_l] += 1
+        for word in list(set(words[1:])):
+            if word not in word_scores:
+                word_scores[word] = 0
+                word_counts[word] = 0
+            word_scores[word] += score
+            word_counts[word] += 1
 
     for word in word_scores:
         word_scores[word] /= float(word_counts[word])
@@ -123,9 +122,9 @@ def main():
             score = score_phrase_dict(word_scores, phrase)
             if (score == None):
                 print "None of those words are in the database."
-            elif score < 2:
-                print "Negative =("
             else:
-                print "Positive =)"
+                print "Score: " + str(score)
+                pos_neg(score)
+    print "Goodbye!"
 
 main()
