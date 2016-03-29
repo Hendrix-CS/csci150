@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>CSCI 150 - Lab 9 - Sentiment Analysis</title>
-  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
+  <!-- <link rel="stylesheet" type="text/css" title="Default" href="../css/style.css"> -->
 </head>
 
 <body>
@@ -201,7 +201,7 @@ Next, write a function <tt>score_phrase_dict(word_scores,
     can just copy your code from <tt>score_phrase</tt> and modify it
     to use the dictionary instead of calling <tt>score_word</tt>.</p>
 
-<h2>Step 4: </h2>
+<h2>Step 4: Main</h2>
 
 <p>Write a <tt>main()</tt> function which
 calls <tt>read_movie_reviews</tt> to create a word score dictionary,
@@ -228,11 +228,62 @@ Please enter a phrase, or quit: quit
 Goodbye!
 </pre>
 
-<h2>Step 5: XXX</h2>
+<h2>Step 5: Word score caching</h2>
 
-Coming soon!
+There is still probably a noticeable lag when your program starts,
+while it reads the movie reviews and constructs the dictionary of word
+scores.  We can make it even faster by <i>caching</i> the word score
+data in another file so it does not have to be recomputed next time
+the program runs.
 
-<!-- XXX still noticeable lag @ startup.  Do file caching. -->
+For this step, modify your <tt>main</tt> function so it does the
+following:
+
+<ul>
+  <li>Take the given name of the movie review database file and
+  append <tt>.cache</tt> to it.  For example, if the movie review file
+  is <tt>movies.txt</tt>, the name of the cache file will
+    be <tt>movies.txt.cache</tt>.</li>
+  <li>Check whether this cache file exists.  You can do this by
+  adding <tt>import os</tt> at the top of your program and then using
+  the <tt>os.path.isfile</tt> function, which takes a file name as an
+    argument and returns a boolean.</li>
+  <li>If the cache file does not exist, read the movie review database
+    and construct the word score dictionary using
+    the <tt>read_movie_reviews</tt> function as usual.
+    Then <i>write</i> the contents of the dictionary to the cache file
+    using the format
+    <pre>
+word1 score1
+word2 score2
+word3 score3
+...
+  </pre></li>
+  For example, the first few lines of the generated cache file might look like
+  <pre>
+aided 4.0
+writings 1.0
+bad-boy 2.0
+ryoko 2.0
+yellow 1.5
+pony 0.0
+four 2.08695652174
+  </pre>
+  <li>If the cache file <i>does</i> exist, then read it instead of the
+    movie reviews, putting the data directly into a dictionary of word
+    scores.</li>
+  <li>In either case, return the created dictionary of word scores.</li>
+</ul>
+(Of course, you probably don't want to do all of that directly in
+your <tt>main</tt> function; you should decompose the behavior into
+more functions as appropriate.)
+
+<p>This procedure means that the work to
+compute the dictionary of word scores from the movie reviews will be
+done only once, the first time your program runs.  On subsequent runs,
+the word scores will be read directly from the cache file.  This
+should be noticeably faster, since the cache file will be smaller than
+the movie review file, and requires no computation while reading it.</p>
 
 <h2>Grading</h2>
 <ul>
@@ -246,7 +297,8 @@ Coming soon!
   <li>To earn a 100 on this lab, complete Step 5 (word score caching)</li>
 </ul>
 <hr>
-<!-- XXX attribution --- nifty assignments
-<small>&copy; Mark Goadrich and Brent Yorgey, Hendrix College</small> -->
+<small>&copy; Eric D. Manley and Timothy M. Urness, Drake University
+  (<a href="http://nifty.stanford.edu/2016/manley-urness-movie-review-sentiment/">SIGCSE Nifty Assignments 2016</a>); adapted and extended by Brent
+  Yorgey, Hendrix College</small>
 </BODY>
 </HTML>
