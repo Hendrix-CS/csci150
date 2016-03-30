@@ -2053,13 +2053,13 @@ legitimate uses of recursion, e.g. processing trees.
 
 \section*{Dictionaries}
 
-\begin{reflection}{Brent, S'16}
+\begin{reflect}{Brent, S'16}
   In F'15 we did file I/O first and then dictionaries.  In S'16 it
   worked better to do dictionaries first --- two lectures right before
   spring break, and then on the first day back from spring break cover
   file I/O along with a dictionary review in preparation for the
   dictionary lab on the next day.
-\end{reflection}
+\end{reflect}
 
 Recall lists.  Draw an alternate picture of lists as a mapping from
 indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
@@ -2198,6 +2198,13 @@ def hailstone_length(n):
 
 \section*{File I/O}
 
+\subsection*{Setup}
+
+\begin{itemize}
+\item No class Friday 4/1.
+\item HW for next class: read part I of Zen.
+\end{itemize}
+
 Our programs have no state between each time they are called.
 Everything is stored in memory during the program, but afterwords,
 it's all gone.  This is RAM.  We need hard drive storage to keep it
@@ -2209,7 +2216,7 @@ To write to a file:
 fout = open("myfile.txt", "w")
 \end{verbatim}
 
-then to save data in the file, write out as strings
+then to save data in the file, write out as strings:
 
 \begin{verbatim}
 fout.write("hello\n")
@@ -2243,7 +2250,7 @@ returns a list of strings.
 
 After both, say \verb|fin.close()| to finish accessing the file.
 
-\section*{Zen Reading discussion (Friday, 30 Oct)}
+\section*{Zen Reading discussion}
 
 \subsection*{Setup}
 
@@ -2253,45 +2260,65 @@ After both, say \verb|fin.close()| to finish accessing the file.
 
 \subsection*{Discussion}
 
-somewhat confusing? yes.
-you picked up in the middle of a journey the author is taking with his son
-and friends across the country on a motorcycle
-along the way he talks about the philosophy of quality, goodness, etc,
-this excerpt is groundwork for that discussion
-classical vs romantic understanding
-underlying form vs appearance
-negative views of each side (dull, uninteresting for classical, frivolous, erratic for romantic)
-masculine vs feminine association? Sexist?
-generous interpretations, because of culture? 70's mentality?
-in any case, this stereotype should not persist, obviously wrong
-women can be engineers, men can be artists and have feelings
-how is CSCI related to these understandings? Why did we read this?
-classical, definitely
-but elements of romantic too, creativity of solutions?
-choices in problem solving, uniqueness of approaches to projects, labs
-application of classical “analysis” to motorcycle
-talk through some of the details of the diagrams
-“impossible to understand unless you already know how one works”
-knife diving up the motorcycle
-intellectual scalpel
-no two motorcycle manufacturers divide same way
-romantic part of how this choice is made
-this skill of using the knife has been what we have been practicing all semester
-back to CSCI connection
+\begin{itemize}
+\item somewhat confusing? yes.
+  \begin{itemize}
+  \item you picked up in the middle of a journey the author is taking with his son
+    and friends across the country on a motorcycle.
+  \item along the way he talks about the philosophy of quality, goodness, etc,
+    this excerpt is groundwork for that discussion
+  \end{itemize}
+
+\item classical vs romantic understanding
+  \begin{itemize}
+  \item underlying form vs appearance
+  \item negative views of each side (dull, uninteresting for
+    classical, frivolous, erratic for romantic)
+  \item masculine vs feminine association? Sexist?  Not really, he's
+    just making an observation about European culture, context means
+    these are not determined but cultural associations.
+  \end{itemize}
+\item how is CSCI related to these understandings? Why did we read
+  this?
+  \begin{itemize}
+  \item classical, definitely but elements of romantic too
+  \item creativity of solutions?  choices in problem solving, uniqueness
+    of approaches to projects, labs
+  \end{itemize}
+\item application of classical “analysis” to motorcycle, talk through
+  some of the details of the diagrams
+\end{itemize}
+
+“impossible to understand unless you already know how one works” /
+knife diving up the motorcycle /
+intellectual scalpel /
+no two motorcycle manufacturers divide same way /
+romantic part of how this choice is made /
+this skill of using the knife has been what we have been practicing
+all semester /
+
+back to CSCI connection /
 when we have talked about data types, (int, bool, string, list, dict)
-they have been ways we use the knife to separate information
-they are all what we will now call OBJECTS
-we want to make our own new datatypes for many different situations
+they have been ways we use the knife to separate information /
+they are all what we will now call OBJECTS /
+we want to make our own new datatypes for many different situations /
 two main pieces to make an object, components and functions, just like motorcycle above
 hierarchies
-component hierarchy
-has-a relationship
+
+component hierarchy /
+has-a relationship /
 eventually get to atomic elements (int, bool, string, list etc)
-function hierarchy
-is-a relationship
-motorcycle is a vehicle
-so is a bicycle, boat, truck, train, spaceship
-all related by function
+
+function hierarchy /
+is-a relationship /
+motorcycle is a vehicle /
+so is a bicycle, boat, truck, train, spaceship /
+all related by function /
+
+Let's do an example together: airport.  First has-a hierarchy.
+
+Then make some is-a hierarchies.
+
 Your task as a team of 3 or four students
 apply this analysis to a system
 need more experience with using the knife in this way
