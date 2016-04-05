@@ -96,7 +96,7 @@ Some hints:
   the word "bad" does not occur in the review <tt>"This is a movie
   about a troubadour."</tt>, even though the letters "bad" do occur as
   a substring.  The easiest way to deal with this is to split the
-  review into a list words, and check whether the given word exists as
+  review into a list of words, and check whether the given word exists as
   an element of the list (for example, using Python's <tt>in</tt>
     operator).</li>
   <li>Even if the word occurs multiple times in a review, you should
@@ -200,7 +200,22 @@ has appeared in.</p>
 
 <p>Hints:
 <ul>
-  <li>For each line in the database,
+  <li>For each line in the database, you want to count each unique
+    word only once. The easiest way to do this is as follows:
+    <ul>
+      <li>Convert the line to lowercase</li>
+      <li>Split the line into words using <tt>.split()</tt></li>
+      <li>Remove any duplicate words by converting to a <tt>set</tt> and
+      back: <tt>list(set(...))</tt>.
+    </ul>
+    For example, you might write something like
+    <pre>
+line = line.lower()
+words = line.split()
+for word in list(set(words[1:])):
+  ...
+    </pre>
+  </li>
 </ul>
 </p>
 
