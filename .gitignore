@@ -4,6 +4,7 @@
 *.out
 .~lock*
 *~
+*.class
 
 lectures/class-notes.pdf
 _cache
