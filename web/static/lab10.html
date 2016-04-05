@@ -59,7 +59,7 @@ Emory University.</i>
 <p>
 <a href="../static/sum-practice.py"><tt>sum-practice.py</tt></a>
 contains several errors.  Specifically, it contains several syntax
-errors, a runtime error, and a logic error.  Your task for this step
+errors, a runtime error, and a semantic error.  Your task for this step
 is to find and correct these errors.
 
 <p>
@@ -109,7 +109,7 @@ run it.  Otherwise, how will you know if your program is correct?
 
 <p>
 Try running the program with different inputs.  If you notice a
-pattern, this will give you a clue to the logic error.
+pattern, this will give you a clue to the semantic error.
 
 <p>
 Collecting data is often a key part of gaining the insight necessary
@@ -129,7 +129,7 @@ as the first line of code inside the while loop.
 <p>
 Run your program again.  The statement you added now prints out some
 very useful information.  Printing out intermediate results inside of
-a loop can be a very useful strategy for finding logic errors in your
+a loop can be a very useful strategy for finding semantic errors in your
 code.  You can add more <tt>print</tt> statements if you think other
 information would be useful.
 
@@ -165,15 +165,32 @@ questions and write your answers in your Evaluation Document.
     it!)</li>
 </ol>
 
-<h3>Step 3: Amaze your friends</h3>
+<h3>Step 3: Stump your friends</h3>
 
-<b>Coming soon!</b>
+Write a program which creates a checkerboard of a user-specified size.
+Here is an example run of the program you should write:
 
-<!--
-Write your own program that does XYZ.  Make sure you use comments
-to document what the program is SUPPOSED to do.  Now deliberately
-introduce THREE bugs.  Exchange with another group.  Fix and etc.
--->
+<p>
+<pre>
+What size checkerboard would you like? 6
+X.X.X.
+.X.X.X
+X.X.X.
+.X.X.X
+X.X.X.
+.X.X.X
+</pre>
+
+<p>
+Once you get your program to work, you should deliberately introduce
+at least THREE BUGS into your program.  Find another team and swap
+buggy programs with them.
+
+<p>
+Now debug and fix the program that the other team gave you.  You
+should make the <i>smallest changes as possible</i> to their program.
+For example, you should <i>not</i> just replace part of their program with
+yours.
 
 <h3>Step 4: Guess the number</h3>
 
@@ -208,7 +225,7 @@ tracing the code with the input sequence that causes an error.
 
 <p>
 <i>An important aside</i>: because the code generates a different
-number each time (what fun would it be to play a game that picked the same number every 
+number each time (what fun would it be to play a game that picked the same number every
 time?), it's hard to debug.  To make the program's behavior
 repeatable, we can use something called a <i>seed</i>, which starts
 the random number generator in a certain state. Beginning from the
@@ -261,9 +278,15 @@ not have to make major changes like changing levels of code.)
 
 <h3>Step 5: Reflection</h3>
 
-<b>Coming soon!</b>
-
-<!-- In your evaluation document, XXX -->
+In your evaluation document, write a few paragraphs reflecting on your
+experience in this lab.  You may want to consider questions such as:
+<ul>
+  <li>What was the most difficult error to debug?  How did you go
+    about investigating it?</li>
+  <li>What did you learn from this lab?  Has your approach or attitude
+    towards debugging changed as a result of this lab?  If so,
+    how?</li>
+</ul>
 
 <h2>What to Hand In</h2>
 
@@ -277,16 +300,16 @@ not have to make major changes like changing levels of code.)
 
 <h2>Grading</h2>
 
-<b>Coming soon!</b>
-
-<!--
 <ul>
-<li>To earn a D, XXX
-<li>To earn a C, do the above and 
-<li>To earn a B, do the above and 
-<li>To earn an A, do the above and
-<li>To earn a 100, do the above and
+  <li>To earn a D, submit a corrected version of <tt>sum-practice.py</tt>.</li>
+<li>To earn a C, do the above and submit an evaluation document with
+  answers to the questions about the reading.</li>
+<li>To earn a B, do the above and submit the buggy checkerboard
+  program that you wrote and the corrected checkerboard program from
+  another team.</li>
+<li>To earn an A, do the above and submit a corrected version
+  of <tt>guess.py</tt>.</li>
+<li>To earn a 100, do the above and complete the reflection in Step 5.</li>
 </ul>
--->
 
 </body>
