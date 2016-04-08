@@ -26,5 +26,6 @@ to review the material and come to class prepared.
 * Mon, March 28 [ [files.py](static/files.py) ]
 * Chapter 15: Weds, April 6
 * Chapter 16: Weds, April 6 [ [objects.py](static/objects.py), [objects-repl.txt](static/objects-repl.txt) ]
+* Fri, April 8 [ [traffic-lights.py](static/traffic-lights.py) ]
 * Chapter 17: Mon, April 11
 * Chapter 18: Weds, April 13
