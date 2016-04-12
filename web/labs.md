@@ -50,7 +50,7 @@ included in each lab.
   7     [Caesar's Secrets](http://mgoadric.github.io/csci150/labs/lab7.html)          Mar 1
   8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 15
   9     [Sentiment Analysis](static/lab9.html)                                        Mar 29
-  10    [App Inventor](labs/lab10.html)                                               Apr 5
-  11    [Die Hard III](labs/lab11.html)                                               Apr 12
+  10    [On Stuckness and debugging](static/lab10.html)                               Apr 5
+  11    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab11.html)             Apr 12
   12    [Processing](labs/lab12.html)                                                 Apr 19
   13    [Eliza](labs/lab13.html)                                                      Apr 26
