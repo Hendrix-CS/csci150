@@ -1873,6 +1873,8 @@ def triangle(n):
     return total
 \end{verbatim}
 
+\section*{LAB: Caesar's Secrets}
+
 \section{For loop practice}
 
 \subsection*{Setup}
@@ -1928,13 +1930,13 @@ Spend a lecture doing and going over a practice exam.  See
   for that week.)
 \end{reflect}
 
-\section*{Exam wrap-up, demo project}
+\section{Exam wrap-up, demo project}
 
-\subsection{Exam wrap-up}
+\subsection*{Exam wrap-up}
 
 Hand back exams; quickly go over exam solutions.
 
-\subsection{Demo project}
+\subsection*{Demo project}
 
 Introduce Project 2 (word games).
 
@@ -1954,7 +1956,7 @@ on:
   while loop.
 \end{itemize}
 
-\section*{Recursion I: intro}
+\section{Recursion I: intro}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -2030,7 +2032,7 @@ If time, could do one of the following:
 % If time, brief intro to Python turtle library and Kock snowflake (in
 % preparation for fractal lab).
 
-\section*{Recursion II: recursive functions}
+\section{Recursion II: recursive functions}
 
 Start by reinforcing ``base case + recursive case''.  Talk about
 ``leap of faith'': trust that recursive calls will work without
@@ -2049,9 +2051,11 @@ legitimate uses of recursion, e.g. processing trees.
 \item Have them work in (different?) pairs to implement \verb|is_palindrome|.
 \end{itemize}
 
+\section*{LAB: Fractal Recursion}
+
 \newpage
 
-\section*{Dictionaries}
+\section{Dictionaries}
 
 \begin{reflect}{Brent, S'16}
   In F'15 we did file I/O first and then dictionaries.  In S'16 it
@@ -2132,7 +2136,7 @@ def normalize(d):
 \end{verbatim}
 
 \newpage
-\section*{Dictionaries practice}
+\section{Dictionaries practice}
 
 Naive Fibonacci function.  Understand why it is so slow.  Then
 use a dictionary to memoize.  Have them write memo code.
@@ -2196,13 +2200,16 @@ def hailstone_length(n):
 
 \newpage
 
-\section*{File I/O}
+\begin{reflect}{Brent, S'16}
+  This is where spring break fell in S'16.
+\end{reflect}
+
+\section{File I/O, dictionary review}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item No class Friday 4/1.
-\item HW for next class: read part I of Zen.
+\item HW for next class: read section I of Zen.
 \end{itemize}
 
 Our programs have no state between each time they are called.
@@ -2250,7 +2257,21 @@ returns a list of strings.
 
 After both, say \verb|fin.close()| to finish accessing the file.
 
-\section*{Zen Reading discussion}
+Do some dictionary practice: write a function to read in a file, do
+frequency count of words.  Also show them how to split up a line into
+words since they will need that in the lab.
+
+\section*{LAB: Sentiment Analysis}
+
+\begin{reflect}{Brent, S'16}
+  I wrote this lab fresh in S'16, based on a Nifty Assignment @
+  SIGCSE.  It replaced the Gibberish Generator lab from the previous
+  semester, which was way too difficult.  Overall I think the new lab
+  went over very well.  It seemed to have the right level of
+  difficulty and gave the students good practice with dictionaries.
+\end{reflect}
+
+\section{Zen Reading discussion}
 
 \subsection*{Setup}
 
@@ -2351,9 +2372,15 @@ For Monday, analyze your system.
 Prepare a presentation, \emph{use projector} (don't waste time drawing
 on board) and address all 5 of the above things.
 
-\section*{System/hierarchy analysis presentations}
+\begin{reflect}{Brent, S'16}
 
-\section*{Intro to classes \& objects (Wednesday, 4 Nov)}
+In S'16 there was a 
+\end{reflect}
+
+\section{System/hierarchy analysis presentations}
+
+\newpage
+\section{Intro to classes \& objects}
 
 Birthday cake problem:
 \begin{verbatim}
@@ -2438,7 +2465,8 @@ main()
   it is close to natural log.
 \end{itemize}
 
-\section*{More classes \& objects (Friday, 6 Nov)}
+\newpage
+\section{More classes \& objects}
 
 Traffic light example.  Main point: encapsulation, abstraction.
 
@@ -2541,13 +2569,13 @@ def main():
 main()
 \end{verbatim}
 
-\section*{Yet More classes \& objects (Monday, 9 Nov)}
+\section{Yet More classes \& objects (Monday, 9 Nov)}
 
 Mechanical pencil exercise.  Have them work in teams to code a class
 representing a mechanical pencil.  Paste code into Google doc, look
 through it together.
 
-\section*{Yet Even More classes \& objects (Wednesday, 11 Nov)}
+\section{Yet Even More classes \& objects (Wednesday, 11 Nov)}
 
 Card and Deck examples.
 \begin{itemize}
@@ -2562,13 +2590,13 @@ Card and Deck examples.
   (draw $n$ cards)
 \end{itemize}
 
-\section*{Still Yet Even More classes \& objects (Friday, 13 Nov)}
+\section{Still Yet Even More classes \& objects (Friday, 13 Nov)}
 
 Finish Deck, make Hand, Player, HumanPlayer, ComputerPlayer.
 
-\section*{Fill in stuff!}
+\section{Fill in stuff!}
 
-\section*{Queues}
+\section{Queues}
 
 I usually start with a discussion of the queue data structure itself and
 why it would be useful. We might want to model lines of people in the
