@@ -28,4 +28,4 @@ to review the material and come to class prepared.
 * Chapter 16: Weds, April 6 [ [objects.py](static/objects.py), [objects-repl.txt](static/objects-repl.txt) ]
 * Fri, April 8 [ [traffic-lights.py](static/traffic-lights.py) ]
 * Chapter 17: Mon, April 11 [ [cards.py](static/cards.py) ]
-* Chapter 18: Weds, April 13
+* Chapter 18: Weds, April 13 [ [cards.py](static/cards.py) ]
