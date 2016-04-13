@@ -2596,11 +2596,11 @@ Card and Deck examples.
 \section{Still Yet Even More classes \& objects}
 
 \begin{itemize}
-\item Make \verb|Deck| class with list of cards.  Make
-  \verb|__init__| (create 52-card deck), \verb|shuffle| (use
-  \verb|random.shuffle|), \verb|draw| (draw one card), \verb|deal(n)|
-  (draw $n$ cards).  Make \verb|sort| method; go back and add
-  \verb|__lt__| to \verb|Card| class.
+\item Make \verb|Deck| class with list of cards.  Make \verb|__init__|
+  (create 52-card deck), \verb|__repr__|, \verb|shuffle| (use
+  \verb|random.shuffle|), \verb|draw| (draw one card), \verb|add|,
+  \verb|deal(n)| (draw $n$ cards).  Make \verb|sort| method; go back
+  and add \verb|__lt__| to \verb|Card| class.
 \item If time, introduce \verb|Hand| which inherits from \verb|Deck|.
   Is-a.  Add \verb|reveal|, \verb|value| methods.
 \end{itemize}
