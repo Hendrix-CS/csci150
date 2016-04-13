@@ -2569,13 +2569,20 @@ def main():
 main()
 \end{verbatim}
 
-\section{Yet More classes \& objects (Monday, 9 Nov)}
+\section{Yet More classes \& objects}
 
 Mechanical pencil exercise.  Have them work in teams to code a class
 representing a mechanical pencil.  Paste code into Google doc, look
 through it together.
 
-\section{Yet Even More classes \& objects (Wednesday, 11 Nov)}
+\begin{reflect}{Brent, S'16}
+  This exercise doesn't work very well when the students don't have
+  laptops.  I skipped it and just went on to the next lecture
+  (modelling cards), intending to give them a HW assignment where they
+  get some practice designing classes.
+\end{reflect}
+
+\section{Yet Even More classes \& objects}
 
 Card and Deck examples.
 \begin{itemize}
@@ -2584,17 +2591,28 @@ Card and Deck examples.
   later.  Just has getter methods.  Write \verb|__repr__|. (If usung
   \verb|face_up|, \verb|__repr__| should return \verb|**| or something
   like that if face down.)
-\item Start making \verb|Deck| class with list of cards.  Make
-  \verb|__init__| (create 52-card deck), \verb|shuffle| (use
-  \verb|random.shuffle|), \verb|draw| (draw one card), \verb|deal(n)|
-  (draw $n$ cards)
 \end{itemize}
 
-\section{Still Yet Even More classes \& objects (Friday, 13 Nov)}
+\section{Still Yet Even More classes \& objects}
 
-Finish Deck, make Hand, Player, HumanPlayer, ComputerPlayer.
+\begin{itemize}
+\item Make \verb|Deck| class with list of cards.  Make
+  \verb|__init__| (create 52-card deck), \verb|shuffle| (use
+  \verb|random.shuffle|), \verb|draw| (draw one card), \verb|deal(n)|
+  (draw $n$ cards).  Make \verb|sort| method; go back and add
+  \verb|__lt__| to \verb|Card| class.
+\item If time, introduce \verb|Hand| which inherits from \verb|Deck|.
+  Is-a.  Add \verb|reveal|, \verb|value| methods.
+\end{itemize}
 
-\section{Fill in stuff!}
+\section{Further Still Yet Even More classes \& objects}
+
+\begin{itemize}
+\item Finish \verb|Hand|.
+\item Introduce \verb|Player|, \verb|HumanPlayer|,
+  \verb|ComputerPlayer|.
+\item Finish writing blackjack.
+\end{itemize}
 
 \section{Queues}
 
