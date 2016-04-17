@@ -11,7 +11,7 @@ along with writing and debugging code.
 -   Exam 2: Monday, March 7, covering functions, while and for loops, lists and
     strings [ [Practice exam](static/exam2-practice.pdf) ]
 -   Exam 3: Friday, April 22, covering recursion, dictionaries and object-oriented
-    programming
+    programming [ [Exam prep](static/exam3-prep.pdf) ]
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
