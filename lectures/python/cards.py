@@ -135,7 +135,109 @@ class Deck:
     def draw(self):
         return self.cards.pop(0)
         # TODO: fix so this doesn't crash for an empty Deck
-        "oierfkjerfh jhesrkfj hser f" +\
-        "fkhrkfjehrfe"
 
-        
+    # Draw the top n cards from the Deck and return them
+    # in a list
+    def deal(self, n):
+        cards = []
+        for i in range(n):
+            cards.append(self.draw())
+        return cards
+
+    # Add c to the end of the deck
+    def add_card(self, c):
+        self.cards.append(c)
+
+    # Add a list of cards to the end of the deck
+    def add_cards(self, cards):
+        for card in cards:
+            self.add_card(card)
+
+# A Hand "is-a" special kind of deck
+# Hand "inherits from" Deck
+# Hand objects automatically have everything
+#   that a Deck object has, plus some extra stuff
+#   that is specific to Hands.
+class Hand(Deck):
+
+    # An extra method specific to Hand:
+
+    def value(self):
+        total = 0
+        for c in self.cards:
+            total += c.blackjack_value()
+        return total
+
+    # A method that we want to work differently
+    # for Hands.  By redefining it we "override"
+    # the definition that we would have inherited
+    # from Deck.
+
+    def __init__(self):
+        self.cards = []
+
+#########################
+
+# A general blackjack player
+class Player:
+
+    # Variables:
+    #   - hand
+
+    # Create a player with an initial hand
+    def __init__(self, hand):
+        self.hand = hand
+
+    # Add a card to a player's hand
+    def add_card(self, card):
+        self.hand.add_card(card)
+
+    # Decide whether to hit:
+    #   True --> another card
+    #   False  --> stop
+    def hit(self):
+        return True
+
+    # Idea: more specific Players should override
+    # the hit() method with their own way of playing.
+    # Every kind of Player will always have a hit() method.
+
+# A ComputerPlayer is a kind of Player
+class ComputerPlayer(Player):
+
+    # Override (redefine) hit
+    def hit(self):
+        return (self.hand.value() < 17)
+
+# A HumanPlayer is also a kind of Player
+class HumanPlayer(Player):
+
+    def hit(self):
+        self.hand.reveal()
+        print "Your hand: ",
+        print self.hand
+        h = raw_input("Do you want to hit? ")
+        return (h.lower() == 'y')
+
+##########################
+
+# Play a game of human vs computer blackjack.
+def play_blackjack():
+    d = Deck()
+    d.shuffle()
+
+    compHand = Hand()
+    compHand.add_cards(d.deal(2))
+
+    humanHand = Hand()
+    humanHand.add_cards(d.deal(2))
+
+    comp = ComputerPlayer(compHand)
+    human = HumanPlayer(humanHand)
+
+    one_player(human, d)
+
+# Ask a player repeatedly until they are done hitting
+def one_player(player, deck):
+    while player.hit():
+        player.add_card(deck.draw())
