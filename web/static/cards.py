@@ -183,14 +183,22 @@ class Player:
 
     # Variables:
     #   - hand
+    #   - name
 
-    # Create a player with an initial hand
-    def __init__(self, hand):
-        self.hand = hand
+    # Create a player with an empty hand
+    def __init__(self, name):
+        self.name = name
+        self.hand = Hand()
+
+    def __repr__(self):
+        return self.name + ": " + str(self.hand)
 
     # Add a card to a player's hand
     def add_card(self, card):
         self.hand.add_card(card)
+
+    def add_cards(self, cards):
+        self.hand.add_cards(cards)
 
     # Decide whether to hit:
     #   True --> another card
@@ -198,16 +206,33 @@ class Player:
     def hit(self):
         return True
 
+    # Return the value of the player's hand
+    def value(self):
+        return self.hand.value()
+
+    # Tell whether the player's hand value is > 21
+    def busted(self):
+        return self.hand.value() > 21
+
+    def reveal(self):
+        self.hand.reveal()
+
     # Idea: more specific Players should override
     # the hit() method with their own way of playing.
     # Every kind of Player will always have a hit() method.
 
 # A ComputerPlayer is a kind of Player
-class ComputerPlayer(Player):
+class Dealer(Player):
 
     # Override (redefine) hit
     def hit(self):
         return (self.hand.value() < 17)
+
+class ComputerPlayer(Player):
+
+    def hit(self):
+        return (self.hand.value() < 16)
+
 
 # A HumanPlayer is also a kind of Player
 class HumanPlayer(Player):
@@ -226,18 +251,63 @@ def play_blackjack():
     d = Deck()
     d.shuffle()
 
-    compHand = Hand()
-    compHand.add_cards(d.deal(2))
+    comp = Dealer("ROBOT")
+    human = HumanPlayer("You")
 
-    humanHand = Hand()
-    humanHand.add_cards(d.deal(2))
+    comp.add_cards(d.deal(2))
+    human.add_cards(d.deal(2))
 
-    comp = ComputerPlayer(compHand)
-    human = HumanPlayer(humanHand)
-
-    one_player(human, d)
+    one_player(comp, d)
+    if comp.busted():
+        print "Dealer busted, you win!!"
+    else:
+        one_player(human, d)
+        if human.busted():
+            human.reveal()
+            print human
+            print "Busted, you lose!!"
+        else:
+            comp.reveal()
+            print comp
+            print human
+            if comp.value() >= human.value():
+                print "Computer wins!"
+            else:
+                print "You win!"
 
 # Ask a player repeatedly until they are done hitting
 def one_player(player, deck):
-    while player.hit():
+    # print player
+    while not player.busted() and player.hit():
         player.add_card(deck.draw())
+        # print player
+
+# Play one round of blackjack.
+# Output: true if player1 wins, false for player2
+def play_blackjack2(player1, player2):
+    d = Deck()
+    d.shuffle()
+
+    player1.add_cards(d.deal(2))
+    player2.add_cards(d.deal(2))
+
+    one_player(player1, d)
+    if player1.busted():
+       return False
+    else:
+        one_player(player2, d)
+        if player2.busted():
+            return True
+        else:
+            return player1.value() >= player2.value()
+
+def main():
+    p1_count = 0
+    for i in range(10000):
+        p1 = ComputerPlayer("p1")
+        p2 = Dealer("p2")
+        if play_blackjack2(p1,p2):
+            p1_count += 1
+    print "P1 win ratio: " + str(float(p1_count)/10000)
+
+main()
