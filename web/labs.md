@@ -53,4 +53,5 @@ included in each lab.
   10    [On Stuckness and debugging](static/lab10.html)                               Apr 5
   11    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab11.html)             Apr 12
   12    [Processing](http://mgoadric.github.io/csci150/labs/lab11.html)               Apr 19
-  13    [Eliza](labs/lab13.html)                                                      Apr 26
+  13    Final project workshop (optional)
+         Apr 26
