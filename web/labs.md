@@ -52,5 +52,5 @@ included in each lab.
   9     [Sentiment Analysis](static/lab9.html)                                        Mar 29
   10    [On Stuckness and debugging](static/lab10.html)                               Apr 5
   11    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab11.html)             Apr 12
-  12    [Processing](http://mgoadric.github.io/csci150/labs/lab11.html)               Apr 19
+  12    [Processing](http://mgoadric.github.io/csci150/labs/lab12.html)               Apr 19
   13    Final project workshop (optional, **9am-11am**)                               Apr 26
