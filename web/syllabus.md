@@ -29,3 +29,4 @@ to review the material and come to class prepared.
 * Fri, April 8 [ [traffic-lights.py](static/traffic-lights.py) ]
 * Chapter 17: Mon, April 11 [ [cards.py](static/cards.py) ]
 * Chapter 18: Weds, April 13 [ [cards.py](static/cards.py) ]
+* Mon, April 26 [ [queues.py](static/queues.py) ]
