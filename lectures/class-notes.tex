@@ -2616,92 +2616,140 @@ Card and Deck examples.
 
 \begin{reflect}{Brent, S'16}
   I spent 4 lectures going through blackjack in S'16.  3.5 would
-  probably be enough but I couldn't quite squeeze it into 3.
+  probably be enough but I couldn't quite squeeze it into 3.  I spent
+  the extra half-lecture doing an empirical exploration of different
+  play strategies, pitting computer players using different algorithms
+  against each other in 1000's of games and printing the winning
+  percentages.  Conclusions: only choosing to hit when you have a very
+  small number of points (e.g. 5)---or even \emph{never} choosing to
+  hit---actually does much better than one might expect.  You can
+  still end up winning around 40\% of the time.  On the other hand,
+  still choosing to hit even when you have 17 or more points quickly
+  gets very bad, because you are almost guaranteed to bust.
 \end{reflect}
 
-\section{Queues}
+\newpage
+\section{Queues (2 lectures)}
 
-I usually start with a discussion of the queue data structure itself and
-why it would be useful. We might want to model lines of people in the
-supermarket or at a bank, and determine why each has a different way of
-organizing people (multiple lines with one checkout person each, vs one
-line with multiple tellers).
+Start with a discussion of the queue data structure itself and why it
+would be useful: model lines of people in the supermarket or at a bank
+(determine why each has a different way of organizing people (multiple
+lines with one checkout person each, vs one line with multiple
+tellers)?), processes waiting for a turn to use the processor, network
+packets waiting to be sent, etc.
 
-I then walk through the methods of a queue
+Walk through the methods of a queue
 (\verb|add, remove, size, is_empty|) and some important words (front,
-back) and write up the super class Queue with all the method bodies
-being “pass”.
+back) and write up the super class \verb|Queue| with all the method bodies
+being \verb|pass|.  We are going to write two different implementations.
 
-Easiest way to implement a queue is to use a list, in terms of lines of
-code. List already do everything we need, and we're just constraining the
-interactions to be with the front [0] and back [-1]. We code up the
-ListQueue class together.
+Easiest way (in terms of lines of code) is to implement a queue is to
+use lists: they already do everything we need, and we're just
+constraining the interactions to be with the front \verb|[0]| and back
+\verb|[-1]|. Code up the \verb|ListQueue| class together.
 
-Then we test the ListQueue with the tester function and the main function.
-As we put stress on the queue with larger numbers, we see it's not a linear
-relationship, but quadratic. 10 ** 7 is a good number to stop, since it
-takes about 100 seconds to complete. I haven't in the past, but I think I
-will make a log-log plot of the size vs the time.
+Then we test \verb|ListQueue| with a \verb|main| method (see
+\verb|queuetester.py|):
 
-So, maybe a list, because it is very flexible and can access any element,
-is too much for this Queue task, and we could do better with another way of
-implementing a Queue where we only really care about the front and back.
+\begin{verbatim}
+import time
 
-Then, I discuss the Node abstraction. Break up a list into individual
-pieces that fit together like Legos. It's a recursive data type, something
-that stores an element and another Node as components.  This requires a
-discussion of the word None. We've seen it as the return value of a void
-function. Python has a word for “nothing”, and we can use that word when we
-need a variable but it has no value.
+def main():
+    q = ListQueue()
 
-Conveniently, we can calculate the size of a Node with a very simple
-recursive function.
+    for power in range(1,7):
 
-How do we use this to make a Queue? Make the NodeQueue class, and have two
-components in init, the front and back, which start off as None.
+        # Get starting time
+        start = time.time()
+        # Compute 10^power
+        n = 10 ** power
 
-Write size, very simple,  and \verb|is_empty|, base it on self.front being empty.
+        # Add and remove 10^power times
+        for i in range(n):
+            q.add(i)
+        for i in range(n):
+            q.remove()
 
-First, I try to complete add and remove the natural, but wrong, way. A node
-is then someone standing in line. When people stand in lines, they look at
-the person in front of them. So we start with the \verb|is_empty| case, and set
-set.front = Node(e) and self.back = self.front. This is ok.
+        # Get ending time
+        end = time.time()
+
+        # Print power and elapsed time in seconds
+        print power, end - start
+
+main()
+\end{verbatim}
+
+As we put stress on the queue with larger numbers, we see it's not a
+linear relationship, but quadratic. $10^7$ is a good place to stop,
+since it takes (on the order of) 100s of seconds to complete.  Could
+make a log-log plot of the size vs the time.  Give a hand-wavy
+explanation why the performance is quadratic: $1 + 2 + \dots + n$.
+
+Perhaps we could do better with a more specialized implementation,
+since we only really care about the front and back.
+
+Discuss the \verb|Node| abstraction. Break up a list into individual
+pieces that fit together like Legos. It's a recursive data type,
+something that stores an element and another \verb|Node| as
+components.  This requires a discussion of the word \verb|None|. We've
+seen it as the return value of a void function. Python has a word for
+``nothing'', and we can use that word when we need a variable but it has
+no value.
+
+How do we use this to make a Queue? Make the \verb|LinkedQueue| class,
+and have two components in \verb|__init__|, \verb|front| and
+\verb|back|, which start off as \verb|None|.
+
+Write \verb|size| (one of two ways: by adding recursive method to
+\verb|Node|, or iterative \verb|size| method which walks down list
+until current reference is \verb|None|) and \verb|is_empty|, base it
+on \verb|self.front| being empty.
+
+First, try to complete \verb|add| and \verb|remove| the natural, but
+wrong, way. A node is then someone standing in line. When people stand
+in lines, they look at the person in front of them. So we start with
+the \verb|is_empty| case, and set \verb|set.front = Node(e)| and
+\verb|self.back = self.front|. This is ok.
 
 We then write the case when there are already people in line. We have a new
 element to add to the back, so we write
 
+\begin{verbatim}
 temp = Node(e)
 temp.next = self.back
 self.back = temp
+\end{verbatim}
+to reset the \verb|back| pointer. All looks good so far.
 
-to reset the back pointer. All looks good so far.
-
-But we can't remove people from the queue easily. We can get the element we
-need from self.front, but who is the next self.front? self.front.next ==
-None, and this is a problem. We could walk from the back to get the element
-right behind self.front, with complicated two-finger algorithm, and it
-takes a long time. Booo.
+But we can't remove people from the queue easily. We can get the
+element we need from \verb|self.front|, but who is the next
+\verb|self.front|? \verb|self.front.next == None|, and this is a problem. We
+could walk from the back to get the element right behind \verb|self.front|,
+with complicated two-finger algorithm, and it takes a long time
+(totally negating any benefit from doing something other than a
+list). Boo.
 
 So instead, we reverse the orientation of everyone in line. You stand in
-line backwards and stare at the person behind you. They are your next. If
+line backwards and stare at the person behind you. They are your next. [If
 you do this in real life, people will get a little uncomfortable. Just go
 with it, computer scientists are weird sometimes because it's the right
-thing to do, like starting to count at 0…
+thing to do, like starting to count at 0\dots]
 
-Then we rewrite add to match the code in the queuestuff.py file, and
-finally we can write a remove method, to set self.front = self.front.next.
-Both are now constant time.
+Then we rewrite \verb|add| to match, and finally we can write a remove
+method, to set \verb|self.front = self.front.next|.  Both are now
+constant time.
 
 How does this fare with our tests? For small numbers, a little more
-expensive. The overhead of making new Node objects all the time is seen.
+expensive. The overhead of making new \verb|Node| objects all the time
+is seen.
 
-But as it gets larger, the time is linear with the size. for 10 ** 6 and
-beyond, NodeQueue will beat ListQueue hands down. You can go back to plot
-them in excel.  I've included an image in the code directory of these two
-lines on the log-log plot.
+But as it gets larger, the time is linear with the size. For $10^6$
+and beyond, \verb|LinkedQueue| will beat \verb|ListQueue| hands
+down. (Go back and plot in Excel?)
 
-I finish with discussing how this analysis and construction of data
+Finish with discussing how this analysis and construction of data
 structures is at the core of the science part of computer science, and will
 be heavily discussed in CSCI 151 with more formal tools and for more
 complicated structures, within the context of Java.
+
 \end{document}
