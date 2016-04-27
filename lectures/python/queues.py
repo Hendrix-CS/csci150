@@ -58,10 +58,73 @@ class ListQueue(Queue):
     def remove(self):
         return self.elements.pop(0)
 
+##########################
+
+
+class Node:
+    # Variables:
+    #   - value  (any type)
+    #   - next    (Node)
+    def __init__(self, value):
+        self.value = value
+        self.next   = None
+
+    # We'll refer to node.next and node.value
+    # directly instead of making getter and setter methods
+
+class LinkedQueue(Queue):
+    # Variables:
+    #    - front (Node)
+    #    - back (Node)
+
+    def __init__(self):
+        self.front = None
+        self.back = None
+
+    def is_empty(self):
+        return self.front == None
+
+    # Can make this faster by storing current size
+    # in self.size (update it when adding & removing)
+    # then just return it here.
+    def size(self):
+        count = 0
+        cur = self.front
+        while cur != None:
+            count += 1
+            cur = cur.next
+
+    def add(self, item):
+        new_node = Node(item)
+        if self.is_empty():
+            self.front = new_node
+        else:
+            self.back.next = new_node
+        self.back = new_node
+
+    def remove(self):
+        if self.is_empty():
+            return None
+        else:
+            to_return = self.front.value
+            self.front = self.front.next
+            if self.front == None:
+                self.back = None
+            return to_return
+
 import time
 
+def test():
+    q = LinkedQueue()
+
+    for i in range(10):
+        q.add(i)
+    for i in range(10):
+        print q.remove()
+        
+
 def main():
-    q = ListQueue()
+    q = LinkedQueue()
 
     for power in range(0,7):
         
