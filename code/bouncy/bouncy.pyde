@@ -10,14 +10,14 @@ class Vector:
         self.y = y
     def __repr__(self):
         return "<" + str(self.x) + ", " + str(self.y) + ">"
-    
+
     def length(self):
         return dist(self, Vector(0,0))
-    
+
     def scale(self, k):
         self.x *= k
         self.y *= k
-    
+
     def normalize(self):
         l = self.length()
         self.scale(1/l)
@@ -46,13 +46,13 @@ class Thingy:
         pass
     def intersects(self, other):
         return False
-   
+
 class Ball(Thingy):
     def __init__(self, c, r, v):
         self.c = c
         self.r = r
         self.v = v
-    
+
     def draw(self):
         ellipse(self.c.x,self.c.y,2*self.r,2*self.r)
 
@@ -64,11 +64,11 @@ class Ball(Thingy):
             d = abs(dot(n, sub(self.c, other.p1)))
             return d <= self.r
         else:
-            return False 
-        
+            return False
+
     def update(self):
         self.c = add(self.c, self.v)
-        
+
     def bounce(self, other):
         if self.intersects(other):
             if isinstance(other, Ball):
@@ -78,26 +78,26 @@ class Ball(Thingy):
             normal.normalize()
             normal.scale(2*dot(self.v,normal))
             self.v = sub(self.v, normal)
-            
+
 class Wall(Thingy):
     def __init__(self, p1, p2):
         self.p1 = p1
         self.p2 = p2
-        
+
     def draw(self):
         line(self.p1.x,self.p1.y,self.p2.x,self.p2.y)
- 
+
     def normal(self):
         n = perp(sub(self.p2, self.p1))
         n.normalize()
         return n
-    
+
     def intersects(self, other):
         if isinstance(other, Ball):
             return other.intersects(self)
         else:
             return False
-                                                       
+
 class World:
     def __init__(self, n):
         self.thingys = []
@@ -130,7 +130,7 @@ class World:
         self.thingys.append(Wall(ur,lr))
         self.thingys.append(Wall(lr,ll))
         self.thingys.append(Wall(ll,ul))
-            
+
     def draw(self):
         background('#FFFFFF')
         for thing in self.thingys:
@@ -141,19 +141,19 @@ class World:
             for j in range(i+1, len(self.thingys)):
                 t1 = self.thingys[i]
                 t2 = self.thingys[j]
-                
+
                 t1.bounce(t2)
                 t2.bounce(t1)
-                
+
         for thing in self.thingys:
             thing.update()
 
 world = World(20)
-            
+
 def setup():
     size(XMAX, YMAX)
     background('#FFFFFF')
-   
+
 def draw():
     world.update()
     world.draw()
