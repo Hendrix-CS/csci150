@@ -1,0 +1,91 @@
+Python 2.7.9 (default, Apr  2 2015, 15:33:21) 
+[GCC 4.9.2] on linux2
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+>>> animal_dict
+{'A23': 'tapir', 'B12': 'wombat', 'B19': 'crocodile'}
+>>> animal_dict['B12']
+'wombat'
+>>> animal_dict['Q20'] = 'wombat'
+>>> animal_dict
+{'Q20': 'wombat', 'A23': 'tapir', 'B12': 'wombat', 'B19': 'crocodile'}
+>>> animal_dict['A23'] = 'tiger'
+>>> animal_dict
+{'Q20': 'wombat', 'A23': 'tiger', 'B12': 'wombat', 'B19': 'crocodile'}
+>>> animal_dict.keys()
+['Q20', 'A23', 'B12', 'B19']
+>>> animal_dict.values()
+['wombat', 'tiger', 'wombat', 'crocodile']
+>>> 'Q20' in animal_dict
+True
+>>> 'K10' in animal_dict
+False
+>>> 'wombat' in animal_dict
+False
+>>> 'wombat' in animal_dict.values()
+True
+>>> len(animal_dict)
+4
+>>> del animal_dict['B12']
+>>> animal_dict
+{'Q20': 'wombat', 'A23': 'tiger', 'B19': 'crocodile'}
+>>> 
+>>> 
+>>> 
+>>> for habitat in animal_dict:
+	print "In " + habitat + " is a " + animal_dict[habitat]
+
+	
+In Q20 is a wombat
+In A23 is a tiger
+In B19 is a crocodile
+>>> for habitat in sort(animal_dict.keys()):
+	print "In " + habitat + " is a " + animal_dict[habitat]
+
+	
+
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    for habitat in sort(animal_dict.keys()):
+NameError: name 'sort' is not defined
+>>> for habitat in sorted(animal_dict.keys()):
+	print "In " + habitat + " is a " + animal_dict[habitat]
+
+	
+In A23 is a tiger
+In B19 is a crocodile
+In Q20 is a wombat
+>>> ================================ RESTART ================================
+>>> 
+>>> counts('ceccceec???????????????')
+
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    counts('ceccceec???????????????')
+  File "/home/brent/teaching/150/lectures/python/dictionaries.py", line 43, in counts
+    count_dict[c] += 1
+KeyError: 'c'
+>>> animal_dict['K22']
+
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    animal_dict['K22']
+KeyError: 'K22'
+>>> ================================ RESTART ================================
+>>> 
+>>> counts('ceccceec???????????????')
+{'c': 5, 'e': 3, '?': 15}
+>>> ================================ RESTART ================================
+>>> 
+>>> counts2('ceccceec???????????????')
+{'c': 5, 'e': 3, '?': 15}
+>>> ================================ RESTART ================================
+>>> 
+>>> counts('ceccceec???????????????')
+{'c': 5, 'e': 3, '?': 15}
+>>> normalize_dict(counts('ceccceec???????????????'))
+{'c': 0.21739130434782608, 'e': 0.13043478260869565, '?': 0.6521739130434783}
+>>> normalize_dict(counts('aabc'))
+{'a': 0.5, 'c': 0.25, 'b': 0.25}
+>>> 

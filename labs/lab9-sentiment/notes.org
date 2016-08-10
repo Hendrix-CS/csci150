@@ -1,0 +1,7 @@
+Adapted from
+
+http://nifty.stanford.edu/2016/manley-urness-movie-review-sentiment/ .
+
+* Outline
+** Part 1: get average score of a single word.
+** Part 2: use dictionaries to compute scores of all words once + remember.

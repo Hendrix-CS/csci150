@@ -1,0 +1,214 @@
+% -*- mode: LaTeX; compile-command: "pdflatex syllabus.tex" -*-
+
+\documentclass{article}
+
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[backgroundcolor=yellow]{todonotes}
+
+\presetkeys{todonotes}{inline}{}
+
+\begin{document}
+
+{\Large
+\noindent CSCI 150 \smallskip
+
+\noindent Foundations of Computer Science \bigskip
+}
+
+\noindent Spring 2016 \\
+Lecture: MWF 11:10-12:00, MC Reynolds 317\\
+Lab: T 8:10-11:00, Snoddy Computer Lab\\
+Website: \url{http://ozark.hendrix.edu/~yorgey/150/} \\
+Course text: Think Python by Allen Downey \\
+\indent \url{http://ozark.hendrix.edu/~yorgey/150/ThinkPython-CSCI150-S16.pdf}
+\medskip
+
+\noindent Instructor: Brent Yorgey, MC Reynolds 310 \\
+Office hours: any time my door is open, or make an appointment at \\
+\indent \url{http://byorgey.youcanbook.me} \\
+Email: \texttt{yorgey@hendrix.edu} \medskip
+
+\section*{Course Description}
+
+Introduction to computational problem-solving and computer
+programming. Topics include imperative programming constructs
+(variables, loops, conditionals, functions, recursion, file
+processing), basic object-oriented constructs (classes, objects), and
+some fundamental algorithms and data structures (dictionaries, arrays,
+linked lists, regular expressions). Students learn through studying
+the Python programming language.
+
+\section*{Evaluation}
+
+Evaluation will be based on
+\begin{itemize}
+\item 25\%: Weekly labs
+\item 35\%: Three projects
+\item 15\%: Quizzes and participation
+\item 5\%: Midterm exam 1
+\item 10\%: Midterm exam 2
+\item 10\%: Midterm exam 3
+\end{itemize}
+
+\section*{Labs}
+
+Much of your experience with programming in this course will be
+through weekly labs, which will comprise 25\% of your final grade. Lab
+attendance is required. Labs take place in the Snoddy Computer Lab, in
+the Bailey Library.  Each lab will be assigned on Tuesday morning
+with time allotted to work through the materials, and will be due by
+\textbf{Wednesday at 4pm}.
+
+Each student has three late days to spend throughout the semester as
+they wish.  Simply inform me any time \emph{prior} to the due date for an
+assignment that you wish to use a late day; you may then turn in the
+assignment up to 24 hours late with no penalty.  Multiple late days
+may be used on the same assignment.  There are no partial late days;
+turning in an assignment 2 hours late or 20 hours late will both use 1
+late day.
+
+On these labs, you may work with a partner on the lab assignments if
+you choose. Their name must be listed on any code you hand in as joint
+work.  A partnership need only turn in a single copy of the
+assignment.  If students working as partners wish to turn in a lab
+late, \emph{both} students must use a late day.
+
+\section*{Projects}
+
+You will have three projects in this course, one about every five weeks,
+for a total of 35\% of your final grade. These projects will cover
+concepts we have discussed in class and in labs, and will be due
+approximately one week after they are assigned.
+
+\textbf{You must work individually on the first two projects}. You may
+discuss concepts and ideas with your classmates, but the code you turn
+in must be your own. You will be graded not only on correctness, but
+also technique, documentation and evaluation of your solution. Further
+details on the grading standards and handin instructions for each
+project will be given when they are assigned.
+
+\begin{longtable}[c]{@{}lllll@{}}
+\toprule\addlinespace
+Project & Name & Pct & Assigned & Due
+\\\addlinespace
+\midrule\endhead
+1 & Today in History & 5\% & Feb 9 & Feb
+16
+\\\addlinespace
+2 & Word Games & 10\% & Mar 8 & Mar 15
+\\\addlinespace
+3 & Final Project & 20\% & Apr 11 & Finals Day
+\\\addlinespace
+\bottomrule
+\end{longtable}
+
+\section*{Attendance and submission policies}
+
+Prompt lecture attendance is expected.  Although I typically do not
+take formal attendance, unexcused absences may be reflected in your
+class participation grade.  If you must be absent for some reason,
+please let me know in advance.
+
+If you are absent from lecture (whether excused or unexcused) it is
+\textbf{your responsibility} to obtain notes from other student(s).
+Do not come to me and ask ``what did I miss?''.\footnote{I am likely
+  to answer that you missed the part where that is your
+  responsibility.} On the other hand, if after obtaining notes you
+have specific questions or confusions regarding the topics covered, I
+would be happy to talk with you.
+
+\section*{Disabilities}
+
+It is the policy of Hendrix College to accommodate students with
+disabilities, pursuant to federal and state law. Students should
+contact Julie Brown in the Office of Academic Success (505.2954;
+\texttt{brownj@hendrix.edu}) to begin the accommodation process. Any
+student seeking accommodation in relation to a recognized disability
+should inform the instructor at the beginning of the course.
+
+\section*{Academic Integrity}
+
+All Hendrix students must abide by the College's
+\href{https://www.hendrix.edu/studentlife/handbook.aspx?id=67121}{Academic
+Integrity Policy} as well as
+\href{https://www.hendrix.edu/studentlife/handbook.aspx?id=42308}{the
+College's Computer Policy}, both of which are outlined in the Student
+Handbook.
+
+For specific ways the Academic Integrity policy applies in this
+course, please refer to the
+\href{http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html}{Computer
+  Science Academic Integrity Policy}.
+
+The short version is that academic integrity violations such as
+copying code from another student or the Internet are \textbf{easy to
+  detect}, will be \textbf{taken
+very seriously}, and carry a default recommended sanction of
+\textbf{failure in the course}.
+
+If you have any questions about how the Academic Integrity policy
+applies in a particular situation, please contact me.
+
+\section*{Course outline}
+
+A rough outline of the semester is as follows.  This schedule may
+change.  Please check the course website for corresponding readings
+from your textbook.
+
+
+\begin{tabular}{cllp{3in}}
+  Week & Month & Days & Topics \\
+  \hline \\
+  1 & Jan & 20,22 & Introduction \\
+  2 &     & 25, 27, 29 & Boolean logic, conditionals \\
+  3 & Feb & 1,3,5 & Information encoding \\
+  4 &     & 8, 10, 12 & EXAM 1, functions \\
+  5 &     & 17, 19 & While loops, strings \\
+  6 &     & 22, 24, 26 & Lists \\
+  7 & Mar & 29, 2, 4 & For loops \\
+  8 &     & 7, 9, 11 & EXAM 2, recursion \\
+  9 &     & 14, 16, 18 & File I/O, dictionaries \\
+  & & & \\
+  & & & \emph{Spring break} \\
+  & & & \\
+  10 &    & 28, 30, 1 & Hierarchies, debugging \\
+  11 & Apr & 4, 6, 8 & Objects and classes \\
+  12 &     & 11, 13, 15 & Objects and classes \\
+  13 &     & 18, 20, 22 & Objects and classes, EXAM 3 \\
+  14 &     & 25, 27, 29 & Queues \\
+  15 & May & 2 & Final projects
+\end{tabular}
+
+\section*{Learning objectives}
+
+By the end of the course you will be able to:
+
+\begin{itemize}
+\item Read, understand and execute a computer program written in Python.
+\item Read a set of requirements for a computer program in English, and
+    write a short Python program (100 lines or less) that corresponds to
+    them.
+\item Test a Python program and identify and fix programming errors.
+\item Identify some errors in a Python program without testing it.
+\item Without using a computer, write a very short Python code fragment
+    (10 lines or less) that correctly implements a set of requirements.
+\item Understand and apply variables, loops, strings, lists, conditionals,
+    and functions.
+\item Write programs to perform mathematical calculations.
+\item Understand the concept of a module.
+\item Write a Python program that is separated into at least two modules.
+\item Understand the concepts of class and object, and distinguish between
+    them.
+\item Write a Python program including objects of at least one
+    student-designed class.
+\item Write and understand appropriate comments in a Python program.
+\item Understand the concept of an algorithm and compare the efficiency of
+    different algorithms for a simple task.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,60 @@
+% -*- compile-command: "pdflatex example-design.tex" -*-
+
+\documentclass{tufte-handout}
+
+\usepackage{xspace}
+
+\begin{document}
+
+\title{CSCI 150: Example final project design}
+\author{Brent Yorgey}
+\date{\today}
+
+\maketitle
+
+This document exemplifies a final project design.  It should give you
+a good sense of the sorts of details we are looking for, though the
+project itself (blackjack) is probably too simple for a real final
+project.
+
+NOTE XXX projects using cards...
+
+\section{Project description}
+
+In this project, I will develop a program to play the game of
+Blackjack with the user. XXX
+
+This project will go beyond what we have done in class in several
+ways.  First, XXX.   Second, XXX.
+
+\section{Detailed design}
+
+My initial design calls for six classes: \verb|Card| representing a
+single card, \verb|Deck| representing a sequence of cards, \verb|Hand|
+(a subclass of \verb|Deck|), \verb|Player| representing a blackjack
+player, and \verb|Human| and \verb|Computer| (both subclasses of
+\verb|Player|).
+
+\begin{itemize}
+\item \verb|Card| --- the \verb|Card| class XXX.  Methods:
+  \begin{itemize}
+  \item \verb|fff|
+  \end{itemize}
+\item \verb|Deck| --- the \verb|Deck| class XXX
+\item \verb|Hand(Deck)|
+\item \verb|Player|
+\item \verb|Human(Player)|
+\item \verb|Computer(Player)|
+\end{itemize}
+
+In addition, XXX main method and other methods.
+
+\section{Timeline}
+
+My planned timeline for completing the project is as follows:
+
+\begin{itemize}
+\item 
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,82 @@
+Python 2.7.9 (default, Apr  2 2015, 15:33:21) 
+[GCC 4.9.2] on linux2
+Type "copyright", "credits" or "license()" for more information.
+>>> animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat']
+>>> ================================ RESTART ================================
+>>> 
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat', 'gerbilgerbilgerbil']
+>>> ================================ RESTART ================================
+>>> 
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat', 'gerbil gerbil gerbil ']
+>>> ================================ RESTART ================================
+>>> 
+
+Traceback (most recent call last):
+  File "/home/brent/teaching/150/lectures/python/lists.py", line 53, in <module>
+    animals.append('gerbil') * 3
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+>>> ================================ RESTART ================================
+>>> 
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat', 'gerbil', 'gerbil', 'gerbil']
+>>> ================================ RESTART ================================
+>>> 
+
+Traceback (most recent call last):
+  File "/home/brent/teaching/150/lectures/python/lists.py", line 60, in <module>
+    animals.append('gerbil', 'gerbil', 'gerbil')
+TypeError: append() takes exactly one argument (3 given)
+>>> ================================ RESTART ================================
+>>> 
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat', 'gerbil', 'gerbil', 'gerbil']
+>>> ================================ RESTART ================================
+>>> 
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat', 'gerbilgerbilgerbil']
+>>> ================================ RESTART ================================
+>>> 
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat']
+>>> ================================ RESTART ================================
+>>> 
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat', 'gerbil', 'gerbil', 'gerbil']
+>>> ================================ RESTART ================================
+>>> 
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat', 'gerbil', 'gerbil', 'gerbil']
+>>> ================================ RESTART ================================
+>>> 
+>>> animals
+['skua', 'killer whale', 'spider', 'orangutan', 'goat', ['gerbil', 'gerbil', 'gerbil']]
+>>> lens(animals)
+
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    lens(animals)
+NameError: name 'lens' is not defined
+>>> len(animals)
+6
+>>> animals[5]
+['gerbil', 'gerbil', 'gerbil']
+>>> animals[5][1]
+'gerbil'
+>>> list('hello')
+['h', 'e', 'l', 'l', 'o']
+>>> "This is a sentence".split(' ')
+['This', 'is', 'a', 'sentence']
+>>> "banana".split("n")
+['ba', 'a', 'a']
+>>> "n".join(['ba','a','a'])
+'banana'
+>>> " -> ".join(['fun', 'sun', 'sub', 'rub'])
+'fun -> sun -> sub -> rub'
+>>> ================================ RESTART ================================
+>>> 
+[1, 3]
+>>> 

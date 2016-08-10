@@ -4,5 +4,16 @@
 *.out
 .~lock*
 *~
+*.class
 
 lectures/class-notes.pdf
+_cache
+_site
+web/hakyll
+*.hi
+*.o
+*.pdf
+
+exams-solutions/
+ThinkPython/
+16S/
