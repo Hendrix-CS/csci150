@@ -1,131 +1,241 @@
 <html>
 <head>
-  <title>CSCI 150 - Lab 5 - CodingBat</title>
+  <title>CSCI 150 - Lab 6 - Mutation is the Word</title>
   <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
 </head>
 
 <body>
-<h1><a href="../index.html">CSCI 150</a> - Lab 5<br>CodingBat</h1>
+<h1><a href="../index.html">CSCI 150</a> - Lab 6<br>Mutation is the Word</h1>
 <hr>
 
 <h2>Overview</h2>
-
-This week, you will use the
-website CodingBat to
-practice writing simple Python functions with conditionals.
+In this lab we will make extensive use of sentinel loops (while loops).  We will explore
+mutation of DNA through playing the game Doublets.
 
 <h2>Materials</h2>
-
 <ul>
-	<li><a href="http://codingbat.com/python">CodingBat</a>
-	<li>Lab partner
-</ul>
-
-Your lab instructor may require/allow you to work with a
-partner for this lab.  If you work with a partner, be sure that you:
-<ul>
-  <li>Create a single, shared account (Step 1 below)</li>
-  <li>Put both your names on the shared account</li>
-  <li><b>Alternate who has the keyboard with each new problem.</b></li>
+	<li><a href="../data/english2.txt">Common English Words</a>
+	<li><a href="../code/dictionary.py">dictionary.py</a> Python Module
+	<li>Lab Partner (you must have a lab partner for this lab)
 </ul>
 
 <h2>Description</h2>
+As we study computation and life, we can ask "How did life evolve from single-celled organisms 
+into the diversity of life we
+see today?"  The answer lies in a process called
+ <a href="http://en.wikipedia.org/wiki/Mutation">mutation</a>.
+<p>
+Separate from the DNA-RNA-Protein process are two separate processes for cell duplication called 
+<a href="http://en.wikipedia.org/wiki/Mitosis">mitosis</a> and 
+<a href="http://en.wikipedia.org/wiki/Meiosis">meiosis</a>.  Both processes involve
+a cell replicating its DNA, and it is within this replication that mutations can occur.
+Perhaps there was a copying mistake, or a random x-ray damaged part of the DNA;
+in any case, the DNA code we begin with can undergo small alterations.  Each mutation
+during this replication process could possibly have a large impact of the earlier transcription
+and translation process, such that we could have a new stop codon within a gene, 
+or we could place a different amino acid into our protein chain.  While some changes may be
+very harmful and lead to genetic diseases, others could provide an unexpected benefit and 
+new functionality. These underlying mutations 
+introduce variety into the gene pool for a population, and allow natural selection 
+and evolution to occur.
+<p>
+While the language of DNA was not understood until 1953 by 
+<a href="http://en.wikipedia.org/wiki/Watson_and_Crick">James Watson and Francis Crick</a>
+with the help of data from <a href="http://en.wikipedia.org/wiki/Rosalind_Franklin">Rosalind
+Franklin</a>, similar properties of mutation were noticed nearly 100 years earlier by 
+<a href="http://en.wikipedia.org/wiki/Lewis_Carroll">Charles Lutwidge Dodgson (aka Lewis Carroll)
+</a>, who is most famous for his novel "Alice in Wonderland." In an article for 
+<i>Vanity Fair</i>, Carroll created a puzzle called Doublets, which explored the 
+effects of mutation on English words.  His rules description is as follows:
+<blockquote>
+The rules of the Puzzle are simple enough. Two words are proposed, of the same length; 
+and the Puzzle consists in linking these together by interposing other words, 
+each of which shall differ from the next word in one letter only. That is to say, 
+one letter may be changed in one of the given words, then one letter in the word so 
+obtained, and so on, till we arrive at the other given word. The letters must not be 
+interchanged among themselves, but each must keep to its own place. As an example, 
+the word 'head' may be changed into 'tail' by interposing the words 
+'heal, teal, tell, tall'. I call the given words 'a Doublet', the interposed words 
+'Links', and the entire series 'a Chain', of which I here append an example:
+<p>
+<pre>
+H E A D
+h e a l
+t e a l
+t e l l
+t a l l
+T A I L
+</pre>
+<p>
+It is, perhaps, needless to state that it is de rigueur that the links should be 
+English words, such as might be used in good society.
+</blockquote>
+<p>
+(More details on the connection between Lewis Carroll and genetics can be found in an article by
+David B. Searls entitled <a href="http://www.liebertonline.com/doi/abs/10.1089/10665270152530881">
+From <i>Jabberwocky</i> to Genome: Lewis Carroll and Computational Biology</a>).
+<p>
+Our task for this lab is to create a Python program that lets a user play the Doublets game
+and enforces all the rules given above by Lewis Carroll.
 
-<h3>Step 1</h3>
-
-Go to <a href="http://codingbat.com/python">CodingBat</a> and click on
-"create account" in the top right.  Use your Hendrix email as your
-account id, and choose a password.  Fill in your name.  If creating a
-joint account with a partner, fill in both your names.  <b>You must
-  fill in your name and/or your partner's name in order to get credit
-  for the lab.</b>
-
-<h3>Step 2</h3>
-
-<b>Important: you must do this step to get credit for the lab.</b>
-
-Once you are logged in, click on "prefs" in the top right.  In the box
-at the bottom labelled "Share To", fill in the Hendrix email address
-of your lab instructor (<tt>yorgey@hendrix.edu</tt>
-or <tt>goadrich@hendrix.edu</tt>), then click "Share".  This will
-allow your instructor to see your progress.
-
-<h3>Step 3</h3>
-
-Click on <a href="http://codingbat.com/python/Warmup-1">Warmup-1</a>
-in the Python section of CodingBat.  Click
-on <a href="http://codingbat.com/prob/p173401">sleep_in</a>.  Read the
-description of the desired function behavior, and fill in a suitable
-function definition.
-
-Note that unfortunately, CodingBat does not like it if you use the Tab
-key.  You will have to use spaces to indent your code.
-
-Once you have filled in a definition for the function, click "Go".
-CodingBat will automatically run your function on a number of test
-inputs and check whether it has the required behavior.  If your
-function passes all the tests, you will get a big green check mark,
-and you can move on to the next problem.  Otherwise, the failing tests
-will be highlighted in red; fix your function and try again.
-
-You should complete the first eight problems in Warmup-1:
-
+<h3>Step 1 - Analyze the Problem, Create Specifications</h3>
+We will tackle this puzzle using the software engineering phases.  
+First, analyze the problem to see what steps we can take to model this inside a computer.  
+Try to answer the following questions: 
 <ul>
-  <li><a href="http://codingbat.com/prob/p173401">sleep_in</a></li>
-  <li><a href="http://codingbat.com/prob/p120546">monkey_trouble</a></li>
-  <li><a href="http://codingbat.com/prob/p141905">sum_double</a></li>
-  <li><a href="http://codingbat.com/prob/p197466">diff21</a></li>
-  <li><a href="http://codingbat.com/prob/p166884">parrot_trouble</a></li>
-  <li><a href="http://codingbat.com/prob/p124984">makes10</a></li>
-  <li><a href="http://codingbat.com/prob/p124676">near_hundred</a></li>
-  <li><a href="http://codingbat.com/prob/p162058">pos_neg</a></li>
+	<li>What input do we need from the user? Output for the user?
+	<li>What are all the possible ways that the user could enter incorrect data? 
+	<li>Is there any data input from the user we need to standardize?
+	<li>How can we keep track of the solution path?
+</ul>
+<p>
+Next, make a detailed list of all the functions you think you will need to write for
+this problem. Be sure to record their parameters and return value with a description
+of what the function does.
+<p>
+Write your answers in <code>Lab Evaluation</code>.
+<h3>Step 2 - Develop Pseudocode</h3> With your analysis from answering
+these questions, develop an algorithmic solution using
+<i>pseudocode</i>.  This should correspond to the structure of a
+Python program, but is written in English instead of Python.  For
+example, here is a small example of what your pseudocode should look like:
+<pre>
+while the user's input is not valid:
+    prompt the user for input
+    if n is bigger than q:
+        check whether the user's input is a valid English word
+        increment n
+    else:
+        print an error message about kittens
+</pre>
+The point is that this is <i>structured</i> like Python, using
+indentation, while loops, and conditionals.  But the individual pieces
+are just English descriptions, which you will later translate into
+precise Python code.
+
+<p>
+
+To demonstrate the eventual behavior of the program, here is a
+sample run of the Doublets game.
+<p>
+<pre>
+What is the starting word? CAT
+What is the ending word? DOG
+Start   = CAT
+Current = CAT
+End     = DOG
+Which character do you want to change? (the first character is 1) 3
+What is your new character? B
+Current = CAB
+End     = DOG
+Which character do you want to change? (the first character is 1) 2
+What is your new character? O
+Current = COB
+End     = DOG
+Which character do you want to change? (the first character is 1) 3
+What is your new character? G
+Current = COG
+End     = DOG
+Which character do you want to change? (the first character is 1) 1
+What is your new character? D
+Solution path found in 4 steps.
+CAT -> CAB -> COB -> COG -> DOG
+</pre>
+<p>
+A second run of the program is shown below, where the user made many mistakes.
+<p>
+<pre>
+What is the starting word? log
+What is the ending word? worm
+The lengths are not equal. Please try again.
+What is the ending word? sfu
+sfu is not a word. Please try again.
+What is the ending word? bug
+Start   = LOG
+Current = LOG
+End     = BUG
+Which character do you want to change? (the first character is 1) 0
+0 is out of range. Please try again.
+Which character do you want to change? (the first character is 1) 4
+4 is out of range. Please try again.
+Which character do you want to change? (the first character is 1) 1
+What is your new character? 4
+4og is not a valid word
+Current = LOG
+End     = BUG
+Which character do you want to change? (the first character is 1) 1
+What is your new character? b
+Current = BOG
+End     = BUG
+Which character do you want to change? (the first character is 1) x
+x is not a number. Please try again.
+Which character do you want to change? (the first character is 1) 2
+What is your new character? uu
+uu is more than one character. Please try again.
+Which character do you want to change? (the first character is 1) 2
+What is your new character? u
+Solution path found in 2 steps.
+LOG -> BOG -> BUG
+</pre>
+<p>
+Add the pseudocode to your <code>Lab Evaluation</code>.
+<p>
+
+<h3>Step 3 - Implement Incrementally</h3>
+Download the text file <code><a href="../data/english2.txt">english2.txt</a></code> 
+and the python module <code>
+<a href="../code/dictionary.py">dictionary.py</a></code> files to your working directory.
+The dictionary module contains one function 
+<code>valid_word(word, file)</code>, which will return True if the word is found in the file and
+False otherwise.
+<p>
+Now take your pseduocode description and begin to implement your program in Python.  
+Your program should be named <code>doublets.py</code>.  Make sure to import the dictionary module 
+before trying to use the valid_word function.
+Write your code in small sections and test incrementally.
+<p>The approach we will take is to start with 
+your basic functions and build your program from the bottom up.  Write each function 
+individually and then test to make sure it will provide the functionality you need. 
+In this way you will gradually build your whole Python program and know that each piece will
+work as you need.
+
+<h3>Step 4 - Test, Debug and Maintain</h3>
+With incremental implementation, Steps 3 and 4 should go hand in hand.  Never write more than 
+5-10 lines of code before testing your changes.  First make your program work with perfect
+input, and then expand it to work with erroneous user input.
+<p>
+Once your program is working, try out some of the transformations below
+<ul>
+<li>FIRE -- HEAT
+<li>SLEEP -- DREAM
+<li>APE -- MAN
+<li>WHITE -- BLACK
 </ul>
 
-You do <b>not</b> need to complete the last four problems (not_string,
-missing_char, front_back, and front3).  These problems require
-manipulating <tt>string</tt> values which we have not yet learned
-about.
-
-<h3>Step 4</h3>
-
-Go on to complete the problems
-in <a href="http://codingbat.com/python/Logic-1">Logic-1</a>
-and <a href="http://codingbat.com/python/Logic-2">Logic-2</a>.
-
-<h2>Academic Integrity</h2>
-
-You must write the solutions by yourself, or with your partner if
-working together.  You may ask other students for advice, but remember
-that
-<ul>
-  <li>You <b>may not look at any other student's code</b>.</li>
-  <li>You <b>may not show your code to any other students</b>.</li>
-  <li>You <b>may not look at or copy any solutions you find on the
-  Internet</b>.  This includes solutions on the CodingBat site
-    itself.</li>
-</ul>
-Evidence of any of the above will be treated as a potential
-violation of the Hendrix Academic Integrity Policy.
+<h3>Future Thoughts</h3>
+Your <code>doublets.py</code> program lets the user chose what character to change at each step,
+and then verifies that each new word is a valid word.  Can you think of a way to always find the
+minimum number of steps to transform one word to another?  How will you know if a path
+between two words can be found?
 
 <h2>What to Hand In</h2>
-
-You do not need to hand anything in.  If you have shared your account
-with your lab instructor as described in Step 2 above, your instructor
-will be able to see your progress.
-
+Make sure you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+	<li>Evaluation Doc
+ 	<li>doublets.py
+ 	<li>dictionary.py
+ 	<li>english2.txt
+ 	<li>Any other files you need for your program to run (i.e. helper.py)
+</ul>
 <h2>Grading</h2>
 <ul>
-<li>To earn a D, complete any five problems.
-<li>To earn a C, complete the first eight problems
-  from <a href="http://codingbat.com/python/Warmup-1">Warmup-1</a>
-  (the ones not involving strings).
-<li>To earn a B, do the above and complete all the problems
-from <a href="http://codingbat.com/python/Logic-1">Logic-1</a>.
-<li>To earn an A, do the above and complete all the problems
-  from <a href="http://codingbat.com/python/Logic-2">Logic-2</a>
-  except <tt>make_bricks</tt> and <tt>make_chocolate</tt>.
-<li>To earn a 100, do the above and complete <tt>make_bricks</tt>
-and <tt>make_chocolate</tt>.
+<li>To earn a D, turn in an Evaluation Doc.
+<li>To earn a C, do the above and implement a program that can handle the input in the first sample run.
+<li>To earn a B, do the above and make proper use of functions.
+<li>To earn a A, do the above and implement a program that can handle the input in the second sample run.
+<li>To earn a 100, do the above and follow the style guide exactly.
 </ul>
 <hr>
 <small>&copy; Mark Goadrich, Hendrix College</small>

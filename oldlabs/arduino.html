@@ -1,0 +1,115 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 4 - Arduino Circuits</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 4<br>Arduino Circuits</h1>
+<hr>
+
+<h2>Overview</h2>
+
+<h2>Materials</h2>
+
+<ul>
+	<li>Arduino
+	<li>Lab Partner
+	<li><a href="http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Kits/SFE-SIK-RedBoard-Guide-Version3.0-Online.pdf">Sparkfun Inventor's Kit Guide</a>
+	<li><a href="http://www.modk.it/editor/preview/">ModKit Editor</a>
+</ul>
+
+<h2>Description</h2>
+<img class="entryimageright" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg">
+Vital to any computer is the connection with the real world, through
+input and output channels. Through building electronic circuits and programming
+an Arduino, we open a brief window into the lower-level operations of a computer.
+<p>
+<h3>Step 1</h3>
+In the Sparkfun Inventor's Kit Guide, read pages 4 and 12-19 for an overview of how
+the Arduino is structured, what a breadboard is, and some of the components available
+to us for building our projects.
+<h3>Step 2</h3>
+Our first project is to create a blinking light. This demonstrates
+how the Arduino can generate output for the user. Follow the guide to build this
+circuit on the breadboard.
+<ul>
+<li>Circuit 1 - Blinking Light, pg 21-22-23, 26
+</ul>
+<p>
+The code shown in the Guide is for a different language, we will be using a
+scratch-like interface called ModKit. Once you select your Arduino Board,
+on the left, you will see blocks for programming. Assemble the programming blocks
+so that the PIN13 is alternately HIGH and LOW every 1000 milliseconds. Your code should 
+look like this.
+<p>
+<img width=300 src="../images/blinky.png">
+<p>
+Press the play button to upload your code to the Arduino. The middle banner should 
+eventually turn green, and you should see your LED blinking.
+<p>
+Now, modify this code to make the LED blink like it has a heartbeat, where there is a
+short pulse of light followed by a longer one.
+<h3>Step 3</h3>
+We next explore how to wire up input into the Arduino. We will use a twisting knob
+called a Potentiometer. Follow the guide to build this circuit.
+<ul>
+<li>Circuit 2 - Potentiometer, pg 27-30
+</ul>
+<p>
+Be sure to use an analog pin for input from the potentiometer.
+Alter your earlier code from Step 2 so that the speed of the blink is now
+controlled by the input value from the potentiometer. Your code should 
+look like this.
+<p>
+<img width=300 src="../images/potent.png">
+<p>
+Now that you understand analog input, we can also explore analog output.
+Certain pins on the Arduino have a ~ next to their number, in particular
+3, 5, 6, 9, 10 and 11. Can you alter your circuit and code such that the LED
+is on one of these ~ pins, and use an analogWrite block to set the intensity 
+based on the potentiometer?
+<h3>Step 4</h3>
+Our LED above was either ON or OFF, but is now adjusted to be more or less intense
+by the potentiometer. We can explore this further with the RGB LED, where we 
+independently control the intensity of the Red, Green and Blue portions of a light.
+Follow the guide to build this circuit.
+<ul>
+<li>Circuit 3 - RGB LED, pg 31-35
+</ul>
+<p>
+Use your knowledge of the analogWrite block to write code for this circuit. The 
+intensity of each piece of the RBG LED should be a number 
+between 0 and 255. Demonstrate
+that it can display Red, Green and Blue independently.  
+</p>
+Find a hex color code from the internet. Translate this into decimal, and use
+this code in your program. How similar is the color to what you expect?
+<h3>Step 5</h3>
+You are now ready to explore the other pieces available. Choose at least three of the
+circuits listed below, and demonstrate them working to complete this lab.
+
+<ul>
+<li>Circuit 5 - Push Button, pg 39-42
+<li>Circuit 6 - Photo Resistor, pg 43-46
+<li>Circuit 8 - Servo, pg 51-54
+<li>Circuit 9 - Flex Sensor, pg 55-58
+<li>Circuit 12 - Motor, pg 67-70
+</ul>
+
+<h2>What to Hand In</h2>
+You will need to demonstrate 
+your working circuit implementations to the instructor for credit.
+
+<h2>Grading</h2>
+<ul>
+<li>To earn a D, demonstrate a blinking LED circuit
+<li>To earn a C, do the above and demonstrate a potentiometer circuit
+<li>To earn a B, do the above and demonstrate an RGB LED
+<li>To earn an A, do the above and demonstrate 2 circuits in step 5
+<li>To earn a 100, do the above and demonstrate 1 additional circuits
+</ul>
+<hr>
+<small>&copy; Mark Goadrich, Hendrix College</small>
+
+</body>

@@ -1,148 +1,328 @@
 <html>
 <head>
-  <title>CSCI 150 - Lab 11 - Die Hard III</title>
+  <title>CSCI 150 - Lab 12 - Graphics and Animation</title>
   <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
 </head>
 
 <body>
-<h1><a href="../index.html">CSCI 150</a> - Lab 11<br>Die Hard III</h1>
+<h1><a href="../index.html">CSCI 150</a> - Lab 12<br>Graphics and Animation</h1>
 
 <h2>Materials</h2>
 <ul>
-  <li><a href="../code/waterjug.py"><code>waterjug.py</code></a> -- starter code</li>
+  <li><a href="https://processing.org/">Processing</a></li>
+  <li><a href="http://py.processing.org/reference/">Python Mode Reference</a></li>
 </ul>
 
 <h2>Overview</h2>
-  This lab will combine
-  mathematics, instantiable classes, and bone-chilling terror. ;) Always
-  a famous puzzle in the Artifical Intelligence circles, the WaterJug
-  came to popular culture through the classic action
-  movie <A HREF="http://us.imdb.com/Title?Die+Hard%3A+With+a+Vengeance+(1995)">Die Hard III</A>.
-  In Die Hard III, a mad bomber is chasing Bruce Willis
-  and Samuel L. Jackson.  They must solve different puzzles or else
-  things will explode and people will die.
 
-  <H3>Example</H3>
-  <p>
-  The WaterJug puzzle can be explained as follows:<br />
-  You have two
-  jugs, A and B, and an infinite supply of water. There are three
-  actions you can perform: (1) you can fill a jug to capacity, (2) you
-  can completely empty a jug, and (3) you can pour from one jug to the
-  other.  Pouring from one jug to the other stops when the first jug
-  is empty or the second jug is full, whichever comes first. For
-  example, if A has 5 gallons and B has 6 gallons and a capacity of 8,
-  then pouring from A to B leaves B full and 3 gallons in A.
-  <p>
-  For this demonstration, we'll state that A has capacity 4 and
-  B has capacity 3.  Our goal, which we must complete in less than one
-  minute, is to somehow get exactly 2 gallons of water in jug A.  We need
-  to find a set of operations, filling, emptying, and pouring, where
-  we can reach this goal.  One possible solution is as follows:
-  <p>
-  FILL A<br>
-  POUR from A to B<br>
-  EMPTY B<br>
-  POUR from A to B<br>
-  FILL A<br>
-  POUR from A to B<br>
-  <p>
-  We now have exactly 2 gallons of water jug in A.  (Try it!).  Phew,
-  we're still alive!  Wouldn't it be nice to have a computer program
-  to help us solve this?
+We have created graphics and patterns using the
+turtle module in Python. This lab explores a complete graphical
+animation framework called Processing, using the Python module.
+<p>
+For today's lab, <a href="https://processing.org/download/">download
+the latest version of Processing (3.0.1)</a> for your operating
+system. Once downloaded and opened, you will find in the upper-left or
+upper-right corner of the screen a box that says "Java". Select this
+box, and choose "Add Mode". Select "Python Mode for Processing 3" and
+then click "Install" in the lower-right portion of the Mode
+window. After it finishes installing, click on the "Java" box again
+and select "Python".  You are now ready to work through the lab.
 
-  <h2>Step 1: The <code>WaterJug</code> class</h2>
-  <p>
-  Each <code>WaterJug</code> object will need to have two components
-  that we can think of as the state of that <code>WaterJug</code>.
-  <p>
-  components:
-  <UL>an integer for <code>capacity</code><br>
-  an integer for <code>contents</code><br>
-  </UL>
-  <p>
-  Also, a <code>WaterJug</code> needs some functionality to change the state of the internal components.
-  In object-oriented programming, these are called methods.
-  <p>
-  methods:
-  <UL><code>__init__( capacity, contents )</code> constructor method<br>
-  <code>__repr__( )</code> to print off the components of the <code>WaterJug</code><br>
-  <code>fill( )</code> to fill up the <code>WaterJug</code> completely<br>
-  <code>empty( )</code> to completely empty the <code>WaterJug</code><br>
-  <code>pour( other )</code> to pour as much of the contents of this <code>WaterJug</code> into the other as is allowed<br>
-  </UL>
+<h2>Step 1 - Faces</h2> When we draw on the screen, we first need to
+be familiar with the coordinate system. We denote the width as x and
+the height as y.  Most computer graphics modules, Processing included,
+specify that the x, y origin (0,0) is located in the upper-left corner
+of the screen.
+<p>
+There are three common things to draw in Processing, an ellipse, a rectangle, and a line.
+Write the following lines of code in Processing and press the Play button.
+<p>
+<pre>
+ellipse(10, 10, 20, 20)
+rect(10, 10, 20, 20)
+line(10, 10, 20, 20)
+</pre>
+<p>
+You should see an image like this:
+<p>
+<img width="150" src="../images/processing1.png">
+<p>
+An ellipse takes four arguments, the first two being the x, y center of the ellipse,
+followed by the width, then the height. A rect also takes four arguments, the
+first two being the upper-left coordinate of the rectangle, again followed
+by width and height. A line takes four arguments, the first two being
+the starting x, y coordinate, and the last two being the ending x, y coordinate.
+<p>
+Also, notice that the first thing to be drawn is covered by the images
+that follow. This indicates that the way that images are drawn,
+their <a href="https://en.wikipedia.org/wiki/Z-order">Z-order</a>, is based on time.
+<p>
 
-  <p> Implement this object in Python. Don't forget where to use
-  the <code>self</code> keyword.  Be careful with your methods to make
-  sure a malicious programmer (or buggy code) cannot violate the
-  integrity of your class.  For example, it should never be possible
-  to end up with a <code>WaterJug</code> with more <code>contents</code>
-  than <code>capacity</code>.
+<h3>Task</h3>
+Use ellipse, rect, and line to draw a face on the screen. At a minimum, the face should
+have eyes, ears, a mouth and a nose. You can find more shapes on the
+<a href="http://py.processing.org/reference/">Python Reference for Processing</a> page.
 
-  <p>
-  Write a small <code>main</code> method to test that
-  your <code>WaterJug</code> object works according to the description
-  above.
+<h2>Step 2 - Colors</h2>
+Three different portions of our drawing can be altered to include colors. Recall
+the hexadecimal representation of colors discussed earlier in class, where the
+computer understands a color to be composed of three components, Red, Green, and Blue.
+Each of the three functions below take a hex string as an argument denoting the color.
+<p>
+The <tt>background</tt> function will paint the whole screen the given color. The <tt>fill</tt>
+function changes the color to be painted within an <tt>ellipse</tt> or <tt>rect</tt>. The
+<tt>stroke</tt> function changes the color to use for making
+a <tt>line</tt> or for making the border of an <tt>ellipse</tt> or <tt>rect</tt>.
+<p>
+<pre>
+background("#FFFFFF")
+fill("#00FFFF")
+stroke("#FF0000")
+</pre>
+<p>
+There is only one pen being used for Processing, so if we want to change colors
+of the things we draw, we need to call <code>fill</code> or <code>stroke</code>
+in between each of our drawing calls.
+<p>
+It will be convenient to have some of our basic colors defined in a dictionary.
+<pre>
+COLORS = {"black":"#000000", "white":"#FFFFFF",
+          "red":"#FF0000", "green":"#00FF00",
+          "blue":"#0000FF", "yellow":"#FFFF00",
+          "orange":"#FFA500", "hendrixorange":"#F58025",
+          "purple":"#9B30FF"}
+</pre>
 
-  <h2>Step 2: The Puzzle</h2>
+<h3>Task</h3>
+Use the above shapes and color functions, along with any others you might
+find useful on the
+<a href="http://py.processing.org/reference/">Python Processing Reference</a>
+page, to enhance your earlier image of a face.
 
-  Finally, implement a <code>main</code>
-  function that allows the user to set up and then solve a WaterJugs
-  puzzle.  Your function should:
-  <UL>
-  <li>Ask the user the capacity of the first <code>WaterJug</code>
-  <li>Ask the user the capacity of the second <code>WaterJug</code>
-  <li>Ask the user the goal quantity of water
-  <li>Create the necessary empty <code>WaterJug</code> objects
-  <li>While the goal has not been met:
-  <ul>
-  	 <li>Give the user a list of the options
-  	 <li>Ask the user for their option selection
-  	 <li>Perform the selected option
-  </ul>
-  <li>When the goal is met, print the solution path found by the user
-  to reach the goal.
-  </ul>
+<h2>Step 3 - Functions</h2>
+As our program is about to get more complicated, it is a good idea to start using
+functions. There are two important functions that are treated
+specially by Processing.
+<h3>Setup</h3>
 
- <p>
- Of course, you should not just put everything in <code>main</code>,
- but you should break your code up into functions appropriately.  We
- have given you a <a href="../code/waterjug.py">starting file</a> with
- some useful functions you may use, so you don't have to reimplement
- them yourself.
+If you define a <tt>setup</tt> function, Processing will call it first
+when running your sketch. In this function, you should first set up
+the screen size.
+<p>
+The default screen size is 100 x 100. This can be changed by adding the following
+function call at the beginning of your code, for example, to make a screen
+with a width of 640 pixels and height of 480 pixels:
+<pre>
+def setup():
+    size(640, 480)
+</pre>
 
-<h2>Step 3: Generalizing</h2>
+<h3>Draw</h3>
 
-Generalize your program above so that it works with any number
-of <code>WaterJugs</code> instead of just 2.  In particular, the
-program should:
-<ul>
-  <li>Ask the user how many <code>WaterJug</code>s they want</li>
-  <li>Prompt them for the capacity of each</li>
-  <li>...and so on</li>
-</ul>
+The <tt>draw</tt> function is called by Processing for every frame of the animation.
+Put your earlier face code in this draw function, and press play. For example:
+<p>
+<pre>
+def draw():
+    background(COLORS["black"])
+    fill(COLORS["red"])
+    stroke(COLORS["green"])
+    ellipse(50, 50, 100, 100)
+    fill(COLORS["yellow"])
+    ellipse(25, 25, 35, 35)
+    ellipse(75, 25, 35, 35)
+    stroke(COLORS["orange"])
+    line(30, 80, 70, 80)
+</pre>
+<p>
+(You should use your own face code; the above is just an example.)
+It should look exactly the same as it did above, but now we will have
+the ability to change the face for each frame.
 
- <p>
-You never know when a Python class could save your life.  And
-  remember, "Think fast, Look alive, Die hard."
+<h2>Step 4 - Faces in Space</h2>
+All of our images so far have been static. To add animations, we need to start
+remembering the state of our images and creating methods for how it will change.
+The natural way to do this is to create new object, and in particular, we will
+be representing Faces floating in space.
+<p>
+We will represent a Face with a class in Python. The face will need to remember
+the x,y coordinates for the center of the face. We will also remember the base color
+used for the face. In the example above, this was red. Notice how the draw function
+abstracts away the initial face to be centered around any x,y coordinates. This will
+let us move the face around the screen.  Of course, you should use
+your own face-drawing code in place of the example code shown below.
+<p>
+<pre>
+class Face:
+    def __init__(self, x, y, color):
+        self.x = x
+        self.y = y
+        self.color = color
+
+    def draw(self):
+        fill(self.color)
+        stroke(COLORS["green"])
+        ellipse(self.x, self.y, 100, 100)
+        fill(COLORS["yellow"])
+        ellipse(self.x - 25, self.y - 25, 35, 35)
+        ellipse(self.x + 25, self.y - 25, 35, 35)
+        stroke(COLORS["orange"])
+        line(self.x - 20, self.y + 30, self.x + 20, self.y + 30)
+</pre>
+<p>
+We will collect our <tt>Face</tt> instances in a list called <tt>faces</tt>, declared outside of any
+of the above functions.
+<p>
+<pre>
+faces = []
+</pre>
+<p>
+We will also change our <tt>setup</tt> and <tt>draw</tt> functions to
+add a single face to the list and draw it, respectively.
+<p>
+<pre>
+def setup():
+    size(640, 480)
+    faces.append(Face(50, 50, COLORS["red"]))
+
+def draw():
+    background(COLORS["black"])
+    for f in faces:
+        f.draw()
+</pre>
+<p>
+Try moving your face around the screen, and changing its color, by
+altering the arguments you use to create the <tt>Face</tt> in the
+setup function.
+
+<h3>Task 4.1: Multiple faces</h3>
+Change the <tt>setup</tt> function to add multiple faces at random locations and
+with random colors around the screen. Make sure your locations are chosen so that
+the face is always completely visible on the screen.
+
+<h3>Task 4.2: Face sizes</h3> Add a size component to
+your <tt>Face</tt>, so the <tt>setup</tt> method can also initialize
+the size. Change your <tt>draw</tt> method of <tt>Face</tt> to account
+for this new size component, and test it out by drawing smaller and
+larger faces.  Make sure your locations are still chosen so that the
+face is always completely visible on the screen!
+
+<h2>Step 5 - Movement</h2> With the faces being drawn by an object, we
+can now make these objects move. Add new components to
+your <tt>Face</tt>, called <tt>velx</tt> and <tt>vely</tt>, to capture
+the velocity of the <tt>Face</tt>. For now, initialize them to 1, so they will
+be moving at a speed of 1 pixel per update, as shown here:
+<p>
+<pre>
+        self.velx = 1.0
+        self.vely = 1.0
+</pre>
+<p>
+  Next, add a new method to your <tt>Face</tt>
+  called <tt>update</tt>. When called, this function will change the
+  values of <tt>self.x</tt> and <tt>self.y</tt> by the velocity, and
+  thus simulate movement.
+<p>
+<pre>
+    def update(self):
+        self.x += self.velx
+        self.y += self.vely
+</pre>
+<p>
+  Finally, inside the main <tt>draw</tt> function, add a call to
+  the <tt>update</tt> method of each face before the
+  individual <tt>draw</tt> method. Your <tt>draw</tt> function should
+  now look like this:
+<p>
+<pre>
+def draw():
+    background(COLORS["black"])
+    for f in faces:
+        f.update()
+        f.draw()
+</pre>
+<p>
+Woah, it is moving! This illusion happens because for each frame, the
+window is completely wiped out through the call to
+the <tt>background</tt> function, and then the faces are drawn at the
+new locations. Verify this is happening by commenting out the call
+to <tt>background</tt>. Now you will see the faces repeatedly drawn,
+but shifted down and to the left by 1 pixel each iteration.
+
+<h3>Task 5.1: Bouncing</h3> Currently, the faces disappear after a
+while, because they moves off the bottom of the screen.  We would like
+to keep them bouncing inside the window. Add in checks to
+the <tt>update</tt> method to reverse the appropriate velocity
+component when a face hits a wall, by multiplying the velocity in
+that dimension by -1.
+
+<h3>Task 5.2: Random speeds</h3>
+
+Abstract the velocities so they are initialized by parameters in
+the <tt>__init__</tt> method, and augment your setup function to
+choose random velocities between -1 and 1 for both the x and y
+dimension for each <tt>Face</tt> created. You should now have faces
+moving in all directions and bouncing off of all the walls of the
+window.
+
+<h2>Step 6 - Extensions</h2>
+Research two of the following extensions on the
+<a href="http://py.processing.org/reference/">Python Processing Reference</a>
+page and augment your animation above.
+
+<h3>Task 6.1: Mouse and keyboard input</h3>
+Make your animations interactive by reacting to input from the
+mouse and the keyboard. For example you could have new Faces appear
+when and where the mouse is clicked. You could increase or
+decrease the velocity of all the Faces when certain keys are pressed.
+
+<h3>Task 6.2: Animated faces</h3>
+Alter your update method of the Face to change the internal pieces of the face
+in a cyclic pattern. For example, the face could smile for a few timesteps, then frown,
+and then go back to smiling. Or the eyeballs could be moving up and down, left and right.
+
+<h3>Task 6.3: Face collisions</h3>
+Right now all the faces pass through each other when they move.
+Add a collision detection method, that checks each pair of faces to see if they
+are intersecting, and if so, makes the smaller one disappear.
+
+<h3>Task 6.4: Images</h3>
+Learn how to import images into your Processing sketch, and make them move around the
+screen as we did with the Face above.
+
+<h3>Task 6.5: Other transformations</h3>
+Learn about rotations and translations, and apply these dynamically to your images,
+making the Faces spin and shift.
+
+<h3>Task 6.6: General Sprite class</h3>
+The movement functionality of the Face above should really be abstracted, since
+we can imagine many types of objects that could be moving around the screen.
+Create a general Sprite class that only worries about the movement, and make
+Face inherit from Sprite to add the draw method.
+<p>
+With this abstract, you can now easily create other moving objects by inheriting
+from Sprite and avoid duplicating this update code in each object. Try making another
+object that moves.
 
 <h2>What to Hand In</h2>
-Turn in your code via Moodle. Make sure
-you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+
+Save your project in some known location.  Note that Processing will
+save your project not as a file, but as a <i>folder</i> containing
+multiple files.  You should make this folder into a zip archive (ask
+for help if you do not know how to do this) and turn in the resulting
+zip file via Moodle. M
+
+ake sure you have followed
+the <a href="../python_style_guide.html">Python Style Guide</a>, and
 have run your project through the Automated Style Checker.<p>
-You must hand in:
-<ul>
-  <li><code>waterjug.py</code></li>
-</ul>
 
 <h2>Grading</h2>
 <ul>
   <li>To earn a D on this lab, complete Step 1.</li>
-  <li>To earn a B on this lab, do all the above and complete Step 2.</li>
-  <li>To earn an A on this lab, do all the above and complete Step 3.</li>
-  <li>To earn a 100 on this lab, do all the above and write a
-      paragraph explaining how you might write a Python program to
-      automatically play the WaterJug game.</li>
+  <li>To earn a C on this lab, do all the above and complete Steps 2 and 3.</li>
+  <li>To earn a B on this lab, do all the above and complete Step 4.</li>
+  <li>To earn an A on this lab, do all the above and complete Step 5.</li>
+  <li>To earn a 100 on this lab, do all the above and complete two extensions from Step 6.</li>
 </ul>
 
 <hr>

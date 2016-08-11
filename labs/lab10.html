@@ -1,0 +1,151 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 11 - Die Hard III</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 11<br>Die Hard III</h1>
+
+<h2>Materials</h2>
+<ul>
+  <li><a href="../code/waterjug.py"><code>waterjug.py</code></a> -- starter code</li>
+</ul>
+
+<h2>Overview</h2>
+  This lab will combine
+  mathematics, instantiable classes, and bone-chilling terror. ;) Always
+  a famous puzzle in the Artifical Intelligence circles, the WaterJug
+  came to popular culture through the classic action
+  movie <A HREF="http://us.imdb.com/Title?Die+Hard%3A+With+a+Vengeance+(1995)">Die Hard III</A>.
+  In Die Hard III, a mad bomber is chasing Bruce Willis
+  and Samuel L. Jackson.  They must solve different puzzles or else
+  things will explode and people will die.
+
+  <H3>Example</H3>
+  <p>
+  The WaterJug puzzle can be explained as follows:<br />
+  You have two
+  jugs, A and B, and an infinite supply of water. There are three
+  actions you can perform: (1) you can fill a jug to capacity, (2) you
+  can completely empty a jug, and (3) you can pour from one jug to the
+  other.  Pouring from one jug to the other stops when the first jug
+  is empty or the second jug is full, whichever comes first. For
+  example, if A has 5 gallons and B has 6 gallons and a capacity of 8,
+  then pouring from A to B leaves B full and 3 gallons in A.
+  <p>
+  For this demonstration, we'll state that A has capacity 4 and
+  B has capacity 3.  Our goal, which we must complete in less than one
+  minute, is to somehow get exactly 2 gallons of water in jug A.  We need
+  to find a set of operations, filling, emptying, and pouring, where
+  we can reach this goal.  One possible solution is as follows:
+  <p>
+  FILL A<br>
+  POUR from A to B<br>
+  EMPTY B<br>
+  POUR from A to B<br>
+  FILL A<br>
+  POUR from A to B<br>
+  <p>
+  We now have exactly 2 gallons of water jug in A.  (Try it!).  Phew,
+  we're still alive!  Wouldn't it be nice to have a computer program
+  to help us solve this?
+
+  <h2>Step 1: The <code>WaterJug</code> class</h2>
+  <p>
+  Each <code>WaterJug</code> object will need to have two components
+  that we can think of as the state of that <code>WaterJug</code>.
+  <p>
+  components:
+  <UL>an integer for <code>capacity</code><br>
+  an integer for <code>contents</code><br>
+  </UL>
+  <p>
+  Also, a <code>WaterJug</code> needs some functionality to change the state of the internal components.
+  In object-oriented programming, these are called methods.
+  <p>
+  methods:
+  <UL><code>__init__( capacity, contents )</code> constructor method<br>
+  <code>__repr__( )</code> to print off the components of the <code>WaterJug</code><br>
+  <code>fill( )</code> to fill up the <code>WaterJug</code> completely<br>
+  <code>empty( )</code> to completely empty the <code>WaterJug</code><br>
+  <code>pour( other )</code> to pour as much of the contents of this <code>WaterJug</code> into the other as is allowed<br>
+  </UL>
+
+  <p> Implement this object in Python. Don't forget where to use
+  the <code>self</code> keyword.  Be careful with your methods to make
+  sure a malicious programmer (or buggy code) cannot violate the
+  integrity of your class.  For example, it should never be possible
+  to end up with a <code>WaterJug</code> with more <code>contents</code>
+  than <code>capacity</code>.
+
+  <p>
+  Write a small <code>main</code> method to test that
+  your <code>WaterJug</code> object works according to the description
+  above.
+
+  <h2>Step 2: The Puzzle</h2>
+
+  Finally, implement a <code>main</code>
+  function that allows the user to set up and then solve a WaterJugs
+  puzzle.  Your function should:
+  <UL>
+  <li>Ask the user the capacity of the first <code>WaterJug</code>
+  <li>Ask the user the capacity of the second <code>WaterJug</code>
+  <li>Ask the user the goal quantity of water
+  <li>Create the necessary empty <code>WaterJug</code> objects
+  <li>While the goal has not been met:
+  <ul>
+  	 <li>Give the user a list of the options
+  	 <li>Ask the user for their option selection
+  	 <li>Perform the selected option
+  </ul>
+  <li>When the goal is met, print the solution path found by the user
+  to reach the goal.
+  </ul>
+
+ <p>
+ Of course, you should not just put everything in <code>main</code>,
+ but you should break your code up into functions appropriately.  We
+ have given you a <a href="../code/waterjug.py">starting file</a> with
+ some useful functions you may use, so you don't have to reimplement
+ them yourself.
+
+<h2>Step 3: Generalizing</h2>
+
+Generalize your program above so that it works with any number
+of <code>WaterJugs</code> instead of just 2.  In particular, the
+program should:
+<ul>
+  <li>Ask the user how many <code>WaterJug</code>s they want</li>
+  <li>Prompt them for the capacity of each</li>
+  <li>...and so on</li>
+</ul>
+
+ <p>
+You never know when a Python class could save your life.  And
+  remember, "Think fast, Look alive, Die hard."
+
+<h2>What to Hand In</h2>
+Turn in your code via Moodle. Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+  <li><code>waterjug.py</code></li>
+</ul>
+
+<h2>Grading</h2>
+<ul>
+  <li>To earn a D on this lab, complete Step 1.</li>
+  <li>To earn a B on this lab, do all the above and complete Step 2.</li>
+  <li>To earn an A on this lab, do all the above and complete Step 3.</li>
+  <li>To earn a 100 on this lab, do all the above and write a
+      paragraph explaining how you might write a Python program to
+      automatically play the WaterJug game.</li>
+</ul>
+
+<hr>
+<small>&copy; Mark Goadrich and Brent Yorgey, Hendrix College</small>
+</BODY>
+</HTML>
