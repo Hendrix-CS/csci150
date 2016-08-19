@@ -116,7 +116,7 @@ dataset of over 300 patients.
 <p>
 
 We will be adding our logical rules to a file called
-<code>analysis.py</code>. This program will ask the user for a data file, and then try
+<code><a href="../code/analysis.py">analysis.py</a></code>. This program will ask the user for a data file, and then try
 predict if each patient in the file has heart disease. The results will display the
 percent accuracy of these predictions. In addition, it will break down the predictions
 into four categories:
@@ -131,16 +131,16 @@ Find the section labeled BEGIN PREDICTION CODE.
 Notice that there is one line in this section, which
 will predict that every patient will have heart disease.
 <p>
-Run this code with the training data given (saved in <code>cleveland-training.csv</code>).
-What is the accuracy? Also run this code with the testing data given (saved in <code>cleveland-testing.csv</code>).
+Run this code with the training data given (saved in <code><a href="../data/cleveland-training.csv">cleveland-training.csv</a></code>).
+What is the accuracy? Also run this code with the testing data given (saved in <code><a href="../data/cleveland-testing.csv">cleveland-testing.csv</a></code>).
 
 <h3>Step 3</h3>
 We will now use what you know about <code>if-elif-else</code> statements to
 edit this python program and better classify a given patient.
 <p>
-Think back to the hypothesis and conclusions you drew from the histograms above. Are
-there ways to state these as a collection of logical statements? For example, if we
-wish to explore the hypothesis that females do not get heart disease while males do, we would write
+Consider the following hypothesis: "Males get heart disease, and females
+do not get heart disease." Translated into a formal logical statement, 
+we would write the following code:
 <p>
 <pre>
 if female:
@@ -152,13 +152,17 @@ else:
 Run the analysis code with this rule, and record the accuracy on the training and testing set.
 <h3> Step 4</h3>
 While this is an improvement over the default answer, we can do better. Write
-three separate attempts at a rule, looking at the training data given above, and
-in each case limiting yourself to only use
-a few features shown here.
-<ol>
-<li>age and female
-<li>maximum_heart_rate and chest_pain
-<li>vessels, exercise_angina, and rest_ecg
+three separate attempts at a rule, looking at the training data given 
+in the table above, and
+in each case limiting yourself to only use the features listed.  
+
+<p>
+For each version, use "Save Copy As" in IDLE
+to create a new copy of the file. The filename to use for each one is given below.
+<ol type="a">
+<li>age and female (<code>analysis_4a.py</code>)
+<li>maximum_heart_rate and chest_pain (<code>analysis_4b.py</code>)
+<li>vessels, exercise_angina, and rest_ecg (<code>analysis_4c.py</code>)
 </ol>
 After writing each rule, observe the analysis results on the training and testing sets.
 How accurate are your rules? How do they differ on the positive and negative examples?
@@ -182,18 +186,19 @@ As the final piece of this lab, try to find the highest accuracy ruleset on the 
 set, but limiting yourself by the number of lines of code you write. What is the highest
 accuracy you can achieve with 10 lines of code? How about 20? Feel free to look at the
 whole dataset to try and generate your hypotheses, and record your solutions in your writeup.
+Write up your code in a file called <code>analysis_5.py</code>.
 <p>
 <h3>What To Hand In</h3>
 Hand in your files on <a href="http://moodle.hendrix.edu">Moodle</a>.
-Write up your code in a file
-called <code>analysis.py</code>. Write the results of
-each step above in
-an evaluation document.
+Write the results of each step above in an evaluation document.
 <p>
 
 You must hand in:
 <ul>
- 	<li>analysis.py
+    <li><code>analysis_4a.py</code>
+    <li><code>analysis_4b.py</code>
+    <li><code>analysis_4c.py</code>
+    <li><code>analysis_5.py</code>
  	<li>Lab Evaluation
 </ul>
 
