@@ -5,11 +5,12 @@
 # cleveland-training.csv
 # cleveland-testing.csv
 #
-# CSCI 150 Fall 2015
+# CSCI 150 Fall 2016
 # Mark Goadrich
+# Updated for Python 3.5 by Gabriel Ferrer
 ########
 
-filename = raw_input("What file would you like to analyze? ")
+filename = input("What file would you like to analyze? ")
 
 # Open the file to get the data
 
@@ -72,11 +73,11 @@ correct = results[(True, True)] + results[(False, False)]
 
 # Output the results to the user
 
-print
-print "Accuracy on " + filename + " ..."
-print "{:.2%}".format(correct / float(total))
-print
-print "True Positives: \t" + str(results[(True, True)])
-print "False Positives:\t" + str(results[(True, False)])
-print "True Negatives: \t" + str(results[(False, False)])
-print "False Negatives:\t" + str(results[(False, True)])
+print()
+print("Accuracy on " + filename + " ...")
+print("{:.2%}".format(correct / float(total)))
+print()
+print("True Positives: \t" + str(results[(True, True)]))
+print("False Positives:\t" + str(results[(True, False)]))
+print("True Negatives: \t" + str(results[(False, False)]))
+print("False Negatives:\t" + str(results[(False, True)]))
