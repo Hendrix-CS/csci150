@@ -255,7 +255,7 @@ OK, let's go through the steps.
 
 \subsection*{Python I (Strings, Numbers, Variables)}
 
-Show \url{python.org} website.  Load up IDLE, Python 2.7.
+Show \url{python.org} website.  Load up IDLE, Python 3.5.
 
 \texttt{>>>} is the prompt.  This gives you direct access to the
 interpreter.  You say commands one line at a time, and get immediate
@@ -355,39 +355,39 @@ having to type python code, we make it easier for them.  We do
 calculations, and tell the computer to print the output to the user.
 
 \begin{itemize}
-\item \verb|print <expr>| --- instructs Python to display information
+\item \verb|print(<expr>)| --- instructs Python to display information
   to the user.
 \item For example:
   \begin{itemize}
-  \item \verb|print "Hello world"|
+  \item \verb|print("Hello world")|
   \item
 \begin{verbatim}
 x = 3
 y = 4
-print x, y
+print(x, y)
 \end{verbatim}
   \item
 \begin{verbatim}
-print """ kjbwer
+print(""" kjbwer
 Lkjwelrkj
 Lkjwelkrj
-"""
+""")
 \end{verbatim}
   \end{itemize}
 
 \item Put stuff in a \verb|.py| file with \verb|print| and run it.
 
-\item \verb|raw_input()|, lets us talk to the user and ask questions
+\item \verb|input()|, lets us talk to the user and ask questions
   at the same time.  Example:
 \begin{verbatim}
-raw_input(â€œWhat is your name?â€)
+input("€œWhat is your name?"€)
 \end{verbatim}
-\item Note it doesnâ€™t give you back the prompt \verb|>>>|, but waits
+\item Note it doesn'€™t give you back the prompt \verb|>>>|, but waits
   for you to type; whatever you type comes back as a string.
 
 \item  To do anything with this we need to save the result in a variable:
 \begin{verbatim}
-name = raw_input(â€œWhat is your name?â€)
+name = input("€œWhat is your name?â€")
 \end{verbatim}
 
 \item  But what if we want numbers? Functions to convert strings into
@@ -399,7 +399,7 @@ float("32.4")
 
 \item So to get numbers from the user, we can do something like:
 \begin{verbatim}
-age_st = raw_input("What is your age?")
+age_st = input("What is your age?")
 age = int(age_st)
 \end{verbatim}
 \end{itemize}
@@ -416,13 +416,13 @@ returns it to the PROGRAM.
 
 Brent prefers something like the following: in a PROGRAM (saved in a
 file) we have to be explicit about I/O: input only comes via
-\verb|raw_input| and output only produced via \verb|print|.  The REPL
+\verb|input| and output only produced via \verb|print|.  The REPL
 handles input and ouptut for us: \verb|>>>| prompt does input and
 everything is implicitly \verb|print|ed for us.  Draw box representing
 program with inputs coming in, outputs going out via these functions.
 REPL is like a little wrapper around a smaller box where we don't have
 to worry about those things.  [A little confusing to think about what
-happens when we e.g. call \verb|raw_input| at the REPL prompt but you
+happens when we e.g. call \verb|input| at the REPL prompt but you
 don't really need to worry about that!]
 
 \subsection*{Our first program!}
@@ -513,7 +513,7 @@ also use these to go from \verb|float| to \verb|int| and back.  Also,
 we can go from either to string with e.g. \verb|str(3)|.
 
 What we've been using are \emph{functions}.  Some come standard with
-python, like \verb|print|, \verb|raw_input|, \verb|type|, and type
+python, like \verb|print|, \verb|input|, \verb|type|, and type
 conversion functions like \verb|int|, \verb|float|, \verb|str|.
 
 Many more possible, and in the near future, you will write your own!
@@ -640,7 +640,7 @@ code, execute this or that.
 \begin{verbatim}
 passwd = input("What is the password? ")
 if (passwd == "lemur"):
-    print "Here be secrets."
+    print("Here be secrets.")
 \end{verbatim}
 
 Tabbing is important!  Colon is important!
@@ -666,20 +666,20 @@ For example:
 \begin{verbatim}
 import random
 
-passwd = raw_input("Enter the password: ")
+passwd = input("Enter the password: ")
 r = random.random()
-print "The random number is", r
+print("The random number is", r)
 
 if (r < 0.2):
-    print "You got heads!"
+    print("You got heads!")
 elif (r >= 0.2 and r < 0.6):
-    print "You got tails!"
+    print("You got tails!")
 else:
-    print "You got pickles!"
+    print("You got pickles!")
     if (passwd == "pass"):
-        print "Here be secrets"
+        print("Here be secrets")
     else:
-        print "No secrets for you"
+        print("No secrets for you")
 \end{verbatim}
 
 \begin{reflect}{Brent, S' 16}
@@ -834,8 +834,7 @@ Integers are represented like this inside the computer.  Show entering
 binary numbers directly into Python using \verb|0b10110| notation.
 
 Most modern computers use $64$ bits to represent an integer (\emph{how
-  big is that?}); some use $32$. Show Python switching from \verb|int|
-to \verb|long|:
+  big is that?}); some use $32$. Show Python doesn't care, abstracted it away:
 \begin{itemize}
 \item Some small and very big examples
 \item \verb|2**62|
@@ -959,7 +958,7 @@ exemplar and show them what it does.
 
 \textbf{Read Chapter 5! Note quiz on Wednesday!}
 
-We have used functions in Python already, like \verb|raw_input|,
+We have used functions in Python already, like \verb|input|,
 \verb|cos|?, other math things?
 
 We can define our own functions!  Same rules for names as
@@ -968,8 +967,8 @@ inside the indent (body) says what happens.
 
 \begin{verbatim}
 def say_hi():
-    print "Hello there, CSCI 150!"
-    print "This is a function."
+    print("Hello there, CSCI 150!")
+    print("This is a function.")
 \end{verbatim}
 
 Function definition makes a variable which is a function object. (Note
@@ -1013,7 +1012,7 @@ Make C to F conversion into function, takes C as argument:
 \begin{verbatim}
 def C_to_F(temp_C):
     F = C * 9.0 / 5.0 + 32
-    print "The temperature in degrees Fahrenheit is ", F
+    print("The temperature in degrees Fahrenheit is ", F)
 \end{verbatim}
 
 \verb|temp_C| is a variable called a \emph{parameter}.
@@ -1051,7 +1050,7 @@ Recall function from last time:
 \begin{verbatim}
 def C_to_F(temp_C):
     F = C * 9.0 / 5.0 + 32
-    print "The temperature in degrees Fahrenheit is ", F
+    print("The temperature in degrees Fahrenheit is ", F)
 \end{verbatim}
 This function is actually really awkward.  Takes \verb|temp_C| as a
 parameter, but then \emph{prints} the result.  What if we want to
@@ -1100,7 +1099,7 @@ to F, and makes an appropriate comment.
 
 \begin{verbatim}
 def discuss_weather():
-    temp_C = int(raw_input("What is the temperature in degrees C? "))
+    temp_C = int(input("What is the temperature in degrees C? "))
     temp_F = C_to_F(temp_C)
     word = F_to_qualitative(temp_F)
     print "It's very " + word + " today, don't you think?"
@@ -1113,7 +1112,7 @@ calls, culminating in
 # DO NOT TRY THIS AT HOME
 def discuss_weather_4():
     print "It's very " +\
-     F_to_qualitative(C_to_F(int(raw_input("What is the temperature in\
+     F_to_qualitative(C_to_F(int(input("What is the temperature in\
      degrees C? ")))) +\
      " today, don't you think?"
 \end{verbatim}
@@ -1378,7 +1377,7 @@ things:
 def int_input(prompt):
     valid = False
     while (not valid):
-        uinput = raw_input(prompt)
+        uinput = input(prompt)
         if uinput.isdigit():
             valid = True
         else:
@@ -1557,7 +1556,7 @@ def read_inputs():
     inputs = []
     done = False
     while not done:
-        word = raw_input('Enter another input, or quit: ')
+        word = input('Enter another input, or quit: ')
         if word.lower() == 'quit':
             done = True
         else:
