@@ -25,18 +25,18 @@ for line in data:
 
     # Loading up each patient into variables
     
-    patient = line.strip().split(",")
+    patient = line.strip().lower().split(",")
     age = int(patient[0])
-    female = (patient[1] == "True")
+    female = (patient[1] == "true")
     chest_pain = patient[2]
     rest_bps = int(patient[3])
     cholesterol = int(patient[4])
-    high_fasting_blood_sugar = (patient[5] == "True")
+    high_fasting_blood_sugar = (patient[5] == "true")
     rest_ecg = patient[6]
     maximum_heart_rate = int(patient[7])
-    exercise_angina = (patient[8] == "True")
+    exercise_angina = (patient[8] == "true")
     vessels = int(patient[9])
-    heart_disease = (patient[10] == "True")
+    heart_disease = (patient[10] == "true")
 
     ##################################
     # BEGIN PREDICTION CODE
