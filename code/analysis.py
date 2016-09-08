@@ -19,7 +19,7 @@ data = fin.readlines()[1:]
 
 # Set up the storage of the results
 
-results = {(a,b):0 for a in (True, False) for b in (True, False)}
+results = {(a, b):0 for a in (True, False) for b in (True, False)}
 
 for line in data:
 
@@ -54,7 +54,7 @@ for line in data:
 
 # Calculating the accuracy on all patients
 
-total = sum(results[(a,b)] for a in (True, False) for b in (True, False))
+total = sum(results[(a, b)] for a in (True, False) for b in (True, False))
 correct = results[(True, True)] + results[(False, False)]
 
 # Output the results to the user
@@ -63,7 +63,7 @@ print()
 print("Accuracy on " + filename + " ...")
 print("{:.2%}".format(correct / float(total)))
 print()
-for (a,b) in ((True, True), (False, True), (False, False), (True, False)):
+for (a, b) in ((True, True), (True, False), (False, False), (False, True)):
     print("True " if a == b else "False", 
-          "Positives:" if b else "Negatives:", 
-          "\t" + str(results[(a,b)]))
+          "Positives:" if a else "Negatives:", 
+          "\t" + str(results[(a, b)]))
