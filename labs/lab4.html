@@ -42,8 +42,7 @@ each year can start on a different day of the week, since 365 is not
 a multiple of 7. But there is a simple algorithm (based on the 
 <a href="http://en.wikipedia.org/wiki/Doomsday_Algorithm">Doomsday Rule</a>) that 
 you can memorize to find the day of the 
-week for any date between 
-Jan 1st, 1700 and Dec 31st, 2299:
+week for any date in this century.
 <ol>
 	<li>Find the last 2 digits of the year. Divide this by four (using integer division) 
 	and sum these two together to get <code>y</code>.
@@ -70,17 +69,6 @@ Jan 1st, 1700 and Dec 31st, 2299:
 <p>
 </div>
 
-<div align="center">
-<b>Table for Year Offset</b>
-<p>
-<table border=1><tr>
-<th>1700</th><th>1800</th><th>1900</th><th>2000</th><th>2100</th><th>2200</th></tr>
-<tr>
-<th>5</th><th>3</th><th>1</th><th>0</th><th>-2</th><th>-4</th></tr>
-</table>
-<p>
-</div>
-
 For example, if you wish to know the day of the week for September 15th, 2016, these
 are the steps you would take:
 <ol>
@@ -88,19 +76,14 @@ are the steps you would take:
 	<li>4
 	<li>15
 	<li>20 + 4 + 15 = 39
-	<li>39 + 0 = 39 (offset code = 0)
-	<li>39 - 0 = 39 (is a leap year, but not Jan or Feb)
 	<li>39 % 7 = 4 for Thursday
 </ol>
 
-<h3>Leap Year Rule</h3>
-Under the Gregorian Calendar, a year is a leap year (such that February has 29 days) if it is a 
-multiple of four, except when it is also a multiple of 100 but not 400. So, 1900 and
-2100 are not leap years, but 2000 is a leap year.
+For this lab, you will write a Python program called <code>dow.py</code>. We will
+incrementally improve this program, both in accuracy and in style.
 
-<h2>Coding</h2>
-For this assignment, you will write a Python program called <code>dow.py</code>.
-This program will first tell the user about the program, and then take as input from the user 
+<h2>Step 1 - Initial Program</h2>
+Our first version of this program will first tell the user about the program, and then take as input from the user 
 the date they wish to use for finding the day of the week.  This input must be in the
 form of three questions to the user, first the year, then the month
 (as a number),
@@ -109,6 +92,89 @@ September 15th, 2016.
 <p>
 With correct input, your program will then parse this input into the year, month and day,
 follow the above algorithm to compute the day of the week, and output this to the user
+as a number. So for the above entry, your program will output 4.
+
+Test your code on the following dates to ensure you are getting the right answers.  
+<p>
+<ul>
+	<li>A total solar eclipse will occur over the continental United States on 
+	Monday, August 21, 2017.
+	<li><a href="http://en.wikipedia.org/wiki/Mesoamerican_Long_Count_calendar">The 
+	Mesoamerican Long Count calendar</a> used by the Mayans began a new cycle on
+	Friday, December 21, 2012.  Some people thought this would be the end of the world.
+</ul>
+
+<h2>Step 2 - Other Centuries</h2>
+
+With a small change, our formula can be extended to work between 
+Jan 1st, 1700 and Dec 31st, 2299. To do this, we need an additional offset table for the year.
+<p>
+<div align="center">
+<b>Table for Year Offset</b>
+<p>
+<table border=1><tr>
+<th>1700 - 1799</th><th>1800 - 1899</th><th>1900 - 1999</th><th>2000 - 2099</th><th>2100 - 2199</th><th>2200 - 2299</th></tr>
+<tr>
+<th>5</th><th>3</th><th>1</th><th>0</th><th>-2</th><th>-4</th></tr>
+</table>
+<p>
+</div>
+<p>
+Our algorithm is now augmented with an additional step, highlighted below. Change your code
+to work for any date in the above range.
+<ol>
+	<li>Find the last 2 digits of the year. Divide this by four (using integer division) 
+	and sum these two together to get <code>y</code>.
+   	<li>Get the corresponding offset (shown below) for the month for <code>m</code>.
+   	<li>Take the day to get <code>d</code>
+   	<li>Add <code>y</code>, <code>m</code> and <code>d</code> together to find <code>dow</code>.
+	<li><b>Add the year offset (also shown below) to <code>dow</code>.</b>
+   	<li><code>dow</code> mod 7 corresponds to the day of the week. (0 = Sunday, 
+   	1 = Monday, 2 = Tuesday, etc.)
+</ol>
+
+
+Test your code on the following dates to ensure you are getting the right answers.  
+<p>
+<ul>
+	<li><a href="http://en.wikipedia.org/wiki/Arecibo_message">The Arecibo message</a>
+	was beamed into space on Saturday, 16 November 1974.
+	<li>Groundhog Day, Sunday, February 2, 1992.
+	<li>ANOTHER INTERESTING DATE NEXT CENTURY, OR IN THE WAY PAST
+</ul>
+
+<h2>Step 3 - Leap Years</h2>
+Our formula has a subtle problem. If the year in question is a leap year, there is an extra
+day on February 29th! This can be accommodated by adding one more step to our algorithm, 
+again highlighted below.
+<ol>
+	<li>Find the last 2 digits of the year. Divide this by four (using integer division) 
+	and sum these two together to get <code>y</code>.
+   	<li>Get the corresponding offset (shown below) for the month for <code>m</code>.
+   	<li>Take the day to get <code>d</code>
+   	<li>Add <code>y</code>, <code>m</code> and <code>d</code> together to find <code>dow</code>.
+	<li>Add the year offset (also shown below) to <code>dow</code>.
+	<li><b>If the year is a leap year and the month is January or February, subtract 1 from 
+	<code>dow</code>.</b>
+   	<li><code>dow</code> mod 7 corresponds to the day of the week. (0 = Sunday, 
+   	1 = Monday, 2 = Tuesday, etc.)
+</ol>
+Leap year calculations usually are necessary for every fourth year, but not always.
+Under the Gregorian Calendar, a year is a leap year (such that February has 29 days) if it is a 
+multiple of four, except when it is also a multiple of 100 but not 400. So, 1900 and
+2100 are not leap years, but 2000 is a leap year.
+
+Test your code on the following dates to ensure you are getting the right answers.  
+<p>
+<ul>
+	<li>ANOTHER INTERESTING DATE WITH LEAP YEAR ISSUES
+</ul>
+
+<h2>Step 4 - Formatting</h2>
+
+<h2>Coding</h2>
+Our code is calculating the correct day of the week, but is not very useful to people.
+Change your code to produce output
 in the following format <b>exactly</b> (using September 15th, 2016 as an example):
 <p>
 <code>In the Gregorian Calendar, September 15th, 2016 falls on a Thursday.</code>
@@ -136,29 +202,14 @@ Other exciting and creative output here...
 In the Gregorian Calendar, September 15th, 2016 falls on a Thursday.
 </pre>
 
-<h2>Testing</h2>
-Test your code on the following dates to ensure you are getting the right answers.  We will be 
-using other dates to test your project for grading, so you should also find three other dates than 
+<h2>Step 5 - Testing</h2>
+Test your code on all the above dates to ensure you are getting the right answers.  
+Also test your birthday, and find three other dates than 
 these for your own testing, one of which is in January or February of a leap year.
-<p>
-<ul>
-	<li>A total solar eclipse will occur over the continental United States on 
-	Monday, August 21, 2017.
-	<li><a href="http://en.wikipedia.org/wiki/Arecibo_message">The Arecibo message</a>
-	was beamed into space on Saturday, 16 November 1974.
-	<li>Groundhog Day, Sunday, February 2, 1992.
-	<li><a href="http://en.wikipedia.org/wiki/Mesoamerican_Long_Count_calendar">The 
-	Mesoamerican Long Count calendar</a> used by the Mayans began a new cycle on
-	Friday, December 21, 2012.  Some people thought this would be the end of the world.
-	<li>Your birthday.
-</ul>
-
 <h2>What to Hand In</h2>
-Log in to <a href="http://moodle.hendrix.edu">Moodle</a>.  
-Copy your <code>dow.py</code> project into the directory called 
-<code>project1</code>.  Make sure
+Upload your code to <a href="http://moodle.hendrix.edu">Moodle</a>. Make sure
 you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
-have run your project through the Automated Style Checker.<p>
+have run your code through the Automated Style Checker.<p>
 You must hand in:
 <ul>
  	<li>dow.py
