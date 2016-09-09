@@ -3,66 +3,17 @@
 # CSCI 150 Fall 2016
 # Vacation Game without functions
 ######
-import random
+import dictionary_expanded
 
-# Requires a yes or no input
-def yn_input(prompt):
-    valid = False
-    while (not valid):
-        x = input(prompt + " (Yes or No)? ")
-        if (x.lower() != "yes" and x.lower() != "no"):
-            print("Please answer Yes or No.")
-        else:
-            valid = True
-    return x.lower()
+# Repeatedly plays the game until the user is finished.
+wordfile = "../data/english2.txt"
+length = 6
+play = True
+while (play):
 
-# Determines if a word contains a double letter (pp in apple)
-def doubleletter(word):
-    for i in range(len(word) - 1):
-        if word[i] == word[i + 1]:
-            return True
-    return False
+    # Plays the game, asking the user for words to categorize, or
+    # lets them challenge to win
 
-# Determines if a word is in the wordfile provided
-def valid_word(word, wordfile):
-    f = open(wordfile, "r")
-    for line in f:
-        if line.lower().strip() == word.lower():
-            return True
-    return False
-
-# Finds a random word in the wordfile
-def random_valid_word(wordfile):
-    f = open(wordfile, "r")
-    t = f.readlines()
-    r = int(random.random() * len(t))
-    return t[r].strip()
-
-# The user can challenge to see if they know the rule, they must answer n questions correctly
-def challenge(wordfile, n):
-    print("Challenge time!!! I will ask you " + str(n) + " questions, all of which you must answer correctly!")
-    for i in range(n):
-        pw = random_valid_word(wordfile)
-        guess = yn_input("Q" + str(i + 1) + ": Can I take '" + pw + "' on vacation")
-        if ((guess == "yes" and not doubleletter(pw)) or guess == "no" and doubleletter(pw)):
-            return False
-    return True
-
-# Generates two starting words, one that matches the rule, one that doesn't
-def start(wordfile):
-    words = []
-    while (len(words) == 0):
-        pw = random_valid_word(wordfile)
-        if (doubleletter(pw)):
-            words.append(pw)
-    while (len(words) == 1):
-        pw = random_valid_word(wordfile)
-        if (not doubleletter(pw)):
-            words.append(pw)
-    return words
-
-# Plays the game, asking the user for words to categorize, or lets them challenge to win
-def game(wordfile, n):
     print("""
 Welcome to the vacation game! I'm going on vacation, and you can 
 come along if you figure out the rule I'm using to pack. I will
@@ -73,45 +24,101 @@ identify 6 items. If you succeed, you are welcome on the trip!
 To stop playing the game otherwise, type "QUIT".
 """)
 
-    primer = start(wordfile)
-    print("To start you off, '" + primer[0] + "' is allowed, but '" + primer[1] + "' is not.")
+    allowed = ""
+    while allowed == "":
+        pw = dictionary_expanded.random_valid_word(wordfile)
+        doubled = False
+        i = 0
+        while i < len(pw) - 1:
+            if pw[i] == pw[i + 1]:
+                doubled = True
+            i += 1
+        if (doubled):
+            allowed = pw
+
+    forbidden = ""
+    while forbidden == "":
+        pw = dictionary_expanded.random_valid_word(wordfile)
+        doubled = False
+        i = 0
+        while i < len(pw) - 1:
+            if pw[i] == pw[i + 1]:
+                doubled = True
+            i += 1
+        if (not doubled):
+            forbidden = pw
+            
+    print("To start you off, '" + allowed + "' is allowed, but '" + \
+          forbidden + "' is not.")
 
     finished = False
     while (not finished):
-        item = input("What is your item? ")
-        if (item.upper() == "CHALLENGE"):
-            worthy = challenge(wordfile, n)
+        item = input("What is your item? ").upper()
+        if (item == "CHALLENGE"):
+
+            worthy = True
+            print("Challenge time!!! I will ask you " + str(length) + " questions, all of which you must answer correctly!")
+            count = 0
+            while count < length:
+                pw = dictionary_expanded.random_valid_word(wordfile)
+
+                # Determines if a word contains a double letter (pp in apple)
+                i = 0
+                doubled = False
+                while i < len(pw) - 1:
+                    if pw[i] == pw[i + 1]:
+                        doubled = True
+                    i += 1
+
+                valid = False
+                while (not valid):
+                    guess = input("Q" + str(i + 1) + ": Can I take '" + pw + "' on vacation (Yes or No)? ").lower()
+                    if (guess != "yes" and guess != "no"):
+                        print("Please answer Yes or No.")
+                    else:
+                        valid = True
+
+                if ((guess == "yes" and not doubled) or guess == "no" and doubled):
+                    worthy = False
+                count += 1
+            
             if (worthy):
                 print("Congratulations, you can join the vacation! My rule was that " + \
                       "every item must have a double letter. (pp in apple).")
                 finished = True
             else:
                 print("I'm sorry, you did not get them all correct. Ask more questions!")
-        elif (item.upper() == "QUIT"):
-            print("Thanks for playing, come back again if you think you can figure out the rule.")
+
+        elif (item == "QUIT"):
+            print("Come back again if you think you can figure out the rule.")
             finished = True
-        elif (not valid_word(item, wordfile)):
+            play = False
+
+        elif (not dictionary_expanded.valid_word(item, wordfile)):
             print("That is not a valid word, please try again.")
+
         else:
-            takeable = doubleletter(item)
+            takeable = False
+            i = 0
+            while i < len(item) - 1:
+                if item[i] == item[i + 1]:
+                    takeable = True
+                i += 1
             if (takeable):
                 print("Yes! You can bring that.")
             else:
                 print("No, that's not allowed on this vacation.")
 
     # If they did not rage quit, then ask if they want to play again.
-    if (item != "QUIT"):
-        again = yn_input("Would you like to play again?")
-        return again
-    else:
-        return "no"
-
-# Repeatedly plays the game until the user is finished.
-def main():
-    play = True
-    while (play):
-        ans = game("english2.txt", 6)
-        if ans == "no":
+    if (item.upper() != "QUIT"):
+        valid = False
+        while (not valid):
+            again = input("Would you like to play again? (Yes or No)? ").lower()
+            if (again != "yes" and again != "no"):
+                print("Please answer Yes or No.")
+            else:
+                valid = True
+        if again == "no":
             play = False
-
-main()
+            
+print("Thanks for playing!")          
