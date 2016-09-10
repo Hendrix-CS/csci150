@@ -49,9 +49,9 @@ week for any date in this century.
    	<li>Get the corresponding offset (shown below) for the month for <code>m</code>.
    	<li>Take the day to get <code>d</code>
    	<li>Add <code>y</code>, <code>m</code> and <code>d</code> together to find <code>dow</code>.
-	<li>Add the year offset (also shown below) to <code>dow</code>.
+	<!--<li>Add the year offset (also shown below) to <code>dow</code>.
 	<li>If the year is a leap year and the month is January or February, subtract 1 from 
-	<code>dow</code>.
+	<code>dow</code>. -->
    	<li><code>dow</code> mod 7 corresponds to the day of the week. (0 = Sunday, 
    	1 = Monday, 2 = Tuesday, etc.)
 </ol>
@@ -72,9 +72,9 @@ week for any date in this century.
 For example, if you wish to know the day of the week for September 15th, 2016, these
 are the steps you would take:
 <ol>
-	<li>16 + 4 = 20
-	<li>4
-	<li>15
+	<li>16 (last 2 digits of year) + 4 (16 // 4) = 20
+	<li>4 (month offset for September)
+	<li>15 (day of month)
 	<li>20 + 4 + 15 = 39
 	<li>39 % 7 = 4 for Thursday
 </ol>
@@ -125,10 +125,10 @@ to work for any date in the above range.
 <ol>
 	<li>Find the last 2 digits of the year. Divide this by four (using integer division) 
 	and sum these two together to get <code>y</code>.
-   	<li>Get the corresponding offset (shown below) for the month for <code>m</code>.
+   	<li>Get the corresponding offset (shown above) for the month for <code>m</code>.
    	<li>Take the day to get <code>d</code>
    	<li>Add <code>y</code>, <code>m</code> and <code>d</code> together to find <code>dow</code>.
-	<li><b>Add the year offset (also shown below) to <code>dow</code>.</b>
+	<li><b>Add the year offset (shown below) to <code>dow</code>.</b>
    	<li><code>dow</code> mod 7 corresponds to the day of the week. (0 = Sunday, 
    	1 = Monday, 2 = Tuesday, etc.)
 </ol>
@@ -137,10 +137,12 @@ to work for any date in the above range.
 Test your code on the following dates to ensure you are getting the right answers.  
 <p>
 <ul>
+    <li>George Washington died on Saturday, December 14, 1799.
+    <li>Ada Lovelace was born on Sunday, December 10, 1815.
 	<li><a href="http://en.wikipedia.org/wiki/Arecibo_message">The Arecibo message</a>
 	was beamed into space on Saturday, 16 November 1974.
-	<li>Groundhog Day, Sunday, February 2, 1992.
-	<li>ANOTHER INTERESTING DATE NEXT CENTURY, OR IN THE WAY PAST
+    <li>Venus will eclipse Jupiter on Tuesday, September 14, 2123.
+    <li>The <i>Enterprise</i> begins its five-year mission on Monday, January 2, 2265.
 </ul>
 
 <h2>Step 3 - Leap Years</h2>
@@ -150,10 +152,10 @@ again highlighted below.
 <ol>
 	<li>Find the last 2 digits of the year. Divide this by four (using integer division) 
 	and sum these two together to get <code>y</code>.
-   	<li>Get the corresponding offset (shown below) for the month for <code>m</code>.
+   	<li>Get the corresponding offset (shown above) for the month for <code>m</code>.
    	<li>Take the day to get <code>d</code>
    	<li>Add <code>y</code>, <code>m</code> and <code>d</code> together to find <code>dow</code>.
-	<li>Add the year offset (also shown below) to <code>dow</code>.
+	<li>Add the year offset (also shown above) to <code>dow</code>.
 	<li><b>If the year is a leap year and the month is January or February, subtract 1 from 
 	<code>dow</code>.</b>
    	<li><code>dow</code> mod 7 corresponds to the day of the week. (0 = Sunday, 
@@ -167,7 +169,11 @@ multiple of four, except when it is also a multiple of 100 but not 400. So, 1900
 Test your code on the following dates to ensure you are getting the right answers.  
 <p>
 <ul>
-	<li>ANOTHER INTERESTING DATE WITH LEAP YEAR ISSUES
+   <li>Napoleon Bonaparte was elected First Consul of France on Friday, February 7, 1800.
+   <li>Vienna debut of <a href="https://en.wikipedia.org/wiki/Ludwig_van_Beethoven">Beethoven</a>'s <a href="https://en.wikipedia.org/wiki/Piano_Concerto_No._5_(Beethoven)">Piano Concerto No. 5</a> was performed by his student <a href="https://en.wikipedia.org/wiki/Carl_Czerny">Carl Czerny</a> on Wednesday, Feburary 12, 1812.
+   <li><a href="https://en.wikipedia.org/wiki/Giacomo_Puccini">Puccini</a>'s opera <a href="https://en.wikipedia.org/wiki/Tosca">Tosca</a> premiered in Rome Italy on Sunday, January 14, 1900.
+   <li>Groundhog Day, Sunday, February 2, 1992.
+   <li>The <a href="https://en.wikipedia.org/wiki/Tagish_Lake_(meteorite)">Tagish Lake Meteorite</a> lands on Tuesday, January 18, 2000.
 </ul>
 
 <h2>Step 4 - Formatting</h2>
