@@ -7,7 +7,6 @@ import dictionary_expanded
 
 # Repeatedly plays the game until the user is finished.
 wordfile = "../data/english2.txt"
-length = 6
 play = True
 while (play):
 
@@ -57,9 +56,10 @@ To stop playing the game otherwise, type "QUIT".
         if (item == "CHALLENGE"):
 
             worthy = True
-            print("Challenge time!!! I will ask you " + str(length) + " questions, all of which you must answer correctly!")
+            print("Challenge time!!! I will ask you " + str(6) + \
+                  "\nquestions, all of which you must answer correctly!")
             count = 0
-            while count < length:
+            while count < 6:
                 pw = dictionary_expanded.random_valid_word(wordfile)
 
                 # Determines if a word contains a double letter (pp in apple)
@@ -72,22 +72,26 @@ To stop playing the game otherwise, type "QUIT".
 
                 valid = False
                 while (not valid):
-                    guess = input("Q" + str(i + 1) + ": Can I take '" + pw + "' on vacation (Yes or No)? ").lower()
+                    guess = input("Q" + str(count + 1) + ": Can I take '" + \
+                                  pw + "' on vacation (Yes or No)? ").lower()
                     if (guess != "yes" and guess != "no"):
                         print("Please answer Yes or No.")
                     else:
                         valid = True
 
-                if ((guess == "yes" and not doubled) or guess == "no" and doubled):
+                if ((guess == "yes" and not doubled) or
+                    (guess == "no" and doubled)):
                     worthy = False
                 count += 1
             
             if (worthy):
-                print("Congratulations, you can join the vacation! My rule was that " + \
+                print("Congratulations, you can join the vacation! " + \
+                      "\nMy rule was that " + \
                       "every item must have a double letter. (pp in apple).")
                 finished = True
             else:
-                print("I'm sorry, you did not get them all correct. Ask more questions!")
+                print("I'm sorry, you did not get them all correct." + \
+                      "\nAsk more questions!")
 
         elif (item == "QUIT"):
             print("Come back again if you think you can figure out the rule.")
@@ -113,7 +117,8 @@ To stop playing the game otherwise, type "QUIT".
     if (item.upper() != "QUIT"):
         valid = False
         while (not valid):
-            again = input("Would you like to play again? (Yes or No)? ").lower()
+            again = input("Would you like to play again? " + \
+                          "(Yes or No)? ").lower()
             if (again != "yes" and again != "no"):
                 print("Please answer Yes or No.")
             else:
