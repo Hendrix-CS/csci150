@@ -115,25 +115,25 @@ To demonstrate the eventual behavior of the program, here is a
 sample run of the Doublets game.
 <p>
 <pre>
-What is the starting word? CAT
-What is the ending word? DOG
+What is the starting word? <span>CAT</span>
+What is the ending word? <span>DOG</span>
 Start   = CAT
 Current = CAT
 End     = DOG
-Which character do you want to change? (the first character is 1) 3
-What is your new character? B
+Which character do you want to change? (the first character is 1) <span>3</span>
+What is your new character? <span>B</span>
 Current = CAB
 End     = DOG
-Which character do you want to change? (the first character is 1) 2
-What is your new character? O
+Which character do you want to change? (the first character is 1) <span>2</span>
+What is your new character? <span>O</span>
 Current = COB
 End     = DOG
-Which character do you want to change? (the first character is 1) 3
-What is your new character? G
+Which character do you want to change? (the first character is 1) <span>3</span>
+What is your new character? <span>G</span>
 Current = COG
 End     = DOG
-Which character do you want to change? (the first character is 1) 1
-What is your new character? D
+Which character do you want to change? (the first character is 1) <span>1</span>
+What is your new character? <span>D</span>
 Solution path found in 4 steps.
 CAT -> CAB -> COB -> COG -> DOG
 </pre>
@@ -141,35 +141,35 @@ CAT -> CAB -> COB -> COG -> DOG
 A second run of the program is shown below, where the user made many mistakes.
 <p>
 <pre>
-What is the starting word? log
-What is the ending word? worm
+What is the starting word? <span>log</span>
+What is the ending word? <span>worm</span>
 The lengths are not equal. Please try again.
-What is the ending word? sfu
+What is the ending word? <span>sfu</span>
 sfu is not a word. Please try again.
-What is the ending word? bug
+What is the ending word? <span>bug</span>
 Start   = LOG
 Current = LOG
 End     = BUG
-Which character do you want to change? (the first character is 1) 0
+Which character do you want to change? (the first character is 1) <span>0</span>
 0 is out of range. Please try again.
-Which character do you want to change? (the first character is 1) 4
+Which character do you want to change? (the first character is 1) <span>4</span>
 4 is out of range. Please try again.
-Which character do you want to change? (the first character is 1) 1
-What is your new character? 4
+Which character do you want to change? (the first character is 1) <span>1</span>
+What is your new character? <span>4</span>
 4og is not a valid word
 Current = LOG
 End     = BUG
-Which character do you want to change? (the first character is 1) 1
-What is your new character? b
+Which character do you want to change? (the first character is 1) <span>1</span>
+What is your new character? <span>b</span>
 Current = BOG
 End     = BUG
-Which character do you want to change? (the first character is 1) x
+Which character do you want to change? (the first character is 1) <span>x</span>
 x is not a number. Please try again.
-Which character do you want to change? (the first character is 1) 2
-What is your new character? uu
+Which character do you want to change? (the first character is 1) <span>2</span>
+What is your new character? <span>uu</span>
 uu is more than one character. Please try again.
-Which character do you want to change? (the first character is 1) 2
-What is your new character? u
+Which character do you want to change? (the first character is 1) <span>2</span>
+What is your new character? <span>u</span>
 Solution path found in 2 steps.
 LOG -> BOG -> BUG
 </pre>
@@ -187,7 +187,7 @@ False otherwise.
 <p>
 Now take your pseduocode description and begin to implement your program in Python.  
 Your program should be named <code>doublets.py</code>.  Make sure to import the dictionary module 
-before trying to use the valid_word function.
+before trying to use the <code>valid_word</code> function.
 Write your code in small sections and test incrementally.
 
 <h3>Step 4 - Test, Debug and Maintain</h3>
@@ -218,7 +218,6 @@ You must hand in:
  	<li>doublets.py
  	<li>dictionary.py
  	<li>english2.txt
- 	<li>Any other files you need for your program to run (i.e. helper.py)
 </ul>
 <h2>Grading</h2>
 <ul>

@@ -15,7 +15,8 @@ td { vertical-align:top; }
 
 
 tt { font-weight:bold }
-pre { font-weight:bold; margin-top:0; margin-bottom:0; margin-left:64; }
+pre {margin-top:0; margin-bottom:0; margin-left:64; }
+pre span { font-weight:bold; color:blue;}
 
 .small { font-size: 8pt; }
 
