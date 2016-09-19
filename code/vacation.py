@@ -8,7 +8,7 @@ import dictionary_expanded
 # Repeatedly plays the game until the user is finished.
 wordfile = "../data/english2.txt"
 play = True
-while (play):
+while play:
 
     # Plays the game, asking the user for words to categorize, or
     # lets them challenge to win
@@ -32,7 +32,7 @@ To stop playing the game otherwise, type "QUIT".
             if pw[i] == pw[i + 1]:
                 doubled = True
             i += 1
-        if (doubled):
+        if doubled:
             allowed = pw
 
     forbidden = ""
@@ -44,16 +44,16 @@ To stop playing the game otherwise, type "QUIT".
             if pw[i] == pw[i + 1]:
                 doubled = True
             i += 1
-        if (not doubled):
+        if not doubled:
             forbidden = pw
             
     print("To start you off, '" + allowed + "' is allowed, but '" + \
           forbidden + "' is not.")
 
     finished = False
-    while (not finished):
+    while not finished:
         item = input("What is your item? ").upper()
-        if (item == "CHALLENGE"):
+        if item == "CHALLENGE":
 
             worthy = True
             print("Challenge time!!! I will ask you " + str(6) + \
@@ -71,20 +71,20 @@ To stop playing the game otherwise, type "QUIT".
                     i += 1
 
                 valid = False
-                while (not valid):
+                while not valid:
                     guess = input("Q" + str(count + 1) + ": Can I take '" + \
                                   pw + "' on vacation (Yes or No)? ").lower()
-                    if (guess != "yes" and guess != "no"):
+                    if guess != "yes" and guess != "no":
                         print("Please answer Yes or No.")
                     else:
                         valid = True
 
-                if ((guess == "yes" and not doubled) or
-                    (guess == "no" and doubled)):
+                if guess == "yes" and not doubled or \
+                    guess == "no" and doubled:
                     worthy = False
                 count += 1
             
-            if (worthy):
+            if worthy:
                 print("Congratulations, you can join the vacation! " + \
                       "\nMy rule was that " + \
                       "every item must have a double letter. (pp in apple).")
@@ -93,12 +93,12 @@ To stop playing the game otherwise, type "QUIT".
                 print("I'm sorry, you did not get them all correct." + \
                       "\nAsk more questions!")
 
-        elif (item == "QUIT"):
+        elif item == "QUIT":
             print("Come back again if you think you can figure out the rule.")
             finished = True
             play = False
 
-        elif (not dictionary_expanded.valid_word(item, wordfile)):
+        elif not dictionary_expanded.valid_word(item, wordfile):
             print("That is not a valid word, please try again.")
 
         else:
@@ -108,18 +108,18 @@ To stop playing the game otherwise, type "QUIT".
                 if item[i] == item[i + 1]:
                     takeable = True
                 i += 1
-            if (takeable):
+            if takeable:
                 print("Yes! You can bring that.")
             else:
                 print("No, that's not allowed on this vacation.")
 
     # If they did not rage quit, then ask if they want to play again.
-    if (item.upper() != "QUIT"):
+    if item.upper() != "QUIT":
         valid = False
-        while (not valid):
+        while not valid:
             again = input("Would you like to play again? " + \
                           "(Yes or No)? ").lower()
-            if (again != "yes" and again != "no"):
+            if again != "yes" and again != "no":
                 print("Please answer Yes or No.")
             else:
                 valid = True

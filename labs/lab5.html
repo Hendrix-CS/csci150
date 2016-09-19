@@ -93,20 +93,23 @@ Write your answers in <code>Lab Evaluation</code>.
 <h3>Step 2 - Develop Pseudocode</h3> With your analysis from answering
 these questions, develop an algorithmic solution using
 <i>pseudocode</i>.  This should correspond to the structure of a
-Python program, but is written in English instead of Python.  For
-example, here is a small example of what your pseudocode should look like:
+Python program, but is written in English instead of Python.  
+</p>
+
+<p>For example, pseudocode for a guessing-game could look like this:
+<p>
 <pre>
-while the user's input is not valid:
-    prompt the user for input
-    if n is bigger than q:
-        check whether the user's input is a valid English word
-        increment n
-    else:
-        print an error message about kittens
+Generate a number for the human to guess
+As long as the human has not guessed the number
+    Request a guess from the human
+    If it's too high or too low, say so
+Congratulate the human on their insight
 </pre>
+
+<p>
 The point is that this is <i>structured</i> like Python, using
-indentation, while loops, and conditionals.  But the individual pieces
-are just English descriptions, which you will later translate into
+indentation and hinting at loops and conditionals.  But the individual 
+pieces are just English descriptions, which you will later translate into
 precise Python code.
 
 <p>
@@ -207,7 +210,8 @@ Once your program is working, try out some of the transformations below
 Your <code>doublets.py</code> program lets the user chose what character to change at each step,
 and then verifies that each new word is a valid word.  Can you think of a way to always find the
 minimum number of steps to transform one word to another?  How will you know if a path
-between two words can be found?
+between two words can be found? Include your answers to these questions
+in the Evaluation Document.
 
 <h2>What to Hand In</h2>
 Make sure you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
