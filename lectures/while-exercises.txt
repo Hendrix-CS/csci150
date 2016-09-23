@@ -1,14 +1,14 @@
 1. Write a loop that counts the number of digits that appear in a 
 string received from the user.
 
-2. Write a loop that requests a sequence of inputs from the user. The loop 
-will end when the user types ENTER. The first three letters of each input
-should be put together into a variable called "prefixes" which is
-printed out at the end.
+2. Write a loop that requests a sequence of inputs from the user. 
+The loop will end when the user types ENTER. The first three 
+letters of each input should be put together into a variable 
+called "prefixes" which is printed out at the end.
 
-3. Write a loop that requests a sequence of inputs from the user. The loop
-will end when the user enters a non-integer. The sum of all the numbers
-should be printed out at the end.
+3. Write a loop that requests a sequence of inputs from the user. 
+The loop will end when the user enters a non-integer. The sum 
+of all the numbers should be printed out at the end.
 
 4. Write a loop like the previous one, except that it adds up the
 odd numbers only.
