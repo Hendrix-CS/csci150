@@ -6,6 +6,7 @@
 .~lock*
 *~
 *.class
+.DS_Store
 
 lectures/class-notes.pdf
 _cache
