@@ -3,7 +3,7 @@
 # CSCI 150 Fall 2016
 # Vacation Game without functions
 ######
-import dictionary_expanded
+import dictionary
 
 # Repeatedly plays the game until the user is finished.
 wordfile = "../data/english2.txt"
@@ -25,7 +25,7 @@ To stop playing the game otherwise, type "QUIT".
 
     allowed = ""
     while allowed == "":
-        pw = dictionary_expanded.random_valid_word(wordfile)
+        pw = dictionary.random_valid_word(wordfile)
         doubled = False
         i = 0
         while i < len(pw) - 1:
@@ -37,7 +37,7 @@ To stop playing the game otherwise, type "QUIT".
 
     forbidden = ""
     while forbidden == "":
-        pw = dictionary_expanded.random_valid_word(wordfile)
+        pw = dictionary.random_valid_word(wordfile)
         doubled = False
         i = 0
         while i < len(pw) - 1:
@@ -60,7 +60,7 @@ To stop playing the game otherwise, type "QUIT".
                   "\nquestions, all of which you must answer correctly!")
             count = 0
             while count < 6:
-                pw = dictionary_expanded.random_valid_word(wordfile)
+                pw = dictionary.random_valid_word(wordfile)
 
                 # Determines if a word contains a double letter (pp in apple)
                 i = 0
@@ -98,7 +98,7 @@ To stop playing the game otherwise, type "QUIT".
             finished = True
             play = False
 
-        elif not dictionary_expanded.valid_word(item, wordfile):
+        elif not dictionary.valid_word(item, wordfile):
             print("That is not a valid word, please try again.")
 
         else:
