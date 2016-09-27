@@ -102,11 +102,16 @@ The code related to printing out the results from the challenge should be left
 in the original while loop and not be part of the function.
 
 <h3>Step 5 - Refine Code Structure</h3>
-
-completed_game
-
-make quit return true
-at end, return false
+We need to separate the code that plays the game from the code that will
+repeatedly ask the user if they want to play again.
+<p>
+Write a function called <code>completed_game</code> that will tell the user 
+the rules of the game, then repeatedly ask them for a word. If the user types in 
+"QUIT", then the while loop should terminate and the function should return False.
+If they successfully pass the challenge, the function should return True.
+<p>
+Replace the game portion of the code with a call to the above function, using
+the return value appropriately.
 
 <h3>Step 6 - Create a Main Function</h3>
 With much of the rest of our code in functions, it makes sense to structure
@@ -130,12 +135,31 @@ main()
 </pre>
 
 <h3>Step 7 - Determining Word Validity</h3>
-make a specific function to get out 
-If statements for the 
+The while loop in the <code>completed_game</code> function is doing two 
+tasks: First it is cycling through until the user either wins or quits. But at the 
+same time, it is determining the validity of the user's word in the dictionary. These
+two tasks should be separated.
+<p>
+Write a function called <code>get_user_word</code> that has a string called <code>prompt</code>
+as a first parameter and the wordfile as the second. This code should repeatedly
+ask the user to enter a word, until the word can be successfully validated
+in the dictionary. The function should return the valid word.
+<p>
+Then, rewrite the original while loop for the game. The first thing the loop should 
+do is make a call to your <code>get_user_word</code> function and save the
+result as input. The internal conditions of the while loop now can be enumerated
+so that it determines if input is "CHALLENGE", "QUIT", or otherwise needs to determine
+if the word fits the double letter rule.
 
-<h3>Step 8 - </h3>
-Our challenge currently requests words from the dictionary randomly
-Make the challenge get random words, 50/50 chance
+<h3>Step 8 - Biased Challenge Word Selection</h3>
+Our challenge currently requests words from the dictionary randomly, and it is
+very likely that the user will not see words that have any repeated letters since they
+are more rare in the dictionary.
+<p>
+Rewrite the <code>passes_challenge</code> function to randomly make a choice each time
+between a positive and a negative word. You should use the <code>find_word</code> function
+written above in step 3 to look up the correct category of word one the category 
+has been randomly determined.
 
 <h3>Step 9 - Random Rule Selection </h3>
 If a user plays our game and wins, they have little incentive to play
@@ -153,7 +177,7 @@ particular rule to use in the game.
 <p>
 You will need to pass this function as an argument throughout the code
 you have written. This function will be 
-needed in the <code>completed_game<code> function, the 
+needed in the <code>completed_game</code> function, the 
 <code>find_word</code> function, and the <code>passes_challenge</code> function.
 <p>
 You will also need to pass along a string into the <code>completed_game</code>
@@ -177,6 +201,6 @@ You must hand in:
 <li>To earn a 100, do the above and follow the style guide exactly.
 </ul>
 <hr>
-<small>&copy; Mark Goadrich, Hendrix College</small>
+<small>&copy; Mark Goadrich, Gabriel Ferrer, Hendrix College</small>
 
 </body>
