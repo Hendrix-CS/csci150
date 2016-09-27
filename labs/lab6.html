@@ -41,7 +41,8 @@ are accomplished through programming.
 Your task in this lab is to transform this code into a well-structured program
 using functions. Work your way step-by-step through the following instructions to 
 slowly abstract critical information into sensible functions. Each function you 
-write should be localized and focused.
+write should be localized and focused. Place these new functions at the top of your
+program file as they are written.
 
 <h3>Step 1 - Double Letter Words</h3>
 Our program must determine if a given string follows the rule for the game,
@@ -77,15 +78,28 @@ There will be two parameters to this function, a string for the <code>wordfile</
 looking up the words, and a Boolean for <code>positive</code>, which determines if the
 function should return a word that positively matches the rule or one that negatively 
 does not fit the rule. The function should return a string that is the eventual found word.
+<p>
+Replace the code in the program with your new function, using the 
+parameters to distinguish between requesting an allowed and forbidden word.
 
 <h3>Step 4 - Challenge Function</h3>
 The central while loop for the game looks rather complicated. However,
 there is a natural section of code related to the Challenge portion of the 
 game that can be extracted into a function.
-challenge(n) -> Boolean
-
-abstract away 6 into n
-return worthy
+<p>
+Also, the challenge is hard-coded to have exactly 6 questions asked of the user. 
+This is known as having a "magic number" in our code, something that keeps on 
+being used and is very specific.
+<p>
+Write a function called <code>passes_challenge</code>, that extracts this 
+challenge code. It should have two parameters, a string for the <code>wordfile</code> for 
+looking up the words, and an integer <code>n</code> to determine the 
+number of times the challenge should ask the user a question. It will return
+True if the user successfully passed the challenge and is worthy of winning,
+and False if they answered any of the questions incorrectly.
+<p>
+The code related to printing out the results from the challenge should be left
+in the original while loop and not be part of the function.
 
 <h3>Step 5 - Refine Code Structure</h3>
 
@@ -95,29 +109,62 @@ make quit return true
 at end, return false
 
 <h3>Step 6 - Create a Main Function</h3>
-main
+With much of the rest of our code in functions, it makes sense to structure
+the whole program within a function, that is invoked at the end of our file.
+This helps us reduce the dependence of each piece on any global variables.
+<p>
+Write a function called <code>main</code> that has no parameters or return value.
+The body of this function should be all of the remaining code that is not already 
+in a function.
+<p>
+Then, add a single call to main at the end of your file. Your code should look
+something like this
+<p>
+<pre>
+def main():
+   ...
+   ...
+   ...
+   
+main()
+</pre>
 
-
-<h3>Step 7 - 
+<h3>Step 7 - Determining Word Validity</h3>
 make a specific function to get out 
 If statements for the 
 
-<h3>Step 8 - 
-
+<h3>Step 8 - </h3>
+Our challenge currently requests words from the dictionary randomly
 Make the challenge get random words, 50/50 chance
 
-<h3>Step 9 - Random Rule Selection 
-
-Make it work for other word functions, pick from 4 randomly with an if statement.
-
+<h3>Step 9 - Random Rule Selection </h3>
+If a user plays our game and wins, they have little incentive to play
+again, since they have already learned the secret rule.
+<p>
+As a final task, code at least two other functions similar to 
+<code>has_double</code> that bring in a string as a
+parameter, and returns True if the given word matches some
+syntactic property, such as the first and last letters are the same,
+or the word has more vowels than consonants.
+<p>
+Now within the <code>main</code> function, write a set of 
+if statements to randomly select one of these functions as the
+particular rule to use in the game.
+<p>
+You will need to pass this function as an argument throughout the code
+you have written. This function will be 
+needed in the <code>completed_game<code> function, the 
+<code>find_word</code> function, and the <code>passes_challenge</code> function.
+<p>
+You will also need to pass along a string into the <code>completed_game</code>
+function that describes in English the selected rule.
 
 <h2>What to Hand In</h2>
 Make sure you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
 have run your project through the Automated Style Checker.<p>
 You must hand in:
 <ul>
-	<li>Evaluation Doc
- 	<li>doublets.py
+ 	<li>vacation.py
  	<li>dictionary.py
  	<li>english2.txt
 </ul>
