@@ -1,8 +1,9 @@
 1. Write a loop that counts the number of digits that appear in a 
-string received from the user.
+string received from the user. For example, there are 2
+digits in the string “ab7c3”.
 
 2. Write a loop that requests a sequence of inputs from the user. 
-The loop will end when the user types ENTER. The first three 
+The loop will end when the user types “ENTER”. The first three 
 letters of each input should be put together into a variable 
 called "prefixes" which is printed out at the end.
 
@@ -14,14 +15,14 @@ of all the numbers should be printed out at the end.
 odd numbers only.
 
 5. Write a loop like #2, except that the sum of the lengths of the 
-inputs is returned.
+inputs is printed.
 
 6. Write a loop that simulates a gambling game. The player starts 
 with $100. Each time, the player is asked for a bet. The player
 wins 30% of the time and loses 70% of the time. The loop ends when
 the player runs out of money.
 
-7. Implement the Collatz conjecture. Ask the user for a value to start, then iterate through the sequence until you reach 1.
+7. Implement the Collatz conjecture. Ask the user for a value to start, then iterate through the sequence until you reach 1. Print the number of steps it took you to reach 1.
 
 8. Implement the reverse of the guessing game, where you have the number, and the computer must use binary search to alter its guess.
 

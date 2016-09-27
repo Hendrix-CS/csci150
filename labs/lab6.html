@@ -1,0 +1,135 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 6 - Going on Vacation</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 6<br>Going on Vacation</h1>
+<hr>
+
+<h2>Overview</h2>
+As we have learned more about the elements of coding in Python, our programs
+have grown more interesting, yet more complicated and fragile. In this lab, we 
+examine the benefits of using functions to structure our code.
+
+<h2>Materials</h2>
+<ul>
+	<li><a href="../data/english2.txt">Common English Words</a>
+	<li><a href="../code/vacation.py">Vacation Game</a>
+	<li><a href="../code/dictionary.py">dictionary.py</a> Extended Python Module
+	<li>Lab Partner (you must have a lab partner for this lab)
+</ul>
+
+<h2>Description</h2>
+BLAH ABOYT GAME
+<p>
+Download the text file <code><a href="../data/english2.txt">english2.txt</a></code> 
+and the python module <code>
+<a href="../code/dictionary.py">dictionary.py</a></code> files to your working directory.
+The dictionary module contains two functions
+<code>valid_word(word, file)</code>, which will return True if the word is found in the file and
+False otherwise, and
+<code>random_valid_word(word, file)</code>, which will return a random valid word from the
+given file.
+<p>
+Then, download the <a href="../code/vacation.py">vacation.py</a> program to your 
+working directory. Open up this file and run the code to understand how
+the game works. Examine the code to determine how the goals of the game
+are accomplished through programming.
+<p>
+Your task in this lab is to transform this code into a well-structured program
+using functions. Work your way step-by-step through the following instructions to 
+slowly abstract critical information into sensible functions. Each function you 
+write should be localized and focused.
+
+<h3>Step 1 - Double Letter Words</h3>
+Our program must determine if a given string follows the rule for the game,
+namely that it has two adjacent letters that are identical. This can be found
+<b>four</b> times in the current code.
+<p>
+Write a function called <code>has_double</code>, based on the
+repeated code you find in the program, with a string called 
+<code>word</code> as a parameter, which will return True if the word has the 
+double letter property, and False otherwise.
+<p>
+Then, replace the repeated code with a call to this function in all four
+places.
+
+<h3>Step 2 - Yes/No Answers</h3> 
+Identify the <b>two</b> places in the program where the user is asked a Yes/No question.
+<p>
+Write a function called <code>answered_yes</code> with a string called
+<code>prompt</code> as a parameter, which will return True when the user
+types in "Yes" (under any capitalization scheme), and returns False when
+the user types in "No". If the user did not type "Yes" or "No", they should
+be given another opportunity to enter input.
+<p>
+Replace the repeated code with a call to this function in all 
+places.
+
+<h3>Step 3 - Finding Words</h3>
+To start the game, notice the code that prints out two initial words,
+one that follows the vacation rule, and one that does not.
+<p>
+Write a function called <code>find_word</code> that abstracts this similar code.
+There will be two parameters to this function, a string for the <code>wordfile</code> for 
+looking up the words, and a Boolean for <code>positive</code>, which determines if the
+function should return a word that positively matches the rule or one that negatively 
+does not fit the rule. The function should return a string that is the eventual found word.
+
+<h3>Step 4 - Challenge Function</h3>
+The central while loop for the game looks rather complicated. However,
+there is a natural section of code related to the Challenge portion of the 
+game that can be extracted into a function.
+challenge(n) -> Boolean
+
+abstract away 6 into n
+return worthy
+
+<h3>Step 5 - Refine Code Structure</h3>
+
+completed_game
+
+make quit return true
+at end, return false
+
+<h3>Step 6 - Create a Main Function</h3>
+main
+
+
+<h3>Step 7 - 
+make a specific function to get out 
+If statements for the 
+
+<h3>Step 8 - 
+
+Make the challenge get random words, 50/50 chance
+
+<h3>Step 9 - Random Rule Selection 
+
+Make it work for other word functions, pick from 4 randomly with an if statement.
+
+
+<h2>What to Hand In</h2>
+Make sure you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+	<li>Evaluation Doc
+ 	<li>doublets.py
+ 	<li>dictionary.py
+ 	<li>english2.txt
+</ul>
+<h2>Grading</h2>
+<ul>
+<li>To earn a D, complete steps 1-2.
+<li>To earn a C, do the above and complete steps 3-4.
+<li>To earn a B, do the above and complete steps 5-7.
+<li>To earn a A, do the above and complete steps 8-9.
+<li>To earn a 100, do the above and follow the style guide exactly.
+</ul>
+<hr>
+<small>&copy; Mark Goadrich, Hendrix College</small>
+
+</body>
