@@ -161,14 +161,20 @@ so that it determines if input is "CHALLENGE", "QUIT", or otherwise needs to det
 if the word fits the double letter rule.
 
 <h3>Step 8 - Biased Challenge Word Selection</h3>
-Our challenge currently requests words from the dictionary randomly, and it is
+In the challenge section, the user is asked to correctly identify six random words.
+Currently, we get these words from the dictionary randomly. It is
 very likely that the user will not see words that have any repeated letters since they
-are more rare in the dictionary.
+are more rare in the dictionary. This could be improved to have a better chance of 
+presenting the user with words that fit each category.
 <p>
-Rewrite the <code>passes_challenge</code> function to randomly make a choice each time
-between a positive and a negative word. You should use the <code>find_word</code> function
-written above in step 3 to look up the correct category of word one the category 
-has been randomly determined.
+Rewrite the <code>passes_challenge</code> function to have the 
+computer randomly make a choice each time
+between presenting the user with a positive or negative word. 
+Half the time it should choose positive, and half the time it should choose negative.
+<p>
+You should use the <code>find_word</code> function
+written above in step 3 to look up the correct type of word once the choice 
+has been made.
 
 <h3>Step 9 - Random Rule Selection </h3>
 If a user plays our game and wins, they have little incentive to play
