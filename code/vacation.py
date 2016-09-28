@@ -6,7 +6,7 @@
 import dictionary
 
 # Repeatedly plays the game until the user is finished.
-wordfile = "../data/english2.txt"
+wordfile = "english2.txt"
 play = True
 while play:
 
