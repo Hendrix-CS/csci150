@@ -1,37 +1,37 @@
-For each function below, use a "for" loop.
+For each function below, use a "for" loop and the specified header.
 
-1. Write a function to count the number of times a character is 
-found in a string.
+1. Write a function count(s,c) to count the number of times a 
+character is found in a string. 
 
-2. Write a function to find the first index of a character in a 
-string. If the character is not found, return -1.
+2. Write a function find(s, c) to find the first index of a 
+character in a string. If the character is not found, return -1.
 
-3. Write a function to return a list of all the indicies of a 
-character in a string. If the character is not found, return 
-the empty list.
+3. Write a function find_all(s, c) to return a list of all the 
+indices of a character in a string. If the character is not 
+found, return the empty list.
 
-4. Write a function to return a string where all instances of 
-the letter "s" have been removed.
+4. Write a function no_s(s) to return a string where all 
+instances of the letter "s" have been removed.
 
-5. Write a function to find the sum of the elements of a 
+5. Write a function sum(t) to find the sum of the elements of a 
 numeric list.
 
-6. Write a function to find the mean of the elements of a 
+6. Write a function mean(t) to find the mean of the elements of a 
 numeric list.
 
-7. Write a function to find the maximum of the elements of a 
+7. Write a function max(t) to find the maximum of the elements of a 
 numeric list.
 
-8. Write a function to determine if a word contains a double 
-letter, returning True if two adjacent letters are identical, 
+8. Write a function has_double(s) to determine if a word contains a 
+double letter, returning True if two adjacent letters are identical, 
 otherwise False.
 
-9. Write a function to classify a string of text. Return a 
-string where all alphabetic characters have been replaced with "*".
+9. Write a function classify(s) to classify a string of text. Return 
+a string where all alphabetic characters have been replaced with "*".
 
-10. Write a function to return a list of the powers of 2 
+10. Write a function pow_2(n) to return a list of the powers of 2 
 of length n.
 
-11. Write a function to return a list of the triangular 
+11. Write a function triangular(n) to return a list of the triangular 
 numbers of length n. Triangular numbers are numbers that can 
 be arranged to form a triangle. (1, 3, 6, 10, 15, etc)
