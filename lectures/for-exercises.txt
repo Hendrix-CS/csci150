@@ -1,0 +1,30 @@
+For each function below, use a "for" loop.
+
+1. Write a function to count the number of times a character is found in a string.
+
+2. Write a function to find the first index of a character in a string. If the 
+character is not found, return -1.
+
+3. Write a function to return a list of all the indicies of a character in a string.
+If the character is not found, return the empty list.
+
+4. Write a function to return a string where all instances of the letter "s" have 
+been removed.
+
+5. Write a function to find the sum of the elements of a numeric list.
+
+6. Write a function to find the mean of the elements of a numeric list.
+
+7. Write a function to find the maximum of the elements of a numeric list.
+
+8. Write a function to determine if a word contains a double letter, returning
+True if two adjacent letters are identical, otherwise False.
+
+9. Write a function to classify a string of text. Return a string where
+all alphabetic characters have been replaced with "*".
+
+10. Write a function to return a list of the powers of 2 of length n.
+
+11. Write a function to return a list of the triangular numbers of length n.
+Triangular numbers are numbers that can be arranged to form a triangle.
+(1, 3, 6, 10, 15, etc)
