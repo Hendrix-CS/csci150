@@ -19,8 +19,8 @@ numeric list.
 6. Write a function mean(t) to find the mean of the elements of 
 a numeric list.
 
-7. Write a function max(t) to find the maximum of the elements of 
-a numeric list.
+7. Write a function max(t) to find the maximum of the elements 
+of a numeric list.
 
 8. Write a function has_double(s) to determine if a word 
 contains a double letter, returning True if two adjacent 
