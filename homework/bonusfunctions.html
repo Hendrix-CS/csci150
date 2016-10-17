@@ -1,0 +1,86 @@
+<html>
+<head>
+  <title>CSCI 150 - Functional Practice</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="http://mark.goadrich.com/courses/style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Functional Practice</h1>
+<h3>Assigned October 19th<br>
+Due October 24th 11:55 p.m.</h3>
+<hr>
+
+<h2>Overview</h2>
+This is repetitive practice writing functions for many different situations involving
+strings, lists and boolean conditions.
+
+<h2>Description</h2>
+Success on large programming projects can depend on your ability to program small useful
+functions.  For this practice, 
+<ol>
+<li>Write a function for each of the problems below.
+<li>Make sure your function matches the outputs listed. 
+</ol>
+
+<h3>Sandwiches</h3>
+A sandwich is two pieces of bread with something in between. Write a function
+<code>getSandwich(s)</code> that will return the string that is between the first and 
+last appearance of "bread" in the given string, or return the empty string "" if there
+are not two pieces of bread.
+<p>
+<pre>
+getSandwich("breadjambread") → "jam"
+getSandwich("xxbreadjambreadyy") → "jam"
+getSandwich("xxbreadyy") → "" 
+</pre>
+
+<h3>xyBalance</h3>
+We'll say that a String is xy-balanced if for all the 'x' chars in the string, there is a 'y' 
+char somewhere later in the string. So "xxy" is balanced, but "xyx" is not. 
+Write a function <code>xyBalance(s)</code> that will return True if the given string is xy-balanced.
+<p>
+<pre>
+xyBalance("aaxbby") → True
+xyBalance("aaxbb") → False
+xyBalance("yaaxbb") → False 
+</pre>
+
+<h3>TripleUp</h3>
+Write a function <code>tripleUp(t)</code> that will return True if the list contains, 
+somewhere, three increasing adjacent numbers like .... 4, 5, 6, ... or 23, 24, 25.
+<p>
+<pre>
+tripleUp([1, 4, 5, 6, 2]) → True
+tripleUp([1, 2, 3]) → True
+tripleUp([1, 2, 4]) → False 
+</pre>
+
+<h3>evenOdd</h3>
+Write a function <code>evenOdd(t)</code> that will return a list that contains the exact 
+same numbers as the given list, but rearranged so that all the even numbers come before all
+the odd numbers. Other than that, the numbers can be in any order. You may modify and return 
+the given list, or make a new list.
+<p>
+<pre>
+evenOdd([1, 0, 1, 0, 0, 1, 1]) → [0, 0, 0, 1, 1, 1, 1]
+evenOdd([3, 3, 2]) → [2, 3, 3]
+evenOdd([2, 2, 2]) → [2, 2, 2] 
+</pre>
+
+<h3>canBalance</h3>
+Given a non-empty list, write a function <code>canBalance(t)</code> that will return True if 
+there is a place to split the list so that the sum of the numbers on one side is equal to the 
+sum of the numbers on the other side.
+<p>
+<pre>
+canBalance([1, 1, 1, 2, 1]) → True
+canBalance([2, 1, 1, 2, 1]) → False
+canBalance([10, 10]) → True 
+</pre>
+<h2>What to Hand In</h2>
+You must hand in:
+<ul>
+ 	<li>functions.py
+</ul>
+<hr>
+</body>
