@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>CSCI 150 - Lab 9 - Sentiment Analysis</title>
-  <!-- <link rel="stylesheet" type="text/css" title="Default" href="../css/style.css"> -->
+  <link rel="stylesheet" type="text/css" title="Default" href="../css/style.css">
 </head>
 
 <body>
@@ -121,15 +121,15 @@ calling <tt>score_user_word</tt> three times:
 
 <pre>
 >>> score_user_word()
-Please enter a word: cat
+Please enter a word: <span>cat</span>
 Score: 3.16666666667
 Positive! =)
 >>> score_user_word()
-Please enter a word: CAt
+Please enter a word: <span>CAt</span>
 Score: 3.16666666667
 Positive! =)
 >>> score_user_word()
-Please enter a word: koala
+Please enter a word: <span>koala</span>
 Sorry, that word is not in the database.
 </pre>
 
@@ -155,19 +155,19 @@ For example:
 
 <pre>
 >>> score_user_phrase()
-Please enter a word or phrase: My helicopter is full of eels
+Please enter a word or phrase: <span>My helicopter is full of eels</span>
 Score: 2.12112861734
 Positive! =)
 >>> score_user_phrase()
-Please enter a word or phrase: It made me want to poke out my eyeballs
+Please enter a word or phrase: <span>It made me want to poke out my eyeballs</span>
 Score: 1.76536704587
 Negative. =(
 >>> score_user_phrase()
-Please enter a word or phrase: I am flying higher than a kite
+Please enter a word or phrase: <span>I am flying higher than a kite</span>
 Score: 2.42411951303
 Positive! =)
 >>> score_user_phrase()
-Please enter a word or phrase: Koala refectory disentanglements
+Please enter a word or phrase: <span>Koala refectory disentanglements</span>
 Sorry, none of those words are in the database.
 </pre>
 
@@ -246,18 +246,18 @@ call to <tt>main()</tt> at the bottom of your program so it runs
 like:</p>
 <pre>
 Reading movie reviews...
-Please enter a phrase, or quit: My helicopter is full of eels
+Please enter a phrase, or quit: <span>My helicopter is full of eels</span>
 Score: 2.12112861734
 Positive! =)
-Please enter a phrase, or quit: It made me want to poke out my eyeballs
+Please enter a phrase, or quit: <span>It made me want to poke out my eyeballs</span>
 Score: 1.76536704587
 Negative. =(
-Please enter a phrase, or quit: I am flying higher than a kite
+Please enter a phrase, or quit: <span>I am flying higher than a kite</span>
 Score: 2.42411951303
 Positive! =)
-Please enter a phrase, or quit: Koala refectory disentanglements
+Please enter a phrase, or quit: <span>Koala refectory disentanglements</span>
 Sorry, none of those words are in the database.
-Please enter a phrase, or quit: quit
+Please enter a phrase, or quit: <span>quit</span>
 Goodbye!
 </pre>
 
