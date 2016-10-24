@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>CSCI 150 - Lab 9 - Sentiment Analysis</title>
-  <link rel="stylesheet" type="text/css" title="Default" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
 </head>
 
 <body>
@@ -39,6 +39,7 @@ negative. The <a href="../data/movieReviews.txt">data file</a> looks
 like this:
 </p>
 
+<p>
 <pre>
 1 A series of escapades demonstrating the adage that what is good for the goose is also good for the gander , some of which occasionally amuses but none of which amounts to much of a story .
 4 This quiet , introspective and entertaining independent is worth seeking .
@@ -52,7 +53,9 @@ like this:
 1 You could hate it for the same reason .
 ...
 </pre>
+</p>
 
+<p>
 Note that each review starts with a number 0 through 4 with the following meaning:
 <ul>
 <li>0 : negative</li>
@@ -61,16 +64,20 @@ Note that each review starts with a number 0 through 4 with the following meanin
 <li>3 : somewhat positive</li>
 <li>4 : positive</li>
 </ul>
+</p>
 
 <h2>Step 1: Word scoring</h2>
 
+<p>
 To start, you will write a program that simply prompts the user for a
 word, then reads through entire review database and computes the
 average score of all reviews containing the word.
-
+</p>
+<p>
 Specifically, you should write two
 functions: <tt>score_word(word)</tt> and <tt>score_user_word()</tt>.
-
+</p>
+<p>
 The first function, <tt>score_word(word)</tt>, should:
 <ul>
   <li>Open the <tt>movieReviews.txt</tt> file, loop through it, and
@@ -78,7 +85,8 @@ The first function, <tt>score_word(word)</tt>, should:
   <li>Return the average rating, or <tt>None</tt> if the word does
     not occur in any reviews.</li>
 </ul>
-
+</p>
+<p>
 Some hints:
 <ul>
   <li><tt>score_word</tt> should not prompt the user or print
@@ -105,7 +113,9 @@ Some hints:
     default if you just check for the presence of the word in the
     review.)
 </ul>
+</p>
 
+<p>
 The second function, <tt>score_user_word()</tt>, should:
 <ul>
   <li>Prompt the user for a word.</li>
@@ -115,10 +125,10 @@ The second function, <tt>score_user_word()</tt>, should:
     assessment whether the word is positive (score greater than 2) or
     negative (score less than or equal to 2).</li>
 </ul>
-
 For example, here is some sample output from
 calling <tt>score_user_word</tt> three times:
-
+</p>
+<p>
 <pre>
 >>> score_user_word()
 Please enter a word: <span>cat</span>
@@ -132,9 +142,10 @@ Positive! =)
 Please enter a word: <span>koala</span>
 Sorry, that word is not in the database.
 </pre>
+</p>
 
 <h2>Step 2: Phrase scoring</h2>
-
+<p>
 In this step, you will score an entire phrase instead of a single
 word.  Again, you should write two functions:
 
@@ -150,9 +161,10 @@ word.  Again, you should write two functions:
   and tell the user its average score along with whether it is
     positive or negative.</li>
 </ul>
+</p>
 
 For example:
-
+<p>
 <pre>
 >>> score_user_phrase()
 Please enter a word or phrase: <span>My helicopter is full of eels</span>
@@ -170,7 +182,9 @@ Positive! =)
 Please enter a word or phrase: <span>Koala refectory disentanglements</span>
 Sorry, none of those words are in the database.
 </pre>
+</p>
 
+<p>
 You will probably notice a slight lag between entering a phrase and
 seeing its score.  This is because your program has to re-open and
 re-read the <i>entire</i> movie review database for <i>each</i> word!
@@ -178,6 +192,7 @@ As an experiment, try entering a phrase like "a a a a a a a a a a a a
 a a a a a a a a a a a a a a a a a a a a a a a", with many small
 words.  The more words you enter, the longer your program will take,
 even if the words are all the same.  There has to be a better way!
+</p>
 
 <h2>Step 3: Dictionaries to the rescue!</h2>
 
@@ -286,14 +301,15 @@ following:
     the <tt>read_movie_reviews</tt> function as usual.
     Then <i>write</i> the contents of the dictionary to the cache file
     using the format
+    <p>
     <pre>
 word1 score1
 word2 score2
 word3 score3
 ...
-  </pre></li>
+  </pre></p></li>
   For example, the first few lines of the generated cache file might look like
-  <pre>
+  <p><pre>
 aided 4.0
 writings 1.0
 bad-boy 2.0
@@ -301,7 +317,7 @@ ryoko 2.0
 yellow 1.5
 pony 0.0
 four 2.08695652174
-  </pre>
+  </pre></p>
   <li>If the cache file <i>does</i> exist, then read it instead of the
     movie reviews, putting the data directly into a dictionary of word
     scores.</li>
