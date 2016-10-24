@@ -64,7 +64,8 @@ Note that each review starts with a number 0 through 4 with the following meanin
 
 <h2>Step 1: Word scoring</h2>
 
-To start, you will write a program that simply prompts the user for a
+To start, you will write a program (<code>sentiment.py</code>) that 
+simply prompts the user for a
 word, then reads through entire review database and computes the
 average score of all reviews containing the word.
 
@@ -205,20 +206,10 @@ has appeared in.</p>
 <p>Hints:
 <ul>
   <li>For each line in the database, you want to count each unique
-    word only once. The easiest way to do this is as follows:
-    <ul>
-      <li>Convert the line to lowercase</li>
-      <li>Split the line into words using <tt>.split()</tt></li>
-      <li>Remove any duplicate words by converting to a <tt>set</tt> and
-      back: <tt>list(set(...))</tt>.
-    </ul>
-    For example, you might write something like
-    <pre>
-line = line.lower()
-words = line.split()
-for word in list(set(words[1:])):
-  ...
-    </pre>
+    word only once. You may find it helpful to have a third dictionary
+    that is re-initialized for each new line of input. This dictionary
+    will have an entry for each word from that line that it has already
+    seen.
   </li>
 </ul>
 </p>
@@ -267,7 +258,7 @@ Goodbye!
 
 <h2>Step 5: Word score caching</h2>
 
-There is still probably a noticeable lag when your program starts,
+There may still be a noticeable lag when your program starts,
 while it reads the movie reviews and constructs the dictionary of word
 scores.  We can make it even faster by <i>caching</i> the word score
 data in another file so it does not have to be recomputed next time
@@ -283,12 +274,13 @@ following:
     be <tt>movies.txt.cache</tt>.</li>
   <li>Check whether this cache file exists.  You can do this by
   adding <tt>import os</tt> at the top of your program and then using
-  the <tt>os.path.isfile</tt> function, which takes a file name as an
-    argument and returns a boolean.</li>
+  the <tt>os.path.isfile()</tt> function, which takes a file name as an
+    argument and returns <tt>True</tt> if it exists and <tt>False</tt>
+    otherwise.</li>
   <li>If the cache file does not exist, read the movie review database
     and construct the word score dictionary using
-    the <tt>read_movie_reviews</tt> function as usual.
-    Then <i>write</i> the contents of the dictionary to the cache file
+    the <tt>read_movie_reviews()</tt> function as usual.
+    Then <i>write()</i> the contents of the dictionary to the cache file
     using the format
     <pre>
 word1 score1
@@ -322,16 +314,38 @@ the word scores will be read directly from the cache file.  This
 should be noticeably faster, since the cache file will be smaller than
 the movie review file, and requires no computation while reading it.</p>
 
+<h2>Step 6</h2>
+
+Examining the code you wrote in the first five steps, you may see some
+opportunities to reduce code duplication. Find at least two such 
+opportunities, write appropriate functions that factor out the 
+commonalities, and then use the functions to eliminate the duplication.
+
+In your Lab Evaluation Document, identify the functions you wrote for
+the purpose of reducing code duplication. Discuss the reasons that the
+duplication originally occurred, and also discuss the strategy you
+employed for eliminating the duplication.
+
+<h2>What to Hand In</h2>
+Log in to Moodle and turn in your code.  Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+  <li><code>sentiment.py</code>
+  <li>Lab Evaluation Document
+</ul>
+
 <h2>Grading</h2>
 <ul>
-  <li>To earn a D on this lab, complete Step 1
-  (<tt>score_word</tt>, <tt>score_user_word</tt>)</li>
-  <li>To earn a C on this lab, complete Step 2 (<tt>score_phrase</tt>,
-  <tt>score_user_phrase</tt>)</li>
-  <li>To earn a B on this lab, complete Step 3
+  <li>To earn a D on this lab, complete Steps 1 and 2
+  (<tt>score_word</tt>, <tt>score_user_word</tt>, 
+  <tt>score_phrase</tt>, <tt>score_user_phrase</tt>)</li>
+  <li>To earn a C on this lab, complete Step 3
   (<tt>read_movie_reviews</tt>, <tt>score_phrase_dict</tt>)</li>
-  <li>To earn an A on this lab, complete Step 4 (<tt>main</tt>)</li>
-  <li>To earn a 100 on this lab, complete Step 5 (word score caching)</li>
+  <li>To earn a B on this lab, complete Step 4 (<tt>main</tt>)</li>
+  <li>To earn an A on this lab, complete Step 5 (word score caching)</li>
+  <li>To earn 100 on this lab, complete Step 6 and the Lab Evaluation Document. </li>
 </ul>
 <hr>
 <small>&copy; Eric D. Manley and Timothy M. Urness, Drake University
