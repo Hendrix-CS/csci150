@@ -1,0 +1,353 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 9 - Sentiment Analysis</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 9<br>Sentiment Analysis</h1>
+<hr>
+
+<h2>Materials</h2>
+<ul>
+<li>Python <a href="https://docs.python.org/2.7/library/stdtypes.html#mapping-types-dict">dict</a> object.
+<li><a href="../data/movieReviews.txt">Movie review data</a>
+</ul>
+
+<h2>Overview</h2>
+
+<p>
+Sentiment Analysis is a Big Data problem which seeks to determine the
+general attitude of a writer given some text they have written. For
+instance, we would like to have a program that could look at the text
+"The film was a breath of fresh air" and realize that it was a
+positive statement, while "It made me want to poke out my eyeballs" is
+negative.</p>
+
+<p>
+One algorithm that we can use for this is to assign a numeric value to
+any given word based on how positive or negative that word is and then
+score the statement based on the values of the words. But, how do we
+come up with our word scores in the first place? </p>
+
+<p>
+That's the problem that we'll solve in this assignment. You are going
+to search through a file containing movie reviews from the Rotten
+Tomatoes website which have both a numeric score as well as
+text. You'll use this to learn which words are positive and which are
+negative. The <a href="../data/movieReviews.txt">data file</a> looks
+like this:
+</p>
+
+<p>
+<pre>
+1 A series of escapades demonstrating the adage that what is good for the goose is also good for the gander , some of which occasionally amuses but none of which amounts to much of a story .
+4 This quiet , introspective and entertaining independent is worth seeking .
+1 Even fans of Ismail Merchant 's work , I suspect , would have a hard time sitting through this one .
+3 A positively thrilling combination of ethnography and all the intrigue , betrayal , deceit and murder of a Shakespearean tragedy or a juicy soap opera .
+1 Aggressive self-glorification and a manipulative whitewash .
+4 A comedy-drama of nearly epic proportions rooted in a sincere performance by the title character undergoing midlife crisis .
+1 Narratively , Trouble Every Day is a plodding mess .
+3 The Importance of Being Earnest , so thick with wit it plays like a reading from Bartlett 's Familiar Quotations
+1 But it does n't leave you with much .
+1 You could hate it for the same reason .
+...
+</pre>
+</p>
+
+<p>
+Note that each review starts with a number 0 through 4 with the following meaning:
+<ul>
+<li>0 : negative</li>
+<li>1 : somewhat negative</li>
+<li>2 : neutral</li>
+<li>3 : somewhat positive</li>
+<li>4 : positive</li>
+</ul>
+</p>
+
+<h2>Step 1: Word scoring</h2>
+
+<p>
+To start, you will write a program that simply prompts the user for a
+word, then reads through entire review database and computes the
+average score of all reviews containing the word.
+</p>
+<p>
+Specifically, you should write two
+functions: <tt>score_word(word)</tt> and <tt>score_user_word()</tt>.
+</p>
+<p>
+The first function, <tt>score_word(word)</tt>, should:
+<ul>
+  <li>Open the <tt>movieReviews.txt</tt> file, loop through it, and
+    compute the average rating for reviews containing the given word.</li>
+  <li>Return the average rating, or <tt>None</tt> if the word does
+    not occur in any reviews.</li>
+</ul>
+</p>
+<p>
+Some hints:
+<ul>
+  <li><tt>score_word</tt> should not prompt the user or print
+    anything!</li>
+  <li>Use the string <tt>split()</tt> method to split each line of the
+  file into words.  If <tt>words = line.split()</tt>,
+  then <tt>words[0]</tt> will be the review score,
+    and <tt>words[1:]</tt> will be all the words in the review.</li>
+  <li>The average rating for a word can be computed as the total score
+    of reviews containing the word, divided by the number of reviews
+    containing the word.</li>
+  <li>Be careful to handle words with different capitalizations, for
+    example, by converting everything to lowercase.</li>
+  <li>Be careful to look only for <i>entire</i> words.  For example,
+  the word "bad" does not occur in the review <tt>"This is a movie
+  about a troubadour."</tt>, even though the letters "bad" do occur as
+  a substring.  The easiest way to deal with this is to split the
+  review into a list of words, and check whether the given word exists as
+  an element of the list (for example, using Python's <tt>in</tt>
+    operator).</li>
+  <li>Even if the word occurs multiple times in a review, you should
+    only count the review once. (You probably don't have to do
+    anything special to make this work; you will get this behavior by
+    default if you just check for the presence of the word in the
+    review.)
+</ul>
+</p>
+
+<p>
+The second function, <tt>score_user_word()</tt>, should:
+<ul>
+  <li>Prompt the user for a word.</li>
+  <li>Call <tt>score_word</tt> to compute the average score for
+    ratings containing the user's word.</li>
+  <li>Report the average rating to the user, along with an an
+    assessment whether the word is positive (score greater than 2) or
+    negative (score less than or equal to 2).</li>
+</ul>
+For example, here is some sample output from
+calling <tt>score_user_word</tt> three times:
+</p>
+<p>
+<pre>
+>>> score_user_word()
+Please enter a word: <span>cat</span>
+Score: 3.16666666667
+Positive! =)
+>>> score_user_word()
+Please enter a word: <span>CAt</span>
+Score: 3.16666666667
+Positive! =)
+>>> score_user_word()
+Please enter a word: <span>koala</span>
+Sorry, that word is not in the database.
+</pre>
+</p>
+
+<h2>Step 2: Phrase scoring</h2>
+<p>
+In this step, you will score an entire phrase instead of a single
+word.  Again, you should write two functions:
+
+<ul>
+  <li><tt>score_phrase(phrase)</tt> should split the given phrase into
+  words, call <tt>score_word</tt> on each, and compute the average
+  score of the whole phrase.  (Be careful to handle words resulting
+    in <tt>None</tt>---they should not contribute to the
+    average.)</li>
+
+  <li><tt>score_user_phrase</tt>, similarly
+  to <tt>score_user_word</tt>, should prompt the user for a phrase,
+  and tell the user its average score along with whether it is
+    positive or negative.</li>
+</ul>
+</p>
+
+For example:
+<p>
+<pre>
+>>> score_user_phrase()
+Please enter a word or phrase: <span>My helicopter is full of eels</span>
+Score: 2.12112861734
+Positive! =)
+>>> score_user_phrase()
+Please enter a word or phrase: <span>It made me want to poke out my eyeballs</span>
+Score: 1.76536704587
+Negative. =(
+>>> score_user_phrase()
+Please enter a word or phrase: <span>I am flying higher than a kite</span>
+Score: 2.42411951303
+Positive! =)
+>>> score_user_phrase()
+Please enter a word or phrase: <span>Koala refectory disentanglements</span>
+Sorry, none of those words are in the database.
+</pre>
+</p>
+
+<p>
+You will probably notice a slight lag between entering a phrase and
+seeing its score.  This is because your program has to re-open and
+re-read the <i>entire</i> movie review database for <i>each</i> word!
+As an experiment, try entering a phrase like "a a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a", with many small
+words.  The more words you enter, the longer your program will take,
+even if the words are all the same.  There has to be a better way!
+</p>
+
+<h2>Step 3: Dictionaries to the rescue!</h2>
+
+<p>
+Instead of reading through the whole review database for each word, we
+would like to read the database only <i>once</i>, when the program
+starts, and pre-compute the score for every word that appears.  We can
+then save these word scores in a dictionary, so we can quickly look up
+the score for any word without re-reading the entire database.</p>
+
+<p>
+First, write a function <tt>read_movie_reviews(review_file)</tt>,
+which takes the name of the movie review file as a parameter, and
+returns a dictionary mapping from words to their average scores.  The
+basic idea is to loop through the reviews in the file while keeping
+track of <i>two</i> dictionaries: one maps from words to
+a <i>count</i> of how many reviews each word has appeared in; the
+other maps from words to the <i>total score</i> of reviews the word
+has appeared in.</p>
+
+<p>Hints:
+<ul>
+  <li>For each line in the database, you want to count each unique
+    word only once. The easiest way to do this is as follows:
+    <ul>
+      <li>Convert the line to lowercase</li>
+      <li>Split the line into words using <tt>.split()</tt></li>
+      <li>Remove any duplicate words by converting to a <tt>set</tt> and
+      back: <tt>list(set(...))</tt>.
+    </ul>
+    For example, you might write something like
+    <pre>
+line = line.lower()
+words = line.split()
+for word in list(set(words[1:])):
+  ...
+    </pre>
+  </li>
+</ul>
+</p>
+
+<!-- XXX For example, -->
+
+<p>
+After going through the whole file in this way, divide the total score
+for each word by the number of reviews in which it appears to derive
+the average score for the word.</p>
+
+<p>
+Next, write a function <tt>score_phrase_dict(word_scores,
+    phrase)</tt>, which works similarly to <tt>score_phrase</tt>, but
+    uses the dictionary <tt>word_scores</tt> of computed scores
+    instead of looking through the review data each time.  <i>Hint</i>: you
+    can just copy your code from <tt>score_phrase</tt> and modify it
+    to use the dictionary instead of calling <tt>score_word</tt>.</p>
+
+<h2>Step 4: Main</h2>
+
+<p>Write a <tt>main()</tt> function which
+calls <tt>read_movie_reviews</tt> to create a word score dictionary,
+then repeatedly prompts user for phrases and scores them.  Include a
+call to <tt>main()</tt> at the bottom of your program so it runs
+  automatically.</p>
+
+<p>Here is an example of what the output from your program might look
+like:</p>
+<pre>
+Reading movie reviews...
+Please enter a phrase, or quit: <span>My helicopter is full of eels</span>
+Score: 2.12112861734
+Positive! =)
+Please enter a phrase, or quit: <span>It made me want to poke out my eyeballs</span>
+Score: 1.76536704587
+Negative. =(
+Please enter a phrase, or quit: <span>I am flying higher than a kite</span>
+Score: 2.42411951303
+Positive! =)
+Please enter a phrase, or quit: <span>Koala refectory disentanglements</span>
+Sorry, none of those words are in the database.
+Please enter a phrase, or quit: <span>quit</span>
+Goodbye!
+</pre>
+
+<h2>Step 5: Word score caching</h2>
+
+There is still probably a noticeable lag when your program starts,
+while it reads the movie reviews and constructs the dictionary of word
+scores.  We can make it even faster by <i>caching</i> the word score
+data in another file so it does not have to be recomputed next time
+the program runs.
+
+For this step, modify your <tt>main</tt> function so it does the
+following:
+
+<ul>
+  <li>Take the given name of the movie review database file and
+  append <tt>.cache</tt> to it.  For example, if the movie review file
+  is <tt>movies.txt</tt>, the name of the cache file will
+    be <tt>movies.txt.cache</tt>.</li>
+  <li>Check whether this cache file exists.  You can do this by
+  adding <tt>import os</tt> at the top of your program and then using
+  the <tt>os.path.isfile</tt> function, which takes a file name as an
+    argument and returns a boolean.</li>
+  <li>If the cache file does not exist, read the movie review database
+    and construct the word score dictionary using
+    the <tt>read_movie_reviews</tt> function as usual.
+    Then <i>write</i> the contents of the dictionary to the cache file
+    using the format
+    <p>
+    <pre>
+word1 score1
+word2 score2
+word3 score3
+...
+  </pre></p></li>
+  For example, the first few lines of the generated cache file might look like
+  <p><pre>
+aided 4.0
+writings 1.0
+bad-boy 2.0
+ryoko 2.0
+yellow 1.5
+pony 0.0
+four 2.08695652174
+  </pre></p>
+  <li>If the cache file <i>does</i> exist, then read it instead of the
+    movie reviews, putting the data directly into a dictionary of word
+    scores.</li>
+  <li>In either case, return the created dictionary of word scores.</li>
+</ul>
+(Of course, you probably don't want to do all of that directly in
+your <tt>main</tt> function; you should decompose the behavior into
+more functions as appropriate.)
+
+<p>This procedure means that the work to
+compute the dictionary of word scores from the movie reviews will be
+done only once, the first time your program runs.  On subsequent runs,
+the word scores will be read directly from the cache file.  This
+should be noticeably faster, since the cache file will be smaller than
+the movie review file, and requires no computation while reading it.</p>
+
+<h2>Grading</h2>
+<ul>
+  <li>To earn a D on this lab, complete Step 1
+  (<tt>score_word</tt>, <tt>score_user_word</tt>)</li>
+  <li>To earn a C on this lab, complete Step 2 (<tt>score_phrase</tt>,
+  <tt>score_user_phrase</tt>)</li>
+  <li>To earn a B on this lab, complete Step 3
+  (<tt>read_movie_reviews</tt>, <tt>score_phrase_dict</tt>)</li>
+  <li>To earn an A on this lab, complete Step 4 (<tt>main</tt>)</li>
+  <li>To earn a 100 on this lab, complete Step 5 (word score caching)</li>
+</ul>
+<hr>
+<small>&copy; Eric D. Manley and Timothy M. Urness, Drake University
+  (<a href="http://nifty.stanford.edu/2016/manley-urness-movie-review-sentiment/">SIGCSE Nifty Assignments 2016</a>); adapted and extended by Brent
+  Yorgey, Hendrix College</small>
+</BODY>
+</HTML>
