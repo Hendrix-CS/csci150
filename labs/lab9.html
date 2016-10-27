@@ -236,11 +236,7 @@ has appeared in.</p>
 1.631578947368421
 >>> 
 </pre>
-</li>
-</ul>
 </p>
-
-<!-- XXX For example, -->
 
 <p>
 After going through the whole file in this way, divide the total score
@@ -254,6 +250,15 @@ Next, write a function <tt>score_phrase_dict(word_scores,
     instead of looking through the review data each time.  <i>Hint</i>: you
     can just copy your code from <tt>score_phrase</tt> and modify it
     to use the dictionary instead of calling <tt>score_word</tt>.</p>
+
+Here is an example of testing <tt>score_phrase_dict</tt>:
+<pre>
+>>> d = read_movie_reviews("movieReviews.txt")
+>>> score_phrase_dict(d, 'My helicopter is full of eels')
+2.121128617338458
+>>> score_phrase_dict(d, 'It made me want to poke out my eyeballs')
+1.7653670458714505
+</pre>
 
 <h2>Step 4: Main</h2>
 
