@@ -227,6 +227,16 @@ has appeared in.</p>
     will have an entry for each word from that line that it has already
     seen.
   </li>
+  <li>Be careful when testing <tt>read_movie_reviews</tt>. Calling the function from the Python shell produces such a large output that it could crash IDLE. Instead, store the dictionary in a variable, from which you can test it.
+<pre>
+>>> d = read_movie_reviews("movieReviews.txt")
+>>> d['cat']
+3.1666666666666665
+>>> d['dog']
+1.631578947368421
+>>> 
+</pre>
+</li>
 </ul>
 </p>
 
