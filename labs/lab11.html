@@ -265,36 +265,7 @@ dimension for each <tt>Face</tt> created. You should now have faces
 moving in all directions and bouncing off of all the walls of the
 window.
 
-<h2>Step 6 - Extensions</h2>
-Research two of the following extensions on the
-<a href="http://py.processing.org/reference/">Python Processing Reference</a>
-page and augment your animation above.
-
-<h3>Task 6.1: Mouse and keyboard input</h3>
-Make your animations interactive by reacting to input from the
-mouse and the keyboard. For example you could have new Faces appear
-when and where the mouse is clicked. You could increase or
-decrease the velocity of all the Faces when certain keys are pressed.
-
-<h3>Task 6.2: Animated faces</h3>
-Alter your update method of the Face to change the internal pieces of the face
-in a cyclic pattern. For example, the face could smile for a few timesteps, then frown,
-and then go back to smiling. Or the eyeballs could be moving up and down, left and right.
-
-<h3>Task 6.3: Face collisions</h3>
-Right now all the faces pass through each other when they move.
-Add a collision detection method, that checks each pair of faces to see if they
-are intersecting, and if so, makes the smaller one disappear.
-
-<h3>Task 6.4: Images</h3>
-Learn how to import images into your Processing sketch, and make them move around the
-screen as we did with the Face above.
-
-<h3>Task 6.5: Other transformations</h3>
-Learn about rotations and translations, and apply these dynamically to your images,
-making the Faces spin and shift.
-
-<h3>Task 6.6: General Sprite class</h3>
+<h2>Step 6 - General Sprite Class</h2>
 The movement functionality of the Face above should really be abstracted, since
 we can imagine many types of objects that could be moving around the screen.
 Create a general Sprite class that only worries about the movement, and make
@@ -304,15 +275,42 @@ With this abstract, you can now easily create other moving objects by inheriting
 from Sprite and avoid duplicating this update code in each object. Try making another
 object that moves.
 
+<h2>Step 7 - Extensions</h2>
+Research one of the following extensions on the
+<a href="http://py.processing.org/reference/">Python Processing Reference</a>
+page and augment your animation above.
+
+<h3>Task 7.1: Mouse and keyboard input</h3>
+Make your animations interactive by reacting to input from the
+mouse and the keyboard. For example you could have new Faces appear
+when and where the mouse is clicked. You could increase or
+decrease the velocity of all the Faces when certain keys are pressed.
+
+<h3>Task 7.2: Animated faces</h3>
+Alter your update method of the Face to change the internal pieces of the face
+in a cyclic pattern. For example, the face could smile for a few timesteps, then frown,
+and then go back to smiling. Or the eyeballs could be moving up and down, left and right.
+
+<h3>Task 7.3: Face collisions</h3>
+Right now all the faces pass through each other when they move.
+Add a collision detection method, that checks each pair of faces to see if they
+are intersecting, and if so, makes the smaller one disappear.
+
+<h3>Task 7.4: Images</h3>
+Learn how to import images into your Processing sketch, and make them move around the
+screen as we did with the Face above.
+
+<h3>Task 7.5: Other transformations</h3>
+Learn about rotations and translations, and apply these dynamically to your images,
+making the Faces spin and shift.
+
 <h2>What to Hand In</h2>
 
 Save your project in some known location.  Note that Processing will
 save your project not as a file, but as a <i>folder</i> containing
 multiple files.  You should make this folder into a zip archive (ask
 for help if you do not know how to do this) and turn in the resulting
-zip file via Moodle. M
-
-ake sure you have followed
+zip file via Moodle. Make sure you have followed
 the <a href="../python_style_guide.html">Python Style Guide</a>, and
 have run your project through the Automated Style Checker.<p>
 
@@ -322,7 +320,7 @@ have run your project through the Automated Style Checker.<p>
   <li>To earn a C on this lab, do all the above and complete Steps 2 and 3.</li>
   <li>To earn a B on this lab, do all the above and complete Step 4.</li>
   <li>To earn an A on this lab, do all the above and complete Step 5.</li>
-  <li>To earn a 100 on this lab, do all the above and complete two extensions from Step 6.</li>
+  <li>To earn a 100 on this lab, do all the above and complete Step 6 as well as one extension from Step 7.</li>
 </ul>
 
 <hr>
