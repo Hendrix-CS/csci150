@@ -79,16 +79,32 @@
   to end up with a <code>WaterJug</code> with more <code>contents</code>
   than <code>capacity</code>.
 
-  <p>
-  Write a small <code>main</code> method to test that
-  your <code>WaterJug</code> object works according to the description
-  above.
+  <p> Your code should go in a file named <code>waterjug.py</code>.
+  At the end of that file, place the following lines of code:
+<pre>
+if __name__ == '__main__':
+    test()
+</pre>
+
+  <p> Above that, write a function named <code>test()</code> that tests 
+  your class and ensures that it works.  Make sure your test code uses all 
+  of the methods of the class.  It should employ <code>if</code>
+  statements to check whether each test passes. If a test fails,
+  it should print an appropriate message. If all tests pass, it should
+  print a success message.
 
   <h2>Step 2: The Puzzle</h2>
 
-  Finally, implement a <code>main</code>
-  function that allows the user to set up and then solve a WaterJugs
-  puzzle.  Your function should:
+  In a new file, <tt>step2.py</tt>, implement a <code>main</code>
+  function that allows the user to set up and then solve a 
+  <tt>WaterJugs</tt> puzzle.  To use the <tt>WaterJugs</tt> class, 
+  you will need the following line at the top of your file:
+
+<pre>
+from waterjugs import WaterJugs
+</pre>
+
+  Your function should:
   <UL>
   <li>Ask the user the capacity of the first <code>WaterJug</code>
   <li>Ask the user the capacity of the second <code>WaterJug</code>
@@ -101,19 +117,20 @@
   	 <li>Perform the selected option
   </ul>
   <li>When the goal is met, print the solution path found by the user
-  to reach the goal.
+  to reach the goal. You will need to maintain this solution path 
+  using a list or a string.
   </ul>
 
  <p>
- Of course, you should not just put everything in <code>main</code>,
- but you should break your code up into functions appropriately.  We
- have given you a <a href="../code/waterjug.py">starting file</a> with
- some useful functions you may use, so you don't have to reimplement
- them yourself.
+ <strong>It is not necessary to validate user input.</strong> For this
+ assignment, you may assume that all user input is valid.
+ Also, you should not just put everything in <code>main</code>,
+ but you should break your code up into functions appropriately.  
 
 <h2>Step 3: Generalizing</h2>
 
-Generalize your program above so that it works with any number
+In a new file, <tt>step3.py</tt>, generalize your program from Step 2 so
+that it works with any number
 of <code>WaterJugs</code> instead of just 2.  In particular, the
 program should:
 <ul>
@@ -133,6 +150,8 @@ have run your project through the Automated Style Checker.<p>
 You must hand in:
 <ul>
   <li><code>waterjug.py</code></li>
+  <li><code>step2.py</code></li>
+  <li><code>step3.py</code></li>
 </ul>
 
 <h2>Grading</h2>
