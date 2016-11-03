@@ -10,7 +10,7 @@
 <h2>Overview</h2>
   This lab will combine
   mathematics, instantiable classes, and bone-chilling terror. ;) Always
-  a famous puzzle in the Artifical Intelligence circles, the 
+  a famous puzzle in the Artifical Intelligence circles, the
   <a href="https://www.youtube.com/watch?v=BVtQNK_ZUJg">WaterJug</a>
   came to popular culture through the classic action
   movie <A HREF="http://us.imdb.com/Title?Die+Hard%3A+With+a+Vengeance+(1995)">Die Hard III</A>.
@@ -82,17 +82,17 @@ if __name__ == '__main__':
     test()
 </pre>
 
-  <p> Above that, write a function named <code>test()</code> that tests 
-  your class and ensures that it works.  Make sure your test code uses all 
+  <p> Above that, write a function named <code>test()</code> that tests
+  your class and ensures that it works.  Make sure your test code uses all
   of the methods of the class.  It should employ <code>if</code>
   statements to check whether each test passes. If a test fails,
   it should print an appropriate message. If all tests pass, it should
   print a success message.
 
-  <p> The <tt>__repr__</tt> method needs to return a string that, if 
+  <p> The <tt>__repr__</tt> method needs to return a string that, if
   typed into the Python shell, would reconstruct the original object.
   The <tt>str</tt> function calls <tt>__repr__</tt> for its argument
-  in order to create its string representation. The <tt>eval</tt> 
+  in order to create its string representation. The <tt>eval</tt>
   function calls the Python interpreter to execute its string argument.
   The following function will test whether <tt>__repr__</tt> works for
   any class:
@@ -107,8 +107,8 @@ def test_repr(obj):
   <h2>Step 2: The Puzzle</h2>
 
   In a new file, <tt>step2.py</tt>, write a program
-  that allows the user to set up and then solve a 
-  <tt>WaterJugs</tt> puzzle.  To use the <tt>WaterJug</tt> class, 
+  that allows the user to set up and then solve a
+  <tt>WaterJugs</tt> puzzle.  To use the <tt>WaterJug</tt> class,
   you will need the following line at the top of your file:
 
 <p>
@@ -131,7 +131,7 @@ from waterjug import WaterJug
   	 <li>Perform the selected option
   </ul>
   <li>When the goal is met, print the solution path found by the user
-  to reach the goal. You will need to maintain this solution path 
+  to reach the goal. You will need to maintain this solution path
   using a list or a string.
   </ul>
 
@@ -139,7 +139,7 @@ from waterjug import WaterJug
  <strong>It is not necessary to validate user input.</strong> For this
  assignment, you may assume that all user input is valid.
  Also, you should not just put everything in <code>main</code>,
- but you should break your code up into functions appropriately.  
+ but you should break your code up into functions appropriately.
 
 <h2>Step 3: Generalizing</h2>
 
