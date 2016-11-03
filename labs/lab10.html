@@ -89,6 +89,21 @@ if __name__ == '__main__':
   it should print an appropriate message. If all tests pass, it should
   print a success message.
 
+  <p> The <tt>__repr__</tt> method needs to return a string that, if 
+  typed into the Python shell, would reconstruct the original object.
+  The <tt>str</tt> function calls <tt>__repr__</tt> for its argument
+  in order to create its string representation. The <tt>eval</tt> 
+  function calls the Python interpreter to execute its string argument.
+  The following function will test whether <tt>__repr__</tt> works for
+  any class:
+
+<p>
+<pre>
+def test_repr(obj):
+    return str(obj) == str(eval(str(obj)))
+</pre>
+</p>
+
   <h2>Step 2: The Puzzle</h2>
 
   In a new file, <tt>step2.py</tt>, write a program
