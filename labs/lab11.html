@@ -200,13 +200,6 @@ Change the <tt>setup</tt> function to add multiple faces at random locations and
 with random colors around the screen. Make sure your locations are chosen so that
 the face is always completely visible on the screen.
 
-<h3>Task 4.2: Face sizes</h3> Add a size component to
-your <tt>Face</tt>, so the <tt>setup</tt> method can also initialize
-the size. Change your <tt>draw</tt> method of <tt>Face</tt> to account
-for this new size component, and test it out by drawing smaller and
-larger faces.  Make sure your locations are still chosen so that the
-face is always completely visible on the screen!
-
 <h2>Step 5 - Movement</h2> With the faces being drawn by an object, we
 can now make these objects move. Add new components to
 your <tt>Face</tt>, called <tt>velx</tt> and <tt>vely</tt>, to capture
@@ -272,35 +265,42 @@ Create a general Sprite class that only worries about the movement, and make
 Face inherit from Sprite to add the draw method.
 <p>
 With this abstract, you can now easily create other moving objects by inheriting
-from Sprite and avoid duplicating this update code in each object. Try making another
-object that moves.
+from Sprite and avoid duplicating this update code in each object. Make a Flower class
+that inherits from Sprite.
 
 <h2>Step 7 - Extensions</h2>
-Research one of the following extensions on the
+Research two of the following extensions on the
 <a href="http://py.processing.org/reference/">Python Processing Reference</a>
 page and augment your animation above.
 
-<h3>Task 7.1: Mouse and keyboard input</h3>
+<h3>Task 7.1: Face sizes</h3> Add a size component to
+your <tt>Face</tt>, so the <tt>setup</tt> method can also initialize
+the size. Change your <tt>draw</tt> method of <tt>Face</tt> to account
+for this new size component, and test it out by drawing smaller and
+larger faces.  Make sure your locations are still chosen so that the
+face is always completely visible on the screen!
+
+<h3>Task 7.2: Mouse and keyboard input</h3>
 Make your animations interactive by reacting to input from the
 mouse and the keyboard. For example you could have new Faces appear
 when and where the mouse is clicked. You could increase or
 decrease the velocity of all the Faces when certain keys are pressed.
 
-<h3>Task 7.2: Animated faces</h3>
+<h3>Task 7.3: Animated faces</h3>
 Alter your update method of the Face to change the internal pieces of the face
 in a cyclic pattern. For example, the face could smile for a few timesteps, then frown,
 and then go back to smiling. Or the eyeballs could be moving up and down, left and right.
 
-<h3>Task 7.3: Face collisions</h3>
+<h3>Task 7.4: Face collisions</h3>
 Right now all the faces pass through each other when they move.
 Add a collision detection method, that checks each pair of faces to see if they
 are intersecting, and if so, makes the smaller one disappear.
 
-<h3>Task 7.4: Images</h3>
+<h3>Task 7.5: Images</h3>
 Learn how to import images into your Processing sketch, and make them move around the
 screen as we did with the Face above.
 
-<h3>Task 7.5: Other transformations</h3>
+<h3>Task 7.6: Other transformations</h3>
 Learn about rotations and translations, and apply these dynamically to your images,
 making the Faces spin and shift.
 
@@ -319,8 +319,8 @@ have run your project through the Automated Style Checker.<p>
   <li>To earn a D on this lab, complete Step 1.</li>
   <li>To earn a C on this lab, do all the above and complete Steps 2 and 3.</li>
   <li>To earn a B on this lab, do all the above and complete Step 4.</li>
-  <li>To earn an A on this lab, do all the above and complete Step 5.</li>
-  <li>To earn a 100 on this lab, do all the above and complete Step 6 as well as one extension from Step 7.</li>
+  <li>To earn an A on this lab, do all the above and complete Step 5 and 6.</li>
+  <li>To earn a 100 on this lab, do all the above and complete two extensions from Step 7.</li>
 </ul>
 
 <hr>
