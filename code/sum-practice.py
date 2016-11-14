@@ -6,7 +6,7 @@ def Main():
     odd = 1
 total = 0
 
-    while (count != n):
+    while count != n:
         total = total + odd
         odd = Odd + 1
         count += 1
