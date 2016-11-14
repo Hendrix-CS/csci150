@@ -1,0 +1,326 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 12 - On Stuckness and Debugging</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 12<br>On Stuckness and Debugging</h1>
+<hr>
+
+<h2>Overview</h2>
+
+As you certainly know by now, finding and fixing errors is an integral
+part of programming.  If anything, this becomes <i>more</i> so, not
+less, the more experienced of a programmer you become (although the
+types of errors you have to fix may get more sophisticated).
+
+<p>
+It is thus worthwhile to practice and reflect on the process of
+debugging itself.  Debugging is, in a very real sense,
+an <b>application of the scientific method</b>: one makes
+observations, collects data, comes up with hypotheses, designs
+experiments to test the hypotheses, and so on.  But, as we will see,
+as with any science, debugging is not <b>only</b> an application of
+the scientific method.  In addition to "classic"-style objective
+analysis, it also often requires "romantic"-style intuitive
+insights&mdash;which you can develop, over time, by conscious
+application.  This lab will give you some directed practice in finding
+and fixing programming errors, and help you reflect on the practice of
+debugging.
+
+<p>
+Incidentally, if you are wondering why errors in a computer program
+are called "bugs", it is not necessarily clear, since the term had
+been in use in engineering even before the advent of computers.
+However, there is a famous instance of a computer bug discovered
+by <a href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace
+Hopper</a>, one of the early pioneers of computing.
+
+<div style="text-align: center">
+  <img src="../images/Hopper-bug.jpg" />
+</div>
+
+<p>
+This is a page from Hopper's notebook, where she taped a moth found in
+a relay switch along with the note "First actual case of bug being
+found."  Just be glad that you no longer have to be worried
+about <i>actual</i> bugs being the source of errors in your programs...
+
+<h2>Materials</h2>
+
+<ul>
+  <li>Lab Partner(s)&mdash;for this lab you are <b>required</b> to
+  work in groups of <b>two or three</b>.</li>
+  <li><a href="../code/sum-practice.py"><tt>sum-practice.py</tt></a></li>
+  <li><a href="../code/guess.py"><tt>guess.py</tt></a></li>
+</ul>
+
+<i><b>Acknowledgements</b>: Portions of this lab, including the text
+for steps 1 and 4 below, <tt>sum-practice.py</tt>,
+and <tt>guess.py</tt>, were adapted from a lab assignment in CS 170 at
+Emory University.</i>
+
+<h2>Description</h2>
+
+<h3>Step 1: Sum practice</h3>
+
+<p>
+<a href="../code/sum-practice.py"><tt>sum-practice.py</tt></a>
+contains several errors.  Specifically, it contains several syntax
+errors, a runtime error, and a semantic error.  Your task for this step
+is to find and correct these errors.
+
+<p>
+<b>For each fix, you should add a comment to the file explaining what
+  was wrong and how you fixed it.</b>  For example, if the file
+contained
+
+<pre>
+...
+x = random.random(
+...
+</pre>
+
+<p>
+you should change it to something like the following:
+
+<pre>
+...
+# Fixed syntax error: added missing closing )
+x = random.random()
+...
+</pre>
+
+<p>
+First, try to run the program and look at the generated error(s). Fix
+the syntax errors in the file by looking at the line numbers in your
+program that Python specifies.  (Hint: the error message is not always
+exactly right about the cause of the error!)
+
+<p>
+After you fix the syntax errors in the program, you will see a runtime
+error.  Carefully read the error message and look at the code.  Try to
+identify the problem in the code.  Remember that small details such as
+capitalization and punctuation matter a great deal in code.  If you
+can't identify the source of the runtime error, ask your instructor or
+TA for help.  Remember to add a comment explaining the problem and
+solution.
+
+<p>
+After you fix the runtime error, try running the program
+again. Success!  ...or is it?  The program SHOULD compute the sum of
+the first n odd integers.  Does the program give you the correct
+answer?  Double check, since you should NEVER assume the program is
+giving you the correct answer just because it runs.  Indeed, you
+should know what answer you expect the program to compute before you
+run it.  Otherwise, how will you know if your program is correct?
+
+<p>
+Try running the program with different inputs.  If you notice a
+pattern, this will give you a clue to the semantic error.
+
+<p>
+Collecting data is often a key part of gaining the insight necessary
+to diagnose an error.  One good way to collect data is
+to <i>instrument</i> a program to generate information about
+intermediate results.  In particular, let's add a statement to print
+out intermediate results, every time the loop executes.  Add the
+statement
+
+<pre>
+print "Adding " + str(odd) + " to the current sum " + str(sum)
+</pre>
+
+<p>
+as the first line of code inside the while loop.
+
+<p>
+Run your program again.  The statement you added now prints out some
+very useful information.  Printing out intermediate results inside of
+a loop can be a very useful strategy for finding semantic errors in your
+code.  You can add more <tt>print</tt> statements if you think other
+information would be useful.
+
+<p>
+Finally, fix the program so it correctly computes the sum of the first
+N odd numbers, as advertised.
+
+<h3>Step 2: Stuckness</h3>
+
+Now that you are warmed up, let's step back and think about the
+process of finding and fixing errors itself.  Read
+a second <a href="../homework/zen2.html">excerpt
+from "Zen and the Art of Motorcycle Maintenance"</a>.  
+Then, together with your partner(s), answer the following
+questions and write your answers in your Evaluation Document.
+
+<ol>
+  <li>What does the narrator mean by "stuckness"?</li>
+  <li>Can you identify with the author's description?  In what ways
+    is the narrator's description of trying to fix a motorcycle
+    similar and different to your experiences in this class?</li>
+  <li>What does the narrator say about the relationship between the
+    traditional scientific method and being stuck?</li>
+  <li>Why does the narrator say that stuckness should not be
+    avoided?</li>
+  <li>What do you think the narrator means by "Quality"? (I am just
+    curious to know what you think; in some sense the entire book is
+    about exactly this question, so I certainly don't expect you to
+    come up with a complete answer!)
+  <li>Did you learn anything from this reading?  Are there ways in
+    which you will approach programming and debugging differently as a
+    result? ("No" is an acceptable answer, but you should justify
+    it!)</li>
+</ol>
+
+<h3>Step 3: Stump your friends</h3>
+
+Write a program which creates a checkerboard of a user-specified size.
+Here is an example run of the program you should write:
+
+<p>
+<pre>
+What size checkerboard would you like? 6
+X.X.X.
+.X.X.X
+X.X.X.
+.X.X.X
+X.X.X.
+.X.X.X
+</pre>
+
+<p>
+Once you get your program to work, you should deliberately introduce
+at least THREE BUGS into your program.  (If you had to fix bugs to get
+your program working in the first place, you may be able to just use
+an old version of your program!) Find another team and swap buggy
+programs with them.
+
+<p>
+Now debug and fix the program that the other team gave you.  You
+should make the <i>smallest changes as possible</i> to their program.
+For example, you should <i>not</i> just replace part of their program with
+yours.
+
+<h3>Step 4: Guess the number</h3>
+
+Download and save a copy
+of <a href="../code/guess.py"><tt>guess.py</tt></a>.  This program
+emulates a guessing game.  Here's a description of how the game is
+SUPPOSED to work:
+
+<blockquote>
+The game plays five rounds. During each round, the computer picks a
+random number between 1 and 6 inclusive.  (You can think of this as
+rolling a 6 sided die.) The user is then given three chances to guess
+the chosen number.  If the user guesses correctly, then they win a
+point, otherwise the computer wins a point. At the end of five rounds,
+whoever has the most points wins the game.
+</blockquote>
+However, the program has bugs, and it doesn't follow the rules
+currently.  (As an aside, this exercise is a great example of why you
+should never write a lot of code before you test and debug.  It's much
+harder to debug this program now that it's "finished" then it would be
+if you practiced incremental development and fixed the errors as you
+went along!)  Your job is to make the program follow the above rules
+by finding and correcting semantic errors.
+
+<p>
+Before looking at the code, run the program to see what it does. When
+debugging a program, it is vital to collect evidence before making
+changes to the code.  This helps you build a mental model of how the
+code works and gives you a starting point to look for errors.
+Sometimes, you can identify errors without much effort by carefully
+tracing the code with the input sequence that causes an error.
+
+<p>
+<i>An important aside</i>: because the code generates a different
+number each time (what fun would it be to play a game that picked the same number every
+time?), it's hard to debug.  To make the program's behavior
+repeatable, we can use something called a <i>seed</i>, which starts
+the random number generator in a certain state. Beginning from the
+same seed, the same sequence of random numbers will be generated every
+time.  (If no seed is
+specified, the current time is used as a seed, which is why random
+numbers are usually different every time you run a program.)  To make
+the code's behavior repeatable, add the line
+
+<pre>
+random.seed(11)
+</pre>
+
+<p>
+right after <tt>import random</tt>.  (There is nothing special about
+the number 11; you can use any number you want.  The important point
+is that your program will now use the <i>same</i> seed every time it
+is run.)  Be sure to remove this line before submitting your final
+corrected program; otherwise the game will be no fun!
+
+<p>
+After you have identified one (or more) incorrect behaviors, take a
+look at <tt>guess.py</tt>.  You should put in <tt>print</tt>
+statements like we did above to help you identify issues as you begin
+to try to fix the code.  It is often useful to identify a loop or if
+statement that isn't working the way you think it should, and print
+out the variables in its condition immediately before the loop/if
+statement executes (or doesn't execute).  This gives you an idea of
+exactly why your loop/if statement is executing or not.  You can then
+alter the variable to make the behavior correct.  After making a
+correction or adding more <tt>print</tt> statements, run the program
+again and observe the behavior.  Remember to add a comment explaining
+each error that you fix!
+
+<p>
+Did you fix it? If yes, are there other problems?  When debugging it
+is important to focus on one problem at a time.  Once you are
+satisfied you've corrected that problem, then run the program again to
+identify the next problem.
+
+<p>
+Continue in this way until you are satisfied that the program plays by
+the rules.
+
+<p>
+You should be able to identify at least 3 semantic errors. You may
+have to add more than 3 lines of code to fix these errors; however,
+all the code changes required are minor.  (In other words, you will
+not have to make major changes like changing levels of code.)
+
+<h3>Step 5: Reflection</h3>
+
+In your evaluation document, write a few paragraphs reflecting on your
+experience in this lab.  You may want to consider questions such as:
+<ul>
+  <li>What was the most difficult error to debug?  How did you go
+    about investigating it?</li>
+  <li>What did you learn from this lab?  Has your approach or attitude
+    towards debugging changed as a result of this lab?  If so,
+    how?</li>
+</ul>
+
+<h2>What to Hand In</h2>
+
+<ul>
+  <li>Evaluation document (should contain answers from Steps 2 and 5)</li>
+  <li>Corrected <tt>sum-practice.py</tt> (with comments explaining fixes)</li>
+  <li>The buggy program that you gave to another group</li>
+  <li>Corrected program from another group (with comments explaining fixes)</li>
+  <li>Corrected <tt>guess.py</tt> (with comments explaining fixes)</li>
+</ul>
+
+<h2>Grading</h2>
+
+<ul>
+  <li>To earn a D, submit a corrected version of <tt>sum-practice.py</tt>.</li>
+<li>To earn a C, do the above and submit an evaluation document with
+  answers to the questions about the reading.</li>
+<li>To earn a B, do the above and submit the buggy checkerboard
+  program that you wrote and the corrected checkerboard program from
+  another team.</li>
+<li>To earn an A, do the above and submit a corrected version
+  of <tt>guess.py</tt>.</li>
+<li>To earn a 100, do the above and complete the reflection in Step 5.</li>
+</ul>
+
+</body>
