@@ -4,85 +4,90 @@
 # Bugs: There are three bugs. Can you find them?
 # YOU WILL ONLY NEED TO MAKE MINOR CHANGES/ADDITIONS TO FIX THEM!
 #
+# @author Gabriel Ferrer and Mark Goadrich, translated to Python 3, used classes, Nov. 2016
 # @author Brent Yorgey, translated to Python 2016
 # @author Valerie Summet, modified 2013
 # @author Jim Skrentny, modified 2009-2012
 # @author Daniel Wong, modified 2008
 # @author Eva Schiffer, copyright 2006, all rights reserved
 
-
 import random
 
-# YOU MAY ASSUME THE COMMENTS CORRECTLY DESCRIBE WHAT SHOULD HAPPEN.
-def main():
-    sides = 6                   # number of sides for a die
+class Die:
+    def __init__(self, sides):
+        self.sides = sides
 
-    user_guess = -1             # user's guess,  1 - 6 inclusive
-    rolled = -1                 # number rolled, 1 - 6 inclusive
-    computer_points = 0         # computer's score, 0 - 5 max
-    human_points = 0            # human user's score, 0 - 5 max
-    right_guess = False         # boolean flag for correct guess
-    num_guesses = 0             # counts the number of guesses per round
+    def roll(self):
+        self.top = random.randint(1, self.sides)
 
-    # MAKE SURE THE PROGRAM PLAYS BY THESE RULES!!!
-    print("Welcome to the Guess Game!\n\n RULES:")
-    print("1. We will play five rounds.")
-    print("2. Each round you will guess the number rolled on a six-sided die.")
-    print("3. If you guess the correct value in three or fewer tries")
-    print("   then you score a point, otherwise I score a point.")
-    print("4. Whoever has the most points after five rounds wins.")
+    def is_side(self, side):
+        return 1 <= side <= self.sides
 
-    # BUGS ARE IN THE CODE BELOW.
 
-    # play five rounds
-    for r in range(1,5):
+class Game:
+    def __init__(self):
+        self.die = Die(6)
+        self.computer_points = 0
+        self.human_points = 0
+        self.round = 1
+        self.max_rounds = 5
+        self.num_guesses = 0
 
-        # roll the die to start the round
-        print("\n\nROUND " + str(r))
+    def play_entire_game(self):
+        # MAKE SURE THE PROGRAM PLAYS BY THESE RULES!!!
+        print("Welcome to the Guess Game!\n\n RULES:")
+        print("1. We will play five rounds.")
+        print("2. Each round you will guess the number rolled on a six-sided die.")
+        print("3. If you guess the correct value in three or fewer tries")
+        print("   then you score a point, otherwise I score a point.")
+        print("4. Whoever has the most points after five rounds wins.")
+
+        for i in range(1, self.max_rounds):
+            self.play_one_round()
+
+        if self.computer_points > self.human_points:
+            print("*** You Lose! ***")
+        else:
+            print("*** You Win! ***")
+
+        print("Thanks for playing the Guess Game!")
+
+    def play_one_round(self):
+        print("\n\nROUND " + str(self.round))
         print("-------")
-
-        rolled = random.randint(1,sides)
+        self.die.roll()
         print("The computer has rolled the die.")
         print("You have three guesses.")
-
-        # loop gives user up to three guesses
-        num_guesses = 0
-        while (num_guesses < 3 and not right_guess):
-
-            # input & validation: must be in range 1 to 6 inclusive
-            if (user_guess < 1 or user_guess > 6):
-                user_guess = int(input("\nWhat is your guess [1-6]? "))
-
-                if ((user_guess < 1) and (user_guess > 6)):
-                    print("   Please enter a valid guess [1-6]!")
-
-            # did the user guess right?
-            if (rolled == user_guess):
-                right_guess = True
-                print("   Correct!")
+        
+        right_guess = False
+        while self.num_guesses < 3 and not right_guess:
+            user_guess = int(input("\nWhat is your guess [1-" + str(self.die.sides) + "]? "))
+            if self.die.is_side(user_guess):
+                print("Please enter a valid guess [1-" + str(self.die.sides) + "]? ")
             else:
-                print("   Incorrect guess.")
+                if self.die.top == user_guess:
+                    right_guess = True
+                    print("   Correct!")
+                else:
+                    print("   Incorrect guess.")
 
-        # if the user guessed right, they get a point
-        # otherwise the computer gets a point
+                self.num_guesses += 1
+
         if right_guess:
-            human_points += 1
+            self.human_points += 1
         else:
-            computer_points += 1
-
-        # display the answer and scores
-        print("\n*** The correct answer was: " + str(rolled) + " ***\n")
+            self.computer_points += 1
+        
+        print("\n*** The correct answer was: " + str(self.die.top) + " ***\n")
         print("Scores:")
-        print("  You: \t\t" + str(human_points))
-        print("  Computer: \t" + str(computer_points))
+        print("  You: \t\t" + str(self.human_points))
+        print("  Computer: \t" + str(self.computer_points))
         print("")
 
-    # tell the user if they won or lost
-    if (computer_points > human_points):
-        print("*** You Lose! ***")
-    else:
-        print("*** You Win! ***")
+        self.round += 1
 
-    print("Thanks for playing the Guess Game!")
+def main():
+    game = Game()
+    game.play_entire_game()
 
 main()
