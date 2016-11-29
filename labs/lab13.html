@@ -1,75 +1,77 @@
 <html>
 <head>
-  <title>CSCI 150 - Lab 13 - Eliza the Chatterbot</title>
+  <title>CSCI 150 - Lab 13 - The World-Wide Web</title>
   <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
 </head>
 
 <body>
-<h1><a href="../index.html">CSCI 150</a> - Lab 13<br>Eliza the Chatterbot</h1>
+<h1><a href="../index.html">CSCI 150</a> - Lab 13<br>The World-Wide Web</h1>
 
 <h2>Materials</h2>
 <ul>
-  <li><a href="https://docs.python.org/2/library/re.html">Regular Expressions Module</a></li>
-  <li><a href="../code/chatterbot.py">ChatterBot Code</a></li>
+  <li><a href="https://docs.python.org/3/library/re.html">Regular Expressions Module</a></li>
+  <li><a href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request">URL Request Library</a></li>
 </ul>
 
 <h2>Overview</h2>
-One essential piece of computer science we have explored this semester has been
-communication with the computer. Programming languages can be exacting and tedious,
-and much work has been done to teach a computer to understand natural languages
-such as English.
-<p>
-Early efforts in this area were in the form of
-<a href="https://en.wikipedia.org/wiki/Chatterbot">Chatterbots</a>,  a famous example
-being <a href="https://en.wikipedia.org/wiki/ELIZA">ELIZA</a>, a computational
-psychotherapist. While not terribly complex, Eliza was able to have plausible interactions
-and convince users of her ability to understand the conversation.
-<p>
-More recently, with advanced algorithms in statistical pattern matching and
-natural language processing, we have seen the rise of
-<a href="http://www.apple.com/ios/siri/">Siri</a>,
-<a href="http://windows.microsoft.com/en-us/windows-10/getstarted-what-is-cortana">Cortana</a>,
-<a href="https://www.google.com/landing/now/">Google Now</a>, and
-<a href="http://www.amazon.com/Amazon-SK705DI-Echo/dp/B00X4WHP5E">Alexa</a>.
-<p>
-Today we will learn some of the basics of pattern matching with
-regular expressions and building a chatterbot.
+The World-Wide Web is a massive collection of text files stored on millions
+of different computers throughout the world. Each of these text files can
+have references to other text files, potentially located on other 
+computers. A <b>web browser</b> is a program that creates a visualization 
+of these text files. A <b>hyperlink</b> is a clickable reference to 
+another page. A <b>URL</b> (<b>U</b>niform <b>R</b>esource <b>L</b>ocator)
+gives the name of the computer upon which a document is stored, as well
+as the name of the targeted file on that computer. For example, the URL
+for our <a href="http://mgoadric.github.io/csci150">course web page</a>
+(note the hyperlink) is <code>http://mgoadric.github.io/csci150</code>. 
+This specifies a computer named <code>mgoadric.github.io</code> and
+a file on that computer named <code>csci150</code>.
 
-<h2>Step 1 - Chatter</h2>
-To get started, we have provided you with the basic framework for a text-based chatterbot.
-Download the
-<a href="../code/chatterbot.py">chatterbot.py</a> file and load it up in IDLE.
-You should be able to have a very limited conversation with Eliza.
+<p>
+In order to display a web page, a web browser needs to be able to make a
+copy of a file from a remote computer. Fortunately, Python provides an
+easy way to do this. The following code retrieves the file specified by
+a URL and makes it available as a string in a Python program:
+</p>
 
-<h3>Task 1.1</h3>
-Add a component to the <tt>Eliza</tt> class that is a list of at least 5 possible
-responses.
 <p>
-Alter the <tt>get_response</tt> method to choose a random response from this list
-and return the chosen string.
-<p>
-Test your code to make sure you get random responses in your conversation.
+<pre>
+&lt;&lt;&lt; import urllib.request
+&lt;&lt;&lt; page = 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html'
+&lt;&lt;&lt; text = urllib.request.urlopen(page).read().decode('UTF-8')
+</pre>
+</p>
 
-<h2>Step 2 - Find All Matches </h2>
-To make our conversation more interactive, we need to have Eliza respond to the
-content of the <tt>text</tt> parameter of our <tt>get_response</tt> method. Using
-the skills we currently have in Python, we could
-try to match exact strings, but this would be too brittle and not account for the
-various ways we could say the same thing.
 <p>
-Alternatively, we could try to
-find if a string is a substring of <tt>text</tt>.
-For example if we are looking for a conversation on cats, we could write
+Type in the above code in a Python shell. Then type <code>text</code> to 
+see what the document looks like. You should notice some text interspersed
+with <b>tags</b>. Each tag starts with an <code>&lt;</code> and ends with
+a <code>&gt;</code>. The tag gives a web browser information about how
+to format the page for viewing.
+</p>
+
 <p>
-<pre>if "cat" in text:</pre>
+The <code>a href</code> tag denotes a hyperlink.  By examining the contents
+of a web page text file, you can find all of the pages that you can reach 
+by clicking on hyperlinks from that page.  Our goal in this lab is to 
+find <b>all</b> of the pages that are reachable from a given page. 
+Programs that do this are known as <b>web crawlers</b>.  To 
+limit the scope of the problem space, we have created a small set of 
+self-contained web pages for you to use.  Companies like Google use
+web crawlers all the time to create indices of the web. These indices
+make practical search engines possible.
+</p>
+
+<h2>Step 1 - Extracting Hyperlinks </h2>
+
 <p>
-This would find all places of the substring cat, even if the text was
-<tt>"catastrophe"</tt>. We could also look for <tt>"kitten"</tt>, <tt>"kitty"</tt>,
-etc., but this would easily become a long and complicated if statement.
-<p>
-Python, like most programming languages, includes a module to help with this
-pattern matching, called
-<a href="https://docs.python.org/2/library/re.html">Regular Expressions</a>.
+To build a web crawler, we need to extract hyperlinks from a web page.
+While we could probably write a function to do this using the Python
+skills we currently have, tasks like this are facilitated by using
+a <a href="https://docs.python.org/3/library/re.html">Regular Expression
+Module</a>.
+</p>
+
 <p>
 In the shell, import the regular expression module, by typing
 <p>
@@ -122,102 +124,226 @@ pattern, while * will match 0 or more.
 <p>
 <pre>re.findall(r"\d*", "I like the number 12 and 47!")</pre>
 <p>
-The + will be more useful for us in this lab.
-<h3>Task 2.1</h3>
-Write a concise regular expression to look for any of the following words
+Both of these repetition matches can be made <b>reluctant</b> instead of 
+<b>greedy</b>. A reluctant match matches as few characters as possible. 
+Consider the following variation of the above:
 <p>
+<pre>re.findall(r"\d+?", "I like the number 12 and 47!")</pre>
+
+<p> 
+Regular expressions are readily incorporated into functions. Consider the 
+following example:
+<pre>
+def words_ending_with(s, suffix):
+    return re.findall(r'\w*' + suffix, s)
+
+>>> words_ending_with('tion', 'information is an altercation of irritation')
+['information', 'altercation', 'irritation']
+</pre>
+
+<h3>Task 1.1</h3>
+
+Implement each of the following functions:
+<ol>
+<li> <code>words_starting_with(prefix, s)</code>
+<pre>
+>>> words_starting_with('un', 'An unusual unfortunate event is unpleasant')
+['unusual', 'unfortunate', 'unpleasant']
+</pre>
+
+<li> <code>all_ints_from(s)</code>
+<pre>
+>>> all_ints_from('best3 out of 56-23 12th place')
+['3', '56', '-23', '12']
+</pre>
+
+<li> <code>resplitter(sep, s)</code>
+<pre>
+>>> resplitter('/', '/Users/gabriel/courses/150')
+['', 'Users', 'gabriel', 'courses', '150']
+</pre>
+</ol>
+
+<h3> Task 1.2</h3>
+<p>
+Putting together the concepts of a regular expression and accessing a URL,
+write a function <code>get_links_for(url)</code> that takes a string
+representing a URL as a parameter, and returns a list containing all 
+of the hyperlinks contained on that page. Remember that the tag
+<code>a href</code> indicates a hyperlink.  The example below makes use
+of some 
+<a href="http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html">
+simple web pages</a> we have created especially for this assignment.
+
+<pre>
+>>> get_links_for('http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html')
+['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page2.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page3.html']
+</pre>
+
+<h2>Step 2 - All Reachable Pages</h2>
+<p>
+Write a function called <code>all_reachable_pages(url)</code> that returns
+a list of every web page that is reachable from a given starting page.
+Not only will it return the immediately reachable pages (as <code>
+get_links_for()</code> did), it will also return every page for which
+any path exists from the given URL.  Every page should appear exactly 
+once in the list.
+
+<p>
+While this function will work fine on our example pages, <b>you should not 
+use this function for an arbitrary URL!</b> Live pages on the web can reach
+an extremely large number of pages!
+
+<p>
+Here is an outline as to how to write this function:
 <ul>
-cat, kit, kitten, kitty
+<li> Maintain two lists: the pages known to be <code>reachable</code>, and
+the pages that are as yet <code>unvisited</code>. Initially, 
+<code>reachable</code> will only contain <code>url</code>, and 
+<code>unvisited</code> will contain all of the pages linked to by 
+<code>url</code>.
+<li> As long as <code>unvisited</code> is not empty:
+  <ul>
+  <li> Remove a page from <code>unvisited</code>.
+  <li> If it is not in <code>reachable</code>, add it to 
+       <code>reachable</code>. Then append all of the pages to which it 
+       links to <code>unvisited</code>.
+  </ul>
+<li> Return the <code>reachable</code> pages when complete.
 </ul>
-<p>
-Alter your <tt>get_response</tt> method to look for this regular expression in
-the <tt>text</tt> parameter. If the list is not empty, you know there was a match
-found, so you can return an appropriate response. Otherwise, return a random
-response as above.
 
-<h3>Task 2.2</h3>
-Alter your <tt>get_response</tt> method to look for numbers in
-the <tt>text</tt> parameter.  If it finds any, it should interpret the
-first number as a temperature, and make some sort of appropriate comment.  For
-example:
-
-<p>
 <pre>
-BRENT: I have 35 minutes until class starts
-ELIZA: Brrr, that's cold!
+>>> all_reachable_pages('http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html')
+['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page3.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page7.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page2.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page8.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page6.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page5.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page4.html']
 </pre>
 
+<h2> Step 3 - Finding Paths </h2>
 
-<h2>Step 3 - Tailored Responses</h2>
-To make our responses more aligned with the exact match found in the conversation,
-we can use the <tt>sub</tt> function. There are now three parameters, the first
-is still the pattern, the last is the text to search, and the middle is
-a replacement regular expression to return when a match is found. Try out the
-following command in the shell.
-<p>
-<pre>re.sub(r"cat", r"dog", "I love cats!")</pre>
-<p>
-If we want to use a portion of the match in our replacement, we can divide up our
-pattern with parenthesis. Each part of the parenthesized pattern can be retrieved by
-using a \ followed by a number. For example, to search for someone talking about
-emotions, we might type the following:
-<p>
+A <b>path</b> between two web pages is a list of URLs. Each URL in the
+list must have its successor among the links returned by 
+<code>get_links_for()</code>.  
+
+<h3> Task 3.1 </h3>
+
+Write a function called <code>is_valid_path(path)</code> that determines
+whether the specified path is valid.
 <pre>
-re.sub(r"I('m| am) (sad|\w+py)", r"Why are you \2?", "I'm happy")
+>>> is_valid_path(['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html'])
+True
+>>> is_valid_path(['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page6.html'])
+False
+>>> is_valid_path(['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html', 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page6.html'])
+True
 </pre>
-<p>
-This will take whatever matches the second parenthesized portion, denoted
-with \2, in this case "happy",  and use it in the replacement.
 
-<p>Try replacing <tt>"happy"</tt> in the above example
-  with each of <tt>"sad"</tt>, <tt>"snappy"</tt>, and <tt>"mad"</tt>.  Make sure
-  you understand the output in each case.
+Write a function called <code>check_paths(paths)</code> that takes
+a dictionary mapping a URL to a path leading to that URL as its parameter.
+It will return True if all these paths are valid, and False otherwise.
 
-<h3>Task 3.1</h3>
-Augment Eliza to look for emotions
-in the text as shown above. You will know if the regular expression matches
-the text if what is returned by <tt>sub</tt> is different than the
-original text. Add another if statement to the <tt>get_response</tt> method,
-and return the result of <tt>sub</tt> when matches are found.
-<h2>Step 4 - Memory</h2>
-Often, it will be useful to have a chatterbot move beyond a reflexive response. To
-add a memory to your chatterbot, you will need to give it more components in the
-<tt>__init__</tt> method, and then alter these components when a response is relevant.
-These could be Booleans, string, integers, however you want to track the state of
-your conversation.
-<h3>Task 4.1</h3>
-You want to remember that the user is interested in cats. Add
-a Boolean to the <tt>__init__</tt> method to track this.
-<p>
-<pre>self.ailurophile = False</pre>
-<p>
-When the if statement you wrote in Task 2.1 is true, flip this flag to <tt>True</tt>.
-<p>
-Now, when Eliza does not find a match in the conversation for her topics, if
-she knows that the user is a cat lover, she should reply with random
-cat questions or
-<a href="http://imgur.com/gallery/uWqpr">facts</a>.
+<pre>
+>>> check_paths(
+    {'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html':
+     ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html'],
+    'http://mgoadric.github.io/csci150/labs/urlmazesmall/page6.html':
+     ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+      'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html']})
+True
+</pre>
 
-<h2>Step 5 - Personal Chatterbot</h2>
-Create a new chatterbot with a name and a distinct personality as a subclass
-of <tt>Chatter</tt>. Your new chatterbot should have the ability to discuss
-at least four different topics of conversation, and have at least 25 unique responses
-for the user.  Of course, your chatterbot must use regular expressions
-to analyze the user's input.
+<h3> Task 3.2 </h3>
+<p>
+Write a function called <code>all_paths_from(src)</code> that returns a 
+dictionary mapping each reachable URL to a list of URLs starting with
+<code>src</code> and ending with a page that links to that URL. The 
+implementation is very similar to <code>all_reachable_pages</code>.
+Instead of maintaining a list of unvisited pages, maintain a list of
+tuples, each of which contains an unvisited page and a path leading to
+that page. Instead of maintaining a list of reachable pages, maintain
+a dictionary mapping a URL to the path leading to it.
+
+Below is an example execution. Note that your results may vary a bit.
+That's okay, as long as <code>check_paths</code> approves the results.
+<pre>
+>>> paths = all_paths_from('http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html')
+>>> paths
+{'http://mgoadric.github.io/csci150/labs/urlmazesmall/page8.html': 
+ ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+  'http://mgoadric.github.io/csci150/labs/urlmazesmall/page2.html'], 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page7.html': 
+ ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+  'http://mgoadric.github.io/csci150/labs/urlmazesmall/page2.html'], 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page2.html': 
+ ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html'], 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page4.html': 
+ ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+  'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html'], 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html': 
+ ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html'], 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html': [], 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page3.html': 
+ ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html'], 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page6.html': 
+ ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+  'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html'], 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page5.html': 
+ ['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html']}
+>>> check_paths(paths)
+True
+</pre>
+
+<h3> Task 3.3 </h3>
+Write a function called <code>find_longest_path(paths)</code>
+that returns the single longest path from the dictionary created by
+<code>all_paths_from(url)</code>. As multiple longest paths are possible,
+your results may vary.
+
+<pre>
+>>> find_longest_path(paths2)
+['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page2.html', 
+ 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page8.html']
+</pre>
+
+<h3> Task 3.4 </h3>
+Find the following information about the pages starting at the following URL:
+<pre>
+http://mgoadric.github.io/csci150/labs/urlmaze/page0.html
+</pre>
+
+Record all your answers in your Lab Evaluation Document.
+<ol>
+<li> What are the outgoing links from that page?
+<li> How many total pages are reachable?
+<li> What is the single longest path originating from that page?
+</ol>
 
 <h2>What to Hand In</h2>
-Turn in your completed <tt>chatterbot.py</tt> file on Moodle.
+Turn in your completed <tt>web.py</tt> file on Moodle, as well as 
+your Lab Evaluation Document.
+
 <h2>Grading</h2>
 <ul>
-  <li>To earn a D on this lab, complete Step 1 and 2.</li>
-  <li>To earn a C on this lab, do all the above and complete Step 3.</li>
-  <li>To earn a B on this lab, do all the above and complete Step 4.</li>
-  <li>To earn an A on this lab, do all the above and complete Step 5.</li>
-  <li>To earn a 100 on this lab, do all the above and complete at least six different topics and
-  have at least 35 unique responses.</li>
+  <li>To earn a D on this lab, complete Step 1.</li>
+  <li>To earn a C on this lab, do all the above and complete Step 2.</li>
+  <li>To earn a B on this lab, do all the above and complete Task 3.1.</li>
+  <li>To earn an A on this lab, do all the above and complete Tasks 3.2 and 3.3.</li>
+  <li>To earn a 100 on this lab, do all the above and complete Task 3.4.</li>
 </ul>
 
 <hr>
-<small>&copy; Mark Goadrich and Brent Yorgey, Hendrix College</small>
+<small>&copy; Gabriel Ferrer, Mark Goadrich, and Brent Yorgey, Hendrix College</small>
 </BODY>
 </HTML>
