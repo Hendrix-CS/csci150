@@ -59,7 +59,7 @@ def markov_freq_random(fdot, pages, complete, name, count, chunk, order):
                 fdot.write("page" + str(name) + "->page" + str(where) + ";\n")
                 if where not in pages:
                     pages.append(where)
-                words.append("<a href=\"http://mgoadric.github.io/csci150/labs/urlmaze/page" + str(where) + ".html\">" + w[order:-1] + "</a>")
+                words.append("<a href=\"http://mgoadric.github.io/csci150/labs/urlmazesmall/page" + str(where) + ".html\">" + w[order:-1] + "</a>")
             else:
                 words.append(w[order:-1])
         f.write(" ".join(words).capitalize() + ".<p>\n")
