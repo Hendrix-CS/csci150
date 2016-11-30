@@ -237,17 +237,23 @@ list must have its successor among the links returned by
 
 <h3> Task 3.1 </h3>
 
+<p>
 Write a function called <code>is_valid_path(path)</code> that determines
 whether the specified path is valid.
 <pre>
->>> is_valid_path(['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html'])
+>>> is_valid_path(['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+                   'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html'])
 True
->>> is_valid_path(['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page6.html'])
+>>> is_valid_path(['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+                   'http://mgoadric.github.io/csci150/labs/urlmazesmall/page6.html'])
 False
->>> is_valid_path(['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html', 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page6.html'])
+>>> is_valid_path(['http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html', 
+                   'http://mgoadric.github.io/csci150/labs/urlmazesmall/page1.html', 
+                   'http://mgoadric.github.io/csci150/labs/urlmazesmall/page6.html'])
 True
 </pre>
 
+<p>
 Write a function called <code>check_paths(paths)</code> that takes
 a dictionary mapping a URL to a path leading to that URL as its parameter.
 It will return True if all these paths are valid, and False otherwise.
