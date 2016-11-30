@@ -134,7 +134,7 @@ Consider the following variation of the above:
 Regular expressions are readily incorporated into functions. Consider the 
 following example:
 <pre>
-def words_ending_with(s, suffix):
+def words_ending_with(suffix, s):
     return re.findall(r'\w*' + suffix, s)
 
 >>> words_ending_with('tion', 'information is an altercation of irritation')
