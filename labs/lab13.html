@@ -149,9 +149,10 @@ A question mark is used to make a character optional.
 A <b>capturing group</b> can be used to retain only part of the matching
 pattern in the generated list. Consider the following example.
 <p>
-<pre>re.findall(r'c\w+', 'I like cats and chats.')</pre>
+<pre>re.findall(r'c(\w+)', 'I like cats and chats.')</pre>
 <p>
 Remove the parentheses and try it again. How does the output differ?
+<p>
 Regular expressions are readily incorporated into functions. Consider the 
 following example:
 <pre>
