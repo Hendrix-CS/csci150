@@ -36,9 +36,9 @@ a URL and makes it available as a string in a Python program:
 
 <p>
 <pre>
-&lt;&lt;&lt; import urllib.request
-&lt;&lt;&lt; page = 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html'
-&lt;&lt;&lt; text = urllib.request.urlopen(page).read().decode('UTF-8')
+&gt;&gt;&gt; import urllib.request
+&gt;&gt;&gt; page = 'http://mgoadric.github.io/csci150/labs/urlmazesmall/page0.html'
+&gt;&gt;&gt; text = urllib.request.urlopen(page).read().decode('UTF-8')
 </pre>
 </p>
 
@@ -92,6 +92,7 @@ Test out the following command to see what it returns.
 <p>
 <pre>re.findall(r"a|b|c", "abracadabra")</pre>
 <p>
+<!--
 And we can search for larger patterns by using parenthesis.
 <p>
 <pre>re.findall(r"(c(a|o)t)", "There is a cat on the cot")</pre>
@@ -100,6 +101,7 @@ Each set of parenthesis becomes a portion of the match. Compare the above regula
 expression to the following one.
 <p>
 <pre>re.findall(r"(c|a)(o|t)", "There is a cat on the cot")</pre>
+-->
 <p>
 We can also generalize our strings into patterns, such as alphabetic characters
 or digits.
@@ -129,8 +131,27 @@ Both of these repetition matches can be made <b>reluctant</b> instead of
 Consider the following variation of the above:
 <p>
 <pre>re.findall(r"\d+?", "I like the number 12 and 47!")</pre>
-
+<p>
+In this next example, we try to find groups of any character type, ending
+with a space. The period (<code>.</code>) matches any character.
+<p>
+<pre>re.findall(r'.+ ', 'I like cats')</pre>
+<p>
+Note that the period even matches the first space. This is where a
+reluctant match becomes useful.
+<p>
+<pre>re.findall(r'.+? ', 'I like cats')</pre>
+<p>
+A question mark is used to make a character optional.
+<p>
+<pre>re.findall(r'c?at', 'I like cats and hats.')</pre>
 <p> 
+A <b>capturing group</b> can be used to retain only part of the matching
+pattern in the generated list. Consider the following example.
+<p>
+<pre>re.findall(r'c\w+', 'I like cats and chats.')</pre>
+<p>
+Remove the parentheses and try it again. How does the output differ?
 Regular expressions are readily incorporated into functions. Consider the 
 following example:
 <pre>
@@ -161,6 +182,8 @@ Implement each of the following functions:
 <pre>
 >>> resplitter('/', '/Users/gabriel/courses/150')
 ['', 'Users', 'gabriel', 'courses', '150']
+>>> resplitter(':', 'a:b/c:d-e:fg56 h:')
+['a', 'b/c', 'd-e', 'fg56 h']
 </pre>
 </ol>
 
