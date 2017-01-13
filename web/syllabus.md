@@ -6,9 +6,11 @@ We will be covering most of the material in the textbook, approximately
 one new chapter each week. You should view your textbook as another
 perspective on the material presented in class and covered in the labs.
 We will also be using additional supplemental material such as relevant
-web-pages and background material for the lab assignments. Readings will
+web pages and background material for the lab assignments. Readings will
 be assigned before material will be covered in class. You are expected
 to review the material and come to class prepared.
+
+XXX revise this after making calendar!!!
 
 * Chapter 1: Weds, Jan 20
 * Chapter 2: Fri, January 22 [ [drake.py](static/drake.py) ]

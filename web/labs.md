@@ -4,20 +4,21 @@ title: Labs
 
 Much of your experience with programming in this course will be
 through weekly labs, which will comprise 25% of your final grade. Each
-lab will be assigned Tuesday morning in lab with time allotted to work
-through the materials, and will be due **by Wednesday at 4pm**. All
-labs are weighted equally within the lab portion of your final grade.
+lab will be assigned Thursday morning in lab with time allotted to
+work through the materials, and will be due by **the following Tuesday
+at 10pm**. All labs are weighted equally within the lab portion of
+your final grade.
 
 Each student has **four late days** to spend throughout the semester
 as they wish.  Simply inform me any time *prior* to the due date for
 an assignment that you wish to use a late day; you may then turn in
-the assignment up to 24 hours late with no penalty.  Multiple late
-days may be used on the same assignment.  There are no partial late
-days; turning in an assignment 2 hours late or 20 hours late will both
-use 1 late day.  Note that late days are intended to cover both normal
-circumstances (you simply want more time to work on the assignment)
-and exceptional circumstances (you get sick, travel for a game or
-family obligation, *etc.*).
+the assignment up to 24 hours late.  Multiple late days may be used on
+the same assignment.  There are no partial late days; turning in an
+assignment 2 hours late or 20 hours late will both use 1 late day.
+Note that late days are intended to cover both normal circumstances
+(you simply want more time to work on the assignment) and exceptional
+circumstances (you get sick, travel for a game or family obligation,
+*etc.*).  Aside from late days, late assignments will not be accepted.
 
 On these labs, you may work with a partner on the lab assignments if
 you choose. Their name must be listed on any code you hand in as joint
@@ -42,7 +43,9 @@ included in each lab.
 
   Lab   Name                                                                          Assigned
   ----- --------------------------------------------------                            ----------
-  1     [Minecraft Hour of Code](https://studio.code.org/join/LLMHVB)                 Jan 19
+  1     [Minecraft Hour of Code](labs/lab1.html)                                      Jan 19
+
+<!--
   2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)         Jan 26
   3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Feb 2
   5     [CodingBat](http://mgoadric.github.io/csci150/labs/lab5.html)                 Feb 16
@@ -54,3 +57,4 @@ included in each lab.
   11    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab11.html)             Apr 12
   12    [Processing](http://mgoadric.github.io/csci150/labs/lab12.html)               Apr 19
   13    Final project workshop (optional, **9am-11am**)                               Apr 26
+-->
