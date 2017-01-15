@@ -13,7 +13,7 @@ title: Overview
 
 <div style="text-align:center">
 <img src="images/pythonlogo.png" height="100">
-[Python](http://python.org/)
+[Python 3](http://python.org/)
 </div>
 
 ### Overview

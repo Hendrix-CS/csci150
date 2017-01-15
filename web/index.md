@@ -1,5 +1,5 @@
 ---
-title: CSCI 150: Foundations of Computer Science (Spring 2017)
+title: "CSCI 150: Foundations of Computer Science (Spring 2017)"
 ---
 CSCI 150: Foundations of Computer Science (S'17)
 =======================================
