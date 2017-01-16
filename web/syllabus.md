@@ -10,10 +10,10 @@ web pages and background material for the lab assignments. Readings will
 be assigned before material will be covered in class. You are expected
 to review the material and come to class prepared.
 
-XXX revise this after making calendar!!!
+* Chapter 1: Fri, Jan 20
+* Chapter 2: Mon, January 23 <!-- [ [drake.py](static/drake.py) ] -->
 
-* Chapter 1: Weds, Jan 20
-* Chapter 2: Fri, January 22 [ [drake.py](static/drake.py) ]
+<!--
 * Chapter 3: Fri, January 22 [ [input-output.py](static/input-output.py) ]
 * Chapter 4: Weds, January 27 [ [conditionals.py](static/conditionals.py) ]
 * Chapter 5: Weds, February 10
@@ -33,3 +33,4 @@ XXX revise this after making calendar!!!
 * Chapter 18: Weds, April 13 [ [cards.py](static/cards.py) ]
 * Mon, April 26 [ [queues.py](static/queues.py) ]
 * Mon, May 2 [ [bouncy.py](static/bouncy.py) ]
+-->
