@@ -12,5 +12,5 @@ main = do
     standardRules staticContent
     createIndex sections
   where
-    staticContent = ["images/*", "docs/*", "static/*", "data/*", "labs/*"]
+    staticContent = ["images/*", "docs/*", "static/*", "data/*", "labs/*", "homework/*"]
     sections = ["overview", "syllabus", "quizhw", "labs", "projects", "exams", "grading"]
