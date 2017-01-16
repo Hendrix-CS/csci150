@@ -1,22 +1,20 @@
 ---
-title: Homework
+title: Homework and quizzes
 ---
 
-XXX quizzes every Wednesday???
-
 There will often be short homework assignments to be completed over
-the weekend.
+the weekend, assigned on Friday and due Monday, along with a
+corresponding quiz at the beginning of class on Monday.
 
-These homework assignments will comprise
-15% of your final grade.
+These quizzes and homework assignments together will comprise 15% of
+your final grade.
 
-HW                                                                                                                 Due
-------------------                                                                                                 ----
-Foo                                                                                                                Bar
+HW                                                                                                                    Due
+------------------                                                                                                    ----
+0: [Who Are You](https://docs.google.com/forms/d/e/1FAIpQLSfrKyLhATf3Zz2z_VyEOuuwzuxaUk9LuoqTAeycjJqs08V76w/viewform) January 20
+1: [Communication and Origami](http://mgoadric.github.io/csci150/homework/origami.html)                               January 23
 
 <!--
-0: [Who Are You](https://docs.google.com/forms/d/1SnjoPxOy-06Y-17AYReFbwOEAzGr1FGVvIB5C4gsqCc/viewform)            January 20
-1: [Communication and Origami](http://mgoadric.github.io/csci150/homework/origami.html)                            January 25
 2: [Logic puzzles](http://mgoadric.github.io/csci150/homework/logic-puzzles.html)                                  February 1
 3: [Function reading](static/function-reading.html)                                                                February 17
 4: [DNA Strings](static/dna-strings.html)                                                                          February 24
