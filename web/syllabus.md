@@ -2,6 +2,8 @@
 title: Syllabus
 ---
 
+[PDF syllabus](docs/syllabus.pdf)
+
 We will be covering most of the material in the textbook, approximately
 one new chapter each week. You should view your textbook as another
 perspective on the material presented in class and covered in the labs.
