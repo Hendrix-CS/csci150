@@ -14,7 +14,7 @@ to review the material and come to class prepared.
 
 * Chapter 1: Fri, Jan 20
 * Chapter 2: Mon, January 23 <!-- [ [drake.py](static/drake.py) ] -->
-
+* Chapter 3: Weds, January 25 [ [box.py](static/box.py) [box.txt](static/box.txt) ]
 <!--
 * Chapter 3: Fri, January 22 [ [input-output.py](static/input-output.py) ]
 * Chapter 4: Weds, January 27 [ [conditionals.py](static/conditionals.py) ]

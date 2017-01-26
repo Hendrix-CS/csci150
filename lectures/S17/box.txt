@@ -1,0 +1,114 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box: 5
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 5
+<class 'str'>
+>>> int("5")
+5
+>>> int("398")
+398
+>>> str(398)
+'398'
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 5
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: fred
+Traceback (most recent call last):
+  File "/home/brent/teaching/150/lectures/S17/box.py", line 16, in <module>
+    height = int(height_str)
+ValueError: invalid literal for int() with base 10: 'fred'
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 5
+Please enter the width of the box in furlongs: 10
+Please enter the depth of the box in furlongs: 99
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 7
+Please enter the width of the box in furlongs: 2
+Please enter the depth of the box in furlongs: 120
+The volume of your box is 1680 cubic furlongs.
+>>> 7*2*120
+1680
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 7
+Please enter the width of the box in furlongs: 2
+Please enter the depth of the box in furlongs: 120
+The volume of your box is 1680 cubic furlongs.
+The surface area is 2188 square furlongs.
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 2
+Please enter the width of the box in furlongs: 5
+Please enter the depth of the box in furlongs: 10
+The volume of your box is 100 cubic furlongs.
+The surface area is 160 square furlongs.
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 2
+Please enter the width of the box in furlongs: 5
+Please enter the depth of the box in furlongs: 10
+The volume of your box is 100 cubic furlongs.
+The surface area is 160 square furlongs.
+The body diagonal is 11.357816691600547 furlongs.
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 2
+Please enter the width of the box in furlongs: 5
+Please enter the depth of the box in furlongs: 10
+The volume of your box is 100 cubic furlongs.
+The surface area is 160 square furlongs.
+The body diagonal is 64.5 furlongs.
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 2
+Please enter the width of the box in furlongs: 5
+Please enter the depth of the box in furlongs: 10
+The volume of your box is 100 cubic furlongs.
+The surface area is 160 square furlongs.
+The body diagonal is 54.95455351947008 furlongs.
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/box.py ===========
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 2
+Please enter the width of the box in furlongs: 5
+Please enter the depth of the box in furlongs: 10
+The volume of your box is 100 cubic furlongs.
+The surface area is 160 square furlongs.
+The body diagonal is 39.0 furlongs.
+>>> 
