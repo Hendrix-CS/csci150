@@ -10,6 +10,7 @@
 
 \newenvironment{reflect}[1]
 {
+  \noindent
   \begin{lrbox}{\reflectbox}
     \begin{minipage}[t]{\textwidth}
       \textbf{#1}:
@@ -255,6 +256,13 @@ it.  Here are the steps we will go through,
 \item Maintain
 \end{enumerate}
 
+\begin{reflect}{Brent, S'17}
+  I left out talking about these steps, because (a) for such a simple
+  problem many of them don't really make sense, and (b) we never
+  actually reinforce or emphasize these steps at all later in the
+  course, so talking about them here just feels awkward and artificial.
+\end{reflect}
+
 OK, let's go through the steps.
 
 \begin{enumerate}
@@ -278,6 +286,40 @@ OK, let's go through the steps.
 \item Implement: use Python, but how?
 
 \end{enumerate}
+
+\subsection*{ALTERNATIVE: Volume of a Box}
+
+\begin{reflect}{Brent, S'17}
+  I personally don't find the Drake equation particularly
+  interesting/motivating, and it has too many variables, so I never
+  actually make it all the way through writing a complete program (and
+  assigning it to be finished as homework seems redundant when they
+  are about to have the Kepler/Newton lab; better, I think, to see a
+  complete example in class).  This year I decided to use a different
+  motivating program: computing the volume of a box. Not very
+  interesting, to be sure, but we also make a few extensions to it
+  that seemed to work out well (see next class's lecture notes).
+\end{reflect}
+
+Today, we want the computer to calculate a simple formula for us: the
+volume of a box.  We will enter the width, depth, and height, and it
+will multiply them.  Steps we will need:
+
+\begin{enumerate}
+\item Print a description of the program.
+\item Ask user for width.
+\item Remember width.
+\item Ask user for height.
+\item Remember height.
+\item Ask user for depth.
+\item Remember depth.
+\item Calculate volume.
+\item Print out volume.
+\end{enumerate}
+
+This involves input, output, and math.  No conditionals or repetition
+yet.  Let's start learning the Python we will need to do this.  We'll
+actually write the program next class.
 
 \subsection*{Python I (Strings, Numbers, Variables)}
 
@@ -321,9 +363,10 @@ What kinds of things does Python give us?
   Integers are great, but what about fractions? \texttt{2.5}
   \texttt{0.95}, \texttt{3e23}.
 
-  One gotcha: $3 / 4$ vs $3.0 / 4.0$.  Use \verb|type| to see the
-  types of different things.  Maybe mention mod operator \verb|%|,
-  exponentiation \verb|**|.
+  [In Python 2.7 only: one gotcha: $3 / 4$ vs $3.0 / 4.0$.]
+
+  Use \verb|type| to see the types of different things.  Maybe mention
+  mod operator \verb|%|, exponentiation \verb|**|.
 
 \item \textbf{Variables}!
 
@@ -355,10 +398,14 @@ What kinds of things does Python give us?
 \end{itemize}
 
 \begin{reflect}{Brent, S' 16}
-  Didn't make it to variables.
+Didn't make it to variables.
 \end{reflect}
 \begin{reflect}{Gabe, F' 16'}
 I did make it to variables.
+\end{reflect}
+\begin{reflect}{Brent, S' 17}
+  I made it to variables this time.  Leaving out the 6 steps of
+  software development helped a lot.
 \end{reflect}
 
 \newpage
@@ -431,6 +478,9 @@ float("32.4")
 age_st = input("What is your age?")
 age = int(age_st)
 \end{verbatim}
+
+  Note we get a runtime error if the user enters something that isn't
+  an int.
 \end{itemize}
 
 \subsection*{REPLs, PROGRAMS, etc.}
@@ -454,14 +504,19 @@ to worry about those things.  [A little confusing to think about what
 happens when we e.g. call \verb|input| at the REPL prompt but you
 don't really need to worry about that!]
 
+\begin{reflect}{Brent, S'17}
+Skipped this section this time around.
+\end{reflect}
+
 \subsection*{Our first program!}
 
 Let's start programming.  We need a place to save our commands, as a
 script, so they are all run at once.  This file is produced by a
 programmer.  The user will then take this file and run the program.
 
-New file, open this up, save as \verb|drake.py|, so that the colors
-will show up in the code to help us out.
+New file, open this up, save as \verb|drake.py| [or \verb|box.py|, see
+below], so
+that the colors will show up in the code to help us out.
 
 First, put name, class, date at top, in a comment block \verb|#######|.
 
@@ -484,7 +539,37 @@ Kepler-Newton lab the next day, so not really any point to making it a HW.]
 \begin{reflect}{Gabe, F' 16}
 I spent very little time on REPL vs. Programs. That got me through the Drake example. I also did an example with the Pythagorean theorem, to introduce exponentiation. In retrospect, after the lab, I wish I had spent some time on order-of-operations.
 \end{reflect}
+
+\subsection*{ALTERNATIVE: Our first program!}
+
+Same as above, but write a program to compute the volume of a box.
+Once this is working, extend it to also:
+\begin{itemize}
+\item Compute the surface area.  (Shows off power of saving values
+  entered by user and reusing them later.)
+\item Compute the length of the interior diagonal
+  ($\sqrt{w^2 + h^2 + d^2}$).  (Lets us explicitly talk about how to do
+  roots as a fractional power, needed for Kepler/Newton lab.)
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  I used the box example and this lecture went very well.  Things we
+  discussed/questions the students had included:
+
+  \begin{itemize}
+  \item Order of operations; we played around with putting parens in
+    different places and seeing whether we still got the correct
+    answer.
+  \item We noted that we get a runtime error if we convert with
+    \verb|int| and it does not look like an int.  I asked students
+    what we would need to catch this and re-ask the user; we would
+    need conditionals and repetition.  Promised we would be able to do
+    this later in the course.
+  \end{itemize}
+\end{reflect}
+
 \newpage
+
 
 \section{LAB: Kepler \& Newton}
 
@@ -497,6 +582,19 @@ This lab seemed to go pretty well.  Common errors:
   $1.4 \times 10^{-n}$.
 \end{itemize}
 
+\end{reflect}
+
+\begin{reflect}{Brent, S' 17}
+  I had forgotten to tell them a few minor things but cleared them up
+  easily during lab.  Some interesting errors I saw this time around:
+  \begin{itemize}
+  \item \verb|6.67 * 10e-11|.  Hint: \verb|10e-11| and \verb|1e-11|
+    are not the same.  Either \verb|6.67e-11| or
+    %
+    \verb|6.67 * (10 ** -11)| are both fine.
+  \item As usual many students missed the ``kilo'' in ``149 million
+    kilometers'' and were off by a factor of 1000.
+  \end{itemize}
 \end{reflect}
 
 \newpage
