@@ -8,11 +8,12 @@ r = random.random()   # random float in [0,1)
 
 if r < 0.2:
     print("r is small")
+elif r >= 0.2 and r <= 0.6:   # elif = "else if"
+    print("r is mediumish")
+elif r < 0.8:
+    print("r is biggish")
 else:
-    if r >= 0.2 and r <= 0.6:
-        print("r is mediumish")
-    else:
-        print("r is big")
+    print("r is big")
 
 ##password = input("Please type the password: ")
 ##
