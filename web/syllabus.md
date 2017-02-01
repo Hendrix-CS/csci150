@@ -15,9 +15,8 @@ to review the material and come to class prepared.
 * Chapter 1: Fri, Jan 20
 * Chapter 2: Mon, January 23 <!-- [ [drake.py](static/drake.py) ] -->
 * Chapter 3: Weds, January 25 [ [box.py](static/box.py) [box.txt](static/box.txt) ]
+* Chapter 4: Mon, January 30 [ [conditionals.py](static/conditionals.py) [conditionals.txt](static/conditionals.txt) ]
 <!--
-* Chapter 3: Fri, January 22 [ [input-output.py](static/input-output.py) ]
-* Chapter 4: Weds, January 27 [ [conditionals.py](static/conditionals.py) ]
 * Chapter 5: Weds, February 10
 * Chapter 6: Weds, February 10 [ [func-demo.py](static/func-demo.py) ]
 * Chapter 7: Weds, February 17 [ [while-loops.py](static/while-loops.py), [guess-number.py](static/guess-number.py) ]
