@@ -21,7 +21,7 @@ project will be given when they are assigned.
 -->
 
 <!--
-  1         [Today in History](http://mgoadric.github.io/csci150/projects/project1.html)                                            5%  Feb 9      Feb 16
+  1         [Question-Answer](http://mgoadric.github.io/csci150/projects/project1_if.html)                                          5%  Feb 9      Feb 16
   2         [Word Games](static/project2.html) [ [Sample project start](static/doublets.py) ]                                       10% Mar 8      Mar 15
   3         [Final Project](https://docs.google.com/document/d/1wiQdxR02iPVell1TUyHZ8C5-Fq62LcvAyUodk24kROw/edit?usp=sharing)       20% Apr 11     Monday, May 9, 8:30am
 -->
