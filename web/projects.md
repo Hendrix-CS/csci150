@@ -14,14 +14,12 @@ also technique, documentation and evaluation of your solution. Further
 details on the grading standards and handin instructions for each
 project will be given when they are assigned.
 
-<!--
-  Project   Name                                                                                                                    Pct Assigned   Due
-  --------- ---------------------------------------------------                                                                     --- ---------- --------------------
+Project   Name                                                                                                                    Pct Assigned   Due
+--------- ---------------------------------------------------                                                                     --- ---------- --------------------
+1         [Question-Answer](http://mgoadric.github.io/csci150/projects/project1_if.html)                                          5%  Feb 9      Feb 16
+2         Word Games                                                                                                              10% Mar 9      Mar 16
+3         Final Project                                                                                                           20% Apr 10     Friday, May 5, 2pm
 
--->
 
-<!--
-  1         [Question-Answer](http://mgoadric.github.io/csci150/projects/project1_if.html)                                          5%  Feb 9      Feb 16
-  2         [Word Games](static/project2.html) [ [Sample project start](static/doublets.py) ]                                       10% Mar 8      Mar 15
-  3         [Final Project](https://docs.google.com/document/d/1wiQdxR02iPVell1TUyHZ8C5-Fq62LcvAyUodk24kROw/edit?usp=sharing)       20% Apr 11     Monday, May 9, 8:30am
--->
+
+<!-- (https://docs.google.com/document/d/1wiQdxR02iPVell1TUyHZ8C5-Fq62LcvAyUodk24kROw/edit?usp=sharing) -->
