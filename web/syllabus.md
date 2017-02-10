@@ -18,8 +18,9 @@ to review the material and come to class prepared.
 * Chapter 4: Mon, Jan 30--Weds, Feb 1 [ [conditionals.py](static/conditionals.py) [conditionals.txt](static/conditionals.txt) ]
 * Fri, Feb 3 [ [binary.txt](static/binary.txt) ]
 * Mon, Weds, Feb 6-8: Exam 1
+* Chapter 5: Fri, February 10 [ [functions.py](static/functions.py) [functions.txt](static/functions.txt) ]
+
 <!--
-* Chapter 5: Weds, February 10
 * Chapter 6: Weds, February 10 [ [func-demo.py](static/func-demo.py) ]
 * Chapter 7: Weds, February 17 [ [while-loops.py](static/while-loops.py), [guess-number.py](static/guess-number.py) ]
 * Chapter 8: Fri, February 19 [ [strings.py](static/strings.py), [strings-repl.txt](static/strings-repl.txt) ]
