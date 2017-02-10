@@ -11,7 +11,6 @@ answers by hand and turn them in on paper.
     def foo(a):
         b = 3*a + 2
         return b
-        print "In foo"
 
     def bar(x,y):
         return foo(x) + foo(y)
