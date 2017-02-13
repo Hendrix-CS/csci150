@@ -19,9 +19,9 @@ to review the material and come to class prepared.
 * Fri, Feb 3 [ [binary.txt](static/binary.txt) ]
 * Mon, Weds, Feb 6-8: Exam 1
 * Chapter 5: Fri, February 10 [ [functions.py](static/functions.py) [functions.txt](static/functions.txt) ]
+* Chapter 6: Mon, February 13 [ [functions2.py](static/functions2.py) [functions2.txt](static/functions2.txt) ]
 
 <!--
-* Chapter 6: Weds, February 10 [ [func-demo.py](static/func-demo.py) ]
 * Chapter 7: Weds, February 17 [ [while-loops.py](static/while-loops.py), [guess-number.py](static/guess-number.py) ]
 * Chapter 8: Fri, February 19 [ [strings.py](static/strings.py), [strings-repl.txt](static/strings-repl.txt) ]
 * Mon, February 22 [ [while-practice.py](static/while-practice.py) ]
