@@ -1272,6 +1272,29 @@ local. Note that \verb|F| and \verb|temp_C| are not defined afterwards.
 
 \subsection*{Quiz: arguments \& parameters}
 
+\subsection*{Flow of execution \& stack diagrams}
+
+\begin{reflect}{Brent, S'17}
+  In S'17 I moved this to the start of this lecture, though I didn't
+  go into much detail about local copies of variables, I'll do that
+  later (\eg\ when talking about recursion).
+\end{reflect}
+
+Execution starts at the first line of a program and continues.  But
+when a function is called, execution jumps to that function, and when
+done picks back up where it left off.  This can get complicated, since
+functions can call other functions!  In general Python has to keep
+track of a ``stack'' of places to resume.  Imagine you were reading a
+book but it told you to go read another book and then come back.  Then
+THAT book told you to go read another book, etc.  You would keep the
+old books, with bookmarks, in a pile.  When done, pick up the next
+book from the top of the pile and continue.
+
+Do an example. Write a function that calls \verb|C_to_F| on several
+temperatures.  Then write another function which does that twice, and
+so on.  Then trace execution.  Introduce an error and see the
+``traceback''.  Draw a stack diagram with local variables.
+
 \subsection*{Fruitful functions}
 
 Recall function from last time:
@@ -1366,22 +1389,15 @@ can just return \verb|x % y == 0| directly.
   talking about recursion instead?
 \end{reflect}
 
-\subsection*{Flow of execution \& stack diagrams}
-
-Execution starts at the first line of a program and continues.  But
-when a function is called, execution jumps to that function, and when
-done picks back up where it left off.  This can get complicated, since
-functions can call other functions!  In general Python has to keep
-track of a ``stack'' of places to resume.  Imagine you were reading a
-book but it told you to go read another book and then come back.  Then
-THAT book told you to go read another book, etc.  You would keep the
-old books, with bookmarks, in a pile.  When done, pick up the next
-book from the top of the pile and continue.
-
-Do an example. Write a function that calls \verb|C_to_F| on several
-temperatures.  Then write another function which does that twice, and
-so on.  Then trace execution.  Introduce an error and see the
-``traceback''.  Draw a stack diagram with local variables.
+\begin{reflect}{Brent, S'17}
+  This time I didn't get around to showing them functions with
+  multiple parameters; I'll stick that in at some point when I need
+  it. Also, I \emph{still} haven't shown them the mod operator---this
+  was a somewhat deliberate choice since students are often confused
+  by mod, and I'd rather save it until I have more motivatation for
+  introducing it; perhaps at the beginning of the Caesar lab if not
+  before.
+\end{reflect}
 
 \section*{LAB: Coding bat}
 
