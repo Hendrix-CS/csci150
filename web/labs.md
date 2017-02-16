@@ -46,6 +46,7 @@ included in each lab.
   1     [Minecraft Hour of Code](labs/lab1.html)                                      Jan 19
   2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)         Jan 26
   3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Feb 2
+  4     [Guess My Number](labs/guess.html)                                            Feb 16
 
 <!--
   5     [CodingBat](http://mgoadric.github.io/csci150/labs/lab5.html)                 Feb 16

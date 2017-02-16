@@ -1,0 +1,274 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 4 - Guess My Number</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="/css/style.css">
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> Lab 4: Guess My Number</h1>
+<hr>
+
+<h2>Overview</h2>
+
+In this lab, you will practice using <code>while</code> loops in
+Python by implementing the classic game "Guess My Number".
+
+<!--
+<h2>Description</h2>
+
+XXX
+
+<b>Read carefully!</b> XXX lab has lots of hints and instructions.
+-->
+
+<h2>Step 1</h2>
+
+For the first step, you will implement a basic version of the game
+"guess the number".  Here is what a sample run of the program might
+look like:
+
+<pre>
+    Welcome to guess the number!
+    I will pick a number from 1-100, and you try to guess it.
+    I will tell you whether each guess is too low or too high.
+    ...OK, I have picked a number.
+    Your guess? 50
+    50 is too low.
+    Your guess? 60
+    60 is too high.
+    Your guess? 65
+    65 is too high.
+    Your guess? 61
+    61 is too high.
+    Your guess? 55
+    55 is too high.
+    Your guess? 51
+    You got it!  It took you 6 guesses.
+</pre>
+
+Start by creating a file called <code>guess_number.py</code> that looks like
+this:
+
+<pre>
+    import random
+
+    def main():
+        # Write your code here
+
+    # Call main() as the last thing in the file
+    main()
+</pre>
+
+Inside the <code>main()</code> function, you should implement the game
+as illustrated above.
+
+<ul>
+  <li>Use <code>random.randint(1,100)</code> to pick a random number
+    between 1 and 100.</li>
+  <li>Of course you will need a <code>while</code> loop to keep
+    prompting the user for their guess.  As the loop control variable,
+    you can use either the user's guess itself, or you can create a
+    sentinel variable which starts as <code>False</code> and
+    becomes <code>True</code> once the user has correctly guessed the
+    number.</li>
+  <li>As in the Collatz example in class, you will need to use a
+    separate counter variable to keep track of the number of guesses.</li>
+</ul>
+
+<h2>Step 2</h2>
+
+Your game works now, but it has a problem:
+
+<pre>
+    Welcome to guess the number!
+    I will pick a number from 1-100, and you try to guess it.
+    I will tell you whether each guess is too low or too high.
+    ...OK, I have picked a number.
+    Your guess? fifty
+    Traceback (most recent call last):
+      File "guess_number.py", line 33, in <module>
+        main()
+      File "guess_number.py", line 22, in main
+        guess = int(input("Your guess? "))
+    ValueError: invalid literal for int() with base 10: 'fifty'
+</pre>
+
+If the user enters invalid input, the program will crash.  We have
+noted this problem before, but now that we know how to do repetition,
+we can actually do something about it!
+
+You should write a new function called <code>input_guess()</code>.  Here is a
+template you can use as a starting point; copy it into your file
+(after <code>input random</code> and before <code>def main():</code>):
+
+<pre>
+    # input_guess prompts the user for their guess, and keeps prompting
+    # until it is valid.
+    #
+    # Input:  none
+    # Output: a valid guess (int)
+    def input_guess():
+        # Keep prompting the user for their guess until they enter
+        # something valid
+
+        # FILL IN CODE HERE
+
+        # We only do this conversion at the end, once we know
+        # guess_str looks like an int
+        guess = int(guess_str)
+
+        # Finally, return the user's guess
+        return guess
+</pre>
+
+If the user's input is stored as a string in the
+variable <code>guess_str</code>, you can check whether it is valid
+using <code>guess_str.isdigit()</code>, which is a True or False value
+telling you whether the string <code>guess_str</code> consists of all
+digits or not.
+
+Finally, replace the part of your <code>main()</code> function that
+asks the user for their input with a call to your
+new <code>input_guess()</code> function.  That is, instead of
+something like
+
+<pre>
+    guess = int(input("Your guess? "))
+</pre>
+
+you should now have
+
+<pre>
+    guess = input_guess()
+</pre>
+
+Here's what the output of your program might look like once you
+complete this step:
+
+<pre>
+    Welcome to guess the number!
+    I will pick a number from 1-100, and you try to guess it.
+    I will tell you whether each guess is too low or too high.
+    ...OK, I have picked a number.
+    Your guess? fifty
+    That is not a number.  Try again.
+    Your guess? iuerhuheg
+    That is not a number.  Try again.
+    Your guess? 20
+    20 is too low.
+</pre>
+
+If you like, you may also modify <code>input_guess()</code> so that it
+ensures the user's guess is between 1 and 100, but this is not required.
+
+<h2>Step 3</h2>
+
+Since this game is so addictive, it's inconvenient to re-run it every
+time we want to play.  In this step, you will modify the game so that
+the user can keep playing multiple rounds until they decide to stop.
+
+You should put another <code>while</code> loop around an appropriate
+part of your <code>main()</code> function so that it will repeat the
+entire game until the user wants to stop.  Here is what the output of
+your program might look like once you get this to work:
+
+<pre>
+    Welcome to guess the number!
+    I will pick a number from 1-100, and you try to guess it.
+    I will tell you whether each guess is too low or too high.
+    ...OK, I have picked a number.
+    Your guess? 50
+    50 is too low.
+    Your guess? 70
+    70 is too high.
+    Your guess? 60
+    60 is too high.
+    Your guess? 55
+    You got it!  It took you 4 guesses.
+    Would you like to play again? (yes/no) yes
+    ...OK, I have picked a number.
+    Your guess? 20
+    20 is too low.
+    Your guess? 80
+    80 is too high.
+    Your guess? 05
+    5 is too low.
+    Your guess? 50
+    50 is too high.
+    Your guess? 30
+    30 is too high.
+    Your guess? 25
+    25 is too high.
+    Your guess? 23
+    You got it!  It took you 7 guesses.
+    Would you like to play again? (yes/no) no
+</pre>
+
+<h2>Step 4</h2>
+
+Finally, create a new file called <code>computer_guess.py</code>.  You
+should implement the same game, but with the roles reversed!  That is,
+the human user picks a number, and the computer tries to guess it.
+Here is an example of what your program's output might look like:
+
+<pre>
+    Welcome to guess the number!  You pick a number from 1-100
+    and I will guess it.  Please tell me whether my guesses are
+    "correct", "low", or "high".
+    Is your number 50? too high
+    Please respond with "correct", "low", or "high".
+    Is your number 50? erogiherg
+    Please respond with "correct", "low", or "high".
+    Is your number 50? high
+    Is your number 25? high
+    Is your number 12? low
+    Is your number 18? low
+    Is your number 21? high
+    Is your number 19? low
+    Is your number 20? correct
+    Yay!  I win!  It only took me 7 guesses.
+    Shall we play again? (yes/no) yes
+    Is your number 50? low
+    Is your number 75? low
+    Is your number 88? high
+    Is your number 81? high
+    Is your number 78? correct
+    Yay!  I win!  It only took me 5 guesses.
+    Shall we play again? (yes/no) no
+</pre>
+
+A few hints:
+<ul>
+  <li>Be sure that your program responds appropriately if the user
+    inputs something unexpected, as in the example above.</li>
+  <li>Your program should offer the option of playing again as long as
+    the user wants to continue playing.</li>
+  <li>Feel free to just put everything inside a <code>main()</code>
+    function; you need not worry about writing any functions for this step.</li>
+</ul>
+
+<h2>What to turn in</h2>
+
+<ul>
+  <li><code>guess_number.py</code></li>
+  <li><code>computer_guess.py</code></li>
+</ul>
+
+<h2>Grading</h2>
+<ul>
+<li>To earn a C, complete step 1.
+<li>To earn a B, complete steps 1, 2, and 3.
+<li>To earn an A, complete steps 1-4.
+<li>To earn a 100, complete all of the steps and extend one of the
+  games in some (small) way beyond the listed requirements. For
+  example, you might have <code>guess_number.py</code> ensure the
+  user's guesses are between 1 and 100, or you might
+  modify <code>computer_guess.py</code> to detect cheating on the part
+  of the human, or some other extension that you think of.  Be
+  creative, and be sure to explain your extension in a comment at the
+  top of your program.
+</ul>
+<hr>
+<small>&copy; Brent Yorgey, Hendrix College</small>
+
+</body>
