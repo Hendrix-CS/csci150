@@ -17,6 +17,7 @@ web/hakyll
 *.pdf
 
 exams-solutions/
+csci150-instructors/
 ThinkPython/
 16S/
 .stack-work
