@@ -41,6 +41,14 @@ You will be handing in your lab work via
 [Moodle](http://moodle.hendrix.edu). Instructions to do so will be
 included in each lab.
 
+Labs should follow
+the
+[Python style guide](http://mgoadric.github.io/csci150/python_style_guide.html).
+You may use
+the
+[automated style checker](http://mgoadric.github.io/csci150/python_style_guide.html) to
+help you catch common style errors.
+
   Lab   Name                                                                          Assigned
   ----- --------------------------------------------------                            ----------
   1     [Minecraft Hour of Code](labs/lab1.html)                                      Jan 19
