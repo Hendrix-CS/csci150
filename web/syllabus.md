@@ -21,6 +21,7 @@ to review the material and come to class prepared.
 * Chapter 5: Fri, February 10 [ [functions.py](static/functions.py) [functions.txt](static/functions.txt) ]
 * Chapter 6: Mon, February 13 [ [functions2.py](static/functions2.py) [functions2.txt](static/functions2.txt) ]
 * Chapter 7: Weds, February 15 [ [while.py](static/while.py) [collatz.py](static/collatz.py) [while-collatz.txt](static/while-collatz.txt) ]
+* Chapter 8: Fri, February 17 [ ]
 
 <!--
 * Chapter 8: Fri, February 19 [ [strings.py](static/strings.py), [strings-repl.txt](static/strings-repl.txt) ]
