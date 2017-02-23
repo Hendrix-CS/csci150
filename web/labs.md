@@ -55,10 +55,9 @@ help you catch common style errors.
   2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)         Jan 26
   3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Feb 2
   4     [Guess My Number](labs/guess.html)                                            Feb 16
+  5     [Mutation is the Word](http://mgoadric.github.io/csci150/labs/lab5.html)      Feb 23
 
 <!--
-  5     [CodingBat](http://mgoadric.github.io/csci150/labs/lab5.html)                 Feb 16
-  6     [Mutation is the Word](http://mgoadric.github.io/csci150/labs/lab6.html)      Feb 23
   7     [Caesar's Secrets](http://mgoadric.github.io/csci150/labs/lab7.html)          Mar 1
   8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 15
   9     [Sentiment Analysis](static/lab9.html)                                        Mar 29
