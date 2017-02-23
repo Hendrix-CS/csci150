@@ -1,0 +1,281 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 5 - Mutation is the Word</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 5<br>Mutation is the Word</h1>
+<hr>
+
+<h2>Overview</h2>
+In this lab we will make extensive use of sentinel loops (while loops).  We will explore
+mutation of DNA through playing the game Doublets.
+
+<h2>Materials</h2>
+<ul>
+	<li><a href="../data/english2.txt">Common English Words</a>
+	<li><a href="../data/dictionary.py">dictionary.py</a> Python Module
+	<li>Lab Partner
+</ul>
+
+<h2>Description</h2>
+
+As we study computation and life, we can ask "How did life evolve from single-celled organisms
+into the diversity of life we
+see today?"  The answer lies in a process called
+ <a href="http://en.wikipedia.org/wiki/Mutation">mutation</a>.
+<p>
+Separate from the DNA-RNA-Protein process are two separate processes for cell duplication called
+<a href="http://en.wikipedia.org/wiki/Mitosis">mitosis</a> and
+<a href="http://en.wikipedia.org/wiki/Meiosis">meiosis</a>.  Both processes involve
+a cell replicating its DNA, and it is within this replication that mutations can occur.
+Perhaps there was a copying mistake, or a random x-ray damaged part of the DNA;
+in any case, the DNA code we begin with can undergo small alterations.  Each mutation
+during this replication process could possibly have a large impact of the earlier transcription
+and translation process, such that we could have a new stop codon within a gene,
+or we could place a different amino acid into our protein chain.  While some changes may be
+very harmful and lead to genetic diseases, others could provide an unexpected benefit and
+new functionality. These underlying mutations
+introduce variety into the gene pool for a population, and allow natural selection
+and evolution to occur.
+<p>
+While the language of DNA was not understood until 1953 by
+<a href="http://en.wikipedia.org/wiki/Watson_and_Crick">James Watson and Francis Crick</a>
+with the help of data from <a href="http://en.wikipedia.org/wiki/Rosalind_Franklin">Rosalind
+Franklin</a>, similar properties of mutation were noticed nearly 100 years earlier by
+<a href="http://en.wikipedia.org/wiki/Lewis_Carroll">Charles Lutwidge Dodgson (aka Lewis Carroll)
+</a>, who is most famous for his novel "Alice in Wonderland." In an article for
+<i>Vanity Fair</i>, Carroll created a puzzle called Doublets, which explored the
+effects of mutation on English words.  His rules description is as follows:
+<blockquote>
+The rules of the Puzzle are simple enough. Two words are proposed, of the same length;
+and the Puzzle consists in linking these together by interposing other words,
+each of which shall differ from the next word in one letter only. That is to say,
+one letter may be changed in one of the given words, then one letter in the word so
+obtained, and so on, till we arrive at the other given word. The letters must not be
+interchanged among themselves, but each must keep to its own place. As an example,
+the word 'head' may be changed into 'tail' by interposing the words
+'heal, teal, tell, tall'. I call the given words 'a Doublet', the interposed words
+'Links', and the entire series 'a Chain', of which I here append an example:
+<p>
+<pre>
+H E A D
+h e a l
+t e a l
+t e l l
+t a l l
+T A I L
+</pre>
+<p>
+It is, perhaps, needless to state that it is de rigueur that the links should be
+English words, such as might be used in good society.
+</blockquote>
+<p>
+(More details on the connection between Lewis Carroll and genetics can be found in an article by
+David B. Searls entitled <a href="http://www.liebertonline.com/doi/abs/10.1089/10665270152530881">
+From <i>Jabberwocky</i> to Genome: Lewis Carroll and Computational Biology</a>).
+<p>
+Our task for this lab is to create a Python program that lets a user play the Doublets game
+and enforces all the rules given above by Lewis Carroll.
+
+<!-- <h3>Step 1 - Analyze the Problem, Create Specifications</h3> -->
+
+<!-- We will tackle this puzzle using the software engineering phases. -->
+<!-- First, analyze the problem to see what steps we can take to model this inside a computer. -->
+<!-- Try to answer the following questions: -->
+<!-- <ul> -->
+<!-- 	<li>What input do we need from the user? Output for the user? -->
+<!-- 	<li>What are all the possible ways that the user could enter incorrect data? -->
+<!-- 	<li>Is there any data input from the user we need to standardize? -->
+<!-- 	<li>How can we keep track of the solution path? -->
+<!-- </ul> -->
+<!-- <p> -->
+
+<!-- Write your answers in <code>Lab Evaluation</code>. -->
+
+<h3>Step 1 - Develop Pseudocode</h3>
+Begin by developing an algorithmic solution using
+<i>pseudocode</i>.  This should correspond to the structure of a
+Python program, but is written in English instead of Python.
+</p>
+
+<p>For example, pseudocode for a guessing-game could look like this:
+<p>
+<pre>
+Generate a number for the human to guess
+As long as the human has not guessed the number
+    Request a guess from the human
+    If it's too high or too low, say so
+Congratulate the human on their insight
+</pre>
+
+<p>
+The point is that this is <i>structured</i> like Python, using
+indentation and hinting at loops and conditionals.  But the individual
+pieces are just English descriptions, which you will later translate into
+precise Python code.
+
+<p>
+
+To demonstrate the eventual behavior of the program, here is a
+sample run of the Doublets game.
+<p>
+<pre>
+What is the starting word? <span>CAT</span>
+What is the ending word? <span>DOG</span>
+Start   = CAT
+Current = CAT
+End     = DOG
+Which character do you want to change? (the first character is 1) <span>3</span>
+What is your new character? <span>B</span>
+Current = CAB
+End     = DOG
+Which character do you want to change? (the first character is 1) <span>2</span>
+What is your new character? <span>O</span>
+Current = COB
+End     = DOG
+Which character do you want to change? (the first character is 1) <span>3</span>
+What is your new character? <span>G</span>
+Current = COG
+End     = DOG
+Which character do you want to change? (the first character is 1) <span>1</span>
+What is your new character? <span>D</span>
+Solution path found in 4 steps.
+CAT -> CAB -> COB -> COG -> DOG
+</pre>
+<p>
+A second run of the program is shown below, where the user made many mistakes.
+<p>
+<pre>
+What is the starting word? <span>log</span>
+What is the ending word? <span>worm</span>
+The lengths are not equal. Please try again.
+What is the ending word? <span>sfu</span>
+sfu is not a word. Please try again.
+What is the ending word? <span>bug</span>
+Start   = LOG
+Current = LOG
+End     = BUG
+Which character do you want to change? (the first character is 1) <span>0</span>
+0 is out of range. Please try again.
+Which character do you want to change? (the first character is 1) <span>4</span>
+4 is out of range. Please try again.
+Which character do you want to change? (the first character is 1) <span>1</span>
+What is your new character? <span>4</span>
+4og is not a valid word
+Current = LOG
+End     = BUG
+Which character do you want to change? (the first character is 1) <span>1</span>
+What is your new character? <span>b</span>
+Current = BOG
+End     = BUG
+Which character do you want to change? (the first character is 1) <span>x</span>
+x is not a number. Please try again.
+Which character do you want to change? (the first character is 1) <span>2</span>
+What is your new character? <span>uu</span>
+uu is more than one character. Please try again.
+Which character do you want to change? (the first character is 1) <span>2</span>
+What is your new character? <span>u</span>
+Solution path found in 2 steps.
+LOG -> BOG -> BUG
+</pre>
+<p>
+Add the pseudocode to your <code>Lab Evaluation</code>.
+<p>
+
+<h3>Step 2 - Implement Incrementally</h3>
+Download the text file <code><a href="../data/english2.txt">english2.txt</a></code>
+and the python module <code>
+<a href="../data/dictionary.py">dictionary.py</a></code> files, and
+make sure they are in the same folder where you will put your lab.
+You <b>do not need to copy and paste</b> anything!  At the top of your
+Python program, you should put
+
+<pre>import dictionary</pre>
+
+which will allow you to use the functions in <code>dictionary.py</code>.
+
+The dictionary module contains a function
+<code>valid_word(word, file)</code>, which will
+return <code>True</code> if the word is found in the file and <code>False</code>
+otherwise.  You can call the function by writing something like
+
+<pre>dictionary.valid_word(some_word, 'english2.txt')</pre>
+
+<p>
+Now take your pseduocode description and begin to implement your
+program in Python.  Your program should be
+named <code>doublets.py</code>.  Write your code in small sections and
+test incrementally.
+
+Remember that your program should be structured <b>entirely using
+    functions</b>.  Your program should look something like this:
+<pre>
+  # Input: ...
+  # Output: ...
+  # Description
+  def fun1(x,y,z):
+    ...
+
+  ... More functions here with appropriate comments ...
+
+  def main():
+    ...
+
+  main()
+</pre>
+
+I recommend starting by getting things to work first without using
+functions, and then incrementally abstracting parts of your program
+into functions until the whole program is appropriately decomposed.
+
+<h3>Step 3 - Test, Debug and Maintain</h3>
+With incremental implementation, Steps 3 and 4 should go hand in hand.  Never write more than
+5-10 lines of code before testing your changes.  First make your program work with perfect
+input, and then expand it to work with erroneous user input.
+<p>
+Once your program is working, try out some of the transformations below
+<ul>
+<li>FIRE -- HEAT
+<li>SLEEP -- DREAM
+<li>APE -- MAN
+<li>WHITE -- BLACK
+</ul>
+
+<h3>Future Thoughts</h3>
+Your <code>doublets.py</code> program lets the user chose what character to change at each step,
+and then verifies that each new word is a valid word.  Can you think of a way to always find the
+minimum number of steps to transform one word to another?  How will you know if a path
+between two words can be found? Include your answers to these questions
+in the Evaluation Document.
+
+<h2>What to Hand In</h2>
+Make sure you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+	<li>Evaluation Document (containing pseudocode, and answers to
+	"Future thoughts" questions)
+ 	<li><code>doublets.py</code>
+ 	<li><code>dictionary.py</code>
+ 	<li><code>english2.txt</code>
+</ul>
+(Yes, please turn in <code>dictionary.py</code>
+and <code>english2.txt</code> even though you did not create them---it makes
+the grading process much easier!)
+<h2>Grading</h2>
+<ul>
+<li>To earn a D, turn in an Evaluation Document.
+<li>To earn a C, do the above and implement a program that can handle
+  the input in the first sample run.
+<li>To earn a B, implement a program that can handle the input in the
+  first sample run, and is entirely well-decomposed into functions.
+<li>To earn a A, do the above and implement a program that can handle
+  the input in the second sample run.
+<li>To earn a 100, do the above and follow the style guide exactly.
+</ul>
+<hr>
+<small>&copy; Mark Goadrich, Hendrix College</small>
+
+</body>
