@@ -16,9 +16,9 @@ HW                                                                              
 2: Logic puzzles                                                                                                      January 30
 3: [Function reading](static/function-reading.html)                                                                   February 13
 4: [DNA Strings](static/dna-strings.html)                                                                             February 22
+5: [While, string, and list reading](static/loop-string-reading.html)                                                 February 27
 
 <!--
-5: [While, string, and list reading](static/loop-string-reading.html)                                              March 2
 6: [Zen reading -- section 1](http://mgoadric.github.io/csci150/homework/zen.html)                                 March 30
 7: [System analysis](static/system-analysis.html)                                                                  April 4
 -->
