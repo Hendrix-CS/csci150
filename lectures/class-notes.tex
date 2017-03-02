@@ -1538,6 +1538,11 @@ def check_collatz_up_to(max):
 (What happens if we take out \verb|max| check and just say
 \verb|while true|?  A legitimate use of an infinite loop!)
 
+\begin{reflect}{Brent, S'17}
+  Only made it partway through Collatz: we wrote \verb|hailstone| and
+  \verb|collatz| functions together.
+\end{reflect}
+
 \section*{LAB: Guess My Number}
 
 Have the students write both versions of the game (in the first
@@ -1571,6 +1576,13 @@ Remember:
 \item No recursion, just loops.  Talk about recursion later.
 \end{itemize}
 
+\begin{reflect}{Brent, S'17}
+  Started class by finishing Collatz from last time.  This ended up
+  taking a while since we had fun watching it print lots of stuff,
+  printing out record maxima, etc.  Students were very engaged and had
+  lots of ideas of things they wanted to try.
+\end{reflect}
+
 \subsection*{Strings}
 
 We sort of know about strings, but the only thing we can do with them
@@ -1602,6 +1614,14 @@ so far is concatenate them with \verb|+|.
 \item Show some useful methods: \verb|upper|, \verb|count|,
   \verb|replace|, \verb|find|, \verb|isdigit|
 \end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  Because of the time we took doing Colltaz, I only made it to here,
+  we didn't have time to write a practice function.  Just barely had
+  time to show them what I was looking for on the DNA HW.  But I ended
+  up incorporating the explode function into the lecture on lists
+  later, which worked well.
+\end{reflect}
 
 \subsection*{More while loop \& function practice}
 
@@ -1668,6 +1688,16 @@ things:
   any language and doesn't require introducing any new syntax.
 \end{reflect}
 
+\begin{reflect}{Brent, S'17}
+  What I did this time was to start with the ``volume of a box''
+  program we wrote a long time ago (in the run-up to Kepler/Newton
+  lab) and improve it:
+  \begin{itemize}
+  \item Showed them process of abstracting out into functions.
+  \item In particular, went over \verb|int_input| function, tried to
+    get it to work for negative numbers, and so on.
+  \end{itemize}
+\end{reflect}
 
 \begin{verbatim}
 # Inputs:
@@ -1689,6 +1719,12 @@ def int_input(prompt):
 
 Do version of \verb|int_input| that accepts negative numbers as well
 (uses indexing, slicing, \verb|or|).
+
+\begin{reflect}{Brent, S'17}
+  I didn't do any of the below: already did Collatz, etc.  Just spent
+  the whole period talking about function abstraction to get them
+  ready for doublets lab.
+\end{reflect}
 
 \begin{verbatim}
 import time
@@ -1782,8 +1818,21 @@ def check_collatz_up_to(max):
   think about abstracting functions from existing code.
 \end{reflect}
 
+\begin{reflect}{Brent, S'17}
+  The lab went a lot better this time (though it was still hard!),
+  after (1) prefacing it with the ``Guess My Number'' lab which gave
+  them practice writing while loops, and (2) going over the process of
+  function abstraction in class, and encouraging them to first get a
+  working doublets program and THEN abstract it out into functions.
+\end{reflect}
+
 \newpage
 \section{Lists I}
+
+\begin{reflect}{Brent, S'17}
+  Just jumped right into lists, used the lab (printing chain of words)
+  as motivation.
+\end{reflect}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1845,7 +1894,32 @@ Other list mutation methods:
   Got through this lecture way faster than last time, leaving a good
   10--15 minutes at the end.  So on the fly I came up with another
   exercise as an example of while loops and building a list.  We wrote
-  the following code all together.
+  \verb|read_inputs| all together.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  I pared this down even more---I didn't even show them \verb|pop|,
+  \verb|remove|, or \verb|del|, just showed them that they exist and
+  told them to look them up.  We then had plenty of time for writing
+  some practice code.  First I had them try to write
+  \verb|explode_list| with partners, then we wrote it all together.
+  Then, I had them work on \verb|read_inputs|, then got a volunteer to
+  come up and type while the class told them what to do.  This worked
+  super well!
+\end{reflect}
+
+\begin{verbatim}
+# Input: items (list)
+# Print the items in the list, one per line.
+def explode_list(items):
+    n = 0
+    while n < len(items):
+        print(items[n])
+        n += 1
+\end{verbatim}
+
+\begin{reflect}{Brent S'16}
+  This is the version from S'16:
 \end{reflect}
 
 \begin{verbatim}
@@ -1865,6 +1939,33 @@ def read_inputs():
             inputs.append(word)
 
     return inputs
+\end{verbatim}
+
+\begin{reflect}{Brent, S'17}
+  And these are the versions from S'17:
+\end{reflect}
+\begin{verbatim}
+# Inputs: none
+# Output: list of strings entered by the user
+#
+# Repeatedly prompt the user for inputs until
+# they type 'quit', then return a list of all their inputs.
+def read_inputs():
+    answer = input("What would you like to list? ")
+    stuff = []
+    while answer != "quit":
+        stuff.append(answer)
+        answer = input("What would you like to list? ")
+    return stuff
+
+def read_inputs2():
+    answer = ''
+    stuff = []
+    while answer != "quit":
+        answer = input("What would you like to list? ")
+        if answer != 'quit':
+            stuff.append(answer)
+    return stuff
 \end{verbatim}
 
 \newpage
@@ -1929,6 +2030,11 @@ animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
 
   I think this is a really great exercise. It really helps develop
   their intuition and their grasp of the details.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  The exercise was not as useful/fun this time around.  The students
+  made fewer interesting mistakes, which I suppose is a good thing.
 \end{reflect}
 
 \subsection*{Lists and strings}
@@ -2093,7 +2199,7 @@ for i in range(len(numbers)):
   numbers[i] *= 2
 \end{verbatim}
 This is way better than using a \verb|while| loop since it rules out
-errors putting the starting or ending the indices at the wrong number.
+errors putting the starting or ending indices at the wrong number.
 
 \subsection*{For loop practice}
 
