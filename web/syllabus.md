@@ -23,10 +23,11 @@ to review the material and come to class prepared.
 * Chapter 7: Weds, February 15 [ [while.py](static/while.py) [collatz.py](static/collatz.py) [while-collatz.txt](static/while-collatz.txt) ]
 * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ]
 * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ]
-* Chapter 9: Fri, February 24 [ [lists.py](static/lists.py), [lists.txt](static/lists.txt) ]
+* Chapter 9: Fri, February 24 [ [lists.py](static/lists.py) [lists.txt](static/lists.txt) ]
+* Mon, February 27 [ [gerbils.py](static/gerbils.py) [gerbils.txt](static/gerbils.txt) ]
+* Chapter 10: Wed, March 1 [ [for.py](static/for.py) [for.txt](static/for.txt) ]
 
 <!--
-* Chapter 10: Mon, February 29 [ [for-loops.py](static/for-loops.py) ]
 * Chapter 11: Fri, March 11 [ [recursion.py](static/recursion.py) ]
 * Chapter 12: Fri, March 18 [ [dictionaries.py](static/dictionaries.py), [dictionaries-repl.txt](static/dictionaries-repl.txt), [memoization.py](static/memoization.py) ]
 * Mon, March 28 [ [files.py](static/files.py) ]

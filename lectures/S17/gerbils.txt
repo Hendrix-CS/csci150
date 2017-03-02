@@ -1,0 +1,99 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+>>> animals
+['dog', 'frog', 'dolphin', 'spider', 'hog', 'gerbil', 'gerbil', 'gerbil']
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+>>> animals
+['dog', 'frog', 'dolphin', 'spider', 'hog', 'gerbil', 'gerbil', 'gerbil']
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+Traceback (most recent call last):
+  File "/home/brent/teaching/150/lectures/S17/gerbils.py", line 15, in <module>
+    gerbils = gerbil*3
+NameError: name 'gerbil' is not defined
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+Traceback (most recent call last):
+  File "/home/brent/teaching/150/lectures/S17/gerbils.py", line 17, in <module>
+    animals = animals + gerbils
+TypeError: can only concatenate list (not "str") to list
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+>>> animals
+['dog', 'frog', 'dolphin', 'spider', 'hog', 'gerbil', 'gerbil', 'gerbil']
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+>>> animals
+['dog', 'frog', 'dolphin', 'spider', 'hog', 'gerbil', 'gerbil', 'gerbil']
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+>>> animals
+['dog', 'frog', 'dolphin', 'spider', 'hog', 'gerbil', 'gerbil', 'gerbil']
+>>> list('hello')
+['h', 'e', 'l', 'l', 'o']
+>>> "banana".split("n")
+['ba', 'a', 'a']
+>>> "banana".split()
+['banana']
+>>> "banana".split('')
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    "banana".split('')
+ValueError: empty separator
+>>> "Hello, how are you today".split(' ')
+['Hello,', 'how', 'are', 'you', 'today']
+>>> "n".join(['ba', 'a', 'a'])
+'banana'
+>>> " -> ".join(['DOG', 'DOT', 'COT', 'CAT'])
+'DOG -> DOT -> COT -> CAT'
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+[1, 2]
+>>> a = [1,2,3]
+>>> b = [1,2,3]
+>>> a == b
+True
+>>> a is b
+False
+>>> a.pop()
+3
+>>> a
+[1, 2]
+>>> b
+[1, 2, 3]
+>>> a == b
+False
+>>> a = b
+>>> a
+[1, 2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+True
+>>> a is b
+True
+>>> a.pop()
+3
+>>> a
+[1, 2]
+>>> b
+[1, 2]
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+[1, 2]
+>>> animals
+['dog', 'frog', 'dolphin', 'spider', 'hog', 'gerbil', 'gerbil', 'gerbil']
+>>> animal_release(animals)
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/gerbils.py =========
+[1, 2]
+>>> animals
+['dog', 'frog', 'dolphin', 'spider', 'hog', 'gerbil', 'gerbil', 'gerbil']
+>>> animal_release(animals)
+>>> animals
+['dog', 'frog']
+>>> 
