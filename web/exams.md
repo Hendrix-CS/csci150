@@ -9,7 +9,7 @@ answer questions along with writing and debugging code.
 -   Exam 1: Wednesday, February 8, covering input/output, math, numerical data,
     conditionals, and binary encoding ([Practice exam](static/exam1-practice.pdf))
 -   Exam 2: Wednesday, March 8, covering functions, while and for loops, lists and
-    strings
+    strings ([Practice exam](static/exam2-practice.pdf))
 -   Exam 3: Friday, April 21, covering recursion, dictionaries and object-oriented
     programming
 
