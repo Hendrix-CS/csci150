@@ -26,6 +26,7 @@ to review the material and come to class prepared.
 * Chapter 9: Fri, February 24 [ [lists.py](static/lists.py) [lists.txt](static/lists.txt) ]
 * Mon, February 27 [ [gerbils.py](static/gerbils.py) [gerbils.txt](static/gerbils.txt) ]
 * Chapter 10: Wed, March 1 [ [for.py](static/for.py) [for.txt](static/for.txt) ]
+* Fri, March 3 [ [for.py](static/for.py) [for2.txt](static/for2.txt) ]
 
 <!--
 * Chapter 11: Fri, March 11 [ [recursion.py](static/recursion.py) ]
