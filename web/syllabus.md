@@ -27,9 +27,10 @@ to review the material and come to class prepared.
 * Mon, February 27 [ [gerbils.py](static/gerbils.py) [gerbils.txt](static/gerbils.txt) ]
 * Chapter 10: Wed, March 1 [ [for.py](static/for.py) [for.txt](static/for.txt) ]
 * Fri, March 3 [ [for.py](static/for.py) [for2.txt](static/for2.txt) ]
+* Fri, March 10 [ [files.py](static/files.py) ]
+* Chapter 11: Mon, March 13 [ [recursion.py](static/recursion.py) ]
 
 <!--
-* Chapter 11: Fri, March 11 [ [recursion.py](static/recursion.py) ]
 * Chapter 12: Fri, March 18 [ [dictionaries.py](static/dictionaries.py), [dictionaries-repl.txt](static/dictionaries-repl.txt), [memoization.py](static/memoization.py) ]
 * Mon, March 28 [ [files.py](static/files.py) ]
 * Chapter 15: Weds, April 6
