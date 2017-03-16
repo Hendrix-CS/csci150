@@ -57,9 +57,9 @@ help you catch common style errors.
   4     [Guess My Number](labs/guess.html)                                            Feb 16
   5     [Mutation is the Word](labs/lab5.html)                                        Feb 23
   7     [Caesar's Secrets](http://mgoadric.github.io/csci150/labs/lab7.html)          Mar 2
+  8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 16
 
 <!--
-  8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 15
   9     [Sentiment Analysis](static/lab9.html)                                        Mar 29
   10    [On Stuckness and debugging](static/lab10.html)                               Apr 5
   11    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab11.html)             Apr 12
