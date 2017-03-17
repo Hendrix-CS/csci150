@@ -28,7 +28,7 @@ to review the material and come to class prepared.
 * Chapter 10: Wed, March 1 [ [for.py](static/for.py) [for.txt](static/for.txt) ]
 * Fri, March 3 [ [for.py](static/for.py) [for2.txt](static/for2.txt) ]
 * Fri, March 10 [ [files.py](static/files.py) ]
-* Chapter 11: Mon, March 13 [ [recursion.py](static/recursion.py) ]
+* Chapter 11: Mon-Wed, March 13-15 [ [recursion.py](static/recursion.py) ]
 
 <!--
 * Chapter 12: Fri, March 18 [ [dictionaries.py](static/dictionaries.py), [dictionaries-repl.txt](static/dictionaries-repl.txt), [memoization.py](static/memoization.py) ]
