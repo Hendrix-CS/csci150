@@ -1182,11 +1182,22 @@ Have them do sample exam. Go over it.  Things to emphasize:
   \item Path 1: Immediately introduce while loops and strings.  Then
     do the pared-down doublets lab (with no functions).  Then
     introduce functions, and do the ``going on vacation lab'' (adding
-    abstraction to the doublets lab.
-  \item Alternatively, start by introducing functions, introduce basic
+    abstraction to the doublets lab).
+  \item Path 2: Alternatively, start by introducing functions, introduce basic
     while loops, then do the ``Guess my number'' lab.  Then introduce
     strings, and do the full doublets lab (with functions).
   \end{enumerate}
+
+  In S'17 I did the second alternative.  Full disclosure, I only did
+  this because I backed myself into a corner by spending a while
+  covering functions before I even considered the choice, and by then
+  it was too late to introduce strings in time to do the pared-down
+  doublets lab.  I was saved at the last minute only by Mark's valiant
+  brainstorming.  In the end, though, I think I ended up really liking
+  this path.  The ``Guess my number'' lab went well, and after getting
+  practice with loops that way, and explicitly covering function
+  abstraction in class, the full doublets lab went better than I
+  remembered (though it was still hard of course).
 \end{reflect}
 
 \section{Functions I}
@@ -1196,7 +1207,7 @@ Have them do sample exam. Go over it.  Things to emphasize:
 \item Read chapter 5 in book --- quiz Friday.
 \end{itemize}
 
-\subsection*{Exam 1 review}
+\subsection*{Exam 1 review?}
 \begin{itemize}
 \item Hand back exams.
 \item Go over some solutions:
@@ -1206,12 +1217,6 @@ Have them do sample exam. Go over it.  Things to emphasize:
   \item Come ask me with questions about other problems.
   \end{itemize}
 \end{itemize}
-
-\subsection*{Project overview}
-
-Show them the project.  Calendar strangeness due to tracking floating
-point value (ratio of revolution to rotation) using integers!  Run an
-exemplar and show them what it does.
 
 \subsection*{Functions}
 
@@ -2371,6 +2376,9 @@ Spend a lecture doing and going over a practice exam.
   spring break.  For lab the following day (Thursday) I had them start
   on their projects, \emph{i.e.} not leave lab until they had a solid
   project idea.
+
+  As usual this exam was a doozy. Average class score on the exam was
+  71, median 73.5, max 100 ($\times 2$), min 21 (ouch).
 \end{reflect}
 
 \section{Exam wrap-up, demo project}
@@ -2485,20 +2493,58 @@ If time, could do one of the following:
 
 Start by reinforcing ``base case + recursive case''.  Talk about
 ``leap of faith'': trust that recursive calls will work without
-thinking about how.  Trust your future self.
+thinking about how.  Trust your future self.  DON'T think about
+unwinding entire recursion stack.  Just think about ONE level.
 
 Up until now all the examples we've done have been math functions.
 Let's do a few more ``computer-sciency'' examples processing strings
 and lists.  Note, in Python this is not the best way to implement
 these functions (though in some languages it is).  Just for
 illustration purposes.  If you take 151 you will start to see real,
-legitimate uses of recursion, e.g. processing trees.
+legitimate uses of recursion, e.g. processing trees.  (The one
+legitimate use of recursion using only what you know is what we will
+be doing in lab---making pretty pictures!)
 
 \begin{itemize}
 \item Work in pairs to implement \verb|product|.
 \item Have them work in pairs to implement string \verb|reverse|.
 \item Have them work in (different?) pairs to implement \verb|is_palindrome|.
 \end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  Talked about thought process for writing recursive functions,
+  re-coded factorial function.  Lots of great questions.  Then looked
+  at \texttt{sum} function again which we actually wrote in the
+  previous class (in retrospect it was probably premature to do
+  that).  Then only got as far as having them work on writing a
+  \texttt{product} function on paper.  Ended with a spirited debate
+  about what \texttt{product([])} ought to be.  Plan to pick up where
+  we left off next time.
+\end{reflect}
+
+\section{Recursion III}
+
+\begin{reflect}{Brent, S'17}
+  This semester I decided to spend three lectures on recursion instead
+  of two.  It fit the schedule better (I didn't want to start a brand
+  new topic for one day before spring break) and I think it is really
+  needed.
+\end{reflect}
+
+Finish discussion of recursive \texttt{product} implementation,
+beginning with why \texttt{product([])} should be $1$ rather than $0$:
+
+\begin{itemize}
+\item Economy of expression---more elegant definitions, with fewer
+  special cases, usually means you are on the right track in
+  mathematics; those definitions end up being not just more economical
+  but also more useful and more consistent with other things.
+\item This is the same reason $0! = 1$.
+\item Validates the identity \texttt{product(xs + ys) = product(xs) * product(ys)}.
+\end{itemize}
+
+
+Have them work in pairs to implement string \texttt{reverse}.
 
 \section*{LAB: Fractal Recursion}
 
