@@ -45,7 +45,25 @@ def listsum(nums):
 # Output: product of all the numbers in the list (int).
 def listprod(nums):
     if nums == []:
+        return 1
+    elif nums[0] == 0:
+        return 0
+##    elif (0 in nums):
+##        return 0
+    else:
+        return nums[0] * listprod(nums[1:])
         
+# Input: s (str)
+# Output: the reverse of s
+def reverse(s):
+    if s == '':
+        return ''
+##    elif len(s) == 1:
+##        return s
+    else:
+        return s[-1] + reverse(s[:-1])
+        # or
+        # reverse(s[1:]) + s[0]
 
 
 ####################################
