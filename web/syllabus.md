@@ -30,11 +30,10 @@ to review the material and come to class prepared.
 * Fri, March 10 [ [files.py](static/files.py) ]
 * Chapter 11: Mon-Wed, March 13-15 [ [recursion.py](static/recursion.py) ]
 * Chapter 12: Mon-Wed, March 27-29 [ [dictionaries.py](static/dictionaries.py), [dictionaries.txt](static/dictionaries.txt), [dictionaries2.txt](static/dictionaries2.txt) ]
+* Chapter 15: Mon, April 3
+* Chapter 16: Mon, April 3 [ [cake.py](static/cake.py), [cake.txt](static/cake.txt) ]
 
 <!--
-* Mon, March 28 [ [files.py](static/files.py) ]
-* Chapter 15: Weds, April 6
-* Chapter 16: Weds, April 6 [ [objects.py](static/objects.py), [objects-repl.txt](static/objects-repl.txt) ]
 * Fri, April 8 [ [traffic-lights.py](static/traffic-lights.py) ]
 * Chapter 17: Mon, April 11 [ [cards.py](static/cards.py) ]
 * Chapter 18: Weds, April 13 [ [cards.py](static/cards.py) ]

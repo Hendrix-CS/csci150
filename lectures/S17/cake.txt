@@ -1,0 +1,84 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/cake.py ===========
+>>> my_cake = Cake(100)
+>>> my_cake.num_lit_candles
+100
+>>> your_cake = Cake(5)
+>>> your_cake.num_lit_candles
+5
+>>> my_cake.num_lit_candles = 70
+>>> your_cake.num_lit_candles
+5
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/cake.py ===========
+>>> my_cake = Cake(100)
+>>> my_cake.num_lit_candles
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    my_cake.num_lit_candles
+AttributeError: 'Cake' object has no attribute 'num_lit_candles'
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/cake.py ===========
+>>> cake = Cake(100)
+>>> cake.num_lit_candles
+100
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+10
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+3
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+0
+>>> cake = Cake(100)
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+8
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+5
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+3
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+1
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+0
+>>> cake = Cake(100)
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+90
+>>> cake.blowout_random()
+>>> cake.num_lit_candles
+0
+>>> cake = Cake(100)
+>>> cake.blowout(45)
+>>> cake.num_lit_candles
+55
+>>> 
+=========== RESTART: /home/brent/teaching/150/lectures/S17/cake.py ===========
+>>> cake = Cake(100)
+>>> happy_birthday(cake)
+3
+>>> cake = Cake(100)
+>>> happy_birthday(cake)
+5
+>>> cake = Cake(100)
+>>> happy_birthday(cake)
+7
+>>> cake = Cake(100)
+>>> happy_birthday(cake)
+3
+>>> cake = Cake(100)
+>>> happy_birthday(cake)
+7
+>>> cake = Cake(100)
+>>> happy_birthday(cake)
+4
+>>> 
