@@ -32,6 +32,7 @@ to review the material and come to class prepared.
 * Chapter 12: Mon-Wed, March 27-29 [ [dictionaries.py](static/dictionaries.py), [dictionaries.txt](static/dictionaries.txt), [dictionaries2.txt](static/dictionaries2.txt) ]
 * Chapter 15: Mon, April 3
 * Chapter 16: Mon, April 3 [ [cake.py](static/cake.py), [cake.txt](static/cake.txt) ]
+* Wed, April 5 [ [cake.py](static/cake.py), [cake2.txt](static/cake2.txt) ]
 
 <!--
 * Fri, April 8 [ [traffic-lights.py](static/traffic-lights.py) ]

@@ -73,6 +73,35 @@ def happy_birthday(cake):
         count += 1
     return count
 
+# Input:
+#   num_candles (int): # of candles on each cake
+#   num_cakes (int): # of cakes to try
+#
+# Return the average number of iterations needed
+# to blow out all the candles on a cake with num_candles.
+def average_num_blows(num_candles, num_cakes):
+    count = 0
+    for i in range(num_cakes):
+        cake = Cake(num_candles)
+        count += happy_birthday(cake)
+    return count / num_cakes
+
+# For each k from 1 up to n, print out k and the
+# average number of iterations needed to blow
+# out k candles.
+def graph_cakes(n):
+    cake_file = open("cake-data.txt", 'w')
+    for k in range(1,n+1):
+        cake_file.write(str(k) + " " + str(average_num_blows(k, 1000)))
+        cake_file.write("\n")
+        
+
+
+
+
+
+
+                      
 
 
 
