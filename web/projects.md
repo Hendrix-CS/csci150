@@ -18,8 +18,4 @@ Project   Name                                                                  
 --------- ---------------------------------------------------                                                                     --- ---------- --------------------
 1         [Question-Answer](http://mgoadric.github.io/csci150/projects/project1_if.html)                                          5%  Feb 9      Feb 16
 2         [Word Games](http://mgoadric.github.io/csci150/projects/project2.html) [ [Sample project start](static/project2.py) ]   10% Mar 9      Mar 16
-3         Final Project                                                                                                           20% Apr 10     Friday, May 5, 2pm
-
-
-
-<!-- (https://docs.google.com/document/d/1wiQdxR02iPVell1TUyHZ8C5-Fq62LcvAyUodk24kROw/edit?usp=sharing) -->
+3         [Final Project](labs/final.html)                                                                                        20% Apr 11     Friday, May 5, 2pm
