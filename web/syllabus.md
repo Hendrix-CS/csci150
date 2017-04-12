@@ -33,11 +33,11 @@ to review the material and come to class prepared.
 * Chapter 15: Mon, April 3
 * Chapter 16: Mon, April 3 [ [cake.py](static/cake.py), [cake.txt](static/cake.txt) ]
 * Wed, April 5 [ [cake.py](static/cake.py), [cake2.txt](static/cake2.txt) ]
+* Fri, April 7 [ [traffic.py](static/traffic.py), [traffic.txt](static/traffic.txt) ]
+* Chapter 17: Mon, April 10 [ [cards.py](static/cards.py), [cards.txt](static/cards.txt) ]
+* Chapter 18: Weds, April 12 [ [cards.py](static/cards.py) [cards2.txt](static/cards2.txt) ]
 
 <!--
-* Fri, April 8 [ [traffic-lights.py](static/traffic-lights.py) ]
-* Chapter 17: Mon, April 11 [ [cards.py](static/cards.py) ]
-* Chapter 18: Weds, April 13 [ [cards.py](static/cards.py) ]
 * Mon, April 26 [ [queues.py](static/queues.py) ]
 * Mon, May 2 [ [bouncy.py](static/bouncy.py) ]
 -->
