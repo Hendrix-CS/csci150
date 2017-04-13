@@ -60,9 +60,9 @@ help you catch common style errors.
   8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 16
   9     [Sentiment Analysis](http://mgoadric.github.io/csci150/labs/lab9.html)        Mar 30
   10    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab10.html)             Apr 5
+  11    [Graphics and Animation](labs/processing.html)                                Apr 13
 
 <!--
   10    [On Stuckness and debugging](static/lab10.html)                               Apr 5
-  12    [Processing](http://mgoadric.github.io/csci150/labs/lab12.html)               Apr 19
   13    Final project workshop (optional, **9am-11am**)                               Apr 26
 -->
