@@ -167,7 +167,81 @@ def blackjack_sum(deck):
     return total
 
 
+# A blackjack player (either computer or human player)
+class Player:
+    
+    # Variables:
+    #    - blackjack hand value (int)
+    #    - hand (Deck object)
+    #    - humanity (boolean)
+    #    - name (string)
 
+    # Methods:
+    #   - hit_or_stay() (outputs boolean)
+    #   - get_hand_value()
+    #   - get_name()
+    #   - get_hand()
+    #   - is_human()
+    #   - add_cards(cards)
 
+    # Create a new player (true = human, false = computer)
+    def __init__(self, humanity, name):
+        self.hand = Deck([])
+        self.hand_value = 0
+        self.humanity = humanity
+        self.name = name
+
+    def __repr__(self):
+        return self.name + ": " + str(self.hand)
+    
+    # Decide whether to hit or stay.
+    def hit_or_stay(self):
+        if self.humanity:
+            input_valid = False
+            while not input_valid:
+                hit_or_stay = input(self.name + ", hit or stay? ").lower()
+                input_valid = hit_or_stay in ['hit', 'stay']
+                if not input_valid:
+                    print("Try again.")
+            return (hit_or_stay == 'hit')
+
+        else:
+            return self.hand_value < 17
+
+    #   - get_hand_value()
+    def get_hand_value(self):
+        return self.hand_value
+
+    def get_name(self):
+        return self.name
+    
+    def get_hand(self):
+        return self.hand
+
+    def is_human(self):
+        return self.humanity
+
+    # Input: cards (list of Card objects)
+    # Add all the given cards to the player's hand
+    def add_cards(self, cards):
+        for card in cards:
+            self.hand.add(card)
+
+    def reveal(self):
+        self.hand.reveal()
+
+#############################
+
+def blackjack(deck, player1, player2):
+    cards = deck.deal(2)
+    cards[0].flip()
+    player1.add_cards(cards)
+
+    cards = deck.deal(2)
+    cards[0].flip()
+    player2.add_cards(cards)
+
+    print(player1)
+    print(player2)
 
 

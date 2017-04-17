@@ -37,6 +37,7 @@ to review the material and come to class prepared.
 * Chapter 17: Mon, April 10 [ [cards.py](static/cards.py), [cards.txt](static/cards.txt) ]
 * Chapter 18: Weds, April 12 [ [cards.py](static/cards.py) [cards2.txt](static/cards2.txt) ]
 * Fri, April 14 [ [cards.py](static/cards.py) [cards3.txt](static/cards3.txt) ]
+* Mon, April 17 [ [cards.py](static/cards.py) [cards4.txt](static/cards4.txt) ]
 
 <!--
 * Mon, April 26 [ [queues.py](static/queues.py) ]
