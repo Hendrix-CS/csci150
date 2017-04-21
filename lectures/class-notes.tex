@@ -2467,9 +2467,9 @@ It works!
 Show call stack.  Every recursive call has its own copy of local
 variables!
 
-Big idea: transform a problem into a slightly simpler version, solve
-that simpler problem, do a bit of work to compute an answer to the
-original problem.
+Big idea: transform a problem into a slightly simpler version (or more
+than one), solve that simpler problem, do some work to compute an
+answer to the original problem.
 
 Typically:
 \begin{itemize}
@@ -2479,12 +2479,8 @@ Typically:
   simpler (i.e. closer to the base case) problem.
 \end{itemize}
 
-If time, could do one of the following:
-\begin{itemize}
-\item Re-code factorial function live, adding a bunch of comments and
+Then re-code factorial function live, adding a bunch of comments and
   narrating thought process.
-\item List sum.
-\end{itemize}
 
 % Another example: Fibonacci function.  Show mathematical definition,
 % implement in Python.  Show how slow it is, show call tree.  In fact
@@ -2614,6 +2610,10 @@ Other things we can do with a dictionary:
 Show
 \url{https://docs.python.org/2.7/library/stdtypes.html#mapping-types-dict}.
 
+\begin{reflect}{Brent, S'17}
+  Only made it to here.  Did frequency counting the following class.
+\end{reflect}
+
 Rewrite \verb|frequency_counts(s)| to return a dictionary.  Why this is
 better: directly look up by letter value.  No need to use \verb|ord|
 or alphabet string etc.
@@ -2645,6 +2645,16 @@ def normalize(d):
 
 \newpage
 \section{Dictionaries practice}
+
+\begin{reflect}{Brent, S'17}
+  Instead of doing Fibonacci and memoization, we just kept going with
+  writing frequency count functions.  I think it was a much better use
+  of class time!  Memoization was a fun throwawy topic to do right
+  before spring break, but it doesn't serve much of a pedagogical
+  purpose (other than being a fun example of the use of dictionaries).
+\end{reflect}
+
+XXX include S'17 frequency count code here.
 
 Naive Fibonacci function.  Understand why it is so slow.  Then
 use a dictionary to memoize.  Have them write memo code.
@@ -3123,6 +3133,14 @@ Card and Deck examples.
   Is-a.  Add \verb|reveal|, \verb|value| methods.
 \end{itemize}
 
+\begin{reflect}{Brent, S'17}
+  I deemphasized teaching them about inheritance, instead choosing to
+  just focus on encapsulation and data abstraction.  So I modified the
+  example to do without inheritance.  We just used Deck for both decks
+  and hands, and our Player class has a boolean to tell which kind of
+  player it is.
+\end{reflect}
+
 \section{Further Still Yet Even More classes \& objects}
 
 \begin{itemize}
@@ -3144,6 +3162,11 @@ Card and Deck examples.
   still end up winning around 40\% of the time.  On the other hand,
   still choosing to hit even when you have 17 or more points quickly
   gets very bad, because you are almost guaranteed to bust.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  This semester I spent 4 lectures on blackjack and we didn't even
+  make it to the end!
 \end{reflect}
 
 \newpage
