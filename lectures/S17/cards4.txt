@@ -1,0 +1,67 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> player = Player(False, "ROBOT")
+>>> player.get_hand_value()
+0
+>>> player.get_hand()
+
+>>> player.hit_or_stay()
+True
+>>> p2 = Player(True, "Fritz")
+>>> p2.hit_or_stay()
+Hit or stay? lk
+Try again.
+Hit or stay? eruh
+Try again.
+Hit or stay? erufh
+Try again.
+Hit or stay? hit
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> p2 = Player(True, "Fritz")
+>>> p2.hit_or_stay()
+Hit or stay? hit
+True
+>>> p2.hit_or_stay()
+Hit or stay? stay
+False
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> p2 = Player(True, "Fritz")
+>>> p2.hit_or_stay()
+Fritz, hit or stay? stay
+False
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> blackjack(Deck(), Player(True, "Fritz"), Player(False, "ROBOT"))
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    blackjack(Deck(), Player(True, "Fritz"), Player(False, "ROBOT"))
+  File "/home/brent/teaching/150/lectures/S17/cards.py", line 235, in blackjack
+    player1.add(cards)
+AttributeError: 'Player' object has no attribute 'add'
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> blackjack(Deck(), Player(True, "Fritz"), Player(False, "ROBOT"))
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> blackjack(Deck(), Player(True, "Fritz"), Player(False, "ROBOT"))
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    blackjack(Deck(), Player(True, "Fritz"), Player(False, "ROBOT"))
+  File "/home/brent/teaching/150/lectures/S17/cards.py", line 241, in blackjack
+    print(player1)
+  File "/home/brent/teaching/150/lectures/S17/cards.py", line 195, in __repr__
+    return self.name + ": " + self.hand
+TypeError: Can't convert 'Deck' object to str implicitly
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> blackjack(Deck(), Player(True, "Fritz"), Player(False, "ROBOT"))
+Fritz: AS **
+ROBOT: 3S **
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> 
