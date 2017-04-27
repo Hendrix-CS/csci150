@@ -39,8 +39,8 @@ to review the material and come to class prepared.
 * Fri, April 14 [ [cards.py](static/cards.py) [cards3.txt](static/cards3.txt) ]
 * Mon, April 17 [ [cards.py](static/cards.py) [cards4.txt](static/cards4.txt) ]
 * Wed, April 19 [ [exam3-review.py](static/exam3-review.py) ]
+* Mon-Wed, April 24-26 [ [queues.py](static/queues.py) ]
 
 <!--
-* Mon, April 26 [ [queues.py](static/queues.py) ]
 * Mon, May 2 [ [bouncy.py](static/bouncy.py) ]
 -->
