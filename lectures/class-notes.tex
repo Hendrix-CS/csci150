@@ -26,6 +26,41 @@
 
 \maketitle
 
+\begin{reflect}{Brent, S'17}
+
+  Big ideas/notes for next time!
+  \begin{itemize}
+  \item Finding ways to get students to think more carefully about
+    types would help.  MyPy seems promising.
+  \item One thing I want to hit a \emph{lot} harder next time is
+    getting the students a lot of practice building an accurate mental
+    model of Python execution.  You can't effectively figure out how
+    to \emph{write} code to do a desired task if you don't even
+    understand precisely what the code \emph{does} in the first place,
+    and I see this problem with my students a lot.  They really
+    struggle to write code on labs and projects because they only have
+    a vague idea of what any given code would do.  For example, they
+    have trouble answering simple questions like: should this
+    instruction go inside or outside this loop?
+
+    I've been trying to move in this direction with introducing some
+    reading exercises, but it needs to go a lot further than this:
+    very explicitly teaching them how to draw memory + stack diagrams
+    and trace execution of code, and requiring them to do this on HW
+    and exams---i.e. not just to read code and get the right answer,
+    but to actually be able to produce accurate memory/stack diagrams
+    showing the execution trace of some given code on an exam.  I'm
+    actually thinking this should be on all 3 exams---Exam 1 would
+    just have basic tracing of variable values; Exam 2 would introduce
+    stack frames and references; Exam 3 would feature heap-allocated
+    objects and recursive stack frames.  I could even imagine having
+    them use some kind of tool that can simulate Python code and show
+    animations of memory+stack diagrams.  Such a tool might already
+    exist, or perhaps I could find the time to put together such a
+    tool.
+  \end{itemize}
+\end{reflect}
+
 \section{Introduction}
 
 \subsection*{Setup}
@@ -2890,6 +2925,12 @@ For Monday, analyze your system.
 Prepare a presentation, \emph{use projector} (don't waste time drawing
 on board) and address all 5 of the above things.
 
+\begin{reflect}{Brent, S'17}
+  I left out the system analysis HW this time around.  It didn't feel
+  to me like it was pulling its weight pedagogically, especially since
+  this semester I did not cover inheritance.
+\end{reflect}
+
 \section{System/hierarchy analysis presentations}
 
 \newpage
@@ -2977,6 +3018,19 @@ main()
 \item Run it and paste output into Excel, do a regression to show that
   it is close to natural log.
 \end{itemize}
+
+\newpage
+\section*{LAB: Die Hard/Water Jug}
+
+\begin{reflect}{Brent, S'17}
+  This lab seemed to go pretty well this year.  The new step that
+  forced them to write a test function helped a LOT!  I know of
+  several groups that started out with a buggy implementation of the
+  WaterJug class and then ended up debugging it through writing tests
+  and getting the tests to pass---precisely what we would hope for
+  such an exercise.  We should probably figure out ways of
+  incorporating this approach into other labs as well.
+\end{reflect}
 
 \newpage
 \section{More classes \& objects}
@@ -3141,6 +3195,18 @@ Card and Deck examples.
   player it is.
 \end{reflect}
 
+\section*{LAB: Processing}
+
+\begin{reflect}{Brent, S'17}
+  \textbf{VERY IMPORTANT, FOR NEXT TIME}: download Processing ahead of
+  time and distribute it to students on a few USB drives!  It took
+  \emph{forever} having all the students download it simultaneously at
+  the start of lab.  Some students weren't really able to get started
+  until over an hour into the lab period.
+
+  Fortunately other than that the lab seemed to go well.
+\end{reflect}
+
 \section{Further Still Yet Even More classes \& objects}
 
 \begin{itemize}
@@ -3293,6 +3359,18 @@ structures is at the core of the science part of computer science, and will
 be heavily discussed in CSCI 151 with more formal tools and for more
 complicated structures, within the context of Java.
 
+\section{Fun with Processing}
+
+\begin{reflection}{Brent, S'16, S'17}
+  In both S'16 and S'17 I ended with a class or two left over.  So I
+  have been doing some live coding in Processing, both as an example
+  of good code organization with Processing (which helps the students
+  using Processing for their final project) and just for fun.  I code
+  up a physically semi-realistic simulation of balls bouncing off each
+  other and line segments.
+\end{reflection}
+
+\newpage
 \section*{LAB: Coding bat}
 
 We don't tend to do this lab anymore; keeping it here at the end for
