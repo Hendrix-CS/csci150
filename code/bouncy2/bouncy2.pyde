@@ -12,9 +12,17 @@ class Vector:
     def length(self):
         return math.sqrt(self.x**2 + self.y**2)
 
+    def copy(self):
+        return Vector(self.x, self.y)
+
     def scale(self, k):
         self.x *= k
         self.y *= k
+        
+        return self
+    
+    def scaled(self, k):
+        return Vector(self.x * k, self.y * k)
 
     def normalize(self):
         l = self.length()
@@ -51,14 +59,37 @@ class Ball:
         return dist(self.c, other.c) <= (self.r + other.r)
 
     def update(self):
-        self.c = add(self.c, self.v)
+        if self.c.x + self.r >= XMAX or self.c.x - self.r <= 0:
+            self.v.x *= -1
+        if self.c.y + self.r >= YMAX or self.c.y - self.r <= 0:
+            self.v.y *= -1
+        
+        self.c += self.v
 
     def bounce(self, other):
         if (self.intersect(other)):
-            normal = self.c - other.c
-            normal.normalize()
-            normal.scale(2*dot(normal, self.v))
-            self.v = self.v - normal
+            # normal = self.c - other.c
+            # normal.normalize()
+            
+            # aci = dot(self.v, normal)
+            # bci = dot(other.v, normal)
+            
+            m1 = self.r**2
+            m2 = other.r**2
+            # acf = (aci * (m1 - m2) + 2 * m2 * bci) / (m1 + m2)
+            # bcf = (bci * (m2 - m1) + 2 * m1 * aci) / (m1 + m2)
+            
+            u1 = self.v.copy()
+            u2 = other.v.copy()
+            
+            self.v = (u1.scaled(m1 - m2) + u2.scaled(2*m2)).scaled(1/(m1 + m2))
+            other.v = (u2.scaled(m2 - m1) + u1.scaled(2*m1)).scaled(1/(m1 + m2))
+            
+            # normal.scale(acf - aci)
+            # self.v += normal
+            
+            # normal.scale(2*dot(normal, self.v))
+            # self.v = self.v - normal
 
 class World:
     def __init__(self, n):
@@ -89,12 +120,12 @@ class World:
                 bi = self.balls[i]
                 bj = self.balls[j]
                 bi.bounce(bj)
-                bj.bounce(bi)
+                # bj.bounce(bi)
 
         for ball in self.balls:
             ball.update()
 
-world = World(20)
+world = World(10)
 
 def draw():
     world.update()
