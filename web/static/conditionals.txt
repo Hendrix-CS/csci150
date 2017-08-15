@@ -1,0 +1,134 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> True
+True
+>>> False
+False
+>>> type(True)
+<class 'bool'>
+>>> True and False
+False
+>>> True and True
+True
+>>> False and True
+False
+>>> False and False
+False
+>>> True or True
+True
+>>> True or False
+True
+>>> False or True
+True
+>>> False or False
+False
+>>> not True
+False
+>>> not False
+True
+>>> (not ((not True) and False)) or (True and (True or False))True
+SyntaxError: invalid syntax
+>>> (not ((not True) and False)) or (True and (True or False))
+True
+>>> 3 < 5
+True
+>>> (3 < 5) and (9 < 3)
+False
+>>> (3 < 5) or (9 < 3)
+True
+>>> (3 < 3)
+False
+>>> (3 <= 3)
+True
+>>> (4 >= 3)
+True
+>>> ( 4 => 3)
+SyntaxError: invalid syntax
+>>> 5 == 6
+False
+>>> x = 3
+>>> x == 3
+True
+>>> x = 4
+>>> x == 3
+False
+>>> 3 != 5
+True
+>>> not (3 == 5)
+True
+>>> "hello" == "there"
+False
+>>> "hello" == "hello"
+True
+>>> "cat" < "dog"
+True
+>>> "cat" < "catamaran"
+True
+>>> "Cat" < "snake"
+True
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+Please type the password: password
+Goodbye
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+Please type the password: passw0rd123
+Here be secrets
+Goodbye
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+Please type the password: passw0rd123
+Here be secrets
+Even more secrets
+Goodbye
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+Please type the password: f
+Goodbye
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+Please type the password: f
+No secrets for you!
+Goodbye
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+Please type the password: passw0rd123
+Here be secrets
+Even more secrets
+Goodbye
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is big
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is mediumish
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is mediumish
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is big
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is big
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is big
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is mediumish
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is big
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is mediumish
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is mediumish
+>>> 
+============= RESTART: /home/brent/teaching/150/conditionals.py =============
+r is small
+r is big
+>>> 

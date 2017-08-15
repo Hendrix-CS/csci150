@@ -1,0 +1,139 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+Hello there, CSCI 150!
+This is a function.
+The temperature in degrees Fahrenheit in 98.6
+>>> func3()
+Hello there, CSCI 150!
+This is a function.
+Hello there, CSCI 150!
+This is a function.
+here
+Hello there, CSCI 150!
+This is a function.
+Hello there, CSCI 150!
+This is a function.
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+Hello there, CSCI 150!
+This is a function.
+Traceback (most recent call last):
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 13, in <module>
+    say_hi()    # You ALWAYS NEED PARENTHESES.
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 11, in say_hi
+    print("Magic: " + str(1/0))
+ZeroDivisionError: division by zero
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> func3()
+Hello there, CSCI 150!
+This is a function.
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    func3()
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 20, in func3
+    say_hi_twice()
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 16, in say_hi_twice
+    say_hi()
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 11, in say_hi
+    print("Magic: " + str(1/0))
+ZeroDivisionError: division by zero
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> func3()
+Hello there, CSCI 150!
+This is a function.
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    func3()
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 21, in func3
+    say_hi_twice()
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 8, in say_hi_twice
+    say_hi()
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 15, in say_hi
+    print("Magic: " + str(1/0))
+ZeroDivisionError: division by zero
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> C_to_F(30)
+86.0
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> C_to_F_short(30)
+86.0
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> C_to_F_short(30)
+86.0
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> F_to_qualitative
+<function F_to_qualitative at 0x7fde8161d620>
+>>> F_to_qualitative(80)
+'hot'
+>>> F_to_qualitative(800)
+'dead'
+>>> F_to_qualitative(-30)
+'freezing'
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> F_to_qualitative(-61)
+'dead'
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> weather_chat()
+What is the temperature in degrees C? 15
+Gee, you must feel nice! temperate today.
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> weather_chat()
+What is the temperature in degrees C? 300
+Gee, you must feel dead today.
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> weather_chat()
+What is the temperature in degrees C? 5
+Gee, you must feel cold today.
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> weather_chat()
+What is the temperature in degrees C? -20
+Gee, you must feel freezing today.
+>>> weather_chat2()
+What is the temperature in degrees C? -20
+Gee, you must feel freezing today.
+>>> weather_chat3()
+What is the temperature in degrees C? 10
+Gee, you must feel nice! temperate today.
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+The temperature in degrees Fahrenheit in 98.6
+>>> weather_chat4()
+What is the temperature in degrees C? 100
+Gee, you must feel dead today.
+>>> weather_chat4()
+What is the temperature in degrees C? 40
+Gee, you must feel scorching today.
+>>> weather_chat4(-41)
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    weather_chat4(-41)
+TypeError: weather_chat4() takes 0 positional arguments but 1 was given
+>>> weather_chat4()
+What is the temperature in degrees C? -41
+Gee, you must feel freezing today.
+>>> 	

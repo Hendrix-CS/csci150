@@ -1,0 +1,22 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+======= RESTART: /home/brent/teaching/150/lectures/S17/dictionaries.py =======
+>>> total_values({'a':1, 'b':3, 'c':99})
+103
+>>> 
+======= RESTART: /home/brent/teaching/150/lectures/S17/dictionaries.py =======
+>>> normalize_frequencies({'a':1, 'b':3})
+{'b': 0.75, 'a': 0.25}
+>>> normalize_frequencies({})
+{}
+>>> 
+======= RESTART: /home/brent/teaching/150/lectures/S17/dictionaries.py =======
+>>> frequencies({'a':1, 'b':3})
+{'b': 0.5, 'a': 0.5}
+>>> frequencies('babb')
+{'b': 0.75, 'a': 0.25}
+>>> frequencies('iuherg3w4#&%)(&#W$&W$Y')
+{'e': 0.045454545454545456, '3': 0.045454545454545456, 'w': 0.045454545454545456, 'W': 0.09090909090909091, 'u': 0.045454545454545456, 'h': 0.045454545454545456, 'r': 0.045454545454545456, 'g': 0.045454545454545456, 'i': 0.045454545454545456, ')': 0.045454545454545456, '(': 0.045454545454545456, '&': 0.13636363636363635, '$': 0.09090909090909091, 'Y': 0.045454545454545456, '#': 0.09090909090909091, '%': 0.045454545454545456, '4': 0.045454545454545456}
+>>> 

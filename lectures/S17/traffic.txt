@@ -1,0 +1,124 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> t = TrafficLight()
+>>> t.color
+'red'
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> main()
+red
+green
+yellow
+red
+green
+yellow
+red
+green
+yellow
+red
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> main()
+red
+green arrow
+green
+yellow
+red
+green arrow
+green
+yellow
+red
+green arrow
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> main()
+red
+green arrw
+The sky is falling!!
+green arrw
+The sky is falling!!
+green arrw
+The sky is falling!!
+green arrw
+The sky is falling!!
+green arrw
+The sky is falling!!
+green arrw
+The sky is falling!!
+green arrw
+The sky is falling!!
+green arrw
+The sky is falling!!
+green arrw
+The sky is falling!!
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> main()
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    main()
+  File "/home/brent/teaching/150/lectures/S17/traffic.py", line 73, in main
+    print(t.current_color())
+  File "/home/brent/teaching/150/lectures/S17/traffic.py", line 44, in current_color
+    for color in color_state:
+NameError: name 'color_state' is not defined
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> main()
+red
+green
+yellow
+red
+green
+yellow
+red
+green
+yellow
+red
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> main()
+red
+green
+yellow
+red
+green
+yellow
+red
+green
+yellow
+red
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> main()
+red
+green
+yellow
+red
+green
+yellow
+red
+green
+yellow
+red
+>>> 
+========= RESTART: /home/brent/teaching/150/lectures/S17/traffic.py =========
+>>> main()
+red
+green arrow
+green
+yellow
+orange
+purple
+red
+green arrow
+green
+yellow
+>>> 

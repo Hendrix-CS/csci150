@@ -4,17 +4,17 @@ title: Overview
 
 ### Textbook
 
-[Think Python](docs/ThinkPython-CSCI150-S16.pdf)\
+[Think Python](docs/ThinkPython-CSCI150-S17.pdf)\
    by [Allen Downey](http://allendowney.com/), 2012\
    Olin College, MA\
    This textbook is open-source; we have reorganized and edited it to match our course syllabus.
 
-### Software and Hardware
+### Software
 
-+------------------------------------------------+------------------------------------------------------+
-| <img src="images/pythonlogo.png" height="100"> | <img src="images/appInventorBig1.jpeg" height="100"> |
-| [Python](http://python.org/)                   | [App Inventor](http://ai2.appinventor.mit.edu/)      |
-+------------------------------------------------+------------------------------------------------------+
+<div style="text-align:center">
+<img src="images/pythonlogo.png" height="100">
+[Python 3](http://python.org/)
+</div>
 
 ### Overview
 
@@ -71,9 +71,8 @@ please refer to the [Computer Science Academic Integrity
 Policy](http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html).
 
 The short version is that academic integrity violations such as copying
-code from another student or the Internet are **easy to detect**, will
-be **taken very seriously**, and carry a default recommended sanction of
-**failure in the course**.
+code from another student or the Internet are **easy to detect** and will
+be **taken very seriously**.
 
 If you have any questions about how the Academic Integrity policy
 applies in a particular situation, please contact me.
@@ -85,5 +84,5 @@ a computer science class.  But lab is the place where you will get
 plenty of experience working on the computer; lecture is a time for
 thinking and learning without the distraction of a computer.
 
-I will make an exception if you can prove to me that you really do
-benefit from using your laptop to take notes.
+Exceptions may be made on a case-by-case basis if you can prove to me
+that you really do benefit from using your laptop to take notes.

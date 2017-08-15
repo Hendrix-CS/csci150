@@ -1,0 +1,4 @@
+#!/bin/zsh
+./build
+stack exec hakyll clean
+stack exec hakyll watch

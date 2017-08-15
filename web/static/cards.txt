@@ -1,0 +1,28 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> card = Card(3,'H')
+>>> card.display()
+'**'
+>>> 
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> card = Card(3, 'H')
+>>> card
+<__main__.Card object at 0x7f474c5d8588>
+>>> card.display()
+'**'
+>>> card.flip()
+>>> card.display()
+'3H'
+>>> card.flip()
+>>> card.display()
+'**'
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> card = Card(3,'H')
+>>> card.get_color()
+'red'
+>>> 

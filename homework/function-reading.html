@@ -2,34 +2,33 @@
 <p>You should complete the following exercises <em>without</em> using a computer, though you may consult your textbook. You should write your answers by hand and turn them in on paper.</p>
 <ol style="list-style-type: decimal">
 <li><p>Consider the functions defined below. What does <code>main()</code> print?</p>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> foo(a):
-    b = <span class="dv">3</span>*a + <span class="dv">2</span>
-    <span class="kw">return</span> b
-    <span class="dt">print</span> <span class="st">&quot;In foo&quot;</span>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> foo(a):
+    b <span class="op">=</span> <span class="dv">3</span><span class="op">*</span>a <span class="op">+</span> <span class="dv">2</span>
+    <span class="cf">return</span> b
 
 <span class="kw">def</span> bar(x,y):
-    <span class="kw">return</span> foo(x) + foo(y)
+    <span class="cf">return</span> foo(x) <span class="op">+</span> foo(y)
 
 <span class="kw">def</span> main():
-    <span class="dt">print</span> <span class="st">&quot;The value is &quot;</span> + <span class="dt">str</span>(bar(<span class="dv">2</span>,<span class="dv">3</span>))</code></pre></li>
+    <span class="bu">print</span> <span class="st">&quot;The value is &quot;</span> <span class="op">+</span> <span class="bu">str</span>(bar(<span class="dv">2</span>,<span class="dv">3</span>))</code></pre></div></li>
 <li><p>Consider the functions defined below. What is printed by <code>main2()</code>?</p>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> f1():
-    <span class="dt">print</span> <span class="st">&quot;mushroom&quot;</span>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> f1():
+    <span class="bu">print</span> <span class="st">&quot;mushroom&quot;</span>
 
 <span class="kw">def</span> f2():
     f1()
-    <span class="dt">print</span> <span class="st">&quot;badger&quot;</span>
+    <span class="bu">print</span> <span class="st">&quot;badger&quot;</span>
     f1()
 
 <span class="kw">def</span> f3(n):
     f2()
-    <span class="kw">if</span> n &gt; <span class="dv">5</span>:
-        <span class="dt">print</span> <span class="st">&quot;snake&quot;</span>
+    <span class="cf">if</span> n <span class="op">&gt;</span> <span class="dv">5</span>:
+        <span class="bu">print</span> <span class="st">&quot;snake&quot;</span>
         f1()
-    <span class="kw">else</span>:
-        <span class="dt">print</span> <span class="st">&quot;snaaaaake&quot;</span>
+    <span class="cf">else</span>:
+        <span class="bu">print</span> <span class="st">&quot;snaaaaake&quot;</span>
 
 <span class="kw">def</span> main2():
     f3(<span class="dv">2</span>)
-    f3(<span class="dv">6</span>)</code></pre></li>
+    f3(<span class="dv">6</span>)</code></pre></div></li>
 </ol>

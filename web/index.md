@@ -1,13 +1,13 @@
 ---
-title: CSCI 150: Foundations of Computer Science (Fall 2016)
+title: "CSCI 150: Foundations of Computer Science (Spring 2017)"
 ---
-CSCI 150: Foundations of Computer Science (F'16)
+CSCI 150: Foundations of Computer Science (S'17)
 =======================================
 
-Lecture: MWF 11:10-12, MC Reynolds 317  
-Lab: T 8:10-11, Snoddy Computer Lab  
+Lecture: MWF 1:10-2, MC Reynolds 110  
+Lab: Th 8:10-11, Snoddy Computer Lab  
 
-Instructor: [Brent Yorgey](http://www.cs.hendrix.edu/~yorgey/)
+Instructor: [Brent Yorgey](http://ozark.hendrix.edu/~yorgey/)
 
 * Email: `yorgey@hendrix.edu`
 * Office: MC Reynolds 310

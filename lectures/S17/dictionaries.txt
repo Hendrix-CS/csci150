@@ -1,0 +1,73 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+======= RESTART: /home/brent/teaching/150/lectures/S17/dictionaries.py =======
+>>> zoo
+{'A20': 'koala', 'S12': 'aardvark', 'B6': 'dingo', 'BASEMENT': 'hyena'}
+>>> zoo['B6']
+'dingo'
+>>> zoo['aardvark
+    
+SyntaxError: EOL while scanning string literal
+>>> zoo['aardvark']
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    zoo['aardvark']
+KeyError: 'aardvark'
+>>> zoo['K19'] = 'hyena'
+>>> zoo
+{'A20': 'koala', 'K19': 'hyena', 'S12': 'aardvark', 'B6': 'dingo', 'BASEMENT': 'hyena'}
+>>> zoo['A20'] = 'hyena'
+>>> zoo
+{'A20': 'hyena', 'K19': 'hyena', 'S12': 'aardvark', 'B6': 'dingo', 'BASEMENT': 'hyena'}
+>>> zoo.keys()
+dict_keys(['A20', 'K19', 'S12', 'B6', 'BASEMENT'])
+>>> (zoo.keys())[1]
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    (zoo.keys())[1]
+TypeError: 'dict_keys' object does not support indexing
+>>> for key in zoo.keys():
+	print key
+	
+SyntaxError: Missing parentheses in call to 'print'
+>>> for key in zoo.keys():
+	print(key)
+
+	
+A20
+K19
+S12
+B6
+BASEMENT
+>>> range(5)
+range(0, 5)
+>>> zoo.values()
+dict_values(['hyena', 'hyena', 'aardvark', 'dingo', 'hyena'])
+>>> len(zoo)
+5
+>>> 'B6' in zoo
+True
+>>> for key in zoo:
+	print(zoo[key] + " is in " + key)
+
+	
+hyena is in A20
+hyena is in K19
+aardvark is in S12
+dingo is in B6
+hyena is in BASEMENT
+>>> 
+======= RESTART: /home/brent/teaching/150/lectures/S17/dictionaries.py =======
+>>> frequency_counts("banana!!")
+{'b': 1, '!': 2, 'n': 2, 'a': 3}
+>>> frequency_counts("")
+{}
+>>> frequency_counts("mississippi cats")
+{'p': 2, 's': 5, 'c': 1, 'm': 1, 'a': 1, ' ': 1, 'i': 4, 't': 1}
+>>> frequency_counts("MississipPi Cats")
+{'p': 1, 's': 5, 'C': 1, 'a': 1, ' ': 1, 'M': 1, 'P': 1, 'i': 4, 't': 1}
+>>> "!!!".lower()
+'!!!'
+>>> 

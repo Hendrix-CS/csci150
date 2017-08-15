@@ -1,0 +1,348 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> help(list.shuffle)
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    help(list.shuffle)
+AttributeError: type object 'list' has no attribute 'shuffle'
+>>> help(list.sort)
+Help on method_descriptor:
+
+sort(...)
+    L.sort(key=None, reverse=False) -> None -- stable sort *IN PLACE*
+
+>>> help(list.unsort)
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    help(list.unsort)
+AttributeError: type object 'list' has no attribute 'unsort'
+>>> help(list.randomize)
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    help(list.randomize)
+AttributeError: type object 'list' has no attribute 'randomize'
+>>> help(list)
+Help on class list in module builtins:
+
+class list(object)
+ |  list() -> new empty list
+ |  list(iterable) -> new list initialized from iterable's items
+ |  
+ |  Methods defined here:
+ |  
+ |  __add__(self, value, /)
+ |      Return self+value.
+ |  
+ |  __contains__(self, key, /)
+ |      Return key in self.
+ |  
+ |  __delitem__(self, key, /)
+ |      Delete self[key].
+ |  
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |  
+ |  __ge__(self, value, /)
+ |      Return self>=value.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __getitem__(...)
+ |      x.__getitem__(y) <==> x[y]
+ |  
+ |  __gt__(self, value, /)
+ |      Return self>value.
+ |  
+ |  __iadd__(self, value, /)
+ |      Implement self+=value.
+ |  
+ |  __imul__(self, value, /)
+ |      Implement self*=value.
+ |  
+ |  __init__(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |  
+ |  __le__(self, value, /)
+ |      Return self<=value.
+ |  
+ |  __len__(self, /)
+ |      Return len(self).
+ |  
+ |  __lt__(self, value, /)
+ |      Return self<value.
+ |  
+ |  __mul__(self, value, /)
+ |      Return self*value.n
+ |  
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __reversed__(...)
+ |      L.__reversed__() -- return a reverse iterator over the list
+ |  
+ |  __rmul__(self, value, /)
+ |      Return self*value.
+ |  
+ |  __setitem__(self, key, value, /)
+ |      Set self[key] to value.
+ |  
+ |  __sizeof__(...)
+ |      L.__sizeof__() -- size of L in memory, in bytes
+ |  
+ |  append(...)
+ |      L.append(object) -> None -- append object to end
+ |  
+ |  clear(...)
+ |      L.clear() -> None -- remove all items from L
+ |  
+ |  copy(...)
+ |      L.copy() -> list -- a shallow copy of L
+ |  
+ |  count(...)
+ |      L.count(value) -> integer -- return number of occurrences of value
+ |  
+ |  extend(...)
+ |      L.extend(iterable) -> None -- extend list by appending elements from the iterable
+ |  
+ |  index(...)
+ |      L.index(value, [start, [stop]]) -> integer -- return first index of value.
+ |      Raises ValueError if the value is not present.
+ |  
+ |  insert(...)
+ |      L.insert(index, object) -- insert object before index
+ |  
+ |  pop(...)
+ |      L.pop([index]) -> item -- remove and return item at index (default last).
+ |      Raises IndexError if list is empty or index is out of range.
+ |  
+ |  remove(...)
+ |      L.remove(value) -> None -- remove first occurrence of value.
+ |      Raises ValueError if the value is not present.
+ |  
+ |  reverse(...)
+ |      L.reverse() -- reverse *IN PLACE*
+ |  
+ |  sort(...)
+ |      L.sort(key=None, reverse=False) -> None -- stable sort *IN PLACE*
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  __hash__ = None
+
+>>> help(random.shuffle)
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    help(random.shuffle)
+NameError: name 'random' is not defined
+>>> import random
+>>> help(random.shuffle)
+Help on method shuffle in module random:
+
+shuffle(x, random=None) method of random.Random instance
+    Shuffle list x in place, and return None.
+    
+    Optional argument random is a 0-argument function returning a
+    random float in [0.0, 1.0); if it is the default None, the
+    standard random.random will be used.
+
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> d.reveal()
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    d.reveal()
+  File "/home/brent/teaching/150/lectures/S17/cards.py", line 96, in reveal
+    for card in cards:
+NameError: name 'cards' is not defined
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> d.reveal()
+>>> d.display()
+'AS 2S 3S 4S 5S 6S 7S 8S 9S TS JS QS KS AH 2H 3H 4H 5H 6H 7H 8H 9H TH JH QH KH AD 2D 3D 4D 5D 6D 7D 8D 9D TD JD QD KD AC 2C 3C 4C 5C 6C 7C 8C 9C TC JC QC KC'
+>>> d.shuffle()
+>>> d.display()
+'5C 5H 3H 5D 7D 9S 6D 9D 7S 3D 3C TS QS 9H 3S AH TD 8H KS KC JC KD 7H JH AS AC 4S 7C TH 6H 8C 6C 4H 4D 2D 8S 5S 4C TC 9C 2C 8D JD 2S QH 6S 2H JS AD QC KH QD'
+>>> d.shuffle()
+>>> d.display()
+'4H 5D 3H 2S 7H AD 9H 4C 6H 8S 5C AC TC 2H 4D 9C KH 9S 4S QS 9D KS 3D 8D TH 2C QH 3S 2D QC QD JH KC AH 6D 6C AS JS 7D 8H 3C 5S TD 5H 7S 8C KD TS JC 7C JD 6S'
+>>> help(list.pop)
+Help on method_descriptor:
+
+pop(...)
+    L.pop([index]) -> item -- remove and return item at index (default last).
+    Raises IndexError if list is empty or index is out of range.
+
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> d.shuffle()
+>>> d.reveal()
+>>> d.display()
+'7H 9D 9C 6H KC JH 6D 8S QH 8H 5S 3S 9H 7D KS 4C QS 3C AH 8D 6S JD TC 9S 2S KD 4H 2C 5C JS 7S QD KH 3H 5H 3D 2H TS 4D 5D QC 7C JC 4S 6C TD 2D AS TH 8C AC AD'
+>>> cards = d.deal(5)
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> c = Card('3', 'H')
+>>> c
+**
+>>> c.flip()
+>>> c
+3H
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> d
+** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+>>> d.reveal()
+>>> d
+AS 2S 3S 4S 5S 6S 7S 8S 9S TS JS QS KS AH 2H 3H 4H 5H 6H 7H 8H 9H TH JH QH KH AD 2D 3D 4D 5D 6D 7D 8D 9D TD JD QD KD AC 2C 3C 4C 5C 6C 7C 8C 9C TC JC QC KC
+>>> d.shuffle()
+>>> cards = d.deal(5)
+>>> d
+AH 3H 3S 6H KH 5S QC 4H 8S 2S 8C 3C 2H 9S QD 6C QH 5C 8H TC AD JS TD 4S 6S 7D 6D 4D 2D 9D 9C JD 7S TH TS 2C 4C AS KD 8D JC QS 5D KS 3D 7H 7C
+>>> cards
+[AC, 5H, KC, 9H, JH]
+>>> d.deal(5)
+[AH, 3H, 3S, 6H, KH]
+>>> d
+5S QC 4H 8S 2S 8C 3C 2H 9S QD 6C QH 5C 8H TC AD JS TD 4S 6S 7D 6D 4D 2D 9D 9C JD 7S TH TS 2C 4C AS KD 8D JC QS 5D KS 3D 7H 7C
+>>> d.deal(100)
+Traceback (most recent call last):
+  File "<pyshell#37>", line 1, in <module>
+    d.deal(100)
+  File "/home/brent/teaching/150/lectures/S17/cards.py", line 124, in deal
+    drawn_cards.append(self.draw())
+  File "/home/brent/teaching/150/lectures/S17/cards.py", line 113, in draw
+    return self.cards.pop(0)
+IndexError: pop from empty list
+>>> d
+
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> d
+** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+>>> d.reveal()
+>>> d
+AS 2S 3S 4S 5S 6S 7S 8S 9S TS JS QS KS AH 2H 3H 4H 5H 6H 7H 8H 9H TH JH QH KH AD 2D 3D 4D 5D 6D 7D 8D 9D TD JD QD KD AC 2C 3C 4C 5C 6C 7C 8C 9C TC JC QC KC
+>>> d.add(Card(6, 'D'))
+>>> d
+AS 2S 3S 4S 5S 6S 7S 8S 9S TS JS QS KS AH 2H 3H 4H 5H 6H 7H 8H 9H TH JH QH KH AD 2D 3D 4D 5D 6D 7D 8D 9D TD JD QD KD AC 2C 3C 4C 5C 6C 7C 8C 9C TC JC QC KC **
+>>> d.reveal()
+>>> d
+AS 2S 3S 4S 5S 6S 7S 8S 9S TS JS QS KS AH 2H 3H 4H 5H 6H 7H 8H 9H TH JH QH KH AD 2D 3D 4D 5D 6D 7D 8D 9D TD JD QD KD AC 2C 3C 4C 5C 6C 7C 8C 9C TC JC QC KC 6D
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck().reveal()
+>>> d
+>>> d
+>>> d = Deck()
+>>> d.reveal()
+>>> d
+AS 2S 3S 4S 5S 6S 7S 8S 9S TS JS QS KS AH 2H 3H 4H 5H 6H 7H 8H 9H TH JH QH KH AD 2D 3D 4D 5D 6D 7D 8D 9D TD JD QD KD AC 2C 3C 4C 5C 6C 7C 8C 9C TC JC QC KC
+>>> d.rotate()
+>>> d
+2S 3S 4S 5S 6S 7S 8S 9S TS JS QS KS AH 2H 3H 4H 5H 6H 7H 8H 9H TH JH QH KH AD 2D 3D 4D 5D 6D 7D 8D 9D TD JD QD KD AC 2C 3C 4C 5C 6C 7C 8C 9C TC JC QC KC AS
+>>> d = Deck()
+>>> d.rotate()
+>>> d
+** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** AS
+>>> d = Deck()
+>>> d
+** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+>>> d.rotate()
+>>> d
+** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** AS
+>>> d.rotate()
+>>> d
+** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** AS 2S
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> d.reveal()
+>>> d.shuffle()
+>>> d
+2C 3H JS 5H 8C KS JH TD TS 7D 7H AC KH TC 9D 6S 2D 3S 4S KD 8H 7S 6H 5C 9H 7C 5D 9C QC 8S 6D AS AD AH 3C 2H 8D 2S 9S 5S 3D KC QD 4D QS 6C JD 4C 4H TH QH JC
+>>> c = d.draw()
+>>> blackjack_value(c)
+2
+>>> c = d.draw()
+>>> blackjack_value(c)
+3
+>>> c = d.draw()
+>>> blackjack_value(c)
+10
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> d.reveal()
+>>> d.shuffle()
+>>> d
+3D 2S 7C 7D KH JD JS KD KC 2C AS 6S QS 9H AD 6D 4S 8H 8D JH JC KS 5S TD 4C 2D QD 6H 9D 7S QC TC 7H 5D AH 3S 4D QH AC 6C 8S 3C TS 4H 5H 5C 8C 9C 3H 9S 2H TH
+>>> blackjack_sum(d)
+340
+>>> cards = d.deal(3)
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+Traceback (most recent call last):
+  File "<pyshell#80>", line 1, in <module>
+    d = Deck()
+TypeError: __init__() missing 1 required positional argument: 'cards'
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> 
+
+>>> 
+>>> 
+
+>>> 
+
+>>> 
+>>> 
+
+>>> 
+
+>>> 
+>>> 
+
+>>> 
+
+>>> 
+>>> 
+
+
+>>> 
+>>> d.reveal()
+>>> d
+AS 2S 3S 4S 5S 6S 7S 8S 9S TS JS QS KS AH 2H 3H 4H 5H 6H 7H 8H 9H TH JH QH KH AD 2D 3D 4D 5D 6D 7D 8D 9D TD JD QD KD AC 2C 3C 4C 5C 6C 7C 8C 9C TC JC QC KC
+>>> d = Deck([Card(3, 'H'), Card(2, 'D')])
+>>> d
+** **
+>>> d.reveal()
+>>> d
+3H 2D
+>>> d = Deck()
+>>> d.shuffle()
+>>> my_hand = Deck(d.deal(5))
+>>> my_hand.reveal()
+>>> my_hand
+TH JS 6H 8H 5D
+>>> blackjack_sum(my_hand)
+39
+>>> 

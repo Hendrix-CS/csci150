@@ -1,7 +1,7 @@
-CSCI 150 HW 5: while loop, string, and list reading practice
-------------------------------------------------------------
+CSCI 150 HW: while loop, string, and list reading practice
+----------------------------------------------------------
 
-*Due: Wednesday, March 2*
+*Due: Monday, February 27*
 
 To receive full credit, for each exercise you should do the following:
 
@@ -39,7 +39,7 @@ You should consider the code in each exercise separately from the
 other exercises.
 
 1. Consider the following code.  What is printed by the final line,
-   `print mklist(5)`?
+   `print(mklist(5))`?
 
     ``` python
     def mklist(n):
@@ -52,7 +52,7 @@ other exercises.
             i += 1
         return nums
 
-    print mklist(5)
+    print(mklist(5))
     ```
 
 2. What is printed by the following code?
@@ -63,7 +63,7 @@ other exercises.
     i = 0
     while i < len(animals):
         if (animals[i][1] == 'a'):
-            print animals[i]
+            print(animals[i])
 
         i += 1
     ```
@@ -77,8 +77,8 @@ other exercises.
     while pos != -1:
         next = s.find('th',pos+1)
         if next != -1:
-            print s[pos:next]
+            print(s[pos:next])
         else:
-            print s[pos:]
+            print(s[pos:])
         pos = next
     ```

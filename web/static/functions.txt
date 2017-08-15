@@ -1,0 +1,73 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+Hello there, CSCI 150!
+This is a function.
+>>> C_to_F(20)
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    C_to_F(20)
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 22, in C_to_F
+    print("The temperature in degrees Fahrenheit in " + str(F))
+NameError: name 'F' is not defined
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+Hello there, CSCI 150!
+This is a function.
+>>> C_to_F(20)
+The temperature in degrees Fahrenheit in 68.0
+>>> C_to_F(37)
+The temperature in degrees Fahrenheit in 98.6
+>>> C_to_F("thirty-seven")
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    C_to_F("thirty-seven")
+  File "/home/brent/teaching/150/lectures/S17/functions.py", line 21, in C_to_F
+    temp_F = temp_C * 9/5 + 32
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+>>> C_to_F(1000)
+The temperature in degrees Fahrenheit in 1832.0
+>>> C_to_F(-212)
+The temperature in degrees Fahrenheit in -349.6
+>>> C_to_F(-40)
+The temperature in degrees Fahrenheit in -40.0
+>>> C_to_F(23 + 8)
+The temperature in degrees Fahrenheit in 87.8
+>>> C_to_F(3 + 4**2 - math.cos(28))
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    C_to_F(3 + 4**2 - math.cos(28))
+NameError: name 'math' is not defined
+>>> import math
+>>> C_to_F(3 + 4**2 - math.cos(28))
+The temperature in degrees Fahrenheit in 67.93269055936442
+>>> temp_F
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    temp_F
+NameError: name 'temp_F' is not defined
+>>> temp_C
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    temp_C
+NameError: name 'temp_C' is not defined
+>>> temp_F = 1000000
+>>> C_to_F(30)
+The temperature in degrees Fahrenheit in 86.0
+>>> temp_F
+1000000
+>>> 
+======== RESTART: /home/brent/teaching/150/lectures/S17/functions.py ========
+Hello there, CSCI 150!
+This is a function.
+The temperature in degrees Fahrenheit in 98.6
+>>> C_to_F(37)
+98.6
+>>> C_to_F(37) + 8
+106.6
+>>> temp_F = C_to_F(37)
+>>> temp_F + 8
+106.6
+>>> 

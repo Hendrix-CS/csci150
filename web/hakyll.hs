@@ -11,6 +11,17 @@ main = do
 
     standardRules staticContent
     createIndex sections
+
+    match "labs/*" $ do
+      route $ setExtension "html"
+      compile labCompiler
+
   where
-    staticContent = ["images/*", "docs/*", "static/*", "data/*"]
+    staticContent = ["images/*", "docs/*", "static/*", "data/*", "homework/*"]
     sections = ["overview", "syllabus", "quizhw", "labs", "projects", "exams", "grading"]
+
+labCompiler :: Compiler (Item String)
+labCompiler =
+    pandocCompiler
+    >>= loadAndApplyTemplate "templates/lab.html" defaultContext
+    >>= relativizeUrls

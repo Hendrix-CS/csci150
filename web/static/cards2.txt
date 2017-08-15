@@ -1,0 +1,31 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> deck = Deck()
+>>> deck
+<__main__.Deck object at 0x7f1425690668>
+>>> deck.cards
+[<__main__.Card object at 0x7f1425690780>, <__main__.Card object at 0x7f14256907b8>, <__main__.Card object at 0x7f14256907f0>, <__main__.Card object at 0x7f1425690828>, <__main__.Card object at 0x7f1425690860>, <__main__.Card object at 0x7f1425690898>, <__main__.Card object at 0x7f14256908d0>, <__main__.Card object at 0x7f1425690908>, <__main__.Card object at 0x7f1425690940>, <__main__.Card object at 0x7f1425690978>, <__main__.Card object at 0x7f14256909b0>, <__main__.Card object at 0x7f14256909e8>, <__main__.Card object at 0x7f1425690a20>, <__main__.Card object at 0x7f1425690a58>, <__main__.Card object at 0x7f1425690a90>, <__main__.Card object at 0x7f1425690ac8>, <__main__.Card object at 0x7f1425690b00>, <__main__.Card object at 0x7f1425690b38>, <__main__.Card object at 0x7f1425690b70>, <__main__.Card object at 0x7f1425690ba8>, <__main__.Card object at 0x7f1425690be0>, <__main__.Card object at 0x7f1425690c18>, <__main__.Card object at 0x7f1425690c50>, <__main__.Card object at 0x7f1425690c88>, <__main__.Card object at 0x7f1425690cc0>, <__main__.Card object at 0x7f1425690cf8>, <__main__.Card object at 0x7f1425690d30>, <__main__.Card object at 0x7f1425690d68>, <__main__.Card object at 0x7f1425690da0>, <__main__.Card object at 0x7f1425690dd8>, <__main__.Card object at 0x7f1425690e10>, <__main__.Card object at 0x7f1425690e48>, <__main__.Card object at 0x7f1425690e80>, <__main__.Card object at 0x7f1425690eb8>, <__main__.Card object at 0x7f1425690ef0>, <__main__.Card object at 0x7f1425690f28>, <__main__.Card object at 0x7f1425690f60>, <__main__.Card object at 0x7f1425690f98>, <__main__.Card object at 0x7f1425690fd0>, <__main__.Card object at 0x7f1425693048>, <__main__.Card object at 0x7f1425693080>, <__main__.Card object at 0x7f14256930b8>, <__main__.Card object at 0x7f14256930f0>, <__main__.Card object at 0x7f1425693128>, <__main__.Card object at 0x7f1425693160>, <__main__.Card object at 0x7f1425693198>, <__main__.Card object at 0x7f14256931d0>, <__main__.Card object at 0x7f1425693208>, <__main__.Card object at 0x7f1425693240>, <__main__.Card object at 0x7f1425693278>, <__main__.Card object at 0x7f14256932b0>, <__main__.Card object at 0x7f14256932e8>]
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> d.display()
+'********************************************************************************************************'
+>>> for card in d.cards:
+	card.reveal()
+
+	
+>>> d.display()
+'AS2S3S4S5S6S7S8S9STSJSQSKSAH2H3H4H5H6H7H8H9HTHJHQHKHAD2D3D4D5D6D7D8D9DTDJDQDKDAC2C3C4C5C6C7C8C9CTCJCQCKC'
+>>> 
+========== RESTART: /home/brent/teaching/150/lectures/S17/cards.py ==========
+>>> d = Deck()
+>>> for c in d.cards:
+	c.reveal()
+
+	
+>>> d.display()
+'AS 2S 3S 4S 5S 6S 7S 8S 9S TS JS QS KS AH 2H 3H 4H 5H 6H 7H 8H 9H TH JH QH KH AD 2D 3D 4D 5D 6D 7D 8D 9D TD JD QD KD AC 2C 3C 4C 5C 6C 7C 8C 9C TC JC QC KC'
+>>> 

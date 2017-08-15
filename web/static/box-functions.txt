@@ -1,0 +1,160 @@
+Python 3.5.2+ (default, Sep 22 2016, 12:18:14) 
+[GCC 6.2.0 20160927] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> help(str.find)
+Help on method_descriptor:
+
+find(...)
+    S.find(sub[, start[, end]]) -> int
+    
+    Return the lowest index in S where substring sub is found,
+    such that sub is contained within S[start:end].  Optional
+    arguments start and end are interpreted as in slice notation.
+    
+    Return -1 on failure.
+
+>>> 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 2
+Please enter the width of the box in furlongs: 3
+Please enter the depth of the box in furlongs: 5
+The volume of your box is 30 cubic furlongs.
+The surface area is 62 square furlongs.
+The body diagonal is 6.164414002968976 furlongs.
+>>> 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 2
+Please enter the width of the box in furlongs: 3
+Please enter the depth of the box in furlongs: 4
+The volume of your box is 24 cubic furlongs.
+The surface area is 52 square furlongs.
+The body diagonal is 5.385164807134504 furlongs.
+>>> 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: kjehrf
+Please enter the height of the box in furlongs: kjr
+Please enter the height of the box in furlongs: kh
+Please enter the height of the box in furlongs: lfj
+Please enter the height of the box in furlongs: 3
+Please enter the width of the box in furlongs: 2
+Please enter the depth of the box in furlongs: 1
+The volume of your box is 6 cubic furlongs.
+The surface area is 22 square furlongs.
+The body diagonal is 3.7416573867739413 furlongs.
+>>> 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: lj
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: jf
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: erij
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: 3
+Please enter the width of the box in furlongs: 3
+Please enter the depth of the box in furlongs: 3
+The volume of your box is 27 cubic furlongs.
+The surface area is 54 square furlongs.
+The body diagonal is 5.196152422706632 furlongs.
+>>> 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: fg
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: eig
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: erguhergoiehrg
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: 45
+Please enter the width of the box in furlongs: 23
+Please enter the depth of the box in furlongs: 2
+The volume of your box is 2070 cubic furlongs.
+The surface area is 2342 square furlongs.
+The body diagonal is 50.57667446560717 furlongs.
+>>> 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: kejrg
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: kjehrg
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: 1
+Please enter the width of the box in furlongs: rf
+That is not an integer.  Try again.
+Please enter the width of the box in furlongs: erf
+That is not an integer.  Try again.
+Please enter the width of the box in furlongs: erf
+That is not an integer.  Try again.
+Please enter the width of the box in furlongs: erf
+That is not an integer.  Try again.
+Please enter the width of the box in furlongs: 5
+Please enter the depth of the box in furlongs: ierj
+That is not an integer.  Try again.
+Please enter the depth of the box in furlongs: 5
+The volume of your box is 25 cubic furlongs.
+The surface area is 70 square furlongs.
+The body diagonal is 7.14142842854285 furlongs.
+>>> 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: 2
+Please enter the width of the box in furlongs: 3
+Please enter the depth of the box in furlongs: 4
+The volume of your box is 24 cubic furlongs.
+The surface area is 52 square furlongs.
+The body diagonal is 5.385164807134504 furlongs.
+>>> 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: -3
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: 
+Traceback (most recent call last):
+  File "/home/brent/teaching/150/lectures/S17/box-functions.py", line 58, in <module>
+    main()
+  File "/home/brent/teaching/150/lectures/S17/box-functions.py", line 44, in main
+    height = int_input("Please enter the height of the box in furlongs: ")
+  File "/home/brent/teaching/150/lectures/S17/box-functions.py", line 21, in int_input
+    input_str = input(prompt_str)
+  File "/usr/lib/python3.5/idlelib/PyShell.py", line 1386, in readline
+    line = self._line_buffer or self.shell.readline()
+KeyboardInterrupt
+>>> help(str.isint)
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    help(str.isint)
+AttributeError: type object 'str' has no attribute 'isint'
+>>> 
+====== RESTART: /home/brent/teaching/150/lectures/S17/box-functions.py ======
+Welcome to the box-o-matic! Enter your box dimensions
+and I will do the rest!
+Please enter the height of the box in furlongs: xyz
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: -uih
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: +34
+That is not an integer.  Try again.
+Please enter the height of the box in furlongs: -34
+Please enter the width of the box in furlongs: 3
+Please enter the depth of the box in furlongs: 23
+The volume of your box is -2346 cubic furlongs.
+The surface area is -1630 square furlongs.
+The body diagonal is 41.15823125451335 furlongs.
+>>> 
