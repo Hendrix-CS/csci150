@@ -1,28 +1,49 @@
 <html>
 <head>
-  <title>CSCI 150 - Project 1 - Question/Answer System</title>
+  <title>CSCI 150 - Project 1 - Civic Assistance Question/Answer System</title>
   <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
 </head>
 
 <body>
-<h1><a href="../index.html">CSCI 150</a> - Project 1<br>Question/Answer System</h1>
-<h3>Assigned September 19<br>
-Due Monday, September 26</h3>
+<h1><a href="../index.html">CSCI 150</a> - Project 1<br>Civic Assistance Question/Answer System</h1>
+<h3>Assigned September 17<br>
+Due Monday, September 25</h3>
 <hr>
 
 <h2>Description</h2>
-
+Many elements of our civic lives are governed by processes and regulations. 
+While they may be confusing and complicated, these processes form a common way that we 
+coordinate our interactions, hopefully for the benefit of all. We can use our
+computing skills to help facilitate a clear understanding of these processes.
+<p>
 For this project, you will create a program that interacts with a user
 by asking questions.  Follow-up questions depend upon the previous 
 questions asked. The questions and answers should guide the user towards
 solving a concrete problem.
 <p>
-The content of the questions and answers is entirely up to you,
-within reason and good taste. You can
+The content of the questions and answers should be related to a citizen 
+interacting with their government in some real-life civic realm. You can
 ask the user for strings, integers, or floats. The 
 program must contain at least <b>six distinct questions</b> it can ask. Every
 question after the first question might or might not be asked, depending
 on the answers to previous questions.
+<p>
+Here is a list of potential interactions you might attempt to simulate. This is 
+by no means comprehensive and is meant as inspiration for your program. You may choose 
+one of these, or one of your own, as long as you provide a citation in your code
+to your connected real-world civic interaction.
+
+<ul>
+<li><a href="https://www.uscis.gov/citizenship/learners/apply-citizenship">Apply to be a U.S. Citizen</a>
+<li><a href="https://vote.gov/files/federal-voter-registration_1-25-16_english.pdf">Voter Registration</a>
+<li><a href="https://pe.usps.com/text/pub52/pub52c2_022.htm">How to Mail a Package</a>
+<li><a href="http://www.dfa.arkansas.gov/offices/motorVehicle/Pages/VehicleTagRenewal.aspx">Register and Renew your Vehicle in Arkansas</a>
+<li><a href="https://www.irs.gov/pub/irs-pdf/i1040gi.pdf">Filing Taxes</a>
+<li><a href="http://cityofconway.org/pages/permits-inspections/">Permit applications for Conway, AR</a>
+<li><a href="http://www.gretnala.com/egov/documents/1398280666_50818.pdf">Renovations in the Historic District of Gretna, LA</a>
+<li><a href="https://www.phmsa.dot.gov/doing-biz/compete/process">How to do Business with the U.S. Department of Transportation Pipeline and Hazardous Materials Safety Administration</a>
+<li><a href="http://resources.ca.gov/ceqa/flowchart/">The California Environmental Quality Act</a>
+</ul>
 
 <h2>Example</h2>
 
@@ -32,26 +53,22 @@ is colored as blue.
 
 <h3>Transcript 1</h3>
 <pre>
-Welcome to the baby helper. Answer "yes" or "no" to each question.
-Is your baby sleeping? <span>no</span>
-Is she crying? <span>no</span>
-Great, leave her alone.
+Welcome to the DMV. Would you like to "register" or "renew" a vehicle? <span>register</span>
+Has your vehicle been assessed this year? <span>no</span>
+Please have your vehicle assessed and bring your stamped receipt from the county assessors's office.
 </pre>
 <p>
 <h3>Transcript 2</h3>
 <pre>
-Welcome to the baby helper. Answer "yes" or "no" to each question.
-Is your baby sleeping? <span>no</span>
-Is she crying? <span>yes</span>
-Does she need a diaper change? <span>yes</span>
-Is the diaper merely wet? <span>no</span>
-Take off the dirty diaper and throw it out.
-Clean her thoroughly and put on a clean diaper.
-Is the diaper bin full? <span>no</span>
-Is she cold? <span>no</span>
-Is she still crying? <span>yes</span>
-She must be hungry. Feed her a bottle.
-At this point, she should be okay. If not, I am at a loss...
+Welcome to the DMV. Would you like to "register" or "renew" a vehicle? <span>register</span>
+Has your vehicle been assessed this year? <span>yes</span>
+Have you paid property taxes due for this vehicle? <span>yes</span>
+What is the odometer reading? (please no commas) <span>1282</span>
+What is the purchase price of the vehicle? (please no commas) <span>13234</span>
+You will owe $860.21 in taxes. Will you be using "credit" or "cash"? <span>cash</span 
+Was this a "new" or "used" purchase? <span>used</span>
+Did you bring the title for the vehicle? <span>no</span>
+Please return when you have the title with all signatures from the buyer and seller.
 </pre>
 
 <h2>Warning</h2>
