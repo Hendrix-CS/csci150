@@ -1,11 +1,11 @@
 <html>
 <head>
-  <title>CSCI 150 - Lab 4 - Guess My Number</title>
+  <title>CSCI 150 - Lab 5 - Guess My Number</title>
   <link rel="stylesheet" type="text/css" title="Default" href="../../style.css">
 </head>
 
 <body>
-<h1><a href="../index.html">CSCI 150</a> Lab 4: Guess My Number</h1>
+<h1><a href="../index.html">CSCI 150</a> Lab 5: Guess My Number</h1>
 <hr>
 
 <h2>Overview</h2>
@@ -34,15 +34,15 @@ look like:
     ...OK, I have picked a number.
     Your guess? <span>50</span>
     50 is too low.
-    Your guess? 60
+    Your guess? <span>60</span>
     60 is too high.
-    Your guess? 65
+    Your guess? <span>65</span>
     65 is too high.
-    Your guess? 61
+    Your guess? <span>61</span>
     61 is too high.
-    Your guess? 55
+    Your guess? <span>55</span>
     55 is too high.
-    Your guess? 51
+    Your guess? <span>51</span>
     You got it!  It took you 6 guesses.
 </pre>
 <p>
@@ -52,8 +52,8 @@ looks something like this:
 <pre>
     ######################################
     # Copyright (c) 2017 YOUR NAME(s) HERE
-    # CSCI 150, Spring 2017
-    # Lab 4: Guess My Number
+    # CSCI 150, Fall 2017
+    # Lab 5: Guess My Number
     ######################################
 
     import random
@@ -90,7 +90,7 @@ Your game works now, but it has a problem:
     I will pick a number from 1-100, and you try to guess it.
     I will tell you whether each guess is too low or too high.
     ...OK, I have picked a number.
-    Your guess? fifty
+    Your guess? <span>fifty</span>
     Traceback (most recent call last):
       File "guess_number.py", line 33, in <module>
         main()
@@ -156,11 +156,11 @@ complete this step:
     I will pick a number from 1-100, and you try to guess it.
     I will tell you whether each guess is too low or too high.
     ...OK, I have picked a number.
-    Your guess? fifty
+    Your guess? <span>fifty</span>
     That is not a number.  Try again.
-    Your guess? iuerhuheg
+    Your guess? <span>iuerhuheg</span>
     That is not a number.  Try again.
-    Your guess? 20
+    Your guess? <span>20</span>
     20 is too low.
 </pre>
 <p>
@@ -183,31 +183,31 @@ your program might look like once you get this to work:
     I will pick a number from 1-100, and you try to guess it.
     I will tell you whether each guess is too low or too high.
     ...OK, I have picked a number.
-    Your guess? 50
+    Your guess? <span>50</span>
     50 is too low.
-    Your guess? 70
+    Your guess? <span>70</span>
     70 is too high.
-    Your guess? 60
+    Your guess? <span>60</span>
     60 is too high.
-    Your guess? 55
+    Your guess? <span>55</span>
     You got it!  It took you 4 guesses.
-    Would you like to play again? (yes/no) yes
+    Would you like to play again? (yes/no) <span>yes</span>
     ...OK, I have picked a number.
-    Your guess? 20
+    Your guess? <span>20</span>
     20 is too low.
-    Your guess? 80
+    Your guess? <span>80</span>
     80 is too high.
-    Your guess? 05
+    Your guess? <span>05</span>
     5 is too low.
-    Your guess? 50
+    Your guess? <span>50</span>
     50 is too high.
-    Your guess? 30
+    Your guess? <span>30</span>
     30 is too high.
-    Your guess? 25
+    Your guess? <span>25</span>
     25 is too high.
-    Your guess? 23
+    Your guess? <span>23</span>
     You got it!  It took you 7 guesses.
-    Would you like to play again? (yes/no) no
+    Would you like to play again? (yes/no) <span>no</span>
 </pre>
 <p>
 <h2>Step 4</h2>
@@ -221,26 +221,26 @@ Here is an example of what your program's output might look like:
     Welcome to guess the number!  You pick a number from 1-100
     and I will guess it.  Please tell me whether my guesses are
     "correct", "low", or "high".
-    Is your number 50? too high
+    Is your number 50? <span>too high</span>
     Please respond with "correct", "low", or "high".
-    Is your number 50? erogiherg
+    Is your number 50? <span>erogiherg</span>
     Please respond with "correct", "low", or "high".
-    Is your number 50? high
-    Is your number 25? high
-    Is your number 12? low
-    Is your number 18? low
-    Is your number 21? high
-    Is your number 19? low
-    Is your number 20? correct
+    Is your number 50? <span>high</span>
+    Is your number 25? <span>high</span>
+    Is your number 12? <span>low</span>
+    Is your number 18? <span>low</span>
+    Is your number 21? <span>high</span>
+    Is your number 19? <span>low</span>
+    Is your number 20? <span>correct</span>
     Yay!  I win!  It only took me 7 guesses.
-    Shall we play again? (yes/no) yes
-    Is your number 50? low
-    Is your number 75? low
-    Is your number 88? high
-    Is your number 81? high
-    Is your number 78? correct
+    Shall we play again? (yes/no) <span>yes</span>
+    Is your number 50? <span>low</span>
+    Is your number 75? <span>low</span>
+    Is your number 88? <span>high</span>
+    Is your number 81? <span>high</span>
+    Is your number 78? <span>correct</span>
     Yay!  I win!  It only took me 5 guesses.
-    Shall we play again? (yes/no) no
+    Shall we play again? (yes/no) <span>no</span>
 </pre>
 <p>
 A few hints:
