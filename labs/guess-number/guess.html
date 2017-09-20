@@ -26,13 +26,13 @@ XXX
 For the first step, you will implement a basic version of the game
 "guess the number".  Here is what a sample run of the program might
 look like:
-
+<p>
 <pre>
     Welcome to guess the number!
     I will pick a number from 1-100, and you try to guess it.
     I will tell you whether each guess is too low or too high.
     ...OK, I have picked a number.
-    Your guess? 50
+    Your guess? <span>50</span>
     50 is too low.
     Your guess? 60
     60 is too high.
@@ -45,10 +45,10 @@ look like:
     Your guess? 51
     You got it!  It took you 6 guesses.
 </pre>
-
+<p>
 Start by creating a file called <code>guess_number.py</code> that
 looks something like this:
-
+<p>
 <pre>
     ######################################
     # Copyright (c) 2017 YOUR NAME(s) HERE
@@ -64,7 +64,7 @@ looks something like this:
     # Call main() as the last thing in the file
     main()
 </pre>
-
+<p>
 Inside the <code>main()</code> function, you should implement the game
 as illustrated above.
 
@@ -84,7 +84,7 @@ as illustrated above.
 <h2>Step 2</h2>
 
 Your game works now, but it has a problem:
-
+<p>
 <pre>
     Welcome to guess the number!
     I will pick a number from 1-100, and you try to guess it.
@@ -98,15 +98,15 @@ Your game works now, but it has a problem:
         guess = int(input("Your guess? "))
     ValueError: invalid literal for int() with base 10: 'fifty'
 </pre>
-
+<p>
 If the user enters invalid input, the program will crash.  We have
 noted this problem before, but now that we know how to do repetition,
 we can actually do something about it!
-
+<p>
 You should write a new function called <code>input_guess()</code>.  Here is a
 template you can use as a starting point; copy it into your file
 (after <code>input random</code> and before <code>def main():</code>):
-
+<p>
 <pre>
     # input_guess prompts the user for their guess, and keeps prompting
     # until it is valid.
@@ -126,31 +126,31 @@ template you can use as a starting point; copy it into your file
         # Finally, return the user's guess
         return guess
 </pre>
-
+<p>
 If the user's input is stored as a string in the
 variable <code>guess_str</code>, you can check whether it is valid
 using <code>guess_str.isdigit()</code>, which is a True or False value
 telling you whether the string <code>guess_str</code> consists of all
 digits or not.
-
+<p>
 Finally, replace the part of your <code>main()</code> function that
 asks the user for their input with a call to your
 new <code>input_guess()</code> function.  That is, instead of
 something like
-
+<p>
 <pre>
     guess = int(input("Your guess? "))
 </pre>
-
+<p>
 you should now have
-
+<p>
 <pre>
     guess = input_guess()
 </pre>
-
+<p>
 Here's what the output of your program might look like once you
 complete this step:
-
+<p>
 <pre>
     Welcome to guess the number!
     I will pick a number from 1-100, and you try to guess it.
@@ -163,7 +163,7 @@ complete this step:
     Your guess? 20
     20 is too low.
 </pre>
-
+<p>
 If you like, you may also modify <code>input_guess()</code> so that it
 ensures the user's guess is between 1 and 100, but this is not required.
 
@@ -172,12 +172,12 @@ ensures the user's guess is between 1 and 100, but this is not required.
 Since this game is so addictive, it's inconvenient to re-run it every
 time we want to play.  In this step, you will modify the game so that
 the user can keep playing multiple rounds until they decide to stop.
-
+<p>
 You should put another <code>while</code> loop around an appropriate
 part of your <code>main()</code> function so that it will repeat the
 entire game until the user wants to stop.  Here is what the output of
 your program might look like once you get this to work:
-
+<p>
 <pre>
     Welcome to guess the number!
     I will pick a number from 1-100, and you try to guess it.
@@ -209,14 +209,14 @@ your program might look like once you get this to work:
     You got it!  It took you 7 guesses.
     Would you like to play again? (yes/no) no
 </pre>
-
+<p>
 <h2>Step 4</h2>
 
 Finally, create a new file called <code>computer_guess.py</code>.  You
 should implement the same game, but with the roles reversed!  That is,
 the human user picks a number, and the computer tries to guess it.
 Here is an example of what your program's output might look like:
-
+<p>
 <pre>
     Welcome to guess the number!  You pick a number from 1-100
     and I will guess it.  Please tell me whether my guesses are
@@ -242,7 +242,7 @@ Here is an example of what your program's output might look like:
     Yay!  I win!  It only took me 5 guesses.
     Shall we play again? (yes/no) no
 </pre>
-
+<p>
 A few hints:
 <ul>
   <li>Be sure that your program responds appropriately if the user
