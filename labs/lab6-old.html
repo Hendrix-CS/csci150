@@ -1,0 +1,221 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 6 - Going on Vacation</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 6<br>Going on Vacation</h1>
+<hr>
+
+<h2>Overview</h2>
+As we have learned more about the elements of coding in Python, our programs
+have grown more interesting, yet more complicated and fragile. In this lab, we 
+examine the benefits of using functions to structure our code.
+
+<h2>Materials</h2>
+<ul>
+	<li><a href="../data/english2.txt">Common English Words</a>
+	<li><a href="../code/vacation.py">Vacation Game</a>
+	<li><a href="../code/dictionary.py">dictionary.py</a> Extended Python Module
+	<li>Lab Partner (you must have a lab partner for this lab)
+</ul>
+
+<h2>Description</h2>
+There are many versions of a word game where one person has a secret and the other players
+must guess this secret. Sometimes called 
+<a href="https://www.thegamegal.com/2010/11/11/green-glass-doors/">Green Glass Doors</a>,
+<a href="https://www.thegamegal.com/2011/06/11/going-on-a-picnic/">Going on a picnic</a>, or 
+<a href="http://www.writing.com/main/handler/item_id/1528109-Deep-but-Not-Profound">
+Deep but not profound</a>, the other players can ask if certain words are part of the secret, and 
+the first player must answer "yes" or "no". We have implemented a version of this game
+in Python where the secret is that all of the words must have double letters to be 
+accepted. Our code is written using input, output, math, conditionals, and while loops, but
+without functions.
+<p>
+Download the text file <code><a href="../data/english2.txt">english2.txt</a></code> 
+and the python module <code>
+<a href="../code/dictionary.py">dictionary.py</a></code> files to your working directory.
+The dictionary module contains two functions
+<code>valid_word(word, file)</code>, which will return True if the word is found in the file and
+False otherwise, and
+<code>random_valid_word(file)</code>, which will return a random valid word from the
+given file.
+<p>
+Then, download the <a href="../code/vacation.py">vacation.py</a> program to your 
+working directory. Open up this file and run the code to understand how
+the game works. Examine the code to determine how the goals of the game
+are accomplished through programming.
+<p>
+Your task in this lab is to transform this code into a well-structured program
+using functions. Work your way step-by-step through the following instructions to 
+slowly abstract critical information into sensible functions. Each function you 
+write should be localized and focused. Place these new functions at the top of your
+program file as they are written.
+
+<h3>Step 1 - Double Letter Words</h3>
+Our program must determine if a given string follows the rule for the game,
+namely that it has two adjacent letters that are identical. This can be found
+<b>four</b> times in the current code.
+<p>
+Write a function called <code>has_double</code>, based on the
+repeated code you find in the program, with a string called 
+<code>word</code> as a parameter, which will return True if the word has the 
+double letter property, and False otherwise.
+<p>
+Then, replace the repeated code with a call to this function in all four
+places.
+
+<h3>Step 2 - Yes/No Answers</h3> 
+Identify the <b>two</b> places in the program where the user is asked a Yes/No question.
+<p>
+Write a function called <code>answered_yes</code> with a string called
+<code>prompt</code> as a parameter, which will return True when the user
+types in "Yes" (under any capitalization scheme), and returns False when
+the user types in "No". If the user did not type "Yes" or "No", they should
+be given another opportunity to enter input.
+<p>
+Replace the repeated code with a call to this function in all 
+places.
+
+<h3>Step 3 - Finding Words</h3>
+To start the game, notice the code that prints out two initial words,
+one that follows the vacation rule, and one that does not.
+<p>
+Write a function called <code>find_word</code> that abstracts this similar code.
+There will be two parameters to this function, a string for the <code>wordfile</code> for 
+looking up the words, and a Boolean for <code>positive</code>, which determines if the
+function should return a word that positively matches the rule or one that negatively 
+does not fit the rule. The function should return a string that is the eventual found word.
+<p>
+Replace the code in the program with your new function, using the 
+parameters to distinguish between requesting an allowed and forbidden word.
+
+<h3>Step 4 - Challenge Function</h3>
+The central while loop for the game looks rather complicated. However,
+there is a natural section of code related to the Challenge portion of the 
+game that can be extracted into a function.
+<p>
+Also, the challenge is hard-coded to have exactly 6 questions asked of the user. 
+This is known as having a "magic number" in our code, something that keeps on 
+being used and is very specific.
+<p>
+Write a function called <code>passes_challenge</code>, that extracts this 
+challenge code. It should have two parameters, a string for the <code>wordfile</code> for 
+looking up the words, and an integer <code>n</code> to determine the 
+number of times the challenge should ask the user a question. It will return
+True if the user successfully passed the challenge and is worthy of winning,
+and False if they answered any of the questions incorrectly.
+<p>
+The code related to printing out the results from the challenge should be left
+in the original while loop and not be part of the function.
+
+<h3>Step 5 - Refine Code Structure</h3>
+We need to separate the code that plays the game from the code that will
+repeatedly ask the user if they want to play again.
+<p>
+Write a function called <code>completed_game</code> that will tell the user 
+the rules of the game, then repeatedly ask them for a word. If the user types in 
+"QUIT", then the while loop should terminate and the function should return False.
+If they successfully pass the challenge, the function should return True.
+<p>
+Replace the game portion of the code with a call to the above function, using
+the return value appropriately.
+
+<h3>Step 6 - Create a Main Function</h3>
+With much of the rest of our code in functions, it makes sense to structure
+the whole program within a function, that is invoked at the end of our file.
+This helps us reduce the dependence of each piece on any global variables.
+<p>
+Write a function called <code>main</code> that has no parameters or return value.
+The body of this function should be all of the remaining code that is not already 
+in a function.
+<p>
+Then, add a single call to main at the end of your file. Your code should look
+something like this
+<p>
+<pre>
+def main():
+   ...
+   ...
+   ...
+   
+main()
+</pre>
+
+<h3>Step 7 - Determining Word Validity</h3>
+The while loop in the <code>completed_game</code> function is doing two 
+tasks: First it is cycling through until the user either wins or quits. But at the 
+same time, it is determining the validity of the user's word in the dictionary. These
+two tasks should be separated.
+<p>
+Write a function called <code>get_user_word</code> that has a string called <code>prompt</code>
+as a first parameter and the wordfile as the second. This code should repeatedly
+ask the user to enter a word, until the word can be successfully validated
+in the dictionary. The function should return the valid word.
+<p>
+Then, rewrite the original while loop for the game. The first thing the loop should 
+do is make a call to your <code>get_user_word</code> function and save the
+result as input. The internal conditions of the while loop now can be enumerated
+so that it determines if input is "CHALLENGE", "QUIT", or otherwise needs to determine
+if the word fits the double letter rule.
+
+<h3>Step 8 - Biased Challenge Word Selection</h3>
+In the challenge section, the user is asked to correctly identify six random words.
+Currently, we get these words from the dictionary randomly. It is
+very likely that the user will not see words that have any repeated letters since they
+are more rare in the dictionary. This could be improved to have a better chance of 
+presenting the user with words that fit each category.
+<p>
+Rewrite the <code>passes_challenge</code> function to have the 
+computer randomly make a choice each time
+between presenting the user with a positive or negative word. 
+Half the time it should choose positive, and half the time it should choose negative.
+<p>
+You should use the <code>find_word</code> function
+written above in step 3 to look up the correct type of word once the choice 
+has been made.
+
+<h3>Step 9 - Random Rule Selection </h3>
+If a user plays our game and wins, they have little incentive to play
+again, since they have already learned the secret rule.
+<p>
+As a final task, code at least two other functions similar to 
+<code>has_double</code> that bring in a string as a
+parameter, and returns True if the given word matches some
+syntactic property, such as the first and last letters are the same,
+or the word has more vowels than consonants.
+<p>
+Now within the <code>main</code> function, write a set of 
+if statements to randomly select one of these functions as the
+particular rule to use in the game.
+<p>
+You will need to pass this function as an argument throughout the code
+you have written. This function will be 
+needed in the <code>completed_game</code> function, the 
+<code>find_word</code> function, and the <code>passes_challenge</code> function.
+<p>
+You will also need to pass along a string into the <code>completed_game</code>
+function that describes in English the selected rule.
+
+<h2>What to Hand In</h2>
+Make sure you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+ 	<li>vacation.py
+ 	<li>dictionary.py
+ 	<li>english2.txt
+</ul>
+<h2>Grading</h2>
+<ul>
+<li>To earn a D, complete steps 1-2.
+<li>To earn a C, do the above and complete steps 3-4.
+<li>To earn a B, do the above and complete steps 5-7.
+<li>To earn a A, do the above and complete steps 8-9.
+<li>To earn a 100, do the above and follow the style guide exactly.
+</ul>
+<hr>
+<small>&copy; Mark Goadrich, Gabriel Ferrer, Hendrix College</small>
+
+</body>

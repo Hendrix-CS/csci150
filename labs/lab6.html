@@ -1,221 +1,270 @@
 <html>
 <head>
-  <title>CSCI 150 - Lab 6 - Going on Vacation</title>
+  <title>CSCI 150 - Lab 6 - Mutation is the Word</title>
   <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
 </head>
 
 <body>
-<h1><a href="../index.html">CSCI 150</a> - Lab 6<br>Going on Vacation</h1>
+<h1><a href="../index.html">CSCI 150</a> - Lab 6<br>Mutation is the Word</h1>
 <hr>
 
 <h2>Overview</h2>
-As we have learned more about the elements of coding in Python, our programs
-have grown more interesting, yet more complicated and fragile. In this lab, we 
-examine the benefits of using functions to structure our code.
+In this lab we will make extensive use of functions, sentinel loops (while loops), and strings.  We will explore
+mutation of DNA through playing the game Doublets.
 
 <h2>Materials</h2>
 <ul>
 	<li><a href="../data/english2.txt">Common English Words</a>
-	<li><a href="../code/vacation.py">Vacation Game</a>
-	<li><a href="../code/dictionary.py">dictionary.py</a> Extended Python Module
+	<li><a href="../code/dictionary.py">dictionary.py</a> Python Module
 	<li>Lab Partner (you must have a lab partner for this lab)
 </ul>
 
 <h2>Description</h2>
-There are many versions of a word game where one person has a secret and the other players
-must guess this secret. Sometimes called 
-<a href="https://www.thegamegal.com/2010/11/11/green-glass-doors/">Green Glass Doors</a>,
-<a href="https://www.thegamegal.com/2011/06/11/going-on-a-picnic/">Going on a picnic</a>, or 
-<a href="http://www.writing.com/main/handler/item_id/1528109-Deep-but-Not-Profound">
-Deep but not profound</a>, the other players can ask if certain words are part of the secret, and 
-the first player must answer "yes" or "no". We have implemented a version of this game
-in Python where the secret is that all of the words must have double letters to be 
-accepted. Our code is written using input, output, math, conditionals, and while loops, but
-without functions.
+As we study computation and life, we can ask "How did life evolve from single-celled organisms 
+into the diversity of life we
+see today?"  The answer lies in a process called
+ <a href="http://en.wikipedia.org/wiki/Mutation">mutation</a>.
 <p>
+Separate from the DNA-RNA-Protein process are two separate processes for cell duplication called 
+<a href="http://en.wikipedia.org/wiki/Mitosis">mitosis</a> and 
+<a href="http://en.wikipedia.org/wiki/Meiosis">meiosis</a>.  Both processes involve
+a cell replicating its DNA, and it is within this replication that mutations can occur.
+Perhaps there was a copying mistake, or a random x-ray damaged part of the DNA;
+in any case, the DNA code we begin with can undergo small alterations.  Each mutation
+during this replication process could possibly have a large impact of the earlier transcription
+and translation process, such that we could have a new stop codon within a gene, 
+or we could place a different amino acid into our protein chain.  While some changes may be
+very harmful and lead to genetic diseases, others could provide an unexpected benefit and 
+new functionality. These underlying mutations 
+introduce variety into the gene pool for a population, and allow natural selection 
+and evolution to occur.
+<p>
+While the language of DNA was not understood until 1953 by 
+<a href="http://en.wikipedia.org/wiki/Watson_and_Crick">James Watson and Francis Crick</a>
+with the help of data from <a href="http://en.wikipedia.org/wiki/Rosalind_Franklin">Rosalind
+Franklin</a>, similar properties of mutation were noticed nearly 100 years earlier by 
+<a href="http://en.wikipedia.org/wiki/Lewis_Carroll">Charles Lutwidge Dodgson (aka Lewis Carroll)
+</a>, who is most famous for his novel "Alice in Wonderland." In an article for 
+<i>Vanity Fair</i>, Carroll created a puzzle called Doublets, which explored the 
+effects of mutation on English words.  His rules description is as follows:
+<blockquote>
+The rules of the Puzzle are simple enough. Two words are proposed, of the same length; 
+and the Puzzle consists in linking these together by interposing other words, 
+each of which shall differ from the next word in one letter only. That is to say, 
+one letter may be changed in one of the given words, then one letter in the word so 
+obtained, and so on, till we arrive at the other given word. The letters must not be 
+interchanged among themselves, but each must keep to its own place. As an example, 
+the word 'head' may be changed into 'tail' by interposing the words 
+'heal, teal, tell, tall'. I call the given words 'a Doublet', the interposed words 
+'Links', and the entire series 'a Chain', of which I here append an example:
+<p>
+<pre>
+H E A D
+h e a l
+t e a l
+t e l l
+t a l l
+T A I L
+</pre>
+<p>
+It is, perhaps, needless to state that it is de rigueur that the links should be 
+English words, such as might be used in good society.
+</blockquote>
+<p>
+(More details on the connection between Lewis Carroll and genetics can be found in an article by
+David B. Searls entitled <a href="http://www.liebertonline.com/doi/abs/10.1089/10665270152530881">
+From <i>Jabberwocky</i> to Genome: Lewis Carroll and Computational Biology</a>).
+<p>
+Our task for this lab is to create a Python program that lets a user play the Doublets game
+and enforces all the rules given above by Lewis Carroll.
+
+<h3>Step 1 - Analyze the Problem, Create Specifications</h3>
+We will tackle this puzzle using the software engineering phases.  
+First, analyze the problem to see what steps we can take to model this inside a computer.  
+Try to answer the following questions: 
+<ul>
+	<li>What input do we need from the user? Output for the user?
+	<li>What are all the possible ways that the user could enter incorrect data? 
+	<li>Is there any data input from the user we need to standardize?
+	<li>How can we keep track of the solution path?
+</ul>
+<p>
+Write your answers in <code>Lab Evaluation</code>.
+<h3>Step 2 - Develop Pseudocode</h3> With your analysis from answering
+these questions, develop an algorithmic solution using
+<i>pseudocode</i>.  This should correspond to the structure of a
+Python program, but is written in English instead of Python.  
+</p>
+
+<p>For example, pseudocode for a guessing-game could look like this:
+<p>
+<pre>
+Generate a number for the human to guess
+As long as the human has not guessed the number
+    Request a guess from the human
+    If it's too high or too low, say so
+Congratulate the human on their insight
+</pre>
+
+<p>
+The point is that this is <i>structured</i> like Python, using
+indentation and hinting at loops and conditionals.  But the individual 
+pieces are just English descriptions, which you will later translate into
+precise Python code.
+
+<p>
+
+To demonstrate the eventual behavior of the program, here is a
+sample run of the Doublets game.
+<p>
+<pre>
+What is the starting word? <span>CAT</span>
+What is the ending word? <span>DOG</span>
+Start   = CAT
+Current = CAT
+End     = DOG
+Which character do you want to change? (the first character is 1) <span>3</span>
+What is your new character? <span>B</span>
+Current = CAB
+End     = DOG
+Which character do you want to change? (the first character is 1) <span>2</span>
+What is your new character? <span>O</span>
+Current = COB
+End     = DOG
+Which character do you want to change? (the first character is 1) <span>3</span>
+What is your new character? <span>G</span>
+Current = COG
+End     = DOG
+Which character do you want to change? (the first character is 1) <span>1</span>
+What is your new character? <span>D</span>
+Solution path found in 4 steps.
+CAT -> CAB -> COB -> COG -> DOG
+</pre>
+<p>
+A second run of the program is shown below, where the user made many mistakes.
+<p>
+<pre>
+What is the starting word? <span>log</span>
+What is the ending word? <span>worm</span>
+The lengths are not equal. Please try again.
+What is the ending word? <span>sfu</span>
+sfu is not a word. Please try again.
+What is the ending word? <span>bug</span>
+Start   = LOG
+Current = LOG
+End     = BUG
+Which character do you want to change? (the first character is 1) <span>0</span>
+0 is out of range. Please try again.
+Which character do you want to change? (the first character is 1) <span>4</span>
+4 is out of range. Please try again.
+Which character do you want to change? (the first character is 1) <span>1</span>
+What is your new character? <span>4</span>
+4og is not a valid word
+Current = LOG
+End     = BUG
+Which character do you want to change? (the first character is 1) <span>1</span>
+What is your new character? <span>b</span>
+Current = BOG
+End     = BUG
+Which character do you want to change? (the first character is 1) <span>x</span>
+x is not a number. Please try again.
+Which character do you want to change? (the first character is 1) <span>2</span>
+What is your new character? <span>uu</span>
+uu is more than one character. Please try again.
+Which character do you want to change? (the first character is 1) <span>2</span>
+What is your new character? <span>u</span>
+Solution path found in 2 steps.
+LOG -> BOG -> BUG
+</pre>
+<p>
+Add the pseudocode to your <code>Lab Evaluation</code>.
+<p>
+
+<h3>Step 3 - Implement Incrementally</h3>
 Download the text file <code><a href="../data/english2.txt">english2.txt</a></code> 
 and the python module <code>
 <a href="../code/dictionary.py">dictionary.py</a></code> files to your working directory.
-The dictionary module contains two functions
+The dictionary module contains one function 
 <code>valid_word(word, file)</code>, which will return True if the word is found in the file and
-False otherwise, and
-<code>random_valid_word(file)</code>, which will return a random valid word from the
-given file.
+False otherwise.
 <p>
-Then, download the <a href="../code/vacation.py">vacation.py</a> program to your 
-working directory. Open up this file and run the code to understand how
-the game works. Examine the code to determine how the goals of the game
-are accomplished through programming.
+Now take your pseduocode description and begin to implement your program in Python.  
+Your program should be named <code>doublets.py</code>.  Make sure to import the dictionary module 
+before trying to use the <code>valid_word</code> function.
+Write your code in small sections and test incrementally.
 <p>
-Your task in this lab is to transform this code into a well-structured program
-using functions. Work your way step-by-step through the following instructions to 
-slowly abstract critical information into sensible functions. Each function you 
-write should be localized and focused. Place these new functions at the top of your
-program file as they are written.
-
-<h3>Step 1 - Double Letter Words</h3>
-Our program must determine if a given string follows the rule for the game,
-namely that it has two adjacent letters that are identical. This can be found
-<b>four</b> times in the current code.
-<p>
-Write a function called <code>has_double</code>, based on the
-repeated code you find in the program, with a string called 
-<code>word</code> as a parameter, which will return True if the word has the 
-double letter property, and False otherwise.
-<p>
-Then, replace the repeated code with a call to this function in all four
-places.
-
-<h3>Step 2 - Yes/No Answers</h3> 
-Identify the <b>two</b> places in the program where the user is asked a Yes/No question.
-<p>
-Write a function called <code>answered_yes</code> with a string called
-<code>prompt</code> as a parameter, which will return True when the user
-types in "Yes" (under any capitalization scheme), and returns False when
-the user types in "No". If the user did not type "Yes" or "No", they should
-be given another opportunity to enter input.
-<p>
-Replace the repeated code with a call to this function in all 
-places.
-
-<h3>Step 3 - Finding Words</h3>
-To start the game, notice the code that prints out two initial words,
-one that follows the vacation rule, and one that does not.
-<p>
-Write a function called <code>find_word</code> that abstracts this similar code.
-There will be two parameters to this function, a string for the <code>wordfile</code> for 
-looking up the words, and a Boolean for <code>positive</code>, which determines if the
-function should return a word that positively matches the rule or one that negatively 
-does not fit the rule. The function should return a string that is the eventual found word.
-<p>
-Replace the code in the program with your new function, using the 
-parameters to distinguish between requesting an allowed and forbidden word.
-
-<h3>Step 4 - Challenge Function</h3>
-The central while loop for the game looks rather complicated. However,
-there is a natural section of code related to the Challenge portion of the 
-game that can be extracted into a function.
-<p>
-Also, the challenge is hard-coded to have exactly 6 questions asked of the user. 
-This is known as having a "magic number" in our code, something that keeps on 
-being used and is very specific.
-<p>
-Write a function called <code>passes_challenge</code>, that extracts this 
-challenge code. It should have two parameters, a string for the <code>wordfile</code> for 
-looking up the words, and an integer <code>n</code> to determine the 
-number of times the challenge should ask the user a question. It will return
-True if the user successfully passed the challenge and is worthy of winning,
-and False if they answered any of the questions incorrectly.
-<p>
-The code related to printing out the results from the challenge should be left
-in the original while loop and not be part of the function.
-
-<h3>Step 5 - Refine Code Structure</h3>
-We need to separate the code that plays the game from the code that will
-repeatedly ask the user if they want to play again.
-<p>
-Write a function called <code>completed_game</code> that will tell the user 
-the rules of the game, then repeatedly ask them for a word. If the user types in 
-"QUIT", then the while loop should terminate and the function should return False.
-If they successfully pass the challenge, the function should return True.
-<p>
-Replace the game portion of the code with a call to the above function, using
-the return value appropriately.
-
-<h3>Step 6 - Create a Main Function</h3>
-With much of the rest of our code in functions, it makes sense to structure
-the whole program within a function, that is invoked at the end of our file.
-This helps us reduce the dependence of each piece on any global variables.
-<p>
-Write a function called <code>main</code> that has no parameters or return value.
-The body of this function should be all of the remaining code that is not already 
-in a function.
-<p>
-Then, add a single call to main at the end of your file. Your code should look
-something like this
+Start by creating a file called <code>doublets.py</code> that
+looks something like this:
 <p>
 <pre>
+######################################
+# Copyright (c) 2017 YOUR NAME(s) HERE
+# CSCI 150, Fall 2017
+# Lab 6: Mutation is the Word
+######################################
+
+import dictionary
+
 def main():
-   ...
-   ...
-   ...
-   
+    # Write your code here
+
+# Call main() as the last thing in the file
 main()
 </pre>
 
-<h3>Step 7 - Determining Word Validity</h3>
-The while loop in the <code>completed_game</code> function is doing two 
-tasks: First it is cycling through until the user either wins or quits. But at the 
-same time, it is determining the validity of the user's word in the dictionary. These
-two tasks should be separated.
-<p>
-Write a function called <code>get_user_word</code> that has a string called <code>prompt</code>
-as a first parameter and the wordfile as the second. This code should repeatedly
-ask the user to enter a word, until the word can be successfully validated
-in the dictionary. The function should return the valid word.
-<p>
-Then, rewrite the original while loop for the game. The first thing the loop should 
-do is make a call to your <code>get_user_word</code> function and save the
-result as input. The internal conditions of the while loop now can be enumerated
-so that it determines if input is "CHALLENGE", "QUIT", or otherwise needs to determine
-if the word fits the double letter rule.
 
-<h3>Step 8 - Biased Challenge Word Selection</h3>
-In the challenge section, the user is asked to correctly identify six random words.
-Currently, we get these words from the dictionary randomly. It is
-very likely that the user will not see words that have any repeated letters since they
-are more rare in the dictionary. This could be improved to have a better chance of 
-presenting the user with words that fit each category.
 <p>
-Rewrite the <code>passes_challenge</code> function to have the 
-computer randomly make a choice each time
-between presenting the user with a positive or negative word. 
-Half the time it should choose positive, and half the time it should choose negative.
-<p>
-You should use the <code>find_word</code> function
-written above in step 3 to look up the correct type of word once the choice 
-has been made.
+Be sure to structure your code to include many functions, each of which is focused on one 
+small task, with sensible parameters and return values. There should be no
+code or variables in a global context.
+Some functions you might consider
+creating are
+<ul>
+<li>request_valid_word()
+<li>number_in_range(min, max)
+<li>get_one_char()
+<li>transform_word(position, letter)
+</ul>
+This is list is not meant to be prescriptive or conclusive.
 
-<h3>Step 9 - Random Rule Selection </h3>
-If a user plays our game and wins, they have little incentive to play
-again, since they have already learned the secret rule.
+<h3>Step 4 - Test, Debug and Maintain</h3>
+With incremental implementation, Steps 3 and 4 should go hand in hand.  Never write more than 
+5-10 lines of code before testing your changes.  First make your program work with perfect
+input, and then expand it to work with erroneous user input.
 <p>
-As a final task, code at least two other functions similar to 
-<code>has_double</code> that bring in a string as a
-parameter, and returns True if the given word matches some
-syntactic property, such as the first and last letters are the same,
-or the word has more vowels than consonants.
-<p>
-Now within the <code>main</code> function, write a set of 
-if statements to randomly select one of these functions as the
-particular rule to use in the game.
-<p>
-You will need to pass this function as an argument throughout the code
-you have written. This function will be 
-needed in the <code>completed_game</code> function, the 
-<code>find_word</code> function, and the <code>passes_challenge</code> function.
-<p>
-You will also need to pass along a string into the <code>completed_game</code>
-function that describes in English the selected rule.
+Once your program is working, try out some of the transformations below
+<ul>
+<li>FIRE -- HEAT
+<li>SLEEP -- DREAM
+<li>APE -- MAN
+<li>WHITE -- BLACK
+</ul>
+
+<h3>Future Thoughts</h3>
+Your <code>doublets.py</code> program lets the user chose what character to change at each step,
+and then verifies that each new word is a valid word.  Can you think of a way to always find the
+minimum number of steps to transform one word to another?  How will you know if a path
+between two words can be found? Include your answers to these questions
+in the Evaluation Document.
 
 <h2>What to Hand In</h2>
 Make sure you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
 have run your project through the Automated Style Checker.<p>
 You must hand in:
 <ul>
- 	<li>vacation.py
+	<li>Evaluation Doc
+ 	<li>doublets.py
  	<li>dictionary.py
  	<li>english2.txt
 </ul>
 <h2>Grading</h2>
 <ul>
-<li>To earn a D, complete steps 1-2.
-<li>To earn a C, do the above and complete steps 3-4.
-<li>To earn a B, do the above and complete steps 5-7.
-<li>To earn a A, do the above and complete steps 8-9.
+<li>To earn a D, turn in an Evaluation Doc.
+<li>To earn a C, do the above and implement a program that can handle the input in the first sample run.
+<li>To earn a A, do the above and implement a program that can handle the input in the second sample run.
 <li>To earn a 100, do the above and follow the style guide exactly.
 </ul>
 <hr>
-<small>&copy; Mark Goadrich, Gabriel Ferrer, Hendrix College</small>
+<small>&copy; Mark Goadrich, Hendrix College</small>
 
 </body>
