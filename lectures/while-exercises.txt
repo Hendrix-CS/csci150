@@ -1,35 +1,29 @@
-1. Write a loop that counts the number of digits that appear in a 
+1. Write a function that counts the number of digits that appear in a 
 string received from the user.  For example, if the user inputs 
-"12a3rt5", the answer would be "4 digits". 
+"12a3rt5", the function would return 4. 
 
-2. Write a loop that requests a sequence of inputs from the user. 
+2. Write a function that requests a sequence of inputs from the user. 
 The loop will end when the user types “ENTER”. The first three 
 letters of each input should be put together into a variable 
-called "prefixes" which is printed out at the end.
+called "prefixes" which is returned at the end.
 
-3. Write a loop that requests a sequence of inputs from the user. 
+3. Write a function that requests a sequence of inputs from the user. 
 The loop will end when the user enters a non-integer. The sum 
-of all the numbers should be printed out at the end.
+of all the numbers should be returned at the end.
 
-4. Write a loop like the previous one, except that it adds up the
+4. Write a function like the previous one, except that it adds up the
 odd numbers only.
 
-5. Write a loop like #2, except that the sum of the lengths of the 
-inputs is printed.
+5. Write a function like #2, except that the sum of the lengths of the 
+inputs is returned.
 
-6. Write a loop that simulates a gambling game. The player starts 
+6. Write a function that simulates a gambling game. The player starts 
 with $100. Each time, the player is asked for a bet. The player
 wins 30% of the time and loses 70% of the time. On a win, the player
 wins double the bet. On a loss, the player loses the total bet. The loop 
-ends when the player runs out of money.
+ends when the player runs out of money, and returns how many
+turns were played.
 
-7. Implement the Collatz conjecture. Ask the user for a value to start, 
-then iterate through the sequence until you reach 1. Recall that if
-the number is odd, the next number is 3n + 1, and if the number is even,
-the next number is the current number divided by two.
-
-8. Implement the reverse of the guessing game, where the human thinks of
-a number, and the computer must use binary search to alter its guess.
-
-9. Write a loop that only ends when the user has typed in a valid 
-floating point number (something that can be parsed by float()).
+7. Write a function that only ends when the user has typed in a valid 
+floating point number (something that can be parsed by float()) and
+returns it.
