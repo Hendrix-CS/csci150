@@ -150,6 +150,15 @@ Write a function in <code>caesar.py</code> called <code>frequency_count(s)</code
 This will return a list of relative frequencies for all letters A-Z found in the string.
 Create a test string where you know the frequency of each character and make sure your
 function returns the correct list of relative frequencies.
+<p>
+For example, <code>frequency_count("apple")</code> should return
+<p>
+<pre>
+[0.2, 0, 0, 0, 0.2, 0, 0, 0, 0, 0.2, 0, 0, 0, 0.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+</pre>
+<p>
+An intermediate step to write this function is to first find a way to return a list of the raw counts
+for each letter. Then add in code to calculate the relative frequency for each of these letters.
 
 <h3>Step 4</h3>
 As we are encoding and decrypting strings with a Caesar cipher, we can notice that the
@@ -199,8 +208,12 @@ string and the file name of a base reference text.  Your function will
 calculate the character frequencies for the encrypted string and the
 reference text, then iteratively calculate the Chi-square statistic
 for each possible reverse rotation.  Your function should print out
-the most likely rotation (minimum Chi-square statistic) and decrypted
-message along with the chi-squared statistic for that rotation.
+<ul>
+<li>the most likely rotation (minimum Chi-square statistic),
+<li>the decrypted
+message, and 
+<li>the chi-squared statistic for that rotation.
+</ul>
 <p>
 Note: to read in the contents of a file as a string, you can write
 something like the following:
