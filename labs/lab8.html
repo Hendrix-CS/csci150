@@ -33,12 +33,21 @@ def divider(n):
         return 1 + divider(n // 2)
 </pre>
 <p>
-In your Evaluation Document, trace the execution of three separate executions of the
-divider function by creating a table of the input parameters and return value for each level of recursion.
+Here is an example of a trace table. In this example, we trace a call of <code>divider(2)</code>:
+<p>
+<code>
+<table border cellspacing=2 cellpadding=3>
+<tr><th>Recursion Level</th><th>Call</th><th>Return Expression</th><th>Return Value</th></tr>
+<tr><td>0</td><td>divider(2)</td><td>1 + divider(1)</td><td>1</td></tr>
+<tr><td>1</td><td>divider(1)</td><td>0</td><td>0</td></tr>
+</table>
+</code>
+<p>
+ In your Evaluation Document, trace the execution of three separate executions of the divider function by creating a table of the function call, the return expression, and return value for each level of recursion. Note that you will not be able to determine the return value for a given call until you have found the return value for the recursive call it invokes.
 <ul>
-<li><code>divider(2)</code> 
-<li><code>divider(5)</code> 
+<li><code>divider(7)</code> 
 <li><code>divider(10)</code> 
+<li><code>divider(17)</code>
 </ul>
 How many times was the function
 called in each instance?
@@ -155,87 +164,53 @@ draws a line of length <code>size</code>; in the recursive case, it
 draws four smaller copies of an order-(<code>n - 1</code>) Koch curve,
 arranged as shown in the replacement rule above.
 <p>
-Once you have typed in the function, test it as follows:
+Once you have typed in the function, test it using this function:
 <pre>
->>> t = turtle.Turtle()
->>> t.speed(10)
->>> t.penup()
->>> t.goto(0, -100)
->>> t.pendown()
->>> koch(t, 1, 100)
->>> t.penup()
->>> t.goto(0, 0)
->>> t.pendown()
->>> koch(t, 2, 100)
->>> t.penup()
->>> t.goto(0, 100)
->>> t.pendown()
->>> koch(t, 3, 100)
->>> t.penup()
->>> t.goto(0, 200)
->>> t.pendown()
->>> koch(t, 4, 100)
+def koch_tester():
+    t = turtle.Turtle()
+    t.speed(10)
+    for i in range(1, 5):
+        t.penup()
+        t.goto(0, 100 * (i - 2))
+        t.pendown()
+        koch(t, i, 100)
 </pre>
 
 <p>
 <h3>Step 4</h3>
-In your Lab Evalution Document, answer the following questions:
+In your Lab Evaluation Document, answer the following questions:
 <ol>
 <li> What is the visible effect of increasing the order of the curve?
 <li> As we did in Steps 1 and 2, 
 trace the execution of <code>koch(t, 2, 100)</code> 
 by creating a table of the input parameters and return value for each level of recursion.
-Note that the function is called multiple times for each level. The table 
+Note that the function is called multiple times for each level, but since
+the recursive calls are all the same, we only include it once. The table 
 for <code>koch(t, 1, 100)</code> would look like
 <p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">Level</th>
-    <th class="tg-yw4l">t</th>
-    <th class="tg-yw4l">n</th>
-    <th class="tg-yw4l">size</th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">t</td>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">100</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">1.1<br></td>
-    <td class="tg-yw4l">t</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">33.3</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">1.2</td>
-    <td class="tg-yw4l">t</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">33.3</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">1.3</td>
-    <td class="tg-yw4l">t</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">33.3</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">1.4</td>
-    <td class="tg-yw4l">t</td>
-    <td class="tg-yw4l">0</td>
-    <td class="tg-yw4l">33.3</td>
-  </tr>
+<code>
+<table border cellspacing=2 cellpadding=3>
+<tr><th>Recursion Level</th><th>Call</th><th>Turtle Command</th></tr>
+<tr><td>0</td><td>koch(t, 1, 100)</td><td>koch(t, 0, 33.3)</td></tr>
+<tr><td>1</td><td>koch(t, 0, 33.3)</td><td>t.forward(33.3)</td></tr>
 </table>
+</code>
 <p>
-<li> How does recursion cause this effect? In your answer, be sure
-to discuss how the different argument values at each level of recursion
-affect the behavior of the turtle and the appearance of the drawing.
+<li> Using the table you constructed, now write out a script of all the
+basic turtle commands that get executed as a result of the original call.
+Indent each command based on the recursion level at which it occurred. 
+For example, the script for <code>koch(t, 1, 100)</code> would look like:
+<p>
+<pre>
+    t.forward(33.3)
+t.left(60)
+    t.forward(33.3)
+t.right(120)
+    t.forward(33.3)
+t.left(60)
+    t.forward(33.3)
+</pre>
+<p>
 </ol>
 
 <h3>Step 5</h3>
@@ -319,11 +294,11 @@ You must hand in:
 </ul>
 <h2>Grading</h2>
 <ul>
-<li>To earn a D on this lab, complete Step 1.
-<li>To earn a C on this lab, do the above and complete Step 2.
-<li>To earn a B on this lab, do the above and complete Step 3.
-<li>To earn a A on this lab, do the above and complete Step 4.
-<li>To earn a 100 on this lab, do the above and complete Step 5.
+<li>To earn a D on this lab, complete Steps 1 and 2.
+<li>To earn a C on this lab, do the above and complete Steps 3 and 4.
+<li>To earn a B on this lab, do the above and complete Step 5.
+<li>To earn a A on this lab, do the above and complete Step 6.
+<li>To earn a 100 on this lab, do the above and complete Step 7.
 </ul>
 <hr>
 <small>&copy; Mark Goadrich &amp; Brent Yorgey, Hendrix College</small>
