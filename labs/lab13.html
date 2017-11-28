@@ -181,15 +181,27 @@ Use your function to calculate the distance from Conway to Little Rock, and Conw
 </pre>
 <p>
 <h2>Step 4 - Uploading Data</h2>
-
-Look at cityofconway.org open GIS data
-
-Tornado_Sirens.csv
-Schools.csv
-
+We are ready to explore the data! From the <a href="http://cityofconway.org">City of Conway</a>,
+we have downloaded two publicly available datasets. 
+<p>
+First, <a href="../Schools.csv">Schools.csv</a>
+is a comma-separated file that contains information on the 23 educational institutions in Conway. In this file, we can find
+each school's latitude and longitude, the name, the type of school, and the street address.
+<p>
+Second, <a href="../Tornado_Sirens.csv">Tornado_Sirens.csv</a>
+is a comma-separated file that contains information on the 30 tornado sirens in Conway. In this file, we can find
+again the latitude and longitude of each siren, its approximate street address, elevation, and 
+whether it is active.
+<p>
+<h4>Task 4.1</h4>
+Download the two files above to your computer.
+Select the folder icon next to the word "Files" in the upper-left corner of your Jupyter notebook.
+This will return you to the project directory. Find the "Upload" button in the upper-right
+corner, and use it to upload these two files to your project directory.
+<p>
 <h2>Step 5 - Individual Schools </h2>
 
-function 
+Write a function that 
 for given a school, how close are the sirens?
 How many are within 1/2 mile?
 
@@ -198,8 +210,9 @@ draw it with plt.hist
 will pick 10 bins by default
 
 Add title, label axes
-
-histogram of smallest distances between schools and sirens.
+<h4>Task 5.2</h4>
+Create a histogram of the smallest distances found between each school all of the sirens. This 
+graph should show the distribution of minimum distances for sirens to schools.
 
 <h2>Step 6 - School Coverage </h2>
 
