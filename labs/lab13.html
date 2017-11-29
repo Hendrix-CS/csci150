@@ -22,9 +22,14 @@ Since 1999, over <a href="http://thecabin.net/slideshow/2014-02-07/faulkner-coun
 The City of Conway Outdoor Warning Siren system consists of 22 sirens strategically placed throughout the City. 
 The sirens may be activated individually or simultaneously to provide a general alert for the entire community. 
 </blockquote>
-With the continual expansion of Conway in recent years, are there locations in need of new sirens?
-We will explore this question by calculating and visualizing the relationship between the locations of sirens
-and educational institutions in Conway.
+With the continual expansion of Conway in recent years, we can ask the following 
+research questions:
+<ul>
+<li>How extensive is the coverage of this system?
+<li>Are there locations in need of new sirens?
+</ul>
+We will explore these questions by calculating and visualizing the relationship between the locations of sirens
+and educational institutions in Conway. This kind of data analysis is know as <a href="https://opengovdata.io/2014/why-i-built-govtrackus/">Civic Hacking</a>.
 <h2>Step 1 - Creating a CoCalc account </h2>
 To perform our data analysis, we will need to create an account on 
 <a href="https://cocalc.com/">CoCalc</a>. Navigate
@@ -261,7 +266,7 @@ Next, draw a histogram of the distances found between Hendrix College all of the
 graph should show the distribution of distances for sirens to Hendrix.
 Be sure to add a title and label your axes.
 <p>
-How many sirens are within 1/2 mile? Within 1 mile?
+Q: How many sirens are within 1/2 mile? Within 1 mile?
 <p>
 <img src="../images/cocalcsirenhendrix.png" width=400>
 
@@ -280,7 +285,7 @@ Be sure to add a title and label your axes.
 It looks like we have an outlier! There is one school with a minimum distance of over
 a mile from a siren!
 <p>
-Which school is closest to a siren? Which school is furthest away from a siren?
+Q: Which school is closest to a siren? Which school is furthest away from a siren?
 <p>
 <h4>Task 6.2</h4>
 Using a scatter plot, we can visualize in two dimensions the locations of the 
@@ -290,31 +295,44 @@ figures will be drawn on top of each other.
 Create lists of coordinates for the schools and sirens.
 Make two calls to <code>plt.scatter</code>, one to draw the schools in blue, 
 and one to draw the sirens in red.
-
+<p>
 <img src="../images/cocalcscattersimple.png" width=400>
 <h4>Task 6.3</h4>
-make the siren radius large
-	s = 10000
-, and use an alpha value of 0.02 to make their color semi-transparent.
+This image can definitely be improved. 
 <p>
 Because we are using latitude and longitude, the aspect ratio of the image needs to be altered.
 A degree in latitude is always the same distance (69 miles) but a degree in longitude will change, 
-getting smaller as it approaches the north and south poles of the earth.
+getting smaller as it approaches the north and south poles of the earth. Use a value of
+1.63 to calibrate the aspect ratio correctly.
 <p>
-Be sure to add a title to your figure, and label the axes.
+Let's also enlarge the circles for sirens to show the extent 
+to which we can expect them to be heard.
+Make the siren radius equal 4000, and use an alpha value of 0.2 to make their color semi-transparent.
+<p>
+Be sure to add a sensible title to your figure, and label the axes.
+<p>
+<img src="../images/cocalcscatterbetter.png" width=400>
 <h4>Task 6.4</h4>
-It will be helpful to include the name of the school that is furthest away from the siren.
-To do this, we can annotate the plot with the following line of code.
+We can annotate the plot with some labels for important points of reference. For
+example, using the following line of code, we can see which blue dot represents Hendrix.
 <p>
 <pre>
-plt.axes().annotate("Hendrix College", (schools[10][0], schools[10][1]))
+plt.axes().annotate("Hendrix College", (float(schools[10][0]), float(schools[10][1])))
 </pre>
 <p>
-Annotate the graph with Hendrix and the name of the school furthest away from any siren
+Now, annotate the graph with Hendrix and the name of the school furthest away from any siren.
+<p>
+Q: Based on this graph, at what GPS coordinates would you recommend adding a new 
+tornado siren?
+<p>
+<img src="../images/cocalcscatterfinal.png" width=400>
 
 
 <h2>What to Hand In</h2>
-Turn in your completed <tt>lab13.ipynb</tt> file on Moodle.
+Turn in your completed <tt>lab13.ipynb</tt> file on Moodle, along with an Evaluation
+Document that answers the questions posed in each task above. Also include in this document 
+a reflection on the civic engagement portion of this lab. Are there other civic research questions
+you could imagine answering using the tools we learned in this lab?
 
 <h2>Grading</h2>
 <ul>
