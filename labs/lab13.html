@@ -138,7 +138,7 @@ to match our actual coordinates. We can control the <b>aspect ratio</b> of the i
 the size of the image by adding the following two lines before our call to <code>plt.scatter</code>.
 <p>
 <pre>
-fig = plt.figure(figsize=(6, 6), dpi=100)
+plt.figure(figsize=(6, 6), dpi=100)
 plt.axes().set_aspect(1)
 </pre>
 <p>
@@ -222,7 +222,7 @@ Next we will load each file into a list of lists so we can have easy programatic
 information. Write code to open the Schools.csv file. The first line of the file is the 
 header information, you should ignore this line. For each subsequent line in the file, strip it of whitespace 
 and split it on the comma character ','. Add this list to a larger list called <code>schools</code>.
-If you are successful, you should have a list of 23 schools, and the following value for <code>schools[1]</code>
+If you are successful, you should have a list of 23 lists, and the following value for <code>schools[1]</code>
 <p>
 <pre>
 ['-92.454169059470274',
@@ -237,7 +237,7 @@ If you are successful, you should have a list of 23 schools, and the following v
 <p>
 Also repeat the above code for the Tornado_Sirens.csv file to create a list called <code>sirens</code>.
 <b>But, only add sirens that are marked as 'Y' in the 'active' column.</b>
-If you are successful, you should have a list of 23 schools, and the following value for <code>sirens[1]</code>
+If you are successful, you should have a list of 23 lists, and the following value for <code>sirens[1]</code>
 <p>
 <pre>
 ['-92.45626368838704',
@@ -310,7 +310,7 @@ getting smaller as it approaches the north and south poles of the earth. Use a v
 <p>
 Let's also enlarge the circles for sirens to show the extent 
 to which we can expect them to be heard.
-Make the siren radius equal 4000, and use an alpha value of 0.2 to make their color semi-transparent.
+Make the siren radius equal 3000, and use an alpha value of 0.2 to make their color semi-transparent.
 <p>
 Be sure to add a sensible title to your figure, and label the axes.
 <p>
@@ -336,7 +336,9 @@ that more tornado sirens are needed?
 
 <h2>What to Hand In</h2>
 Turn in your completed <tt>lab13.ipynb</tt> file on Moodle, along with an Evaluation
-Document that answers the questions posed in each task above. Also include in this document 
+Document that answers the questions labeled with a Q that were posed in each task above. 
+<p>
+Also include in this document 
 a reflection on the civic engagement portion of this lab answering the following questions. 
 
 <ul>
