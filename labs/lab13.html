@@ -12,8 +12,7 @@
 <ul>
 <li><a href="https://cocalc.com/">CoCalc</a>
 <li><a href="http://matplotlib.org/">matplotlib</a>
-<li><a href="../data/Schools.csv">Conway Schools Data</a>
-<li><a href="../data/Tornado_Sirens.csv">Conway Tornado Sirens Data</a>
+<li><a href="http://data-conwayargis.opendata.arcgis.com/">Conway Public Data</a>
 </ul>
 <h2>Overview</h2>
 Since 1999, over <a href="http://thecabin.net/slideshow/2014-02-07/faulkner-county-tornadoes#slide-1">
@@ -47,7 +46,7 @@ to Create a new file.
 Name your new file lab13, and select <b>Jupyter Notebook</b> as the type. Your
 browser should look like this:
 <p>
-<img src="../images/cocalcstart.png" width=600>
+<img src="../images/cocalcstart.png" width=900>
 
 <h2>Step 2 - Getting started</h2>
 We are now ready to start coding and drawing some figures. Here we will generate some
@@ -89,7 +88,7 @@ from matplotlib import pyplot as plt
 This will load up the math and random libraries, and the <a href="http://matplotlib.org/">matplotlib</a> library, which we
 will use for all of our plotting functions. Your code should now look like this:
 <p>
-<img src="../images/cocalcstep2.png" width=600>
+<img src="../images/cocalcstep2.png" width=900>
 <h3>Histograms</h3>
 In the Matplotlib
 module, there is a function 
@@ -183,7 +182,8 @@ Also, latitudes that are south of the equator and longitudes that are west of th
 <p>
 <h4>Task 3.1</h4>
 Write a function <code>great_circle</code> to calculate the great circle distance between two points when given
-coordinates on the globe.
+coordinates on the globe. You will find the functions <code>math.degrees</code>, <code>math.radians</code>, and <code>math.acos</code> 
+particularly useful.
 <p>
 Use your function to calculate two distances: Conway to Little Rock, and Conway to Tokyo. You should get the following output.
 <p>
@@ -195,21 +195,24 @@ Use your function to calculate two distances: Conway to Little Rock, and Conway 
 </pre>
 <p>
 <h2>Step 4 - Uploading Data</h2>
-We are ready to explore the data! From the <a href="http://cityofconway.org">City of Conway</a>,
-we have downloaded two publicly available datasets. 
+We are ready to explore the data! From the <a href="http://data-conwayargis.opendata.arcgis.com/">City of Conway</a>,
+you will need to download two publicly available datasets. Click on the green button with the globe and hands labeled "View All Available Datasets",
+and then search for the two datasets listed below.
 <p>
-First, <a href="../Schools.csv">Schools.csv</a>
+First, <b>Schools</b>
 is a comma-separated file that contains information on the 23 educational institutions in Conway. In this file, we can find
 each school's latitude and longitude, the name, the type of school, and the street address.
 <p>
-Second, <a href="../Tornado_Sirens.csv">Tornado_Sirens.csv</a>
+Second, <b>Tornado Sirens</b>
 is a comma-separated file that contains information on the 30 tornado sirens in Conway, some of which are inactive. In this file, we can find
 again the latitude and longitude of each siren, its approximate street address, elevation, and 
 whether it is active.
 <p>
-For both files, the first column of information is the Longitude, and the second column is the Latitude.
+<b>For both files, the first column of information is the <em>Longitude</em>, and the second column is the <em>Latitude</em>.</b>
 <h4>Task 4.1</h4>
-Download the two files above to your computer.
+For each dataset, select the Download button and choose the Spreadsheet option to get these
+files to your computer. They will be named Schools.csv and Tornado_Sirens.csv.
+<p>
 Select the folder icon next to the word "Files" in the upper-left corner of your Jupyter notebook.
 This will return you to the project directory. Find the "Upload" button in the upper-right
 corner, and use it to upload these two files to your project directory.
@@ -219,7 +222,7 @@ Next we will load each file into a list of lists so we can have easy programatic
 information. Write code to open the Schools.csv file. The first line of the file is the 
 header information, you should ignore this line. For each subsequent line in the file, strip it of whitespace 
 and split it on the comma character ','. Add this list to a larger list called <code>schools</code>.
-If you are successful, you should have the following value for <code>schools[1]</code>
+If you are successful, you should have a list of 23 schools, and the following value for <code>schools[1]</code>
 <p>
 <pre>
 ['-92.454169059470274',
@@ -232,9 +235,9 @@ If you are successful, you should have the following value for <code>schools[1]<
  '{CE5DFB8D-1936-47D5-98FE-E7A171FDBCDF}']
 </pre>
 <p>
-Also repeat the above code for the Tornado_Sirens.csv file to create a list called <code>sirens</code>,
-but only add sirens that are marked as 'Y' in the 'active' column.
-If you are successful, you should have the following value for <code>sirens[1]</code>
+Also repeat the above code for the Tornado_Sirens.csv file to create a list called <code>sirens</code>.
+<b>But, only add sirens that are marked as 'Y' in the 'active' column.</b>
+If you are successful, you should have a list of 23 schools, and the following value for <code>sirens[1]</code>
 <p>
 <pre>
 ['-92.45626368838704',
@@ -260,10 +263,10 @@ coverage, we would see a somewhat uniform distribution with some sirens nearby.
 
 <h4>Task 5.1</h4>
 Write a function called <code>siren_list(sc)</code> to return a list of distances between a given
-school each of the sirens.
+school index and each of the sirens. <code>sc</code> is an integer.
 <p>
-Next, draw a histogram of the distances found between Hendrix College all of the sirens. This 
-graph should show the distribution of distances for sirens to Hendrix.
+Next, draw a histogram of the distances found between Hendrix College and all of the sirens. This 
+graph should show the distribution of distances from sirens to Hendrix.
 Be sure to add a title and label your axes.
 <p>
 Q: How many sirens are within 1/2 mile? Within 1 mile?
@@ -325,15 +328,25 @@ Now, annotate the graph with Hendrix and the name of the school furthest away fr
 Q: Based on this graph, at what GPS coordinates would you recommend adding a new 
 tornado siren?
 <p>
+Q: What other data would we need to consider and assumptions do we need to verity before making the conclusion
+that more tornado sirens are needed?
+<p>
 <img src="../images/cocalcscatterfinal.png" width=400>
 
 
 <h2>What to Hand In</h2>
 Turn in your completed <tt>lab13.ipynb</tt> file on Moodle, along with an Evaluation
 Document that answers the questions posed in each task above. Also include in this document 
-a reflection on the civic engagement portion of this lab. Are there other civic research questions
-you could imagine answering using the tools we learned in this lab?
+a reflection on the civic engagement portion of this lab answering the following questions. 
 
+<ul>
+<li>Which graph above did you find the most useful in analyzing this data and why?
+<li>Examine the other datasets available from the City of Conway.
+What are two other civic research questions
+you could imagine answering using the tools we learned in this lab?
+<li>Describe a useful dataset that is not posted on the City of Conway website and how 
+civic hacking could be used with it to address a community need.
+</ul>
 <h2>Grading</h2>
 <ul>
   <li>To earn a D on this lab, complete Steps 1 and 2.</li>
