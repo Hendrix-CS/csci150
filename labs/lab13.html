@@ -22,7 +22,7 @@ Since 1999, over <a href="http://thecabin.net/slideshow/2014-02-07/faulkner-coun
 The City of Conway Outdoor Warning Siren system consists of 22 sirens strategically placed throughout the City. 
 The sirens may be activated individually or simultaneously to provide a general alert for the entire community. 
 </blockquote>
-With the continual expansion of Conway in recent years, are there location in need of new sirens?
+With the continual expansion of Conway in recent years, are there locations in need of new sirens?
 We will explore this question by calculating and visualizing the relationship between the locations of sirens
 and educational institutions in Conway.
 <h2>Step 1 - Creating a CoCalc account </h2>
@@ -202,32 +202,76 @@ is a comma-separated file that contains information on the 30 tornado sirens in 
 again the latitude and longitude of each siren, its approximate street address, elevation, and 
 whether it is active.
 <p>
+For both files, the first column of information is the Longitude, and the second column is the Latitude.
 <h4>Task 4.1</h4>
 Download the two files above to your computer.
 Select the folder icon next to the word "Files" in the upper-left corner of your Jupyter notebook.
 This will return you to the project directory. Find the "Upload" button in the upper-right
 corner, and use it to upload these two files to your project directory.
 <p>
+<h4>Task 4.2</h4>
 Next we will load each file into a list of lists so we can have easy programatic access to our
-information.
+information. Write code to open the Schools.csv file. The first line of the file is the 
+header information, you should ignore this line. For each subsequent line in the file, strip it of whitespace 
+and split it on the comma character ','. Add this list to a larger list called <code>schools</code>.
+If you are successful, you should have the following value for <code>schools[1]</code>
+<p>
+<pre>
+['-92.454169059470274',
+ '35.095976925127481',
+ '8',
+ '0',
+ 'Ida Burns Elementary',
+ 'Elementary',
+ '1201 DONAGHEY AVENUE',
+ '{CE5DFB8D-1936-47D5-98FE-E7A171FDBCDF}']
+</pre>
+<p>
+Also repeat the above code for the Tornado_Sirens.csv file to create a list called <code>sirens</code>.
+If you are successful, you should have the following value for <code>sirens[1]</code>
+<p>
+<pre>
+['-92.508840956149569',
+ '35.111419057080532',
+ '28',
+ '',
+ 'OLD MORRILTON AND SANITATION',
+ '',
+ '"92° 30\' 31.827"" W"',
+ '"35° 6\' 41.109"" N"',
+ '',
+ 'Pr',
+ '',
+ '',
+ 'GISADMIN',
+ '2015-02-27T14:40:26.000Z',
+ '{3101BF55-F18C-425C-9193-348F9311E9C8}']
+</pre>
 <h2>Step 5 - Individual Schools </h2>
-
-Write a function that 
-for given a school, how close are the sirens?
-How many are within 1/2 mile?
+We can try to understand the effectiveness of the network of sirens by drawing a histogram
+of the distances between schools and the sirens. We would expect in a network with good 
+coverage, we would see a somewhat uniform distribution with some sirens nearby.
 
 <h4>Task 5.1</h4>
-Create a histogram of the distances found between Hendrix College all of the sirens. This 
+Write a function called <code>siren_list(sc)</code> to return a list of distances between a given
+school each of the sirens.
+<p>
+Next, draw a histogram of the distances found between Hendrix College all of the sirens. This 
 graph should show the distribution of distances for sirens to schools.
 Be sure to add a title and label your axes.
+<p>
+How many sirens are within 1/2 mile? Within 1 mile?
+<img src="../images/cocalcsirenhendrix.png" width=400>
 
-Add title, label axes
 <h4>Task 5.2</h4>
-Create a histogram of the smallest distances found between each school all of the sirens. This 
+Use your <code>siren_list</code> function to find the smallest distance to a siren for each
+of the schools. Draw a histogram of these smallest distances found. This 
 graph should show the distribution of minimum distances for sirens to schools.
 Be sure to add a title and label your axes.
 <p>
-Which school has the highest minimum distance?
+Which school has the lowest minimum distance? Which school has the highest minimum distance (furthest
+away from any siren)?
+
 <h2>Step 6 - School Coverage </h2>
 
 plt.scatter for the schools
