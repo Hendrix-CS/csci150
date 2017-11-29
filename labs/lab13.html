@@ -16,7 +16,15 @@
 <li><a href="../data/Tornado_Sirens.csv">Conway Tornado Sirens Data</a>
 </ul>
 <h2>Overview</h2>
-
+Since 1999, over <a href="http://thecabin.net/slideshow/2014-02-07/faulkner-county-tornadoes#slide-1">
+20 tornadoes</a> have touched down in Faulkner County. According to the <a href="http://cityofconway.org/pages/conway-prepared/">Conway Prepared</a>:
+<blockquote>
+The City of Conway Outdoor Warning Siren system consists of 22 sirens strategically placed throughout the City. 
+The sirens may be activated individually or simultaneously to provide a general alert for the entire community. 
+</blockquote>
+With the continual expansion of Conway in recent years, are there location in need of new sirens?
+We will explore this question by calculating and visualizing the relationship between the locations of sirens
+and educational institutions in Conway.
 <h2>Step 1 - Creating a CoCalc account </h2>
 To perform our data analysis, we will need to create an account on 
 <a href="https://cocalc.com/">CoCalc</a>. Navigate
@@ -37,7 +45,8 @@ browser should look like this:
 <img src="../images/cocalcstart.png" width=600>
 
 <h2>Step 2 - Getting started</h2>
-We are now ready to start coding and drawing some figures.
+We are now ready to start coding and drawing some figures. Here we will generate some
+random data to learn how the plotting functions work.
 <h3>Jupyter Notebooks</h3>
 
 Our first step will be to see how the Jupyter Notebook lets us write Python code. Select 
@@ -171,7 +180,7 @@ Also, latitudes that are south of the equator and longitudes that are west of th
 Write a function <code>great_circle</code> to calculate the great circle distance between two points when given
 coordinates on the globe.
 <p>
-Use your function to calculate the distance from Conway to Little Rock, and Conway to Tokyo. You should get the following output.
+Use your function to calculate two distances: Conway to Little Rock, and Conway to Tokyo. You should get the following output.
 <p>
 <pre>
 >>> great_circle(35.0887, -92.4421, 34.7465, -92.2896)
@@ -199,21 +208,26 @@ Select the folder icon next to the word "Files" in the upper-left corner of your
 This will return you to the project directory. Find the "Upload" button in the upper-right
 corner, and use it to upload these two files to your project directory.
 <p>
+Next we will load each file into a list of lists so we can have easy programatic access to our
+information.
 <h2>Step 5 - Individual Schools </h2>
 
 Write a function that 
 for given a school, how close are the sirens?
 How many are within 1/2 mile?
 
-draw it with plt.hist
-
-will pick 10 bins by default
+<h4>Task 5.1</h4>
+Create a histogram of the distances found between Hendrix College all of the sirens. This 
+graph should show the distribution of distances for sirens to schools.
+Be sure to add a title and label your axes.
 
 Add title, label axes
 <h4>Task 5.2</h4>
 Create a histogram of the smallest distances found between each school all of the sirens. This 
 graph should show the distribution of minimum distances for sirens to schools.
-
+Be sure to add a title and label your axes.
+<p>
+Which school has the highest minimum distance?
 <h2>Step 6 - School Coverage </h2>
 
 plt.scatter for the schools
