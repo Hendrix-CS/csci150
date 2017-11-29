@@ -17,7 +17,7 @@
 </ul>
 <h2>Overview</h2>
 Since 1999, over <a href="http://thecabin.net/slideshow/2014-02-07/faulkner-county-tornadoes#slide-1">
-20 tornadoes</a> have touched down in Faulkner County. According to the <a href="http://cityofconway.org/pages/conway-prepared/">Conway Prepared</a>:
+20 tornadoes</a> have touched down in Faulkner County. According to the <a href="http://cityofconway.org/pages/conway-prepared/">Conway Prepared</a> website:
 <blockquote>
 The City of Conway Outdoor Warning Siren system consists of 22 sirens strategically placed throughout the City. 
 The sirens may be activated individually or simultaneously to provide a general alert for the entire community. 
@@ -198,7 +198,7 @@ is a comma-separated file that contains information on the 23 educational instit
 each school's latitude and longitude, the name, the type of school, and the street address.
 <p>
 Second, <a href="../Tornado_Sirens.csv">Tornado_Sirens.csv</a>
-is a comma-separated file that contains information on the 30 tornado sirens in Conway. In this file, we can find
+is a comma-separated file that contains information on the 30 tornado sirens in Conway, some of which are inactive. In this file, we can find
 again the latitude and longitude of each siren, its approximate street address, elevation, and 
 whether it is active.
 <p>
@@ -227,29 +227,30 @@ If you are successful, you should have the following value for <code>schools[1]<
  '{CE5DFB8D-1936-47D5-98FE-E7A171FDBCDF}']
 </pre>
 <p>
-Also repeat the above code for the Tornado_Sirens.csv file to create a list called <code>sirens</code>.
+Also repeat the above code for the Tornado_Sirens.csv file to create a list called <code>sirens</code>,
+but only add sirens that are marked as 'Y' in the 'active' column.
 If you are successful, you should have the following value for <code>sirens[1]</code>
 <p>
 <pre>
-['-92.508840956149569',
- '35.111419057080532',
- '28',
+['-92.45626368838704',
+ '35.126945320125195',
+ '8',
+ '8',
+ '3458 Roberts rd',
+ '516',
+ '"92° 27\' 22.549"" W"',
+ '"35° 7\' 37.003"" N"',
+ '8',
+ 'Y',
  '',
- 'OLD MORRILTON AND SANITATION',
  '',
- '"92° 30\' 31.827"" W"',
- '"35° 6\' 41.109"" N"',
- '',
- 'Pr',
- '',
- '',
- 'GISADMIN',
- '2015-02-27T14:40:26.000Z',
- '{3101BF55-F18C-425C-9193-348F9311E9C8}']
+ 'JLYON',
+ '2015-11-12T22:27:00.000Z',
+ '{3EF73BCC-8DB1-4B07-AD83-C494ED5683F3}']
 </pre>
 <h2>Step 5 - Individual Schools </h2>
-We can try to understand the effectiveness of the network of sirens by drawing a histogram
-of the distances between schools and the sirens. We would expect in a network with good 
+We can try to understand the effectiveness of the system of sirens by drawing a histogram
+of the distances between schools and the sirens. We would expect in a system with good 
 coverage, we would see a somewhat uniform distribution with some sirens nearby.
 
 <h4>Task 5.1</h4>
@@ -264,7 +265,9 @@ How many sirens are within 1/2 mile? Within 1 mile?
 <p>
 <img src="../images/cocalcsirenhendrix.png" width=400>
 
-<h4>Task 5.2</h4>
+<h2>Step 6 - School Coverage </h2>
+Finally, we can gain some understanding of the total coverage of the system of sirens.
+<h4>Task 6.1</h4>
 Use your <code>siren_list</code> function to find the smallest distance to a siren for each
 of the schools. Draw a histogram of these smallest distances found. This 
 graph should show the distribution of minimum distances for sirens to schools.
@@ -274,9 +277,10 @@ Which school has the lowest minimum distance? Which school has the highest minim
 away from any siren)?
 <p>
 <img src="../images/cocalcsirenall.png" width=400>
-
-<h2>Step 6 - School Coverage </h2>
-
+<p>
+It looks like we have an outlier! There is one school with a minimum distance of over
+a mile from a siren!
+<p>
 plt.scatter for the schools
 plt.scatter for the sirens
 
@@ -285,16 +289,14 @@ make the siren radius large
 	
 make the color transparent
 
-add title, label axes
+Because we are using latitude and longitude, the aspect ratio of the image needs to be altered.
+A degree in latitude is always the same distance (69 miles) but a degree in longitude will change, 
+getting smaller as it approaches the north and south poles of the earth.
+<p>
+Be sure to add a title to your figure, and label the axes.
 
 Annotate the graph with hendrix and the school furthest away from any siren
 
-Record all your answers in your Lab Evaluation Document.
-<ol>
-<li> What are the outgoing links from that page?
-<li> How many total pages are reachable?
-<li> What is the single longest path originating from that page?
-</ol>
 
 <h2>What to Hand In</h2>
 Turn in your completed <tt>lab13.ipynb</tt> file on Moodle, as well as 
@@ -302,11 +304,10 @@ your Lab Evaluation Document.
 
 <h2>Grading</h2>
 <ul>
-  <li>To earn a D on this lab, complete Task 1.1.</li>
-  <li>To earn a C on this lab, do all the above and complete Task 1.2.</li>
-  <li>To earn a B on this lab, do all the above and complete Step 2.</li>
-  <li>To earn an A on this lab, do all the above and complete Tasks 3.1, 3.2 and 3.3.</li>
-  <li>To earn a 100 on this lab, do all the above and complete Task 3.4.</li>
+  <li>To earn a D on this lab, complete Steps 1 and 2.</li>
+  <li>To earn a C on this lab, do all the above and complete Steps 3 and 4</li>
+  <li>To earn a B on this lab, do all the above and complete Step 5</li>
+  <li>To earn a 100 on this lab, do all the above and complete Step 6</li>
 </ul>
 
 <hr>
