@@ -40,5 +40,4 @@ to review the material and come to class prepared.
 <!-- * Mon, April 17 [ [cards.py](static/cards.py) [cards4.txt](static/cards4.txt) ] -->
 <!-- * Wed, April 19 [ [exam3-review.py](static/exam3-review.py) ] -->
 <!-- * Mon-Wed, April 24-26 [ [queues.py](static/queues.py) ] -->
-<!-- * Fri, April 28 [ [bouncy.pyde](static/bouncy.pyde) ] -->
-
+<!-- * Fri, April 28 [ [bouncy.pyde](static/bouncy.pyde), [bouncy-bonus.pyde](static/bouncy-bonus.pyde) ] -->
