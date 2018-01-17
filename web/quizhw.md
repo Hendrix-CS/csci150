@@ -11,12 +11,13 @@ your final grade.
 
 HW                                                                                                                    Due
 ------------------                                                                                                    ----
-0: [Who Are You](https://docs.google.com/forms/d/e/1FAIpQLSfrKyLhATf3Zz2z_VyEOuuwzuxaUk9LuoqTAeycjJqs08V76w/viewform) January 20
-1: [Communication and Origami](http://mgoadric.github.io/csci150/homework/origami.html)                               January 23
-2: Logic puzzles                                                                                                      January 30
-3: [Function reading](static/function-reading.html)                                                                   February 13
-4: [DNA Strings](static/dna-strings.html)                                                                             February 22
-5: [While, string, and list reading](static/loop-string-reading.html)                                                 February 27
+0: [Who Are You](https://goo.gl/forms/v4nnPrBhP5rf32oc2)                                                              Friday January 19
+
+<!-- 1: [Communication and Origami](http://mgoadric.github.io/csci150/homework/origami.html)                               January 23 -->
+<!-- 2: Logic puzzles                                                                                                      January 30 -->
+<!-- 3: [Function reading](static/function-reading.html)                                                                   February 13 -->
+<!-- 4: [DNA Strings](static/dna-strings.html)                                                                             February 22 -->
+<!-- 5: [While, string, and list reading](static/loop-string-reading.html)                                                 February 27 -->
 
 <!--
 6: [Zen reading -- section 1](http://mgoadric.github.io/csci150/homework/zen.html)                                 March 30

@@ -4,10 +4,10 @@ title: Labs
 
 Much of your experience with programming in this course will be
 through weekly labs, which will comprise 25% of your final grade. Each
-lab will be assigned Thursday morning in lab with time allotted to
-work through the materials, and will be due by **the following Tuesday
-at 10pm**. All labs are weighted equally within the lab portion of
-your final grade.
+lab will be assigned Wednesday/Thursday in lab with time allotted to
+work through the materials, and will be due by **the start of the
+following lab**. All labs are weighted equally within the lab portion
+of your final grade.
 
 Each student has **four late days** to spend throughout the semester
 as they wish.  Simply inform me any time *prior* to the due date for
@@ -37,9 +37,8 @@ Continue through the door at the far end of the hall (just visible in
 the picture above) into the first computer lab, and then enter the
 second lab at the back.
 
-You will be handing in your lab work via
-[Moodle](http://moodle.hendrix.edu). Instructions to do so will be
-included in each lab.
+You will be handing in your lab work electronically. Instructions on
+how to do so will be included in each lab.
 
 Labs should follow
 the
@@ -51,17 +50,18 @@ help you catch common style errors.
 
   Lab   Name                                                                          Assigned
   ----- --------------------------------------------------                            ----------
-  1     [Minecraft Hour of Code](labs/lab1.html)                                      Jan 19
-  2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)         Jan 26
-  3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Feb 2
-  4     [Guess My Number](labs/guess.html)                                            Feb 16
-  5     [Mutation is the Word](labs/lab5.html)                                        Feb 23
-  7     [Caesar's Secrets](http://mgoadric.github.io/csci150/labs/lab7.html)          Mar 2
-  8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 16
-  9     [Sentiment Analysis](http://mgoadric.github.io/csci150/labs/lab9.html)        Mar 30
-  10    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab10.html)             Apr 5
-  11    [Graphics and Animation](labs/processing.html)                                Apr 13
-  12    [On Stuckness and debugging](labs/debugging.html)                             Apr 20
+  1     [Minecraft Hour of Code](labs/lab1.html)                                      Jan 17/18
+
+  <!-- 2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)         Jan 26 -->
+  <!-- 3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Feb 2 -->
+  <!-- 4     [Guess My Number](labs/guess.html)                                            Feb 16 -->
+  <!-- 5     [Mutation is the Word](labs/lab5.html)                                        Feb 23 -->
+  <!-- 7     [Caesar's Secrets](http://mgoadric.github.io/csci150/labs/lab7.html)          Mar 2 -->
+  <!-- 8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 16 -->
+  <!-- 9     [Sentiment Analysis](http://mgoadric.github.io/csci150/labs/lab9.html)        Mar 30 -->
+  <!-- 10    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab10.html)             Apr 5 -->
+  <!-- 11    [Graphics and Animation](labs/processing.html)                                Apr 13 -->
+  <!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Apr 20 -->
 
 <!--
   13    Final project workshop (optional, **9am-11am**)                               Apr 26
