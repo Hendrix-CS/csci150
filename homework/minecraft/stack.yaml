@@ -1,0 +1,7 @@
+resolver: lts-10.3
+
+packages:
+- .
+
+extra-deps:
+  - diagrams-rasterific-1.4

@@ -12,6 +12,7 @@ your final grade.
 HW                                                                                                                    Due
 ------------------                                                                                                    ----
 0: [Who Are You](https://goo.gl/forms/v4nnPrBhP5rf32oc2)                                                              Friday January 19
+1: [Minecraft](static/minecraft.html)                                                                                 Monday January 22
 
 <!-- 1: [Communication and Origami](http://mgoadric.github.io/csci150/homework/origami.html)                               January 23 -->
 <!-- 2: Logic puzzles                                                                                                      January 30 -->
