@@ -14,7 +14,7 @@ to review the material and come to class prepared.
 
 * Chapter 1: Fri, Jan 20
 * Chapter 2: Mon, Jan 22 [ [intro.txt](static/intro.txt) ]
-* Chapter 3: Weds, Jan 23 <!-- [ [box.py](static/box.py) [box.txt](static/box.txt) ] -->
+* Chapter 3: Weds, Jan 24 <!-- [ [box.py](static/box.py) [box.txt](static/box.txt) ] -->
 <!-- * Chapter 4: Mon, Jan 30--Weds, Feb 1 [ [conditionals.py](static/conditionals.py) [conditionals.txt](static/conditionals.txt) ] -->
 <!-- * Fri, Feb 3 [ [binary.txt](static/binary.txt) ] -->
 <!-- * Mon, Weds, Feb 6-8: Exam 1 -->
