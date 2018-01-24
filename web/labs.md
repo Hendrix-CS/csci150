@@ -57,9 +57,8 @@ help you catch common style errors.
   Lab   Name                                                                          Assigned
   ----- --------------------------------------------------                            ----------
   1     [Minecraft Hour of Code](labs/lab1.html)                                      Jan 17/18
+  2     [Kepler and Newton](labs/kepler-newton.html)                                  Jan 24/25
 
-  2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)         Jan 24/25
-  
   <!-- 3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Feb 2 -->
   <!-- 4     [Guess My Number](labs/guess.html)                                            Feb 16 -->
   <!-- 5     [Mutation is the Word](labs/lab5.html)                                        Feb 23 -->
