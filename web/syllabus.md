@@ -12,9 +12,14 @@ web pages and background material for the lab assignments. Readings will
 be assigned before material will be covered in class. You are expected
 to review the material and come to class prepared.
 
-* Chapter 1: Fri, Jan 20
-* Chapter 2: Mon, Jan 22 [ [intro.txt](static/intro.txt) ]
-* Chapter 3: Weds, Jan 24 [ [VariablesIO.py](static/VariablesIO.py) [Box.py](static/Box.py) ]
+* Wed, Jan 17: Introduction
+* Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**)
+* Mon, Jan 22: Intro to Python [ [intro.txt](static/intro.txt) ] (**Chapter 2**)
+* Weds, Jan 24: Volume of a box [ [VariablesIO.py](static/VariablesIO.py) [Box.py](static/Box.py) ] (**Chapter 3**)
+* Fri, Jan 26: Logic puzzles
+* Mon, Jan 29: Booleans and conditionals [ [Conditionals.py](static/Conditionals.py) ] (**Chapter 4**)
+* Wed, Jan 31: Binary
+* Fri, Feb 2: Information encoding
 
 <!-- * Chapter 4: Mon, Jan 30--Weds, Feb 1 [ [conditionals.py](static/conditionals.py) [conditionals.txt](static/conditionals.txt) ] -->
 <!-- * Fri, Feb 3 [ [binary.txt](static/binary.txt) ] -->
