@@ -493,18 +493,18 @@ I did make it to variables.
 
 \newpage
 
-\section{Python II, Drake}
+\section{Python II, Drake/Box Volume}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Collect dinosaurs.  Write your name on it!
-\item Read Chapters 2 \& 3 --- quiz on Wednesday!
-\item Start reading Chapter 4 for Wednesday.
+\item Collect origami, if origami assigned.  Write your name on it!
+\item Read Chapters 2 \& 3 --- quiz next class!
+\item Start reading Chapter 4 for next class.
 \end{itemize}
 
 \subsection*{Variables}
 
-[Finish up variables.  Show @ prompt in IDLE.  See notes from previous
+[Finish up variables.  Show @ prompt.  See notes from previous
 lecture.]
 
 \subsection*{I/O, .py files}
@@ -835,7 +835,7 @@ to complete all puzzles.
 \item{} [S '16: Next time: Quiz on chapter 4.]
 \item{} [F'15, S'17: logic puzzle HW due today]
 \item{} [F'15, S'17: quiz 2 today]
-\item \textbf{Quiz 2 (S'17)}:
+\item \textbf{Quiz 2 (S'17, S'18)}:
   \begin{enumerate}
   \item What is the value of each of the following
     Python expressions?
@@ -943,12 +943,19 @@ If time left, have them write code for these two examples.
 \end{reflect}
 
 \begin{reflect}{Mark, F' 16}
-  I again managed to take the whole time. I went through the truth 
+  I again managed to take the whole time. I went through the truth
   tables for boolean operators, had them develop the ideas of comparison
   operators and how they worked for strings too. Drew diagrams to show
   how each manifestation of if worked (if, if-else, if-elif-else, nested-if). Also
   showed how to translate the corner \[ (A_1 \times B_1 \orr A_1 \times A_3) \andd \nott (A_1 \times B_1 \andd A_1
 \times A_3) \] into Python and show how it would check for a valid solution.
+\end{reflect}
+
+\begin{reflect}{Brent, S' 18}
+  Left out the \texttt{random} stuff this time; we barely made it to
+  \texttt{if} statements since they had so many (good) questions about
+  booleans!  Had to finish up talking about \texttt{elif} at the
+  beginning of the next class.
 \end{reflect}
 
 
@@ -967,6 +974,15 @@ If time left, have them write code for these two examples.
   computer.  Covers material through today and next class. Class
   before exam will be review.
 \end{itemize}
+\begin{reflect}{Brent, S'18}
+  This time I put off the exam by one more day, in order to have the
+  exam come right \emph{after} a lab instead of before.  Then we can
+  do ``This Day in History'' which is great practice for the exam.  It
+  also gives me an extra day to spend a bit more time on information
+  encoding and to then explicitly talk about \& practice the skill of
+  tracing program execution (\emph{e.g.} by writing down the values of
+  variables).
+\end{reflect}
 
 \subsection*{Ada Lovelace}
 
@@ -1088,6 +1104,11 @@ example, e.g. $103_{10}$.
   Also, this semester I have exactly $2^5$ students!
 \end{reflect}
 
+\begin{reflect}{Brent, S'18}
+  Again didn't make it to converting decimal -> binary, but that is
+  fine since I have more time to cover this.
+\end{reflect}
+
 \section*{LAB: Big Data/Heart Disease}
 
 \begin{reflect}{Brent, S'16}
@@ -1100,6 +1121,9 @@ example, e.g. $103_{10}$.
   \item Try to guide them to using nested ifs.
   \item Make sure they understand why it's ineffective to make a huge
     condition with a bunch of ANDs.
+  \item Make sure they understand why it's ineffective to have a
+    string of independent ifs, where each one sets \texttt{prediction}
+    (overriding whatever \texttt{prediction} was set to before).
   \end{itemize}
 
   Other than those gotchas, lab seems to go OK.
@@ -1134,6 +1158,14 @@ mark (but most were just finishing or very close).
   project that was due right at the time of the exam.  But perhaps
   that would be better.
 \end{reflect}
+\begin{reflect}{Brent, S'18}
+  I simply don't see any good way to fit the project in before the
+  exam.  But I'm more OK with that this year because of the decision
+  to push the exam back a day and do This Day in History lab before
+  the exam.  The project can then just be a fun way for them to apply
+  the skills they have learned (or to re-learn/solidify skills if they
+  didn't quite get there on the exam).
+\end{reflect}
 
 \newpage
 \section{Information encoding II}
@@ -1143,6 +1175,13 @@ mark (but most were just finishing or very close).
 \item Quiz: program with conditionals, ask them to identify five
   errors.
 \end{itemize}
+
+\begin{reflect}{Brent, S'18}
+  This time I actually gave them a new HW assignment writing some
+  programs with conditionals, and I gave them the identifying errors
+  thing as part of the HW.  I will give them a quiz on Monday where I
+  have them predict the output of a program with conditionals.
+\end{reflect}
 
 \subsection*{Representing integers}
 
@@ -1232,6 +1271,22 @@ https://www.w3schools.com/colors/colors_picker.asp
 \end{verbatim}
 \end{reflect}
 
+\begin{reflect}{Brent, S'18}
+  Just barely made it to mentioning image representation, since my
+  students had so many good questions about encoding numbers and
+  text.  Finishing up images + hexadecimal will be pushed to the next
+  lecture.
+\end{reflect}
+
+\newpage
+\section{Information encoding III, execution tracing}
+
+\begin{reflect}{Brent, S'18}
+  I had an extra lecture here, to finish talking about image/video
+  representation (\& perhaps mention audio), and to cover hexadecimal.
+  Then I plan to do an exercise re: tracing program execution.
+\end{reflect}
+
 \section*{LAB: This Day in History}
 
 This can be used as a comprehensive review of everything on Exam 1.
@@ -1243,6 +1298,11 @@ This can be used as a comprehensive review of everything on Exam 1.
   the way the schedule fell out, the exam was right \emph{before} this
   lab period.  So I couldn't have used the Day in History lab as exam
   review.
+\end{reflect}
+\begin{reflect}{Brent, S'18}
+  I added an extra day before the exam so we could do this lab.  It
+  requires reshuffling/compressing some things afterwards but I think
+  it's a good idea overall.
 \end{reflect}
 
 \newpage
@@ -1281,9 +1341,9 @@ Have them do sample exam. Go over it.  Things to emphasize:
     do the pared-down doublets lab (with no functions).  Then
     introduce functions, and do the ``going on vacation lab'' (adding
     abstraction to the doublets lab).
-  \item Path 2: Alternatively, start by introducing functions, introduce basic
-    while loops, then do the ``Guess my number'' lab.  Then introduce
-    strings, and do the full doublets lab (with functions).
+  \item Path 2: Alternatively, start by introducing basic while loops
+    and functions, then do the ``Guess my number'' lab.  Then
+    introduce strings, and do the full doublets lab (with functions).
   \end{enumerate}
 
   In S'17 I did the second alternative.  Full disclosure, I only did
@@ -1296,6 +1356,15 @@ Have them do sample exam. Go over it.  Things to emphasize:
   practice with loops that way, and explicitly covering function
   abstraction in class, the full doublets lab went better than I
   remembered (though it was still hard of course).
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Because of pushing exam 1 back one day, I only have \emph{two}
+  lectures instead of three to prepare for Guess My Number lab.  What
+  I plan to do is introduce while loops first (1 lecture), and then a
+  basic intro to functions (1 lecture).  Functions are not actually
+  super necessary for the lab, so it's OK to cover more about
+  functions in another class after the lab.
 \end{reflect}
 
 \section{Functions I}
