@@ -20,10 +20,10 @@ to review the material and come to class prepared.
 * Mon, Jan 29: Booleans and conditionals [ [Conditionals.py](static/Conditionals.py) ] (**Chapter 4**)
 * Wed, Jan 31: Binary
 * Fri, Feb 2: Information encoding
+* Mon, Feb 5: Information encoding II
+* Wed, Feb 7: Exam I review
+* Fri, Feb 9: Exam I (**Chapters 1-4**)
 
-<!-- * Chapter 4: Mon, Jan 30--Weds, Feb 1 [ [conditionals.py](static/conditionals.py) [conditionals.txt](static/conditionals.txt) ] -->
-<!-- * Fri, Feb 3 [ [binary.txt](static/binary.txt) ] -->
-<!-- * Mon, Weds, Feb 6-8: Exam 1 -->
 <!-- * Chapter 5: Fri, February 10 [ [functions.py](static/functions.py) [functions.txt](static/functions.txt) ] -->
 <!-- * Chapter 6: Mon, February 13 [ [functions2.py](static/functions2.py) [functions2.txt](static/functions2.txt) ] -->
 <!-- * Chapter 7: Weds, February 15 [ [while.py](static/while.py) [collatz.py](static/collatz.py) [while-collatz.txt](static/while-collatz.txt) ] -->
