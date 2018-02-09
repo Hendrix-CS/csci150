@@ -60,8 +60,8 @@ help you catch common style errors.
   2     [Kepler and Newton](labs/kepler-newton.html)                                  Jan 24/25
   3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Jan 31/Feb 1
   4     [This Day in History](http://mgoadric.github.io/csci150/labs/lab4.html)       Feb 7/8
+  5     [Guess My Number](labs/guess.html)                                            Feb 14/15
 
-  <!-- 4     [Guess My Number](labs/guess.html)                                            Feb 16 -->
   <!-- 5     [Mutation is the Word](labs/lab5.html)                                        Feb 23 -->
   <!-- 7     [Caesar's Secrets](http://mgoadric.github.io/csci150/labs/lab7.html)          Mar 2 -->
   <!-- 8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 16 -->
