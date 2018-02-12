@@ -467,6 +467,23 @@ What kinds of things does Python give us?
   means something is not right (the \emph{other} meaning of
   ``exceptional''). So doublecheck your names!
 
+  \textbf{Be sure to emphasize} that the expression to the right of
+  the \texttt{=} is \emph{evaluated} to a value which is then assigned
+  to the variable.  Example:
+\begin{verbatim}
+x = 2
+y = x + 3
+x = 5
+\end{verbatim}
+  What value will \texttt{y} have afterwards?  It will still just be
+  $5$.  It does not change when \texttt{x} changes later.  It just
+  holds a number, it does not remember where the number came from.
+  \begin{reflect}{Brent, S'18}
+    I added this after the fact when it became painfully clear from my
+    program execution tracing question on exam 1 that a significant
+    portion of my students did not understand this!
+  \end{reflect}
+
   Some names are reserved, we'll see them as we go.
   Names can't be anything, letter or underscore first, then letter,
   number or underscore.
