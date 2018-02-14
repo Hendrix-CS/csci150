@@ -23,6 +23,7 @@ to review the material and come to class prepared.
 * Mon, Feb 5: Information encoding II
 * Wed, Feb 7: Exam I review
 * Fri, Feb 9: Exam I (**Chapters 1-4**)
+* Mon, Feb 12: Repetition I (while loops) [ [while.py](static/while.py) ] (**Chapter 7**)
 
 <!-- * Chapter 5: Fri, February 10 [ [functions.py](static/functions.py) [functions.txt](static/functions.txt) ] -->
 <!-- * Chapter 6: Mon, February 13 [ [functions2.py](static/functions2.py) [functions2.txt](static/functions2.txt) ] -->
