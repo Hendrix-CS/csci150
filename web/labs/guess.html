@@ -1,11 +1,11 @@
 <html>
 <head>
-  <title>CSCI 150 - Lab 4 - Guess My Number</title>
+  <title>CSCI 150 - Lab 5 - Guess My Number</title>
   <link rel="stylesheet" type="text/css" title="Default" href="/css/style.css">
 </head>
 
 <body>
-<h1><a href="../index.html">CSCI 150</a> Lab 4: Guess My Number</h1>
+<h1><a href="../index.html">CSCI 150</a> Lab 5: Guess My Number</h1>
 <hr>
 
 <h2>Overview</h2>
@@ -44,19 +44,19 @@ Start by creating a file called <code>guess_number.py</code> and paste
 the following code into it:
 
 <pre>
-    ######################################
-    # Copyright (c) 2017 YOUR NAME(s) HERE
-    # CSCI 150, Spring 2018
-    # Lab 4: Guess My Number
-    ######################################
+######################################
+# Copyright (c) 2018 YOUR NAME(s) HERE
+# CSCI 150, Spring 2018
+# Lab 5: Guess My Number
+######################################
 
-    import random
+import random
 
-    def main():
-        # Write your code here
+def main():
+    # Write your code here
 
-    # Call main() as the last thing in the file
-    main()
+# Call main() as the last thing in the file
+main()
 </pre>
 
 Update it with your name. <b>Inside the <code>main()</code> function</b>,
@@ -103,23 +103,23 @@ template you can use as a starting point; copy it into your file
 (after <code>import random</code> and before <code>def main():</code>):
 
 <pre>
-    # input_guess prompts the user for their guess, and keeps prompting
-    # until it is valid.
-    #
-    # Input:  none
-    # Output: a valid guess (int)
-    def input_guess():
-        # Keep prompting the user for their guess until they enter
-        # something valid
+# input_guess prompts the user for their guess, and keeps prompting
+# until it is valid.
+#
+# Input:  none
+# Output: a valid guess (int)
+def input_guess():
+    # Keep prompting the user for their guess until they enter
+    # something valid
 
-        # FILL IN CODE HERE
+    # FILL IN CODE HERE
 
-        # We only do this conversion at the end, once we know
-        # guess_str looks like an int
-        guess = int(guess_str)
+    # We only do this conversion at the end, once we know
+    # guess_str looks like an int
+    guess = int(guess_str)
 
-        # Finally, return the user's guess
-        return guess
+    # Finally, return the user's guess
+    return guess
 </pre>
 Be sure that the comments and the <code>def</code> start all the way
 over in the leftmost column of your file (do <b>not</b> put it inside
