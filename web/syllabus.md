@@ -25,6 +25,7 @@ to review the material and come to class prepared.
 * Fri, Feb 9: Exam I (**Chapters 1-4**)
 * Mon, Feb 12: Repetition I (while loops) [ [while.py](static/while.py) ] (**Chapter 7**)
 * Wed, Feb 14: Functions I [ [functions.py](static/functions.py) ] (**Chapters 5 and 6**)
+* Fri, Feb 16: Functions II [ [functions.py](static/functions.py) ]
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
 <!-- * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ] -->
