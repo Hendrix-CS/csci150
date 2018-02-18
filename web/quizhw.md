@@ -15,8 +15,8 @@ HW                                                                              
 1: [Minecraft](static/minecraft.html)                                                                                 Monday January 22
 2: [Logic puzzles](static/logic-puzzles.pdf)                                                                          Monday January 29
 3: [Conditional practice](static/conditional-practice.pdf)                                                            Monday February 5
+4: [Function reading](static/function-reading.pdf)                                                                    Wednesday February 21
 
-<!-- 3: [Function reading](static/function-reading.html)                                                                   February 13 -->
 <!-- 4: [DNA Strings](static/dna-strings.html)                                                                             February 22 -->
 <!-- 5: [While, string, and list reading](static/loop-string-reading.html)                                                 February 27 -->
 
