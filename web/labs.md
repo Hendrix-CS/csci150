@@ -62,7 +62,7 @@ help you catch common style errors.
   4     [This Day in History](http://mgoadric.github.io/csci150/labs/lab4.html)       Feb 7/8
   5     [Guess My Number](labs/guess.html)                                            Feb 14/15
 
-  <!-- 5     [Mutation is the Word](labs/lab5.html)                                        Feb 23 -->
+  6     [Mutation is the Word](labs/doublets.html)                                    Feb 21/22
   <!-- 7     [Caesar's Secrets](http://mgoadric.github.io/csci150/labs/lab7.html)          Mar 2 -->
   <!-- 8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 16 -->
   <!-- 9     [Sentiment Analysis](http://mgoadric.github.io/csci150/labs/lab9.html)        Mar 30 -->

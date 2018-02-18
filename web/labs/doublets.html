@@ -1,16 +1,16 @@
 <html>
 <head>
-  <title>CSCI 150 - Lab 5 - Mutation is the Word</title>
+  <title>CSCI 150 - Lab 6 - Mutation is the Word</title>
   <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
 </head>
 
 <body>
-<h1><a href="../index.html">CSCI 150</a> - Lab 5<br>Mutation is the Word</h1>
+<h1><a href="../index.html">CSCI 150</a> - Lab 6<br>Mutation is the Word</h1>
 <hr>
 
 <h2>Overview</h2>
-In this lab we will make extensive use of sentinel loops (while loops).  We will explore
-mutation of DNA through playing the game Doublets.
+In this lab we will make extensive use of sentinel loops (while loops)
+to play the game Doublets.
 
 <h2>Materials</h2>
 <ul>
@@ -21,33 +21,34 @@ mutation of DNA through playing the game Doublets.
 
 <h2>Description</h2>
 
-As we study computation and life, we can ask "How did life evolve from single-celled organisms
-into the diversity of life we
-see today?"  The answer lies in a process called
- <a href="http://en.wikipedia.org/wiki/Mutation">mutation</a>.
-<p>
-Separate from the DNA-RNA-Protein process are two separate processes for cell duplication called
-<a href="http://en.wikipedia.org/wiki/Mitosis">mitosis</a> and
-<a href="http://en.wikipedia.org/wiki/Meiosis">meiosis</a>.  Both processes involve
-a cell replicating its DNA, and it is within this replication that mutations can occur.
-Perhaps there was a copying mistake, or a random x-ray damaged part of the DNA;
-in any case, the DNA code we begin with can undergo small alterations.  Each mutation
-during this replication process could possibly have a large impact of the earlier transcription
-and translation process, such that we could have a new stop codon within a gene,
-or we could place a different amino acid into our protein chain.  While some changes may be
-very harmful and lead to genetic diseases, others could provide an unexpected benefit and
-new functionality. These underlying mutations
-introduce variety into the gene pool for a population, and allow natural selection
-and evolution to occur.
-<p>
-While the language of DNA was not understood until 1953 by
-<a href="http://en.wikipedia.org/wiki/Watson_and_Crick">James Watson and Francis Crick</a>
-with the help of data from <a href="http://en.wikipedia.org/wiki/Rosalind_Franklin">Rosalind
-Franklin</a>, similar properties of mutation were noticed nearly 100 years earlier by
+<!-- As we study computation and life, we can ask "How did life evolve from single-celled organisms -->
+<!-- into the diversity of life we -->
+<!-- see today?"  The answer lies in a process called -->
+<!--  <a href="http://en.wikipedia.org/wiki/Mutation">mutation</a>. -->
+<!-- <p> -->
+<!-- Separate from the DNA-RNA-Protein process are two separate processes for cell duplication called -->
+<!-- <a href="http://en.wikipedia.org/wiki/Mitosis">mitosis</a> and -->
+<!-- <a href="http://en.wikipedia.org/wiki/Meiosis">meiosis</a>.  Both processes involve -->
+<!-- a cell replicating its DNA, and it is within this replication that mutations can occur. -->
+<!-- Perhaps there was a copying mistake, or a random x-ray damaged part of the DNA; -->
+<!-- in any case, the DNA code we begin with can undergo small alterations.  Each mutation -->
+<!-- during this replication process could possibly have a large impact of the earlier transcription -->
+<!-- and translation process, such that we could have a new stop codon within a gene, -->
+<!-- or we could place a different amino acid into our protein chain.  While some changes may be -->
+<!-- very harmful and lead to genetic diseases, others could provide an unexpected benefit and -->
+<!-- new functionality. These underlying mutations -->
+<!-- introduce variety into the gene pool for a population, and allow natural selection -->
+<!-- and evolution to occur. -->
+<!-- <p> -->
+<!-- While the language of DNA was not understood until 1953 by -->
+<!-- <a href="http://en.wikipedia.org/wiki/Watson_and_Crick">James Watson and Francis Crick</a> -->
+<!-- with the help of data from <a href="http://en.wikipedia.org/wiki/Rosalind_Franklin">Rosalind -->
+<!-- Franklin</a>, similar properties of mutation were noticed nearly 100 years earlier by -->
 <a href="http://en.wikipedia.org/wiki/Lewis_Carroll">Charles Lutwidge Dodgson (aka Lewis Carroll)
-</a>, who is most famous for his novel "Alice in Wonderland." In an article for
-<i>Vanity Fair</i>, Carroll created a puzzle called Doublets, which explored the
-effects of mutation on English words.  His rules description is as follows:
+</a>, who is most famous for his novel "Alice in Wonderland",
+introduced a puzzle called Doublets in an article for
+<i>Vanity Fair</i>.  The puzzle explores the effects of mutation on
+English words.  His rules description is as follows:
 <blockquote>
 The rules of the Puzzle are simple enough. Two words are proposed, of the same length;
 and the Puzzle consists in linking these together by interposing other words,
@@ -71,10 +72,10 @@ T A I L
 It is, perhaps, needless to state that it is de rigueur that the links should be
 English words, such as might be used in good society.
 </blockquote>
-<p>
-(More details on the connection between Lewis Carroll and genetics can be found in an article by
-David B. Searls entitled <a href="http://www.liebertonline.com/doi/abs/10.1089/10665270152530881">
-From <i>Jabberwocky</i> to Genome: Lewis Carroll and Computational Biology</a>).
+<!-- <p> -->
+<!-- (More details on the connection between Lewis Carroll and genetics can be found in an article by -->
+<!-- David B. Searls entitled <a href="http://www.liebertonline.com/doi/abs/10.1089/10665270152530881"> -->
+<!-- From <i>Jabberwocky</i> to Genome: Lewis Carroll and Computational Biology</a>). -->
 <p>
 Our task for this lab is to create a Python program that lets a user play the Doublets game
 and enforces all the rules given above by Lewis Carroll.
