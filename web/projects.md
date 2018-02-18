@@ -14,6 +14,13 @@ also technique, documentation and evaluation of your solution. Further
 details on the grading standards and handin instructions for each
 project will be given when they are assigned.
 
+<div style="text-align:center">
+<font size="+2">
+ [Please submit projects electronically using this (same) form!](https://goo.gl/forms/XsJVafSZLdedQY1M2)
+</font>
+</div>
+
+
 Project   Name                                                                                                                    Pct Assigned   Due
 --------- ---------------------------------------------------                                                                     --- ---------- --------------------
 1         [Question-Answer](http://mgoadric.github.io/csci150/projects/project1_if.html)                                          5%  Feb 5      Feb 16
