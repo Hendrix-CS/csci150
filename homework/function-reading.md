@@ -30,8 +30,8 @@ that!  You will only be depriving yourself of a learning opportunity
 (not to mention that it is a violation of the academic integrity
 policy).
 
-Turn in your answers and evaluations either electronically on Moodle,
-or on paper.
+Turn in your answers and evaluations either electronically [via the
+usual form](https://goo.gl/forms/XsJVafSZLdedQY1M2), or on paper.
 
 You should consider the code in each exercise separately from the
 other exercises.
