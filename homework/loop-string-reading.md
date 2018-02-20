@@ -1,17 +1,18 @@
-CSCI 150 HW: while loop, string, and list reading practice
-----------------------------------------------------------
+CSCI 150 HW: function, while loop, and string reading practice
+--------------------------------------------------------------
 
-*Due: Monday, February 27*
+*Due: Monday, February 26*
+
+XXX Take off list exercises (save them in another file) XXX Make a
+more complex function example, requiring tracing the stack.
 
 To receive full credit, for each exercise you should do the following:
 
 1. **Predict**: First, complete the exercise *without* using the
    Python interpreter.  (You are welcome to refer to your notes or
    textbook, read Python documentation, look at examples from class,
-   *etc.*; just don't actually run any code.)  Write down what you
-   think the output will be.  Most likely you will need to write down
-   some intermediate work to keep track of values of variables; feel
-   free to include that work as well.
+   *etc.*; just don't actually run any code.)  *Trace the execution of
+   the code, keeping track of all variables and any output produced.*
 
 2. **Check**: Run the code.  Does the actual output agree with what
    you wrote down in step 1?
