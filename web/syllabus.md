@@ -26,7 +26,7 @@ to review the material and come to class prepared.
 * Mon, Feb 12: Repetition I (while loops) [ [while.py](static/while.py) ] (**Chapter 7**)
 * Wed, Feb 14: Functions I [ [functions.py](static/functions.py) ] (**Chapters 5 and 6**)
 * Fri, Feb 16: Functions II [ [functions.py](static/functions.py) ]
-* Wed, Feb 21: While practice, functions III
+* Wed, Feb 21: While practice, functions III [ [collatz.py](static/collatz.py) ]
 * [**String demo**](static/string-demo.txt)
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
