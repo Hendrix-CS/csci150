@@ -1,3 +1,34 @@
+def f(n: int) -> str:
+    n = 2 * n + 1
+    return str(n)
+
+def g(n: int):
+    s = f(n) + f(n+2)
+    print(s)
+    print("n is " + str(n))
+
+def main():
+    g(7)
+    g(2)
+
+main()
+
+def q(n: int) -> str:
+    s = 'TIPNR'
+    return s[n % 5]
+
+def m():
+    i = 2
+    count = 0
+    s = ''
+    while count < 5:
+        s += q(i)
+        i += 2
+        count += 1
+    print(s)
+
+m()
+
 def mklist(n):
     nums = []
     i = 0

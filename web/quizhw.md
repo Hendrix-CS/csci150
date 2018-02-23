@@ -16,9 +16,9 @@ HW                                                                              
 2: [Logic puzzles](static/logic-puzzles.pdf)                                                                          Monday January 29
 3: [Conditional practice](static/conditional-practice.pdf)                                                            Monday February 5
 4: [Function reading](static/function-reading.pdf)                                                                    Wednesday February 21
+5: [Function, loop, and string reading](static/loop-string-reading.pdf)                                               Monday February 26
 
 <!-- 4: [DNA Strings](static/dna-strings.html)                                                                             February 22 -->
-<!-- 5: [While, string, and list reading](static/loop-string-reading.html)                                                 February 27 -->
 
 <!--
 6: [Zen reading -- section 1](http://mgoadric.github.io/csci150/homework/zen.html)                                 March 30
