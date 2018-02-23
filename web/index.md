@@ -22,6 +22,6 @@ Instructors:
 
 * Email: `goadrich@hendrix.edu`
 * Office: MC Reynolds 313
-* Office hours: T 9-11, 1-2; Th 1-2; F 12:30-1:30 or by appointment
+* Office hours: TR 9-11, 1-2; MF 12:30-1:30 or by appointment
 
 Past semesters: [F16](f16/), [S17](s17/)
