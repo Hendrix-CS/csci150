@@ -1,58 +1,47 @@
-# From now on everything should be in a function!
-
-# From now on: every function should have some comments
-# before it, with:
+###############################
+# Compute the volume of a box
 #
-# - Inputs (& their types), if any
-# - Output (& its type), if any
-# - Description of what the function does.
+# Copyright 2018 CSCI 150
+###############################
 
-# Print a greeting for the user.
-def print_greeting():
-    print("Welcome to the box-o-matic! Enter your box dimensions")
-    print("and I will do the rest!")
-
-# Input: ? none
-# Output: int entered by the user
-# Repeatedly prompt the user until they enter a valid int.
-def int_input(prompt_str):
+# Inputs:
+#   - prompt: string to show to the user
+# Repeatedly prompts the user for an int
+# until they enter a valid one, then returns it.
+def int_input(prompt: str) -> int:
     valid = False
     while not valid:
-        input_str = input(prompt_str)
-        valid = input_str.isdigit() or (input_str[0] == '-' and input_str[1:].isdigit())
-        if not valid:
-            print("That is not an integer.  Try again.")
-        
-    return int(input_str)
+        s = input(prompt)
+        if s.isdigit():
+            valid = True
+        else:
+            print("That is not an int, try again!")
+    return int(s)
 
-# Inputs: h, w, d are all ints which represent the height, width, and depth
-#   in furlongs.
-# Output: volume of the box.
-def box_volume(h, w, d):
-    return h * w * d
+# Inputs: ...
+# Computes the volume of a box.
+def compute_volume(l: int, w: int, h: int) -> int:
+    # volume = l * w * h
+    # return volume
 
-# Input: height, width, and depth (ints)
-# Computes the volume and displays it to the user.
-def tell_volume(height, width, depth):
-    volume = box_volume(height, width, depth)
+    return l * w * h
 
-    print("The volume of your box is " + str(volume) + " cubic furlongs.")
+def print_volume(l: int, w: int, h: int):
+    volume = compute_volume(l, w, h)
+
+    print("The volume of your box (in cubic units) is " + str(volume) + ".")
 
 def main():
-    print_greeting()
+    print("Welcome to the Box Calculator!!!11!")
 
-    height = int_input("Please enter the height of the box in furlongs: ")
-    width = int_input("Please enter the width of the box in furlongs: ")
-    depth = int_input("Please enter the depth of the box in furlongs: ")
+    width  = int_input("What is the width of your box? ")
+    length = int_input("What is the length of your box? ")
+    height = int_input("What is the height of your box? ")
 
-    tell_volume(height, width, depth)
+    print_volume(length, width, height)
 
-    surface = 2*width*height + 2*height*depth + 2*width*depth
+    diagonal = (length**2 + width**2 + height**2)**(1/2)
 
-    print("The surface area is " + str(surface) + " square furlongs.")
-
-    diagonal =  (width**2 + height**2 + depth**2)**(1/2)
-
-    print("The body diagonal is " + str(diagonal) + " furlongs.")
+    print("The body diagonal of your box is " + str(diagonal) + " units.")
 
 main()
