@@ -27,7 +27,8 @@ to review the material and come to class prepared.
 * Wed, Feb 14: Functions I [ [functions.py](static/functions.py) ] (**Chapters 5 and 6**)
 * Fri, Feb 16: Functions II [ [functions.py](static/functions.py) ]
 * Wed, Feb 21: While practice, functions III [ [collatz.py](static/collatz.py) ]
-* [**String demo**](static/string-demo.txt)
+* Thu, Feb 22: [**String demo**](static/string-demo.txt)
+* Fri, Feb 23: More while & function practice, tracing with functions [ [box-functions.py](static/box-functions.py), [tracing-example.py](static/tracing-example.py) ]
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
 <!-- * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ] -->
