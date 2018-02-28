@@ -24,4 +24,13 @@ Instructors:
 * Office: MC Reynolds 313
 * Office hours: TR 9-11, 1-2; MF 12:30-1:30 or by appointment
 
+TA hours (Bailey lab):
+
+* Tuesday 7-10
+* Wednesday 7-10
+
+There are also CSCI TAs in the lab Sunday 7-9 and Monday 6-8; although
+not officially TAs for 150 they are willing and able to help if there
+are not too many 151 students needing their help.
+
 Past semesters: [F16](f16/), [S17](s17/)
