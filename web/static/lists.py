@@ -96,7 +96,10 @@ def count(haystack: str, needle: str) -> int:
 # Returns the sum of all the numbers in the list.
 # e.g. sum([1,2,3]) = 6
 def sum(nums: List[int]) -> int:
-    pass
+    total = 0
+    for num in nums:
+        total += num
+    return total
 
 # Return the index of the first occurrence of needle in haystack,
 # or -1 if it is not there.
@@ -105,5 +108,7 @@ def sum(nums: List[int]) -> int:
 #   find('hello', 'l') = 2
 #   find('hello', 'z') = -1
 def find(haystack: str, needle: str) -> int:
-    pass
-
+    for i in range(len(haystack)):
+        if haystack[i] == needle:
+            return i
+    return -1
