@@ -2532,14 +2532,14 @@ Find bit-partners. Different one for each exercise.
 Go over each and try it.
 
 \begin{verbatim}
-def oogie(m):
+def oogie(m: List[int]) -> int:
     p = m[0]
     for g in m:
         if g > p:
             p = g
     return p
 
-def yayaya(q):
+def yayaya(q: List[str]) -> bool:
     for y in range(len(q) - 1):
         if q[y] == q[y + 1]:
             return True
@@ -2551,7 +2551,7 @@ Then have them write \verb|is_sorted| function.
 Additional practice:
 
 \begin{verbatim}
-def pulu(r):
+def pulu(r: int) -> List[int]:
     b = []
     for k in range(r):
         b.append(k ** 3)
