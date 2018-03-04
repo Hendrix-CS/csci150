@@ -31,6 +31,7 @@ to review the material and come to class prepared.
 * Fri, Feb 23: More while & function practice, tracing with functions [ [box-functions.py](static/box-functions.py), [tracing-example.py](static/tracing-example.py) ]
 * Mon, Feb 26: Lists [ [lists.py](static/lists.py) ]
 * Wed, Feb 28: Lists, reference, and for loops [ [lists.py](static/lists.py) ]
+* Fri, Mar 2: Practice reading & writing for loops
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
 <!-- * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ] -->
