@@ -32,6 +32,7 @@ to review the material and come to class prepared.
 * Mon, Feb 26: Lists [ [lists.py](static/lists.py) ]
 * Wed, Feb 28: Lists, reference, and for loops [ [lists.py](static/lists.py) ]
 * Fri, Mar 2: Practice reading & writing for loops
+* Mon, Mar 5: Exam 2 review [ [exam2-practice.py](static/exam2-practice.py) ]
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
 <!-- * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ] -->
