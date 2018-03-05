@@ -63,6 +63,7 @@ help you catch common style errors.
   5     [Guess My Number](labs/guess.html)                                            Feb 14/15
   6     [Mutation is the Word](labs/doublets.html)                                    Feb 21/22
   7     [Caesar's Secrets](labs/caesar.html)                                          Feb 28/Mar 1
+  P2    Project 2 start                                                               Mar 7/8
 
   <!-- 8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 16 -->
   <!-- 9     [Sentiment Analysis](http://mgoadric.github.io/csci150/labs/lab9.html)        Mar 30 -->
