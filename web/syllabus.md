@@ -35,6 +35,7 @@ to review the material and come to class prepared.
 * Mon, Mar 5: Exam 2 review [ [exam2-practice.py](static/exam2-practice.py) ]
 * Wed, Mar 7: Exam 2
 * Fri, Mar 9: Recursion [ [factorial.py](static/factorial.py) ]
+* Mon, Mar 12: Recursion [ [recursion.py](static/recursion.py) ]
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
 <!-- * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ] -->

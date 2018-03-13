@@ -1,95 +1,72 @@
-# Recursion!
+from typing import *
 
-# Factorial
+# Recall n! (n factorial) = 1 * 2 * 3 * ... * n
 
-# n! = 1 * 2 * 3 * ... * n
-
-# Input: a nonnegative integer n
-# Output: n!
-def factorial(n):
-    count = 0
-    product = 1
-    while count != n:
+def factorial_while(n: int) -> int:
+    factorial_n = 1
+    count = 1
+    while count <= n:
+        factorial_n *= count
         count += 1
-        product *= count
-    return product
+    return factorial_n
 
-def factorial2(n):
-    product = 1
-    for count in range(1,n+1):
-        product *= count
-    return product
+# With a for loop?
+def factorial_for(n: int) -> int:
+    factorial_n = 1
+    for i in range(1,n+1):
+        factorial_n *= i
+    return factorial_n
 
-# n! = (n-1)! * n
-# 0! = 1
+# n! = n * (n-1) * (n-2) * ... * 1
+#    = n * (n-1)!
 
-# The above is a valid definition of factorial.  Can we turn
-# it directly into Python code?
-
-def factorial_rec(n):
+# We could take this as a *definition* of n!:
+#   0! = 1
+#   n! = n * (n-1)!   when n > 0.
+def factorial_rec(n: int) -> int:
     if n == 0:
         return 1
     else:
-        result = n * factorial_rec(n-1)
-        return result
+        factorial_n = n * factorial_rec(n-1)
+        return factorial_n
 
-# Input: list of ints
-# Output: sum of the list.
-def listsum(nums):
-    if len(nums) == 0:
+###################################################
+
+# General pattern for recursive functions:
+#
+# 1. Base case(s): simple case where we can return the answer
+#    without making a recursive function call.
+# 2. Recursive case(s): make some progress, reduce the problem
+#    to a simpler one which can be solved recursively.
+
+# For step 2, *ASSUME* the recursive call will give the correct
+# answer to the simpler problem; what do you need to do to turn
+# it into the correct answer for the original problem?
+
+####################################################
+
+# Compute the sum of the numbers in the given list.
+def sumList(nums: List[int]) -> int:
+    if (len(nums) == 0):
         return 0
+    # elif (len(nums) == 1):  # unnecessary!  nums[1:] == []  if  len(nums) == 1
+    #     return nums[0]
     else:
-        return nums[0] + listsum(nums[1:])
+        # Simpler list: everything but the first element.
+        # Assume sumList(nums[1:]) will give correct sum of nums[1:]
+        # To find sum of nums, just add nums[0].
+        return nums[0] + sumList(nums[1:])
 
-# Input: list of ints
-# Output: product of all the numbers in the list (int).
-def listprod(nums):
-    if nums == []:
+# prodList(as + bs) = prodList(as) * prodList(bs)
+
+# Compute the product of the numbers in the given list.
+def prodList(nums: List[int]) -> int:
+    if (len(nums) == 0):
         return 1
-    elif nums[0] == 0:
-        return 0
-##    elif (0 in nums):
-##        return 0
+    # elif 0 in nums:
+    #     return 0
     else:
-        return nums[0] * listprod(nums[1:])
-        
-# Input: s (str)
-# Output: the reverse of s
-def reverse(s):
-    if s == '':
-        return ''
-##    elif len(s) == 1:
-##        return s
-    else:
-        return s[-1] + reverse(s[:-1])
-        # or
-        # reverse(s[1:]) + s[0]
+        return nums[0] * prodList(nums[1:])
 
-
-####################################
-
-# Thought process to write factorial_rec function!
-
-# 1. Write inputs/outputs!
-
-# Input: n (int)
-# Output: an int which is the factorial of n (1 * 2 * 3 * ... * n)
-#   Note that 0! = 1.
-def fact(n):
-    # 2. Think of simple cases for the input ("base cases") where
-    #   we can return the answer immediately.
-    if n == 0:
-        return 1
-##    elif n == 1:   # this base case is unnecessary
-##        return 1
-
-    else:
-        # 3. What if I knew the answer to a simpler problem?
-        # e.g. fact(n-1) ?
-        #
-        # "Leap of faith": ASSUME that fact(n-1) will work correctly.
-        # If it does, how can we use its answer to compute the
-        # correct output to fact(n) ?
-        #
-        # In this case: we need to multiply fact(n-1) by n.
-        return n * fact(n-1)
+# Return a new list with the elements reversed.
+def reverseList(elems: List) -> List:
