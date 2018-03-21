@@ -1,0 +1,307 @@
+﻿<html>
+<head>
+  <title>CSCI 150 - Lab 8 - Fractal Recursion</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="/css/style.css">
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 8<br>Fractal Recursion</h1>
+<hr>
+
+<h2>Overview</h2>
+Certain elements of mathematics can be naturally described by recursion, as we saw with the
+<a href="http://en.wikipedia.org/wiki/Factorial">factorial</a>
+function.  Today, we will look into the mathematics of fractals and
+how some of their properties can be described with recursion.
+
+<h2>Materials</h2>
+<ul>
+<li><a href="https://docs.python.org/3/library/turtle.html">Turtle module</a>
+</ul>
+
+<!-- <h2>Function Tracing</h2> -->
+<!-- Tracing through the execution of a recursive function can help with understanding how  -->
+<!-- recursion can subdivide a problem by reusing the same code. Here we will practice with -->
+<!-- two such recursive functions.  -->
+<!-- <h3>Step 1</h3> -->
+
+<!-- <pre> -->
+<!-- def divider(n): -->
+<!--     if n <= 1: -->
+<!--         return 0 -->
+<!--     else: -->
+<!--         return 1 + divider(n // 2) -->
+<!-- </pre> -->
+<!-- <p> -->
+<!-- Here is an example of a trace table. In this example, we trace a call of <code>divider(2)</code>: -->
+<!-- <p> -->
+<!-- <code> -->
+<!-- <table border cellspacing=2 cellpadding=3> -->
+<!-- <tr><th>Recursion Level</th><th>Call</th><th>Return Expression</th><th>Return Value</th></tr> -->
+<!-- <tr><td>0</td><td>divider(2)</td><td>1 + divider(1)</td><td>1</td></tr> -->
+<!-- <tr><td>1</td><td>divider(1)</td><td>0</td><td>0</td></tr> -->
+<!-- </table> -->
+<!-- </code> -->
+<!-- <p> -->
+<!--  In your Evaluation Document, trace the execution of three separate executions of the divider function by creating a table of the function call, the return expression, and return value for each level of recursion. Note that you will not be able to determine the return value for a given call until you have found the return value for the recursive call it invokes. -->
+<!-- <ul> -->
+<!-- <li><code>divider(7)</code>  -->
+<!-- <li><code>divider(10)</code>  -->
+<!-- <li><code>divider(17)</code> -->
+<!-- </ul> -->
+<!-- How many times was the function -->
+<!-- called in each instance? -->
+<!-- <h3>Step 2</h3> -->
+<!-- <pre> -->
+<!-- def swapper(a, b): -->
+<!--     if b == 0: -->
+<!--         return a -->
+<!--     else: -->
+<!--         return swapper(b, a % b) -->
+<!-- </pre> -->
+<!-- <p> -->
+<!-- In your Evaluation Document, trace the execution of two separate executions of the <code>swapper</code>  -->
+<!-- function by creating a table of the input parameters and return value for each level of recursion. -->
+<!-- <ul> -->
+<!-- <li><code>swapper(6, 8)</code>  -->
+<!-- <li><code>swapper(13, 8)</code>  -->
+<!-- </ul> -->
+<!-- How many times was the function -->
+<!-- called in each instance? -->
+
+
+<h2>Fractals</h2>
+We will be using Python's <code>Turtle</code> module to draw fractals such as
+<a href="http://en.wikipedia.org/wiki/Sierpinski_triangle">Sierpinski's
+Triangle</a>,
+the <a href="http://en.wikipedia.org/wiki/Koch_snowflake">Koch
+Snowflake</a>, and the
+<a href="http://en.wikipedia.org/wiki/Dragon_curve">Dragon Curve</a>.
+Fractals have also been employed for modeling natural phenomena,
+most especially <a href="http://algorithmicbotany.org/papers/#abop">
+plants</a>.
+<p>
+To access the <code>Turtle</code> module and define a turtle, you
+can use the following lines of code:
+<p>
+<pre>
+import turtle
+t = turtle.Turtle()
+</pre>
+<p>
+By calling methods on the variable <code>t</code>, we can make the
+turtle navigate around the screen and draw lines.  (If you want to
+know why it is called a "turtle", you can read
+about <a href="https://en.wikipedia.org/wiki/Turtle_(robot)">turtles</a>
+and <a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a>
+and <a href="https://en.wikipedia.org/wiki/Seymour_Papert">Seymour Papert</a>.)
+<p>
+Some turtle commands you might find useful:
+<ul>
+<li>movement around the screen: <code>t.forward(n)</code>
+and <code>t.back(n)</code> will move the turtle forward or
+backwards <code>n</code> pixels in the current
+direction. <code>t.goto(x, y)</code> will go to a particular location
+on the screen.
+<li>changing
+direction: <code>t.right(d)</code>, <code>t.left(d)</code> will turn
+the turtle left or right by <code>d</code> degrees.
+<li>draw a dot on the screen of a certain size: <code>t.dot(size)</code>
+<li>put the pen down or pick the pen up: <code>t.penup(),
+    t.pendown()</code>
+<li>change the turtle's speed: <code>t.speed(s)</code>, where 1 =
+  slowest and 10 = fastest
+</ul>
+There are lots of other turtle commands, and you are free to use any
+of them you like; see
+the <a href="https://docs.python.org/2/library/turtle.html">Turtle
+  module documentation</a>.
+<h3>Step 3</h3>
+
+The first type of fractal we will examine uses a simple rewrite rule.
+The idea is to replace a straight line segment with four smaller line
+segments, each 1/3 the length of the original, as shown below.
+
+<p>
+<img src="../images/koch.png">
+<p>
+(Note that the angles are 60 and 120 degrees; the green turtle shows
+where the turtle starts and the red turtle shows where it ends.)  If
+we repeat this replacement operation, again replacing each of the four
+line segments, we obtain something like this:
+<p>
+  <img src="../images/koch-iter2.png">
+<p>
+Continuing to repeat this process yields an ever more detailed
+"snowflake" curve.  For example, here is the result after iterating 4 times:
+<p>
+  <img src="../images/koch-iter4.png">
+<p>
+  In a file called <code>fractal.py</code>, type in the following
+recursive function:
+<pre>
+import turtle
+
+def koch(t, n, size):
+    if n == 0:
+        t.forward(size)
+    else:
+        koch(t, n - 1, size / 3)
+        t.left(60)
+        koch(t, n - 1, size / 3)
+        t.right(120)
+        koch(t, n - 1, size / 3)
+        t.left(60)
+        koch(t, n - 1, size / 3)
+</pre>
+
+<p>
+This function uses the turtle object <code>t</code> to draw an
+order-<code>n</code> Koch curve, that is, the result of iterating
+this process <code>n</code>
+times.  In the base case (when <code>n == 0</code>), it simply
+draws a line of length <code>size</code>; in the recursive case, it
+draws four smaller copies of an order-(<code>n - 1</code>) Koch curve,
+arranged as shown in the replacement rule above.
+<p>
+Once you have typed in the function, test it using this function:
+<pre>
+def koch_tester():
+    t = turtle.Turtle()
+    t.speed(10)
+    for i in range(1, 5):
+        t.penup()
+        t.goto(0, 100 * (i - 2))
+        t.pendown()
+        koch(t, i, 100)
+</pre>
+
+<p>
+<!-- <h3>Step 4</h3> -->
+<!-- In your Lab Evaluation Document, answer the following questions: -->
+<!-- <ol> -->
+<!-- <li> What is the visible effect of increasing the order of the curve? -->
+<!-- <li> As we did in Steps 1 and 2,  -->
+<!-- trace the execution of <code>koch(t, 2, 100)</code>  -->
+<!-- by creating a table of the input parameters and return value for each level of recursion. -->
+<!-- Note that the function is called multiple times for each level, but since -->
+<!-- the recursive calls are all the same, we only include it once. The table  -->
+<!-- for <code>koch(t, 1, 100)</code> would look like -->
+<!-- <p> -->
+<!-- <code> -->
+<!-- <table border cellspacing=2 cellpadding=3> -->
+<!-- <tr><th>Recursion Level</th><th>Call</th><th>Turtle Command</th></tr> -->
+<!-- <tr><td>0</td><td>koch(t, 1, 100)</td><td>koch(t, 0, 33.3)</td></tr> -->
+<!-- <tr><td>1</td><td>koch(t, 0, 33.3)</td><td>t.forward(33.3)</td></tr> -->
+<!-- </table> -->
+<!-- </code> -->
+<!-- <p> -->
+<!-- <li> Using the table you constructed, now write out a script of all the -->
+<!-- basic turtle commands that get executed as a result of the original call. -->
+<!-- Indent each command based on the recursion level at which it occurred.  -->
+<!-- For example, the script for <code>koch(t, 1, 100)</code> would look like: -->
+<!-- <p> -->
+<!-- <pre> -->
+<!--     t.forward(33.3) -->
+<!-- t.left(60) -->
+<!--     t.forward(33.3) -->
+<!-- t.right(120) -->
+<!--     t.forward(33.3) -->
+<!-- t.left(60) -->
+<!--     t.forward(33.3) -->
+<!-- </pre> -->
+<!-- <p> -->
+<!-- </ol> -->
+
+<h3>Step 5</h3>
+Try your recursive coding skills out with curves
+generated by the replacement shown below. Write a function called
+<code>koch2(t, n, size)</code> that draws the
+<a href="http://en.wikipedia.org/wiki/File:Quadratic_Koch_2.png">Koch 2</a>
+fractal.
+<p>
+<img src="../images/koch2.png">
+<h3>Step 6</h3>
+Now do the same thing for the following replacements:
+<p>
+<p>
+Write a function called <code>koch3(t, n, size)</code> that draws the
+<a href="http://en.wikipedia.org/wiki/File:Quadratic_Koch.png">Koch 3</a>
+fractal.
+<p>
+  <img src="../images/koch3.png">
+<p>
+Note that in the middle of the above replacement pattern there is a
+  long vertical segment. This can either be replaced by a single
+  half-sized copy, or by two quarter-sized copies.  These different
+  methods yield different (but related) fractals.  Use whichever one
+  you like better!  For the C-curve below, however, the bottom segment
+  really does need two half-size copies (hence the dot in the middle),
+  instead of a single full-size copy; otherwise it will look pretty
+  boring.
+<p>
+Write a function called <code>c_curve(t, n, size)</code> that draws the
+<a href="http://en.wikipedia.org/wiki/File:Levy_C_construction.png">C-curve</a>
+fractal.
+<p>
+  <img src="../images/c-curve.png">
+<p>
+Note the direction the turtle is facing at the beginning and end of
+  the replacement above!
+<p>
+<h3>Step 7</h3>
+These next two are a little different. They each <b>require two functions</b> for
+replacement instead of just one above.  The first function is
+indicated by blue lines, and the second function by orange lines.  (The
+color simply distinguishes the functions; you do not need to draw
+colored lines.)
+<p>
+<a href="http://en.wikipedia.org/wiki/File:Dragon_curve_iterations_(2).svg">Dragon Curve</a>
+<p>
+<img src="../images/dragon.png">
+<p>
+Note that the above replacements are drawn to scale: the distance
+between the start and end points are the same.  The blue and orange
+lines make a right angle.  You should think about the question: what
+should be the length of the blue and orange lines at the bottom (after
+replacement), relative to the length of the lines at the top (before
+replacement)?
+<p>
+<a href="http://en.wikipedia.org/wiki/File:Serpinski_Lsystem.svg">Sierpinski's Triangle</a>
+<p>
+<img src="../images/sierpinski.png">
+<p>
+This one is a bit strange since the turtle ends up facing in a
+different direction after the replacement.  Just go with it!  Also,
+for this one, don't worry too much about the relative lengths (though
+it is a fun geometry challenge to figure out the right values to make
+the fractal stay the same size with different numbers of iterations).
+
+<h3>Step 8</h3>
+Create your own replacement rule for your personal
+fractal, and write code to draw it!  In your Lab Evaluation Document,
+describe what you expected to happen when you planned your fractal,
+and discuss how your expectations were (or were not) met after it
+executed.
+
+<h2>What to Hand In</h2>
+Log in to Moodle and turn in your code.  Make sure
+you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
+have run your project through the Automated Style Checker.<p>
+You must hand in:
+<ul>
+  <li><code>fractal.py</code>
+  <li>Lab Evaluation Document
+</ul>
+<h2>Grading</h2>
+<ul>
+<li>To earn a D on this lab, complete Steps 1 and 2.
+<li>To earn a C on this lab, do the above and complete Step 3.
+<li>To earn a B on this lab, do the above and complete Steps 5 and 6.
+<li>To earn a A on this lab, do the above and complete Step 7.
+<li>To earn a 100 on this lab, do the above and complete Step 8.
+</ul>
+<hr>
+<small>&copy; Mark Goadrich &amp; Brent Yorgey, Hendrix College</small>
+
+</body>
