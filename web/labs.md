@@ -65,8 +65,8 @@ help you catch common style errors.
   7     [Caesar's Secrets](labs/caesar.html)                                          Feb 28/Mar 1
   P2    [Project 2](http://mgoadric.github.io/csci150/projects/project2.html) start   Mar 7/8
   8     [Fractal Recursion](labs/fractal.html)                                        Mar 14/15
+  9     [Sentiment Analysis](labs/sentiment.html)                                     Mar 28/29
 
-  <!-- 9     [Sentiment Analysis](http://mgoadric.github.io/csci150/labs/lab9.html)        Mar 30 -->
   <!-- 10    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab10.html)             Apr 5 -->
   <!-- 11    [Graphics and Animation](labs/processing.html)                                Apr 13 -->
   <!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Apr 20 -->
