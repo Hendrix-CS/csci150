@@ -2836,6 +2836,15 @@ Show how to make this dictionary.
 \item Alternatively, start with empty one and add them.
 \end{itemize}
 
+Dictionaries are like functions mapping keys to values.  Consequences:
+\begin{itemize}
+\item There can only be one value per unique key.  (If you want
+  multiple values, use a list.)
+\item But there can be multiple keys with the same value.
+\item You can only look up a value by key, not a key by value.
+\end{itemize}
+
+
 Other things we can do with a dictionary:
 \begin{itemize}
 \item Get list of all keys with \verb|keys()|
