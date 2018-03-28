@@ -40,7 +40,7 @@ to review the material and come to class prepared.
 * Fri, Mar 16: no class
 * **Spring break**
 * Mon, Mar 26: Dictionaries [ [dictdemo.py](static/dictdemo.py) ]
-* Wed, Mar 28: Dictionaries II
+* Wed, Mar 28: Dictionaries II, File I/O [ [dictdemo.py](static/dictdemo.py) ]
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
 <!-- * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ] -->
