@@ -36,10 +36,6 @@ usual form](https://goo.gl/forms/XsJVafSZLdedQY1M2), or on paper.
 You should consider the code in each exercise separately from the
 other exercises.
 
-You should complete the following exercises *without* using a
-computer, though you may consult your textbook.  You should write your
-answers by hand and turn them in on paper.
-
 1. Consider the functions defined below.  What does `main()` print?
 
     ``` python

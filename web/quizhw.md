@@ -17,6 +17,7 @@ HW                                                                              
 3: [Conditional practice](static/conditional-practice.pdf)                                                            Monday February 5
 4: [Function reading](static/function-reading.pdf)                                                                    Wednesday February 21
 5: [Function, loop, and string reading](static/loop-string-reading.pdf)                                               Monday February 26
+6: [Heap tracing](static/heap-tracing.pdf) [ [Heap tracing template](static/heap-tracing-template.pdf) ]              Monday April 2
 
 <!-- 4: [DNA Strings](static/dna-strings.html)                                                                             February 22 -->
 
