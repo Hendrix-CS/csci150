@@ -39,8 +39,9 @@ to review the material and come to class prepared.
 * Wed, Mar 14: Recursion III [ [recursion.py](static/recursion.py) ]
 * Fri, Mar 16: no class
 * **Spring break**
-* Mon, Mar 26: Dictionaries [ [dictdemo.py](static/dictdemo.py) ]
+* Mon, Mar 26: Dictionaries [ [dictdemo.py](static/dictdemo.py) ] (**Chapter 12**)
 * Wed, Mar 28: Dictionaries II, File I/O [ [dictdemo.py](static/dictdemo.py) ]
+* Fri, Mar 30: Execution tracing with stack \& heap [ [dicttrace.py](static/dicttrace.py) ]
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
 <!-- * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ] -->
