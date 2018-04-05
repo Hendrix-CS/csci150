@@ -49,24 +49,24 @@
 
   <h2>Step 1: The <code>WaterJug</code> class</h2>
   <p>
-  Each <code>WaterJug</code> object will need to have two components
-  that we can think of as the state of that <code>WaterJug</code>.
-  <p>
-  components:
-  <UL>an <code>int</code> for <code>capacity</code><br>
-  an <code>int</code> for <code>contents</code><br>
-  </UL>
+  Each <code>WaterJug</code> object will need to have two variables
+  that we can think of as the state of that <code>WaterJug</code>:
+  <ul>
+    <li>an <code>int</code> for <code>capacity</code></li>
+    <li>an <code>int</code> for <code>contents</code></li>
+  </ul>
   <p>
   Also, a <code>WaterJug</code> needs some functionality to change the state of the internal components.
   In object-oriented programming, these are called methods.
   <p>
-  methods:
-  <UL><code>__init__(capacity: int, contents: int)</code> constructor method<br>
-  <code>__repr__( )</code> returns a string representing the value of the <code>WaterJug</code> object<br>
-  <code>fill()</code> to fill up the <code>WaterJug</code> completely<br>
-  <code>empty()</code> to completely empty the <code>WaterJug</code><br>
-  <code>pour(other: WaterJug)</code> to pour as much of the contents of this <code>WaterJug</code> into the other as is allowed<br>
-  </UL>
+  Methods:
+  <ul>
+    <li><code>__init__(capacity: int, contents: int)</code> constructor method</li>
+    <li><code>__repr__( )</code> returns a string representing the value of the <code>WaterJug</code> object</li>
+    <li><code>fill()</code> to fill up the <code>WaterJug</code> completely</li>
+    <li><code>empty()</code> to completely empty the <code>WaterJug</code></li>
+    <li><code>pour(other: WaterJug)</code> to pour as much of the contents of this <code>WaterJug</code> into the other as is allowed</li>
+  </ul>
 
   <p> Implement this object in Python. Don't forget where to use
   the <code>self</code> keyword.  Be careful with your methods to make
