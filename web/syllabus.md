@@ -43,6 +43,7 @@ to review the material and come to class prepared.
 * Wed, Mar 28: Dictionaries II, File I/O [ [dictdemo.py](static/dictdemo.py) ]
 * Fri, Mar 30: Execution tracing with stack \& heap [ [dicttrace.py](static/dicttrace.py) ]
 * Mon, Apr 2: Intro to classes and objects [ [Cake.py](static/Cake.py) ]
+* Wed, Apr 4: More classes and objects [ [TrafficLights.py](static/TrafficLights.py) ]
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
 <!-- * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ] -->
