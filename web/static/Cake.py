@@ -65,3 +65,10 @@ def average_blows(num_candles: int, num_trials: int) -> float:
     for i in range(num_trials):
         total += happy_birthday(Cake(num_candles))
     return total / num_trials
+
+def generate_table():
+    f = open("candle_data.txt", "w")
+    for i in range(1,10001):
+        avg = average_blows(100*i, 1000)
+        f.write(str(100*i) + " " + str(avg) + "\n")
+    f.close()

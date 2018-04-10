@@ -24,6 +24,8 @@
 #   - keep track of current color
 #   - be able to change to next color
 
+from typing import *
+
 class TrafficLight:
 
     # Variables:
@@ -48,9 +50,35 @@ class TrafficLight:
         else:
             print("PANIC!!!")
 
+# Another implementation using a list of colors
+class TrafficLight2:
+    # Variables:
+    #   - current_color_index: int  (index into the list of colors)
+    #   - color_list: List[str]
+
+    # What parameters does __init__ need?
+    def __init__(self):  # , color_list: List[str]):
+        self.current_color_index = 0
+        self.color_list = ["RED", "GREEN", "YELLOW"]
+
+    def color(self) -> str:
+        return self.color_list[self.current_color_index]
+
+    def change(self):
+        self.current_color_index += 1
+        self.current_color_index %= len(self.color_list)
+
+    def add_color(self, new_color: str):
+        self.color_list.append(new_color)
+
 def main():
-    t = TrafficLight()
+    t = TrafficLight2()
     print(t.color())
+    for i in range(10):
+        t.change()
+        print(t.color())
+
+    t.add_color("PURPLE")
     for i in range(10):
         t.change()
         print(t.color())
