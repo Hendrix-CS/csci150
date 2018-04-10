@@ -67,9 +67,9 @@ help you catch common style errors.
   8     [Fractal Recursion](labs/fractal.html)                                        Mar 14/15
   9     [Sentiment Analysis](labs/sentiment.html)                                     Mar 28/29
   10    [Die Hard III](labs/waterjug.html)                                            Apr 4/5
+  11    [Graphics and Animation](labs/processing.html)                                Apr 11/12
 
-  <!-- 11    [Graphics and Animation](labs/processing.html)                                Apr 13 -->
-  <!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Apr 20 -->
+<!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Apr 20 -->
 
 <!--
   13    Final project workshop (optional, **9am-11am**)                               Apr 26
