@@ -26,5 +26,4 @@ Project   Name                                                                  
 1         [Question-Answer](http://mgoadric.github.io/csci150/projects/project1_if.html)                                          5%  Feb 5      Feb 16
 2         [Word Games](http://mgoadric.github.io/csci150/projects/project2.html)                                                  10% Mar 7      Mar 15
           [ [Sample project start #1](static/vacation.py), [Sample project start #2](static/doublets-demo.py) ]
-
-<!-- 3         [Final Project](labs/final.html)                                                                                        20% Apr 11     Friday, May 5, 2pm -->
+3         [Final Project](labs/final.html)                                                                                        20% Apr 9      Monday, May 7, 8:30-11:30am
