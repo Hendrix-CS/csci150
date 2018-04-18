@@ -47,6 +47,8 @@ to review the material and come to class prepared.
 * Fri, Apr 6: no class
 * Mon, Apr 9: More classes and objects [ [Cake.py](static/Cake.py), [TrafficLights.py](static/TrafficLights.py) ]
 * Wed, Apr 11: Extended example: Blackjack [ [Card.py](static/Card.py) ]
+* Fri, Apr 13: Blackjack [ [Deck.py](static/Deck.py) ]
+* Mon, Apr 16: Blackjack
 
 <!-- * Chapter 8: Fri, February 17 [ [strings.py](static/strings.py) [strings.txt](static/strings.txt) ] -->
 <!-- * Wed, Feb 22 [ [box-functions.py](static/box-functions.py) [box-functions.txt](static/box-functions.txt) ] -->
