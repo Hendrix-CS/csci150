@@ -15,8 +15,10 @@ answer questions along with writing and debugging code.
   [In-class code from practice exam](static/exam2-practice.py))
 
 <!-- ; [Practice exam solution code](static/exam2-practice.py); [Bonus functions](http://mgoadric.github.io/csci150/homework/bonusfunctions.html) due Wednesday after spring break (March 29)) -\-> -->
-<!-- -   Exam 3: Friday, April 21, covering recursion, dictionaries and object-oriented -->
-<!--     programming ([Practice problems](static/exam3-practice.pdf), [exam3-review.py](static/exam3-review.py)) -->
+
+- Exam 3: Monday, April 23, covering recursion, dictionaries and object-oriented
+    programming ([Practice problems](static/exam3-practice-s18.pdf),
+    [tracing template](static/heap-tracing-template.pdf))
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.

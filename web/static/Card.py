@@ -1,4 +1,3 @@
-
 class Card:
 
     # Variables:
@@ -19,6 +18,12 @@ class Card:
     # Flip the card over
     def flip(self):
         self.face_up = not self.face_up
+
+    def is_face_up(self) -> bool:
+        return self.face_up
+
+    def flip_up(self):
+        self.face_up = True
 
     # Get the color of the card
     def get_color(self) -> str:
@@ -44,13 +49,17 @@ class Card:
             return self.rank
 
     def __repr__(self) -> str:
-        pass
+        return self.__str__()
+        # return 'Card(' + self.....  + ',' + ...
 
     # Return a representation of the card as a string,
     # e.g.  '2H', 'QS', 'TC', 'AD'
     def __str__(self) -> str:
-        rank_dict = {1:'A',10:'T',11:'J',12:'Q',13:'K'}
-        if self.rank in rank_dict:
-            return rank_dict[self.rank] + self.suit
+        if self.face_up:
+            rank_dict = {1:'A',10:'T',11:'J',12:'Q',13:'K'}
+            if self.rank in rank_dict:
+                return rank_dict[self.rank] + self.suit
+            else:
+                return str(self.rank) + self.suit
         else:
-            return str(self.rank) + self.suit
+            return '**'
