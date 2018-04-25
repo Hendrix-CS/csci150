@@ -69,6 +69,7 @@ help you catch common style errors.
   10    [Die Hard III](labs/waterjug.html)                                            Apr 4/5
   11    [Graphics and Animation](labs/processing.html)                                Apr 11/12
   12    [On Stuckness and debugging](labs/debugging.html)                             Apr 18/19
+  13    Final project workshop (optional)                                             Apr 25/26
 
 <!--
   13    Final project workshop (optional, **9am-11am**)                               Apr 26
