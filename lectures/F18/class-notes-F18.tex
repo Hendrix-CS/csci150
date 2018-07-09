@@ -1,0 +1,3265 @@
+% -*- compile-command: "pdflatex class-notes-F18.tex" -*-
+
+\documentclass{article}
+
+\usepackage{hyperref, amsmath, xspace}
+
+\newsavebox{\reflectbox}
+
+\newcommand{\etc}{\emph{etc.}\xspace}
+\newcommand{\eg}{\emph{e.g.}\xspace}
+
+\newenvironment{reflect}[1]
+{
+  \noindent
+  \begin{lrbox}{\reflectbox}
+    \begin{minipage}[t]{\textwidth}
+      \textbf{#1}:
+}{
+    \end{minipage}
+  \end{lrbox}
+  \fbox{\usebox{\reflectbox}}
+}
+
+\begin{document}
+
+\title{CSCI 150: Foundations of Computer Science \\ Fall 2018 Lecture
+  Notes}
+
+\maketitle
+
+\section{Introduction (W 8/22)}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item {}[Meet students before class.]
+\item Have students meet each other. \eg use binary cards to
+  put them in groups of 4.  Then switch groups once or twice.
+  Introduce people you have already met.
+\end{itemize}
+
+\subsection*{What is Computer Science?}
+
+This class is Foundations of Computer Science.  What is Computer
+Science?  (Terrible name: first, because why do you need to have
+``science'' in the title?  \eg ``food product''.)  Look at each
+component separately.
+\begin{itemize}
+\item \textbf{What is a computer?}  Get some responses.  (Can insert
+  brief history lesson: Antikythera mechamism: 150--100 BC, analog
+  computer.  Many other mechanical computers through the years,
+  \eg Babbage Difference Engine, Zuse Z3, Curta.  IBM started off
+  making machines for processing data stored on punch cards; big
+  industry by 1940s. ``Computers'' referred to people.  First
+  electronic computers: WWII, early 1940s.)
+\item \textbf{What do computers do?}  Lots of things.  Commonality:
+  information.  Communicating, transforming, analyzing, storing.
+\item \textbf{What is science?}  Get some responses.  Scientists use
+  rational investigation \& analysis, mathematics, \etc to study the
+  natural world.
+\end{itemize}
+
+So what do computer scientists study?  \textbf{NOT computers!}
+Rather, \textbf{information} = anything that can be expressed
+digitally, i.e. with numbers/symbols.  ``Computer science'' is
+actually a bad name, \emph{cf.}\ ``telescope science''.  Information
+structure of the universe. (A much better name is ``Informatics''
+which is used \eg in Europe but hasn't caught on in the US.)
+
+Why study it?  (Maybe get some student responses)
+\begin{itemize}
+\item Beautiful ideas, new ways of thinking.
+\item Many applications!  Can contribute directly to human flourishing.
+\item Computers are everywhere.  Understanding principles of CS =
+  being an informed, engaged citizen.
+\end{itemize}
+Could do this without a computer, but computers are excellent enabling
+tools.
+
+\subsection*{Administrivia}
+
+\begin{itemize}
+\item Syllabus review online.
+\item Academic integrity.
+\item Moodle/Google form/etc.
+\item Office hours, TA hours
+\end{itemize}
+
+For next time:
+
+\begin{itemize}
+\item Read chapter 1 of textbook.
+\item Do HW 0, ``who are you'', if not already done.
+\end{itemize}
+
+\newpage
+
+\section{Algorithms and language (F 8/24)}
+
+\subsection*{Setup/administrivia}
+
+\begin{itemize}
+\item Quiz Monday on Chapter 1.
+\item Homework due Monday (Minecraft programming by hand).
+\end{itemize}
+
+\subsection*{Reading review}
+
+\begin{itemize}
+\item Review 5 aspects of algorithms (input, output, math,
+  conditionals, repetition).  Where did we see them in
+  Minecraft?
+\item Review 3 kinds of errors (syntax, semantic, runtime).  Talk
+  about each in context of Minecraft (lots of semantic errors; runtime
+  = running into wall/falling into lava?; not many opportunities for
+  syntax errors (!!!), except for something like \eg a repeat loop
+  block with no blocks inside it.)
+\item Fact that Minecraft doesn't have (many) syntax errors is a
+  Really Big Deal.  Imagine if when learning a foreign language, every
+  time you made even a small grammatical mistake the other person just
+  cut you off and said ``I don't understand.''  That's what it will
+  feel like learning Python.  So don't be discouraged---remember what
+  you could do with Minecraft.  You'll get there with Python
+  too.
+\end{itemize}
+
+\textbf{Quiz Monday on Chapter 1}.
+
+\subsection*{Collatz Conjecture}
+
+\begin{itemize}
+\item Write out hailstone function. Something like this:
+  \begin{quote}
+    Input $n$. \\
+    Repeat the following until $n = 1$: \\
+    \mbox{} \quad If $n$ is even, divide $n$ by $2$. \\
+    \mbox{} \quad Otherwise, multiply it by $3$ and add $1$. \\
+    Output the number of repetitions needed to reach $1$.
+  \end{quote}
+\item Note all 5 aspects of algorithm.
+\item Try it on some inputs: 4, 8, 6, 11. Draw a tree etc.  Or have
+  groups of students apply it to different numbers?  [In S'17 the
+  students suggested starting with $7$ so we just did that on the board.]
+\item Simple algorithms can have very surprising results!  Visit
+  Wikipedia page.
+\end{itemize}
+
+\textbf{Mention HW assignment}: Minecraft by hand.  Posted on website.
+
+\newpage
+
+\section{Python I (M 8/27)}
+
+\subsection*{Setup/administrivia}
+
+\begin{itemize}
+\item Bring color printouts of Minecraft world.
+\item \textbf{Quiz}: list 4 of the 5 elements of any algorithm.
+\item For this week, read Chapters 2 and 3.
+\end{itemize}
+
+\subsection*{Minecraft pair simulation exercise}
+
+Have the students pair up and exchange programs (which they wrote for
+HW).  Give each pair/group a color printout of the minecraft world for
+the assignment, to use for reference.  Give them 10--15 minutes to
+simulate each others' programs and confirm whether they work properly.
+(See whose is shortest? Any interesting/surprising solutions?)  Then
+collect the assignments.
+
+Why did we do this?  One of the reasons the Minecraft Hour of Code lab
+was much easier than the programming we will do for the rest of the
+semester we already talked about---because it allows far fewer syntax
+errors.  But another, perhaps more important, reason is that it gives
+you immediate, visual feedback when you run your program, such that
+you can follow along and quickly figure out what's happening when
+something goes wrong.  When writing a Python program we won't have
+that luxury.  Being able to accurately predict what a program will do
+without running it on the computer is an extremely important
+skill---in fact, there is actual research that shows this skill is
+highly correlated with your performance in this class!  So we will
+have lots more opportunities to practice it.
+
+\subsection*{Volume of a Box}
+
+We're going to start writing our first Python program!  Start with
+something very simple: we want the computer to calculate the volume of
+a box.  We will enter the width, depth, and height, and it will
+multiply them.  Steps we will need:
+
+\begin{enumerate}
+\item Print a description of the program.
+\item Ask user for width.
+\item Remember width.
+\item Ask user for height.
+\item Remember height.
+\item Ask user for depth.
+\item Remember depth.
+\item Calculate volume.
+\item Print out volume.
+\end{enumerate}
+
+This involves input, output, and math.  No conditionals or repetition
+yet.  Let's start learning the Python we will need to do this.  We'll
+actually write the program next class.
+
+\subsection*{Python I (Strings, Numbers)}
+
+Show \url{python.org} website.  Load up PyCharm, Python 3.x.
+
+\texttt{>>>} is the prompt.  This gives you direct access to the
+interpreter.  You say commands one line at a time, and get immediate
+answers.  Great for testing simple expressions/lines of code and
+seeing what they do.
+
+What kinds of things does Python give us?
+
+\begin{itemize}
+\item \textbf{Strings}!
+
+  Chunks of text, in quotes. Just like you're reading a book:
+  ``Brilliant!'' Harry said.
+
+  Use \texttt{type} to ask what type it is.
+
+  Both types of quotes work (single, double), must end with same you
+  start with. And for really big strings, use triple quotes like
+  \texttt{""" lkwjelrkjwe """}
+
+  How can we break this? \texttt{'haven't you heard?'}  Use one to
+  enclose the other.  If we need both, use \texttt{"""}, or the escape
+  character \texttt{\textbackslash}: \texttt{\textbackslash ", \textbackslash t,
+    \textbackslash n, \textbackslash\textbackslash}. These are special.
+
+  The red text we see when things go wrong are examples of Syntax
+  Errors.
+
+\item \textbf{Numbers}!
+
+  2, 5, 10, integers, \etc  Use \texttt{type}.
+
+  Simple math with numbers like $2+5$. \texttt{"2 + 5"}? not so much.
+  Great as a quick calculator. Use () to force order of operations.
+
+  Integers are great, but what about fractions? \texttt{2.5}
+  \texttt{0.95}, \texttt{3e23}.
+
+  Use \verb|type| to see the types of different things.  Mention
+  exponentiation \verb|**|. (Could possibly mention mod \verb|%|, but
+  I prefer to leave it until it is needed later in the semester.)
+
+  \begin{reflect}{Brent}
+    Possible to go on and mention some things about variables if time,
+    but I pretty much never make it that far.  I prefer to leave
+    plenty of time for letting them ask questions, try things out,
+    etc. along the way.
+  \end{reflect}
+\end{itemize}
+
+\newpage
+
+\section{Python II, Box Volume (W 8/29)}
+
+\subsection*{Setup/administrivia}
+\begin{itemize}
+\item Read Chapters 2 \& 3 --- quiz next class!
+\item Start reading Chapter 4 for next class.
+\end{itemize}
+
+\subsection*{Variables}
+
+For keeping stuff around in short-term memory.
+\begin{verbatim}
+  x = 3
+  name = "Brent"
+\end{verbatim}
+These are \emph{assignment} statements.  No output any more. Before,
+any value returned from the interpreter to us, now it goes into
+memory.  Type \texttt{x}, it spits back 3.
+
+Draw pictures, \texttt{x} has a little box containing $3$, it's just a
+name for the value $3$.
+
+\texttt{x = 4} reassigns \texttt{x} to be a new number.  \texttt{x =
+  "Brent"} works too.
+
+\texttt{y} is a runtime error, gives us an \emph{exception}, which
+means something is not right (the \emph{other} meaning of
+``exceptional''). So double check your names!
+
+\textbf{Be sure to emphasize} that the expression to the right of
+the \texttt{=} is \emph{evaluated} to a value which is then assigned
+to the variable.  Example:
+\begin{verbatim}
+x = 2
+y = x + 3
+x = 5
+\end{verbatim}
+What value will \texttt{y} have afterwards?  It will still just be
+$5$.  It does not change when \texttt{x} changes later.  It just
+holds a number, it does not remember where the number came from.
+
+Some names are reserved, we'll see them as we go.
+Names can't be anything, letter or underscore first, then letter,
+number or underscore.
+
+Choose descriptive variable names! a, b, c, d, e, don't really help.
+Use names like \texttt{width}, \texttt{height},
+\texttt{num\_cats}, \etc
+
+\subsection*{I/O, .py files}
+
+\verb|print|.  The interpreter is great, but we don’t want the user
+having to type python code, we make it easier for them.  We do
+calculations, and tell the computer to print the output to the user.
+
+\begin{itemize}
+\item \verb|print(str)| --- instructs Python to display a string to
+  the user.
+\item For example: \verb|print("Hello world")|
+
+\item Put stuff in a \verb|.py| file with \verb|print| and run it.
+
+\item \verb|input()|, lets us talk to the user and ask questions
+  at the same time.  Example:
+\begin{verbatim}
+input("What is your name?")
+\end{verbatim}
+\item Note it doesn't give you back the prompt \verb|>>>|, but waits
+  for you to type; whatever you type comes back as a string.
+
+\item  To do anything with this we need to save the result in a variable:
+\begin{verbatim}
+name = input("What is your name?")
+\end{verbatim}
+
+\item But what if we want numbers? There are functions to convert
+  strings into integers or floating point numbers:
+\begin{verbatim}
+int("23")
+float("32.4")
+\end{verbatim}
+
+\item So to get numbers from the user, we can do something like:
+\begin{verbatim}
+age_st = input("What is your age?")
+age = int(age_st)
+\end{verbatim}
+
+  Note we get a runtime error if the user enters something that
+  doesn't look like an int.
+\end{itemize}
+
+% \subsection*{REPLs, PROGRAMS, etc.}
+
+% Mark: Useful here to talk about the difference between the REPL loop,
+% and the input and print connections to the user. Draw diagram. What we
+% type in python at the \verb|>>>| is the PROGRAM, it goes to the CPU,
+% and the answers are returned to the PROGRAM. What happens when the
+% PROGRAM says print and input, these questions come from the CPU to the
+% USER and the input from the USER goes back to the CPU, which then
+% returns it to the PROGRAM.
+
+% Brent prefers something like the following: in a PROGRAM (saved in a
+% file) we have to be explicit about I/O: input only comes via
+% \verb|input| and output only produced via \verb|print|.  The REPL
+% handles input and ouptut for us: \verb|>>>| prompt does input and
+% everything is implicitly \verb|print|ed for us.  Draw box representing
+% program with inputs coming in, outputs going out via these functions.
+% REPL is like a little wrapper around a smaller box where we don't have
+% to worry about those things.  [A little confusing to think about what
+% happens when we \eg call \verb|input| at the REPL prompt but you
+% don't really need to worry about that!]
+
+% \begin{reflect}{Brent, S'17}
+% Skipped this section this time around.
+% \end{reflect}
+
+\subsection*{Our first program!}
+
+Let's start programming.  We need a place to save our commands, as a
+script, so they are all run at once.  This file is produced by a
+programmer.  The user will then take this file and run the program.
+
+Create a new project and a new \verb|box.py| file in PyCharm.  First,
+put name, class, date at top, in a comment block using \verb|#######|.
+
+Add in pseudocode, use \verb|#| to mark comments, python will ignore
+these lines.
+
+Write a program to prompt the user, compute the volume of a box, and
+print the result.
+
+Once this is working, extend it to also:
+\begin{itemize}
+\item Compute the surface area.  (Shows off power of saving values
+  entered by user and reusing them later.)
+\item Compute the length of the interior diagonal
+  ($\sqrt{w^2 + h^2 + d^2}$).  (Lets us explicitly talk about how to do
+  roots as a fractional power, needed for Kepler/Newton lab.)
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  I used the box example and this lecture went very well.  Things we
+  discussed/questions the students had included:
+
+  \begin{itemize}
+  \item Order of operations; we played around with putting parens in
+    different places and seeing whether we still got the correct
+    answer.
+  \item We noted that we get a runtime error if we convert with
+    \verb|int| and it does not look like an int.  I asked students
+    what we would need to catch this and re-ask the user; we would
+    need conditionals and repetition.  Promised we would be able to do
+    this later in the course.
+  \end{itemize}
+\end{reflect}
+
+\newpage
+
+\section*{More Math and Functions (mini-lecture \@ start of lab)}
+
+\textbf{NOTE: this is here as a separate lecture, but really needs to
+  just be done as a mini-lecture at the beginning of the Kepler/Newton
+  lab!}
+
+\begin{reflect}{Brent, S' 16}
+  In S'16 I had already covered a bunch of this (\verb|type()|, mod,
+  div) in previous lectures, so I really only had to spend 15 mintues
+  talking about converting between numeric types, and importing
+  \verb|math|, style check.
+\end{reflect}
+\begin{reflect}{Mark, F' 16}
+  I was able to cover everything in lecture except the math module and
+  style check. Covered math at beginning of lab, and style check 2 hours in
+  once people were starting to wrap up.
+\end{reflect}
+
+\subsection*{Setup}
+\begin{itemize}
+\item For next time, read chapter 4.
+\end{itemize}
+
+Talk about types again.  Review, or show again, use of \verb|type()|
+to determine what python thinks the type of a literal or variable is.
+For example:
+\begin{verbatim}
+type("hello") = str
+type(3) = int
+type(3.14) = float
+x = 3
+type(x) = int
+x = 3.14
+type(x) = float
+\end{verbatim}
+
+Other types of formulas.  Remember, () very important in math.
+Mention exponents are with \verb|**| if not already mentioned. Recall
+order of operations.
+
+We saw last time string conversion to \verb|int| and \verb|float|: Can
+also use these to go from \verb|float| to \verb|int| and back.  Also,
+we can go from either to string with \eg \verb|str(3)|.
+
+What we've been using are \emph{functions}.  Some come standard with
+python, like \verb|print|, \verb|input|, \verb|type|, and type
+conversion functions like \verb|int|, \verb|float|, \verb|str|.
+
+Many more possible, and in the near future, you will write your own!
+For now, if you want to use functions someone else wrote, you have to
+import them.
+
+\textbf{DO THIS AT THE TOP OF THE FILE, NOT SOMEWHERE IN THE MIDDLE!}
+It helps clarify what you'll need for the code, and is good etiquette.
+
+Our first \emph{module} today, \verb|math|:
+\begin{verbatim}
+import math
+\end{verbatim}
+
+Lots of nice functions in there.  See
+\url{http://docs.python.org/lib/module-math.html}.  For example,
+\verb|log|, \verb|arctan|, \verb|ceil|, \verb|degrees|, \verb|sqrt|
+and constants like \verb|e|, \verb|pi|
+
+Can access them with dot notation: \verb|module.function|
+
+\verb|math.log(y)| is \emph{natural} log (base $e$). If you want
+\eg base 2, do \verb|math.log(10, 2)|.
+
+Do more examples, \eg \verb|math.sqrt(math.log(math.pi))|.  Function
+composition!
+
+\begin{verbatim}
+dist = int(input("What is the distance?"))
+\end{verbatim}
+
+On to Lab 3.  You will write scripts like with box volume equation,
+use this as a template for your work.
+
+Python Style Check.  Download this and use it.
+
+\section*{LAB: Kepler \& Newton}
+
+\textbf{Talk to TAs before lab about common errors so they can help
+  give good hints when they see them.}
+
+\begin{reflect}{Brent, S' 16}
+This lab seemed to go pretty well.  Common errors:
+\begin{itemize}
+\item Forgetting that \eg \verb|1/3| is 0, not $0.333\dots$ (to take
+  cube root).  [This is no longer a problem with Python 3.]
+\item Dividing by $1.4\times 10^n$ is not the same as multiplying by
+  $1.4 \times 10^{-n}$.
+\item Bad parenthesization.
+\item Algebra mistakes.
+\end{itemize}
+
+\end{reflect}
+
+\begin{reflect}{Brent, S' 17}
+  I had forgotten to tell them a few minor things but cleared them up
+  easily during lab.  Some interesting errors I saw this time around:
+  \begin{itemize}
+  \item \verb|6.67 * 10e-11|.  Hint: \verb|10e-11| and \verb|1e-11|
+    are not the same.  Either \verb|6.67e-11| or
+    %
+    \verb|6.67 * (10 ** -11)| are both fine.
+  \item As usual many students missed the ``kilo'' in ``149 million
+    kilometers'' and were off by a factor of 1000.
+  \end{itemize}
+\end{reflect}
+
+\newpage
+\section{Tracing I (F 8/31)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item \textbf{Quiz 2}:
+  \begin{enumerate}
+  \item What is the value of each of the following
+    Python expressions?
+    \begin{itemize}
+    \item \verb|3 + 4 * 2 - 1|
+    \item \verb|(4 - 1) ** 2|
+    \item \verb|int("3") + 3/2|
+    \end{itemize}
+
+  \item What will be printed when this Python program is executed?
+
+\begin{verbatim}
+x = 6
+y = x - 2 # + 3
+z = (x + y) / 2*5
+print("The value of z is " + str(z))
+\end{verbatim}
+  \end{enumerate}
+\item HW: ???
+\item Start reading Chapter 4.
+\item Hand out copies of first tracing template.
+\end{itemize}
+
+We've already mentioned that being able to manually trace the
+execution of a program and predict what it is going to do is a very
+important skill.  You need to be able to do this in order to figure
+out how to write a program to do what you want, or to figure out why a
+program is not doing what you expect.  Today we're going to introduce
+a formal way to do this for Python programs.  It won't be too hard to
+start out, but will get more complicated as the semester progresses
+and we add new Python features, so make sure you can do it well and
+accurately!
+
+XXX make tracing template and some exercises to do in class.  Have
+them make exercises for each other.
+
+\newpage
+
+\section{Booleans \& Conditionals (W 9/5)}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Next class: quiz on chapter 4.
+\end{itemize}
+
+\subsection*{Booleans}
+
+Today: a new Python type, {\tt bool}! (Named for George Boole, 2
+November 1815 -- 8 December 1864, English mathematician \&
+philosopher, published ``The Laws of Thought'' in 1854 which
+introduced Boolean algebra.)
+
+Boolean values {\tt True} and {\tt False}.  Show these at the Python
+prompt.  Operators {\tt and}, {\tt or}, {\tt not}.  Draw truth tables
+on the board.
+
+How else can we get Booleans?  \textbf{Comparison operators}:
+\verb|>|, \verb|<|, \verb|>=|, \verb|<=|, \verb|!=|, \verb|==|.
+Demonstrate on numbers, strings, all generate Booleans.  See if they
+can guess what comparisons do for strings.  Come up with a hypothesis,
+test it.
+
+\subsection*{Conditionals}
+
+You already know about conditionals.  Here's how we do them in Python.
+
+\begin{verbatim}
+passwd = input("What is the password? ")
+if (passwd == "lemur"):
+    print("Here be secrets.")
+\end{verbatim}
+
+Tabbing is important!  Colon is important!  The thing after {\tt if}
+can be \emph{any expression which evaluates to {\tt true} or {\tt
+    false}}.
+
+Introduce random module. ({\tt import random})
+\begin{itemize}
+\item {\tt random.random()} is number in $[0,1)$. Uniform.
+\item {\tt random.randint(n)} is random integer between $0$ and $n$
+  (inclusive).  (Aside: how can we write this in terms of {\tt
+    random.random()}?)
+\end{itemize}
+Do coin flip.  Conditionally do something.  Needs to include
+\begin{itemize}
+\item {\tt else}
+\item {\tt elif}
+\item nested {\tt if}  (flip two coins in a row)
+\end{itemize}
+
+Start with multiply nested {\tt if} and then show them {\tt elif} for
+nicer syntax.
+
+For example:
+\begin{verbatim}
+import random
+
+passwd = input("Enter the password: ")
+r = random.random()
+print("The random number is", r)
+
+if (r < 0.2):
+    print("You got heads!")
+elif (r >= 0.2 and r < 0.6):
+    print("You got tails!")
+else:
+    print("You got pickles!")
+    if (passwd == "pass"):
+        print("Here be secrets")
+    else:
+        print("No secrets for you")
+\end{verbatim}
+
+\newpage
+\section*{LAB: Big Data/Heart Disease}
+
+\begin{reflect}{Brent, S'16}
+  \begin{itemize}
+  \item Spend a few minutes at the beginning explaining the graphs,
+    especially the Boolean ones.
+  \item Make sure they don't re-save the data files from Excel---it
+    messes up the formatting!  Opening in Excel to \emph{look at} the
+    data files is OK, just don't save.
+  \item Try to guide them to using nested ifs.
+  \item Make sure they understand why it's ineffective to make a huge
+    condition with a bunch of ANDs.
+  \item Make sure they understand why it's ineffective to have a
+    string of independent ifs, where each one sets \texttt{prediction}
+    (overriding whatever \texttt{prediction} was set to before).
+  \end{itemize}
+
+  Other than those gotchas, lab seems to go OK.
+\end{reflect}
+
+\begin{reflect}{Gabe, F'16}
+\begin{itemize}
+\item First lab section: Seems a bit short - took most students 2 hours.
+\item Second lab section: Nobody finished in less than 2.5 hours. Go figure!
+\item The students found the histograms very confusing. In particular, the
+axes were unclear for the string-valued elements.
+\end{itemize}
+\end{reflect}
+\begin{reflect}{Mark, F'16}
+\begin{itemize}
+\item can't get 100\% on 4a, since {\tt 63, False} is found in both categories. Is possible to get 100\% on 4b and 4c.
+\item the chart for chest\_pain has one of the data points swapped, second bar is "asymptomatic", should have been first.
+\end{itemize}
+\end{reflect}
+\begin{reflect}{Brent, S'17}
+This lab seemed to go very well this year.  The students were
+definitely engaged and learning a lot.  A few started leaving after 2
+hours but probably 2/3 of the class was still working at the 3 hour
+mark (but most were just finishing or very close).
+\end{reflect}
+
+\newpage
+
+\section{Information encoding I (F 9/7)}
+
+\subsection*{Setup/administrivia}
+
+\begin{itemize}
+\item Hand out binary cards.
+\item NB: exam 1 a week from today!  In class, closed notes, closed
+  computer.  Covers material through today and next class. Class
+  before exam will be review.
+\item XXX QUIZ?
+\end{itemize}
+
+\subsection*{Aside: history of information}
+
+How many of you have heard of Ada Lovelace?  How about Charles
+Babbage?
+
+Ada Lovelace: 1815 (December 10!)--1852, first programmer.  Wrote
+programs for Charles Babbage's Analytical Engine (never built, but
+definitely works in principle).  Babbage's purpose for the AE was
+limited to making tables of numbers, but Lovelace had a much more
+expansive and far-seeing vision:
+
+\begin{quote}
+``[The Analytical Engine] might act upon other things besides number,
+were objects found whose mutual fundamental relations could be
+expressed by those of the abstract science of operations, and which
+should be also susceptible of adaptations to the action of the
+operating notation and mechanism of the engine...
+
+Supposing, for instance, that the fundamental relations of pitched
+sounds in the science of harmony and of musical composition were
+susceptible of such expression and adaptations, the engine might
+compose elaborate and scientific pieces of music of any degree of
+complexity or extent.''
+\end{quote}
+
+She saw potential for computers to operate on many kinds of
+information instead of just making tables of numbers, and we know that
+they can indeed do just that!  In fact, she even missed one very
+important development, that computers can not only \emph{operate} on
+these kinds of information, but allow us to \emph{communicate} using
+these kinds of information as well.  Over the next 2 classes we will
+consider some of the fundamentals that make this possible.
+
+XXX Claude Shannon (nnn-nnn) developed theory of information in terms
+of bits\dots
+
+\subsection*{Binary}
+
+Computers represent numbers using \emph{binary} = base 2 instead of
+base 10.  Recall how base 10 works: ones ($=10^0$) place, tens
+($=10^1$) place, hundreds ($=10^2$) place, \dots  And ten different
+digits.  For example \[ 4397_{10} = 4 \times 10^3 + \dots \] Base 2 is
+the same but
+\begin{itemize}
+\item We use $2$ instead of $10$ (ones place, 2's place, 4's place,
+  8's place\dots)
+\item We use $2$ digits $(0,1)$ instead of $10$.  Called \emph{bits} =
+  \emph{bi}nary dig\emph{its}.
+\end{itemize}
+Computers do everything in binary since (1) it is no less expressive
+than \eg decimal and (2) from a physical point of view, it is easier
+to design hardware that can distinguish two different states
+(\eg high and low voltage) than 10.
+
+Converting base $2$ to base $10$: have them do some
+examples. \eg $10110100_2 = ?$  Then do one example together on the
+board, \[ 10110100_2 = 1 \times 2^7 + 1 \times 2^5 + \dots \]
+
+Note 1 \emph{byte} = 8 bits.  Incidentally, one \emph{kilobyte} is not
+$1000$ bytes, but actually $2^{10} = 1024$ bytes!  Megabyte is
+$2^{20}$ bytes, and so on.
+
+Some questions.  Pair and work on these. [Find your bit-partner:
+figure out the correct base-10 number for your partner and find them
+that way!]
+
+\begin{enumerate}
+\item How many different binary numbers are there using $4$ bits?
+\item How many different binary numbers using $n$ bits are there?
+  (Write out 16 binary numbers using $4$ bits.)
+\item What is the biggest number that can be represented using $n$
+  bits?
+\item How many bits are required to count up to $n$?
+\end{enumerate}
+
+\newpage
+\section{Information encoding II (M 9/10)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item \textbf{Assign project 1}---due Friday 9/21.
+\item \textbf{Assign practice exam}---not collected or graded, but we
+  will go over it on Wednesday.  In your best interest to go through
+  it and come prepared.
+\item XXX Quiz: program with conditionals, ask them to identify five
+  errors.
+\end{itemize}
+
+\begin{reflect}{Brent, S'18}
+  This time I actually gave them a new HW assignment writing some
+  programs with conditionals, and I gave them the identifying errors
+  thing as part of the HW.  I will give them a quiz on Monday where I
+  have them predict the output of a program with conditionals.
+\end{reflect}
+
+[Find a different bit-partner and work on converting.]
+
+Convert $103_{10}$ to binary.  [Draw a chart of powers of 2 on the
+board for them.]
+
+\begin{itemize}
+\item Find largest power of two $\leq n$, say, $2^k$.
+\item As long as $n > 0$:
+  \begin{itemize}
+  \item If $2^k \leq n$
+    \begin{itemize}
+    \item subtract $2^k$ from $n$
+    \item write a $1$ (in the $2^k$ place)
+    \end{itemize}
+  \item else
+    \begin{itemize}
+    \item  write a $0$ in the $2^k$ place
+    \end{itemize}
+  \item Decrease $k$ by $1$.
+  \end{itemize}
+\end{itemize}
+
+(This has all five usual aspects of algorithms: input, output, math,
+conditionals, repetition.  We can't quite write this algorithm in
+Python yet because we don't know how to do repetition.  Soon!)  Do an
+example, \eg $103_{10}$.
+
+\subsection*{Representing integers}
+
+Integers are represented like this inside the computer.  Show entering
+binary numbers directly into Python using \verb|0b10110| notation.
+
+Most modern computers use $64$ bits to represent an integer (\emph{how
+  big is that?}); some use $32$. Show Python doesn't care, abstracted
+it away.  In Python 3, everything is \texttt{int}.
+
+What about negative numbers?  One possibility: use one bit for sign
+(plus or minus).  (Turns out there is a better way, ``$2$'s
+complement''; learn about it in CSO or ask if you are curious.)
+
+\subsection*{Representing floating-point numbers}
+
+\begin{reflect}{Brent, S'17}
+  I skipped this section since I had to finish up going over the
+  algorithm to convert decimal to binary at the start of class, and I
+  wanted to make sure to get to hexadecimal and colors at the end.
+\end{reflect}
+
+Back to base $10$: what does $123.45$ mean?
+\[ \dots + 4 \times 10^{-1} + 5 \times 10^{-2} \]
+We can do binary ``decimals'' (``binarals''?) the same way: \[
+1101.011 = 1 \times 2^3 + \dots + 1 \times 2^{-1} + 1 \times 2^{-2} =
+13 \frac{3}{8} \]  Also recall ``scientific notation'', \eg $1.23
+\times 10^{17}$.  This is how ``floating point'' numbers are
+represented: scientific notation, but in base $2$.  For example, with
+$64$ bits:
+\begin{itemize}
+\item 1 bit for sign ($\pm$)
+\item $11$ bits for exponent (base $2$ integer)
+\item $52$ bits for value
+\end{itemize}
+\eg $-1011011 \times 2^{-3}$.
+
+How would you represent $0.1_{10}$?  Can't represent exactly using
+base $2$ (infinite)! Show $0.1 + 0.1 + 0.1$ at python prompt.
+
+\subsection*{Representing text}
+
+Basic idea: use a different number to represent each letter.  ASCII
+(American Std. Code for Info. Exch.) --- early 1960's.  Specified
+$128$ different characters, each using $7$ bits.  (In many cases 1 bit
+left over for parity checking or just set to $0$.)
+\begin{itemize}
+\item Show ASCII chart.
+\item Illustrate chr and ord functions in python.
+\end{itemize}
+$128$ characters may have been enough for the white, American,
+English-speaking men who made it up.  But it sure isn't any more.
+Unicode---currently over 120,000 characters. (How many bits needed?
+Often uses a more complex scheme to allow different numbers of bits,
+\& extending indefinitely without changing existing.  Ask if you're
+curious.)
+
+\subsection*{Representing images}
+
+Image = grid of colored points (``pixels'' = \emph{pic}ture
+\emph{el}ements).  Each pixel = mix of red, green, blue (additive
+primary colors).  Each primary color has 256 possible intensities,
+from 0 (off) to 255 (as bright as possible).  So each primary = 8 bits
+(1 byte), each pixel = 24 bits.  How many bits/bytes for a $500 \times
+500$ image?
+
+\subsection*{Hexadecimal}
+
+Base $16$.  Need 16 symbols: 0--9, a--f. So $a_{16} = 10_{10}$ and so
+on. $\mbox{ace}_{16} = ?$
+
+Note, we can group the binary digits into 4s.  $16 = 2^4$.  So each 4
+bits corresponds to 1 hexadecimal digit.  Conversion back and forth is
+super easy.  We often use hexadecimal as a more convenient way to read
+and write binary.  Easier for humans to read and remember.
+
+Show entering hexadecimal directly into Python using \verb|0xace|
+notation.
+
+Show example of RGB colors expressed in hexadecimal: show
+\verb|style.css| from course website.
+
+\begin{reflect}{Gabe, F'17}
+I found the following web page to be useful:
+\begin{verbatim}
+https://www.w3schools.com/colors/colors_picker.asp
+\end{verbatim}
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Just barely made it to mentioning image representation, since my
+  students had so many good questions about encoding numbers and
+  text.  Finishing up images + hexadecimal will be pushed to the next
+  lecture.
+\end{reflect}
+
+\newpage
+\section{Information encoding III, execution tracing}
+
+\begin{reflect}{Brent, S'18}
+  I had an extra lecture here, to finish talking about image/video
+  representation (\& perhaps mention audio), and to cover hexadecimal,
+  and to add some explicit material on tracing program execution.
+\end{reflect}
+
+Go over tracing the execution of a sample program.  Variables on the
+left, output on the right, lower region for scratch work/evaluating
+expressions.
+
+\section*{LAB: This Day in History}
+
+This can be used as a comprehensive review of everything on Exam 1.
+
+\begin{reflect}{Brent, S'17}
+  I did not assign a lab right after Exam 1, and instead had them work
+  on Question-Answer project.  But it's a shame to lose this fun lab.
+  I'm not sure what would have been a better approach though, since
+  the way the schedule fell out, the exam was right \emph{before} this
+  lab period.  So I couldn't have used the Day in History lab as exam
+  review.
+\end{reflect}
+\begin{reflect}{Brent, S'18}
+  I added an extra day before the exam so we could do this lab.  It
+  requires reshuffling/compressing some things afterwards but I think
+  it's a good idea overall.  The lab itself seemed to go well, and was
+  a good review for the exam.  Gave students good experience with = vs
+  ==, if, boolean expressions (x == 3 or 5), etc.
+\end{reflect}
+
+\newpage
+\section{Exam 1 review}
+
+\subsection*{Setup}
+
+\subsection*{Sample exam}
+
+\begin{reflect}{Brent, S'17}
+  I assigned them the sample exam as a HW assignment to do before
+  class which seemed to work well.  There's not enough time to
+  actually \emph{do} the sample exam \emph{and} discuss the answers.
+\end{reflect}
+
+Have them do sample exam. Go over it.  Things to emphasize:
+\begin{itemize}
+\item ``Semantic errors'': looking for explanation of how/why the
+  program works.
+\item Don't just print out a number, print it with a nice message!
+\item Ways to organize information in finding bugs
+\end{itemize}
+
+\section{Exam 1}
+
+\newpage
+
+\begin{reflect}{Brent, S'17}
+  This is a DECISION POINT:
+  \begin{enumerate}
+  \item Path 1: Immediately introduce while loops and strings.  Then
+    do the pared-down doublets lab (with no functions).  Then
+    introduce functions, and do the ``going on vacation lab'' (adding
+    abstraction to the doublets lab).
+  \item Path 2: Alternatively, start by introducing basic while loops
+    and functions, then do the ``Guess my number'' lab.  Then
+    introduce strings, and do the full doublets lab (with functions).
+  \end{enumerate}
+
+  In S'17 I did the second alternative.  Full disclosure, I only did
+  this because I backed myself into a corner by spending a while
+  covering functions before I even considered the choice, and by then
+  it was too late to introduce strings in time to do the pared-down
+  doublets lab.  I was saved at the last minute only by Mark's valiant
+  brainstorming.  In the end, though, I think I ended up really liking
+  this path.  The ``Guess my number'' lab went well, and after getting
+  practice with loops that way, and explicitly covering function
+  abstraction in class, the full doublets lab went better than I
+  remembered (though it was still hard of course).
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Because of pushing exam 1 back one day, I only have \emph{two}
+  lectures instead of three to prepare for Guess My Number lab.  What
+  I plan to do is introduce while loops first (1 lecture), and then a
+  basic intro to functions (1 lecture).  Functions are not actually
+  super necessary for the lab, so it's OK to cover more about
+  functions in another class after the lab.
+
+  In the past I have used functions while doing examples for while
+  loops (\eg testing the Collatz conjecture), but that's not
+  critical---it's easy to do the examples without using loops.  It
+  might even give nice material to motivate the process of function
+  abstraction later.
+\end{reflect}
+
+\section{Functions I}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Read chapter 5 in book --- quiz Friday.
+\end{itemize}
+
+\subsection*{Exam 1 review?}
+\begin{itemize}
+\item Hand back exams.
+\item Go over some solutions:
+  \begin{itemize}
+  \item Write exemplar solution for programming question
+  \item Go over semantic errors question
+  \item Come ask me with questions about other problems.
+  \end{itemize}
+\end{itemize}
+
+\subsection*{Functions}
+
+\textbf{Read Chapter 5! Note quiz on Wednesday!}
+
+We have used functions in Python already, like \verb|input|,
+\verb|cos|?, other math things?
+
+We can define our own functions!  Same rules for names as
+variables. Header line: parens mean no inputs, colon, indent.  Stuff
+inside the indent (body) says what happens.
+
+\begin{verbatim}
+def say_hi():
+    print("Hello there, CSCI 150!")
+    print("This is a function.")
+\end{verbatim}
+
+Function definition makes a variable which is a function object. (Note
+hex value in output! =) To call it, use parentheses.  \textbf{Every
+  function must always have parentheses after it.}
+
+Functions can be used inside other functions.
+
+\begin{verbatim}
+def say_hi_twice():
+    say_hi()
+    say_hi()
+\end{verbatim}
+
+Put things inside a script.  Note the definition itself does not cause
+body to be executed.  Note functions must be defined before they are
+used.
+
+\subsection*{Why functions?}
+
+Get them to discuss why this is a worthwhile feature.  Why define
+functions?  Pair \& share.
+
+From Downey:
+
+\begin{itemize}
+\item Creating a new function gives you an opportunity to name a group
+  of statements, which makes your program easier to read and debug.
+\item  Functions can make a program smaller by eliminating repetitive code.
+  Later, if you make a change, you only have to make it in one place.
+\item Dividing a long program into
+  functions allows you to debug the parts one at a time and then
+  assemble them into a working whole.
+\item Well-designed functions are often useful for many programs.
+  Once you write and debug one, you can reuse it.
+\end{itemize}
+
+\subsection*{Parameters and arguments}
+
+Make C to F conversion into function, takes C as argument:
+\begin{verbatim}
+def C_to_F(temp_C):
+    F = C * 9.0 / 5.0 + 32
+    print("The temperature in degrees Fahrenheit is ", F)
+\end{verbatim}
+
+\verb|temp_C| is a variable called a \emph{parameter}.
+
+The values given to functions are called \emph{arguments}.  To call a
+function, give one argument for each parameter.  The parameter will
+stand for the argument.  Do some examples.  Note you can put arbitrary
+expressions for arguments.
+
+Variables created inside functions are local!  Parameters are also
+local. Note that \verb|F| and \verb|temp_C| are not defined afterwards.
+
+\subsection*{Reflections}
+
+\begin{reflect}{Brent, S'16}
+  They did so well on the exam (about 80\% of the class scored over
+  90) that I judged it a waste of class time to go over exam
+  solutions.  We ended up making it a bit farther and introducing
+  fruitful functions as well.
+\end{reflect}
+
+\newpage
+\section{Functions II}
+
+\subsection*{Setup/administrivia}
+\begin{itemize}
+\item Reminder: project 1 due soon
+\end{itemize}
+
+\subsection*{Quiz: arguments \& parameters}
+
+\subsection*{Flow of execution \& stack diagrams}
+
+\begin{reflect}{Brent, S'17}
+  In S'17 I moved this to the start of this lecture, though I didn't
+  go into much detail about local copies of variables, I'll do that
+  later (\eg when talking about recursion).
+\end{reflect}
+
+Execution starts at the first line of a program and continues.  But
+when a function is called, execution jumps to that function, and when
+done picks back up where it left off.  This can get complicated, since
+functions can call other functions!  In general Python has to keep
+track of a ``stack'' of places to resume.  Imagine you were reading a
+book but it told you to go read another book and then come back.  Then
+THAT book told you to go read another book, etc.  You would keep the
+old books, with bookmarks, in a pile.  When done, pick up the next
+book from the top of the pile and continue.
+
+Do an example. Write a function that calls \verb|C_to_F| on several
+temperatures.  Then write another function which does that twice, and
+so on.  Then trace execution.  Introduce an error and see the
+``traceback''.  Draw a stack diagram with local variables.
+
+\subsection*{Fruitful functions}
+
+Recall function from last time:
+\begin{verbatim}
+def C_to_F(temp_C):
+    F = C * 9.0 / 5.0 + 32
+    print("The temperature in degrees Fahrenheit is ", F)
+\end{verbatim}
+This function is actually really awkward.  Takes \verb|temp_C| as a
+parameter, but then \emph{prints} the result.  What if we want to
+compute this but not print anything?  Make each function do ONE job.
+Better:
+\begin{verbatim}
+def C_to_F(temp_C):
+    F = C * 9.0 / 5.0 + 32
+    return F
+\end{verbatim}
+Book calls it a \emph{fruitful function}.  (As a mathematician I would
+just call it a \emph{function}\dots) Note we could also get rid of the
+\verb|F| and just return the whole expression; matter of
+taste/experience.
+
+\verb|return| means ``stop execution of the function right now and
+return this value''.  What will this do?
+
+\begin{verbatim}
+def C_to_F(temp_C):
+    F = C * 9.0 / 5.0 + 32
+    return F
+    print "The temperature is", F
+\end{verbatim}
+
+OK to have multiple return statements.  Let's try a function to tell
+us about the temperature (\emph{do something like this, students can
+  come up with details}):
+\begin{verbatim}
+def F_to_qualitative(temp_F):
+    if temp_F < 32:
+        return "freezing"
+    elif temp_F < 50:
+        return "cold"
+    elif temp_F < 75:
+        return "warm"
+    elif temp_F < 90:
+        return "hot"
+    else:
+        return "scorching"
+\end{verbatim}
+
+Now have the students work in pairs to write a function
+\verb|discuss_weather()| which prompts for temperature in C, converts
+to F, and makes an appropriate comment.
+
+\begin{verbatim}
+def discuss_weather():
+    temp_C = int(input("What is the temperature in degrees C? "))
+    temp_F = C_to_F(temp_C)
+    word = F_to_qualitative(temp_F)
+    print "It's very " + word + " today, don't you think?"
+\end{verbatim}
+
+Then go through series of variants showing how you can nest function
+calls, culminating in
+
+\begin{verbatim}
+# DO NOT TRY THIS AT HOME
+def discuss_weather_4():
+    print "It's very " +\
+     F_to_qualitative(C_to_F(int(input("What is the temperature in\
+     degrees C? ")))) +\
+     " today, don't you think?"
+\end{verbatim}
+
+Functions can take multiple parameters.
+
+\begin{verbatim}
+def is_divisible(x, y):
+    if (x % y == 0):
+        return True
+    else:
+        return False
+\end{verbatim}
+
+Try some examples.  Note this is actually written in a redundant way.  We
+can just return \verb|x % y == 0| directly.
+
+\subsection*{Reflections}
+
+\begin{reflect}{Brent, S'16}
+  This class went well, we had a lot of fun.  Didn't make it to stack
+  diagrams (below) but that's OK.  Will probably cover this when
+  talking about recursion instead?
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  This time I didn't get around to showing them functions with
+  multiple parameters; I'll stick that in at some point when I need
+  it. Also, I \emph{still} haven't shown them the mod operator---this
+  was a somewhat deliberate choice since students are often confused
+  by mod, and I'd rather save it until I have more motivatation for
+  introducing it; perhaps at the beginning of the Caesar lab if not
+  before.
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Once again didn't quite get to showing functions with multiple
+  parameters.  This is one of those lectures that doesn't seem
+  necessary, content-wise (I had already presented functions with
+  return values) but it is deceptively tricky for them to build a
+  correct mental model of what goes on.  I had them work in groups to
+  write code on paper several times during class, and wandered around
+  answering questions and clearing up confusion; it was clear that
+  quite a lot of learning was going on.
+\end{reflect}
+
+\newpage
+\section{While loops}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: Project 1 due soon! [In S'16 it was due the day
+  \emph{before} this lecture, due to winter break; in S'17 it was due
+  the day after.]
+\end{itemize}
+
+\subsection*{Alternative: Guess my number game}
+
+[Only use guess my number as an example in class \textbf{if not doing}
+it as a lab.]
+
+\begin{itemize}
+\item First, play the game with class.
+\item Try writing a program to play it (human guesses). Have to
+  replicate code\dots?
+\end{itemize}
+
+\subsection*{While loops}
+
+Introduce while loops---this is a momentous day!  Once we add while
+loops you can (in theory) write \emph{any program you can imagine}.
+Explain syntax.  Syntax and semantics are very much like \verb|if|
+(without \verb|else|): difference is that \verb|if| executes 0 or 1
+time, \verb|while| executes any number of times (0 or more).
+
+Do an example: count from 1 to 10.  Play with boundary conditions,
+order of statements inside the loop.
+
+Point out three usual components:
+\begin{itemize}
+\item Declare and initialize variable(s) you need
+\item Write the condition with those variables
+\item Change those variables somewhere in the loop (often at the
+  end)
+\end{itemize}
+
+Do another example: keep printing ``hi'' and asking ``Do you want to
+stop?'' until says yes --- have students write this code together on
+their computers/paper.  Then have two or three share code?  There are
+two ways to write this --- using input variable to control loop (but
+then you have to initialize it with a bogus value), or using a boolean
+(sentinel).
+
+\subsection*{Alternative 1: guess my number}
+Back to Guess My Number.  Introduce a loop.  Make hi/lo checking into
+a function.  Promise: after we learn a bit more about strings we can
+make another function to get valid int input from user in a loop.
+
+\textbf{Homework}: write version where computer guesses!
+
+\begin{reflect}{Brent, S'16}
+  I don't really like the above homework, I think it's actually too
+  hard for most of them at this point, and they already have enough
+  assignments where they get practice coding.  I just got them to
+  think briefly about how one might implement it.  One student took me
+  up on it and implemented a very nice version.
+\end{reflect}
+
+\subsection*{Alternative 2: Collatz}
+
+\begin{reflect}{Brent, S'18}
+  Note I did not actually make it to this section in S'18 on the day I
+  introduced while loops.  I plan to do it as an example some other
+  time, maybe to practice function abstraction.
+\end{reflect}
+
+Collatz Conjecture.  Idea: write a program to test the conjecture.
+What functions will we need?  Bottom-up approach.  Write each function
+and then test it independently.
+
+\begin{verbatim}
+# Inputs:
+#   - n: int
+# Output: int, one step of hailstone function on n
+#
+# Compute the hailstone function.
+def hailstone(n):
+    if n % 2 == 0:
+        return (n/2)
+    else:
+        return (3*n + 1)
+
+# Inputs:
+#   - n: int
+# Output: int, number of hailstone steps from n to reach 1
+#
+# Count the length of the hailstone sequence from the starting
+# number to 1.
+def collatz(n):
+    count = 0
+    while n != 1:
+        n = hailstone(n)
+        count += 1
+    return count
+
+# Inputs:
+#   - max: int, biggest number to test
+# Output: none
+#
+# Print numbers from 1 to max along with length of their Collatz chain
+def check_collatz_up_to(max):
+    n = 1
+    while n <= max:
+        print n, collatz(n)
+        n += 1
+\end{verbatim}
+
+(What happens if we take out \verb|max| check and just say
+\verb|while true|?  A legitimate use of an infinite loop!)
+
+\begin{reflect}{Brent, S'17}
+  Only made it partway through Collatz: we wrote \verb|hailstone| and
+  \verb|collatz| functions together.
+\end{reflect}
+
+\section*{LAB: Guess My Number}
+
+Have the students write both versions of the game (in the first
+version, the computer picks the number; in the second, the computer
+guesses).
+
+\begin{reflect}{Brent, S'17}
+  This lab seemed to go very well (even unreasonably so, given that I
+  wrote it at the last minute!).  The students were engaged, it seemed
+  about the right level of difficulty, there were no big errors or
+  gotchas in the writeup.
+\end{reflect}
+
+\newpage
+\section{Strings}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Mention HW: DNA
+\end{itemize}
+
+\subsection*{Guess My Number review}
+
+[If Guess My Number was used as example in class.]
+
+Open code from last time.  Talk about modifying it for other version.
+
+Remember:
+\begin{itemize}
+\item Variables are local!
+\item No recursion, just loops.  Talk about recursion later.
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  Started class by finishing Collatz from last time.  This ended up
+  taking a while since we had fun watching it print lots of stuff,
+  printing out record maxima, etc.  Students were very engaged and had
+  lots of ideas of things they wanted to try.
+\end{reflect}
+
+\subsection*{Strings}
+
+We sort of know about strings, but the only thing we can do with them
+so far is concatenate them with \verb|+|.
+
+\begin{itemize}
+\item Strings are \emph{sequences of characters}.
+
+\item We can reference individual characters in a string by their
+  \emph{index}: \verb|mystring[3]|.  Note that \emph{indices start at 0}.
+
+\item We can calculate the length of a string with \verb|len()|.
+  (Relationship of \verb|len| to valid indices?)
+
+\item String slices: \verb|mystr[a:b]|.  Have students play around to
+  figure out details?
+  \begin{itemize}
+  \item Characters starting at index $a$, up to \emph{but not
+      including} index $b$.
+  \item Can leave off first, or second, or both.
+  \item Negative indices count backwards from the end.
+  \end{itemize}
+
+\item We've seen \verb|+|: concatenation.
+\item \verb|*| does repetition.
+
+\item Strings have \emph{methods}, i.e. functions you can call on
+  strings.  Do \verb|help(str)|, \verb|help(str.upper)| etc.
+\item Show some useful methods: \verb|upper|, \verb|count|,
+  \verb|replace|, \verb|find|, \verb|isdigit|
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  Because of the time we took doing Colltaz, I only made it to here,
+  we didn't have time to write a practice function.  Just barely had
+  time to show them what I was looking for on the DNA HW.  But I ended
+  up incorporating the explode function into the lecture on lists
+  later, which worked well.
+\end{reflect}
+
+\subsection*{More while loop \& function practice}
+
+First, function to ``explode'' a string.  Write it collaboratively.
+
+\begin{verbatim}
+def explode(s):
+    i = 0
+    while i < len(s):
+        print s[i]
+        i += 1
+\end{verbatim}
+
+Even better if they make some bugs in the above, run it and see what
+is wrong.
+
+\subsection*{DNA HW intro}
+
+Show them HW, do a bit of it together to show them what they should
+do.  Make sure they understand that they should do everything at the
+Python prompt, they do not need to write a program!
+
+\newpage
+
+\section{While loop \& string practice}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: DNA Strings HW due Wednesday before class.
+\item Reminder: quiz next class on strings.
+\item Lab today/tomorrow.  Not easy!  Adding loops takes what we can
+  do up a few notches.  Please take the pre-coding design component
+  seriously.  It is already up --- take a look at it and start early,
+  if you have a chance.
+\end{itemize}
+
+\begin{reflect}{Brent, S'16}
+  I hadn't been able to fit in the bit about call stacks and
+  tracebacks before, so I stuck it in here.  That meant I didn't get
+  to the Collatz example at the end.
+\end{reflect}
+
+\subsection*{More while loop practice}
+
+Start writing comments before every function.  From now on they should
+always write comments for each function!  Comment should have three
+things:
+\begin{enumerate}
+\item Describe inputs
+\item Describe output (if any)
+\item Describe function behavior
+\end{enumerate}
+
+\begin{reflect}{Brent, S'16}
+  Potentially, this could be done using docstrings instead of
+  comments. Then the function comments will also show up in
+  \verb|help| and so on. I (Brent) don't think this is worth the
+  trouble: docstrings are Python-specific and have weird rules for
+  getting rid of whitespace that other triple-quoted strings don't
+  have; and having the description show up in \verb|help(...)| is only
+  motivating when working with multiple-module projects (especially
+  with code written by others).  In my opinion, it's better
+  to just emphasize good old commenting which will serve them well in
+  any language and doesn't require introducing any new syntax.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  What I did this time was to start with the ``volume of a box''
+  program we wrote a long time ago (in the run-up to Kepler/Newton
+  lab) and improve it:
+  \begin{itemize}
+  \item Showed them process of abstracting out into functions.
+  \item In particular, went over \verb|int_input| function, tried to
+    get it to work for negative numbers, and so on.
+  \end{itemize}
+\end{reflect}
+
+\begin{verbatim}
+# Inputs:
+#   - prompt: string to be used as a prompt
+# Output: none
+#
+# Repeatedly prompt the user for a number using the
+# given prompt, until they enter a valid integer.
+def int_input(prompt):
+    valid = False
+    while (not valid):
+        uinput = input(prompt)
+        if uinput.isdigit():
+            valid = True
+        else:
+            print "That's not a valid integer.  Try again!"
+    return int(uinput)
+\end{verbatim}
+
+Do version of \verb|int_input| that accepts negative numbers as well
+(uses indexing, slicing, \verb|or|).
+
+\begin{reflect}{Brent, S'17}
+  I didn't do any of the below: already did Collatz, etc.  Just spent
+  the whole period talking about function abstraction to get them
+  ready for doublets lab.
+\end{reflect}
+
+\begin{verbatim}
+import time
+
+# Inputs:
+#   - n: int to count down from
+# Output: none
+#
+# Print a countdown from the starting number to zero.
+def countdown(n):
+    while n > 0:
+        print str(n) + "..."
+        time.sleep(1)
+        n = n - 1
+    print "BLASTOFF!"
+\end{verbatim}
+
+Talk about \verb|n -= 1| syntax (``decrement'') and \verb|n += 1|
+(``increment'').  Can also use \verb|*=|, \verb|/=| etc.
+
+\begin{reflect}{Brent, S'16}
+  Got to this point with only 5 minutes left in class.  So I just
+  spent the five minutes telling them what the code I had in mind was
+  supposed to do, and told them they could try implementing it as
+  extra practice if they wanted.
+\end{reflect}
+
+Collatz Conjecture.  Idea: write a program to test the conjecture.
+What functions will we need?  Bottom-up approach.  Write each function
+and then test it independently.
+\begin{verbatim}
+# Inputs:
+#   - n: int
+# Output: int, one step of hailstone function on n
+#
+# Compute the hailstone function.
+def hailstone(n):
+    if n % 2 == 0:
+        return (n/2)
+    else:
+        return (3*n + 1)
+
+# Inputs:
+#   - n: int
+# Output: int, number of hailstone steps from n to reach 1
+#
+# Count the length of the hailstone sequence from the starting
+# number to 1.
+def collatz(n):
+    count = 0
+    while n != 1:
+        n = hailstone(n)
+        count += 1
+    return count
+
+# Inputs:
+#   - max: int, biggest number to test
+# Output: none
+#
+# Print numbers from 1 to max along with length of their Collatz chain
+def check_collatz_up_to(max):
+    n = 1
+    while n <= max:
+        print n, collatz(n)
+        n += 1
+\end{verbatim}
+
+(What happens if we take out \verb|max| check and just say
+\verb|while true|?  A legitimate use of an infinite loop!)
+
+\section*{LAB: Mutation is the Word (Doublets)}
+
+\begin{reflect}{Brent S'16}
+  This lab is a lot harder than the previous labs.  Definitely worth
+  warning them to start early, emphasizing that they probably won't
+  finish within the alloted lab time, can come and ask questions, etc.
+
+  One of the biggest confusions typically has to do with managing
+  information flow.  That is, now that we are using functions for
+  everything, variables are local, so need to pass things as
+  parameters and return values back.  I keep thinking about whether
+  there is a gentler way to introduce this but I'm not sure.  If we
+  tried to talk about ``managing information flow'' explicitly it
+  would just go over their heads until they had actually grappled with
+  it in a real program.  So perhaps the shock is unavoidable.
+
+  However, see \textbf{(CRAZY?) IDEA} in reflections above, after
+  coding bat lab.  Maybe switch loops and functions, so the doublets
+  lab is just writing top-level code with a bunch of loops---really
+  focusing on just the loops.  Then the next lab will get them to
+  think about abstracting functions from existing code.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  The lab went a lot better this time (though it was still hard!),
+  after (1) prefacing it with the ``Guess My Number'' lab which gave
+  them practice writing while loops, and (2) going over the process of
+  function abstraction in class, and encouraging them to first get a
+  working doublets program and THEN abstract it out into functions.
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Used a similar approach as last time, and it seemed to go well.
+\end{reflect}
+
+\newpage
+\section{Lists I}
+
+\begin{reflect}{Brent, S'17}
+  Just jumped right into lists, used the lab (printing chain of words)
+  as motivation.
+\end{reflect}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Quiz (strings)
+\item Distribute binary cards.  Learn the name of 0-bit pairing.
+\item REMINDER: you have late days you can spend on labs!
+\end{itemize}
+
+\subsection*{Quiz 5 (Strings)}
+\begin{verbatim}
+t = "PLEASEREADME"
+r = "astory"
+p = t[-2:] * 2
+r = r[(19 % 5) - 1:]
+z = p[:3] + r
+\end{verbatim}
+
+\subsection*{Lab (Doublets) review/hints}
+
+1-bit pairing with binary cards and discuss lab.  Questions?
+
+\subsection*{Lists}
+
+Lists are a lot like strings, but hold arbitrary data instead of
+characters.
+\begin{itemize}
+\item \verb|[]| is the empty list, like \verb|""| is the empty string.
+\item Can hold numbers, strings, anything you want.  Show
+  \verb|[1,2,3]| syntax.  Show \verb|type| on lists.
+\item Elements are ordered, in a sequence.  Indexed from zero.
+\item Show \verb|range| function.
+\item \verb|+|, \verb|*|, \verb|len()|, slices all work the same
+\end{itemize}
+
+\subsection*{Mutating lists}
+
+Strings are \emph{immutable}, lists are \emph{mutable}.
+
+\begin{verbatim}
+animals = ['cat', 'dog', 'bird']
+animals[1] = 'lemur'
+print animals
+\end{verbatim}
+Draw a stack diagram of the above situation.
+
+Other list mutation methods:
+\begin{itemize}
+\item \verb|t.append(element)| for adding to end
+\item Removal:
+  \begin{itemize}
+  \item \verb|t.pop(index)| by index, returns deleted elt
+  \item \verb|t.remove(element)| by element
+  \item \verb|del t[index]| by index, doesn't return anything BUT
+	\verb|del t[slice]| works too
+  \end{itemize}
+\end{itemize}
+
+\begin{reflect}{Brent, S'16}
+  Got through this lecture way faster than last time, leaving a good
+  10--15 minutes at the end.  So on the fly I came up with another
+  exercise as an example of while loops and building a list.  We wrote
+  \verb|read_inputs| all together.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  I pared this down even more---I didn't even show them \verb|pop|,
+  \verb|remove|, or \verb|del|, just showed them that they exist and
+  told them to look them up.  We then had plenty of time for writing
+  some practice code.  First I had them try to write
+  \verb|explode_list| with partners, then we wrote it all together.
+  Then, I had them work on \verb|read_inputs|, then got a volunteer to
+  come up and type while the class told them what to do.  This worked
+  super well!
+\end{reflect}
+
+\begin{verbatim}
+# Input: items (list)
+# Print the items in the list, one per line.
+def explode_list(items):
+    n = 0
+    while n < len(items):
+        print(items[n])
+        n += 1
+\end{verbatim}
+
+\begin{reflect}{Brent S'16}
+  This is the version from S'16:
+\end{reflect}
+
+\begin{verbatim}
+# Inputs: none
+# Output: a list of strings entered by the user
+#
+# Repeatedly prompt user for inputs until they type
+# 'quit', then return a list of all inputs.
+def read_inputs():
+    inputs = []
+    done = False
+    while not done:
+        word = input('Enter another input, or quit: ')
+        if word.lower() == 'quit':
+            done = True
+        else:
+            inputs.append(word)
+
+    return inputs
+\end{verbatim}
+
+\begin{reflect}{Brent, S'17}
+  And these are the versions from S'17:
+\end{reflect}
+\begin{verbatim}
+# Inputs: none
+# Output: list of strings entered by the user
+#
+# Repeatedly prompt the user for inputs until
+# they type 'quit', then return a list of all their inputs.
+def read_inputs():
+    answer = input("What would you like to list? ")
+    stuff = []
+    while answer != "quit":
+        stuff.append(answer)
+        answer = input("What would you like to list? ")
+    return stuff
+
+def read_inputs2():
+    answer = ''
+    stuff = []
+    while answer != "quit":
+        answer = input("What would you like to list? ")
+        if answer != 'quit':
+            stuff.append(answer)
+    return stuff
+\end{verbatim}
+
+\newpage
+\section{Lists II}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Project 1 is graded.  Let me know of any questions.  Let me know
+  if you want more feedback.
+\item Announce Exam 2.
+\end{itemize}
+
+\subsection*{Review}
+Find partner. \verb|animals| is a list, how to append 3 copies of
+\verb|"gerbil"| onto the end?  Go over possibilities.  This might take
+a while.  Try to get a bunch of different approaches from different
+groups.  Talk about \verb|append|, list repetition operator \verb|*|,
+concatenation operator \verb|+|, etc.
+
+\begin{reflect}{Brent, S'16}
+  As an illustration, here are all the suggestions my students came up
+  with:
+\begin{verbatim}
+animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
+
+# Ways to add 3 gerbils to the end of the list
+
+# Doesn't quite work:
+# animals.append('gerbil ' * 3)
+
+# Runtime error:
+# animals.append('gerbil') * 3
+
+# Works!
+# while len(animals) < 8:
+#    animals.append('gerbil')
+
+# Runtime error (too many arguments to append):
+# animals.append('gerbil', 'gerbil', 'gerbil')
+
+# Works!
+# animals.append('gerbil')
+# animals.append('gerbil')
+# animals.append('gerbil')
+
+# Same as 'gerbil' * 3
+# animals.append('gerbil' + 'gerbil' + 'gerbil')
+
+# Doesn't change animals
+# animals + ['gerbil', 'gerbil', 'gerbil']
+
+# Works!
+# animals = animals + ['gerbil', 'gerbil', 'gerbil']
+
+# Works!
+# gerbil_list = ['gerbil']
+# animals = animals + gerbil_list * 3
+
+# Almost works but not quite.
+# animals.append(['gerbil'] * 3)
+\end{verbatim}
+
+  I think this is a really great exercise. It really helps develop
+  their intuition and their grasp of the details.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  The exercise was not as useful/fun this time around.  The students
+  made fewer interesting mistakes, which I suppose is a good thing.
+\end{reflect}
+
+\subsection*{Lists and strings}
+
+Lists of characters are different than strings!
+
+\begin{itemize}
+\item Converting strings to list:
+  \begin{itemize}
+  \item \verb|list| function.
+  \item \verb|split()| method.
+\begin{verbatim}
+  s = "banana"
+  t = s.split("n")
+\end{verbatim}
+Yields \verb|["ba", "a", "a"]|.
+
+  \end{itemize}
+\item List to string: \verb|join()| method on delimiter.
+\begin{verbatim}
+  t = ['fun', 'sun', 'sub', 'rub']
+  delimiter = " -> "
+  delimiter.join(t)
+\end{verbatim}
+\end{itemize}
+
+\subsection*{Mutability, objects, and aliasing}
+
+Warm-up: what happens here?  Find partner \& decide.
+\begin{verbatim}
+nums  = [1,2,3]
+nums2 = nums
+del nums[1]
+print nums2
+\end{verbatim}
+
+Try it at IDLE prompt.  This is really weird.
+
+As hinted last time, the fact that lists are mutable opens a huge can
+of worms.  Let's start by pulling back the curtain a little bit.  Up
+until now we have talked about variables having values, but we need to
+be more precise.  Draw stack diagram with variables referencing two
+different lists.  Write these definitions on the board:
+
+\begin{itemize}
+\item Variables reference \emph{objects} which have a \emph{value}.
+\item Variables which reference objects that have the same value are
+  \emph{equal}.  You can test equality with \verb|==|.
+\item Variables which reference the \emph{same object} are
+  \emph{identical}. You can test identity with \verb|is| (though you
+  won't need this in the rest of the course).
+\end{itemize}
+
+\begin{reflect}{Brent, S'16}
+  Only made it to here---exercise with adding gerbils took a while,
+  but I think it was worth it.  Plan to quickly finish up the rest of
+  this lecture at the beginning of next class before starting on for
+  loops.  I can't take too long, though, since they need for loops for
+  their lab on the next day.
+\end{reflect}
+
+Do this at the REPL, with accompanying pictures:
+\begin{verbatim}
+>>> a = [1,2,3]
+>>> b = [1,2,3]
+>>> a == b
+True
+>>> a is b
+False
+>>> del a[0]
+>>> a
+[2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+False
+>>> a = b
+>>> a
+[1, 2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+True
+>>> a is b
+True
+>>> del a[0]
+>>> a
+[2, 3]
+>>> b
+[2, 3]
+\end{verbatim}
+Note in particular that the assignment \verb|a = b| does not copy the
+value of \verb|b| into \verb|a|, but just makes \verb|a|
+\emph{reference the same thing as} \verb|b|.
+
+This has implications for function parameters as well.  Consider:
+
+\begin{verbatim}
+def animal_release(animals):
+  while len(animals) > 2:
+  animals.pop(0)
+
+print animals
+animal_release(animals)
+print animals
+\end{verbatim}
+
+Ask: what gets printed?  Draw stack diagram to understand.
+
+Some related things:
+\begin{itemize}
+\item What if you really \emph{do} want to make a \emph{copy} of a
+  list, so modifying it doesn't modify the original?  You can write
+  \verb|some_list[:]|.  This is a dirty, terrible, disgusting hack.
+  Perhaps someday you will understand why I feel this way.
+\item Be careful about methods that modify vs functions that make a
+  new thing.  \eg \verb|list.sort()| modifies the list.  But
+  \verb|sorted(list)| makes a new list!  And of course
+  \verb|string.upper()| makes a new string because strings are
+  immutable.  Confusing, don't memorize: the point is you should be
+  careful and look up help to see what things do.  Show
+  \verb|help(list.sort)|, \verb|help(sorted)|, \verb|help(str.upper)|.
+\end{itemize}
+
+[INSERT OPTIONAL RANT ABOUT MUTATION HERE]
+
+\newpage
+\section{For Loops}
+
+\subsection*{Setup}
+
+\subsection*{For Loops}
+
+Recall our \verb|explode| function from a week or two ago:
+\begin{verbatim}
+def explode(s):
+  index = 0
+  while index < len(s):
+    print s[index]
+\end{verbatim}
+Recall how easy it was to make errors like starting index at the wrong
+place, using \verb|<=| instead of \verb|<|, and so on.  Well, it turns
+out there is a better way!
+\begin{verbatim}
+def explode(s):
+  for c in s:
+    print c
+\end{verbatim}
+Simply loops through each character in the string one at a time.  Each
+time through the loop the next character is assigned to \verb|c|.
+This also works for lists:
+\begin{verbatim}
+animals = ["cow", "chicken", "pig", "rabbit"]
+for animal in animals:
+  print "And on this farm he had a " + animal + "!"
+\end{verbatim}
+What do we lose, as compared to a \verb|while| loop?  The index. But
+actually, we don't!  Just have to cleverly put together a few things
+we have already seen:
+\begin{verbatim}
+for i in range(len(numbers)):
+  numbers[i] *= 2
+\end{verbatim}
+This is way better than using a \verb|while| loop since it rules out
+errors putting the starting or ending indices at the wrong number.
+
+\subsection*{For loop practice}
+
+\begin{verbatim}
+def count(s, c):
+    num = 0
+    for c2 in s:
+        if c2 == c:
+            num += 1
+    return num
+
+def find(s, c):
+    for i in range(len(s)):
+        if s[i] == c:
+            return i
+    return -1
+
+def find_all(s, c):
+    all_the_things = []
+    for i in range(len(s)):
+        if s[i] == c:
+            all_the_things.append(i)
+    return all_the_things
+\end{verbatim}
+
+\begin{reflect}{Brent, S'17}
+  Wrote the above three function signatures and explained what they
+  were supposed to do, had them work on them for a while.  Then I had
+  volunteers go up and type while the class told them what to do.  I
+  have mixed feelings about it---good to do once in a while but it
+  also felt a little dead (student volunteer isn't necessarily good at
+  getting everyone in the class involved).  But the exercise itself
+  was good, they wrote \verb|count| but then got stuck trying to get
+  \verb|find| to work, with lots of interesting errors.  We returned
+  to it in the next class.
+\end{reflect}
+
+\begin{verbatim}
+def print_each(s):
+    index = 0
+    while index < len(s):
+        c = s[index]
+        print(c)
+        index += 1
+
+def print_each_for(s):
+    for c in s:
+        print(c)
+\end{verbatim}
+
+\begin{verbatim}
+def nos(s):
+    news = ""
+    for c in s:
+        if c != "s":
+            news += c
+    return news
+
+def sum(t):
+    total = 0
+    for n in t:
+        total += n
+    return total
+
+def mean(t):
+    total = 0
+    for n in t:
+        total += n
+    return float(total) / len(t)
+
+def mean2(t):
+    return float(sum(t)) / len(t)
+
+def vacation(s):
+    for i in range(len(s) - 1):
+        if s[i] == s[i + 1]:
+            return True
+    return False
+
+def classify(strs):
+    for s in strs:
+        print ('*' * len(s))
+
+def powersof2(n):
+    the_powers = []
+    for i in range(n):
+        the_powers.append(2 ** n)
+    return the_powers
+
+def triangle(n):
+    total = 0
+    for k in range(1,n+1):
+        total += k
+    return total
+\end{verbatim}
+
+
+
+\section*{LAB: Caesar's Secrets}
+
+\begin{reflect}{Brent, S'17}
+  This lab seemed to go well, though it's definitely hard.  Most
+  students were not finished by the end of the lab period.
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Only had time to introduce for loops at the very end of the lecture
+  right before the lab.  So spent some time at the beginning of the
+  lab doing more exercises writing for loops, with mixed success (I
+  think it went better in Mark's lab than in mine).  In the end most
+  students were making progress on the lab by the end; a few had
+  finished; a few were just getting encrypt/decrypt to work.
+\end{reflect}
+
+\section{For loop practice}
+
+\subsection*{Setup}
+
+\subsection*{For loops: reading exercises}
+
+CLOSE COMPUTERS.
+Find bit-partners. Different one for each exercise.
+Go over each and try it.
+
+\begin{verbatim}
+def oogie(m: List[int]) -> int:
+    p = m[0]
+    for g in m:
+        if g > p:
+            p = g
+    return p
+
+def yayaya(q: List[str]) -> bool:
+    for y in range(len(q) - 1):
+        if q[y] == q[y + 1]:
+            return True
+    return False
+\end{verbatim}
+
+Then have them write \verb|is_sorted| function.
+
+Additional practice:
+
+\begin{verbatim}
+def pulu(r: int) -> List[int]:
+    b = []
+    for k in range(r):
+        b.append(k ** 3)
+    return b
+\end{verbatim}
+
+\begin{reflect}{Brent, S'17}
+  Made it through all of these (including writing \verb|is_sorted|);
+  in fact, we started by finishing \verb|find(c,s)| from last class
+  (which they hadn't quite gotten to work yet).  I think it was
+  a really useful exercise.
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Didn't make it through as many due to some technical hiccups, but
+  had them read oogie and yayaya, then had them write
+  \verb|is_sorted|.  Will need to spend a bit of time going over
+  \verb|is_sorted| next class.
+\end{reflect}
+
+\section{Exam 2 review}
+
+Spend a lecture doing and going over a practice exam.
+
+\section{Exam 2}
+
+\begin{reflect}{Brent, S'16}
+  In the Fall 2015 semester, Exam 2 was on the Wednesday right before
+  Fall Break.  In Spring 2016, it was on a Tuesday two weeks before
+  spring break. (The ``normal'' thing would have been to have the exam
+  review day on Friday, then the exam on Monday, and no lab on
+  Tuesday, but I was at SIGCSE on the Friday, so I gave them the
+  practice exam over the weekend while I was at SIGCSE, spent Monday
+  reviewing the practice exam, and held the exam during the lab slot
+  for that week.)
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  In Spring 2017, Exam 2 was on a Wednesday a week and a half before
+  spring break.  For lab the following day (Thursday) I had them start
+  on their projects, \emph{i.e.} not leave lab until they had a solid
+  project idea.
+
+  As usual this exam was a doozy. Average class score on the exam was
+  71, median 73.5, max 100 ($\times 2$), min 21 (ouch).
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Again the Wednesday 1.5 weeks before spring break; lab the same \&
+  following days again was used to start on project 2.
+
+  Average was much higher this time, 83.  I made it a bit easier by
+  not requiring them to *write* any for loops (though they still had
+  to read several).
+\end{reflect}
+
+\section{Exam wrap-up, demo project}
+
+\subsection*{Exam wrap-up}
+
+Hand back exams; quickly go over exam solutions.
+
+\subsection*{Demo project}
+
+Introduce Project 2 (word games).
+
+\begin{reflect}{Brent, S'18}
+  Did this at the beginning of lab instead of using class time on it.
+  Handed back exams and then went straight into recursion; this means I
+  will have three lectures on recursion and then give them the Friday
+  right before spring break off (so I can work on a conference paper
+  submission which is due that day).
+\end{reflect}
+
+Livecode the beginning of an exemplary Doublets lab.  Things to focus
+on:
+\begin{itemize}
+\item Start with \verb|main|.  Hierarchical decomposition; write stub
+  functions.
+\item Think about what information each function needs to do its job,
+  and what information it returns.
+\item Write \verb|get_starting_word| function.
+\item Start writing \verb|get_ending_word| function, realize that they
+  are going to have a lot of similar code.
+\item Abstract common part out into a new function, \verb|get_word|,
+  that takes a parameter describing the desired word.
+\item Stub out a single round of the game, then talk about adding a
+  while loop.
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  Instead of exam wrap-up I actually covered file I/O here, instead of
+  waiting until after spring break as I did in spring 2016. I think
+  it was useful for many students for their projects, if they wanted
+  to \eg pick random words, generate files with different word
+  lists, etc.
+\end{reflect}
+
+\section{Recursion I: intro}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Write stone-counting rules somewhere (see below)?
+\end{itemize}
+
+\subsection*{Stone counting}
+
+Rules:
+\begin{enumerate}
+\item You may not look at the bowl or the stones.
+\item You may only touch one stone.
+\item If someone gives you the bowl and asks you how many stones it
+  contains, you must eventually give the bowl back and answer
+  truthfully.
+\end{enumerate}
+Hand the bowl to a student and ask how many stones it contains.
+
+Recursion!  Functions that call themselves.  In a sense you were all
+``the same function'' because you were running the same program
+(rules).
+
+Factorial function: $n! = 1 \times 2 \times \dots \times (n-1) \times
+n$.  Let's implement in Python.
+\begin{verbatim}
+def fact(n):
+    product = 1
+    for k in range(1,n+1):
+        product *= k
+    return product
+\end{verbatim}
+Now consider $n! = (1 \times 2 \times \dots \times (n-1)) \times n =
+(n-1)! \times n$.  Also need to define $0! = 1$.  Can we translate
+this directly into Python?
+\begin{verbatim}
+def fact_rec(n):
+    if n == 0:
+        return 1
+    else:
+        result = fact_rec(n-1)
+        return result * n
+\end{verbatim}
+It works!
+
+Show call stack.  Every recursive call has its own copy of local
+variables!
+
+Big idea: transform a problem into a slightly simpler version (or more
+than one), solve that simpler problem, do some work to compute an
+answer to the original problem.
+
+Typically:
+\begin{itemize}
+\item Base case(s): simple case where we know the answer without doing
+  any work.  Always do this first!
+\item Recursive case(s): make a recursive call to solve a slightly
+  simpler (i.e. closer to the base case) problem.
+\end{itemize}
+
+Then re-code factorial function live, adding a bunch of comments and
+  narrating thought process.
+
+% Another example: Fibonacci function.  Show mathematical definition,
+% implement in Python.  Show how slow it is, show call tree.  In fact
+% recursion is not always the best way to do things.
+
+% If time, brief intro to Python turtle library and Kock snowflake (in
+% preparation for fractal lab).
+
+\section{Recursion II: recursive functions}
+
+Start by reinforcing ``base case + recursive case''.  Talk about
+``leap of faith'': trust that recursive calls will work without
+thinking about how.  Trust your future self.  DON'T think about
+unwinding entire recursion stack.  Just think about ONE level.
+
+Up until now all the examples we've done have been math functions.
+Let's do a few more ``computer-sciency'' examples processing strings
+and lists.  Note, in Python this is not the best way to implement
+these functions (though in some languages it is).  Just for
+illustration purposes.  If you take 151 you will start to see real,
+legitimate uses of recursion, \eg processing trees.  (The one
+legitimate use of recursion using only what you know is what we will
+be doing in lab---making pretty pictures!)
+
+\begin{itemize}
+\item Work in pairs to implement \verb|product|.
+\item Have them work in pairs to implement string \verb|reverse|.
+\item Have them work in (different?) pairs to implement \verb|is_palindrome|.
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  Talked about thought process for writing recursive functions,
+  re-coded factorial function.  Lots of great questions.  Then looked
+  at \texttt{sum} function again which we actually wrote in the
+  previous class (in retrospect it was probably premature to do
+  that).  Then only got as far as having them work on writing a
+  \texttt{product} function on paper.  Ended with a spirited debate
+  about what \texttt{product([])} ought to be.  Plan to pick up where
+  we left off next time.
+\end{reflect}
+
+\section{Recursion III}
+
+\begin{reflect}{Brent, S'17}
+  This semester I decided to spend three lectures on recursion instead
+  of two.  It fit the schedule better (I didn't want to start a brand
+  new topic for one day before spring break) and I think it is really
+  needed.
+\end{reflect}
+
+Finish discussion of recursive \texttt{product} implementation,
+beginning with why \texttt{product([])} should be $1$ rather than $0$:
+
+\begin{itemize}
+\item Economy of expression---more elegant definitions, with fewer
+  special cases, usually means you are on the right track in
+  mathematics; those definitions end up being not just more economical
+  but also more useful and more consistent with other things.
+\item This is the same reason $0! = 1$.
+\item Validates the identity \texttt{product(xs + ys) = product(xs) * product(ys)}.
+\end{itemize}
+
+Have them work in pairs to implement string \texttt{reverse}.
+
+\section*{LAB: Fractal Recursion}
+
+\begin{reflect}{S' 17}
+  This lab is fun and seemed to go reasonably well, though attendance
+  was poor due to being right before spring break and having project 2
+  due the same day.  In the end I'm also not sure how much it really
+  teaches them about recursion.  But to be honest I don't know how to
+  incorporate recursion more fully into the curriculum without
+  changing the programming language we use.
+\end{reflect}
+
+\newpage
+
+\section{Dictionaries}
+
+\begin{reflect}{Brent, S'16}
+  In F'15 we did file I/O first and then dictionaries.  In S'16 it
+  worked better to do dictionaries first --- two lectures right before
+  spring break, and then on the first day back from spring break cover
+  file I/O along with a dictionary review in preparation for the
+  dictionary lab on the next day.
+\end{reflect}
+
+Recall lists.  Draw an alternate picture of lists as a mapping from
+indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
+can be thought of as
+\begin{verbatim}
+0 -> 'tapir'
+1 -> 'ferret'
+2 -> 'alligator'
+\end{verbatim}
+$0$, $1$, $2$ are \emph{keys}, animal names are \emph{values}.  A
+\emph{mapping} or \emph{association} between keys and values.  A
+\emph{dictionary} is the obvious generalization of this to arbitrary
+keys instead of just 0, 1, 2 \dots.  For example, suppose we are
+keeping these animals in a zoo and we want to keep track of them by
+their habitat ID numbers.
+\begin{verbatim}
+'A23' -> 'tapir'
+'B19' -> 'ferret'
+'B12' -> 'alligator'
+\end{verbatim}
+Or we could use numbers as keys.  Important point: keys have to be
+immutable.  So we can't use \eg lists or dictionaries as keys.
+
+Show how to make this dictionary.
+\begin{itemize}
+\item Write using curly braces and colons.
+\item Alternatively, start with empty one and add them.
+\end{itemize}
+
+Dictionaries are like functions mapping keys to values.  Consequences:
+\begin{itemize}
+\item There can only be one value per unique key.  (If you want
+  multiple values, use a list.)
+\item But there can be multiple keys with the same value.
+\item You can only look up a value by key, not a key by value.
+\end{itemize}
+
+
+Other things we can do with a dictionary:
+\begin{itemize}
+\item Get list of all keys with \verb|keys()|
+\item Get list of all values with \verb|values()|
+\item Check if a key is in the dictionary using \verb|in|
+\item Ask for the number of keys with \verb|len|
+\item Delete a mapping with \verb|del|
+\item Iterate over keys with \verb|for|
+\end{itemize}
+
+Show
+\url{https://docs.python.org/2.7/library/stdtypes.html#mapping-types-dict}.
+
+\begin{reflect}{Brent, S'17}
+  Only made it to here.  Did frequency counting the following class.
+\end{reflect}
+
+Rewrite \verb|frequency_counts(s)| to return a dictionary.  Why this is
+better: directly look up by letter value.  No need to use \verb|ord|
+or alphabet string etc.
+
+\newpage
+\begin{verbatim}
+# Input: ...
+# Output: ...
+def frequency_counts(s):
+    freqs = {}
+    for c in s:
+        if c not in freqs:
+            freqs[c] = 0
+        freqs[c] += 1
+
+    normalize(freqs)
+    return freqs
+
+# Input: ...
+# Output: ...
+def normalize(d):
+    total = 0
+    for k in d:
+        total += d[k]
+
+    for k in d:
+        d[k] /= float(total)
+\end{verbatim}
+
+\begin{reflect}{Brent, S'18}
+  Made it through writing \verb|frequency_count| (but not
+  \texttt{normalize}).
+\end{reflect}
+
+\newpage
+\section{Dictionaries practice}
+
+\begin{reflect}{Brent, S'17}
+  Instead of doing Fibonacci and memoization, we just kept going with
+  writing frequency count functions.  I think it was a much better use
+  of class time!  Memoization was a fun throwawy topic to do right
+  before spring break, but it doesn't serve much of a pedagogical
+  purpose (other than being a fun example of the use of dictionaries).
+\end{reflect}
+
+Naive Fibonacci function.  Understand why it is so slow.  Then
+use a dictionary to memoize.  Have them write memo code.
+
+Then memoize hailstone function!
+
+\begin{verbatim}
+
+# Fibonacci numbers
+# F_0 = 0
+# F_1 = 1
+# F_n = F_(n-1) + F_(n-2)
+#
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
+
+# Input: nonnegative int n
+# Output: F_n
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        return fib(n-1) + fib(n-2)
+
+# This is really slow!  The computer is doing lots of
+# repeated, unnecessary, and redundant work.
+#
+# Idea: get the computer to remember previously
+# computed values using a dictionary.
+# Key = n, Value = F_n.
+#
+# (This is called memoization.)
+
+fibs = {0: 0, 1 : 1}
+
+def fib_memo(n):
+    if n not in fibs:
+        fibs[n] = fib_memo(n-1) + fib_memo(n-2)
+    return fibs[n]
+
+# Collatz conjecture
+
+def hailstone(n):
+    if n % 2 == 0:
+        return n / 2
+    else:
+        return 3*n + 1
+
+hailstone_lens = {}
+
+# Input: int n
+# Output: Number of iterations of 'hailstone' before reaching 1.
+def hailstone_length(n):
+    if n == 1:
+        return 0
+    elif n not in hailstone_lens:
+        hailstone_lens[n] = 1 + hailstone_length(hailstone(n))
+
+    return hailstone_lens[n]
+
+\end{verbatim}
+
+\newpage
+
+\begin{reflect}{Brent, S'16}
+  This is where spring break fell in S'16.
+\end{reflect}
+
+\section{File I/O, dictionary review}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item HW for next class: read section I of Zen.
+\end{itemize}
+
+Our programs have no state between each time they are called.
+Everything is stored in memory during the program, but afterwards,
+it's all gone.  This is RAM.  We need hard drive storage to keep it
+around.  Save and read things in files.
+
+To write to a file:
+
+\begin{verbatim}
+fout = open("myfile.txt", "w")
+\end{verbatim}
+
+then to save data in the file, write out as strings:
+
+\begin{verbatim}
+fout.write("hello\n")
+fout.write("world\n")
+fout.close()
+\end{verbatim}
+Note the newline characters.
+
+To read from a file:
+
+\begin{verbatim}
+fin = open("myfile.txt", "r")
+\end{verbatim}
+
+Two ways to get stuff out of the file.
+
+\begin{verbatim}
+s = fin.read()
+\end{verbatim}
+
+which returns a string that includes all the carriage returns, or
+
+\begin{verbatim}
+s = ""
+for line in fin.readlines():
+    s += line.strip()
+\end{verbatim}
+
+which strips them out of each line as it is added. \verb|readlines()|
+returns a list of strings.
+
+After both, say \verb|fin.close()| to finish accessing the file.
+
+Do some dictionary practice: write a function to read in a file, do
+frequency count of words.  Also show them how to split up a line into
+words since they will need that in the lab.
+
+\section*{LAB: Sentiment Analysis}
+
+\begin{reflect}{Brent, S'16}
+  I wrote this lab fresh in S'16, based on a Nifty Assignment @
+  SIGCSE.  It replaced the Gibberish Generator lab from the previous
+  semester, which was way too difficult.  Overall I think the new lab
+  went over very well.  It seemed to have the right level of
+  difficulty and gave the students good practice with dictionaries.
+\end{reflect}
+
+\section{Zen Reading discussion}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item HW: system analysis (see below)
+\end{itemize}
+
+\subsection*{Discussion}
+
+\begin{itemize}
+\item somewhat confusing? yes.
+  \begin{itemize}
+  \item you picked up in the middle of a journey the author is taking with his son
+    and friends across the country on a motorcycle.
+  \item along the way he talks about the philosophy of quality, goodness, etc,
+    this excerpt is groundwork for that discussion
+  \end{itemize}
+
+\item classical vs romantic understanding
+  \begin{itemize}
+  \item underlying form vs appearance
+  \item negative views of each side (dull, uninteresting for
+    classical, frivolous, erratic for romantic)
+  \item masculine vs feminine association? Sexist?  Not really, he's
+    just making an observation about European culture, context means
+    these are not determined but cultural associations.
+  \end{itemize}
+\item How is CSCI related to these understandings? Why did we read
+  this?
+  \begin{itemize}
+  \item classical, definitely but elements of romantic too
+  \item creativity of solutions?  choices in problem solving, uniqueness
+    of approaches to projects, labs
+  \end{itemize}
+\item application of classical ``analysis'' to motorcycle, talk through
+  some of the details of the diagrams
+\item ``impossible to understand unless you already know how one works''
+\item What is the ``intellectual scalpel''?
+  \begin{itemize}
+  \item \eg knife diving up the motorcycle
+  \item no two motorcycle manufacturers divide same way
+  \item romantic part of how this choice is made
+  \item this skill of using the knife has been what we have been
+    practicing all semester
+  \end{itemize}
+\item back to CSCI connection
+  \begin{itemize}
+  \item when we have talked about data types, (int, bool, string, list, dict)
+    they have been ways we use the knife to separate information
+  \item they are all what we will now call OBJECTS
+  \item we want to make our own new datatypes for many different situations
+  \item two main pieces to make an object, components and functions, just like motorcycle above
+    hierarchies
+  \end{itemize}
+\item component hierarchy
+  \begin{itemize}
+  \item has-a relationship
+  \item eventually get to atomic elements (int, bool, string, list etc)
+  \end{itemize}
+\item function hierarchy
+  \begin{itemize}
+  \item is-a relationship
+  \item \eg motorcycle is a vehicle, so is a bicycle, boat, truck, train, spaceship.
+  \item all related by function
+  \end{itemize}
+\end{itemize}
+
+  Let's do an example together: airport.  First has-a hierarchy.  Then
+  make some is-a hierarchies.  Talk about components, their functions
+  (NOT their purpose!), and how they relate to one another.
+
+  Explain assignment: analyze a system in groups.  Be prepared to
+  present next class.
+
+\subsection*{System analysis HW}
+
+Split into groups of 3 or 4 (use binary cards), have each group choose
+a system:
+
+\begin{itemize}
+\item Hospital
+\item Soccer game
+\item College class
+\item US Government
+\item Zoo
+\item Airport
+\end{itemize}
+
+For Monday, analyze your system.
+\begin{itemize}
+\item Components?
+\item Functions of components?
+\item Information flow bewteen components?
+\item Has-a hierarchy
+\item One or more is-a hierarchies involving some of the components
+\end{itemize}
+
+Prepare a presentation, \emph{use projector} (don't waste time drawing
+on board) and address all 5 of the above things.
+
+\begin{reflect}{Brent, S'17}
+  I left out the system analysis HW this time around.  It didn't feel
+  to me like it was pulling its weight pedagogically, especially since
+  this semester I did not cover inheritance.
+\end{reflect}
+
+\section{System/hierarchy analysis presentations}
+
+\newpage
+\section{Intro to classes \& objects}
+
+Birthday cake problem:
+\begin{verbatim}
+  # If n lit candles, blow out a random # between
+  #   1 and n
+  # How many blows does it take (on average)
+  #   before they are all out?
+\end{verbatim}
+
+\begin{itemize}
+\item Introduce idea of objects:
+\begin{verbatim}
+# We can package up data into "objects"
+# Objects have functions, i.e. things they
+#   can do. aka "Methods".
+
+# Python "classes" allow us to design our
+#   own new kinds of objects.
+\end{verbatim}
+\item Introduce idea of classes:
+\begin{verbatim}
+# class = template for objects
+# an object is an "instance of" a class
+# e.g. class = Car, object = my car
+\end{verbatim}
+\item Make empty \verb|Cake| class.
+\item Show how we can make a \verb|Cake| object.
+\item Show how we can set a variable, \verb|num_candles|, inside it.
+  Draw stack/memory diagram.
+\item Create an \verb|__init__| method with a parameter. (Explain
+  \verb|self|; explain \verb|__init__|.)
+\item Create \verb|blowout| and \verb|allout| methods.
+\item Fill out the rest of the simulation:
+\begin{verbatim}
+class Cake:
+
+    # __init__ is a special method
+    #   that gets called when a
+    #   new object is created.
+    #   i.e. when Cake() is called.
+    def __init__(self, num_candles):
+        # self is a special first parameter
+        # that gets filled in by Python
+
+        # self.candles is a variable in the
+        #   object being created
+        #   (candles = ... would make a local var)
+        self.candles = num_candles
+
+    # Methods = things that all Cakes can do
+
+    def blowout(self):
+        n = random.randint(1, self.candles)
+        self.candles -= n
+
+    def allout(self):
+        return (self.candles == 0)
+
+
+def happy_birthday(c):
+    count = 0
+    while not c.allout():
+        c.blowout()
+        count += 1
+
+    return count
+
+def average_blows(num_candles, trials):
+    total = 0
+    for i in range(trials):
+        c = Cake(num_candles)
+        total += happy_birthday(c)
+    return total / float(trials)
+
+def main():
+    for num_candles in range(100):
+        print num_candles, average_blows(num_candles, 10000)
+
+main()
+\end{verbatim}
+\item Run it and paste output into Excel, do a regression to show that
+  it is close to natural log.
+\end{itemize}
+
+\newpage
+\section*{LAB: Die Hard/Water Jug}
+
+\begin{reflect}{Brent, S'17}
+  This lab seemed to go pretty well this year.  The new step that
+  forced them to write a test function helped a LOT!  I know of
+  several groups that started out with a buggy implementation of the
+  WaterJug class and then ended up debugging it through writing tests
+  and getting the tests to pass---precisely what we would hope for
+  such an exercise.  We should probably figure out ways of
+  incorporating this approach into other labs as well.
+\end{reflect}
+
+\newpage
+\section{More classes \& objects}
+
+Traffic light example.  Main point: encapsulation, abstraction.
+
+\begin{verbatim}
+# Traffic light
+#
+# How would you model it in Python?
+# What functions should it have?
+# How would it work?
+
+# Possible functions:
+#   - separate red, green, yellow light functions
+#   - interval function
+#   - sensor
+#   - change to next color
+#   - say what the current color is
+#   - run
+# Variables / state:
+#   - current color
+#   - timer (time left until next change?)
+
+
+# Version 1:
+#   - easy to write
+#   - tedious (imagine cycling through 20 colors)
+#   - difficult to change
+class TrafficLight:
+
+    # Variables:
+    #   - current_color (string)
+
+    # Create a new red traffic light
+    def __init__(self):
+        self.current_color = "RED"
+
+    # Change to next color
+    def change(self):
+        if self.current_color == "RED":
+            self.current_color = "GREEN"
+        elif self.current_color == "GREEN":
+            self.current_color = "YELLOW"
+        elif self.current_color == "YELLOW":
+            self.current_color = "ORANGE"
+        elif self.current_color == "ORANGE":
+            self.current_color = "RED"
+        else:
+            print "The sky is falling!!"  # This should never happen
+
+    # Return the current color
+    def color(self):
+        return self.current_color
+
+# Version 2:
+# Use a dictionary of colors
+class TrafficLight2:
+
+    # Variables:
+    #   - current_color
+    #   - color_dict
+
+    def __init__(self):
+        self.current_color = "RED"
+        self.color_dict = \
+          { "RED" : "GREEN",
+            "GREEN" : "YELLOW",
+            "YELLOW" : "ORANGE",
+            "ORANGE" : "RED" }
+
+    def change(self):
+        self.current_color = self.color_dict[self.current_color]
+
+    def color(self):
+        return self.current_color
+
+# Version 3: list of colors
+class TrafficLight3:
+
+    # Variables:
+    #   - color_list
+    #   - current_index
+
+    def __init__(self):
+        self.color_list = ["RED", "GREEN", "YELLOW", "ORANGE"]
+        self.current_index = 0
+
+    def change(self):
+        self.current_index += 1
+        self.current_index %= len(self.color_list)
+
+    def color(self):
+        return self.color_list[self.current_index]
+
+def main():
+    t = TrafficLight3()
+    print t.color()
+    for i in range(10):
+        t.change()
+        print t.color()
+
+main()
+\end{verbatim}
+
+\section*{ASSIGN FINAL PROJECT}
+
+\begin{reflect}{Brent, S'16}
+  Things I would do differently next time:
+  \begin{itemize}
+  \item Give them a sample final project design, so they have an idea
+    of the level of detail we are looking for (I am working on one)
+  \item Spend more effort emphasizing the importance of the
+    presentation, and what we are looking for.  In S'16 I got far too
+    many terrible presentations of the form ``go to the front of the
+    class and show off the code extemporaneously''.  Most students
+    obviously did not prepare very much.
+  \end{itemize}
+\end{reflect}
+
+\section{Yet More classes \& objects}
+
+Mechanical pencil exercise.  Have them work in teams to code a class
+representing a mechanical pencil.  Paste code into Google doc, look
+through it together.
+
+\begin{reflect}{Brent, S'16}
+  This exercise doesn't work very well when the students don't have
+  laptops.  I skipped it and just went on to the next lecture
+  (modelling cards), intending to give them a HW assignment where they
+  get some practice designing classes.
+\end{reflect}
+
+\section{Yet Even More classes \& objects}
+
+Card and Deck examples.
+\begin{itemize}
+\item Make \verb|Card| class with \verb|rank|, \verb|suit| (strings),
+  and \verb|face_up| (boolean).  Though can leave \verb|face_up| until
+  later.  Just has getter methods.  Write \verb|__repr__|. (If usung
+  \verb|face_up|, \verb|__repr__| should return \verb|**| or something
+  like that if face down.)
+\end{itemize}
+
+\section{Still Yet Even More classes \& objects}
+
+\begin{itemize}
+\item Make \verb|Deck| class with list of cards.  Make \verb|__init__|
+  (create 52-card deck), \verb|__repr__|, \verb|shuffle| (use
+  \verb|random.shuffle|), \verb|draw| (draw one card), \verb|add|,
+  \verb|deal(n)| (draw $n$ cards).  Make \verb|sort| method; go back
+  and add \verb|__lt__| to \verb|Card| class.
+\item If time, introduce \verb|Hand| which inherits from \verb|Deck|.
+  Is-a.  Add \verb|reveal|, \verb|value| methods.
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  I deemphasized teaching them about inheritance, instead choosing to
+  just focus on encapsulation and data abstraction.  So I modified the
+  example to do without inheritance.  We just used Deck for both decks
+  and hands, and our Player class has a boolean to tell which kind of
+  player it is.
+\end{reflect}
+
+\section*{LAB: Processing}
+
+\begin{reflect}{Brent, S'17}
+  \textbf{VERY IMPORTANT, FOR NEXT TIME}: download Processing ahead of
+  time and distribute it to students on a few USB drives!  It took
+  \emph{forever} having all the students download it simultaneously at
+  the start of lab.  Some students weren't really able to get started
+  until over an hour into the lab period.
+
+  Fortunately other than that the lab seemed to go well.
+\end{reflect}
+
+\section{Further Still Yet Even More classes \& objects}
+
+\begin{itemize}
+\item Finish \verb|Hand|.
+\item Introduce \verb|Player|, \verb|HumanPlayer|,
+  \verb|ComputerPlayer|.
+\item Finish writing blackjack.
+\end{itemize}
+
+\begin{reflect}{Brent, S'16}
+  I spent 4 lectures going through blackjack in S'16.  3.5 would
+  probably be enough but I couldn't quite squeeze it into 3.  I spent
+  the extra half-lecture doing an empirical exploration of different
+  play strategies, pitting computer players using different algorithms
+  against each other in 1000's of games and printing the winning
+  percentages.  Conclusions: only choosing to hit when you have a very
+  small number of points (\eg 5)---or even \emph{never} choosing to
+  hit---actually does much better than one might expect.  You can
+  still end up winning around 40\% of the time.  On the other hand,
+  still choosing to hit even when you have 17 or more points quickly
+  gets very bad, because you are almost guaranteed to bust.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  This semester I spent 4 lectures on blackjack and we didn't even
+  make it to the end!
+\end{reflect}
+
+\newpage
+\section{Queues (2 lectures)}
+
+Start with a discussion of the queue data structure itself and why it
+would be useful: model lines of people in the supermarket or at a bank
+(determine why each has a different way of organizing people (multiple
+lines with one checkout person each, vs one line with multiple
+tellers)?), processes waiting for a turn to use the processor, network
+packets waiting to be sent, etc.
+
+Walk through the methods of a queue
+(\verb|add, remove, size, is_empty|) and some important words (front,
+back) and write up the super class \verb|Queue| with all the method bodies
+being \verb|pass|.  We are going to write two different implementations.
+
+Easiest way (in terms of lines of code) is to implement a queue is to
+use lists: they already do everything we need, and we're just
+constraining the interactions to be with the front \verb|[0]| and back
+\verb|[-1]|. Code up the \verb|ListQueue| class together.
+
+Then we test \verb|ListQueue| with a \verb|main| method (see
+\verb|queuetester.py|):
+
+\begin{verbatim}
+import time
+
+def main():
+    q = ListQueue()
+
+    for power in range(1,7):
+
+        # Get starting time
+        start = time.time()
+        # Compute 10^power
+        n = 10 ** power
+
+        # Add and remove 10^power times
+        for i in range(n):
+            q.add(i)
+        for i in range(n):
+            q.remove()
+
+        # Get ending time
+        end = time.time()
+
+        # Print power and elapsed time in seconds
+        print power, end - start
+
+main()
+\end{verbatim}
+
+As we put stress on the queue with larger numbers, we see it's not a
+linear relationship, but quadratic. $10^7$ is a good place to stop,
+since it takes (on the order of) 100s of seconds to complete.  Could
+make a log-log plot of the size vs the time.  Give a hand-wavy
+explanation why the performance is quadratic: $1 + 2 + \dots + n$.
+
+Perhaps we could do better with a more specialized implementation,
+since we only really care about the front and back.
+
+Discuss the \verb|Node| abstraction. Break up a list into individual
+pieces that fit together like Legos. It's a recursive data type,
+something that stores an element and another \verb|Node| as
+components.  This requires a discussion of the word \verb|None|. We've
+seen it as the return value of a void function. Python has a word for
+``nothing'', and we can use that word when we need a variable but it has
+no value.
+
+How do we use this to make a Queue? Make the \verb|LinkedQueue| class,
+and have two components in \verb|__init__|, \verb|front| and
+\verb|back|, which start off as \verb|None|.
+
+Write \verb|size| (one of two ways: by adding recursive method to
+\verb|Node|, or iterative \verb|size| method which walks down list
+until current reference is \verb|None|) and \verb|is_empty|, base it
+on \verb|self.front| being empty.
+
+First, try to complete \verb|add| and \verb|remove| the natural, but
+wrong, way. A node is then someone standing in line. When people stand
+in lines, they look at the person in front of them. So we start with
+the \verb|is_empty| case, and set \verb|set.front = Node(e)| and
+\verb|self.back = self.front|. This is ok.
+
+We then write the case when there are already people in line. We have a new
+element to add to the back, so we write
+
+\begin{verbatim}
+temp = Node(e)
+temp.next = self.back
+self.back = temp
+\end{verbatim}
+to reset the \verb|back| pointer. All looks good so far.
+
+But we can't remove people from the queue easily. We can get the
+element we need from \verb|self.front|, but who is the next
+\verb|self.front|? \verb|self.front.next == None|, and this is a problem. We
+could walk from the back to get the element right behind \verb|self.front|,
+with complicated two-finger algorithm, and it takes a long time
+(totally negating any benefit from doing something other than a
+list). Boo.
+
+So instead, we reverse the orientation of everyone in line. You stand in
+line backwards and stare at the person behind you. They are your next. [If
+you do this in real life, people will get a little uncomfortable. Just go
+with it, computer scientists are weird sometimes because it's the right
+thing to do, like starting to count at 0\dots]
+
+Then we rewrite \verb|add| to match, and finally we can write a remove
+method, to set \verb|self.front = self.front.next|.  Both are now
+constant time.
+
+How does this fare with our tests? For small numbers, a little more
+expensive. The overhead of making new \verb|Node| objects all the time
+is seen.
+
+But as it gets larger, the time is linear with the size. For $10^6$
+and beyond, \verb|LinkedQueue| will beat \verb|ListQueue| hands
+down. (Go back and plot in Excel?)
+
+Finish with discussing how this analysis and construction of data
+structures is at the core of the science part of computer science, and will
+be heavily discussed in CSCI 151 with more formal tools and for more
+complicated structures, within the context of Java.
+
+\section{Fun with Processing}
+
+\begin{reflect}{Brent, S'16, S'17}
+  In both S'16 and S'17 I ended with a class or two left over.  So I
+  have been doing some live coding in Processing, both as an example
+  of good code organization with Processing (which helps the students
+  using Processing for their final project) and just for fun.  I code
+  up a physically semi-realistic simulation of balls bouncing off each
+  other and line segments.
+\end{reflect}
+
+\newpage
+\section*{LAB: Coding bat}
+
+We don't tend to do this lab anymore; keeping it here at the end for
+posterity's sake.
+
+\begin{reflect}{Brent, S'16}
+  This seemed to go well, and seemed helpful.  I always think students
+  are going to finish these really quickly but it actually seems like
+  just the right amount.  One or two actually finished
+  \verb|make_bricks|.  Several were working on it by the end.  Others
+  were at various points.  Only one or two were really struggling.
+\end{reflect}
+
+\noindent
+\begin{reflect}{Brent, S'16}
+  \textbf{(CRAZY?) IDEA}: Maybe we should switch the order of loops
+  and functions.  The basic outline would be to replace the Coding bat
+  lab with a version of Doublets where they \emph{don't} use any
+  functions.  Then, we learn about functions and give them another lab
+  where they get to practice taking existing top-level code and
+  abstracting it into functions.  We probably can't have them actually
+  work on Doublets because they might not be able to use their own
+  code and we don't want to distribute a solution.  So instead we
+  could give them a similar sort of word-game program, written as all
+  top-level code, and have a lab which walks them through abstracting
+  out more and more functions until the whole thing is composed of
+  functions.  I'm imagining something where we provide a lot of
+  hand-holding with the first few functions they extract, and then
+  give them more and more autonomy as the lab proceeds.
+
+  What's the motivation? Students can get the basic concept of writing
+  a function that takes inputs and gives an output (with Coding Bat),
+  but this does not at all mean that they understand how a function is
+  used to abstract out some common pattern, and how information needs
+  to flow between functions (into parameters and back out through the
+  return value).  Telling them ``do this complicated lab'' and ``you
+  have to use only functions'' actually gets them off on the wrong
+  foot: they \emph{start} the lab by trying to write functions (which
+  often do inconsistent or nonsensical things) rather than starting by
+  writing working code and then thinking about how to abstract it into
+  functions.
+\end{reflect}
+
+
+\end{document}
