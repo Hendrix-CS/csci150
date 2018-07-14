@@ -1262,6 +1262,8 @@ can just return \verb|x % y == 0| directly.
 \newpage
 \section{Functions III: Abstraction (M 9/24)}
 
+\textbf{Brent is gone at ICFP}
+
 XXX WRITE ME
 
 Redo Collatz example, take code that we wrote before and successivly
@@ -1319,6 +1321,8 @@ def int_input(prompt):
 
 \newpage
 \section{Strings (W 9/26)}
+
+\textbf{Brent is gone at ICFP}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1415,6 +1419,8 @@ Python prompt, they do not need to write a program!
 \newpage
 \section{Execution tracing with a function stack (F 9/28)}
 
+\textbf{Brent is gone at ICFP}
+
 \subsection*{Setup}
 \begin{itemize}
 \item XXX Reminder: DNA Strings HW due Wednesday before class.
@@ -1451,6 +1457,8 @@ def countdown(n):
 
 \newpage
 \section{Lists I (M 10/1)}
+
+XXX schedule!
 
 \subsection*{Setup}
 
@@ -1570,6 +1578,8 @@ def read_inputs2():
 
 \newpage
 \section{References, for loops (W 10/3)}
+
+XXX schedule!
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1840,55 +1850,53 @@ def print_each_for(s):
         print(c)
 \end{verbatim}
 
-\begin{verbatim}
-def nos(s):
-    news = ""
-    for c in s:
-        if c != "s":
-            news += c
-    return news
+% \begin{verbatim}
+% def nos(s):
+%     news = ""
+%     for c in s:
+%         if c != "s":
+%             news += c
+%     return news
 
-def sum(t):
-    total = 0
-    for n in t:
-        total += n
-    return total
+% def sum(t):
+%     total = 0
+%     for n in t:
+%         total += n
+%     return total
 
-def mean(t):
-    total = 0
-    for n in t:
-        total += n
-    return float(total) / len(t)
+% def mean(t):
+%     total = 0
+%     for n in t:
+%         total += n
+%     return float(total) / len(t)
 
-def mean2(t):
-    return float(sum(t)) / len(t)
+% def mean2(t):
+%     return float(sum(t)) / len(t)
 
-def vacation(s):
-    for i in range(len(s) - 1):
-        if s[i] == s[i + 1]:
-            return True
-    return False
+% def vacation(s):
+%     for i in range(len(s) - 1):
+%         if s[i] == s[i + 1]:
+%             return True
+%     return False
 
-def classify(strs):
-    for s in strs:
-        print ('*' * len(s))
+% def classify(strs):
+%     for s in strs:
+%         print ('*' * len(s))
 
-def powersof2(n):
-    the_powers = []
-    for i in range(n):
-        the_powers.append(2 ** n)
-    return the_powers
+% def powersof2(n):
+%     the_powers = []
+%     for i in range(n):
+%         the_powers.append(2 ** n)
+%     return the_powers
 
-def triangle(n):
-    total = 0
-    for k in range(1,n+1):
-        total += k
-    return total
-\end{verbatim}
+% def triangle(n):
+%     total = 0
+%     for k in range(1,n+1):
+%         total += k
+%     return total
+% \end{verbatim}
 
-
-
-\section*{LAB: Caesar's Secrets}
+\section*{LAB: Caesar's Secrets (Th 10/4)}
 
 \begin{reflect}{Brent, S'17}
   This lab seemed to go well, though it's definitely hard.  Most
@@ -1904,7 +1912,8 @@ def triangle(n):
   finished; a few were just getting encrypt/decrypt to work.
 \end{reflect}
 
-\section{For loop practice}
+\newpage
+\section{For loop practice (F 10/5)}
 
 \subsection*{Setup}
 
@@ -1955,11 +1964,12 @@ def pulu(r: int) -> List[int]:
   \verb|is_sorted| next class.
 \end{reflect}
 
-\section{Exam 2 review}
+\newpage
+\section{Exam 2 review (M 10/8)}
 
 Spend a lecture doing and going over a practice exam.
 
-\section{Exam 2}
+\section{Exam 2 (W 10/10)}
 
 \begin{reflect}{Brent, S'16}
   In the Fall 2015 semester, Exam 2 was on the Wednesday right before
@@ -1991,66 +2001,72 @@ Spend a lecture doing and going over a practice exam.
   to read several).
 \end{reflect}
 
-\section{Exam wrap-up, demo project}
+XXX SEND OUT INSTRUCTIONS/EXAMPLE RE: FILE I/O (for use with P2)
 
-\subsection*{Exam wrap-up}
+% \section{Exam wrap-up, demo project}
 
-Hand back exams; quickly go over exam solutions.
+% \subsection*{Exam wrap-up}
 
-\subsection*{Demo project}
+% Hand back exams; quickly go over exam solutions.
 
-Introduce Project 2 (word games).
+% \subsection*{Demo project}
 
-\begin{reflect}{Brent, S'18}
-  Did this at the beginning of lab instead of using class time on it.
-  Handed back exams and then went straight into recursion; this means I
-  will have three lectures on recursion and then give them the Friday
-  right before spring break off (so I can work on a conference paper
-  submission which is due that day).
-\end{reflect}
+% Introduce Project 2 (word games).
 
-Livecode the beginning of an exemplary Doublets lab.  Things to focus
-on:
-\begin{itemize}
-\item Start with \verb|main|.  Hierarchical decomposition; write stub
-  functions.
-\item Think about what information each function needs to do its job,
-  and what information it returns.
-\item Write \verb|get_starting_word| function.
-\item Start writing \verb|get_ending_word| function, realize that they
-  are going to have a lot of similar code.
-\item Abstract common part out into a new function, \verb|get_word|,
-  that takes a parameter describing the desired word.
-\item Stub out a single round of the game, then talk about adding a
-  while loop.
-\end{itemize}
+% \begin{reflect}{Brent, S'18}
+%   Did this at the beginning of lab instead of using class time on it.
+%   Handed back exams and then went straight into recursion; this means I
+%   will have three lectures on recursion and then give them the Friday
+%   right before spring break off (so I can work on a conference paper
+%   submission which is due that day).
+% \end{reflect}
 
-\begin{reflect}{Brent, S'17}
-  Instead of exam wrap-up I actually covered file I/O here, instead of
-  waiting until after spring break as I did in spring 2016. I think
-  it was useful for many students for their projects, if they wanted
-  to \eg pick random words, generate files with different word
-  lists, etc.
-\end{reflect}
+% Livecode the beginning of an exemplary Doublets lab.  Things to focus
+% on:
+% \begin{itemize}
+% \item Start with \verb|main|.  Hierarchical decomposition; write stub
+%   functions.
+% \item Think about what information each function needs to do its job,
+%   and what information it returns.
+% \item Write \verb|get_starting_word| function.
+% \item Start writing \verb|get_ending_word| function, realize that they
+%   are going to have a lot of similar code.
+% \item Abstract common part out into a new function, \verb|get_word|,
+%   that takes a parameter describing the desired word.
+% \item Stub out a single round of the game, then talk about adding a
+%   while loop.
+% \end{itemize}
 
-\section{Recursion I: intro}
+% \begin{reflect}{Brent, S'17}
+%   Instead of exam wrap-up I actually covered file I/O here, instead of
+%   waiting until after spring break as I did in spring 2016. I think
+%   it was useful for many students for their projects, if they wanted
+%   to \eg pick random words, generate files with different word
+%   lists, etc.
+% \end{reflect}
+
+\newpage
+\section{Recursion I: intro (M 10/15)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Write stone-counting rules somewhere (see below)?
+\item Reminder: project 2 due Friday!
+\item Write stone-counting rules somewhere, e.g. on board (see below)
 \end{itemize}
 
 \subsection*{Stone counting}
 
 Rules:
 \begin{enumerate}
-\item You may not look at the bowl or the stones.
+\item You may not look into the bowl.
 \item You may only touch one stone.
 \item If someone gives you the bowl and asks you how many stones it
   contains, you must eventually give the bowl back and answer
   truthfully.
 \end{enumerate}
-Hand the bowl to a student and ask how many stones it contains.
+(There will usually be some attempts to find loopholes; modify the
+rules as necessary.)  Then hand the bowl to a student and ask how many
+stones it contains.
 
 Recursion!  Functions that call themselves.  In a sense you were all
 ``the same function'' because you were running the same program
@@ -2096,14 +2112,8 @@ Typically:
 Then re-code factorial function live, adding a bunch of comments and
   narrating thought process.
 
-% Another example: Fibonacci function.  Show mathematical definition,
-% implement in Python.  Show how slow it is, show call tree.  In fact
-% recursion is not always the best way to do things.
-
-% If time, brief intro to Python turtle library and Kock snowflake (in
-% preparation for fractal lab).
-
-\section{Recursion II: recursive functions}
+\newpage
+\section{Recursion II: recursive functions (W 10/17)}
 
 Start by reinforcing ``base case + recursive case''.  Talk about
 ``leap of faith'': trust that recursive calls will work without
@@ -2136,7 +2146,25 @@ be doing in lab---making pretty pictures!)
   we left off next time.
 \end{reflect}
 
-\section{Recursion III}
+\newpage
+\section*{LAB: Fractal Recursion (Th 10/18)}
+
+\begin{reflect}{S' 17}
+  This lab is fun and seemed to go reasonably well, though attendance
+  was poor due to being right before spring break and having project 2
+  due the same day.  In the end I'm also not sure how much it really
+  teaches them about recursion.  But to be honest I don't know how to
+  incorporate recursion more fully into the curriculum without
+  changing the programming language we use.
+\end{reflect}
+
+\newpage
+\section{Recursion III (F 10/19)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Project 2 due today!
+\end{itemize}
 
 \begin{reflect}{Brent, S'17}
   This semester I decided to spend three lectures on recursion instead
@@ -2159,28 +2187,8 @@ beginning with why \texttt{product([])} should be $1$ rather than $0$:
 
 Have them work in pairs to implement string \texttt{reverse}.
 
-\section*{LAB: Fractal Recursion}
-
-\begin{reflect}{S' 17}
-  This lab is fun and seemed to go reasonably well, though attendance
-  was poor due to being right before spring break and having project 2
-  due the same day.  In the end I'm also not sure how much it really
-  teaches them about recursion.  But to be honest I don't know how to
-  incorporate recursion more fully into the curriculum without
-  changing the programming language we use.
-\end{reflect}
-
 \newpage
-
-\section{Dictionaries}
-
-\begin{reflect}{Brent, S'16}
-  In F'15 we did file I/O first and then dictionaries.  In S'16 it
-  worked better to do dictionaries first --- two lectures right before
-  spring break, and then on the first day back from spring break cover
-  file I/O along with a dictionary review in preparation for the
-  dictionary lab on the next day.
-\end{reflect}
+\section{Dictionaries (M 10/22)}
 
 Recall lists.  Draw an alternate picture of lists as a mapping from
 indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
@@ -2217,7 +2225,6 @@ Dictionaries are like functions mapping keys to values.  Consequences:
 \item But there can be multiple keys with the same value.
 \item You can only look up a value by key, not a key by value.
 \end{itemize}
-
 
 Other things we can do with a dictionary:
 \begin{itemize}
@@ -2271,89 +2278,7 @@ def normalize(d):
 \end{reflect}
 
 \newpage
-\section{Dictionaries practice}
-
-\begin{reflect}{Brent, S'17}
-  Instead of doing Fibonacci and memoization, we just kept going with
-  writing frequency count functions.  I think it was a much better use
-  of class time!  Memoization was a fun throwawy topic to do right
-  before spring break, but it doesn't serve much of a pedagogical
-  purpose (other than being a fun example of the use of dictionaries).
-\end{reflect}
-
-Naive Fibonacci function.  Understand why it is so slow.  Then
-use a dictionary to memoize.  Have them write memo code.
-
-Then memoize hailstone function!
-
-\begin{verbatim}
-
-# Fibonacci numbers
-# F_0 = 0
-# F_1 = 1
-# F_n = F_(n-1) + F_(n-2)
-#
-# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
-
-# Input: nonnegative int n
-# Output: F_n
-def fib(n):
-    if n <= 1:
-        return n
-    else:
-        return fib(n-1) + fib(n-2)
-
-# This is really slow!  The computer is doing lots of
-# repeated, unnecessary, and redundant work.
-#
-# Idea: get the computer to remember previously
-# computed values using a dictionary.
-# Key = n, Value = F_n.
-#
-# (This is called memoization.)
-
-fibs = {0: 0, 1 : 1}
-
-def fib_memo(n):
-    if n not in fibs:
-        fibs[n] = fib_memo(n-1) + fib_memo(n-2)
-    return fibs[n]
-
-# Collatz conjecture
-
-def hailstone(n):
-    if n % 2 == 0:
-        return n / 2
-    else:
-        return 3*n + 1
-
-hailstone_lens = {}
-
-# Input: int n
-# Output: Number of iterations of 'hailstone' before reaching 1.
-def hailstone_length(n):
-    if n == 1:
-        return 0
-    elif n not in hailstone_lens:
-        hailstone_lens[n] = 1 + hailstone_length(hailstone(n))
-
-    return hailstone_lens[n]
-
-\end{verbatim}
-
-\newpage
-
-\begin{reflect}{Brent, S'16}
-  This is where spring break fell in S'16.
-\end{reflect}
-
-\section{File I/O, dictionary review}
-
-\subsection*{Setup}
-
-\begin{itemize}
-\item HW for next class: read section I of Zen.
-\end{itemize}
+\section{File I/O, dictionary practice (W 10/24)}
 
 Our programs have no state between each time they are called.
 Everything is stored in memory during the program, but afterwards,
@@ -2400,11 +2325,13 @@ returns a list of strings.
 
 After both, say \verb|fin.close()| to finish accessing the file.
 
-Do some dictionary practice: write a function to read in a file, do
-frequency count of words.  Also show them how to split up a line into
-words since they will need that in the lab.
+\subsection*{Dictionary practice}
 
-\section*{LAB: Sentiment Analysis}
+FINISH writing \verb|frequency_count| and \verb|normalize| from last
+class.  Maybe run them on the contents of a file.
+
+\newpage
+\section*{LAB: Sentiment Analysis (Th 10/25)}
 
 \begin{reflect}{Brent, S'16}
   I wrote this lab fresh in S'16, based on a Nifty Assignment @
@@ -2414,117 +2341,19 @@ words since they will need that in the lab.
   difficulty and gave the students good practice with dictionaries.
 \end{reflect}
 
-\section{Zen Reading discussion}
+\newpage
+\section{Tracing with stack and heap (F 10/26)}
 
-\subsection*{Setup}
-
-\begin{itemize}
-\item HW: system analysis (see below)
-\end{itemize}
-
-\subsection*{Discussion}
-
-\begin{itemize}
-\item somewhat confusing? yes.
-  \begin{itemize}
-  \item you picked up in the middle of a journey the author is taking with his son
-    and friends across the country on a motorcycle.
-  \item along the way he talks about the philosophy of quality, goodness, etc,
-    this excerpt is groundwork for that discussion
-  \end{itemize}
-
-\item classical vs romantic understanding
-  \begin{itemize}
-  \item underlying form vs appearance
-  \item negative views of each side (dull, uninteresting for
-    classical, frivolous, erratic for romantic)
-  \item masculine vs feminine association? Sexist?  Not really, he's
-    just making an observation about European culture, context means
-    these are not determined but cultural associations.
-  \end{itemize}
-\item How is CSCI related to these understandings? Why did we read
-  this?
-  \begin{itemize}
-  \item classical, definitely but elements of romantic too
-  \item creativity of solutions?  choices in problem solving, uniqueness
-    of approaches to projects, labs
-  \end{itemize}
-\item application of classical ``analysis'' to motorcycle, talk through
-  some of the details of the diagrams
-\item ``impossible to understand unless you already know how one works''
-\item What is the ``intellectual scalpel''?
-  \begin{itemize}
-  \item \eg knife diving up the motorcycle
-  \item no two motorcycle manufacturers divide same way
-  \item romantic part of how this choice is made
-  \item this skill of using the knife has been what we have been
-    practicing all semester
-  \end{itemize}
-\item back to CSCI connection
-  \begin{itemize}
-  \item when we have talked about data types, (int, bool, string, list, dict)
-    they have been ways we use the knife to separate information
-  \item they are all what we will now call OBJECTS
-  \item we want to make our own new datatypes for many different situations
-  \item two main pieces to make an object, components and functions, just like motorcycle above
-    hierarchies
-  \end{itemize}
-\item component hierarchy
-  \begin{itemize}
-  \item has-a relationship
-  \item eventually get to atomic elements (int, bool, string, list etc)
-  \end{itemize}
-\item function hierarchy
-  \begin{itemize}
-  \item is-a relationship
-  \item \eg motorcycle is a vehicle, so is a bicycle, boat, truck, train, spaceship.
-  \item all related by function
-  \end{itemize}
-\end{itemize}
-
-  Let's do an example together: airport.  First has-a hierarchy.  Then
-  make some is-a hierarchies.  Talk about components, their functions
-  (NOT their purpose!), and how they relate to one another.
-
-  Explain assignment: analyze a system in groups.  Be prepared to
-  present next class.
-
-\subsection*{System analysis HW}
-
-Split into groups of 3 or 4 (use binary cards), have each group choose
-a system:
-
-\begin{itemize}
-\item Hospital
-\item Soccer game
-\item College class
-\item US Government
-\item Zoo
-\item Airport
-\end{itemize}
-
-For Monday, analyze your system.
-\begin{itemize}
-\item Components?
-\item Functions of components?
-\item Information flow bewteen components?
-\item Has-a hierarchy
-\item One or more is-a hierarchies involving some of the components
-\end{itemize}
-
-Prepare a presentation, \emph{use projector} (don't waste time drawing
-on board) and address all 5 of the above things.
-
-\begin{reflect}{Brent, S'17}
-  I left out the system analysis HW this time around.  It didn't feel
-  to me like it was pulling its weight pedagogically, especially since
-  this semester I did not cover inheritance.
-\end{reflect}
-
-\section{System/hierarchy analysis presentations}
+XXX WRITE ME
 
 \newpage
-\section{Intro to classes \& objects}
+\section{Intro to classes \& objects (M 10/29)}
+
+\begin{reflect}{Brent}
+  Totally OK if this doesn't all fit into one lecture (it probably
+  won't).  Basically we have 3 lectures to get through \verb|Cake| and
+  \verb|TrafficLight|.
+\end{reflect}
 
 Birthday cake problem:
 \begin{verbatim}
@@ -2606,26 +2435,14 @@ def main():
 main()
 \end{verbatim}
 \item Run it and paste output into Excel, do a regression to show that
-  it is close to natural log.
+  it is close to natural log!
 \end{itemize}
-
-\newpage
-\section*{LAB: Die Hard/Water Jug}
-
-\begin{reflect}{Brent, S'17}
-  This lab seemed to go pretty well this year.  The new step that
-  forced them to write a test function helped a LOT!  I know of
-  several groups that started out with a buggy implementation of the
-  WaterJug class and then ended up debugging it through writing tests
-  and getting the tests to pass---precisely what we would hope for
-  such an exercise.  We should probably figure out ways of
-  incorporating this approach into other labs as well.
-\end{reflect}
 
 \newpage
 \section{More classes \& objects}
 
-Traffic light example.  Main point: encapsulation, abstraction.
+Finish \verb|Cake| from last class. Then start on traffic light
+example.  Main point: encapsulation, abstraction.
 
 \begin{verbatim}
 # Traffic light
@@ -2717,7 +2534,7 @@ class TrafficLight3:
         return self.color_list[self.current_index]
 
 def main():
-    t = TrafficLight3()
+    t = TrafficLight3()  # we can switch and it works the same
     print t.color()
     for i in range(10):
         t.change()
@@ -2726,35 +2543,36 @@ def main():
 main()
 \end{verbatim}
 
-\section*{ASSIGN FINAL PROJECT}
+\newpage
+\section*{LAB: Die Hard/Water Jug (Th 11/1)}
 
-\begin{reflect}{Brent, S'16}
-  Things I would do differently next time:
-  \begin{itemize}
-  \item Give them a sample final project design, so they have an idea
-    of the level of detail we are looking for (I am working on one)
-  \item Spend more effort emphasizing the importance of the
-    presentation, and what we are looking for.  In S'16 I got far too
-    many terrible presentations of the form ``go to the front of the
-    class and show off the code extemporaneously''.  Most students
-    obviously did not prepare very much.
-  \end{itemize}
+\begin{reflect}{Brent, S'17}
+  This lab seemed to go pretty well this year.  The new step that
+  forced them to write a test function helped a LOT!  I know of
+  several groups that started out with a buggy implementation of the
+  WaterJug class and then ended up debugging it through writing tests
+  and getting the tests to pass---precisely what we would hope for
+  such an exercise.  We should probably figure out ways of
+  incorporating this approach into other labs as well.
 \end{reflect}
 
-\section{Yet More classes \& objects}
+\newpage
+\section{Classes \& objects III (F 11/2)}
 
-Mechanical pencil exercise.  Have them work in teams to code a class
-representing a mechanical pencil.  Paste code into Google doc, look
-through it together.
+Finish \verb|TrafficLight|.
 
-\begin{reflect}{Brent, S'16}
-  This exercise doesn't work very well when the students don't have
-  laptops.  I skipped it and just went on to the next lecture
-  (modelling cards), intending to give them a HW assignment where they
-  get some practice designing classes.
-\end{reflect}
 
-\section{Yet Even More classes \& objects}
+\newpage
+\section{Extended example I (M 11/5)}
+
+\subsection*{ASSIGN FINAL PROJECT}
+
+XXX write me
+
+\subsection*{Blackjack}
+
+As an extended example we are going to develop a simple implementation
+of Blackjack.  (XXX use a different example instead?)
 
 Card and Deck examples.
 \begin{itemize}
@@ -2765,7 +2583,8 @@ Card and Deck examples.
   like that if face down.)
 \end{itemize}
 
-\section{Still Yet Even More classes \& objects}
+\newpage
+\section{Extended example II (W 11/7)}
 
 \begin{itemize}
 \item Make \verb|Deck| class with list of cards.  Make \verb|__init__|
@@ -2785,7 +2604,8 @@ Card and Deck examples.
   player it is.
 \end{reflect}
 
-\section*{LAB: Processing}
+\newpage
+\section*{LAB: Processing (Th 11/8)}
 
 \begin{reflect}{Brent, S'17}
   \textbf{VERY IMPORTANT, FOR NEXT TIME}: download Processing ahead of
@@ -2797,7 +2617,8 @@ Card and Deck examples.
   Fortunately other than that the lab seemed to go well.
 \end{reflect}
 
-\section{Further Still Yet Even More classes \& objects}
+\newpage
+\section{Extended example III (F 11/9)}
 
 \begin{itemize}
 \item Finish \verb|Hand|.
@@ -2826,7 +2647,25 @@ Card and Deck examples.
 \end{reflect}
 
 \newpage
-\section{Queues (2 lectures)}
+\section{Extended example IV (M 11/12)}
+
+\newpage
+\section{Exam 3 review (W 11/16)}
+
+\newpage
+\section{LAB: Stuckness \& Debugging (Th 11/15)}
+
+\newpage
+\section{Exam 3 (F 11/16)}
+
+\newpage
+\section{??? (M 11/19)}
+
+\newpage
+\section{THANKSGIVING}
+
+\newpage
+\section{Queues (2 lectures) (M 11/26, W 11/28)}
 
 Start with a discussion of the queue data structure itself and why it
 would be useful: model lines of people in the supermarket or at a bank
@@ -2949,7 +2788,14 @@ structures is at the core of the science part of computer science, and will
 be heavily discussed in CSCI 151 with more formal tools and for more
 complicated structures, within the context of Java.
 
-\section{Fun with Processing}
+\newpage
+\section{LAB: Project workshop (Th 11/29)}
+
+No assigned lab; students can come to get help on their final
+projects.
+
+\newpage
+\section{Fun with Processing (F 10/30, M 12/3?)}
 
 \begin{reflect}{Brent, S'16, S'17}
   In both S'16 and S'17 I ended with a class or two left over.  So I
@@ -2959,50 +2805,5 @@ complicated structures, within the context of Java.
   up a physically semi-realistic simulation of balls bouncing off each
   other and line segments.
 \end{reflect}
-
-\newpage
-\section*{LAB: Coding bat}
-
-We don't tend to do this lab anymore; keeping it here at the end for
-posterity's sake.
-
-\begin{reflect}{Brent, S'16}
-  This seemed to go well, and seemed helpful.  I always think students
-  are going to finish these really quickly but it actually seems like
-  just the right amount.  One or two actually finished
-  \verb|make_bricks|.  Several were working on it by the end.  Others
-  were at various points.  Only one or two were really struggling.
-\end{reflect}
-
-\noindent
-\begin{reflect}{Brent, S'16}
-  \textbf{(CRAZY?) IDEA}: Maybe we should switch the order of loops
-  and functions.  The basic outline would be to replace the Coding bat
-  lab with a version of Doublets where they \emph{don't} use any
-  functions.  Then, we learn about functions and give them another lab
-  where they get to practice taking existing top-level code and
-  abstracting it into functions.  We probably can't have them actually
-  work on Doublets because they might not be able to use their own
-  code and we don't want to distribute a solution.  So instead we
-  could give them a similar sort of word-game program, written as all
-  top-level code, and have a lab which walks them through abstracting
-  out more and more functions until the whole thing is composed of
-  functions.  I'm imagining something where we provide a lot of
-  hand-holding with the first few functions they extract, and then
-  give them more and more autonomy as the lab proceeds.
-
-  What's the motivation? Students can get the basic concept of writing
-  a function that takes inputs and gives an output (with Coding Bat),
-  but this does not at all mean that they understand how a function is
-  used to abstract out some common pattern, and how information needs
-  to flow between functions (into parameters and back out through the
-  return value).  Telling them ``do this complicated lab'' and ``you
-  have to use only functions'' actually gets them off on the wrong
-  foot: they \emph{start} the lab by trying to write functions (which
-  often do inconsistent or nonsensical things) rather than starting by
-  writing working code and then thinking about how to abstract it into
-  functions.
-\end{reflect}
-
 
 \end{document}
