@@ -23,6 +23,8 @@ project will be given when they are assigned.
 
 Project   Name                                                                                                                    Pct Assigned   Due
 --------- ---------------------------------------------------                                                                     --- ---------- --------------------
+Coming soon!
+
 <!-- 1         [Question-Answer](http://mgoadric.github.io/csci150/projects/project1_if.html)                                          5%  Feb 5      Feb 16 -->
 <!-- 2         [Word Games](http://mgoadric.github.io/csci150/projects/project2.html)                                                  10% Mar 7      Mar 15 -->
 <!--           [ [Sample project start #1](static/vacation.py), [Sample project start #2](static/doublets-demo.py) ] -->
