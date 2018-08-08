@@ -23,7 +23,7 @@ Instructors:
 
 * Email: `seme@hendrix.edu`
 * Office: MC Reynolds 320
-* Office hours: **TBD**
+* Office hours: MTRF 1:30-3:00pm, W 1:00-2:00pm, and by appointment
 
 [Gabe Ferrer](http://ozark.hendrix.edu/~ferrer/)
 
