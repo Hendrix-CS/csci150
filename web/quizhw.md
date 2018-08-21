@@ -9,9 +9,11 @@ corresponding quiz at the beginning of class on Monday.
 These quizzes and homework assignments together will comprise 15% of
 your final grade.
 
-HW                                                                                                                    Due
-------------------                                                                                                    ----
-0: [Who Are You](https://goo.gl/forms/hQc1kn67oivsZVIK2)                                                              Friday August 24
+<font size="+1">
+
+\#  Name                                                                                                               Due
+--- ---------------                                                                                                    ----
+0   [Who Are You](https://goo.gl/forms/hQc1kn67oivsZVIK2)                                                              Friday August 24
 
 <!-- 1: [Minecraft](static/minecraft.html)                                                                                 Monday January 22 -->
 <!-- 2: [Logic puzzles](static/logic-puzzles.pdf)                                                                          Monday January 29 -->
@@ -25,3 +27,5 @@ HW                                                                              
 
 <!-- 6: [Zen reading -- section 1](http://mgoadric.github.io/csci150/homework/zen.html)                                 March 30 -->
 <!-- 7: [System analysis](static/system-analysis.html)                                                                  April 4 -->
+
+</font>

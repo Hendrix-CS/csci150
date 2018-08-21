@@ -2,6 +2,28 @@
 title: Labs
 ---
 
+<font size="+1">
+
+\#    Name                                                                          Assigned
+----- --------------------------------------------------                            ----------
+1     [Minecraft Hour of Code](labs/lab1.html)                                      Aug 22/23
+
+</font>
+
+  <!-- 2     [Kepler and Newton](labs/kepler-newton.html)                                  Jan 24/25 -->
+  <!-- 3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Jan 31/Feb 1 -->
+  <!-- 4     [This Day in History](http://mgoadric.github.io/csci150/labs/lab4.html)       Feb 7/8 -->
+  <!-- 5     [Guess My Number](labs/guess.html)                                            Feb 14/15 -->
+  <!-- 6     [Mutation is the Word](labs/doublets.html)                                    Feb 21/22 -->
+  <!-- 7     [Caesar's Secrets](labs/caesar.html)                                          Feb 28/Mar 1 -->
+  <!-- P2    [Project 2](http://mgoadric.github.io/csci150/projects/project2.html) start   Mar 7/8 -->
+  <!-- 8     [Fractal Recursion](labs/fractal.html)                                        Mar 14/15 -->
+  <!-- 9     [Sentiment Analysis](labs/sentiment.html)                                     Mar 28/29 -->
+  <!-- 10    [Die Hard III](labs/waterjug.html)                                            Apr 4/5 -->
+  <!-- 11    [Graphics and Animation](labs/processing.html)                                Apr 11/12 -->
+  <!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Apr 18/19 -->
+  <!-- 13    Final project workshop (optional)                                             Apr 25/26 -->
+
 Much of your experience with programming in this course will be
 through weekly labs, which will comprise 25% of your final grade. Each
 lab will be assigned Wednesday/Thursday in lab with time allotted to
@@ -55,20 +77,3 @@ help you catch common style errors.
 <!-- </font> -->
 <!-- </div> -->
 
-  Lab   Name                                                                          Assigned
-  ----- --------------------------------------------------                            ----------
-  1     [Minecraft Hour of Code](labs/lab1.html)                                      Aug 22/23
-
-  <!-- 2     [Kepler and Newton](labs/kepler-newton.html)                                  Jan 24/25 -->
-  <!-- 3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Jan 31/Feb 1 -->
-  <!-- 4     [This Day in History](http://mgoadric.github.io/csci150/labs/lab4.html)       Feb 7/8 -->
-  <!-- 5     [Guess My Number](labs/guess.html)                                            Feb 14/15 -->
-  <!-- 6     [Mutation is the Word](labs/doublets.html)                                    Feb 21/22 -->
-  <!-- 7     [Caesar's Secrets](labs/caesar.html)                                          Feb 28/Mar 1 -->
-  <!-- P2    [Project 2](http://mgoadric.github.io/csci150/projects/project2.html) start   Mar 7/8 -->
-  <!-- 8     [Fractal Recursion](labs/fractal.html)                                        Mar 14/15 -->
-  <!-- 9     [Sentiment Analysis](labs/sentiment.html)                                     Mar 28/29 -->
-  <!-- 10    [Die Hard III](labs/waterjug.html)                                            Apr 4/5 -->
-  <!-- 11    [Graphics and Animation](labs/processing.html)                                Apr 11/12 -->
-  <!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Apr 18/19 -->
-  <!-- 13    Final project workshop (optional)                                             Apr 25/26 -->
