@@ -16,7 +16,7 @@ Instructors:
 * Email: `yorgey@hendrix.edu`
 * Office: MC Reynolds 310
 * Office hours:
-  [By appointment on youcanbook.me](https://byorgey.youcanbook.me/),
+  [By appointment on youcanbook.me](http://byorgey.youcanbook.me/),
   or whenever my door is open
 
 [Lars Seme](https://www.hendrix.edu/mathcs/profile.aspx?id=70795)
@@ -29,12 +29,12 @@ Instructors:
 
 * Email: `ferrer@hendrix.edu`
 * Office: MC Reynolds 312
-* Office hours: **TBD**
+* Office hours: [By appointment on youcanbook.me](http://drferrer.youcanbook.me/)
 
 TA hours (Bailey lab): **TBD**
 
-There are also CSCI TAs in the lab at **TBD**; although
-not officially TAs for 150 they are willing and able to help if there
-are not too many 151 students needing their help.
+There are also CSCI TAs in the lab at **TBD**; although not officially
+TAs for 150 they are willing and able to help if there are not too
+many 151 students needing their help.
 
 Past semesters: [F16](f16/), [S17](s17/), [S18](s18/)
