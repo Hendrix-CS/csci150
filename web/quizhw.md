@@ -11,9 +11,8 @@ your final grade.
 
 HW                                                                                                                    Due
 ------------------                                                                                                    ----
-Coming soon!
+0: [Who Are You](https://goo.gl/forms/hQc1kn67oivsZVIK2)                                                              Friday August 24
 
-<!-- 0: [Who Are You](https://goo.gl/forms/v4nnPrBhP5rf32oc2)                                                              Friday January 19 -->
 <!-- 1: [Minecraft](static/minecraft.html)                                                                                 Monday January 22 -->
 <!-- 2: [Logic puzzles](static/logic-puzzles.pdf)                                                                          Monday January 29 -->
 <!-- 3: [Conditional practice](static/conditional-practice.pdf)                                                            Monday February 5 -->
