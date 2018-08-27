@@ -7,10 +7,10 @@ title: Labs
 \#    Name                                                                          Assigned
 ----- --------------------------------------------------                            ----------
 1     [Minecraft Hour of Code](labs/lab1.html)                                      Aug 22/23
+2     [Kepler and Newton](labs/kepler-newton.html)                                  Aug 29/30
 
 </font>
 
-  <!-- 2     [Kepler and Newton](labs/kepler-newton.html)                                  Jan 24/25 -->
   <!-- 3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Jan 31/Feb 1 -->
   <!-- 4     [This Day in History](http://mgoadric.github.io/csci150/labs/lab4.html)       Feb 7/8 -->
   <!-- 5     [Guess My Number](labs/guess.html)                                            Feb 14/15 -->
@@ -32,16 +32,16 @@ following lab**. All labs are weighted equally within the lab portion
 of your final grade.
 
 Each student has **four late days** to spend throughout the semester
-as they wish.  Simply inform **the grader** (XXX) any time *prior* to
-the due date for an assignment that you wish to use a late day; you
-may then turn in the assignment up to 24 hours late.  Multiple late
-days may be used on the same assignment.  There are no partial late
-days; turning in an assignment 2 hours late or 20 hours late will both
-use 1 late day.  Note that late days are intended to cover both normal
-circumstances (you simply want more time to work on the assignment)
-and exceptional circumstances (you get sick, travel for a game or
-family obligation, *etc.*).  Aside from late days, late assignments
-will not be accepted.
+as they wish.  Simply inform **the grader**
+(<tt>DenneyJM@hendrix.edu</tt>) any time *prior* to the due date for
+an assignment that you wish to use a late day; you may then turn in
+the assignment up to 24 hours late.  Multiple late days may be used on
+the same assignment.  There are no partial late days; turning in an
+assignment 2 hours late or 20 hours late will both use 1 late day.
+Note that late days are intended to cover both normal circumstances
+(you simply want more time to work on the assignment) and exceptional
+circumstances (you get sick, travel for a game or family obligation,
+*etc.*).  Aside from late days, late assignments will not be accepted.
 
 On these labs, you may work with a partner on the lab assignments if
 you choose. Their name must be listed on any code you hand in as joint
