@@ -2,6 +2,12 @@
 title: Labs
 ---
 
+<div style="text-align:center">
+<font size="+2">
+ [Please submit labs electronically using this form!](https://goo.gl/forms/03Oeic09jHYPnrz53)
+</font>
+</div>
+
 <font size="+1">
 
 \#    Name                                                                          Assigned
@@ -70,10 +76,4 @@ You may use
 the
 [automated style checker](http://mgoadric.github.io/csci150/python_style_guide.html) to
 help you catch common style errors.
-
-<!-- <div style="text-align:center"> -->
-<!-- <font size="+2"> -->
-<!--  [Please submit labs electronically using this form!](https://goo.gl/forms/XsJVafSZLdedQY1M2) -->
-<!-- </font> -->
-<!-- </div> -->
 
