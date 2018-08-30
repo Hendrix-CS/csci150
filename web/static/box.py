@@ -1,46 +1,25 @@
-# This is a comment.  Python will ignore it.
-# CSCI 150, Spring 2017
-# Copyright (c) 2017, CSCI 150
+# Is this big enough can you read me? =D
+# This is a comment, Python will ignore me
 
-# Print a greeting
-print("Welcome to the box-o-matic! Enter your box dimensions")
-print("and I will do the rest!")
+# Step 0: tell the user the purpose of the program
+print("Hello and welcome to the box-o-matic!  Please tell me")
+print("the dimensions of your box and I will do the rest!")
+print()
 
-# Ask user for the height of the box
-# & remember it
-height_str = input("Please enter the height of the box in furlongs: ")
+# Step 1: ask the user for width
+width_str: str = input("Please enter the width of your box in inches: ")
 
-# note that height_str is a str:
-# print(type(height_str))
+# ask for height
+height_str: str = input("Please enter the height of your box in inches: ")
 
-height = int(height_str)
+# ask for depth
+depth_str: str = input("Please enter the depth of your box in inches: ")
 
-# To convert to an int, use int(...)
+width:  float = float(width_str)
+height: float = float(height_str)
+depth:  float = float(depth_str)
 
-# Ask user for the width of the box
-# & remember it
-width_str = input("Please enter the width of the box in furlongs: ")
+volume: float = width * height * depth
 
-width = int(width_str)
-
-# Ask user for the depth of the box
-# & remember it
-depth_str = input("Please enter the depth of the box in furlongs: ")
-
-depth = int(depth_str)
-
-# Compute the volume
-volume = height * width * depth
-
-# Display the result to the user
-print("The volume of your box is " + str(volume) + " cubic furlongs.")
-
-# Compute the surface area
-surface = 2*width*height + 2*height*depth + 2*width*depth
-
-print("The surface area is " + str(surface) + " square furlongs.")
-
-# Compute the body diagonal
-diagonal =  (width**2 + height**2 + depth**2)**(1/2)
-
-print("The body diagonal is " + str(diagonal) + " furlongs.")
+print()
+print("The volume of your box is " + str(volume) + " cubic inches.")
