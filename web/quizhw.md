@@ -15,6 +15,7 @@ your final grade.
 --- ---------------                                                                                                    ----
 0   [Who Are You](https://goo.gl/forms/hQc1kn67oivsZVIK2)                                                              Friday August 24
 1   [Minecraft](static/minecraft.html)                                                                                 Monday August 27
+2   [Tracing practice](static/tracing-practice.pdf)                                                                    Wednesday September 5
 
 <!-- 2: [Logic puzzles](static/logic-puzzles.pdf)                                                                          Monday January 29 -->
 <!-- 3: [Conditional practice](static/conditional-practice.pdf)                                                            Monday February 5 -->
