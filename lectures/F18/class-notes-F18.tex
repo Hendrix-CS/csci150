@@ -3,6 +3,7 @@
 \documentclass{article}
 
 \usepackage{hyperref, amsmath, xspace}
+\usepackage[normalem]{ulem}
 
 \newsavebox{\reflectbox}
 
@@ -544,7 +545,7 @@ This lab seemed to go pretty well.  Common errors:
   Went pretty well.  Some errors from this time:
   \begin{itemize}
   \item They didn't know about creating project vs creating a file,
-    lots of projects named \texttt{orbit_kepler.py} (not a big deal).
+    lots of projects named \texttt{orbit\_kepler.py} (not a big deal).
   \item Converting from days to seconds but then using the old days
     variable in the formula later.
   \item \verb|(4 * pi) ** 2| vs \verb|4 * pi**2|.
@@ -558,7 +559,9 @@ This lab seemed to go pretty well.  Common errors:
 \subsection*{Setup}
 \begin{itemize}
 \item \textbf{Quiz (Python syntax and arithmetic)}.  See
-  \texttt{csci150-instructors} repository.
+  \texttt{csci150-instructors} repository.  Go over quiz answers
+  afterwards (\eg have them confer with neighbors, then have
+  pairs confer with other pairs, \etc)
 \item HW: tracing practice (on website)
 \end{itemize}
 
@@ -572,8 +575,58 @@ start out, but will get more complicated as the semester progresses
 and we add new Python features, so make sure you can do it well and
 accurately!
 
-XXX make tracing template and some exercises to do in class.  Have
-them make exercises for each other.
+Show example of template on board: scratch work in upper left,
+variables in upper right, output on the bottom (the relative
+positioning is important because we're going to add extra stuff to
+this basic template later in the semester!).  Work through simple
+example, \eg:
+\begin{verbatim}
+x: int = 3
+y: int = x + 2
+x = 7
+print("The value of y is " + str(y) + ".")
+\end{verbatim}
+which leads to \bigskip
+
+\fbox{
+\begin{minipage}{0.9\textwidth}
+  \begin{minipage}[t]{0.5\linewidth}
+    \textbf{Scratch} \medskip
+
+    $y = x+2 \to y = 3+2 \to y = 5$
+  \end{minipage}
+  \begin{minipage}[t]{0.45\linewidth}
+    \textbf{Variables} \medskip
+
+    $x: \mathrm{int}\;|$ \xout{3} 7 \\
+    $y: \mathrm{int}\;|$ 5
+  \end{minipage} \bigskip
+
+  \textbf{Output}
+
+  \texttt{The value of y is 5.}
+\end{minipage}
+} \bigskip
+
+The exact contents of ``scratch'' is not important.  But the contents
+of the other two sections should look exactly like that.
+
+Have them do one on their own paper:
+
+\begin{verbatim}
+z: str = "5"
+msg: str = "hello"
+print("z is " + z)
+z = z + "2"
+y: int = int(z) + 2
+print(z + " " + str(y))
+\end{verbatim}
+
+Go over it somehow (compare with neighbors, perhaps have someone come
+up and demonstrate on the board).
+
+Give them 5 minutes to make up a tracing exercise and then swap.  Try
+to trick your neighbor!
 
 \newpage
 
