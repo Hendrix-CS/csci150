@@ -635,7 +635,13 @@ to trick your neighbor!
 \subsection*{Setup}
 
 \begin{itemize}
-\item Next class: quiz on chapter 4.
+\item Next class: tracing quiz.
+\item TA hours in the lab: Tuesday 6-10pm (Kate), Weds 7-9pm (Lauren),
+  Thurs 7-9pm (Fish).  There are also 151 TAs in the lab Sunday 8-10
+  (Ryan) and Monday 7-10 (Innocent): if there aren't 151 students in
+  need of help they are able to help with 150 as well.
+
+  The TAs are there to help!  Make use of them!
 \end{itemize}
 
 \subsection*{Booleans}
@@ -757,9 +763,9 @@ mark (but most were just finishing or very close).
 \begin{itemize}
 \item Hand out binary cards.
 \item NB: exam 1 a week from today!  In class, closed notes, closed
-  computer.  Covers material through today and next class. Class
-  before exam will be review.
-\item Quiz on Monday re: XXX.
+  computer.  Covers material through today and next class. We will
+  provide a practice exam on Monday; Wednesday will be review.
+\item Quiz on Monday re: booleans and conditionals.
 \item HW due Monday. (XXX prepare: conditionals, binary practice.)
 \end{itemize}
 
@@ -768,7 +774,7 @@ mark (but most were just finishing or very close).
 How many of you have heard of Ada Lovelace?  How about Charles
 Babbage?
 
-Ada Lovelace: 1815 (December 10!)--1852, first programmer.  Wrote
+Ada Lovelace: 1815--1852, first programmer.  Wrote
 programs for Charles Babbage's Analytical Engine (never built, but
 definitely works in principle).  Babbage's purpose for the AE was
 limited to making tables of numbers, but Lovelace had a much more
@@ -795,9 +801,6 @@ important development, that computers can not only \emph{operate} on
 these kinds of information, but allow us to \emph{communicate} using
 these kinds of information as well.  Over the next 2 classes we will
 consider some of the fundamentals that make this possible.
-
-XXX Claude Shannon (nnn-nnn) developed theory of information in terms
-of bits\dots
 
 \subsection*{Binary}
 
@@ -836,9 +839,13 @@ that way!]
 \item What is the biggest number that can be represented using $n$
   bits?
 \item How many bits are required to count up to $n$?
+\item Convert to binary: $103_{10}$. (Don't tell them how to do it;
+  see if they can figure it out.  Write a list of powers of 2 on the
+  board for them.)
 \end{enumerate}
 
-If time, work on converting decimal to binary (see next lecture).
+Talk about answers to first four questions.  Promise we will talk
+about conversion next class.
 
 \newpage
 \section{Information encoding II (M 9/10)}
@@ -849,19 +856,15 @@ If time, work on converting decimal to binary (see next lecture).
 \item \textbf{Assign practice exam}---not collected or graded, but we
   will go over it on Wednesday.  In your best interest to go through
   it and come prepared.
-\item XXX NEED A QUIZ, which one? Predict output of a program with
-  conditionals.
+% \item XXX NEED A QUIZ, which one? Predict output of a program with
+%   conditionals.
   % XXX Quiz: program with conditionals, ask them to identify five
   % errors.
 \end{itemize}
 
-\begin{reflect}{Brent}
-  XXX This is probably too much for one lecture\dots
-\end{reflect}
-
-Find a bit-partner and convert $103_{10}$ to binary.  [Draw a chart of
-powers of 2 on the board for them.]  They will probably naturally come
-up with something like the standard greedy algorithm.  Go over algorithm:
+Remember converting $103_{10}$ to binary last class?  You probably
+naturally came up with something like the standard greedy algorithm.
+Go over algorithm:
 
 \begin{itemize}
 \item Find largest power of two $\leq n$, say, $2^k$.
@@ -883,7 +886,12 @@ up with something like the standard greedy algorithm.  Go over algorithm:
 (This has all five usual aspects of algorithms: input, output, math,
 conditionals, repetition.  We can't quite write this algorithm in
 Python yet because we don't know how to do repetition.  Soon!)  Do an
-example together on the board, \eg $103_{10}$.
+example together on the board, \eg $103_{10}$ or something else. I've
+found it seems to help some students to show them how to write out
+blanks to represent different places in the binary number, then fill
+them in with 1's or 0's, like so:
+\[ \underset{32}{\underline{\phantom{XX}}} \; \underset{16}{\underline{\phantom{XX}}} \; \underset{8}{\underline{\phantom{XX}}} \; \underset{4}{\underline{\phantom{XX}}} \; \underset{2}{\underline{\phantom{XX}}} \; \underset{1}{\underline{\phantom{XX}}} \]
+though I emphasize that I don't require them to do this.
 
 \subsection*{Representing integers}
 
@@ -898,26 +906,6 @@ it away.  In Python 3, everything is \texttt{int}; there is also
 What about negative numbers?  One possibility: use one bit for sign
 (plus or minus).  (Turns out there is a better way, ``$2$'s
 complement''; learn about it in CSO or ask if you are curious.)
-
-\subsection*{Representing floating-point numbers}
-
-Back to base $10$: what does $123.45$ mean?
-\[ \dots + 4 \times 10^{-1} + 5 \times 10^{-2} \]
-We can do binary ``decimals'' (``binarals''?) the same way: \[
-1101.011 = 1 \times 2^3 + \dots + 1 \times 2^{-1} + 1 \times 2^{-2} =
-13 \frac{3}{8} \]  Also recall ``scientific notation'', \eg $1.23
-\times 10^{17}$.  This is how ``floating point'' numbers are
-represented: scientific notation, but in base $2$.  For example, with
-$64$ bits:
-\begin{itemize}
-\item 1 bit for sign ($\pm$)
-\item $11$ bits for exponent (base $2$ integer)
-\item $52$ bits for value
-\end{itemize}
-\eg $-1011011 \times 2^{-3}$.
-
-How would you represent $0.1_{10}$?  Can't represent exactly using
-base $2$ (infinite)! Show $0.1 + 0.1 + 0.1$ at python prompt.
 
 \subsection*{Representing text}
 
@@ -940,7 +928,9 @@ curious.)
 
 Image = grid of colored points (``pixels'' = \emph{pic}ture
 \emph{el}ements).  Each pixel = mix of red, green, blue (additive
-primary colors).  Each primary color has 256 possible intensities,
+primary colors). (Have you ever put a drop of water on your phone
+screen to see the pixels magnified?  It's pretty interesting, try it
+if you haven't!) Each primary color has 256 possible intensities,
 from 0 (off) to 255 (as bright as possible).  So each primary = 8 bits
 (1 byte), each pixel = 24 bits.  How many bits/bytes for a $500 \times
 500$ image?
@@ -961,25 +951,59 @@ notation.
 Show example of RGB colors expressed in hexadecimal: show
 \verb|style.css| from course website.
 
+\begin{reflect}{Brent}
+  There probably won't be time to cover anything past this point.
+  Including it here just in case there's extra time.
+\end{reflect}
+
+\subsection*{Representing floating-point numbers}
+
+Back to base $10$: what does $123.45$ mean?
+\[ \dots + 4 \times 10^{-1} + 5 \times 10^{-2} \]
+We can do binary ``decimals'' (``binarals''?) the same way: \[
+1101.011 = 1 \times 2^3 + \dots + 1 \times 2^{-1} + 1 \times 2^{-2} =
+13 \frac{3}{8} \]  Also recall ``scientific notation'', \eg $1.23
+\times 10^{17}$.  This is how ``floating point'' numbers are
+represented: scientific notation, but in base $2$.  For example, with
+$64$ bits:
+\begin{itemize}
+\item 1 bit for sign ($\pm$)
+\item $11$ bits for exponent (base $2$ integer)
+\item $52$ bits for value
+\end{itemize}
+\eg $-1011011 \times 2^{-3}$.
+
+How would you represent $0.1_{10}$?  Can't represent exactly using
+base $2$ (infinite)! Show $0.1 + 0.1 + 0.1$ at python prompt.
+
 \subsection*{Video, audio}
 
-XXX If time, can mention something about how video and audio are
-represented.
+Can mention something about how video and audio are represented.
+\begin{itemize}
+\item Video: sequence of frames, each frame is an image.  Of course
+  there is lots of redundancy to take advantage
+  of---\emph{compression}.
+\item Audio: sequence of ``samples''.
+\end{itemize}
 
 \newpage
 \section{Exam 1 review (W 9/12)}
 
 \subsection*{Setup}
 
+\begin{itemize}
+\item Note we \emph{do} still have lab today/tomorrow!  Should be a
+  nice review for Exam 1.
+\end{itemize}
+
 \subsection*{Sample exam}
 
-XXX edit this
-Have them do sample exam. Go over it.  Things to emphasize:
+Go over sample exam solutions.  Things to emphasize:  XXX
 \begin{itemize}
 \item ``Semantic errors'': looking for explanation of how/why the
   program works.
 \item Don't just print out a number, print it with a nice message!
-\item Ways to organize information in finding bugs
+\item Ways to organize information in finding bugs.
 \end{itemize}
 
 \newpage
