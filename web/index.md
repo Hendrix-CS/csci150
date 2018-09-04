@@ -31,10 +31,14 @@ Instructors:
 * Office: MC Reynolds 312
 * Office hours: [By appointment on youcanbook.me](http://drferrer.youcanbook.me/)
 
-TA hours (Bailey lab): **TBD**
+TA hours (Bailey lab):
 
-There are also CSCI TAs in the lab at **TBD**; although not officially
-TAs for 150 they are willing and able to help if there are not too
-many 151 students needing their help.
+* Tuesday 6-10pm (Kate)
+* Weds 7-9pm (Lauren)
+* Thurs 7-9pm (Fish)
+
+There are also CSCI TAs in the lab Sunday 8-10 and Monday 7-10;
+although not officially TAs for 150 they are willing and able to help
+if there are not too many 151 students needing their help.
 
 Past semesters: [F16](f16/), [S17](s17/), [S18](s18/)
