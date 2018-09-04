@@ -22,6 +22,6 @@ main = do
 
 labCompiler :: Compiler (Item String)
 labCompiler =
-    pandocCompiler
+    getResourceBody
     >>= loadAndApplyTemplate "templates/lab.html" defaultContext
     >>= relativizeUrls

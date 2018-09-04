@@ -106,3 +106,34 @@ pre.sourceCode span.fu { color: #06287e; }
 pre.sourceCode span.re { }
 pre.sourceCode span.er { color: red; font-weight: bold; }
 
+/*** Images ***/
+
+.entryimageleft {
+    margin:5px;
+    border:0px;
+    height:100px;
+    align:left;
+    float:left;
+    background-color:#FFFFFF;
+    color:#000000;
+}
+
+.entryimageright {
+    margin:5px;
+    border:0px;
+    height:100px;
+    align:right;
+    float:right;
+    background-color:#FFFFFF;
+    color:#000000;
+}
+
+.entryimagerightlarge {
+    margin:5px;
+    border:0px;
+    height:200px;
+    align:right;
+    float:right;
+    background-color:#FFFFFF;
+    color:#000000;
+}
