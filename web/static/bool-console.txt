@@ -1,0 +1,80 @@
+>>> True
+True
+>>> False
+False
+>>> type(False)
+<class 'bool'>
+>>> not True
+False
+>>> not False
+True
+>>> True and True
+True
+>>> True and False
+False
+>>> False and False
+False
+>>> True or False
+True
+>>> False or True
+True
+>>> True or True
+True
+>>> False or False
+False
+>>> (not (False or True)) and (True and (False or False))
+False
+>>> (not (False or True)) and (True and (False or True))
+False
+>>> (not (False or False)) and (True and (False or False))
+False
+>>> (not (False or False)) and (True and (False or True))
+True
+>>> 3 == 3
+True
+>>> 3 == 5
+False
+>>> x = 6
+(2*x + 3) == (3*5)
+>>> True
+not ((2*x + 3) == (3*5))
+>>> False
+(2*x + 3) != (3*5)
+>>> False
+3 < 5
+>>> True
+import math
+>>> math.pi ** 2 < 10
+True
+>>> 6 > 6
+False
+>>> 6 >= 6
+True
+>>> (6 > 6) or (6 == 6)
+True
+>>> 'hello' == 'hello'
+True
+>>> 'hello' == 'help'
+False
+>>> 'hi' < 'there'
+True
+>>> 'hey' < 'hello'
+False
+>>> 'A' < 'a'
+True
+>>> 'a' < 'A'
+False
+>>> 'cat' < 'dog'
+True
+>>> 'cat' < 'horse'
+True
+>>> 'cat' < 'catastrophe'
+True
+>>> '%&#$%)*' < 'socks'
+True
+>>> 'HELLO' < 'apple'
+True
+>>> False < True
+True
+>>> (x > 10) or (('hello' >= 'yes') and (math.pi**2 < 17))
+False

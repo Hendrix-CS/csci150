@@ -12,7 +12,8 @@ web pages and background material for the lab assignments. Readings will
 be assigned before material will be covered in class. You are expected
 to review the material and come to class prepared.
 
-* Wed, Aug 30: [box.py](static/box.py) (8am)
+* Wed, Aug 30: [box.py](static/box.py) (8am) | [volume_of_box.py](static/volume_of_box.pty) (11am)
+* Wed, Sep 4: [bool-console.txt](static/bool-console.txt), [cond.py](static/cond.py) (8am)
 
 <!-- * Wed, Jan 17: Introduction -->
 <!-- * Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**) -->
