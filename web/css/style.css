@@ -6,6 +6,8 @@ body {
     font-size: 14px;
 }
 
+pre span { font-weight:bold; color:blue;}
+
 #header {
 }
 

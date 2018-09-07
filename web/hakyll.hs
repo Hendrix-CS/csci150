@@ -16,6 +16,10 @@ main = do
       route $ setExtension "html"
       compile labCompiler
 
+    match "projects/*" $ do
+      route $ setExtension "html"
+      compile labCompiler
+
   where
     staticContent = ["images/*", "docs/*", "static/*", "data/*", "homework/*"]
     sections = ["overview", "syllabus", "quizhw", "labs", "projects", "exams", "grading"]
