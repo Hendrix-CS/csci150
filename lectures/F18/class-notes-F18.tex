@@ -696,20 +696,47 @@ For example:
 \begin{verbatim}
 import random
 
-passwd = input("Enter the password: ")
 r = random.random()
-print("The random number is", r)
-
-if (r < 0.2):
-    print("You got heads!")
-elif (r >= 0.2 and r < 0.6):
-    print("You got tails!")
+if r < 0.1:
+    print("Wow, you are unlucky!")
+    print("Try again next time.")
 else:
-    print("You got pickles!")
-    if (passwd == "pass"):
-        print("Here be secrets")
+    print("Yay! You get a prize!")
+    if r > 0.9:
+        print("You get a car!!!11")
     else:
-        print("No secrets for you")
+        if r > 0.7:
+            print("You get a bike!")
+        else:
+            if r > 0.5:
+                print("You get a book!")
+            else:
+                if r > 0.3:
+                    print("You get a sock!")
+                else:
+                    print("You get a stick of gum!")
+\end{verbatim}
+
+And then rewrite it to:
+\begin{verbatim}
+# Here's a better way to write the same thing:
+
+r = random.random()
+if r < 0.1:
+    print("Wow, you are unlucky!")
+    print("Try again next time.")
+else:
+    print("Yay! You get a prize!")
+    if r > 0.9:
+        print("You get a car!!!11")
+    elif r > 0.7:
+        print("You get a bike!")
+    elif r > 0.5:
+        print("You get a book!")
+    elif r > 0.3:
+        print("You get a sock!")
+    else:
+        print("You get a stick of gum!")
 \end{verbatim}
 
 \newpage
@@ -765,6 +792,14 @@ mark (but most were just finishing or very close).
 \item NB: exam 1 a week from today!  In class, closed notes, closed
   computer.  Covers material through today and next class. We will
   provide a practice exam on Monday; Wednesday will be review.
+  \textbf{Important}: This class is about \textbf{doing} more than
+  \textbf{knowing}.  One of the \textbf{worst ways} you can study is
+  to review your notes and the textbook, because it gives you a false
+  sense of familiarity/security without actually giving you any
+  practice actually writing code.  Much better way to study is to
+  \textbf{do} things: more tracing exercises; rewrite code from class
+  or lab; write some code of your own.  Review book/notes as
+    needed, to answer specific questions/confusions you come across.
 \item Quiz on Monday re: booleans and conditionals.
 \item HW due Monday. (XXX prepare: conditionals, binary practice.)
 \end{itemize}
