@@ -1,9 +1,10 @@
 CSCI 150 HW: conditional practice
 ---------------------------------
 
-*Due: Monday, February 5*
+*Due: Monday, September 10*
 
-1. Find at least 5 errors in the following code.
+1. Find at least 5 errors in the following code.  For each error,
+   explain what is wrong and how you would fix it.
 
     ```
     fruit = print("What is your favorite fruit?)
