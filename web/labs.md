@@ -15,10 +15,10 @@ title: Labs
 1     [Minecraft Hour of Code](labs/lab1.html)                                      Aug 22/23
 2     [Kepler and Newton](labs/kepler-newton.html)                                  Aug 29/30
 3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6
+4     [This Day in History](labs/dow.html)                                          Sep 12/13
 
 </font>
 
-  <!-- 4     [This Day in History](http://mgoadric.github.io/csci150/labs/lab4.html)       Feb 7/8 -->
   <!-- 5     [Guess My Number](labs/guess.html)                                            Feb 14/15 -->
   <!-- 6     [Mutation is the Word](labs/doublets.html)                                    Feb 21/22 -->
   <!-- 7     [Caesar's Secrets](labs/caesar.html)                                          Feb 28/Mar 1 -->
@@ -76,4 +76,3 @@ You may use
 the
 [automated style checker](http://mgoadric.github.io/csci150/python_style_guide.html) to
 help you catch common style errors.
-
