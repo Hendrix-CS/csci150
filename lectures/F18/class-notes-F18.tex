@@ -976,6 +976,14 @@ from 0 (off) to 255 (as bright as possible).  So each primary = 8 bits
 (1 byte), each pixel = 24 bits.  How many bits/bytes for a $500 \times
 500$ image?
 
+\begin{reflect}{Brent, F'18}
+  Got too carried away talking about ASCII and Unicode, images,
+  \emph{etc.} (there was also a bunch of stuff at the start of class:
+  handing things back, a quiz, \emph{etc.}) so I didn't actually make
+  it to talking about hexadecimal.  (Apparently neither did Lars.)  So
+  I sent them an email afterwards, reproduced below.
+\end{reflect}
+
 \subsection*{Hexadecimal}
 
 Base $16$.  Need 16 symbols: 0--9, a--f. So $a_{16} = 10_{10}$ and so
@@ -1051,6 +1059,36 @@ Go over sample exam solutions.  Things to emphasize:  XXX
 \section*{LAB: This Day in History (Th 9/13)}
 
 This can be used as a comprehensive review of everything on Exam 1.
+
+\begin{reflect}{Brent, F'18}
+  For this lab they need both mod and integer division, so we covered
+  them briefly at the start of lab.  I also explicitly showed them how
+  to use mod 100 to find the last two digits of a number.  That aspect
+  of the lab went pretty well, most students figured out how to use
+  mod appropriately.
+
+  Common mistakes (aside from the usual confusion over the rule for
+  leap year) included:
+  \begin{itemize}
+  \item Taking the mod of \verb|dow| too early, \emph{i.e.} writing
+    additional code that added offset factors to \verb|dow| in later
+    steps and not reducing it mod 7 afterwards.
+  \item The usual things re conditions \emph{e.g.} writing \verb|if month
+    == 3 or 5|, or \verb|if month = 3|, or writing a sequence of
+    \verb|if| instead of \verb|if... elif... elif|.
+  \end{itemize}
+
+  As an aside, during the lab I wondered how to write the condition
+  for a leap year without using nested conditionals.  Here are four
+  different Boolean expressions I came up with that all work:
+\begin{verbatim}
+(y % 4 == 0) and ((y % 100 == 0) == (y % 400 == 0))
+(y % 4 == 0) and not (y % 100 == 0 and y % 400 != 0)
+(y % 4 == 0) and (y % 100 != 0 or y % 400 == 0)
+(y % 4 == 0) != ((y % 100 == 0) != (y % 400 == 0))
+\end{verbatim}
+  Obviously we would never expect students to come up with any of these!
+\end{reflect}
 
 \newpage
 \section{Exam 1 (F 9/14)}
