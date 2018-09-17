@@ -10,15 +10,15 @@ answer questions along with writing and debugging code.
   data, conditionals, and binary encoding
   ([Practice exam](static/exam1-practice-f18.pdf))
 
-- Exam 2: Wednesday, October 10, covering functions, while and for loops,
+- Exam 2: Wednesday, October 10, covering functions, while loops,
   lists, and strings
   <!-- ([Practice exam](static/exam2-practice-s18.pdf), -->
   <!-- [In-class code from practice exam](static/exam2-practice.py)) -->
 
 <!-- ; [Practice exam solution code](static/exam2-practice.py); [Bonus functions](http://mgoadric.github.io/csci150/homework/bonusfunctions.html) due Wednesday after spring break (March 29)) -\-> -->
 
-- Exam 3: Monday, November 19, covering recursion, dictionaries and
-    object-oriented programming
+- Exam 3: Monday, November 19, covering for loops, dictionaries,
+    classes and objects, and recursion
 
     <!-- ([Practice problems](static/exam3-practice-s18.pdf), -->
     <!-- [tracing template](static/heap-tracing-template.pdf), [Practice -->
