@@ -1050,13 +1050,7 @@ Can mention something about how video and audio are represented.
 
 \subsection*{Sample exam}
 
-Go over sample exam solutions.  Things to emphasize:  XXX
-\begin{itemize}
-\item ``Semantic errors'': looking for explanation of how/why the
-  program works.
-\item Don't just print out a number, print it with a nice message!
-\item Ways to organize information in finding bugs.
-\end{itemize}
+Go over sample exam solutions.
 
 \newpage
 \section*{LAB: This Day in History (Th 9/13)}
@@ -1097,8 +1091,7 @@ This can be used as a comprehensive review of everything on Exam 1.
 \section{Exam 1 (F 9/14)}
 
 \begin{itemize}
-\item No HW.
-\item Read Chapter 5. XXX
+\item Note, no HW this weekend.
 \end{itemize}
 
 % \newpage
@@ -1160,13 +1153,13 @@ number.  Then put that in a loop to do it repeatedly for different
 numbers.
 
 \begin{verbatim}
-n = 1
+n: int = 1
 
-max = int(input("Test numbers up to: "))
+max: int = int(input("Test numbers up to: "))
 
 while n < max:
-    count = 0
-    m = n
+    count: int = 0
+    m: int = n
     while m != 1:
         if m % 2 == 0:
             m //= 2
@@ -1187,16 +1180,13 @@ while n < max:
 
 \subsection*{Setup}
 \begin{itemize}
-\item XXX Read chapter 5 in book --- quiz Friday.
 \item Reminder: project 1 due on Friday.
 \end{itemize}
 
 \subsection*{Functions}
 
-\textbf{Read Chapter 5 XXX! Note quiz on Wednesday!}
-
-We have used functions in Python already, like \verb|input|,
-\verb|cos|, other math things?
+We have used functions in Python already, like \verb|print| and
+\verb|input|.
 
 We can define our own functions!  Same rules for names as
 variables. Header line: parens mean no inputs, colon, indent.  Stuff
@@ -1257,8 +1247,8 @@ Make C to F conversion into function, takes C as argument:
 # Input temp_C is a temperature in degrees C; print a message with
 # the temperature converted to Fahrenheit.
 def C_to_F(temp_C: float):
-    F = C * 9.0 / 5.0 + 32
-    print("The temperature in degrees Fahrenheit is " + str(F))
+    F: float = C * 9.0 / 5.0 + 32
+    print("The temperature in degrees Fahrenheit is " + str(F) + "°.")
 \end{verbatim}
 
 Note function comment should describe the input(s), if any.
@@ -1271,10 +1261,11 @@ function, give one argument for each parameter.  The parameter will
 stand for the argument.  Do some examples.  Note you can put arbitrary
 expressions for arguments.
 
-Variables created inside functions are local!  Parameters are also
+Variables created inside functions are \textbf{local}!  Parameters are also
 local. Note that \verb|F| and \verb|temp_C| are not defined afterwards.
 
-\textbf{If time}, go on to talk about functions with return values.
+\textbf{If time}, can go on to talk about functions with return
+values.
 
 \newpage
 \section*{LAB: Guess My Number (Th 9/20)}
@@ -1309,8 +1300,10 @@ so on.  Then trace execution.  Introduce an error and see the
 
 Recall function from last time:
 \begin{verbatim}
+# Input temp_C is a temperature in degrees C; print a message with
+# the temperature converted to Fahrenheit.
 def C_to_F(temp_C: float):
-    F = C * 9.0 / 5.0 + 32
+    F: float = C * 9.0 / 5.0 + 32
     print("The temperature in degrees Fahrenheit is " + str(F))
 \end{verbatim}
 This function is actually really awkward.  Takes \verb|temp_C| as a
@@ -1318,14 +1311,16 @@ parameter, but then \emph{prints} the result.  What if we want to
 compute this but not print anything?  Make each function do ONE job.
 Better:
 \begin{verbatim}
+# Input temp_C is a temperature in degrees C; return the same
+# temperature converted to degrees F.
 def C_to_F(temp_C: float) -> float:
-    F = C * 9.0 / 5.0 + 32
+    F: float = C * 9.0 / 5.0 + 32
     return F
 \end{verbatim}
 Book calls it a \emph{fruitful function}.  (As a mathematician I would
 just call it a \emph{function}\dots) We can specify the type that gets
 returned after \verb|->|.  Note we could also get rid of the
-\verb|F| and just return the whole expression; matter of
+local variable \verb|F| and just return the whole expression; matter of
 taste/experience.
 
 \verb|return| means ``stop execution of the function right now and
@@ -1333,7 +1328,7 @@ return this value''.  What will this do?
 
 \begin{verbatim}
 def C_to_F(temp_C: float):
-    F = C * 9.0 / 5.0 + 32
+    F: float = C * 9.0 / 5.0 + 32
     return F
     print("The temperature is" + str(F))
 \end{verbatim}
@@ -1345,6 +1340,7 @@ inside \verb|if| or \verb|while|.  Let's try a function to tell us
 about the temperature (\emph{do something like this, students can come
   up with details}):
 \begin{verbatim}
+# Convert a temperature in degrees F into an adjective describing it.
 def F_to_qualitative(temp_F: float) -> str:
     if temp_F < 32:
         return "freezing"
@@ -1363,10 +1359,11 @@ Now have the students work in pairs to write a function
 to F, and makes an appropriate comment.
 
 \begin{verbatim}
+# Have a nice chat about the weather with the user.
 def discuss_weather():
-    temp_C = int(input("What is the temperature in degrees C? "))
-    temp_F = C_to_F(temp_C)
-    word = F_to_qualitative(temp_F)
+    temp_C: float = float(input("What is the temperature in degrees C? "))
+    temp_F: float = C_to_F(temp_C)
+    word: str = F_to_qualitative(temp_F)
     print("Hmm, it's very " + word + " today, don't you think?")
 \end{verbatim}
 
@@ -1385,6 +1382,7 @@ def discuss_weather_4():
 Functions can take multiple parameters.
 
 \begin{verbatim}
+# is_divisible(x,y) tests whether x is divisible by y.
 def is_divisible(x: int, y: int) -> bool:
     if (x % y == 0):
         return True
