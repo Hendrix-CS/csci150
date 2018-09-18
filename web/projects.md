@@ -24,7 +24,7 @@ project will be given when they are assigned.
 
 Project      Name                                                                                                                 Pct Assigned   Due
 ---------    ---------------------------------------------------                                                                  --- ---------- --------------------
-1            [Question-Answer](projects/civic-QA.html)                                                                            5%  Sep 10     Sep 21
+1            [Question-Answer](projects/civic-QA.html)                                                                            5%  Sep 10     Sep 24
 
 <!-- 2         [Word Games](http://mgoadric.github.io/csci150/projects/project2.html)                                                  10% Mar 7      Mar 15 -->
 <!--           [ [Sample project start #1](static/vacation.py), [Sample project start #2](static/doublets-demo.py) ] -->
