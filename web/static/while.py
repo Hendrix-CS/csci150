@@ -1,54 +1,45 @@
-#
-# Syntax of while loops (repetition):
+# Repetition in Python: while loops!
+
+# syntax:
 #
 # while <condition>:
-#    <statement>
-#    <statement>
-#    ...
+#   statement1
+#   statement2
+#   ...
+
+# Executes the statements in the body repeatedly until <condition> becomes false.
+
+# Example: print all the numbers from 1-10, each on a separate line.
+
+n: int = 1
+
+while n <= 10:
+    print(n)
+    n += 1   # abbreviation for n = n + 1
+
+# Three usual components of a while loop:
 #
-# Checks condition:
-#   - if false, skip body
-#   - if true, execute body and then check condition again, etc.
+# 1. Create a variable to control the loop & set an initial value.
+# 2. Write a condition involving the variable
+# 3. Update the variable (usually @ very end of the loop)
 
-x = 3
-while x < 10:
-    x = x + 1
-    print(x)
+# Challenge: write a program which asks the user if they want to quit.
+# If the user types 'quit', it quits, otherwise it asks them again.
 
-print("Now x is " + str(x))
-
-# Program should:
-#   1. print "hi"
-#   2. ask user "do you want to quit?"
-#   3. stop if user inputs 'yes', otherwise, repeat.
-
-# quit = 'GO!'
+# Method 1:
 #
-# while quit != 'yes':
-#     print("hi")
-#     quit = input("Do you want to quit? ")
+# answer: str = ''
+#
+# while answer != 'quit':
+#     answer = input("Do you want to quit? ")
+# print("OK, quitter!")
 
-# print("hi")
-# while input("Do you want to quit? ") != 'yes':
-#     print("hi")
+# Method 2:
 
-# print("hi")
-# quit = input("Do you want to quit? ")
-# while quit != 'yes':
-#     print("hi")
-#     quit = input("Do you want to quit? ")
+done: bool = False
 
-# while input("hi\nDo you want to quit? ") != 'yes': pass
-
-# done is a "sentinel variable" -- boolean that controls loop
-done = False
 while not done:
-    print("hi")
-    quit = input("Do you want to quit? ")
-    if quit == 'yes':
+    answer: str = input("Do you want to quit? ")
+    if answer == 'quit':
         done = True
-
-# Typical 3 components of a while loop:
-#   1. initialize loop control variable
-#   2. condition using loop control variable
-#   3. update the loop control variable at the *end* of the body.
+print("OK, quitter!")
