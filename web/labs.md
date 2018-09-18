@@ -10,16 +10,16 @@ title: Labs
 
 <font size="+1">
 
-\#    Name                                                                          Assigned
------ --------------------------------------------------                            ----------
-1     [Minecraft Hour of Code](labs/lab1.html)                                      Aug 22/23
-2     [Kepler and Newton](labs/kepler-newton.html)                                  Aug 29/30
-3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6
-4     [This Day in History](labs/dow.html)                                          Sep 12/13
+\#    Name                                                                          Assigned     Due
+----- --------------------------------------------------                            ----------   ---
+1     [Minecraft Hour of Code](labs/lab1.html)                                      Aug 22/23    Aug 29/30
+2     [Kepler and Newton](labs/kepler-newton.html)                                  Aug 29/30    Sep 5/6
+3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6      Sep 12/13
+4     [This Day in History](labs/dow.html)                                          Sep 12/13    Sep 19/20
+5     [Guess My Number](labs/guess.html)                                            Sep 19/20    Sep 26/27
 
 </font>
 
-  <!-- 5     [Guess My Number](labs/guess.html)                                            Feb 14/15 -->
   <!-- 6     [Mutation is the Word](labs/doublets.html)                                    Feb 21/22 -->
   <!-- 7     [Caesar's Secrets](labs/caesar.html)                                          Feb 28/Mar 1 -->
   <!-- P2    [Project 2](http://mgoadric.github.io/csci150/projects/project2.html) start   Mar 7/8 -->
