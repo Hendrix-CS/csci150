@@ -1,69 +1,46 @@
-# Defining our own functions!
+# Functions
+#
+# Examples we've seen:
+#
+#   - print(...)  takes one thing as input and prints it on the screen
+#   - input(...)  takes a string as input, prompts the user, and returns as output whatever they type.
 
-def say_hi_a_lot():
-    say_hi_twice()
-    print("hi hi")
-    say_hi_twice()
+# We can make our own functions!
 
+
+# Say hi two times.
 def say_hi_twice():
     say_hi()
     say_hi()
 
-# Keyword 'def' for defining a function
-def say_hi():
-    print("Hello, CSCI 150!")
-    print("This is a function")
-    print(3/0)
+# Greets the user, asks their name, and ignores it.
+def say_hi():   # inputs go in the parentheses
+    print("Hello there CSCI 150!")
+    print("This is a function.")
+    input("What is your name? ")
+    print("Whatever.")
 
-# Function with an input
-# temp_C is a *parameter*
-def C_to_F_msg(temp_C: int):
-    F = temp_C * 9 / 5 + 32
-    print("The temperature in degrees F is " + str(F) + "!!!")
+# say_hi_twice()
 
-# To use C_to_F_msg: e.g.   C_to_F_msg(15)
-# 15 is an *argument*
+# Take a temperature in degrees C as input, and print a message with
+# the temperature converted to F.
+def C_to_F_message(temp_C: float):
+    temp_F: float = temp_C * 9/5 + 32
+    print("The temperature in degrees Fahrenheit is " + str(temp_F) + "°F.")
 
-# F (or any variable defined inside a function) is *local* --- only
-# accessible ("in scope") inside the body of the function.
-# Parameters are also local.
+# Interactively prompt the user for a temperature in degrees C and print a message
+# with the temp converted to F.
+def C_to_F_interactive():
+    temp_C: float = float(input("What is the temperature in degrees C? "))
+    C_to_F_message(temp_C)
 
-# C_to_F_msg should actually be decomposed!  It is doing too much at once.
+# temp_F is a *local variable*: only defined inside the function.
 
+# Better version of C_to_F which does only *one* job (converting C -> F).
+# Take a temp in degrees C as a parameter, and return the temp in degrees F.
 def C_to_F(temp_C: float) -> float:
-    F = temp_C * 9 / 5 + 32
-    return F
+    # temp_F: float = temp_C * 9/5 + 32
+    # return temp_F
 
-# Convert a temperature in Fahrenheit into a qualitative adjective.
-def F_to_qualitative(temp_F: float) -> str:
-    if temp_F < 32:
-        return "freezing"
-    elif temp_F < 65:
-        return "mild"
-    elif temp_F < 85:
-        return "worm"
-    elif temp_F < 100:
-        return "uncomfortable"
-    else:
-        return "dead"
-
-
-# Prompts the user for the temperature in Celsius, converts it to F, then makes
-# an appropriate comment about the weather.
-def discuss_weather():
-    my_temp_C = float(input("What is the temp in degrees C? "))
-    F = C_to_F(my_temp_C)
-    weather_str = F_to_qualitative(F)
-    print("My, it's very " + weather_str + " today, don't you think?")
-
-def discuss_weather2():
-    my_temp_C = float(input("What is the temp in degrees C? "))
-    weather_str = F_to_qualitative(C_to_F(my_temp_C))
-    print("My, it's very " + weather_str + " today, don't you think?")
-
-def discuss_weather3():
-    my_temp_C = float(input("What is the temp in degrees C? "))
-    print("My, it's very " + F_to_qualitative(C_to_F(my_temp_C)) + " today, don't you think?")
-
-def discuss_weather4():
-    print("My, it's very " + F_to_qualitative(C_to_F(float(input("What is the temp in degrees C? ")))) + " today, don't you think?")
+    # Alternatively:
+    return temp_C * 9/5 + 32

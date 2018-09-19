@@ -15,6 +15,7 @@ to review the material and come to class prepared.
 * Wed, Aug 30: [box.py](static/box.py) (8am) | [volume_of_box.py](static/volume_of_box.pty) (11am)
 * Wed, Sep 4: [bool-console.txt](static/bool-console.txt), [cond.py](static/cond.py) (8am)
 * Mon, Sep 17: [while.py](static/while.py) (8am)
+* Wed, Sep 19: [functions.py](static/functions.py) (8am)
 
 <!-- * Wed, Jan 17: Introduction -->
 <!-- * Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**) -->
