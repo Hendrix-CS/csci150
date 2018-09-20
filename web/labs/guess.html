@@ -108,7 +108,7 @@ template you can use as a starting point; copy it into your file
 #
 # Input:  none
 # Output: a valid guess (int)
-def input_guess():
+def input_guess() -> int:
     # Keep prompting the user for their guess until they enter
     # something valid
 
@@ -116,7 +116,7 @@ def input_guess():
 
     # We only do this conversion at the end, once we know
     # guess_str looks like an int
-    guess = int(guess_str)
+    guess: int = int(guess_str)
 
     # Finally, return the user's guess
     return guess
@@ -139,13 +139,13 @@ new <code>input_guess()</code> function.  That is, instead of
 something like
 
 <pre>
-    guess = int(input("Your guess? "))
+    guess: int = int(input("Your guess? "))
 </pre>
 
 you should now have
 
 <pre>
-    guess = input_guess()
+    guess: int = input_guess()
 </pre>
 
 Here's what the output of your program might look like once you
