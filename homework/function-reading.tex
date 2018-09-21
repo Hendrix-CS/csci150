@@ -95,10 +95,10 @@
 
 \begin{document}
 
-\subsection{CSCI 150 HW: function reading
-practice}\label{csci-150-hw-function-reading-practice}
+\subsection{CSCI 150 HW: function and loop reading
+practice}\label{csci-150-hw-function-and-loop-reading-practice}
 
-\emph{Due: Wednesday, February 21}
+\emph{Due: Monday, September 24}
 
 To receive full credit, for each exercise you should do the following:
 
@@ -109,7 +109,7 @@ To receive full credit, for each exercise you should do the following:
   the Python interpreter. (You are welcome to refer to your notes or
   textbook, read Python documentation, look at examples from class,
   \emph{etc.}; just don't actually run any code.) Trace the execution of
-  the code in the exercise, and write down the final output.
+  the code in the exercise.
 \item
   \textbf{Check}: Run the code. Does the actual output agree with what
   you wrote down in step 1?
@@ -137,53 +137,74 @@ paper.
 You should consider the code in each exercise separately from the other
 exercises.
 
-You should complete the following exercises \emph{without} using a
-computer, though you may consult your textbook. You should write your
-answers by hand and turn them in on paper.
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Consider the functions defined below. What does \texttt{main()} print?
+  Consider the functions defined below. Trace the execution when
+  \texttt{main1()} is called.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{def}\NormalTok{ foo(a):}
+\KeywordTok{def}\NormalTok{ foo(a: }\BuiltInTok{int}\NormalTok{) }\OperatorTok{->} \BuiltInTok{int}\NormalTok{:}
 \NormalTok{    b }\OperatorTok{=} \DecValTok{3}\OperatorTok{*}\NormalTok{a }\OperatorTok{+} \DecValTok{2}
     \ControlFlowTok{return}\NormalTok{ b}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"In foo"}\NormalTok{)}
 
-\KeywordTok{def}\NormalTok{ bar(x,y):}
+\KeywordTok{def}\NormalTok{ bar(x: }\BuiltInTok{int}\NormalTok{, y: }\BuiltInTok{int}\NormalTok{) }\OperatorTok{->} \BuiltInTok{int}\NormalTok{:}
     \ControlFlowTok{return}\NormalTok{ foo(x) }\OperatorTok{+}\NormalTok{ foo(y)}
 
-\KeywordTok{def}\NormalTok{ main():}
-    \BuiltInTok{print} \StringTok{"The value is "} \OperatorTok{+} \BuiltInTok{str}\NormalTok{(bar(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{))}
+\KeywordTok{def}\NormalTok{ main1():}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"The value is "} \OperatorTok{+} \BuiltInTok{str}\NormalTok{(bar(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{)))}
+
+\NormalTok{main1()}
 \end{Highlighting}
 \end{Shaded}
 \item
-  Consider the functions defined below. What is printed by
-  \texttt{main2()}?
+  Consider the functions defined below. Trace the execution when
+  \texttt{main2()} is called.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{def}\NormalTok{ f1():}
-    \BuiltInTok{print} \StringTok{"mushroom"}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"mushroom"}\NormalTok{)}
 
 \KeywordTok{def}\NormalTok{ f2():}
 \NormalTok{    f1()}
-    \BuiltInTok{print} \StringTok{"badger"}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"badger"}\NormalTok{)}
 \NormalTok{    f1()}
 
-\KeywordTok{def}\NormalTok{ f3(n):}
+\KeywordTok{def}\NormalTok{ f3(n: }\BuiltInTok{int}\NormalTok{):}
 \NormalTok{    f2()}
     \ControlFlowTok{if}\NormalTok{ n }\OperatorTok{>} \DecValTok{5}\NormalTok{:}
-        \BuiltInTok{print} \StringTok{"snake"}
+        \BuiltInTok{print}\NormalTok{(}\StringTok{"snake"}\NormalTok{)}
 \NormalTok{        f1()}
     \ControlFlowTok{else}\NormalTok{:}
-        \BuiltInTok{print} \StringTok{"snaaaaake"}
+        \BuiltInTok{print}\NormalTok{(}\StringTok{"snaaaaake"}\NormalTok{)}
 
 \KeywordTok{def}\NormalTok{ main2():}
 \NormalTok{    f3(}\DecValTok{2}\NormalTok{)}
 \NormalTok{    f3(}\DecValTok{6}\NormalTok{)}
+
+\NormalTok{main2()}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Trace the execution when \texttt{main3} is called.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ main3():}
+\NormalTok{    s: }\BuiltInTok{int} \OperatorTok{=} \DecValTok{0}
+\NormalTok{    i: }\BuiltInTok{int} \OperatorTok{=} \DecValTok{0}
+    \ControlFlowTok{while}\NormalTok{ i }\OperatorTok{<} \DecValTok{5}\NormalTok{:}
+\NormalTok{        j: }\BuiltInTok{int} \OperatorTok{=} \DecValTok{0}
+        \ControlFlowTok{while}\NormalTok{ j }\OperatorTok{<}\NormalTok{ i:}
+\NormalTok{            s }\OperatorTok{+=}\NormalTok{ j}
+\NormalTok{            j }\OperatorTok{+=} \DecValTok{1}
+\NormalTok{        i }\OperatorTok{+=} \DecValTok{1}
+    \BuiltInTok{print}\NormalTok{(s)}
+
+\NormalTok{main3()}
 \end{Highlighting}
 \end{Shaded}
 \end{enumerate}

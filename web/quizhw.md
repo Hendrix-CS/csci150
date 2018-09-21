@@ -17,8 +17,8 @@ your final grade.
 1   [Minecraft](static/minecraft.html)                                                                                 Monday August 27
 2   [Tracing practice](static/tracing-practice.pdf) ([Sample solutions](static/tracing-exemplar.pdf))                  Wednesday September 5
 3   [Conditional practice](static/conditional-practice.pdf)                                                            Monday September 10
+4   [Function and loop reading](static/function-reading.pdf)                                                           Monday September 24
 
-<!-- 4: [Function reading](static/function-reading.pdf)                                                                    Wednesday February 21 -->
 <!-- 5: [Function, loop, and string reading](static/loop-string-reading.pdf)                                               Monday February 26 -->
 <!-- 6: [Heap tracing](static/heap-tracing.pdf) [ [Heap tracing template](static/heap-tracing-template.pdf) ]              Monday April 2 -->
 
