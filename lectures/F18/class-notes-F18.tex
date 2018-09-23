@@ -1275,6 +1275,16 @@ Have the students write both versions of the game (in the first
 version, the computer picks the number; in the second, the computer
 guesses).
 
+\begin{reflect}{Brent, F'18}
+  Went pretty well I think.  As usual:
+  \begin{itemize}
+  \item I saw quite a few students tried to use recursion to do the
+    ``play again'' looping.
+  \item Of course many students struggled to figure out how to have
+    the computer play.
+  \end{itemize}
+\end{reflect}
+
 \newpage
 \section{Functions II: call stack, return values (F 9/21)}
 
@@ -1286,7 +1296,7 @@ guesses).
 \item HW due on Monday (function \& loop reading)
 \end{itemize}
 
-\subsection*{Flow of execution \& stack diagrams}
+\subsection*{Flow of execution \& tracing with stack diagrams}
 
 Execution starts at the first line of a program and continues.  But
 when a function is called, execution jumps to that function, and when
@@ -1302,6 +1312,13 @@ Do an example. Write a function that calls \verb|C_to_F| on several
 temperatures.  Then write another function which does that twice, and
 so on.  Then trace execution.  Introduce an error and see the
 ``traceback''.  Draw a stack diagram with local variables.
+
+\begin{reflect}{Brent, F'18}
+  Actually decided that this really needs to be a formal introduction
+  to tracing with the function stack.  So spent longer than I have
+  before on that part.  Need to write up some better notes for that
+  next time.
+\end{reflect}
 
 \subsection*{``Fruitful'' functions}
 
@@ -1423,17 +1440,76 @@ can just return \verb|x % y == 0| directly.
   quite a lot of learning was going on.
 \end{reflect}
 
+\begin{reflect}{Brent, F'18}
+  This time, didn't even quite get to showing the whole example with
+  nesting---that is, I did show it to them, but only very quickly
+  right at the end of class.  Going over the tracing stuff took more
+  time.
+\end{reflect}
+
 \newpage
 \section{Functions III: Abstraction (M 9/24)}
 
 \textbf{Brent is gone at ICFP}
 
-XXX WRITE ME
+\subsection*{Setup}
+\begin{itemize}
+\item Collect HW (while loop tracing).  Go over briefly if desired?
+\item Reminder: quiz on Wednesday: functions (tracing with stack)
+\end{itemize}
 
 Redo Collatz example, take code that we wrote before and successivly
 abstract out parts of the code into functions.  Show how to think
 about what information is going into that code (which turns into
-parameters) and what information is coming out.
+parameters) and what information is coming out (which turns into a
+return value).  Points to emphasize:
+
+\begin{itemize}
+\item Functions are for decomposing tasks \emph{hierarchically}.
+  Functions aren't for chaining: \emph{i.e.}\ a function should \emph{not}
+  call ``the thing that happens next'' as the last line. Can show them
+  something like this example:
+\begin{verbatim}
+# BAD
+
+def f1():
+    do some stuff
+    f2()
+
+def f2():
+    do more stuff
+    f3()
+
+def f3():
+    yet more stuff
+\end{verbatim}
+  Instead it should be decomposed like so:
+\begin{verbatim}
+# GOOD
+
+def main():
+    f1()   # first step
+    f2()   # second step
+    f3()   # third step
+
+def f1():
+    do some stuff
+    # f1 doesn't know or care what comes next after it.
+    # That's main's job.
+
+def f2():
+    do more stuff
+
+def f3():
+    yet more stuff
+\end{verbatim}
+\item Managing information flow is very important.  Decide which
+  function ``owns'' a variable.  To get it to another function---give
+  it to the function as an argument.  To get a value back---return it,
+  then save it in a variable.
+\end{itemize}
+
+For example you might end up with something like this:
 
 \begin{verbatim}
 # Compute the hailstone function on n.
@@ -1460,28 +1536,9 @@ def check_collatz_up_to(max: int):
         n += 1
 \end{verbatim}
 
-Then start with the ``volume of a box'' program we wrote a long time
-ago (in the run-up to Kepler/Newton lab) and improve it by abstracting
-into functions.
-
-XXX update this code
-\begin{verbatim}
-# Inputs:
-#   - prompt: string to be used as a prompt
-# Output: none
-#
-# Repeatedly prompt the user for a number using the
-# given prompt, until they enter a valid integer.
-def int_input(prompt):
-    valid = False
-    while (not valid):
-        uinput = input(prompt)
-        if uinput.isdigit():
-            valid = True
-        else:
-            print "That's not a valid integer.  Try again!"
-    return int(uinput)
-\end{verbatim}
+If time, maybe take the ``volume of a box'' program we wrote a long
+time ago (in the run-up to Kepler/Newton lab) and improve it by
+abstracting it into functions too.
 
 \newpage
 \section{Strings (W 9/26)}
@@ -1490,8 +1547,14 @@ def int_input(prompt):
 
 \subsection*{Setup}
 \begin{itemize}
-\item XXX Mention HW: DNA
+\item Quiz: functions
 \end{itemize}
+
+\begin{reflect}{Brent}
+  Note, this continues on Friday, so it's OK if you don't quite get
+  through everything, or go fast and have time to start doing more
+  stuff from the beginning of Friday etc.
+\end{reflect}
 
 We sort of know about strings, but the only thing we can do with them
 so far is concatenate them with \verb|+|.
@@ -1500,17 +1563,21 @@ so far is concatenate them with \verb|+|.
 \item Strings are \emph{sequences of characters}.
 
 \item We can reference individual characters in a string by their
-  \emph{index}: \verb|mystring[3]|.  Note that \emph{indices start at 0}.
+  \emph{index} using brackets: \verb|mystring[3]|.  Note that
+  \emph{indices start at 0}.
 
 \item We can calculate the length of a string with \verb|len()|.
-  (Relationship of \verb|len| to valid indices?)
+  (Check: what is the relationship of \verb|len| to valid indices?)
 
-\item String slices: \verb|mystr[a:b]|.  Have students play around to
-  figure out details?
+\item String slices: \verb|mystr[a:b]|.  Play around a bit to figure
+  out what they do.
   \begin{itemize}
-  \item Characters starting at index $a$, up to \emph{but not
-      including} index $b$.
-  \item Can leave off first, or second, or both.
+  \item Get the characters starting at index $a$, up to \emph{but not
+      including} index $b$.  (This seems weird---at first you will just
+    have to memorize this fact.  There are good reasons for it though,
+    makes a lot of string indexing more elegant.)
+  \item Can leave off first, or second (or both, though that is
+    useless).
   \item Negative indices count backwards from the end.
   \end{itemize}
 
@@ -1519,30 +1586,27 @@ so far is concatenate them with \verb|+|.
 
 \item Strings have \emph{methods}, i.e. functions you can call on
   strings.  Do \verb|help(str)|, \verb|help(str.upper)| etc.
-\item Show some useful methods: \verb|upper|, \verb|count|,
+\item Point out some useful methods: \verb|upper|, \verb|count|,
   \verb|replace|, \verb|find|, \verb|isdigit|
 \end{itemize}
 
-\subsection*{More while loop \& function practice}
+\subsection*{While loop, function, and string practice}
 
-First, function to ``explode'' a string.  Write it collaboratively.
+(OK if this moves to Friday) First, function to ``explode'' a string.
+Write it collaboratively.
 
 \begin{verbatim}
-def explode(s):
-    i = 0
+def explode(s: str):
+    i: int = 0
     while i < len(s):
-        print s[i]
+        print(s[i])
         i += 1
 \end{verbatim}
 
 Even better if they make some bugs in the above, run it and see what
 is wrong.
 
-\subsection*{DNA HW intro}
-
-Show them HW, do a bit of it together to show them what they should
-do.  Make sure they understand that they should do everything at the
-Python prompt, they do not need to write a program!
+(If time, do more examples from Friday.)
 
 \newpage
 \section*{LAB: Mutation is the Word (Doublets) (Th 9/27)}
@@ -1581,43 +1645,63 @@ Python prompt, they do not need to write a program!
 \end{reflect}
 
 \newpage
-\section{Execution tracing with a function stack (F 9/28)}
+\section{More string, loop, \& function practice (F 9/28)}
 
 \textbf{Brent is gone at ICFP}
 
 \subsection*{Setup}
 \begin{itemize}
-\item XXX Reminder: DNA Strings HW due Wednesday before class.
-\item XXX Reminder: quiz next class on strings.
+\item HW due Monday (DNA strings)
+\item XXX quiz?
 \end{itemize}
 
-XXX TRACING WITH FUNCTION STACK.  Need to rewrite this lecture.
-The practice will come from tracing some functions that use these
-features (strings, loops, functions).
+Today's focus is on getting them to do more hands-on exercises writing
+code using strings, loops, and functions.
 
-Stuff from before (maybe it can be used):
+XXX add more practice exercises.
 
 Do version of \verb|int_input| that accepts negative numbers as well
-as positive (uses indexing, slicing, \verb|or|)?
-
-Talk about \verb|n -= 1| syntax (``decrement'') and \verb|n += 1|
-(``increment'').  Can also use \verb|*=|, \verb|/=| etc.
+as positive (uses indexing, slicing, \verb|or|). For example:
 
 \begin{verbatim}
-import time
-
 # Inputs:
-#   - n: int to count down from
+#   - prompt: string to be used as a prompt
 # Output: none
 #
-# Print a countdown from the starting number to zero.
-def countdown(n):
-    while n > 0:
-        print str(n) + "..."
-        time.sleep(1)
-        n = n - 1
-    print "BLASTOFF!"
+# Repeatedly prompt the user for a number using the
+# given prompt, until they enter a valid integer.
+def int_input(prompt: str):
+    valid: bool = False
+    while not valid:
+        uinput: str = input(prompt)
+        if uinput.isdigit() or (uinput[0] == '-' and uinput[1:].isdigit()):
+            valid = True
+        else:
+            print "That's not a valid integer.  Try again!"
+    return int(uinput)
 \end{verbatim}
+
+% \begin{verbatim}
+% import time
+
+% # Inputs:
+% #   - n: int to count down from
+% # Output: none
+% #
+% # Print a countdown from the starting number to zero.
+% def countdown(n):
+%     while n > 0:
+%         print str(n) + "..."
+%         time.sleep(1)
+%         n = n - 1
+%     print "BLASTOFF!"
+% \end{verbatim}
+
+\subsection*{DNA HW intro}
+
+Show them HW, do a bit of it together to show them what they should
+do.  Make sure they understand that they should do everything at the
+Python prompt, they do not need to write a program!!
 
 \newpage
 \section{Lists I (M 10/1)}
