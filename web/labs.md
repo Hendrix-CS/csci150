@@ -17,10 +17,10 @@ title: Labs
 3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6      Sep 12/13
 4     [This Day in History](labs/dow.html)                                          Sep 12/13    Sep 19/20
 5     [Guess My Number](labs/guess.html)                                            Sep 19/20    Sep 26/27
+6     [Mutation is the Word](labs/doublets.html)                                    Sep 26/27
 
 </font>
 
-  <!-- 6     [Mutation is the Word](labs/doublets.html)                                    Feb 21/22 -->
   <!-- 7     [Caesar's Secrets](labs/caesar.html)                                          Feb 28/Mar 1 -->
   <!-- P2    [Project 2](http://mgoadric.github.io/csci150/projects/project2.html) start   Mar 7/8 -->
   <!-- 8     [Fractal Recursion](labs/fractal.html)                                        Mar 14/15 -->
