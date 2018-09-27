@@ -18,11 +18,11 @@ your final grade.
 2   [Tracing practice](static/tracing-practice.pdf) ([Sample solutions](static/tracing-exemplar.pdf))                  Wednesday September 5
 3   [Conditional practice](static/conditional-practice.pdf)                                                            Monday September 10
 4   [Function and loop reading](static/function-reading.pdf)                                                           Monday September 24
+5   [DNA Strings](static/dna-strings.html)                                                                             Monday October 1
 
 <!-- 5: [Function, loop, and string reading](static/loop-string-reading.pdf)                                               Monday February 26 -->
 <!-- 6: [Heap tracing](static/heap-tracing.pdf) [ [Heap tracing template](static/heap-tracing-template.pdf) ]              Monday April 2 -->
 
-<!-- 4: [DNA Strings](static/dna-strings.html)                                                                             February 22 -->
 
 
 <!-- 6: [Zen reading -- section 1](http://mgoadric.github.io/csci150/homework/zen.html)                                 March 30 -->

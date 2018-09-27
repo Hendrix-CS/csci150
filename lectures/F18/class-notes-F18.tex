@@ -1652,25 +1652,23 @@ is wrong.
 \subsection*{Setup}
 \begin{itemize}
 \item HW due Monday (DNA strings)
-\item XXX quiz?
 \end{itemize}
 
-Today's focus is on getting them to do more hands-on exercises writing
-code using strings, loops, and functions.
-
-XXX add more practice exercises.
+Today's focus is on getting the students to do more hands-on exercises
+writing code using strings, loops, and functions.
 
 Do version of \verb|int_input| that accepts negative numbers as well
-as positive (uses indexing, slicing, \verb|or|). For example:
+as positive (uses indexing, slicing, \verb|or|). Maybe write a simple
+version of \verb|int_input| together and then have them extend it to
+work with negative numbers.  For example:
 
 \begin{verbatim}
 # Inputs:
 #   - prompt: string to be used as a prompt
-# Output: none
 #
 # Repeatedly prompt the user for a number using the
 # given prompt, until they enter a valid integer.
-def int_input(prompt: str):
+def int_input(prompt: str) -> int:
     valid: bool = False
     while not valid:
         uinput: str = input(prompt)
@@ -1681,27 +1679,11 @@ def int_input(prompt: str):
     return int(uinput)
 \end{verbatim}
 
-% \begin{verbatim}
-% import time
-
-% # Inputs:
-% #   - n: int to count down from
-% # Output: none
-% #
-% # Print a countdown from the starting number to zero.
-% def countdown(n):
-%     while n > 0:
-%         print str(n) + "..."
-%         time.sleep(1)
-%         n = n - 1
-%     print "BLASTOFF!"
-% \end{verbatim}
-
 \subsection*{DNA HW intro}
 
 Show them HW, do a bit of it together to show them what they should
 do.  Make sure they understand that they should do everything at the
-Python prompt, they do not need to write a program!!
+Python prompt, they do not need to write a program!
 
 \newpage
 \section{Lists I (M 10/1)}
