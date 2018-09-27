@@ -17,7 +17,7 @@ title: Labs
 3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6      Sep 12/13
 4     [This Day in History](labs/dow.html)                                          Sep 12/13    Sep 19/20
 5     [Guess My Number](labs/guess.html)                                            Sep 19/20    Sep 26/27
-6     [Mutation is the Word](labs/doublets.html)                                    Sep 26/27
+6     [Mutation is the Word](labs/doublets.html)                                    Sep 26/27    Oct 3/4
 
 </font>
 
