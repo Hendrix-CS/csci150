@@ -1696,6 +1696,54 @@ def int_input(prompt: str) -> int:
     return int(uinput)
 \end{verbatim}
 
+Some more potential practice functions.  Get them to write these on
+paper with partners, then go over them (perhaps even have students
+come up to type them in).
+
+\begin{verbatim}
+# Compute the sum 1 + 2 + ... + n.
+def sumUpTo(n: int) -> int:
+    s: int = 0
+    i: int = 1
+    while i <= n:
+        s += i
+        i += 1
+    return s
+\end{verbatim}
+
+\begin{verbatim}
+# Keep prompting the user for a number, and stop when they enter
+# zero.  Then print the sum of all the numbers the user entered.
+def sumUserNums():
+    s: int = 0
+    n: int = 1
+    while (n != 0):
+        n = int(input("Please enter a number (0 to stop): "))
+        s += n
+    print("The sum is: " + str(s))
+\end{verbatim}
+
+\begin{verbatim}
+# Print a triangle of asterisks of height n, like
+#
+# *
+# **
+# ***
+#
+# etc.  (Hint: build a string for each row and then print it.)
+def triangle(n: int):
+    rowCount: int = 1
+    while rowCount <= n:
+        row: str = ''
+        i: int = 1
+        while i <= rowCount:
+            row += '*'
+            i += 1
+        print(row)
+
+        rowCount += 1
+\end{verbatim}
+
 \subsection*{DNA HW intro}
 
 Show them HW, do a bit of it together to show them what they should
