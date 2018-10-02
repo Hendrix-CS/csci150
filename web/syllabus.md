@@ -16,6 +16,7 @@ to review the material and come to class prepared.
 * Wed, Sep 4: [bool-console.txt](static/bool-console.txt), [cond.py](static/cond.py) (8am)
 * Mon, Sep 17: [while.py](static/while.py) (8am)
 * Wed, Sep 19 - Fri, Sep 21: [functions.py](static/functions.py) (8am)
+* Mon, Oct 1: [lists.py](static/lists.py), [lists-console.txt](static/lists-console.txt) (8am)
 
 <!-- * Wed, Jan 17: Introduction -->
 <!-- * Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**) -->
