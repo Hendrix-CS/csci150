@@ -1753,18 +1753,9 @@ Python prompt, they do not need to write a program!
 \newpage
 \section{Lists I (M 10/1)}
 
-XXX schedule!
-
 \subsection*{Setup}
 
-% \subsection*{Quiz 5 (Strings)}
-% \begin{verbatim}
-% t = "PLEASEREADME"
-% r = "astory"
-% p = t[-2:] * 2
-% r = r[(19 % 5) - 1:]
-% z = p[:3] + r
-% \end{verbatim}
+\subsection*{Lists}
 
 Lists are a lot like strings, but hold arbitrary data instead of
 characters.
@@ -1812,9 +1803,11 @@ Other list mutation methods:
 \end{reflect}
 
 \begin{verbatim}
+from typing import *
+
 # Input: items (list)
 # Print the items in the list, one per line.
-def explode_list(items):
+def explode_list(items: List[str]):
     n = 0
     while n < len(items):
         print(items[n])
@@ -1872,194 +1865,217 @@ def read_inputs2():
 \end{verbatim}
 
 \newpage
-\section{References, for loops (W 10/3)}
-
-XXX schedule!
+\section{Lists II (W 10/3)}
 
 \subsection*{Setup}
-\begin{itemize}
-\item \textbf{Exam 2 one week from today}.
-\end{itemize}
-
-% \subsection*{Review}
-% Find partner. \verb|animals| is a list, how to append 3 copies of
-% \verb|"gerbil"| onto the end?  Go over possibilities.  This might take
-% a while.  Try to get a bunch of different approaches from different
-% groups.  Talk about \verb|append|, list repetition operator \verb|*|,
-% concatenation operator \verb|+|, etc.
-
-% \begin{reflect}{Brent, S'16}
-%   As an illustration, here are all the suggestions my students came up
-%   with:
-% \begin{verbatim}
-% animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
-
-% # Ways to add 3 gerbils to the end of the list
-
-% # Doesn't quite work:
-% # animals.append('gerbil ' * 3)
-
-% # Runtime error:
-% # animals.append('gerbil') * 3
-
-% # Works!
-% # while len(animals) < 8:
-% #    animals.append('gerbil')
-
-% # Runtime error (too many arguments to append):
-% # animals.append('gerbil', 'gerbil', 'gerbil')
-
-% # Works!
-% # animals.append('gerbil')
-% # animals.append('gerbil')
-% # animals.append('gerbil')
-
-% # Same as 'gerbil' * 3
-% # animals.append('gerbil' + 'gerbil' + 'gerbil')
-
-% # Doesn't change animals
-% # animals + ['gerbil', 'gerbil', 'gerbil']
-
-% # Works!
-% # animals = animals + ['gerbil', 'gerbil', 'gerbil']
-
-% # Works!
-% # gerbil_list = ['gerbil']
-% # animals = animals + gerbil_list * 3
-
-% # Almost works but not quite.
-% # animals.append(['gerbil'] * 3)
-% \end{verbatim}
-
-%   I think this is a really great exercise. It really helps develop
-%   their intuition and their grasp of the details.
-% \end{reflect}
-
-% \begin{reflect}{Brent, S'17}
-%   The exercise was not as useful/fun this time around.  The students
-%   made fewer interesting mistakes, which I suppose is a good thing.
-% \end{reflect}
-
-% \subsection*{Lists and strings}
-
-% Lists of characters are different than strings!
-
-% \begin{itemize}
-% \item Converting strings to list:
-%   \begin{itemize}
-%   \item \verb|list| function.
-%   \item \verb|split()| method.
-% \begin{verbatim}
-%   s = "banana"
-%   t = s.split("n")
-% \end{verbatim}
-% Yields \verb|["ba", "a", "a"]|.
-
-%   \end{itemize}
-% \item List to string: \verb|join()| method on delimiter.
-% \begin{verbatim}
-%   t = ['fun', 'sun', 'sub', 'rub']
-%   delimiter = " -> "
-%   delimiter.join(t)
-% \end{verbatim}
-% \end{itemize}
-
-\subsection*{Mutability, objects, and aliasing}
-
-Warm-up: what happens here?  Find partner \& decide.
-\begin{verbatim}
-nums  = [1,2,3]
-nums2 = nums
-nums[1] = 0
-print nums2
-\end{verbatim}
-
-Try it at python prompt.  This is really weird!
-
-As hinted last time, the fact that lists are mutable opens a huge can
-of worms.  Let's start by pulling back the curtain a little bit.  Up
-until now we have talked about variables having values, but we need to
-be more precise.  Draw stack diagram with variables referencing two
-different lists.
 
 \begin{itemize}
-\item Variables contain \emph{references} to objects.  A reference
-  ``points'' to a certain object (really it is just a memory address).
-\item Copying the value of a variable into another variable just
-  copies the \emph{reference}, so they now point to the same object!
-\item Variables which reference objects that have the same value are
-  \emph{equal}.  You can test equality with \verb|==|.
-\item Variables which reference the \emph{same object} are
-  \emph{identical}. You can test identity with \verb|is| (though you
-  won't need this in the rest of the course).
-\item Note since strings are immutable, it didn't matter before; there
-  is no way to tell the difference between two variables with separate
-  copies of a string and two variables referencing the same string.
+\item Quiz (strings)
+\item Exam 2 (primarily covering functions, while loops, strings, and
+  lists---though of course it also builds on top of concepts from Exam
+  1 so you still need to know those too) will be one week from today
+  (day before fall break).  Practice exam will be out on Friday;
+  Monday will be review.
 \end{itemize}
 
-Do this at the REPL, with accompanying pictures drawn on the board:
-\begin{verbatim}
->>> a = [1,2,3]
->>> b = [1,2,3]
->>> a == b
-True
->>> a is b
-False
->>> del a[0]
->>> a
-[2, 3]
->>> b
-[1, 2, 3]
->>> a == b
-False
->>> a = b
->>> a
-[1, 2, 3]
->>> b
-[1, 2, 3]
->>> a == b
-True
->>> a is b
-True
->>> del a[0]
->>> a
-[2, 3]
->>> b
-[2, 3]
-\end{verbatim}
-Note in particular that the assignment \verb|a = b| does not copy the
-value of \verb|b| into \verb|a|, but just makes \verb|a|
-\emph{reference the same thing as} \verb|b|.
+\subsection*{Lists and strings}
 
-This has implications for function parameters as well.  Consider:
+First, a small aside.  Note that strings and lists of characters are
+not actually the same.
 
-\begin{verbatim}
-def animal_release(animals):
-  while len(animals) > 2:
-  animals.pop(0)
-
-print(animals)
-animal_release(animals)
-print(animals)
-\end{verbatim}
-
-Ask: what gets printed?  Draw trace diagram to understand.
-
-Some related things:
 \begin{itemize}
-\item What if you really \emph{do} want to make a \emph{copy} of a
-  list, so modifying it doesn't modify the original?  You can write
-  \verb|some_list[:]|.  This is a dirty, terrible, disgusting hack.
-\item Be careful about methods that modify vs functions that make a
-  new thing.  \eg \verb|list.sort()| modifies the list.  But
-  \verb|sorted(list)| makes a new list!  And of course
-  \verb|string.upper()| makes a new string because strings are
-  immutable.  Confusing, don't memorize: the point is you should be
-  careful and look up help to see what things do.  Show
-  \verb|help(list.sort)|, \verb|help(sorted)|, \verb|help(str.upper)|.
+\item To convert a string to a list, you can use either:
+  \begin{itemize}
+  \item the \verb|list| function (every character is its own list
+    item), or
+  \item the \verb|split()| method.
+\begin{verbatim}
+  s = "banana"
+  t = s.split("n")
+  u = list(s)
+\end{verbatim}
+    Yields \verb|t = ["ba", "a", "a"]| and
+    \verb|u = ['b', 'a', 'n', 'a', 'n', 'a']|.  \verb|split()| with no
+    arguments splits on whitespace.  For example,
+    \[ \verb|"hello      there CSCI     150!".split()| \]
+    yields
+    \verb|['hello', 'there', 'CSCI', '150!']|.
+
+  \end{itemize}
+\item To convert a list to a string, use the \verb|join()| method on
+  the delimiter (which can be the empty string).
+\begin{verbatim}
+  t = ['fun', 'sun', 'sub', 'rub']
+  delimiter = " -> "
+  delimiter.join(t)
+\end{verbatim}
+  \verb|''.join(...)| is the inverse of \verb|list(...)|; for example,
+  \[ \verb|''.join(list('banana')) == 'banana'|. \]
 \end{itemize}
 
-[INSERT OPTIONAL RANT ABOUT MUTATION HERE]
+\subsection*{List appending practice}
+
+Have students find a partner. Suppose \verb|animals| is a list of
+strings, how can you append 3 copies of \verb|"gerbil"| onto the end?
+Try to come up with as many different ways as you can.
+
+Go over possibilities.  This might take a while.  Try to get a bunch
+of different approaches from different groups.  Talk about
+\verb|append|, list repetition operator \verb|*|, concatenation
+operator \verb|+|, etc.  Possibly introduce some other methods (some
+correct, some incorrect) and get them to argue about whether they will
+work or not, if they don't come up with enough on their own.
+
+\begin{reflect}{Brent, S'16}
+  As an illustration, here are all the suggestions my students came up
+  with:
+\begin{verbatim}
+animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
+
+# Ways to add 3 gerbils to the end of the list
+
+# Doesn't quite work:
+# animals.append('gerbil ' * 3)
+
+# Runtime error:
+# animals.append('gerbil') * 3
+
+# Works!  (But only assuming len(animals) was 5 to start.)
+# while len(animals) < 8:
+#    animals.append('gerbil')
+
+# Runtime error (too many arguments to append):
+# animals.append('gerbil', 'gerbil', 'gerbil')
+
+# Works!
+# animals.append('gerbil')
+# animals.append('gerbil')
+# animals.append('gerbil')
+
+# Same as 'gerbil' * 3
+# animals.append('gerbil' + 'gerbil' + 'gerbil')
+
+# Gives the right list but doesn't change animals
+# animals + ['gerbil', 'gerbil', 'gerbil']
+
+# Works!
+# animals = animals + ['gerbil', 'gerbil', 'gerbil']
+
+# Works!
+# gerbil_list = ['gerbil']
+# animals = animals + gerbil_list * 3
+
+# Almost works but not quite.
+# animals.append(['gerbil'] * 3)
+\end{verbatim}
+
+  I think this is a really great exercise. It really helps develop
+  their intuition and their grasp of the details.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  The exercise was not as useful/fun this time around.  The students
+  made fewer interesting mistakes, which I suppose is a good thing.
+  In retrospect maybe I should have deliberately introduced more
+  incorrect versions for them to think about.
+\end{reflect}
+
+\subsection*{More list practice}
+
+\textbf{If} there's class time left (I don't plan to have any left),
+could have them practice writing one or more of these functions:
+
+\begin{verbatim}
+from typing import *
+
+# Find the sum of a list of integers.
+def listsum(nums: List[int]) -> int:
+    i = 0
+    s = 0
+    while i < len(nums):
+        s += nums[i]
+        i += 1
+    return s
+
+# Find the product of a list of integers.
+def listprod(nums: List[int]) -> int:
+    i = 0
+    p = 1
+    while i < len(nums):
+        p *= nums[i]
+        i += 1
+    return p
+
+# Find the maximum value in a nonempty list of
+# integers.
+def listmax(nums: List[int]) -> int:
+    m = nums[0]
+    i = 1
+    while i < len(nums):
+        if nums[i] > m:
+            m = nums[i]
+        i += 1
+    return m
+\end{verbatim}
+
+\newpage
+\section{Lists III (F 10/5)}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Practice exam is posted on the class website.
+\end{itemize}
+
+XXX write me.  Do more practice exercises, like what's going to be on
+the exam, or do something a bit bigger.
+
+\newpage
+\section{Exam 2 review (M 10/8)}
+
+Spend a lecture going over practice exam.
+
+\section{Exam 2 (W 10/10)}
+
+\begin{reflect}{Brent, S'16}
+  In the Fall 2015 semester, Exam 2 was on the Wednesday right before
+  Fall Break.  In Spring 2016, it was on a Tuesday two weeks before
+  spring break. (The ``normal'' thing would have been to have the exam
+  review day on Friday, then the exam on Monday, and no lab on
+  Tuesday, but I was at SIGCSE on the Friday, so I gave them the
+  practice exam over the weekend while I was at SIGCSE, spent Monday
+  reviewing the practice exam, and held the exam during the lab slot
+  for that week.)
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  In Spring 2017, Exam 2 was on a Wednesday a week and a half before
+  spring break.  For lab the following day (Thursday) I had them start
+  on their projects, \emph{i.e.} not leave lab until they had a solid
+  project idea.
+
+  As usual this exam was a doozy. Average class score on the exam was
+  71, median 73.5, max 100 ($\times 2$), min 21 (ouch).
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Again the Wednesday 1.5 weeks before spring break; lab the same \&
+  following days again was used to start on project 2.
+
+  Average was much higher this time, 83.  I made it a bit easier by
+  not requiring them to *write* any for loops (though they still had
+  to read several).
+\end{reflect}
+
+\begin{reflect}{Brent, F'18}
+  Again on the Wednesday right before fall break.
+\end{reflect}
+
+XXX SEND OUT INSTRUCTIONS/EXAMPLE RE: FILE I/O (for use with P2)
+
+
+\newpage
+\section{For loops (M 10/15)}
 
 \subsection*{For Loops}
 
@@ -2191,24 +2207,8 @@ def print_each_for(s):
 %     return total
 % \end{verbatim}
 
-\section*{LAB: Caesar's Secrets (Th 10/4)}
-
-\begin{reflect}{Brent, S'17}
-  This lab seemed to go well, though it's definitely hard.  Most
-  students were not finished by the end of the lab period.
-\end{reflect}
-
-\begin{reflect}{Brent, S'18}
-  Only had time to introduce for loops at the very end of the lecture
-  right before the lab.  So spent some time at the beginning of the
-  lab doing more exercises writing for loops, with mixed success (I
-  think it went better in Mark's lab than in mine).  In the end most
-  students were making progress on the lab by the end; a few had
-  finished; a few were just getting encrypt/decrypt to work.
-\end{reflect}
-
 \newpage
-\section{For loop practice (F 10/5)}
+\section{For loop practice (W 10/17)}
 
 \subsection*{Setup}
 
@@ -2259,44 +2259,129 @@ def pulu(r: int) -> List[int]:
   \verb|is_sorted| next class.
 \end{reflect}
 
-\newpage
-\section{Exam 2 review (M 10/8)}
-
-Spend a lecture doing and going over a practice exam.
-
-\section{Exam 2 (W 10/10)}
-
-\begin{reflect}{Brent, S'16}
-  In the Fall 2015 semester, Exam 2 was on the Wednesday right before
-  Fall Break.  In Spring 2016, it was on a Tuesday two weeks before
-  spring break. (The ``normal'' thing would have been to have the exam
-  review day on Friday, then the exam on Monday, and no lab on
-  Tuesday, but I was at SIGCSE on the Friday, so I gave them the
-  practice exam over the weekend while I was at SIGCSE, spent Monday
-  reviewing the practice exam, and held the exam during the lab slot
-  for that week.)
-\end{reflect}
+\section*{LAB: Caesar's Secrets (Th 10/18)}
 
 \begin{reflect}{Brent, S'17}
-  In Spring 2017, Exam 2 was on a Wednesday a week and a half before
-  spring break.  For lab the following day (Thursday) I had them start
-  on their projects, \emph{i.e.} not leave lab until they had a solid
-  project idea.
-
-  As usual this exam was a doozy. Average class score on the exam was
-  71, median 73.5, max 100 ($\times 2$), min 21 (ouch).
+  This lab seemed to go well, though it's definitely hard.  Most
+  students were not finished by the end of the lab period.
 \end{reflect}
 
 \begin{reflect}{Brent, S'18}
-  Again the Wednesday 1.5 weeks before spring break; lab the same \&
-  following days again was used to start on project 2.
-
-  Average was much higher this time, 83.  I made it a bit easier by
-  not requiring them to *write* any for loops (though they still had
-  to read several).
+  Only had time to introduce for loops at the very end of the lecture
+  right before the lab.  So spent some time at the beginning of the
+  lab doing more exercises writing for loops, with mixed success (I
+  think it went better in Mark's lab than in mine).  In the end most
+  students were making progress on the lab by the end; a few had
+  finished; a few were just getting encrypt/decrypt to work.
 \end{reflect}
 
-XXX SEND OUT INSTRUCTIONS/EXAMPLE RE: FILE I/O (for use with P2)
+\newpage
+
+\section{Mutability, objects, references, tracing with stack \& heap (F 10/19)}
+
+Warm-up: what happens here?  Find partner \& decide.
+\begin{verbatim}
+nums  = [1,2,3]
+nums2 = nums
+nums[1] = 0
+print nums2
+\end{verbatim}
+
+Try it at python prompt.  This is really weird!
+
+As hinted last time, the fact that lists are mutable opens a huge can
+of worms.  Let's start by pulling back the curtain a little bit.  Up
+until now we have talked about variables having values, but we need to
+be more precise.  Draw stack diagram with variables referencing two
+different lists.
+
+\begin{itemize}
+\item Variables contain \emph{references} to objects.  A reference
+  ``points'' to a certain object (really it is just a memory address).
+\item Copying the value of a variable into another variable just
+  copies the \emph{reference}, so they now point to the same object!
+\item Variables which reference objects that have the same value are
+  \emph{equal}.  You can test equality with \verb|==|.
+\item Variables which reference the \emph{same object} are
+  \emph{identical}. You can test identity with \verb|is| (though you
+  won't need this in the rest of the course).
+\item Note since strings are immutable, it didn't matter before; there
+  is no way to tell the difference between two variables with separate
+  copies of a string and two variables referencing the same string.
+\end{itemize}
+
+Do this at the REPL, with accompanying pictures drawn on the board:
+\begin{verbatim}
+>>> a = [1,2,3]
+>>> b = [1,2,3]
+>>> a == b
+True
+>>> a is b
+False
+>>> del a[0]
+>>> a
+[2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+False
+>>> a = b
+>>> a
+[1, 2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+True
+>>> a is b
+True
+>>> del a[0]
+>>> a
+[2, 3]
+>>> b
+[2, 3]
+\end{verbatim}
+Note in particular that the assignment \verb|a = b| does not copy the
+value of \verb|b| into \verb|a|, but just makes \verb|a|
+\emph{reference the same thing as} \verb|b|.
+
+Some related things:
+\begin{itemize}
+\item What if you really \emph{do} want to make a \emph{copy} of a
+  list, so modifying it doesn't modify the original?  You can write
+  \verb|some_list[:]|.  This is a dirty, terrible, disgusting hack.
+\item Be careful about methods that modify vs functions that make a
+  new thing.  \eg \verb|list.sort()| modifies the list.  But
+  \verb|sorted(list)| makes a new list!  And of course
+  \verb|string.upper()| makes a new string because strings are
+  immutable.  Confusing, don't memorize: the point is you should be
+  careful and look up help to see what things do.  Show
+  \verb|help(list.sort)|, \verb|help(sorted)|, \verb|help(str.upper)|.
+\end{itemize}
+
+[INSERT OPTIONAL RANT ABOUT MUTATION HERE]
+
+\subsection*{Tracing with stack and heap}
+
+This has implications for function parameters as well.  Consider:
+
+\begin{verbatim}
+def animal_release(animals):
+  while len(animals) > 2:
+  animals.pop(0)
+
+print(animals)
+animal_release(animals)
+print(animals)
+\end{verbatim}
+
+Ask: what gets printed?
+
+XXX show them formally how to do tracing with stack \& heap in order
+to understand this.
+
+XXX other example(s)
+
+\newpage
 
 % \section{Exam wrap-up, demo project}
 
@@ -2635,11 +2720,6 @@ class.  Maybe run them on the contents of a file.
   went over very well.  It seemed to have the right level of
   difficulty and gave the students good practice with dictionaries.
 \end{reflect}
-
-\newpage
-\section{Tracing with stack and heap (F 10/26)}
-
-XXX WRITE ME
 
 \newpage
 \section{Intro to classes \& objects (M 10/29)}
