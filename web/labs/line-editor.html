@@ -1,0 +1,531 @@
+<html>
+<head>
+  <title>CSCI 150 - Lab 7 - Line Editor</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="/css/style.css">
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> Lab 7: Line Editor</h1>
+<hr>
+
+<h2>Overview</h2>
+
+In this lab, you will practice using lists and strings in
+Python by implementing a very simple text editor, which allows you to
+create and edit text files one line at a time.  This kind of editor,
+called a <em>line editor</em>, used to be the standard way to interact
+with a text file in the 1970's, when communication from computers to
+users tended to be via printers instead of screens.
+
+<pre>
+> Hi there!
+> I am adding stuff
+> to a file
+> print
+ 0: Hi there!
+ 1: I am adding stuff
+*2: to a file
+> append yes I am
+> print
+ 0: Hi there!
+ 1: I am adding stuff
+ 2: to a file
+*3: yes I am
+> find am
+> print
+ 0: Hi there!
+*1: I am adding stuff
+ 2: to a file
+ 3: yes I am
+> replace I was adding stuff
+> print
+ 0: Hi there!
+*1: I was adding stuff
+ 2: to a file
+ 3: yes I am
+> next
+> print
+ 0: Hi there!
+ 1: I was adding stuff
+ 2: to a file
+*3: yes I am
+> insert This is a newly inserted line
+> print
+ 0: Hi there!
+ 1: I was adding stuff
+ 2: to a file
+*3: This is a newly inserted line
+ 4: yes I am
+> line 0
+> delete
+> print
+*0: I was adding stuff
+ 1: to a file
+ 2: This is a newly inserted line
+ 3: yes I am
+> save stuff.txt
+Saving as stuff.txt...
+> quit
+</pre>
+
+<h2>Step 1: Accumulation</h2>
+
+Create a new Python file called <code>line_editor.py</code>, and put
+your name, date, copyright notice, <em>etc.</em> at the top.  Define
+a <code>main()</code> function (and also call it as the very last line
+in your file) which performs as follows:
+
+<ul>
+  <li>Create a variable containing a list of strings which will store
+    the lines of the current document.  It should start out as the
+    empty list.
+  </li>
+
+  <li>As long as the user isn't done, prompt them for a line of text
+    (using the character <code>&gt;</code> as a prompt) and append
+    whatever they type to the current document.  The user can indicate
+    they are done by typing <code>quit</code>.
+  </li>
+
+  <li>After the user quits, print out the current document
+    line-by-line, with each line prefixed by its index and a colon, as
+    shown below.  The document should not include the
+    final <code>quit</code>.
+  </li>
+</ul>
+
+For example:
+
+<pre>
+> Hello
+> there
+> lab 7
+> quit
+0: Hello
+1: there
+2: lab 7
+</pre>
+
+This isn't all that exciting yet, but we will build on it to do more
+interesting things!
+
+Remember to decompose your code into other functions as appropriate.
+For example, you probably want to make a separate function to print the
+document at the end.
+
+<h2>Step 2: Commands and Printing</h2>
+
+In addition to simply entering lines of text to append to the current
+document, we are going to allow the user to enter
+various <em>commands</em>.  Some commands have an <em>argument</em>
+and some don't.
+
+<ul>
+  <li>
+    First, you should split the user's input into two parts: the first
+    word (up to the first space character) and everything else (the
+    argument).  (<em>Hint:</em> try using <code>.split(' ', 1)</code>
+    on the user input.  What does it do?)
+  </li>
+
+  <li>
+    If the user enters just a single word with nothing after it, you
+    should treat the argument as if it were the empty string.  Save
+    the argument in a variable for later; you won't use it in this
+    step but you will need it soon.
+  </li>
+
+  <li>
+    Now check if the command is one you recognize.  For now, we are
+    just going to add the <code>print</code> command: when the user
+    types <code>print</code>, print out the current document with its
+    lines prefixed by their index, just as before.
+  </li>
+
+  <li>
+    Otherwise, append the user's original, un-split input to the
+    current document, just like before.
+  </li>
+</ul>
+
+Since the user can now choose to <code>print</code> whenever they
+want, you can remove the code that prints the document after
+they <code>quit</code>.
+
+Your editor now might look like this:
+
+<pre>
+> Hello there
+> print
+0: Hello there
+> How are you
+> doing today
+> print
+0: Hello there
+1: How are you
+2: doing today
+> quit
+</pre>
+
+<h2>Step 3: Tracking the current line</h2>
+
+Modify your editor so that it keeps track of the index of
+the <em>current line</em>.
+
+<ul>
+  <li>The current line should start out at 0.</li>
+  <li>Every time a new line is appended to the end of the document,
+    the current line becomes the index of the newly appended
+    line.</li>
+  <li>You should change the output of the <code>print</code> command
+    so that it highlights the current line somehow (for example, with
+    an asterisk, as shown in the example below).</li>
+  <li>Finally, add a <code>line</code> command which expects an index
+    as an argument, and sets the current line to the given index; that
+    is, it lets the user "jump" to a different line number.  Be sure
+    that your command prints an appropriate message instead of
+    crashing if the argument to <code>line</code> is not a number or
+    is too small or too big to be a valid index.</li>
+</ul>
+
+For example, here's how a sample interaction with your editor might look
+after you finish implementing this step:
+
+<pre>
+> Hello there
+> print
+*0: Hello there
+> How are you?
+> print
+ 0: Hello there
+*1: How are you?
+> line zero
+zero is not a valid integer.
+> line 5
+5 is not a valid line number.
+> line 0
+> print
+*0: Hello there
+ 1: How are you?
+> I'm fine thanks
+> print
+ 0: Hello there
+ 1: How are you?
+*2: I'm fine thanks
+> quit
+</pre>
+
+<h2>Step 4: Files</h2>
+
+An editor isn't much good without being able to open and save files!
+In this step, you should add two commands <code>open</code>
+and <code>save</code> that let the user load a text document from a
+file and save the current document to a file, respectively.
+
+<ul>
+  <li>The <code>open</code> command takes the name of a file as an
+    argument.  I have provided the <code>open_file</code> function below
+    which you can copy into your code; just call this function when
+    the user types the <code>open</code> command. (You don't need to
+    understand how this function works!)  You should also reset the
+    current line to zero.
+
+    <pre>
+# Open the file with the given name and return its contents as a list
+# of strings, one per line; OR print a warning and return the empty
+# list if there is an error opening the file (e.g. if the file does
+# not exist).
+def open_file(filename: str) -> List[str]:
+    try:
+        print("Opening " + filename + "...")
+        f = open(filename, 'r')
+        lines = [l.rstrip() for l in f.readlines()]
+        f.close()
+        return lines
+    except:
+        print("Warning, file " + filename + " does not exist, loaded empty document.")
+        return []
+    </pre>
+  </li>
+
+  <li>Likewise, the <code>save</code> command takes a filename as an
+    argument; again, just copy the below <code>save_file</code>
+    function and call it.  Note that the function expects
+    a <code>str</code>, not a <code>List[str]</code>: before calling
+    the function you will have to turn the document from a list of
+    strings, each representing one line, into a single giant string
+    representing the entire document. (<em>Hint</em>:
+    use <code>join</code>.)
+
+    <pre>
+# Write the given string to the file with the given name.
+def save_file(filename: str, contents: str):
+    try:
+        print("Saving as " + filename + "...")
+        f = open(filename, 'w')
+        f.write(contents)
+        f.close()
+    except:
+        print("Something went wrong saving " + filename + "!")
+    </pre>
+</ul>
+
+Below are two example sessions of interacting with your editor after
+implementing these commands.  In the first session, the user enters a
+few lines and then saves them to a file.  In the second session, the
+user enters a line before loading the previously saved file (notice
+how it completely overwrites the previous document).
+
+<pre>
+> Hello there
+> I am going to save this
+> to a file
+> print
+ 0: Hello there
+ 1: I am going to save this
+*2: to a file
+> save file.txt
+Saving as file.txt...
+> quit
+
+
+> Hello
+> print
+*0: Hello
+> open file.txt
+Opening file.txt...
+> print
+*0: Hello there
+ 1: I am going to save this
+ 2: to a file
+> quit
+</pre>
+
+<h2>Step 5: Editing!</h2>
+
+Now we can finally get to some more serious editing!  You should add
+the following commands to your editor:
+
+<ul>
+  <li><code>append</code>: this command simply appends whatever
+    follows it as a new line at the end of the current document.  This
+    is necessary to allow appending lines that would otherwise look
+    like they start with a command.  Be sure that the current line is
+    updated to the newly appended line.
+
+    <pre>
+> How do I
+> print this?
+*0: How do I
+> append print this?
+> print
+ 0: How do I
+*1: print this?
+    </pre>
+  </li>
+
+  <li><code>insert</code>: this command inserts its argument as a new
+    line just before the current line.  The index of the current line
+    should remain the same (so the newly inserted line becomes the
+    current line).
+
+    <pre>
+> open file.txt
+Opening file.txt...
+> print
+*0: Hello there
+ 1: I am going to save this
+ 2: to a file
+> insert This is a new first line
+> print
+*0: This is a new first line
+ 1: Hello there
+ 2: I am going to save this
+ 3: to a file
+> line 2
+> print
+ 0: This is a new first line
+ 1: Hello there
+*2: I am going to save this
+ 3: to a file
+> insert This comes after 'Hello there' and before 'I am going to save this'
+> print
+ 0: This is a new first line
+ 1: Hello there
+*2: This comes after 'Hello there' and before 'I am going to save this'
+ 3: I am going to save this
+ 4: to a file
+    </pre>
+  </li>
+
+  <li><code>delete</code>: delete the current line. The index of the
+    current line remains the same.
+
+    <pre>
+> open file.txt
+Opening file.txt...
+> print
+*0: Hello there
+ 1: I am going to save this
+ 2: to a file
+> line 1
+> delete
+> print
+ 0: Hello there
+*1: to a file
+    </pre>
+  </li>
+
+  <li><code>replace</code>: replace the current line.
+
+    <pre>
+> open file.txt
+Opening file.txt...
+> print
+*0: Hello there
+ 1: I am going to save this
+ 2: to a file
+> line 1
+> replace I am going to write this
+> print
+ 0: Hello there
+*1: I am going to write this
+ 2: to a file
+    </pre>
+  </li>
+</ul>
+
+<h2>Step 6: Finding</h2>
+
+Finally, let's provide a way for the user to quickly search through a
+document.
+
+<ul>
+  <li>Add a <code>find</code> command which searches for its argument
+    in the document, starting from the beginning of the document.  It
+    should either set the current line to the first line containing
+    the search term, or set the current line to the first
+    index <em>after</em> the end of the document if the search term is
+    not found.
+
+    <pre>
+> open file.txt
+Opening file.txt...
+> line 2
+> print
+ 0: Hello there
+ 1: I am going to save this
+*2: to a file
+> find pizza
+> print
+ 0: Hello there
+ 1: I am going to save this
+ 2: to a file
+> find am
+> print
+ 0: Hello there
+*1: I am going to save this
+ 2: to a file
+    </pre>
+  </li>
+
+  <li>Add a <code>next</code> command, which finds the next occurrence
+    of the previous search term starting with the line after the
+    current line.  That is, by calling <code>find</code> and then
+    repeatedly calling <code>next</code>, the user can step through
+    occurrences of the search term one by one.
+
+    <pre>
+> open file.txt
+Opening file.txt...
+> I am going to search
+> for the word am
+> This line doesn't have it
+> But I am sure this one does
+> print
+ 0: Hello there
+ 1: I am going to save this
+ 2: to a file
+ 3: I am going to search
+ 4: for the word am
+ 5: This line doesn't have it
+*6: But I am sure this one does
+> find am
+> print
+ 0: Hello there
+*1: I am going to save this
+ 2: to a file
+ 3: I am going to search
+ 4: for the word am
+ 5: This line doesn't have it
+ 6: But I am sure this one does
+> next 
+> print
+ 0: Hello there
+ 1: I am going to save this
+ 2: to a file
+*3: I am going to search
+ 4: for the word am
+ 5: This line doesn't have it
+ 6: But I am sure this one does
+> next
+> print
+ 0: Hello there
+ 1: I am going to save this
+ 2: to a file
+ 3: I am going to search
+*4: for the word am
+ 5: This line doesn't have it
+ 6: But I am sure this one does
+> next
+> print
+ 0: Hello there
+ 1: I am going to save this
+ 2: to a file
+ 3: I am going to search
+ 4: for the word am
+ 5: This line doesn't have it
+*6: But I am sure this one does
+> next
+> print
+ 0: Hello there
+ 1: I am going to save this
+ 2: to a file
+ 3: I am going to search
+ 4: for the word am
+ 5: This line doesn't have it
+ 6: But I am sure this one does
+    </pre>
+  </li>
+</ul>
+
+<h2>Just for fun</h2>
+
+Save a copy of your lab in another file, just in case.  Then, try
+opening <code>line_editor.py</code> itself in your editor, and making
+a few changes.  Rejoice that we now have screens and two-dimensional
+editor interfaces so you normally don't have to put up with this.
+
+<h2>What to turn in</h2>
+
+<ul>
+  <li><code>line_editor.py</code></li>
+</ul>
+
+<b>Remember to follow</b>
+  the <a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python
+  style guide</a> and to run
+  the <a href="http://mgoadric.github.io/csci150/python_style_guide.html">style
+  checker</a> before turning in your programs!
+
+<h2>Grading</h2>
+<ul>
+<li>To earn a C, complete Steps 1 and 2.
+<li>To earn a B, complete Steps 3 and 4.
+<li>To earn an A, complete Step 5.
+<li>To earn a 100, complete Step 6.</li>
+</ul>
+<hr>
+<small>&copy; Brent Yorgey, Hendrix College</small>
+
+</body>
