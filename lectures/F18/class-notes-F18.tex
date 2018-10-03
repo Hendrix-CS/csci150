@@ -1908,6 +1908,9 @@ not actually the same.
   t = ['fun', 'sun', 'sub', 'rub']
   delimiter = " -> "
   delimiter.join(t)
+
+  ls = ['This is a line', 'This is another line', 'A third line']
+  '\n'.join(ls)  # Turn a list of lines into one big string
 \end{verbatim}
   \verb|''.join(...)| is the inverse of \verb|list(...)|; for example,
   \[ \verb|''.join(list('banana')) == 'banana'|. \]
