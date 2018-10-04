@@ -34,3 +34,47 @@ def read_inputs() -> List[str]:
             x.append(y)
 
     return x
+
+# Add three gerbils to the end of animals
+
+# This builds the correct list, but doesn't change animals
+# animals + ['gerbil', 'gerbil', 'gerbil']
+
+# Works
+# animals += ['gerbil', 'gerbil', 'gerbil']
+
+# Works
+# animals.append('gerbil')
+# animals.append('gerbil')
+# animals.append('gerbil')
+
+# Infinite loop
+# while len(animals) < (len(animals) + 3):
+    # do stuff
+
+# Works
+# num_animals: int = len(animals)
+# while len(animals) < (num_animals + 3):
+#     animals.append('gerbil')
+
+# Works
+# count: int = 0
+# while count < 3:
+#     animals.append('gerbil')
+#     count += 1
+#
+
+# Works
+# animals += ['gerbil'] * 3
+
+# Not an error, but for a strange reason!
+# animals += 'gerbil' * 3
+
+# Doesn't work
+# animals.append('gerbil' * 3)
+
+# Also doesn't work
+# animals.append(['gerbil'] * 3)
+
+# Also also doesn't work
+# animals.append(' '.join(['gerbil'] * 3))
