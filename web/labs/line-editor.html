@@ -71,9 +71,15 @@ Saving as stuff.txt...
 <h2>Step 1: Accumulation</h2>
 
 Create a new Python file called <code>line_editor.py</code>, and put
-your name, date, copyright notice, <em>etc.</em> at the top.  Define
-a <code>main()</code> function (and also call it as the very last line
-in your file) which performs as follows:
+your name, date, copyright notice, <em>etc.</em> at the top. Also,
+don't forget to include the line
+<pre>
+from typing import *
+</pre>
+which you will need in order to write type signatures involving lists.
+
+<p>Define a <code>main()</code> function (and also call it as the very
+last line in your file) which performs as follows:
 
 <ul>
   <li>Create a variable containing a list of strings which will store
@@ -109,7 +115,7 @@ For example:
 This isn't all that exciting yet, but we will build on it to do more
 interesting things!
 
-Remember to decompose your code into other functions as appropriate.
+<p>Remember to decompose your code into other functions as appropriate.
 For example, you probably want to make a separate function to print the
 document at the end.
 
@@ -359,9 +365,12 @@ Opening file.txt...
   </li>
 
   <li><code>delete</code>: delete the current line. The index of the
-    current line remains the same.
+    current line remains the same.  Make sure to check that the
+    current line is a valid index that can be deleted.
 
     <pre>
+> delete
+Can't delete past end of document.
 > open file.txt
 Opening file.txt...
 > print
@@ -379,6 +388,8 @@ Opening file.txt...
   <li><code>replace</code>: replace the current line.
 
     <pre>
+> replace Nope
+Can't replace past end of document.
 > open file.txt
 Opening file.txt...
 > print
@@ -509,7 +520,7 @@ editor interfaces so you normally don't have to put up with this.
 <h2>What to turn in</h2>
 
 <ul>
-  <li><code>line_editor.py</code></li>
+  <li>Submit <code>line_editor.py</code> via [the usual submission form](https://goo.gl/forms/03Oeic09jHYPnrz53).</li>
 </ul>
 
 <b>Remember to follow</b>
