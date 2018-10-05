@@ -2034,7 +2034,7 @@ def listmax(nums: List[int]) -> int:
 \end{itemize}
 
 Have them work in pairs (randomly assigned?) to write some list
-practice functions.
+practice functions.  Pick some of the following.
 
 \begin{verbatim}
 from typing import *
@@ -2067,6 +2067,29 @@ def listmax(nums: List[int]) -> int:
             m = nums[i]
         i += 1
     return m
+
+# Find the index of the given string in the list, or return -1 if the
+# list does not contain the string.
+def listfind(search_term: str, lst: List[str]) -> int:
+    i = 0
+    while i < len(lst):
+        if lst[i] == search_term:
+            return i
+        i += 1
+    return -1
+
+# Return a new list which contains only the even numbers from the
+# input.  For example, onlyevens([1,5,6,2,3,3,8]) should return [6,2,8].
+def onlyevens(lst: List[int]) -> List[int]:
+    result: List[int] = []
+    i: int = 0
+
+    while i < len(lst):
+        if lst[i] % 2 == 0:
+            result.append(lst[i])
+        i += 1
+
+    return result
 \end{verbatim}
 
 \newpage
