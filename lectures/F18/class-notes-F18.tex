@@ -2027,11 +2027,47 @@ def listmax(nums: List[int]) -> int:
 \subsection*{Setup}
 
 \begin{itemize}
-\item Practice exam is posted on the class website.
+\item Practice exam is posted on the class website.  Not required and
+  not collected, but good practice---we will go over it on Monday.
+  Exam is Wednesday.
+\item \textbf{Quiz} (\texttt{csci150-instructors/quiz/string.py})
 \end{itemize}
 
-XXX write me.  Do more practice exercises, like what's going to be on
-the exam, or do something a bit bigger.
+Have them work in pairs (randomly assigned?) to write some list
+practice functions.
+
+\begin{verbatim}
+from typing import *
+
+# Find the sum of a list of integers.
+def listsum(nums: List[int]) -> int:
+    i = 0
+    s = 0
+    while i < len(nums):
+        s += nums[i]
+        i += 1
+    return s
+
+# Find the product of a list of integers.
+def listprod(nums: List[int]) -> int:
+    i = 0
+    p = 1
+    while i < len(nums):
+        p *= nums[i]
+        i += 1
+    return p
+
+# Find the maximum value in a nonempty list of
+# integers.
+def listmax(nums: List[int]) -> int:
+    m = nums[0]
+    i = 1
+    while i < len(nums):
+        if nums[i] > m:
+            m = nums[i]
+        i += 1
+    return m
+\end{verbatim}
 
 \newpage
 \section{Exam 2 review (M 10/8)}
