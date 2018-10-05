@@ -7,12 +7,12 @@ two each worth 10% of your final grade. They will consist of short
 answer questions along with writing and debugging code.
 
 - Exam 1: Friday, September 14, covering input/output, math, numerical
-  data, conditionals, and binary encoding
+  data, conditionals, and binary encoding  
   ([Practice exam](static/exam1-practice-f18.pdf))
 
 - Exam 2: Wednesday, October 10, covering functions, while loops,
-  lists, and strings
-  <!-- ([Practice exam](static/exam2-practice-s18.pdf), -->
+  lists, and strings  
+  ([Practice exam](static/exam2-practice-f18.pdf))
   <!-- [In-class code from practice exam](static/exam2-practice.py)) -->
 
 <!-- ; [Practice exam solution code](static/exam2-practice.py); [Bonus functions](http://mgoadric.github.io/csci150/homework/bonusfunctions.html) due Wednesday after spring break (March 29)) -\-> -->
