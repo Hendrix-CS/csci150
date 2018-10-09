@@ -12,7 +12,7 @@ answer questions along with writing and debugging code.
 
 - Exam 2: Wednesday, October 10, covering functions, while loops,
   lists, and strings  
-  ([Practice exam](static/exam2-practice-f18.pdf))
+  ([Practice exam](static/exam2-practice-f18.pdf)), [Exam practice review code](static/Exam2.py)
   <!-- [In-class code from practice exam](static/exam2-practice.py)) -->
 
 <!-- ; [Practice exam solution code](static/exam2-practice.py); [Bonus functions](http://mgoadric.github.io/csci150/homework/bonusfunctions.html) due Wednesday after spring break (March 29)) -\-> -->

@@ -18,6 +18,8 @@ to review the material and come to class prepared.
 * Wed, Sep 19 - Fri, Sep 21: [functions.py](static/functions.py) (8am)
 * Mon, Oct 1: [lists.py](static/lists.py), [lists-console.txt](static/lists-console.txt) (8am)
 * Wed, Oct 3: [lists,py](static/lists.py), [string-list-console.txt](static/string-list-console.txt) (8am)
+* Fri, Oct 5: [lists.py](static/lists.py) (8am)
+* Mon, Oct 8: [Exam practice review code](static/Exam2.py)
 
 <!-- * Wed, Jan 17: Introduction -->
 <!-- * Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**) -->
