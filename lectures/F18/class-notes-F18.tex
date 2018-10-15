@@ -2611,148 +2611,6 @@ XXX SEND OUT INSTRUCTIONS/EXAMPLE RE: FILE I/O (for use with P2)
 % \end{reflect}
 
 \newpage
-\section{Recursion I: intro (M 10/15)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Reminder: project 2 due Friday!
-\item Write stone-counting rules somewhere, e.g. on board (see below)
-\end{itemize}
-
-\subsection*{Stone counting}
-
-Rules:
-\begin{enumerate}
-\item You may not look into the bowl.
-\item You may only touch one stone.
-\item If someone gives you the bowl and asks you how many stones it
-  contains, you must eventually give the bowl back and answer
-  truthfully.
-\end{enumerate}
-(There will usually be some attempts to find loopholes; modify the
-rules as necessary.)  Then hand the bowl to a student and ask how many
-stones it contains.
-
-Recursion!  Functions that call themselves.  In a sense you were all
-``the same function'' because you were running the same program
-(rules).
-
-Factorial function: $n! = 1 \times 2 \times \dots \times (n-1) \times
-n$.  Let's implement in Python.
-\begin{verbatim}
-def fact(n):
-    product = 1
-    for k in range(1,n+1):
-        product *= k
-    return product
-\end{verbatim}
-Now consider $n! = (1 \times 2 \times \dots \times (n-1)) \times n =
-(n-1)! \times n$.  Also need to define $0! = 1$.  Can we translate
-this directly into Python?
-\begin{verbatim}
-def fact_rec(n):
-    if n == 0:
-        return 1
-    else:
-        result = fact_rec(n-1)
-        return result * n
-\end{verbatim}
-It works!
-
-Show call stack.  Every recursive call has its own copy of local
-variables!
-
-Big idea: transform a problem into a slightly simpler version (or more
-than one), solve that simpler problem, do some work to compute an
-answer to the original problem.
-
-Typically:
-\begin{itemize}
-\item Base case(s): simple case where we know the answer without doing
-  any work.  Always do this first!
-\item Recursive case(s): make a recursive call to solve a slightly
-  simpler (i.e. closer to the base case) problem.
-\end{itemize}
-
-Then re-code factorial function live, adding a bunch of comments and
-  narrating thought process.
-
-\newpage
-\section{Recursion II: recursive functions (W 10/17)}
-
-Start by reinforcing ``base case + recursive case''.  Talk about
-``leap of faith'': trust that recursive calls will work without
-thinking about how.  Trust your future self.  DON'T think about
-unwinding entire recursion stack.  Just think about ONE level.
-
-Up until now all the examples we've done have been math functions.
-Let's do a few more ``computer-sciency'' examples processing strings
-and lists.  Note, in Python this is not the best way to implement
-these functions (though in some languages it is).  Just for
-illustration purposes.  If you take 151 you will start to see real,
-legitimate uses of recursion, \eg processing trees.  (The one
-legitimate use of recursion using only what you know is what we will
-be doing in lab---making pretty pictures!)
-
-\begin{itemize}
-\item Work in pairs to implement \verb|product|.
-\item Have them work in pairs to implement string \verb|reverse|.
-\item Have them work in (different?) pairs to implement \verb|is_palindrome|.
-\end{itemize}
-
-\begin{reflect}{Brent, S'17}
-  Talked about thought process for writing recursive functions,
-  re-coded factorial function.  Lots of great questions.  Then looked
-  at \texttt{sum} function again which we actually wrote in the
-  previous class (in retrospect it was probably premature to do
-  that).  Then only got as far as having them work on writing a
-  \texttt{product} function on paper.  Ended with a spirited debate
-  about what \texttt{product([])} ought to be.  Plan to pick up where
-  we left off next time.
-\end{reflect}
-
-\newpage
-\section*{LAB: Fractal Recursion (Th 10/18)}
-
-\begin{reflect}{S' 17}
-  This lab is fun and seemed to go reasonably well, though attendance
-  was poor due to being right before spring break and having project 2
-  due the same day.  In the end I'm also not sure how much it really
-  teaches them about recursion.  But to be honest I don't know how to
-  incorporate recursion more fully into the curriculum without
-  changing the programming language we use.
-\end{reflect}
-
-\newpage
-\section{Recursion III (F 10/19)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Project 2 due today!
-\end{itemize}
-
-\begin{reflect}{Brent, S'17}
-  This semester I decided to spend three lectures on recursion instead
-  of two.  It fit the schedule better (I didn't want to start a brand
-  new topic for one day before spring break) and I think it is really
-  needed.
-\end{reflect}
-
-Finish discussion of recursive \texttt{product} implementation,
-beginning with why \texttt{product([])} should be $1$ rather than $0$:
-
-\begin{itemize}
-\item Economy of expression---more elegant definitions, with fewer
-  special cases, usually means you are on the right track in
-  mathematics; those definitions end up being not just more economical
-  but also more useful and more consistent with other things.
-\item This is the same reason $0! = 1$.
-\item Validates the identity \texttt{product(xs + ys) = product(xs) * product(ys)}.
-\end{itemize}
-
-Have them work in pairs to implement string \texttt{reverse}.
-
-\newpage
 \section{Dictionaries (M 10/22)}
 
 Recall lists.  Draw an alternate picture of lists as a mapping from
@@ -3120,6 +2978,149 @@ main()
 \section{Classes \& objects III (F 11/2)}
 
 Finish \verb|TrafficLight|.
+
+
+\newpage
+\section{Recursion I: intro (M 10/15)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: project 2 due Friday!
+\item Write stone-counting rules somewhere, e.g. on board (see below)
+\end{itemize}
+
+\subsection*{Stone counting}
+
+Rules:
+\begin{enumerate}
+\item You may not look into the bowl.
+\item You may only touch one stone.
+\item If someone gives you the bowl and asks you how many stones it
+  contains, you must eventually give the bowl back and answer
+  truthfully.
+\end{enumerate}
+(There will usually be some attempts to find loopholes; modify the
+rules as necessary.)  Then hand the bowl to a student and ask how many
+stones it contains.
+
+Recursion!  Functions that call themselves.  In a sense you were all
+``the same function'' because you were running the same program
+(rules).
+
+Factorial function: $n! = 1 \times 2 \times \dots \times (n-1) \times
+n$.  Let's implement in Python.
+\begin{verbatim}
+def fact(n):
+    product = 1
+    for k in range(1,n+1):
+        product *= k
+    return product
+\end{verbatim}
+Now consider $n! = (1 \times 2 \times \dots \times (n-1)) \times n =
+(n-1)! \times n$.  Also need to define $0! = 1$.  Can we translate
+this directly into Python?
+\begin{verbatim}
+def fact_rec(n):
+    if n == 0:
+        return 1
+    else:
+        result = fact_rec(n-1)
+        return result * n
+\end{verbatim}
+It works!
+
+Show call stack.  Every recursive call has its own copy of local
+variables!
+
+Big idea: transform a problem into a slightly simpler version (or more
+than one), solve that simpler problem, do some work to compute an
+answer to the original problem.
+
+Typically:
+\begin{itemize}
+\item Base case(s): simple case where we know the answer without doing
+  any work.  Always do this first!
+\item Recursive case(s): make a recursive call to solve a slightly
+  simpler (i.e. closer to the base case) problem.
+\end{itemize}
+
+Then re-code factorial function live, adding a bunch of comments and
+  narrating thought process.
+
+\newpage
+\section{Recursion II: recursive functions (W 10/17)}
+
+Start by reinforcing ``base case + recursive case''.  Talk about
+``leap of faith'': trust that recursive calls will work without
+thinking about how.  Trust your future self.  DON'T think about
+unwinding entire recursion stack.  Just think about ONE level.
+
+Up until now all the examples we've done have been math functions.
+Let's do a few more ``computer-sciency'' examples processing strings
+and lists.  Note, in Python this is not the best way to implement
+these functions (though in some languages it is).  Just for
+illustration purposes.  If you take 151 you will start to see real,
+legitimate uses of recursion, \eg processing trees.  (The one
+legitimate use of recursion using only what you know is what we will
+be doing in lab---making pretty pictures!)
+
+\begin{itemize}
+\item Work in pairs to implement \verb|product|.
+\item Have them work in pairs to implement string \verb|reverse|.
+\item Have them work in (different?) pairs to implement \verb|is_palindrome|.
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  Talked about thought process for writing recursive functions,
+  re-coded factorial function.  Lots of great questions.  Then looked
+  at \texttt{sum} function again which we actually wrote in the
+  previous class (in retrospect it was probably premature to do
+  that).  Then only got as far as having them work on writing a
+  \texttt{product} function on paper.  Ended with a spirited debate
+  about what \texttt{product([])} ought to be.  Plan to pick up where
+  we left off next time.
+\end{reflect}
+
+\newpage
+\section*{LAB: Fractal Recursion (Th 10/18)}
+
+\begin{reflect}{S' 17}
+  This lab is fun and seemed to go reasonably well, though attendance
+  was poor due to being right before spring break and having project 2
+  due the same day.  In the end I'm also not sure how much it really
+  teaches them about recursion.  But to be honest I don't know how to
+  incorporate recursion more fully into the curriculum without
+  changing the programming language we use.
+\end{reflect}
+
+\newpage
+\section{Recursion III (F 10/19)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Project 2 due today!
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  This semester I decided to spend three lectures on recursion instead
+  of two.  It fit the schedule better (I didn't want to start a brand
+  new topic for one day before spring break) and I think it is really
+  needed.
+\end{reflect}
+
+Finish discussion of recursive \texttt{product} implementation,
+beginning with why \texttt{product([])} should be $1$ rather than $0$:
+
+\begin{itemize}
+\item Economy of expression---more elegant definitions, with fewer
+  special cases, usually means you are on the right track in
+  mathematics; those definitions end up being not just more economical
+  but also more useful and more consistent with other things.
+\item This is the same reason $0! = 1$.
+\item Validates the identity \texttt{product(xs + ys) = product(xs) * product(ys)}.
+\end{itemize}
+
+Have them work in pairs to implement string \texttt{reverse}.
 
 
 \newpage
