@@ -2148,7 +2148,11 @@ Spend a lecture going over practice exam.
 \end{reflect}
 
 \begin{reflect}{Brent, F'18}
-  Again on the Wednesday right before fall break.
+  Again on the Wednesday right before fall break.  This time the exam
+  didn't even have for loops at all, since we spent more time
+  practicing with lists and put off for loops until after the exam.
+  Average was back down in the 71--73 range, min 28, max 100---pretty
+  much the same distribution as S'17.
 \end{reflect}
 
 \newpage
@@ -2156,87 +2160,191 @@ Spend a lecture going over practice exam.
 
 \subsection*{For Loops}
 
-Recall our \verb|explode| function from a week or two ago:
+Recall our \verb|explode| function from a week or two ago (or just
+about every list- or string-processing function we have written ever):
 \begin{verbatim}
-def explode(s):
-  index = 0
-  while index < len(s):
-    print s[index]
+def explode(s: str):
+  i: int = 0
+  while i < len(s):
+    print(s[i])
+    i += 1
 \end{verbatim}
 Recall how easy it was to make errors like starting index at the wrong
 place, using \verb|<=| instead of \verb|<|, and so on.  Well, it turns
 out there is a better way!
 \begin{verbatim}
-def explode(s):
+def explode(s: str):
   for c in s:
-    print c
+    print(c)
 \end{verbatim}
 Simply loops through each character in the string one at a time.  Each
 time through the loop the next character is assigned to \verb|c|.
-This also works for lists:
-\begin{verbatim}
-animals = ["cow", "chicken", "pig", "rabbit"]
-for animal in animals:
-  print "And on this farm he had a " + animal + "!"
-\end{verbatim}
-What do we lose, as compared to a \verb|while| loop?  The index. But
-actually, we don't!  Just have to cleverly put together a few things
-we have already seen:
-\begin{verbatim}
-for i in range(len(numbers)):
-  numbers[i] *= 2
-\end{verbatim}
 This is way better than using a \verb|while| loop since it rules out
 errors putting the starting or ending indices at the wrong number.
 
+This also works for lists:
+\begin{verbatim}
+animals: List[str] = ["cow", "chicken", "pig", "rabbit"]
+for animal in animals:
+  print("And on this farm he had a " + animal + "!")
+\end{verbatim}
+
+General form:
+\begin{verbatim}
+for <new variable> in <list expression>:
+    ... do stuff with variable ...
+\end{verbatim}
+
+The loop will execute a number of times equal to the length of the
+list.  Each time, \verb|<new variable>| will be assigned the next
+element of the list.
+
+Have students talk in groups to come up with questions.  Get one
+question from each group.  Some of the things that came up in F'18
+included:
+
+\begin{itemize}
+\item Can you have if statements etc. inside a for loop?  Answer: Of
+  course.  Show an example.
+\item What is actually happening under the hood to make this possible?
+  Answer: it's really just a shorthand for the usual sort of while
+  loop we would write.
+\item What happens if you change the list while looping over it?
+  (Answer: who knows, don't.)
+\item Can you use the variable after the end of the loop? (Answer:
+  yes; don't.)
+\end{itemize}
+
 \subsection*{For loop practice}
 
+Write this function together:
 \begin{verbatim}
-def count(s, c):
-    num = 0
-    for c2 in s:
-        if c2 == c:
-            num += 1
-    return num
+# Count the number of times c occurs in s.  For example,
+# count('banana', 'n') = 2
+# count('banana', 'z') = 0
+def count(haystack: str, needle: str):
+    num_occurrences: int = 0
+    for c in haystack:
+        if c == needle:
+            num_occurrences += 1
+    return num_occurrences
+\end{verbatim}
 
-def find(s, c):
+Then give them this to practice writing in groups:
+\begin{verbatim}
+# Return a new list with only the strings of length 5 or more.
+# e.g. filter_long(['hi','there','xyz','abcdefg']) = ['there','abcdefg']
+
+def filter_long(strs: List[str]) -> List[str]:
+    result: List[str] = []
+    for s in strs:
+        if len(s) >= 5:
+            result.append(s)
+    return result
+\end{verbatim}
+
+\newpage
+\section{More for loops: index ranges (W 10/17)}
+
+\subsection*{Setup}
+
+Finish going over \verb|filter_long| from last class.
+
+Show them, or recall, an example like this:
+\begin{verbatim}
+animals = ['sheep', 'horse', 'cow', 'pig']
+
+for a in animals:
+    a += '!'
+\end{verbatim}
+
+It looks like the above code adds an exclamation point to every animal
+in the list, but it doesn't.  Trace the execution on the board to see
+why: the variable \verb|a| changes but not the actual strings in the list!
+
+What if we \emph{wanted} to change the animals?  We could do it with a
+while loop of course, but is there a way to do it with a for loop?
+
+Yes, there is, but it's a bit more indirect: we have to get access to
+the indices, since the only way to change an element in a list is to
+say something like \verb|animals[2] = ...| We can do this using
+\verb|range|.
+
+\begin{itemize}
+\item Show them \verb|range|.  Type \verb|range(4,10)| at the prompt;
+  doesn't evaluate.  We can turn it into a list with \verb|list| to
+  see what it is: \verb|[4, 5, 6, 7, 8, 9]|.  Just like a slice: start
+  at first index, up to but not including the last.
+\item If we only give one index, it's like a slice without the first
+  index: start at zero, go up to but not including the last.
+  e.g. show \verb|range(10)|.
+\item Hence we can get all the indices of a list with
+  \verb|range(len(lst))|.
+\end{itemize}
+
+Like so:
+\begin{verbatim}
+for i in range(len(animals)):
+    animals[i] += '!'
+\end{verbatim}
+
+There are other reasons we might want to talk about the indices
+explicitly:
+\begin{itemize}
+\item To use or remember an index for later
+\item To loop over two lists at the same time
+\item To compare items that are next to each other
+\end{itemize}
+
+We'll see examples of all of these.  Let's practice.  Do one together first:
+\begin{verbatim}
+# Return the index of the first occurrence of character target in s, or -1 if it
+# is not found.
+def find(s: str, target: str):
     for i in range(len(s)):
-        if s[i] == c:
+        if s[i] == target:
             return i
     return -1
+\end{verbatim}
+Notice how we needed the index so we could return it!  This won't
+work (maybe show this one first to show why it doesn't work):
+\begin{verbatim}
+def find(s: str, target: str):
+    for c in s:
+        if c == target:
+            return ???  # What do we return here?
+    return -1
+\end{verbatim}
 
-def find_all(s, c):
-    all_the_things = []
+Now have them do one:
+\begin{verbatim}
+# Return a list of all the indces where target occurs in s.
+def find_all(s: str, target: str) -> List[int]:
+    all_the_things: List[int] = []
     for i in range(len(s)):
-        if s[i] == c:
+        if s[i] == target:
             all_the_things.append(i)
     return all_the_things
 \end{verbatim}
 
-\begin{reflect}{Brent, S'17}
-  Wrote the above three function signatures and explained what they
-  were supposed to do, had them work on them for a while.  Then I had
-  volunteers go up and type while the class told them what to do.  I
-  have mixed feelings about it---good to do once in a while but it
-  also felt a little dead (student volunteer isn't necessarily good at
-  getting everyone in the class involved).  But the exercise itself
-  was good, they wrote \verb|count| but then got stuck trying to get
-  \verb|find| to work, with lots of interesting errors.  We returned
-  to it in the next class.
-\end{reflect}
-
+Another one, give them this as a challenge and let them make lots of
+interesting mistakes, then go over the solution:
 \begin{verbatim}
-def print_each(s):
-    index = 0
-    while index < len(s):
-        c = s[index]
-        print(c)
-        index += 1
+# Return true if the list is sorted from smallest to biggest.
+# e.g.  is_sorted([2,5,6,9,9]) = True
+#       is_sorted([2,5,3,9,9]) = False
 
-def print_each_for(s):
-    for c in s:
-        print(c)
+def is_sorted(nums: List[int]) -> bool:
+    for i in range(len(nums) - 1):
+        if nums[i] > nums[i+1]:
+            return False
+    return True
 \end{verbatim}
+
+Talk about how we also need indices for this one, because otherwise we
+only get access to one element at a time, can't ask about neighboring
+elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
+\verb|nums[i+1]| doesn't throw an out-of-bounds error.
 
 % \begin{verbatim}
 % def nos(s):
@@ -2284,57 +2392,53 @@ def print_each_for(s):
 %     return total
 % \end{verbatim}
 
-\newpage
-\section{For loop practice (W 10/17)}
 
-\subsection*{Setup}
+% \subsection*{For loops: reading exercises}
 
-\subsection*{For loops: reading exercises}
+% CLOSE COMPUTERS.
+% Find bit-partners. Different one for each exercise.
+% Go over each and try it.
 
-CLOSE COMPUTERS.
-Find bit-partners. Different one for each exercise.
-Go over each and try it.
+% \begin{verbatim}
+% def oogie(m: List[int]) -> int:
+%     p = m[0]
+%     for g in m:
+%         if g > p:
+%             p = g
+%     return p
 
-\begin{verbatim}
-def oogie(m: List[int]) -> int:
-    p = m[0]
-    for g in m:
-        if g > p:
-            p = g
-    return p
+% def yayaya(q: List[str]) -> bool:
+%     for y in range(len(q) - 1):
+%         if q[y] == q[y + 1]:
+%             return True
+%     return False
+% \end{verbatim}
 
-def yayaya(q: List[str]) -> bool:
-    for y in range(len(q) - 1):
-        if q[y] == q[y + 1]:
-            return True
-    return False
-\end{verbatim}
+% Then have them write \verb|is_sorted| function.
 
-Then have them write \verb|is_sorted| function.
+% Additional practice:
 
-Additional practice:
+% \begin{verbatim}
+% def pulu(r: int) -> List[int]:
+%     b = []
+%     for k in range(r):
+%         b.append(k ** 3)
+%     return b
+% \end{verbatim}
 
-\begin{verbatim}
-def pulu(r: int) -> List[int]:
-    b = []
-    for k in range(r):
-        b.append(k ** 3)
-    return b
-\end{verbatim}
+% \begin{reflect}{Brent, S'17}
+%   Made it through all of these (including writing \verb|is_sorted|);
+%   in fact, we started by finishing \verb|find(c,s)| from last class
+%   (which they hadn't quite gotten to work yet).  I think it was
+%   a really useful exercise.
+% \end{reflect}
 
-\begin{reflect}{Brent, S'17}
-  Made it through all of these (including writing \verb|is_sorted|);
-  in fact, we started by finishing \verb|find(c,s)| from last class
-  (which they hadn't quite gotten to work yet).  I think it was
-  a really useful exercise.
-\end{reflect}
-
-\begin{reflect}{Brent, S'18}
-  Didn't make it through as many due to some technical hiccups, but
-  had them read oogie and yayaya, then had them write
-  \verb|is_sorted|.  Will need to spend a bit of time going over
-  \verb|is_sorted| next class.
-\end{reflect}
+% \begin{reflect}{Brent, S'18}
+%   Didn't make it through as many due to some technical hiccups, but
+%   had them read oogie and yayaya, then had them write
+%   \verb|is_sorted|.  Will need to spend a bit of time going over
+%   \verb|is_sorted| next class.
+% \end{reflect}
 
 \section*{LAB: Caesar's Secrets (Th 10/18)}
 
