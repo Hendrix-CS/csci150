@@ -2458,7 +2458,7 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 
 \newpage
 
-\section{Mutability, objects, references, tracing with stack \& heap (F 10/19)}
+\section{Mutability, objects, and references (F 10/19)}
 
 Warm-up: what happens here?  Find partner \& decide.
 \begin{verbatim}
@@ -2470,25 +2470,32 @@ print nums2
 
 Try it at python prompt.  This is really weird!
 
-As hinted last time, the fact that lists are mutable opens a huge can
-of worms.  Let's start by pulling back the curtain a little bit.  Up
-until now we have talked about variables having values, but we need to
-be more precise.  Draw stack diagram with variables referencing two
-different lists.
+As hinted before, the fact that lists are mutable (as opposed to
+strings, which are immutable) opens a huge can of worms.  Let's start
+by pulling back the curtain a little bit.  Up until now we have talked
+about variables having values, but we need to be more precise.  Draw
+stack diagram with variables referencing two different lists.
 
 \begin{itemize}
-\item Variables contain \emph{references} to objects.  A reference
-  ``points'' to a certain object (really it is just a memory address).
+\item Variables actually don't contain values, they contain
+  \emph{references} to objects.  A reference ``points'' to a certain
+  object (really, a reference is just a number which represents a
+  location in the computer's memory).
 \item Copying the value of a variable into another variable just
-  copies the \emph{reference}, so they now point to the same object!
+  copies the \emph{reference} (\ie\ the memory address), so they now
+  point to the same object!
 \item Variables which reference objects that have the same value are
   \emph{equal}.  You can test equality with \verb|==|.
 \item Variables which reference the \emph{same object} are
   \emph{identical}. You can test identity with \verb|is| (though you
   won't need this in the rest of the course).
-\item Note since strings are immutable, it didn't matter before; there
-  is no way to tell the difference between two variables with separate
-  copies of a string and two variables referencing the same string.
+\item Note since strings, ints, floats, and booleans are immutable, it
+  didn't matter before; there is no way to tell the difference between
+  two variables with separate copies of a string and two variables
+  referencing the same string.  So we will continue to think of
+  variables as holding ints, strings, etc., not references to them
+  (since it doesn't matter).  But for lists and other things to come
+  it matters quite a bit.
 \end{itemize}
 
 Do this at the REPL, with accompanying pictures drawn on the board:
@@ -2555,22 +2562,17 @@ animal_release(animals)
 print(animals)
 \end{verbatim}
 
-Ask: what gets printed?
+Formally, to see what's going on, we are going to enhance our tracing
+diagrams one last time: we are going to add a \emph{heap}.  The
+``heap'' is the area of memory where objects are stored. Variables are
+stored on the stack and contain references to things in the heap.
 
-XXX show them formally how to do tracing with stack \& heap in order
-to understand this.
+XXX make new template
 
-XXX other example(s)
+XXX make example
 
 \newpage
 
-% \section{Exam wrap-up, demo project}
-
-% \subsection*{Exam wrap-up}
-
-% Hand back exams; quickly go over exam solutions.
-
-% \subsection*{Demo project}
 
 XXX SEND OUT INSTRUCTIONS/EXAMPLE RE: FILE I/O (for use with P2)
 
