@@ -19,10 +19,10 @@ title: Labs
 5     [Guess My Number](labs/guess.html)                                            Sep 19/20    Sep 26/27
 6     [Mutation is the Word](labs/doublets.html)                                    Sep 26/27    Oct 3/4
 7     [Line Editor](labs/line-editor.html)                                          Oct 3/4      Oct 17/18
+8     [Caesar's Secrets](labs/caesar.html)                                          Oct 17/18    Oct 24/25
 
 </font>
 
-  <!-- 7     [Caesar's Secrets](labs/caesar.html)                                          Feb 28/Mar 1 -->
   <!-- P2    [Project 2](http://mgoadric.github.io/csci150/projects/project2.html) start   Mar 7/8 -->
   <!-- 8     [Fractal Recursion](labs/fractal.html)                                        Mar 14/15 -->
   <!-- 9     [Sentiment Analysis](labs/sentiment.html)                                     Mar 28/29 -->
