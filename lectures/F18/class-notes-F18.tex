@@ -2022,6 +2022,24 @@ def listmax(nums: List[int]) -> int:
 \end{verbatim}
 
 \newpage
+\section*{LAB: List Editor}
+
+\begin{reflect}{Brent, F'18}
+  I wrote this lab fresh for this semester: we decided to spend more
+  time on lists and put off for loops until after exam 2.  So we
+  needed a new lab that gave them practice with lists but didn't need
+  for loops.
+
+  Unfortunately the lab was something of a disaster.  Many students
+  (even students who usually do well) were very confused about what
+  the lab was asking them to do, and only made it to step 3 or so (out
+  of 6) by the end of the lab period.  It will need to be
+  substantially rewritten and/or clarified for next time (or we need
+  to come up with a different lab that serves the same purpose).  I do
+  think there's a good lab hiding in there, trying to get out.
+\end{reflect}
+
+\newpage
 \section{Lists III (F 10/5)}
 
 \subsection*{Setup}
@@ -2034,7 +2052,7 @@ def listmax(nums: List[int]) -> int:
 \end{itemize}
 
 Have them work in pairs (randomly assigned?) to write some list
-practice functions.
+practice functions.  Pick some of the following.
 
 \begin{verbatim}
 from typing import *
@@ -2067,6 +2085,29 @@ def listmax(nums: List[int]) -> int:
             m = nums[i]
         i += 1
     return m
+
+# Find the index of the given string in the list, or return -1 if the
+# list does not contain the string.
+def listfind(search_term: str, lst: List[str]) -> int:
+    i = 0
+    while i < len(lst):
+        if lst[i] == search_term:
+            return i
+        i += 1
+    return -1
+
+# Return a new list which contains only the even numbers from the
+# input.  For example, onlyevens([1,5,6,2,3,3,8]) should return [6,2,8].
+def onlyevens(lst: List[int]) -> List[int]:
+    result: List[int] = []
+    i: int = 0
+
+    while i < len(lst):
+        if lst[i] % 2 == 0:
+            result.append(lst[i])
+        i += 1
+
+    return result
 \end{verbatim}
 
 \newpage
@@ -2107,98 +2148,203 @@ Spend a lecture going over practice exam.
 \end{reflect}
 
 \begin{reflect}{Brent, F'18}
-  Again on the Wednesday right before fall break.
+  Again on the Wednesday right before fall break.  This time the exam
+  didn't even have for loops at all, since we spent more time
+  practicing with lists and put off for loops until after the exam.
+  Average was back down in the 71--73 range, min 28, max 100---pretty
+  much the same distribution as S'17.
 \end{reflect}
-
-XXX SEND OUT INSTRUCTIONS/EXAMPLE RE: FILE I/O (for use with P2)
-
 
 \newpage
 \section{For loops (M 10/15)}
 
 \subsection*{For Loops}
 
-Recall our \verb|explode| function from a week or two ago:
+Recall our \verb|explode| function from a week or two ago (or just
+about every list- or string-processing function we have written ever):
 \begin{verbatim}
-def explode(s):
-  index = 0
-  while index < len(s):
-    print s[index]
+def explode(s: str):
+  i: int = 0
+  while i < len(s):
+    print(s[i])
+    i += 1
 \end{verbatim}
 Recall how easy it was to make errors like starting index at the wrong
 place, using \verb|<=| instead of \verb|<|, and so on.  Well, it turns
 out there is a better way!
 \begin{verbatim}
-def explode(s):
+def explode(s: str):
   for c in s:
-    print c
+    print(c)
 \end{verbatim}
 Simply loops through each character in the string one at a time.  Each
 time through the loop the next character is assigned to \verb|c|.
-This also works for lists:
-\begin{verbatim}
-animals = ["cow", "chicken", "pig", "rabbit"]
-for animal in animals:
-  print "And on this farm he had a " + animal + "!"
-\end{verbatim}
-What do we lose, as compared to a \verb|while| loop?  The index. But
-actually, we don't!  Just have to cleverly put together a few things
-we have already seen:
-\begin{verbatim}
-for i in range(len(numbers)):
-  numbers[i] *= 2
-\end{verbatim}
 This is way better than using a \verb|while| loop since it rules out
 errors putting the starting or ending indices at the wrong number.
 
+This also works for lists:
+\begin{verbatim}
+animals: List[str] = ["cow", "chicken", "pig", "rabbit"]
+for animal in animals:
+  print("And on this farm he had a " + animal + "!")
+\end{verbatim}
+
+General form:
+\begin{verbatim}
+for <new variable> in <list expression>:
+    ... do stuff with variable ...
+\end{verbatim}
+
+The loop will execute a number of times equal to the length of the
+list.  Each time, \verb|<new variable>| will be assigned the next
+element of the list.
+
+Have students talk in groups to come up with questions.  Get one
+question from each group.  Some of the things that came up in F'18
+included:
+
+\begin{itemize}
+\item Can you have if statements etc. inside a for loop?  Answer: Of
+  course.  Show an example.
+\item What is actually happening under the hood to make this possible?
+  Answer: it's really just a shorthand for the usual sort of while
+  loop we would write.
+\item What happens if you change the list while looping over it?
+  (Answer: who knows, don't.)
+\item Can you use the variable after the end of the loop? (Answer:
+  yes; don't.)
+\end{itemize}
+
 \subsection*{For loop practice}
 
+Write this function together:
 \begin{verbatim}
-def count(s, c):
-    num = 0
-    for c2 in s:
-        if c2 == c:
-            num += 1
-    return num
+# Count the number of times c occurs in s.  For example,
+# count('banana', 'n') = 2
+# count('banana', 'z') = 0
+def count(haystack: str, needle: str):
+    num_occurrences: int = 0
+    for c in haystack:
+        if c == needle:
+            num_occurrences += 1
+    return num_occurrences
+\end{verbatim}
 
-def find(s, c):
+Then give them this to practice writing in groups:
+\begin{verbatim}
+# Return a new list with only the strings of length 5 or more.
+# e.g. filter_long(['hi','there','xyz','abcdefg']) = ['there','abcdefg']
+
+def filter_long(strs: List[str]) -> List[str]:
+    result: List[str] = []
+    for s in strs:
+        if len(s) >= 5:
+            result.append(s)
+    return result
+\end{verbatim}
+
+\newpage
+\section{More for loops: index ranges (W 10/17)}
+
+\subsection*{Setup}
+
+Finish going over \verb|filter_long| from last class.
+
+Show them, or recall, an example like this:
+\begin{verbatim}
+animals = ['sheep', 'horse', 'cow', 'pig']
+
+for a in animals:
+    a += '!'
+\end{verbatim}
+
+It looks like the above code adds an exclamation point to every animal
+in the list, but it doesn't.  Trace the execution on the board to see
+why: the variable \verb|a| changes but not the actual strings in the list!
+
+What if we \emph{wanted} to change the animals?  We could do it with a
+while loop of course, but is there a way to do it with a for loop?
+
+Yes, there is, but it's a bit more indirect: we have to get access to
+the indices, since the only way to change an element in a list is to
+say something like \verb|animals[2] = ...| We can do this using
+\verb|range|.
+
+\begin{itemize}
+\item Show them \verb|range|.  Type \verb|range(4,10)| at the prompt;
+  doesn't evaluate.  We can turn it into a list with \verb|list| to
+  see what it is: \verb|[4, 5, 6, 7, 8, 9]|.  Just like a slice: start
+  at first index, up to but not including the last.
+\item If we only give one index, it's like a slice without the first
+  index: start at zero, go up to but not including the last.
+  e.g. show \verb|range(10)|.
+\item Hence we can get all the indices of a list with
+  \verb|range(len(lst))|.
+\end{itemize}
+
+Like so:
+\begin{verbatim}
+for i in range(len(animals)):
+    animals[i] += '!'
+\end{verbatim}
+
+There are other reasons we might want to talk about the indices
+explicitly:
+\begin{itemize}
+\item To use or remember an index for later
+\item To loop over two lists at the same time
+\item To compare items that are next to each other
+\end{itemize}
+
+We'll see examples of all of these.  Let's practice.  Do one together first:
+\begin{verbatim}
+# Return the index of the first occurrence of character target in s, or -1 if it
+# is not found.
+def find(s: str, target: str):
     for i in range(len(s)):
-        if s[i] == c:
+        if s[i] == target:
             return i
     return -1
+\end{verbatim}
+Notice how we needed the index so we could return it!  This won't
+work (maybe show this one first to show why it doesn't work):
+\begin{verbatim}
+def find(s: str, target: str):
+    for c in s:
+        if c == target:
+            return ???  # What do we return here?
+    return -1
+\end{verbatim}
 
-def find_all(s, c):
-    all_the_things = []
+Now have them do one:
+\begin{verbatim}
+# Return a list of all the indces where target occurs in s.
+def find_all(s: str, target: str) -> List[int]:
+    all_the_things: List[int] = []
     for i in range(len(s)):
-        if s[i] == c:
+        if s[i] == target:
             all_the_things.append(i)
     return all_the_things
 \end{verbatim}
 
-\begin{reflect}{Brent, S'17}
-  Wrote the above three function signatures and explained what they
-  were supposed to do, had them work on them for a while.  Then I had
-  volunteers go up and type while the class told them what to do.  I
-  have mixed feelings about it---good to do once in a while but it
-  also felt a little dead (student volunteer isn't necessarily good at
-  getting everyone in the class involved).  But the exercise itself
-  was good, they wrote \verb|count| but then got stuck trying to get
-  \verb|find| to work, with lots of interesting errors.  We returned
-  to it in the next class.
-\end{reflect}
-
+Another one, give them this as a challenge and let them make lots of
+interesting mistakes, then go over the solution:
 \begin{verbatim}
-def print_each(s):
-    index = 0
-    while index < len(s):
-        c = s[index]
-        print(c)
-        index += 1
+# Return true if the list is sorted from smallest to biggest.
+# e.g.  is_sorted([2,5,6,9,9]) = True
+#       is_sorted([2,5,3,9,9]) = False
 
-def print_each_for(s):
-    for c in s:
-        print(c)
+def is_sorted(nums: List[int]) -> bool:
+    for i in range(len(nums) - 1):
+        if nums[i] > nums[i+1]:
+            return False
+    return True
 \end{verbatim}
+
+Talk about how we also need indices for this one, because otherwise we
+only get access to one element at a time, can't ask about neighboring
+elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
+\verb|nums[i+1]| doesn't throw an out-of-bounds error.
 
 % \begin{verbatim}
 % def nos(s):
@@ -2246,57 +2392,53 @@ def print_each_for(s):
 %     return total
 % \end{verbatim}
 
-\newpage
-\section{For loop practice (W 10/17)}
 
-\subsection*{Setup}
+% \subsection*{For loops: reading exercises}
 
-\subsection*{For loops: reading exercises}
+% CLOSE COMPUTERS.
+% Find bit-partners. Different one for each exercise.
+% Go over each and try it.
 
-CLOSE COMPUTERS.
-Find bit-partners. Different one for each exercise.
-Go over each and try it.
+% \begin{verbatim}
+% def oogie(m: List[int]) -> int:
+%     p = m[0]
+%     for g in m:
+%         if g > p:
+%             p = g
+%     return p
 
-\begin{verbatim}
-def oogie(m: List[int]) -> int:
-    p = m[0]
-    for g in m:
-        if g > p:
-            p = g
-    return p
+% def yayaya(q: List[str]) -> bool:
+%     for y in range(len(q) - 1):
+%         if q[y] == q[y + 1]:
+%             return True
+%     return False
+% \end{verbatim}
 
-def yayaya(q: List[str]) -> bool:
-    for y in range(len(q) - 1):
-        if q[y] == q[y + 1]:
-            return True
-    return False
-\end{verbatim}
+% Then have them write \verb|is_sorted| function.
 
-Then have them write \verb|is_sorted| function.
+% Additional practice:
 
-Additional practice:
+% \begin{verbatim}
+% def pulu(r: int) -> List[int]:
+%     b = []
+%     for k in range(r):
+%         b.append(k ** 3)
+%     return b
+% \end{verbatim}
 
-\begin{verbatim}
-def pulu(r: int) -> List[int]:
-    b = []
-    for k in range(r):
-        b.append(k ** 3)
-    return b
-\end{verbatim}
+% \begin{reflect}{Brent, S'17}
+%   Made it through all of these (including writing \verb|is_sorted|);
+%   in fact, we started by finishing \verb|find(c,s)| from last class
+%   (which they hadn't quite gotten to work yet).  I think it was
+%   a really useful exercise.
+% \end{reflect}
 
-\begin{reflect}{Brent, S'17}
-  Made it through all of these (including writing \verb|is_sorted|);
-  in fact, we started by finishing \verb|find(c,s)| from last class
-  (which they hadn't quite gotten to work yet).  I think it was
-  a really useful exercise.
-\end{reflect}
-
-\begin{reflect}{Brent, S'18}
-  Didn't make it through as many due to some technical hiccups, but
-  had them read oogie and yayaya, then had them write
-  \verb|is_sorted|.  Will need to spend a bit of time going over
-  \verb|is_sorted| next class.
-\end{reflect}
+% \begin{reflect}{Brent, S'18}
+%   Didn't make it through as many due to some technical hiccups, but
+%   had them read oogie and yayaya, then had them write
+%   \verb|is_sorted|.  Will need to spend a bit of time going over
+%   \verb|is_sorted| next class.
+% \end{reflect}
 
 \section*{LAB: Caesar's Secrets (Th 10/18)}
 
@@ -2316,7 +2458,7 @@ def pulu(r: int) -> List[int]:
 
 \newpage
 
-\section{Mutability, objects, references, tracing with stack \& heap (F 10/19)}
+\section{Mutability, objects, and references (F 10/19)}
 
 Warm-up: what happens here?  Find partner \& decide.
 \begin{verbatim}
@@ -2328,25 +2470,32 @@ print nums2
 
 Try it at python prompt.  This is really weird!
 
-As hinted last time, the fact that lists are mutable opens a huge can
-of worms.  Let's start by pulling back the curtain a little bit.  Up
-until now we have talked about variables having values, but we need to
-be more precise.  Draw stack diagram with variables referencing two
-different lists.
+As hinted before, the fact that lists are mutable (as opposed to
+strings, which are immutable) opens a huge can of worms.  Let's start
+by pulling back the curtain a little bit.  Up until now we have talked
+about variables having values, but we need to be more precise.  Draw
+stack diagram with variables referencing two different lists.
 
 \begin{itemize}
-\item Variables contain \emph{references} to objects.  A reference
-  ``points'' to a certain object (really it is just a memory address).
+\item Variables actually don't contain values, they contain
+  \emph{references} to objects.  A reference ``points'' to a certain
+  object (really, a reference is just a number which represents a
+  location in the computer's memory).
 \item Copying the value of a variable into another variable just
-  copies the \emph{reference}, so they now point to the same object!
+  copies the \emph{reference} (\emph{i.e.} the memory address), so they now
+  point to the same object!
 \item Variables which reference objects that have the same value are
   \emph{equal}.  You can test equality with \verb|==|.
 \item Variables which reference the \emph{same object} are
   \emph{identical}. You can test identity with \verb|is| (though you
   won't need this in the rest of the course).
-\item Note since strings are immutable, it didn't matter before; there
-  is no way to tell the difference between two variables with separate
-  copies of a string and two variables referencing the same string.
+\item Note since strings, ints, floats, and booleans are immutable, it
+  didn't matter before; there is no way to tell the difference between
+  two variables with separate copies of a string and two variables
+  referencing the same string.  So we will continue to think of
+  variables as holding ints, strings, etc., not references to them
+  (since it doesn't matter).  But for lists and other things to come
+  it matters quite a bit.
 \end{itemize}
 
 Do this at the REPL, with accompanying pictures drawn on the board:
@@ -2413,22 +2562,19 @@ animal_release(animals)
 print(animals)
 \end{verbatim}
 
-Ask: what gets printed?
+Formally, to see what's going on, we are going to enhance our tracing
+diagrams one last time: we are going to add a \emph{heap}.  The
+``heap'' is the area of memory where objects are stored. Variables are
+stored on the stack and contain references to things in the heap.
 
-XXX show them formally how to do tracing with stack \& heap in order
-to understand this.
+XXX make new template
 
-XXX other example(s)
+XXX make example
 
 \newpage
 
-% \section{Exam wrap-up, demo project}
 
-% \subsection*{Exam wrap-up}
-
-% Hand back exams; quickly go over exam solutions.
-
-% \subsection*{Demo project}
+XXX SEND OUT INSTRUCTIONS/EXAMPLE RE: FILE I/O (for use with P2)
 
 % Introduce Project 2 (word games).
 
@@ -2463,148 +2609,6 @@ XXX other example(s)
 %   to \eg pick random words, generate files with different word
 %   lists, etc.
 % \end{reflect}
-
-\newpage
-\section{Recursion I: intro (M 10/15)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Reminder: project 2 due Friday!
-\item Write stone-counting rules somewhere, e.g. on board (see below)
-\end{itemize}
-
-\subsection*{Stone counting}
-
-Rules:
-\begin{enumerate}
-\item You may not look into the bowl.
-\item You may only touch one stone.
-\item If someone gives you the bowl and asks you how many stones it
-  contains, you must eventually give the bowl back and answer
-  truthfully.
-\end{enumerate}
-(There will usually be some attempts to find loopholes; modify the
-rules as necessary.)  Then hand the bowl to a student and ask how many
-stones it contains.
-
-Recursion!  Functions that call themselves.  In a sense you were all
-``the same function'' because you were running the same program
-(rules).
-
-Factorial function: $n! = 1 \times 2 \times \dots \times (n-1) \times
-n$.  Let's implement in Python.
-\begin{verbatim}
-def fact(n):
-    product = 1
-    for k in range(1,n+1):
-        product *= k
-    return product
-\end{verbatim}
-Now consider $n! = (1 \times 2 \times \dots \times (n-1)) \times n =
-(n-1)! \times n$.  Also need to define $0! = 1$.  Can we translate
-this directly into Python?
-\begin{verbatim}
-def fact_rec(n):
-    if n == 0:
-        return 1
-    else:
-        result = fact_rec(n-1)
-        return result * n
-\end{verbatim}
-It works!
-
-Show call stack.  Every recursive call has its own copy of local
-variables!
-
-Big idea: transform a problem into a slightly simpler version (or more
-than one), solve that simpler problem, do some work to compute an
-answer to the original problem.
-
-Typically:
-\begin{itemize}
-\item Base case(s): simple case where we know the answer without doing
-  any work.  Always do this first!
-\item Recursive case(s): make a recursive call to solve a slightly
-  simpler (i.e. closer to the base case) problem.
-\end{itemize}
-
-Then re-code factorial function live, adding a bunch of comments and
-  narrating thought process.
-
-\newpage
-\section{Recursion II: recursive functions (W 10/17)}
-
-Start by reinforcing ``base case + recursive case''.  Talk about
-``leap of faith'': trust that recursive calls will work without
-thinking about how.  Trust your future self.  DON'T think about
-unwinding entire recursion stack.  Just think about ONE level.
-
-Up until now all the examples we've done have been math functions.
-Let's do a few more ``computer-sciency'' examples processing strings
-and lists.  Note, in Python this is not the best way to implement
-these functions (though in some languages it is).  Just for
-illustration purposes.  If you take 151 you will start to see real,
-legitimate uses of recursion, \eg processing trees.  (The one
-legitimate use of recursion using only what you know is what we will
-be doing in lab---making pretty pictures!)
-
-\begin{itemize}
-\item Work in pairs to implement \verb|product|.
-\item Have them work in pairs to implement string \verb|reverse|.
-\item Have them work in (different?) pairs to implement \verb|is_palindrome|.
-\end{itemize}
-
-\begin{reflect}{Brent, S'17}
-  Talked about thought process for writing recursive functions,
-  re-coded factorial function.  Lots of great questions.  Then looked
-  at \texttt{sum} function again which we actually wrote in the
-  previous class (in retrospect it was probably premature to do
-  that).  Then only got as far as having them work on writing a
-  \texttt{product} function on paper.  Ended with a spirited debate
-  about what \texttt{product([])} ought to be.  Plan to pick up where
-  we left off next time.
-\end{reflect}
-
-\newpage
-\section*{LAB: Fractal Recursion (Th 10/18)}
-
-\begin{reflect}{S' 17}
-  This lab is fun and seemed to go reasonably well, though attendance
-  was poor due to being right before spring break and having project 2
-  due the same day.  In the end I'm also not sure how much it really
-  teaches them about recursion.  But to be honest I don't know how to
-  incorporate recursion more fully into the curriculum without
-  changing the programming language we use.
-\end{reflect}
-
-\newpage
-\section{Recursion III (F 10/19)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Project 2 due today!
-\end{itemize}
-
-\begin{reflect}{Brent, S'17}
-  This semester I decided to spend three lectures on recursion instead
-  of two.  It fit the schedule better (I didn't want to start a brand
-  new topic for one day before spring break) and I think it is really
-  needed.
-\end{reflect}
-
-Finish discussion of recursive \texttt{product} implementation,
-beginning with why \texttt{product([])} should be $1$ rather than $0$:
-
-\begin{itemize}
-\item Economy of expression---more elegant definitions, with fewer
-  special cases, usually means you are on the right track in
-  mathematics; those definitions end up being not just more economical
-  but also more useful and more consistent with other things.
-\item This is the same reason $0! = 1$.
-\item Validates the identity \texttt{product(xs + ys) = product(xs) * product(ys)}.
-\end{itemize}
-
-Have them work in pairs to implement string \texttt{reverse}.
 
 \newpage
 \section{Dictionaries (M 10/22)}
@@ -2974,6 +2978,149 @@ main()
 \section{Classes \& objects III (F 11/2)}
 
 Finish \verb|TrafficLight|.
+
+
+\newpage
+\section{Recursion I: intro (M 10/15)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: project 2 due Friday!
+\item Write stone-counting rules somewhere, e.g. on board (see below)
+\end{itemize}
+
+\subsection*{Stone counting}
+
+Rules:
+\begin{enumerate}
+\item You may not look into the bowl.
+\item You may only touch one stone.
+\item If someone gives you the bowl and asks you how many stones it
+  contains, you must eventually give the bowl back and answer
+  truthfully.
+\end{enumerate}
+(There will usually be some attempts to find loopholes; modify the
+rules as necessary.)  Then hand the bowl to a student and ask how many
+stones it contains.
+
+Recursion!  Functions that call themselves.  In a sense you were all
+``the same function'' because you were running the same program
+(rules).
+
+Factorial function: $n! = 1 \times 2 \times \dots \times (n-1) \times
+n$.  Let's implement in Python.
+\begin{verbatim}
+def fact(n):
+    product = 1
+    for k in range(1,n+1):
+        product *= k
+    return product
+\end{verbatim}
+Now consider $n! = (1 \times 2 \times \dots \times (n-1)) \times n =
+(n-1)! \times n$.  Also need to define $0! = 1$.  Can we translate
+this directly into Python?
+\begin{verbatim}
+def fact_rec(n):
+    if n == 0:
+        return 1
+    else:
+        result = fact_rec(n-1)
+        return result * n
+\end{verbatim}
+It works!
+
+Show call stack.  Every recursive call has its own copy of local
+variables!
+
+Big idea: transform a problem into a slightly simpler version (or more
+than one), solve that simpler problem, do some work to compute an
+answer to the original problem.
+
+Typically:
+\begin{itemize}
+\item Base case(s): simple case where we know the answer without doing
+  any work.  Always do this first!
+\item Recursive case(s): make a recursive call to solve a slightly
+  simpler (i.e. closer to the base case) problem.
+\end{itemize}
+
+Then re-code factorial function live, adding a bunch of comments and
+  narrating thought process.
+
+\newpage
+\section{Recursion II: recursive functions (W 10/17)}
+
+Start by reinforcing ``base case + recursive case''.  Talk about
+``leap of faith'': trust that recursive calls will work without
+thinking about how.  Trust your future self.  DON'T think about
+unwinding entire recursion stack.  Just think about ONE level.
+
+Up until now all the examples we've done have been math functions.
+Let's do a few more ``computer-sciency'' examples processing strings
+and lists.  Note, in Python this is not the best way to implement
+these functions (though in some languages it is).  Just for
+illustration purposes.  If you take 151 you will start to see real,
+legitimate uses of recursion, \eg processing trees.  (The one
+legitimate use of recursion using only what you know is what we will
+be doing in lab---making pretty pictures!)
+
+\begin{itemize}
+\item Work in pairs to implement \verb|product|.
+\item Have them work in pairs to implement string \verb|reverse|.
+\item Have them work in (different?) pairs to implement \verb|is_palindrome|.
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  Talked about thought process for writing recursive functions,
+  re-coded factorial function.  Lots of great questions.  Then looked
+  at \texttt{sum} function again which we actually wrote in the
+  previous class (in retrospect it was probably premature to do
+  that).  Then only got as far as having them work on writing a
+  \texttt{product} function on paper.  Ended with a spirited debate
+  about what \texttt{product([])} ought to be.  Plan to pick up where
+  we left off next time.
+\end{reflect}
+
+\newpage
+\section*{LAB: Fractal Recursion (Th 10/18)}
+
+\begin{reflect}{S' 17}
+  This lab is fun and seemed to go reasonably well, though attendance
+  was poor due to being right before spring break and having project 2
+  due the same day.  In the end I'm also not sure how much it really
+  teaches them about recursion.  But to be honest I don't know how to
+  incorporate recursion more fully into the curriculum without
+  changing the programming language we use.
+\end{reflect}
+
+\newpage
+\section{Recursion III (F 10/19)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Project 2 due today!
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  This semester I decided to spend three lectures on recursion instead
+  of two.  It fit the schedule better (I didn't want to start a brand
+  new topic for one day before spring break) and I think it is really
+  needed.
+\end{reflect}
+
+Finish discussion of recursive \texttt{product} implementation,
+beginning with why \texttt{product([])} should be $1$ rather than $0$:
+
+\begin{itemize}
+\item Economy of expression---more elegant definitions, with fewer
+  special cases, usually means you are on the right track in
+  mathematics; those definitions end up being not just more economical
+  but also more useful and more consistent with other things.
+\item This is the same reason $0! = 1$.
+\item Validates the identity \texttt{product(xs + ys) = product(xs) * product(ys)}.
+\end{itemize}
+
+Have them work in pairs to implement string \texttt{reverse}.
 
 
 \newpage

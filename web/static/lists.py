@@ -78,3 +78,51 @@ def read_inputs() -> List[str]:
 
 # Also also doesn't work
 # animals.append(' '.join(['gerbil'] * 3))
+
+####### List practice ######
+
+# Find the sum of a list of ints.
+def listsum(nums: List[int]) -> int:
+    i: int = 0
+    sum: int = 0
+    while i < len(nums):
+        sum += nums[i]
+        i += 1
+    return sum
+
+# Find the product of a list of ints.
+def listprod(nums: List[int]) -> int:
+    pass
+
+# Find the maximum number in a nonempty list of ints.
+def listmax(nums: List[int]) -> int:
+    i: int = 1
+    max: int = nums[0]
+    while i < len(nums):
+        if nums[i] > max:
+            max = nums[i]
+        i += 1
+    return max
+
+# Returns the index of the search_term in the list, or
+# -1 if it is not found.
+#
+# e.g.   listfind('dog', ['cat', 'dog', 'horse']) = 1
+#        listfind('shoe', ['cat', 'dog', 'horse']) = -1
+def listfind(search_term: str, lst: List[str]) -> int:
+    i: int = 0
+    found_index: int = -1
+    while i < len(lst):
+        if search_term == lst[i]:
+            found_index = i
+
+        i += 1
+    return found_index
+
+def listfind2(search_term: str, lst: List[str]) -> int:
+    i: int = 0
+    while i < len(lst):
+        if search_term == list[i]:
+            return i
+
+    return -1

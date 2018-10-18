@@ -1,99 +1,65 @@
 # For loops
 
-def explode_str(s):
-    index = 0
-    while index < len(s):
-        print(s[index])
-        index += 1
+# Common pattern:
 
-# The above is too low-level: lots of things to get wrong!
+animals = ["chicken", "rat", "stingray", "cow"]
 
-def explode_str2(s):
-    for c in s.lower():
-        print(c)
+# i: int = 0
+# while i < len(animals):
+#     print(animals[i])
+#     i += 1
 
-# Syntax:
-# for <var> in <sequence expression>:
-#    ... stuff using <var>
+# Above works, but it's annoying because:
+#   - Have to make variable i
+#   - Have to get the test (< len) right
+#   - Have to remember to update i
+#   - etc.
 
-animals = ['chicken', 'rabbit', 'duck', 'chupacabra', 'deer']
+# Better way:
 
-# for animal in animals:
-#    print ("And on this farm he had a " + animal + "...")
+for a in animals:
+    print(a)
 
-# With a normal for loop we don't get access to the indices.
-# But we can do this:
+# In general:
 
-# for i in range(len(animals)):
-#     print ("At index " + str(i) + ": " + animals[i])
+# for <new variable> in <list expression>:
+#    ... do stuff with variable ...
 
+# Also works for strings:
 
+# for c in "hello":
+#     print(c)
+#
+# for c in "hello":
+#     print(c)
+#     if c < 'i':
+#         print("!!!")
 
-# For loop practice
+print(animals)
 
-# Input: string s, character c
-# Output: number of times c occurs in s.
-def count(s, c):
-    count = 0
-    for i in s:
-        if i==c:
-            count += 1
-    return count    
+for a in animals:
+    a = a + "!"
 
-# Input: string s, character c
-# Output: index of the first occurrence of c in s, or -1
-#   if it does not occur.
-def find(s, c):
-    for i in range(len(s)):
-        if s[i] == c:
-            return i
-    return -1
-            
-        
+print(a)
+print(animals)
 
-# Input: string s, character c
-# Output list of all the indices where c occurs.
-# Example: find_all("hello", 'l') == [2,3]
-def find_all(s, c):
+for a in '':     # Does nothing!
+    print(10/0)
+
+# Count how many times c occurs in s
+# e.g. count('banana', 'n') = 2
+def count(s: str, c: str) -> int:
+
+    num_occurrences: int = 0
+    for a in s:
+        if a == c:
+            num_occurrences += 1
+
+    return num_occurrences
+
+from typing import *
+
+# Return a list containing only the elements with len >= 5
+# e.g. filter_long(["hi", "there", "xy", "abcdefgh"]) = ["there", "abcdefgh"]
+def filter_long(things: List[str]) -> List[str]:
     pass
-
-
-
-def oogie(m):
-    p = m[0]
-    for g in m:
-        if g > p:
-            p = g
-    return p
-
-
-def yaya(q):
-    for y in range(len(q) - 1):
-        if q[y] == q[y+1]:
-            return True
-    return False
-
-def is_sorted(items):
-    for i in range(len(items) - 1):
-        if items[i] > items[i+1]:
-            return False
-    return True
-
-def pulu(r):
-    b = []
-    for k in range(r):
-        b.append(k ** 3)
-    return b
-
-
-
-
-
-
-
-
-
-
-
-
-
