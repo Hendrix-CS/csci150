@@ -93,7 +93,7 @@ what rotation was used for the encryption.  But since there are only
 encrypted), we can iterate through them all in a reasonable amount of
 time.
 <p>
-Write a brute force function <code>brute_decrypt(string)</code> to
+Write a brute force function <code>brute_decrypt(s: str)</code> to
 print out all possible Caesar rotations for a given string.  Use this
 function to decrypt the following lines of poetry (note: all four
 lines are encrypted with the same rotation).
@@ -129,7 +129,7 @@ This information has been used to simplify early Linotype machines, which ordere
 characters to be typed by their frequency (leading to the sometimes cryptic inclusion of
 <a href="http://en.wikipedia.org/wiki/ETAOIN_SHRDLU">etaoin shrdlu</a> in newspaper articles).
 <p>
-Write a function in <code>caesar.py</code> called <code>frequency_count(s)</code>.
+Write a function in <code>caesar.py</code> called <code>frequency_count(s: str) -> List[float]</code>.
 This will return a list of relative frequencies for all letters A-Z found in the string.
 Create a test string where you know the frequency of each character and make sure your
 function returns the correct list of relative frequencies.
@@ -170,7 +170,7 @@ that produces the minimum Chi-square statistic (note that a perfect
 match will result in a statistic of 0, and any differences will result
 in a positive increase).
 <p>
-Write a function <code>chi_square(observed_freq, expected_freq)</code>
+Write a function <code>chi_square(observed_freq: List[float], expected_freq: List[float]) -> float</code>
 in your
 <code>caesar.py</code> to return the Chi-square statistic given the
 two frequency distributions.  This function should work as long as the
@@ -186,7 +186,7 @@ should return <code>0.4642857142857142</code>.
 
 <h3>Step 5</h3>
 Using your functions from the previous steps, write a new function
-<code>auto_decrypt(s, base_text)</code> which takes an encrypted
+<code>auto_decrypt(s: str, base_text: str)</code> which takes an encrypted
 string and the file name of a base reference text.  Your function will
 calculate the character frequencies for the encrypted string and the
 reference text, then iteratively calculate the Chi-square statistic
@@ -229,11 +229,10 @@ Report your results in <code>Lab Evaluation</code>.
 
 <h2>What to Hand In</h2>
 
-Hand in your lab through <a href="https://goo.gl/forms/XsJVafSZLdedQY1M2">the usual submission
-form</a>. Make sure you have followed
-the <a href="../python_style_guide.html">Python Style Guide</a>, and
-have run your project through the Automated Style Checker.<p>  You
-must hand in:
+Hand in your lab through the usual submission form. Make sure you have
+followed the <a href="../python_style_guide.html">Python Style
+Guide</a>, and have run your project through the Automated Style
+Checker.<p>  You must hand in:
 <ul>
  	<li><code>caesar.py</code>
 	<li>Lab Evaluation
