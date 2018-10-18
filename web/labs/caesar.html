@@ -48,14 +48,14 @@ Open a new python program called <code>caesar.py</code>. In this file,
 you will first write two functions for encryption and decryption of
 strings.
 <p>
-<code>encrypt(plain_text, rot)</code> will take a string and an
-integer rotation between 0 and 25, (where 1 means A -> B, 2 means A ->
-C, etc) and return the rotated string.
+<code>encrypt(plain_text: str, rot: int) -> str</code> will take a
+string and an integer rotation between 0 and 25, (where 1 means A ->
+B, 2 means A -> C, etc) and return the rotated string.
 <p>
-<code>decrypt(cipher_text, rot)</code> will also take a string and an
-integer rotation between 0 and 25 signifying the number of rotations
-backwards (where 1 means B -> A, 2 mean C -> A, etc), and return the
-reverse-rotated string.
+<code>decrypt(cipher_text: str, rot: int) -> str</code> will also take
+a string and an integer rotation between 0 and 25 signifying the
+number of rotations backwards (where 1 means B -> A, 2 mean C -> A,
+etc), and return the reverse-rotated string.
 <p>
 You can test your functions using string="GREEN" and rot=13; your
 answer should be "TERRA".  Also, any string encrypted with rot should
