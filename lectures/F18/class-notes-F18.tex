@@ -2456,16 +2456,28 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
   finished; a few were just getting encrypt/decrypt to work.
 \end{reflect}
 
+\begin{reflect}{Brent, F'18}
+  Much, much better this year, with more time spent on lists and for
+  loops leading up to it!
+\end{reflect}
+
 \newpage
 
 \section{Mutability, objects, and references (F 10/19)}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Assign HW: for loop reading practice (due Wednesday)
+\item Quiz Wednesday on for loops
+\end{itemize}
 
 Warm-up: what happens here?  Find partner \& decide.
 \begin{verbatim}
 nums  = [1,2,3]
 nums2 = nums
 nums[1] = 0
-print nums2
+print(nums2)
 \end{verbatim}
 
 Try it at python prompt.  This is really weird!
@@ -2506,9 +2518,9 @@ Do this at the REPL, with accompanying pictures drawn on the board:
 True
 >>> a is b
 False
->>> del a[0]
+>>> a[0] = 5
 >>> a
-[2, 3]
+[5, 2, 3]
 >>> b
 [1, 2, 3]
 >>> a == b
@@ -2522,11 +2534,11 @@ False
 True
 >>> a is b
 True
->>> del a[0]
+>>> a[0] = 5
 >>> a
-[2, 3]
+[5, 2, 3]
 >>> b
-[2, 3]
+[5, 2, 3]
 \end{verbatim}
 Note in particular that the assignment \verb|a = b| does not copy the
 value of \verb|b| into \verb|a|, but just makes \verb|a|
@@ -2536,7 +2548,7 @@ Some related things:
 \begin{itemize}
 \item What if you really \emph{do} want to make a \emph{copy} of a
   list, so modifying it doesn't modify the original?  You can write
-  \verb|some_list[:]|.  This is a dirty, terrible, disgusting hack.
+  \verb|some_list[:]|.
 \item Be careful about methods that modify vs functions that make a
   new thing.  \eg \verb|list.sort()| modifies the list.  But
   \verb|sorted(list)| makes a new list!  And of course
@@ -2553,12 +2565,12 @@ Some related things:
 This has implications for function parameters as well.  Consider:
 
 \begin{verbatim}
-def animal_release(animals):
+def release(animals: List[str]):
   while len(animals) > 2:
-  animals.pop(0)
+    animals.pop(0)
 
 print(animals)
-animal_release(animals)
+release(animals)
 print(animals)
 \end{verbatim}
 
@@ -2566,15 +2578,24 @@ Formally, to see what's going on, we are going to enhance our tracing
 diagrams one last time: we are going to add a \emph{heap}.  The
 ``heap'' is the area of memory where objects are stored. Variables are
 stored on the stack and contain references to things in the heap.
+Every time we create a new list, we draw it in the heap (anywhere!).
 
-XXX make new template
+Have them try another example:
 
-XXX make example
+\begin{verbatim}
+def slicer(nums: List[int]) -> List[int]:
+  first3 = nums[:3]
+  first3[2] *= 3
+  return first3
+
+def main():
+  my_nums = [1,2,8,6,7,12]
+  my_nums = slicer(my_nums)
+\end{verbatim}
+
+Then go over it carefully.
 
 \newpage
-
-
-XXX SEND OUT INSTRUCTIONS/EXAMPLE RE: FILE I/O (for use with P2)
 
 % Introduce Project 2 (word games).
 
@@ -2612,6 +2633,15 @@ XXX SEND OUT INSTRUCTIONS/EXAMPLE RE: FILE I/O (for use with P2)
 
 \newpage
 \section{Dictionaries (M 10/22)}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Assign project 2 (word games).
+\item Remember HW and quiz Wednesday.
+\end{itemize}
+
+\subsection*{Dictionaries}
 
 Recall lists.  Draw an alternate picture of lists as a mapping from
 indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
