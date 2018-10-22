@@ -35,6 +35,8 @@ other exercises.
     def main():
         mynums: List[int] = [4,6,2,9]
         print(aaa(mynums))
+
+    main()
     ```
 
 3. Trace the execution of the following code.
@@ -65,9 +67,7 @@ other exercises.
         s: str = ''
         for count in range(1,6):
             s += q(2*count)
-            i += 2
         print(s)
 
     m()
     ```
-
