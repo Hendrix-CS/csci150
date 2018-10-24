@@ -1,0 +1,37 @@
+>>> zoo2.keys()
+dict_keys(['A20', 'C', 'S9', 'F19'])
+>>> list(zoo2.keys())
+['A20', 'C', 'S9', 'F19']
+>>> for k in zoo2.keys():
+...     print(k)
+...
+A20
+C
+S9
+F19
+>>> zoo2.values()
+dict_values(['tapir', 'tiger', 'dragon', 'dragon'])
+>>> 'C' in zoo2
+True
+>>> 'C20' in zoo2
+False
+>>> 3 in [10,9,3,5]
+True
+>>> 7 in [10,9,3,5]
+False
+>>> len(zoo2)
+4
+>>> for k in zoo2:
+...     print(k)
+...
+A20
+C
+S9
+F19
+>>> for k in zoo2:
+...     print(k + ' - ' + zoo2[k])
+...
+A20 - tapir
+C - tiger
+S9 - dragon
+F19 - dragon
