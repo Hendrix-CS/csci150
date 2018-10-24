@@ -22,7 +22,7 @@ to review the material and come to class prepared.
 * Mon, Oct 8: [Exam practice review code](static/Exam2.py)
 * Mon, Oct 15 - Wed, Oct 17: [for.py](static/for.py) (8am)
 * Fri, Oct 19: [reference.py](static/reference.py) (8am)
-* Mon, Oct 22: [dictionaries.py](static/dictionaries-F18.py), [dictionaries-repl.txt](static/dictionaries-repl-F18.txt)
+* Mon, Oct 22 - Wed, Oct 24: [dictionaries.py](static/dictionaries-F18.py), [dictionaries-repl.txt](static/dictionaries-repl-F18.txt)
 
 <!-- * Wed, Jan 17: Introduction -->
 <!-- * Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**) -->
