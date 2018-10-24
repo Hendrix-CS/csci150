@@ -20,6 +20,7 @@ title: Labs
 6     [Mutation is the Word](labs/doublets.html)                                    Sep 26/27    Oct 3/4
 7     [Line Editor](labs/line-editor.html)                                          Oct 3/4      Oct 17/18
 8     [Caesar's Secrets](labs/caesar.html)                                          Oct 17/18    Oct 24/25
+9     [Sentiment Analysis](labs/sentiment.html)                                     Oct 24/25    Oct 31/Nov 1
 
 </font>
 

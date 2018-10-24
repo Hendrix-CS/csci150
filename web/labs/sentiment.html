@@ -10,7 +10,7 @@
 
 <h2>Materials</h2>
 <ul>
-<li>Python <a href="https://docs.python.org/3.6/library/stdtypes.html#mapping-types-dict">dictionaries documentation</a>.
+<li>Python <a href="https://docs.python.org/3.7/library/stdtypes.html#mapping-types-dict">dictionaries documentation</a>.
 <li><a href="../data/movieReviews.txt">Movie review data</a>
 </ul>
 
@@ -83,8 +83,8 @@ The first function, <tt>score_word(word: str) -> float</tt>, should:
 <ul>
   <li>Open the <tt>movieReviews.txt</tt> file, loop through it, and
     compute the average rating for reviews containing the given word.</li>
-  <li>Return the average rating, or <tt>None</tt> if the word does
-    not occur in any reviews.</li>
+  <li>Return the average rating, or the special value <tt>None</tt> if
+    the word does not occur in any reviews.</li>
 </ul>
 </p>
 <p>
@@ -210,8 +210,8 @@ then save these word scores in a dictionary, so we can quickly look up
 the score for any word without re-reading the entire database.</p>
 
 <p>
-First, write a function <tt>read_movie_reviews(review_file: str) -> Dict[str, float]</tt>,
-which takes the name of the movie review file as a parameter, and
+First, write a function <tt>read_movie_reviews() -> Dict[str, float]</tt>,
+which reads the file <code>movieReviews.txt</code> and
 returns a dictionary mapping from words to their average scores.  The
 basic idea is to loop through the reviews in the file while keeping
 track of <i>two</i> dictionaries: one maps from words to
@@ -222,19 +222,23 @@ has appeared in.</p>
 <p>Hints:
 <ul>
   <li>For each line in the database, you want to count each unique
-    word only once. You may find it helpful to have a third dictionary
-    that is re-initialized for each new line of input. This dictionary
-    will have an entry for each word from that line that it has already
-    seen.
+    word only once. You may find it helpful to have a list of words
+    that is re-initialized for each new line of input. This list
+    will have an entry for each word from that line that has already
+    been seen.  For each new word, you can make sure it is not
+    in the list before counting it (and adding it to the list).
   </li>
-  <li>Be careful when testing <tt>read_movie_reviews</tt>. Calling the function from the Python shell produces such a large output that it could crash Pycharm. Instead, store the dictionary in a variable, from which you can test it.
+  <li>Be careful when testing <tt>read_movie_reviews</tt>. <b>Calling
+  the function from the Python shell produces such a large output that
+  it could crash Pycharm!</b> Instead, store the dictionary in a
+  variable, from which you can test it, like this:
 <pre>
->>> d = read_movie_reviews("movieReviews.txt")
+>>> d = read_movie_reviews()
 >>> d['cat']
 3.1666666666666665
 >>> d['dog']
 1.631578947368421
->>> 
+>>>
 </pre>
 </p>
 </li>
@@ -255,7 +259,7 @@ Next, write a function <tt>score_phrase_dict(word_scores: Dict[str, float],
 
 Here is an example of testing <tt>score_phrase_dict</tt>:
 <pre>
->>> d = read_movie_reviews("movieReviews.txt")
+>>> d = read_movie_reviews()
 >>> score_phrase_dict(d, 'My helicopter is full of eels')
 2.121128617338458
 >>> score_phrase_dict(d, 'It made me want to poke out my eyeballs')
@@ -301,21 +305,16 @@ For this step, modify your <tt>main</tt> function so it does the
 following:
 
 <ul>
-  <li>Take the given name of the movie review database file and
-  compute the name of a corresponding cache file by
-  appending <tt>.cache</tt> to it.  For example, if the movie review
-  file is <tt>movies.txt</tt>, the name of the cache file will
-  be <tt>movies.txt.cache</tt>.</li>
-  <li>Check whether this cache file exists.  You can do this by
-  adding <tt>import os</tt> at the top of your program and then using
-  the <tt>os.path.isfile()</tt> function, which takes a file name as an
-    argument and returns <tt>True</tt> if it exists and <tt>False</tt>
-    otherwise.</li>
+  <li>Look to see whether the file <code>movieReviews.cache.txt</code>
+  exists.  You can do this by adding <tt>import os</tt> at the top of
+  your program, and then using the <tt>os.path.isfile()</tt> function,
+  which takes a file name as an argument and returns <tt>True</tt> if
+  it exists and <tt>False</tt> otherwise.</li>
   <li>If the cache file does not exist, read the movie review database
     and construct the word score dictionary using
-    the <tt>read_movie_reviews()</tt> function as usual.
-    Then <i>write()</i> the contents of the dictionary to the cache file
-    using the format
+    the <tt>read_movie_reviews()</tt> function as usual.  Then use a
+    loop to <i>write()</i> the contents of the dictionary to the cache
+    file using the format
     <p>
     <pre>
 word1 score1
@@ -333,9 +332,9 @@ yellow 1.5
 pony 0.0
 four 2.08695652174
   </pre></p>
-  <li>If the cache file <i>does</i> exist, then read it instead of the
-    movie reviews, putting the data directly into a dictionary of word
-    scores.</li>
+  <li>On the other hand, if the cache file <i>does</i> exist, then
+    read it instead of the movie reviews, putting the data directly
+    into a dictionary of word scores.</li>
   <li>In either case, return the created dictionary of word scores.</li>
 </ul>
 (Of course, you probably don't want to do all of that directly in
@@ -352,8 +351,8 @@ the movie review file, and requires no computation while reading it.</p>
 <h2>Step 6</h2>
 <p>
 Examining the code you wrote in the first five steps, you may see some
-opportunities to reduce code duplication. Find at least two such 
-opportunities, write appropriate functions that factor out the 
+opportunities to reduce code duplication. Find at least two such
+opportunities, write appropriate functions that factor out the
 commonalities, and then use the functions to eliminate the duplication.
 </p>
 <p>
@@ -365,8 +364,7 @@ employed for eliminating the duplication.
 
 <h2>What to Hand In</h2>
 <p>
-Log in to Moodle and turn in your code.  Make sure
-you have followed the 
+Make sure you have followed the
 <a href="../python_style_guide.html">Python Style Guide</a>, and
 have run your project through the Automated Style Checker.<p>
 You must hand in:
@@ -379,7 +377,7 @@ You must hand in:
 <h2>Grading</h2>
 <ul>
   <li>To earn a D on this lab, complete Steps 1 and 2
-  (<tt>score_word</tt>, <tt>score_user_word</tt>, 
+  (<tt>score_word</tt>, <tt>score_user_word</tt>,
   <tt>score_phrase</tt>, <tt>score_user_phrase</tt>)</li>
   <li>To earn a C on this lab, complete Step 3
   (<tt>read_movie_reviews</tt>, <tt>score_phrase_dict</tt>)</li>
