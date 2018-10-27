@@ -2693,6 +2693,9 @@ Python prompt and/or with some sample code):
 Show
 \url{https://docs.python.org/3.7/library/stdtypes.html#mapping-types-dict}.
 
+Note (as of Python version 3.6) the keys will always be in the same
+order you put them in.
+
 \begin{reflect}{Brent, S'17}
   Only made it to here.  Did frequency counting the following class.
 \end{reflect}
@@ -2720,20 +2723,9 @@ def frequency_counts(s: str) -> Dict[str, float]:
             counts[c] = 0
         counts[c] += 1
 
-    return normalize(counts)
-
-# Given a dictionary of counts, return a new normalized dictionary
-# where each key maps to its frequency, by dividing each count by the
-# total count.
-def normalize(counts: Dict[str, int]) -> Dict[str, float]:
-
-    total: int = 0
-    for k in counts:
-        total += counts[k]
-
     freqs: Dict[str, float] = {}
-    for k in counts:
-        freqs[k] = counts[k] / total
+    for c in counts:
+        freqs[c] = counts[c] / len(s)
 
     return freqs
 \end{verbatim}
@@ -2741,6 +2733,16 @@ def normalize(counts: Dict[str, int]) -> Dict[str, float]:
 \begin{reflect}{Brent, S'18}
   Made it through writing \verb|frequency_count| (but not
   \texttt{normalize}).
+\end{reflect}
+
+\begin{reflect}{Brent, F'18}
+  Didn't quite get through writing \verb|frequency_counts|.  Note last
+  time I decomposed it in terms of a function
+  \verb|normalize(Dict[str,int]) -> Dict[str,float]|, but this time I
+  found myself in the moment just writing the version above.  This
+  actually makes some sense since we don't have to recompute the sum
+  of all counts, we can just divide by \verb|len(s)|.  In a later
+  class had the students write \verb|normalize| themselves.
 \end{reflect}
 
 \newpage
@@ -2808,10 +2810,95 @@ class.  Maybe run them on the contents of a file.
 \end{reflect}
 
 \newpage
-\section{??? (F 10/26}
+\section{Heap tracing examples, dictionary practice (F 10/26)}
+
+Go through some more examples of tracing with stack \& heap:
+
+\begin{verbatim}
+from typing import *
+
+## This is an example to use to follow tracing with the Heap
+## The Heap will contain any lists and dictionaries that are built,
+## as their variables are references to the object.  The variables names
+## themselves still go in the stack, with an arrow to the Heap.
+## Strings, ints, floats will go in the stack
+
+## List version
+## change_list will add a few values to a list
+def change_list(lst: List[int]) -> List[int]:
+    for i in range(4):
+        lst.append(i**2)
+
+    lst.append(42)
+
+    return lst
+
+def main():
+    mylist : List[int] = [0,5,-2,8]
+    print(mylist)
+    templist : List[int] = mylist
+    print("Change: ", change_list(templist))
+    print(mylist)
+    templist[1] = -17
+    print(mylist)
+
+main()
+
+## String Version
+## This works differently.  Since strings are immutable, any time a string
+## is modified, a new instance of the string is created.
+
+def change_string(s : str) -> str:
+    for i in range(4):
+        s += str(i**2)
+
+    s += '42'
+
+    return s
+
+def main1():
+    mystring : str = 'abcd'
+    print(mystring)
+    tempstring : str = mystring
+    print("Change: ", change_string(tempstring))
+    print(mystring)
+    ## We cannot write an equivalent to templist[1] = -17,
+    ## since we cannot individually change the value of a single character
+    ## in a string
+
+main1()
+\end{verbatim}
+
+Then have students write
+\verb|normalize(d: Dict[str, int]) -> d: Dict[str, float]|.  Requires
+first adding up all counts.  Emphasize that we don't want to modify
+the original dict, make a new one to return!
+
+\begin{verbatim}
+# Given a dictionary of counts, return a new normalized dictionary
+# where each key maps to its frequency, by dividing each count by the
+# total count.
+def normalize(counts: Dict[str, int]) -> Dict[str, float]:
+
+    total: int = 0
+    for k in counts:
+        total += counts[k]
+
+    freqs: Dict[str, float] = {}
+    for k in counts:
+        freqs[k] = counts[k] / total
+
+    return freqs
+\end{verbatim}
 
 \newpage
 \section{Intro to classes \& objects (M 10/29)}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Reminder: project 2 due Friday!
+\end{itemize}
 
 \begin{reflect}{Brent}
   Totally OK if this doesn't all fit into one lecture (it probably
@@ -2819,39 +2906,70 @@ class.  Maybe run them on the contents of a file.
   \verb|TrafficLight|.
 \end{reflect}
 
-Birthday cake problem:
-\begin{verbatim}
-  # If n lit candles, blow out a random # between
-  #   1 and n
-  # How many blows does it take (on average)
-  #   before they are all out?
-\end{verbatim}
+Introduce the Birthday Cake Problem: you have a cake with $n$ lit
+candles.  You choose a uniform random number from $1$ to $n$
+(\emph{i.e.} roll an ``$n$-sided die'') and blow out that many
+candles.  Now $m$ candles are left; choose a random number from $1$ to
+$m$ and blow out that many; and so on.  How many iterations do you
+need, on average, to blow out all the candles?  \emph{e.g.} you might
+get lucky and choose $n$, and require only one step; or you might get
+really unlucky and choose $1$ every time, and require $n$ steps.
+Usually it will be something in between.  What's the average?
+
+Play the game a few times (perhaps using \verb|random.randint()| to
+choose number of candles).  Get their guesses/intuition: how many
+iterations will be required for $10$ candles? For $100$? $1000$? For
+$n$ candles in general?
+
+If this were a math class we could analyze and solve this
+mathematically (in fact there is a nice solution!).  But instead we're
+going to write some code to \emph{simulate} this situation and find
+out the answer empirically.
+
+\begin{reflect}{Brent, F'18}
+  Considered using new \verb|dataclasses|
+  (\url{https://docs.python.org/3/library/dataclasses.html#module-dataclasses})
+  which could be nice, but I'm not sure we can yet guarantee that all
+  students will have Python 3.7.  Some machines might still have 3.6
+  or 3.5.  But I should definitely reconsider this for the spring or
+  fall.
+\end{reflect}
 
 \begin{itemize}
 \item Introduce idea of objects:
-\begin{verbatim}
-# We can package up data into "objects"
-# Objects have functions, i.e. things they
-#   can do. aka "Methods".
-
-# Python "classes" allow us to design our
-#   own new kinds of objects.
-\end{verbatim}
+  \begin{itemize}
+  \item We can package up data into \emph{objects}.
+  \item Objects contain some variables, \emph{i.e.} things they
+    remember.  Variables in an object are also called \emph{fields}.
+  \item Objects have functions, \emph{i.e.} things they can
+    do. Functions of an object are also called \emph{methods}.
+  \item We have already seen objects: strings, lists,
+    dictionaries\dots.  Some object methods we have seen include
+    things like \verb|lower()|, \verb|find()|, \verb|append()|, \dots
+  \end{itemize}
 \item Introduce idea of classes:
-\begin{verbatim}
-# class = template for objects
-# an object is an "instance of" a class
-# e.g. class = Car, object = my car
-\end{verbatim}
-\item Make empty \verb|Cake| class.
-\item Show how we can make a \verb|Cake| object.
-\item Show how we can set a variable, \verb|num_candles|, inside it.
-  Draw stack/memory diagram.
+  \begin{itemize}
+  \item Python \emph{classes} allow us to design our own new kinds of
+    objects.
+  \item A class is a \emph{template} or \emph{blueprint} for objects
+  \item An object is an ``instance of'' a class.  For example,
+    we could have a class ``car'', and an object which is an instance
+    of that class might be my blue Toyota Matrix.
+  \end{itemize}
+\item Make an empty \verb|Cake| class.
+\item Show how we can make a \verb|Cake| object by writing something
+  like \verb|a_cake: Cake = Cake()|.
+\item Show how we can set a variable, \verb|num_candles|, inside it:
+  \verb|a_cake.num_candles = 4|. Draw a stack/heap diagram:
+  \verb|a_cake| variable on the stack, \verb|Cake| object in the heap,
+  containing a \verb|num_candles| variable.
 \item Create an \verb|__init__| method with a parameter. (Explain
   \verb|self|; explain \verb|__init__|.)
 \item Create \verb|blowout| and \verb|allout| methods.
 \item Fill out the rest of the simulation:
 \begin{verbatim}
+import random
+
 class Cake:
 
     # __init__ is a special method
@@ -2860,7 +2978,8 @@ class Cake:
     #   i.e. when Cake() is called.
     def __init__(self, num_candles):
         # self is a special first parameter
-        # that gets filled in by Python
+        # that gets filled in by Python.
+        # It is always a reference to the current object.
 
         # self.candles is a variable in the
         #   object being created
@@ -2873,22 +2992,25 @@ class Cake:
         n = random.randint(1, self.candles)
         self.candles -= n
 
-    def allout(self):
+    def allout(self) -> bool:
         return (self.candles == 0)
 
-
-def happy_birthday(c):
-    count = 0
+# Blow out candles on the cake until they are all out, and report how
+# many iterations it took
+def happy_birthday(c: Cake) -> int:
+    count: int = 0
     while not c.allout():
         c.blowout()
         count += 1
 
     return count
 
-def average_blows(num_candles, trials):
-    total = 0
+# Blow out candles on a lot of cakes and report the average number of
+# iterations needed
+def average_blows(num_candles: int, trials: int) -> float:
+    total: int = 0
     for i in range(trials):
-        c = Cake(num_candles)
+        c: Cake = Cake(num_candles)
         total += happy_birthday(c)
     return total / float(trials)
 
@@ -2899,11 +3021,24 @@ def main():
 main()
 \end{verbatim}
 \item Run it and paste output into Excel, do a regression to show that
-  it is close to natural log!
+  it is close to natural log! [In fact there is a nice analytical
+  argument showing that the expected number of iterations required to
+  blow out $n$ candles is exactly $H_n = \sum_{1 \leq k \leq n} 1/k$,
+  the $n$th harmonic number, and
+  $\lim_{n \to \infty} H_n = \ln n + \gamma$, where
+  $\gamma \approx 0.577216\dots$ is the Euler-Mascheroni constant.
+  But there's no need to tell them any of this.]
 \end{itemize}
 
 \newpage
 \section{More classes \& objects}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Collect HW (dictionary \& heap reading)
+\item Quiz XXX
+\end{itemize}
+
 
 Finish \verb|Cake| from last class. Then start on traffic light
 example.  Main point: encapsulation, abstraction.
@@ -3031,7 +3166,6 @@ Finish \verb|TrafficLight|.
 
 \subsection*{Setup}
 \begin{itemize}
-\item Reminder: project 2 due Friday!
 \item Write stone-counting rules somewhere, e.g. on board (see below)
 \end{itemize}
 
