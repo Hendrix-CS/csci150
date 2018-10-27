@@ -20,6 +20,7 @@ your final grade.
 4   [Function and loop reading](static/function-reading.pdf)                                                           Monday September 24
 5   [DNA Strings](static/dna-strings.html)                                                                             Monday October 1
 6   [For loop reading](static/for-reading.pdf)                                                                         Wednesday October 24
+7   [Dictionary & heap reading](static/heap-dict-reading.pdf)                                                          Wednesday October 31
 
 <!-- 5: [Function, loop, and string reading](static/loop-string-reading.pdf)                                               Monday February 26 -->
 <!-- 6: [Heap tracing](static/heap-tracing.pdf) [ [Heap tracing template](static/heap-tracing-template.pdf) ]              Monday April 2 -->

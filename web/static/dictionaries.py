@@ -61,6 +61,45 @@ def frequency_count(s: str) -> Dict[str, float]:
 
     return freqs
 
+# Take a dictionary of counts e.g. {'a': 1, 'c': 20, 'f': 8 ...}
+# and normalize it by dividing each count by the sum of all counts
+def normalize(counts: Dict[str, int]) -> Dict[str, float]:
+    # Step 1: add up all the counts
+
+    # Alternative 1 (most straightforward):
+
+    count_sum: int = 0
+    for s in counts:
+        count_sum += counts[s]
+
+    # Alternative 2 (using values() to get list of values)
+
+    # count_sum: int = 0
+    # for c in counts.values():
+    #     count_sum += c
+
+    # Alternative 3 (using built-in sum() function)
+
+    # count_sum: int = sum(counts.values())
+
+    # Step 2: generate the dictionary of frequencies,
+    # by dividing everything by the sum
+
+    # Alternative 1, not a good idea! Mutates the original dictionary!
+
+    # for s in counts:
+    #     counts[s] /= count_sum
+    #
+    # return counts
+
+    # Alternative 2, better: make a new dictionary
+
+    freqs: Dict[str, float] = {}
+    for s in counts:
+        freqs[s] = counts[s] / count_sum
+
+    return freqs
+
 def main():
     f = open('dictionaries.py', 'r')
     freqs = frequency_count(f.read())

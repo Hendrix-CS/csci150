@@ -23,6 +23,7 @@ to review the material and come to class prepared.
 * Mon, Oct 15 - Wed, Oct 17: [for.py](static/for.py) (8am)
 * Fri, Oct 19: [reference.py](static/reference.py) (8am)
 * Mon, Oct 22 - Wed, Oct 24: [dictionaries.py](static/dictionaries-F18.py), [dictionaries-repl.txt](static/dictionaries-repl-F18.txt)
+* Fri, Oct 26: [heap-tracing.py](static/heap-tracing.py)
 
 <!-- * Wed, Jan 17: Introduction -->
 <!-- * Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**) -->
