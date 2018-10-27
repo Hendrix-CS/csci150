@@ -21,13 +21,12 @@ title: Labs
 7     [Line Editor](labs/line-editor.html)                                          Oct 3/4      Oct 17/18
 8     [Caesar's Secrets](labs/caesar.html)                                          Oct 17/18    Oct 24/25
 9     [Sentiment Analysis](labs/sentiment.html)                                     Oct 24/25    Oct 31/Nov 1
+10    [Water Jugs](labs/waterjug.html)                                              Oct 31/Nov 1 Nov 7/8
 
 </font>
 
   <!-- P2    [Project 2](http://mgoadric.github.io/csci150/projects/project2.html) start   Mar 7/8 -->
   <!-- 8     [Fractal Recursion](labs/fractal.html)                                        Mar 14/15 -->
-  <!-- 9     [Sentiment Analysis](labs/sentiment.html)                                     Mar 28/29 -->
-  <!-- 10    [Die Hard III](labs/waterjug.html)                                            Apr 4/5 -->
   <!-- 11    [Graphics and Animation](labs/processing.html)                                Apr 11/12 -->
   <!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Apr 18/19 -->
   <!-- 13    Final project workshop (optional)                                             Apr 25/26 -->
