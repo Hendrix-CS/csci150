@@ -33,7 +33,7 @@ This line is intentionally left blank.
 1. Trace the execution of the following code.
 
     ``` python
-    def alice(lst : List[int], n : int) -> List[int]:
+    def alice(lst : List[int], n : int):
 
         len_lst : int = len(lst)
         for i in range(len_lst):

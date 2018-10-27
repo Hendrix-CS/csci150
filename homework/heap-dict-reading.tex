@@ -1,0 +1,195 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\subsection{CSCI 150 HW: dictionary + heap reading
+practice}\label{csci-150-hw-dictionary-heap-reading-practice}
+
+\emph{Due: Wednesday, October 31}
+
+To receive full credit, for each exercise you should do the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Predict}: First, complete the exercise \emph{without} using
+  the Python interpreter. \emph{Trace the execution of the code, keeping
+  track of the function stack, the heap, all variables, and any output
+  produced.}
+
+  If you like, you may print out copies of the tracing template found at
+  \href{http://ozark.hendrix.edu/~yorgey/150/static/heap-tracing-template.pdf}{\texttt{http://ozark.hendrix.edu/\textasciitilde{}yorgey/150/static/heap-tracing-template.pdf}}
+  (if you have this PDF open on your computer you may simply click the
+  link above).
+\item
+  \textbf{Check}: Run the code. Does the actual output agree with what
+  you wrote down in step 1?
+\item
+  \textbf{Evaluate}: If your answer to part 1 was different than the
+  actual output, keep experimenting with it, consult the textbook or
+  Python documentation, ask a friend or TA or professor, \emph{etc.}
+  until you can explain why the code works the way it does \emph{and}
+  what your misunderstanding(s) were in part 1.
+\end{enumerate}
+
+You should consider the code in each exercise separately from the other
+exercises.
+
+This line is intentionally left blank.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Trace the execution of the following code.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ alice(lst : List[}\BuiltInTok{int}\NormalTok{], n : }\BuiltInTok{int}\NormalTok{):}
+
+\NormalTok{    len_lst : }\BuiltInTok{int} \OperatorTok{=} \BuiltInTok{len}\NormalTok{(lst)}
+    \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(len_lst):}
+\NormalTok{        lst[i] }\OperatorTok{=}\NormalTok{ lst[i] }\OperatorTok{%}\NormalTok{ n}
+
+\KeywordTok{def}\NormalTok{ bob(lst: List[}\BuiltInTok{int}\NormalTok{]) }\OperatorTok{->} \BuiltInTok{str}\NormalTok{:}
+\NormalTok{    s }\OperatorTok{=} \StringTok{''}
+\NormalTok{    letters: List[}\BuiltInTok{str}\NormalTok{] }\OperatorTok{=}\NormalTok{ [}\StringTok{'t'}\NormalTok{,}\StringTok{'e'}\NormalTok{,}\StringTok{'a'}\NormalTok{,}\StringTok{'h'}\NormalTok{,}\StringTok{'p'}\NormalTok{,}\StringTok{'!'}\NormalTok{,}\StringTok{'s'}\NormalTok{,}\StringTok{'y'}\NormalTok{]}
+    \ControlFlowTok{for}\NormalTok{ num }\KeywordTok{in}\NormalTok{ lst:}
+\NormalTok{        s }\OperatorTok{+=}\NormalTok{ letters[num]}
+
+    \ControlFlowTok{return}\NormalTok{ s}
+
+\KeywordTok{def}\NormalTok{ main():}
+
+\NormalTok{    mylist }\OperatorTok{=}\NormalTok{ [}\DecValTok{3}\NormalTok{,}\DecValTok{25}\NormalTok{,}\DecValTok{14}\NormalTok{,}\OperatorTok{-}\DecValTok{2}\NormalTok{,}\DecValTok{5}\NormalTok{]}
+\NormalTok{    alice(mylist,}\DecValTok{6}\NormalTok{)}
+    \BuiltInTok{print}\NormalTok{(bob(mylist))}
+
+\NormalTok{main()}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Trace the execution of the following code.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ harry(s: }\BuiltInTok{str}\NormalTok{)}\OperatorTok{->}\NormalTok{ Dict[}\BuiltInTok{str}\NormalTok{,}\BuiltInTok{int}\NormalTok{]:}
+\NormalTok{    return_dict }\OperatorTok{=}\NormalTok{ \{\}}
+    \ControlFlowTok{for}\NormalTok{ char }\KeywordTok{in}\NormalTok{ s:}
+\NormalTok{        return_dict[char] }\OperatorTok{=}\NormalTok{ s.find(char)}
+
+    \ControlFlowTok{return}\NormalTok{ return_dict}
+
+\KeywordTok{def}\NormalTok{ hermione(s: }\BuiltInTok{str}\NormalTok{, in_dict: Dict[}\BuiltInTok{str}\NormalTok{,}\BuiltInTok{int}\NormalTok{]):}
+    \ControlFlowTok{for}\NormalTok{ char }\KeywordTok{in}\NormalTok{ s:}
+        \ControlFlowTok{if}\NormalTok{ char }\KeywordTok{in}\NormalTok{ in_dict:}
+\NormalTok{            in_dict[char] }\OperatorTok{+=}\NormalTok{ s.find(char)}
+        \ControlFlowTok{else}\NormalTok{:}
+\NormalTok{            in_dict[char] }\OperatorTok{=} \DecValTok{-5}
+
+\KeywordTok{def}\NormalTok{ main1():}
+\NormalTok{    s }\OperatorTok{=} \StringTok{'4 privet drive'}
+
+\NormalTok{    main_dict }\OperatorTok{=}\NormalTok{ harry(s)}
+\NormalTok{    hermione(}\StringTok{'hendrix'}\NormalTok{,main_dict)}
+    \ControlFlowTok{for}\NormalTok{ key }\KeywordTok{in}\NormalTok{ main_dict:}
+        \BuiltInTok{print}\NormalTok{(key }\OperatorTok{+} \StringTok{" "} \OperatorTok{+} \BuiltInTok{str}\NormalTok{(main_dict[key]))}
+
+\NormalTok{main1()}
+\end{Highlighting}
+\end{Shaded}
+\end{enumerate}
+
+\end{document}
