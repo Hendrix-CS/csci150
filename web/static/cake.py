@@ -1,80 +1,54 @@
 import random
 
-# Birthday cake problem
+# Python classes and objects
 
-# If there are n lit candles, blow out a random number
-# between 1 and n
-# How many rounds does it take (on average) before
-# all the candles are out?
+# We can package up data into "objects"
+# e.g. lists, strings, dictionaries...
+# Now we can make our own.
 
-# We can package up data and functionality into "objects"
-# Objects have "information they know" (variables)
-# Objects have "things they can do" (functions)
+# Objects have
+#   1. data/variables/"fields" (things that the object "knows")
+#   2. functions/"methods" (things that the object "can do")
+#      (e.g. append(), lower(), etc.)
 
-# For example, strings:
-#   They contain some information (list of characters)
-#   They have things they can do (e.g. .lower(), .find(), .count(), ...)
-
-# Python classes let us design our own objects.
-# Classes are like templates/blueprints for objects.
-
-# e.g. class = "car", objects = "my car", "your car", ...
+# Classes allow us to design our own objects.
+# Classes are like "templates" or "blueprints" for objects.
+# An object is an "instance of" a class.
+#
+# e.g. My car is an instance of the class of all cars.
 
 class Cake:
-    ### Stuff a Cake object knows/remembers:
-    
-    # Every Cake object will have an int variable
-    # called num_lit_candles.
 
-    # (Python does not require us to say this, so we put it
-    # in a comment.)
+    # __init__ is a special function that is called when
+    # you make a new Cake object.  (i.e. when you call Cake() ).
 
-    ### Stuff a Cake object can do:
+    # self is a special argument which is filled in automatically
+    # by Python; it is a reference to the current object.
 
-    # How to create a new Cake object:
+    # We can call this by writing something like  Cake(10)
+    #   The self parameter is automatically filled in,
+    #   and the 10 will be given as 'init_candles'
+    def __init__(self, init_candles: int):
 
-    # __init__ is a special method that gets called when we
-    #   create a new Cake object.
-    # self is a special first parameter that gets filled in by
-    #   Python, which refers to the object being created.
-    # num_candles is the information we need to specify when
-    #   creating a Cake.
-    def __init__(self, num_candles):
+        # Create a variable num_candles inside the object
+        # we are creating.
+        self.num_candles = init_candles
 
-        self.num_lit_candles = num_candles
+        # This wouldn't work: it would just create a local variable in this function
+        # num_candles = init_candles
 
-    # Input: number of candles to blow out
-    # Blows out that many candles (assuming num_candles is
-    #   <= num_lit_candles)
-    def blowout(self, num_candles):
-        self.num_lit_candles -= num_candles
+    # Pick a random number of candles to blow out between 1 and num_candles
+    def blow_out(self):
+        k: int = random.randint(1, self.num_candles)
 
-    # Blow out a random number of candles from 1 to
-    #   num_lit_candles.
-    def blowout_random(self):
-        n = random.randint(1, self.num_lit_candles)
-        self.blowout(n)
+        self.num_candles -= k
 
-    # Return true if all the candles are blown out.
-    def allout(self):
-        return self.num_lit_candles == 0
+    # Ask whether all the candles are blown out or not
+    def all_out(self) -> bool:
+        # if self.num_candles == 0:
+        #     return True
+        # else:
+        #     return False
 
-
-#############################
-
-# Input: a Cake
-# Keep blowing out a random number of candles
-#   until they are all out, and report how many times
-#   it took.
-def happy_birthday(cake):
-    count = 0
-    while not cake.allout():
-        cake.blowout_random()
-        count += 1
-    return count
-
-
-
-
-
-
+        # better:
+        return self.num_candles == 0
