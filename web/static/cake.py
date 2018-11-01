@@ -52,3 +52,28 @@ class Cake:
 
         # better:
         return self.num_candles == 0
+
+# Blow out all the candles on a cake and tell us how many rounds were needed.
+def count_rounds(cake: Cake) -> int:
+    count: int = 0
+    while not cake.all_out():
+        cake.blow_out()
+        count += 1
+
+    return count
+
+def average_rounds(num_candles: int, num_cakes: int) -> float:
+    total: int = 0
+    for i in range(num_cakes):
+        total += count_rounds(Cake(num_candles))
+
+    return total / num_cakes
+
+def main():
+    for num_candles in range(100):
+        print(str(num_candles) + " " + str(average_rounds(num_candles, 1000)))
+
+    for num_candles in range(1,100):
+        print(str(num_candles*100) + " " + str(average_rounds(num_candles*100, 1000)))
+
+main()
