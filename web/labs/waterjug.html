@@ -65,7 +65,7 @@
     <li><code>__repr__( )</code> returns a string representing the value of the <code>WaterJug</code> object</li>
     <li><code>fill()</code> to fill up the <code>WaterJug</code> completely</li>
     <li><code>empty()</code> to completely empty the <code>WaterJug</code></li>
-    <li><code>pour(other: WaterJug)</code> to pour as much of the contents of this <code>WaterJug</code> into the other as is allowed</li>
+    <li><code>pour(other: 'WaterJug')</code> to pour as much of the contents of this <code>WaterJug</code> into the other as is allowed</li>
   </ul>
 
   <p> Implement this object in Python. Don't forget where to use
@@ -145,7 +145,7 @@ from waterjug import WaterJug
 
 In a new file, <tt>step3.py</tt>, generalize your program from Step 2 so
 that it works with any number
-of <code>WaterJugs</code> instead of just 2.  In particular, the
+of <code>WaterJug</code>s instead of just 2.  In particular, the
 program should:
 <ul>
   <li>Ask the user how many <code>WaterJug</code>s they want</li>
