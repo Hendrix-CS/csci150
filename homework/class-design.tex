@@ -1,0 +1,236 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\subsection{CSCI 150 HW: class design
+practice}\label{csci-150-hw-class-design-practice}
+
+\emph{Due: Wednesday, November 7}
+
+To receive full credit, for each exercise you should do the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Design}: First, design a Python class as requested in the
+  exercise. Type in your class definition.
+\item
+  \textbf{Check}: Run the provided test code. Does your actual output
+  agree with the given correct output?
+\item
+  \textbf{Evaluate}: If the actual output does not match the expected
+  output, keep experimenting, consult the textbook or Python
+  documentation, ask a friend or TA or professor, \emph{etc.} until you
+  can fix your class definition and explain what your
+  misunderstanding(s) were. (You do not need to do anything for step 3
+  if the outputs already agree exactly.)
+\end{enumerate}
+
+You should consider the code in each exercise separately from the other
+exercises.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Write a Python class \texttt{BouncyBall}, which represents a bouncy
+  ball containing a certain amount of air.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    When a \texttt{BouncyBall} object is first created, it should have
+    10 units of air.
+  \item
+    There should be a method \texttt{bounce()} which normally prints the
+    word \texttt{Bounce!} and decreasese the amount of air in the ball
+    by two units. However, if the amount of air is less than or equal to
+    three, then \texttt{bounce()} does not decrease the amount of air
+    and prints \texttt{Thupp.} instead of \texttt{Bounce!}.
+  \item
+    There should be a method \texttt{inflate()} which increases the
+    amount of air by three units. If the amount of air ever becomes
+    greater than 12, then the ball explodes by printing
+    \texttt{BANG!!!}.
+  \item
+    You cannot bounce or inflate an exploded ball. After a ball
+    explodes, calling \texttt{bounce()} or \texttt{inflate()} should
+    just cause a message to be printed such as
+    \texttt{Sorry,\ you\ cannot\ bounce\ this\ ball!\ \ It\ has\ exploded.}
+  \end{itemize}
+
+  To test your class, you can type in and run the following code:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ main():}
+\NormalTok{    b }\OperatorTok{=}\NormalTok{ BouncyBall()}
+
+    \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{6}\NormalTok{):}
+\NormalTok{        b.bounce()}
+
+\NormalTok{    b.inflate()}
+\NormalTok{    b.bounce()}
+\NormalTok{    b.bounce()}
+
+    \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{5}\NormalTok{):}
+\NormalTok{        b.inflate()}
+
+\NormalTok{    b.bounce()}
+
+\NormalTok{main()}
+\end{Highlighting}
+\end{Shaded}
+
+  If your definition of \texttt{BouncyBall} is correct, \texttt{main()}
+  should produce the following output:
+
+\begin{verbatim}
+Bounce!
+Bounce!
+Bounce!
+Bounce!
+Thupp.
+Thupp.
+Bounce!
+Thupp.
+BANG!!!
+Sorry, you cannot inflate this ball!  It has exploded.
+Sorry, you cannot bounce this ball!  It has exploded.
+\end{verbatim}
+\item
+  Write a Python class \texttt{Gradebook} which works as follows:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    When a new \texttt{Gradebook} object is first created, it should
+    start out with an empty list of grades, and zero points of extra
+    credit.
+  \item
+    There should be a method \texttt{add\_grade(g:\ int)} which adds the
+    grade \texttt{g} to the end of the list.
+  \item
+    There should be a method \texttt{add\_ec(ec:\ int)} which adds
+    \texttt{ec} points of extra credit to the current amount of extra
+    credit.
+  \item
+    There should be a method \texttt{average()} which computes and
+    returns the average of all the grades so far (the sum of all the
+    grades, plus the extra credit score, divided by the number of
+    grades).
+  \end{itemize}
+
+  You can test your implementation of \texttt{Gradebook} by running the
+  code below:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ main():}
+\NormalTok{gb }\OperatorTok{=}\NormalTok{ Gradebook()}
+\NormalTok{gb.add_grade(}\DecValTok{90}\NormalTok{)}
+\NormalTok{gb.add_grade(}\DecValTok{83}\NormalTok{)}
+\NormalTok{gb.add_grade(}\DecValTok{97}\NormalTok{)}
+\NormalTok{gb.add_ec(}\DecValTok{10}\NormalTok{)}
+
+\BuiltInTok{print}\NormalTok{(gb.average())}
+\end{Highlighting}
+\end{Shaded}
+
+  If your definition of \texttt{Gradebook} is correct, this should print
+  \texttt{93.33333333333333}.
+\end{enumerate}
+
+\end{document}
