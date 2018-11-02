@@ -1,113 +1,92 @@
-# Traffic light
-#
-# - Keep track of a current color.
-# - Can switch to the next color.
+# Traffic lights
 
+# What kind of things should a traffic light know / keep track of (variables)?
 
-# Implementation #1: string variable holding color
-# Pros: very simple
-# Cons: tedious, difficult to change.
+  # Current color
+  # How much time until switching colors
+  # How long the current color has been on
+  # Direction
+  # Whether it is showing an arrow
+  # Whether it is blinking
+  # Whether cars are at the light
+  # How many lanes there are
+
+# What kind of things should a traffic light be able to do (functions)?
+
+  # Switch colors (either to the next color, or to a specified color)
+  # Start/stop blinking
+  # Turn on arrow
+
+import time
+
 class TrafficLight:
-    # Has a variable 'color' which is a string.
+    # Variables/Fields
 
-    # Create a red traffic light.
+    # Every TrafficLight object will store:
+    #   - current_color: str
+
+    # Functions/Methods
+
     def __init__(self):
-        self.color = 'red'
+        self.current_color = "RED"
 
-    # Output the current color of the traffic light as a string.
-    def current_color(self):
-        return self.color
+    # Alternatively, if we provide the color when creating a TrafficLight:
+    # def __init__(self, init_color: str):
+    #     self.current_color = init_color
 
-    # Change to the next color.
-    def change(self):
-        if self.color == 'red':
-            self.color = 'green arrow'
-        elif self.color == 'green arrow':
-            self.color = 'green'
-        elif self.color == 'green':
-            self.color = 'yellow'
-        elif self.color == 'yellow':
-            self.color = 'red'
+    # Switch to the next color
+    def cycle(self):
+        if self.current_color == 'RED':
+            self.current_color = 'GREEN'
+        elif self.current_color == 'GREEN':
+            self.current_color = 'YELLOW'
+        elif self.current_color == 'YELLOW':
+            self.current_color = 'ORANGE'
+        elif self.current_color == 'ORANGE':
+            self.current_color = 'RED'
         else:
-            print("The sky is falling!!")
+            # This should never happen
+            print("OH NO!!! Traffic light is " + self.current_color)
+
+    # Report the current color
+    def get_current_color(self) -> str:
+        return self.current_color
 
 
-# Implementation #2
-# Pros: dictionaries!!
-# Cons: even more tedious.
-class TrafficLightDict:
-
-    # color_state  is a dict mapping color names -> True/False
-
-    def __init__(self):
-        self.color_state = \
-          { 'red' : True, 'yellow' : False, 'green' : False }
-
-    def current_color(self):
-        for color in self.color_state:
-            if self.color_state[color]:
-                return color
-        print("The power is probably out!")
-        return "blinkingly red"
-
-    def change(self):
-        if self.color_state['red']:
-            self.color_state['red'] = False
-            self.color_state['green'] = True
-        elif self.color_state['green']:
-            self.color_state['green'] = False
-            self.color_state['yellow'] = True
-        elif self.color_state['yellow']:
-            self.color_state['yellow'] = False
-            self.color_state['red'] = True
-        else:
-            print("The sky is falling!!")
-        
-
-# Implementation #3
-# Pros: less tedious!  No repetition.
-# Cons: still needs if-elif-elif.
-#   Even harder to add new colors.
-class TrafficLightInt:
-    
-    # Contains a variable 'color' which is an int 0, 1, or 2.
+# Version 2: store an index into a list of colors
+class TrafficLight2:
 
     def __init__(self):
-        self.color = 0
+        self.current_color_index = 0
+        self.color_list = ['RED', 'GREEN', 'YELLOW', 'ORANGE', 'PURPLE']
 
-    def current_color(self):
-        if self.color == 0:
-            return 'red'
-        elif self.color == 1:
-            return 'green'
-        elif self.color == 2:
-            return 'yellow'
+    def cycle(self):
+        self.current_color_index += 1
+        self.current_color_index = self.current_color_index % (len(self.color_list))
 
-    def change(self):
-        self.color = (self.color + 1) % 3
+    def get_current_color(self) -> str:
+        return self.color_list[self.current_color_index]
 
-# Implementation #4
-class TrafficLightIntList:
-    
-    # Contains a variable 'color' which is an int 0, 1, or 2.
-    # Contains a list of colors in order.
+
+# Version 3: store a dictionary that tells us what color comes next
+class TrafficLight3:
 
     def __init__(self):
-        self.color = 0
-        self.color_list = ['red', 'green arrow', 'green', 'yellow', 'orange', 'purple']
+        self.color_dict = { 'RED': 'GREEN', 'GREEN': 'YELLOW', 'YELLOW': 'ORANGE', 'ORANGE': 'RED', 'PURPLE': 'RED' }
+        self.current_color = 'PURPLE'
 
-    def current_color(self):
-        return self.color_list[self.color]
+    def get_current_color(self):
+        return self.current_color
 
-    def change(self):
-        self.color = (self.color + 1) % len(self.color_list)
+    def cycle(self):
+        self.current_color = self.color_dict[self.current_color]
+
 
 def main():
-    t = TrafficLightIntList()
+    t = TrafficLight3()
     for i in range(10):
-        print(t.current_color())
-        t.change()
+        print(t.get_current_color())
+        time.sleep(1)
+        t.cycle()
 
-
-
-    
+main()
