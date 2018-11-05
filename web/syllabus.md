@@ -26,6 +26,7 @@ to review the material and come to class prepared.
 * Fri, Oct 26: [heap-tracing.py](static/heap-tracing.py)
 * Mon, Oct 29: [cake.py](static/cake.py)
 * Wed, Oct 31 - Fri, Nov 2: [traffic.py](static/traffic.py)
+* Mon, Nov 5: [recursion.py](static/recursion.py)
 
 <!-- * Wed, Jan 17: Introduction -->
 <!-- * Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**) -->
