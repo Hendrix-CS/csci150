@@ -1,3 +1,6 @@
+from typing import *
+
+
 # Factorial function.  n! = 1 * 2 * 3 * ... * n
 
 def factorial_loop(n: int) -> int:
@@ -5,6 +8,7 @@ def factorial_loop(n: int) -> int:
     for i in range(1,n+1):
         result *= i
     return result
+
 
 # A different way to implement factorial:
 #
@@ -36,12 +40,33 @@ def factorial(n: int) -> int:
         #      the overall answer.
         return n * factorial(n-1)
 
+
 # Another example: list product
 
-from typing import *
-
 def product(nums: List[int]) -> int:
-    if (len(nums) == 1):
-        return nums[0]
+    if len(nums) == 0:
+        return 1
+    # elif len(nums) == 1:   # unnecessary!
+    #     return nums[0]
     else:
         return nums[0] * product(nums[1:])
+
+
+# Add up all the numbers in a list
+
+def sum(nums: List[int]) -> int:
+    if len(nums) == 0:
+        return 0
+    else:
+        return nums[0] + sum(nums[1:])
+
+
+# Return the reverse of a string (recursively).
+#
+# e.g.  reverse('stressed') = 'desserts'
+def reverse(word: str) -> str:
+    if len(word) == 0:
+        return ''
+    else:
+        return word[-1] + reverse(word[:-1])
+

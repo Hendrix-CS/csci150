@@ -22,6 +22,7 @@ your final grade.
 6   [For loop reading](static/for-reading.pdf)                                                                         Wednesday October 24
 7   [Dictionary & heap reading](static/heap-dict-reading.pdf)                                                          Wednesday October 31
 8   [Class design practice](static/class-design.pdf)                                                                   Wednesday November 7
+9   [Recursion practice](static/recursion.pdf)                                                                         Wednesday November 14
 
 <!-- 5: [Function, loop, and string reading](static/loop-string-reading.pdf)                                               Monday February 26 -->
 <!-- 6: [Heap tracing](static/heap-tracing.pdf) [ [Heap tracing template](static/heap-tracing-template.pdf) ]              Monday April 2 -->
