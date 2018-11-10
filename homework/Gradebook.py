@@ -5,7 +5,7 @@ class Gradebook:
         self.ec     = 0
 
     def add_grade(self, g: int):
-        self.grades.append(g);
+        self.grades.append(g)
 
     def add_ec(self, ec: int):
         self.ec += ec
