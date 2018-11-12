@@ -18,9 +18,9 @@ answer questions along with writing and debugging code.
 <!-- ; [Practice exam solution code](static/exam2-practice.py); [Bonus functions](http://mgoadric.github.io/csci150/homework/bonusfunctions.html) due Wednesday after spring break (March 29)) -\-> -->
 
 - Exam 3: Monday, November 19, covering for loops, dictionaries,
-    classes and objects, and recursion
+    classes and objects, and recursion  
+    ([Practice problems](static/exam3-practice-f18.pdf))
 
-    <!-- ([Practice problems](static/exam3-practice-s18.pdf), -->
     <!-- [tracing template](static/heap-tracing-template.pdf), [Practice -->
     <!-- problem solutions](static/exam3-practice-s18-solutions.pdf)) -->
 

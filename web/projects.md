@@ -26,8 +26,6 @@ Project      Name                                                               
 ---------    ---------------------------------------------------                                                                  --- ---------- --------------------
 1            [Question-Answer](projects/civic-QA.html)                                                                            5%  Sep 10     Sep 24
 2            [Word Games](projects/word-game.html)                                                                                10% Oct 22     Nov 2
-
-<!--           [ [Sample project start #1](static/vacation.py), [Sample project start #2](static/doublets-demo.py) ] -->
-<!-- 3         [Final Project](labs/final.html)                                                                                        20% Apr 9      Monday, May 7, 8:30-11:30am -->
+3            [Final Project](projects/final.html)                                                                                 20% Nov 12     Dec 10
 
 </font>
