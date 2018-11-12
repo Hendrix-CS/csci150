@@ -3162,7 +3162,7 @@ Finish \verb|TrafficLight|.
 
 
 \newpage
-\section{Recursion I: intro (M 10/15)}
+\section{Recursion I: intro (M 11/5)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -3173,15 +3173,15 @@ Finish \verb|TrafficLight|.
 
 Rules:
 \begin{enumerate}
-\item You may not look into the bowl.
-\item You may only touch one stone.
-\item If someone gives you the bowl and asks you how many stones it
+\item You may not look into the bowl or at any pieces.
+\item You may only touch one piece.
+\item If someone gives you the bowl and asks you how many pieces it
   contains, you must eventually give the bowl back and answer
   truthfully.
 \end{enumerate}
 (There will usually be some attempts to find loopholes; modify the
 rules as necessary.)  Then hand the bowl to a student and ask how many
-stones it contains.
+pieces it contains.
 
 Recursion!  Functions that call themselves.  In a sense you were all
 ``the same function'' because you were running the same program
@@ -3224,30 +3224,43 @@ Typically:
   simpler (i.e. closer to the base case) problem.
 \end{itemize}
 
-Then re-code factorial function live, adding a bunch of comments and
-  narrating thought process.
+Then re-code factorial function or something else live, adding a bunch
+of comments and narrating thought process.
+
+\begin{reflect}{Brent, F'18}
+  Actually ended up writing a list product function; someone suggested
+  the case with length 1 as the base case.
+\end{reflect}
 
 \newpage
-\section{Recursion II: recursive functions (W 10/17)}
+\section{Recursion II: recursive functions (W 11/7)}
 
 Start by reinforcing ``base case + recursive case''.  Talk about
 ``leap of faith'': trust that recursive calls will work without
 thinking about how.  Trust your future self.  DON'T think about
 unwinding entire recursion stack.  Just think about ONE level.
 
-Up until now all the examples we've done have been math functions.
-Let's do a few more ``computer-sciency'' examples processing strings
-and lists.  Note, in Python this is not the best way to implement
-these functions (though in some languages it is).  Just for
-illustration purposes.  If you take 151 you will start to see real,
-legitimate uses of recursion, \eg processing trees.  (The one
-legitimate use of recursion using only what you know is what we will
-be doing in lab---making pretty pictures!)
+% Up until now all the examples we've done have been math functions.
+% Let's do a few more ``computer-sciency'' examples processing strings
+% and lists.  Note, in Python this is not the best way to implement
+% these functions (though in some languages it is).  Just for
+% illustration purposes.  If you take 151 you will start to see real,
+% legitimate uses of recursion, \eg processing trees.  (The one
+% legitimate use of recursion using only what you know is what we will
+% be doing in lab---making pretty pictures!)
+
+Finish implementation of list product from last class.
+\begin{itemize}
+\item Even simpler base case---does the slicing work appropriately?
+\item What should the product of an empty list be?
+\end{itemize}
 
 \begin{itemize}
-\item Work in pairs to implement \verb|product|.
+\item Have them work in pairs to implement \verb|sum|.
 \item Have them work in pairs to implement string \verb|reverse|.
-\item Have them work in (different?) pairs to implement \verb|is_palindrome|.
+  \begin{itemize}
+  \item Go over base case at some point then let them continue working.
+  \end{itemize}
 \end{itemize}
 
 \begin{reflect}{Brent, S'17}
@@ -3261,8 +3274,12 @@ be doing in lab---making pretty pictures!)
   we left off next time.
 \end{reflect}
 
+\begin{reflect}{Brent, F'18}
+  They all eventually figured out \verb|reverse| which was good.
+\end{reflect}
+
 \newpage
-\section*{LAB: Fractal Recursion (Th 10/18)}
+\section*{LAB: Fractal Recursion (Th 11/8)}
 
 \begin{reflect}{S' 17}
   This lab is fun and seemed to go reasonably well, though attendance
@@ -3273,134 +3290,218 @@ be doing in lab---making pretty pictures!)
   changing the programming language we use.
 \end{reflect}
 
+\begin{reflect}{F' 18}
+  Lab went fine again.  In the future might want to think about
+  developing a new lab that actually uses some kind of recursive data
+  structure (e.g. rose trees to represent outlines/hierarchies).
+\end{reflect}
+
 \newpage
-\section{Recursion III (F 10/19)}
+\section{Recursion III (F 11/9)}
 
 \subsection*{Setup}
 \begin{itemize}
 \item Project 2 due today!
 \end{itemize}
 
-\begin{reflect}{Brent, S'17}
-  This semester I decided to spend three lectures on recursion instead
-  of two.  It fit the schedule better (I didn't want to start a brand
-  new topic for one day before spring break) and I think it is really
-  needed.
-\end{reflect}
+Introduce idea of trees/hierarchies.  Want to model this in Python.
+This won't be on any exam, but it's good to see a more realistic
+example of recursion in Python.  In Python I would not actually find
+the product of a list or reverse a string etc. using recursion, but I
+really would make recursive trees.
 
-Finish discussion of recursive \texttt{product} implementation,
-beginning with why \texttt{product([])} should be $1$ rather than $0$:
+\begin{verbatim}
+# Trees
+
+class Tree:
+
+    # self.value  --- value @ the root
+    # self.children: List[Tree]
+
+    def __init__(self, value, children):
+        self.value = value
+        self.children = children
+
+    # Return the number of items in the whole tree
+    def size(self) -> int:
+
+        # Base case is not necessary
+
+        # if len(self.children) == 0:
+        #     return 1
+        # else:
+
+        total: int = 1
+        for child in self.children:
+            total += child.size()
+
+        return total
+
+    # Add up all the values in the whole tree
+    def sum(self) -> int:
+        total: int = self.value
+        for child in self.children:
+            total += child.sum()
+        return total
+
+    # Print the tree in outline form, e.g.
+    #
+    # cat
+    #   horse
+    #   leaf
+    #     potato
+    #   sock
+
+    def print_outline(self):
+        self.print_outline_indented(0)
+
+    def print_outline_indented(self, indent: int):
+        print((' ' * indent) + str(self.value))
+        for child in self.children:
+            child.print_outline_indented(indent + 2)
+
+
+def main():
+    t = Tree(3, [Tree(2, []), Tree(5, [Tree(19, []), Tree(22, []), Tree(10, [])])])
+    print(t.size())
+    print(t.sum())
+
+    t2 = Tree('cat', [Tree('horse', []), Tree('leaf', [Tree('potato', [])]), Tree('sock', [])])
+    print(t2.size())
+    print(t2.sum())
+
+    t2.print_outline()
+
+main()
+\end{verbatim}
+
+\newpage
+\section{Elevator simulation I (M 11/12)}
+
+\subsection*{Setup}
 
 \begin{itemize}
-\item Economy of expression---more elegant definitions, with fewer
-  special cases, usually means you are on the right track in
-  mathematics; those definitions end up being not just more economical
-  but also more useful and more consistent with other things.
-\item This is the same reason $0! = 1$.
-\item Validates the identity \texttt{product(xs + ys) = product(xs) * product(ys)}.
+\item Assign final project.
+\item Post practice exam problems for Exam 3 (1 week from today).
 \end{itemize}
 
-Have them work in pairs to implement string \texttt{reverse}.
+As a slightly larger example involving several classes working
+together let's implement a simple elevator simulation.
 
+Here's the code we wrote in class:
+
+\begin{verbatim}
+class Passenger:
+
+    # Variables:
+    # current_floor: int
+    # destination_floor: int
+    # in_elevator: bool
+    # weight: int
+    # ID: int
+
+    def __init__(self, ID: int, current_floor: int, destination_floor: int, weight: int):
+        self.ID = ID
+        self.current_floor = current_floor
+        self.destination_floor = destination_floor
+        self.weight = weight
+
+        self.in_elevator = False
+
+    def __repr__(self):
+        return ('Passenger(%d, %d, %d, %d)'
+                % (self.ID, self.current_floor, self.destination_floor, self.weight))
+
+    def get_ID(self) -> int:
+        return self.ID
+
+    def get_dest_floor(self) -> int:
+        return self.destination_floor
+\end{verbatim}
+
+\begin{verbatim}
+from typing import *
+from Passenger import *
+
+class Elevator:
+
+    # going_up (up/down): bool
+    # destinations: List[int]
+    # total_weight: int
+    # weight_limit: int
+    # current_floor: int
+    # door_open: bool
+    # max_floor: int
+    # passengers: List[Passenger]
+
+    def __init__(self, max_floor: int):
+        self.max_floor = max_floor
+
+        self.going_up = True
+        self.current_floor = 1
+        self.passengers = []
+
+    # Move one floor in the current direction
+    # Let any passengers out who want to get out
+    # Turn around if @ top or bottom floor.
+    def move(self):
+        if self.going_up:
+            self.current_floor += 1
+        else:
+            self.current_floor -= 1
+
+        if self.current_floor == 1:
+            self.going_up = True
+        elif self.current_floor == self.max_floor:
+            self.going_up = False
+
+        new_passengers: List[Passenger] = []
+        for p in self.passengers:
+            if p.get_dest_floor() == self.current_floor:
+                print("Passenger %d gets off" % p.get_ID())
+            else:
+                new_passengers.append(p)
+        self.passengers = new_passengers
+
+    # Let a passenger on the elevator
+    def add_passenger(self, p: Passenger):
+        self.passengers.append(p)
+
+    # Return the current floor
+    def get_current_floor(self):
+        return self.current_floor
+\end{verbatim}
+
+And finally we made a tester:
+
+\begin{verbatim}
+from Passenger import *
+from Elevator import *
+
+def main():
+    e = Elevator(5)
+
+    for i in range(20):
+        e.move()
+        print(e.get_current_floor())
+
+main()
+\end{verbatim}
+
+Next time we will test passengers getting off the elevator, and make a
+Building class.  Then extend the simulation in various ways.
 
 \newpage
-\section{Extended example I (M 11/5)}
-
-\subsection*{ASSIGN FINAL PROJECT}
-
-XXX write me
-
-\subsection*{Blackjack}
-
-As an extended example we are going to develop a simple implementation
-of Blackjack.  (XXX use a different example instead?)
-
-Card and Deck examples.
-\begin{itemize}
-\item Make \verb|Card| class with \verb|rank|, \verb|suit| (strings),
-  and \verb|face_up| (boolean).  Though can leave \verb|face_up| until
-  later.  Just has getter methods.  Write \verb|__repr__|. (If usung
-  \verb|face_up|, \verb|__repr__| should return \verb|**| or something
-  like that if face down.)
-\end{itemize}
-
-\newpage
-\section{Extended example II (W 11/7)}
-
-\begin{itemize}
-\item Make \verb|Deck| class with list of cards.  Make \verb|__init__|
-  (create 52-card deck), \verb|__repr__|, \verb|shuffle| (use
-  \verb|random.shuffle|), \verb|draw| (draw one card), \verb|add|,
-  \verb|deal(n)| (draw $n$ cards).  Make \verb|sort| method; go back
-  and add \verb|__lt__| to \verb|Card| class.
-\item If time, introduce \verb|Hand| which inherits from \verb|Deck|.
-  Is-a.  Add \verb|reveal|, \verb|value| methods.
-\end{itemize}
-
-\begin{reflect}{Brent, S'17}
-  I deemphasized teaching them about inheritance, instead choosing to
-  just focus on encapsulation and data abstraction.  So I modified the
-  example to do without inheritance.  We just used Deck for both decks
-  and hands, and our Player class has a boolean to tell which kind of
-  player it is.
-\end{reflect}
-
-\newpage
-\section*{LAB: Processing (Th 11/8)}
-
-\begin{reflect}{Brent, S'17}
-  \textbf{VERY IMPORTANT, FOR NEXT TIME}: download Processing ahead of
-  time and distribute it to students on a few USB drives!  It took
-  \emph{forever} having all the students download it simultaneously at
-  the start of lab.  Some students weren't really able to get started
-  until over an hour into the lab period.
-
-  Fortunately other than that the lab seemed to go well.
-\end{reflect}
-
-\newpage
-\section{Extended example III (F 11/9)}
-
-\begin{itemize}
-\item Finish \verb|Hand|.
-\item Introduce \verb|Player|, \verb|HumanPlayer|,
-  \verb|ComputerPlayer|.
-\item Finish writing blackjack.
-\end{itemize}
-
-\begin{reflect}{Brent, S'16}
-  I spent 4 lectures going through blackjack in S'16.  3.5 would
-  probably be enough but I couldn't quite squeeze it into 3.  I spent
-  the extra half-lecture doing an empirical exploration of different
-  play strategies, pitting computer players using different algorithms
-  against each other in 1000's of games and printing the winning
-  percentages.  Conclusions: only choosing to hit when you have a very
-  small number of points (\eg 5)---or even \emph{never} choosing to
-  hit---actually does much better than one might expect.  You can
-  still end up winning around 40\% of the time.  On the other hand,
-  still choosing to hit even when you have 17 or more points quickly
-  gets very bad, because you are almost guaranteed to bust.
-\end{reflect}
-
-\begin{reflect}{Brent, S'17}
-  This semester I spent 4 lectures on blackjack and we didn't even
-  make it to the end!
-\end{reflect}
-
-\newpage
-\section{Extended example IV (M 11/12)}
-
-\newpage
-\section{Exam 3 review (W 11/16)}
+\section{Elevator simulation II (W 11/14)}
 
 \newpage
 \section{LAB: Stuckness \& Debugging (Th 11/15)}
 
 \newpage
-\section{Exam 3 (F 11/16)}
+\section{Exam 3 review (F 11/16)}
 
 \newpage
-\section{??? (M 11/19)}
+\section{Exam 3 (M 11/19)}
 
 \newpage
 \section{THANKSGIVING}
@@ -3530,21 +3631,12 @@ be heavily discussed in CSCI 151 with more formal tools and for more
 complicated structures, within the context of Java.
 
 \newpage
-\section{LAB: Project workshop (Th 11/29)}
-
-No assigned lab; students can come to get help on their final
-projects.
+\section{LAB: Tornado sirens (Th 11/29)}
 
 \newpage
-\section{Fun with Processing (F 10/30, M 12/3?)}
+\section{??? (F 10/30, M 12/3?)}
 
-\begin{reflect}{Brent, S'16, S'17}
-  In both S'16 and S'17 I ended with a class or two left over.  So I
-  have been doing some live coding in Processing, both as an example
-  of good code organization with Processing (which helps the students
-  using Processing for their final project) and just for fun.  I code
-  up a physically semi-realistic simulation of balls bouncing off each
-  other and line segments.
-\end{reflect}
+Continue to extend our elevator simulation with queues?  Show how the
+performance makes a practical difference??
 
 \end{document}
