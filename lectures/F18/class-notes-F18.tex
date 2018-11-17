@@ -3494,8 +3494,203 @@ Building class.  Then extend the simulation in various ways.
 \newpage
 \section{Elevator simulation II (W 11/14)}
 
+Here's how the code ended up:
+
+\newpage
+\noindent \texttt{Passenger.py}:
+
+\begin{verbatim}
+class Passenger:
+
+    # Variables:
+    # current_floor: int
+    # destination_floor: int
+    # in_elevator: bool
+    # weight: int
+    # ID: int
+
+    def __init__(self, ID: int, current_floor: int, destination_floor: int, weight: int):
+        self.ID = ID
+        self.current_floor = current_floor
+        self.destination_floor = destination_floor
+        self.weight = weight
+
+        self.in_elevator = False
+
+    def __repr__(self):
+        return ('Passenger(%d, %d, %d, %d)'
+                % (self.ID, self.current_floor, self.destination_floor, self.weight))
+
+    def get_ID(self) -> int:
+        return self.ID
+
+    def get_current_floor(self) -> int:
+        return self.current_floor
+
+    def get_dest_floor(self) -> int:
+        return self.destination_floor
+
+    def get_in(self):
+        self.in_elevator = True
+
+    def get_out(self):
+        self.in_elevator = False
+\end{verbatim}
+
+\newpage
+\noindent \texttt{Elevator.py}:
+
+\begin{verbatim}
+from typing import *
+from Passenger import *
+
+class Elevator:
+
+    # going_up (up/down): bool
+    # destinations: List[int]
+    # total_weight: int
+    # weight_limit: int
+    # current_floor: int
+    # door_open: bool
+    # max_floor: int
+    # passengers: List[Passenger]
+
+    def __init__(self, max_floor: int):
+        self.max_floor = max_floor
+
+        self.going_up = True
+        self.current_floor = 1
+        self.passengers = []
+
+    # Move one floor in the current direction
+    # Let any passengers out who want to get out
+    # Turn around if @ top or bottom floor.
+    def move(self):
+        if self.going_up:
+            self.current_floor += 1
+        else:
+            self.current_floor -= 1
+
+        print("FLOOR %d" % self.current_floor)
+
+        if self.current_floor == 1:
+            self.going_up = True
+        elif self.current_floor == self.max_floor:
+            self.going_up = False
+
+        new_passengers: List[Passenger] = []
+        for p in self.passengers:
+            if p.get_dest_floor() == self.current_floor:
+                print("Passenger %d gets off" % p.get_ID())
+                p.get_out()
+            else:
+                new_passengers.append(p)
+        self.passengers = new_passengers
+
+    # Let a passenger on the elevator
+    def add_passenger(self, p: Passenger):
+        self.passengers.append(p)
+        p.get_in()
+
+    # Return the current floor
+    def get_current_floor(self):
+        return self.current_floor
+\end{verbatim}
+
+\newpage
+\noindent \texttt{Building.py}:
+
+\begin{verbatim}
+from Passenger import *
+from Elevator import *
+
+import random
+import time
+
+class Building:
+
+    # Variables:
+    # num_floors: int
+    # num_elevators: int
+    # waiting_passengers: Dict[int, List[Passenger]]
+       # key = floor
+       # value = passengers waiting on that floor
+    # elevator: Elevator
+       # (later, List[Elevator])
+
+    def __init__(self, num_floors: int, num_passengers: int):
+        self.num_floors = num_floors
+        self.elevator = Elevator(self.num_floors)
+
+        self.waiting_passengers = {}
+
+        for i in range(num_passengers):
+            p: Passenger = Passenger(i, random.randint(1, num_floors), random.randint(1, num_floors), random.randint(1, 300))
+
+            # Create the list for p's floor if it doesn't already exist
+            if p.get_current_floor() not in self.waiting_passengers:
+                self.waiting_passengers[p.get_current_floor()] = []
+
+            # Add p to the line of passengers waiting on that floor
+            self.waiting_passengers[p.get_current_floor()].append(p)
+
+    # Move the elevator and put waiting people on it
+    def update(self):
+
+        # Move the elevator one floor (and let passengers off)
+        self.elevator.move()
+
+        # Put people on the elevator
+        if self.elevator.get_current_floor() in self.waiting_passengers:
+            for p in self.waiting_passengers[self.elevator.get_current_floor()]:
+                print("Passenger %d gets on the elevator" % p.get_ID())
+                self.elevator.add_passenger(p)
+
+        # No one is waiting on that floor anymore
+        self.waiting_passengers[self.elevator.get_current_floor()] = []
+
+    def run(self):
+        while True:
+            self.update()
+            time.sleep(1)
+\end{verbatim}
+
+\newpage
+\noindent \texttt{Test.py}:
+
+\begin{verbatim}
+from Passenger import *
+from Elevator import *
+from Building import *
+import time
+
+def main():
+    # e = Elevator(5)
+    #
+    # e.add_passenger(Passenger(101, 1, 3, 90))
+    # e.add_passenger(Passenger(297, 1, 2, 150))
+    # e.add_passenger(Passenger(311, 1, 5, 3))
+    #
+    # for i in range(20):
+    #     time.sleep(2)
+    #     e.move()
+    #     print(e.get_current_floor())
+
+    b = Building(10, 30)
+    b.run()
+
+main()
+\end{verbatim}
+
 \newpage
 \section{LAB: Stuckness \& Debugging (Th 11/15)}
+
+\begin{reflect}{Brent, F'18}
+  The lab went really well---Fish and I answered basically zero
+  questions; the students struggled with things until they figured
+  them out.  Definitely heard many excited moments of enlightenment or
+  exultation as a fix worked.  I think they got a lot out of it.
+\end{reflect}
 
 \newpage
 \section{Exam 3 review (F 11/16)}

@@ -28,6 +28,7 @@ to review the material and come to class prepared.
 * Wed, Oct 31 - Fri, Nov 2: [traffic.py](static/traffic.py)
 * Mon, Nov 5 - Wed, Nov 7: [recursion.py](static/recursion.py)
 * Fri, Nov 9: [rtree.py](static/rtree.py)
+* Mon, Nov 12 - Wed, Nov 14: [Passenger.py](static/Passenger.py), [Elevator.py](static/Elevator.py), [Building.py](static/Building.py), [Test.py](static/Test.py)
 
 <!-- * Wed, Jan 17: Introduction -->
 <!-- * Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**) -->
