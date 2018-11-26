@@ -3704,25 +3704,67 @@ main()
 \newpage
 \section{Queues (2 lectures) (M 11/26, W 11/28)}
 
-Start with a discussion of the queue data structure itself and why it
-would be useful: model lines of people in the supermarket or at a bank
-(determine why each has a different way of organizing people (multiple
-lines with one checkout person each, vs one line with multiple
-tellers)?), processes waiting for a turn to use the processor, network
-packets waiting to be sent, etc.
+Start with a discussion of the queue data structure itself (sequence,
+aka list, where we can only add to one end and remove from the other
+end; first-in-first-out, aka FIFO).  Talk about why it is useful:
+model lines of people in the supermarket or at a bank (determine why
+each has a different way of organizing people (multiple lines with one
+checkout person each, vs one line with multiple tellers)?), processes
+waiting for a turn to use the processor, network packets waiting to be
+sent, etc.  (Also, if it's just a list with \emph{fewer} things we are
+allowed to do, why bother?  Why restrict ourselves?  Don't we want the
+most powerful things we can get?  Well, power cuts both ways: more
+power also means more opportunities to make mistakes; ``with great
+power comes great responsibility''.  We actually want just enough
+power to get the job at hand done, and no more!)
 
-Walk through the methods of a queue
-(\verb|add, remove, size, is_empty|) and some important words (front,
-back) and write up the super class \verb|Queue| with all the method bodies
-being \verb|pass|.  We are going to write two different implementations.
+Go over important vocabulary: front aka head, back aka tail; and go
+over methods:
+\begin{itemize}
+\item \verb|enqueue(item)|: add a new item to the back of the queue
+\item \verb|dequeue()|: remove the next item from the front of the
+  queue (error if queue is empty)
+\item \verb|size() -> int|: how many items are in the queue
+\item \verb|is_empty() -> bool|: is the queue empty?
+\end{itemize}
 
-Easiest way (in terms of lines of code) is to implement a queue is to
-use lists: they already do everything we need, and we're just
-constraining the interactions to be with the front \verb|[0]| and back
-\verb|[-1]|. Code up the \verb|ListQueue| class together.
+Let's implement it!  Get students to come up with suggestions?  They
+will probably suggest using a list, which is definitely easiest (in
+terms of lines of code). Lists already do everything we need, we're
+just constraining the interactions to be with the front and back. Get
+students to decide which end is front and which end is back.  Code up
+the \verb|ListQueue| class together.
 
-Then we test \verb|ListQueue| with a \verb|main| method (see
-\verb|queuetester.py|):
+Note, students may also want to add \verb|self.num_items| to keep
+track of the size of the queue, which is fine; can point out that in
+this case we can just use \verb|len|; using \verb|self.num_items|
+means we have more work to make sure we keep it correctly updated.
+Also, if students want to use index \verb|0| as the back and
+\verb|n-1| as the front (unlikely but possible), can use
+\verb|self.items.insert(0,item)| and \verb|self.items.pop()|.
+\begin{verbatim}
+class ListQueue:
+    def __init__(self):
+        self.items = []
+
+    # Add a new item to the "back".
+    def enqueue(self, item):
+        self.items.append(item)
+
+    # Remove an item from the "front" and return it.
+    def dequeue(self):
+        return self.items.pop(0)
+
+    # Return the number of items in the queue
+    def length(self):
+        return len(self.items)
+
+    # Return whether or not the queue is empty
+    def is_empty(self):
+        return self.length() == 0
+\end{verbatim}
+
+Then make a \verb|main| method to test \verb|ListQueue|:
 
 \begin{verbatim}
 import time
@@ -3753,10 +3795,13 @@ main()
 \end{verbatim}
 
 As we put stress on the queue with larger numbers, we see it's not a
-linear relationship, but quadratic. $10^7$ is a good place to stop,
-since it takes (on the order of) 100s of seconds to complete.  Could
-make a log-log plot of the size vs the time.  Give a hand-wavy
-explanation why the performance is quadratic: $1 + 2 + \dots + n$.
+linear relationship. $10^7$ is a good place to stop, since it takes
+(on the order of) 100s of seconds to complete.  Could make a log-log
+plot of the size vs the time, discover that the relationship is
+quadratic.  Give a hand-wavy explanation why the performance is
+quadratic: depends on how lists are implemented; adding or removing at
+the beginning of the list requires shifting everything, so
+$1 + 2 + \dots + n$.
 
 Perhaps we could do better with a more specialized implementation,
 since we only really care about the front and back.
