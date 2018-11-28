@@ -24,6 +24,9 @@ title: Labs
 10    [Water Jugs](labs/waterjug.html)                                              Oct 31/Nov 1 Nov 7/8
 11    [Fractal Recursion](labs/fractal.html)                                        Nov 7/8      Nov 14/15
 12    [On Stuckness and debugging](labs/debugging.html)                             Nov 14/15    Nov 20*
+13    [Civic Data Hacking]                                                          Nov 28/29    Dec 3
+
+[Civic Data Hacking]: https://mybinder.org/v2/gh/mgoadric/CS1-civic-hacking/master?filepath=Lab%2013%20-%20Civic%20Hacking.ipynb
 
 </font>
 

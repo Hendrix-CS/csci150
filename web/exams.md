@@ -19,7 +19,9 @@ answer questions along with writing and debugging code.
 
 - Exam 3: Monday, November 19, covering for loops, dictionaries,
     classes and objects, and recursion  
-    ([Practice problems](static/exam3-practice-f18.pdf), [solutions](static/exam3-practice-f18-solutions.pdf))
+    ([Practice problems](static/exam3-practice-f18.pdf),
+    [solutions](static/exam3-practice-f18-solutions.pdf), [Exam Bonus
+    Assignment](static/exam-bonus.pdf) (due Monday December 3))
 
     <!-- [tracing template](static/heap-tracing-template.pdf), [Practice -->
     <!-- problem solutions](static/exam3-practice-s18-solutions.pdf)) -->
