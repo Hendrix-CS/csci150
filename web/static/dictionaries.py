@@ -1,104 +1,116 @@
-# Dictionaries
+from typing import *
 
-# Recall lists:
+# Dictionary associates animals (values) with enclosure IDs (keys)
+zoo1: Dict[str, str] = { 'A20': 'tapir', 'C': 'panda', 'S9': 'dragon' }
+  # In general  { key: value, key: value, ... }
 
-animals = ['koala', 'dingo', 'aardvark', 'hyena']
+print(zoo1)
 
-# This is a sequence, but we can also think of it like this:
+zoo2: Dict[str, str] = {}  # empty dictionary
+zoo2['A20'] = 'tapir'      # associate a new value with the key 'A20'
+zoo2['C'] = 'panda'
+zoo2['S9'] = 'dragon'
 
-# keys -> values
-# 0 -> 'koala'
-# 1 -> 'dingo'
-# 2 -> 'aardvark'
-# 3 -> 'hyena'
+print(zoo2)
 
-# Dictionary is the generalization that lets us associate
-# values to *arbitrary* keys, not just consecutive integers.
+print(zoo2['C'])
 
-# Example: associate animals to habitats.
+# Dictionary is like a function mapping keys to values.
+# Consequences:
 
-# 'A20' -> 'koala'
-# 'B6' -> 'dingo'
-# 'S12' -> 'aardvark'
-# 'BASEMENT' -> 'hyena'
+# 1. There can only be one value per unique key.
 
-zoo = { 'A20' : 'koala', 'B6' : 'dingo', 'S12' : 'aardvark'
-           , 'BASEMENT' : 'hyena' }
-# Note the order is irrelevant!
+# e.g. this replaces the panda
+zoo2['C'] = 'tiger'
 
-# We can look up the value associated to a given key with
-#   dict[key]
-# We can associate a value to a new key, or replace the value
-#   of an existing key with
-#   dict[key] = value
+# 2. There *can* be multiple different keys with the same value.
+zoo2['F19'] = 'dragon'
+zoo2['QR17'] = 'panda'
+zoo2['cafeteria'] = 'potato'
 
-# Empty dictionary is  {}
+zoo2['AAA'] = 'bugs'
 
-# Example!
+print(zoo2)
 
-# Input: string s
-# Output: dictionary mapping each character to the number
-#   of times that character occurs in s.
-#
-# Example: if s is "banana!!",
-# we should get { 'a': 3, 'b' : 1, 'n': 2, '!': 2 }.
+# 3. You can look up a value by key, but not a key by value.
 
-def frequency_counts(s):
-    counts = {}
+
+# Other things you can do with dictionaries:
+# - Get a list of all keys with .keys()
+# - Get a list of all values with .values()
+# - Check if a key is present using 'in'  (if key in dict ...)
+# - Get the number of keys with len(...)
+# - Iterate over all the keys using for loop
+
+# Example: frequency_count function that returns a dictionary.
+# e.g.  frequency_count('hello') = {'h': 0.2, 'e' : 0.2, 'l': 0.4, 'o': 0.2}
+
+def frequency_count(s: str) -> Dict[str, float]:
+
+    # Step 1: make a dictionary of counts, e.g. {'h': 1, 'l': 2, ...}
+    counts: Dict[str, int] = {}
+
     for c in s:
-        # If we haven't seen c before:
         if c not in counts:
-            counts[c] = 1
-        else:
-            counts[c] += 1
-    return counts
+            counts[c] = 0
+        counts[c] += 1
 
-# Input: dictionary d that maps characters to ints
-#   (i.e. the keys are characters and the values are ints)
-#   (each int is the number of times that character occurs)
-#
-# Output: another dictionary that maps the same
-#   characters to float values.
-#
-# Does not modify the input dictionary.
-#
-# Returns a new dictionary with the same keys as the input
-# dictionary, and where the values have been divided by
-# the total total of all the counts.
-#
-# Example: {'a': 1, 'b': 3}  --->  {'a': 0.25, 'b': 0.75}
-def normalize_frequencies(d):
-    total = total_values(d)
-    freqs = {}
-    for char in d:
-        freqs[char] = d[char] / total
+    freqs: Dict[str, float] = {}
+    for c in counts:
+        freqs[c] = counts[c] / len(s)
+
     return freqs
 
-# This version works, but it changes the input dictionary ---
-# which is generally a bad idea.
-#
-##def normalize_frequencies(d):
-##    total = total_values(d)
-##    for char in d:
-##        d[char] /= total
-##    return d
+# Take a dictionary of counts e.g. {'a': 1, 'c': 20, 'f': 8 ...}
+# and normalize it by dividing each count by the sum of all counts
+def normalize(counts: Dict[str, int]) -> Dict[str, float]:
+    # Step 1: add up all the counts
 
-# Input: a dictionary with ints as values
-# Output: the total of all the values
-#
-# Example: {'a': 1, 'b': 3}  -->  4
-def total_values(d):
-    total = 0
-    for char in d:
-        total += d[char]
-    return total
+    # Alternative 1 (most straightforward):
 
-# Input: string s
-# Output: dictionary mapping each character in s to
-#   its frequency in s (float from 0-1).
-# Example: "babb" --> {'a': 0.25, 'b': 0.75}
-def frequencies(s):
-    return normalize_frequencies(frequency_counts(s))
+    count_sum: int = 0
+    for s in counts:
+        count_sum += counts[s]
 
+    # Alternative 2 (using values() to get list of values)
 
+    # count_sum: int = 0
+    # for c in counts.values():
+    #     count_sum += c
 
+    # Alternative 3 (using built-in sum() function)
+
+    # count_sum: int = sum(counts.values())
+
+    # Step 2: generate the dictionary of frequencies,
+    # by dividing everything by the sum
+
+    # Alternative 1, not a good idea! Mutates the original dictionary!
+
+    # for s in counts:
+    #     counts[s] /= count_sum
+    #
+    # return counts
+
+    # Alternative 2, better: make a new dictionary
+
+    freqs: Dict[str, float] = {}
+    for s in counts:
+        freqs[s] = counts[s] / count_sum
+
+    return freqs
+
+def main():
+    f = open('dictionaries.py', 'r')
+    freqs = frequency_count(f.read())
+
+    minFreq = 1
+    minChar = ''
+    for c in freqs:
+        if freqs[c] < minFreq:
+            minFreq = freqs[c]
+            minChar = c
+    print(minFreq)
+    print(minChar)
+
+main()

@@ -1,0 +1,212 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\subsection{CSCI 150 HW: function and loop reading
+practice}\label{csci-150-hw-function-and-loop-reading-practice}
+
+\emph{Due: Monday, September 24}
+
+To receive full credit, for each exercise you should do the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Predict}: First, complete the exercise \emph{without} using
+  the Python interpreter. (You are welcome to refer to your notes or
+  textbook, read Python documentation, look at examples from class,
+  \emph{etc.}; just don't actually run any code.) Trace the execution of
+  the code in the exercise.
+\item
+  \textbf{Check}: Run the code. Does the actual output agree with what
+  you wrote down in step 1?
+\item
+  \textbf{Evaluate}: If your answer to part 1 was different than the
+  actual output, keep experimenting with it, consult the textbook or
+  Python documentation, ask a friend or TA or professor, \emph{etc.}
+  until you can explain why the code works the way it does \emph{and}
+  what your misunderstanding(s) were in part 1. (You do not need to do
+  anything for step 3 if the output agrees exactly with what you wrote
+  in step 1.)
+\end{enumerate}
+
+You will not be graded on how correct your answer is in part 1. However,
+you \emph{will} be graded on the accuracy of your evaluation in step 3.
+Obviously, I will not be able to tell the difference if you simply run
+the code and paste the output for step 1; please do not do that! You
+will only be depriving yourself of a learning opportunity (not to
+mention that it is a violation of the academic integrity policy).
+
+Turn in your answers and evaluations either electronically
+\href{https://goo.gl/forms/XsJVafSZLdedQY1M2}{via the usual form}, or on
+paper.
+
+You should consider the code in each exercise separately from the other
+exercises.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Consider the functions defined below. Trace the execution when
+  \texttt{main1()} is called.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ foo(a: }\BuiltInTok{int}\NormalTok{) }\OperatorTok{->} \BuiltInTok{int}\NormalTok{:}
+\NormalTok{    b }\OperatorTok{=} \DecValTok{3}\OperatorTok{*}\NormalTok{a }\OperatorTok{+} \DecValTok{2}
+    \ControlFlowTok{return}\NormalTok{ b}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"In foo"}\NormalTok{)}
+
+\KeywordTok{def}\NormalTok{ bar(x: }\BuiltInTok{int}\NormalTok{, y: }\BuiltInTok{int}\NormalTok{) }\OperatorTok{->} \BuiltInTok{int}\NormalTok{:}
+    \ControlFlowTok{return}\NormalTok{ foo(x) }\OperatorTok{+}\NormalTok{ foo(y)}
+
+\KeywordTok{def}\NormalTok{ main1():}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"The value is "} \OperatorTok{+} \BuiltInTok{str}\NormalTok{(bar(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{)))}
+
+\NormalTok{main1()}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Consider the functions defined below. Trace the execution when
+  \texttt{main2()} is called.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ f1():}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"mushroom"}\NormalTok{)}
+
+\KeywordTok{def}\NormalTok{ f2():}
+\NormalTok{    f1()}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"badger"}\NormalTok{)}
+\NormalTok{    f1()}
+
+\KeywordTok{def}\NormalTok{ f3(n: }\BuiltInTok{int}\NormalTok{):}
+\NormalTok{    f2()}
+    \ControlFlowTok{if}\NormalTok{ n }\OperatorTok{>} \DecValTok{5}\NormalTok{:}
+        \BuiltInTok{print}\NormalTok{(}\StringTok{"snake"}\NormalTok{)}
+\NormalTok{        f1()}
+    \ControlFlowTok{else}\NormalTok{:}
+        \BuiltInTok{print}\NormalTok{(}\StringTok{"snaaaaake"}\NormalTok{)}
+
+\KeywordTok{def}\NormalTok{ main2():}
+\NormalTok{    f3(}\DecValTok{2}\NormalTok{)}
+\NormalTok{    f3(}\DecValTok{6}\NormalTok{)}
+
+\NormalTok{main2()}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Trace the execution when \texttt{main3} is called.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ main3():}
+\NormalTok{    s: }\BuiltInTok{int} \OperatorTok{=} \DecValTok{0}
+\NormalTok{    i: }\BuiltInTok{int} \OperatorTok{=} \DecValTok{0}
+    \ControlFlowTok{while}\NormalTok{ i }\OperatorTok{<} \DecValTok{5}\NormalTok{:}
+\NormalTok{        j: }\BuiltInTok{int} \OperatorTok{=} \DecValTok{0}
+        \ControlFlowTok{while}\NormalTok{ j }\OperatorTok{<}\NormalTok{ i:}
+\NormalTok{            s }\OperatorTok{+=}\NormalTok{ j}
+\NormalTok{            j }\OperatorTok{+=} \DecValTok{1}
+\NormalTok{        i }\OperatorTok{+=} \DecValTok{1}
+    \BuiltInTok{print}\NormalTok{(s)}
+
+\NormalTok{main3()}
+\end{Highlighting}
+\end{Shaded}
+\end{enumerate}
+
+\end{document}

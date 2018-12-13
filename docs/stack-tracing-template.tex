@@ -1,0 +1,29 @@
+% -*- mode: LaTeX; compile-command: "pdflatex stack-tracing-template.tex" -*-
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, graphicx, array}
+
+\begin{document}
+
+% See
+% https://tex.stackexchange.com/questions/5017/center-column-with-specifying-width-in-table-tabular-enviroment
+% \centering changes meaning of \\, \arraybackslash restores it.
+
+\thispagestyle{empty}
+
+\noindent
+\hspace{-0.7in}
+  \begin{tabular}{| >{\centering\bfseries}p{2.2in} | >{\centering\arraybackslash\bfseries}p{3.8in} |}
+    \hline
+    Scratch & Stack \\
+    \hline & \\[1in]
+    \cline{2-2} & \\[1in]
+    \cline{2-2} & \\[1in]
+    \cline{2-2} & \\[1in]
+    \cline{2-2} & \\[1in]
+    \hline
+  \end{tabular} \bigskip
+
+  \noindent \textbf{Output}
+
+\end{document}

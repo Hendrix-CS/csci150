@@ -4,16 +4,25 @@ title: Overview
 
 ### Textbook
 
-[Think Python](docs/ThinkPython-CSCI150-S17.pdf)\
-   by [Allen Downey](http://allendowney.com/), 2012\
-   Olin College, MA\
-   This textbook is open-source; we have reorganized and edited it to match our course syllabus.
+[Think Python](http://greenteapress.com/thinkpython2/thinkpython2.pdf)\
+   by [Allen Downey](http://allendowney.com/)\
+   Needham, MA: Green Tea Press, 2015.
+
+Your textbook is available [as a free
+PDF](http://greenteapress.com/thinkpython2/thinkpython2.pdf).  If you
+wish to purchase a paper copy, you can [buy it on
+Amazon](http://amzn.to/1WmXPCx).
 
 ### Software
 
 <div style="text-align:center">
 <img src="images/pythonlogo.png" height="100">
 [Python 3](http://python.org/)
+</img>
+
+<img src="images/pycharmlogo.png" height="100">
+[Pycharm](https://www.jetbrains.com/pycharm/)
+</img>
 </div>
 
 ### Overview

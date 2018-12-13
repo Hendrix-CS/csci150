@@ -190,6 +190,14 @@ Hour of Code worked great, especially when earning an A requires the minimum num
 
 \textbf{Quiz Monday on Chapter 1}.
 
+\begin{reflect}{Brent, S'18}
+  I forgot to tell them to read Chapter 1, so I just spent a few
+  minutes telling them about the 5 aspects of algorithms and about the
+  different kinds of errors, then we discussed where we saw them in
+  Minecraft.  We didn't talk about formal vs natural language.  I did
+  tell them to read Chapter 1 for Monday (quiz).
+\end{reflect}
+
 \subsection*{Collatz Conjecture}
 
 \begin{itemize}
@@ -210,6 +218,18 @@ Hour of Code worked great, especially when earning an A requires the minimum num
 \end{itemize}
 
 \subsection*{Origami}
+
+\begin{reflect}{Brent, S'18}
+  Didn't do origami this semester.  Partly, because I was out of
+  origami paper. =) But more importantly, because I think it mostly
+  teaches them a \emph{negative} lesson, that giving precise
+  instructions is hard.  I decided I would rather teach them a
+  \emph{positive} lesson, about the skill of being able to
+  execute/simulate computer programs by hand, so I made a new HW
+  assignment, where they have to write a minecraft program by hand.
+  (See \texttt{homework/minecraft} folder.)  Let them out a tiny bit
+  early.
+\end{reflect}
 
 \begin{itemize}
 \item Explain what we are going to do: make a dinosaur.
@@ -249,7 +269,7 @@ To tie together the three parts (Review of Minecraft, Collatz, Origami) I kept r
 \end{reflect}
 \newpage
 
-\section{Drake Equation, Python I}
+\section{Python I}
 
 \subsection*{Setup}
 
@@ -260,7 +280,30 @@ To tie together the three parts (Review of Minecraft, Collatz, Origami) I kept r
   document on Moodle, dinosaurs in class.
 \end{itemize}
 
+\subsection*{Minecraft pair simulation exercise}
+
+If the students were assigned the Minecraft HW, have them pair up and
+exchange programs.  Give each pair/group a color printout of the
+minecraft world for the assignment, to use for reference.  Give them
+10-15 minutes to simulate each others' programs and confirm whether
+they work properly.  Then collect the assignments.
+
+Why did we do this?  One of the reasons the Minecraft Hour of Code lab
+was much easier than the programming we will do for the rest of the
+semester we already talked about---because it allows far fewer syntax
+errors.  But another, perhaps more important, reason is that it gives
+you immediate, visual feedback when you run your program, such that
+you can follow along and quickly figure out what's happening when
+something goes wrong.  When writing a Python program we won't have
+that luxury.  Being able to accurately predict what a program will do
+without running it on the computer is an extremely important
+skill---in fact, there is actual research that shows this skill is
+highly correlated with your performance in this class!  So we will
+have lots more opportunities to practice it.
+
 \subsection*{Drake Equation}
+
+[See also ALTERNATE VERSION below.]
 
 Today, we want the computer to calculate a simple formula for us.  The
 class is about communication and intelligence.  Frank Drake, founder
@@ -358,7 +401,7 @@ actually write the program next class.
 
 \subsection*{Python I (Strings, Numbers, Variables)}
 
-Show \url{python.org} website.  Load up IDLE, Python 3.5.
+Show \url{python.org} website.  Load up PyCharm [or IDLE], Python 3.x.
 
 \texttt{>>>} is the prompt.  This gives you direct access to the
 interpreter.  You say commands one line at a time, and get immediate
@@ -424,6 +467,23 @@ What kinds of things does Python give us?
   means something is not right (the \emph{other} meaning of
   ``exceptional''). So doublecheck your names!
 
+  \textbf{Be sure to emphasize} that the expression to the right of
+  the \texttt{=} is \emph{evaluated} to a value which is then assigned
+  to the variable.  Example:
+\begin{verbatim}
+x = 2
+y = x + 3
+x = 5
+\end{verbatim}
+  What value will \texttt{y} have afterwards?  It will still just be
+  $5$.  It does not change when \texttt{x} changes later.  It just
+  holds a number, it does not remember where the number came from.
+  \begin{reflect}{Brent, S'18}
+    I added this after the fact when it became painfully clear from my
+    program execution tracing question on exam 1 that a significant
+    portion of my students did not understand this!
+  \end{reflect}
+
   Some names are reserved, we'll see them as we go.
   Names can't be anything, letter or underscore first, then letter,
   number or underscore.
@@ -442,21 +502,26 @@ I did make it to variables.
   I made it to variables this time.  Leaving out the 6 steps of
   software development helped a lot.
 \end{reflect}
+\begin{reflect}{Brent, S' 18}
+  I didn't make it to variables again; using 15 minutes of class time
+  at the beginning to have them simulate each others' Minecraft HW
+  took a lot of time but was so worth it.
+\end{reflect}
 
 \newpage
 
-\section{Python II, Drake}
+\section{Python II, Drake/Box Volume}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Collect dinosaurs.  Write your name on it!
-\item Read Chapters 2 \& 3 --- quiz on Wednesday!
-\item Start reading Chapter 4 for Wednesday.
+\item Collect origami, if origami assigned.  Write your name on it!
+\item Read Chapters 2 \& 3 --- quiz next class!
+\item Start reading Chapter 4 for next class.
 \end{itemize}
 
 \subsection*{Variables}
 
-[Finish up variables.  Show @ prompt in IDLE.  See notes from previous
+[Finish up variables.  Show @ prompt.  See notes from previous
 lecture.]
 
 \subsection*{I/O, .py files}
@@ -787,7 +852,7 @@ to complete all puzzles.
 \item{} [S '16: Next time: Quiz on chapter 4.]
 \item{} [F'15, S'17: logic puzzle HW due today]
 \item{} [F'15, S'17: quiz 2 today]
-\item \textbf{Quiz 2 (S'17)}:
+\item \textbf{Quiz 2 (S'17, S'18)}:
   \begin{enumerate}
   \item What is the value of each of the following
     Python expressions?
@@ -874,6 +939,10 @@ else:
         print("No secrets for you")
 \end{verbatim}
 
+\begin{reflect}{Gabe, F' 17}
+An alternative to this example that I employ is a program that figures out letter grades based on numerical grades. I introduce it first as a bunch of nested if-else blocks, followed up by a conversion to if-elif-else.
+\end{reflect}
+
 Emphasize that the ordering is important, specific cases first in an {\tt elif} chain, then more general.
 
 If time left, have them write code for these two examples.
@@ -891,12 +960,19 @@ If time left, have them write code for these two examples.
 \end{reflect}
 
 \begin{reflect}{Mark, F' 16}
-  I again managed to take the whole time. I went through the truth 
+  I again managed to take the whole time. I went through the truth
   tables for boolean operators, had them develop the ideas of comparison
   operators and how they worked for strings too. Drew diagrams to show
   how each manifestation of if worked (if, if-else, if-elif-else, nested-if). Also
   showed how to translate the corner \[ (A_1 \times B_1 \orr A_1 \times A_3) \andd \nott (A_1 \times B_1 \andd A_1
 \times A_3) \] into Python and show how it would check for a valid solution.
+\end{reflect}
+
+\begin{reflect}{Brent, S' 18}
+  Left out the \texttt{random} stuff this time; we barely made it to
+  \texttt{if} statements since they had so many (good) questions about
+  booleans!  Had to finish up talking about \texttt{elif} at the
+  beginning of the next class.
 \end{reflect}
 
 
@@ -915,6 +991,15 @@ If time left, have them write code for these two examples.
   computer.  Covers material through today and next class. Class
   before exam will be review.
 \end{itemize}
+\begin{reflect}{Brent, S'18}
+  This time I put off the exam by one more day, in order to have the
+  exam come right \emph{after} a lab instead of before.  Then we can
+  do ``This Day in History'' which is great practice for the exam.  It
+  also gives me an extra day to spend a bit more time on information
+  encoding and to then explicitly talk about \& practice the skill of
+  tracing program execution (\emph{e.g.} by writing down the values of
+  variables).
+\end{reflect}
 
 \subsection*{Ada Lovelace}
 
@@ -1036,6 +1121,11 @@ example, e.g. $103_{10}$.
   Also, this semester I have exactly $2^5$ students!
 \end{reflect}
 
+\begin{reflect}{Brent, S'18}
+  Again didn't make it to converting decimal -> binary, but that is
+  fine since I have more time to cover this.
+\end{reflect}
+
 \section*{LAB: Big Data/Heart Disease}
 
 \begin{reflect}{Brent, S'16}
@@ -1048,6 +1138,9 @@ example, e.g. $103_{10}$.
   \item Try to guide them to using nested ifs.
   \item Make sure they understand why it's ineffective to make a huge
     condition with a bunch of ANDs.
+  \item Make sure they understand why it's ineffective to have a
+    string of independent ifs, where each one sets \texttt{prediction}
+    (overriding whatever \texttt{prediction} was set to before).
   \end{itemize}
 
   Other than those gotchas, lab seems to go OK.
@@ -1082,6 +1175,12 @@ mark (but most were just finishing or very close).
   project that was due right at the time of the exam.  But perhaps
   that would be better.
 \end{reflect}
+\begin{reflect}{Brent, S'18}
+  This year I assigned the project (the ``civic'' version) on the
+  Monday before the exam (Friday), and had it due 1 week after the
+  exam.  Probably no one will start it before the exam but that's OK,
+  they can at least be thinking about it.
+\end{reflect}
 
 \newpage
 \section{Information encoding II}
@@ -1091,6 +1190,13 @@ mark (but most were just finishing or very close).
 \item Quiz: program with conditionals, ask them to identify five
   errors.
 \end{itemize}
+
+\begin{reflect}{Brent, S'18}
+  This time I actually gave them a new HW assignment writing some
+  programs with conditionals, and I gave them the identifying errors
+  thing as part of the HW.  I will give them a quiz on Monday where I
+  have them predict the output of a program with conditionals.
+\end{reflect}
 
 \subsection*{Representing integers}
 
@@ -1173,6 +1279,33 @@ notation.
 Show example of RGB colors expressed in hexadecimal: show
 \verb|style.css| from course website.
 
+\begin{reflect}{Gabe, F'17}
+I found the following web page to be useful:
+\begin{verbatim}
+https://www.w3schools.com/colors/colors_picker.asp
+\end{verbatim}
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Just barely made it to mentioning image representation, since my
+  students had so many good questions about encoding numbers and
+  text.  Finishing up images + hexadecimal will be pushed to the next
+  lecture.
+\end{reflect}
+
+\newpage
+\section{Information encoding III, execution tracing}
+
+\begin{reflect}{Brent, S'18}
+  I had an extra lecture here, to finish talking about image/video
+  representation (\& perhaps mention audio), and to cover hexadecimal,
+  and to add some explicit material on tracing program execution.
+\end{reflect}
+
+Go over tracing the execution of a sample program.  Variables on the
+left, output on the right, lower region for scratch work/evaluating
+expressions.
+
 \section*{LAB: This Day in History}
 
 This can be used as a comprehensive review of everything on Exam 1.
@@ -1185,15 +1318,18 @@ This can be used as a comprehensive review of everything on Exam 1.
   lab period.  So I couldn't have used the Day in History lab as exam
   review.
 \end{reflect}
+\begin{reflect}{Brent, S'18}
+  I added an extra day before the exam so we could do this lab.  It
+  requires reshuffling/compressing some things afterwards but I think
+  it's a good idea overall.  The lab itself seemed to go well, and was
+  a good review for the exam.  Gave students good experience with = vs
+  ==, if, boolean expressions (x == 3 or 5), etc.
+\end{reflect}
 
 \newpage
 \section{Exam 1 review}
 
 \subsection*{Setup}
-
-\begin{itemize}
-\item Mention Project 1 coming up!
-\end{itemize}
 
 \subsection*{Sample exam}
 
@@ -1222,9 +1358,9 @@ Have them do sample exam. Go over it.  Things to emphasize:
     do the pared-down doublets lab (with no functions).  Then
     introduce functions, and do the ``going on vacation lab'' (adding
     abstraction to the doublets lab).
-  \item Path 2: Alternatively, start by introducing functions, introduce basic
-    while loops, then do the ``Guess my number'' lab.  Then introduce
-    strings, and do the full doublets lab (with functions).
+  \item Path 2: Alternatively, start by introducing basic while loops
+    and functions, then do the ``Guess my number'' lab.  Then
+    introduce strings, and do the full doublets lab (with functions).
   \end{enumerate}
 
   In S'17 I did the second alternative.  Full disclosure, I only did
@@ -1237,6 +1373,21 @@ Have them do sample exam. Go over it.  Things to emphasize:
   practice with loops that way, and explicitly covering function
   abstraction in class, the full doublets lab went better than I
   remembered (though it was still hard of course).
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Because of pushing exam 1 back one day, I only have \emph{two}
+  lectures instead of three to prepare for Guess My Number lab.  What
+  I plan to do is introduce while loops first (1 lecture), and then a
+  basic intro to functions (1 lecture).  Functions are not actually
+  super necessary for the lab, so it's OK to cover more about
+  functions in another class after the lab.
+
+  In the past I have used functions while doing examples for while
+  loops (e.g. testing the Collatz conjecture), but that's not
+  critical---it's easy to do the examples without using loops.  It
+  might even give nice material to motivate the process of function
+  abstraction later.
 \end{reflect}
 
 \section{Functions I}
@@ -1474,6 +1625,17 @@ can just return \verb|x % y == 0| directly.
   before.
 \end{reflect}
 
+\begin{reflect}{Brent, S'18}
+  Once again didn't quite get to showing functions with multiple
+  parameters.  This is one of those lectures that doesn't seem
+  necessary, content-wise (I had already presented functions with
+  return values) but it is deceptively tricky for them to build a
+  correct mental model of what goes on.  I had them work in groups to
+  write code on paper several times during class, and wandered around
+  answering questions and clearing up confusion; it was clear that
+  quite a lot of learning was going on.
+\end{reflect}
+
 \newpage
 \section{While loops}
 
@@ -1537,6 +1699,12 @@ make another function to get valid int input from user in a loop.
 \end{reflect}
 
 \subsection*{Alternative 2: Collatz}
+
+\begin{reflect}{Brent, S'18}
+  Note I did not actually make it to this section in S'18 on the day I
+  introduced while loops.  I plan to do it as an example some other
+  time, maybe to practice function abstraction.
+\end{reflect}
 
 Collatz Conjecture.  Idea: write a program to test the conjecture.
 What functions will we need?  Bottom-up approach.  Write each function
@@ -1868,6 +2036,10 @@ def check_collatz_up_to(max):
   them practice writing while loops, and (2) going over the process of
   function abstraction in class, and encouraging them to first get a
   working doublets program and THEN abstract it out into functions.
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Used a similar approach as last time, and it seemed to go well.
 \end{reflect}
 
 \newpage
@@ -2349,6 +2521,15 @@ def triangle(n):
   students were not finished by the end of the lab period.
 \end{reflect}
 
+\begin{reflect}{Brent, S'18}
+  Only had time to introduce for loops at the very end of the lecture
+  right before the lab.  So spent some time at the beginning of the
+  lab doing more exercises writing for loops, with mixed success (I
+  think it went better in Mark's lab than in mine).  In the end most
+  students were making progress on the lab by the end; a few had
+  finished; a few were just getting encrypt/decrypt to work.
+\end{reflect}
+
 \section{For loop practice}
 
 \subsection*{Setup}
@@ -2360,14 +2541,14 @@ Find bit-partners. Different one for each exercise.
 Go over each and try it.
 
 \begin{verbatim}
-def oogie(m):
+def oogie(m: List[int]) -> int:
     p = m[0]
     for g in m:
         if g > p:
             p = g
     return p
 
-def yayaya(q):
+def yayaya(q: List[str]) -> bool:
     for y in range(len(q) - 1):
         if q[y] == q[y + 1]:
             return True
@@ -2379,7 +2560,7 @@ Then have them write \verb|is_sorted| function.
 Additional practice:
 
 \begin{verbatim}
-def pulu(r):
+def pulu(r: int) -> List[int]:
     b = []
     for k in range(r):
         b.append(k ** 3)
@@ -2391,6 +2572,13 @@ def pulu(r):
   in fact, we started by finishing \verb|find(c,s)| from last class
   (which they hadn't quite gotten to work yet).  I think it was
   a really useful exercise.
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Didn't make it through as many due to some technical hiccups, but
+  had them read oogie and yayaya, then had them write
+  \verb|is_sorted|.  Will need to spend a bit of time going over
+  \verb|is_sorted| next class.
 \end{reflect}
 
 \section{Exam 2 review}
@@ -2420,6 +2608,15 @@ Spend a lecture doing and going over a practice exam.
   71, median 73.5, max 100 ($\times 2$), min 21 (ouch).
 \end{reflect}
 
+\begin{reflect}{Brent, S'18}
+  Again the Wednesday 1.5 weeks before spring break; lab the same \&
+  following days again was used to start on project 2.
+
+  Average was much higher this time, 83.  I made it a bit easier by
+  not requiring them to *write* any for loops (though they still had
+  to read several).
+\end{reflect}
+
 \section{Exam wrap-up, demo project}
 
 \subsection*{Exam wrap-up}
@@ -2429,6 +2626,14 @@ Hand back exams; quickly go over exam solutions.
 \subsection*{Demo project}
 
 Introduce Project 2 (word games).
+
+\begin{reflect}{Brent, S'18}
+  Did this at the beginning of lab instead of using class time on it.
+  Handed back exams and then went straight into recursion; this means I
+  will have three lectures on recursion and then give them the Friday
+  right before spring break off (so I can work on a conference paper
+  submission which is due that day).
+\end{reflect}
 
 Livecode the beginning of an exemplary Doublets lab.  Things to focus
 on:
@@ -2578,7 +2783,6 @@ beginning with why \texttt{product([])} should be $1$ rather than $0$:
 \item Validates the identity \texttt{product(xs + ys) = product(xs) * product(ys)}.
 \end{itemize}
 
-
 Have them work in pairs to implement string \texttt{reverse}.
 
 \section*{LAB: Fractal Recursion}
@@ -2632,6 +2836,15 @@ Show how to make this dictionary.
 \item Alternatively, start with empty one and add them.
 \end{itemize}
 
+Dictionaries are like functions mapping keys to values.  Consequences:
+\begin{itemize}
+\item There can only be one value per unique key.  (If you want
+  multiple values, use a list.)
+\item But there can be multiple keys with the same value.
+\item You can only look up a value by key, not a key by value.
+\end{itemize}
+
+
 Other things we can do with a dictionary:
 \begin{itemize}
 \item Get list of all keys with \verb|keys()|
@@ -2678,6 +2891,11 @@ def normalize(d):
         d[k] /= float(total)
 \end{verbatim}
 
+\begin{reflect}{Brent, S'18}
+  Made it through writing \verb|frequency_count| (but not
+  \texttt{normalize}).
+\end{reflect}
+
 \newpage
 \section{Dictionaries practice}
 
@@ -2688,8 +2906,6 @@ def normalize(d):
   before spring break, but it doesn't serve much of a pedagogical
   purpose (other than being a fun example of the use of dictionaries).
 \end{reflect}
-
-XXX include S'17 frequency count code here.
 
 Naive Fibonacci function.  Understand why it is so slow.  Then
 use a dictionary to memoize.  Have them write memo code.
@@ -2766,7 +2982,7 @@ def hailstone_length(n):
 \end{itemize}
 
 Our programs have no state between each time they are called.
-Everything is stored in memory during the program, but afterwords,
+Everything is stored in memory during the program, but afterwards,
 it's all gone.  This is RAM.  We need hard drive storage to keep it
 around.  Save and read things in files.
 
@@ -3361,14 +3577,14 @@ complicated structures, within the context of Java.
 
 \section{Fun with Processing}
 
-\begin{reflection}{Brent, S'16, S'17}
+\begin{reflect}{Brent, S'16, S'17}
   In both S'16 and S'17 I ended with a class or two left over.  So I
   have been doing some live coding in Processing, both as an example
   of good code organization with Processing (which helps the students
   using Processing for their final project) and just for fun.  I code
   up a physically semi-realistic simulation of balls bouncing off each
   other and line segments.
-\end{reflection}
+\end{reflect}
 
 \newpage
 \section*{LAB: Coding bat}

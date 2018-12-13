@@ -2,15 +2,52 @@
 title: Labs
 ---
 
+<div style="text-align:center">
+<font size="+2">
+ [Please submit labs electronically using this form!](https://goo.gl/forms/03Oeic09jHYPnrz53)
+</font>
+</div>
+
+<font size="+1">
+
+\#    Name                                                                          Assigned     Due
+----- --------------------------------------------------                            ----------   ---
+1     [Minecraft Hour of Code](labs/lab1.html)                                      Aug 22/23    Aug 29/30
+2     [Kepler and Newton](labs/kepler-newton.html)                                  Aug 29/30    Sep 5/6
+3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6      Sep 12/13
+4     [This Day in History](labs/dow.html)                                          Sep 12/13    Sep 19/20
+5     [Guess My Number](labs/guess.html)                                            Sep 19/20    Sep 26/27
+6     [Mutation is the Word](labs/doublets.html)                                    Sep 26/27    Oct 3/4
+7     [Line Editor](labs/line-editor.html)                                          Oct 3/4      Oct 17/18
+8     [Caesar's Secrets](labs/caesar.html)                                          Oct 17/18    Oct 24/25
+9     [Sentiment Analysis](labs/sentiment.html)                                     Oct 24/25    Oct 31/Nov 1
+10    [Water Jugs](labs/waterjug.html)                                              Oct 31/Nov 1 Nov 7/8
+11    [Fractal Recursion](labs/fractal.html)                                        Nov 7/8      Nov 14/15
+12    [On Stuckness and debugging](labs/debugging.html)                             Nov 14/15    Nov 20*
+13    [Civic Data Hacking]                                                          Nov 28/29    Dec 3
+
+[Civic Data Hacking]: https://mybinder.org/v2/gh/mgoadric/CS1-civic-hacking/master?filepath=Lab%2013%20-%20Civic%20Hacking.ipynb
+
+</font>
+
+  <!-- P2    [Project 2](http://mgoadric.github.io/csci150/projects/project2.html) start   Mar 7/8 -->
+  <!-- 11    [Graphics and Animation](labs/processing.html)                                Apr 11/12 -->
+  <!-- 13    Final project workshop (optional)                                             Apr 25/26 -->
+
+\* <i>Technically this lab is due before you leave for Thanksgiving; but the
+intention is that you should be able to finish it during the 3-hour lab
+period on Nov 14/15.</i>
+
 Much of your experience with programming in this course will be
 through weekly labs, which will comprise 25% of your final grade. Each
-lab will be assigned Thursday morning in lab with time allotted to
-work through the materials, and will be due by **the following Tuesday
-at 10pm**. All labs are weighted equally within the lab portion of
-your final grade.
+lab will be assigned Wednesday/Thursday in lab with time allotted to
+work through the materials, and will be due by **the start of the
+following lab**. All labs are weighted equally within the lab portion
+of your final grade.
 
 Each student has **four late days** to spend throughout the semester
-as they wish.  Simply inform me any time *prior* to the due date for
+as they wish.  Simply inform **the grader**
+(<tt>DenneyJM@hendrix.edu</tt>) any time *prior* to the due date for
 an assignment that you wish to use a late day; you may then turn in
 the assignment up to 24 hours late.  Multiple late days may be used on
 the same assignment.  There are no partial late days; turning in an
@@ -37,9 +74,8 @@ Continue through the door at the far end of the hall (just visible in
 the picture above) into the first computer lab, and then enter the
 second lab at the back.
 
-You will be handing in your lab work via
-[Moodle](http://moodle.hendrix.edu). Instructions to do so will be
-included in each lab.
+You will be handing in your lab work electronically. Instructions on
+how to do so will be included in each lab.
 
 Labs should follow
 the
@@ -48,21 +84,3 @@ You may use
 the
 [automated style checker](http://mgoadric.github.io/csci150/python_style_guide.html) to
 help you catch common style errors.
-
-  Lab   Name                                                                          Assigned
-  ----- --------------------------------------------------                            ----------
-  1     [Minecraft Hour of Code](labs/lab1.html)                                      Jan 19
-  2     [Kepler and Newton](http://mgoadric.github.io/csci150/labs/lab2.html)         Jan 26
-  3     [Diagnosing Heart Disease](http://mgoadric.github.io/csci150/labs/lab3.html)  Feb 2
-  4     [Guess My Number](labs/guess.html)                                            Feb 16
-  5     [Mutation is the Word](labs/lab5.html)                                        Feb 23
-  7     [Caesar's Secrets](http://mgoadric.github.io/csci150/labs/lab7.html)          Mar 2
-  8     [Fractal Recursion](http://mgoadric.github.io/csci150/labs/lab8.html)         Mar 16
-  9     [Sentiment Analysis](http://mgoadric.github.io/csci150/labs/lab9.html)        Mar 30
-  10    [Die Hard III](http://mgoadric.github.io/csci150/labs/lab10.html)             Apr 5
-  11    [Graphics and Animation](labs/processing.html)                                Apr 13
-  12    [On Stuckness and debugging](labs/debugging.html)                             Apr 20
-
-<!--
-  13    Final project workshop (optional, **9am-11am**)                               Apr 26
--->

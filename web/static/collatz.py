@@ -1,38 +1,29 @@
-# Testing the Collatz Conjecture
+# Take a number
+#   if even, divide by 2
+#   if odd, multiply by 3 and add 1
+# Keep doing this until reaching 1.
 
-# Input: n (int)
-# Output: one hailstone step applied to n
-def hailstone(n):
-    if n % 2 == 0:    #  n % d  is "n mod d" -- remainder when
-                               #  n is divided by d.
+def hailstone(n: int) -> int:
+    if n % 2 == 0:
         return n // 2
     else:
-        return 3*n + 1
+        return 3 * n + 1
 
-# Input: n (int)
-# Output: number of hailstone iterations needed to reach 1.
-def collatz(n):
+def countHailstone(n: int) -> int:
     count = 0
     while n != 1:
-        count = count + 1
         n = hailstone(n)
+        count += 1    # count = count + 1
     return count
 
-# Input: max (int)
-# Output: none
-#
-# Test numbers from 1 up to max and print # of iterations
-#  required for each.
-def test_collatz(max):
-    n = 1
-    max_iterations = 0
-    max_n = 0
-    while True:
-        iters = collatz(n)
-        if max_iterations < iters:
-            max_iterations = iters
-            max_n = n
-            
-            print(str(max_n) + " required " + str(max_iterations) + " iterations.")
+def main(hi: int):
+    q = 1
+    record = 0
+    while q <= hi:
+        count = countHailstone(q)
+        if count >= record:
+            record = count
+            print(str(q) + " took " + str(count) + " steps.")
+        q += 1
 
-        n += 1
+main(10000)

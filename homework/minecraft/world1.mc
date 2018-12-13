@@ -1,0 +1,11 @@
+ggggLLgggggggggg
+ggggLLgggggggggg
+ggggLLgssRsggggg
+ggggLLssRsssgggg
+ggggLLRsssgggggg
+gUggLLgggggggGgg
+ggggLLssssRggggg
+ggggLLssRssggggg
+ggggLLgsssgggggg
+ggggLLgggggggggg
+ggggLLgggggggggg

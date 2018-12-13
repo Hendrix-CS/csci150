@@ -22,12 +22,11 @@ an <b>application of the scientific method</b>: one makes
 observations, collects data, comes up with hypotheses, designs
 experiments to test the hypotheses, and so on.  But, as we will see,
 as with any science, debugging is not <b>only</b> an application of
-the scientific method.  In addition to "classic"-style objective
-analysis, it also often requires "romantic"-style intuitive
-insights&mdash;which you can develop, over time, by conscious
-application.  This lab will give you some directed practice in finding
-and fixing programming errors, and help you reflect on the practice of
-debugging.
+the scientific method.  In addition to objective analysis, it also
+often requires intuitive insights which you can develop, over time, by
+conscious application.  This lab will give you some directed practice
+in finding and fixing programming errors, and help you reflect on the
+practice of debugging.
 
 <p>
 Incidentally, if you are wondering why errors in a computer program
@@ -50,7 +49,7 @@ about <i>actual</i> bugs being the source of errors in your programs...
 <h2>Materials</h2>
 
 <ul>
-  <li>Lab Partner(s)&mdash;for this lab you are <b>required</b> to
+  <li>Lab Partner(s): for this lab you are <b>required</b> to
   work in groups of <b>two or three</b>.</li>
   <li><a href="../static/sum-practice.py"><tt>sum-practice.py</tt></a></li>
   <li><a href="../static/guess.py"><tt>guess.py</tt></a></li>
@@ -96,15 +95,16 @@ x = random.random()
 First, try to run the program and look at the generated error(s). Fix
 the syntax errors in the file by looking at the line numbers in your
 program that Python specifies.  (Hint: the error message is not always
-exactly right about the cause of the error!)
+exactly right about the cause of the error! Try looking <i>above</i>
+the place where Python says there is an error.)
 
 <p>
 After you fix the syntax errors in the program, you will see a runtime
 error.  Carefully read the error message and look at the code.  Try to
 identify the problem in the code.  Remember that small details such as
-capitalization and punctuation matter a great deal in code.  If you
-can't identify the source of the runtime error, ask your instructor or
-TA for help.  Remember to add a comment explaining the problem and
+capitalization and punctuation matter a great deal.  If you can't
+identify the source of the runtime error, ask your instructor or TA
+for help.  Remember to add a comment explaining the problem and
 solution.
 
 <p>
@@ -138,7 +138,7 @@ as the first line of code inside the while loop.
 <p>
 Run your program again.  The statement you added now prints out some
 very useful information.  Printing out intermediate results inside of
-a loop can be a very useful strategy for finding semantic errors in your
+a loop can be a good strategy for finding semantic errors in your
 code.  You can add more <tt>print</tt> statements if you think other
 information would be useful.
 
@@ -285,7 +285,8 @@ the rules.
 You should be able to identify at least 3 semantic errors. You may
 have to add more than 3 lines of code to fix these errors; however,
 all the code changes required are minor.  (In other words, you will
-not have to make major changes like changing levels of code.)
+not have to make major changes like changing indentation levels of
+code.)
 
 <h3>Step 4: Reflection</h3>
 

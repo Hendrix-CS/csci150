@@ -22,8 +22,11 @@ ThinkPython/
 16S/
 .stack-work
 /web/homework
-/web/images
 /17S/
 lectures/S17/__pycache__/
+/18S/
+/homework/tracing-practice.tex
+/pyconsole.txt
+/18F/
 
-*.swp
+/homework/recursion.tex

@@ -14,8 +14,18 @@ also technique, documentation and evaluation of your solution. Further
 details on the grading standards and handin instructions for each
 project will be given when they are assigned.
 
-Project   Name                                                                                                                    Pct Assigned   Due
---------- ---------------------------------------------------                                                                     --- ---------- --------------------
-1         [Question-Answer](http://mgoadric.github.io/csci150/projects/project1_if.html)                                          5%  Feb 9      Feb 16
-2         [Word Games](http://mgoadric.github.io/csci150/projects/project2.html) [ [Sample project start](static/project2.py) ]   10% Mar 9      Mar 16
-3         [Final Project](labs/final.html)                                                                                        20% Apr 11     Friday, May 5, 2pm
+<div style="text-align:center">
+<font size="+2">
+ [Please submit projects electronically using this (same) form!](https://goo.gl/forms/03Oeic09jHYPnrz53)
+</font>
+</div>
+
+<font size="+1">
+
+Project      Name                                                                                                                 Pct Assigned   Due
+---------    ---------------------------------------------------                                                                  --- ---------- --------------------
+1            [Question-Answer](projects/civic-QA.html)                                                                            5%  Sep 10     Sep 24
+2            [Word Games](projects/word-game.html)                                                                                10% Oct 22     Nov 2
+3            [Final Project](projects/final.html)                                                                                 20% Nov 12     Dec 10
+
+</font>

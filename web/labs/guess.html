@@ -1,11 +1,11 @@
 <html>
 <head>
-  <title>CSCI 150 - Lab 4 - Guess My Number</title>
+  <title>CSCI 150 - Lab 5 - Guess My Number</title>
   <link rel="stylesheet" type="text/css" title="Default" href="/css/style.css">
 </head>
 
 <body>
-<h1><a href="../index.html">CSCI 150</a> Lab 4: Guess My Number</h1>
+<h1><a href="../index.html">CSCI 150</a> Lab 5: Guess My Number</h1>
 <hr>
 
 <h2>Overview</h2>
@@ -13,19 +13,13 @@
 In this lab, you will practice using <code>while</code> loops in
 Python by implementing the classic game "Guess My Number".
 
-<!--
-<h2>Description</h2>
-
-XXX
-
-<b>Read carefully!</b> XXX lab has lots of hints and instructions.
--->
+Be sure to <b>read carefully!</b> This lab writeup has lots of hints
+and instructions to help you along the way.
 
 <h2>Step 1</h2>
 
-For the first step, you will implement a basic version of the game
-"guess the number".  Here is what a sample run of the program might
-look like:
+For the first step, you will implement a basic version of the game.
+Here is what a sample run of the program might look like:
 
 <pre>
     Welcome to guess the number!
@@ -46,27 +40,27 @@ look like:
     You got it!  It took you 6 guesses.
 </pre>
 
-Start by creating a file called <code>guess_number.py</code> that
-looks something like this:
+Start by creating a file called <code>guess_number.py</code> and <b>paste
+the following code into it</b>:
 
 <pre>
-    ######################################
-    # Copyright (c) 2017 YOUR NAME(s) HERE
-    # CSCI 150, Spring 2017
-    # Lab 4: Guess My Number
-    ######################################
+######################################
+# Copyright (c) 2018 YOUR NAME(s) HERE
+# CSCI 150, Fall 2018
+# Lab 5: Guess My Number
+######################################
 
-    import random
+import random
 
-    def main():
-        # Write your code here
+def main():
+    # Write your code here
 
-    # Call main() as the last thing in the file
-    main()
+# Call main() as the last thing in the file
+main()
 </pre>
 
-Inside the <code>main()</code> function, you should implement the game
-as illustrated above.
+Update it with your name. <b>Inside the <code>main()</code> function</b>,
+you should implement the game as illustrated above.
 
 <ul>
   <li>Use <code>random.randint(1,100)</code> to pick a random number
@@ -103,49 +97,55 @@ If the user enters invalid input, the program will crash.  We have
 noted this problem before, but now that we know how to do repetition,
 we can actually do something about it!
 
+<p>
 You should write a new function called <code>input_guess()</code>.  Here is a
 template you can use as a starting point; copy it into your file
-(after <code>input random</code> and before <code>def main():</code>):
+(after <code>import random</code> and before <code>def main():</code>):
 
 <pre>
-    # input_guess prompts the user for their guess, and keeps prompting
-    # until it is valid.
-    #
-    # Input:  none
-    # Output: a valid guess (int)
-    def input_guess():
-        # Keep prompting the user for their guess until they enter
-        # something valid
+# input_guess prompts the user for their guess, and keeps prompting
+# until it is valid.
+#
+# Input:  none
+# Output: a valid guess (int)
+def input_guess() -> int:
+    # Keep prompting the user for their guess until they enter
+    # something valid
 
-        # FILL IN CODE HERE
+    # FILL IN CODE HERE
 
-        # We only do this conversion at the end, once we know
-        # guess_str looks like an int
-        guess = int(guess_str)
+    # We only do this conversion at the end, once we know
+    # guess_str looks like an int
+    guess: int = int(guess_str)
 
-        # Finally, return the user's guess
-        return guess
+    # Finally, return the user's guess
+    return guess
 </pre>
+Be sure that the comments and the <code>def</code> start all the way
+over in the leftmost column of your file (do <b>not</b> put it inside
+your <code>main()</code> function!).
 
+<p>
 If the user's input is stored as a string in the
 variable <code>guess_str</code>, you can check whether it is valid
 using <code>guess_str.isdigit()</code>, which is a True or False value
 telling you whether the string <code>guess_str</code> consists of all
 digits or not.
 
+<p>
 Finally, replace the part of your <code>main()</code> function that
 asks the user for their input with a call to your
 new <code>input_guess()</code> function.  That is, instead of
 something like
 
 <pre>
-    guess = int(input("Your guess? "))
+    guess: int = int(input("Your guess? "))
 </pre>
 
 you should now have
 
 <pre>
-    guess = input_guess()
+    guess: int = input_guess()
 </pre>
 
 Here's what the output of your program might look like once you
@@ -157,9 +157,9 @@ complete this step:
     I will tell you whether each guess is too low or too high.
     ...OK, I have picked a number.
     Your guess? fifty
-    That is not a number.  Try again.
+    fifty is not a number.  Try again.
     Your guess? iuerhuheg
-    That is not a number.  Try again.
+    iuerhuheg is not a number.  Try again.
     Your guess? 20
     20 is too low.
 </pre>
@@ -173,6 +173,7 @@ Since this game is so addictive, it's inconvenient to re-run it every
 time we want to play.  In this step, you will modify the game so that
 the user can keep playing multiple rounds until they decide to stop.
 
+<p>
 You should put another <code>while</code> loop around an appropriate
 part of your <code>main()</code> function so that it will repeat the
 entire game until the user wants to stop.  Here is what the output of

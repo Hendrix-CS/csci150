@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../css/style.css"> 
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h2 id="csci-150-hw-conditional-practice">CSCI 150 HW: conditional practice</h2>
+<p><em>Due: Monday, February 5</em></p>
+<ol style="list-style-type: decimal">
+<li>Find at least 5 errors in the following code:</li>
+</ol>
+<pre><code>fruit = print(&quot;What is your favorite fruit?)
+number = int(raw_input(&quot;Pick a number between 1 and 10&quot;)
+if fruit == &quot;banana&quot;:
+   print(&quot;Yes, we have no bananas.&quot;)
+elif fruit == &quot;apple&quot; and number &gt; 4 or &lt; 20
+   print(&quot;Soo many apppplles.&quot;)
+if fruit == &quot;pear&quot;:
+   elif number &gt; 6:
+   print(&quot;We need to pear that down a bit.&quot;)
+  else:
+      print(&quot;Pearfect!&quot;)
+else fruit == &quot;blackberry&quot;:
+   print(&quot;My favorite!&quot;)</code></pre>
+<p>For each of the following scenarios, write some Python code to generate the intended output.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Assume there is a variable <code>s</code> which contains a string. If the string comes before <code>f</code> in the dictionary, print <code>Fizz</code>. If the string is after <code>b</code> in the dictionary, print <code>Buzz</code>. If both the <code>f</code> and <code>b</code> conditions are true, print <code>FizzBuzz</code>. In all other cases, print the string <code>s</code> unchanged.</p></li>
+<li><p>We are having a party with amounts of tea and candy; assume there are variables named <code>tea</code> and <code>candy</code> which contain integers. Print the outcome of the party: either <code>bad</code>, <code>good</code>, or <code>great</code>. A party is good if both tea and candy are at least 5. However, if either tea or candy is at least double the amount of the other one, the party is not just good but great. In all cases, if either tea or candy is less than 5, the party is always bad.</p></li>
+</ol>
+<p>For example,</p>
+<ul>
+<li><code>tea == 3</code> and <code>candy == 7</code>: <code>bad</code></li>
+<li><code>tea == 6</code> and <code>candy == 5</code>: <code>good</code></li>
+<li><code>tea == 6</code> and <code>candy == 12</code>: <code>great</code></li>
+</ul>
+</body>
+</html>

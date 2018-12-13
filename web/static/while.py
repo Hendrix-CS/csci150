@@ -1,44 +1,45 @@
-# 15 Feb 2017
-# Repeeettttitttinonnnn!!!!
+# Repetition in Python: while loops!
 
-# Basic repetition in Python: "while loop".
-
-# Like an if: if = 0 or 1 times, while = 0 or more times.
-
+# syntax:
+#
 # while <condition>:
-#    <body>
+#   statement1
+#   statement2
+#   ...
 
-# Keeps executing <body> as long as <condition> is true.
+# Executes the statements in the body repeatedly until <condition> becomes false.
 
-n = 0
-while n < 10:
+# Example: print all the numbers from 1-10, each on a separate line.
+
+n: int = 1
+
+while n <= 10:
     print(n)
-    n = n + 1  # increment n   (or  n += 1)
+    n += 1   # abbreviation for n = n + 1
 
-# Common/key aspects of while loops:
-# 1. Create and initialize control variable
-# 2. Condition using control variable
-# 3. Update the control variable inside the loop (usually @ end)
+# Three usual components of a while loop:
+#
+# 1. Create a variable to control the loop & set an initial value.
+# 2. Write a condition involving the variable
+# 3. Update the variable (usually @ very end of the loop)
 
-# Example 2:
-# Print 'hi', then ask the user if they want to stop
-# Stop if they type 'yes', otherwise repeat
+# Challenge: write a program which asks the user if they want to quit.
+# If the user types 'quit', it quits, otherwise it asks them again.
 
-# Create control variable:
-user = 'no'
-while user != 'yes':   # Condition
-    print("Hi!")
-    user = input("Do you want to stop? ")  # Update control var
+# Method 1:
+#
+# answer: str = ''
+#
+# while answer != 'quit':
+#     answer = input("Do you want to quit? ")
+# print("OK, quitter!")
 
-# Approach #2: use sentinel (true/false) as control var
-done = False
+# Method 2:
+
+done: bool = False
+
 while not done:
-    print("Hi!")
-    user = input("Do you want to step? ")
-    # if user == 'yes':
-     #   done = True
-    # else:                    # Redundant
-    #   done = False
-
-    # Alternatively:
-    done = (user == 'yes')
+    answer: str = input("Do you want to quit? ")
+    if answer == 'quit':
+        done = True
+print("OK, quitter!")

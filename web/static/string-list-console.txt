@@ -1,0 +1,23 @@
+>>> type('hello')
+<class 'str'>
+>>> type(['h','e','l','l','o'])
+<class 'list'>
+>>> list('hello')
+['h', 'e', 'l', 'l', 'o']
+>>> 'banana'.split('n')
+['ba', 'a', 'a']
+>>> 'This is a sentence with a bunch of words'.split()
+['This', 'is', 'a', 'sentence', 'with', 'a', 'bunch', 'of', 'words']
+>>> 'This is a sentence with        a bunch of    words'.split()
+['This', 'is', 'a', 'sentence', 'with', 'a', 'bunch', 'of', 'words']
+>>> ' -> '.join(['fun', 'sun', 'sub', 'tub'])
+'fun -> sun -> sub -> tub'
+>>> ''.join(['fun', 'sun', 'sub', 'tub'])
+'funsunsubtub'
+>>> '\n'.join(['fun', 'sun', 'sub', 'tub'])
+'fun\nsun\nsub\ntub'
+>>> print('\n'.join(['fun', 'sun', 'sub', 'tub']))
+fun
+sun
+sub
+tub

@@ -1,0 +1,251 @@
+﻿<html>
+<head>
+  <title>CSCI 150 - Lab 8 - Caesar's Secrets</title>
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
+</head>
+
+<body>
+<h1><a href="../index.html">CSCI 150</a> - Lab 8<br>Caesar's Secrets</h1>
+
+<hr>
+
+<h2>Overview</h2>
+In this lab we will be using for loops and functions to encrypt and decrypt secret messages
+with a Caesar cipher.
+
+<h2>Materials</h2>
+<ul>
+<li><a href="../data/alice-chapter-one.txt">Chapter 1 of Alice's Adventures In Wonderland</a>
+</ul>
+
+<h2>Description</h2>
+
+<h3>Step 1</h3>
+<p>
+One of the first popular methods for encoding information is attributed to
+<a href="http://en.wikipedia.org/wiki/Julius_Caesar">Julius Caesar</a>.  His
+<a href="http://en.wikipedia.org/wiki/Caesar_cipher">Caesar Cipher</a> was used to
+encrypt messages to his generals in the field.  While not a very secure method these days,
+few people were literate and fewer would have known how to attempt any cryptanalysis
+of his seemingly meaningless messages.
+<p>
+To perform encryption with a Caesar cipher, you first choose a number between 1 and 25, known as
+the <i>rotation</i>.  Then for each letter in your plain-text message, replace it with the character that is
+found by adding the rotation to the position of the character.  For instance, for a rotation of 4,
+the letter F would be translated into J, since F is the 6th letter in the alphabet and J is the 10th.
+If the position of the character plus the rotation is larger than 26 (the last letter Z),
+treat the alphabet as a loop and wrap
+around to the front.  Decryption is performed in a similar manner, but instead the rotation is
+subtracted from the character to return us to the original plain-text message. This
+encryption process is illustrated below (thanks to Wikipedia); decryption follows the
+arrows in reverse.
+<p>
+<div align="center">
+<img src="../images/caesar3.png">
+</div>
+<p>
+Open a new python program called <code>caesar.py</code>. In this file,
+you will first write two functions for encryption and decryption of
+strings.
+<p>
+<code>encrypt(plain_text: str, rot: int) -> str</code> will take a
+string and an integer rotation between 0 and 25, (where 1 means A ->
+B, 2 means A -> C, etc) and return the rotated string.
+<p>
+<code>decrypt(cipher_text: str, rot: int) -> str</code> will also take
+a string and an integer rotation between 0 and 25 signifying the
+number of rotations backwards (where 1 means B -> A, 2 mean C -> A,
+etc), and return the reverse-rotated string.
+<p>
+You can test your functions using string="GREEN" and rot=13; your
+answer should be "TERRA".  Also, any string encrypted with rot should
+decrypt back with the same rot, such that
+<p>
+<pre>decrypt(encrypt("TESTING", i), i)
+</pre>
+<p>
+should return "TESTING" for all feasible values of i.
+
+<p>
+Note: any characters which are not letters (punctuation, spaces, etc.)
+    should be unchanged by <code>encrypt</code>
+    and <code>decrypt</code>.  For example, <code>encrypt("HELLO,
+    THERE!", 13)</code> should yield <code>"URYYB, GURER!"</code>.
+
+<p>
+<i>Hint</i>: make a string containing the letters of the
+alphabet, <code>"ABCDE...Z"</code>. (You can also access this string
+as <code>string.ascii_uppercase</code> if you add <code>import string</code>
+to your file.)  Now use the string <code>.index(letter)</code> method
+and Python's mod operator (<code>%</code>) to
+implement <code>encrypt</code>.  Alternatively, you can use the
+built-in <code>ord</code> and <code>chr</code> functions in place
+of <code>string.ascii_uppercase.index(...)</code>.
+
+<p>
+<i>Hint 2</i>: once you get <code>encrypt</code> working, there should
+be a very short (1 line) way to implement <code>decrypt</code>.
+
+<h3>Step 2</h3>
+When faced with an encrypted text, we will not know
+what rotation was used for the encryption.  But since there are only
+26 possible alignments (actually 25 since we know that our text is
+encrypted), we can iterate through them all in a reasonable amount of
+time.
+<p>
+Write a brute force function <code>brute_decrypt(s: str)</code> to
+print out all possible Caesar rotations for a given string.  Use this
+function to decrypt the following lines of poetry (note: all four
+lines are encrypted with the same rotation).
+<p>
+<pre>
+WZDV EULOOLJ DQG WKH VOLWKB WRYHV
+GLG JBUH DQG JLPEOH LQ WKH ZDEH
+DOO PLPVB ZHUH WKH ERURJRYHV
+DQG WKH PRPH UDWKV RXWJUDEH
+</pre>
+<p>
+Record the correct decryption and the rotation which was used in a Lab
+Evaluation.
+
+<h3>Step 3</h3>
+The above brute-force method requires there to be a human to examine each of the
+25 rotations and find the correct decryption.  If we wish to automatically decrypt
+any Caesar-encrypted string, we must learn a bit about the distribution of characters
+in the English language.
+<p>
+Our first tool for analysis will examine the <a href="http://en.wikipedia.org/wiki/Frequency_analysis">
+frequency</a> of each letter in a standard text.  While there are many different words and
+near infinite ways to combine them into sentences, there are regular patterns that we can observe
+across all words. The figure below (from Wikipedia) shows the relative frequency of each character, derived
+from counting the frequency of each character in a base text and then dividing by the total
+number of characters.
+<p>
+<div align="center">
+<img src="http://upload.wikimedia.org/wikipedia/commons/4/41/English-slf.png">
+</div>
+<p>
+This information has been used to simplify early Linotype machines, which ordered the
+characters to be typed by their frequency (leading to the sometimes cryptic inclusion of
+<a href="http://en.wikipedia.org/wiki/ETAOIN_SHRDLU">etaoin shrdlu</a> in newspaper articles).
+<p>
+Write a function in <code>caesar.py</code> called <code>frequency_count(s: str) -> List[float]</code>.
+This will return a list of relative frequencies for all letters A-Z found in the string.
+Create a test string where you know the frequency of each character and make sure your
+function returns the correct list of relative frequencies.
+<p>
+For example, <code>frequency_count("apple")</code> should return
+<p>
+<pre>
+[0.2, 0, 0, 0, 0.2, 0, 0, 0, 0, 0, 0, 0.2, 0, 0, 0, 0.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+</pre>
+<p>
+An intermediate step to write this function is to first find a way to return a list of the raw counts
+for each letter. Then add in code to calculate the relative frequency for each of these letters.
+
+<h3>Step 4</h3>
+As we are encoding and decrypting strings with a Caesar cipher, we can notice that the
+relative frequency for an encrypted message will tend to follow (if the
+string is long enough) the same pattern
+as the above standard, but it will be rotated as well to match the rotation of the encryption.
+<p>
+With 25 possible rotations, we can now examine the relative frequency count from each one
+and compare them to the base frequencies to find the best match.  For this, we need
+one last tool, the <a href="http://en.wikipedia.org/wiki/Chi-square_statistic">
+Chi-square statistic</a>, shown below.
+<p>
+<div align="center">
+<img src="http://upload.wikimedia.org/math/5/4/6/5468d5913b7b4c1cb7eb6034f658bfed.png">
+</div>
+<p>
+Given two frequency distributions (O for Observed, E for Expected),
+the Chi-square statistic will tell us how good of a fit there is
+between these two distributions.  Every observed frequency is compared
+to the expected frequency and squared, then divided by the expected
+frequency.  These are summed to return the Chi-square statistic.
+<p>
+For our purposes, we do not need to compare this statistic to a table
+to see the probability of the match, we only need to find the rotation
+that produces the minimum Chi-square statistic (note that a perfect
+match will result in a statistic of 0, and any differences will result
+in a positive increase).
+<p>
+Write a function <code>chi_square(observed_freq: List[float], expected_freq: List[float]) -> float</code>
+in your
+<code>caesar.py</code> to return the Chi-square statistic given the
+two frequency distributions.  This function should work as long as the
+two frequency distributions are the same length, and also not be
+dependent on our specific use where the frequencies will be of length
+26.  For example,
+<p>
+<pre>
+chi_square([0.3, 0.1, 0.6], [0.1, 0.2, 0.7])
+</pre>
+<p>
+should return <code>0.4642857142857142</code>.
+
+<h3>Step 5</h3>
+Using your functions from the previous steps, write a new function
+<code>auto_decrypt(s: str, base_text: str)</code> which takes an encrypted
+string and the file name of a base reference text.  Your function will
+calculate the character frequencies for the encrypted string and the
+reference text, then iteratively calculate the Chi-square statistic
+for each possible reverse rotation.  Your function should print out
+<ul>
+<li>the most likely rotation (minimum Chi-square statistic),
+<li>the decrypted
+message, and
+<li>the chi-squared statistic for that rotation.
+</ul>
+<p>
+Note: to read in the contents of a file as a string, you can write
+something like the following:
+<p><pre>
+f = open(file_name)
+file_contents = f.read()
+f.close()   # polite but not really necessary
+</pre></p>
+If <code>file_name</code> is a <code>string</code> containing the name
+of a file (for example, <code>"alice-chapter-one.txt"</code>), then
+after running the above code, <code>file_contents</code> will be a
+string containing the entire contents of the file.
+<p>
+Use <a href="../data/alice-chapter-one.txt">Chapter 1 of Alice's Adventures In Wonderland</a> as
+the base text to decrypt the three messages below.
+<p>
+<pre>
+V SBE BAR JRYPBZR BHE ARJ VAFRPG BIREYBEQF XRAG OEBPXZNA
+
+P DVBSK YHAOLY IL MPYZA PU H ZTHSS CPSSHNL PU NHBS AOHU ZLJVUK PU JVTTHUK PU YVTL QBSPBZ JHLZHY
+
+NDIXZ DI OCZ GJIB MPI ZQZMT KGVIZOVMT XDQDGDUVODJI RDGG WZ ZIYVIBZMZY WT DHKVXON AMJH NKVXZ
+ZQZMT NPMQDQDIB XDQDGDUVODJI DN JWGDBZY OJ WZXJHZ NKVXZAVMDIB IJO WZXVPNZ JA ZSKGJMVOJMT JM
+MJHVIODX UZVG WPO AJM OCZ HJNO KMVXODXVG MZVNJI DHVBDIVWGZ NOVTDIB VGDQZ DA JPM GJIB-OZMH
+NPMQDQVG DN VO NOVFZ RZ CVQZ V WVNDX MZNKJINDWDGDOT OJ JPM NKZXDZN OJ QZIOPMZ OJ JOCZM RJMGYN
+XVMG NVBVI
+</pre>
+<p>
+Report your results in <code>Lab Evaluation</code>.
+
+<h2>What to Hand In</h2>
+
+Hand in your lab through the usual submission form. Make sure you have
+followed the <a href="../python_style_guide.html">Python Style
+Guide</a>, and have run your project through the Automated Style
+Checker.<p>  You must hand in:
+<ul>
+ 	<li><code>caesar.py</code>
+	<li>Lab Evaluation
+</ul>
+<h2>Grading</h2>
+<ul>
+<li>To earn a D on this lab, complete Step 1 and 2.
+<li>To earn a C on this lab, do the above and complete Step 3.
+<li>To earn a B on this lab, do the above and complete Step 4.
+<li>To earn a A on this lab, do the above and complete Steps 5.
+<li>To earn a 100 on this lab, do the above and complete the lab evaluation.
+</ul>
+<hr>
+<small>&copy; Mark Goadrich, Hendrix College</small>
+
+</body>

@@ -1,5 +1,3 @@
 #!/bin/zsh
-./build
-stack exec hakyll rebuild
-rsync -r _site/* yorgey@ozark.hendrix.edu:ozark/150/
+./build && stack exec hakyll rebuild && rsync -r _site/* yorgey@ozark.hendrix.edu:ozark/150/
 

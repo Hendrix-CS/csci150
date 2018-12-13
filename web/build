@@ -1,4 +1,3 @@
 #!/bin/zsh
-stack build
-cd ../docs && pdflatex syllabus.tex && cd ../web &&\
-cp ../docs/syllabus.pdf docs/
+stack build && cd ../docs && pdflatex syllabus.tex && cd ../web &&\
+  cp ../docs/syllabus.pdf docs/

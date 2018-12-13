@@ -1,0 +1,120 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\date{}
+
+\begin{document}
+
+\subsection{CSCI 150 HW: conditional
+practice}\label{csci-150-hw-conditional-practice}
+
+\emph{Due: Monday, September 10}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Find at least 5 errors in the following code. For each error, explain
+  what is wrong and how you would fix it.
+
+\begin{verbatim}
+fruit = print("What is your favorite fruit?)
+number = int(input("Pick a number between 1 and 10")
+if fruit == "banana":
+   print("Yes, we have no bananas.")
+elif fruit == "apple" and number > 4 or < 20
+   print("Soo many apppplles.")
+if fruit == "pear":
+   elif number > 6:
+   print("We need to pear that down a bit.")
+   else:
+      print("Pearfect!")
+else fruit == "blackberry":
+   print("My favorite!")
+\end{verbatim}
+\end{enumerate}
+
+For each of the following scenarios, write some Python code to generate
+the intended output.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Assume there is a variable \texttt{s} which contains a string. If the
+  string comes before \texttt{f} in the dictionary, print \texttt{Fizz}.
+  If the string is after \texttt{b} in the dictionary, print
+  \texttt{Buzz}. If both the \texttt{f} and \texttt{b} conditions are
+  true, print \texttt{FizzBuzz}. In all other cases, print the string
+  \texttt{s} unchanged.
+\item
+  We are having a party with amounts of tea and candy; assume there are
+  variables named \texttt{tea} and \texttt{candy} which contain
+  integers. Print the outcome of the party: either \texttt{bad},
+  \texttt{good}, or \texttt{great}. A party is good if both tea and
+  candy are at least 5. However, if either tea or candy is at least
+  double the amount of the other one, the party is not just good but
+  great. In all cases, if either tea or candy is less than 5, the party
+  is always bad.
+
+  For example,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If \texttt{tea\ ==\ 3} and \texttt{candy\ ==\ 7}, you should print
+    \texttt{bad}
+  \item
+    If \texttt{tea\ ==\ 6} and \texttt{candy\ ==\ 5}, you should print
+    \texttt{good}
+  \item
+    If \texttt{tea\ ==\ 6} and \texttt{candy\ ==\ 12}, you should print
+    \texttt{great}
+  \end{itemize}
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,9 @@
+Important things to say at some point
+
+- Academic integrity
+- I'm going to tell you big ideas.  I can't guarantee I will cover all
+  details in class.  You are responsible for reading the book, playing
+  around, asking if you are confused or missing something.
+- Reading over your notes DOES NOTHING.  Best way to study is to
+  practice writing code.  Rewrite code from class, play around, write
+  something and predict outcome, etc.
