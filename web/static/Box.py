@@ -16,4 +16,11 @@ print("The volume of your box (in cubic units) is " + str(volume) + ".")
 
 diagonal = (length**2 + width**2 + height**2)**(1/2)
 
-print("The body diagonal of your box is " + str(diagonal) + ".")
+print("The body diagonal of your box is " + str(diagonal) + ".")at = float(width_str)
+height: float = float(height_str)
+depth:  float = float(depth_str)
+
+volume: float = width * height * depth
+
+print()
+print("The volume of your box is " + str(volume) + " cubic inches.")
