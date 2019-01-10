@@ -2,7 +2,9 @@
 title: Syllabus
 ---
 
-[PDF syllabus](docs/syllabus.pdf)
+<div class="boxed">
+  [PDF syllabus](docs/syllabus.pdf)
+</div>
 
 ### Software
 
@@ -84,3 +86,17 @@ thinking and learning without the distraction of a computer.
 
 Exceptions may be made on a case-by-case basis if you can prove to me
 that you really do benefit from using your laptop to take notes.
+
+### Late Days
+
+Each student has **four late days** to spend throughout the semester
+as they wish.  Simply inform XXX (fill out form???) any time *prior*
+to the due date for an assignment that you wish to use a late day; you
+may then turn in the assignment up to 24 hours late.  Multiple late
+days may be used on the same assignment.  There are no partial late
+days; turning in an assignment 2 hours late or 20 hours late will both
+use 1 late day.  Note that late days are intended to cover both normal
+circumstances (you simply want more time to work on the assignment)
+and exceptional circumstances (you get sick, travel for a game or
+family obligation, *etc.*).  Aside from late days, late assignments
+will not be accepted.

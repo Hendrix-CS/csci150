@@ -14,18 +14,14 @@ also technique, documentation and evaluation of your solution. Further
 details on the grading standards and handin instructions for each
 project will be given when they are assigned.
 
-<div style="text-align:center">
-<font size="+2">
- [Please submit projects electronically using this (same) form!](https://goo.gl/forms/03Oeic09jHYPnrz53)
-</font>
-</div>
-
 <font size="+1">
 
 Project      Name                                                                                                                 Pct Assigned   Due
 ---------    ---------------------------------------------------                                                                  --- ---------- --------------------
-1            [Question-Answer](projects/civic-QA.html)                                                                            5%  Sep 10     Sep 24
-2            [Word Games](projects/word-game.html)                                                                                10% Oct 22     Nov 2
-3            [Final Project](projects/final.html)                                                                                 20% Nov 12     Dec 10
+0            TBD                                                                                                                  TBA TBA        TBA
+
+<!-- 1            [Question-Answer](projects/civic-QA.html)                                                                            5%  Sep 10     Sep 24 -->
+<!-- 2            [Word Games](projects/word-game.html)                                                                                10% Oct 22     Nov 2 -->
+<!-- 3            [Final Project](projects/final.html)                                                                                 20% Nov 12     Dec 10 -->
 
 </font>

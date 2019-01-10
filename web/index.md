@@ -35,7 +35,5 @@ TA hours (Bailey lab): TBA
 Past semesters: [F16](f16/), [S17](s17/), [S18](s18/), [F18](f18/)
 
 <div class="boxed">
-<font size="+2">
  [Submission form](XXX)
-</font>
 </div>

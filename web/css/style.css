@@ -8,10 +8,15 @@ body {
 
 .boxed {
     text-align: center;
+    font-size: 150%;
     border: 1px solid black;
 }
 
 pre span { font-weight:bold; color:blue;}
+
+td {
+    padding: 5px;
+}
 
 #header {
 }
