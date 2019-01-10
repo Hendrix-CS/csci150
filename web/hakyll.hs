@@ -22,7 +22,7 @@ main = do
 
   where
     staticContent = ["images/*", "docs/*", "static/*", "data/*", "homework/*"]
-    sections = ["overview", "syllabus", "quizhw", "labs", "projects", "exams", "grading"]
+    sections = ["inclass", "quizhw", "labs", "projects", "exams", "syllabus"]
 
 labCompiler :: Compiler (Item String)
 labCompiler =

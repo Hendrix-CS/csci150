@@ -4,71 +4,83 @@ title: Syllabus
 
 [PDF syllabus](docs/syllabus.pdf)
 
-We will be covering most of the material in the textbook, approximately
-one new chapter each week. You should view your textbook as another
-perspective on the material presented in class and covered in the labs.
-We will also be using additional supplemental material such as relevant
-web pages and background material for the lab assignments. Readings will
-be assigned before material will be covered in class. You are expected
-to review the material and come to class prepared.
+### Software
 
-* Wed, Aug 30: [box.py](static/box.py) (8am) | [volume_of_box.py](static/volume_of_box.pty) (11am)
-* Wed, Sep 4: [bool-console.txt](static/bool-console.txt), [cond.py](static/cond.py) (8am)
-* Mon, Sep 17: [while.py](static/while.py) (8am)
-* Wed, Sep 19 - Fri, Sep 21: [functions.py](static/functions.py) (8am)
-* Mon, Oct 1: [lists.py](static/lists.py), [lists-console.txt](static/lists-console.txt) (8am)
-* Wed, Oct 3: [lists,py](static/lists.py), [string-list-console.txt](static/string-list-console.txt) (8am)
-* Fri, Oct 5: [lists.py](static/lists.py) (8am)
-* Mon, Oct 8: [Exam practice review code](static/Exam2.py)
-* Mon, Oct 15 - Wed, Oct 17: [for.py](static/for.py) (8am)
-* Fri, Oct 19: [reference.py](static/reference.py) (8am)
-* Mon, Oct 22 - Wed, Oct 24: [dictionaries.py](static/dictionaries-F18.py), [dictionaries-repl.txt](static/dictionaries-repl-F18.txt)
-* Fri, Oct 26: [heap-tracing.py](static/heap-tracing.py)
-* Mon, Oct 29: [cake.py](static/cake.py)
-* Wed, Oct 31 - Fri, Nov 2: [traffic.py](static/traffic.py)
-* Mon, Nov 5 - Wed, Nov 7: [recursion.py](static/recursion.py)
-* Fri, Nov 9: [rtree.py](static/rtree.py)
-* Mon, Nov 12 - Wed, Nov 14: [Passenger.py](static/Passenger.py), [Elevator.py](static/Elevator.py), [Building.py](static/Building.py), [Test.py](static/Test.py)
+<div style="text-align:center">
+<img src="images/pythonlogo.png" height="100">
+[Python 3](http://python.org/)
+</img>
 
-<!-- * Wed, Jan 17: Introduction -->
-<!-- * Fri, Jan 19: Algorithms, Collatz conjecture (**Chapter 1**) -->
-<!-- * Mon, Jan 22: Intro to Python [ [intro.txt](static/intro.txt) ] (**Chapter 2**) -->
-<!-- * Weds, Jan 24: Volume of a box [ [VariablesIO.py](static/VariablesIO.py) [Box.py](static/Box.py) ] (**Chapter 3**) -->
-<!-- * Fri, Jan 26: Logic puzzles -->
-<!-- * Mon, Jan 29: Booleans and conditionals [ [Conditionals.py](static/Conditionals.py) ] (**Chapter 4**) -->
-<!-- * Wed, Jan 31: Binary -->
-<!-- * Fri, Feb 2: Information encoding -->
-<!-- * Mon, Feb 5: Information encoding II -->
-<!-- * Wed, Feb 7: Exam I review -->
-<!-- * Fri, Feb 9: Exam I (**Chapters 1-4**) -->
-<!-- * Mon, Feb 12: Repetition I (while loops) [ [while.py](static/while.py) ] (**Chapter 7**) -->
-<!-- * Wed, Feb 14: Functions I [ [functions.py](static/functions.py) ] (**Chapters 5 and 6**) -->
-<!-- * Fri, Feb 16: Functions II [ [functions.py](static/functions.py) ] -->
-<!-- * Wed, Feb 21: While practice, functions III [ [collatz.py](static/collatz.py) ] -->
-<!-- * Thu, Feb 22: [**String demo**](static/string-demo.txt) -->
-<!-- * Fri, Feb 23: More while & function practice, tracing with functions [ [box-functions.py](static/box-functions.py), [tracing-example.py](static/tracing-example.py) ] -->
-<!-- * Mon, Feb 26: Lists [ [lists.py](static/lists.py) ] -->
-<!-- * Wed, Feb 28: Lists, reference, and for loops [ [lists.py](static/lists.py) ] -->
-<!-- * Fri, Mar 2: Practice reading & writing for loops -->
-<!-- * Mon, Mar 5: Exam 2 review [ [exam2-practice.py](static/exam2-practice.py) ] -->
-<!-- * Wed, Mar 7: Exam 2 -->
-<!-- * Fri, Mar 9: Recursion [ [factorial.py](static/factorial.py) ] -->
-<!-- * Mon, Mar 12: Recursion II [ [recursion.py](static/recursion.py) ] -->
-<!-- * Wed, Mar 14: Recursion III [ [recursion.py](static/recursion.py) ] -->
-<!-- * Fri, Mar 16: no class -->
-<!-- * **Spring break** -->
-<!-- * Mon, Mar 26: Dictionaries [ [dictdemo.py](static/dictdemo.py) ] (**Chapter 12**) -->
-<!-- * Wed, Mar 28: Dictionaries II, File I/O [ [dictdemo.py](static/dictdemo.py) ] -->
-<!-- * Fri, Mar 30: Execution tracing with stack \& heap [ [dicttrace.py](static/dicttrace.py) ] -->
-<!-- * Mon, Apr 2: Intro to classes and objects [ [Cake.py](static/Cake.py) ] -->
-<!-- * Wed, Apr 4: More classes and objects [ [TrafficLights.py](static/TrafficLights.py) ] -->
-<!-- * Fri, Apr 6: no class -->
-<!-- * Mon, Apr 9: More classes and objects [ [Cake.py](static/Cake.py), [TrafficLights.py](static/TrafficLights.py) ] -->
-<!-- * Wed, Apr 11: Extended example: Blackjack [ [Card.py](static/Card.py) ] -->
-<!-- * Fri, Apr 13: Blackjack [ [Deck.py](static/Deck.py) ] -->
-<!-- * Mon, Apr 16: Blackjack [ [Player.py](static/Player.py) ] -->
-<!-- * Wed, Apr 18: Blackjack [ [Blackjack.py](static/Blackjack.py) ] -->
-<!-- * Fri, Apr 20: Exam 3 review -->
-<!-- * Mon, Apr 23: Exam 3 -->
-<!-- * Wed, Apr 25: Queues [ [ListQueue.py](static/ListQueue.py), [QueueTest.py](static/QueueTest.py), [QueueSpeedTest.py](static/QueueSpeedTest.py) ] -->
-<!-- * Fri, Apr 27: Queues II [ [Link.py](static/Link.py), [LinkedQueue.py](static/LinkedQueue.py) ] -->
+<img src="images/pycharmlogo.png" height="100">
+[Pycharm](https://www.jetbrains.com/pycharm/)
+</img>
+</div>
+
+### Learning Goals
+
+Introduction to solving computational problems, including the
+fundamentals of computer programming. Topics include imperative
+programming constructs (variables, loops, conditionals, functions,
+recursion), basic object-oriented constructs (classes, objects), and
+some fundamental algorithms and data structures (dictionaries, arrays,
+linked lists). Student learn these concepts through studying the
+Python programming language.
+
+At the end of the course, you will be able to:
+
+-   Read, understand and execute a computer program written in Python.
+-   Read a set of requirements for a computer program in English, and
+    write a short Python program (100 lines or less) that corresponds to
+    them.
+-   Test a Python program and identify and fix programming errors.
+-   Identify some errors in a Python program without testing it.
+-   Without using a computer, write a very short Python code fragment
+    (10 lines or less) that correctly implements a set of requirements.
+-   Understand and apply variables, loops, strings, lists, conditionals,
+    and functions.
+-   Write programs to perform mathematical calculations.
+-   Understand the concepts of class and object, and distinguish between
+    them.
+-   Write a Python program including objects of multiple interacting
+    student-designed classes.
+-   Write and understand appropriate comments in a Python program.
+-   Understand the concept of an algorithm and compare the efficiency of
+    different algorithms for a simple task.
+
+### Disabilities
+
+It is the policy of Hendrix College to accommodate students with
+disabilities, pursuant to federal and state law. Students should contact
+Julie Brown in the Office of Academic Success (505.2954;
+`brownj@hendrix.edu`) to begin the accommodation process. Any student
+seeking accommodation in relation to a recognized disability should
+inform the instructor at the beginning of the course.
+
+### Academic Integrity
+
+All Hendrix students must abide by the College’s [Academic Integrity
+Policy](https://www.hendrix.edu/studentlife/handbook.aspx?id=67121) as
+well as [the College’s Computer
+Policy](https://www.hendrix.edu/studentlife/handbook.aspx?id=42308),
+both of which are outlined in the Student Handbook.
+
+For specific ways the Academic Integrity policy applies in this course,
+please refer to the [Computer Science Academic Integrity
+Policy](http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html).
+
+The short version is that academic integrity violations such as copying
+code from another student or the Internet are **easy to detect** and will
+be **taken very seriously**.
+
+If you have any questions about how the Academic Integrity policy
+applies in a particular situation, please contact me.
+
+### Laptops
+
+Please **do not bring laptops to lecture**.  This may seem strange in
+a computer science class.  But lab is the place where you will get
+plenty of experience working on the computer; lecture is a time for
+thinking and learning without the distraction of a computer.
+
+Exceptions may be made on a case-by-case basis if you can prove to me
+that you really do benefit from using your laptop to take notes.

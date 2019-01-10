@@ -2,17 +2,6 @@
 title: Overview
 ---
 
-### Textbook
-
-[Think Python](http://greenteapress.com/thinkpython2/thinkpython2.pdf)\
-   by [Allen Downey](http://allendowney.com/)\
-   Needham, MA: Green Tea Press, 2015.
-
-Your textbook is available [as a free
-PDF](http://greenteapress.com/thinkpython2/thinkpython2.pdf).  If you
-wish to purchase a paper copy, you can [buy it on
-Amazon](http://amzn.to/1WmXPCx).
-
 ### Software
 
 <div style="text-align:center">
@@ -32,10 +21,10 @@ fundamentals of computer programming. Topics include imperative
 programming constructs (variables, loops, conditionals, functions,
 recursion), basic object-oriented constructs (classes, objects), and
 some fundamental algorithms and data structures (dictionaries, arrays,
-linked lists, basic sorting). Student learn these concepts through
-studying the Python programming language.
+linked lists). Student learn these concepts through studying the
+Python programming language.
 
-At the end of the course, you will be expected to be able to:
+At the end of the course, you will be able to:
 
 -   Read, understand and execute a computer program written in Python.
 -   Read a set of requirements for a computer program in English, and
@@ -48,12 +37,10 @@ At the end of the course, you will be expected to be able to:
 -   Understand and apply variables, loops, strings, lists, conditionals,
     and functions.
 -   Write programs to perform mathematical calculations.
--   Understand the concept of a module.
--   Write a Python program that is separated into at least two modules.
 -   Understand the concepts of class and object, and distinguish between
     them.
--   Write a Python program including objects of at least one
-    student-designed class.
+-   Write a Python program including objects of multiple interacting
+    student-designed classes.
 -   Write and understand appropriate comments in a Python program.
 -   Understand the concept of an algorithm and compare the efficiency of
     different algorithms for a simple task.

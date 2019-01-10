@@ -1,17 +1,16 @@
 ---
-title: "CSCI 150: Foundations of Computer Science (Fall 2018)"
+title: "CSCI 150: Foundations of Computer Science (Spring 2019)"
 ---
-CSCI 150: Foundations of Computer Science (F'18)
+CSCI 150: Foundations of Computer Science (S'19)
 =======================================
 
-Lecture 1 (Yorgey): MWF 8:10-9, MC Reynolds 110  
-Lecture 2 (Seme): MWF 11:10-12, MC Reynolds 315  
+Lecture (Yorgey): MWF 11:10-12, MC Reynolds 110  
 Lab 1 (Ferrer): W 1:10-4pm, Snoddy Computer Lab  
-Lab 2 (Yorgey): Th 1:10-4pm, Snoddy Computer Lab  
+Lab 2 (Karaman): Th 1:10-4pm, Snoddy Computer Lab  
 
 Instructors:
 
-[Brent Yorgey](http://ozark.hendrix.edu/~yorgey/) (Lead instructor)
+[Brent Yorgey](http://ozark.hendrix.edu/~yorgey/)
 
 * Email: `yorgey@hendrix.edu`
 * Office: MC Reynolds 310
@@ -19,26 +18,24 @@ Instructors:
   [By appointment on youcanbook.me](http://byorgey.youcanbook.me/),
   or whenever my door is open
 
-[Lars Seme](https://www.hendrix.edu/mathcs/profile.aspx?id=70795)
-
-* Email: `seme@hendrix.edu`
-* Office: MC Reynolds 320
-* Office hours: MTRF 1:30-3:00pm, W 1:00-2:00pm, and by appointment
-
 [Gabe Ferrer](http://ozark.hendrix.edu/~ferrer/)
 
 * Email: `ferrer@hendrix.edu`
 * Office: MC Reynolds 312
 * Office hours: [By appointment on youcanbook.me](http://drferrer.youcanbook.me/)
 
-TA hours (Bailey lab):
+Bayazıt Karaman
 
-* Tuesday 6-10pm (Kate)
-* Weds 7-9pm (Lauren)
-* Thurs 7-9pm (Fish)
+* Email: `karaman@hendrix.edu`
+* Office: MC Reynolds 313
+* Office hours: TBA
 
-There are also CSCI TAs in the lab Sunday 8-10 and Monday 7-10;
-although not officially TAs for 150 they are willing and able to help
-if there are not too many 151 students needing their help.
+TA hours (Bailey lab): TBA
 
-Past semesters: [F16](f16/), [S17](s17/), [S18](s18/)
+Past semesters: [F16](f16/), [S17](s17/), [S18](s18/), [F18](f18/)
+
+<div class="boxed">
+<font size="+2">
+ [Submission form](XXX)
+</font>
+</div>

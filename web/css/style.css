@@ -6,6 +6,11 @@ body {
     font-size: 14px;
 }
 
+.boxed {
+    text-align: center;
+    border: 1px solid black;
+}
+
 pre span { font-weight:bold; color:blue;}
 
 #header {
