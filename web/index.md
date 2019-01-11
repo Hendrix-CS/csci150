@@ -24,11 +24,13 @@ Instructors:
 * Office: MC Reynolds 312
 * Office hours: [By appointment on youcanbook.me](http://drferrer.youcanbook.me/)
 
-Bayazıt Karaman
+[Bayazıt Karaman](http://bayazitkaraman.com/)
 
 * Email: `karaman@hendrix.edu`
 * Office: MC Reynolds 313
-* Office hours: TBA
+* Office hours: By appointment.  To make an appointment with me,
+  please send an email.  Also, please feel free to stop by whenever my
+  door is open.
 
 TA hours (Bailey lab): TBA
 
