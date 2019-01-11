@@ -1,9 +1,11 @@
-% -*- compile-command: "pdflatex class-notes-F18.tex" -*-
+% -*- compile-command: "pdflatex class-notes-S19.tex" -*-
 
 \documentclass{article}
 
 \usepackage{hyperref, amsmath, xspace}
 \usepackage[normalem]{ulem}
+\usepackage{bbding}
+\usepackage[dvipsnames]{xcolor}
 
 \newsavebox{\reflectbox}
 
@@ -22,14 +24,22 @@
   \fbox{\usebox{\reflectbox}}
 }
 
+\newcommand{\notready}{\textcolor{red}{\XSolidBold}\xspace}
+\newcommand{\ready}{\textcolor{Green}{\Checkmark}\xspace}
+
 \begin{document}
 
-\title{CSCI 150: Foundations of Computer Science \\ Fall 2018 Lecture
+\title{CSCI 150: Foundations of Computer Science \\ Spring 2019 Lecture
   Notes}
 
 \maketitle
 
-\section{Introduction (W 8/22)}
+\section{\notready Introduction (W 1/16)}
+
+\begin{reflect}
+  Want to look at that article on how to start first class, maybe
+  revise a bit.  Also decide/tell them about required meeting with me?
+\end{reflect}
 
 \subsection*{Setup}
 
@@ -80,6 +90,16 @@ tools.
 
 \subsection*{Administrivia}
 
+XXX maybe have them talk to each other about clubs/sports/activities
+they are in.  How do you improve at that?  How do you think you
+improve at programming?
+
+\textbf{How to do well in this class}.  Try things.  Ask questions.
+Get help if you need it.  Write a little bit of code every day.  Key:
+\textbf{active} engagement!  This class is about teaching you a new
+way of thinking/problem solving, not about teaching you a set of
+facts.
+
 Syllabus review online:
 \begin{itemize}
 \item Free online textbook
@@ -87,6 +107,8 @@ Syllabus review online:
 \item Academic integrity
 \item Office hours
 \item Grade breakdown, labs (location), late days
+\item \textbf{Tell them about TA hours in the lab?} (Or schedule when
+  I'm going to!)  The TAs are there to help!  Make use of them!
 \end{itemize}
 
 For next time:
@@ -96,16 +118,15 @@ For next time:
 \end{itemize}
 
 \newpage
-\section*{LAB: Minecraft Hour of Code (Th 9/23)}
+\section*{\ready LAB: Minecraft Hour of Code (1/16, 1/17 )}
 
 \newpage
-\section{Algorithms and language (F 8/24)}
+\section{\ready Algorithms and language (F 1/18)}
 
 \subsection*{Setup/administrivia}
 
 \begin{itemize}
-\item Read chapter 1 of textbook for Monday.
-\item Homework due Monday (Minecraft programming by hand).
+\item \ready Homework due Monday (Minecraft programming by hand).
   Designed to help you start developing important skills, building and
   executing mental models of what is going on in the computer, to
   predict what code will do without running it.
@@ -114,9 +135,9 @@ For next time:
 \subsection*{Aspects of algorithms; Minecraft debugging}
 
 \begin{itemize}
-\item Book talks about 5 aspects of programming (in the reading for the
-  weekend): input, output, math, conditionals, repetition.  Where did
-  we see them in Minecraft?
+\item 5 aspects of algorithms we are going to see over and over again:
+  input, output, math, conditionals, repetition.  Where did we see
+  them in Minecraft?
 \item 3 kinds of errors: syntax, semantic, runtime.  Talk
   about each in context of Minecraft (lots of semantic errors; runtime
   = running into wall/falling into lava?; not many opportunities for
@@ -154,13 +175,12 @@ For next time:
 
 \newpage
 
-\section{Python I (M 8/27)}
+\section{\ready Python I (M 1/21)}
 
 \subsection*{Setup/administrivia}
 
 \begin{itemize}
-\item Bring color printouts of Minecraft world.
-\item For this week, read Chapter 2.
+\item \ready Bring color printouts of Minecraft world.
 \end{itemize}
 
 \subsection*{Minecraft pair simulation exercise}
@@ -216,6 +236,12 @@ actually write the program next class.
 \end{reflect}
 
 \subsection*{Python I (Strings, Numbers)}
+
+\textbf{Note}: quiz Friday on basic Python!  You will have a chance to
+  practice on Weds/Thurs in lab.  There isn't a textbook on purpose,
+  to force you to play/try things instead of using the textbook as a
+  crutch.  Install PyCharm or use repl.it, play around.  No substitute
+  for actually doing stuff.
 
 Show \url{python.org} website.  Load up PyCharm, Python 3.x.
 
@@ -273,11 +299,11 @@ What kinds of things does Python give us?
 
 \newpage
 
-\section{Python II, Box Volume (W 8/29)}
+\section{\ready Python II, Box Volume (W 1/23)}
 
 \subsection*{Setup/administrivia}
 \begin{itemize}
-\item Read Chapter 2 --- quiz next class on basic Python syntax and arithmetic.
+\item Remember: quiz Friday on basic Python syntax, variables, arithmetic.
 \end{itemize}
 
 \subsection*{Variables}
@@ -364,31 +390,6 @@ age = int(age_st)
   doesn't look like an int.
 \end{itemize}
 
-% \subsection*{REPLs, PROGRAMS, etc.}
-
-% Mark: Useful here to talk about the difference between the REPL loop,
-% and the input and print connections to the user. Draw diagram. What we
-% type in python at the \verb|>>>| is the PROGRAM, it goes to the CPU,
-% and the answers are returned to the PROGRAM. What happens when the
-% PROGRAM says print and input, these questions come from the CPU to the
-% USER and the input from the USER goes back to the CPU, which then
-% returns it to the PROGRAM.
-
-% Brent prefers something like the following: in a PROGRAM (saved in a
-% file) we have to be explicit about I/O: input only comes via
-% \verb|input| and output only produced via \verb|print|.  The REPL
-% handles input and ouptut for us: \verb|>>>| prompt does input and
-% everything is implicitly \verb|print|ed for us.  Draw box representing
-% program with inputs coming in, outputs going out via these functions.
-% REPL is like a little wrapper around a smaller box where we don't have
-% to worry about those things.  [A little confusing to think about what
-% happens when we \eg call \verb|input| at the REPL prompt but you
-% don't really need to worry about that!]
-
-% \begin{reflect}{Brent, S'17}
-% Skipped this section this time around.
-% \end{reflect}
-
 \subsection*{Our first program!}
 
 Let's start programming.  We need a place to save our commands, as a
@@ -450,9 +451,6 @@ Once this is working, extend it to also:
 \end{reflect}
 
 \subsection*{Setup}
-\begin{itemize}
-\item For next time, read chapter 4.
-\end{itemize}
 
 Talk about types again.  Review, or show again, use of \verb|type()|
 to determine what python thinks the type of a literal or variable is.
@@ -513,7 +511,7 @@ use this as a template for your work.
 
 Python Style Check.  Download this and use it.
 
-\section*{LAB: Kepler \& Newton (Th 8/30)}
+\section*{\ready LAB: Kepler \& Newton (Th 8/30)}
 
 \textbf{Talk to TAs before lab about common errors so they can help
   give good hints when they see them.}
@@ -557,15 +555,15 @@ This lab seemed to go pretty well.  Common errors:
 \end{reflect}
 
 \newpage
-\section{Tracing I (F 8/31)}
+\section{\ready Tracing I (F 1/25)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \textbf{Quiz (Python syntax and arithmetic)}.  See
-  \texttt{csci150-instructors} repository.  Go over quiz answers
-  afterwards (\eg have them confer with neighbors, then have
-  pairs confer with other pairs, \etc)
-\item HW: tracing practice (on website)
+\item \ready \textbf{Quiz (Python syntax and arithmetic)}.  See
+  \texttt{csci150-instructors/quiz/basic.tex}.  Go over quiz answers
+  afterwards (\eg have them confer with neighbors, then have pairs
+  confer with other pairs, \etc)
+\item \ready HW: tracing practice (on website)
 \end{itemize}
 
 We've already mentioned that being able to manually trace the
@@ -633,18 +631,12 @@ to trick your neighbor!
 
 \newpage
 
-\section{Booleans \& Conditionals (W 9/5)}
+\section{\ready Booleans \& Conditionals (M 1/28)}
 
 \subsection*{Setup}
 
 \begin{itemize}
 \item Next class: tracing quiz.
-\item TA hours in the lab: Tuesday 6-10pm (Kate), Weds 7-9pm (Lauren),
-  Thurs 7-9pm (Fish).  There are also 151 TAs in the lab Sunday 8-10
-  (Ryan) and Monday 7-10 (Innocent): if there aren't 151 students in
-  need of help they are able to help with 150 as well.
-
-  The TAs are there to help!  Make use of them!
 \end{itemize}
 
 \subsection*{Booleans}

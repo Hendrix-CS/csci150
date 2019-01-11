@@ -1,7 +1,7 @@
 CSCI 150 HW: Python tracing practice
 ------------------------------------
 
-*Due: Wednesday, September 5*
+*Due: Wednesday, January 30*
 
 To receive full credit, for each exercise you should do the following:
 

@@ -6,10 +6,9 @@ title: Labs
 
 \#    Name                                                                          Assigned     Due
 ----- --------------------------------------------------                            ----------   ---
-0     TBD                                                                           TBA          TBA
+1     [Minecraft Hour of Code](labs/minecraft.html)                                 Jan 16/17    Jan 23/24
+2     [Kepler and Newton](labs/kepler-newton.html)                                  Jan 23/24    Jan 30/31
 
-<!-- 1     [Minecraft Hour of Code](labs/lab1.html)                                      Aug 22/23    Aug 29/30 -->
-<!-- 2     [Kepler and Newton](labs/kepler-newton.html)                                  Aug 29/30    Sep 5/6 -->
 <!-- 3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6      Sep 12/13 -->
 <!-- 4     [This Day in History](labs/dow.html)                                          Sep 12/13    Sep 19/20 -->
 <!-- 5     [Guess My Number](labs/guess.html)                                            Sep 19/20    Sep 26/27 -->

@@ -19,7 +19,7 @@ follow the Python style guide.
 <ul>
 	<li>Python 3
 	<li>Lab Partner
-	<li><a href="https://docs.python.org/3.5/library/math.html">Math module</a>
+	<li><a href="https://docs.python.org/3.6/library/math.html">Math module</a>
 	<li><a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python Style Guide</a>
 </ul>
 
@@ -34,6 +34,21 @@ precise we are starting to find Earth-sized planets that may provide a good foun
 In this lab we'll discuss planetary motion in general and apply our computing skills to
 study various exoplanets.
 <p>
+  <h3>Step 0: Getting started</h3>
+
+  Open PyCharm and create a new project (by going to the "File" menu
+  and selecting "New Project").  Name it something like "Lab 01 -
+  Kepler and Newton".  Accept the other defaults and click "Create".
+
+<p>
+  At this point you will have a new, empty project.  Each project can
+  contain multiple Python files.  To create a new Python file, you can
+  either choose "New..." under the File menu, or right click on the
+  project folder and select "New...".  Make sure you select "New
+  Python File".  Then you can type in a name for the file.  Note that
+  you should not include <code>.py</code> on the end of the name;
+  PyCharm will add <code>.py</code> for you.
+
 <h3>Kepler</h3>
 <img class="entryimageleft" src="../images/kepler_pic.jpg">
 One astronomer who made a major advance in the understanding of our solar system and
@@ -58,18 +73,22 @@ distance from the sun in Astronomical Units (AU) cubed, where and AU is the
 average distance of the Earth to
 the Sun (149 million kilometers).
 <p>
+<p>
 <div align="center">
 <b>Kepler's Third Law of Planetary Motion</b><p>
 <img src="../images/kepler.jpg">
 </div>
 <h3>Step 1</h3>
-Write a program called <code>orbit_kepler.py</code> for Kepler's Third Law
-of planetary motion.
-This program will ask the user for the name of the planet
-and its orbital period in years.
-It should then calculate the average distance from the sun in astronomical units (AU)
-of this planet and display the result to the user.  Make sure to follow
-the <a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python Style Guide</a> when writing your program.
+<p>
+Create a Python program called <code>orbit_kepler.py</code> for
+Kepler's Third Law of planetary motion.  (Remember that you should not
+type the <code>.py</code> part; PyCharm will add it for you.) This
+program will ask the user for the name of the planet and its orbital
+period in years.  It should then calculate the average distance from
+the sun in astronomical units (AU) of this planet and display the
+result to the user.  Make sure to follow
+the <a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python
+Style Guide</a> when writing your program.
 <p>
 Test your code with the following values for planets orbiting the Sun:
 <p>
@@ -180,14 +199,15 @@ You will be handing in the three files you wrote today and the lab evaluation do
 	<li>orbit_newton.py
 	<li>Lab Evaluation
 </ul>
-Turn in the files
-electronically via <b><a href="https://goo.gl/forms/03Oeic09jHYPnrz53">this Google form</a></b>.
-<p>
-Make sure you run <code>orbit_kepler.py</code> and <code>orbit_newton.py</code>
-through the <a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python
-style guide</a> checking program before you turn in your work.  If you worked with a
-partner, you both must hand in the files you wrote, with both of your names in the header
-at the top of the file.
+Turn in the files electronically via the submission form (linked from
+the course webpage).
+
+Make sure you run <code>orbit_kepler.py</code>
+and <code>orbit_newton.py</code> through
+the <a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python
+style guide</a> checking program before you turn in your work.  If you
+worked with a partner, make sure you put both names at the top of all
+your files, and <b>only one of you</b> should submit the lab.
 <h2>Grading</h2>
 <ul>
 <li>To earn a C, turn in a working version of <code>orbit_kepler.py</code>
