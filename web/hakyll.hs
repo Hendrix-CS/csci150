@@ -21,7 +21,7 @@ main = do
       compile labCompiler
 
   where
-    staticContent = ["images/*", "docs/*", "static/*", "data/*", "homework/*"]
+    staticContent = ["images/*", "docs/*", "static/*", "data/*", "homework/*", "css/*"]
     sections = ["inclass", "quizhw", "labs", "projects", "exams", "syllabus"]
 
 labCompiler :: Compiler (Item String)

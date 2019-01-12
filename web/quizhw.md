@@ -15,9 +15,9 @@ your final grade.
 --- ---------------                                                                                                    ----
 1   [Minecraft](static/minecraft.html)                                                                                 M Jan 21
 2   [Tracing practice](static/tracing-practice.pdf)                                                                    W Jan 30
+3   [Conditional practice](static/conditional-practice.pdf)                                                            M Feb 4
 
 <!-- 0   [Who Are You](XXX)                                                                                                 Friday August 24 -->
-<!-- 3   [Conditional practice](static/conditional-practice.pdf)                                                            Monday September 10 -->
 <!-- 4   [Function and loop reading](static/function-reading.pdf)                                                           Monday September 24 -->
 <!-- 5   [DNA Strings](static/dna-strings.html)                                                                             Monday October 1 -->
 <!-- 6   [For loop reading](static/for-reading.pdf)                                                                         Wednesday October 24 -->

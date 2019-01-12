@@ -18,9 +18,8 @@ project will be given when they are assigned.
 
 Project      Name                                                                                                                 Pct Assigned   Due
 ---------    ---------------------------------------------------                                                                  --- ---------- --------------------
-0            TBD                                                                                                                  TBA TBA        TBA
+1            [Question-Answer](projects/civic-QA.html)                                                                            5%  Feb 4      Feb 18
 
-<!-- 1            [Question-Answer](projects/civic-QA.html)                                                                            5%  Sep 10     Sep 24 -->
 <!-- 2            [Word Games](projects/word-game.html)                                                                                10% Oct 22     Nov 2 -->
 <!-- 3            [Final Project](projects/final.html)                                                                                 20% Nov 12     Dec 10 -->
 
