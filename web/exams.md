@@ -8,7 +8,7 @@ answer questions along with writing and debugging code.
 
 - Exam 1: Friday, September 14, covering input/output, math, numerical
   data, conditionals, and binary encoding  
-  <!-- ([Practice exam](static/exam1-practice-f18.pdf)) -->
+  ([Practice exam](static/exam1-practice-s19.pdf))
 
 - Exam 2: Wednesday, October 10, covering functions, while loops,
   lists, and strings  

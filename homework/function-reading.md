@@ -1,7 +1,7 @@
 CSCI 150 HW: function and loop reading practice
 -----------------------------------------------
 
-*Due: Monday, September 24*
+*Due: Wednesday, February 20*
 
 To receive full credit, for each exercise you should do the following:
 
