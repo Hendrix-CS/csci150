@@ -514,7 +514,7 @@ use this as a template for your work.
 
 Python Style Check.  Download this and use it.
 
-\section*{\ready LAB: Kepler \& Newton (Th 8/30)}
+\section*{\ready LAB: Kepler \& Newton (2/23--24)}
 
 \textbf{Talk to TAs before lab about common errors so they can help
   give good hints when they see them.}
@@ -902,7 +902,7 @@ about conversion next class.
 \textbf{Try to get further than this if possible!}
 
 \newpage
-\section{Information encoding II (M 9/10)}
+\section{\ready Information encoding II (M 2/4)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -912,7 +912,7 @@ about conversion next class.
 \item \ready \textbf{Assign project 1}---due Friday 9/21.  You might decide
   you don't want to think about it until after the exam, and that's
   OK, but you have the opportunity to start earlier if you like.
-\item \textbf{Assign practice exam}---not collected or graded, but we
+\item \ready \textbf{Assign practice exam}---not collected or graded, but we
   will go over it on Wednesday.  In your best interest to go through
   it and come prepared!
 \end{itemize}
@@ -995,8 +995,28 @@ from 0 (off) to 255 (as bright as possible).  So each primary = 8 bits
   \emph{etc.} (there was also a bunch of stuff at the start of class:
   handing things back, a quiz, \emph{etc.}) so I didn't actually make
   it to talking about hexadecimal.  (Apparently neither did Lars.)  So
-  I sent them an email afterwards, reproduced below.
+  I sent them an email afterwards, reproduced in the LaTeX comment below.
 \end{reflect}
+
+% Hi all,
+
+% There was one thing I didn't quite get to at the end of class today.  It's not hard to explain, but important.
+
+% "Hexadecimal" means base 16, just like "decimal" means base 10 and "binary" means base 2.  To write numbers in base 16, we need 16 "digits"---so we use the digits 0-9 as usual and then the letters A-F.  So A represents 10, B represents 11, and so on, up to F which represents 15.  (Often lowercase letters are used as well, it doesn't matter if they are upper- or lowercase.)
+
+% For example, the hexadecimal number 3ACE means
+
+% 3 * 16^3 + A * 16^2 + C * 16^1 + E * 16^0
+% = 3 * 4096 + 10 * 256 + 12 * 16 + 14
+% = 15054
+
+% in base 10.
+
+% Every hexadecimal digit corresponds to exactly 4 bits, so hexadecimal is often used as a convenient and more human-friendly way to represent sequences of bits.  For example, 3ACE is equivalent to 0011101011001110 --- which do you find easier to read?
+
+% You may have seen hexadecimal notation before --- for example when a computer crashes it often displays a long sequence of numbers and letters, which is a hexadecimal number representing the memory address where the crash occurred.  Another place where you see hexadecimal notation is in writing down colors.  We talked in class about how a color is represented by 3 bytes; each byte is 8 bits which can be written using two hexadecimal digits.  For example, the color "lime" can be represented as AAFF32.  AA represents the amount of red (A * 16 + A = 10*16 + 10 = 170), FF is the amount of green (F * 16 + F = 15*16 + 15 = 255), and 32 is the amount of blue (note this is 32 in base 16, which is not the same as 32 in base 10!  3 * 16 + 2 = 50 base 10).
+
+% If you have any questions we can go over them on Wednesday!
 
 \subsection*{Hexadecimal}
 
@@ -1050,7 +1070,7 @@ Can mention something about how video and audio are represented.
 \end{itemize}
 
 \newpage
-\section{Exam 1 review (W 9/12)}
+\section{\ready Exam 1 review (W 2/6)}
 
 \subsection*{Setup}
 
@@ -1064,7 +1084,7 @@ Can mention something about how video and audio are represented.
 Go over sample exam solutions.
 
 \newpage
-\section*{LAB: This Day in History (Th 9/13)}
+\section*{\ready LAB: This Day in History (2/6--7)}
 
 This can be used as a comprehensive review of everything on Exam 1.
 
@@ -1099,35 +1119,33 @@ This can be used as a comprehensive review of everything on Exam 1.
 \end{reflect}
 
 \newpage
-\section{Exam 1 (F 9/14)}
+\section{\ready Exam 1 (F 2/8)}
 
 \begin{itemize}
 \item Note, no HW this weekend.
 \end{itemize}
 
-% \newpage
+\begin{reflect}{Brent, S'18}
+  Because of pushing exam 1 back one day, I only have \emph{two}
+  lectures instead of three to prepare for Guess My Number lab.  What
+  I plan to do is introduce while loops first (1 lecture), and then a
+  basic intro to functions (1 lecture).  Functions are not actually
+  super necessary for the lab, so it's OK to cover more about
+  functions in another class after the lab.
 
-% \begin{reflect}{Brent, S'18}
-%   Because of pushing exam 1 back one day, I only have \emph{two}
-%   lectures instead of three to prepare for Guess My Number lab.  What
-%   I plan to do is introduce while loops first (1 lecture), and then a
-%   basic intro to functions (1 lecture).  Functions are not actually
-%   super necessary for the lab, so it's OK to cover more about
-%   functions in another class after the lab.
-
-%   In the past I have used functions while doing examples for while
-%   loops (\eg testing the Collatz conjecture), but that's not
-%   critical---it's easy to do the examples without using loops.  It
-%   might even give nice material to motivate the process of function
-%   abstraction later.
-% \end{reflect}
+  In the past I have used functions while doing examples for while
+  loops (\eg testing the Collatz conjecture), but that's not
+  critical---it's easy to do the examples without using loops.  It
+  might even give nice material to motivate the process of function
+  abstraction later.
+\end{reflect}
 
 \newpage
-\section{While loops (M 9/17)}
+\section{\ready While loops (M 2/11)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Reminder: Project 1 due Friday!
+\item Reminder: Project 1 due 1 week from today!
 \end{itemize}
 
 \subsection*{While loops}
@@ -1187,11 +1205,11 @@ while n < max:
 \verb|while true|?  A legitimate use of an infinite loop!)
 
 \newpage
-\section{Functions I: defining and calling functions (W 9/19)}
+\section{\ready Functions I: defining and calling functions (W 2/13)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Reminder: project 1 due on Friday.
+\item Reminder: project 1 due Monday.
 \item Quiz on Friday re: tracing execution with a while loop.
 \end{itemize}
 
@@ -1280,7 +1298,7 @@ local. Note that \verb|F| and \verb|temp_C| are not defined afterwards.
 values.
 
 \newpage
-\section*{LAB: Guess My Number (Th 9/20)}
+\section*{\ready LAB: Guess My Number (2/13--14)}
 
 Have the students write both versions of the game (in the first
 version, the computer picks the number; in the second, the computer
@@ -1297,14 +1315,17 @@ guesses).
 \end{reflect}
 
 \newpage
-\section{Functions II: call stack, return values (F 9/21)}
+\section{\notready Functions II: call stack, return values (F 2/15)}
+
+% To do: plan out formal presentation of tracing with stack diagrams
 
 \subsection*{Setup/administrivia}
 
 \begin{itemize}
-\item Quiz: while loops
+\item \ready Quiz: while loops
   (\texttt{csci150-instructors/quiz/while-trace.py})
-\item HW due on Monday (function \& loop reading)
+\item \ready HW due Wednesday, with quiz (function \& loop reading)
+\item Reminder: project 1 due Monday!
 \end{itemize}
 
 \subsection*{Flow of execution \& tracing with stack diagrams}
@@ -1459,14 +1480,13 @@ can just return \verb|x % y == 0| directly.
 \end{reflect}
 
 \newpage
-\section{Functions III: Abstraction (M 9/24)}
-
-\textbf{Brent is gone at ICFP}
+\section{\ready Functions III: Abstraction (M 2/18)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Collect HW (while loop tracing).  Go over briefly if desired?
-\item Reminder: quiz on Wednesday: functions (tracing with stack)
+\item Reminder: HW due Wednesday with quiz: functions (tracing with
+  stack)
+\item Project 1 due today.
 \end{itemize}
 
 Redo Collatz example, take code that we wrote before and successivly
@@ -1552,17 +1572,16 @@ time ago (in the run-up to Kepler/Newton lab) and improve it by
 abstracting it into functions too.
 
 \newpage
-\section{Strings (W 9/26)}
-
-\textbf{Brent is gone at ICFP}
+\section{\ready Strings (W 2/20)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Quiz: functions
+\item Collect HW (function tracing).
+\item Quiz: function tracing (\texttt{csci150-instructors/quiz/function-tracing.py}).
 \end{itemize}
 
 \begin{reflect}{Brent}
-  Note, this continues on Friday, so it's OK if you don't quite get
+  Note, this continues on Friday, so it's OK if we don't quite get
   through everything, or go fast and have time to start doing more
   stuff from the beginning of Friday etc.
 \end{reflect}
@@ -1620,7 +1639,9 @@ is wrong.
 (If time, do more examples from Friday.)
 
 \newpage
-\section*{LAB: Mutation is the Word (Doublets) (Th 9/27)}
+\section*{\notready LAB: Mutation is the Word (Doublets) (2/20--21)}
+
+% TODO: refactor lab along the lines Gabe suggests below.
 
 \begin{reflect}{Brent S'16}
   This lab is a lot harder than the previous labs.  Definitely worth
@@ -1673,13 +1694,17 @@ is wrong.
 \end{reflect}
 
 \newpage
-\section{More string, loop, \& function practice (F 9/28)}
+\section{\notready More string, loop, \& function practice (F 2/22)}
 
-\textbf{Brent is gone at ICFP}
+% TODO: finish lab above; decide re: DNA strings HW? Something else?
+% Make turnin thing for DNA strings HW; update HW to specify turning
+% it in electronically.
+%
+% Lecture notes are otherwise ready.
 
 \subsection*{Setup}
 \begin{itemize}
-\item HW due Monday (DNA strings)
+\item \ready HW due Monday (DNA strings)
 \end{itemize}
 
 Today's focus is on getting the students to do more hands-on exercises
@@ -1762,9 +1787,12 @@ do.  Make sure they understand that they should do everything at the
 Python prompt, they do not need to write a program!
 
 \newpage
-\section{Lists I (M 10/1)}
+\section{\ready Lists I (M 2/25)}
 
 \subsection*{Setup}
+\begin{itemize}
+\item String quiz on Wednesday.
+\end{itemize}
 
 \subsection*{Lists}
 
@@ -1876,7 +1904,7 @@ def read_inputs2():
 \end{verbatim}
 
 \newpage
-\section{Lists II (W 10/3)}
+\section{\notready Lists II (W 10/3)}
 
 \subsection*{Setup}
 
@@ -2033,7 +2061,7 @@ def listmax(nums: List[int]) -> int:
 \end{verbatim}
 
 \newpage
-\section*{LAB: List Editor}
+\section*{\notready LAB: List Editor}
 
 \begin{reflect}{Brent, F'18}
   I wrote this lab fresh for this semester: we decided to spend more
@@ -2051,7 +2079,7 @@ def listmax(nums: List[int]) -> int:
 \end{reflect}
 
 \newpage
-\section{Lists III (F 10/5)}
+\section{\notready Lists III (F 10/5)}
 
 \subsection*{Setup}
 
@@ -2122,11 +2150,11 @@ def onlyevens(lst: List[int]) -> List[int]:
 \end{verbatim}
 
 \newpage
-\section{Exam 2 review (M 10/8)}
+\section{\notready Exam 2 review (M 10/8)}
 
 Spend a lecture going over practice exam.
 
-\section{Exam 2 (W 10/10)}
+\section{\notready Exam 2 (W 10/10)}
 
 \begin{reflect}{Brent, S'16}
   In the Fall 2015 semester, Exam 2 was on the Wednesday right before
@@ -2167,7 +2195,7 @@ Spend a lecture going over practice exam.
 \end{reflect}
 
 \newpage
-\section{For loops (M 10/15)}
+\section{\notready For loops (M 10/15)}
 
 \subsection*{For Loops}
 
@@ -2255,7 +2283,7 @@ def filter_long(strs: List[str]) -> List[str]:
 \end{verbatim}
 
 \newpage
-\section{More for loops: index ranges (W 10/17)}
+\section{\notready More for loops: index ranges (W 10/17)}
 
 \subsection*{Setup}
 
@@ -2451,7 +2479,7 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 %   \verb|is_sorted| next class.
 % \end{reflect}
 
-\section*{LAB: Caesar's Secrets (Th 10/18)}
+\section*{\notready LAB: Caesar's Secrets (Th 10/18)}
 
 \begin{reflect}{Brent, S'17}
   This lab seemed to go well, though it's definitely hard.  Most
@@ -2474,7 +2502,7 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 
 \newpage
 
-\section{Mutability, objects, and references (F 10/19)}
+\section{\notready Mutability, objects, and references (F 10/19)}
 
 \subsection*{Setup}
 
@@ -2643,7 +2671,7 @@ Then go over it carefully.
 % \end{reflect}
 
 \newpage
-\section{Dictionaries (M 10/22)}
+\section{\notready Dictionaries (M 10/22)}
 
 \subsection*{Setup}
 
@@ -2757,7 +2785,7 @@ def frequency_counts(s: str) -> Dict[str, float]:
 \end{reflect}
 
 \newpage
-\section{File I/O, dictionary practice (W 10/24)}
+\section{\notready File I/O, dictionary practice (W 10/24)}
 
 Our programs have no state between each time they are called.
 Everything is stored in memory during the program, but afterwards,
@@ -2810,7 +2838,7 @@ FINISH writing \verb|frequency_count| and \verb|normalize| from last
 class.  Maybe run them on the contents of a file.
 
 \newpage
-\section*{LAB: Sentiment Analysis (W 10/24, Th 10/25)}
+\section*{\notready LAB: Sentiment Analysis (W 10/24, Th 10/25)}
 
 \begin{reflect}{Brent, S'16}
   I wrote this lab fresh in S'16, based on a Nifty Assignment @
@@ -2821,7 +2849,7 @@ class.  Maybe run them on the contents of a file.
 \end{reflect}
 
 \newpage
-\section{Heap tracing examples, dictionary practice (F 10/26)}
+\section{\notready Heap tracing examples, dictionary practice (F 10/26)}
 
 Go through some more examples of tracing with stack \& heap:
 
@@ -2903,7 +2931,7 @@ def normalize(counts: Dict[str, int]) -> Dict[str, float]:
 \end{verbatim}
 
 \newpage
-\section{Intro to classes \& objects (M 10/29)}
+\section{\notready Intro to classes \& objects (M 10/29)}
 
 \subsection*{Setup}
 
@@ -3042,7 +3070,7 @@ main()
 \end{itemize}
 
 \newpage
-\section{More classes \& objects}
+\section{\notready More classes \& objects}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -3154,7 +3182,7 @@ main()
 \end{verbatim}
 
 \newpage
-\section*{LAB: Die Hard/Water Jug (Th 11/1)}
+\section*{\notready LAB: Die Hard/Water Jug (Th 11/1)}
 
 \begin{reflect}{Brent, S'17}
   This lab seemed to go pretty well this year.  The new step that
@@ -3167,13 +3195,13 @@ main()
 \end{reflect}
 
 \newpage
-\section{Classes \& objects III (F 11/2)}
+\section{\notready Classes \& objects III (F 11/2)}
 
 Finish \verb|TrafficLight|.
 
 
 \newpage
-\section{Recursion I: intro (M 11/5)}
+\section{\notready Recursion I: intro (M 11/5)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -3244,7 +3272,7 @@ of comments and narrating thought process.
 \end{reflect}
 
 \newpage
-\section{Recursion II: recursive functions (W 11/7)}
+\section{\notready Recursion II: recursive functions (W 11/7)}
 
 Start by reinforcing ``base case + recursive case''.  Talk about
 ``leap of faith'': trust that recursive calls will work without
@@ -3290,7 +3318,7 @@ Finish implementation of list product from last class.
 \end{reflect}
 
 \newpage
-\section*{LAB: Fractal Recursion (Th 11/8)}
+\section*{\notready LAB: Fractal Recursion (Th 11/8)}
 
 \begin{reflect}{S' 17}
   This lab is fun and seemed to go reasonably well, though attendance
@@ -3308,7 +3336,7 @@ Finish implementation of list product from last class.
 \end{reflect}
 
 \newpage
-\section{Recursion III (F 11/9)}
+\section{\notready Recursion III (F 11/9)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -3387,7 +3415,7 @@ main()
 \end{verbatim}
 
 \newpage
-\section{Elevator simulation I (M 11/12)}
+\section{\notready Elevator simulation I (M 11/12)}
 
 \subsection*{Setup}
 
@@ -3503,7 +3531,7 @@ Next time we will test passengers getting off the elevator, and make a
 Building class.  Then extend the simulation in various ways.
 
 \newpage
-\section{Elevator simulation II (W 11/14)}
+\section{\notready Elevator simulation II (W 11/14)}
 
 Here's how the code ended up:
 
@@ -3694,7 +3722,7 @@ main()
 \end{verbatim}
 
 \newpage
-\section{LAB: Stuckness \& Debugging (Th 11/15)}
+\section{\notready LAB: Stuckness \& Debugging (Th 11/15)}
 
 \begin{reflect}{Brent, F'18}
   The lab went really well---Fish and I answered basically zero
@@ -3704,16 +3732,16 @@ main()
 \end{reflect}
 
 \newpage
-\section{Exam 3 review (F 11/16)}
+\section{\notready Exam 3 review (F 11/16)}
 
 \newpage
-\section{Exam 3 (M 11/19)}
+\section{\notready Exam 3 (M 11/19)}
 
 \newpage
-\section{THANKSGIVING}
+\section{\notready THANKSGIVING}
 
 \newpage
-\section{Queues (2 lectures) (M 11/26, W 11/28)}
+\section{\notready Queues (2 lectures) (M 11/26, W 11/28)}
 
 Start with a discussion of the queue data structure itself (sequence,
 aka list, where we can only add to one end and remove from the other
@@ -3882,10 +3910,10 @@ be heavily discussed in CSCI 151 with more formal tools and for more
 complicated structures, within the context of Java.
 
 \newpage
-\section{LAB: Tornado sirens (Th 11/29)}
+\section{\notready LAB: Tornado sirens (Th 11/29)}
 
 \newpage
-\section{??? (F 10/30, M 12/3?)}
+\section{\notready ??? (F 10/30, M 12/3?)}
 
 Continue to extend our elevator simulation with queues?  Show how the
 performance makes a practical difference??

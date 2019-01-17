@@ -8,10 +8,10 @@ title: Labs
 ----- --------------------------------------------------                            ----------   ---
 1     [Minecraft Hour of Code](labs/minecraft.html)                                 Jan 16/17    Jan 23/24
 2     [Kepler and Newton](labs/kepler-newton.html)                                  Jan 23/24    Jan 30/31
+4     [This Day in History](labs/dow.html)                                          Feb 6/7      Feb 13/14
+5     [Guess My Number](labs/guess.html)                                            Feb 13/14    Feb 20/21
 
 <!-- 3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6      Sep 12/13 -->
-<!-- 4     [This Day in History](labs/dow.html)                                          Sep 12/13    Sep 19/20 -->
-<!-- 5     [Guess My Number](labs/guess.html)                                            Sep 19/20    Sep 26/27 -->
 <!-- 6     [Mutation is the Word](labs/doublets.html)                                    Sep 26/27    Oct 3/4 -->
 <!-- 7     [Line Editor](labs/line-editor.html)                                          Oct 3/4      Oct 17/18 -->
 <!-- 8     [Caesar's Secrets](labs/caesar.html)                                          Oct 17/18    Oct 24/25 -->
