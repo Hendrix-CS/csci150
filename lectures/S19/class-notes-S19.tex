@@ -34,65 +34,96 @@
 
 \maketitle
 
-\section{\notready Introduction (W 1/16)}
+\section{\ready Introduction (W 1/16)}
 
-\begin{reflect}
-  Want to look at that article on how to start first class, maybe
-  revise a bit.  Also decide/tell them about required meeting with me?
+\begin{reflect}{Brent, S'19}
+  Because of no class on MLK day, to get everything to line up,
+  decided to collapse traditional first two days of class into one.
 \end{reflect}
 
 \subsection*{Setup}
 
 \begin{itemize}
 \item {}[Meet students before class.]
-\item Have students meet each other. \eg use binary cards to
-  put them in groups of 4.  Then switch groups once or twice.
-  Introduce people you have already met.
+\item Introduce myself.
 \end{itemize}
 
-\subsection*{What is Computer Science?}
+% \item Have students meet each other. \eg use binary cards to
+%   put them in groups of 4.  Then switch groups once or twice.
+%   Introduce people you have already met.
+% \end{itemize}
 
-This class is Foundations of Computer Science.  What is Computer
-Science?  (Terrible name: first, because why do you need to have
-``science'' in the title?  \eg ``food product''.)  Look at each
-component separately.
+% \subsection*{What is Computer Science?}
+
+% This class is Foundations of Computer Science.  What is Computer
+% Science?  (Terrible name: first, because why do you need to have
+% ``science'' in the title?  \eg ``food product''.)  Look at each
+% component separately.
+% \begin{itemize}
+% \item \textbf{What is a computer?}  Get some responses.  (Can insert
+%   brief history lesson: Antikythera mechamism: 150--100 BC, analog
+%   computer.  Many other mechanical computers through the years,
+%   \eg Babbage Difference Engine, Zuse Z3, Curta.  IBM started off
+%   making machines for processing data stored on punch cards; big
+%   industry by 1940s. ``Computers'' referred to people.  First
+%   electronic computers: WWII, early 1940s.)
+% \item \textbf{What do computers do?}  Lots of things.  Commonality:
+%   information.  Communicating, transforming, analyzing, storing.
+% \item \textbf{What is science?}  Get some responses.  Scientists use
+%   rational investigation \& analysis, mathematics, \etc to study the
+%   natural world.
+% \end{itemize}
+
+% So what do computer scientists study?  \textbf{NOT computers!}
+% Rather, \textbf{information} = anything that can be expressed
+% digitally, i.e. with numbers/symbols.  ``Computer science'' is
+% actually a bad name, \emph{cf.}\ ``telescope science''.  Information
+% structure of the universe. (A much better name is ``Informatics''
+% which is used \eg in Europe but hasn't caught on in the US.)
+
+% Why study it?  (Maybe get some student responses)
+% \begin{itemize}
+% \item Beautiful ideas, new ways of thinking.
+% \item Many applications!  Can contribute directly to human flourishing.
+% \item Computers are everywhere.  Understanding principles of CS =
+%   being an informed, engaged citizen.
+% \end{itemize}
+% Could do this without a computer, but computers are excellent enabling
+% tools.
+
+\subsection*{Collatz Conjecture}
+
 \begin{itemize}
-\item \textbf{What is a computer?}  Get some responses.  (Can insert
-  brief history lesson: Antikythera mechamism: 150--100 BC, analog
-  computer.  Many other mechanical computers through the years,
-  \eg Babbage Difference Engine, Zuse Z3, Curta.  IBM started off
-  making machines for processing data stored on punch cards; big
-  industry by 1940s. ``Computers'' referred to people.  First
-  electronic computers: WWII, early 1940s.)
-\item \textbf{What do computers do?}  Lots of things.  Commonality:
-  information.  Communicating, transforming, analyzing, storing.
-\item \textbf{What is science?}  Get some responses.  Scientists use
-  rational investigation \& analysis, mathematics, \etc to study the
-  natural world.
+\item Write out hailstone function. Something like this:
+  \begin{quote}
+    Start with a number $n$. \\
+    Repeat the following until $n = 1$: \\
+    \mbox{} \quad If $n$ is even, divide $n$ by $2$. \\
+    \mbox{} \quad Otherwise, multiply $n$ by $3$ and then add $1$. \\
+    Output the number of repetitions needed to reach $1$.
+  \end{quote}
+\item Do an example all together: start with 6.
+\item Break students into groups, tell them to try it on some other
+  starting numbers.
+\item You were carrying out an \emph{algorithm}: a specific sequence
+  of steps to solve a problem or accomplish a task.
+\item What do you notice?
+\item What do you think will happen in general?  Introduce Collatz
+  conjecture.
+\item Do you think we could get a computer to test this for us?  Sure!
+  This class is all about learning how to get a computer to do what we
+  want, and how to use them to think about problem-solving.  You may
+  not personally care about the Collatz conjecture but there are other
+  things you do care about.
 \end{itemize}
 
-So what do computer scientists study?  \textbf{NOT computers!}
-Rather, \textbf{information} = anything that can be expressed
-digitally, i.e. with numbers/symbols.  ``Computer science'' is
-actually a bad name, \emph{cf.}\ ``telescope science''.  Information
-structure of the universe. (A much better name is ``Informatics''
-which is used \eg in Europe but hasn't caught on in the US.)
+\subsection*{Metacognition/course overview}
 
-Why study it?  (Maybe get some student responses)
-\begin{itemize}
-\item Beautiful ideas, new ways of thinking.
-\item Many applications!  Can contribute directly to human flourishing.
-\item Computers are everywhere.  Understanding principles of CS =
-  being an informed, engaged citizen.
-\end{itemize}
-Could do this without a computer, but computers are excellent enabling
-tools.
-
-\subsection*{Administrivia}
-
-XXX maybe have them talk to each other about clubs/sports/activities
-they are in.  How do you improve at that?  How do you think you
-improve at programming?
+Find someone they don't know.  Introduce yourself and tell about one
+club/sport/activity/hobby they do.  Anything you do that
+involves skill---knitting, cooking, sports, video games, \emph{etc.}.
+(1) How do you improve at that?  Then ask them (2) how do you think
+you improve at programming? Use your answers to (1) as an analogy.
 
 \textbf{How to do well in this class}.  Try things.  Ask questions.
 Get help if you need it.  Write a little bit of code every day.  Key:
@@ -100,9 +131,8 @@ Get help if you need it.  Write a little bit of code every day.  Key:
 way of thinking/problem solving, not about teaching you a set of
 facts.
 
-Syllabus review online:
+Syllabus review online (can leave this out if no time).
 \begin{itemize}
-\item Free online textbook
 \item Don't bring laptops
 \item Academic integrity
 \item Office hours
@@ -114,19 +144,20 @@ Syllabus review online:
 For next time:
 
 \begin{itemize}
-\item Do HW 0, ``who are you''.  (Linked from webpage.)
+\item Do HW 0, fill out info sheet.  (Linked from webpage.)
+\item Lab today, tomorrow!
 \end{itemize}
 
 \newpage
 \section*{\ready LAB: Minecraft Hour of Code (1/16, 1/17 )}
 
 \newpage
-\section{\ready Algorithms and language (F 1/18)}
+
+\section{\ready Python I (F 1/28)}
 
 \subsection*{Setup/administrivia}
-
 \begin{itemize}
-\item \ready Homework due Monday (Minecraft programming by hand).
+\item \ready Homework due Wednesday (Minecraft programming by hand).
   Designed to help you start developing important skills, building and
   executing mental models of what is going on in the computer, to
   predict what code will do without running it.
@@ -137,7 +168,7 @@ For next time:
 \begin{itemize}
 \item 5 aspects of algorithms we are going to see over and over again:
   input, output, math, conditionals, repetition.  Where did we see
-  them in Minecraft?
+  them in Collatz example?  Where did we see them in Minecraft?
 \item 3 kinds of errors: syntax, semantic, runtime.  Talk
   about each in context of Minecraft (lots of semantic errors; runtime
   = running into wall/falling into lava?; not many opportunities for
@@ -151,59 +182,6 @@ For next time:
   you could do with Minecraft.  You'll get there with Python
   too.
 \end{itemize}
-
-\subsection*{Collatz Conjecture}
-
-\begin{itemize}
-\item Write out hailstone function. Something like this:
-  \begin{quote}
-    Input $n$. \\
-    Repeat the following until $n = 1$: \\
-    \mbox{} \quad If $n$ is even, divide $n$ by $2$. \\
-    \mbox{} \quad Otherwise, multiply it by $3$ and add $1$. \\
-    Output the number of repetitions needed to reach $1$.
-  \end{quote}
-\item Note all 5 aspects of algorithm.
-\item Try it on some inputs: 4, 8, 6, 11. Draw a tree etc.  Or have
-  groups of students apply it to different numbers?  [In S'17 the
-  students suggested starting with $7$ so we just did that on the board.]
-\item Simple algorithms can have very surprising results!  Visit
-  Wikipedia page.
-\end{itemize}
-
-\textbf{Mention HW assignment}: Minecraft by hand.  Posted on website.
-
-\newpage
-
-\section{\ready Python I (M 1/21)}
-
-\subsection*{Setup/administrivia}
-
-\begin{itemize}
-\item \ready Bring color printouts of Minecraft world.
-\end{itemize}
-
-\subsection*{Minecraft pair simulation exercise}
-
-Have the students pair up and exchange programs (which they wrote for
-HW).  Give each pair/group a color printout of the minecraft world for
-the assignment, to use for reference.  Give them 10--15 minutes to
-simulate each others' programs and confirm whether they work properly.
-(See whose is shortest? Any interesting/surprising solutions?)  Then
-collect the assignments.
-
-Why did we do this?  One of the reasons the Minecraft Hour of Code lab
-was much easier than the programming we will do for the rest of the
-semester we already talked about---because it allows far fewer syntax
-errors.  But another, perhaps more important, reason is that it gives
-you immediate, visual feedback when you run your program, such that
-you can follow along and quickly figure out what's happening when
-something goes wrong.  When writing a Python program we won't have
-that luxury.  Being able to accurately predict what a program will do
-without running it on the computer is an extremely important
-skill---in fact, there is actual research that shows this skill is
-highly correlated with your performance in this class!  So we will
-have lots more opportunities to practice it.
 
 \subsection*{Volume of a Box}
 
@@ -297,6 +275,8 @@ What kinds of things does Python give us?
   \end{reflect}
 \end{itemize}
 
+\textbf{Mention HW assignment}: Minecraft by hand.  Posted on website.
+
 \newpage
 
 \section{\ready Python II, Box Volume (W 1/23)}
@@ -304,7 +284,30 @@ What kinds of things does Python give us?
 \subsection*{Setup/administrivia}
 \begin{itemize}
 \item Remember: quiz Friday on basic Python syntax, variables, arithmetic.
+\item \ready Bring color printouts of Minecraft world.
 \end{itemize}
+
+\subsection*{Minecraft pair simulation exercise}
+
+Have the students pair up and exchange programs (which they wrote for
+HW).  Give each pair/group a color printout of the minecraft world for
+the assignment, to use for reference.  Give them 10--15 minutes to
+simulate each others' programs and confirm whether they work properly.
+(See whose is shortest? Any interesting/surprising solutions?)  Then
+collect the assignments.
+
+Why did we do this?  One of the reasons the Minecraft Hour of Code lab
+was much easier than the programming we will do for the rest of the
+semester we already talked about---because it allows far fewer syntax
+errors.  But another, perhaps more important, reason is that it gives
+you immediate, visual feedback when you run your program, such that
+you can follow along and quickly figure out what's happening when
+something goes wrong.  When writing a Python program we won't have
+that luxury.  Being able to accurately predict what a program will do
+without running it on the computer is an extremely important
+skill---in fact, there is actual research that shows this skill is
+highly correlated with your performance in this class!  So we will
+have lots more opportunities to practice it.
 
 \subsection*{Variables}
 
