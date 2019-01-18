@@ -1,0 +1,45 @@
+>>> "Hello, CSCI 150"
+'Hello, CSCI 150'
+>>> 'Hello, CSCI 150'
+'Hello, CSCI 150'
+>>> 2
+2
+>>> 2 + 5
+7
+>>> 2 - 5
+-3
+>>> 2 * 3
+6
+>>> 6 / 7
+0.8571428571428571
+>>> 3e7
+30000000.0
+>>> 3.62e9
+3620000000.0
+>>> 5 ** 3
+125
+>>> 2 + 3 + 4
+9
+>>> 2 * 3 + 4
+10
+>>> 2 + 3 * 4
+14
+>>> (2 + 3) * 4
+20
+>>> "2 + 5"
+'2 + 5'
+>>> type('hello')
+<class 'str'>
+>>> type(3)
+<class 'int'>
+>>> myVariable: int = 5
+>>> otherVariable: int = 2 + 99 * 300
+>>> myVariable
+5
+>>> otherVariable
+29702
+>>> s: str = 'hello'
+>>> s
+'hello'
+>>> myVariable * 2 + otherVariable
+29712
