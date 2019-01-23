@@ -5,3 +5,4 @@ title: In-class Code
 When we write code together in class, it will be posted here!
 
 * F 1/18: [python-intro.txt](static/python-intro.txt)
+* W 1/23: [io.py](static/io.py), [box_volume.py](static/box_volume.py)
