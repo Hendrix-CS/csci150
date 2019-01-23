@@ -118,9 +118,10 @@ pieces are just English descriptions, which you will later translate into
 precise Python code.
 
 <p>
-
-To demonstrate the eventual behavior of the program, here is a
-sample run of the Doublets game.
+To demonstrate the eventual behavior of the program, here is a sample
+run of the Doublets game.  For now, do not worry about what
+should happen if the user enters invalid input; assume that the user
+will always enter exactly what is expected.
 <p>
 <pre>
 What is the starting word? <span>CAT</span>
@@ -146,7 +147,44 @@ Solution path found in 4 steps.
 CAT -> CAB -> COB -> COG -> DOG
 </pre>
 <p>
-A second run of the program is shown below, where the user made many mistakes.
+Add the pseudocode to your <code>Lab Evaluation</code>.
+<p>
+
+<h3>Step 2 - Implement Incrementally</h3>
+Download the text file <code><a href="../data/english2.txt">english2.txt</a></code>
+and the python module <code>
+<a href="../data/dictionary.py">dictionary.py</a></code> files, and
+make sure they are in the same folder where you will put your lab.
+You <b>do not need to copy and paste</b> anything!  At the top of your
+Python program, you should put
+
+<pre>import dictionary</pre>
+
+which will allow you to use the functions in <code>dictionary.py</code>.
+
+The dictionary module contains a function
+<code>valid_word(word, file)</code>, which will
+return <code>True</code> if the word is found in the file and <code>False</code>
+otherwise.  You can call the function by writing something like
+
+<pre>dictionary.valid_word(some_word, 'english2.txt')</pre>
+
+<p>
+Now take your pseduocode description and begin to implement your
+program in Python.  Your program should be
+named <code>doublets.py</code>.  Write your code in small sections and
+test incrementally. <b>Never write more than 5-10 lines of code without
+testing your changes!</b>  For example, you might start by making the
+program ask the user for a starting word.  Once you have verified that
+this part runs successfully and behaves how it is supposed to, you can
+add the next part, and so on.
+
+<h3>Step 3 - Error Handling</h3>
+
+<p>
+Of course the user might not always enter input in the expected form.
+A second run of the program is shown below, where the user made many
+mistakes.
 <p>
 <pre>
 What is the starting word? <span>log</span>
@@ -181,37 +219,17 @@ What is your new character? <span>u</span>
 Solution path found in 2 steps.
 LOG -> BOG -> BUG
 </pre>
-<p>
-Add the pseudocode to your <code>Lab Evaluation</code>.
-<p>
 
-<h3>Step 2 - Implement Incrementally</h3>
-Download the text file <code><a href="../data/english2.txt">english2.txt</a></code>
-and the python module <code>
-<a href="../data/dictionary.py">dictionary.py</a></code> files, and
-make sure they are in the same folder where you will put your lab.
-You <b>do not need to copy and paste</b> anything!  At the top of your
-Python program, you should put
+Modify your program so that it is able to gracefully handle erroneous
+input, as illustrated above.  The goal is to have a program
+that <b>never</b> crashes, no matter what the user enters.
 
-<pre>import dictionary</pre>
+<h3>Step 4 - Function Decomposition</h3>
 
-which will allow you to use the functions in <code>dictionary.py</code>.
-
-The dictionary module contains a function
-<code>valid_word(word, file)</code>, which will
-return <code>True</code> if the word is found in the file and <code>False</code>
-otherwise.  You can call the function by writing something like
-
-<pre>dictionary.valid_word(some_word, 'english2.txt')</pre>
-
-<p>
-Now take your pseduocode description and begin to implement your
-program in Python.  Your program should be
-named <code>doublets.py</code>.  Write your code in small sections and
-test incrementally.
-
-Remember that your program should be structured <b>entirely using
-    functions</b>.  Your program should look something like this:
+Once your program is working, go through the process of abstracting
+out parts of the program into functions, as illustrated in class.  By
+the end, your program should be structured <b>entirely using
+functions</b>; that is, your program should look something like this:
 <pre>
   # Input: ...
   # Output: ...
@@ -227,22 +245,16 @@ Remember that your program should be structured <b>entirely using
   main()
 </pre>
 
-I recommend starting by getting things to work first without using
-functions, and then incrementally abstracting parts of your program
-into functions until the whole program is appropriately decomposed.
-
-<h3>Step 3 - Test, Debug and Maintain</h3>
-With incremental implementation, Steps 3 and 4 should go hand in hand.  Never write more than
-5-10 lines of code before testing your changes.  First make your program work with perfect
-input, and then expand it to work with erroneous user input.
+<h3>Step 5 - Play</h3>
 <p>
-Once your program is working, try out some of the transformations below
+Once your program is working, try out some of the transformations below:
 <ul>
 <li>FIRE -- HEAT
 <li>SLEEP -- DREAM
 <li>APE -- MAN
 <li>WHITE -- BLACK
 </ul>
+What is the minimum number of steps you can achieve for each?
 
 <h3>Future Thoughts</h3>
 Your <code>doublets.py</code> program lets the user chose what character to change at each step,

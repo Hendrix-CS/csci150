@@ -749,7 +749,7 @@ else:
   somehow?  Nested ifs, ...}
 
 \newpage
-\section*{\notready LAB: Big Data/Heart Disease (Th 9/6)}
+\section*{\notready LAB: Big Data/Heart Disease (1/30--31)}
 
 \textcolor{red}{get improved graphs from Mark}
 
@@ -909,9 +909,10 @@ about conversion next class.
 \item \ready \textbf{Quiz}: booleans and conditionals
   (\texttt{csci150-instructors/quiz/quiz3-alt-cond-practice.py}).  Put
   up on screen (e.g. in PyCharm) and have them write answers on paper.
-\item \ready \textbf{Assign project 1}---due Friday 9/21.  You might decide
-  you don't want to think about it until after the exam, and that's
-  OK, but you have the opportunity to start earlier if you like.
+\item \ready \textbf{Assign project 1}---due Monday Feb 18.  You might
+  decide you don't want to think about it until after the exam, and
+  that's OK, but you have the opportunity to start earlier if you
+  like.
 \item \ready \textbf{Assign practice exam}---not collected or graded, but we
   will go over it on Wednesday.  In your best interest to go through
   it and come prepared!
@@ -1315,7 +1316,7 @@ guesses).
 \end{reflect}
 
 \newpage
-\section{\notready Functions II: call stack, return values (F 2/15)}
+\section{\ready Functions II: call stack, return values (F 2/15)}
 
 % To do: plan out formal presentation of tracing with stack diagrams
 
@@ -1343,14 +1344,28 @@ pick up the next book from the top of the pile and continue.
 Do an example. Write a function that calls \verb|C_to_F| on several
 temperatures.  Then write another function which does that twice, and
 so on.  Then trace execution.  Introduce an error and see the
-``traceback''.  Draw a stack diagram with local variables.
+``traceback''.
 
-\begin{reflect}{Brent, F'18}
-  Actually decided that this really needs to be a formal introduction
-  to tracing with the function stack.  So spent longer than I have
-  before on that part.  Need to write up some better notes for that
-  next time.
-\end{reflect}
+Put this on board/screen (see \texttt{stacktrace.py} in lecture notes
+directory):
+\begin{verbatim}
+def g(z: int):
+    z = z*3
+    print(z)
+
+def f(x: int):
+    g(x)
+    g(x + 2)
+    print(x)
+
+f(3)
+\end{verbatim}
+First have them try to predict output.  Compare with others, see if
+they can agree.  Then show them method for formally tracing the
+execution, with space for scratch, stack, etc.  Stack grows down from
+the top.
+
+They will do more examples on HW!
 
 \subsection*{``Fruitful'' functions}
 
@@ -1639,7 +1654,7 @@ is wrong.
 (If time, do more examples from Friday.)
 
 \newpage
-\section*{\notready LAB: Mutation is the Word (Doublets) (2/20--21)}
+\section*{\ready LAB: Mutation is the Word (Doublets) (2/20--21)}
 
 % TODO: refactor lab along the lines Gabe suggests below.
 
@@ -1694,13 +1709,7 @@ is wrong.
 \end{reflect}
 
 \newpage
-\section{\notready More string, loop, \& function practice (F 2/22)}
-
-% TODO: finish lab above; decide re: DNA strings HW? Something else?
-% Make turnin thing for DNA strings HW; update HW to specify turning
-% it in electronically.
-%
-% Lecture notes are otherwise ready.
+\section{\ready More string, loop, \& function practice (F 2/22)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1904,17 +1913,16 @@ def read_inputs2():
 \end{verbatim}
 
 \newpage
-\section{\notready Lists II (W 10/3)}
+\section{\ready Lists II (W 2/27)}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item Quiz (strings)
+\item \textbf{Quiz} (strings): see \texttt{csci150-instructors/quiz/string.py}
 \item Exam 2 (primarily covering functions, while loops, strings, and
   lists---though of course it also builds on top of concepts from Exam
-  1 so you still need to know those too) will be one week from today
-  (day before fall break).  Practice exam will be out on Friday;
-  Monday will be review.
+  1 so you still need to know those too) will be one week from today.
+  Practice exam will be out on Friday; Monday will be review.
 \end{itemize}
 
 \subsection*{Lists and strings}

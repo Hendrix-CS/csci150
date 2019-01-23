@@ -14,13 +14,12 @@ your final grade.
 \#  Name                                                                                                               Due
 --- ---------------                                                                                                    ----
 0   [Info sheet](https://docs.google.com/forms/d/1roH8IHvbn2xQyuaqWHc4V-2pKU2_wU0UTnUFNVuQzZ0)                         F Jan 18
-1   [Minecraft](static/minecraft.html)                                                                                 M Jan 21
+1   [Minecraft](static/minecraft.html)                                                                                 W Jan 23
 2   [Tracing practice](static/tracing-practice.pdf)                                                                    W Jan 30
 3   [Conditional practice](static/conditional-practice.pdf)                                                            M Feb 4
 4   [Function and loop reading](static/function-reading.pdf)                                                           W Feb 20
 5   [DNA Strings](static/dna-strings.html)                                                                             M Feb 25
 
-<!-- 0   [Who Are You](XXX)                                                                                                 Friday August 24 -->
 <!-- 6   [For loop reading](static/for-reading.pdf)                                                                         Wednesday October 24 -->
 <!-- 7   [Dictionary & heap reading](static/heap-dict-reading.pdf)                                                          Wednesday October 31 -->
 <!-- 8   [Class design practice](static/class-design.pdf)                                                                   Wednesday November 7 -->

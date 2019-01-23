@@ -10,9 +10,9 @@ title: Labs
 2     [Kepler and Newton](labs/kepler-newton.html)                                  Jan 23/24    Jan 30/31
 4     [This Day in History](labs/dow.html)                                          Feb 6/7      Feb 13/14
 5     [Guess My Number](labs/guess.html)                                            Feb 13/14    Feb 20/21
+6     [Mutation is the Word](labs/doublets.html)                                    Feb 20/21    Feb 27/28
 
 <!-- 3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6      Sep 12/13 -->
-<!-- 6     [Mutation is the Word](labs/doublets.html)                                    Sep 26/27    Oct 3/4 -->
 <!-- 7     [Line Editor](labs/line-editor.html)                                          Oct 3/4      Oct 17/18 -->
 <!-- 8     [Caesar's Secrets](labs/caesar.html)                                          Oct 17/18    Oct 24/25 -->
 <!-- 9     [Sentiment Analysis](labs/sentiment.html)                                     Oct 24/25    Oct 31/Nov 1 -->
