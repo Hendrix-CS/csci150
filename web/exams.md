@@ -12,13 +12,16 @@ answer questions along with writing and debugging code.
 
 - Exam 2: Wednesday, March 6, covering functions, while loops,
   lists, and strings  
-  <!-- ([Practice exam](static/exam2-practice-f18.pdf), [Exam practice review code](static/Exam2.py), [Exam Bonus Assignment](static/exam-bonus.pdf) (due Monday 10/22 in class)) -->
+  ([Practice exam](static/exam2-practice-s19.pdf)
+
+  <!-- , [Exam practice review code](static/Exam2.py), [Exam Bonus Assignment](static/exam-bonus.pdf) (due Monday 10/22 in class)) -->
   <!-- [In-class code from practice exam](static/exam2-practice.py)) -->
 
 <!-- ; [Practice exam solution code](static/exam2-practice.py); [Bonus functions](http://mgoadric.github.io/csci150/homework/bonusfunctions.html) due Wednesday after spring break (March 29)) -\-> -->
 
 - Exam 3: Monday, April 22, covering for loops, dictionaries,
     classes and objects, and recursion  
+
     <!-- ([Practice problems](static/exam3-practice-f18.pdf), -->
     <!-- [solutions](static/exam3-practice-f18-solutions.pdf), [Exam Bonus -->
     <!-- Assignment](static/exam-bonus.pdf) (due Monday December 3)) -->
