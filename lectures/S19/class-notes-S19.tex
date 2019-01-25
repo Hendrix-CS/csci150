@@ -2346,6 +2346,13 @@ Finish implementation of list product from last class.
 \item \notready Quiz --- ?
 \end{itemize}
 
+\begin{reflect}{S'19}
+  This will work particularly well if we're doing some kind of
+  filesystem exploration lab.  But it looks kind of like that's not
+  going to happen YET (maybe for next fall).  But it's still fun to
+  show them.
+\end{reflect}
+
 Introduce idea of trees/hierarchies.  Want to model this in Python.
 This won't be on any exam, but it's good to see a more realistic
 example of recursion in Python.  In Python I would not actually find
@@ -2418,9 +2425,7 @@ main()
 \end{verbatim}
 
 \newpage
-\section*{\notready LAB: Fractal Recursion (Th 11/8)}
-
-OR filesystem exploration??
+\section*{\notready LAB: Fractal Recursion (3/13--14)}
 
 \begin{reflect}{S' 17}
   This lab is fun and seemed to go reasonably well, though attendance
@@ -2434,11 +2439,58 @@ OR filesystem exploration??
 \begin{reflect}{F' 18}
   Lab went fine again.  In the future might want to think about
   developing a new lab that actually uses some kind of recursive data
-  structure (e.g. rose trees to represent outlines/hierarchies).
+  structure (e.g. rose trees to represent
+  outlines/hierarchies/filesystem).
 \end{reflect}
 
 \newpage
-\section{\notready For loops (M 10/15)}
+\section*{\ready Recursion IV: Fib memoization (F 3/15)}
+
+Just have fun with it!
+
+\begin{verbatim}
+# Fibonacci numbers
+#
+# First two are 0, 1
+# To get the next, add the two previous
+#
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
+
+# Problem: this function redoes a lot of redundant work!
+# Solution: ("memoization") - keep a dictionary that
+# remembers previous results.
+
+from typing import *
+
+# Original version (slow!)
+def fib(n: int) -> int:
+    if n <= 1:
+        return n
+    else:
+        return fib(n-1) + fib(n-2)
+
+
+fib_dict: Dict[int, int] = {0: 0, 1: 1}
+
+# Memoized version
+def fib_m(n: int) -> int:
+    if n in fib_dict:
+        return fib_dict[n]
+    else:
+        fib_dict[n] = fib_m(n-1) + fib_m(n-2)
+        return fib_dict[n]
+\end{verbatim}
+
+\newpage
+\textbf{Spring Break}
+
+\newpage
+\section{\ready For loops (M 3/25)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: project 2 due on Friday.
+\end{itemize}
 
 \subsection*{For Loops}
 
