@@ -1,7 +1,7 @@
 CSCI 150 HW: for loop reading practice
 --------------------------------------
 
-*Due: Wednesday, October 24*
+*Due: Wednesday, April 3*
 
 To receive full credit, for each exercise you should do the following:
 

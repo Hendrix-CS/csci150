@@ -19,8 +19,8 @@ your final grade.
 3   [Conditional practice](static/conditional-practice.pdf)                                                            M Feb 4
 4   [Function and loop reading](static/function-reading.pdf)                                                           W Feb 20
 5   [DNA Strings](static/dna-strings.html)                                                                             M Feb 25
+7   [For loop reading](static/for-reading.pdf)                                                                         W Apr 3
 
-<!-- 6   [For loop reading](static/for-reading.pdf)                                                                         Wednesday October 24 -->
 <!-- 7   [Dictionary & heap reading](static/heap-dict-reading.pdf)                                                          Wednesday October 31 -->
 <!-- 8   [Class design practice](static/class-design.pdf)                                                                   Wednesday November 7 -->
 <!-- 9   [Recursion practice](static/recursion.pdf)                                                                         Wednesday November 14 -->
@@ -32,5 +32,10 @@ your final grade.
 
 <!-- 6: [Zen reading -- section 1](http://mgoadric.github.io/csci150/homework/zen.html)                                 March 30 -->
 <!-- 7: [System analysis](static/system-analysis.html)                                                                  April 4 -->
+
+Quiz                     Date
+------------             ------------------
+Python math and output   Monday 1/28
+Execution tracing        Wednesday 1/30
 
 </font>
