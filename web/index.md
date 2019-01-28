@@ -32,7 +32,11 @@ Instructors:
   please send an email.  Also, please feel free to stop by whenever my
   door is open.
 
-TA hours (Bailey lab): TBA
+TA hours (Bailey lab):
+
+* Tuesday 7-10pm (Innocent)
+* Wednesday 7-9pm (Ashlynn)
+* Thursday 7-9pm (Kate)
 
 Past semesters: [F16](f16/), [S17](s17/), [S18](s18/), [F18](f18/)
 
