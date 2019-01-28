@@ -1,0 +1,94 @@
+>>> True
+True
+>>> False
+False
+>>> type(True)
+<class 'bool'>
+>>> type(False)
+<class 'bool'>
+>>> 'hello' == 'hello'
+True
+>>> 'hello' == 'goodbye'
+False
+>>> 3 == 3
+True
+>>> (3 + 9) == 2 * 6
+True
+>>> 5 == 6
+False
+>>> 5 != 6   # NOT equal to
+True
+>>> 5 != 5
+False
+>>> 5.0 == 5
+True
+>>> 3/4 == 0.75
+True
+>>> 3 < 5
+True
+>>> 5 > 10
+False
+>>> 3 < 3
+False
+>>> 3 <= 3
+True
+>>> 99 <= 1000000
+True
+>>> 100 >= 5.9
+True
+>>> 'hello' < 'there'
+True
+>>> 'good' < 'bye'
+False
+>>> 'apple' > 'banana'
+False
+>>> 'a' < 'b'
+True
+>>> 'a' < 'bc'
+True
+>>> 'a' < 'aa'
+True
+>>> 'b' < 'aaa'
+False
+>>> 'z' > 'a'
+True
+>>> 'z' > 'y'
+True
+>>> 'a' > 'a'
+False
+>>> 'a' > 'b'
+False
+>>> 'a' < 'b' < 'c'
+True
+>>> 'a' < 'b' < 'c' < 'd' < 'e' < 'f' < 'g' 
+True
+>>> 'aaron' < 'baron'
+True
+>>> 'aaron' < 'aron'
+True
+>>> '3' < 'a'
+True
+>>> 'aaron' < 'Aaron'
+False
+>>> 10 * 'a'
+'aaaaaaaaaa'
+>>> 'a' * 'a'
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> (3 == 3) and (6 < 9)
+True
+>>> (6 == 5) and (6 < 9)
+False
+>>> False and True
+False
+>>> True and False
+False
+>>> False and False
+False
+>>> (6 == 5) or (6 < 9)
+True
+>>> (6 == 5) or ('hello' < 'apple')
+False
+>>> (3 == 3) or ('apple' < 'hello')
+True
