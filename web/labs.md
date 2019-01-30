@@ -8,13 +8,13 @@ title: Labs
 ----- --------------------------------------------------                            ----------   ---
 1     [Minecraft Hour of Code](labs/minecraft.html)                                 Jan 16/17    Jan 23/24
 2     [Kepler and Newton](labs/kepler-newton.html)                                  Jan 23/24    Jan 30/31
+3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Jan 30/31    Feb 6/7
 4     [This Day in History](labs/dow.html)                                          Feb 6/7      Feb 13/14
 5     [Guess My Number](labs/guess.html)                                            Feb 13/14    Feb 20/21
 6     [Mutation is the Word](labs/doublets.html)                                    Feb 20/21    Feb 27/28
 8     [Fractal Recursion](labs/fractal.html)                                        Mar 13/14    Mar 27/28
 9     [Caesar's Secrets](labs/caesar.html)                                          Mar 27/28    Apr 3/4
 
-<!-- 3     [Diagnosing Heart Disease](labs/heart-disease.html)                           Sep 5/6      Sep 12/13 -->
 <!-- 7     [Line Editor](labs/line-editor.html)                                          Oct 3/4      Oct 17/18 -->
 <!-- 9     [Sentiment Analysis](labs/sentiment.html)                                     Oct 24/25    Oct 31/Nov 1 -->
 <!-- 10    [Water Jugs](labs/waterjug.html)                                              Oct 31/Nov 1 Nov 7/8 -->
