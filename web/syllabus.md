@@ -16,6 +16,10 @@ title: Syllabus
 <img src="images/pycharmlogo.png" height="100">
 [Pycharm](https://www.jetbrains.com/pycharm/)
 </img>
+
+<img src="images/replit.svg" height="100">
+[repl.it](https://repl.it)
+</img>
 </div>
 
 ### Learning Goals
@@ -90,13 +94,13 @@ that you really do benefit from using your laptop to take notes.
 ### Late Days
 
 Each student has **four late days** to spend throughout the semester
-as they wish.  Simply inform XXX (fill out form???) any time *prior*
-to the due date for an assignment that you wish to use a late day; you
-may then turn in the assignment up to 24 hours late.  Multiple late
-days may be used on the same assignment.  There are no partial late
-days; turning in an assignment 2 hours late or 20 hours late will both
-use 1 late day.  Note that late days are intended to cover both normal
+as they wish.  Simply inform the instructor any time *prior* to the
+due date for an assignment that you wish to use a late day; you may
+then turn in the assignment up to 24 hours late.  Multiple late days
+may be used on the same assignment.  There are no partial late days;
+turning in an assignment 2 hours late or 20 hours late will both use 1
+late day.  Note that late days are intended to cover both normal
 circumstances (you simply want more time to work on the assignment)
 and exceptional circumstances (you get sick, travel for a game or
-family obligation, *etc.*).  Aside from late days, late assignments
-will not be accepted.
+family obligation, *etc.*).  After you have used up your late days,
+late assignments will receive at most half credit.
