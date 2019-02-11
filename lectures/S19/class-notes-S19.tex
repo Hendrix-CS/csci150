@@ -644,7 +644,7 @@ to trick your neighbor!
 
 \newpage
 
-\section{\ready Booleans \& Conditionals (M 1/28)}
+\section{\ready Booleans (M 1/28)}
 
 \subsection*{Setup}
 
@@ -668,6 +668,18 @@ How else can we get Booleans?  \textbf{Comparison operators}:
 Demonstrate on numbers, strings, all generate Booleans.  See if they
 can guess what comparisons do for strings.  Come up with a hypothesis,
 test it.
+
+\begin{reflect}{Brent, S'19}
+  Only made it to here.  But had an extra class to cover the material
+  on conditionals.
+\end{reflect}
+
+\section*{\ready Conditionals (W 1/30)}
+
+\subsection*{Setup/administrivia}
+\begin{itemize}
+\item \ready \textbf{Quiz}: tracing. (\texttt{csci150-instructors/quiz/quiz2-tracing.py})
+\end{itemize}
 
 \subsection*{Conditionals}
 
@@ -746,17 +758,6 @@ else:
     else:
         print("You get a stick of gum!")
 \end{verbatim}
-
-\section*{\notready More conditionals, conditional practice (W 1/30)}
-
-\subsection*{Setup/administrivia}
-\begin{itemize}
-\item \ready \textbf{Quiz}: tracing. (\texttt{csci150-instructors/quiz/quiz2-tracing.py})
-\end{itemize}
-
-\textcolor{red}{Get them to practice some things that will get them ready for
-  doing the lab.  I.e. provide some scenarios that they have to encode
-  somehow?  Nested ifs, ...}
 
 \newpage
 \section*{\ready LAB: Big Data/Heart Disease (1/30--31)}
@@ -1007,25 +1008,25 @@ from 0 (off) to 255 (as bright as possible).  So each primary = 8 bits
   I sent them an email afterwards, reproduced in the LaTeX comment below.
 \end{reflect}
 
-% Hi all,
+Hi all,
 
-% There was one thing I didn't quite get to at the end of class today.  It's not hard to explain, but important.
+There was one thing I didn't quite get to at the end of class today.  It's not hard to explain, but important.
 
-% "Hexadecimal" means base 16, just like "decimal" means base 10 and "binary" means base 2.  To write numbers in base 16, we need 16 "digits"---so we use the digits 0-9 as usual and then the letters A-F.  So A represents 10, B represents 11, and so on, up to F which represents 15.  (Often lowercase letters are used as well, it doesn't matter if they are upper- or lowercase.)
+"Hexadecimal" means base 16, just like "decimal" means base 10 and "binary" means base 2.  To write numbers in base 16, we need 16 "digits"---so we use the digits 0-9 as usual and then the letters A-F.  So A represents 10, B represents 11, and so on, up to F which represents 15.  (Often lowercase letters are used as well, it doesn't matter if they are upper- or lowercase.)
 
-% For example, the hexadecimal number 3ACE means
+For example, the hexadecimal number 3ACE means
 
-% 3 * 16^3 + A * 16^2 + C * 16^1 + E * 16^0
-% = 3 * 4096 + 10 * 256 + 12 * 16 + 14
-% = 15054
+3 * 16^3 + A * 16^2 + C * 16^1 + E * 16^0
+= 3 * 4096 + 10 * 256 + 12 * 16 + 14
+= 15054
 
-% in base 10.
+in base 10.
 
-% Every hexadecimal digit corresponds to exactly 4 bits, so hexadecimal is often used as a convenient and more human-friendly way to represent sequences of bits.  For example, 3ACE is equivalent to 0011101011001110 --- which do you find easier to read?
+Every hexadecimal digit corresponds to exactly 4 bits, so hexadecimal is often used as a convenient and more human-friendly way to represent sequences of bits.  For example, 3ACE is equivalent to 0011101011001110 --- which do you find easier to read?
 
-% You may have seen hexadecimal notation before --- for example when a computer crashes it often displays a long sequence of numbers and letters, which is a hexadecimal number representing the memory address where the crash occurred.  Another place where you see hexadecimal notation is in writing down colors.  We talked in class about how a color is represented by 3 bytes; each byte is 8 bits which can be written using two hexadecimal digits.  For example, the color "lime" can be represented as AAFF32.  AA represents the amount of red (A * 16 + A = 10*16 + 10 = 170), FF is the amount of green (F * 16 + F = 15*16 + 15 = 255), and 32 is the amount of blue (note this is 32 in base 16, which is not the same as 32 in base 10!  3 * 16 + 2 = 50 base 10).
+You may have seen hexadecimal notation before --- for example when a computer crashes it often displays a long sequence of numbers and letters, which is a hexadecimal number representing the memory address where the crash occurred.  Another place where you see hexadecimal notation is in writing down colors.  We talked in class about how a color is represented by 3 bytes; each byte is 8 bits which can be written using two hexadecimal digits.  For example, the color "lime" can be represented as AAFF32.  AA represents the amount of red (A * 16 + A = 10*16 + 10 = 170), FF is the amount of green (F * 16 + F = 15*16 + 15 = 255), and 32 is the amount of blue (note this is 32 in base 16, which is not the same as 32 in base 10!  3 * 16 + 2 = 50 base 10).
 
-% If you have any questions we can go over them on Wednesday!
+If you have any questions we can go over them on Wednesday!
 
 \subsection*{Hexadecimal}
 
@@ -2182,7 +2183,8 @@ def onlyevens(lst: List[int]) -> List[int]:
 \section{\ready Exam 2 review (M 3/4)}
 
 \begin{itemize}
-\item \notready \textbf{Assign} Project 2.  Due 3/29, Friday after spring break.
+\item \notready \textbf{Assign} Project 2.  Due 3/29, Friday after
+  spring break.  Ready except putting it on the webpage.
 \item Spend a lecture going over practice exam.
 \end{itemize}
 
@@ -2350,7 +2352,7 @@ Finish implementation of list product from last class.
 \subsection*{Setup}
 \begin{itemize}
 \item Collect HW.
-\item \notready Quiz --- ?
+\item \notready Quiz --- need to write a HW to go with it.
 \end{itemize}
 
 \begin{reflect}{S'19}
@@ -2814,6 +2816,7 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 \begin{itemize}
 \item Assign HW: for loop reading practice (due Wednesday)
 \item Quiz Wednesday on for loops.
+\item Project 2 due today!
 \end{itemize}
 
 Warm-up: what happens here?  Find partner \& decide.
@@ -2976,13 +2979,12 @@ Then go over it carefully.
 % \end{reflect}
 
 \newpage
-\section{\notready Dictionaries (M 10/22)}
+\section{\ready Dictionaries (M 4/1)}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item Assign project 2 (word games).
-\item Remember HW and quiz Wednesday.
+\item Remember HW (for loop reading practice) and quiz Wednesday.
 \end{itemize}
 
 \subsection*{Dictionaries}

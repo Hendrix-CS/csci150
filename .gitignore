@@ -31,3 +31,5 @@ lectures/S17/__pycache__/
 /19S/
 
 /homework/recursion.tex
+*.md.tex
+homework/*.tex
