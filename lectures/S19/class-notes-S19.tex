@@ -1008,25 +1008,26 @@ from 0 (off) to 255 (as bright as possible).  So each primary = 8 bits
   I sent them an email afterwards, reproduced in the LaTeX comment below.
 \end{reflect}
 
-Hi all,
+% Hi all,
 
-There was one thing I didn't quite get to at the end of class today.  It's not hard to explain, but important.
+% There was one thing I didn't quite get to at the end of class today.
+% It's not hard to explain, but important.
 
-"Hexadecimal" means base 16, just like "decimal" means base 10 and "binary" means base 2.  To write numbers in base 16, we need 16 "digits"---so we use the digits 0-9 as usual and then the letters A-F.  So A represents 10, B represents 11, and so on, up to F which represents 15.  (Often lowercase letters are used as well, it doesn't matter if they are upper- or lowercase.)
+% "Hexadecimal" means base 16, just like "decimal" means base 10 and "binary" means base 2.  To write numbers in base 16, we need 16 "digits"---so we use the digits 0-9 as usual and then the letters A-F.  So A represents 10, B represents 11, and so on, up to F which represents 15.  (Often lowercase letters are used as well, it doesn't matter if they are upper- or lowercase.)
 
-For example, the hexadecimal number 3ACE means
+% For example, the hexadecimal number 3ACE means
 
-3 * 16^3 + A * 16^2 + C * 16^1 + E * 16^0
-= 3 * 4096 + 10 * 256 + 12 * 16 + 14
-= 15054
+% 3 * 16^3 + A * 16^2 + C * 16^1 + E * 16^0
+% = 3 * 4096 + 10 * 256 + 12 * 16 + 14
+% = 15054
 
-in base 10.
+% in base 10.
 
-Every hexadecimal digit corresponds to exactly 4 bits, so hexadecimal is often used as a convenient and more human-friendly way to represent sequences of bits.  For example, 3ACE is equivalent to 0011101011001110 --- which do you find easier to read?
+% Every hexadecimal digit corresponds to exactly 4 bits, so hexadecimal is often used as a convenient and more human-friendly way to represent sequences of bits.  For example, 3ACE is equivalent to 0011101011001110 --- which do you find easier to read?
 
-You may have seen hexadecimal notation before --- for example when a computer crashes it often displays a long sequence of numbers and letters, which is a hexadecimal number representing the memory address where the crash occurred.  Another place where you see hexadecimal notation is in writing down colors.  We talked in class about how a color is represented by 3 bytes; each byte is 8 bits which can be written using two hexadecimal digits.  For example, the color "lime" can be represented as AAFF32.  AA represents the amount of red (A * 16 + A = 10*16 + 10 = 170), FF is the amount of green (F * 16 + F = 15*16 + 15 = 255), and 32 is the amount of blue (note this is 32 in base 16, which is not the same as 32 in base 10!  3 * 16 + 2 = 50 base 10).
+% You may have seen hexadecimal notation before --- for example when a computer crashes it often displays a long sequence of numbers and letters, which is a hexadecimal number representing the memory address where the crash occurred.  Another place where you see hexadecimal notation is in writing down colors.  We talked in class about how a color is represented by 3 bytes; each byte is 8 bits which can be written using two hexadecimal digits.  For example, the color "lime" can be represented as AAFF32.  AA represents the amount of red (A * 16 + A = 10*16 + 10 = 170), FF is the amount of green (F * 16 + F = 15*16 + 15 = 255), and 32 is the amount of blue (note this is 32 in base 16, which is not the same as 32 in base 10!  3 * 16 + 2 = 50 base 10).
 
-If you have any questions we can go over them on Wednesday!
+% If you have any questions we can go over them on Wednesday!
 
 \subsection*{Hexadecimal}
 
