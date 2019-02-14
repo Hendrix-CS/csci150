@@ -9,3 +9,4 @@ When we write code together in class, it will be posted here!
 * M 1/28: [booleans.txt](static/booleans.txt)
 * W 1/30: [conditionals.py](static/conditionals.py)
 * M 2/11: [while.py](static/while.py)
+* W 2/13: [collatz.py](static/collatz.py), [collatz2.py](static/collatz2.py), [function_demo.py](static/function_demo.py)
