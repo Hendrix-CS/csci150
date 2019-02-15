@@ -30,3 +30,16 @@ def C_to_F(temp_C: float):
     # Any parameters such as temp_C are also local variables.
     temp_F: float = temp_C * 9 / 5 + 32
     print("The temperature in degrees Fahrenheit is " + str(temp_F) + ".")
+
+# C_to_F_improved takes a Celsius temperature as input
+# and returns a float value representing the temperature
+# in Fahrenheit.
+def C_to_F_improved(temp_C: float) -> float:
+    temp_F: float = temp_C * 9/5 + 32
+    return temp_F
+
+    # This never happens
+    print("At the end of the function!")
+
+
+# C_to_F_improved(30)
