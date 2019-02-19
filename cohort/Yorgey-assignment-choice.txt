@@ -1,0 +1,10 @@
+To access the assignment I have chosen for workshopping during the
+charette session, visit
+
+http://ozark.hendrix.edu/~yorgey/150/labs/kepler-newton.html
+
+This is a key lab assignment (see the description in the assignment
+sequence) since it is the first assignment where students are
+introduced to the Python programming language, which is used
+throughout the remainder of the course.  I am certain it can be
+improved in terms of transparency, clarity, and inclusion.

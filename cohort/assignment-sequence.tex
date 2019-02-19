@@ -101,9 +101,9 @@ don't see any good way to do this.
   chooser and guesser.
 
   \textbf{Purpose}: The primary purpose of this lab is to give
-  students practice writing ``while loops'' (one of the most primitive
-  forms of repetition).  It requires (and assumes!) that students have
-  mastered the skills from the first four labs.
+  students practice writing \texttt{while} loops (one of the most
+  primitive forms of repetition).  It requires (and assumes!) that
+  students have mastered the skills from the first four labs.
 
 \item Lab 6: Mutation is the Word
 
@@ -112,7 +112,14 @@ don't see any good way to do this.
   changing one letter at a time, such that every intermediate step is
   also a valid English word.
 
-  \textbf{Purpose}: 
+  \textbf{Purpose}: This lab has two primary purposes: first, it gives
+  students practice manipulating strings; second, it gives students
+  practice abstracting sections of code into function definitions.
+
+  Secondarily, the lab affords additional practice writing loops, but
+  it is assumed that students are already familiar with this process
+  from the previous lab.  As usual, it assumes students have mastered
+  the skills from the first four labs.
 
 \item Lab 7: List Editor
 
@@ -121,11 +128,13 @@ don't see any good way to do this.
   interfaces.
 
   \textbf{Purpose}: The primary purpose is to give students experience
-  building and manipulating lists.  XXX
+  building and manipulating lists; it also gives students additional
+  practice manipulating strings (from Lab 6).
 
 \item Lab 8: Fractal Recursion
 
-  In this lab, students implement 
+  In this lab, students write code to create various mathematical
+  images.
 
   \textbf{Purpose}: Nominally, the purpose of this lab is to give
   students experience thinking recursively and implementing recursive
@@ -140,11 +149,107 @@ don't see any good way to do this.
 
 \item Lab 9: Caesar's Secrets
 
-  In this lab, students
-\item Lab 10: Sentiment Analysis (dictionaries)
-\item Lab 11: Water Jugs (classes \& objects)
+  In this lab, students implement some basic cryptanalysis: it guides
+  them through incrementally developing a set of tools that are
+  ultimately able to automatically decrypt messages written using a
+  particular simple type of cipher (a Caesar cipher).
+
+  \textbf{Purpose}: the main purpose of the lab is to allow students
+  to practice writing \texttt{for} loops.  It assumes they have
+  mastered the ability to manipulate lists (Lab 7) and strings (Lab
+  6).  Although it does not explicitly require them to use
+  \texttt{while} loops (Lab 5) it does build upon their
+  understanding of repetition in a more abstract sense.  Mastery of
+  the topics from Labs 1--4 is again assumed.
+
+\item Lab 10: Sentiment Analysis
+
+  In this lab, students build a program capable of analyzing a given
+  word or phrase and deciding whether it is ``positive'' or
+  ``negative'', depending on the scores associated with given words in
+  a database of movie reviews.
+
+  \textbf{Purpose}: the lab is designed to give students plenty of
+  practice creating and manipulating dictionaries (a particular type
+  of data structure).
+
+  The lab makes use of and assumes mastery of all topics from the
+  previous labs, with the exception of Lab 8.
+
+\item Lab 11: Water Jugs
+
+  In this lab, students implement a program that allows the user to
+  play a classic mathematical/logic game, involving trying to measure
+  a certain amount of water by pouring water between a set of jugs of
+  various capacities.
+
+  \textbf{Purpose}: this assignment gives students practice
+  specifically with writing their own ``classes'' in Python, and more
+  generally in thinking about modular design.
+
+  The lab builds on the skills and topics introduced in Labs 1--7 and
+  9.
+
 \item Lab 12: Processing
+
+  In this lab, students use the Processing system to implement some
+  fun interactive animations.
+
+  \textbf{Purpose}: this assignment introduces no new skills or ideas,
+  but does introduce students to a new technology, which they
+  invariably find to be fun and some choose to use on their final
+  project.
+
 \item Lab 13: On Stuckness \& Debugging
+
+  In this lab, students spend time doing some explicit reflection on
+  the process of fixing code that doesn't work (``debugging'') and its
+  relationship to the scientific method.
+
+  \textbf{Purpose}: this lab allows students to tie together many of
+  the skills they have learned previously, without depending on very
+  many specific skills per se.  It would probably be beneficial for
+  students to do this lab earlier in the semester, but it is hard to
+  know what to move/cut to make room for it.
+\end{itemize}
+
+\section*{Course learning goals}
+
+Below are the \emph{current} course learning goals, with each goal
+mapped to corresponding lab assignments, when applicable (some map to
+other assignments not covered in this assignment sequence).  These
+goals probably need to be revised or even rewritten from scratch; many
+are either too specific or too general, and some goals of the course
+as we teach it are missing from the list.
+
+\begin{itemize}
+\item Read, understand and execute a computer program written in
+  Python. (Labs 2--13)
+\item Read a set of requirements for a computer program in English,
+  and write a short Python program (100 lines or less) that
+  corresponds to them. (Labs 2--13)
+\item Test a Python program and identify and fix programming errors.
+  (Lab 13 in particular; Labs 2--12 in general)
+\item Identify some errors in a Python program without testing it.
+  (Lab 13; in-class and HW exercises)
+\item Without using a computer, write a very short Python code
+  fragment (10 lines or less) that correctly implements a set of
+  requirements. (in-class and HW exercises)
+\item Understand and apply variables (Lab 2), loops (Labs 5 and 9),
+  strings (Lab 6), lists (Lab 7), conditionals (Lab 3), and functions
+  (Lab 6).
+\item Write programs to perform mathematical calculations. (Labs 2 and
+  4, and others)
+\item Understand the concepts of class and object, and distinguish
+  between them. (Lab 11)
+\item Write a Python program including objects of multiple interacting
+  student-designed classes. (Projects)
+\item Write and understand appropriate comments in a Python
+  program. (All labs)
+\item Understand the concept of an algorithm and compare the
+  efficiency of different algorithms for a simple task. (This goal
+  should either be removed, or a lab should be changed to incorporate
+  it.)
 \end{itemize}
 
 \end{document}
