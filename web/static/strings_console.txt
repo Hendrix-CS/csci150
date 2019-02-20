@@ -1,0 +1,53 @@
+>>> 'hello' + 'there'
+'hellothere'
+>>> 5 * 'hello'
+'hellohellohellohellohello'
+>>> 'X' + (20 * ' ') + 'Y'
+'X                    Y'
+>>> 'hello'[1]
+'e'
+>>> 'hello'[4]
+'o'
+>>> 'hello'[5]
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+IndexError: string index out of range
+>>> 'hello world'[5]
+' '
+>>> (3 * 'hello' + ' ' + 'world')[2 * 7 - 5]
+'o'
+>>> "hello\n"[5]
+'\n'
+>>> len('hello')
+5
+>>> long_string = "supercalifragilisticexpialidocious"
+>>> long_string[len(long_string) - 1]
+'s'
+>>> long_string[-1]
+'s'
+>>> long_string[-2]
+'u'
+>>> long_string[-100]
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+IndexError: string index out of range
+>>> long_string[5:10]
+'calif'
+>>> 'hello'[2:-1]
+'ll'
+>>> 'hello'[2,-1]
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: string indices must be integers
+>>> 'hello'[2:5]
+'llo'
+>>> 'hello'[2:]   # start at index 2, and include everything to the end
+'llo'
+>>> 'hello'[:2]
+'he'
+>>> 'hello'[:]
+'hello'
+>>> 'hello'[0:2]
+'he'
+>>> 'hello'[2:5]
+'llo'

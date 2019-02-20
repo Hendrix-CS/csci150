@@ -11,3 +11,4 @@ When we write code together in class, it will be posted here!
 * M 2/11: [while.py](static/while.py)
 * W 2/13: [collatz.py](static/collatz.py), [collatz2.py](static/collatz2.py), [function_demo.py](static/function_demo.py)
 * M 2/18: [collatz_functions.py](static/collatz_functions.py), [functions_bad.py](static/functions_bad.py)
+* W 2/20: [string_demo.py](static/string_demo.py), [strings_console.txt](static/strings_console.txt)
