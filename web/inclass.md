@@ -13,3 +13,4 @@ When we write code together in class, it will be posted here!
 * M 2/18: [collatz_functions.py](static/collatz_functions.py), [functions_bad.py](static/functions_bad.py)
 * W 2/20: [string_demo.py](static/string_demo.py), [strings_console.txt](static/strings_console.txt)
 * F 2/22: [string_demo.py](static/string_demo.py)
+* M 2/25: [list_demo.py](static/list_demo.py)
