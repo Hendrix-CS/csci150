@@ -1,0 +1,9 @@
+Things to revise:
+
++ Revise learning goals
++ Make better/more detailed rubrics for labs etc.
++ Revise syllabus to make it more readable/accessible etc.
++ Revise labs to make them more transparent/clear
+  - Estimated time?
+  - Explain learning goals
+  - Explain which parts are just for fun
