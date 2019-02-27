@@ -8,15 +8,18 @@
 <h1><a href="../index.html">CSCI 150</a> Lab 7: Todo Manager</h1>
 <hr>
 
-<h2>Overview/learning goals</h2>
+<h2>Overview</h2>
 
 In this lab, you will practice using lists and strings in Python by
 implementing a very simple todo manager, which helps you keep track of
 a list of things to do (or a list of anything at all).
 
+Here's an example of what your program might look like by the end of
+the lab:
+
 <pre>
 Welcome to the todo list manager!
-Enter the name of the file with your todos (default todo.txt): 
+Enter the name of the file with your todos (default todo.txt):
 Warning, file todo.txt does not exist.
 ------------------------------
 ------------------------------
@@ -104,3 +107,154 @@ Todos matching 't':
 4) Quit
 Your choice? 4
 </pre>
+
+<h2>Step 1: Bits and Pieces</h2>
+
+Create a new Python file called <code>todo_manager.py</code>, and put
+your name, date, copyright notice, <em>etc.</em> at the top. Also,
+don't forget to include the line
+<pre>
+from typing import *
+</pre>
+at the top of your file, which you will need in order to write types
+involving lists.
+
+Start by writing the following functions:
+
+<ul>
+  <li><code>print_numbered_list(items: List[str])</code>
+
+    <p>This function should take a list of strings as input and print them
+  out, one per line, with numbers in front of them.  For example, if
+  given the list <code>['hat', 'socks', 'shoes']</code> as input, it
+  should print out
+
+    <pre>
+0) hat
+1) socks
+2) shoes
+    </pre>
+
+    Be sure to test your function by right-clicking and choosing "Run File in Console"
+    and then trying your function with different inputs.  For example,
+    if you type
+
+    <pre>
+print_numbered_items(['hat', 'socks', 'shoes'])
+    </pre>
+
+    at the prompt, you should see the output shown above.
+  </li>
+
+  <li><p><code>def get_choice(prompt: str, choices: List[str]) -> int:</code>
+
+      <p>This function takes as input a prompt string and a list of
+    choices.  It should carry out the following steps:
+    <ul>
+      <li>Print out a numbered list of the choices
+        (using <code>print_numbered_list</code>).</li>
+      <li>Prompt the user (using the provided <code>prompt</code>).</li>
+      <li>Check to make sure the user's input is a number, and if so,
+        that it corresponds to one of the choices.</li>
+      <li>If the user's input is invalid, print an appropriate error
+        message and simply return <code>-1</code>.  Don't worry about
+        using a loop to re-prompt the user.</li>
+      <li>Otherwise, if the user entered a valid choice, return the
+        number they chose.</li>
+    </ul>
+
+    <p>Again, you should be sure to load your file into the console and
+    test it.  For example, you might see something like this:
+    <pre>
+>>> get_choice("Whaddaya want? ", ['hat', 'socks', 'shoes'])
+0) hat
+1) socks
+2) shoes
+Whaddaya want? shirt
+Sorry, shirt is not a number.
+-1
+
+>>> get_choice("Whaddaya want? ", ['hat', 'socks', 'shoes'])
+0) hat
+1) socks
+2) shoes
+Whaddaya want? 5
+Sorry, 5 is not a valid choice.
+-1
+
+>>> get_choice("Whaddaya want? ", ['hat', 'socks', 'shoes'])
+0) hat
+1) socks
+2) shoes
+Whaddaya want? 2
+2
+    </pre>
+</ul>
+
+<h2>Step 2: loading and saving</h2>
+
+A todo list manager isn't much good without being able to load and
+save lists of todos!  You wouldn't want to have to type in all your
+todos every time you run the program.
+
+I have provided functions you can use to open and save text files.
+Later in the semester we will learn more about how they work.  For
+now, you can just copy and paste these functions into your program.
+
+<pre>
+# Open the file with the given name and return its contents as a list
+# of strings, one per line; OR print a warning and return the empty
+# list if there is an error opening the file (e.g. if the file does
+# not exist).
+def open_file(filename: str) -> List[str]:
+    try:
+        f = open(filename, 'r')
+        lines = [l.rstrip() for l in f.readlines()]
+        f.close()
+        return lines
+    except:
+        print("Warning, file " + filename + " does not exist.")
+        return []
+
+# Write the given string to the file with the given name.
+def save_file(filename: str, contents: str):
+    try:
+        f = open(filename, 'w')
+        f.write(contents)
+        f.close()
+    except:
+        print("Something went wrong saving " + filename + "!")
+</pre>
+
+Make a function <code>main()</code> which does the following:
+<ul>
+  <li>Prompts the user for the filename containing their todo list.</li>
+  <li>Opens the file (using the <code>open_file</code> function) and
+    saves the contents into a list.</li>
+  <li>Prints out the todo list
+    using <code>print_numbered_list</code>.</li>
+  <li>
+</ul>
+
+Loading and saving.  Printing out numbered todos. Menu choices in a
+loop. quit.
+
+<h2>Step 3: operations</h2>
+
+Implement add, remove, replace, search.
+
+<h2>Step 4: XXX</h2>
+
+Extra stuff, e.g. priorities, ???
+
+<h2>What to turn in</h2>
+
+<ul>
+  <li><code>todo_manager.py</code></li>
+</ul>
+
+<h2>Grading</h2>
+
+<small>&copy; Brent Yorgey, Hendrix College</small>
+
+</body>

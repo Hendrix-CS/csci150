@@ -12,10 +12,10 @@ title: Labs
 4     [This Day in History](labs/dow.html)                                          Feb 6/7      Feb 13/14
 5     [Guess My Number](labs/guess.html)                                            Feb 13/14    Feb 20/21
 6     [Mutation is the Word](labs/doublets.html)                                    Feb 20/21    Feb 27/28
+7     [Todo Manager](labs/todo-manager.html)                                        Feb 27/28    Mar 6/7
 8     [Fractal Recursion](labs/fractal.html)                                        Mar 13/14    Mar 27/28
 9     [Caesar's Secrets](labs/caesar.html)                                          Mar 27/28    Apr 3/4
 
-<!-- 7     [Line Editor](labs/line-editor.html)                                          Oct 3/4      Oct 17/18 -->
 <!-- 9     [Sentiment Analysis](labs/sentiment.html)                                     Oct 24/25    Oct 31/Nov 1 -->
 <!-- 10    [Water Jugs](labs/waterjug.html)                                              Oct 31/Nov 1 Nov 7/8 -->
 <!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Nov 14/15    Nov 20* -->
