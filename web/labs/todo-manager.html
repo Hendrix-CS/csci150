@@ -19,7 +19,7 @@ the lab:
 
 <pre>
 Welcome to the todo list manager!
-Enter the name of the file with your todos (default todo.txt):
+Enter the name of the file with your todos: todo.txt
 Warning, file todo.txt does not exist.
 ------------------------------
 ------------------------------
@@ -105,6 +105,20 @@ Todos matching 't':
 2) Replace a todo
 3) Search
 4) Quit
+Your choice? 1
+0) Finish writing todo manager lab
+1) Revise paper
+2) Beat all MK8 Deluxe tracks on 200cc mode
+Which todo do you want to remove? 0
+------------------------------
+0) Revise paper for JFP
+1) Beat all MK8 Deluxe tracks on 200cc mode
+------------------------------
+0) Add a new todo
+1) Remove a todo
+2) Replace a todo
+3) Search
+4) Quit
 Your choice? 4
 </pre>
 
@@ -119,7 +133,7 @@ from typing import *
 at the top of your file, which you will need in order to write types
 involving lists.
 
-Start by writing the following functions:
+Start by defining the following functions:
 
 <ul>
   <li><code>print_numbered_list(items: List[str])</code>
@@ -135,7 +149,7 @@ Start by writing the following functions:
 2) shoes
     </pre>
 
-    Be sure to test your function by right-clicking and choosing "Run File in Console"
+    <b>Be sure to test your function</b> by right-clicking and choosing "Run File in Console"
     and then trying your function with different inputs.  For example,
     if you type
 
@@ -149,22 +163,24 @@ print_numbered_items(['hat', 'socks', 'shoes'])
   <li><p><code>def get_choice(prompt: str, choices: List[str]) -> int:</code>
 
       <p>This function takes as input a prompt string and a list of
-    choices.  It should carry out the following steps:
+    choices, and returns an <code>int</code> corresponding to the
+    user's choice.  It should carry out the following steps:
     <ul>
       <li>Print out a numbered list of the choices
         (using <code>print_numbered_list</code>).</li>
-      <li>Prompt the user (using the provided <code>prompt</code>).</li>
+      <li>Prompt the user for input (using the provided <code>prompt</code>).</li>
       <li>Check to make sure the user's input is a number, and if so,
         that it corresponds to one of the choices.</li>
       <li>If the user's input is invalid, print an appropriate error
-        message and simply return <code>-1</code>.  Don't worry about
-        using a loop to re-prompt the user.</li>
+        message and simply return <code>-1</code>.  Don't use a loop
+        to re-prompt the user.  This will allow the user to "cancel"
+        by entering an invalid input.</li>
       <li>Otherwise, if the user entered a valid choice, return the
         number they chose.</li>
     </ul>
 
-    <p>Again, you should be sure to load your file into the console and
-    test it.  For example, you might see something like this:
+    <p><b>Again, you should be sure to load your file into the console and
+    test it</b>.  For example, you might see something like this:
     <pre>
 >>> get_choice("Whaddaya want? ", ['hat', 'socks', 'shoes'])
 0) hat
@@ -191,13 +207,13 @@ Whaddaya want? 2
     </pre>
 </ul>
 
-<h2>Step 2: loading and saving</h2>
+<h2>Step 2: Loading and Saving</h2>
 
 A todo list manager isn't much good without being able to load and
 save lists of todos!  You wouldn't want to have to type in all your
 todos every time you run the program.
 
-I have provided functions you can use to open and save text files.
+<p>I have provided functions you can use to open and save text files.
 Later in the semester we will learn more about how they work.  For
 now, you can just copy and paste these functions into your program.
 
@@ -226,26 +242,114 @@ def save_file(filename: str, contents: str):
         print("Something went wrong saving " + filename + "!")
 </pre>
 
-Make a function <code>main()</code> which does the following:
+Now define a function <code>main()</code> which does the following:
 <ul>
-  <li>Prompts the user for the filename containing their todo list.</li>
-  <li>Opens the file (using the <code>open_file</code> function) and
-    saves the contents into a list.</li>
-  <li>Prints out the todo list
+  <li>Prompt the user for the name of the file containing their todo list.</li>
+  <li>Open the file (using the <code>open_file</code> function) and
+    save the contents into a list variable.</li>
+  <li>Print out the todo list
     using <code>print_numbered_list</code>.</li>
-  <li>
+  <li>Add a fake todo item to the end of the list (this part is just
+    temporary, to make sure everything else is working; you will remove
+    it in the next step.</li>
+  <li>Save the new, extended list back to the file using
+    the <code>save_file</code> function.   Note
+    that <code>save_file</code> expects a string, not a list of strings,
+    so you will have to turn the list of todos into a single string
+    using something like <code>'\n'.join(todos)</code>, which puts the
+    list of todos together with a newline character in between each one.</li>
 </ul>
 
-Loading and saving.  Printing out numbered todos. Menu choices in a
-loop. quit.
+Again, you should be sure to test your <code>main()</code>
+function. (You can use whatever file name you want for your todo list;
+if it doesn't already exist, it will be created by <code>save_file</code>.)
+You should be able to tell if the loading and saving is working since
+after running <code>main()</code> your todo file should have one more line
+at the end.
 
-<h2>Step 3: operations</h2>
+Menu choices in a loop. quit.
 
-Implement add, remove, replace, search.
+<h2>Step 3: Menu</h2>
 
-<h2>Step 4: XXX</h2>
+Now modify your <code>main()</code> function so it lets the user
+repeatedly choose options from a menu. In particular:
+<ul>
+  <li>Create a list of strings representing the different menu choices
+    that will be available to the user: there should be an option to add
+    a todo, remove a todo, modify a todo, search for a todo, or quit.</li>
+  <li>Make a loop that keeps printing the list of todos and then
+    prompting the user for their choice from the menu (using
+    the <code>get_choice</code> function you wrote in Step 1 and the
+    list of menu choices) until they choose to quit.  At this point
+    nothing will actually happen when they choose things from the
+    menu; you will fix that in the next step.
+</ul>
 
-Extra stuff, e.g. priorities, ???
+You should also get rid of the code that adds a fake todo item to the
+end of the list.
+
+<h2>Step 4: Operations</h2>
+
+Now it's time to actually implement the operations!  Below are
+descriptions of what the different menu choices should do.  You can
+also look at the example program output at the top of this lab for
+inspiration.
+
+<b>Be sure to test that each operation works before moving on to the
+next!</b>
+
+<h3>add</h3>
+
+If the user chooses to add a new todo item, you should prompt them for
+a new todo and add it to the end of the list.
+
+<h3>remove</h3>
+
+If the user chooses to remove a todo item, you should
+use <code>get_choice</code> to ask for the index of the item they
+would like to remove.  If <code>get_choice</code>
+returns <code>-1</code>, do nothing.  Otherwise, you can use
+the <code>pop</code> list function to remove the item at a particular
+index, for example, if your list of todos is called <code>todos</code>
+and the user's choice is stored in a variable
+called <code>choice</code>, you could
+write <code>todos.pop(choice)</code>.
+
+<h3>replace</h3>
+
+This should work similarly to remove: ask the user which item they
+would like to replace; if they make a valid choice, prompt them for a
+new todo item, and replace the item at the index they chose.
+
+<h3>search</h3>
+
+You should first write a function
+<pre>
+def find_all(term: str, items: List[str]) -> List[str]:
+</pre>
+which takes a search term and a list of items, and returns the list of
+only those items from the list which contain the search term.  You can
+check whether one string contains another string using
+the <code>in</code> operator: for example, <code>"th" in
+  "python"</code> will return <code>True</code>, but <code>"z" in
+  "python"</code> is <code>False</code>.
+
+Test your function in the console: for example, you should get
+<pre>
+>>> find_all("ab", ["baby", "dog", "cat", "absolute", "table", "python"])
+["baby", "absolute", "table"]
+</pre>
+
+Now implement the search menu choice: prompt the user what they want
+to search for, use <code>find_all</code> to get the todos that match
+their search term, and display them to the user
+using <code>print_numbered_list</code>.
+
+<p>At this point you should be able to reproduce something similar to
+  the example program run shown at the beginning of the lab!  Note,
+  however, that your output does not need to be identical to the
+  example shown.  Feel free to use your creativity to make it look
+  nice or add your own extra features.
 
 <h2>What to turn in</h2>
 
@@ -254,6 +358,15 @@ Extra stuff, e.g. priorities, ???
 </ul>
 
 <h2>Grading</h2>
+
+<ul>
+<li>To earn a D, complete Step 1.
+<li>To earn a C, complete Step 2.
+<li>To earn a B, complete Step 3.
+<li>To earn an A, complete Step 4.
+<li>To earn a 100, use good code style and document each function
+  with comments.</li>
+</ul>
 
 <small>&copy; Brent Yorgey, Hendrix College</small>
 
