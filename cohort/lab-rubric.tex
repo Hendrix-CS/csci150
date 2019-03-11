@@ -1,0 +1,74 @@
+% -*- compile-command: "pdflatex lab-rubric.tex" -*-
+
+\documentclass{article}
+
+\usepackage{pdflscape, booktabs, longtable}
+\usepackage[noheadfoot,margin=1in]{geometry}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{landscape}
+  {\Large CSCI 150, Foundations of Computer Science: Lab and Project
+    Rubric} \bigskip
+
+  \begin{longtable}{p{1in}p{2.2in}p{2.2in}p{2.2in}p{2.2in}}
+    \toprule
+    \textbf{Criterion} & Excellent & Satisfactory & Needs improvement \\
+    \midrule
+    \textbf{Completeness}
+    & All parts of the assigned lab are complete.
+    & All but the last section are complete, or all are complete with
+    some minor holes throughout.
+    & Significant portions of the assignment are incomplete.
+    \\
+    \midrule
+    \textbf{Correctness}
+    & The submitted program correctly carries out the required
+    behavior.  The program never crashes, even when given invalid input.
+    & The program largely carries out the required behavior, with some
+    small exceptions.  The program does not usually crash, but might
+    in a few cases.
+    & The program fails to implement the required behavior, or does so
+    with some major problems; or the program is sometimes correct but
+    often crashes.
+    \\
+    \midrule
+    \textbf{Documentation}
+    & The program is well-documented, with comments explaining the
+    behavior, parameters, and return value of each function, and
+    comments explaining any interesting or nonobvious code.  If there
+    is a README file, it thoroughly explains the program, its purpose
+    and features, and how to use it.
+    & The program is mostly well-documented, but there may be some
+    missing comments, or some existing comments may be too terse,
+    vague, or confusing.  A README file may be lacking some detail.
+    & Many parts of the program are uncommented, or comments may be
+    unhelpful.
+    \\
+    \midrule
+    \textbf{Style}
+    & The program uses good style throughout and is a pleasure to
+    read: it uses consistent indentation and spacing, uses informative
+    variable names, and avoids redundancy. Lines are not too
+    long. Comments contain well-written, complete sentences.
+    & The program mostly uses good style, with a few lapses or issues
+    that need improvement that do not impair the overall readability.
+    & Stylistic issues make the program difficult to read and understand.
+    \\
+    \midrule \textbf{Reflection}
+    & The submitted reflection document meets the stated requirements and
+    contains a thoughtful discussion showing clear
+    evidence of learning.
+    & The reflection document mostly meets the stated requirements and
+    shows evidence of learning.
+    & The reflection document is missing, or contains a reflection
+    that does not go beyond a superficial level.
+    \\
+  \end{longtable} \vspace{0.5in}
+
+\end{landscape}
+
+
+\end{document}
