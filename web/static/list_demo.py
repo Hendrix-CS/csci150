@@ -62,3 +62,49 @@ animals: List[str] = ["parakeet", "iguana", "octopus", "wombat"]
 # Doesn't work: append adds *one thing* to the end of a list,
 # so we get a list whose last member is a list of three 'gerbil's
 # animals.append(['gerbil'] * 3)
+
+# Works, but we have to use a magic number 7
+# while len(animals) < 7:
+#     animals = animals + ['gerbil']
+
+# Woudn't work, infinite loop
+# while len(animals) < len(animals) + 3:
+#     ...
+
+# Too explicit (works though)
+# while animals != ["parakeet", "iguana", "octopus", "wombat", "gerbil", "gerbil", "gerbil"]:
+#     animals = animals + ["gerbil"]
+
+# Also too explicit (also works though)
+# while animals != ["parakeet", "iguana", "octopus", "wombat"] + ["gerbil"] * 3:
+#     animals = animals + ["gerbil"]
+
+# Adds enough gerbils so there are at least 3
+# while animals.count('gerbil') < 3:
+#     animals.append('gerbil')
+
+# Works
+# targetLen: int = len(animals) + 3
+# while len(animals) < targetLen:
+#     animals.append('gerbil')
+
+# Works too
+# count: int = 0
+# while count < 3:
+#     animals.append('gerbil')
+#     count += 1
+
+#######################################################
+# List practice
+
+# Add up all the numbers in a list and return the sum.
+# e.g.
+#
+#   listsum([3,5,2,8])  ----> 18
+def listsum(nums: List[int]) -> int:
+    i: int = 0
+    sum: int = 0
+    while i < len(nums):
+        sum = sum + nums[i]
+        i = i + 1
+    return sum

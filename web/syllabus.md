@@ -20,6 +20,10 @@ title: Syllabus
 <img src="images/replit.svg" height="100">
 [repl.it](https://repl.it)
 </img>
+
+<img src="images/python_tutor.png" height="100">
+[pythontutor.com](http://pythontutor.com)
+</img>
 </div>
 
 ### Learning Goals
