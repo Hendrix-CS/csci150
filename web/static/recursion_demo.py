@@ -55,3 +55,28 @@ def list_sum_rec(nums: List[int]) -> int:
         return nums[0] + rest_sum
 
         # (Could also do all on one line)
+
+# Return the product of all the numbers in a list
+# e.g. list_prod([2,5,3]) == 30
+def list_prod(nums: List[int]) -> int:
+
+    if len(nums) == 0:
+        return 1
+    # elif len(nums) == 1:    # Not necessary
+    #     return nums[0]
+    elif nums.count(0) > 0:   # Nice to have but the function would
+        return 0              # still work without it
+    else:
+        return nums[0] * list_prod(nums[1:])
+
+# Reverse the string s
+# e.g.  reverse('abc') = 'cba'
+def reverse(s: str) -> str:
+    if len(s) == 0:
+        return s
+    # if len(s) == 1:   # unnecessary
+    #     return s
+    else:
+        return s[-1] + reverse(s[:-1])
+        # OR
+        # return reverse(s[1:]) + s[0]

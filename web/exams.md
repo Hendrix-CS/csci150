@@ -14,7 +14,10 @@ answer questions along with writing and debugging code.
   lists, and strings  
   ([Practice exam](static/exam2-practice-s19.pdf)
 
-  <!-- , [Exam practice review code](static/Exam2.py), [Exam Bonus Assignment](static/exam-bonus.pdf) (due Monday 10/22 in class)) -->
+    [Exam Bonus Assignment](static/exam-bonus.pdf) (due in class
+    the Friday after spring break, March 29)
+
+  <!-- , [Exam practice review code](static/Exam2.py) -->
   <!-- [In-class code from practice exam](static/exam2-practice.py)) -->
 
 <!-- ; [Practice exam solution code](static/exam2-practice.py); [Bonus functions](http://mgoadric.github.io/csci150/homework/bonusfunctions.html) due Wednesday after spring break (March 29)) -\-> -->
