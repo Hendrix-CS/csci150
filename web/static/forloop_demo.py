@@ -16,8 +16,8 @@ def explode2(lst: List[str]):
 # for <new variable> in <list or string expression>:
 #    ... stuff using the new variable ...
 
-for c in 'hello world':
-    print(c)
+# for c in 'hello world':
+#     print(c)
 
 # Count how many times the character c occurs in the string s.
 # e.g.
@@ -58,3 +58,44 @@ def find(s: str, c: str) -> int:
 #   find_all('lemon', 'm')    -> [2]
 #   find_all('lemon', 'z')    -> []
 def find_all(s: str, c: str) -> List[int]:
+    indices: List[int] = []
+    for i in range(len(s)):
+        if s[i] == c:
+            indices.append(i)
+
+    return indices
+
+
+
+foods = ['pasta', 'sushi', 'pizza', 'pancakes']
+
+for f in foods:
+    f += '!'   # This only changes the local variable f,
+               # it does not change the list 'foods' at all.
+
+# This works:
+# excited = []
+# for f in foods:
+#     f += '!'
+#     excited.append(f)
+# foods = excited
+
+# Keeps adding more ! forever:
+# for f in foods:
+#     f += '!'
+#     foods.append(f)
+
+for i in range(len(foods)):
+    foods[i] += '!'
+
+
+# Say whether nums is sorted from smallest to biggest
+#
+# e.g.  is_sorted([1,2,5,8,23]) -> true
+#       is_sorted([1,2,2,2,3,3]) -> true
+#       is_sorted([1,2,6,4,9])  -> false
+def is_sorted(nums: List[int]) -> bool:
+
+
+
+
