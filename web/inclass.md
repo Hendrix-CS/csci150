@@ -16,3 +16,4 @@ When we write code together in class, it will be posted here!
 * M 2/25 - F 3/1: [list_demo.py](static/list_demo.py)
 * F 3/8 - F 3/15: [recursion_demo.py](static/recursion_demo.py)
 * M 3/25 - W 3/27: [forloop_demo.py](static/forloop_demo.py)
+* M 4/1: [dictionary_demo.py](static/dictionary_demo.py)
