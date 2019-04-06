@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    @media (min-width: 1200px) {
+      .container{
+        max-width: 900px;
+      }
+    }
+  </style>
+
+  <title>CSCI 150 Lab 2: Kepler and Newton</title>
+</head>
+
+<body>
+  <main role="main" class="container">
+
+  <div>
+<h1>CSCI 150: Lab 2 Kepler and Newton</h1>
+<hr>
+
+<h2>Overview and Purpose</h2>
+
+<p class="lead">In this lab you will write a program to help the user
+compute the distance of a planet from its sun, using equations
+developed by Johannes Kepler and Sir Isaac Newton.</p>
+
+<p>The purposes of this lab are:
+<ul>
+  <li>To practice using Python's facilities for input and output</li>
+  <li>To use Python to perform mathematical calculations</li>
+</ul>
+</p>
+
+<h2>Materials</h2>
+
+<ul>
+  <li>Python 3</li>
+  <li>Lab Partner</li>
+  <li><a href="https://docs.python.org/3.6/library/math.html">Math module</a></li>
+  <li><a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python Style Guide</a></li>
+</ul>
+
+<!-- <h2>Description</h2> -->
+<!-- A first step in searching for intelligent life elsewhere in the universe is to find -->
+<!-- other planets that may harbor life.  While much time is being spent to analyze the closest -->
+<!-- possibility of Mars, researchers have made progress in recent years toward finding -->
+<!-- planets outside our solar system orbiting other stars. The first few of these -->
+<!-- <a href="http://exoplanet.eu/">extrasolar planets</a> found were as large or larger than -->
+<!-- Jupiter with wildly eccentric orbits, however as our methods of detection become more -->
+<!-- precise we are starting to find Earth-sized planets that may provide a good foundation for life. -->
+<!-- In this lab we'll discuss planetary motion in general and apply our computing skills to -->
+<!-- study various exoplanets. -->
+<p>
+  <h3>Step 0: Getting started</h3>
+
+  Open PyCharm and create a new project (by going to the <kbd>File</kbd> menu
+  and selecting <kbd>New Project</kbd>).  Name it something like <code>Lab 01 -
+  Kepler and Newton</code>.  Accept the other defaults and click <kbd>Create</kbd>.
+
+<p>
+  At this point you will have a new, empty project.  Each project can
+  contain multiple Python files.  To create a new Python file, you can
+  either choose <kbd>New...</kbd> under the <kbd>File</kbd> menu, or right click on the
+  project folder and select <kbd>New...</kbd>.  Make sure you select <kbd>New
+  Python File</kbd>.  Then you can type in a name for the file.  Note that
+  you should not include <code>.py</code> on the end of the name;
+  PyCharm will add <code>.py</code> for you.
+
+<h3>Kepler</h3>
+<img src="../images/kepler_pic.jpg" class="rounded float-left mr-3"
+     alt="A picture of Johannes Kepler">
+One astronomer who made a major advance in the understanding of our solar system and
+astrophysics in general was
+<a href="http://en.wikipedia.org/wiki/Johannes_Kepler">Johannes Kepler</a>.
+In fact, NASA launched a satellite to search for habitable planets in 2009, and has
+named this <a href="http://kepler.nasa.gov/">mission</a> after Kepler.
+In the early 1600s he published his now-famous three laws of planetary motion.
+These laws, based on years of stellar and planetary observation by
+<a href="http://en.wikipedia.org/wiki/Tycho_Brahe">Tycho Brahe</a>,
+finally fixed any lingering anomalies in the
+<a href="http://en.wikipedia.org/wiki/Copernican_system">Copernican theory</a>
+that the Earth and other planets
+revolved around the Sun. The first law states that the planets orbited the Sun in ellipses with
+the Sun at one foci.  The second law states that planets would travel faster the closer they are
+to the sun and slower when farther away.
+<p>
+The third law describes the relationship Kepler observed between a planet's distance from the
+sun and the time it takes to make one complete orbit around the sun.
+Kepler stated that the square of a planet's orbital period in years was equal to that planet's
+distance from the sun in Astronomical Units (AU) cubed, where and AU is the
+average distance of the Earth to
+the Sun (149 million kilometers).
+<p>
+<p>
+<div align="center">
+<b>Kepler's Third Law of Planetary Motion</b><p>
+    \[ p^2 = a^3 \]
+</div>
+<h3>Step 1</h3>
+<p>
+Create a Python program called <code>orbit_kepler.py</code> for
+Kepler's Third Law of planetary motion.  (Remember that you should not
+type the <code>.py</code> part; PyCharm will add it for you.) This
+program should:
+<ul>
+  <li>Ask the user for the name of the planet and its orbital period
+    in years (this is \(p\) in the equation above).</li>
+  <li>Calculate the average distance from the sun and display the
+    result to the user in astronomical units (this is \(a\) in the
+    equation above).  You will have to do a little algebra to figure
+    out how to compute \(a\) if you know \(p\).</li>
+</ul>
+Be sure to follow
+the <a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python
+Style Guide</a> when writing your program.
+<p>
+Test your code with the following values for planets orbiting the Sun:
+<p>
+<div align="center">
+<b>Table 1: Planets and their Orbital Period</b><p>
+<table class="table"><tr><th>Planet</th><th>Period</th><th>AU from Sun</th></tr>
+<tr><td>Earth</td><td>1</td><td>1</td></tr>
+<tr><td>Saturn</td><td>29.660974748248961</td><td>9.58201720</td></tr>
+<tr><td>Mercury</td><td>0.24084173359179098</td><td>0.38709821</td></tr>
+</td></table>
+</div>
+<p>
+<h3>Newton</h3>
+<img src="../images/newton_pic.jpg" class="rounded float-left mr-3"
+     alt="A picture of Sir Isaac Newton">
+In 1687, <a href="http://en.wikipedia.org/wiki/Isaac_Newton">Isaac Newton</a> followed
+up on the laws of Kepler to publish his
+<i>Principia Mathematica</i>. In this work, he explained that it was the
+universal force of gravity which tied together the motion of the planets and the motion
+of objects here on Earth.  Kepler's third law was found to be a special case of a more general
+law about the gravitational attraction between two objects in space, M1 and M2. Now, instead
+of Kepler's law being tied to the Earth and the Sun, we can now calculate the orbital
+period of any planet around any star as long as we know both their masses and the
+average distance of the star from the planet.
+<p>
+<div align="center" class="border rounded">
+<b>Newton's Revised Law of Planetary Motion</b><p>
+    \[ p^2 = \frac{4 \pi^2}{G(M_1 + M_2)} a^3 \]
+</div>
+
+<p>
+The big \(G\) in Newton's equation is the
+<a href="http://en.wikipedia.org/wiki/Gravitational_constant">Gravitational Constant</a>
+from physics:
+<div align="center" class="border rounded">
+  \[ G = \si{\cubic\meter\per\kilo\gram\per\square\second} \]
+</div>
+Remember that you can enter numbers in scientific notation using the
+Python syntax like <code>6.67e-11</code>.
+
+<h3>Step 2</h3>
+Revise your program <code>orbit_kepler.py</code> into <code>orbit_newton.py</code>
+to use Newton's reformulation of Kepler's Third Law.  The user will be asked to enter the
+name of the planet, the orbital period of the planet in days, the mass of the star in kilograms,
+and the mass of the planet in kilograms. Your formula requires the period in <b>seconds</b>, you will
+need to convert your input. Calculate the distance of the star from the planet next,
+and output the result to the user. Since Newton's law uses <b>meters</b> instead of
+AU, you will have to convert the output into the appropriate value, using the
+definition of 1 AU as 149 million kilometers.
+<p>
+Evaluate <code>orbit_newton.py</code> using the following data, based on the best
+estimates we have about recently
+discovered exoplanets that may fall into the
+<a href="http://en.wikipedia.org/wiki/Habitable_zone">Habitable Zone</a> for life.  Report your
+results for the orbital period of these planets in the <code>Lab Evaluation</code>
+described below.
+<p>
+<div align="center">
+<b>Table 2: Promising Exoplanets</b><p>
+<table class="table"><th>Planet</th><th>Orbital Period in Days</th><th>Star Mass in kg</th><th>Planet Mass in kg</th></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_667_Cc">Gliese 667 C c</a></td><td>28.143</td><td>\(\num{6.1659e29}\)</td><td>2.2693 * 10^25</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Proxima_Centauri_b">Proxima Centauri b</a></td><td>11.186</td><td>2.4459 * 10^29</td><td>7.5852 * 10^24</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Kepler-22b">Kepler 22 b</a></td><td>289.86</td><td>1.9293 * 10^30</td><td>3.1532 * 10^26</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/HD_40307_g">HD 40307 g</a></td><td>197.8</td><td>1.4917 * 10^30</td><td>4.891 * 10^25</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_163_c">Gliese 163 c</a></td><td>25.631</td><td>7.956 * 10^29</td><td>4.359 * 10^25</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_581_d">Gliese 581 d</a></td><td>66.87</td><td>6.1659 * 10^29</td><td>2.2693 * 10^25</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Kepler-452b">Kepler 452 b</a></td><td>384.843</td><td>2.0626 * 10^30</td><td>2.986 * 10^25</td></tr>
+</td></table>
+</div>
+<p>
+
+<i>Hint: your answer for Gliese 667 C c should be close to 0.1.  If
+  you are getting an answer in the billions, or billionths, or
+  anything like that, your program is wrong.</i>
+
+<!--
+Answers:
+Gliese 667 C c = 0.1251 AU
+Kepler 22 b = 0.849 AU
+HD 40307 g = 0.6 AU
+Gliese 163 c = 0.12536 AU
+Gliese 581 d = 0.218 AU
+Kepler 452 b = 1.046 AU
+-->
+
+<h3>Step 3</h3>
+Your programs were dependent on the value used in Python for <code>math.pi</code>,
+namely 3.1415926535897931. This is only an estimate of Pi; others have calculated
+<a href="http://www.eveandersson.com/pi/digits/1000000">
+1,000,000 digits</a> of Pi, but this is still only an estimate of this irrational number.
+Test out the sensitivity of your calculations above to different values of Pi, using 3.14 and
+3.14159, and record your results in <code>Lab Evaluation</code>. <b>Be sure to return your
+code to use the original <code>math.pi</code> before you turn in your code</b>.
+
+<h2>Evaluation</h2>
+Answer the following questions in a file called <code>Lab Evaluation</code>:
+<ol>
+	<li>How much of your code were you able to reuse from <code>orbit_kepler.py</code>
+	when writing <code>orbit_newton.py</code>?
+	<li>What are the AUs for the above exoplanets?
+	<li>Which do you think had a larger influence on the final calculation of the AU
+	in <code>orbit_newton.py</code>, the Mass of the planet or period of the planet?  Why?
+	<li>What was the effect of changing the value used for Pi in <code>orbit_newton.py</code>?
+	<li>What other sources for numerical error (like that from estimating Pi)
+	do you see in the code you wrote?
+</ol>
+
+<h2>What to Hand In</h2>
+You will be handing in the three files you wrote today and the lab evaluation document.
+<ul>
+ 	<li>orbit_kepler.py
+	<li>orbit_newton.py
+	<li>Lab Evaluation
+</ul>
+Turn in the files electronically via the submission form (linked from
+the course webpage).
+
+Make sure you run <code>orbit_kepler.py</code>
+and <code>orbit_newton.py</code> through
+the <a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python
+style guide</a> checking program before you turn in your work.  If you
+worked with a partner, make sure you put both names at the top of all
+your files, and <b>only one of you</b> should submit the lab.
+<h2>Grading</h2>
+<ul>
+<li>To earn a C, turn in a working version of <code>orbit_kepler.py</code>
+<li>To earn a B, do the above and turn in a working version of <code>orbit_newton.py</code>
+<li>To earn an A, do the above and complete the evaluation document.
+<li>To earn a 100, do the above and follow the style guide exactly.
+</ul>
+<hr>
+<small>&copy; Mark Goadrich, Hendrix College</small>
+
+  </div>
+
+</main><!-- /.container -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- https://github.com/burnpanck/MathJax-siunitx -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  CommonHTML: {
+    scale: 130
+  },
+  extensions: ["[siunitx]/siunitx.js"],
+  TeX: {extensions: ["siunitx.js"]}
+});
+MathJax.Ajax.config.path['siunitx']  = '.';
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</body>
