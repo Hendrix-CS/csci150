@@ -21,7 +21,7 @@
   <main role="main" class="container">
 
   <div>
-<h1>CSCI 150: Lab 2 Kepler and Newton</h1>
+<h1>CSCI 150 Lab 2: Kepler and Newton</h1>
 <hr>
 
 <h2>Overview and Purpose</h2>
@@ -98,9 +98,9 @@ average distance of the Earth to
 the Sun (149 million kilometers).
 <p>
 <p>
-<div align="center">
+<div align="center" class="border rounded mb-3 pt-3">
 <b>Kepler's Third Law of Planetary Motion</b><p>
-    \[ p^2 = a^3 \]
+    \[ \huge{p^2 = a^3} \]
 </div>
 <h3>Step 1</h3>
 <p>
@@ -118,9 +118,8 @@ program should:
 </ul>
 Be sure to follow
 the <a href="http://mgoadric.github.io/csci150/python_style_guide.html">Python
-Style Guide</a> when writing your program.
-<p>
-Test your code with the following values for planets orbiting the Sun:
+Style Guide</a> when writing your program.  You should test your code
+with the following values for planets orbiting the Sun:
 <p>
 <div align="center">
 <b>Table 1: Planets and their Orbital Period</b><p>
@@ -136,63 +135,98 @@ Test your code with the following values for planets orbiting the Sun:
      alt="A picture of Sir Isaac Newton">
 In 1687, <a href="http://en.wikipedia.org/wiki/Isaac_Newton">Isaac Newton</a> followed
 up on the laws of Kepler to publish his
-<i>Principia Mathematica</i>. In this work, he explained that it was the
-universal force of gravity which tied together the motion of the planets and the motion
-of objects here on Earth.  Kepler's third law was found to be a special case of a more general
-law about the gravitational attraction between two objects in space, M1 and M2. Now, instead
-of Kepler's law being tied to the Earth and the Sun, we can now calculate the orbital
-period of any planet around any star as long as we know both their masses and the
-average distance of the star from the planet.
+<i>Principia Mathematica</i>. In this work, he explained that it was
+the universal force of gravity which tied together the motion of the
+planets and the motion of objects here on Earth.  Kepler's third law
+was found to be a special case of a more general law about the
+gravitational attraction between two objects in space, \(M_1\) and
+\(M_2\). Now, instead of Kepler's law being tied to the Earth and the
+Sun, we can now calculate the orbital period of any planet around any
+star as long as we know both their masses and the average distance of
+the star from the planet.
 <p>
-<div align="center" class="border rounded">
+
+<div align="center" class="border rounded mb-3 pt-3">
 <b>Newton's Revised Law of Planetary Motion</b><p>
-    \[ p^2 = \frac{4 \pi^2}{G(M_1 + M_2)} a^3 \]
+    \[ \huge{p^2 = \frac{4 \pi^2}{G(M_1 + M_2)} a^3} \]
 </div>
 
 <p>
-The big \(G\) in Newton's equation is the
-<a href="http://en.wikipedia.org/wiki/Gravitational_constant">Gravitational Constant</a>
-from physics:
-<div align="center" class="border rounded">
-  \[ G = \si{\cubic\meter\per\kilo\gram\per\square\second} \]
-</div>
-Remember that you can enter numbers in scientific notation using the
-Python syntax like <code>6.67e-11</code>.
+Again, \(p\) is the period of the planet, measured in seconds. \(M_1\)
+and \(M_2\) are the masses of the planet and its star in kilograms.
+\(G\) is the
+<a href="http://en.wikipedia.org/wiki/Gravitational_constant">Gravitational
+  Constant</a>, which is approximately \( G = 6.67 \times 10^{-11} \)
+  (measured in units of \(\mathrm{m}^3/(\mathrm{kg} \,
+  \mathrm{s}^2)\)).  Remember that you can enter numbers in scientific
+  notation using Python syntax like <code>6.67e-11</code>.  To access
+\(\pi\), you can add the line
+  <pre><code>import math</code></pre>
+  to the top of your program, and then use <code>math.pi</code>
+  anywhere in your program that you need the value of \(\pi\).
 
-<h3>Step 2</h3>
-Revise your program <code>orbit_kepler.py</code> into <code>orbit_newton.py</code>
-to use Newton's reformulation of Kepler's Third Law.  The user will be asked to enter the
-name of the planet, the orbital period of the planet in days, the mass of the star in kilograms,
-and the mass of the planet in kilograms. Your formula requires the period in <b>seconds</b>, you will
-need to convert your input. Calculate the distance of the star from the planet next,
-and output the result to the user. Since Newton's law uses <b>meters</b> instead of
-AU, you will have to convert the output into the appropriate value, using the
-definition of 1 AU as 149 million kilometers.
+  <p class="mt-3">
+  Just like before, your program will need to find \(a\), the distance
+  between the planet and star.  You will need to solve the equation
+  for \(a\) to figure out what Python code to write.  It's OK if you
+  don't remember how to do this&mdash;just ask for help!
+
+<h3>Step 2</h3> Make a copy of <code>orbit_kepler.py</code>
+called <code>orbit_newton.py</code>.  Now
+modify <code>orbit_newton.py</code> to use Newton's revised law of
+planetary motion instead of Kepler's law.
+
+<ul>
+  <li>The user should be prompted to enter
+    <ul>
+      <li>the name of the planet,</li>
+      <li>the orbital period of the planet in
+        days,</li>
+      <li>the mass of the star in kilograms,</li>
+      <li>and the mass of the planet in kilograms.</li>
+    </ul>
+  </li>
+  <li>Newton's formula requires the period in <b>seconds</b>, so you
+    will need to convert the user's input from days into seconds.</li>
+  <li>Calculate the distance of the star from the planet using
+    Newton's formula.</li>
+  <li>Since Newton's law uses <b>meters</b> instead of AU, you will
+    have to convert the output from meters to AU, using the
+    fact that 1 AU is equal to 149 million kilometers.</li>
+</ul>
+
 <p>
-Evaluate <code>orbit_newton.py</code> using the following data, based on the best
-estimates we have about recently
-discovered exoplanets that may fall into the
-<a href="http://en.wikipedia.org/wiki/Habitable_zone">Habitable Zone</a> for life.  Report your
-results for the orbital period of these planets in the <code>Lab Evaluation</code>
-described below.
+Evaluate <code>orbit_newton.py</code> using the following data, based
+on the best estimates we have about recently discovered exoplanets
+that may fall into the
+<a href="http://en.wikipedia.org/wiki/Habitable_zone">Habitable
+  Zone</a> for life.  Remember that you should be able to enter
+  numbers like \(6.1659 \times 10^{29}\) into your program using the
+  syntax <code>6.1659e29</code>.  Report your results for the orbital
+  period of these planets in the <code>Lab Evaluation</code> described
+  below.
 <p>
 <div align="center">
 <b>Table 2: Promising Exoplanets</b><p>
-<table class="table"><th>Planet</th><th>Orbital Period in Days</th><th>Star Mass in kg</th><th>Planet Mass in kg</th></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_667_Cc">Gliese 667 C c</a></td><td>28.143</td><td>\(\num{6.1659e29}\)</td><td>2.2693 * 10^25</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Proxima_Centauri_b">Proxima Centauri b</a></td><td>11.186</td><td>2.4459 * 10^29</td><td>7.5852 * 10^24</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Kepler-22b">Kepler 22 b</a></td><td>289.86</td><td>1.9293 * 10^30</td><td>3.1532 * 10^26</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/HD_40307_g">HD 40307 g</a></td><td>197.8</td><td>1.4917 * 10^30</td><td>4.891 * 10^25</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_163_c">Gliese 163 c</a></td><td>25.631</td><td>7.956 * 10^29</td><td>4.359 * 10^25</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_581_d">Gliese 581 d</a></td><td>66.87</td><td>6.1659 * 10^29</td><td>2.2693 * 10^25</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Kepler-452b">Kepler 452 b</a></td><td>384.843</td><td>2.0626 * 10^30</td><td>2.986 * 10^25</td></tr>
+<table class="table"><th>Planet</th><th>Orbital Period in
+    Days</th><th>Star Mass in kg</th><th>Planet Mass in
+    kg</th><th>Distance in AU</th></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_667_Cc">Gliese
+      667 C c</a></td><td>28.143</td><td>\(6.1659 \times 10^{29}\)</td><td>\(2.2693 \times 10^{25}\)</td><td>0.1230</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Proxima_Centauri_b">Proxima Centauri b</a></td><td>11.186</td><td>\(2.4459 \times 10^{29}\)</td><td>\(7.5852 \times 10^{24}\)</td><td>?</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Kepler-22b">Kepler 22 b</a></td><td>289.86</td><td>\(1.9293 \times 10^{30}\)</td><td>\(3.1532 \times 10^{26}\)</td><td>?</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/HD_40307_g">HD 40307 g</a></td><td>197.8</td><td>\(1.4917 \times 10^{30}\)</td><td>\(4.891 \times 10^{25}\)</td><td>?</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_163_c">Gliese 163 c</a></td><td>25.631</td><td>\(7.956 \times 10^{29}\)</td><td>\(4.359 \times 10^{25}\)</td><td>?</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Gliese_581_d">Gliese 581 d</a></td><td>66.87</td><td>\(6.1659 \times 10^{29}\)</td><td>\(2.2693 \times 10^{25}\)</td><td>?</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Kepler-452b">Kepler 452 b</a></td><td>384.843</td><td>\(2.0626 \times 10^{30}\)</td><td>\(2.986 \times 10^{25}\)</td><td>?</td></tr>
 </td></table>
 </div>
 <p>
 
-<i>Hint: your answer for Gliese 667 C c should be close to 0.1.  If
-  you are getting an answer in the billions, or billionths, or
-  anything like that, your program is wrong.</i>
+<i>Hint: all your answers should be somewhere within the range of 0.1
+  to 10 AU.  If you are getting answers in the billions, or
+  billionths, or anything like that, there is a bug in your program.
+  Ask for debugging help if you need it!</i>
 
 <!--
 Answers:
@@ -206,12 +240,13 @@ Kepler 452 b = 1.046 AU
 
 <h3>Step 3</h3>
 Your programs were dependent on the value used in Python for <code>math.pi</code>,
-namely 3.1415926535897931. This is only an estimate of Pi; others have calculated
+namely 3.1415926535897931. This is only an estimate of \(\pi\); others have calculated
 <a href="http://www.eveandersson.com/pi/digits/1000000">
-1,000,000 digits</a> of Pi, but this is still only an estimate of this irrational number.
-Test out the sensitivity of your calculations above to different values of Pi, using 3.14 and
-3.14159, and record your results in <code>Lab Evaluation</code>. <b>Be sure to return your
-code to use the original <code>math.pi</code> before you turn in your code</b>.
+1,000,000 digits</a> of \(\pi\), but this is still only an estimate of this irrational number.
+Test out the sensitivity of your calculations above to different values of \(\pi\), using <code>3.14</code> and
+<code>3.14159</code>, and record your results in <code>Lab
+Evaluation</code>. <b>Be sure to return your code to use the
+original <code>math.pi</code> before you turn it in</b>.
 
 <h2>Evaluation</h2>
 Answer the following questions in a file called <code>Lab Evaluation</code>:
@@ -219,18 +254,20 @@ Answer the following questions in a file called <code>Lab Evaluation</code>:
 	<li>How much of your code were you able to reuse from <code>orbit_kepler.py</code>
 	when writing <code>orbit_newton.py</code>?
 	<li>What are the AUs for the above exoplanets?
-	<li>Which do you think had a larger influence on the final calculation of the AU
-	in <code>orbit_newton.py</code>, the Mass of the planet or period of the planet?  Why?
-	<li>What was the effect of changing the value used for Pi in <code>orbit_newton.py</code>?
+	<li>Which do you think had a larger influence on the final
+	calculation of the AU in <code>orbit_newton.py</code>, the
+	mass of the planet or period of the planet?  Why?
+	<li>What was the effect of changing the value used for \(\pi\)
+	in <code>orbit_newton.py</code>?
 	<li>What other sources for numerical error (like that from estimating Pi)
 	do you see in the code you wrote?
 </ol>
 
-<h2>What to Hand In</h2>
-You will be handing in the three files you wrote today and the lab evaluation document.
+<h2>What to Hand In</h2> You will be handing in the two Python
+programs you wrote today along with the lab evaluation document.
 <ul>
- 	<li>orbit_kepler.py
-	<li>orbit_newton.py
+ 	<li><code>orbit_kepler.py</code>
+	<li><code>orbit_newton.py</code>
 	<li>Lab Evaluation
 </ul>
 Turn in the files electronically via the submission form (linked from
@@ -260,17 +297,14 @@ your files, and <b>only one of you</b> should submit the lab.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!-- https://github.com/burnpanck/MathJax-siunitx -->
+<!-- https://stackoverflow.com/questions/15884102/bootstrap-how-do-i-change-the-width-of-the-container -->
+<!-- <script type="text/x-mathjax-config"> -->
+<!-- MathJax.Hub.Config({ -->
+<!--   CommonHTML: { -->
+<!--     scale: 130 -->
+<!--   } -->
+<!-- }); -->
+<!-- </script> -->
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  CommonHTML: {
-    scale: 130
-  },
-  extensions: ["[siunitx]/siunitx.js"],
-  TeX: {extensions: ["siunitx.js"]}
-});
-MathJax.Ajax.config.path['siunitx']  = '.';
-</script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 </body>
