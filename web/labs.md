@@ -15,8 +15,8 @@ title: Labs
 7     [Todo Manager](labs/todo-manager.html)                                        Feb 27/28    Mar 6/7
 8     TBA                                                                           Mar 13/14    Mar 27/28
 9     [Caesar's Secrets](labs/caesar.html)                                          Mar 27/28    Apr 3/4
+10    [Sentiment Analysis](labs/sentiment.html)                                     Apr 3/4      Apr 10/11
 
-<!-- 9     [Sentiment Analysis](labs/sentiment.html)                                     Oct 24/25    Oct 31/Nov 1 -->
 <!-- 10    [Water Jugs](labs/waterjug.html)                                              Oct 31/Nov 1 Nov 7/8 -->
 <!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Nov 14/15    Nov 20* -->
 <!-- 13    [Civic Data Hacking]                                                          Nov 28/29    Dec 3 -->
