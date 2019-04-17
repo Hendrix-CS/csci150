@@ -16,8 +16,8 @@ title: Labs
 8     TBA                                                                           Mar 13/14    Mar 27/28
 9     [Caesar's Secrets](labs/caesar.html)                                          Mar 27/28    Apr 3/4
 10    [Sentiment Analysis](labs/sentiment.html)                                     Apr 3/4      Apr 10/11
+11    [Water Jugs](labs/waterjug.html)                                              Apr 10/11    Apr 17/18
 
-<!-- 10    [Water Jugs](labs/waterjug.html)                                              Oct 31/Nov 1 Nov 7/8 -->
 <!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Nov 14/15    Nov 20* -->
 <!-- 13    [Civic Data Hacking]                                                          Nov 28/29    Dec 3 -->
 
