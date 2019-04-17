@@ -17,8 +17,8 @@ title: Labs
 9     [Caesar's Secrets](labs/caesar.html)                                          Mar 27/28    Apr 3/4
 10    [Sentiment Analysis](labs/sentiment.html)                                     Apr 3/4      Apr 10/11
 11    [Water Jugs](labs/waterjug.html)                                              Apr 10/11    Apr 17/18
+12    [On Stuckness and debugging](labs/debugging.html)                             Apr 17/18    Apr 24/25
 
-<!-- 12    [On Stuckness and debugging](labs/debugging.html)                             Nov 14/15    Nov 20* -->
 <!-- 13    [Civic Data Hacking]                                                          Nov 28/29    Dec 3 -->
 
 <!-- [Civic Data Hacking]: https://mybinder.org/v2/gh/mgoadric/CS1-civic-hacking/master?filepath=Lab%2013%20-%20Civic%20Hacking.ipynb -->
