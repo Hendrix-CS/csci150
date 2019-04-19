@@ -18,4 +18,5 @@ When we write code together in class, it will be posted here!
 * M 3/25 - W 3/27: [forloop_demo.py](static/forloop_demo.py)
 * M 4/1: [dictionary_demo.py](static/dictionary_demo.py)
 * M 4/8 - W 4/10: [Cake.py](static/Cake.py)
+* M 4/15 - W 4/17: [TrafficLight.py](static/TrafficLight.py)
 * F 4/19: [circle.pyde](static/circle.pyde)
