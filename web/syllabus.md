@@ -24,6 +24,10 @@ title: Syllabus
 <img src="images/python_tutor.png" height="100">
 [pythontutor.com](http://pythontutor.com)
 </img>
+
+<img src="images/processing-logo.png" height="100">
+[processing.org](http://processing.org)
+</img>
 </div>
 
 ### Learning Goals
