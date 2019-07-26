@@ -1,25 +1,19 @@
-# Is this big enough can you read me? =D
-# This is a comment, Python will ignore me
+###############################
+# Compute the volume of a box
+#
+# Copyright 2018 CSCI 150
+###############################
 
-# Step 0: tell the user the purpose of the program
-print("Hello and welcome to the box-o-matic!  Please tell me")
-print("the dimensions of your box and I will do the rest!")
-print()
+print("Welcome to the Box Calculator!!!11!")
 
-# Step 1: ask the user for width
-width_str: str = input("Please enter the width of your box in inches: ")
+width  = float(input("What is the width of your box? "))
+length = float(input("What is the length of your box? "))
+height = float(input("What is the height of your box? "))
 
-# ask for height
-height_str: str = input("Please enter the height of your box in inches: ")
+volume = length * width * height
 
-# ask for depth
-depth_str: str = input("Please enter the depth of your box in inches: ")
+print("The volume of your box (in cubic units) is " + str(volume) + ".")
 
-width:  float = float(width_str)
-height: float = float(height_str)
-depth:  float = float(depth_str)
+diagonal = (length**2 + width**2 + height**2)**(1/2)
 
-volume: float = width * height * depth
-
-print()
-print("The volume of your box is " + str(volume) + " cubic inches.")
+print("The body diagonal of your box is " + str(diagonal) + ".")
