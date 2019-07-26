@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">{{ page.number }}: {{ page.semester }}</a>
+    <a class="navbar-brand" href="{{ site.baseurl}}/index.html">{{ page.number }}: {{ page.semester }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,31 +8,31 @@
       <ul class="navbar-nav ml-auto">
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#myview" id="download">Overview<span class="caret"></span></a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl}}/#myview" id="download">Overview<span class="caret"></span></a>
           <div class="dropdown-menu" aria-labelledby="download">
-            <a class="dropdown-item" href="#description">Description</a>
-            <a class="dropdown-item" href="#goals">Learning Goals</a>
-            <a class="dropdown-item" href="#resources">Resources</a>
+            <a class="dropdown-item" href="{{ site.baseurl}}/#description">Description</a>
+            <a class="dropdown-item" href="{{ site.baseurl}}/#goals">Learning Goals</a>
+            <a class="dropdown-item" href="{{ site.baseurl}}/#resources">Resources</a>
           </div>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#inclasscode">In-Class Code</a>
+          <a class="nav-link" href="{{ site.baseurl}}/#inclasscode">In-Class Code</a>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#grading" id="download">Coursework<span class="caret"></span></a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl}}/#grading" id="download">Coursework<span class="caret"></span></a>
           <div class="dropdown-menu" aria-labelledby="download">
-            <a class="dropdown-item" href="#hwqz">Homework and Quizzes</a>
-            <a class="dropdown-item" href="#labs">Labs</a>
-            <a class="dropdown-item" href="#projects">Projects</a>
-            <a class="dropdown-item" href="#exams">Exams</a>
-            <a class="dropdown-item" href="#scale">Scale</a>
+            <a class="dropdown-item" href="{{ site.baseurl}}/#hwqz">Homework and Quizzes</a>
+            <a class="dropdown-item" href="{{ site.baseurl}}/#labs">Labs</a>
+            <a class="dropdown-item" href="{{ site.baseurl}}/#projects">Projects</a>
+            <a class="dropdown-item" href="{{ site.baseurl}}/#exams">Exams</a>
+            <a class="dropdown-item" href="{{ site.baseurl}}/#scale">Scale</a>
           </div>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#commitments">Commitments</a>
+          <a class="nav-link" href="{{ site.baseurl}}/#commitments">Commitments</a>
         </li>
       </ul>
     </div>
