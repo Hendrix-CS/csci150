@@ -68,6 +68,12 @@ table td{
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_table_striped */
 tr:nth-child(even) {background-color: #f2f2f2;}
 
+.instructor {
+	background-color: #f2f2f2;
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+}
 
 blockquote{
 	margin: 30px;
