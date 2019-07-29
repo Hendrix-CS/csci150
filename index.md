@@ -146,7 +146,7 @@ Continue through the door at the far end of the hall (just visible in the pictur
 |4 | This Day in History | ? | ? |
 |5 | <a href="{{site.baseurl}}/labs/guess.html">Guess My Number</a> | ? | ? |
 |6 | <a href="{{site.baseurl}}/labs/doublets.html">Mutation is the Word</a> | ? | ? |
-|7 | Todo Manager | ? | ? |
+|7 | <a href="{{site.baseurl}}/labs/todo-manager.html">Todo Manager</a> | ? | ? |
 |8 | Caesar’s Secrets | ? | ? |
 |9 | Sentiment Analysis | ? | ? |
 |10| Water Jugs | ? | ? |

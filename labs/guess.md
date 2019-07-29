@@ -14,11 +14,29 @@ Python by implementing the classic game "Guess My Number".
 Be sure to **read carefully!** This lab writeup has lots of hints
 and instructions to help you along the way.
 
+## Step 0: Getting started
+
+In this and the following labs, we will be creating interactive programs
+that require user input. [PyCharm](https://www.jetbrains.com/pycharm/) is an
+[IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)
+that lets us write these types of programs in Python.
+
+Open PyCharm and create a new project (by going to the <kbd>File</kbd> menu
+and selecting <kbd>New Project</kbd>).  Name it something like `Lab 01 -
+Kepler and Newton`.  Accept the other defaults and click <kbd>Create</kbd>.
+
+At this point you will have a new, empty project.  Each project can
+contain multiple Python files.  To create a new Python file, you can
+either choose <kbd>New...</kbd> under the <kbd>File</kbd> menu, or right click on the
+project folder and select <kbd>New...</kbd>.  Make sure you select <kbd>New
+Python File</kbd>.  Then you can type in a name for the file.  Note that
+you should not include `.py` on the end of the name;
+PyCharm will add `.py` for you.
+
 ## Step 1
 
 For the first step, you will implement a basic version of the game.
 Here is what a sample run of the program might look like:
-
 
     Welcome to guess the number!
     I will pick a number from 1-100, and you try to guess it.
@@ -36,7 +54,6 @@ Here is what a sample run of the program might look like:
     55 is too high.
     Your guess? 51
     You got it!  It took you 6 guesses.
-
 
 Start by creating a file called `guess_number.py` and **paste
 the following code into it**:
@@ -89,7 +106,6 @@ If the user enters invalid input, the program will crash.  We have
 noted this problem before, but now that we know how to do repetition,
 we can actually do something about it!
 
-
 You should write a new function called `input_guess()`.  Here is a
 template you can use as a starting point; copy it into your file
 (after `import random` and before `def main():`):
@@ -116,13 +132,11 @@ Be sure that the comments and the `def` start all the way
 over in the leftmost column of your file (do **not** put it inside
 your `main()` function!).
 
-
 If the user's input is stored as a string in the
 variable `guess_str`, you can check whether it is valid
 using `guess_str.isdigit()`, which is a True or False value
 telling you whether the string `guess_str` consists of all
 digits or not.
-
 
 Finally, replace the part of your `main()` function that
 asks the user for their input with a call to your
@@ -157,7 +171,6 @@ ensures the user's guess is between 1 and 100, but this is not required.
 Since this game is so addictive, it's inconvenient to re-run it every
 time we want to play.  In this step, you will modify the game so that
 the user can keep playing multiple rounds until they decide to stop.
-
 
 You should put another `while` loop around an appropriate
 part of your `main()` function so that it will repeat the
