@@ -4,7 +4,7 @@ number: CSCI 150
 title: Foundations of Computer Science
 semester: Fall 2019
 ---
-# Lab 5: Mutation is the Word
+# Lab 6: Mutation is the Word
 
 ## Overview
 

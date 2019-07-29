@@ -144,8 +144,8 @@ Continue through the door at the far end of the hall (just visible in the pictur
 |2 | Kepler and Newton | ? | ? |
 |3 | Diagnosing Heart Disease | ? | ? |
 |4 | This Day in History | ? | ? |
-|5 | Guess My Number | ? | ? |
-|6 | Mutation is the Word | ? | ? |
+|5 | <a href="{{site.baseurl}}/labs/guess/">Guess My Number</a> | ? | ? |
+|6 | <a href="{{site.baseurl}}/labs/doublets/">Mutation is the Word</a> | ? | ? |
 |7 | Todo Manager | ? | ? |
 |8 | Caesar’s Secrets | ? | ? |
 |9 | Sentiment Analysis | ? | ? |
