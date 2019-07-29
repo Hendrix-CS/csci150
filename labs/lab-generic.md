@@ -8,8 +8,6 @@ semester: Fall 2019
 
 ## Overview
 
-## Overview
-
 ## Materials
 
 * BLAH

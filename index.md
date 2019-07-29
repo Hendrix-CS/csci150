@@ -44,6 +44,9 @@ resources:
   - name: Python 3
     image: assets/images/pythonlogo.png
     url: http://python.org
+  - name: Azure Notebooks
+    image: assets/images/azure.png
+    url: https://notebooks.azure.com/
   - name: Pycharm
     image: assets/images/pycharmlogo.png
     url: https://www.jetbrains.com/pycharm/
@@ -133,10 +136,7 @@ Much of your experience with programming in this course will be through weekly l
 
 On these labs, you may work with a partner on the lab assignments if you choose. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.
 
-**Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center, through this door:
-
-
-Continue through the door at the far end of the hall (just visible in the picture above) into the first computer lab, and then enter the second lab at the back.
+**Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
 
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
@@ -144,12 +144,12 @@ Continue through the door at the far end of the hall (just visible in the pictur
 |2 | Kepler and Newton | ? | ? |
 |3 | Diagnosing Heart Disease | ? | ? |
 |4 | This Day in History | ? | ? |
-|5 | <a href="{{site.baseurl}}/labs/guess.html">Guess My Number</a> | ? | ? |
-|6 | <a href="{{site.baseurl}}/labs/doublets.html">Mutation is the Word</a> | ? | ? |
-|7 | <a href="{{site.baseurl}}/labs/todo-manager.html">Todo Manager</a> | ? | ? |
+|5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | ? | ? |
+|6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | ? | ? |
+|7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | ? | ? |
 |8 | Caesar’s Secrets | ? | ? |
 |9 | Sentiment Analysis | ? | ? |
-|10| Water Jugs | ? | ? |
+|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | ? | ? |
 |11| Processing | ? | ? |
 |12| Enron’s Secrets | ? | ? |
 |13| On Stuckness and debugging | ? | ? |
