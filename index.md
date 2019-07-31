@@ -150,7 +150,7 @@ On these labs, you may work with a partner on the lab assignments if you choose.
 |8 | Caesar’s Secrets | ? | ? |
 |9 | Sentiment Analysis | ? | ? |
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | ? | ? |
-|11| Processing | ? | ? |
+|11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | ? | ? |
 |12| Enron’s Secrets | ? | ? |
 |13| On Stuckness and debugging | ? | ? |
 
