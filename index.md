@@ -144,14 +144,47 @@ On these labs, you may work with a partner on the lab assignments if you choose.
 |5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | ? | ? |
 |6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | ? | ? |
 |7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | ? | ? |
-|8 | Caesar’s Secrets | ? | ? |
-|9 | Sentiment Analysis | ? | ? |
+|8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | ? | ? |
+|9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | ? | ? |
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | ? | ? |
 |11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | ? | ? |
 |12| Enron’s Secrets | ? | ? |
 |13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | ? | ? |
 
 Labs should follow the [Python style guide](python_style_guide.html). You may use the automated style checker to help you catch common style errors.
+
+For many of the labs, we will be using Azure Notebooks. Here are specific instructions
+on how to get started with these notebooks.
+
+* First, you will need to create a free Microsoft Azure Notebook
+  account. [Visit this webpage to start the process](https://notebooks.azure.com/).
+
+* Click on the <kbd>Sign in</kbd> text in the upper-right corner of the
+  page. Log in with your Hendrix email account and password.
+
+* Next, the specific lab for the week, and click on the green <kbd>Clone</kbd> button in the
+  upper-right corner of the screen.
+
+* This should make a copy of the project for you in your projects
+  folder. Now click on <kbd>My Projects</kbd> and the "Civic Hacking Lab"
+  section.
+
+* In your copy of the project, click on the `.ipynb`
+  file in the project listing. This should open the
+  notebook in the Azure Jupyter system in a separate browser tab, and
+  you can start editing the file with your code. Follow the
+  instructions in the file to complete this lab.
+
+* You can save your progress using <kbd>Ctrl-S</kbd> or <kbd>Cmd-S</kbd>, and then
+  return to this file any time.
+
+* To submit your file for grading when you are finished, return to
+  the lab folder listing in the <kbd>My Projects</kbd>
+  tab. Select the circle to the left of the `.ipynb` file.
+  Then, click on the down arrow icon in the menu, to
+  the left of the trash can icon.  This will allow you to download
+  the file onto your computer; then you can upload it using the
+  usual turnin form.
 
 ## <a name="projects">Projects</a>: 35%
 
