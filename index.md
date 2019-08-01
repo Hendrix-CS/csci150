@@ -56,9 +56,6 @@ resources:
   - name: Python Tutor
     image: assets/images/python_tutor.png
     url: https://pythontutor.com/
-  - name: Processing
-    image: assets/images/processing-logo.png
-    url: https://processing.org
 ---
 
 # <a name="description">Overview</a>
@@ -152,7 +149,7 @@ On these labs, you may work with a partner on the lab assignments if you choose.
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | ? | ? |
 |11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | ? | ? |
 |12| Enron’s Secrets | ? | ? |
-|13| On Stuckness and debugging | ? | ? |
+|13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | ? | ? |
 
 Labs should follow the [Python style guide](python_style_guide.html). You may use the automated style checker to help you catch common style errors.
 
