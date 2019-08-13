@@ -138,8 +138,8 @@ On these labs, you may work with a partner on the lab assignments if you choose.
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
 |1 | Minecraft Hour of Code | ? | ? |
-|2 | Kepler and Newton | ? | ? |
-|3 | Diagnosing Heart Disease | ? | ? |
+|2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | ? | ? |
+|3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | ? | ? |
 |4 | This Day in History | ? | ? |
 |5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | ? | ? |
 |6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | ? | ? |
