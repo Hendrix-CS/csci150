@@ -127,27 +127,27 @@ There will often be short homework assignments to be completed over the weekend,
 
 ## <a name="labs">Labs</a>: 25%
 
+| #  | Name | Assigned | Due
+|:-:|-||:-:|:-:|
+|1 | Minecraft Hour of Code | Aug 28-29 | ? |
+|2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | Sep 4-5 | ? |
+|3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | Sep 11-12 | ? |
+|4 | This Day in History | Sep 18-19 | ? |
+|5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 25-26 | ? |
+|6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Oct 2-3 | ? |
+|7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | ? |
+|8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Oct 23-24 | ? |
+|9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 30-31 | ? |
+|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Nov 6-7 | ? |
+|11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 13-14 | ? |
+|12| Enron’s Secrets | Nov 20-21 | ? |
+|13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Dec 4-5 | ? |
+
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned Wednesday/Thursday in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
 On these labs, you may work with a partner on the lab assignments if you choose. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.
 
 **Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
-
-| #  | Name | Assigned | Due
-|:-:|-||:-:|:-:|
-|1 | Minecraft Hour of Code | ? | ? |
-|2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | ? | ? |
-|3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | ? | ? |
-|4 | This Day in History | ? | ? |
-|5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | ? | ? |
-|6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | ? | ? |
-|7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | ? | ? |
-|8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | ? | ? |
-|9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | ? | ? |
-|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | ? | ? |
-|11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | ? | ? |
-|12| Enron’s Secrets | ? | ? |
-|13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | ? | ? |
 
 Labs should follow the [Python style guide](python_style_guide.html). You may use the automated style checker to help you catch common style errors.
 
@@ -186,22 +186,25 @@ on how to get started with these notebooks.
 
 ## <a name="projects">Projects</a>: 35%
 
+| #  | Name | Points | Assigned | Due
+|:-:|-||:-:|:-:|:-:|
+|1 | ? | 50  | Sep 16 | Sep 30 |
+|2 | ? | 100 | Oct 14 | Nov 1 |
+|3 | ? | 200 | Nov 18 | Final Exam Day |
+
 You will have three projects in this course, one about every five weeks. These projects will cover concepts we have discussed in class and in labs, and will be due approximately one week after they are assigned.
 
 **You must work individually on the first two projects.** You may discuss concepts and ideas with your classmates, but the code you turn in must be your own. You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
 
-| #  | Name | Pct | Assigned | Due
-|:-:|-||:-:|:-:|:-:|
-|1 | ? | ? | 5% | ? |
-|2 | ? | ? | 10% | ? |
-|3 | ? | ? | 20% | ? |
-
 ## <a name="exams">Exams</a>: 25%
 
-There will be two in-class exams, the first worth 10% and the second worth 15% of your final grade. They will consist of short answer questions along with writing and debugging code.
+There will be three in-class exams, the first worth 50 points and the second and
+third worth 100 of your final grade. They will consist of short answer
+questions along with writing and debugging code.
 
-* Exam 1: ?, covering input/output, math, numerical data, conditionals, and binary encoding
-* Exam 2: ?, covering functions, while loops, lists, and strings
+* Exam 1: Sep 20, covering input/output, math, numerical data, conditionals, and binary encoding
+* Exam 2: Oct 16, covering functions, while loops, lists, and strings
+* Exam 3: Nov 25
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
 
