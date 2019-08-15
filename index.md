@@ -114,7 +114,7 @@ exceptional circumstances (you get sick, travel for a game or family
 obligation, *etc.*). After you have used up your late days, late assignments
 will receive at most half credit.
 
-## <a name="hwqz">Homework and Quizzes</a>: 15%
+## <a name="hwqz">Homework and Quizzes</a>: 140 points
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
@@ -125,7 +125,7 @@ There will often be short homework assignments to be completed over the weekend,
 * Quiz 1
 * Quiz 2
 
-## <a name="labs">Labs</a>: 25%
+## <a name="labs">Labs</a>: 260 points
 
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
@@ -184,7 +184,7 @@ on how to get started with these notebooks.
   the file onto your computer; then you can upload it using the
   usual turnin form.
 
-## <a name="projects">Projects</a>: 35%
+## <a name="projects">Projects</a>: 350 points
 
 | #  | Name | Points | Assigned | Due
 |:-:|-||:-:|:-:|:-:|
@@ -196,7 +196,7 @@ You will have three projects in this course, one about every five weeks. These p
 
 **You must work individually on the first two projects.** You may discuss concepts and ideas with your classmates, but the code you turn in must be your own. You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
 
-## <a name="exams">Exams</a>: 25%
+## <a name="exams">Exams</a>: 250 points
 
 There will be three in-class exams, the first worth 50 points and the second and
 third worth 100 of your final grade. They will consist of short answer
@@ -212,8 +212,8 @@ There is no final exam; you will complete a final project instead, as described 
 
 | Score  | Grade  |
 |:-:|:-:|
-| 90-100  | A  |
-| 80-89  | B  |
-| 70-79  | C  |
-| 60-69  | D  |
-| 0-59  | F  |
+| 900-1000  | A  |
+| 800-899  | B  |
+| 700-799  | C  |
+| 600-699  | D  |
+| 0-599  | F  |
