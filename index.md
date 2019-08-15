@@ -64,19 +64,17 @@ Introduction to solving computational problems, including the fundamentals of co
 
 ## <a name="goals">Learning Goals</a>
 
-At the end of the course, you will be able to:
+Upon completing this course, our goal is for you to be able to:
 
-* Read, understand and execute a computer program written in Python.
-* Read a set of requirements for a computer program in English, and write a short Python program (100 lines or less) that corresponds to them.
-* Test a Python program and identify and fix programming errors.
-* Identify some errors in a Python program without testing it.
-* Without using a computer, write a very short Python code fragment (10 lines or less) that correctly implements a set of requirements.
-* Understand and apply variables, loops, strings, lists, conditionals, and functions.
-* Write programs to perform mathematical calculations.
-* Understand the concepts of class and object, and distinguish between them.
-* Write a Python program including objects of multiple interacting student-designed classes.
-* Write and understand appropriate comments in a Python program.
-* Understand the concept of an algorithm and compare the efficiency of different algorithms for a simple task.
+* Build computer programs to:
+  * Effectively solve realistic problems.
+  * Organize, analyze, and summarize realistic data sets.
+* Read, understand, and explain a computer program.
+* Understand and explain computation through:
+  * Thinking logically and precisely.
+  * Making and testing hypotheses.
+* Use modular components to decompose problems and assemble solutions.
+* Create abstract, generalized models from specific, complex examples.
 
 ## <a name="resources">Resources</a>
 
