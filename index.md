@@ -129,7 +129,7 @@ There will often be short homework assignments to be completed over the weekend,
 
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
-|1 | Minecraft Hour of Code | Aug 28-29 | ? |
+|1 | [Minecraft Hour of Code]({{site.baseurl}}/labs/minecraft.html) | Aug 28-29 | ? |
 |2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | Sep 4-5 | ? |
 |3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | Sep 11-12 | ? |
 |4 | This Day in History | Sep 18-19 | ? |
@@ -145,7 +145,7 @@ There will often be short homework assignments to be completed over the weekend,
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned Wednesday/Thursday in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
-On these labs, you may work with a partner on the lab assignments if you choose. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.
+On these labs, you will work with a partner on the lab assignments if you choose. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.
 
 **Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
 
