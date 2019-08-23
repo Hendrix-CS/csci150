@@ -120,10 +120,7 @@ There will often be short homework assignments to be completed over the weekend,
 
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
-|1 | Minecraft | ? | ? |
-
-* Quiz 1
-* Quiz 2
+|0 | [Info Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | Aug 28 | Aug 30 |
 
 ## <a name="labs">Labs</a>: 260 points
 
