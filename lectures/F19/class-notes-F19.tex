@@ -6,6 +6,8 @@
 \usepackage[normalem]{ulem}
 \usepackage{bbding}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{datenumber}
+\usepackage{ifthen}
 
 \newsavebox{\reflectbox}
 
@@ -27,14 +29,34 @@
 \newcommand{\notready}{\textcolor{red}{\XSolidBold}\xspace}
 \newcommand{\ready}{\textcolor{Green}{\Checkmark}\xspace}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Set this to the date of the first day of class (Wednesday) %%
+\setdatenumber{2019}{8}{28}
+
+\newcommand{\showdate}{\datedayname\ \thedateday\ \datemonthname}
+
+\newcommand{\advanceMWF}{
+  \ifthenelse{\equal{\datedayname}{Monday}}
+  {\nextdate\nextdate}
+  {\ifthenelse{\equal{\datedayname}{Wednesday}}
+    {\nextdate\nextdate}
+    {\ifthenelse{\equal{\datedayname}{Thursday}}
+      {\nextdate}
+      {\nextdate\nextdate\nextdate}}}}
+
+\newcommand{\firstclass}[1]{\section*{#1 (\showdate)}}
+\newcommand{\class}[1]{\advanceMWF\firstclass{#1}}
+\newcommand{\lab}[1]{\section*{LAB: #1 (\showdate\nextdate, \showdate)}}
+
 \begin{document}
 
-\title{CSCI 150: Foundations of Computer Science \\ Spring 2019 Lecture
+\title{CSCI 150: Foundations of Computer Science \\ Fall 2019 Lecture
   Notes}
 
 \maketitle
 
-\section{\ready Introduction (W 1/16)}
+\firstclass{Introduction}
 
 \begin{reflect}{Brent, S'19}
   Because of no class on MLK day, to get everything to line up,
@@ -157,11 +179,11 @@ For next time:
 \end{itemize}
 
 \newpage
-\section*{\ready LAB: Minecraft Hour of Code (1/16, 1/17 )}
+\lab{Minecraft Hour of Code}
 
 \newpage
 
-\section{\ready Python I (F 1/18)}
+\class{Python I}
 
 \subsection*{Setup/administrivia}
 \begin{itemize}
@@ -287,7 +309,7 @@ What kinds of things does Python give us?
 
 \newpage
 
-\section{\ready Python II, Box Volume (W 1/23)}
+\class{Python II, Box Volume}
 
 \subsection*{Setup/administrivia}
 \begin{itemize}
@@ -1297,7 +1319,7 @@ Make C to F conversion into function, takes C as argument:
 # the temperature converted to Fahrenheit.
 def C_to_F(temp_C: float):
     F: float = C * 9.0 / 5.0 + 32
-    print("The temperature in degrees Fahrenheit is " + str(F) + "°.")
+    print("The temperature in degrees Fahrenheit is " + str(F) + ".")
 \end{verbatim}
 
 Note function comment should describe the input(s), if any.
