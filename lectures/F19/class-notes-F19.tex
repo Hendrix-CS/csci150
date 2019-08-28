@@ -193,7 +193,7 @@ For next time:
 
 \subsection*{Setup/administrivia}
 \begin{itemize}
-\item \ready Homework due Monday (Minecraft programming by hand).
+\item Homework due Monday (Minecraft programming by hand).
   Designed to help you start developing important skills, building and
   executing mental models of what is going on in the computer, to
   predict what code will do without running it.
@@ -220,22 +220,17 @@ For next time:
 
 \subsection*{Volume of a Box}
 
-We're going to start writing our first Python program!  Start with
+We're going to start writing our first Python code!  We'll start with
 something very simple: we want the computer to calculate the volume of
 a box.  We will enter the width, depth, and height, and it will
-multiply them.  Steps we will need:
+multiply them.
 
-\begin{enumerate}
-\item Print a description of the program.
-\item Ask user for width.
-\item Remember width.
-\item Ask user for height.
-\item Remember height.
-\item Ask user for depth.
-\item Remember depth.
-\item Calculate volume.
-\item Print out volume.
-\end{enumerate}
+\begin{reflect}{Brent, F'19}
+  In the past we have used this opportunity to break the problem down
+  into steps (\emph{e.g.} print a question, get input from the user,
+  calculate the volume, etc.) but since we are now de-emphasizing IO
+  this seems less relevant.
+\end{reflect}
 
 This involves input, output, and math.  No conditionals or repetition
 yet.  Let's start learning the Python we will need to do this.  We'll
@@ -251,22 +246,95 @@ actually write the program next class.
 \subsection*{Python I (Strings, Numbers)}
 
 \textbf{Note}: quiz Friday on basic Python!  You will have a chance to
-  practice on Weds/Thurs in lab.  There isn't a textbook on purpose,
-  to force you to play/try things instead of using the textbook as a
-  crutch.  Install PyCharm or use repl.it, play around.  No substitute
-  for actually doing stuff.
+practice on Weds/Thurs in lab.  There isn't a textbook on purpose, to
+force you to play/try things instead of using the textbook as a
+crutch.  You can use Azure notebooks or repl.it, play around.  No
+substitute for actually doing stuff.
 
-Show \url{python.org} website.  Load up PyCharm, Python 3.x.
+Show \url{python.org} website.  Load up Azure notebook.
 
-\texttt{>>>} is the prompt.  This gives you direct access to the
-interpreter.  You say commands one line at a time, and get immediate
-answers.  Great for testing simple expressions/lines of code and
-seeing what they do.
+In a notebook you have direct access to the Python interpreter.  You
+say commands one line at a time, and get immediate answers.  Great for
+testing simple expressions/lines of code and seeing what they do.
 
 What kinds of things does Python give us?
 
+\begin{reflect}{Brent, F'19}
+  Should we introduce very basic strings, just to give us something to
+  do examples with?  \emph{i.e.} maybe just introduce them as
+  characters inside quotes, don't mention different kinds of quotes,
+  escape sequences, or anything like that yet?
+\end{reflect}
+
 \begin{itemize}
-\item \textbf{Strings}!
+\item \textbf{Numbers}!
+
+  2, 5, 10, integers, \etc  Use \texttt{type}.
+
+  Simple math with numbers like $2+5$. \texttt{"2 + 5"}? not so much.
+  Great as a quick calculator. Use () to force order of operations.
+
+  Integers are great, but what about fractions? \texttt{2.5}
+  \texttt{0.95}, \texttt{3e23}.
+
+  Use \verb|type| to see the types of different things.  Mention
+  exponentiation \verb|**|. (Could possibly mention mod \verb|%|, but
+  I prefer to leave it until it is needed later in the semester.)
+
+  Note that Python will automatically convert from \verb|int| to
+  \verb|float| if necessary (but not vice versa).
+
+\item \textbf{Variables}!
+
+  For keeping stuff around in short-term memory.
+\begin{verbatim}
+  x = 3
+  z = "2.5"
+\end{verbatim}
+  These are \emph{assignment} statements.  No output any more. Before,
+  any value returned from the interpreter to us, now it goes into
+  memory.  Type \texttt{x}, it spits back 3.
+
+  Draw pictures, \texttt{x} has a little box containing $3$, it's just a
+  name for the value $3$.
+
+  \texttt{x = 4} reassigns \texttt{x} to be a new number.  \texttt{x =
+    "Brent"} works too.
+
+  \texttt{y} is a runtime error, gives us an \emph{exception}, which
+  means something is not right (the \emph{other} meaning of
+  ``exceptional''). So double check your names!
+
+  \textbf{Be sure to emphasize} that the expression to the right of
+  the \texttt{=} is \emph{evaluated} to a value which is then assigned
+  to the variable.  Example:
+\begin{verbatim}
+x = 2
+y = x + 3
+x = 5
+\end{verbatim}
+  What value will \texttt{y} have afterwards?  It will still just be
+  $5$.  It does not change when \texttt{x} changes later.  It just
+  holds a number, it does not remember where the number came from.
+
+  Some names are reserved, we'll see them as we go.
+  Names can't be anything, letter or underscore first, then letter,
+  number or underscore.
+
+  Choose descriptive variable names! a, b, c, d, e, don't really help.
+  Use names like \texttt{width}, \texttt{height},
+  \texttt{num\_cats}, \etc
+
+\end{itemize}
+
+\textbf{Mention HW assignment}: Minecraft by hand.  Posted on website.
+
+\begin{reflect}{}
+  At this point we used to also cover strings, but perhaps we should
+  move this later and introduce variables instead.  Strings aren't
+  needed yet if we're doing stuff in notebooks.
+
+ \textbf{Strings}!
 
   Chunks of text, in quotes. Just like you're reading a book:
   ``Brilliant!'' Harry said.
@@ -285,32 +353,7 @@ What kinds of things does Python give us?
   The red text we see when things go wrong are examples of Syntax
   Errors.
 
-\item \textbf{Numbers}!
-
-  2, 5, 10, integers, \etc  Use \texttt{type}.
-
-  Simple math with numbers like $2+5$. \texttt{"2 + 5"}? not so much.
-  Great as a quick calculator. Use () to force order of operations.
-
-  Integers are great, but what about fractions? \texttt{2.5}
-  \texttt{0.95}, \texttt{3e23}.
-
-  Use \verb|type| to see the types of different things.  Mention
-  exponentiation \verb|**|. (Could possibly mention mod \verb|%|, but
-  I prefer to leave it until it is needed later in the semester.)
-
-  Note that Python will automatically convert from \verb|int| to
-  \verb|float| if necessary (but not vice versa).
-
-  \begin{reflect}{Brent}
-    Possible to go on and mention some things about variables if time,
-    but I pretty much never make it that far.  I prefer to leave
-    plenty of time for letting them ask questions, try things out,
-    etc. along the way.
-  \end{reflect}
-\end{itemize}
-
-\textbf{Mention HW assignment}: Minecraft by hand.  Posted on website.
+\end{reflect}
 
 \newpage
 
@@ -319,7 +362,7 @@ What kinds of things does Python give us?
 \subsection*{Setup/administrivia}
 \begin{itemize}
 \item Remember: quiz Friday on basic Python syntax, variables, arithmetic.
-\item \ready Bring color printouts of Minecraft world.
+\item Bring color printouts of Minecraft world.
 \end{itemize}
 
 \subsection*{Minecraft pair simulation exercise}
@@ -344,46 +387,6 @@ skill---in fact, there is actual research that shows this skill is
 highly correlated with your performance in this class!  So we will
 have lots more opportunities to practice it.
 
-\subsection*{Variables}
-
-For keeping stuff around in short-term memory.
-\begin{verbatim}
-  x = 3
-  name = "Brent"
-\end{verbatim}
-These are \emph{assignment} statements.  No output any more. Before,
-any value returned from the interpreter to us, now it goes into
-memory.  Type \texttt{x}, it spits back 3.
-
-Draw pictures, \texttt{x} has a little box containing $3$, it's just a
-name for the value $3$.
-
-\texttt{x = 4} reassigns \texttt{x} to be a new number.  \texttt{x =
-  "Brent"} works too.
-
-\texttt{y} is a runtime error, gives us an \emph{exception}, which
-means something is not right (the \emph{other} meaning of
-``exceptional''). So double check your names!
-
-\textbf{Be sure to emphasize} that the expression to the right of
-the \texttt{=} is \emph{evaluated} to a value which is then assigned
-to the variable.  Example:
-\begin{verbatim}
-x = 2
-y = x + 3
-x = 5
-\end{verbatim}
-What value will \texttt{y} have afterwards?  It will still just be
-$5$.  It does not change when \texttt{x} changes later.  It just
-holds a number, it does not remember where the number came from.
-
-Some names are reserved, we'll see them as we go.
-Names can't be anything, letter or underscore first, then letter,
-number or underscore.
-
-Choose descriptive variable names! a, b, c, d, e, don't really help.
-Use names like \texttt{width}, \texttt{height},
-\texttt{num\_cats}, \etc
 
 \subsection*{I/O, .py files}
 
