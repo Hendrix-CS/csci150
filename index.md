@@ -119,7 +119,7 @@ will receive at most half credit.
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
 |0 | [Info Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | Aug 28 | Aug 30 |
-|1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) | Aug 30 | Sep 2 |
+|1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) | Aug 30 | Sep 4 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 

@@ -8,7 +8,7 @@ semester: Fall 2019
 CSCI 150 HW: Minecraft
 ----------------------
 
-*Due: Monday, September 2*
+*Due: Wednesday, September 4*
 
 ![](world1.png)
 
@@ -34,4 +34,4 @@ guess and write down your assumption.
 
 You may write your program by hand, or type it and print it out.
 Either way, you should **bring a physical copy of your homework to
-class on Monday**.
+class on Wednesday**.
