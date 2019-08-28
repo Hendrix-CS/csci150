@@ -285,12 +285,15 @@ What kinds of things does Python give us?
 
   For keeping stuff around in short-term memory.
 \begin{verbatim}
-  x = 3
-  z = "2.5"
+  x: int = 3
+  z: float = "2.5"
 \end{verbatim}
   These are \emph{assignment} statements.  No output any more. Before,
   any value returned from the interpreter to us, now it goes into
-  memory.  Type \texttt{x}, it spits back 3.
+  memory.  Type \texttt{x}, it spits back 3.  Notice how we tell
+  Python what type of values the variable will hold.  (But note we
+  only have to do this when we introduce the variable for the first
+  time, not every time we use it.)
 
   Draw pictures, \texttt{x} has a little box containing $3$, it's just a
   name for the value $3$.
@@ -306,8 +309,8 @@ What kinds of things does Python give us?
   the \texttt{=} is \emph{evaluated} to a value which is then assigned
   to the variable.  Example:
 \begin{verbatim}
-x = 2
-y = x + 3
+x: int = 2
+y: int = x + 3
 x = 5
 \end{verbatim}
   What value will \texttt{y} have afterwards?  It will still just be
@@ -386,69 +389,38 @@ skill---in fact, there is actual research that shows this skill is
 highly correlated with your performance in this class!  So we will
 have lots more opportunities to practice it.
 
+\begin{reflect}{Brent, F'19}
+  We used to cover basic I/O here (\texttt{print}, \texttt{input}) but
+  now that we're doing stuff in notebooks it's irrelevant until later.
+\end{reflect}
 
-\subsection*{I/O, .py files}
+\subsection*{Our first function!}
 
-\verb|print|.  The interpreter is great, but we don’t want the user
-having to type python code, we make it easier for them.  We do
-calculations, and tell the computer to print the output to the user.
+We want to write some Python code to compute the volume of a box.
+We're going to use a \emph{function} which is like making a little
+machine or box that takes some \emph{inputs} in one end and produces
+an \emph{output} or \emph{result} on the other end.  Draw a generic
+picture.
 
+\begin{verbatim}
+def box_volume(width: float, height: float, depth: float) -> float:
+  volume: float = width * height * depth
+  return volume
+\end{verbatim}
+
+The first line says what the function is called, the names and types
+of its inputs, and the type of its output.  Draw a picture: a machine
+labelled \verb|box_volume| with three labelled inputs and one
+output.
+
+We can make variables to hold intermediate results.  We output the
+final result using the \verb|return| keyword.
+
+Test it out at the prompt with different inputs!
+
+Once this is working, write some other functions:
 \begin{itemize}
-\item \verb|print(str)| --- instructs Python to display a string to
-  the user.
-\item For example: \verb|print("Hello world")|
-
-\item Put stuff in a \verb|.py| file with \verb|print| and run it.
-
-\item \verb|input()|, lets us talk to the user and ask questions
-  at the same time.  Example:
-\begin{verbatim}
-input("What is your name?")
-\end{verbatim}
-\item Note it doesn't give you back the prompt \verb|>>>|, but waits
-  for you to type; whatever you type comes back as a string.
-
-\item  To do anything with this we need to save the result in a variable:
-\begin{verbatim}
-name = input("What is your name?")
-\end{verbatim}
-
-\item But what if we want numbers? There are functions to convert
-  strings into integers or floating point numbers:
-\begin{verbatim}
-int("23")
-float("32.4")
-\end{verbatim}
-
-\item So to get numbers from the user, we can do something like:
-\begin{verbatim}
-age_st = input("What is your age?")
-age = int(age_st)
-\end{verbatim}
-
-  Note we get a runtime error if the user enters something that
-  doesn't look like an int.
-\end{itemize}
-
-\subsection*{Our first program!}
-
-Let's start programming.  We need a place to save our commands, as a
-script, so they are all run at once.  This file is produced by a
-programmer.  The user will then take this file and run the program.
-
-Create a new project and a new \verb|box.py| file in PyCharm.  First,
-put name, class, date at top, in a comment block using \verb|#######|.
-
-Add in pseudocode, use \verb|#| to mark comments, python will ignore
-these lines.
-
-Write a program to prompt the user, compute the volume of a box, and
-print the result.
-
-Once this is working, extend it to also:
-\begin{itemize}
-\item Compute the surface area.  (Shows off power of saving values
-  entered by user and reusing them later.)
+\item Compute the surface area.
 \item Compute the length of the interior diagonal
   ($\sqrt{w^2 + h^2 + d^2}$).  (Lets us explicitly talk about how to do
   roots as a fractional power, needed for Kepler/Newton lab.)
@@ -1195,6 +1167,65 @@ This can be used as a comprehensive review of everything on Exam 1.
 \begin{itemize}
 \item Reminder: Project 1 due 1 week from today!
 \end{itemize}
+
+\begin{reflect}{Brent, F'19}
+  Somewhere around this point in the course we have to introduce basic
+  I/O, \texttt{.py} files, comments.  Not sure if it should go here
+  but dumping it here for now.
+\end{reflect}
+
+\subsection*{I/O, .py files}
+
+\verb|print|.  The interpreter is great, but we don’t want the user
+having to type python code, we make it easier for them.  We do
+calculations, and tell the computer to print the output to the user.
+
+\begin{itemize}
+\item \verb|print(str)| --- instructs Python to display a string to
+  the user.
+\item For example: \verb|print("Hello world")|
+
+\item Put stuff in a \verb|.py| file with \verb|print| and run it.
+
+\item \verb|input()|, lets us talk to the user and ask questions
+  at the same time.  Example:
+\begin{verbatim}
+input("What is your name?")
+\end{verbatim}
+\item Note it doesn't give you back the prompt \verb|>>>|, but waits
+  for you to type; whatever you type comes back as a string.
+
+\item  To do anything with this we need to save the result in a variable:
+\begin{verbatim}
+name = input("What is your name?")
+\end{verbatim}
+
+\item But what if we want numbers? There are functions to convert
+  strings into integers or floating point numbers:
+\begin{verbatim}
+int("23")
+float("32.4")
+\end{verbatim}
+
+\item So to get numbers from the user, we can do something like:
+\begin{verbatim}
+age_st = input("What is your age?")
+age = int(age_st)
+\end{verbatim}
+
+  Note we get a runtime error if the user enters something that
+  doesn't look like an int.
+\end{itemize}
+
+We need a place to save our commands, as a script, so they are all run
+at once.  This file is produced by a programmer.  The user will then
+take this file and run the program.
+
+Create a new project and a new file in PyCharm.  First, put name,
+class, date at top, in a comment block using \verb|#######|.
+
+Add in pseudocode, use \verb|#| to mark comments, python will ignore
+these lines.
 
 \subsection*{While loops}
 
