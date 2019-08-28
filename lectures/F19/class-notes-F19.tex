@@ -8,6 +8,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{datenumber}
 \usepackage{ifthen}
+\usepackage{xstring}
 
 \newsavebox{\reflectbox}
 
@@ -34,7 +35,12 @@
 %% Set this to the date of the first day of class (Wednesday) %%
 \setdatenumber{2019}{8}{28}
 
-\newcommand{\showdate}{\datedayname\ \thedateday\ \datemonthname}
+\newcommand{\shortdayname}{%
+  \ifthenelse{\equal{\datedayname}{Thursday}}{Th}{\StrLeft{\datedayname}{1}}}
+\newcommand{\shortmonthname}{\StrLeft{\datemonthname}{3}}
+
+\newcommand{\showdate}{\thedateday\ \shortmonthname}
+\newcommand{\showdowdate}{\shortdayname\ \showdate}
 
 \newcommand{\advanceMWF}{
   \ifthenelse{\equal{\datedayname}{Monday}}
@@ -45,7 +51,7 @@
       {\nextdate}
       {\nextdate\nextdate\nextdate}}}}
 
-\newcommand{\firstclass}[1]{\section*{#1 (\showdate)}}
+\newcommand{\firstclass}[1]{\section*{#1 (\showdowdate)}}
 \newcommand{\class}[1]{\advanceMWF\firstclass{#1}}
 \newcommand{\lab}[1]{\section*{LAB: #1 (\showdate\nextdate, \showdate)}}
 
@@ -187,7 +193,7 @@ For next time:
 
 \subsection*{Setup/administrivia}
 \begin{itemize}
-\item \ready Homework due Wednesday (Minecraft programming by hand).
+\item \ready Homework due Monday (Minecraft programming by hand).
   Designed to help you start developing important skills, building and
   executing mental models of what is going on in the computer, to
   predict what code will do without running it.
@@ -207,10 +213,9 @@ For next time:
 \item Fact that Minecraft doesn't have (many) syntax errors is a
   Really Big Deal.  Imagine if when learning a foreign language, every
   time you made even a small grammatical mistake the other person just
-  cut you off and said ``I don't understand.''  That's what it will
+  cut you off and said ``I don't understand.''  That's what it can
   feel like learning Python.  So don't be discouraged---remember what
-  you could do with Minecraft.  You'll get there with Python
-  too.
+  you could do with Minecraft.  You'll get there with Python too.
 \end{itemize}
 
 \subsection*{Volume of a Box}
