@@ -1,7 +1,7 @@
 CSCI 150 HW: Minecraft
 ----------------------
 
-*Due: Monday, January 22*
+*Due: Monday, September 2*
 
 ![](world1.png)
 
@@ -12,7 +12,9 @@ accomplish the following:
 * Build a train track from in front of your character's starting
   location to the star.
 
-Remember not to fall in the lava!
+You can accomplish the above goals in whatever order you like, the
+only thing that matters is that by the end of your program both goals
+should be accomplished.  Remember not to fall in the lava!
 
 You may use any of the instructions you remember from the Minecraft
 lab.  If you don't remember how the instructions work, you can try

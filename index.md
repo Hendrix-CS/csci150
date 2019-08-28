@@ -119,6 +119,7 @@ will receive at most half credit.
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
 |0 | [Info Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | Aug 28 | Aug 30 |
+|1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) | Aug 30 | Sep 2 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
@@ -127,7 +128,7 @@ There will often be short homework assignments to be completed over the weekend,
 
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
-|1 | [Minecraft Hour of Code]({{site.baseurl}}/labs/minecraft.html) | Aug 28-29 | ? |
+|1 | [Minecraft Hour of Code]({{site.baseurl}}/labs/minecraft.html) | Aug 28-29 | Sep 4-5 |
 |2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | Sep 4-5 | ? |
 |3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | Sep 11-12 | ? |
 |4 | This Day in History | Sep 18-19 | ? |
