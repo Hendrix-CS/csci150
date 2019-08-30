@@ -256,15 +256,6 @@ testing simple expressions/lines of code and seeing what they do.
 
 What kinds of things does Python give us?
 
-\begin{reflect}{Brent, F'19}
-  Should we introduce very basic strings, just to give us something to
-  do examples with?  \emph{i.e.} maybe just introduce them as
-  characters inside quotes, don't mention different kinds of quotes,
-  escape sequences, or anything like that yet?
-
-  XXX no!  but need to introduce them before Lab 3 --- but not in detail.
-\end{reflect}
-
 XXX move math stuff @ beginning of lab back to here.
 
 \begin{itemize}
@@ -286,8 +277,6 @@ XXX move math stuff @ beginning of lab back to here.
   \verb|float| if necessary (but not vice versa).
 
 \item \textbf{Variables}!
-
-  XXX remove type annotations from variables
 
   For keeping stuff around in short-term memory.
 \begin{verbatim}
@@ -315,8 +304,8 @@ XXX move math stuff @ beginning of lab back to here.
   the \texttt{=} is \emph{evaluated} to a value which is then assigned
   to the variable.  Example:
 \begin{verbatim}
-x: int = 2
-y: int = x + 3
+x = 2
+y = x + 3
 x = 5
 \end{verbatim}
   What value will \texttt{y} have afterwards?  It will still just be
@@ -432,6 +421,29 @@ Once this is working, write some other functions:
   roots as a fractional power, needed for Kepler/Newton lab.)
 \end{itemize}
 
+Show them the \verb|math| library:
+
+\begin{verbatim}
+import math
+\end{verbatim}
+
+Lots of nice functions in there.  See
+\url{http://docs.python.org/lib/module-math.html}.  For example,
+\verb|log|, \verb|arctan|, \verb|ceil|, \verb|degrees|, \verb|sqrt|
+and constants like \verb|e|, \verb|pi|.  Can access them with dot
+notation: \verb|module.function|.
+
+\verb|math.log(y)| is \emph{natural} log (base $e$). If you want
+\eg base 2, do \verb|math.log(10, 2)|.
+
+Do more examples, \eg \verb|math.sqrt(math.log(math.pi))|.  Function
+composition!
+
+\begin{itemize}
+\item Write a function to compute the volume of a cylinder.  Show how
+  to import \texttt{math} to use \texttt{math.pi}.
+\end{itemize}
+
 \begin{reflect}{Brent, S'17}
   I used the box example and this lecture went very well.  Things we
   discussed/questions the students had included:
@@ -450,89 +462,13 @@ Once this is working, write some other functions:
 
 \newpage
 
-\section*{More Math and Functions (mini-lecture \@ start of lab)}
-
-\textbf{NOTE: this is here as a separate lecture, but really needs to
-  just be done as a mini-lecture at the beginning of the Kepler/Newton
-  lab!}
-
-\begin{reflect}{Brent, S' 16}
-  In S'16 I had already covered a bunch of this (\verb|type()|, mod,
-  div) in previous lectures, so I really only had to spend 15 mintues
-  talking about converting between numeric types, and importing
-  \verb|math|, style check.
-\end{reflect}
-\begin{reflect}{Mark, F' 16}
-  I was able to cover everything in lecture except the math module and
-  style check. Covered math at beginning of lab, and style check 2 hours in
-  once people were starting to wrap up.
-\end{reflect}
-
-\subsection*{Setup}
-
-Talk about types again.  Review, or show again, use of \verb|type()|
-to determine what python thinks the type of a literal or variable is.
-For example:
-\begin{verbatim}
-type("hello") = str
-type(3) = int
-type(3.14) = float
-x = 3
-type(x) = int
-x = 3.14
-type(x) = float
-\end{verbatim}
-
-Other types of formulas.  Remember, () very important in math.
-Mention exponents are with \verb|**| if not already mentioned. Recall
-order of operations.
-
-We saw last time string conversion to \verb|int| and \verb|float|: Can
-also use these to go from \verb|float| to \verb|int| and back.  Also,
-we can go from either to string with \eg \verb|str(3)|.
-
-What we've been using are \emph{functions}.  Some come standard with
-python, like \verb|print|, \verb|input|, \verb|type|, and type
-conversion functions like \verb|int|, \verb|float|, \verb|str|.
-
-Many more possible, and in the near future, you will write your own!
-For now, if you want to use functions someone else wrote, you have to
-import them.
-
-\textbf{DO THIS AT THE TOP OF THE FILE, NOT SOMEWHERE IN THE MIDDLE!}
-It helps clarify what you'll need for the code, and is good etiquette.
-
-Our first \emph{module} today, \verb|math|:
-\begin{verbatim}
-import math
-\end{verbatim}
-
-Lots of nice functions in there.  See
-\url{http://docs.python.org/lib/module-math.html}.  For example,
-\verb|log|, \verb|arctan|, \verb|ceil|, \verb|degrees|, \verb|sqrt|
-and constants like \verb|e|, \verb|pi|
-
-Can access them with dot notation: \verb|module.function|
-
-\verb|math.log(y)| is \emph{natural} log (base $e$). If you want
-\eg base 2, do \verb|math.log(10, 2)|.
-
-Do more examples, \eg \verb|math.sqrt(math.log(math.pi))|.  Function
-composition!
-
-\begin{verbatim}
-dist = int(input("What is the distance?"))
-\end{verbatim}
-
-On to Lab 3.  You will write scripts like with box volume equation,
-use this as a template for your work.
-
-Python Style Check.  Download this and use it.
-
-\section*{\ready LAB: Kepler \& Newton (2/23--24)}
+\lab{Kepler \& Newton}
 
 \textbf{Talk to TAs before lab about common errors so they can help
   give good hints when they see them.}
+\textbf{Tell students about style checker partway through the lab.}
+
+XXX HOW TO USE style checker with Azure notebooks??
 
 \begin{reflect}{Brent, S' 16}
 This lab seemed to go pretty well.  Common errors:
@@ -574,6 +510,17 @@ This lab seemed to go pretty well.  Common errors:
 
 \newpage
 \section{\ready Tracing I (F 1/25)}
+
+\begin{reflect}{Brent, F'19}
+  Should we introduce very basic strings, just to give us something to
+  do examples with?  \emph{i.e.} maybe just introduce them as
+  characters inside quotes, don't mention different kinds of quotes,
+  escape sequences, or anything like that yet?
+
+  XXX Need to introduce basic strings somewhere here --- they are
+  needed for Heart Disease lab.
+\end{reflect}
+
 
 \subsection*{Setup}
 \begin{itemize}
