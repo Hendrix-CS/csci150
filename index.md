@@ -99,6 +99,11 @@ Exceptions may be made on a case-by-case basis if you can prove to me that you r
 
 When we write code together in class, it will be posted here!
 
+| Date | Topic | 8am | 11am |
+|:-:|-||-||-||
+| F 30 Aug | Intro to Python | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/PythonIntro.ipynb) | 11am |
+
+
 <hr>
 
 # Coursework
