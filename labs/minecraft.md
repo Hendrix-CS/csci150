@@ -61,8 +61,8 @@ by clicking the link above, we can automatically track your progress.
 
 ## Grading
 
-* To earn a C, complete the first eight stages.
-* To earn a B, complete all of the stages (other than the final
+* To earn 15 points, complete the first eight stages.
+* To earn 17 points, complete all of the stages (other than the final
   "open-ended" stage).
-* To earn a 100, complete all of the stages (other than the final
+* To earn 20 points, complete all of the stages (other than the final
   one) using the minimum number of blocks.
