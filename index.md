@@ -133,7 +133,7 @@ There will often be short homework assignments to be completed over the weekend,
 
 <div style="text-align: center; font-size: 150%;">
 [Submission form](https://forms.gle/FDVYUUvWmg5EdFs38)
-<div>
+</div>
 
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
@@ -196,7 +196,7 @@ on how to get started with these notebooks.
 
 <div style="text-align: center; font-size: 150%;">
 [Submission form](https://forms.gle/FDVYUUvWmg5EdFs38)
-<div>
+</div>
 
 | #  | Name | Points | Assigned | Due
 |:-:|-||:-:|:-:|:-:|
