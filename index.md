@@ -131,9 +131,11 @@ There will often be short homework assignments to be completed over the weekend,
 
 ## <a name="labs">Labs</a>: 260 points
 
-<div style="text-align: center; font-size: 150%;">
+<br/>
+<div style="text-align: center; font-size: 150%; border-style: solid; border-width: 2px; width: 50%; margin: 0 auto; padding: 10px">
 <a href="https://forms.gle/FDVYUUvWmg5EdFs38">Submission form</a>
 </div>
+<br/>
 
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
@@ -194,9 +196,11 @@ on how to get started with these notebooks.
 
 ## <a name="projects">Projects</a>: 350 points
 
-<div style="text-align: center; font-size: 150%;">
+<br/>
+<div style="text-align: center; font-size: 150%; border-style: solid; border-width: 2px; width: 50%; margin: 0 auto; padding: 10px">
 <a href="https://forms.gle/FDVYUUvWmg5EdFs38">Submission form</a>
 </div>
+<br/>
 
 | #  | Name | Points | Assigned | Due
 |:-:|-||:-:|:-:|:-:|
