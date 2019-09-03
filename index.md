@@ -131,6 +131,10 @@ There will often be short homework assignments to be completed over the weekend,
 
 ## <a name="labs">Labs</a>: 260 points
 
+<div style="text-align: center; font-size: 150%;">
+[Submission form](https://forms.gle/FDVYUUvWmg5EdFs38)
+<div>
+
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
 |1 | [Minecraft Hour of Code]({{site.baseurl}}/labs/minecraft.html) | Aug 28-29 | Sep 4-5 |
@@ -189,6 +193,10 @@ on how to get started with these notebooks.
   usual turnin form.
 
 ## <a name="projects">Projects</a>: 350 points
+
+<div style="text-align: center; font-size: 150%;">
+[Submission form](https://forms.gle/FDVYUUvWmg5EdFs38)
+<div>
 
 | #  | Name | Points | Assigned | Due
 |:-:|-||:-:|:-:|:-:|
