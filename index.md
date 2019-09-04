@@ -102,6 +102,7 @@ When we write code together in class, it will be posted here!
 | Date | Topic | 8am | 11am |
 |:-:|-||-||-||
 | F 30 Aug | Intro to Python | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/PythonIntro.ipynb) | [11am](https://pythonintroduction-goadrich.notebooks.azure.com/j/notebooks/firstnotebook.ipynb) |
+| W 4 Sep | More Math and Functions | [8am](https://boxmath-yorgey.notebooks.azure.com/j/notebooks/BoxMath.ipynb) | 11am |
 
 
 <hr>
