@@ -171,12 +171,11 @@ on how to get started with these notebooks.
 * Click on the <kbd>Sign in</kbd> text in the upper-right corner of the
   page. Log in with your Hendrix email account and password.
 
-* Next, the specific lab for the week, and click on the green <kbd>Clone</kbd> button in the
+* Next, follow the link for the specific lab for the week, and click on the green <kbd>Clone</kbd> button in the
   upper-right corner of the screen.
 
 * This should make a copy of the project for you in your projects
-  folder. Now click on <kbd>My Projects</kbd> and the "Civic Hacking Lab"
-  section.
+  folder. Now click on <kbd>My Projects</kbd> and the name of your lab for the week.
 
 * In your copy of the project, click on the `.ipynb`
   file in the project listing. This should open the
