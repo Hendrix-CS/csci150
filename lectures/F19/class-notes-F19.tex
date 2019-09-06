@@ -506,22 +506,130 @@ This lab seemed to go pretty well.  Common errors:
 \end{reflect}
 
 \newpage
-\section{\ready Tracing I (F 1/25)}
 
-\begin{reflect}{Brent, F'19}
-  Should we introduce very basic strings, just to give us something to
-  do examples with?  \emph{i.e.} maybe just introduce them as
-  characters inside quotes, don't mention different kinds of quotes,
-  escape sequences, or anything like that yet?
+\class{\ready Booleans}
 
-  XXX Need to introduce basic strings somewhere here --- they are
-  needed for Heart Disease lab.
-\end{reflect}
+\subsection*{Setup}
 
+\begin{itemize}
+\item HW over the weekend: Boolean practice. Due Wednesday,
+  also quiz. (Advice: finish by Monday, ask for help if you need it before
+  the quiz on Wednesday.)
+\end{itemize}
+
+\subsection*{Strings}
+
+Today: two new Python types!  First: {\tt str} (string).  A string is
+how Python represents text: a string is just a sequence of characters.
+Write by enclosing in double quotes (or single quotes).  Show some
+simple examples.  Show calling \verb|type| on a string.
+
+\subsection*{Booleans}
+
+Next: {\tt bool}! (Named for George Boole, 2 November 1815 -- 8
+December 1864, English mathematician \& philosopher, published ``The
+Laws of Thought'' in 1854 which introduced Boolean algebra.)
+
+Boolean values {\tt True} and {\tt False}.  Show these at the Python
+prompt.  Operators {\tt and}, {\tt or}, {\tt not}.  Draw truth tables
+on the board.
+
+How else can we get Booleans?  \textbf{Comparison operators}:
+\verb|>|, \verb|<|, \verb|>=|, \verb|<=|, \verb|!=|, \verb|==|.
+Demonstrate on numbers, strings, all generate Booleans.  See if they
+can guess what comparisons do for strings.  Come up with a hypothesis,
+test it.
+
+\newpage
+\class{\ready Conditionals}
+
+\subsection*{Setup/administrivia}
+
+\subsection*{Conditionals}
+
+You already know about conditionals.  Here's how we do them in Python.
+
+\begin{verbatim}
+passwd = "lemur"
+if (passwd == "lemur"):
+  msg = "Here are all the secrets!"
+else:
+  msg = "No secrets for you!"
+\end{verbatim}
+
+Tabbing is important!  Colon is important!  The thing after {\tt if}
+can be \emph{any expression which evaluates to {\tt true} or {\tt
+    false}}.
+
+Introduce random module. ({\tt import random})
+\begin{itemize}
+\item {\tt random.random()} is number in $[0,1)$. Uniform.
+\item {\tt random.randint(n)} is random integer between $0$ and $n$
+  (inclusive).  (Aside: how can we write this in terms of {\tt
+    random.random()}?)
+\end{itemize}
+Do coin flip.  Conditionally do something.  Needs to include
+\begin{itemize}
+\item {\tt else}
+\item {\tt elif}
+\item nested {\tt if}  (flip two coins in a row)
+\end{itemize}
+
+Start with multiply nested {\tt if} and then show them {\tt elif} for
+nicer syntax.
+
+For example:
+\begin{verbatim}
+import random
+
+# Note this is a function that doesn't take any inputs!
+def raffle() -> str:
+  r = random.random()
+  if r < 0.1:
+      return "Wow, you are unlucky!  Try again next time."
+  else:
+      if r > 0.9:
+          return "You get a car!!!11"
+      else:
+          if r > 0.7:
+              return "You get a bike!"
+          else:
+              if r > 0.5:
+                  return "You get a book!"
+              else:
+                  if r > 0.3:
+                      return "You get a sock!"
+                  else:
+                      return "You get a stick of gum!"
+\end{verbatim}
+
+And then rewrite it to:
+\begin{verbatim}
+# Here's a better way to write the same thing:
+
+def raffle2() -> str:
+  r = random.random()
+  if r < 0.1:
+    return "Wow, you are unlucky! Try again next time."
+  else:
+    if r > 0.9:
+        return "You get a car!!!11"
+    elif r > 0.7:
+        return "You get a bike!"
+    elif r > 0.5:
+        return "You get a book!"
+    elif r > 0.3:
+        return "You get a sock!"
+    else:
+        return "You get a stick of gum!"
+\end{verbatim}
+
+\newpage
+\section{\notready Tracing I (F 1/25)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \ready \textbf{Quiz (Python syntax and arithmetic)}.  See
+\item \notready \textbf{Quiz (Python syntax and arithmetic)}.  See
   \texttt{csci150-instructors/quiz/basic.tex}.  Go over quiz answers
   afterwards (\eg have them confer with neighbors, then have pairs
   confer with other pairs, \etc)
@@ -602,124 +710,7 @@ Give them 5 minutes to make up a tracing exercise and then swap.  Try
 to trick your neighbor!
 
 \newpage
-
-\section{\ready Booleans (M 1/28)}
-
-\subsection*{Setup}
-
-\begin{itemize}
-\item Next class: tracing quiz.
-\end{itemize}
-
-\subsection*{Booleans}
-
-Today: a new Python type, {\tt bool}! (Named for George Boole, 2
-November 1815 -- 8 December 1864, English mathematician \&
-philosopher, published ``The Laws of Thought'' in 1854 which
-introduced Boolean algebra.)
-
-Boolean values {\tt True} and {\tt False}.  Show these at the Python
-prompt.  Operators {\tt and}, {\tt or}, {\tt not}.  Draw truth tables
-on the board.
-
-How else can we get Booleans?  \textbf{Comparison operators}:
-\verb|>|, \verb|<|, \verb|>=|, \verb|<=|, \verb|!=|, \verb|==|.
-Demonstrate on numbers, strings, all generate Booleans.  See if they
-can guess what comparisons do for strings.  Come up with a hypothesis,
-test it.
-
-\begin{reflect}{Brent, S'19}
-  Only made it to here.  But had an extra class to cover the material
-  on conditionals.
-\end{reflect}
-
-\section*{\ready Conditionals (W 1/30)}
-
-\subsection*{Setup/administrivia}
-\begin{itemize}
-\item \ready \textbf{Quiz}: tracing. (\texttt{csci150-instructors/quiz/quiz2-tracing.py})
-\end{itemize}
-
-\subsection*{Conditionals}
-
-You already know about conditionals.  Here's how we do them in Python.
-
-\begin{verbatim}
-passwd = input("What is the password? ")
-if (passwd == "lemur"):
-    print("Here be secrets.")
-\end{verbatim}
-
-Tabbing is important!  Colon is important!  The thing after {\tt if}
-can be \emph{any expression which evaluates to {\tt true} or {\tt
-    false}}.
-
-Introduce random module. ({\tt import random})
-\begin{itemize}
-\item {\tt random.random()} is number in $[0,1)$. Uniform.
-\item {\tt random.randint(n)} is random integer between $0$ and $n$
-  (inclusive).  (Aside: how can we write this in terms of {\tt
-    random.random()}?)
-\end{itemize}
-Do coin flip.  Conditionally do something.  Needs to include
-\begin{itemize}
-\item {\tt else}
-\item {\tt elif}
-\item nested {\tt if}  (flip two coins in a row)
-\end{itemize}
-
-Start with multiply nested {\tt if} and then show them {\tt elif} for
-nicer syntax.
-
-For example:
-\begin{verbatim}
-import random
-
-r = random.random()
-if r < 0.1:
-    print("Wow, you are unlucky!")
-    print("Try again next time.")
-else:
-    print("Yay! You get a prize!")
-    if r > 0.9:
-        print("You get a car!!!11")
-    else:
-        if r > 0.7:
-            print("You get a bike!")
-        else:
-            if r > 0.5:
-                print("You get a book!")
-            else:
-                if r > 0.3:
-                    print("You get a sock!")
-                else:
-                    print("You get a stick of gum!")
-\end{verbatim}
-
-And then rewrite it to:
-\begin{verbatim}
-# Here's a better way to write the same thing:
-
-r = random.random()
-if r < 0.1:
-    print("Wow, you are unlucky!")
-    print("Try again next time.")
-else:
-    print("Yay! You get a prize!")
-    if r > 0.9:
-        print("You get a car!!!11")
-    elif r > 0.7:
-        print("You get a bike!")
-    elif r > 0.5:
-        print("You get a book!")
-    elif r > 0.3:
-        print("You get a sock!")
-    else:
-        print("You get a stick of gum!")
-\end{verbatim}
-
-\newpage
-\section*{\ready LAB: Big Data/Heart Disease (1/30--31)}
+\section*{\notready LAB: Big Data/Heart Disease (1/30--31)}
 
 \begin{reflect}{Brent, S'16}
   \begin{itemize}
@@ -762,7 +753,7 @@ mark (but most were just finishing or very close).
 
 \newpage
 
-\section{\ready Information encoding I (F 2/1)}
+\section{\notready Information encoding I (F 2/1)}
 
 \subsection*{Setup/administrivia}
 
@@ -778,7 +769,7 @@ mark (but most were just finishing or very close).
   things: more tracing exercises; rewrite code from class or lab;
   write some code of your own.  Review book/notes as needed, to answer
   specific questions/confusions you come across.
-\item \ready HW due Monday (conditional practice).
+\item \notready HW due Monday (conditional practice).
 \item Quiz on Monday re: booleans and conditionals.
 \end{itemize}
 
@@ -870,18 +861,18 @@ about conversion next class.
 \textbf{Try to get further than this if possible!}
 
 \newpage
-\section{\ready Information encoding II (M 2/4)}
+\section{\notready Information encoding II (M 2/4)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \ready \textbf{Quiz}: booleans and conditionals
+\item \notready \textbf{Quiz}: booleans and conditionals
   (\texttt{csci150-instructors/quiz/quiz3-alt-cond-practice.py}).  Put
   up on screen (e.g. in PyCharm) and have them write answers on paper.
-\item \ready \textbf{Assign project 1}---due Monday Feb 18.  You might
+\item \notready \textbf{Assign project 1}---due Monday Feb 18.  You might
   decide you don't want to think about it until after the exam, and
   that's OK, but you have the opportunity to start earlier if you
   like.
-\item \ready \textbf{Assign practice exam}---not collected or graded, but we
+\item \notready \textbf{Assign practice exam}---not collected or graded, but we
   will go over it on Wednesday.  In your best interest to go through
   it and come prepared!
 \end{itemize}
@@ -1040,7 +1031,7 @@ Can mention something about how video and audio are represented.
 \end{itemize}
 
 \newpage
-\section{\ready Exam 1 review (W 2/6)}
+\section{\notready Exam 1 review (W 2/6)}
 
 \subsection*{Setup}
 
@@ -1054,7 +1045,7 @@ Can mention something about how video and audio are represented.
 Go over sample exam solutions.
 
 \newpage
-\section*{\ready LAB: This Day in History (2/6--7)}
+\section*{\notready LAB: This Day in History (2/6--7)}
 
 This can be used as a comprehensive review of everything on Exam 1.
 
@@ -1089,7 +1080,7 @@ This can be used as a comprehensive review of everything on Exam 1.
 \end{reflect}
 
 \newpage
-\section{\ready Exam 1 (F 2/8)}
+\section{\notready Exam 1 (F 2/8)}
 
 \begin{itemize}
 \item Note, no HW this weekend.
@@ -1111,7 +1102,7 @@ This can be used as a comprehensive review of everything on Exam 1.
 \end{reflect}
 
 \newpage
-\section{\ready While loops (M 2/11)}
+\section{\notready While loops (M 2/11)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1234,7 +1225,7 @@ while n < max:
 \verb|while true|?  A legitimate use of an infinite loop!)
 
 \newpage
-\section{\ready Functions I: defining and calling functions (W 2/13)}
+\section{\notready Functions I: defining and calling functions (W 2/13)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1327,7 +1318,7 @@ local. Note that \verb|F| and \verb|temp_C| are not defined afterwards.
 values.
 
 \newpage
-\section*{\ready LAB: Guess My Number (2/13--14)}
+\section*{\notready LAB: Guess My Number (2/13--14)}
 
 Have the students write both versions of the game (in the first
 version, the computer picks the number; in the second, the computer
@@ -1344,16 +1335,16 @@ guesses).
 \end{reflect}
 
 \newpage
-\section{\ready Functions II: call stack, return values (F 2/15)}
+\section{\notready Functions II: call stack, return values (F 2/15)}
 
 % To do: plan out formal presentation of tracing with stack diagrams
 
 \subsection*{Setup/administrivia}
 
 \begin{itemize}
-\item \ready Quiz: while loops
+\item \notready Quiz: while loops
   (\texttt{csci150-instructors/quiz/while-trace.py})
-\item \ready HW due Wednesday, with quiz (function \& loop reading)
+\item \notready HW due Wednesday, with quiz (function \& loop reading)
 \item Reminder: project 1 due Monday!
 \end{itemize}
 
@@ -1523,7 +1514,7 @@ can just return \verb|x % y == 0| directly.
 \end{reflect}
 
 \newpage
-\section{\ready Functions III: Abstraction (M 2/18)}
+\section{\notready Functions III: Abstraction (M 2/18)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1615,7 +1606,7 @@ time ago (in the run-up to Kepler/Newton lab) and improve it by
 abstracting it into functions too.
 
 \newpage
-\section{\ready Strings (W 2/20)}
+\section{\notready Strings (W 2/20)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1682,7 +1673,7 @@ is wrong.
 (If time, do more examples from Friday.)
 
 \newpage
-\section*{\ready LAB: Mutation is the Word (Doublets) (2/20--21)}
+\section*{\notready LAB: Mutation is the Word (Doublets) (2/20--21)}
 
 % TODO: refactor lab along the lines Gabe suggests below.
 
@@ -1737,11 +1728,11 @@ is wrong.
 \end{reflect}
 
 \newpage
-\section{\ready More string, loop, \& function practice (F 2/22)}
+\section{\notready More string, loop, \& function practice (F 2/22)}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \ready HW due Monday (DNA strings)
+\item \notready HW due Monday (DNA strings)
 \end{itemize}
 
 Today's focus is on getting the students to do more hands-on exercises
@@ -1824,7 +1815,7 @@ do.  Make sure they understand that they should do everything at the
 Python prompt, they do not need to write a program!
 
 \newpage
-\section{\ready Lists I (M 2/25)}
+\section{\notready Lists I (M 2/25)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1941,7 +1932,7 @@ def read_inputs2():
 \end{verbatim}
 
 \newpage
-\section{\ready Lists II (W 2/27)}
+\section{\notready Lists II (W 2/27)}
 
 \subsection*{Setup}
 
@@ -2128,15 +2119,15 @@ def listmax(nums: List[int]) -> int:
 \end{reflect}
 
 \newpage
-\section{\ready Lists III (F 3/1)}
+\section{\notready Lists III (F 3/1)}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item \ready Practice exam is posted on the class website.  Not required and
+\item \notready Practice exam is posted on the class website.  Not required and
   not collected, but good practice---we will go over it on Monday.
   Exam is Wednesday.
-\item \ready \textbf{Quiz} (\texttt{csci150-instructors/quiz/string.py})
+\item \notready \textbf{Quiz} (\texttt{csci150-instructors/quiz/string.py})
 \end{itemize}
 
 Have them work in pairs (randomly assigned?) to write some list
@@ -2199,7 +2190,7 @@ def onlyevens(lst: List[int]) -> List[int]:
 \end{verbatim}
 
 \newpage
-\section{\ready Exam 2 review (M 3/4)}
+\section{\notready Exam 2 review (M 3/4)}
 
 \begin{itemize}
 \item \notready \textbf{Assign} Project 2.  Due 3/29, Friday after
@@ -2207,7 +2198,7 @@ def onlyevens(lst: List[int]) -> List[int]:
 \item Spend a lecture going over practice exam.
 \end{itemize}
 
-\section{\ready Exam 2 (W 3/6)}
+\section{\notready Exam 2 (W 3/6)}
 
 \begin{reflect}{Brent, S'16}
   In the Fall 2015 semester, Exam 2 was on the Wednesday right before
@@ -2248,7 +2239,7 @@ def onlyevens(lst: List[int]) -> List[int]:
 \end{reflect}
 
 \newpage
-\section{\ready Recursion I: intro (F 3/8)}
+\section{\notready Recursion I: intro (F 3/8)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -2320,7 +2311,7 @@ of comments and narrating thought process.
 \end{reflect}
 
 \newpage
-\section{\ready Recursion II: recursive functions (M 3/11)}
+\section{\notready Recursion II: recursive functions (M 3/11)}
 
 Start by reinforcing ``base case + recursive case''.  Talk about
 ``leap of faith'': trust that recursive calls will work without
@@ -2453,7 +2444,7 @@ main()
 \end{verbatim}
 
 \newpage
-\section*{\ready LAB: Fractal Recursion (3/13--14)}
+\section*{\notready LAB: Fractal Recursion (3/13--14)}
 
 \begin{reflect}{S' 17}
   This lab is fun and seemed to go reasonably well, though attendance
@@ -2472,7 +2463,7 @@ main()
 \end{reflect}
 
 \newpage
-\section*{\ready Recursion IV: Fib memoization (F 3/15)}
+\section*{\notready Recursion IV: Fib memoization (F 3/15)}
 
 Just have fun with it!
 
@@ -2513,7 +2504,7 @@ def fib_m(n: int) -> int:
 \textbf{Spring Break}
 
 \newpage
-\section{\ready For loops (M 3/25)}
+\section{\notready For loops (M 3/25)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -2606,7 +2597,7 @@ def filter_long(strs: List[str]) -> List[str]:
 \end{verbatim}
 
 \newpage
-\section{\ready More for loops: index ranges (W 3/27)}
+\section{\notready More for loops: index ranges (W 3/27)}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -2805,7 +2796,7 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 %   \verb|is_sorted| next class.
 % \end{reflect}
 
-\section*{\ready LAB: Caesar's Secrets (3/27--28)}
+\section*{\notready LAB: Caesar's Secrets (3/27--28)}
 
 \begin{reflect}{Brent, S'17}
   This lab seemed to go well, though it's definitely hard.  Most
@@ -2828,7 +2819,7 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 
 \newpage
 
-\section{\ready Mutability, objects, and references (F 3/29)}
+\section{\notready Mutability, objects, and references (F 3/29)}
 
 \subsection*{Setup}
 
@@ -2998,7 +2989,7 @@ Then go over it carefully.
 % \end{reflect}
 
 \newpage
-\section{\ready Dictionaries (M 4/1)}
+\section{\notready Dictionaries (M 4/1)}
 
 \subsection*{Setup}
 
