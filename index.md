@@ -185,6 +185,8 @@ On these labs, you will work with a partner on the lab assignments if you choose
 
 Labs should follow the [Python style guide](python_style_guide.html). You may use the automated style checker to help you catch common style errors.
 
+#### Azure Notebook Setup
+
 For many of the labs, we will be using Azure Notebooks. Here are specific instructions
 on how to get started with these notebooks.
 
