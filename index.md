@@ -50,12 +50,19 @@ resources:
   - name: Pycharm
     image: assets/images/pycharmlogo.png
     url: https://www.jetbrains.com/pycharm/
-  - name: repl.it
-    image: assets/images/replit.png
-    url: https://repl.it/
+extra-resources:
+  - name: "How to Think Like a Computer Scientist: Interactive Edition"
+    image: assets/images/runestone_logo.png
+    url: https://runestone.academy/runestone/books/published/thinkcspy/index.html
   - name: Python Tutor
     image: assets/images/python_tutor.png
     url: https://pythontutor.com/
+  - name: CodingBat Python
+    image: assets/images/codingbat.jpg
+    url: https://codingbat.com/python
+  - name: CheckiO Python Practice
+    image: assets/images/checkio_logo_small.png
+    url: https://py.checkio.org/
 ---
 
 # <a name="description">Overview</a>
@@ -88,6 +95,22 @@ Upon completing this course, our goal is for you to be able to:
 </div>
 {% endfor %}
 </div>
+
+## <a name="additional-resources">Optional Resources</a>
+
+<div class="row">
+{% for res in page.extra-resources %}
+<div class="col-md-{{ 12 | divided_by: page.extra-resources.size }}"
+     style="text-align: center">
+<img src="{{site.baseurl}}/{{ res.image }}" height="100" border="1">
+<p>
+<a href="{{ res.url }}">{{ res.name }}</a><br>
+</p>
+</div>
+{% endfor %}
+</div>
+
+## Laptop Policy
 
 Please **do not bring laptops to lecture**. This may seem strange in a computer science class. But lab is the place where you will get plenty of experience working on the computer; lecture is a time for thinking and learning without the distraction of a computer.
 
@@ -142,7 +165,7 @@ There will often be short homework assignments to be completed over the weekend,
 |:-:|-||:-:|:-:|
 |1 | [Minecraft Hour of Code]({{site.baseurl}}/labs/minecraft.html) | Aug 28-29 | Sep 4-5 |
 |2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | Sep 4-5 | Sep 11-12 |
-|3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | Sep 11-12 | ? |
+|3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | Sep 11-12 | Sep 18-19 |
 |4 | This Day in History | Sep 18-19 | ? |
 |5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 25-26 | ? |
 |6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Oct 2-3 | ? |
