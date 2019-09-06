@@ -30,9 +30,7 @@ instance of a computer bug discovered by
 [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper), one of the
 early pioneers of computing.
 
-<div style="text-align: center">
-  <img src="../images/Hopper-bug.jpg" />
-</div>
+![Hopper Bug](../assets/images/Hopper-bug.jpg)
 
 This is a page from Hopper's notebook, where she taped a moth found in a
 relay switch along with the note "First actual case of bug being found."

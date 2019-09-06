@@ -126,7 +126,7 @@ When we write code together in class, it will be posted here!
 |:-:|-||-||-||
 | F 30 Aug | Intro to Python | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/PythonIntro.ipynb) | [11am](https://pythonintroduction-goadrich.notebooks.azure.com/j/notebooks/firstnotebook.ipynb) |
 | W 4 Sep | More Math and Functions | [8am](https://boxmath-yorgey.notebooks.azure.com/j/notebooks/BoxMath.ipynb) | [11am](https://functionintroduction-goadrich.notebooks.azure.com/j/notebooks/Functions.ipynb) |
-
+| F 6 Sep | Strings and Booleans | [8am](https://booleans-yorgey.notebooks.azure.com/j/notebooks/Strings%20and%20Booleans.ipynb) | 11am |
 
 <hr>
 
@@ -184,6 +184,8 @@ On these labs, you will work with a partner on the lab assignments if you choose
 **Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
 
 Labs should follow the [Python style guide](python_style_guide.html). You may use the automated style checker to help you catch common style errors.
+
+#### Azure Notebook Setup
 
 For many of the labs, we will be using Azure Notebooks. Here are specific instructions
 on how to get started with these notebooks.
