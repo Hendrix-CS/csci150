@@ -6,6 +6,9 @@ _site
 *.synctex.gz
 *.log
 *.out
+*.dvi
+*.fls
+*.fdb_latexmk
 .~lock*
 *~
 *.class
