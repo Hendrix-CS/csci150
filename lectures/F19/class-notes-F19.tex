@@ -556,9 +556,10 @@ You already know about conditionals.  Here's how we do them in Python.
 
 \begin{verbatim}
 def get_secrets(passwd: str) -> str:
-  msg = "No secrets for you!"
   if passwd == "lemur":
     msg = "Here are all the secrets!"
+  else:
+    msg = "No secrets for you!"
 
   return msg
 \end{verbatim}
@@ -568,18 +569,6 @@ can be \emph{any expression which evaluates to {\tt true} or {\tt
     false}}.  So what kinds of things could go there?  Comparisons,
 \verb|and|, \verb|or|, a variable storing a \verb|bool| value, a
 function that returns a \verb|bool|, \etc
-
-Here's the same thing with an \verb|else|:
-
-\begin{verbatim}
-def get_secrets(passwd: str) -> str:
-  if passwd == "lemur":
-    msg = "Here are all the secrets!"
-  else:
-    msg = "No secrets for you!"
-
-  return msg
-\end{verbatim}
 
 We actually don't need the \verb|msg| variable.  \verb|return| quits
 the function immediately and returns the given value:
@@ -591,6 +580,17 @@ def get_secrets(passwd: str) -> str:
   else:
     return "No secrets for you!"
 \end{verbatim}
+
+In certain cases we don't even need an \verb|else|, for example:
+\begin{verbatim}
+def get_secrets(passwd: str) -> str:
+  if passwd == "lemur":
+    return "Here are all the secrets!"
+
+  return "No secrets for you!"
+\end{verbatim}
+Note how this depends on fact that \verb|return| quits the function
+instantly.
 
 Introduce \verb|random| module. ({\tt import random})
 \begin{itemize}
