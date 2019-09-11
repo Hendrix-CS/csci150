@@ -1,4 +1,4 @@
-% -*- compile-command: "latexmk class-notes-F19.tex" -*-
+% -*- compile-command: "latexmk -pdf class-notes-F19.tex" -*-
 
 \documentclass{article}
 
@@ -656,13 +656,11 @@ def raffle2() -> str:
 \end{verbatim}
 
 \newpage
-\section{\notready Tracing I (F 1/25)}
+\class{\ready Tracing I}
 
 \subsection*{Setup}
-\begin{itemize}
-\item HW: tracing practice (on website)
-\item TA hours!!  Use as group study session.
-\end{itemize}
+
+\subsection*{Tracing}
 
 We've already mentioned that being able to manually trace the
 execution of a program and predict what it is going to do is a very
@@ -674,11 +672,10 @@ start out, but will get more complicated as the semester progresses
 and we add new Python features, so make sure you can do it well and
 accurately!
 
-Show example of template on board: scratch work in upper left,
-variables in upper right (with types!), output on the bottom (the
-relative positioning is important because we're going to add extra
-stuff to this basic template later in the semester!).  Work through
-simple example, \eg:
+For now, template just has two areas: scratch work in upper left,
+variables in upper right (with types!).  (Relative positioning is
+important because we're going to add extra stuff to this basic
+template later in the semester!).  Work through simple example, \eg:
 \begin{verbatim}
 x = 3
 y = x + 2
@@ -701,18 +698,40 @@ which leads to \bigskip
     $y: \mathrm{int}\;|$ 5
   \end{minipage} \bigskip
 
-  \textbf{Output}
-
-  \texttt{5}
 \end{minipage}
 } \bigskip
 
 The exact contents of ``scratch'' is not important.  But the contents
-of the other two sections should look exactly like that.
+of the variable section should look exactly like that.
 
 Have them do one on their own paper:
 
 \begin{verbatim}
+hello = "zebra"
+shoes = 73
+z = 5
+msg = "hello"
+if shoes > z * 7 or msg == "hi":
+    z = 7
+    if msg == hello:
+        z = z + 12
+    else:
+        z = shoes + z
+    shoes = 2
+else:
+    shoes = z
+\end{verbatim}
+
+Go over it somehow (compare with neighbors, perhaps have someone come
+up and demonstrate on the board).
+
+Give them 5 minutes to make up a tracing exercise and then swap.  Try
+to trick your neighbor!
+
+\begin{reflect}{Brent, F'19}
+  We used to use this:
+
+  \begin{verbatim}
 z: str = "5"
 msg: str = "hello"
 print("z is " + z)
@@ -721,8 +740,10 @@ y: int = int(z) + 2
 print(msg + "! " + z + " " + str(y))
 \end{verbatim}
 
-Go over it somehow (compare with neighbors, perhaps have someone come
-up and demonstrate on the board).
+  But now that we do notebooks first they haven't seen \verb|print| or
+  string manipulation yet.  So we do conditionals first to allow for
+  something complex enough to trace.
+\end{reflect}
 
 \begin{reflect}{Brent, S'19}
   The above went really well---it doesn't seem like a lot of material
@@ -733,11 +754,8 @@ up and demonstrate on the board).
   let them go 5 minutes early.
 \end{reflect}
 
-Give them 5 minutes to make up a tracing exercise and then swap.  Try
-to trick your neighbor!
-
 \newpage
-\section*{\notready LAB: Big Data/Heart Disease (1/30--31)}
+\lab{Big Data/Heart Disease}
 
 \begin{reflect}{Brent, S'16}
   \begin{itemize}
