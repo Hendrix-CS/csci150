@@ -163,6 +163,8 @@ There will often be short homework assignments to be completed over the weekend,
 </div>
 <br/>
 
+* [Thursday lab code of conduct]({{site.baseurl}}/docs/code-of-conduct-19F-R.pdf)
+
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
 |1 | [Minecraft Hour of Code]({{site.baseurl}}/labs/minecraft.html) | Aug 28-29 | Sep 4-5 |
