@@ -127,7 +127,7 @@ When we write code together in class, it will be posted here!
 | F 30 Aug | Intro to Python | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/PythonIntro.ipynb) | [11am](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/firstnotebook.ipynb) |
 | W 4 Sep | More Math and Functions | [8am](https://boxmath-yorgey.notebooks.azure.com/j/notebooks/BoxMath.ipynb) | [11am](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Functions.ipynb) |
 | F 6 Sep | Strings and Booleans | [8am](https://booleans-yorgey.notebooks.azure.com/j/notebooks/Strings%20and%20Booleans.ipynb) | [11am](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Booleans.ipynb) |
-| M 9 Sep | Conditionals | [8am](https://booleans-yorgey.notebooks.azure.com/j/notebooks/Conditionals.ipynb) | 11am |
+| M 9 Sep | Conditionals | [8am](https://booleans-yorgey.notebooks.azure.com/j/notebooks/Conditionals.ipynb) | [11am](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Strings%20and%20Conditionals.ipynb) |
 
 <hr>
 
