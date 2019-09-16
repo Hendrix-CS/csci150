@@ -936,15 +936,11 @@ Talk about answers to first three questions.  Promise we will talk
 about conversion next class.
 
 \newpage
-\class{\notready Information encoding II}
+\class{\ready Information encoding II}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \notready \textbf{Assign project 1}---due Monday Feb 18.  You might
-  decide you don't want to think about it until after the exam, and
-  that's OK, but you have the opportunity to start earlier if you
-  like.
-\item \notready \textbf{Assign practice exam}---not collected or graded, but we
+\item \ready \textbf{Assign practice exam}---not collected or graded, but we
   will go over it on Wednesday.  In your best interest to go through
   it and come prepared!
 \end{itemize}
@@ -980,9 +976,33 @@ them in with 1's or 0's, like so:
 \[ \underset{32}{\underline{\phantom{XX}}} \; \underset{16}{\underline{\phantom{XX}}} \; \underset{8}{\underline{\phantom{XX}}} \; \underset{4}{\underline{\phantom{XX}}} \; \underset{2}{\underline{\phantom{XX}}} \; \underset{1}{\underline{\phantom{XX}}} \]
 though I emphasize that I don't require them to do this.
 
+\subsection*{Hexadecimal}
+
+\begin{reflect}{Brent, F'19}
+  In the past I've sometimes not gotten to hexadecimal and then had to
+  send them an email about it because it's on the exam!  Not ideal.
+  So I'm moving this section earlier to be sure to go over it.  The
+  other stuff about representing text, images, etc. is fun and we can
+  get through as much as there is time for.
+\end{reflect}
+
+Base $16$.  Need 16 symbols: 0--9, a--f. So $a_{16} = 10_{10}$ and so
+on. $\mbox{ace}_{16} = ?$
+
+Note, we can group the binary digits into 4s.  $16 = 2^4$.  So each 4
+bits corresponds to 1 hexadecimal digit.  Conversion back and forth is
+super easy.  We often use hexadecimal as a more convenient way to read
+and write binary.  Easier for humans to read and remember.
+
+Show entering hexadecimal directly into Python using \verb|0xace|
+notation.
+
+Show example of RGB colors expressed in hexadecimal: show
+\verb|style.css| from course website.
+
 \subsection*{Representing integers}
 
-Integers are represented like this inside the computer.  Show entering
+Integers are represented in binary inside the computer.  Show entering
 binary numbers directly into Python using \verb|0b10110| notation.
 
 Most modern computers use $64$ bits to represent an integer (\emph{how
@@ -1006,21 +1026,21 @@ left over for parity checking or just set to $0$.)
 \end{itemize}
 $128$ characters may have been enough for the white, American,
 English-speaking men who made it up.  But it sure isn't any more.
-Unicode---currently over 120,000 characters. (How many bits needed?
-Often uses a more complex scheme to allow different numbers of bits,
-\& extending indefinitely without changing existing.  Ask if you're
-curious.)
+Unicode---currently over 137,000 characters. (How many bits needed?
+Often uses a more complex scheme, UTF-8, to allow different numbers of
+bits per character, so files using ASCII don't need to be re-encoded.
+Ask if you're curious.)
 
 \subsection*{Representing images}
 
 Image = grid of colored points (``pixels'' = \emph{pic}ture
 \emph{el}ements).  Each pixel = mix of red, green, blue (additive
-primary colors). (Have you ever put a drop of water on your phone
+primary colors). (Have you ever put a tiny drop of water on your phone
 screen to see the pixels magnified?  It's pretty interesting, try it
-if you haven't!) Each primary color has 256 possible intensities,
-from 0 (off) to 255 (as bright as possible).  So each primary = 8 bits
-(1 byte), each pixel = 24 bits.  How many bits/bytes for a $500 \times
-500$ image?
+if you haven't!) Each primary color has 256 possible intensities, from
+0 (off) to 255 (as bright as possible).  So each primary = 8 bits (1
+byte), each pixel = 24 bits.  How many bits/bytes for a
+$500 \times 500$ image?
 
 \begin{reflect}{Brent, F'18}
   Got too carried away talking about ASCII and Unicode, images,
@@ -1050,22 +1070,6 @@ from 0 (off) to 255 (as bright as possible).  So each primary = 8 bits
 % You may have seen hexadecimal notation before --- for example when a computer crashes it often displays a long sequence of numbers and letters, which is a hexadecimal number representing the memory address where the crash occurred.  Another place where you see hexadecimal notation is in writing down colors.  We talked in class about how a color is represented by 3 bytes; each byte is 8 bits which can be written using two hexadecimal digits.  For example, the color "lime" can be represented as AAFF32.  AA represents the amount of red (A * 16 + A = 10*16 + 10 = 170), FF is the amount of green (F * 16 + F = 15*16 + 15 = 255), and 32 is the amount of blue (note this is 32 in base 16, which is not the same as 32 in base 10!  3 * 16 + 2 = 50 base 10).
 
 % If you have any questions we can go over them on Wednesday!
-
-\subsection*{Hexadecimal}
-
-Base $16$.  Need 16 symbols: 0--9, a--f. So $a_{16} = 10_{10}$ and so
-on. $\mbox{ace}_{16} = ?$
-
-Note, we can group the binary digits into 4s.  $16 = 2^4$.  So each 4
-bits corresponds to 1 hexadecimal digit.  Conversion back and forth is
-super easy.  We often use hexadecimal as a more convenient way to read
-and write binary.  Easier for humans to read and remember.
-
-Show entering hexadecimal directly into Python using \verb|0xace|
-notation.
-
-Show example of RGB colors expressed in hexadecimal: show
-\verb|style.css| from course website.
 
 \begin{reflect}{Brent}
   There probably won't be time to cover anything past this point.
@@ -1108,6 +1112,10 @@ Can mention something about how video and audio are represented.
 \subsection*{Setup}
 
 \begin{itemize}
+\item \notready \textbf{Assign project 1}---due XXX.  You might
+  decide you don't want to think about it until after the exam, and
+  that's OK, but you have the opportunity to start earlier if you
+  like.
 \item \notready \textbf{Quiz}: conditionals and tracing
   (\texttt{csci150-instructors/quiz/quiz3-alt-cond-practice.py}).  Put
   up on screen and have them write answers on paper.
