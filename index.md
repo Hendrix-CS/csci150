@@ -248,7 +248,8 @@ There will be three in-class exams, the first worth 50 points and the second and
 third worth 100 of your final grade. They will consist of short answer
 questions along with writing and debugging code.
 
-* Exam 1: Sep 20, covering input/output, math, numerical data, conditionals, and binary encoding
+* Exam 1: Sep 20, covering input/output, math, numerical data,
+  conditionals, and binary encoding ([Practice exam]({{site.baseurl}}/docs/exam1-practice-f19.pdf))
 * Exam 2: Oct 16, covering functions, while loops, lists, and strings
 * Exam 3: Nov 25
 
