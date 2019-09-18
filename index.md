@@ -173,7 +173,7 @@ There will often be short homework assignments to be completed over the weekend,
 |1 | [Minecraft Hour of Code]({{site.baseurl}}/labs/minecraft.html) | Aug 28-29 | Sep 4-5 |
 |2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | Sep 4-5 | Sep 11-12 |
 |3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | Sep 11-12 | Sep 18-19 |
-|4 | This Day in History | Sep 18-19 | ? |
+|4 | [This Day in History](https://notebooks.azure.com/yorgey/projects/this-day-in-history-public) | Sep 18-19 | Sep 25-26 |
 |5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 25-26 | ? |
 |6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Oct 2-3 | ? |
 |7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | ? |
