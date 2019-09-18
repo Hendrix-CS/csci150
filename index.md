@@ -160,7 +160,9 @@ There will often be short homework assignments to be completed over the weekend,
 
 <br/>
 <div style="text-align: center; font-size: 150%; border-style: solid; border-width: 2px; width: 50%; margin: 0 auto; padding: 10px">
-<a href="https://forms.gle/FDVYUUvWmg5EdFs38">Submission form</a>
+<a href="https://forms.gle/FDVYUUvWmg5EdFs38">Submission form</a><br>
+
+<a href="{{site.baseurl}}/docs/lab-project-rubric.pdf">Rubric</a>
 </div>
 <br/>
 
