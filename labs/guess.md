@@ -22,8 +22,8 @@ that require user input. [PyCharm](https://www.jetbrains.com/pycharm/) is an
 that lets us write these types of programs in Python.
 
 Open PyCharm and create a new project (by going to the <kbd>File</kbd> menu
-and selecting <kbd>New Project</kbd>).  Name it something like `Lab 01 -
-Kepler and Newton`.  Accept the other defaults and click <kbd>Create</kbd>.
+and selecting <kbd>New Project</kbd>).  Name it something like `Lab 05 -
+Guess My Number`.  Accept the other defaults and click <kbd>Create</kbd>.
 
 At this point you will have a new, empty project.  Each project can
 contain multiple Python files.  To create a new Python file, you can
