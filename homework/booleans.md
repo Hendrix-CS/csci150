@@ -23,7 +23,7 @@ For each expression, decide whether it will evaluate to `True` or
 `False`.
 
 * `False and (True or False)`
-* `(True and (not (False or False)) and (False or (True or False))`
+* `(True and (not (False or False))) and (False or (True or False))`
 * `3 ** 2 + 4 **2 == 5 ** 2`
 * `50 < 99 / 3`
 * `((1 < 2) and ("hi" > "there")) or (99 != 9)`
