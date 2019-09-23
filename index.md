@@ -153,7 +153,7 @@ will receive at most half credit.
 |1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) | F Aug 30 | W Sep 4 |
 |2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf) | F Sep 6 | W Sep 11 |
 |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 |
-| |Homework Checking 1 | M Sep 23 | F Oct 4 |
+| |Homework Checkin 1 | M Sep 23 | F Oct 4 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
@@ -238,7 +238,7 @@ on how to get started with these notebooks.
 
 | #  | Name | Points | Assigned | Due
 |:-:|-||:-:|:-:|:-:|
-|1 | [Civic Assistance Q/A System](https://project1-goadrich.notebooks.azure.com/j/notebooks/project%201%20starter.ipynb) | 50  | Sep 21 | Sep 30 |
+|1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1) | 50  | Sep 21 | Sep 30 |
 |2 | ? | 100 | Oct 14 | Nov 1 |
 |3 | ? | 200 | Nov 18 | Final Exam Day |
 
