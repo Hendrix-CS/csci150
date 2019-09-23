@@ -236,7 +236,7 @@ on how to get started with these notebooks.
 
 | #  | Name | Points | Assigned | Due
 |:-:|-||:-:|:-:|:-:|
-|1 | ? | 50  | Sep 16 | Sep 30 |
+|1 | [Civic Assistance Q/A System](https://project1-goadrich.notebooks.azure.com/j/notebooks/project%201%20starter.ipynb) | 50  | Sep 21 | Sep 30 |
 |2 | ? | 100 | Oct 14 | Nov 1 |
 |3 | ? | 200 | Nov 18 | Final Exam Day |
 
