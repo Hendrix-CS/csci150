@@ -1124,7 +1124,7 @@ Can mention something about how video and audio are represented.
 Go over sample exam solutions.
 
 \newpage
-\section*{\notready LAB: This Day in History (2/6--7)}
+\lab{\ready This Day in History}
 
 This can be used as a comprehensive review of everything on Exam 1.
 
@@ -1158,13 +1158,20 @@ This can be used as a comprehensive review of everything on Exam 1.
   Obviously we would never expect students to come up with any of these!
 \end{reflect}
 
+\begin{reflect}{Brent, F'19}
+  Now that we have converted to using notebooks at the beginning of
+  the course, we included a section introducing them to mod and
+  integer division at the start of the lab, which seemed to work very
+  well!
+\end{reflect}
+
 \newpage
-\section{\notready Exam 1 (F 2/8)}
+\class{\ready Exam 1}
 
 \begin{itemize}
 \item Note, no HW this weekend.
-\item \notready AFTER exam (e.g. on Saturday), email them to tell them
-  about \textbf{Project 1}---due XXX.
+\item \ready AFTER exam (e.g. on Saturday), email them to tell them
+  about \textbf{Project 1}.
 \end{itemize}
 
 \begin{reflect}{Brent, S'18}
@@ -1182,77 +1189,53 @@ This can be used as a comprehensive review of everything on Exam 1.
   abstraction later.
 \end{reflect}
 
+\begin{reflect}{Brent, F'19}
+  Now that they already have plenty of experience using functions with
+  notebooks, we can just spend the two lectures introducing them to
+  PyCharm, I/O, and while loops.
+\end{reflect}
+
 \newpage
-\section{\notready While loops (M 2/11)}
+\class{\ready PyCharm, I/O, while loops}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Reminder: Project 1 due 1 week from today!
+\item Hand back exams (if graded).
+\item \textbf{Assign Project 1}.  Linked from website. Due 1 week from today.
+\item Explain required feedback meetings this week or next.  We will
+  send out an email with sign-up link.
 \end{itemize}
 
-\begin{reflect}{Brent, F'19}
-  Somewhere around this point in the course we have to introduce basic
-  I/O, \texttt{.py} files, comments.  Not sure if it should go here
-  but dumping it here for now.
-\end{reflect}
+\subsection*{PyCharm}
 
-\subsection*{I/O, .py files}
+Introduce PyCharm.  Store code in a \verb|.py| file.  (Kind of like
+one giant code cell in a notebook.)  Notebooks are great for
+interactive things, explanations, documents with computational
+content, etc., but sometimes you just want a Python program to run on
+your computer and do something.  From now on we'll use both, the next
+few labs will use PyCharm.
 
-\verb|print|.  The interpreter is great, but we don’t want the user
-having to type python code, we make it easier for them.  We do
-calculations, and tell the computer to print the output to the user.
-
+\emph{Quickly} show them:
 \begin{itemize}
-\item \verb|print(str)| --- instructs Python to display a string to
-  the user.
-\item For example: \verb|print("Hello world")|
-
-\item Put stuff in a \verb|.py| file with \verb|print| and run it.
-
-\item \verb|input()|, lets us talk to the user and ask questions
-  at the same time.  Example:
-\begin{verbatim}
-input("What is your name?")
-\end{verbatim}
-\item Note it doesn't give you back the prompt \verb|>>>|, but waits
-  for you to type; whatever you type comes back as a string.
-
-\item  To do anything with this we need to save the result in a variable:
-\begin{verbatim}
-name = input("What is your name?")
-\end{verbatim}
-
-\item But what if we want numbers? There are functions to convert
-  strings into integers or floating point numbers:
-\begin{verbatim}
-int("23")
-float("32.4")
-\end{verbatim}
-
-\item So to get numbers from the user, we can do something like:
-\begin{verbatim}
-age_st = input("What is your age?")
-age = int(age_st)
-\end{verbatim}
-
-  Note we get a runtime error if the user enters something that
-  doesn't look like an int.
+\item \verb|print|
+\item \verb|input|
+\item \verb|int|, \verb|float| conversion functions.
+\item Format strings.
 \end{itemize}
+Note that the project has some instruction on these as well, they will
+get more practice.
 
-We need a place to save our commands, as a script, so they are all run
-at once.  This file is produced by a programmer.  The user will then
-take this file and run the program.
-
-Create a new project and a new file in PyCharm.  First, put name,
-class, date at top, in a comment block using \verb|#######|.
-
-Add in pseudocode, use \verb|#| to mark comments, python will ignore
-these lines.
+Show them how to run code in PyCharm.  Show them how to get a prompt.
+Show them how to make comments!
 
 \subsection*{While loops}
 
 Introduce while loops---this is a momentous day!  Once we add while
 loops you can (in theory) write \emph{any program you can imagine}.
+Note, this also means things get harder!  If you thought stuff up to
+exam 1 was easy, don't get lulled into false sense of security. Spend
+a little bit talking about how to study.
+
 Explain syntax.  Syntax and semantics are very much like \verb|if|
 (without \verb|else|): difference is that \verb|if| executes 0 or 1
 time, \verb|while| executes any number of times (0 or more).
@@ -1274,6 +1257,9 @@ their computers/paper.  Then have two or three share code?  There are
 two decent ways to write this --- using input variable to control loop
 (but then you have to initialize it with a bogus value), or using a
 boolean (sentinel).
+
+\newpage
+\class{\notready More while loops, Collatz conjecture}
 
 \subsection*{Collatz}
 
@@ -1304,6 +1290,9 @@ while n < max:
 
 (What happens if we take out \verb|max| check and just say
 \verb|while true|?  A legitimate use of an infinite loop!)
+
+XXX talk more about functions a bit?  Introduce terms ``parameter''
+and ``argument''.  Talk about abstraction, reasons for functions.
 
 \newpage
 \section{\notready Functions I: defining and calling functions (W 2/13)}
