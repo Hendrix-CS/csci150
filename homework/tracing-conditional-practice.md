@@ -38,7 +38,7 @@ other exercises.
         if zebra == fish:
             fish = zebra
             t = t + 1
-        elif zebra == "zebra"
+        elif zebra == "zebra":
             t = t - 1
         else:
             zebra = fish
