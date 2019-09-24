@@ -153,6 +153,7 @@ will receive at most half credit.
 |1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) | F Aug 30 | W Sep 4 |
 |2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf) | F Sep 6 | W Sep 11 |
 |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 |
+| |Homework Checkin 1 | M Sep 23 | F Oct 4 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
@@ -237,7 +238,7 @@ on how to get started with these notebooks.
 
 | #  | Name | Points | Assigned | Due
 |:-:|-||:-:|:-:|:-:|
-|1 | [Civic Assistance Q/A System](https://project1-goadrich.notebooks.azure.com/j/notebooks/project%201%20starter.ipynb) | 50  | Sep 21 | Sep 30 |
+|1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1) | 50  | Sep 21 | Sep 30 |
 |2 | ? | 100 | Oct 14 | Nov 1 |
 |3 | ? | 200 | Nov 18 | Final Exam Day |
 
@@ -251,9 +252,9 @@ There will be three in-class exams, the first worth 50 points and the second and
 third worth 100 of your final grade. They will consist of short answer
 questions along with writing and debugging code.
 
-* Exam 1: Sep 20, covering input/output, math, numerical data,
+* Exam 1: Sep 20, covering functions, math, numerical data,
   conditionals, and binary encoding ([Practice exam]({{site.baseurl}}/docs/exam1-practice-f19.pdf))
-* Exam 2: Oct 16, covering functions, while loops, lists, and strings
+* Exam 2: Oct 16, covering input/output, while loops, lists, and strings
 * Exam 3: Nov 25
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
