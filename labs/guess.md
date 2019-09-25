@@ -253,7 +253,7 @@ A few hints:
   * `computer_guess.py`
 
 **Remember to follow** the
-[Python style guide](http://mgoadric.github.io/csci150/python_style_guide.html)
+[Python style guide]({{site.baseurl}}/python_style_guide.html)
 and to run the style checker before turning in your programs!
 
 ## Grading
