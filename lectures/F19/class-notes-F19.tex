@@ -1243,7 +1243,19 @@ time, \verb|while| executes any number of times (0 or more).
 Do an example: count from 1 to 10.  Play with boundary conditions,
 order of statements inside the loop.
 
-Point out three usual components:
+\newpage
+\class{\ready More while loops, Collatz conjecture}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: projects!  Due Monday.
+\item Put some code with while loop up for them to figure out what it
+  does as they come in?
+\end{itemize}
+
+\subsection*{While loops}
+
+Review while loops. Point out three usual components:
 \begin{itemize}
 \item Declare and initialize variable(s) you need
 \item Write the condition with those variables
@@ -1258,15 +1270,15 @@ two decent ways to write this --- using input variable to control loop
 (but then you have to initialize it with a bogus value), or using a
 boolean (sentinel).
 
-\newpage
-\class{\notready More while loops, Collatz conjecture}
-
 \subsection*{Collatz}
 
 Recall Collatz Conjecture.  Idea: write a program to test the
 conjecture.  Start by writing inner loop with a particular starting
 number.  Then put that in a loop to do it repeatedly for different
 numbers.
+
+\textbf{Note:} if not introduced previously, can use this opportunity
+in passing to introduce abbreviated assignment forms like \verb|+=|.
 
 \begin{verbatim}
 n: int = 1
@@ -1283,7 +1295,7 @@ while n < max:
             m = 3*m + 1
         count += 1
 
-    print(str(n) + ": " + str(count))
+    print(f'{n}: {count}')
 
     n += 1
 \end{verbatim}
@@ -1291,8 +1303,17 @@ while n < max:
 (What happens if we take out \verb|max| check and just say
 \verb|while true|?  A legitimate use of an infinite loop!)
 
-XXX talk more about functions a bit?  Introduce terms ``parameter''
-and ``argument''.  Talk about abstraction, reasons for functions.
+\subsection*{Functions?}
+
+If time, talk more about functions a bit.  Show functions that don't
+return anything.  Introduce formal terms ``parameter'' and
+``argument''.  Talk about abstraction, reasons for writing functions.
+
+\begin{reflect}{Brent, F'19}
+  I kind of doubt I am going to be left with time to talk about
+  functions at all.  We could also do a bit about functions at the
+  beginning of lab.
+\end{reflect}
 
 \newpage
 \section{\notready Functions I: defining and calling functions (W 2/13)}
