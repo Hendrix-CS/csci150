@@ -130,6 +130,7 @@ When we write code together in class, it will be posted here!
 | M 9 Sep | Conditionals | [8am](https://booleans-yorgey.notebooks.azure.com/j/notebooks/Conditionals.ipynb) | [11am](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Strings%20and%20Conditionals.ipynb) |
 | M 23 Sep | PyCharm, I/O, while | [intro.py]({{site.baseurl}}/in-class/8am/intro.py), [while.py]({{site.baseurl}}/in-class/8am/while.py) | [intro.py]({{site.baseurl}}/in-class/11am/intro.py) |
 | W 25 Sep | more while loops | [while.py]({{site.baseurl}}/in-class/8am/while.py), [collatz.py]({{site.baseurl}}/in-class/8am/collatz.py) | [repetition.py]({{site.baseurl}}/in-class/11am/repetition.py), [collatz.py]({{site.baseurl}}/in-class/11am/collatz.py) |
+| F 27 Sep | functions | [collatz.py]({{site.baseurl}}/in-class/8am/collatz.py), [stacktrace.py]({{site.baseurl}}/in-class/8am/stacktrace.py) | |
 
 
 <hr>
