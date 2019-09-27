@@ -22,14 +22,6 @@ To receive full credit, for each exercise you should do the following:
    anything for step 3 if the output agrees exactly with what you
    wrote in step 1.)
 
-You will not be graded on how correct your answer is in part 1.
-However, you *will* be graded on the accuracy of your evaluation in
-step 3.  Obviously, I will not be able to tell the difference if you
-simply run the code and paste the output for step 1; please do not do
-that!  You will only be depriving yourself of a learning opportunity
-(not to mention that it is a violation of the academic integrity
-policy).
-
 You should consider the code in each exercise separately from the
 other exercises.
 
