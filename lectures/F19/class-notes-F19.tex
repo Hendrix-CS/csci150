@@ -1201,7 +1201,8 @@ This can be used as a comprehensive review of everything on Exam 1.
 \subsection*{Setup}
 \begin{itemize}
 \item Hand back exams (if graded).
-\item \textbf{Assign Project 1}.  Linked from website. Due 1 week from today.
+\item \textbf{Assign Project 1}.  Linked from website. Due 1 week from
+  today (midnight on Monday).
 \item Explain required feedback meetings this week or next.  We will
   send out an email with sign-up link.
 \end{itemize}
@@ -1339,7 +1340,7 @@ guesses).
 
 \begin{itemize}
 \item \ready HW due Wednesday, with quiz (function \& loop reading)
-\item Reminder: project 1 due Monday!
+\item Reminder: project 1 due Monday (@ midnight)!
 \end{itemize}
 
 \subsection*{More on functions}
@@ -1378,25 +1379,6 @@ guesses).
 \end{itemize}
 
 Along the way show PyCharm error highlighting.
-
-\subsection*{Why functions?}
-
-Get them to discuss why this is a worthwhile feature.  Why define
-functions?  Pair \& share.
-
-From Downey:
-
-\begin{itemize}
-\item Creating a new function gives you an opportunity to name a group
-  of statements, which makes your program easier to read and debug.
-\item  Functions can make a program smaller by eliminating repetitive code.
-  Later, if you make a change, you only have to make it in one place.
-\item Dividing a long program into
-  functions allows you to debug the parts one at a time and then
-  assemble them into a working whole.
-\item Well-designed functions are often useful for many programs.
-  Once you write and debug one, you can reuse it.
-\end{itemize}
 
 \subsection*{Flow of execution \& tracing with stack diagrams}
 
@@ -1449,20 +1431,71 @@ They will do more examples on HW!
   \noindent \textbf{Printed output}
 
 \newpage
-\section{\notready Functions III: Abstraction (M 2/18)}
+\class{\ready Function Abstraction}
 
 \subsection*{Setup}
 \begin{itemize}
 \item Reminder: HW due Wednesday with quiz: functions (tracing with
-  stack)
-\item Project 1 due today.
+  stack) and loops
+\item Project 1 due today (by midnight).
 \end{itemize}
 
-Redo Collatz example, take code that we wrote before and successivly
-abstract out parts of the code into functions.  Show how to think
-about what information is going into that code (which turns into
-parameters) and what information is coming out (which turns into a
-return value).  Points to emphasize:
+
+\subsection*{Why functions?}
+
+Get them to discuss why this is a worthwhile feature.  Why define
+functions?  Pair \& share.
+
+From Downey:
+
+\begin{itemize}
+\item Creating a new function gives you an opportunity to name a group
+  of statements, which makes your program easier to read and debug.
+\item  Functions can make a program smaller by eliminating repetitive code.
+  Later, if you make a change, you only have to make it in one place.
+\item Dividing a long program into
+  functions allows you to debug the parts one at a time and then
+  assemble them into a working whole.
+\item Well-designed functions are often useful for many programs.
+  Once you write and debug one, you can reuse it.
+\end{itemize}
+
+\subsection*{Function abstraction}
+
+Start with this code to play a simple guessing game (see
+\verb|code/hilow.py|):
+
+\begin{verbatim}
+import random
+
+repeat = "yes"
+while repeat == "yes":
+    print("This is the game of HIGH and LOW. The computer will pick a")
+    print("random number, and you will need to guess if the next number")
+    print("picked by the computer will be higher than the current")
+    print("number. You get 10 chances to guess.")
+    count = 0
+    correct = 0
+    r = random.randint(1, 10)
+    while count < 10:
+        print(f"The current number is {r}.")
+        guess = input("Do you think the next number will be higher (yes or no)? ")
+        next_r = random.randint(1, 10)
+        print(f"The next number is {next_r}.")
+        if (guess == "yes" and next_r > r) or (guess == "no" and next_r <= r):
+            correct += 1
+            print("You were right!")
+        else:
+            print("Sorry, you were wrong.")
+        r = next_r
+        count += 1
+    print(f"You got {correct} out of {count} guesses correct!")
+    repeat = input("Do you want to play again? ")
+print("Thanks for playing!")
+\end{verbatim}
+
+Get them to make suggestions, work on decomposing it into functions.
+Things to emphasize along the way:
 
 \begin{itemize}
 \item Functions are for decomposing tasks \emph{hierarchically}.
@@ -1509,44 +1542,14 @@ def f3():
   then save it in a variable.
 \end{itemize}
 
-For example you might end up with something like this:
-
-\begin{verbatim}
-# Compute the hailstone function on n.
-def hailstone(n: int) -> int:
-    if n % 2 == 0:
-        return (n/2)
-    else:
-        return (3*n + 1)
-
-# Return the number of steps in the hailstone sequence needed to get
-# from n to 1.
-def collatz(n: int) -> int:
-    count = 0
-    while n != 1:
-        n = hailstone(n)
-        count += 1
-    return count
-
-# Print numbers from 1 to max along with length of their Collatz chain.
-def check_collatz_up_to(max: int):
-    n = 1
-    while n <= max:
-        print (str(n) + " " + str(collatz(n)))
-        n += 1
-\end{verbatim}
-
-If time, maybe take the ``volume of a box'' program we wrote a long
-time ago (in the run-up to Kepler/Newton lab) and improve it by
-abstracting it into functions too.
-
 \newpage
-\section{\notready Strings (W 2/20)}
+\class{Strings}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Collect HW (function tracing).
-\item Quiz: function tracing (\texttt{csci150-instructors/quiz/function-tracing.py}).
+\item Collect HW (function/loop tracing).
+\item \notready Quiz: function tracing
+  (\texttt{csci150-instructors/quiz/function-tracing.py}).
 \end{itemize}
 
 \begin{reflect}{Brent}
@@ -1555,9 +1558,7 @@ abstracting it into functions too.
   stuff from the beginning of Friday etc.
 \end{reflect}
 
-We sort of know about strings, but the only thing we can do with them
-so far is concatenate them with \verb|+|.
-
+We know about strings, but we can't actually do anything with them yet.
 \begin{itemize}
 \item Strings are \emph{sequences of characters}.
 
@@ -1580,13 +1581,17 @@ so far is concatenate them with \verb|+|.
   \item Negative indices count backwards from the end.
   \end{itemize}
 
-\item We've seen \verb|+|: concatenation.
+\item We can \emph{concatenate} strings, \emph{i.e.} glue to strings
+  into one, with \verb|+|.
+
 \item \verb|*| does repetition.
 
 \item Strings have \emph{methods}, i.e. functions you can call on
   strings.  Do \verb|help(str)|, \verb|help(str.upper)| etc.
+
 \item Point out some useful methods: \verb|upper|, \verb|count|,
   \verb|replace|, \verb|find|, \verb|isdigit|
+
 \end{itemize}
 
 \subsection*{While loop, function, and string practice}
