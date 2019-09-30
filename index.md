@@ -181,8 +181,8 @@ There will often be short homework assignments to be completed over the weekend,
 |2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | Sep 4-5 | Sep 11-12 |
 |3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | Sep 11-12 | Sep 18-19 |
 |4 | [This Day in History](https://notebooks.azure.com/yorgey/projects/this-day-in-history-public) | Sep 18-19 | Sep 25-26 |
-|5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 25-26 | ? |
-|6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Oct 2-3 | ? |
+|5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 25-26 | Oct 2-3 |
+|6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Oct 2-3 | Oct 9-10 |
 |7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | ? |
 |8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Oct 23-24 | ? |
 |9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 30-31 | ? |
@@ -193,7 +193,7 @@ There will often be short homework assignments to be completed over the weekend,
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned Wednesday/Thursday in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
-On these labs, you will work with a partner on the lab assignments if you choose. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.
+On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.
 
 **Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
 
