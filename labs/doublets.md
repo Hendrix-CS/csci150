@@ -99,24 +99,6 @@ will always enter exactly what is expected.
 
 ### Step 2 - Implement Incrementally
 
-Download the text file [`english2.txt`](../data/english2.txt)
-and the python module
-[`dictionary.py`](../data/dictionary.py) files, and
-make sure they are in the same folder where you will put your lab.
-You **do not need to copy and paste** anything!  At the top of your
-Python program, you should put
-
-    import dictionary
-
-which will allow you to use the functions in `dictionary.py`.
-
-The dictionary module contains a function
-`valid_word(word, file)`, which will
-return `True` if the word is found in the file and `False`
-otherwise.  You can call the function by writing something like
-
-    dictionary.valid_word(some_word, 'english2.txt')
-
 Now take your pseduocode description and begin to implement your
 program in Python.  Your program should be
 named `doublets.py`.  Write your code in small sections and
@@ -167,6 +149,24 @@ mistakes.
 Modify your program so that it is able to gracefully handle erroneous
 input, as illustrated above.  The goal is to have a program
 that **never** crashes, no matter what the user enters.
+
+For English word validation, download the text file [`english2.txt`](../data/english2.txt)
+and the python module
+[`dictionary.py`](../data/dictionary.py) files, and
+make sure they are in the same folder where you will put your lab.
+You **do not need to copy and paste** anything!  At the top of your
+Python program, you should put
+
+    import dictionary
+
+which will allow you to use the functions in `dictionary.py`.
+
+The dictionary module contains a function
+`valid_word(word, file)`, which will
+return `True` if the word is found in the file and `False`
+otherwise.  You can call the function by writing something like
+
+    dictionary.valid_word(some_word, 'english2.txt')
 
 ### Step 4 - Function Decomposition
 
