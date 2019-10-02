@@ -152,7 +152,7 @@ that **never** crashes, no matter what the user enters.
 
 For English word validation, download the text file [`english2.txt`](../data/english2.txt)
 and the python module
-[`dictionary.py`](../data/dictionary.py) files, and
+[`dictionary.py`](../code/dictionary.py) files, and
 make sure they are in the same folder where you will put your lab.
 You **do not need to copy and paste** anything!  At the top of your
 Python program, you should put
