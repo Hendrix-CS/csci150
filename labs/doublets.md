@@ -8,8 +8,8 @@ semester: Fall 2019
 
 ## Overview
 
-In this lab we will make extensive use of sentinel loops (while loops).  We will explore
-mutation of DNA through playing the game Doublets.
+In this lab we will make extensive use of while loops and strings.  We will explore
+mutation of strings (words, DNA, ...) through playing the game Doublets.
 
 ## Materials
 * [Common English Words](../data/english2.txt)
@@ -19,7 +19,7 @@ mutation of DNA through playing the game Doublets.
 ## Description
 
 [Charles Lutwidge Dodgson](http://en.wikipedia.org/wiki/Lewis_Carroll) (aka
-Lewis Carroll), who is most famous for his novel "Alice in Wonderland,"
+Lewis Carroll), who is most famous for his novel "Alice in Wonderland",
 introduced a puzzle called Doublets in an article for
 *Vanity Fair*.  His rules description is as follows:
 
@@ -59,15 +59,16 @@ Python program, but is written in English instead of Python.
 For example, pseudocode for a guessing-game could look like this:
 
     Generate a number for the human to guess
-    As long as the human has not guessed the number
+    While the human has not guessed the number:
         Request a guess from the human
         If it's too high or too low, say so
     Congratulate the human on their insight
 
-The point is that this is *structured* like Python, using
-indentation and hinting at loops and conditionals.  But the individual
-pieces are just English descriptions, which you will later translate into
-precise Python code.
+The point is that this is *structured* like Python, using indentation
+and hinting at loops and conditionals.  But the individual pieces are
+just English descriptions, which you will later translate into precise
+Python code.  You do **not** need to use any functions at this
+point---we will do that later.
 
 To demonstrate the eventual behavior of the program, here is a
 sample run of the Doublets game. For now, do not worry about what
