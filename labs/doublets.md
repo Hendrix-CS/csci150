@@ -52,8 +52,7 @@ and enforces all the rules given above by Lewis Carroll.
 
 ### Step 1 - Develop Pseudocode
 
-With your analysis from answering
-these questions, develop an algorithmic solution using
+Develop an algorithmic solution using
 *pseudocode*.  This should correspond to the structure of a
 Python program, but is written in English instead of Python.
 
