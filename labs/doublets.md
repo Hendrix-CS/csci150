@@ -108,6 +108,9 @@ program ask the user for a starting word.  Once you have verified that
 this part runs successfully and behaves how it is supposed to, you can
 add the next part, and so on.
 
+Be sure you can successfully play a game of Doublets with your
+program, as shown in the example above, before moving on to Step 3.
+
 ### Step 3 - Error Handling
 
 Of course the user might not always enter input in the expected form.
