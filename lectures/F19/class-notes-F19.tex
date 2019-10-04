@@ -1595,28 +1595,10 @@ We know about strings, but we can't actually do anything with them yet.
 
 \end{itemize}
 
-\subsection*{While loop, function, and string practice}
-
-(OK if this moves to Friday) First, function to ``explode'' a string.
-Write it collaboratively.
-
-\begin{verbatim}
-def explode(s: str):
-    i: int = 0
-    while i < len(s):
-        print(s[i])
-        i += 1
-\end{verbatim}
-
-Even better if they make some bugs in the above, run it and see what
-is wrong.
-
 (If time, do more examples from Friday.)
 
 \newpage
-\section*{\notready LAB: Mutation is the Word (Doublets) (2/20--21)}
-
-% TODO: refactor lab along the lines Gabe suggests below.
+\lab{Mutation is the Word (Doublets)}
 
 \begin{reflect}{Brent S'16}
   This lab is a lot harder than the previous labs.  Definitely worth
@@ -1668,38 +1650,113 @@ is wrong.
   the basic implementation but before the error handling.
 \end{reflect}
 
+\begin{reflect}{Brent, F'19}
+  Lab has now been restructed as above and seemed to go very well.
+  Everyone seemed to be making productive progress.
+\end{reflect}
+
 \newpage
-\section{\notready More string, loop, \& function practice (F 2/22)}
+\class{\ready More string \& loop practice; sentinel loops}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \notready HW due Monday (DNA strings)
+\item \ready HW due Monday (DNA strings)
 \end{itemize}
 
 Today's focus is on getting the students to do more hands-on exercises
-writing code using strings, loops, and functions.
+writing code using strings and loops, and to introduce the concept of
+a sentinel loop.
 
-Do version of \verb|int_input| that accepts negative numbers as well
-as positive (uses indexing, slicing, \verb|or|). Maybe write a simple
-version of \verb|int_input| together and then have them extend it to
-work with negative numbers.  For example:
+\subsection*{While loop and string practice}
+
+First, write a function to ``explode'' a string, \emph{i.e.} print out
+each character on its own line.  Have the students write it together
+and then type it up collaboratively.
 
 \begin{verbatim}
-# Inputs:
-#   - prompt: string to be used as a prompt
-#
-# Repeatedly prompt the user for a number using the
-# given prompt, until they enter a valid integer.
+def explode(s: str):
+    i: int = 0
+    while i < len(s):
+        print(s[i])
+        i += 1
+\end{verbatim}
+
+Even better if they make some bugs in the above, run it and see what
+is wrong.
+
+Next, recall \verb|int_input| function from a previous lab: it
+repeatedly prompts the user for a number until they actually enter a
+number, and returns it.  Get their suggestions on writing it.  They
+will probably suggest something like this:
+
+\begin{verbatim}
+# Keep prompting the user for a number until they enter a valid one,
+# then convert to an int and return it.
+def int_input(prompt: str) -> int:
+    user_input: str = input(prompt)
+    while not user_input.isdigit():
+        print("Please enter a number!  Try again. ")
+        user_input = input(prompt)
+
+    return int(user_input)
+\end{verbatim}
+
+Point out that this version of \texttt{int_input} works, but it has a
+duplicated line of code. We can do better using a ``sentinel loop'':
+
+\begin{verbatim}
+# Keep prompting the user for a number until they enter a valid one,
+# then convert to an int and return it.
 def int_input(prompt: str) -> int:
     valid: bool = False
     while not valid:
-        uinput: str = input(prompt)
-        if uinput.isdigit() or (uinput[0] == '-' and uinput[1:].isdigit()):
+        user_input: str = input(prompt)
+        if not user_input.isdigit():
+            print("Give me some digits!")
+        else:
+            valid = True
+
+    return int(user_input)
+\end{verbatim}
+
+The code for this version of \texttt{int_input} is a little longer,
+but it's better for two reasons: it allows us to avoid duplicating
+code, and it also makes it much easier to generalize to more
+complicated conditions.
+
+Note that \texttt{int("-6")} works fine but our function does not
+allow it.  Challenge them to modify \texttt{int_input} to allow this
+as well.  Eventually should come up with something like this:
+
+\begin{verbatim}
+# Keep prompting the user for a number until they enter a valid one,
+# then convert to an int and return it.
+def int_input(prompt: str) -> int:
+    valid: bool = False
+    while not valid:
+        user_input: str = input(prompt)
+        if (user_input[0] == '-' and user_input[1:].isdigit()):
+            valid = True
+        elif user_input.isdigit():
             valid = True
         else:
-            print "That's not a valid integer.  Try again!"
-    return int(uinput)
+            print("That's not a number!")
+
+    return int(user_input)
 \end{verbatim}
+
+\subsection*{DNA HW intro}
+
+Show them HW, do a bit of it together to show them what they should
+do.  Make sure they understand that they should do everything in a
+notebook.
+
+\subsection*{More string and loop practice}
+
+\begin{reflect}{Brent, F'19}
+  We did not actually get to any of these; just leaving them here in
+  case they come in useful later.
+\end{reflect}
 
 Some more potential practice functions.  Get them to write these on
 paper with partners, then go over them (perhaps even have students
@@ -1728,6 +1785,7 @@ def sumUserNums():
     print("The sum is: " + str(s))
 \end{verbatim}
 
+
 \begin{verbatim}
 # Print a triangle of asterisks of height n, like
 #
@@ -1749,11 +1807,6 @@ def triangle(n: int):
         rowCount += 1
 \end{verbatim}
 
-\subsection*{DNA HW intro}
-
-Show them HW, do a bit of it together to show them what they should
-do.  Make sure they understand that they should do everything at the
-Python prompt, they do not need to write a program!
 
 \newpage
 \section{\notready Lists I (M 2/25)}
