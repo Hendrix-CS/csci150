@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>CSCI 150 - HW 5 - Strands of DNA</title>
-  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
 </head>
 
 <body>
@@ -18,19 +18,19 @@
 <h2>Description</h2>
 <!-- <img class="entryimageleft" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/DNA_Overview.png"> -->
 One thread common to all life on Earth is Deoxyribonucleic acid (DNA).
-DNA is composed of 
-long strands of four basic molecules: Adenine, Cytosine, Guanine and Thymine. These four bases coil 
+DNA is composed of
+long strands of four basic molecules: Adenine, Cytosine, Guanine and Thymine. These four bases coil
 together to form a double-helix structure, and we have 23 such structures called chromosomes in
-every cell of our body. The bases have the interesting property of pairing up across the 
+every cell of our body. The bases have the interesting property of pairing up across the
 double-helix, such that Adenine always matches Thymine, and Cytosine always matches Guanine.
-For our purposes as computer scientists, we can abbreviate these bases as A, C, G, and T.  
+For our purposes as computer scientists, we can abbreviate these bases as A, C, G, and T.
 <p>
-DNA contains segments called genes detailing how every piece 
-of our cells should work. 
+DNA contains segments called genes detailing how every piece
+of our cells should work.
 A gene becomes a protein through a process known as the
 <a href="http://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology">Central dogma
 of molecular biology</a>: DNA is transcribed into RNA (Ribonucleic Acid) and then translated
-into proteins. Proteins are the machinery that makes our cells work; they form the cell walls, 
+into proteins. Proteins are the machinery that makes our cells work; they form the cell walls,
 transport molecules around the cell, and in general make everything work.  It is this process
 of DNA to RNA to Proteins that we will study in this homework, using Python and String functions
 to analyze small pieces of DNA.  The process may seem a bit complex, but with Python we can
@@ -38,14 +38,14 @@ make very fast progress.
 
 <h3>Step 1</h3>
 We'll start with a small example to get familiar with how to analyze these DNA strings
-with Python.  Our sample DNA for these first experiments will be 
+with Python.  Our sample DNA for these first experiments will be
 <p>
 <pre>s = "catgcttcgcataacatgactgct"
 </pre>
 <p>
 Depending on the database we use to find our DNA sequences, some may be in lowercase, while others
 are all capital letters.  To make our life easier, we can convert any string to all uppercase
-by using the <code>s.upper()</code> method to 
+by using the <code>s.upper()</code> method to
 eliminate any variations from the source.
 <p>
 <b>G-C Content</b>
@@ -55,22 +55,22 @@ After capitalization, we now have
 <pre>s = "CATGCTTCGCATAACATGACTGCT"
 </pre>
 <p>One way to determine if there might be a gene
-hiding in a strand of DNA is to examine it's G-C content.  Because of how genes are encoded, most 
-genes have a balanced number of Gs and Cs in relation to the number of As and Ts.  To determine the 
-G-C content of a DNA strand, we can add up the number of Gs and Cs we find, and divide this by 
-the total number of bases in the string.  In this case, there would be 11 Gs and Cs out of 24 total 
+hiding in a strand of DNA is to examine it's G-C content.  Because of how genes are encoded, most
+genes have a balanced number of Gs and Cs in relation to the number of As and Ts.  To determine the
+G-C content of a DNA strand, we can add up the number of Gs and Cs we find, and divide this by
+the total number of bases in the string.  In this case, there would be 11 Gs and Cs out of 24 total
 bases, giving us 45.83%. Most genes have between 25% and 75% Gs and Cs, so this gives our strand
 a good shot of being a gene.  Python lets us do this with the <code>s.count()</code> method.
 <p>
 <b>Transcription from DNA to RNA</b>
 <p>
 Our next step is to transcribe the DNA into RNA.  RNA is a single-stranded molecule as opposed to
-the double-stranded DNA.  This means it cannot replicate itself as does DNA, but RNA still 
-plays many useful roles in cell function. Primarily, it is RNA that gets translated into 
-proteins, so having these steps be separate eases the burden on DNA to process all the work. 
+the double-stranded DNA.  This means it cannot replicate itself as does DNA, but RNA still
+plays many useful roles in cell function. Primarily, it is RNA that gets translated into
+proteins, so having these steps be separate eases the burden on DNA to process all the work.
 In the transcription
 from DNA to RNA, every Thymine molecule is replace with Uracil.  So when manipulating
-these strings in Python, we can replace T with U using the 
+these strings in Python, we can replace T with U using the
 <code>s.replace</code>(<i>find, replace</i>) method.  This gives us the RNA strand
 <p>
 <pre>r = "CAUGCUUCGCAUAACAUGACUGCU"
@@ -80,36 +80,36 @@ these strings in Python, we can replace T with U using the
 <p>
 <img class="entryimageright" src="https://upload.wikimedia.org/wikipedia/en/1/1d/Rna-codons-protein.png">
 With our strand now in RNA form, we are ready to make the final step to proteins.  This works
-by reading the <a href="http://en.wikipedia.org/wiki/Genetic_code">Genetic Code</a> of RNA. 
+by reading the <a href="http://en.wikipedia.org/wiki/Genetic_code">Genetic Code</a> of RNA.
 Just like words are composed of individual letters, genes are divided up into segments called
-<b>codons</b>.  A codon consists of three sequential bases, so with 4 choices for each base 
+<b>codons</b>.  A codon consists of three sequential bases, so with 4 choices for each base
 (from A, C, G, and U), this gives us 4 X 4 X 4 = 64 different combinations.
-Each of these 64 possibilities translates into one of 20 
+Each of these 64 possibilities translates into one of 20
 <a href="http://en.wikipedia.org/wiki/List_of_standard_amino_acids">amino acids</a>
 (redundancy is built into this system to decrease the effects of random mutations),
 and it is the conjunction of these amino acids that ultimately fold up and create proteins.
 Not all of the bases in a strand of RNA will encode for a gene, and actually, only 10% - 20% of
-our current DNA is known to encode genes; the other 80% - 90% of our genome is mostly 
-unexplained and unexplored for different modes of functionality. 
+our current DNA is known to encode genes; the other 80% - 90% of our genome is mostly
+unexplained and unexplored for different modes of functionality.
 <p>
-When you are reading a strand of RNA, there are two important locations to find: where to 
+When you are reading a strand of RNA, there are two important locations to find: where to
 <b>start</b>
-reading and where to <b>stop</b> reading.  
-There are actually three different ways to change a strand into amino acids.  
+reading and where to <b>stop</b> reading.
+There are actually three different ways to change a strand into amino acids.
 We could start with the first base at index 0,
 such that our codons are substrings from 0:3, 3:6, 6:9, etc.  Staring with index 1
 makes our substrings 1:4, 4:7, 7:10, etc, and starting with index 2 gives us 2:5, 5:8, 8:11, etc.
 <p>
-These initial indices (0, 1, 2) define the <b>reading frame</b> for this gene.  
+These initial indices (0, 1, 2) define the <b>reading frame</b> for this gene.
 In English we start every sentence with a capital letter, and stop each sentence with a period.
 RNA uses an interesting way of signaling the start of a gene by designating one particular codon,
 AUG, as the start codon.  For our purposes, wherever you find AUG, this marks the start of a gene;
 this also defines our reading frame, which can be found by modding the initial index of the start
-codon by 3.  In our sample sequence above, we can use the method 
+codon by 3.  In our sample sequence above, we can use the method
 <code>s.find</code>(<i>substring</i>) to locate the index for "AUG", and determine
 that the reading frame is 1 % 3 = 1.
 <p>
-For robustness, there are three codons which tell us when to stop translating RNA into 
+For robustness, there are three codons which tell us when to stop translating RNA into
 amino acids: UAG, UGA and UAA. As soon as any one of these three stop codons is found <b>
 in the same reading frame after the start codon</b>, translation stops and the protein is complete.
 In our RNA strand, we first find UAA at index 11, however 11 % 3 = 2 and is not in the same
@@ -121,21 +121,21 @@ reading frame as the start codon.  Our next instance of a stop codon is at index
 <p>
 
 <h3>Step 2</h3>
-Now that you have some familiarity with the processing of DNA, we will be 
+Now that you have some familiarity with the processing of DNA, we will be
 using the interpreter to analyze very long DNA strings.
 <p>
 Download <a href="../data/histone_h4.txt"><code>histone_h4.txt</code></a> to your
-working Python directory (the default where your files are saved).  
+working Python directory (the default where your files are saved).
 This relatively small section of DNA (most genes are between 1000 and 10,000 bases long)
-that encodes for 
+that encodes for
 <a href="http://en.wikipedia.org/wiki/Histone">Histone H4</a>.
 Histone H4 plays a major role in how the DNA strands wind up to form chromosomes,
-and this gene is highly conserved across almost all 
+and this gene is highly conserved across almost all
 <a href="http://en.wikipedia.org/wiki/Eukaryote">Eukaryotic organisms</a>
 (those which have a nucleus).
 
 <p>
-Perform the following steps on the DNA strand, and record the results in a document 
+Perform the following steps on the DNA strand, and record the results in a document
 called
 <code>DNA Answers.txt</code>:
 <ol>
@@ -143,8 +143,8 @@ called
 make it all one big long string, there should be no carriage returns in the middle.
 <li>Convert this string to uppercase and record
 the first 10 and last 10 bases.
-<li>Find and record the GC 
-content of the DNA as a percent of the overall length of the DNA.  
+<li>Find and record the GC
+content of the DNA as a percent of the overall length of the DNA.
 <li>Translate this gene into RNA. Record how many bases were changed from T to U.
 <li>Determine the reading frame for the first gene present in the RNA.
 <li>Find the segment of RNA that encodes the first gene, excluding the start and stop codon.

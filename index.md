@@ -160,6 +160,7 @@ will receive at most half credit.
 |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 |
 | |Homework Checkin 1 | M Sep 23 | F Oct 4 |
 |4 | [Function and loop practice]({{site.baseurl}}/homework/function-reading.pdf) | F Sep 27 | W Oct 2 |
+|5 | [Strands of DNA]({{site.baseurl}}/homework/dna-strings.html) | F Oct 4 | W Oct 9 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
