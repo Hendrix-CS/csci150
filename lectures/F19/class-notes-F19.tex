@@ -1701,7 +1701,7 @@ def int_input(prompt: str) -> int:
     return int(user_input)
 \end{verbatim}
 
-Point out that this version of \verb|int_input| works, but it has a
+Point out that this version of \texttt{int\_input} works, but it has a
 duplicated line of code. We can do better using a ``sentinel loop'':
 
 \begin{verbatim}
@@ -1719,13 +1719,13 @@ def int_input(prompt: str) -> int:
     return int(user_input)
 \end{verbatim}
 
-The code for this version of \verb|int_input| is a little longer,
+The code for this version of \texttt{int\_input} is a little longer,
 but it's better for two reasons: it allows us to avoid duplicating
 code, and it also makes it much easier to generalize to more
 complicated conditions.
 
 Note that \texttt{int("-6")} works fine but our function does not
-allow it.  Challenge them to modify \verb|int_input| to allow this
+allow it.  Challenge them to modify \texttt{int\_input} to allow this
 as well.  Eventually should come up with something like this:
 
 \begin{verbatim}

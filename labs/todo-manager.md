@@ -153,7 +153,7 @@ if you type
 at the prompt, you should see the output shown above.
 
 
-#### Get choice
+#### 1.2 Get choice
 
 Write a function called `def get_choice(prompt: str, choices: List[str]) -> int:`
 
@@ -167,9 +167,9 @@ user's choice.  It should carry out the following steps:
   * Check to make sure the user's input is a number, and if so,
     that it corresponds to one of the choices.
   * If the user's input is invalid, print an appropriate error
-    message and simply return `-1`.  Don't use a loop
+    message and simply return `-1`.  **Don't use a loop
     to re-prompt the user.  This will allow the user to "cancel"
-    by entering an invalid input.
+    by entering an invalid input.**
   * Otherwise, if the user entered a valid choice, return the
     number they chose.
 
@@ -206,7 +206,7 @@ A todo list manager isn't much good without being able to load and
 save lists of todos!  You wouldn't want to have to type in all your
 todos every time you run the program.
 
-I have provided functions you can use to open and save text files.
+We have provided functions you can use to open and save text files.
 Later in the semester we will learn more about how they work.  For
 now, you can just copy and paste these functions into your program.
 
@@ -244,11 +244,12 @@ Now define a function `main()` which does the following:
     temporary, to make sure everything else is working; you will remove
     it in the next step.
   * Save the new, extended list back to the file using
-    the `save_file` function.   Note
-    that `save_file` expects a string, not a list of strings,
-    so you will have to turn the list of todos into a single string
-    using something like `'\n'.join(todos)`, which puts the
-    list of todos together with a newline character in between each one.
+    the `save_file` function.   
+
+Note that `save_file` expects a string, not a list of strings,
+so you will have to turn the list of todos into a single string
+using something like `'\n'.join(todos)`, which puts the
+list of todos together with a newline character in between each one.
 
 
 Again, you should be sure to test your `main()`
