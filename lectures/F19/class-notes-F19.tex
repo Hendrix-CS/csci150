@@ -2018,15 +2018,26 @@ not actually the same.
 
 Have students find a partner. Suppose \verb|animals| is a list of
 strings, how can you append 3 copies of \verb|"gerbil"| onto the end?
-Try to come up with as many different ways as you can.  Try to also
-come up with some ways that seem like they might work but don't!
+That is, suppose we have
+\begin{verbatim}
+animals = ['dog', 'cat', 'horse']
+\end{verbatim}
+We want to run some code so that afterwards \verb|animals| will
+contain the list
+\begin{verbatim}
+['dog', 'cat', 'horse', 'gerbil', 'gerbil', 'gerbil']
+\end{verbatim}
+Put the students in groups, try to come up with as many different ways
+as you can.  Try to also come up with some ways that seem like they
+might work but don't!
 
-Go over possibilities.  This might take a while.  Try to get a bunch
-of different approaches from different groups.  Talk about
+Get groups to report out.  Each group share some proposed code, but
+don't tell us whether it is supposed to work or not!  We can all
+discuss and then try it and see.
+
+This might take a while.  Should naturally lead to discussing
 \verb|append|, list repetition operator \verb|*|, concatenation
-operator \verb|+|, etc.  Possibly introduce some other methods (some
-correct, some incorrect) and get them to argue about whether they will
-work or not, if they don't come up with enough on their own.
+operator \verb|+|, etc.
 
 \begin{reflect}{Brent, S'16}
   As an illustration, here are all the suggestions my students came up
@@ -2080,6 +2091,13 @@ animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
   made fewer interesting mistakes, which I suppose is a good thing.
   In retrospect maybe I should have deliberately introduced more
   incorrect versions for them to think about.
+\end{reflect}
+
+\begin{reflect}{Brent, F'19}
+  It went really well this time, after I changed it so that (1) groups
+  are specifically instructed to try to come up both with things that
+  work as well as things that don't, (2) groups could share either one
+  without revealing which it is supposed to be.
 \end{reflect}
 
 \subsection*{More list practice}
