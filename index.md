@@ -187,7 +187,7 @@ There will often be short homework assignments to be completed over the weekend,
 |4 | [This Day in History](https://notebooks.azure.com/yorgey/projects/this-day-in-history-public) | Sep 18-19 | Sep 25-26 |
 |5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 25-26 | Oct 2-3 |
 |6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Oct 2-3 | Oct 9-10 |
-|7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | ? |
+|7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | Oct 23-24 |
 |8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Oct 23-24 | ? |
 |9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 30-31 | ? |
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Nov 6-7 | ? |
