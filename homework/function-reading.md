@@ -38,7 +38,7 @@ other exercises.
         return foo(x) + foo(y)
 
     def main1():
-        print("The value is " + str(bar(2,3)))
+        print(f"The value is {bar(2,3)}")
 
     main1()
     ```
