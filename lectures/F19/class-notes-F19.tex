@@ -1809,7 +1809,7 @@ def triangle(n: int):
 
 
 \newpage
-\section{\notready Lists I (M 2/25)}
+\class{\ready Lists I}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -1855,12 +1855,49 @@ Other list mutation methods:
 \begin{reflect}{Brent, S'17}
   I pared this down even more---I didn't even show them \verb|pop|,
   \verb|remove|, or \verb|del|, just showed them that they exist and
-  told them to look them up.  We then had plenty of time for writing
-  some practice code.  First I had them try to write
-  \verb|explode_list| with partners, then we wrote it all together.
-  Then, I had them work on \verb|read_inputs|, then got a volunteer to
-  come up and type while the class told them what to do.  This worked
-  super well!
+  told them to look them up.
+\end{reflect}
+
+Talk about the type of a list. Python lets you do this:
+\begin{verbatim}
+weird_list = [3, "hi", 2.5, ["one", "two"]]
+\end{verbatim}
+but you shouldn't!  There are better ways to put things of different
+types together (objects), we will learn about that later in the
+semester.  A list should only hold things that are all of the same
+type. However, notice that if we ask for the \verb|type| of a list
+Python only says \verb|list|.  If we say \verb|from typing import *|
+then we can use \verb|List| which lets us specify the type of the
+items in the list:
+
+\begin{verbatim}
+def sum_list(nums: List[int]) -> int:
+\end{verbatim}
+
+Now have them implement the \verb|sum_list| function.
+
+Next, have them implement this:
+\begin{verbatim}
+# Repeatedly prompt the user for an input until they type 'quit'.
+# Then return the list of all the inputs the user gave (not including
+# the word 'quit').
+def read_inputs() -> List[str]:
+\end{verbatim}
+
+Might be some difficulty with including a stray empty string at the
+beginning, or including the word \verb|"quit"|.  Use this as another
+opportunity to emphasize the use of sentinel loops.
+
+\begin{reflect}{Brent, S'17}
+  First I had them try to write \verb|explode_list| with partners,
+  then we wrote it all together.  Then, I had them work on
+  \verb|read_inputs|, then got a volunteer to come up and type while
+  the class told them what to do.  This worked super well!
+\end{reflect}
+
+\begin{reflect}{Brent, F'19}
+  I left this out since I just had them write \verb|explode_string|
+  recently.
 \end{reflect}
 
 \begin{verbatim}
@@ -1876,7 +1913,7 @@ def explode_list(items: List[str]):
 \end{verbatim}
 
 \begin{reflect}{Brent S'16}
-  This is the version from S'16:
+  This is the version from S'16, using a sentinel loop:
 \end{reflect}
 
 \begin{verbatim}
@@ -1899,7 +1936,8 @@ def read_inputs():
 \end{verbatim}
 
 \begin{reflect}{Brent, S'17}
-  And these are the versions from S'17:
+  And these are the versions from S'17.  Note they don't use sentinel
+  loops.
 \end{reflect}
 \begin{verbatim}
 # Inputs: none
@@ -1926,16 +1964,16 @@ def read_inputs2():
 \end{verbatim}
 
 \newpage
-\section{\notready Lists II (W 2/27)}
+\class{\ready Lists II}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item \textbf{Quiz} (strings): see \texttt{csci150-instructors/quiz/string.py}
+\item \ready \textbf{Quiz} (strings): see \texttt{csci150-instructors/quiz/string.py}
 \item Exam 2 (primarily covering functions, while loops, strings, and
   lists---though of course it also builds on top of concepts from Exam
   1 so you still need to know those too) will be one week from today.
-  Practice exam will be out on Friday; Monday will be review.
+  Practice exam will be out on Friday.
 \end{itemize}
 
 \subsection*{Lists and strings}
@@ -1980,7 +2018,8 @@ not actually the same.
 
 Have students find a partner. Suppose \verb|animals| is a list of
 strings, how can you append 3 copies of \verb|"gerbil"| onto the end?
-Try to come up with as many different ways as you can.
+Try to come up with as many different ways as you can.  Try to also
+come up with some ways that seem like they might work but don't!
 
 Go over possibilities.  This might take a while.  Try to get a bunch
 of different approaches from different groups.  Talk about
@@ -2046,7 +2085,8 @@ animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
 \subsection*{More list practice}
 
 \textbf{If} there's class time left (I don't plan to have any left),
-could have them practice writing one or more of these functions:
+could have them practice writing one or more of these functions.
+Otherwise we will do more list function writing practice on Friday.
 
 \begin{verbatim}
 from typing import *
@@ -2082,35 +2122,7 @@ def listmax(nums: List[int]) -> int:
 \end{verbatim}
 
 \newpage
-\section*{\notready LAB: List Editor (2/27--28)}
-
-\begin{reflect}{Brent, F'18}
-  I wrote this lab fresh for this semester: we decided to spend more
-  time on lists and put off for loops until after exam 2.  So we
-  needed a new lab that gave them practice with lists but didn't need
-  for loops.
-
-  Unfortunately the lab was something of a disaster.  Many students
-  (even students who usually do well) were very confused about what
-  the lab was asking them to do, and only made it to step 3 or so (out
-  of 6) by the end of the lab period.  It will need to be
-  substantially rewritten and/or clarified for next time (or we need
-  to come up with a different lab that serves the same purpose).  I do
-  think there's a good lab hiding in there, trying to get out.
-\end{reflect}
-
-\begin{reflect}{Brent}
-  Some ideas for changing the lab:
-  \begin{itemize}
-  \item Keep it mostly the same but give them more skeleton code to
-    start?
-  \item Keep the line editor idea but simplify it somehow? Maybe just
-    a \emph{list} editor?  With no notion of ``current'' element?
-    Add/delete items, find, reorder, sort, file load/save\dots
-  \item Make something entirely different involving 2d array (nested
-    list)?
-  \end{itemize}
-\end{reflect}
+\lab{Todo manager}
 
 \newpage
 \section{\notready Lists III (F 3/1)}
