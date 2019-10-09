@@ -134,6 +134,8 @@ When we write code together in class, it will be posted here!
 | M 30 Sep | function abstraction | [hilow.py]({{site.baseurl}}/code/hilow.py), [hilow_functions.py]({{site.baseurl}}/code/hilow_functions.py) | |
 | W 2 Oct | strings | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Strings.ipynb) | |
 | F 4 Oct | String and loop practice | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Strings.ipynb) | |
+| M 7 Oct | Lists | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Lists.ipynb) | |
+| W 9 Oct | More lists | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Lists.ipynb) | |
 
 <hr>
 
