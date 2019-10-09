@@ -129,7 +129,7 @@ don't forget to include the line
 at the top of your file, which you will need in order to write types
 involving lists.
 
-Start by defining the following functions:
+Now follow the instructions below to write some functions you will need.
 
 #### 1.1 Print Numbered List
 
@@ -155,7 +155,7 @@ at the prompt, you should see the output shown above.
 
 #### 1.2 Get choice
 
-Write a function called `def get_choice(prompt: str, choices: List[str]) -> int:`
+Write a function called `get_choice(prompt: str, choices: List[str]) -> int`.
 
 This function takes as input a prompt string and a list of
 choices, and returns an `int` corresponding to the
@@ -221,7 +221,7 @@ now, you can just copy and paste these functions into your program.
             f.close()
             return lines
         except:
-            print("Warning, file " + filename + " does not exist.")
+            print(f"Warning, file {filename} does not exist.")
             return []
 
     # Write the given string to the file with the given name.
@@ -231,7 +231,7 @@ now, you can just copy and paste these functions into your program.
             f.write(contents)
             f.close()
         except:
-            print("Something went wrong saving " + filename + "!")
+            print(f"Something went wrong saving {filename}!")
 
 Now define a function `main()` which does the following:
 
@@ -242,7 +242,7 @@ Now define a function `main()` which does the following:
     using `print_numbered_list`.
   * Add a fake todo item to the end of the list (this part is just
     temporary, to make sure everything else is working; you will remove
-    it in the next step.
+    it in the next step).
   * Save the new, extended list back to the file using
     the `save_file` function.   
 
@@ -344,12 +344,3 @@ nice or add your own extra features.
 ## What to turn in
 
 * `todo_manager.py`
-
-## Grading
-
-* To earn a D, complete Step 1.
-* To earn a C, complete Step 2.
-* To earn a B, complete Step 3.
-* To earn an A, complete Step 4.
-* To earn a 100, use good code style and document each function
-  with comments.
