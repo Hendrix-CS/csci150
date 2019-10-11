@@ -148,7 +148,7 @@ should print out
 and then trying your function with different inputs.  For example,
 if you type
 
-    print_numbered_items(['hat', 'socks', 'shoes'])
+    print_numbered_list(['hat', 'socks', 'shoes'])
 
 at the prompt, you should see the output shown above.
 
@@ -161,18 +161,17 @@ This function takes as input a prompt string and a list of
 choices, and returns an `int` corresponding to the
 user's choice.  It should carry out the following steps:
 
-  * Print out a numbered list of the choices
-    (using `print_numbered_list`).
+  * Print out a numbered list of the choices (using
+    `print_numbered_list`).
   * Prompt the user for input (using the provided `prompt`).
   * Check to make sure the user's input is a number, and if so,
     that it corresponds to one of the choices.
   * If the user's input is invalid, print an appropriate error
-    message and simply return `-1`.  **Don't use a loop
-    to re-prompt the user.  This will allow the user to "cancel"
-    by entering an invalid input.**
+    message and simply return `-1`.  **Don't use a while loop
+    to re-prompt the user.**  This will allow the user to "cancel"
+    by entering an invalid input.
   * Otherwise, if the user entered a valid choice, return the
-    number they chose.
-
+    number they chose (be sure to return an `int`, not a string!).
 
 **Again, you should be sure to load your file into the console and
 test it**.  For example, you might see something like this:
@@ -185,20 +184,19 @@ test it**.  For example, you might see something like this:
     Sorry, shirt is not a number.
     -1
 
-    >>> get_choice("Whaddaya want? ", ['hat', 'socks', 'shoes'])
-    0) hat
-    1) socks
-    2) shoes
-    Whaddaya want? 5
+    >>> get_choice("What color elephant? ", ['grey', 'blue', 'red'])
+    0) grey
+    1) blue
+    2) red
+    What color elephant? 5
     Sorry, 5 is not a valid choice.
     -1
 
-    >>> get_choice("Whaddaya want? ", ['hat', 'socks', 'shoes'])
-    0) hat
-    1) socks
-    2) shoes
-    Whaddaya want? 2
-    2
+    >>> get_choice("OK? ", ['sure', 'no way'])
+    0) sure
+    1) no way
+    OK? 1
+    1
 
 ## Step 2: Loading and Saving
 
@@ -214,7 +212,7 @@ now, you can just copy and paste these functions into your program.
     # of strings, one per line; OR print a warning and return the empty
     # list if there is an error opening the file (e.g. if the file does
     # not exist).
-    def open_file(filename: str) -> List[str]:
+    def load_list_from_file(filename: str) -> List[str]:
         try:
             f = open(filename, 'r')
             lines = [l.rstrip() for l in f.readlines()]
@@ -236,28 +234,25 @@ now, you can just copy and paste these functions into your program.
 Now define a function `main()` which does the following:
 
   * Prompt the user for the name of the file containing their todo list.
-  * Open the file (using the `open_file` function) and
-    save the contents into a list variable.
-  * Print out the todo list
-    using `print_numbered_list`.
+  * Open the file (using the `load_list_from_file` function) and store
+    the returned list in a variable.
+  * Print out the todo list using `print_numbered_list`.
   * Add a fake todo item to the end of the list (this part is just
-    temporary, to make sure everything else is working; you will remove
-    it in the next step).
-  * Save the new, extended list back to the file using
-    the `save_file` function.   
+    temporary, to make sure everything else is working; you will
+    remove it in the next step).
+  * Save the new, extended list back to the file using the `save_file`
+    function (see the next paragraph for a helpful hint).
 
 Note that `save_file` expects a string, not a list of strings,
 so you will have to turn the list of todos into a single string
 using something like `'\n'.join(todos)`, which puts the
 list of todos together with a newline character in between each one.
 
-
-Again, you should be sure to test your `main()`
-function. (You can use whatever file name you want for your todo list;
-if it doesn't already exist, it will be created by `save_file`.)
-You should be able to tell if the loading and saving is working since
-after running `main()` your todo file should have one more line
-at the end.
+Again, you should be sure to test your `main()` function. (You can use
+whatever file name you want for your todo list; if it doesn't already
+exist, it will be created by `save_file`.)  You should be able to tell
+if the loading and saving is working since after running `main()` your
+todo file should have one more line at the end.
 
 ## Step 3: Menu
 
@@ -273,7 +268,6 @@ repeatedly choose options from a menu. In particular:
     list of menu choices) until they choose to quit.  At this point
     nothing will actually happen when they choose things from the
     menu; you will fix that in the next step.
-
 
 You should also get rid of the code that adds a fake todo item to the
 end of the list.
@@ -309,7 +303,9 @@ write `todos.pop(choice)`.
 
 This should work similarly to remove: ask the user which item they
 would like to replace; if they make a valid choice, prompt them for a
-new todo item, and replace the item at the index they chose.
+new todo item, and replace the item at the index they chose.  (*Hint*:
+replacing an item should be only one line of code!  Look in your notes
+from class if you don't remember how to do it.)
 
 #### 4.4 search
 
