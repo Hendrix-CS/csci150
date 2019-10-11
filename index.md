@@ -130,12 +130,12 @@ When we write code together in class, it will be posted here!
 | M 9 Sep | Conditionals | [8am](https://booleans-yorgey.notebooks.azure.com/j/notebooks/Conditionals.ipynb) | [11am](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Strings%20and%20Conditionals.ipynb) |
 | M 23 Sep | PyCharm, I/O, while | [intro.py]({{site.baseurl}}/in-class/8am/intro.py), [while.py]({{site.baseurl}}/in-class/8am/while.py) | [intro.py]({{site.baseurl}}/in-class/11am/intro.py) |
 | W 25 Sep | more while loops | [while.py]({{site.baseurl}}/in-class/8am/while.py), [collatz.py]({{site.baseurl}}/in-class/8am/collatz.py) | [repetition.py]({{site.baseurl}}/in-class/11am/repetition.py), [collatz.py]({{site.baseurl}}/in-class/11am/collatz.py) |
-| F 27 Sep | functions | [collatz.py]({{site.baseurl}}/in-class/8am/collatz.py), [stacktrace.py]({{site.baseurl}}/in-class/8am/stacktrace.py) | |
-| M 30 Sep | function abstraction | [hilow.py]({{site.baseurl}}/code/hilow.py), [hilow_functions.py]({{site.baseurl}}/code/hilow_functions.py) | |
-| W 2 Oct | strings | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Strings.ipynb) | |
-| F 4 Oct | String and loop practice | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Strings.ipynb) | |
-| M 7 Oct | Lists | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Lists.ipynb) | |
-| W 9 Oct | More lists | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Lists.ipynb) | |
+| F 27 Sep | functions | [collatz.py]({{site.baseurl}}/in-class/8am/collatz.py), [stacktrace.py]({{site.baseurl}}/in-class/8am/stacktrace.py) | [collatz2.py]({{site.baseurl}}/in-class/11am/collatz.py) |
+| M 30 Sep | function abstraction | [hilow.py]({{site.baseurl}}/code/hilow.py), [hilow_functions.py]({{site.baseurl}}/code/hilow_functions.py) | [hilow.py]({{site.baseurl}}/in-class/11am/hilow.py), [hilow_functions.py]({{site.baseurl}}/in-class/11am/hilow_functions.py)  |
+| W 2 Oct | strings | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Strings.ipynb) | [11am](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Strings.ipynb)|
+| F 4 Oct | String and loop practice | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Strings.ipynb) | [morewhile.py]({{site.baseurl}}/in-class/11am/morewhile.py)|
+| M 7 Oct | Lists | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Lists.ipynb) | [morewhile2.py]({{site.baseurl}}/in-class/11am/morewhile2.py) |
+| W 9 Oct | More lists | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Lists.ipynb) | [listpractice.py]({{site.baseurl}}/in-class/11am/listpractice.py) |
 
 <hr>
 
@@ -187,7 +187,7 @@ There will often be short homework assignments to be completed over the weekend,
 |4 | [This Day in History](https://notebooks.azure.com/yorgey/projects/this-day-in-history-public) | Sep 18-19 | Sep 25-26 |
 |5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 25-26 | Oct 2-3 |
 |6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Oct 2-3 | Oct 9-10 |
-|7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | ? |
+|7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | Oct 23-24 |
 |8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Oct 23-24 | ? |
 |9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 30-31 | ? |
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Nov 6-7 | ? |
