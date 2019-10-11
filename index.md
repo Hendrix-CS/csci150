@@ -264,7 +264,7 @@ questions along with writing and debugging code.
 
 * Exam 1: Sep 20, covering functions, math, numerical data,
   conditionals, and binary encoding ([Practice exam]({{site.baseurl}}/docs/exam1-practice-f19.pdf))
-* Exam 2: Oct 16, covering input/output, while loops, lists, and strings
+* Exam 2: Oct 16, covering input/output, while loops, lists, and strings ([Practice exam]({{site.baseurl}}/docs/exam2-practice-f19.pdf))
 * Exam 3: Nov 25
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
