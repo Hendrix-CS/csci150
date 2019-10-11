@@ -161,17 +161,17 @@ This function takes as input a prompt string and a list of
 choices, and returns an `int` corresponding to the
 user's choice.  It should carry out the following steps:
 
-  * Print out a numbered list of the choices (using
+  1. Print out a numbered list of the choices (using
     `print_numbered_list`).
-  * Prompt the user for input (using the provided `prompt`).
-  * Check to make sure the user's input is a number, and if so,
-    that it corresponds to one of the choices.
-  * If the user's input is invalid, print an appropriate error
-    message and simply return `-1`.  **Don't use a while loop
-    to re-prompt the user.**  This will allow the user to "cancel"
-    by entering an invalid input.
-  * Otherwise, if the user entered a valid choice, return the
-    number they chose (be sure to return an `int`, not a string!).
+  2. Prompt the user for input (using the provided `prompt`).
+  3. Check to make sure the user's input is a number, and if so,
+     that it corresponds to one of the choices.
+  4. If the user's input is invalid, print an appropriate error
+     message and simply **return** `-1`.  **Don't use a while loop
+     to re-prompt the user.**  This will allow the user to "cancel"
+     by entering an invalid input.
+  5. Otherwise, if the user entered a valid choice, return the
+     number they chose (be sure to return an `int`, not a string!).
 
 **Again, you should be sure to load your file into the console and
 test it**.  For example, you might see something like this:
@@ -233,15 +233,15 @@ now, you can just copy and paste these functions into your program.
 
 Now define a function `main()` which does the following:
 
-  * Prompt the user for the name of the file containing their todo list.
-  * Open the file (using the `load_list_from_file` function) and store
-    the returned list in a variable.
-  * Print out the todo list using `print_numbered_list`.
-  * Add a fake todo item to the end of the list (this part is just
-    temporary, to make sure everything else is working; you will
-    remove it in the next step).
-  * Save the new, extended list back to the file using the `save_file`
-    function (see the next paragraph for a helpful hint).
+  1. Prompt the user for the name of the file containing their todo list.
+  2. Open the file (using the `load_list_from_file` function) and store
+     the returned list in a variable.
+  3. Print out the todo list using `print_numbered_list`.
+  4. Add a fake todo item to the end of the list (this part is just
+     temporary, to make sure everything else is working; you will
+     remove it in the next step).
+  5. Save the new, extended list back to the file using the `save_file`
+     function (see the next paragraph for a helpful hint).
 
 Note that `save_file` expects a string, not a list of strings,
 so you will have to turn the list of todos into a single string
@@ -256,21 +256,21 @@ todo file should have one more line at the end.
 
 ## Step 3: Menu
 
-Now modify your `main()` function so it lets the user
-repeatedly choose options from a menu. In particular:
+Now modify your `main()` function so it lets the user repeatedly
+choose options from a menu.
 
-  * Create a list of strings representing the different menu choices
-    that will be available to the user: there should be an option to add
-    a todo, remove a todo, modify a todo, search for a todo, or quit.
-  * Make a loop that keeps printing the list of todos and then
-    prompting the user for their choice from the menu (using
-    the `get_choice` function you wrote in Step 1 and the
-    list of menu choices) until they choose to quit.  At this point
-    nothing will actually happen when they choose things from the
-    menu; you will fix that in the next step.
+First, create a list of strings
+representing the different menu choices that will be available to the
+user: there should be an option to add a todo, remove a todo, modify a
+todo, search for a todo, or quit.
 
-You should also get rid of the code that adds a fake todo item to the
-end of the list.
+Now, replace steps 3 and 4 from the list of steps above with a loop
+that keeps printing the list of todos and then prompting the user
+for their choice from the menu (using the `get_choice` function
+you wrote in Step 1 and the list of menu choices) until they
+choose to quit.  At this point nothing will actually happen when
+they choose things from the menu; you will fix that in the next
+step.
 
 ## Step 4: Operations
 
