@@ -1,12 +1,9 @@
 ---
 layout: work
-number: CSCI 150
-title: Foundations of Computer Science
-semester: Fall 2019
+type: Homework
+num: 1
+worktitle: Minecraft
 ---
-
-CSCI 150 HW: Minecraft
-----------------------
 
 *Due: Wednesday, September 4*
 

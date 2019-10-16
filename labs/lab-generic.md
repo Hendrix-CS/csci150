@@ -1,7 +1,9 @@
 ---
 layout: work
+type: Lab
+num: X
+worktitle: BLAH BLAH BLAH
 ---
-# Lab X: BLAH BLAH BLAH
 
 ## Overview
 

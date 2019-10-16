@@ -1,7 +1,9 @@
 ---
 layout: work
+type: Lab
+num: 13
+worktitle: On Stuckness and Debugging
 ---
-# Lab 13: On Stuckness and Debugging
 
 ## Overview
 

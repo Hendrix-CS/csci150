@@ -1,7 +1,9 @@
 ---
 layout: work
+type: Lab
+num: 10
+worktitle: Waterjugs
 ---
-# Lab 10 : Water Jugs
 
 ## Overview
 

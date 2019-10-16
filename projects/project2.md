@@ -1,8 +1,9 @@
 ---
 layout: work
+type: Project
+num: 2
+worktitle: Word Games
 ---
-# Project 2: Word Games
-
 
 ## Description
 

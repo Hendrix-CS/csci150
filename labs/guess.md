@@ -1,7 +1,9 @@
 ---
 layout: work
+type: Lab
+num: 5
+worktitle: Guess My Number
 ---
-# Lab 5: Guess My Number
 
 ## Overview
 

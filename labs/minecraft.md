@@ -1,7 +1,9 @@
 ---
 layout: work
+type: Lab
+num: 1
+worktitle: Introduction and Minecraft
 ---
-# Lab 1: Introduction and Minecraft
 
 ## Overview
 

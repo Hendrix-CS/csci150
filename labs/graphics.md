@@ -1,7 +1,9 @@
 ---
 layout: work
+type: Lab
+num: 11
+worktitle: Graphics and Animation
 ---
-# Lab 11: Graphics and Animation
 
 ## Materials
 

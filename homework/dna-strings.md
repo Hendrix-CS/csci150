@@ -1,10 +1,9 @@
 ---
 layout: work
-number: CSCI 150
-title: Foundations of Computer Science
-semester: Fall 2019
+type: Homework
+num: 5
+worktitle: Strands of DNA
 ---
-# Homework 5: Strands of DNA
 
 ## Materials
 

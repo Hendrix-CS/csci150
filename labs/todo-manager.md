@@ -1,7 +1,9 @@
 ---
 layout: work
+type: Lab
+num: 7
+worktitle: ToDo Manager
 ---
-# Lab 7: ToDo Manager
 
 ## Overview
 

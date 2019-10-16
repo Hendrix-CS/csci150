@@ -3,43 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: course-multi
-number: CSCI 150
-title: Foundations of Computer Science
-semester: Fall 2019
-image: images/system-2457648_1920.jpg
-offerings:
-  - name: LECTURE 01
-    loc: MCREY 110
-    time: MWF 8:10am - 9:00am
-    instructor: Dr. Brent Yorgey
-    instemail: yorgey@hendrix.edu
-    instweb: http://ozark.hendrix.edu/~yorgey
-    instphone: (501) 450-1377
-    officehours: https://byorgey.youcanbook.me
-  - name: LECTURE 02
-    loc: WAC 249 (2nd Floor)
-    time: MWF 11:10am - 12:00pm
-    instructor: Dr. Mark Goadrich
-    instemail: goadrich@hendrix.edu
-    instweb: http://mark.goadrich.com
-    instphone: (501) 450-1367
-    officehours: http://mark.goadrich.com/schedule.html
-  - name: LAB 01
-    loc: Snoddy Computer Lab
-    time: R 1:10pm - 4:00pm
-    instructor: Dr. Brent Yorgey
-    instemail: yorgey@hendrix.edu
-    instweb: http://ozark.hendrix.edu/~yorgey
-    instphone: (501) 450-1377
-    officehours: https://byorgey.youcanbook.me
-  - name: LAB 02
-    loc: Snoddy Computer Lab
-    time: W 1:10pm - 4:00pm
-    instructor: Dr. Mark Goadrich
-    instemail: goadrich@hendrix.edu
-    instweb: http://mark.goadrich.com
-    instphone: (501) 450-1367
-    officehours: http://mark.goadrich.com/schedule.html
 resources:
   - name: Python 3
     image: assets/images/pythonlogo.png
@@ -67,7 +30,7 @@ extra-resources:
 
 # <a name="description">Overview</a>
 
-Introduction to solving computational problems, including the fundamentals of computer programming. Topics include imperative programming constructs (variables, loops, conditionals, functions, recursion), basic object-oriented constructs (classes, objects), and some fundamental algorithms and data structures (dictionaries, arrays, linked lists). Student learn these concepts through studying the Python programming language.
+{{ site.description }}
 
 ## <a name="goals">Learning Goals</a>
 
