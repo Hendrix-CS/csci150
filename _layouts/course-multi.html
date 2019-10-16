@@ -3,8 +3,8 @@ layout: course
 ---
 
       <div class="row">
-      {% for offer in page.offerings %}
-      <div class="col-md-{{12 | divided_by: page.offerings.size}}">
+      {% for offer in site.offerings %}
+      <div class="col-md-{{12 | divided_by: site.offerings.size}}">
         <div class="instructor">
         <h4>{{ offer.name }}</h4>
         <p>{{ offer.time }}</p>
