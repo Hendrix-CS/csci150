@@ -50,7 +50,8 @@ Upon completing this course, our goal is for you to be able to:
 
 <div class="row">
 {% for res in page.resources %}
-<div class="col-md-{{ 12 | divided_by: page.resources.size }}">
+<div class="col-md-{{ 12 | divided_by: page.resources.size }}"
+     style="text-align: center">
 <img src="{{site.baseurl}}/{{ res.image }}" height="100" border="1">
 <p>
 <a href="{{ res.url }}">{{ res.name }}</a><br>
@@ -212,7 +213,7 @@ on how to get started with these notebooks.
 | #  | Name | Points | Assigned | Due
 |:-:|-||:-:|:-:|:-:|
 |1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1) | 50  | Sep 21 | Sep 30 |
-|2 | ? | 100 | Oct 16 | Nov 1 |
+|2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | Oct 16 | Nov 1 |
 |3 | ? | 200 | Nov 18 | Final Exam Day |
 
 You will have three projects in this course, one about every five weeks. These projects will cover concepts we have discussed in class and in labs, and will be due approximately one week after they are assigned.

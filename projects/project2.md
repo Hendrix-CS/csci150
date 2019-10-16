@@ -43,7 +43,7 @@ Some examples are
 
 **Do not feel limited by the games on this list**. Find a game that
 interests you and implement it. If you choose something else, check with
-me first, so I can advise you on the scope of your project.
+your professor first, so we can advise you on the scope of your project.
 
 ## Requirements
 
@@ -69,16 +69,17 @@ turns.
 
 ## Warnings
 
-*   **Get started early**! Pick a game and run it by me. I am happy to
+*   **Get started early**! Pick a game and run it by me. We are happy to
     help you think through the design of your program.
 *   If you are not confident with the use of functions to structure your
-    code, I highly recommend *first* getting something very basic to
+    code, we highly recommend *first* getting something very basic to
     work without using functions, then thinking about how to abstract
     parts of your code into functions. Then repeat the process, adding
     functionality incrementally.
 *   Historically, project 2 is the point in the semester where some
     students become **tempted to cheat** by copying others' code. Do not
-    succumb to this temptation! Get started early, come for help often.
+    succumb to this temptation! Review the
+    [Academic Integrity](http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html) guidelines for CSCI. Get started early, come for help often.
     You **can** do this project!
 
 ## What to Hand In
