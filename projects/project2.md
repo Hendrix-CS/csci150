@@ -35,7 +35,7 @@ Some examples are
 *   [Last Letter First
     Letter](http://www.greatschools.org/students/activities/slideshows/2812-family-word-games.gs?page=3)
     using Countries, State Names, Foods, etc.
-*   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows)
+*   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows) *using words*
 *   [Ghost](http://en.wikipedia.org/wiki/Ghost_%28game%29)
 *   [Boggle](http://en.wikipedia.org/wiki/Boggle)
 *   [Scrabble](https://en.wikipedia.org/wiki/Scrabble)
