@@ -102,6 +102,7 @@ When we write code together in class, it will be posted here!
 | W 9 Oct | More lists | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Lists.ipynb) | [listpractice.py]({{site.baseurl}}/in-class/11am/listpractice.py) |
 | F 11 Oct | List practice | [8am](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Lists.ipynb) | [fridaypractice.py]({{site.baseurl}}/in-class/11am/fridaypractice.py)|
 | M 21 Oct | For loops | [For Loops.ipynb](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/For%20Loops.ipynb) | [ForLoops.ipynb](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/ForLoops.ipynb)|
+| W 23 Oct | For loops with `range` | [For Loops.ipynb](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/For%20Loops.ipynb) | |
 
 <hr>
 
