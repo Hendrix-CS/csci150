@@ -2156,7 +2156,7 @@ def listmax(nums: List[int]) -> int:
 \subsection*{Setup}
 
 \begin{itemize}
-\item \notready Practice exam is posted on the class website.  Talk
+\item \ready Practice exam is posted on the class website.  Talk
   about some good study strategies.  Study \emph{for} the practice
   exam, then take it under test conditions!  Come in on Monday ready
   to go over it with other students.
@@ -2225,12 +2225,11 @@ def onlyevens(lst: List[int]) -> List[int]:
 \class{\ready Exam 2 review}
 
 \begin{itemize}
-\item \notready \textbf{Assign} Project 2.  Due XXX.  Ready except
-  putting it on the webpage.
-\item Put them in groups and have them go through exam together.
+\item \ready \textbf{Assign} Project 2.  Due Friday, October 1.
+\item Put them in pairs and have them go through exam together.
 \end{itemize}
 
-\section{\notready Exam 2 (W 3/6)}
+\class{\ready Exam 2}
 
 \begin{reflect}{Brent, S'16}
   In the Fall 2015 semester, Exam 2 was on the Wednesday right before
@@ -2269,6 +2268,476 @@ def onlyevens(lst: List[int]) -> List[int]:
   Average was back down in the 71--73 range, min 28, max 100---pretty
   much the same distribution as S'17.
 \end{reflect}
+
+\begin{reflect}{Brent, F'19}
+  Mark's section had a higher average this year (84), mine averaged
+  76, still higher than previous years.  Low was a 40.
+\end{reflect}
+
+\holiday{Fall break}
+
+\newpage
+\class{\ready For loops}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: project 2 due one week from Friday.
+\end{itemize}
+
+\subsection*{For Loops}
+
+Recall our \verb|explode| function from a week or two ago (or just
+about every list- or string-processing function we have written ever):
+\begin{verbatim}
+def explode(s: str):
+  i: int = 0
+  while i < len(s):
+    print(s[i])
+    i += 1
+\end{verbatim}
+Recall how easy it was to make errors like starting index at the wrong
+place, using \verb|<=| instead of \verb|<|, and so on.  Well, it turns
+out there is a better way!
+\begin{verbatim}
+def explode(s: str):
+  for c in s:
+    print(c)
+\end{verbatim}
+Simply loops through each character in the string one at a time.  Each
+time through the loop the next character is assigned to \verb|c|.
+This is way better than using a \verb|while| loop since it rules out
+errors putting the starting or ending indices at the wrong number.
+
+This also works for lists:
+\begin{verbatim}
+animals: List[str] = ["cow", "chicken", "pig", "rabbit"]
+for animal in animals:
+  print("And on this farm he had a " + animal + "!")
+\end{verbatim}
+
+General form:
+\begin{verbatim}
+for <new variable> in <list expression>:
+    ... do stuff with variable ...
+\end{verbatim}
+
+The loop will execute a number of times equal to the length of the
+list.  Each time, \verb|<new variable>| will be assigned the next
+element of the list.
+
+Have students talk in groups to come up with questions.  Get one
+question from each group.  Some of the things that came up in F'18
+included:
+
+\begin{itemize}
+\item Can you have if statements etc. inside a for loop?  Answer: Of
+  course.  Show an example.
+\item What is actually happening under the hood to make this possible?
+  Answer: it's really just a shorthand for the usual sort of while
+  loop we would write.
+\item What happens if you change the list while looping over it?
+  (Answer: who knows, don't.)
+\item Can you use the variable after the end of the loop? (Answer:
+  yes; don't.)
+\end{itemize}
+
+\subsection*{For loop practice}
+
+Write this function together:
+\begin{verbatim}
+# Count the number of times c occurs in s.  For example,
+# count('banana', 'n') = 2
+# count('banana', 'z') = 0
+def count(haystack: str, needle: str):
+    num_occurrences: int = 0
+    for c in haystack:
+        if c == needle:
+            num_occurrences += 1
+    return num_occurrences
+\end{verbatim}
+
+Then give them this to practice writing in groups:
+\begin{verbatim}
+# Return a new list with only the strings of length 5 or more.
+# e.g. filter_long(['hi','there','xyz','abcdefg']) = ['there','abcdefg']
+
+def filter_long(strs: List[str]) -> List[str]:
+    result: List[str] = []
+    for s in strs:
+        if len(s) >= 5:
+            result.append(s)
+    return result
+\end{verbatim}
+
+\begin{reflect}{Brent, F'19}
+  In F'19 we had time for another one so I also had them do this one:
+\end{reflect}
+
+\begin{verbatim}
+# Say whether the list contains the int we're looking for
+# e.g. contains([1,2,3,4], 3) = True
+#      contains([1,2,3,4], 7) = False
+def contains(haystack: List[int], needle: int) -> bool:
+    for n in haystack:
+        if n == needle:
+            return True
+    return False
+\end{verbatim}
+
+\newpage
+\class{\ready More for loops: index ranges}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: project 2 due one week from Friday.
+\item Hand back exams.  Announce next checkin meetings.
+\end{itemize}
+
+Show them, or recall, an example like this:
+\begin{verbatim}
+animals = ['sheep', 'horse', 'cow', 'pig']
+
+for a in animals:
+    a += '!'
+\end{verbatim}
+
+It looks like the above code adds an exclamation point to every animal
+in the list, but it doesn't.  Trace the execution on the board to see
+why: the variable \verb|a| changes but not the actual strings in the list!
+
+What if we \emph{wanted} to change the animals?  We could do it with a
+while loop of course, but is there a way to do it with a for loop?
+
+Yes, there is, but it's a bit more indirect: we have to get access to
+the indices, since the only way to change an element in a list is to
+say something like \verb|animals[2] = ...| We can do this using
+\verb|range|.
+
+\begin{itemize}
+\item Show them \verb|range|.  Type \verb|range(4,10)| at the prompt;
+  doesn't evaluate.  We can turn it into a list with \verb|list| to
+  see what it is: \verb|[4, 5, 6, 7, 8, 9]|.  Just like a slice: start
+  at first index, up to but not including the last.
+\item If we only give one index, it's like a slice without the first
+  index: start at zero, go up to but not including the last.
+  e.g. show \verb|range(10)|.
+\item Hence we can get all the indices of a list with
+  \verb|range(len(lst))|.
+\end{itemize}
+
+Like so:
+\begin{verbatim}
+for i in range(len(animals)):
+    animals[i] += '!'
+\end{verbatim}
+
+There are other reasons we might want to talk about the indices
+explicitly:
+\begin{itemize}
+\item To use or remember an index for later
+\item To loop over two lists at the same time
+\item To compare items that are next to each other
+\end{itemize}
+
+We'll see examples of all of these.  Let's practice.  Do one together first:
+\begin{verbatim}
+# Return the index of the first occurrence of character target in s, or -1 if it
+# is not found.
+def find(s: str, target: str):
+    for i in range(len(s)):
+        if s[i] == target:
+            return i
+    return -1
+\end{verbatim}
+Notice how we needed the index so we could return it!  This won't
+work (maybe show this one first to show why it doesn't work):
+\begin{verbatim}
+def find(s: str, target: str):
+    for c in s:
+        if c == target:
+            return ???  # What do we return here?
+    return -1
+\end{verbatim}
+
+Now have them do one:
+\begin{verbatim}
+# Return a list of all the indces where target occurs in s.
+def find_all(s: str, target: str) -> List[int]:
+    all_the_things: List[int] = []
+    for i in range(len(s)):
+        if s[i] == target:
+            all_the_things.append(i)
+    return all_the_things
+\end{verbatim}
+
+Another one, give them this as a challenge and let them make lots of
+interesting mistakes, then go over the solution:
+\begin{verbatim}
+# Return true if the list is sorted from smallest to biggest.
+# e.g.  is_sorted([2,5,6,9,9]) = True
+#       is_sorted([2,5,3,9,9]) = False
+
+def is_sorted(nums: List[int]) -> bool:
+    for i in range(len(nums) - 1):
+        if nums[i] > nums[i+1]:
+            return False
+    return True
+\end{verbatim}
+
+Talk about how we also need indices for this one, because otherwise we
+only get access to one element at a time, can't ask about neighboring
+elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
+\verb|nums[i+1]| doesn't throw an out-of-bounds error.
+
+% \begin{verbatim}
+% def nos(s):
+%     news = ""
+%     for c in s:
+%         if c != "s":
+%             news += c
+%     return news
+
+% def sum(t):
+%     total = 0
+%     for n in t:
+%         total += n
+%     return total
+
+% def mean(t):
+%     total = 0
+%     for n in t:
+%         total += n
+%     return float(total) / len(t)
+
+% def mean2(t):
+%     return float(sum(t)) / len(t)
+
+% def vacation(s):
+%     for i in range(len(s) - 1):
+%         if s[i] == s[i + 1]:
+%             return True
+%     return False
+
+% def classify(strs):
+%     for s in strs:
+%         print ('*' * len(s))
+
+% def powersof2(n):
+%     the_powers = []
+%     for i in range(n):
+%         the_powers.append(2 ** n)
+%     return the_powers
+
+% def triangle(n):
+%     total = 0
+%     for k in range(1,n+1):
+%         total += k
+%     return total
+% \end{verbatim}
+
+
+% \subsection*{For loops: reading exercises}
+
+% CLOSE COMPUTERS.
+% Find bit-partners. Different one for each exercise.
+% Go over each and try it.
+
+% \begin{verbatim}
+% def oogie(m: List[int]) -> int:
+%     p = m[0]
+%     for g in m:
+%         if g > p:
+%             p = g
+%     return p
+
+% def yayaya(q: List[str]) -> bool:
+%     for y in range(len(q) - 1):
+%         if q[y] == q[y + 1]:
+%             return True
+%     return False
+% \end{verbatim}
+
+% Then have them write \verb|is_sorted| function.
+
+% Additional practice:
+
+% \begin{verbatim}
+% def pulu(r: int) -> List[int]:
+%     b = []
+%     for k in range(r):
+%         b.append(k ** 3)
+%     return b
+% \end{verbatim}
+
+% \begin{reflect}{Brent, S'17}
+%   Made it through all of these (including writing \verb|is_sorted|);
+%   in fact, we started by finishing \verb|find(c,s)| from last class
+%   (which they hadn't quite gotten to work yet).  I think it was
+%   a really useful exercise.
+% \end{reflect}
+
+% \begin{reflect}{Brent, S'18}
+%   Didn't make it through as many due to some technical hiccups, but
+%   had them read oogie and yayaya, then had them write
+%   \verb|is_sorted|.  Will need to spend a bit of time going over
+%   \verb|is_sorted| next class.
+% \end{reflect}
+
+\lab{\ready Caesar's Secrets}
+
+\begin{reflect}{Brent, S'17}
+  This lab seemed to go well, though it's definitely hard.  Most
+  students were not finished by the end of the lab period.
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Only had time to introduce for loops at the very end of the lecture
+  right before the lab.  So spent some time at the beginning of the
+  lab doing more exercises writing for loops, with mixed success (I
+  think it went better in Mark's lab than in mine).  In the end most
+  students were making progress on the lab by the end; a few had
+  finished; a few were just getting encrypt/decrypt to work.
+\end{reflect}
+
+\begin{reflect}{Brent, F'18}
+  Much, much better this year, with more time spent on lists and for
+  loops leading up to it!
+\end{reflect}
+
+\newpage
+
+\section{\notready Mutability, objects, and references (F 3/29)}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Assign HW: for loop reading practice (due Wednesday)
+\item Quiz Wednesday on for loops.
+\item Project 2 due today!
+\end{itemize}
+
+Warm-up: what happens here?  Find partner \& decide.
+\begin{verbatim}
+nums  = [1,2,3]
+nums2 = nums
+nums[1] = 0
+print(nums2)
+\end{verbatim}
+
+Try it at python prompt.  This is really weird!
+
+As hinted before, the fact that lists are mutable (as opposed to
+strings, which are immutable) opens a huge can of worms.  Let's start
+by pulling back the curtain a little bit.  Up until now we have talked
+about variables having values, but we need to be more precise.  Draw
+stack diagram with variables referencing two different lists.
+
+\begin{itemize}
+\item Variables actually don't contain values, they contain
+  \emph{references} to objects.  A reference ``points'' to a certain
+  object (really, a reference is just a number which represents a
+  location in the computer's memory).
+\item Copying the value of a variable into another variable just
+  copies the \emph{reference} (\emph{i.e.} the memory address), so they now
+  point to the same object!
+\item Variables which reference objects that have the same value are
+  \emph{equal}.  You can test equality with \verb|==|.
+\item Variables which reference the \emph{same object} are
+  \emph{identical}. You can test identity with \verb|is| (though you
+  won't need this in the rest of the course).
+\item Note since strings, ints, floats, and booleans are immutable, it
+  didn't matter before; there is no way to tell the difference between
+  two variables with separate copies of a string and two variables
+  referencing the same string.  So we will continue to think of
+  variables as holding ints, strings, etc., not references to them
+  (since it doesn't matter).  But for lists and other things to come
+  it matters quite a bit.
+\end{itemize}
+
+Do this at the REPL, with accompanying pictures drawn on the board:
+\begin{verbatim}
+>>> a = [1,2,3]
+>>> b = [1,2,3]
+>>> a == b
+True
+>>> a is b
+False
+>>> a[0] = 5
+>>> a
+[5, 2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+False
+>>> a = b
+>>> a
+[1, 2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+True
+>>> a is b
+True
+>>> a[0] = 5
+>>> a
+[5, 2, 3]
+>>> b
+[5, 2, 3]
+\end{verbatim}
+Note in particular that the assignment \verb|a = b| does not copy the
+value of \verb|b| into \verb|a|, but just makes \verb|a|
+\emph{reference the same thing as} \verb|b|.
+
+Some related things:
+\begin{itemize}
+\item What if you really \emph{do} want to make a \emph{copy} of a
+  list, so modifying it doesn't modify the original?  You can write
+  \verb|some_list[:]|.
+\item Be careful about methods that modify vs functions that make a
+  new thing.  \eg \verb|list.sort()| modifies the list.  But
+  \verb|sorted(list)| makes a new list!  And of course
+  \verb|string.upper()| makes a new string because strings are
+  immutable.  Confusing, don't memorize: the point is you should be
+  careful and look up help to see what things do.  Show
+  \verb|help(list.sort)|, \verb|help(sorted)|, \verb|help(str.upper)|.
+\end{itemize}
+
+[INSERT OPTIONAL RANT ABOUT MUTATION HERE]
+
+\subsection*{Tracing with stack and heap}
+
+This has implications for function parameters as well.  Consider:
+
+\begin{verbatim}
+def release(animals: List[str]):
+  while len(animals) > 2:
+    animals.pop(0)
+
+print(animals)
+release(animals)
+print(animals)
+\end{verbatim}
+
+Formally, to see what's going on, we are going to enhance our tracing
+diagrams one last time: we are going to add a \emph{heap}.  The
+``heap'' is the area of memory where objects are stored. Variables are
+stored on the stack and contain references to things in the heap.
+Every time we create a new list, we draw it in the heap (anywhere!).
+
+Have them try another example:
+
+\begin{verbatim}
+def slicer(nums: List[int]) -> List[int]:
+  first3 = nums[:3]
+  first3[2] *= 3
+  return first3
+
+def main():
+  my_nums = [1,2,8,6,7,12]
+  my_nums = slicer(my_nums)
+\end{verbatim}
+
+Then go over it carefully.
 
 \newpage
 \section{\notready Recursion I: intro (F 3/8)}
@@ -2531,458 +3000,6 @@ def fib_m(n: int) -> int:
         fib_dict[n] = fib_m(n-1) + fib_m(n-2)
         return fib_dict[n]
 \end{verbatim}
-
-\newpage
-\textbf{Spring Break}
-
-\newpage
-\section{\notready For loops (M 3/25)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Reminder: project 2 due on Friday.
-\end{itemize}
-
-\subsection*{For Loops}
-
-Recall our \verb|explode| function from a week or two ago (or just
-about every list- or string-processing function we have written ever):
-\begin{verbatim}
-def explode(s: str):
-  i: int = 0
-  while i < len(s):
-    print(s[i])
-    i += 1
-\end{verbatim}
-Recall how easy it was to make errors like starting index at the wrong
-place, using \verb|<=| instead of \verb|<|, and so on.  Well, it turns
-out there is a better way!
-\begin{verbatim}
-def explode(s: str):
-  for c in s:
-    print(c)
-\end{verbatim}
-Simply loops through each character in the string one at a time.  Each
-time through the loop the next character is assigned to \verb|c|.
-This is way better than using a \verb|while| loop since it rules out
-errors putting the starting or ending indices at the wrong number.
-
-This also works for lists:
-\begin{verbatim}
-animals: List[str] = ["cow", "chicken", "pig", "rabbit"]
-for animal in animals:
-  print("And on this farm he had a " + animal + "!")
-\end{verbatim}
-
-General form:
-\begin{verbatim}
-for <new variable> in <list expression>:
-    ... do stuff with variable ...
-\end{verbatim}
-
-The loop will execute a number of times equal to the length of the
-list.  Each time, \verb|<new variable>| will be assigned the next
-element of the list.
-
-Have students talk in groups to come up with questions.  Get one
-question from each group.  Some of the things that came up in F'18
-included:
-
-\begin{itemize}
-\item Can you have if statements etc. inside a for loop?  Answer: Of
-  course.  Show an example.
-\item What is actually happening under the hood to make this possible?
-  Answer: it's really just a shorthand for the usual sort of while
-  loop we would write.
-\item What happens if you change the list while looping over it?
-  (Answer: who knows, don't.)
-\item Can you use the variable after the end of the loop? (Answer:
-  yes; don't.)
-\end{itemize}
-
-\subsection*{For loop practice}
-
-Write this function together:
-\begin{verbatim}
-# Count the number of times c occurs in s.  For example,
-# count('banana', 'n') = 2
-# count('banana', 'z') = 0
-def count(haystack: str, needle: str):
-    num_occurrences: int = 0
-    for c in haystack:
-        if c == needle:
-            num_occurrences += 1
-    return num_occurrences
-\end{verbatim}
-
-Then give them this to practice writing in groups:
-\begin{verbatim}
-# Return a new list with only the strings of length 5 or more.
-# e.g. filter_long(['hi','there','xyz','abcdefg']) = ['there','abcdefg']
-
-def filter_long(strs: List[str]) -> List[str]:
-    result: List[str] = []
-    for s in strs:
-        if len(s) >= 5:
-            result.append(s)
-    return result
-\end{verbatim}
-
-\newpage
-\section{\notready More for loops: index ranges (W 3/27)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Reminder: project 2 due Friday!
-\end{itemize}
-
-Finish going over \verb|filter_long| from last class.
-
-Show them, or recall, an example like this:
-\begin{verbatim}
-animals = ['sheep', 'horse', 'cow', 'pig']
-
-for a in animals:
-    a += '!'
-\end{verbatim}
-
-It looks like the above code adds an exclamation point to every animal
-in the list, but it doesn't.  Trace the execution on the board to see
-why: the variable \verb|a| changes but not the actual strings in the list!
-
-What if we \emph{wanted} to change the animals?  We could do it with a
-while loop of course, but is there a way to do it with a for loop?
-
-Yes, there is, but it's a bit more indirect: we have to get access to
-the indices, since the only way to change an element in a list is to
-say something like \verb|animals[2] = ...| We can do this using
-\verb|range|.
-
-\begin{itemize}
-\item Show them \verb|range|.  Type \verb|range(4,10)| at the prompt;
-  doesn't evaluate.  We can turn it into a list with \verb|list| to
-  see what it is: \verb|[4, 5, 6, 7, 8, 9]|.  Just like a slice: start
-  at first index, up to but not including the last.
-\item If we only give one index, it's like a slice without the first
-  index: start at zero, go up to but not including the last.
-  e.g. show \verb|range(10)|.
-\item Hence we can get all the indices of a list with
-  \verb|range(len(lst))|.
-\end{itemize}
-
-Like so:
-\begin{verbatim}
-for i in range(len(animals)):
-    animals[i] += '!'
-\end{verbatim}
-
-There are other reasons we might want to talk about the indices
-explicitly:
-\begin{itemize}
-\item To use or remember an index for later
-\item To loop over two lists at the same time
-\item To compare items that are next to each other
-\end{itemize}
-
-We'll see examples of all of these.  Let's practice.  Do one together first:
-\begin{verbatim}
-# Return the index of the first occurrence of character target in s, or -1 if it
-# is not found.
-def find(s: str, target: str):
-    for i in range(len(s)):
-        if s[i] == target:
-            return i
-    return -1
-\end{verbatim}
-Notice how we needed the index so we could return it!  This won't
-work (maybe show this one first to show why it doesn't work):
-\begin{verbatim}
-def find(s: str, target: str):
-    for c in s:
-        if c == target:
-            return ???  # What do we return here?
-    return -1
-\end{verbatim}
-
-Now have them do one:
-\begin{verbatim}
-# Return a list of all the indces where target occurs in s.
-def find_all(s: str, target: str) -> List[int]:
-    all_the_things: List[int] = []
-    for i in range(len(s)):
-        if s[i] == target:
-            all_the_things.append(i)
-    return all_the_things
-\end{verbatim}
-
-Another one, give them this as a challenge and let them make lots of
-interesting mistakes, then go over the solution:
-\begin{verbatim}
-# Return true if the list is sorted from smallest to biggest.
-# e.g.  is_sorted([2,5,6,9,9]) = True
-#       is_sorted([2,5,3,9,9]) = False
-
-def is_sorted(nums: List[int]) -> bool:
-    for i in range(len(nums) - 1):
-        if nums[i] > nums[i+1]:
-            return False
-    return True
-\end{verbatim}
-
-Talk about how we also need indices for this one, because otherwise we
-only get access to one element at a time, can't ask about neighboring
-elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
-\verb|nums[i+1]| doesn't throw an out-of-bounds error.
-
-% \begin{verbatim}
-% def nos(s):
-%     news = ""
-%     for c in s:
-%         if c != "s":
-%             news += c
-%     return news
-
-% def sum(t):
-%     total = 0
-%     for n in t:
-%         total += n
-%     return total
-
-% def mean(t):
-%     total = 0
-%     for n in t:
-%         total += n
-%     return float(total) / len(t)
-
-% def mean2(t):
-%     return float(sum(t)) / len(t)
-
-% def vacation(s):
-%     for i in range(len(s) - 1):
-%         if s[i] == s[i + 1]:
-%             return True
-%     return False
-
-% def classify(strs):
-%     for s in strs:
-%         print ('*' * len(s))
-
-% def powersof2(n):
-%     the_powers = []
-%     for i in range(n):
-%         the_powers.append(2 ** n)
-%     return the_powers
-
-% def triangle(n):
-%     total = 0
-%     for k in range(1,n+1):
-%         total += k
-%     return total
-% \end{verbatim}
-
-
-% \subsection*{For loops: reading exercises}
-
-% CLOSE COMPUTERS.
-% Find bit-partners. Different one for each exercise.
-% Go over each and try it.
-
-% \begin{verbatim}
-% def oogie(m: List[int]) -> int:
-%     p = m[0]
-%     for g in m:
-%         if g > p:
-%             p = g
-%     return p
-
-% def yayaya(q: List[str]) -> bool:
-%     for y in range(len(q) - 1):
-%         if q[y] == q[y + 1]:
-%             return True
-%     return False
-% \end{verbatim}
-
-% Then have them write \verb|is_sorted| function.
-
-% Additional practice:
-
-% \begin{verbatim}
-% def pulu(r: int) -> List[int]:
-%     b = []
-%     for k in range(r):
-%         b.append(k ** 3)
-%     return b
-% \end{verbatim}
-
-% \begin{reflect}{Brent, S'17}
-%   Made it through all of these (including writing \verb|is_sorted|);
-%   in fact, we started by finishing \verb|find(c,s)| from last class
-%   (which they hadn't quite gotten to work yet).  I think it was
-%   a really useful exercise.
-% \end{reflect}
-
-% \begin{reflect}{Brent, S'18}
-%   Didn't make it through as many due to some technical hiccups, but
-%   had them read oogie and yayaya, then had them write
-%   \verb|is_sorted|.  Will need to spend a bit of time going over
-%   \verb|is_sorted| next class.
-% \end{reflect}
-
-\section*{\notready LAB: Caesar's Secrets (3/27--28)}
-
-\begin{reflect}{Brent, S'17}
-  This lab seemed to go well, though it's definitely hard.  Most
-  students were not finished by the end of the lab period.
-\end{reflect}
-
-\begin{reflect}{Brent, S'18}
-  Only had time to introduce for loops at the very end of the lecture
-  right before the lab.  So spent some time at the beginning of the
-  lab doing more exercises writing for loops, with mixed success (I
-  think it went better in Mark's lab than in mine).  In the end most
-  students were making progress on the lab by the end; a few had
-  finished; a few were just getting encrypt/decrypt to work.
-\end{reflect}
-
-\begin{reflect}{Brent, F'18}
-  Much, much better this year, with more time spent on lists and for
-  loops leading up to it!
-\end{reflect}
-
-\newpage
-
-\section{\notready Mutability, objects, and references (F 3/29)}
-
-\subsection*{Setup}
-
-\begin{itemize}
-\item Assign HW: for loop reading practice (due Wednesday)
-\item Quiz Wednesday on for loops.
-\item Project 2 due today!
-\end{itemize}
-
-Warm-up: what happens here?  Find partner \& decide.
-\begin{verbatim}
-nums  = [1,2,3]
-nums2 = nums
-nums[1] = 0
-print(nums2)
-\end{verbatim}
-
-Try it at python prompt.  This is really weird!
-
-As hinted before, the fact that lists are mutable (as opposed to
-strings, which are immutable) opens a huge can of worms.  Let's start
-by pulling back the curtain a little bit.  Up until now we have talked
-about variables having values, but we need to be more precise.  Draw
-stack diagram with variables referencing two different lists.
-
-\begin{itemize}
-\item Variables actually don't contain values, they contain
-  \emph{references} to objects.  A reference ``points'' to a certain
-  object (really, a reference is just a number which represents a
-  location in the computer's memory).
-\item Copying the value of a variable into another variable just
-  copies the \emph{reference} (\emph{i.e.} the memory address), so they now
-  point to the same object!
-\item Variables which reference objects that have the same value are
-  \emph{equal}.  You can test equality with \verb|==|.
-\item Variables which reference the \emph{same object} are
-  \emph{identical}. You can test identity with \verb|is| (though you
-  won't need this in the rest of the course).
-\item Note since strings, ints, floats, and booleans are immutable, it
-  didn't matter before; there is no way to tell the difference between
-  two variables with separate copies of a string and two variables
-  referencing the same string.  So we will continue to think of
-  variables as holding ints, strings, etc., not references to them
-  (since it doesn't matter).  But for lists and other things to come
-  it matters quite a bit.
-\end{itemize}
-
-Do this at the REPL, with accompanying pictures drawn on the board:
-\begin{verbatim}
->>> a = [1,2,3]
->>> b = [1,2,3]
->>> a == b
-True
->>> a is b
-False
->>> a[0] = 5
->>> a
-[5, 2, 3]
->>> b
-[1, 2, 3]
->>> a == b
-False
->>> a = b
->>> a
-[1, 2, 3]
->>> b
-[1, 2, 3]
->>> a == b
-True
->>> a is b
-True
->>> a[0] = 5
->>> a
-[5, 2, 3]
->>> b
-[5, 2, 3]
-\end{verbatim}
-Note in particular that the assignment \verb|a = b| does not copy the
-value of \verb|b| into \verb|a|, but just makes \verb|a|
-\emph{reference the same thing as} \verb|b|.
-
-Some related things:
-\begin{itemize}
-\item What if you really \emph{do} want to make a \emph{copy} of a
-  list, so modifying it doesn't modify the original?  You can write
-  \verb|some_list[:]|.
-\item Be careful about methods that modify vs functions that make a
-  new thing.  \eg \verb|list.sort()| modifies the list.  But
-  \verb|sorted(list)| makes a new list!  And of course
-  \verb|string.upper()| makes a new string because strings are
-  immutable.  Confusing, don't memorize: the point is you should be
-  careful and look up help to see what things do.  Show
-  \verb|help(list.sort)|, \verb|help(sorted)|, \verb|help(str.upper)|.
-\end{itemize}
-
-[INSERT OPTIONAL RANT ABOUT MUTATION HERE]
-
-\subsection*{Tracing with stack and heap}
-
-This has implications for function parameters as well.  Consider:
-
-\begin{verbatim}
-def release(animals: List[str]):
-  while len(animals) > 2:
-    animals.pop(0)
-
-print(animals)
-release(animals)
-print(animals)
-\end{verbatim}
-
-Formally, to see what's going on, we are going to enhance our tracing
-diagrams one last time: we are going to add a \emph{heap}.  The
-``heap'' is the area of memory where objects are stored. Variables are
-stored on the stack and contain references to things in the heap.
-Every time we create a new list, we draw it in the heap (anywhere!).
-
-Have them try another example:
-
-\begin{verbatim}
-def slicer(nums: List[int]) -> List[int]:
-  first3 = nums[:3]
-  first3[2] *= 3
-  return first3
-
-def main():
-  my_nums = [1,2,8,6,7,12]
-  my_nums = slicer(my_nums)
-\end{verbatim}
-
-Then go over it carefully.
 
 \newpage
 
