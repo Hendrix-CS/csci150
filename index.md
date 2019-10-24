@@ -19,7 +19,7 @@ extra-resources:
     url: https://runestone.academy/runestone/books/published/thinkcspy/index.html
   - name: Python Tutor
     image: assets/images/python_tutor.png
-    url: https://pythontutor.com/
+    url: http://pythontutor.com/
   - name: CodingBat Python
     image: assets/images/codingbat.jpg
     url: https://codingbat.com/python
