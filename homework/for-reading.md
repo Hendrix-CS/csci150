@@ -1,7 +1,7 @@
 CSCI 150 HW: for loop reading practice
 --------------------------------------
 
-*Due: Wednesday, April 3*
+*Due: Wednesday, October 30*
 
 To receive full credit, for each exercise you should do the following:
 
@@ -39,7 +39,7 @@ other exercises.
     main()
     ```
 
-3. Trace the execution of the following code.
+2. Trace the execution of the following code.
 
     ``` python
     xs: List[int] = [0,1,2,3,4]
@@ -56,7 +56,7 @@ other exercises.
     print(p)
     ```
 
-2. Trace the execution of the following code.
+3. Trace the execution of the following code.
 
     ``` python
     def q(n: int) -> str:
