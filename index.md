@@ -105,7 +105,7 @@ When we write code together in class, it will be posted here!
 | W 23 Oct | For loops with `range` | [For Loops.ipynb](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/For%20Loops.ipynb) | |
 | F 25 Oct | | [More Tracing](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/MoreTracing.ipynb) |
 | M 28 Oct | | [Dictionaries](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Dictionaries.ipynb) |
-
+| W 30 Oct | | [File I/O](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/FileInputOutput.ipynb) |
 <hr>
 
 # Coursework
@@ -158,8 +158,8 @@ There will often be short homework assignments to be completed over the weekend,
 |5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 25-26 | Oct 2-3 |
 |6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Oct 2-3 | Oct 9-10 |
 |7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | Oct 23-24 |
-|8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Oct 23-24 | ? |
-|9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 30-31 | ? |
+|8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Oct 23-24 | Oct 30-31 |
+|9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 30-31 | Nov 6-7 |
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Nov 6-7 | ? |
 |11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 13-14 | ? |
 |12| Enron’s Secrets | Nov 20-21 | ? |
