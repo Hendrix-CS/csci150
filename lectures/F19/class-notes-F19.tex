@@ -2606,7 +2606,7 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 
 \newpage
 
-\section{\notready Mutability, objects, and references (F 3/29)}
+\class{\ready Mutability, objects, and references}
 
 \subsection*{Setup}
 
@@ -2738,6 +2738,265 @@ def main():
 \end{verbatim}
 
 Then go over it carefully.
+
+\newpage
+\class{\ready Dictionaries}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Remember HW (for loop reading practice) and quiz Wednesday.
+\end{itemize}
+
+\subsection*{Dictionaries}
+
+Recall lists.  Draw an alternate picture of lists as a mapping from
+indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
+can be thought of as
+\begin{verbatim}
+0 -> 'tapir'
+1 -> 'ferret'
+2 -> 'alligator'
+\end{verbatim}
+$0$, $1$, $2$ are \emph{keys}, animal names are \emph{values}.  A
+\emph{mapping} or \emph{association} between keys and values.  A
+\emph{dictionary} is the obvious generalization of this to arbitrary
+keys instead of just 0, 1, 2 \dots.  For example, suppose we are
+keeping these animals in a zoo and we want to keep track of them by
+their habitat ID numbers.
+\begin{verbatim}
+'A23' -> 'tapir'
+'B19' -> 'ferret'
+'B12' -> 'alligator'
+\end{verbatim}
+Or we could use numbers as keys.  Important point: keys have to be
+immutable.  So we can't use \eg lists or dictionaries as keys.
+
+Show how to make this dictionary.
+\begin{itemize}
+\item Write using curly braces and colons.
+\item Alternatively, start with empty one and add them.
+\end{itemize}
+
+Dictionaries are like functions mapping keys to values.  Consequences:
+\begin{itemize}
+\item There can only be one value per unique key.  (If you want
+  multiple values, use a list.)
+\item But there can be multiple keys with the same value.
+\item You can only look up a value by key, not a key by value.
+\end{itemize}
+
+Other things we can do with a dictionary (illustrate these at the
+Python prompt and/or with some sample code):
+\begin{itemize}
+\item Get list of all keys with \verb|keys()|
+\item Get list of all values with \verb|values()|
+\item Check if a key is in the dictionary using \verb|in|
+\item Ask for the number of keys with \verb|len|
+\item Delete a mapping with \verb|del|
+\item Iterate over keys with \verb|for|
+\end{itemize}
+
+Show
+\url{https://docs.python.org/3.7/library/stdtypes.html#mapping-types-dict}.
+
+Note (as of Python version 3.6) the keys will always be in the same
+order you put them in.
+
+\begin{reflect}{Brent, S'17}
+  Only made it to here.  Did frequency counting the following class.
+\end{reflect}
+
+Do as much of this as there is time for; finish next class.
+
+Rewrite \verb|frequency_counts(s)| to return a dictionary.  Why this is
+better: directly look up by letter value.  No need to use \verb|ord|
+or alphabet string etc.
+
+\newpage
+\begin{verbatim}
+from typing import *
+
+# Given a string s, return a dictionary mapping each character in the
+# string to the proportion of times it occurs.
+#
+# For example,
+#   frequency_counts('hello') = {'e': 0.2, 'h': 0.2, 'o': 0.2, 'l': 0.4}
+
+def frequency_counts(s: str) -> Dict[str, float]:
+    counts: Dict[str, int] = {}
+    for c in s:
+        if c not in counts:
+            counts[c] = 0
+        counts[c] += 1
+
+    freqs: Dict[str, float] = {}
+    for c in counts:
+        freqs[c] = counts[c] / len(s)
+
+    return freqs
+\end{verbatim}
+
+\begin{reflect}{Brent, S'18}
+  Made it through writing \verb|frequency_count| (but not
+  \texttt{normalize}).
+\end{reflect}
+
+\begin{reflect}{Brent, F'18}
+  Didn't quite get through writing \verb|frequency_counts|.  Note last
+  time I decomposed it in terms of a function
+  \verb|normalize(Dict[str,int]) -> Dict[str,float]|, but this time I
+  found myself in the moment just writing the version above.  This
+  actually makes some sense since we don't have to recompute the sum
+  of all counts, we can just divide by \verb|len(s)|.  In a later
+  class had the students write \verb|normalize| themselves.
+\end{reflect}
+
+\newpage
+\class{\ready File I/O, dictionary practice}
+
+Our programs have no state between each time they are called.
+Everything is stored in memory during the program, but afterwards,
+it's all gone.  This is RAM.  We need hard drive storage to keep it
+around.  Save and read things in files.
+
+To write to a file:
+
+\begin{verbatim}
+fout = open("myfile.txt", "w")
+\end{verbatim}
+
+then to save data in the file, write out as strings:
+
+\begin{verbatim}
+fout.write("hello\n")
+fout.write("world\n")
+fout.close()
+\end{verbatim}
+Note the newline characters.
+
+To read from a file:
+
+\begin{verbatim}
+fin = open("myfile.txt", "r")
+\end{verbatim}
+
+Two ways to get stuff out of the file.
+
+\begin{verbatim}
+s = fin.read()
+\end{verbatim}
+
+which returns a string that includes all the carriage returns, or
+
+\begin{verbatim}
+s = ""
+for line in fin.readlines():
+    s += line.strip()
+\end{verbatim}
+
+which strips them out of each line as it is added. \verb|readlines()|
+returns a list of strings.
+
+After both, say \verb|fin.close()| to finish accessing the file.
+
+\subsection*{Dictionary practice}
+
+FINISH writing \verb|frequency_count| and \verb|normalize| from last
+class.  Maybe run them on the contents of a file.
+
+\newpage
+\lab{Sentiment Analysis}
+
+\begin{reflect}{Brent, S'16}
+  I wrote this lab fresh in S'16, based on a Nifty Assignment @
+  SIGCSE.  It replaced the Gibberish Generator lab from the previous
+  semester, which was way too difficult.  Overall I think the new lab
+  went over very well.  It seemed to have the right level of
+  difficulty and gave the students good practice with dictionaries.
+\end{reflect}
+
+\newpage
+\class{\ready Heap tracing examples, dictionary practice}
+
+Go through some more examples of tracing with stack \& heap:
+
+\begin{verbatim}
+from typing import *
+
+## This is an example to use to follow tracing with the Heap
+## The Heap will contain any lists and dictionaries that are built,
+## as their variables are references to the object.  The variables names
+## themselves still go in the stack, with an arrow to the Heap.
+## Strings, ints, floats will go in the stack
+
+## List version
+## change_list will add a few values to a list
+def change_list(lst: List[int]) -> List[int]:
+    for i in range(4):
+        lst.append(i**2)
+
+    lst.append(42)
+
+    return lst
+
+def main():
+    mylist : List[int] = [0,5,-2,8]
+    print(mylist)
+    templist : List[int] = mylist
+    print("Change: ", change_list(templist))
+    print(mylist)
+    templist[1] = -17
+    print(mylist)
+
+main()
+
+## String Version
+## This works differently.  Since strings are immutable, any time a string
+## is modified, a new instance of the string is created.
+
+def change_string(s : str) -> str:
+    for i in range(4):
+        s += str(i**2)
+
+    s += '42'
+
+    return s
+
+def main1():
+    mystring : str = 'abcd'
+    print(mystring)
+    tempstring : str = mystring
+    print("Change: ", change_string(tempstring))
+    print(mystring)
+    ## We cannot write an equivalent to templist[1] = -17,
+    ## since we cannot individually change the value of a single character
+    ## in a string
+
+main1()
+\end{verbatim}
+
+Then have students write
+\verb|normalize(d: Dict[str, int]) -> d: Dict[str, float]|.  Requires
+first adding up all counts.  Emphasize that we don't want to modify
+the original dict, make a new one to return!
+
+\begin{verbatim}
+# Given a dictionary of counts, return a new normalized dictionary
+# where each key maps to its frequency, by dividing each count by the
+# total count.
+def normalize(counts: Dict[str, int]) -> Dict[str, float]:
+
+    total: int = 0
+    for k in counts:
+        total += counts[k]
+
+    freqs: Dict[str, float] = {}
+    for k in counts:
+        freqs[k] = counts[k] / total
+
+    return freqs
+\end{verbatim}
 
 \newpage
 \section{\notready Recursion I: intro (F 3/8)}
@@ -3036,265 +3295,6 @@ def fib_m(n: int) -> int:
 %   to \eg pick random words, generate files with different word
 %   lists, etc.
 % \end{reflect}
-
-\newpage
-\section{\notready Dictionaries (M 4/1)}
-
-\subsection*{Setup}
-
-\begin{itemize}
-\item Remember HW (for loop reading practice) and quiz Wednesday.
-\end{itemize}
-
-\subsection*{Dictionaries}
-
-Recall lists.  Draw an alternate picture of lists as a mapping from
-indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
-can be thought of as
-\begin{verbatim}
-0 -> 'tapir'
-1 -> 'ferret'
-2 -> 'alligator'
-\end{verbatim}
-$0$, $1$, $2$ are \emph{keys}, animal names are \emph{values}.  A
-\emph{mapping} or \emph{association} between keys and values.  A
-\emph{dictionary} is the obvious generalization of this to arbitrary
-keys instead of just 0, 1, 2 \dots.  For example, suppose we are
-keeping these animals in a zoo and we want to keep track of them by
-their habitat ID numbers.
-\begin{verbatim}
-'A23' -> 'tapir'
-'B19' -> 'ferret'
-'B12' -> 'alligator'
-\end{verbatim}
-Or we could use numbers as keys.  Important point: keys have to be
-immutable.  So we can't use \eg lists or dictionaries as keys.
-
-Show how to make this dictionary.
-\begin{itemize}
-\item Write using curly braces and colons.
-\item Alternatively, start with empty one and add them.
-\end{itemize}
-
-Dictionaries are like functions mapping keys to values.  Consequences:
-\begin{itemize}
-\item There can only be one value per unique key.  (If you want
-  multiple values, use a list.)
-\item But there can be multiple keys with the same value.
-\item You can only look up a value by key, not a key by value.
-\end{itemize}
-
-Other things we can do with a dictionary (illustrate these at the
-Python prompt and/or with some sample code):
-\begin{itemize}
-\item Get list of all keys with \verb|keys()|
-\item Get list of all values with \verb|values()|
-\item Check if a key is in the dictionary using \verb|in|
-\item Ask for the number of keys with \verb|len|
-\item Delete a mapping with \verb|del|
-\item Iterate over keys with \verb|for|
-\end{itemize}
-
-Show
-\url{https://docs.python.org/3.7/library/stdtypes.html#mapping-types-dict}.
-
-Note (as of Python version 3.6) the keys will always be in the same
-order you put them in.
-
-\begin{reflect}{Brent, S'17}
-  Only made it to here.  Did frequency counting the following class.
-\end{reflect}
-
-Do as much of this as there is time for; finish next class.
-
-Rewrite \verb|frequency_counts(s)| to return a dictionary.  Why this is
-better: directly look up by letter value.  No need to use \verb|ord|
-or alphabet string etc.
-
-\newpage
-\begin{verbatim}
-from typing import *
-
-# Given a string s, return a dictionary mapping each character in the
-# string to the proportion of times it occurs.
-#
-# For example,
-#   frequency_counts('hello') = {'e': 0.2, 'h': 0.2, 'o': 0.2, 'l': 0.4}
-
-def frequency_counts(s: str) -> Dict[str, float]:
-    counts: Dict[str, int] = {}
-    for c in s:
-        if c not in counts:
-            counts[c] = 0
-        counts[c] += 1
-
-    freqs: Dict[str, float] = {}
-    for c in counts:
-        freqs[c] = counts[c] / len(s)
-
-    return freqs
-\end{verbatim}
-
-\begin{reflect}{Brent, S'18}
-  Made it through writing \verb|frequency_count| (but not
-  \texttt{normalize}).
-\end{reflect}
-
-\begin{reflect}{Brent, F'18}
-  Didn't quite get through writing \verb|frequency_counts|.  Note last
-  time I decomposed it in terms of a function
-  \verb|normalize(Dict[str,int]) -> Dict[str,float]|, but this time I
-  found myself in the moment just writing the version above.  This
-  actually makes some sense since we don't have to recompute the sum
-  of all counts, we can just divide by \verb|len(s)|.  In a later
-  class had the students write \verb|normalize| themselves.
-\end{reflect}
-
-\newpage
-\section{\notready File I/O, dictionary practice (W 10/24)}
-
-Our programs have no state between each time they are called.
-Everything is stored in memory during the program, but afterwards,
-it's all gone.  This is RAM.  We need hard drive storage to keep it
-around.  Save and read things in files.
-
-To write to a file:
-
-\begin{verbatim}
-fout = open("myfile.txt", "w")
-\end{verbatim}
-
-then to save data in the file, write out as strings:
-
-\begin{verbatim}
-fout.write("hello\n")
-fout.write("world\n")
-fout.close()
-\end{verbatim}
-Note the newline characters.
-
-To read from a file:
-
-\begin{verbatim}
-fin = open("myfile.txt", "r")
-\end{verbatim}
-
-Two ways to get stuff out of the file.
-
-\begin{verbatim}
-s = fin.read()
-\end{verbatim}
-
-which returns a string that includes all the carriage returns, or
-
-\begin{verbatim}
-s = ""
-for line in fin.readlines():
-    s += line.strip()
-\end{verbatim}
-
-which strips them out of each line as it is added. \verb|readlines()|
-returns a list of strings.
-
-After both, say \verb|fin.close()| to finish accessing the file.
-
-\subsection*{Dictionary practice}
-
-FINISH writing \verb|frequency_count| and \verb|normalize| from last
-class.  Maybe run them on the contents of a file.
-
-\newpage
-\section*{\notready LAB: Sentiment Analysis (W 10/24, Th 10/25)}
-
-\begin{reflect}{Brent, S'16}
-  I wrote this lab fresh in S'16, based on a Nifty Assignment @
-  SIGCSE.  It replaced the Gibberish Generator lab from the previous
-  semester, which was way too difficult.  Overall I think the new lab
-  went over very well.  It seemed to have the right level of
-  difficulty and gave the students good practice with dictionaries.
-\end{reflect}
-
-\newpage
-\section{\notready Heap tracing examples, dictionary practice (F 10/26)}
-
-Go through some more examples of tracing with stack \& heap:
-
-\begin{verbatim}
-from typing import *
-
-## This is an example to use to follow tracing with the Heap
-## The Heap will contain any lists and dictionaries that are built,
-## as their variables are references to the object.  The variables names
-## themselves still go in the stack, with an arrow to the Heap.
-## Strings, ints, floats will go in the stack
-
-## List version
-## change_list will add a few values to a list
-def change_list(lst: List[int]) -> List[int]:
-    for i in range(4):
-        lst.append(i**2)
-
-    lst.append(42)
-
-    return lst
-
-def main():
-    mylist : List[int] = [0,5,-2,8]
-    print(mylist)
-    templist : List[int] = mylist
-    print("Change: ", change_list(templist))
-    print(mylist)
-    templist[1] = -17
-    print(mylist)
-
-main()
-
-## String Version
-## This works differently.  Since strings are immutable, any time a string
-## is modified, a new instance of the string is created.
-
-def change_string(s : str) -> str:
-    for i in range(4):
-        s += str(i**2)
-
-    s += '42'
-
-    return s
-
-def main1():
-    mystring : str = 'abcd'
-    print(mystring)
-    tempstring : str = mystring
-    print("Change: ", change_string(tempstring))
-    print(mystring)
-    ## We cannot write an equivalent to templist[1] = -17,
-    ## since we cannot individually change the value of a single character
-    ## in a string
-
-main1()
-\end{verbatim}
-
-Then have students write
-\verb|normalize(d: Dict[str, int]) -> d: Dict[str, float]|.  Requires
-first adding up all counts.  Emphasize that we don't want to modify
-the original dict, make a new one to return!
-
-\begin{verbatim}
-# Given a dictionary of counts, return a new normalized dictionary
-# where each key maps to its frequency, by dividing each count by the
-# total count.
-def normalize(counts: Dict[str, int]) -> Dict[str, float]:
-
-    total: int = 0
-    for k in counts:
-        total += counts[k]
-
-    freqs: Dict[str, float] = {}
-    for k in counts:
-        freqs[k] = counts[k] / total
-
-    return freqs
-\end{verbatim}
 
 \newpage
 \section{\notready Intro to classes \& objects (M 10/29)}
