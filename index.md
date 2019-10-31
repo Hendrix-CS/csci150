@@ -106,6 +106,7 @@ When we write code together in class, it will be posted here!
 | F 25 Oct | | [More Tracing](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/MoreTracing.ipynb) |
 | M 28 Oct | | [Dictionaries](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Dictionaries.ipynb) |
 | W 30 Oct | | [File I/O](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/FileInputOutput.ipynb) |
+
 <hr>
 
 # Coursework
