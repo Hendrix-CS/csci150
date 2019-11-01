@@ -134,6 +134,7 @@ will receive at most half credit.
 |4 | [Function and loop practice]({{site.baseurl}}/homework/function-reading.pdf) | F Sep 27 | W Oct 2 |
 |5 | [Strands of DNA]({{site.baseurl}}/homework/dna-strings.html) | F Oct 4 | W Oct 9 |
 |6 | [For loop reading]({{site.baseurl}}/homework/for-reading.pdf) | F Oct 25 | W Oct 30 |
+|7 | [Heap/dictionary reading]({{site.baseurl}}/homework/heap-dict-reading.pdf) | F Nov 1 | W Nov 6 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 

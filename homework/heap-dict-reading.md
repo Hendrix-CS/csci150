@@ -1,7 +1,7 @@
 CSCI 150 HW: dictionary + heap reading practice
 -----------------------------------------------
 
-*Due: Wednesday, October 31*
+*Due: Wednesday, November 6*
 
 To receive full credit, for each exercise you should do the following:
 
