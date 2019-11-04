@@ -107,6 +107,7 @@ When we write code together in class, it will be posted here!
 | M 28 Oct | Dictionaries | [Dictionaries](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Dictionaries.ipynb) | [Dictionaries](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Dictionaries.ipynb) |
 | W 30 Oct | File Input Output | [Files](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Files.ipynb) | [File I/O](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/FileInputOutput.ipynb) |
 | F 1 Nov | Dictionary/tracing practice | [Dictionaries](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Dictionaries.ipynb) | |
+| M 4 Nov | Classes and objects (Cake) | [Birthday Cake.ipynb](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Birthday%20Cake.ipynb) | |
 
 <hr>
 
