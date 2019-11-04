@@ -2999,310 +2999,12 @@ def normalize(counts: Dict[str, int]) -> Dict[str, float]:
 \end{verbatim}
 
 \newpage
-\section{\notready Recursion I: intro (F 3/8)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item \notready Need to write a HW!
-\item Write stone-counting rules somewhere, e.g. on board (see below)
-\end{itemize}
-
-\subsection*{Stone counting}
-
-Rules:
-\begin{enumerate}
-\item You may not look into the bowl or at any pieces.
-\item You may only touch one piece.
-\item If someone gives you the bowl and asks you how many pieces it
-  contains, you must eventually give the bowl back and answer
-  truthfully.
-\end{enumerate}
-(There will usually be some attempts to find loopholes; modify the
-rules as necessary.)  Then hand the bowl to a student and ask how many
-pieces it contains.
-
-Recursion!  Functions that call themselves.  In a sense you were all
-``the same function'' because you were running the same program
-(rules).
-
-Factorial function: $n! = 1 \times 2 \times \dots \times (n-1) \times
-n$.  Let's implement in Python.
-\begin{verbatim}
-def fact(n):
-    product = 1
-    for k in range(1,n+1):
-        product *= k
-    return product
-\end{verbatim}
-Now consider $n! = (1 \times 2 \times \dots \times (n-1)) \times n =
-(n-1)! \times n$.  Also need to define $0! = 1$.  Can we translate
-this directly into Python?
-\begin{verbatim}
-def fact_rec(n):
-    if n == 0:
-        return 1
-    else:
-        result = fact_rec(n-1)
-        return result * n
-\end{verbatim}
-It works!
-
-Show call stack.  Every recursive call has its own copy of local
-variables!
-
-Big idea: transform a problem into a slightly simpler version (or more
-than one), solve that simpler problem, do some work to compute an
-answer to the original problem.
-
-Typically:
-\begin{itemize}
-\item Base case(s): simple case where we know the answer without doing
-  any work.  Always do this first!
-\item Recursive case(s): make a recursive call to solve a slightly
-  simpler (i.e. closer to the base case) problem.
-\end{itemize}
-
-Then re-code factorial function or something else live, adding a bunch
-of comments and narrating thought process.
-
-\begin{reflect}{Brent, F'18}
-  Actually ended up writing a list product function; someone suggested
-  the case with length 1 as the base case.
-\end{reflect}
-
-\newpage
-\section{\notready Recursion II: recursive functions (M 3/11)}
-
-Start by reinforcing ``base case + recursive case''.  Talk about
-``leap of faith'': trust that recursive calls will work without
-thinking about how.  Trust your future self.  DON'T think about
-unwinding entire recursion stack.  Just think about ONE level.
-
-% Up until now all the examples we've done have been math functions.
-% Let's do a few more ``computer-sciency'' examples processing strings
-% and lists.  Note, in Python this is not the best way to implement
-% these functions (though in some languages it is).  Just for
-% illustration purposes.  If you take 151 you will start to see real,
-% legitimate uses of recursion, \eg processing trees.  (The one
-% legitimate use of recursion using only what you know is what we will
-% be doing in lab---making pretty pictures!)
-
-Finish implementation of list product from last class.
-\begin{itemize}
-\item Even simpler base case---does the slicing work appropriately?
-\item What should the product of an empty list be?
-\end{itemize}
-
-\begin{itemize}
-\item Have them work in pairs to implement \verb|sum|.
-\item Have them work in pairs to implement string \verb|reverse|.
-  \begin{itemize}
-  \item Go over base case at some point then let them continue working.
-  \end{itemize}
-\end{itemize}
-
-\begin{reflect}{Brent, S'17}
-  Talked about thought process for writing recursive functions,
-  re-coded factorial function.  Lots of great questions.  Then looked
-  at \texttt{sum} function again which we actually wrote in the
-  previous class (in retrospect it was probably premature to do
-  that).  Then only got as far as having them work on writing a
-  \texttt{product} function on paper.  Ended with a spirited debate
-  about what \texttt{product([])} ought to be.  Plan to pick up where
-  we left off next time.
-\end{reflect}
-
-\begin{reflect}{Brent, F'18}
-  They all eventually figured out \verb|reverse| which was good.
-\end{reflect}
-
-\newpage
-\section{\notready Recursion III (W 3/13)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Collect HW.
-\item \notready Quiz --- need to write a HW to go with it.
-\end{itemize}
-
-\begin{reflect}{S'19}
-  This will work particularly well if we're doing some kind of
-  filesystem exploration lab.  But it looks kind of like that's not
-  going to happen YET (maybe for next fall).  But it's still fun to
-  show them.
-\end{reflect}
-
-Introduce idea of trees/hierarchies.  Want to model this in Python.
-This won't be on any exam, but it's good to see a more realistic
-example of recursion in Python.  In Python I would not actually find
-the product of a list or reverse a string etc. using recursion, but I
-really would make recursive trees.
-
-\begin{verbatim}
-# Trees
-
-class Tree:
-
-    # self.value  --- value @ the root
-    # self.children: List[Tree]
-
-    def __init__(self, value, children):
-        self.value = value
-        self.children = children
-
-    # Return the number of items in the whole tree
-    def size(self) -> int:
-
-        # Base case is not necessary
-
-        # if len(self.children) == 0:
-        #     return 1
-        # else:
-
-        total: int = 1
-        for child in self.children:
-            total += child.size()
-
-        return total
-
-    # Add up all the values in the whole tree
-    def sum(self) -> int:
-        total: int = self.value
-        for child in self.children:
-            total += child.sum()
-        return total
-
-    # Print the tree in outline form, e.g.
-    #
-    # cat
-    #   horse
-    #   leaf
-    #     potato
-    #   sock
-
-    def print_outline(self):
-        self.print_outline_indented(0)
-
-    def print_outline_indented(self, indent: int):
-        print((' ' * indent) + str(self.value))
-        for child in self.children:
-            child.print_outline_indented(indent + 2)
-
-
-def main():
-    t = Tree(3, [Tree(2, []), Tree(5, [Tree(19, []), Tree(22, []), Tree(10, [])])])
-    print(t.size())
-    print(t.sum())
-
-    t2 = Tree('cat', [Tree('horse', []), Tree('leaf', [Tree('potato', [])]), Tree('sock', [])])
-    print(t2.size())
-    print(t2.sum())
-
-    t2.print_outline()
-
-main()
-\end{verbatim}
-
-\newpage
-\section*{\notready LAB: Fractal Recursion (3/13--14)}
-
-\begin{reflect}{S' 17}
-  This lab is fun and seemed to go reasonably well, though attendance
-  was poor due to being right before spring break and having project 2
-  due the same day.  In the end I'm also not sure how much it really
-  teaches them about recursion.  But to be honest I don't know how to
-  incorporate recursion more fully into the curriculum without
-  changing the programming language we use.
-\end{reflect}
-
-\begin{reflect}{F' 18}
-  Lab went fine again.  In the future might want to think about
-  developing a new lab that actually uses some kind of recursive data
-  structure (e.g. rose trees to represent
-  outlines/hierarchies/filesystem).
-\end{reflect}
-
-\newpage
-\section*{\notready Recursion IV: Fib memoization (F 3/15)}
-
-Just have fun with it!
-
-\begin{verbatim}
-# Fibonacci numbers
-#
-# First two are 0, 1
-# To get the next, add the two previous
-#
-# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
-
-# Problem: this function redoes a lot of redundant work!
-# Solution: ("memoization") - keep a dictionary that
-# remembers previous results.
-
-from typing import *
-
-# Original version (slow!)
-def fib(n: int) -> int:
-    if n <= 1:
-        return n
-    else:
-        return fib(n-1) + fib(n-2)
-
-
-fib_dict: Dict[int, int] = {0: 0, 1: 1}
-
-# Memoized version
-def fib_m(n: int) -> int:
-    if n in fib_dict:
-        return fib_dict[n]
-    else:
-        fib_dict[n] = fib_m(n-1) + fib_m(n-2)
-        return fib_dict[n]
-\end{verbatim}
-
-\newpage
-
-% Introduce Project 2 (word games).
-
-% \begin{reflect}{Brent, S'18}
-%   Did this at the beginning of lab instead of using class time on it.
-%   Handed back exams and then went straight into recursion; this means I
-%   will have three lectures on recursion and then give them the Friday
-%   right before spring break off (so I can work on a conference paper
-%   submission which is due that day).
-% \end{reflect}
-
-% Livecode the beginning of an exemplary Doublets lab.  Things to focus
-% on:
-% \begin{itemize}
-% \item Start with \verb|main|.  Hierarchical decomposition; write stub
-%   functions.
-% \item Think about what information each function needs to do its job,
-%   and what information it returns.
-% \item Write \verb|get_starting_word| function.
-% \item Start writing \verb|get_ending_word| function, realize that they
-%   are going to have a lot of similar code.
-% \item Abstract common part out into a new function, \verb|get_word|,
-%   that takes a parameter describing the desired word.
-% \item Stub out a single round of the game, then talk about adding a
-%   while loop.
-% \end{itemize}
-
-% \begin{reflect}{Brent, S'17}
-%   Instead of exam wrap-up I actually covered file I/O here, instead of
-%   waiting until after spring break as I did in spring 2016. I think
-%   it was useful for many students for their projects, if they wanted
-%   to \eg pick random words, generate files with different word
-%   lists, etc.
-% \end{reflect}
-
-\newpage
-\section{\notready Intro to classes \& objects (M 10/29)}
+\class{\ready Intro to classes \& objects}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item Reminder: project 2 due Friday!
+\item Reminder: HW on dict tracing due Wednesday, quiz.
 \end{itemize}
 
 \begin{reflect}{Brent}
@@ -3370,8 +3072,29 @@ out the answer empirically.
   containing a \verb|num_candles| variable.
 \item Create an \verb|__init__| method with a parameter. (Explain
   \verb|self|; explain \verb|__init__|.)
-\item Create \verb|blowout| and \verb|allout| methods.
-\item Fill out the rest of the simulation:
+\item Create \verb|blowout| method which picks a random number of
+  candles to blow out and subtracts from \verb|num_candles|.
+  Emphasize difference between local variable (where we store the
+  random number chosen) and \verb|num_candles| which lives in the
+  object.
+\end{itemize}
+
+\newpage
+\class{\ready More classes \& objects}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Collect HW (dictionary \& heap reading)
+\item \notready Quiz!
+\end{itemize}
+
+\subsection*{More Cake}
+
+\begin{itemize}
+\item Review code from Monday.  Get them to write \verb|allout|.
+\item Fill out the rest of the simulation.  Maybe get them to write
+  some of the methods.  Below is what I've ended up with in previous
+  years.
 \begin{verbatim}
 import random
 
@@ -3425,6 +3148,14 @@ def main():
 
 main()
 \end{verbatim}
+\item Emphasize how the encapsulation lets us work using a higher
+  level vocabulary: instead of talking about low-level things
+  like variables and picking random numbers and adding and
+  subtracting, we can build a vocabulary for talking about doing
+  things with birthday cakes, and then we can write our simulation in
+  terms of this higher-level vocabulary (``blow out some candles'',
+  ``keep looping until all the candles are out'', etc.)
+
 \item Run it and paste output into Excel, do a regression to show that
   it is close to natural log! [In fact there is a nice analytical
   argument showing that the expected number of iterations required to
@@ -3436,17 +3167,28 @@ main()
 \end{itemize}
 
 \newpage
-\section{\notready More classes \& objects}
+\lab{Die Hard/Water Jug}
+
+\begin{reflect}{Brent, S'17}
+  This lab seemed to go pretty well this year.  The new step that
+  forced them to write a test function helped a LOT!  I know of
+  several groups that started out with a buggy implementation of the
+  WaterJug class and then ended up debugging it through writing tests
+  and getting the tests to pass---precisely what we would hope for
+  such an exercise.  We should probably figure out ways of
+  incorporating this approach into other labs as well.
+\end{reflect}
+
+\newpage
+\class{\ready Classes \& objects III}
 
 \subsection*{Setup}
+
 \begin{itemize}
-\item Collect HW (dictionary \& heap reading)
-\item Quiz XXX
+\item \notready Assign HW: class design practice.  Quiz Wednesday.
 \end{itemize}
 
-
-Finish \verb|Cake| from last class. Then start on traffic light
-example.  Main point: encapsulation, abstraction.
+\subsection*{Traffic lights}
 
 \begin{verbatim}
 # Traffic light
@@ -3546,24 +3288,6 @@ def main():
 
 main()
 \end{verbatim}
-
-\newpage
-\section*{\notready LAB: Die Hard/Water Jug (Th 11/1)}
-
-\begin{reflect}{Brent, S'17}
-  This lab seemed to go pretty well this year.  The new step that
-  forced them to write a test function helped a LOT!  I know of
-  several groups that started out with a buggy implementation of the
-  WaterJug class and then ended up debugging it through writing tests
-  and getting the tests to pass---precisely what we would hope for
-  such an exercise.  We should probably figure out ways of
-  incorporating this approach into other labs as well.
-\end{reflect}
-
-\newpage
-\section{\notready Classes \& objects III (F 11/2)}
-
-Finish \verb|TrafficLight|.
 
 \newpage
 \section{\notready Elevator simulation I (M 11/12)}
@@ -3881,6 +3605,306 @@ main()
   them out.  Definitely heard many excited moments of enlightenment or
   exultation as a fix worked.  I think they got a lot out of it.
 \end{reflect}
+
+
+\newpage
+\section{\notready Recursion I: intro (F 3/8)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item \notready Need to write a HW!
+\item Write stone-counting rules somewhere, e.g. on board (see below)
+\end{itemize}
+
+\subsection*{Stone counting}
+
+Rules:
+\begin{enumerate}
+\item You may not look into the bowl or at any pieces.
+\item You may only touch one piece.
+\item If someone gives you the bowl and asks you how many pieces it
+  contains, you must eventually give the bowl back and answer
+  truthfully.
+\end{enumerate}
+(There will usually be some attempts to find loopholes; modify the
+rules as necessary.)  Then hand the bowl to a student and ask how many
+pieces it contains.
+
+Recursion!  Functions that call themselves.  In a sense you were all
+``the same function'' because you were running the same program
+(rules).
+
+Factorial function: $n! = 1 \times 2 \times \dots \times (n-1) \times
+n$.  Let's implement in Python.
+\begin{verbatim}
+def fact(n):
+    product = 1
+    for k in range(1,n+1):
+        product *= k
+    return product
+\end{verbatim}
+Now consider $n! = (1 \times 2 \times \dots \times (n-1)) \times n =
+(n-1)! \times n$.  Also need to define $0! = 1$.  Can we translate
+this directly into Python?
+\begin{verbatim}
+def fact_rec(n):
+    if n == 0:
+        return 1
+    else:
+        result = fact_rec(n-1)
+        return result * n
+\end{verbatim}
+It works!
+
+Show call stack.  Every recursive call has its own copy of local
+variables!
+
+Big idea: transform a problem into a slightly simpler version (or more
+than one), solve that simpler problem, do some work to compute an
+answer to the original problem.
+
+Typically:
+\begin{itemize}
+\item Base case(s): simple case where we know the answer without doing
+  any work.  Always do this first!
+\item Recursive case(s): make a recursive call to solve a slightly
+  simpler (i.e. closer to the base case) problem.
+\end{itemize}
+
+Then re-code factorial function or something else live, adding a bunch
+of comments and narrating thought process.
+
+\begin{reflect}{Brent, F'18}
+  Actually ended up writing a list product function; someone suggested
+  the case with length 1 as the base case.
+\end{reflect}
+
+\newpage
+\section{\notready Recursion II: recursive functions (M 3/11)}
+
+Start by reinforcing ``base case + recursive case''.  Talk about
+``leap of faith'': trust that recursive calls will work without
+thinking about how.  Trust your future self.  DON'T think about
+unwinding entire recursion stack.  Just think about ONE level.
+
+% Up until now all the examples we've done have been math functions.
+% Let's do a few more ``computer-sciency'' examples processing strings
+% and lists.  Note, in Python this is not the best way to implement
+% these functions (though in some languages it is).  Just for
+% illustration purposes.  If you take 151 you will start to see real,
+% legitimate uses of recursion, \eg processing trees.  (The one
+% legitimate use of recursion using only what you know is what we will
+% be doing in lab---making pretty pictures!)
+
+Finish implementation of list product from last class.
+\begin{itemize}
+\item Even simpler base case---does the slicing work appropriately?
+\item What should the product of an empty list be?
+\end{itemize}
+
+\begin{itemize}
+\item Have them work in pairs to implement \verb|sum|.
+\item Have them work in pairs to implement string \verb|reverse|.
+  \begin{itemize}
+  \item Go over base case at some point then let them continue working.
+  \end{itemize}
+\end{itemize}
+
+\begin{reflect}{Brent, S'17}
+  Talked about thought process for writing recursive functions,
+  re-coded factorial function.  Lots of great questions.  Then looked
+  at \texttt{sum} function again which we actually wrote in the
+  previous class (in retrospect it was probably premature to do
+  that).  Then only got as far as having them work on writing a
+  \texttt{product} function on paper.  Ended with a spirited debate
+  about what \texttt{product([])} ought to be.  Plan to pick up where
+  we left off next time.
+\end{reflect}
+
+\begin{reflect}{Brent, F'18}
+  They all eventually figured out \verb|reverse| which was good.
+\end{reflect}
+
+\newpage
+\section{\notready Recursion III (W 3/13)}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Collect HW.
+\item \notready Quiz --- need to write a HW to go with it.
+\end{itemize}
+
+\begin{reflect}{S'19}
+  This will work particularly well if we're doing some kind of
+  filesystem exploration lab.  But it looks kind of like that's not
+  going to happen YET (maybe for next fall).  But it's still fun to
+  show them.
+\end{reflect}
+
+Introduce idea of trees/hierarchies.  Want to model this in Python.
+This won't be on any exam, but it's good to see a more realistic
+example of recursion in Python.  In Python I would not actually find
+the product of a list or reverse a string etc. using recursion, but I
+really would make recursive trees.
+
+\begin{verbatim}
+# Trees
+
+class Tree:
+
+    # self.value  --- value @ the root
+    # self.children: List[Tree]
+
+    def __init__(self, value, children):
+        self.value = value
+        self.children = children
+
+    # Return the number of items in the whole tree
+    def size(self) -> int:
+
+        # Base case is not necessary
+
+        # if len(self.children) == 0:
+        #     return 1
+        # else:
+
+        total: int = 1
+        for child in self.children:
+            total += child.size()
+
+        return total
+
+    # Add up all the values in the whole tree
+    def sum(self) -> int:
+        total: int = self.value
+        for child in self.children:
+            total += child.sum()
+        return total
+
+    # Print the tree in outline form, e.g.
+    #
+    # cat
+    #   horse
+    #   leaf
+    #     potato
+    #   sock
+
+    def print_outline(self):
+        self.print_outline_indented(0)
+
+    def print_outline_indented(self, indent: int):
+        print((' ' * indent) + str(self.value))
+        for child in self.children:
+            child.print_outline_indented(indent + 2)
+
+
+def main():
+    t = Tree(3, [Tree(2, []), Tree(5, [Tree(19, []), Tree(22, []), Tree(10, [])])])
+    print(t.size())
+    print(t.sum())
+
+    t2 = Tree('cat', [Tree('horse', []), Tree('leaf', [Tree('potato', [])]), Tree('sock', [])])
+    print(t2.size())
+    print(t2.sum())
+
+    t2.print_outline()
+
+main()
+\end{verbatim}
+
+\newpage
+\section*{\notready LAB: Fractal Recursion (3/13--14)}
+
+\begin{reflect}{S' 17}
+  This lab is fun and seemed to go reasonably well, though attendance
+  was poor due to being right before spring break and having project 2
+  due the same day.  In the end I'm also not sure how much it really
+  teaches them about recursion.  But to be honest I don't know how to
+  incorporate recursion more fully into the curriculum without
+  changing the programming language we use.
+\end{reflect}
+
+\begin{reflect}{F' 18}
+  Lab went fine again.  In the future might want to think about
+  developing a new lab that actually uses some kind of recursive data
+  structure (e.g. rose trees to represent
+  outlines/hierarchies/filesystem).
+\end{reflect}
+
+\newpage
+\section*{\notready Recursion IV: Fib memoization (F 3/15)}
+
+Just have fun with it!
+
+\begin{verbatim}
+# Fibonacci numbers
+#
+# First two are 0, 1
+# To get the next, add the two previous
+#
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
+
+# Problem: this function redoes a lot of redundant work!
+# Solution: ("memoization") - keep a dictionary that
+# remembers previous results.
+
+from typing import *
+
+# Original version (slow!)
+def fib(n: int) -> int:
+    if n <= 1:
+        return n
+    else:
+        return fib(n-1) + fib(n-2)
+
+
+fib_dict: Dict[int, int] = {0: 0, 1: 1}
+
+# Memoized version
+def fib_m(n: int) -> int:
+    if n in fib_dict:
+        return fib_dict[n]
+    else:
+        fib_dict[n] = fib_m(n-1) + fib_m(n-2)
+        return fib_dict[n]
+\end{verbatim}
+
+\newpage
+
+% Introduce Project 2 (word games).
+
+% \begin{reflect}{Brent, S'18}
+%   Did this at the beginning of lab instead of using class time on it.
+%   Handed back exams and then went straight into recursion; this means I
+%   will have three lectures on recursion and then give them the Friday
+%   right before spring break off (so I can work on a conference paper
+%   submission which is due that day).
+% \end{reflect}
+
+% Livecode the beginning of an exemplary Doublets lab.  Things to focus
+% on:
+% \begin{itemize}
+% \item Start with \verb|main|.  Hierarchical decomposition; write stub
+%   functions.
+% \item Think about what information each function needs to do its job,
+%   and what information it returns.
+% \item Write \verb|get_starting_word| function.
+% \item Start writing \verb|get_ending_word| function, realize that they
+%   are going to have a lot of similar code.
+% \item Abstract common part out into a new function, \verb|get_word|,
+%   that takes a parameter describing the desired word.
+% \item Stub out a single round of the game, then talk about adding a
+%   while loop.
+% \end{itemize}
+
+% \begin{reflect}{Brent, S'17}
+%   Instead of exam wrap-up I actually covered file I/O here, instead of
+%   waiting until after spring break as I did in spring 2016. I think
+%   it was useful for many students for their projects, if they wanted
+%   to \eg pick random words, generate files with different word
+%   lists, etc.
+% \end{reflect}
+
 
 \newpage
 \section{\notready Exam 3 review (F 11/16)}
