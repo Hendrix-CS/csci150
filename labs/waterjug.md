@@ -48,6 +48,11 @@ to help us solve this?
 
 ## Step 1: The `WaterJug` class
 
+Open a file named `waterjug.py`. In this file, you will define
+the `WaterJug` class.
+
+### Writing the WaterJug class
+
 Each `WaterJug` object will need to have two variables
 that we can think of as the state of that `WaterJug`:
 
@@ -65,19 +70,20 @@ Methods:
   * `empty()` to completely empty the `WaterJug`
   * `pour(other: 'WaterJug')` to pour as much of the contents of this `WaterJug` into the other as is allowed
 
-Implement this object in Python. Don't forget where to use
-the `self` keyword.  Be careful with your methods to make
+Implement this object in Python.
+
+**HINT:** Don't forget where to use the `self` keyword.  Be careful with your methods to make
 sure a malicious programmer (or buggy code) cannot violate the
 integrity of your class.  For example, it should never be possible
 to end up with a `WaterJug` with more `contents`
 than `capacity`.
 
-Your code should go in a file named `waterjug.py`.
-At the end of that file, place the following lines of code:
+### Testing the WaterJug class
+
+At the end of your file, place the following lines of code:
 
     if __name__ == '__main__':
         test()
-
 
 Above that, write a function named `test()` that tests
 your class and ensures that it works.  Make sure your test code uses all
@@ -86,7 +92,7 @@ statements to check whether each test passes. If a test fails,
 it should print an appropriate message. If all tests pass, it should
 print a success message.
 
- The `__repr__` method needs to return a string that, if
+The `__repr__` method needs to return a string that, if
 typed into the Python shell, would reconstruct the original object.
 The `str` function calls `__repr__` for its argument
 in order to create its string representation. The `eval`
@@ -150,13 +156,3 @@ You must hand in:
   * `waterjug.py`
   * `step2.py`
   * `step3.py`
-  *  Optional Lab Evalution Document (see Grading)
-
-## Grading
-
-* To earn a D on this lab, complete Step 1.
-* To earn a B on this lab, do all the above and complete Step 2.
-* To earn an A on this lab, do all the above and complete Step 3.
-* To earn a 100 on this lab, do all the above and write a
-paragraph explaining how you might write a Python program to
-automatically play the WaterJug game.
