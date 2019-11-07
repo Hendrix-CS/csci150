@@ -82,9 +82,9 @@ have
 * a mouth and
 * a nose.
 
-You can find more shapes, such as an
+{% include tip.html content="You can find more shapes, such as an
 `Oval` or `Polygon`, described on the
-[Graphics Reference](https://mcsp.wartburg.edu/zelle/python/graphics/graphics.pdf).
+[Graphics Reference](https://mcsp.wartburg.edu/zelle/python/graphics/graphics.pdf)." %}
 
 ## Step 2: Colors
 
@@ -120,9 +120,9 @@ find useful on the
 [Graphics Reference](https://mcsp.wartburg.edu/zelle/python/graphics/graphics.pdf)
 page, to enhance your earlier image of a face.
 
-Notice that the first thing to be drawn is covered by the images
+{% include note.html content="The first thing to be drawn is covered by the images
 that follow. This indicates that the way that images are drawn,
-their [Z-order](https://en.wikipedia.org/wiki/Z-order), is based on time.
+their [Z-order](https://en.wikipedia.org/wiki/Z-order), is based on time." %}
 
 ## Step 3: Faces in Space
 
@@ -174,8 +174,10 @@ setup function.
 ### Task: Multiple Faces
 
 Change the `main` function to add multiple faces at random locations
-around the screen. **Make sure your locations are chosen so that
-the face is always completely visible on the screen**.
+around the screen.
+
+{% include important.html content="Make sure your locations are chosen so that
+the face is always completely visible on the screen." %}
 
 ## Step 4: Movement
 
@@ -275,15 +277,8 @@ screen as we did with the Face above.
 
 ## What to Hand In
 
-Hand in `faces.py`. Make sure you have followed
+* `faces.py`.
+
+{% include important.html content="Make sure you have followed
 the [Python Style Guide](http://mgoadric.github.io/csci150/python_style_guide.html), and
-have run your project through the Automated Style Checker.
-
-## Grading
-
-* To earn a D on this lab, complete Step 1.
-* To earn a C on this lab, do all the above and complete Step 2.
-* To earn a B on this lab, do all the above and complete Step 3.
-* To earn an A on this lab, do all the above and complete Step 4.
-* To earn a 100 on this lab, do all the above and complete two
-extensions from Step 5.
+have run your project through the Automated Style Checker." %}
