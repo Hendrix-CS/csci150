@@ -80,3 +80,30 @@ blockquote{
 	padding: 10px;
 	background-color: #EEEEEE;
 }
+
+/* https://idratherbewriting.com/documentation-theme-jekyll/mydoc_alerts.html */
+.alert {
+    overflow: hidden;
+}
+
+.alert-warning {
+    color: #444;
+}
+
+div.alert code {
+    background-color: transparent !important;
+}
+/* without this, the links in these notes aren't visible.*/
+.alert a {
+    text-decoration: underline;
+}
+
+.note code, .alert code, .warning code {
+    color: inherit;
+    padding: 0px;
+}
+
+.alert {
+    margin-bottom:10px;
+    margin-top:10px;
+}

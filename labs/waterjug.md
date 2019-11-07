@@ -18,6 +18,7 @@ and Samuel L. Jackson.  They must solve different puzzles or else
 things will explode and people will die.
 
 ### Example
+
 The WaterJug puzzle can be explained as follows:
 
 You have two
@@ -72,11 +73,13 @@ Methods:
 
 Implement this object in Python.
 
-**HINT:** Don't forget where to use the `self` keyword.  Be careful with your methods to make
+{% include warning.html content="Be careful with your methods to make
 sure a malicious programmer (or buggy code) cannot violate the
 integrity of your class.  For example, it should never be possible
 to end up with a `WaterJug` with more `contents`
-than `capacity`.
+than `capacity`." %}
+
+{% include tip.html content="Don't forget where to use the `self` keyword." %}
 
 ### Testing the WaterJug class
 
@@ -126,10 +129,11 @@ Your program should:
 to reach the goal. You will need to maintain this solution path
 using a list or a string.
 
-**It is not necessary to validate user input.** For this
-assignment, you may assume that all user input is valid.
-Also, you should not just put everything in `main`,
-but you should break your code up into functions appropriately.
+{% include important.html content="Do not just put everything in `main`.
+You should break your code up into functions appropriately." %}
+
+{% include note.html content="It is not necessary to validate user input. For this
+assignment, you may assume that all user input is valid." %}
 
 ## Step 3: Generalizing
 
