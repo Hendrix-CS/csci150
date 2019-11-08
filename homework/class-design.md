@@ -27,7 +27,7 @@ other exercises.
     * When a `BouncyBall` object is first created, it should have 10
     units of air.
     * There should be a method `bounce()` which normally prints the word
-    `Bounce!` and decreasese the amount of air in the ball by two
+    `Bounce!` and decreases the amount of air in the ball by two
     units.  However, if the amount of air is less than or equal to
     three, then `bounce()` does not decrease the amount of air and
     prints `Thupp.` instead of `Bounce!`.
