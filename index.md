@@ -109,6 +109,7 @@ When we write code together in class, it will be posted here!
 | F 1 Nov | Dictionary/tracing practice | [Dictionaries](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Dictionaries.ipynb) | |
 | M 4 Nov | Classes and objects | [Birthday Cake.ipynb](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Birthday%20Cake.ipynb) | [Objects.ipynb](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Objects.ipynb) |
 | W 6 Nov | More Classes | | [MakingCake.ipynb](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/MakingCake.ipynb) |
+| F 8 Nov | Designing classes | [traffic.py]({{site.baseurl}}/in-class/8am/traffic.py) | |
 
 <hr>
 
