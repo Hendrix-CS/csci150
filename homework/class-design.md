@@ -1,7 +1,7 @@
 CSCI 150 HW: class design practice
 --------------------------------------------------------------
 
-*Due: Wednesday, November 7*
+*Due: Wednesday, November 13*
 
 To receive full credit, for each exercise you should do the following:
 
@@ -96,13 +96,15 @@ other exercises.
 
     ``` python
     def main():
-    gb = Gradebook()
-    gb.add_grade(90)
-    gb.add_grade(83)
-    gb.add_grade(97)
-    gb.add_ec(10)
+        gb = Gradebook()
+        gb.add_grade(90)
+        gb.add_grade(83)
+        gb.add_grade(97)
+        gb.add_ec(10)
 
-    print(gb.average())
+        print(gb.average())
+
+    main()
     ```
 
     If your definition of `Gradebook` is correct, this should print
