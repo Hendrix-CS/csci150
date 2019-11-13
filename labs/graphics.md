@@ -12,9 +12,9 @@ worktitle: Graphics and Animation
 
 ## Overview
 
-For today's lab,
-[download the latest version of Graphics](https://mcsp.wartburg.edu/zelle/python/graphics.py)
-for your operating system. Open a new Project in PyCharm, and include this
+For today's lab, download the latest version of
+[graphics.py](https://mcsp.wartburg.edu/zelle/python/graphics.py).
+Open a new Project in PyCharm, and include this
 `graphics.py` file in your directory.  You
 are now ready to work through the lab.
 
@@ -25,7 +25,9 @@ be familiar with the coordinate system. We denote the width as x and
 the height as y.  Most computer graphics modules
 specify that the x, y origin (0,0) is located in the upper-left corner
 of the screen, with x increasing to the right and y increasing
-downwards.
+downwards, as shown here.
+
+![Coordinate System](../assets/images/coordinates.png)
 
 There are three common shaped we can draw this graphics package: a circle, a
 rectangle, and a line.  Write the following lines of code in
@@ -158,14 +160,19 @@ Also, we will collect our `Face` instances in a list
 called `faces`, declared inside `main()`, add a new
 `Face` to the list, then draw every `Face` in the list.
 
-    win = GraphWin(640, 480, autoflush=False)
+    def main():
+        win = GraphWin("Making Faces", 640, 480, autoflush=False)
 
-    faces = []
+        faces = []
 
-    faces.append(Face(50, 50)
+        faces.append(Face(50, 50))
 
-    for f in faces:
-        f.draw(win)
+        for f in faces:
+            f.draw(win)
+
+        win.getMouse()
+        win.close()
+
 
 Try moving your face around the screen by
 altering the arguments you use to create the `Face` in the
