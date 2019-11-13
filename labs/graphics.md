@@ -88,6 +88,10 @@ have
 `Oval` or `Polygon`, described on the
 [Graphics Reference](https://mcsp.wartburg.edu/zelle/python/graphics/graphics.pdf)." %}
 
+{% include important.html content="Keep your window size at 100x100 for now,
+and make a face to fit in that window. Since your face will be moving around the screen later,
+it will help to have a small face. " %}
+
 ## Step 2: Colors
 
 Three different portions of our drawing can be altered to include colors. Recall
