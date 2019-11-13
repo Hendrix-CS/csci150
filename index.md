@@ -111,7 +111,7 @@ When we write code together in class, it will be posted here!
 | W 6 Nov | More Classes | | [MakingCake.ipynb](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/MakingCake.ipynb) |
 | F 8 Nov | Designing classes | [traffic.py]({{site.baseurl}}/in-class/8am/traffic.py) | |
 | M 11 Nov | Extended example | | |
-| W 13 Nov | Extended example | [Elevator]({{site.baseurl}}/in-class/8am/Elevator.py), [Person]({{site.baseurl}}/in-class/8am/Person.py), [Main]({{site.baseurl}}/in-class/8am/Main.py) | |
+| W 13 Nov | Extended example | [Elevator]({{site.baseurl}}/in-class/8am/Elevator.py), [Person]({{site.baseurl}}/in-class/8am/Person.py), [Main]({{site.baseurl}}/in-class/8am/Main.py) | [Card, Hand, Deck, Player]({{site.baseurl}}/in-class/11am/CardStuff.py)|
 
 <hr>
 
@@ -169,10 +169,10 @@ There will often be short homework assignments to be completed over the weekend,
 |7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | Oct 23-24 |
 |8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Oct 23-24 | Oct 30-31 |
 |9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 30-31 | Nov 6-7 |
-|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Nov 6-7 | ? |
-|11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 13-14 | ? |
-|12| Enron’s Secrets | Nov 20-21 | ? |
-|13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Dec 4-5 | ? |
+|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Nov 6-7 | Nov 13-14 |
+|11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 13-14 | Nov 20-21 |
+|12| Enron’s Secrets | Nov 20-21 | Dec 4-5 |
+|13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Dec 4-5 | Dec 11-12 |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned Wednesday/Thursday in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
