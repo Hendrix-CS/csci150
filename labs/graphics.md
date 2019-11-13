@@ -29,6 +29,8 @@ downwards, as shown here.
 
 ![Coordinate System](../assets/images/coordinates.png)
 
+*Image source: (http://programarcadegames.com/chapters/05_intro_to_graphics/Computer_coordinates_2D.png)*
+
 There are three common shaped we can draw this graphics package: a circle, a
 rectangle, and a line.  Write the following lines of code in
 a Python file called `faces.py` and execute the program.
