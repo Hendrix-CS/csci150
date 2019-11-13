@@ -110,6 +110,8 @@ When we write code together in class, it will be posted here!
 | M 4 Nov | Classes and objects | [Birthday Cake.ipynb](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/Birthday%20Cake.ipynb) | [Objects.ipynb](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/Objects.ipynb) |
 | W 6 Nov | More Classes | | [MakingCake.ipynb](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/MakingCake.ipynb) |
 | F 8 Nov | Designing classes | [traffic.py]({{site.baseurl}}/in-class/8am/traffic.py) | |
+| M 11 Nov | Extended example | | |
+| W 13 Nov | Extended example | [Elevator]({{site.baseurl}}/in-class/8am/Elevator.py), [Person]({{site.baseurl}}/in-class/8am/Person.py), [Main]({{site.baseurl}}/in-class/8am/Main.py) | |
 
 <hr>
 
