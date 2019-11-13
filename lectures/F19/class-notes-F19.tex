@@ -3185,7 +3185,8 @@ main()
 \subsection*{Setup}
 
 \begin{itemize}
-\item \notready Assign HW: class design practice.  Quiz Wednesday.
+\item \ready Assign HW: class design practice (see
+  \texttt{homework/class-design}).  Quiz Wednesday.
 \end{itemize}
 
 \subsection*{Traffic lights}
@@ -3290,14 +3291,14 @@ main()
 \end{verbatim}
 
 \newpage
-\section{\notready Elevator simulation I (M 11/12)}
+\class{\ready Extended example I}
 
-\subsection*{Setup}
-
-\begin{itemize}
-\item Assign final project.
-\item Post practice exam problems for Exam 3 (1 week from today).
-\end{itemize}
+\begin{reflect}{Brent, F'19}
+  I did the elevator simulation again, Mark did card games with Uno
+  and blackjack.  The specific example doesn't matter that much, as
+  long as they see designing and implementing multiple classes working
+  together.
+\end{reflect}
 
 As a slightly larger example involving several classes working
 together let's implement a simple elevator simulation.
@@ -3406,9 +3407,17 @@ Next time we will test passengers getting off the elevator, and make a
 Building class.  Then extend the simulation in various ways.
 
 \newpage
-\section{\notready Elevator simulation II (W 11/14)}
+\class{\ready Extended example II}
 
-Here's how the code ended up:
+\subsection*{Setup}
+
+\begin{itemize}
+\item \ready Quiz: class design.  See \texttt{csci150-instructors/quiz/classes.py}.
+\end{itemize}
+
+\subsection*{Extended example, continued}
+
+Here's how the code ended up in Spring 2019:
 
 \newpage
 \noindent \texttt{Passenger.py}:
@@ -3597,23 +3606,24 @@ main()
 \end{verbatim}
 
 \newpage
-\section{\notready LAB: Stuckness \& Debugging (Th 11/15)}
-
-\begin{reflect}{Brent, F'18}
-  The lab went really well---Fish and I answered basically zero
-  questions; the students struggled with things until they figured
-  them out.  Definitely heard many excited moments of enlightenment or
-  exultation as a fix worked.  I think they got a lot out of it.
-\end{reflect}
-
+\lab{Graphics \& Animation}
 
 \newpage
-\section{\notready Recursion I: intro (F 3/8)}
+\class{Extended example III}
+
+\begin{itemize}
+\item \notready HW assignment?  Practice with writing/reading code
+  involving classes?  Quiz Wednesday?
+\end{itemize}
+
+\newpage
+\class{\ready Recursion I: intro}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \notready Need to write a HW!
 \item Write stone-counting rules somewhere, e.g. on board (see below)
+\item ASSIGN final project.
+\item ASSIGN practice exam (for Friday).
 \end{itemize}
 
 \subsection*{Stone counting}
@@ -3680,7 +3690,15 @@ of comments and narrating thought process.
 \end{reflect}
 
 \newpage
-\section{\notready Recursion II: recursive functions (M 3/11)}
+\class{\ready Recursion II: recursive functions}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item \notready Quiz on classes/objects reading/tracing?
+\end{itemize}
+
+\subsection*{Recursive functions}
 
 Start by reinforcing ``base case + recursive case''.  Talk about
 ``leap of faith'': trust that recursive calls will work without
@@ -3726,150 +3744,155 @@ Finish implementation of list product from last class.
 \end{reflect}
 
 \newpage
-\section{\notready Recursion III (W 3/13)}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Collect HW.
-\item \notready Quiz --- need to write a HW to go with it.
-\end{itemize}
-
-\begin{reflect}{S'19}
-  This will work particularly well if we're doing some kind of
-  filesystem exploration lab.  But it looks kind of like that's not
-  going to happen YET (maybe for next fall).  But it's still fun to
-  show them.
-\end{reflect}
-
-Introduce idea of trees/hierarchies.  Want to model this in Python.
-This won't be on any exam, but it's good to see a more realistic
-example of recursion in Python.  In Python I would not actually find
-the product of a list or reverse a string etc. using recursion, but I
-really would make recursive trees.
-
-\begin{verbatim}
-# Trees
-
-class Tree:
-
-    # self.value  --- value @ the root
-    # self.children: List[Tree]
-
-    def __init__(self, value, children):
-        self.value = value
-        self.children = children
-
-    # Return the number of items in the whole tree
-    def size(self) -> int:
-
-        # Base case is not necessary
-
-        # if len(self.children) == 0:
-        #     return 1
-        # else:
-
-        total: int = 1
-        for child in self.children:
-            total += child.size()
-
-        return total
-
-    # Add up all the values in the whole tree
-    def sum(self) -> int:
-        total: int = self.value
-        for child in self.children:
-            total += child.sum()
-        return total
-
-    # Print the tree in outline form, e.g.
-    #
-    # cat
-    #   horse
-    #   leaf
-    #     potato
-    #   sock
-
-    def print_outline(self):
-        self.print_outline_indented(0)
-
-    def print_outline_indented(self, indent: int):
-        print((' ' * indent) + str(self.value))
-        for child in self.children:
-            child.print_outline_indented(indent + 2)
-
-
-def main():
-    t = Tree(3, [Tree(2, []), Tree(5, [Tree(19, []), Tree(22, []), Tree(10, [])])])
-    print(t.size())
-    print(t.sum())
-
-    t2 = Tree('cat', [Tree('horse', []), Tree('leaf', [Tree('potato', [])]), Tree('sock', [])])
-    print(t2.size())
-    print(t2.sum())
-
-    t2.print_outline()
-
-main()
-\end{verbatim}
+\lab{Enron's Secrets}
 
 \newpage
-\section*{\notready LAB: Fractal Recursion (3/13--14)}
+\class{Exam 3 review}
 
-\begin{reflect}{S' 17}
-  This lab is fun and seemed to go reasonably well, though attendance
-  was poor due to being right before spring break and having project 2
-  due the same day.  In the end I'm also not sure how much it really
-  teaches them about recursion.  But to be honest I don't know how to
-  incorporate recursion more fully into the curriculum without
-  changing the programming language we use.
-\end{reflect}
+% \newpage
+% \section{\notready Recursion III (W 3/13)}
 
-\begin{reflect}{F' 18}
-  Lab went fine again.  In the future might want to think about
-  developing a new lab that actually uses some kind of recursive data
-  structure (e.g. rose trees to represent
-  outlines/hierarchies/filesystem).
-\end{reflect}
+% \subsection*{Setup}
+% \begin{itemize}
+% \item Collect HW.
+% \item \notready Quiz --- need to write a HW to go with it.
+% \end{itemize}
 
-\newpage
-\section*{\notready Recursion IV: Fib memoization (F 3/15)}
+% \begin{reflect}{S'19}
+%   This will work particularly well if we're doing some kind of
+%   filesystem exploration lab.  But it looks kind of like that's not
+%   going to happen YET (maybe for next fall).  But it's still fun to
+%   show them.
+% \end{reflect}
 
-Just have fun with it!
+% Introduce idea of trees/hierarchies.  Want to model this in Python.
+% This won't be on any exam, but it's good to see a more realistic
+% example of recursion in Python.  In Python I would not actually find
+% the product of a list or reverse a string etc. using recursion, but I
+% really would make recursive trees.
 
-\begin{verbatim}
-# Fibonacci numbers
-#
-# First two are 0, 1
-# To get the next, add the two previous
-#
-# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
+% \begin{verbatim}
+% # Trees
 
-# Problem: this function redoes a lot of redundant work!
-# Solution: ("memoization") - keep a dictionary that
-# remembers previous results.
+% class Tree:
 
-from typing import *
+%     # self.value  --- value @ the root
+%     # self.children: List[Tree]
 
-# Original version (slow!)
-def fib(n: int) -> int:
-    if n <= 1:
-        return n
-    else:
-        return fib(n-1) + fib(n-2)
+%     def __init__(self, value, children):
+%         self.value = value
+%         self.children = children
+
+%     # Return the number of items in the whole tree
+%     def size(self) -> int:
+
+%         # Base case is not necessary
+
+%         # if len(self.children) == 0:
+%         #     return 1
+%         # else:
+
+%         total: int = 1
+%         for child in self.children:
+%             total += child.size()
+
+%         return total
+
+%     # Add up all the values in the whole tree
+%     def sum(self) -> int:
+%         total: int = self.value
+%         for child in self.children:
+%             total += child.sum()
+%         return total
+
+%     # Print the tree in outline form, e.g.
+%     #
+%     # cat
+%     #   horse
+%     #   leaf
+%     #     potato
+%     #   sock
+
+%     def print_outline(self):
+%         self.print_outline_indented(0)
+
+%     def print_outline_indented(self, indent: int):
+%         print((' ' * indent) + str(self.value))
+%         for child in self.children:
+%             child.print_outline_indented(indent + 2)
 
 
-fib_dict: Dict[int, int] = {0: 0, 1: 1}
+% def main():
+%     t = Tree(3, [Tree(2, []), Tree(5, [Tree(19, []), Tree(22, []), Tree(10, [])])])
+%     print(t.size())
+%     print(t.sum())
 
-# Memoized version
-def fib_m(n: int) -> int:
-    if n in fib_dict:
-        return fib_dict[n]
-    else:
-        fib_dict[n] = fib_m(n-1) + fib_m(n-2)
-        return fib_dict[n]
-\end{verbatim}
+%     t2 = Tree('cat', [Tree('horse', []), Tree('leaf', [Tree('potato', [])]), Tree('sock', [])])
+%     print(t2.size())
+%     print(t2.sum())
 
-\newpage
+%     t2.print_outline()
+
+% main()
+% \end{verbatim}
+
+% \newpage
+% \section*{\notready LAB: Fractal Recursion (3/13--14)}
+
+% \begin{reflect}{S' 17}
+%   This lab is fun and seemed to go reasonably well, though attendance
+%   was poor due to being right before spring break and having project 2
+%   due the same day.  In the end I'm also not sure how much it really
+%   teaches them about recursion.  But to be honest I don't know how to
+%   incorporate recursion more fully into the curriculum without
+%   changing the programming language we use.
+% \end{reflect}
+
+% \begin{reflect}{F' 18}
+%   Lab went fine again.  In the future might want to think about
+%   developing a new lab that actually uses some kind of recursive data
+%   structure (e.g. rose trees to represent
+%   outlines/hierarchies/filesystem).
+% \end{reflect}
+
+% \newpage
+% \section*{\notready Recursion IV: Fib memoization (F 3/15)}
+
+% Just have fun with it!
+
+% \begin{verbatim}
+% # Fibonacci numbers
+% #
+% # First two are 0, 1
+% # To get the next, add the two previous
+% #
+% # 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
+
+% # Problem: this function redoes a lot of redundant work!
+% # Solution: ("memoization") - keep a dictionary that
+% # remembers previous results.
+
+% from typing import *
+
+% # Original version (slow!)
+% def fib(n: int) -> int:
+%     if n <= 1:
+%         return n
+%     else:
+%         return fib(n-1) + fib(n-2)
+
+
+% fib_dict: Dict[int, int] = {0: 0, 1: 1}
+
+% # Memoized version
+% def fib_m(n: int) -> int:
+%     if n in fib_dict:
+%         return fib_dict[n]
+%     else:
+%         fib_dict[n] = fib_m(n-1) + fib_m(n-2)
+%         return fib_dict[n]
+% \end{verbatim}
+
 
 % Introduce Project 2 (word games).
 
@@ -3905,18 +3928,13 @@ def fib_m(n: int) -> int:
 %   lists, etc.
 % \end{reflect}
 
+\newpage
+\class{\notready Exam 3}
+\holiday{Thanksgiving}
+\holiday{Thanksgiving}
 
 \newpage
-\section{\notready Exam 3 review (F 11/16)}
-
-\newpage
-\section{\notready Exam 3 (M 11/19)}
-
-\newpage
-\section{\notready THANKSGIVING}
-
-\newpage
-\section{\notready Queues (2 lectures) (M 11/26, W 11/28)}
+\class{\ready Queues I}
 
 Start with a discussion of the queue data structure itself (sequence,
 aka list, where we can only add to one end and remove from the other
@@ -4020,6 +4038,9 @@ $1 + 2 + \dots + n$.
 Perhaps we could do better with a more specialized implementation,
 since we only really care about the front and back.
 
+\newpage
+\class{Queues II}
+
 Discuss the \verb|Node| abstraction. Break up a list into individual
 pieces that fit together like Legos. It's a recursive data type,
 something that stores an element and another \verb|Node| as
@@ -4085,12 +4106,27 @@ be heavily discussed in CSCI 151 with more formal tools and for more
 complicated structures, within the context of Java.
 
 \newpage
-\section{\notready LAB: Tornado sirens (Th 11/29)}
+\lab{Stuckness \& Debugging}
+
+\begin{reflect}{Brent, F'18}
+  The lab went really well---Fish and I answered basically zero
+  questions; the students struggled with things until they figured
+  them out.  Definitely heard many excited moments of enlightenment or
+  exultation as a fix worked.  I think they got a lot out of it.
+\end{reflect}
+
+% \newpage
+% \section{\notready LAB: Tornado sirens (Th 11/29)}
+
+% \newpage
+% \section{\notready ??? (F 10/30, M 12/3?)}
+
+% Continue to extend our elevator simulation with queues?  Show how the
+% performance makes a practical difference??
 
 \newpage
-\section{\notready ??? (F 10/30, M 12/3?)}
+\class{\notready Something fun?}
 
-Continue to extend our elevator simulation with queues?  Show how the
-performance makes a practical difference??
+\class{\ready Free/project help}
 
 \end{document}
