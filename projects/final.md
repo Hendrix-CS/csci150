@@ -44,7 +44,7 @@ By {{page.designdue}}, you must turn in a design document describing
 your project and planning details of how you will implement it.
 
 {% include warning.html content="You should start thinking about, designing, and even
-implementing your project before this!" %} 
+implementing your project before this!" %}
 
 Your design must include:
 
@@ -110,10 +110,7 @@ You should turn in
 -   **All** the Python source files, data files, etc. necessary to run
     your project.
 
-Of course, the [Python style
-guide](http://mgoadric.github.io/csci150/python_style_guide.html) and
-[style
-checker](http://mgoadric.github.io/csci150/python_style_guide.html)
-still apply!
+Of course, the [Python style guide]({{site.baseurl}}/python_style_guide.html) and
+[style checker]({{site.baseurl}}/python_style_guide.html) still apply!
 
 ------------------------------------------------------------------------
