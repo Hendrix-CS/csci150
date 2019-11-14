@@ -26,8 +26,10 @@ Unlike the other projects, you may work with one partner for the final
 project. You can also work individually if you wish.
 
 You have wide latitude in choosing what to do for your final project.
-The only requirements are that it should be sufficiently complex and
-should somehow go beyond what we have done in class or lab. Your project
+The only requirements are that it should be **sufficiently complex** and
+should **somehow go beyond what we have done in class or lab**.
+
+Your project
 idea **must** be approved by your lecture instructor (who is also happy
 to help you brainstorm) via email or conversation prior to the design submission.
 **Get started early!** Waiting until just before
@@ -71,7 +73,7 @@ Presentation
 Everyone will present their projects on {{page.finaldue}}.
 Your presentation, using PowerPoint, Prezi, the chalkboard, or some
 other appropriate presentation medium, will be **at most 6 minutes
-long**. (I am serious about this; presentations that are too long will
+long**. (We are serious about this; presentations that are too long will
 lose points and/or be rudely cut off. Practice beforehand to make sure
 you have a good sense for how much time you have. Six minutes is not
 very long at all.)
@@ -88,10 +90,10 @@ slide:
 You might plan to spend, for example, 30 seconds on each slide and then
 use the remaining time doing the demo.
 
-**Do not show us your code**! This is super boring and wastes a lot of
+{% include note.html content=" **Do not show us your code**! This is super boring and wastes a lot of
 time. If there is some specific code you want to show us to illustrate
 something that is interesting/unique about your project, or about a
-challenge you overcame, copy it onto one of your slides.
+challenge you overcame, copy it onto one of your slides." %}
 
 If you worked on the project with a partner, **both partners** must be
 involved in giving the presentation. For example, you might have one
