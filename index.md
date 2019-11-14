@@ -228,7 +228,7 @@ on how to get started with these notebooks.
 |:-:|-||:-:|:-:|:-:|
 |1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1) | 50  | Sep 21 | Sep 30 |
 |2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | Oct 16 | Nov 1 |
-|3 | ? | 200 | Nov 18 | Final Exam Day |
+|3 | [Final Project]({{site.baseurl}}/projects/final.html) | 200 | Nov 18 | Final Exam Day |
 
 You will have three projects in this course, one about every five weeks. These projects will cover concepts we have discussed in class and in labs, and will be due approximately one week after they are assigned.
 
@@ -243,7 +243,7 @@ questions along with writing and debugging code.
 * Exam 1: Sep 20, covering functions, math, numerical data,
   conditionals, and binary encoding ([Practice exam]({{site.baseurl}}/docs/exam1-practice-f19.pdf))
 * Exam 2: Oct 16, covering input/output, while loops, lists, and strings ([Practice exam]({{site.baseurl}}/docs/exam2-practice-f19.pdf))
-* Exam 3: Nov 25
+* Exam 3: Nov 25, covering for loops, dictionaries, classes and objects
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
 
