@@ -111,7 +111,7 @@ When we write code together in class, it will be posted here!
 | W 6 Nov | More Classes | | [MakingCake.ipynb](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/MakingCake.ipynb) |
 | F 8 Nov | Designing classes | [traffic.py]({{site.baseurl}}/in-class/8am/traffic.py) | |
 | M 11 Nov | Extended example | | |
-| W 13 Nov | Extended example | | |
+| W 13 Nov | Extended example | | [Card, Hand, Deck, Player]({{site.baseurl}}/in-class/11am/CardStuff.py)|
 | F 15 Nov | Extended example | [Elevator]({{site.baseurl}}/in-class/8am/Elevator.py), [Person]({{site.baseurl}}/in-class/8am/Person.py), [Hotel]({{site.baseurl}}/in-class/8am/Hotel.py), [Main]({{site.baseurl}}/in-class/8am/Main.py) | |
 
 <hr>
@@ -170,10 +170,10 @@ There will often be short homework assignments to be completed over the weekend,
 |7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Oct 9-10 | Oct 23-24 |
 |8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Oct 23-24 | Oct 30-31 |
 |9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 30-31 | Nov 6-7 |
-|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Nov 6-7 | ? |
-|11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 13-14 | ? |
-|12| Enron’s Secrets | Nov 20-21 | ? |
-|13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Dec 4-5 | ? |
+|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Nov 6-7 | Nov 13-14 |
+|11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 13-14 | Nov 20-21 |
+|12| Enron’s Secrets | Nov 20-21 | Dec 4-5 |
+|13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Dec 4-5 | Dec 11-12 |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned Wednesday/Thursday in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
@@ -229,7 +229,7 @@ on how to get started with these notebooks.
 |:-:|-||:-:|:-:|:-:|
 |1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1) | 50  | Sep 21 | Sep 30 |
 |2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | Oct 16 | Nov 1 |
-|3 | ? | 200 | Nov 18 | Final Exam Day |
+|3 | [Final Project]({{site.baseurl}}/projects/final.html) | 200 | Nov 18 | Final Exam Day |
 
 You will have three projects in this course, one about every five weeks. These projects will cover concepts we have discussed in class and in labs, and will be due approximately one week after they are assigned.
 
@@ -244,7 +244,7 @@ questions along with writing and debugging code.
 * Exam 1: Sep 20, covering functions, math, numerical data,
   conditionals, and binary encoding ([Practice exam]({{site.baseurl}}/docs/exam1-practice-f19.pdf))
 * Exam 2: Oct 16, covering input/output, while loops, lists, and strings ([Practice exam]({{site.baseurl}}/docs/exam2-practice-f19.pdf))
-* Exam 3: Nov 25
+* Exam 3: Nov 25, covering for loops, dictionaries, classes and objects
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
 

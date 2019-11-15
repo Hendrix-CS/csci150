@@ -29,6 +29,8 @@ downwards, as shown here.
 
 ![Coordinate System](../assets/images/coordinates.png)
 
+*Image source: (http://programarcadegames.com/chapters/05_intro_to_graphics/Computer_coordinates_2D.png)*
+
 There are three common shaped we can draw this graphics package: a circle, a
 rectangle, and a line.  Write the following lines of code in
 a Python file called `faces.py` and execute the program.
@@ -87,6 +89,10 @@ have
 {% include tip.html content="You can find more shapes, such as an
 `Oval` or `Polygon`, described on the
 [Graphics Reference](https://mcsp.wartburg.edu/zelle/python/graphics/graphics.pdf)." %}
+
+{% include important.html content="Keep your window size at 100x100 for now,
+and make a face to fit in that window. Since your face will be moving around the screen later,
+it will help to have a small face. " %}
 
 ## Step 2: Colors
 
