@@ -1,5 +1,6 @@
 from typing import *
 from Person import *
+import random
 
 class Elevator:
     # Variables (fields):
@@ -14,23 +15,31 @@ class Elevator:
     #   - X doors_open: bool
     #   - XX moving: bool
 
-    def __init__(self):
+    #   - max_floor: int
+
+    def __init__(self, elevator_num: int, max_floor: int):
+        self.number = elevator_num
         self.passengers: List[Person] = []
-        self.current_floor = 1
+        self.current_floor = random.randint(1, max_floor)
         self.pushed_buttons = []
         self.ascending = True
+        self.max_floor = max_floor
 
     # change_floor
     def change_floor(self):
+        if self.current_floor == 1:
+            self.ascending = True
+        elif self.current_floor == self.max_floor:
+            self.ascending = False
+
         if self.ascending:
             self.current_floor += 1
-            print("Going up!")
+            print(f"Elevator {self.number} going up!")
         else:
             self.current_floor -= 1
-            print("Going down!")
+            print(f"Elevator {self.number} going down!")
 
         self.remove_push()
-        self.release_passengers()
 
     # push_button: add a button to the list of
     # pushed buttons, if it is not already pushed
@@ -39,24 +48,27 @@ class Elevator:
             self.pushed_buttons.append(button)
 
     # board_passenger
-    def board_passenger(self, p):
+    def board_passenger(self, p: Person):
         self.passengers.append(p)
-        # Maybe have p push the button for their
-        # desired floor, if not already pushed
+        self.push_button(p.get_desired_floor())
+        p.get_on_elevator(self.number)
 
     # release_passengers: let out anyone who wants to get
-    #   out.
-    def release_passengers(self):
-
+    #   out.  Return True if anyone got out, False otherwise.
+    def release_passengers(self) -> bool:
+        any_got_off: bool = False
         # Keep the people who want to stay on
         new_passenger_list: List[Person] = []
         for p in self.passengers:
             if p.get_desired_floor() != self.current_floor:
                 new_passenger_list.append(p)
             else:
-                p.get_off_elevator()
+                p.get_off_elevator(self.number)
+                any_got_off = True
 
         self.passengers = new_passenger_list
+
+        return any_got_off
 
     # change_direction: make the elevator go in
     # the opposite direction.
@@ -71,3 +83,6 @@ class Elevator:
     # remove_all_push
     def remove_all_push(self):
         self.pushed_buttons = []
+
+    def get_current_floor(self):
+        return self.current_floor

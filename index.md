@@ -111,7 +111,8 @@ When we write code together in class, it will be posted here!
 | W 6 Nov | More Classes | | [MakingCake.ipynb](https://generalnotes-goadrich.notebooks.azure.com/j/notebooks/MakingCake.ipynb) |
 | F 8 Nov | Designing classes | [traffic.py]({{site.baseurl}}/in-class/8am/traffic.py) | |
 | M 11 Nov | Extended example | | |
-| W 13 Nov | Extended example | [Elevator]({{site.baseurl}}/in-class/8am/Elevator.py), [Person]({{site.baseurl}}/in-class/8am/Person.py), [Main]({{site.baseurl}}/in-class/8am/Main.py) | [Card, Hand, Deck, Player]({{site.baseurl}}/in-class/11am/CardStuff.py)|
+| W 13 Nov | Extended example | | [Card, Hand, Deck, Player]({{site.baseurl}}/in-class/11am/CardStuff.py)|
+| F 15 Nov | Extended example | [Elevator]({{site.baseurl}}/in-class/8am/Elevator.py), [Person]({{site.baseurl}}/in-class/8am/Person.py), [Hotel]({{site.baseurl}}/in-class/8am/Hotel.py), [Main]({{site.baseurl}}/in-class/8am/Main.py) | |
 
 <hr>
 
@@ -142,6 +143,7 @@ will receive at most half credit.
 |6 | [For loop reading]({{site.baseurl}}/homework/for-reading.pdf) | F Oct 25 | W Oct 30 |
 |7 | [Heap/dictionary reading]({{site.baseurl}}/homework/heap-dict-reading.pdf) | F Nov 1 | W Nov 6 |
 |8 | [Class design practice]({{site.baseurl}}/homework/class-design.pdf) | F Nov 8 | W Nov 13 |
+|9 | [Class reading]({{site.baseurl}}/homework/class-reading.pdf) | F Nov 15 | W Nov 20 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 

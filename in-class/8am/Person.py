@@ -21,9 +21,13 @@ class Person:
     def get_weight(self) -> int:
         return self.weight
 
+    # Get on the elevator and print a message.
+    def get_on_elevator(self, elevator_num: int):
+        print(f"Person with weight {self.weight} getting on elevator #{elevator_num} at floor {self.origin_floor}")
+
     # Get off the elevator and print a message.
-    def get_off_elevator(self):
-        print(f"Person with weight {self.weight} getting off at floor {self.desired_floor}")
+    def get_off_elevator(self, elevator_num: int):
+        print(f"Person with weight {self.weight} getting off elevator #{elevator_num} at floor {self.desired_floor}")
 
     # Return a string describing the person
     def __str__(self):
