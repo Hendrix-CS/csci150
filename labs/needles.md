@@ -132,7 +132,7 @@ as follows:
 Here's an example of using this function. (You should get the same
 answer when you test it.)
 
-    >>>find_depth('lab8')
+    >>>find_depth('enron')
     6
 
 ## Step 3: Counting all the files
@@ -158,7 +158,7 @@ normal file).
 Here's an example of using this function. (You should get the same
 answer when you test it.)
 
-    >>>file_count('lab8')
+    >>>file_count('enron')
     57114
 
 ## Step 4: Finding target strings
