@@ -38,8 +38,8 @@ recursive data structure, the most effective technique is to write
 
 ## Step 1: Exploring File System Functions
 
-Create a new Python project for lab 8. Download the [Enron email
-repository](http://ozark.hendrix.edu/~ferrer/courses/150/s19/labs/lab8/lab8.zip),
+Create a new Python project for lab 12. Download the [Enron email
+repository]({{site.baseurl}}/data/enron.zip),
 unzip the compressed archive, and place it in your project directory.
 (**Note:** This is **not** the full repository. We have edited it down
 to make it easier for you to analyze.)
@@ -81,9 +81,9 @@ Run your file in the console, and then type the following lines in the
 console to see what it does:
 
     files_and_folders('.')
-    files_and_folders('lab8')
-    files_and_folders('lab8/townsend-j')
-    files_and_folders('lab8/townsend-j/to_do')
+    files_and_folders('enron')
+    files_and_folders('enron/townsend-j')
+    files_and_folders('enron/townsend-j/to_do')
 
 Write down your answers to the following questions in a comment above the definition of the
 `files_and_folders()` function.
@@ -102,7 +102,7 @@ clause:
 Run your file in the console, then run the following lines again
 
     files_and_folders('.')
-    files_and_folders('lab8/townsend-j/to_do')
+    files_and_folders('enron/townsend-j/to_do')
 
 Answer the following questions in comments above the function.
 
@@ -206,3 +206,8 @@ contain evidence of wrongdoing.
 *  In what ways is the evidence incomplete or inconclusive?
 
 Provide answers in your Evaluation Document.
+
+## What to turn in
+
+*  filefuncs.py
+*  Evaluation Document for step 6
