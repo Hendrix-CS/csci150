@@ -160,6 +160,8 @@ answer when you test it.)
     >>>file_count('enron')
     57114
 
+<!-- 56838 -->
+
 ## Step 4: Finding target strings
 
 To detect clues of wrongdoing, we can write a function `all_files_with` to visit every
@@ -194,6 +196,10 @@ find culpable emails:
 -   market interference
 -   special purpose entity
 -   possession of tapes
+
+{% include warning.html content="You are about to read the private emails
+of Enron employees. These files include questionable and objectionable content,
+as the employees routinely used their work email for personal use." %}
 
 ## Step 6: Assessing evidence
 
