@@ -173,7 +173,7 @@ There will often be short homework assignments to be completed over the weekend,
 |9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 30-31 | Nov 6-7 |
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Nov 6-7 | Nov 13-14 |
 |11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 13-14 | Nov 20-21 |
-|12| [Enron’s Secrets]{{site.baseurl}}/labs/needles.html) | Nov 20-21 | Dec 4-5 |
+|12| [Enron’s Secrets]({{site.baseurl}}/labs/needles.html) | Nov 20-21 | Dec 4-5 |
 |13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Dec 4-5 | Dec 11-12 |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned Wednesday/Thursday in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
