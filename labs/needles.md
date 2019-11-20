@@ -187,7 +187,6 @@ At this point, we have available the tools to try to find a needle in
 the haystack. Here are some text strings you might consider using to
 find culpable emails:
 
--   jail
 -   irregularities
 -   fear of litigation
 -   witholding capacity
@@ -198,8 +197,10 @@ find culpable emails:
 -   possession of tapes
 
 {% include warning.html content="You are about to read the private emails
-of Enron employees. These files include questionable and objectionable content,
-as the employees routinely used their work email for personal use." %}
+of Enron employees. If you search for other strings besides the
+ones listed above, it is likely you will find questionable and objectionable content,
+as the employees routinely used their work email for personal use. You are not
+required to search beyond the strings listed above." %}
 
 ## Step 6: Assessing evidence
 
