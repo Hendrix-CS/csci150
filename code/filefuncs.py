@@ -5,8 +5,8 @@ import os
 def files_and_folders(path: str):
     i: int = 0
     files: List[str] = os.listdir(path)
-    while i < len(files):
-        child: str = path + os.sep + files[i]
+    for f in files:
+        child: str = path + os.sep + f
         if os.path.isdir(child):
             print(child + " is a folder")
         else:
@@ -47,5 +47,3 @@ def all_files_with(path: str, target_string: str) -> List[str]:
           # Open the file and read it into a string.
           # If the string contains our target_string, add the filename to our list.
     # return our list of filenames
-
-

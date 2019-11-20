@@ -67,13 +67,12 @@ these two functions are to be used:
     def files_and_folders(path: str):
         i: int = 0
         files: List[str] = os.listdir(path)
-        while i < len(files):
-            child: str = path + os.sep + files[i]
+        for f in files:
+            child: str = path + os.sep + f
             if os.path.isdir(child):
                 print(child + " is a folder")
             else:
                 print(child + " is a regular file")
-            i += 1
 
 #### Step 1.1
 
