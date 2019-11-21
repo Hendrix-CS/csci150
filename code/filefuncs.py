@@ -3,7 +3,6 @@ import os
 
 # EXPLAIN ME
 def files_and_folders(path: str):
-    i: int = 0
     files: List[str] = os.listdir(path)
     for f in files:
         child: str = path + os.sep + f
@@ -11,8 +10,6 @@ def files_and_folders(path: str):
             print(child + " is a folder")
         else:
             print(child + " is a regular file")
-        i += 1
-
 
 def find_depth(path: str) -> int:
     pass
