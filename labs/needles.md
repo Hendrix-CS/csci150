@@ -158,9 +158,9 @@ Here's an example of using this function. (You should get the same
 answer when you test it.)
 
     >>>file_count('enron')
-    57114
+    56838
 
-<!-- 56838 -->
+<!-- it is 57114 on my mac, but everyone in the lab got 56838....-->
 
 ## Step 4: Finding target strings
 
