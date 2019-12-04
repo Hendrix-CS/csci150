@@ -50,7 +50,8 @@ work in groups of **two or three**.
 
 ### Step 1: Sum practice
 
-The code above contains several errors. Specifically, it contains several
+The [`sum-practice.py`](../code/sum-practice.py) code above contains several errors.
+Specifically, it contains several
 syntax errors, a runtime error, and a semantic error. Your task for this
 step is to find and correct these errors.
 
@@ -137,7 +138,7 @@ questions and write your answers in your Evaluation Document.
 
 ### Step 3: Guess the number
 
-The above program emulates a guessing game. Here's a description of how
+The [`guess.py`](../code/guess.py) program emulates a guessing game. Here's a description of how
 the game is SUPPOSED to work:
 
 >The game plays five rounds. During each round, the computer picks a random
