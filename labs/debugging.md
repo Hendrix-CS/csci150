@@ -37,7 +37,7 @@ Just be glad that you no longer have to be worried about actual bugs
 being the source of errors in your programs...
 
 *Acknowledgements: Portions of this lab, including the text for steps
-1 and 4 below were adapted from a lab assignment in CS 170 at Emory University.*
+1 and 3 below were adapted from a lab assignment in CS 170 at Emory University.*
 
 ## Materials
 
@@ -214,13 +214,3 @@ experience in this lab.  You may want to consider questions such as:
 * Evaluation document (should contain answers from Steps 2 and 4)
 * Corrected `sum-practice.py` (with comments explaining fixes)
 * Corrected `guess.py` (with comments explaining fixes)
-
-## Grading
-
-* To earn a C, submit a corrected version of `sum-practice.py`.
-* To earn a B, do the above and submit an evaluation document with
-  answers to the questions about the reading.
-* To earn an A, do the above and submit a corrected version
-  of `guess.py`.
-* To earn a 100, do the above and complete the reflection in Step
-  4.
