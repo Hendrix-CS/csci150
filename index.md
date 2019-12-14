@@ -114,7 +114,7 @@ When we write code together in class, it will be posted here!
 | W 13 Nov | Extended example | | [Card, Hand, Deck, Player]({{site.baseurl}}/in-class/11am/CardStuff.py)|
 | F 15 Nov | Extended example | [Elevator]({{site.baseurl}}/in-class/8am/Elevator.py), [Person]({{site.baseurl}}/in-class/8am/Person.py), [Hotel]({{site.baseurl}}/in-class/8am/Hotel.py), [Main]({{site.baseurl}}/in-class/8am/Main.py) | |
 | MW 2-4 Dec | Queues | | |
-| F 6 Dec | ? | [A different problem](https://open.kattis.com/problems/different), [Cold-puter Science](https://open.kattis.com/problems/cold), [Baby Bites](https://open.kattis.com/problems/babybites), [Saving Princess Peach](https://open.kattis.com/problems/princesspeach), [Babelfish](https://open.kattis.com/problems/babelfish) | [Graphics.py Demo Day]({{site.baseurl}}/in-class/8am/demoday.py) |
+| F 6 Dec | ? | [A different problem](https://open.kattis.com/problems/different), [Cold-puter Science](https://open.kattis.com/problems/cold), [Baby Bites](https://open.kattis.com/problems/babybites), [Saving Princess Peach](https://open.kattis.com/problems/princesspeach), [Babelfish](https://open.kattis.com/problems/babelfish) | [Graphics.py Demo Day]({{site.baseurl}}/in-class/11am/demoday.py) |
 
 <hr>
 
