@@ -21,12 +21,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   algorithms and data structures (dictionaries, arrays, linked lists).
   Student learn these concepts through studying the Python programming
   language.
-baseurl: "/csci000" # the subpath of your site, e.g. /blog
+baseurl: "/csci150" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-number: CSCI 000
-title: Generic Computer Science Course
-semester: Fall 2019
+number: CSCI 150
+title: Foundations of Computer Science
+semester: Spring 2020
 
 navigation:
   - title: Overview
@@ -82,21 +82,17 @@ instructors:
 
 offerings:
   - name: LECTURE 01
-    loc: MCREY 110
-    time: MWF 8:10am - 9:00am
-    instructor: yorgey
-  - name: LECTURE 02
-    loc: MCREY 110
-    time: MWF 11:10am - 12:00pm
-    instructor: goadrich
-  - name: LAB 01
-    loc: Snoddy Computer Lab
-    time: R 1:10pm - 4:00pm
-    instructor: ferrer
-  - name: LAB 02
-    loc: Snoddy Computer Lab
-    time: W 1:10pm - 4:00pm
+    loc: MC Reynolds 110
+    time: MWF 9:10am - 10:00am (A2)
     instructor: seme
+  - name: LAB L1
+    loc: Snoddy Computer Lab
+    time: W 1:10pm - 4:00pm (L8)
+    instructor: ferrer
+  - name: LAB L2
+    loc: Snoddy Computer Lab
+    time: R 1:10pm - 4:00pm (L9)
+    instructor: yorgey
 
 resources:
   - name: Python 3
