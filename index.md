@@ -45,9 +45,7 @@ When we write code together in class, it will be posted here!
 
 | Date | Topic | Code |
 |:----:|------||-----||
-| F 30 Aug | Intro to Python | [Intro Notebook](https://pythonintro-yorgey.notebooks.azure.com/j/notebooks/PythonIntro.ipynb) |
-| W 4 Sep | More Math and Functions | [Box Math](https://boxmath-yorgey.notebooks.azure.com/j/notebooks/BoxMath.ipynb) |
-| F 6 Sep | Strings and Booleans | [Booleans](https://booleans-yorgey.notebooks.azure.com/j/notebooks/Strings%20and%20Booleans.ipynb)
+| F 24 Jan | Intro to Python | |
 
 <hr>
 # Coursework
@@ -67,10 +65,8 @@ will receive at most half credit.
 
 | #  | Name | Assigned | Due |
 |:--:|-----||:--------:|:---:|
-|0 | [Info Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | W Aug 28 | F Aug 30 |
+|0 | [Student Info Survey](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | W Jan 22 | F Jan 24 |
 |1 | [Sample Homework]({{site.baseurl}}/homework/function-reading.pdf) | F Sep 27 | W Oct 2 |
-|2 | [Sample Homework]({{site.baseurl}}/homework/function-reading.pdf) | F Sep 27 | W Oct 2 |
-|3 | [Sample Homework]({{site.baseurl}}/homework/function-reading.pdf) | F Sep 27 | W Oct 2 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
@@ -78,9 +74,20 @@ There will often be short homework assignments to be completed over the weekend,
 
 | #  | Name | Assigned | Due |
 |:--:|-----||:--------:|:---:|
-|1 | [Sample Lab]({{site.baseurl}}/labs/sample-lab.html) | Aug 28-29 | Sep 4-5 |
-|2 | [Sample Lab]({{site.baseurl}}/labs/sample-lab.html) | Sep 4-5 | Sep 11-12 |
-|3 | [Sample Lab]({{site.baseurl}}/labs/sample-lab.html) | Sep 11-12 | Sep 18-19 |
+|1 | [Minecraft Hour of Code]({{site.baseurl}}/labs/minecraft.html) | Jan 22-23 | Jan 29-30 |
+|2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | Jan 29-30 | Feb 5-6 |
+|3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | Feb 5-6 | Feb 12-13 |
+|4 | [This Day in History](https://notebooks.azure.com/yorgey/projects/this-day-in-history-public) | Feb 12-13 | Feb 19-20 |
+|5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Feb 19-20 | Feb 26-27 |
+|6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Feb 26-27 | Mar 4-5 |
+|7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Mar 4-5 | Mar 11-12 |
+|8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Mar 11-12 | Mar 18-19 |
+|9| [Enron’s Secrets]({{site.baseurl}}/labs/needles.html) | Mar 18-19 | Apr 1-2 |
+|10 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Apr 1-2 | Apr 8=9 |
+|11| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Apr 8-9 | Apr 15-16 |
+|12| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Apr 15-16 | Apr 22-23 |
+|13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Apr 22-23 | Apr 29-30 |
+|14| Project workshop | Apr 29-30 | |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
@@ -92,9 +99,9 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | #  | Name | Points | Assigned | Due |
 |:--:|-----||:------:|:--------:|:---:|
-|1 | [Sample Project]({{site.baseurl}}/projects/sample-project.html)  | 50  | Sep 21 | Sep 30 |
-|2 | [Sample Project]({{site.baseurl}}/projects/sample-project.html) | 100 | Oct 16 | Nov 1 |
-|3 | [Sample Project]({{site.baseurl}}/projects/sample-project.html) | 200 | Nov 18 | Final Exam Day |
+|1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1)  | 50  | Feb 14 | Feb 24 |
+|2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | March 13 | April 3 |
+|3 | [Final Project]({{site.baseurl}}/projects/final.html) | 200 | April 13 | May 12 |
 
 You will have three projects in this course, one about every five weeks. These projects will cover concepts we have discussed in class and in labs, and will be due approximately one week after they are assigned.
 

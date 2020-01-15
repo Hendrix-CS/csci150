@@ -3,8 +3,8 @@ layout: work
 type: Project
 num: 3
 worktitle: Final Project
-designdue: Wednesday, December 4
-finaldue: Monday, December 16
+designdue: Sometime
+finaldue: Tuesday, May 12
 ---
 
 ## Description
@@ -17,7 +17,7 @@ Important dates
 
 -   Project design due (20): **{{page.designdue}} @ 5pm**
 -   Project due (150): **{{page.finaldue}} @ 8pm**
--   Presentations (30): **{{page.finaldue}}, 8:30-11:30am (11am section), 2:00-5:00pm (8am section)**
+-   Presentations (30): **{{page.finaldue}}, 8:30-11:30am**
 
 Guidelines
 ----------
