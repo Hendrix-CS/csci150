@@ -13,7 +13,7 @@ layout: course-multi
 
 Upon completing this course, our goal is for you to be able to:
 
-* Build computer programs to TEST!~:
+* Build computer programs to:
   * Effectively solve realistic problems.
   * Organize, analyze, and summarize realistic data sets.
 * Read, understand, and explain a computer program.
@@ -45,7 +45,7 @@ When we write code together in class, it will be posted here!
 
 | Date | Topic | Code |
 |:----:|------||-----||
-| F 24 Jan | Intro to Python | |
+| F 24 Jan | Intro to Python | [Test1](http://hendrix.edu)|
 
 <hr>
 # Coursework
