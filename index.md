@@ -13,7 +13,7 @@ layout: course-multi
 
 Upon completing this course, our goal is for you to be able to:
 
-* Build computer programs to:
+* Build computer programs to TEST!~:
   * Effectively solve realistic problems.
   * Organize, analyze, and summarize realistic data sets.
 * Read, understand, and explain a computer program.
