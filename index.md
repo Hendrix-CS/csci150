@@ -45,7 +45,7 @@ When we write code together in class, it will be posted here!
 
 | Date | Topic | Code |
 |:----:|------||-----||
-| F 24 Jan | Intro to Python | |
+| F 24 Jan | Intro to Python | [PythonDemo.ipynb](http://lkwjerlkwejrlkj)|
 
 <hr>
 # Coursework
