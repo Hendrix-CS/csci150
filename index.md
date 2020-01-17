@@ -45,7 +45,7 @@ When we write code together in class, it will be posted here!
 
 | Date | Topic | Code |
 |:----:|------||-----||
-| F 24 Jan | Intro to Python | [Test1](http://hendrix.edu)|
+| F 24 Jan |Intro to Python I | [Python Day 1](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 
 <hr>
 # Coursework
@@ -66,7 +66,7 @@ will receive at most half credit.
 | #  | Name | Assigned | Due |
 |:--:|-----||:--------:|:---:|
 |0 | [Student Info Survey](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | W Jan 22 | F Jan 24 |
-|1 | [Sample Homework]({{site.baseurl}}/homework/function-reading.pdf) | F Sep 27 | W Oct 2 |
+|1 | [Minecraft]({{site.baseurl}}/homework/function-reading.pdf) | F Jan 24 | W Jan 29 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
@@ -83,7 +83,7 @@ There will often be short homework assignments to be completed over the weekend,
 |7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Mar 4-5 | Mar 11-12 |
 |8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Mar 11-12 | Mar 18-19 |
 |9| [Enron’s Secrets]({{site.baseurl}}/labs/needles.html) | Mar 18-19 | Apr 1-2 |
-|10 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Apr 1-2 | Apr 8=9 |
+|10 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Apr 1-2 | Apr 8-9 |
 |11| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Apr 8-9 | Apr 15-16 |
 |12| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Apr 15-16 | Apr 22-23 |
 |13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Apr 22-23 | Apr 29-30 |
@@ -99,8 +99,8 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | #  | Name | Points | Assigned | Due |
 |:--:|-----||:------:|:--------:|:---:|
-|1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1)  | 50  | Feb 14 | Feb 24 |
-|2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | March 13 | April 3 |
+|1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1)  | 50  | Feb 14 | Feb 28 |
+|2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | March 9 | April 6 |
 |3 | [Final Project]({{site.baseurl}}/projects/final.html) | 200 | April 13 | May 12 |
 
 You will have three projects in this course, one about every five weeks. These projects will cover concepts we have discussed in class and in labs, and will be due approximately one week after they are assigned.
@@ -113,9 +113,9 @@ There will be three in-class exams, the first worth 50 points and the second and
 third worth 100 of your final grade. They will consist of short answer
 questions along with writing and debugging code.
 
-* Exam 1: Sep 20, covering functions, math, numerical data, conditionals, and binary encoding
-* Exam 2: Oct 16, covering input/output, while loops, lists, and strings
-* Exam 3: Nov 25, covering for loops, dictionaries, classes and objects
+* Exam 1: Feb 12, covering functions, math, numerical data, conditionals, and binary encoding
+* Exam 2: Mar 16, covering input/output, while loops, lists, and strings
+* Exam 3: Apr 24, covering for loops, dictionaries, classes and objects
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
 
