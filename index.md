@@ -45,7 +45,7 @@ When we write code together in class, it will be posted here!
 
 | Date | Topic | Code |
 |:----:|------||-----||
-| F 24 Jan |Intro to Python I | [Python Day 1](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
+| F 24 Jan |Intro to Python I | [Python Day 1 (test)](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 
 <hr>
 # Coursework
@@ -66,7 +66,7 @@ will receive at most half credit.
 | #  | Name | Assigned | Due |
 |:--:|-----||:--------:|:---:|
 |0 | [Student Info Survey](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | W Jan 22 | F Jan 24 |
-|1 | [Minecraft]({{site.baseurl}}/homework/function-reading.pdf) | F Jan 24 | W Jan 29 |
+|1 | [Minecraft](https://drive.google.com/file/d/18nZWZsUiA9-gDD4uKYs9szXHme7lYRxz/view?usp=sharing) | F Jan 24 | W Jan 29 |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
