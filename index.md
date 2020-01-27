@@ -45,7 +45,8 @@ When we write code together in class, it will be posted here!
 
 | Date | Topic | Code |
 |:----:|------||-----||
-| F 24 Jan |Intro to Python I | [Python Day 1 (test)](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
+| F 24 Jan |Intro to Python I | [Starting Python](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
+| M 27 Jan |Intro to Python II | [Variables, Types, Functions, and Math ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 
 <hr>
 # Coursework
