@@ -73,10 +73,17 @@ There will often be short homework assignments to be completed over the weekend,
 
 ## <a name="labs">Labs</a>: 260 points
 
+<div style="text-align: center">
+<a class="btn btn-primary" href="https://codepost.io">
+  Lab submission (codepost.io)
+</a>
+</div>
+<br/>
+
 | #  | Name | Assigned | Due |
 |:--:|-----||:--------:|:---:|
 |1 | [Minecraft Hour of Code]({{site.baseurl}}/labs/minecraft.html) | Jan 22-23 | Jan 29-30 |
-|2 | [Kepler and Newton](https://notebooks.azure.com/goadrich/projects/kepler-vs-newton) | Jan 29-30 | Feb 5-6 |
+|2 | [Kepler and Newton](https://notebooks.azure.com/yorgey/projects/kepler-vs-newton) | Jan 29-30 | Feb 5-6 |
 |3 | [Diagnosing Heart Disease](https://notebooks.azure.com/goadrich/projects/heart-disease-lab) | Feb 5-6 | Feb 12-13 |
 |4 | [This Day in History](https://notebooks.azure.com/yorgey/projects/this-day-in-history-public) | Feb 12-13 | Feb 19-20 |
 |5 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Feb 19-20 | Feb 26-27 |
