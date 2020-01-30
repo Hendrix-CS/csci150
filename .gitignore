@@ -27,17 +27,18 @@ web/hakyll
 exams-solutions/
 csci150-instructors/
 ThinkPython/
-16S/
+16G/
 .stack-work
 /web/homework
-/17S/
+/17G/
 lectures/S17/__pycache__/
-/18S/
+/18G/
 /homework/tracing-practice.tex
 /pyconsole.txt
-/18F/
-/19S/
-/19F/
+/18L/
+/19G/
+/19L/
+/20G/
 
 /homework/recursion.tex
 *.md.tex
