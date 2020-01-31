@@ -47,6 +47,7 @@ When we write code together in class, it will be posted here!
 |:----:|------||-----||
 | F 24 Jan |Intro to Python I | [Starting Python](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | M 27 Jan |Intro to Python II | [Variables, Types, Functions, and Math ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
+| W 29 Jan |Booleans | [Boolean Values and Expressions ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 
 <hr>
 # Coursework
@@ -68,6 +69,7 @@ will receive at most half credit.
 |:--:|-----||:--------:|:---:|
 |0 | [Student Info Survey](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | W Jan 22 | F Jan 24 |
 |1 | [Minecraft](https://drive.google.com/file/d/18nZWZsUiA9-gDD4uKYs9szXHme7lYRxz/view?usp=sharing) | F Jan 24 | W Jan 29 |
+|2 | [Booleans and Conditionals](https://drive.google.com/open?id=1P37G-DcGi8lLjPPnFmSikJtUyJFgqNfq) | F Jan 31 | W Feb 5|
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
