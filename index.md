@@ -49,7 +49,7 @@ When we write code together in class, it will be posted here!
 | M 27 Jan |Intro to Python II | [Variables, Types, Functions, and Math ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | W 29 Jan |Booleans | [Boolean Values and Expressions ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | F 31 Jan |Conditionals | [Conditionals ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
-| M Feb 3 |Tracing | [First Tracing Example ](https://drive.google.com/open?id=1CC10qeY5F2shkbnTkNxLdQRskKBvtsl5)|
+| M 3 Feb |Tracing | [First Tracing Example ](https://drive.google.com/open?id=1CC10qeY5F2shkbnTkNxLdQRskKBvtsl5)|
 
 <hr>
 # Coursework
