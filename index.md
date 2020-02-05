@@ -125,7 +125,7 @@ There will be three in-class exams, the first worth 50 points and the second and
 third worth 100 of your final grade. They will consist of short answer
 questions along with writing and debugging code.
 
-* Exam 1: Feb 12, covering functions, math, numerical data, conditionals, and binary encoding  Practice Exam 1: https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt
+* Exam 1: Feb 12, covering functions, math, numerical data, conditionals, and binary encoding  [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
 * Exam 2: Mar 16, covering input/output, while loops, lists, and strings
 * Exam 3: Apr 24, covering for loops, dictionaries, classes and objects
 
