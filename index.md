@@ -50,6 +50,8 @@ When we write code together in class, it will be posted here!
 | W 29 Jan |Booleans | [Boolean Values and Expressions ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | F 31 Jan |Conditionals | [Conditionals ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | M 3 Feb |Tracing | [First Tracing Example ](https://drive.google.com/open?id=1CC10qeY5F2shkbnTkNxLdQRskKBvtsl5)|
+| W 5 Feb |Information Encoding | [Information Encoding I ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
+| F 7 Feb |Information Encoding | [Information Encoding II ]https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 
 <hr>
 # Coursework
