@@ -73,12 +73,12 @@ will receive at most half credit.
 
 ## <a name="hwqz">Homework and Quizzes</a>: 140 points
 
-| #  | Name | Assigned | Due |
-|:--:|-----||:--------:|:---:|
-|0 | [Student Info Survey](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | W Jan 22 | F Jan 24 |
-|1 | [Minecraft](https://drive.google.com/file/d/18nZWZsUiA9-gDD4uKYs9szXHme7lYRxz/view?usp=sharing) | F Jan 24 | W Jan 29 |
-|2 | [Booleans and Conditionals](https://drive.google.com/open?id=1xcpgidCkEtsFLoCHBoCcc9I0phqMbG06) | F Jan 31 | W Feb 5|
-|3 | [Tracing Practice](https://drive.google.com/open?id=1cHAp-xG-oVj1ofTFqBeJlNcm6JEy5Q5g) | F Feb 14 | W Feb 19|
+| #  | Name | Assigned | Due | Homework Key | Quiz Key |
+|:--:|-----||:--------:|:---:|:------------:|:--------:|
+|0 | [Student Info Survey](https://docs.google.com/forms/d/e/1FAIpQLSdtxgmw2tL6IzzK0qq3Fw2h2FTFmGHoTRs8p6wTfTToUn7pZg/viewform?usp=sf_link) | W Jan 22 | F Jan 24 | | |
+|1 | [Minecraft](https://drive.google.com/file/d/18nZWZsUiA9-gDD4uKYs9szXHme7lYRxz/view?usp=sharing) | F Jan 24 | W Jan 29 | | |
+|2 | [Booleans and Conditionals](https://drive.google.com/open?id=1xcpgidCkEtsFLoCHBoCcc9I0phqMbG06) | F Jan 31 | W Feb 5| | |
+|3 | [Tracing Practice](https://drive.google.com/open?id=1cHAp-xG-oVj1ofTFqBeJlNcm6JEy5Q5g) | F Feb 14 | W Feb 19 | [Homework #3 Key](https://drive.google.com/open?id=19M8MEF0Nyh20yOGtEpzzMSS0933SM8NL) | [Quiz #3 Key](https://drive.google.com/open?id=1VA-BodAwEl5oWZzgyuTiRt0ZikfiaBPS) |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
