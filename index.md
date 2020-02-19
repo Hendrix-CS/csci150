@@ -55,6 +55,7 @@ When we write code together in class, it will be posted here!
 | M 10 Feb |Exam 1 Review | [Exam 1 Review & Practice Exam ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | W 12 Feb |Exam 1  | |
 | F 14 Feb |PyCharm and While Loops| [While Loops ](https://drive.google.com/open?id=1qf6HY1H8E8nhVX18Trvm_zQJgY4wFt85)|
+| W 19 Feb |While Loops and Collatz| [More While Loops ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 
 
 <hr>
