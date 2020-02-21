@@ -56,6 +56,8 @@ When we write code together in class, it will be posted here!
 | W 12 Feb |Exam 1  | |
 | F 14 Feb |PyCharm and While Loops| [While Loops ](https://drive.google.com/open?id=1qf6HY1H8E8nhVX18Trvm_zQJgY4wFt85)|
 | W 19 Feb |While Loops and Collatz| [More While Loops ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
+| F 21 Feb |Function Stack Tracing and Collatz| [Function Stack Tracing ](https://drive.google.com/open?id=19OQNKBauoyJ_EVGFE3ap7YoRdsUC4HRj)|
+|   | | [Collatz ](https://drive.google.com/open?id=1Qg5n1WBDC5wRE0fav0zqlcjcamCaKPg6)|
 
 
 <hr>
