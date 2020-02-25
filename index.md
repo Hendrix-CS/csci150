@@ -58,6 +58,8 @@ When we write code together in class, it will be posted here!
 | W 19 Feb |While Loops and Collatz| [More While Loops ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | F 21 Feb |Function Stack Tracing and Collatz| [Function Stack Tracing ](https://drive.google.com/open?id=19OQNKBauoyJ_EVGFE3ap7YoRdsUC4HRj)|
 |   | | [Collatz ](https://drive.google.com/open?id=1Qg5n1WBDC5wRE0fav0zqlcjcamCaKPg6)|
+| M 24 Feb |Abstractions| [More Function Stack Code ](https://drive.google.com/open?id=14Xx6Qf_iL7BGy_tv8vHRlP4Gbw2w_0W7)|
+|   | | [Tracing Sample Solution ](https://drive.google.com/open?id=1P256HmQPve9qau6mGMOC8LngnHDNiWmB)|
 
 
 <hr>
