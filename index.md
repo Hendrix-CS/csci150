@@ -61,6 +61,7 @@ When we write code together in class, it will be posted here!
 | M 24 Feb |Abstractions| [More Function Stack Code ](https://drive.google.com/open?id=14Xx6Qf_iL7BGy_tv8vHRlP4Gbw2w_0W7)|
 |   | | [Tracing Sample Solution ](https://drive.google.com/open?id=1P256HmQPve9qau6mGMOC8LngnHDNiWmB)|
 | W 26 Feb |Strings| [Strings - Introduction ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
+| F 28 Feb |Strings & Loops| [Strings & Loops ](https://drive.google.com/open?id=1gXiEWT7nOpn2B8FE7rcQ2JYNnLGXaOQb)|
 
 
 <hr>
