@@ -62,6 +62,7 @@ When we write code together in class, it will be posted here!
 |   | | [Tracing Sample Solution ](https://drive.google.com/open?id=1P256HmQPve9qau6mGMOC8LngnHDNiWmB)|
 | W 26 Feb |Strings| [Strings - Introduction ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | F 28 Feb |Strings & Loops| [Strings & Loops ](https://drive.google.com/open?id=1gXiEWT7nOpn2B8FE7rcQ2JYNnLGXaOQb)|
+| M 2 Mar |Lists I| [Introduciton to Lists ](https://drive.google.com/open?id=1VJY_vriHs-wC6--ltapWVrLtSr38CTzP)|
 
 
 <hr>
@@ -87,7 +88,7 @@ will receive at most half credit.
 |2 | [Booleans and Conditionals](https://drive.google.com/open?id=1xcpgidCkEtsFLoCHBoCcc9I0phqMbG06) | F Jan 31 | W Feb 5| | |
 |3 | [Tracing Practice](https://drive.google.com/open?id=1cHAp-xG-oVj1ofTFqBeJlNcm6JEy5Q5g) | F Feb 14 | W Feb 19 | [Homework #3 Key](https://drive.google.com/open?id=19M8MEF0Nyh20yOGtEpzzMSS0933SM8NL) | [Quiz #3 Key](https://drive.google.com/open?id=1VA-BodAwEl5oWZzgyuTiRt0ZikfiaBPS) |
 |4 | [Function Stack Tracing](https://drive.google.com/open?id=1beji4QCrMh4LD0OT2D_AuOkiWkLdVMJA) | F Feb 21 | W Feb 26 |[Homework #4 Key](https://drive.google.com/open?id=1zUSpG-GptRNN9OTsT_zpb7m1A-GXYgLd) |[Quiz #4 Key](https://drive.google.com/open?id=1EeGG2vvU8k0t3J7gmqcexOn4E7niZBpH)  |
-|5 | [DNA Strings]({{site.baseurl}}/homework/dna-strings.html) | F Feb 21 | W Feb 26 |   |  |
+|5 | [DNA Strings]({{site.baseurl}}/homework/dna-strings.html) | F Feb 28 | W Mar 4 |   |  |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
