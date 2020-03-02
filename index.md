@@ -62,7 +62,7 @@ When we write code together in class, it will be posted here!
 |   | | [Tracing Sample Solution ](https://drive.google.com/open?id=1P256HmQPve9qau6mGMOC8LngnHDNiWmB)|
 | W 26 Feb |Strings| [Strings - Introduction ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | F 28 Feb |Strings & Loops| [Strings & Loops ](https://drive.google.com/open?id=1gXiEWT7nOpn2B8FE7rcQ2JYNnLGXaOQb)|
-| M 2 Mar |Lists I| [Introduciton to Lists ](https://drive.google.com/open?id=1VJY_vriHs-wC6--ltapWVrLtSr38CTzP)|
+| M 2 Mar |Lists I| [Introduction to Lists ](https://drive.google.com/open?id=1VJY_vriHs-wC6--ltapWVrLtSr38CTzP)|
 
 
 <hr>
