@@ -89,7 +89,8 @@ will receive at most half credit.
 |2 | [Booleans and Conditionals](https://drive.google.com/open?id=1xcpgidCkEtsFLoCHBoCcc9I0phqMbG06) | F Jan 31 | W Feb 5| | |
 |3 | [Tracing Practice](https://drive.google.com/open?id=1cHAp-xG-oVj1ofTFqBeJlNcm6JEy5Q5g) | F Feb 14 | W Feb 19 | [Homework #3 Key](https://drive.google.com/open?id=19M8MEF0Nyh20yOGtEpzzMSS0933SM8NL) | [Quiz #3 Key](https://drive.google.com/open?id=1VA-BodAwEl5oWZzgyuTiRt0ZikfiaBPS) |
 |4 | [Function Stack Tracing](https://drive.google.com/open?id=1beji4QCrMh4LD0OT2D_AuOkiWkLdVMJA) | F Feb 21 | W Feb 26 |[Homework #4 Key](https://drive.google.com/open?id=1zUSpG-GptRNN9OTsT_zpb7m1A-GXYgLd) |[Quiz #4 Key](https://drive.google.com/open?id=1EeGG2vvU8k0t3J7gmqcexOn4E7niZBpH)  |
-|5 | [DNA Strings]({{site.baseurl}}/homework/dna-strings.html) | F Feb 28 | W Mar 4 |   |  |
+|5 | [DNA Strings]({{site.baseurl}}/homework/dna-strings.html) | F Feb 28 | W Mar 4 | [DNA Sample Solution](https://notebooks.azure.com/seme/projects/dna-strings-sample-solution)  |[Quiz #5 Key](https://drive.google.com/open?id=1lz4fPKMsq2fxCH0q_L8epH0w9GQ7R0pU)  |
+|6 | [Lists and Strings](https://drive.google.com/open?id=1jttIYdUHZqh8ym_bHOUEzIcZNrKUXGCj) |F Mar 6 |W Mar 11 | | |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
@@ -144,7 +145,7 @@ third worth 100 of your final grade. They will consist of short answer
 questions along with writing and debugging code.
 
 * Exam 1: Feb 12, covering functions, math, numerical data, conditionals, and binary encoding  [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
-* Exam 2: Mar 16, covering input/output, while loops, lists, and strings
+* Exam 2: Mar 16, covering input/output, while loops, lists, and strings [Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)
 * Exam 3: Apr 24, covering for loops, dictionaries, classes and objects
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
