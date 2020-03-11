@@ -66,6 +66,8 @@ When we write code together in class, it will be posted here!
 | W 4 Mar |Lists II| [More Lists](https://drive.google.com/open?id=16GnXdwAsoLfTQRO6NWBnc2HtllMGwU8D)|
 | F 6 Mar |Lists III| [More Lists](https://drive.google.com/open?id=1Mu3t5Z0RbZ2iwVukC2TiuUaQei6ox83_)|
 | M 9 Mar |For Loops I| [Intro to For Loops](https://drive.google.com/open?id=1W8V4n9-2PxGUhjoAuC_JZoAXjmJg1gDJ)|
+| W 11 Mar |For Loops II|[More For Loops](https://drive.google.com/open?id=1MfrCR4ZBVZEtfFfcXtZfhJHuwscWfN7x)|
+
 
 
 <hr>
