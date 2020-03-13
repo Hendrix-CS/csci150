@@ -67,6 +67,7 @@ When we write code together in class, it will be posted here!
 | F 6 Mar |Lists III| [More Lists](https://drive.google.com/open?id=1Mu3t5Z0RbZ2iwVukC2TiuUaQei6ox83_)|
 | M 9 Mar |For Loops I| [Intro to For Loops](https://drive.google.com/open?id=1W8V4n9-2PxGUhjoAuC_JZoAXjmJg1gDJ)|
 | W 11 Mar |For Loops II|[More For Loops](https://drive.google.com/open?id=1MfrCR4ZBVZEtfFfcXtZfhJHuwscWfN7x)|
+| F 13 Mar |Exam #2 Review| |
 
 
 
@@ -94,7 +95,7 @@ will receive at most half credit.
 |3 | [Tracing Practice](https://drive.google.com/open?id=1cHAp-xG-oVj1ofTFqBeJlNcm6JEy5Q5g) | F Feb 14 | W Feb 19 | [Homework #3 Key](https://drive.google.com/open?id=19M8MEF0Nyh20yOGtEpzzMSS0933SM8NL) | [Quiz #3 Key](https://drive.google.com/open?id=1VA-BodAwEl5oWZzgyuTiRt0ZikfiaBPS) |
 |4 | [Function Stack Tracing](https://drive.google.com/open?id=1beji4QCrMh4LD0OT2D_AuOkiWkLdVMJA) | F Feb 21 | W Feb 26 |[Homework #4 Key](https://drive.google.com/open?id=1zUSpG-GptRNN9OTsT_zpb7m1A-GXYgLd) |[Quiz #4 Key](https://drive.google.com/open?id=1EeGG2vvU8k0t3J7gmqcexOn4E7niZBpH)  |
 |5 | [DNA Strings]({{site.baseurl}}/homework/dna-strings.html) | F Feb 28 | W Mar 4 | [DNA Sample Solution](https://notebooks.azure.com/seme/projects/dna-strings-sample-solution)  |[Quiz #5 Key](https://drive.google.com/open?id=1lz4fPKMsq2fxCH0q_L8epH0w9GQ7R0pU)  |
-|6 | [Lists and Strings](https://drive.google.com/open?id=1jttIYdUHZqh8ym_bHOUEzIcZNrKUXGCj) |F Mar 6 |W Mar 11 | | |
+|6 | [Lists and Strings](https://drive.google.com/open?id=1jttIYdUHZqh8ym_bHOUEzIcZNrKUXGCj) |F Mar 6 |W Mar 11 |[Homework #6 Key](https://drive.google.com/open?id=1oWRpGKurAqcrsywu3QjLTs38loTWltoA) |[Quiz #6 Key](https://drive.google.com/open?id=1YAkylFM2MQfjLwBdjIUep5EYy5R-2eYN) |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
