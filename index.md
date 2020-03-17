@@ -136,7 +136,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 | #  | Name | Points | Assigned | Due |
 |:--:|-----||:------:|:--------:|:---:|
 |1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1)  | 50  | Feb 14 | Feb 28 |
-|2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | March 9 | April 6 |
+|2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | March 9 | April 13 |
 |3 | [Final Project]({{site.baseurl}}/projects/final.html) | 200 | April 13 | May 12 |
 
 You will have three projects in this course, one about every five weeks. These projects will cover concepts we have discussed in class and in labs, and will be due approximately one week after they are assigned.
@@ -150,7 +150,7 @@ third worth 100 of your final grade. They will consist of short answer
 questions along with writing and debugging code.
 
 * Exam 1: Feb 12, covering functions, math, numerical data, conditionals, and binary encoding  [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
-* Exam 2: Mar 16, covering input/output, while loops, lists, and strings [Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)
+* Exam 2: Assigned Mar 29, due Apr 6, covering input/output, while loops, lists, and strings [Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)
 * Exam 3: Apr 24, covering for loops, dictionaries, classes and objects
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
