@@ -70,6 +70,11 @@ When we write code together in class, it will be posted here!
 | F 13 Mar |Exam #2 Review| |
 
 
+| Date | Pre-Lecture Video | Skeleton Code | In Class Video | Class Code |
+|:----:|------||-----||-----||-----||
+| M 30 Mar | temp | temp2 | temp 3 | temp 45|
+
+
 
 <hr>
 # Coursework
