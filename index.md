@@ -72,7 +72,8 @@ When we write code together in class, it will be posted here!
 
 | Date | Pre-Lecture Video | Skeleton Code | In Class Video | Class Code |
 |------|------||-----||-----||-----||
-| M 30 Mar | [Recursion I Video](https://web.microsoftstream.com/video/31c522c7-1524-452b-9d09-e748f6b99e5c) | [Code](https://drive.google.com/open?id=1l-E3YCWFG7keNXmXmuY_u1I_0PFhK-wf) | test 123   | |
+| M 30 Mar | [Recursion I Video](https://web.microsoftstream.com/video/31c522c7-1524-452b-9d09-e748f6b99e5c) | [Code](https://drive.google.com/open?id=1l-E3YCWFG7keNXmXmuY_u1I_0PFhK-wf) |    | |
+| |[Recursive Length of List Tracing](https://drive.google.com/open?id=1EucoOYQbTNj8vQ09O91Oeq62LdkGBt09)|[Recursive Factorial Tracing](https://drive.google.com/open?id=1cYIPhGdMEsKl79b2zdHDw3IQVXJutEiR)| | |
 
 
 
