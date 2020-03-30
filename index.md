@@ -72,9 +72,9 @@ When we write code together in class, it will be posted here!
 
 | Date | Pre-Lecture Video | Skeleton Code | In Class Video | Class Code |
 |------|------||-----||-----||-----||
-| M 30 Mar | [Dictionaries I](https://web.microsoftstream.com/video/07566db6-ff7a-4e65-8cf0-c941f25cff89) | [Code](https://drive.google.com/open?id=1CeQtlj7eINvKIAaC2w2fyG1WQ2LrUzvX) |    | |
+| M 30 Mar | [Dictionaries I](https://web.microsoftstream.com/video/07566db6-ff7a-4e65-8cf0-c941f25cff89) | [Code](https://drive.google.com/open?id=1CeQtlj7eINvKIAaC2w2fyG1WQ2LrUzvX) | [Class Video](https://web.microsoftstream.com/video/458212d0-19cf-4637-8362-c312479e6070)  |[Code](https://drive.google.com/open?id=1vooOmowz_6lOb4YV2bDB6a0y_gb7inV7) |
 |W 1 Apr | [Dictionaries II](https://web.microsoftstream.com/video/9197b7e3-74a1-4c3d-888b-1585738edd70)|[Code](https://drive.google.com/open?id=1qpsQDULPnFJiNJevxBt8fWCViIV76_wd)|  | |
-| |[File I/O](https://web.microsoftstream.com/video/b70f91bb-58e9-4587-9eda-9402a02d7c62)|[Code](https://drive.google.com/open?id=1SA8xH6EI60Au_qPqO8YrbiD0R2PDSvNX) |[Class Video](https://web.microsoftstream.com/video/458212d0-19cf-4637-8362-c312479e6070)  |[Code](https://drive.google.com/open?id=1vooOmowz_6lOb4YV2bDB6a0y_gb7inV7) |
+| |[File I/O](https://web.microsoftstream.com/video/b70f91bb-58e9-4587-9eda-9402a02d7c62)|[Code](https://drive.google.com/open?id=1SA8xH6EI60Au_qPqO8YrbiD0R2PDSvNX) | | |
 
 
 
