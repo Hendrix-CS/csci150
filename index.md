@@ -125,10 +125,10 @@ There will often be short homework assignments to be completed over the weekend,
 |6 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Feb 26-27 | Mar 4-5 |
 |7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Mar 4-5 | Mar 11-12 |
 |8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Mar 11-12 | Apr 1-2 |
+|9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Apr 1-2 | Apr 15-16 |
 |  | TBD | | |
 
 <!-- |9| [Enron’s Secrets]({{site.baseurl}}/labs/needles.html) | Mar 18-19 | Apr 1-2 | -->
-<!-- |10 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Apr 1-2 | Apr 8-9 | -->
 <!-- |11| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Apr 8-9 | Apr 15-16 | -->
 <!-- |12| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Apr 15-16 | Apr 22-23 | -->
 <!-- |13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Apr 22-23 | Apr 29-30 | -->
