@@ -75,6 +75,7 @@ When we write code together in class, it will be posted here!
 | M 30 Mar | [Dictionaries I](https://web.microsoftstream.com/video/07566db6-ff7a-4e65-8cf0-c941f25cff89) | [Code](https://drive.google.com/open?id=1CeQtlj7eINvKIAaC2w2fyG1WQ2LrUzvX) | [Class Video](https://web.microsoftstream.com/video/458212d0-19cf-4637-8362-c312479e6070)  |[Code](https://drive.google.com/open?id=1vooOmowz_6lOb4YV2bDB6a0y_gb7inV7) |
 |W 1 Apr | [Dictionaries II](https://web.microsoftstream.com/video/d6cdcc54-7f42-45cb-8f48-9f2eacc20df3)|[Code](https://drive.google.com/open?id=1qpsQDULPnFJiNJevxBt8fWCViIV76_wd)|[Class Video](https://web.microsoftstream.com/video/93379b7b-9f8a-4b46-a65b-db16026edb03)  |[freq_count](https://drive.google.com/open?id=16B9nQq70cVdcJsns5PqOic5lgVbkzEHo) |
 | |[File I/O](https://web.microsoftstream.com/video/b70f91bb-58e9-4587-9eda-9402a02d7c62)|[Code](https://drive.google.com/open?id=1SA8xH6EI60Au_qPqO8YrbiD0R2PDSvNX) | |[Read/Write to File](https://drive.google.com/open?id=1vE7ygzkc18JFym9R3q-JiSwgOwYa8ztX) |
+|F 3 Apr | No Pre-class video| | | |
 
 
 
@@ -103,6 +104,7 @@ will receive at most half credit.
 |4 | [Function Stack Tracing](https://drive.google.com/open?id=1beji4QCrMh4LD0OT2D_AuOkiWkLdVMJA) | F Feb 21 | W Feb 26 |[Homework #4 Key](https://drive.google.com/open?id=1zUSpG-GptRNN9OTsT_zpb7m1A-GXYgLd) |[Quiz #4 Key](https://drive.google.com/open?id=1EeGG2vvU8k0t3J7gmqcexOn4E7niZBpH)  |
 |5 | [DNA Strings]({{site.baseurl}}/homework/dna-strings.html) | F Feb 28 | W Mar 4 | [DNA Sample Solution](https://notebooks.azure.com/seme/projects/dna-strings-sample-solution)  |[Quiz #5 Key](https://drive.google.com/open?id=1lz4fPKMsq2fxCH0q_L8epH0w9GQ7R0pU)  |
 |6 | [Lists and Strings](https://drive.google.com/open?id=1jttIYdUHZqh8ym_bHOUEzIcZNrKUXGCj) |F Mar 6 |W Mar 11 |[Homework #6 Key](https://drive.google.com/open?id=1oWRpGKurAqcrsywu3QjLTs38loTWltoA) |[Quiz #6 Key](https://drive.google.com/open?id=1YAkylFM2MQfjLwBdjIUep5EYy5R-2eYN) |
+|7 | [Dictionaries](https://drive.google.com/open?id=1r3BZQ0ZrjvqqLAQhFBraPABWxYuDVVvF) |F Apr 3|F Apr 10| | |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
