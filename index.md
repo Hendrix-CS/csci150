@@ -79,6 +79,7 @@ When we write code together in class, it will be posted here!
 | | | | | [State Cap CSV File](https://drive.google.com/open?id=1Mf9FHARrP1YQOBVq5l9JX23qFiOw-mm5)|
 | | | | | [Mutability Transcript](https://drive.google.com/open?id=1sD8h-4IhQAdgdfkvNbow-9RxiWZ0qwni)|
 | | | | | [Mutability Example Code](https://drive.google.com/open?id=12OlGn52YW5lRRF0IUWFMNQa--cBg_QO3)|
+|M 6 Apr |[Classes and Objects I](https://web.microsoftstream.com/video/996e0aec-8414-43d3-a6f4-c562dfc27777) | [Code](https://drive.google.com/open?id=1TatB_BEK-sewxvGMnXmHA9zk0_3Csb_x)| | |
 
 
 
