@@ -81,6 +81,10 @@ When we write code together in class, it will be posted here!
 | | | | | [Mutability Example Code](https://drive.google.com/open?id=12OlGn52YW5lRRF0IUWFMNQa--cBg_QO3)|
 |M 6 Apr |[Classes and Objects I](https://web.microsoftstream.com/video/996e0aec-8414-43d3-a6f4-c562dfc27777) | [Code](https://drive.google.com/open?id=1TatB_BEK-sewxvGMnXmHA9zk0_3Csb_x)|[Class Video](https://web.microsoftstream.com/video/08913c45-1ea6-4d54-822b-aeb71a5d653f) |[Intro to Classes Code](https://drive.google.com/open?id=1FwHGPHrXr3ijMoOSKD3dlm7Vx-trucwf) |
 |W 8 Apr |[Classes and Objects II](https://web.microsoftstream.com/video/d82e90d6-21a8-4790-aeda-294bfe300415) | [Code](https://drive.google.com/open?id=1mo2Mx1f1u0igepeUCvfvlShpoDMs6b0T) |[Video](https://web.microsoftstream.com/video/7055c424-b2a0-41b2-bec6-263371c744c5) |[Code](https://drive.google.com/open?id=1cIb7bW1R_sO9II_w4naWQbAQQSMpOJyl) |
+|F 10 Apr |[Project Example and More](https://web.microsoftstream.com/video/2bd11c48-f7f5-48d3-877b-2a7b321816d6)|[Capital Game](https://drive.google.com/open?id=1DWhgN-u1tsvQo__xTCoT2rSXek1lX-P5) | | |
+| | |[List of US States and Capitals](https://drive.google.com/open?id=1fdZvwjx1CepjPQuJyQaORYYrHIFUFeIh) | | |
+| | |[List of Countries and Capitals](https://drive.google.com/open?id=1vYi4ffISAdrJJcTYRp3uHh_ai1rkIEVh) | | |
+| | |[Archer Game](https://drive.google.com/open?id=1D_Mkq0CDWEYwoiU1co5mo7cg5oZHutXH) | | |
 
 
 
