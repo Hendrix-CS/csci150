@@ -85,7 +85,7 @@ When we write code together in class, it will be posted here!
 | | |[List of US States and Capitals](https://drive.google.com/open?id=1fdZvwjx1CepjPQuJyQaORYYrHIFUFeIh) | | |
 | | |[List of Countries and Capitals](https://drive.google.com/open?id=1vYi4ffISAdrJJcTYRp3uHh_ai1rkIEVh) | | |
 | | |[Archer Game](https://drive.google.com/open?id=1D_Mkq0CDWEYwoiU1co5mo7cg5oZHutXH) | | |
-
+|M Apr 13|[Card Games Intro](https://web.microsoftstream.com/video/366d8889-d523-41c6-a6f8-cc319c5316ad)|None| | |
 
 
 
