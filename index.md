@@ -161,7 +161,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 |:--:|-----||:------:|:--------:|:---:|
 |1 | [Civic Assistance Q/A System](https://notebooks.azure.com/goadrich/projects/project-1)  | 50  | Feb 14 | Feb 28 |
 |2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | March 9 | April 13 |
-|3 | [Final Project]({{site.baseurl}}/projects/final.html) | 200 | April 13 | May 12 |
+|3 | [Final Project]({{site.baseurl}}/projects/final_spring2020.html) | 200 | April 13 | May 12 |
 
 You will have three projects in this course, one about every five weeks. These projects will cover concepts we have discussed in class and in labs, and will be due approximately one week after they are assigned.
 
