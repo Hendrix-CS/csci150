@@ -165,9 +165,9 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 |2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | March 9 | April 13 |
 |3 | [Final Project]({{site.baseurl}}/projects/final_spring2020.html) | 200 | April 13 | May 12 |
 
-Project 3 Design Rubric: https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs
+[Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs)
 
-Project 3 Final Rubric: https://drive.google.com/open?id=1rASxQnFIQtA9l62bSoRigYzq5Z57_7um
+[Project 3 Final Rubric](https://drive.google.com/open?id=1rASxQnFIQtA9l62bSoRigYzq5Z57_7um)
 
 You will have three projects in this course, one about every five weeks. These projects will cover concepts we have discussed in class and in labs, and will be due approximately one week after they are assigned.
 
