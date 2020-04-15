@@ -11,7 +11,7 @@ In this lab we will make extensive use of while loops and strings.  We will expl
 mutation of strings (words, DNA, ...) through playing the game Doublets.
 
 ## Materials
-* [Common English Words](../data/english2.txt)
+* [Common English Words](../data/english3.txt)
 * [dictionary.py](../code/dictionary.py) Python Module
 * Lab Partner
 
@@ -152,7 +152,7 @@ Modify your program so that it is able to gracefully handle erroneous
 input, as illustrated above.  The goal is to have a program
 that **never** crashes, no matter what the user enters.
 
-For English word validation, download the text file [`english2.txt`](../data/english2.txt)
+For English word validation, download the text file [`english3.txt`](../data/english3.txt)
 and the python module
 [`dictionary.py`](../code/dictionary.py) files, and
 make sure they are in the same folder where you will put your lab.
@@ -168,7 +168,7 @@ The dictionary module contains a function
 return `True` if the word is found in the file and `False`
 otherwise.  You can call the function by writing something like
 
-    dictionary.valid_word(some_word, 'english2.txt')
+    dictionary.valid_word(some_word, 'english3.txt')
 
 ### Step 4 - Function Decomposition
 
@@ -220,10 +220,10 @@ You must hand in:
 	"Future thoughts" questions)
 * `doublets.py`
 * `dictionary.py`
-* `english2.txt`
+* `english3.txt`
 
 (Yes, please turn in `dictionary.py`
-and `english2.txt` even though you did not create them---it makes
+and `english3.txt` even though you did not create them---it makes
 the grading process much easier!)
 
 ## Grading

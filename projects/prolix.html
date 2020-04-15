@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>CSC207 - Project 2 - Prolix</title>
-  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
 </head>
 
 <body>
@@ -33,15 +33,15 @@ In particular, this project will cover the following concepts we have discussed 
 Prolix is a word game where players compete to find words using a weighted mix of consonants.
 The full rules are available <a href="http://www.zmangames.com/cardgames/files/prolix/Prolix_Rules.pdf">online</a>
 and more information can be found at
-<a href="http://boardgamegeek.com/boardgame/39635/prolix">BoardGameGeek</a> and 
+<a href="http://boardgamegeek.com/boardgame/39635/prolix">BoardGameGeek</a> and
 <a href="http://www.zmangames.com/cardgames/prolix.htm">Z-Man Games</a>.
 <p>
 <p>A solo game of Prolix lasts 6 rounds.  Each round, you are trying to come up with the best word for the current board.</p>
 <p>Letter tiles are shuffled into a bag, and then drawn out and placed on the board. There are five each of the letters
 B, C, D, F, G, H, L, M, N, P, R, S, and T, two each of K, V, W, and Y, and one each of J, Q, X, and Z.</p>
-<p>As letters are placed on the board, you must ensure that <b>there are no more than two non-common letters out on the 
+<p>As letters are placed on the board, you must ensure that <b>there are no more than two non-common letters out on the
 board at any time, nor can you have more than two of the same letter out on the board at any time.</b></p>
-<p>There are always eight letters on the board, divided into four columns.  The two leftmost columns score 4 points each, 
+<p>There are always eight letters on the board, divided into four columns.  The two leftmost columns score 4 points each,
 the third column scores 3 points, and the fourth column scores 2 points.</p>
 
 <table border=1 cellpadding=5>
@@ -65,11 +65,11 @@ the third column scores 3 points, and the fourth column scores 2 points.</p>
 <td>2 points</td>
 </tr></table>
 
-<p>When you enter a word, you score points based on how many letters you used from the board.  
-<b>You don't need all the letters in your word to be on the board in order to use that word.</b>  
+<p>When you enter a word, you score points based on how many letters you used from the board.
+<b>You don't need all the letters in your word to be on the board in order to use that word.</b>
 Your word can be as long as you'd like.  The letters don't need to be in any particular order.</p>
 
-<p>As seen above, some letters are rarer than others.  For these rare letters, there are fewer letters that 
+<p>As seen above, some letters are rarer than others.  For these rare letters, there are fewer letters that
 come out onto the board, but they give you bonus points if you use them. K, V, W and Y are worth one
 extra point, and J, Q, X, and Z are worth two extra points.</p>
 
@@ -134,7 +134,7 @@ you can only score the extra letters if there are corresponding extra letters on
 
 <p>If you don't make the minimum score for a round, you immediately lose the game.</p>
 
-<p>If you do make the minimum score for a round, you get to play another round.  The letters on the 
+<p>If you do make the minimum score for a round, you get to play another round.  The letters on the
 board move two spaces to the right, and four new letters are drawn into the two leftmost columns.</p>
 
 <p><b>You are not allowed to re-use any word you already used, so keep a list of used words.</b></p>
@@ -144,7 +144,7 @@ board move two spaces to the right, and four new letters are drawn into the two 
 <h2>Coding</h2>
 For this assignment we will be writing a Python program to let a user repeatedly play solitaire Prolix.
 <p>
-You must create a python program 
+You must create a python program
 called <code>prolix.py</code>.  It will:
 <ol>
 <li>Tell the user about the game.
@@ -158,12 +158,12 @@ called <code>prolix.py</code>.  It will:
 <p>
 Your code should make good use of functions, as there are clear pieces of the game which
 are repeated. Using functions will reduce the amount of code you need
-to write as well as make your program easier to debug.  However, do not write spaghetti code, 
-where functions call each other back and forth to continue execution of the program; 
+to write as well as make your program easier to debug.  However, do not write spaghetti code,
+where functions call each other back and forth to continue execution of the program;
 let your functions naturally return values and use loops to repeat the game turns.
 <p>
 Your code <b>must check all user input</b> for validity and reprompt them for correct input if
-any mistakes are made. 
+any mistakes are made.
 
 <h2>Extra Credit</h2>
 Write a function that calculates the three highest scoring words that could be created from the current board.
@@ -178,7 +178,7 @@ have run your project through the Automated Style Checker.<p>
 You must hand in:
 <ul>
  	<li>prolix.py
- 	<li><a href="../data/english2.txt">english2.txt</a>
+ 	<li><a href="../data/english3.txt">english3.txt</a>
  	<li><a href="../code/dictionary.py">dictionary.py</a>
 </ul>
 and any other files necessary to run your code.

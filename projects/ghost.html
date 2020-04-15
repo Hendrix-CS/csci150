@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>CSC207 - Project 2 - Ghost in the Machine</title>
-  <link rel="stylesheet" type="text/css" title="Default" href="../style.css"> 
+  <link rel="stylesheet" type="text/css" title="Default" href="../style.css">
 </head>
 
 <body>
@@ -27,30 +27,30 @@ In particular, this project will cover the following concepts we have discussed 
 
 <h2>Description</h2>
 Two sides of intelligence that we have studied are inductive and deductive logic.  An interesting
-side-effect of intelligence as we know it is our propensity for puzzles and games. 
-With logical rules guiding our 
-interactions and a fixed sense of the end goal, games give us 
+side-effect of intelligence as we know it is our propensity for puzzles and games.
+With logical rules guiding our
+interactions and a fixed sense of the end goal, games give us
 a controlled setting for testing our intelligence skills. Games and puzzles have been found as
-artifacts of many <a href="http://nabataea.net/games3.html">ancient civilizations</a>, and it 
+artifacts of many <a href="http://nabataea.net/games3.html">ancient civilizations</a>, and it
 is reasonable to expect that any intelligence we find elsewhere in the universe will have
 a similar need and fascination with games.
 <p>
-Ghost is a relatively recent word game (invented in the last 100 years) which is simple 
+Ghost is a relatively recent word game (invented in the last 100 years) which is simple
 to play yet requires a large vocabulary to win. The rules for Ghost are as follows:
 <p>
 <blockquote>
 Choose a player to go first.  Players will take turns building a word from letters until a
 complete word is formed.
-On your turn, you must add a letter to the end of the current word fragment; on the first turn 
-of the game there is no prior word fragment, so you just choose a letter. 
+On your turn, you must add a letter to the end of the current word fragment; on the first turn
+of the game there is no prior word fragment, so you just choose a letter.
 Players will then alternate turns until one player has completed
-a valid English word at least 4 letters long.  The player who completes the word loses the 
-game. 
+a valid English word at least 4 letters long.  The player who completes the word loses the
+game.
 </blockquote>
 <p>
 At any point in the game, if you believe the
 current word fragment is not the prefix of any valid English word, you can declare a challenge.
-If you are correct, you immediately win the game, however if you are incorrect, 
+If you are correct, you immediately win the game, however if you are incorrect,
 you immediately lose.
 <p>
 A sample game of Ghost might go as follows:
@@ -71,30 +71,30 @@ There are two variations of Ghost which use the same general structure to the ga
 In this variant, players can add a letter to either the beginning or the end of the current
 word fragment.
 <li><b>SuperDuperGhost</b><p>
-For SuperDuperGhost, the chosen letter can be inserted anywhere in the current word fragment, 
+For SuperDuperGhost, the chosen letter can be inserted anywhere in the current word fragment,
 including the beginning and end.
 </ul>
 <p>
 <h2>Coding</h2>
-For this assignment we will be writing a Python program to let two users play the 
-word game Ghost and its three variants listed above.  
+For this assignment we will be writing a Python program to let two users play the
+word game Ghost and its three variants listed above.
 <p>
-Download the text file <code><a href="../data/english2.txt">english2.txt</a></code> 
+Download the text file <code><a href="../data/english3.txt">english3.txt</a></code>
 and the python module <code>
 <a href="../code/dictionary.py">dictionary.py</a></code> files.
 <p>
-You must create a python program 
+You must create a python program
 called <code>ghost.py</code>.  It will:
 <ul><li>Ask the user which version of
-Ghost they would like to play (Ghost, SuperGhost or SuperDuperGhost). 
-<li>Ask the user if they would like to challenge the previous word fragment 
+Ghost they would like to play (Ghost, SuperGhost or SuperDuperGhost).
+<li>Ask the user if they would like to challenge the previous word fragment
 (assuming this is not the
 first turn of the game), and if accepted, terminate the game and report the winner
 accordingly.
 <li>If no challenge is requested, your program will then ask for the letter they wish to
-add and any other information necessary depending on the version of Ghost in play.  
+add and any other information necessary depending on the version of Ghost in play.
 <li>Once the
-letter has been added, check if it has created a valid english word; if it is found in the 
+letter has been added, check if it has created a valid english word; if it is found in the
 dictionary, terminate the game, otherwise switch players and repeat until the game is over.
 </ul>
 <p>
@@ -102,25 +102,25 @@ Your code should make good use of functions, as there are clear pieces of the ga
 are common to all the above variants.  Additional dictionary functions should be added
 to <code>dictionary.py</code>. Using functions will reduce the amount of code you need
 to write as well as make your program easier to debug.  However, do not write spaghetti code, where
-functions call each other back and forth to continue execution of the program; 
+functions call each other back and forth to continue execution of the program;
 let your functions naturally return values and use loops to repeat the game turns.
 <p>
-Your code <b>must check all user input</b> for validitiy (such as ensuring they only enter 
+Your code <b>must check all user input</b> for validitiy (such as ensuring they only enter
 one character,
 and enter a valid insertion index for SuperDuperGhost) and reprompt them for correct input if
 any mistakes are made.  I recommend coding the basic version of Ghost first, then augmenting
-this program with SuperGhost and SuperDuperGhost next. 
+this program with SuperGhost and SuperDuperGhost next.
 
 <h2>Extra</h2>
 Your current implementation for this assignment allows two players to compete in a game
-of Ghost.  As an extra extension, <b>(Note, this is not a required part of the assignment)</b> 
-create a computer opponent for Ghost. First, try to have the computer make a random 
-valid move. If this is successful, then think of how to 
+of Ghost.  As an extra extension, <b>(Note, this is not a required part of the assignment)</b>
+create a computer opponent for Ghost. First, try to have the computer make a random
+valid move. If this is successful, then think of how to
 have the computer automatically make the best possible move in any situation.
 
 <h2>What to Hand In</h2>
 Log in to <code>cs.centenary.edu</code> through either Secure FTP or WinSCP using your
-cs login and password.  Create a subdirectory from <code>csc207</code> 
+cs login and password.  Create a subdirectory from <code>csc207</code>
 called <code>project2</code>.  Copy your <code>ghost.py</code> project into this directory, along with any other files
 you need to run your code.  Make sure
 you have followed the <a href="../python_style_guide.html">Python Style Guide</a>, and
