@@ -144,7 +144,9 @@ There will often be short homework assignments to be completed over the weekend,
 |7 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Mar 4-5 | Mar 11-12 |
 |8 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Mar 11-12 | Apr 1-2 |
 |9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Apr 1-2 | Apr 15-16 |
-|  | TBD | | |
+|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) |  |  |
+|11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) |  | |
+
 
 <!-- |9| [Enron’s Secrets]({{site.baseurl}}/labs/needles.html) | Mar 18-19 | Apr 1-2 | -->
 <!-- |11| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Apr 8-9 | Apr 15-16 | -->
