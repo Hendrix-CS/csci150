@@ -88,7 +88,8 @@ When we write code together in class, it will be posted here!
 |M Apr 13|[Card Games Intro](https://web.microsoftstream.com/video/366d8889-d523-41c6-a6f8-cc319c5316ad)|None|[Class Video](https://web.microsoftstream.com/video/a7ed79ab-0c7f-4754-9300-473645897458?list=studio) |[Card Class](https://drive.google.com/open?id=1Cws5eNSe3dGpSquwxE8CMoA5OBn6Cw8u) |
 | | | | |[Deck Class](https://drive.google.com/open?id=1KOiJXLfjrVk9I9TVL1SnrRmyuS-B0Z-I)|
 |W Apr 15|[Data Analysis Intro](https://web.microsoftstream.com/video/b9489e26-35ea-43ee-8bfd-87e59370c6cb?list=studio)|[Code](https://drive.google.com/open?id=10ROVojofIQ63lQsz7kskJaU05i0zCX3n) | |[Data File](https://drive.google.com/open?id=1eHaQ-9P_4HqjeXHau4v_Tfr_PNF7ey-Q)|
-| | | |[In Class Video](https://web.microsoftstream.com/video/6754ed03-de2d-4a74-b0cd-2ec606e84ecd) |[Notebook Example](https://notebooks.azure.com/seme/projects/data-analysis-example-using-no)
+| | | |[In Class Video](https://web.microsoftstream.com/video/6754ed03-de2d-4a74-b0cd-2ec606e84ecd) |[Notebook Example](https://notebooks.azure.com/seme/projects/data-analysis-example-using-no) |
+|F Apr 17 | [Card Games Example](https://web.microsoftstream.com/video/2f3a5428-0def-4815-8f44-9ffbb5b702bd) | | | |
 
 
 
