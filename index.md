@@ -185,7 +185,7 @@ questions along with writing and debugging code.
 
 * Exam 1: Feb 12, covering functions, math, numerical data, conditionals, and binary encoding  [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
 * Exam 2: Assigned Mar 29, due Apr 6, covering input/output, while loops, lists, and strings [Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)
-* Exam 3: Apr 24, covering for loops, dictionaries, classes and objects
+* Exam 3: Apr 24, covering for loops, dictionaries, classes and objects [Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
 
