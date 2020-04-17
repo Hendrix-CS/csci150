@@ -89,7 +89,14 @@ When we write code together in class, it will be posted here!
 | | | | |[Deck Class](https://drive.google.com/open?id=1KOiJXLfjrVk9I9TVL1SnrRmyuS-B0Z-I)|
 |W Apr 15|[Data Analysis Intro](https://web.microsoftstream.com/video/b9489e26-35ea-43ee-8bfd-87e59370c6cb?list=studio)|[Code](https://drive.google.com/open?id=10ROVojofIQ63lQsz7kskJaU05i0zCX3n) | |[Data File](https://drive.google.com/open?id=1eHaQ-9P_4HqjeXHau4v_Tfr_PNF7ey-Q)|
 | | | |[In Class Video](https://web.microsoftstream.com/video/6754ed03-de2d-4a74-b0cd-2ec606e84ecd) |[Notebook Example](https://notebooks.azure.com/seme/projects/data-analysis-example-using-no) |
-|F Apr 17 | [Card Games Example](https://web.microsoftstream.com/video/2f3a5428-0def-4815-8f44-9ffbb5b702bd) | | | |
+|F Apr 17 | [Card Games Example](https://web.microsoftstream.com/video/2f3a5428-0def-4815-8f44-9ffbb5b702bd) | |[Class Video](https://web.microsoftstream.com/video/d002641c-de25-4757-b5c7-c953288ef1bf)|[Card Class](https://drive.google.com/open?id=1HEiHH9oftT6hQaHV5ltXaWUnf7WTH4m4) |
+| | | | | [Deck Class](https://drive.google.com/open?id=1HGuvxYUn9byd5ufXbb336KTZxf1uwjhx)|
+| | | | | [Hand Class](https://drive.google.com/open?id=1Rt_MT7D9hhiPdnKxzwHRE2oCdXR3hxyZ)|
+| | | | | [Player Class](https://drive.google.com/open?id=1f4Qvh2CuuUoKIqB9tt8qLwL1ut0uEWqJ)|
+| | | | | [5 Card Draw](https://drive.google.com/open?id=10Vz2Tu7PlaRdRG7qwcMZiP32yUh5sc6o)|
+| | | | | [Uno](https://drive.google.com/open?id=1ipEeGZ1dtpZuVPmNBuddtmIui-5SRVfc) |
+| | | | | [Poker Hand Evaluation](https://drive.google.com/open?id=1f47fwi6Lecg4BPCRh2QnBzb9bqVzSPJJ) |
+
 
 
 
