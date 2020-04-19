@@ -128,7 +128,7 @@ will receive at most half credit.
 |5 | [DNA Strings]({{site.baseurl}}/homework/dna-strings.html) | F Feb 28 | W Mar 4 | [DNA Sample Solution](https://notebooks.azure.com/seme/projects/dna-strings-sample-solution)  |[Quiz #5 Key](https://drive.google.com/open?id=1lz4fPKMsq2fxCH0q_L8epH0w9GQ7R0pU)  |
 |6 | [Lists and Strings](https://drive.google.com/open?id=1jttIYdUHZqh8ym_bHOUEzIcZNrKUXGCj) |F Mar 6 |W Mar 11 |[Homework #6 Key](https://drive.google.com/open?id=1oWRpGKurAqcrsywu3QjLTs38loTWltoA) |[Quiz #6 Key](https://drive.google.com/open?id=1YAkylFM2MQfjLwBdjIUep5EYy5R-2eYN) |
 |7 | [Dictionaries](https://drive.google.com/open?id=1r3BZQ0ZrjvqqLAQhFBraPABWxYuDVVvF) |F Apr 3|F Apr 10|[Homework #7 Key](https://drive.google.com/open?id=1pu-HXeyBk-UFEfaN3PcFC9ehXqvIE4W2) |[Quiz #7 Key](https://drive.google.com/open?id=1GLhHjNQPopsoORn3boX8PA4Yyg9nvONB) |
-|8 |[Classes and Objects](https://drive.google.com/open?id=1wZrB9rHS_z9g0gc07X8huNAJJrYz1g75) |F Apr 10|F Apr 17|[Quiz #8 Key](https://drive.google.com/open?id=1BAU4ljVFY6_9gbr5uYzDotOEjs5krL4d) |[Homework #8 Key](https://drive.google.com/open?id=1LsY-CIBliZ_ub3zRrIJpgACEF2YWCcEF) |
+|8 |[Classes and Objects](https://drive.google.com/open?id=1wZrB9rHS_z9g0gc07X8huNAJJrYz1g75) |F Apr 10|F Apr 17|[Homework #8 Key](https://drive.google.com/open?id=1LsY-CIBliZ_ub3zRrIJpgACEF2YWCcEF) |[Quiz #8 Key](https://drive.google.com/open?id=1BAU4ljVFY6_9gbr5uYzDotOEjs5krL4d) |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
