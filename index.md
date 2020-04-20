@@ -96,7 +96,7 @@ When we write code together in class, it will be posted here!
 | | | | | [5 Card Draw](https://drive.google.com/open?id=10Vz2Tu7PlaRdRG7qwcMZiP32yUh5sc6o)|
 | | | | | [Uno](https://drive.google.com/open?id=1ipEeGZ1dtpZuVPmNBuddtmIui-5SRVfc) |
 | | | | | [Poker Hand Evaluation](https://drive.google.com/open?id=1f47fwi6Lecg4BPCRh2QnBzb9bqVzSPJJ) |
-|M Apr 20| None | | | |
+|M Apr 20| None | |[In Class Video](https://web.microsoftstream.com/video/3da51dde-2a6a-47a3-82a6-93aceaa90b38) | |
 
 
 
