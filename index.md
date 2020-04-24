@@ -99,6 +99,8 @@ When we write code together in class, it will be posted here!
 |M Apr 20| None | |[In Class Video](https://web.microsoftstream.com/video/3da51dde-2a6a-47a3-82a6-93aceaa90b38) | |
 |W Apr 22| None -- Practice Exam #3 Review | |[Video](https://web.microsoftstream.com/video/935509df-d473-4e31-8736-87246b7f0821) |[Code](https://drive.google.com/open?id=1jwl9248KwLfhUn9Vp-_6qozfxiR8apae) |
 |F Apr 24| None -- Practice Exam #3 Review | |[Video](https://web.microsoftstream.com/video/e8ef21d1-1c0a-45b9-a9fc-837b69a9de0a?list=studio) | [Code](https://drive.google.com/open?id=1zCCKKT0LLOxyP7kJVXF4OJqqIxiY_pm0)|
+|M Apr 27| [Intro to Recursion](https://web.microsoftstream.com/video/9a6f960a-aed7-48b6-9dfa-0ac87ca0d85b)|[Code](https://drive.google.com/open?id=1l-E3YCWFG7keNXmXmuY_u1I_0PFhK-wf)| | |
+| | |[Tracing Example](https://drive.google.com/open?id=1Tezrb8bNvVwpL4uSCZkRXeaZPx6ayNaW)| | |
 
 
 
