@@ -101,6 +101,7 @@ When we write code together in class, it will be posted here!
 |F Apr 24| None -- Practice Exam #3 Review | |[Video](https://web.microsoftstream.com/video/e8ef21d1-1c0a-45b9-a9fc-837b69a9de0a?list=studio) | [Code](https://drive.google.com/open?id=1zCCKKT0LLOxyP7kJVXF4OJqqIxiY_pm0)|
 |M Apr 27| [Intro to Recursion](https://web.microsoftstream.com/video/9a6f960a-aed7-48b6-9dfa-0ac87ca0d85b)|[Code](https://drive.google.com/open?id=1l-E3YCWFG7keNXmXmuY_u1I_0PFhK-wf)|[Class Video](https://web.microsoftstream.com/video/832c009d-3968-49a9-897e-4252af61cb83) |[List Sum Tracing](https://drive.google.com/open?id=1PdTED_CeuThw36SZaqE4OpxlEjGKxeSD) |
 | | |[Factorial Tracing - Pre-video](https://drive.google.com/open?id=1Tezrb8bNvVwpL4uSCZkRXeaZPx6ayNaW)| |[Factorial Tracing in Class](https://drive.google.com/open?id=1rggxFUxOUXsqCihLgBGgk3_EsH9lvs3y) |
+|W Apr 29|None| |[Video](https://web.microsoftstream.com/video/46536561-a8f3-47e1-8818-ee46b2344f1d) | [More Recursion](https://drive.google.com/open?id=1DNT2oe7aGqhcgQjq5FKadWC6oVKZMawg)|
 
 
 
