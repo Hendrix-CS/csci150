@@ -102,6 +102,8 @@ When we write code together in class, it will be posted here!
 |M Apr 27| [Intro to Recursion](https://web.microsoftstream.com/video/9a6f960a-aed7-48b6-9dfa-0ac87ca0d85b)|[Code](https://drive.google.com/open?id=1l-E3YCWFG7keNXmXmuY_u1I_0PFhK-wf)|[Class Video](https://web.microsoftstream.com/video/832c009d-3968-49a9-897e-4252af61cb83) |[List Sum Tracing](https://drive.google.com/open?id=1PdTED_CeuThw36SZaqE4OpxlEjGKxeSD) |
 | | |[Factorial Tracing - Pre-video](https://drive.google.com/open?id=1Tezrb8bNvVwpL4uSCZkRXeaZPx6ayNaW)| |[Factorial Tracing in Class](https://drive.google.com/open?id=1rggxFUxOUXsqCihLgBGgk3_EsH9lvs3y) |
 |W Apr 29|None| |[Video](https://web.microsoftstream.com/video/46536561-a8f3-47e1-8818-ee46b2344f1d) | [More Recursion](https://drive.google.com/open?id=1DNT2oe7aGqhcgQjq5FKadWC6oVKZMawg)|
+|F May 1| Project Questions| | | |
+|M May 4| Project Questions| | | |
 
 
 
@@ -135,7 +137,7 @@ will receive at most half credit.
 |6 | [Lists and Strings](https://drive.google.com/open?id=1jttIYdUHZqh8ym_bHOUEzIcZNrKUXGCj) |F Mar 6 |W Mar 11 |[Homework #6 Key](https://drive.google.com/open?id=1oWRpGKurAqcrsywu3QjLTs38loTWltoA) |[Quiz #6 Key](https://drive.google.com/open?id=1YAkylFM2MQfjLwBdjIUep5EYy5R-2eYN) |
 |7 | [Dictionaries](https://drive.google.com/open?id=1r3BZQ0ZrjvqqLAQhFBraPABWxYuDVVvF) |F Apr 3|F Apr 10|[Homework #7 Key](https://drive.google.com/open?id=1pu-HXeyBk-UFEfaN3PcFC9ehXqvIE4W2) |[Quiz #7 Key](https://drive.google.com/open?id=1GLhHjNQPopsoORn3boX8PA4Yyg9nvONB) |
 |8 |[Classes and Objects](https://drive.google.com/open?id=1wZrB9rHS_z9g0gc07X8huNAJJrYz1g75) |F Apr 10|F Apr 17|[Homework #8 Key](https://drive.google.com/open?id=1LsY-CIBliZ_ub3zRrIJpgACEF2YWCcEF) |[Quiz #8 Key](https://drive.google.com/open?id=1BAU4ljVFY6_9gbr5uYzDotOEjs5krL4d) |
-|9| [Recursion](https://drive.google.com/open?id=1xCZjnsS_V5AvPF91McMOHWQS8YK5hy4Z) |M Apr 27|F May 1| | |
+|9| [Recursion](https://drive.google.com/open?id=1xCZjnsS_V5AvPF91McMOHWQS8YK5hy4Z) |M Apr 27|F May 1|[Homework Key](https://drive.google.com/open?id=18oAduxBjJhdgyYiznKwif7PwqygWbSgG) | |
 
 There will often be short homework assignments to be completed over the weekend, assigned on Friday and due Wednesday, sometimes with a corresponding quiz at the beginning of class on Wednesday.
 
