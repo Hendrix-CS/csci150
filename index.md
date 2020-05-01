@@ -102,7 +102,7 @@ When we write code together in class, it will be posted here!
 |M Apr 27| [Intro to Recursion](https://web.microsoftstream.com/video/9a6f960a-aed7-48b6-9dfa-0ac87ca0d85b)|[Code](https://drive.google.com/open?id=1l-E3YCWFG7keNXmXmuY_u1I_0PFhK-wf)|[Class Video](https://web.microsoftstream.com/video/832c009d-3968-49a9-897e-4252af61cb83) |[List Sum Tracing](https://drive.google.com/open?id=1PdTED_CeuThw36SZaqE4OpxlEjGKxeSD) |
 | | |[Factorial Tracing - Pre-video](https://drive.google.com/open?id=1Tezrb8bNvVwpL4uSCZkRXeaZPx6ayNaW)| |[Factorial Tracing in Class](https://drive.google.com/open?id=1rggxFUxOUXsqCihLgBGgk3_EsH9lvs3y) |
 |W Apr 29|None| |[Video](https://web.microsoftstream.com/video/46536561-a8f3-47e1-8818-ee46b2344f1d) | [More Recursion](https://drive.google.com/open?id=1DNT2oe7aGqhcgQjq5FKadWC6oVKZMawg)|
-|F May 1| Project Questions| | | |
+|F May 1| Recursion Homework Discussion| |[Class Video](https://web.microsoftstream.com/video/e6fa37d1-7315-4323-ba21-8a89a6d68e72) | |
 |M May 4| Project Questions| | | |
 
 
