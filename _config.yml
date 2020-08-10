@@ -26,7 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 number: CSCI 150
 title: Foundations of Computer Science
-semester: Spring 2020
+semester: Fall 2020
 
 navigation:
   - title: Overview
@@ -82,17 +82,21 @@ instructors:
 
 offerings:
   - name: LECTURE 01
-    loc: MC Reynolds 110
-    time: MWF 9:10am - 10:00am (A2)
-    instructor: seme
+    loc: Microsoft Teams
+    time: MWF 8:10am - 9:00am (A1)
+    instructor: ferrer
+  - name: LECTURE 02
+    loc: Microsoft Teams
+    time: MWF 11:10am - 12:00pm (A4)
+    instructor: ferrer
   - name: LAB L1
-    loc: Snoddy Computer Lab
+    loc: Microsoft Teams
     time: W 1:10pm - 4:00pm (L8)
     instructor: ferrer
   - name: LAB L2
-    loc: Snoddy Computer Lab
+    loc: Microsoft Teams
     time: R 1:10pm - 4:00pm (L9)
-    instructor: yorgey
+    instructor: ferrer
 
 resources:
   - name: Python 3

@@ -46,7 +46,8 @@ When we write code together in class, it will be posted here!
 | Date | Topic | Code |
 |:----:|------||-----||
 | F 24 Jan |Intro to Python I | [Starting Python](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
-| M 27 Jan |Intro to Python II | [Variables, Types, Functions, and Math ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
+
+<!--| M 27 Jan |Intro to Python II | [Variables, Types, Functions, and Math ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | W 29 Jan |Booleans | [Boolean Values and Expressions ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | F 31 Jan |Conditionals | [Conditionals ](https://notebooks.azure.com/seme/projects/csci-150-spring-2020-in-class)|
 | M 3 Feb |Tracing | [First Tracing Example ](https://drive.google.com/open?id=1CC10qeY5F2shkbnTkNxLdQRskKBvtsl5)|
@@ -104,7 +105,7 @@ When we write code together in class, it will be posted here!
 |W Apr 29|None| |[Video](https://web.microsoftstream.com/video/46536561-a8f3-47e1-8818-ee46b2344f1d) | [More Recursion](https://drive.google.com/open?id=1DNT2oe7aGqhcgQjq5FKadWC6oVKZMawg)|
 |F May 1| Recursion Homework Discussion| |[Class Video](https://web.microsoftstream.com/video/e6fa37d1-7315-4323-ba21-8a89a6d68e72) | |
 |M May 4| Project Questions| | | |
-
+-->
 
 
 
