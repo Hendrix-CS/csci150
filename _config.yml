@@ -102,9 +102,9 @@ resources:
   - name: Python 3
     image: assets/images/pythonlogo.png
     url: http://python.org
-  - name: Azure Notebooks
-    image: assets/images/azure.png
-    url: https://notebooks.azure.com/
+  - name: Kaggle Kernels
+    image: assets/images/kaggle.png
+    url: https://www.kaggle.com/kernels
   - name: Pycharm
     image: assets/images/pycharmlogo.png
     url: https://www.jetbrains.com/pycharm/
