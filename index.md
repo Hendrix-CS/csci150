@@ -103,7 +103,7 @@ Most class periods featuring new material will end with a quiz. All quizzes will
 Participation points will be assigned as follows:
 * Asking the instructor a question during lecture earns 1 extra credit point. (Maximum 1/day)
 * Each student is required to have a one-on-one meeting with the instructor 4 times per semester. Scheduling and following through on each meeting is worth 10 points/meeting.
-* Each student is expected to meet multiple times during each lab period with the instructor and TA. Following through on all lab meetings for a given lab is worth 5 points.
+* Each student is expected to meet multiple times during each of the 14 lab periods with the instructor and TA. Following through on all lab meetings for a given lab is worth 5 points.
 
 ## <a name="labs">Labs</a>: 220 points
 
@@ -117,31 +117,28 @@ Participation points will be assigned as follows:
 | #  | Name | Assigned | Due |
 |:--:|-----||:--------:|:---:|
 |1 | [Kepler and Newton](https://www.kaggle.com/gabrielferrer/kepler-and-newton) | Aug 26-27 | Sep 2-3 |
+
+<!--
 |2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Sep 2-3 | Sep 9-10 |
-|3 | [This Day in History](https://notebooks.azure.com/yorgey/projects/this-day-in-history-public) | Sep 9-10 | Sep 16-17 |
+|3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) | Sep 9-10 | Sep 16-17 |
 |4 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 16-17 | Sep 25 |
 |5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Sep 23-24 | Sep 30-Oct 1 |
 |6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Sep 30-Oct 1 | Oct 7-8 |
-|7 | [Caesar’s Secrets](https://notebooks.azure.com/goadrich/projects/caesar-s-secrets) | Oct 7-8 | Oct 14-15 |
+|7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets) | Oct 7-8 | Oct 14-15 |
 |8 | [Project 2 Workshop] | Oct 14-15 | Oct 23 |
-|9 | [Sentiment Analysis](https://notebooks.azure.com/goadrich/projects/sentiment-analysis) | Oct 21-22 | Oct 28-29 |
+|9 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis) | Oct 21-22 | Oct 28-29 |
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Oct 28-29 | Nov 4-5 |
 |11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 4-5 | Nov 11-12 |
 |12| [Enron's Secrets] | Nov 11-12 | Nov 18-19 |
 |13| [Project 3 Workshop] | Nov 18-19 | Dec 7 |
-
-
-<!-- |9| [Enron’s Secrets]({{site.baseurl}}/labs/needles.html) | Mar 18-19 | Apr 1-2 | -->
-<!-- |11| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Apr 8-9 | Apr 15-16 | -->
-<!-- |12| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Apr 15-16 | Apr 22-23 | -->
-<!-- |13| [On Stuckness and Debugging]({{site.baseurl}}/labs/debugging.html) | Apr 22-23 | Apr 29-30 | -->
-<!-- |14| Project workshop | Apr 29-30 | | -->
+-->
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
-On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.
+<!--On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.-->
+On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. Each partner should **submit their own solution** to the assignment.
 
-**Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
+**Lab attendance is required**. For this semester, labs will meet virtually online in Microsoft Teams. <!--Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.-->
 
 ## <a name="projects">Projects</a>: 350 points
 
@@ -164,9 +161,9 @@ You will have three projects in this course. These projects will cover concepts 
 There will be three in-class exams, the first worth 40 points and the second and
 third worth 70 points. They will consist of short answer questions along with writing and debugging code.
 
-* Exam 1: Sep 11, covering functions, math, numerical data, conditionals, and binary encoding  [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
-* Exam 2: Oct 14, covering input/output, while loops, lists, and strings [Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)
-* Exam 3: Nov 18, covering for loops, dictionaries, classes and objects [Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)
+* Exam 1: Sep 11, covering functions, math, numerical data, conditionals, and binary encoding  <!--[Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)>
+* Exam 2: Oct 14, covering input/output, while loops, lists, and strings <!--[Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)>
+* Exam 3: Nov 18, covering for loops, dictionaries, classes and objects <!--[Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)>
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
 
