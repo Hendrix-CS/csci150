@@ -97,7 +97,8 @@ obligation, *etc.*). After you have used up your late days, late assignments
 will receive at most half credit.
 
 ## <a name="hwqz">Quizzes</a>: 140 points
-Most class periods featuring new material will end with a quiz. All quizzes will be adminstered via <a href="https://moodle.hendrix.edu/">Moodle</a>. Each quiz is worth 5 points, and must be completed by 5 pm of that class day.
+Most class periods featuring new material will end with a quiz. Some quizzes will be adminstered via <a href="https://moodle.hendrix.edu/">Moodle</a>, 
+while others will be coding assignments using <a href="https://codingbat.com/python">CodingBat</a>. Each quiz is worth 5 points, and must be completed by 5 pm of that class day.
 
 ## <a name="participation">Participation</a>: 110 points
 Participation points will be assigned as follows:
@@ -161,9 +162,13 @@ You will have three projects in this course. These projects will cover concepts 
 There will be three in-class exams, the first worth 40 points and the second and
 third worth 70 points. They will consist of short answer questions along with writing and debugging code.
 
-* Exam 1: Sep 11, covering functions, math, numerical data, conditionals, and binary encoding  <!--[Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)>
-* Exam 2: Oct 14, covering input/output, while loops, lists, and strings <!--[Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)>
-* Exam 3: Nov 18, covering for loops, dictionaries, classes and objects <!--[Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)>
+* Exam 1: Sep 11, covering functions, math, numerical data, conditionals, and binary encoding  
+* Exam 2: Oct 14, covering input/output, while loops, lists, and strings 
+* Exam 3: Nov 18, covering for loops, dictionaries, classes and objects 
+
+<!--[Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)>
+<!--[Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)>
+<!--[Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)>
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
 
