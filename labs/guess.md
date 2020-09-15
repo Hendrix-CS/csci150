@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 5
+num: 4
 worktitle: Guess My Number
 ---
 
@@ -21,7 +21,7 @@ that require user input. [PyCharm](https://www.jetbrains.com/pycharm/) is an
 that lets us write these types of programs in Python.
 
 Open PyCharm and create a new project (by going to the <kbd>File</kbd> menu
-and selecting <kbd>New Project</kbd>).  Name it something like `Lab 05 -
+and selecting <kbd>New Project</kbd>).  Name it something like `Lab 04 -
 Guess My Number`.  Accept the other defaults and click <kbd>Create</kbd>.
 
 At this point you will have a new, empty project.  Each project can
@@ -32,7 +32,7 @@ Python File</kbd>.  Then you can type in a name for the file.  Note that
 you should not include `.py` on the end of the name;
 PyCharm will add `.py` for you.
 
-## Step 1
+## Step 1 (6 points)
 
 For the first step, you will implement a basic version of the game.
 Here is what a sample run of the program might look like:
@@ -58,8 +58,8 @@ Start by creating a file called `guess_number.py` and **paste
 the following code into it**:
 
     ######################################
-    # Copyright (c) 2019 YOUR NAME(s) HERE
-    # CSCI 150, Spring 2019
+    # Copyright (c) 2020 YOUR NAME(s) HERE
+    # CSCI 150, Fall 2020
     # Lab 5: Guess My Number
     ######################################
 
@@ -85,7 +85,7 @@ number.
 * As in the Collatz example in class, you will need to use a
 separate counter variable to keep track of the number of guesses.
 
-## Step 2
+## Step 2 (3 points)
 
 Your game works now, but it has a problem:
 
@@ -165,7 +165,7 @@ complete this step:
 If you like, you may also modify `input_guess()` so that it
 ensures the user's guess is between 1 and 100, but this is not required.
 
-## Step 3
+## Step 3 (3 points)
 
 Since this game is so addictive, it's inconvenient to re-run it every
 time we want to play.  In this step, you will modify the game so that
@@ -206,7 +206,7 @@ your program might look like once you get this to work:
     You got it!  It took you 7 guesses.
     Would you like to play again? (yes/no) no
 
-## Step 4
+## Step 4 (5 points)
 
 Finally, create a new file called `computer_guess.py`.  You
 should implement the same game, but with the roles reversed!  That is,
@@ -245,6 +245,10 @@ A few hints:
     the user wants to continue playing.
   * Feel free to just put everything inside a `main()`
     function; you need not worry about writing any functions for this step.
+	
+## Step 5: 3 points
+
+Modify your strategy from Step 4 to ensure that the computer *never* needs more than 7 guesses to win.
 
 ## What to turn in
 
@@ -255,9 +259,3 @@ A few hints:
 [Python style guide]({{site.baseurl}}/python_style_guide.html)
 and to run the style checker before turning in your programs!
 
-## Grading
-
-* To earn a C, complete step 1.
-* To earn a B, complete steps 1, 2, and 3.
-* To earn an A, complete steps 1-4.
-* To earn a 100, make sure the computer never needs more than 7 guesses to win!
