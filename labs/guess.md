@@ -60,7 +60,7 @@ the following code into it**:
     ######################################
     # Copyright (c) 2020 YOUR NAME(s) HERE
     # CSCI 150, Fall 2020
-    # Lab 5: Guess My Number
+    # Lab 4: Guess My Number
     ######################################
 
     import random
