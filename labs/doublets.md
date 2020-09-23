@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 6
+num: 5
 worktitle: Mutation is the Word
 ---
 
@@ -49,7 +49,7 @@ David B. Searls entitled
 Our task for this lab is to create a Python program that lets a user play the Doublets game
 and enforces all the rules given above by Lewis Carroll.
 
-### Step 1 - Develop Pseudocode
+### Step 1 - Develop Pseudocode (3 points)
 
 Develop an algorithmic solution using
 *pseudocode*.  This should correspond to the structure of a
@@ -96,7 +96,7 @@ will always enter exactly what is expected.
     Solution path found in 4 steps.
     CAT -> CAB -> COB -> COG -> DOG
 
-### Step 2 - Implement Incrementally
+### Step 2 - Implement Incrementally (3 points)
 
 Now take your pseduocode description and begin to implement your
 program in Python.  Your program should be
@@ -110,17 +110,19 @@ add the next part, and so on.
 Be sure you can successfully play a game of Doublets with your
 program, as shown in the example above, before moving on to Step 3.
 
-### Step 3 - Error Handling
+### Step 3 - Error Handling (5 points)
 
 Of course the user might not always enter input in the expected form.
 A second run of the program is shown below, where the user made many
 mistakes.
 
-    What is the starting word? log
+    What is the starting word? lig
+	lig is not a word. Please try again.
+	What is the starting word? log
     What is the ending word? worm
     The lengths are not equal. Please try again.
-    What is the ending word? sfu
-    sfu is not a word. Please try again.
+    What is the ending word? sku
+    sku is not a word. Please try again.
     What is the ending word? bug
     Start   = LOG
     Current = LOG
@@ -143,7 +145,6 @@ mistakes.
     Which character do you want to change? (the first character is 1) 2
     What is your new character? uu
     uu is more than one character. Please try again.
-    Which character do you want to change? (the first character is 1) 2
     What is your new character? u
     Solution path found in 2 steps.
     LOG -> BOG -> BUG
@@ -169,8 +170,19 @@ return `True` if the word is found in the file and `False`
 otherwise.  You can call the function by writing something like
 
     dictionary.valid_word(some_word, 'english3.txt')
+	
+Note that handling erroneous input requires using a loop. The following example shows
+a loop structure that you may find helpful:
 
-### Step 4 - Function Decomposition
+	valid = False
+	while not valid:
+		word = input("Enter a word that is at least four letters long: ")
+		if len(word) >= 4:
+			valid = True
+		else:
+			print(f"{word} is less than four letters long. Please try again.")
+
+### Step 4 - Function Decomposition (5 points)
 
 Once your program is working, go through the process of abstracting
 out parts of the program into functions, as illustrated in class.  By
@@ -190,7 +202,7 @@ functions**; that is, your program should look something like this:
 
     main()
 
-### Step 5 - Play
+### Step 5 - Play (2 points)
 
 Once your program is working, try out some of the transformations below:
 
@@ -201,7 +213,7 @@ Once your program is working, try out some of the transformations below:
 
 What is the minimum number of steps you can achieve for each?
 
-### Future Thoughts
+### Future Thoughts (2 points)
 
 Your `doublets.py` program lets the user chose what character to change at each step,
 and then verifies that each new word is a valid word.  Can you think of a way to always find the
@@ -226,13 +238,3 @@ You must hand in:
 and `english3.txt` even though you did not create them---it makes
 the grading process much easier!)
 
-## Grading
-
-* To earn a D, turn in an Evaluation Document.
-* To earn a C, do the above and implement a program that can handle
-  the input in the first sample run.
-* To earn a B, implement a program that can handle the input in the
-  first sample run, and is entirely well-decomposed into functions.
-* To earn a A, do the above and implement a program that can handle
-  the input in the second sample run.
-* To earn a 100, do the above and follow the style guide exactly.
