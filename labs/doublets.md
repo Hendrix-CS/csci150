@@ -190,9 +190,6 @@ out parts of the program into functions, as illustrated in class.  By
 the end, your program should be structured **entirely using
 functions**; that is, your program should look something like this:
 
-    # Input: ...
-    # Output: ...
-    # Description
     def fun1(x,y,z):
       ...
 
