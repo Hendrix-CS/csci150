@@ -122,9 +122,9 @@ Participation points will be assigned as follows:
 |3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) | Sep 9-10 | Sep 16-17 |
 |4 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 16-17 | Sep 25 |
 |5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Sep 23-24 | Sep 30-Oct 1 |
+|6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Sep 30-Oct 1 | Oct 7-8 |
 
 <!--
-|6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Sep 30-Oct 1 | Oct 7-8 |
 |7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets) | Oct 7-8 | Oct 14-15 |
 |8 | [Project 2 Workshop] | Oct 14-15 | Oct 23 |
 |9 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis) | Oct 21-22 | Oct 28-29 |
