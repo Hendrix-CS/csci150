@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 7
+num: 6
 worktitle: ToDo Manager
 ---
 
@@ -117,7 +117,7 @@ the lab:
     4) Quit
     Your choice? 4
 
-## Step 1: Bits and Pieces
+## Step 1: Bits and Pieces (4 points total)
 
 Create a new Python file called `todo_manager.py`, and put
 your name, date, copyright notice, *etc.* at the top. Also,
@@ -130,7 +130,7 @@ involving lists.
 
 Now follow the instructions below to write some functions you will need.
 
-#### 1.1 Print Numbered List
+#### 1.1 Print Numbered List (2 points)
 
 Write a function called `print_numbered_list(items: List[str])`.
 
@@ -152,7 +152,7 @@ if you type
 at the prompt, you should see the output shown above.
 
 
-#### 1.2 Get choice
+#### 1.2 Get choice (2 points)
 
 Write a function called `get_choice(prompt: str, choices: List[str]) -> int`.
 
@@ -197,7 +197,7 @@ test it**.  For example, you might see something like this:
     OK? 1
     1
 
-## Step 2: Loading and Saving
+## Step 2: Loading and Saving (2 points)
 
 A todo list manager isn't much good without being able to load and
 save lists of todos!  You wouldn't want to have to type in all your
@@ -253,25 +253,25 @@ exist, it will be created by `save_file`.)  You should be able to tell
 if the loading and saving is working since after running `main()` your
 todo file should have one more line at the end.
 
-## Step 3: Menu
+## Step 3: Menu (2 points)
 
 Now modify your `main()` function so it lets the user repeatedly
 choose options from a menu.
 
 First, create a list of strings
 representing the different menu choices that will be available to the
-user: there should be an option to add a todo, remove a todo, modify a
+user: there should be an option to add a todo, remove a todo, replace a
 todo, search for a todo, or quit.
 
 Now, replace steps 3 and 4 from the list of steps above with a loop
 that keeps printing the list of todos and then prompting the user
 for their choice from the menu (using the `get_choice` function
 you wrote in Step 1 and the list of menu choices) until they
-choose to quit.  At this point nothing will actually happen when
-they choose things from the menu; you will fix that in the next
-step.
+choose to quit.  At this point the only active menu choice is the
+option to quit. Nothing will actually happen when they choose 
+anything else from the menu; you will fix that in the next step.
 
-## Step 4: Operations
+## Step 4: Operations (12 points total)
 
 Now it's time to actually implement the operations!  Below are
 descriptions of what the different menu choices should do.  You can
@@ -281,12 +281,12 @@ inspiration.
 **Be sure to test that each operation works before moving on to the
 next!**
 
-#### 4.1 add
+#### 4.1 add (3 points)
 
 If the user chooses to add a new todo item, you should prompt them for
 a new todo and add it to the end of the list.
 
-#### 4.2 remove
+#### 4.2 remove (3 points)
 
 If the user chooses to remove a todo item, you should
 use `get_choice` to ask for the index of the item they
@@ -298,7 +298,7 @@ and the user's choice is stored in a variable
 called `choice`, you could
 write `todos.pop(choice)`.
 
-#### 4.3 replace
+#### 4.3 replace (3 points)
 
 This should work similarly to remove: ask the user which item they
 would like to replace; if they make a valid choice, prompt them for a
@@ -306,7 +306,7 @@ new todo item, and replace the item at the index they chose.  (*Hint*:
 replacing an item should be only one line of code!  Look in your notes
 from class if you don't remember how to do it.)
 
-#### 4.4 search
+#### 4.4 search (3 points)
 
 You should first write a function
 <pre>
