@@ -13,14 +13,15 @@ program for users to play a [word game](http://en.wikipedia.org/wiki/Word_game)
 of your choice.
 
 In particular, your project should be complex enough that it includes
-the following concepts we have discussed in class:
+several of the following concepts we have discussed in class:
 
 *   Booleans
 *   Functions
 *   Conditional Statements
-*   While Loops
+*   Loops
 *   Strings
 *   Lists
+*   File input
 
 (It is not an absolute requirement for your program to contain every
 single one of the above elements; but if it does not need most of them,
@@ -36,7 +37,6 @@ Some examples are
 *   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows) *using words*
 *   [Ghost](http://en.wikipedia.org/wiki/Ghost_%28game%29)
 *   [Boggle](http://en.wikipedia.org/wiki/Boggle)
-*   [Scrabble](https://en.wikipedia.org/wiki/Scrabble)
 *   [Prolix](http://boardgamegeek.com/boardgame/39635/prolix)
 *   a program to let a user solve a
     [Cryptogram](http://en.wikipedia.org/wiki/Cryptogram)
