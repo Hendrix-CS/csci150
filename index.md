@@ -123,10 +123,10 @@ Participation points will be assigned as follows:
 |4 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 16-17 | Sep 25 |
 |5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Sep 23-24 | Sep 30-Oct 1 |
 |6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Sep 30-Oct 1 | Oct 7-8 |
-
-<!--
 |7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets) | Oct 7-8 | Oct 14-15 |
 |8 | [Project 2 Workshop] | Oct 14-15 | Oct 23 |
+
+<!--
 |9 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis) | Oct 21-22 | Oct 28-29 |
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Oct 28-29 | Nov 4-5 |
 |11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 4-5 | Nov 11-12 |
@@ -163,12 +163,14 @@ There will be three in-class exams, the first worth 40 points and the second and
 third worth 70 points. They will consist of short answer questions along with writing and debugging code.
 
 * Exam 1: Sep 11, covering functions, math, numerical data, conditionals, and binary encoding  
-* Exam 2: Oct 14, covering input/output, while loops, lists, and strings 
-* Exam 3: Nov 18, covering for loops, dictionaries, classes and objects 
+* Exam 2: Oct 14, covering input/output, while loops, for loops, lists, and strings 
+* Exam 3: Nov 18, covering dictionaries, classes and objects 
 
-<!--[Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)>
-<!--[Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)>
-<!--[Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)>
+<!--
+[Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
+[Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)
+[Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)
+-->
 
 There is no final exam; you will complete a final project instead, as described above under Projects.
 
