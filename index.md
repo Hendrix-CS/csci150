@@ -126,9 +126,9 @@ Participation points will be assigned as follows:
 |7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets) | Oct 7-8 | Oct 14-15 |
 |8 | [Project 2 Workshop] | Oct 14-15 | Oct 23 |
 |9 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis) | Oct 21-22 | Oct 28-29 |
+|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Oct 28-29 | Nov 4-5 |
 
 <!--
-|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Oct 28-29 | Nov 4-5 |
 |11| [Graphics and Animation]({{site.baseurl}}/labs/graphics.html) | Nov 4-5 | Nov 11-12 |
 |12| [Enron's Secrets] | Nov 11-12 | Nov 18-19 |
 |13| [Project 3 Workshop] | Nov 18-19 | Dec 7 |

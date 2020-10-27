@@ -47,12 +47,12 @@ We now have exactly 2 gallons of water jug in A.  (Try it!).  Phew,
 we're still alive!  Wouldn't it be nice to have a computer program
 to help us solve this?
 
-## Step 1: The `WaterJug` class
+## Step 1: The `WaterJug` class (8 points total)
 
 Open a file named `waterjug.py`. In this file, you will define
 the `WaterJug` class.
 
-### Writing the WaterJug class
+### Writing the WaterJug class (4 points)
 
 Each `WaterJug` object will need to have two variables
 that we can think of as the state of that `WaterJug`:
@@ -81,7 +81,7 @@ than `capacity`." %}
 
 {% include tip.html content="Don't forget where to use the `self` keyword." %}
 
-### Testing the WaterJug class
+### Testing the WaterJug class (4 points)
 
 At the end of your file, place the following lines of code:
 
@@ -90,10 +90,17 @@ At the end of your file, place the following lines of code:
 
 Above that, write a function named `test()` that tests
 your class and ensures that it works.  Make sure your test code uses all
-of the methods of the class.  It should employ `if`
-statements to check whether each test passes. If a test fails,
-it should print an appropriate message. If all tests pass, it should
-print a success message.
+of the methods of the class.  
+
+For each test, write an *assertion* using Python's `assert` statement. 
+An assertion is a claim that a given statement is true. If the statement 
+is not true, the program ends with an error message. Here are some examples:
+
+	jugA = WaterJug(4, 0)
+	assert jugA.capacity == 4
+	assert jugA.contents == 0
+
+If all tests pass, it should print a success message.
 
 One approach to creating a good test function is to write code that
 simulates the six actions above with Jugs A and B that leaves 2 gallons
@@ -110,7 +117,7 @@ any class:
     def test_repr(obj):
         return str(obj) == str(eval(str(obj)))
 
-## Step 2: The Puzzle
+## Step 2: The Puzzle (6 points)
 
 In a new file, `step2.py`, write a program
 that allows the user to set up and then solve a
@@ -167,7 +174,7 @@ You should break your code up into functions appropriately." %}
 {% include note.html content="It is not necessary to validate user input. For this
 assignment, you may assume that all user input is valid." %}
 
-## Step 3: Generalizing
+## Step 3: Generalizing (6 points)
 
 In a new file, `step3.py`, generalize your program from Step 2 so
 that it works with any number
