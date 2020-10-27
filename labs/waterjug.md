@@ -65,13 +65,13 @@ In object-oriented programming, these are called methods.
 
 Methods:
 
-  * `__init__(capacity: int, contents: int)` constructor method
-  * `__repr__( )` returns a string representing the value of the `WaterJug` object
-  * `fill()` to fill up the `WaterJug` completely
-  * `empty()` to completely empty the `WaterJug`
-  * `pour(other: 'WaterJug')` to pour as much of the contents of this `WaterJug` into the other as is allowed
+  * `__init__(self, capacity: int, contents: int)` constructor method
+  * `__repr__(self)` returns a string representing the value of the `WaterJug` object
+  * `fill(self)` to fill up the `WaterJug` completely
+  * `empty(self)` to completely empty the `WaterJug`
+  * `pour(self, other: 'WaterJug')` to pour as much of the contents of this `WaterJug` into the other as is allowed
 
-Implement this object in Python.
+Implement this class in Python.
 
 {% include warning.html content="Be careful with your methods to make
 sure a malicious programmer (or buggy code) cannot violate the
@@ -94,6 +94,10 @@ of the methods of the class.  It should employ `if`
 statements to check whether each test passes. If a test fails,
 it should print an appropriate message. If all tests pass, it should
 print a success message.
+
+One approach to creating a good test function is to write code that
+simulates the six actions above with Jugs A and B that leaves 2 gallons
+of water in Jug A.
 
 The `__repr__` method needs to return a string that, if
 typed into the Python shell, would reconstruct the original object.
@@ -123,11 +127,39 @@ Your program should:
 * Create the necessary empty `WaterJug` objects
 * While the goal has not been met:
 	 * Give the user a list of the options
+	     * fill A, fill B
+		 * empty A, empty B
+		 * pour A B, pour B A
 	 * Ask the user for their option selection
 	 * Perform the selected option
 * When the goal is met, print the solution path found by the user
 to reach the goal. You will need to maintain this solution path
 using a list or a string.
+
+Here is an example run of the program for you to emulate:
+
+	Enter the capacity of Jug A: 4
+	Enter the capacity of Jug B: 3
+	Enter the goal quantity of water for Jug A: 2
+	A: WaterJug(4,0) B: WaterJug(3,0)
+	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
+	A: WaterJug(4,4) B: WaterJug(3,0)
+	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
+	A: WaterJug(4,1) B: WaterJug(3,3)
+	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): empty B
+	A: WaterJug(4,1) B: WaterJug(3,0)
+	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
+	A: WaterJug(4,0) B: WaterJug(3,1)
+	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
+	A: WaterJug(4,4) B: WaterJug(3,1)
+	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
+	Goal achieved!
+	fill A
+	pour A B
+	empty B
+	pour A B
+	fill A
+	pour A B
 
 {% include important.html content="Do not just put everything in `main`.
 You should break your code up into functions appropriately." %}
@@ -145,6 +177,43 @@ program should:
 * Ask the user how many `WaterJug`s they want
 * Prompt them for the capacity of each
 * ...and so on
+
+If any of the jugs reaches the goal amount, the program should congratulate
+the user, print the solution path, and end.
+
+Here is an example run for your program to emulate:
+
+	How many jugs? 3
+	Enter capacity for jug 0: 4
+	Enter capacity for jug 1: 4
+	Enter capacity for jug 2: 5
+	What is the goal amount (for any jug)? 2
+	Jug 0: WaterJug(4,0)
+	Jug 1: WaterJug(4,0)
+	Jug 2: WaterJug(5,0)
+	Enter command (fill, empty, pour) followed by jug number(s): fill 2
+	Jug 0: WaterJug(4,0)
+	Jug 1: WaterJug(4,0)
+	Jug 2: WaterJug(5,5)
+	Enter command (fill, empty, pour) followed by jug number(s): pour 2 0
+	Jug 0: WaterJug(4,4)
+	Jug 1: WaterJug(4,0)
+	Jug 2: WaterJug(5,1)
+	Enter command (fill, empty, pour) followed by jug number(s): pour 2 1
+	Jug 0: WaterJug(4,4)
+	Jug 1: WaterJug(4,1)
+	Jug 2: WaterJug(5,0)
+	Enter command (fill, empty, pour) followed by jug number(s): fill 2
+	Jug 0: WaterJug(4,4)
+	Jug 1: WaterJug(4,1)
+	Jug 2: WaterJug(5,5)
+	Enter command (fill, empty, pour) followed by jug number(s): pour 2 1
+	Congratulations! Goal achieved.
+	fill 2
+	pour 2 0
+	pour 2 1
+	fill 2
+	pour 2 1
 
 You never know when a Python class could save your life.  And
 remember, "Think fast, Look alive, Die hard."

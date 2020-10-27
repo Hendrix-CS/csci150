@@ -110,52 +110,27 @@ add the next part, and so on.
 Be sure you can successfully play a game of Doublets with your
 program, as shown in the example above, before moving on to Step 3.
 
-### Step 3 - Error Handling (5 points)
+### Step 3 - Error Handling and Function Decomposition (10 points total)
 
 Of course the user might not always enter input in the expected form.
-A second run of the program is shown below, where the user made many
-mistakes.
+In this step, you will incrementally modify your program to ensure that 
+the user only enters valid input. Building a program with robust error
+handling is much easier if it is decomposed into functions, so we will
+introduce error handling and functions into our program together.
 
-    What is the starting word? lig
-	lig is not a word. Please try again.
-	What is the starting word? log
-    What is the ending word? worm
-    The lengths are not equal. Please try again.
-    What is the ending word? sku
-    sku is not a word. Please try again.
-    What is the ending word? bug
-    Start   = LOG
-    Current = LOG
-    End     = BUG
-    Which character do you want to change? (the first character is 1) 0
-    0 is out of range. Please try again.
-    Which character do you want to change? (the first character is 1) 4
-    4 is out of range. Please try again.
-    Which character do you want to change? (the first character is 1) 1
-    What is your new character? 4
-    4og is not a valid word
-    Current = LOG
-    End     = BUG
-    Which character do you want to change? (the first character is 1) 1
-    What is your new character? b
-    Current = BOG
-    End     = BUG
-    Which character do you want to change? (the first character is 1) x
-    x is not a number. Please try again.
-    Which character do you want to change? (the first character is 1) 2
-    What is your new character? uu
-    uu is more than one character. Please try again.
-    What is your new character? u
-    Solution path found in 2 steps.
-    LOG -> BOG -> BUG
+#### Step 3.1 - Starting function decomposition (1 point)
+First, place all of your code from Step 2 into a function named `main()`. 
+It should look something like this:
 
-Modify your program so that it is able to gracefully handle erroneous
-input, as illustrated above.  The goal is to have a program
-that **never** crashes, no matter what the user enters.
+    def main():
+      ...
 
+    main()
+	
+#### Step 3.2 - Starting word validation (2 points)
+Next, write a function that ensures that the user inputs a valid word. 
 For English word validation, download the text file [`english3.txt`](../data/english3.txt)
-and the python module
-[`dictionary.py`](../code/dictionary.py) files, and
+and the python module [`dictionary.py`](../code/dictionary.py) files, and
 make sure they are in the same folder where you will put your lab. (To download these files,
 you will need to right-click on them. A regular click will display their contents in your
 browser.) You **do not need to copy and paste** anything!  At the top of your
@@ -172,7 +147,7 @@ otherwise.  You can call the function by writing something like
 
     dictionary.valid_word(some_word, 'english3.txt')
 	
-Note that handling erroneous input requires using a loop. The following example shows
+Handling erroneous input requires using a loop. The following example shows
 a loop structure that you may find helpful:
 
 	valid = False
@@ -182,25 +157,94 @@ a loop structure that you may find helpful:
 			valid = True
 		else:
 			print(f"{word} is less than four letters long. Please try again.")
+			
+Use your function to ensure that the starting word is valid. Here is an example
+of how the program would behave with the error checking in place:
 
-### Step 4 - Function Decomposition (5 points)
+    What is the starting word? lig
+	lig is not a word. Please try again.
+	What is the starting word? log
+    What is the ending word?
 
-Once your program is working, go through the process of abstracting
-out parts of the program into functions, as illustrated in class.  By
-the end, your program should be structured **entirely using
-functions**; that is, your program should look something like this:
+#### Step 3.3 - Ending word validation (1 point)
+Write a function to validate the ending word. This will be a slightly more complex 
+variation of the function you wrote in Step 3.2, as it must ensure not only that 
+the word is valid, it must also ensure that the word is of the same length as the
+starting word. 
 
-    def fun1(x,y,z):
-      ...
+Use your function to ensure that the ending word is valid and of the correct length. Here is 
+a continuation of our earlier example to show how the program should behave:
 
-    ... More functions here with appropriate comments ...
+	What is the starting word? log
+    What is the ending word? worm
+    The lengths are not equal. Please try again.
+    What is the ending word? sku
+    sku is not a word. Please try again.
+    What is the ending word? bug
+    Start   = LOG
+    Current = LOG
+    End     = BUG
+    Which character do you want to change? (the first character is 1)
+	
+#### Step 3.4 - Character index validation (2 points)
+Write a function to validate the user's input of a character index to change. 
+It should return an integer between 1 and the length of the current word. Any 
+non-integer or any integer outside that range should result in a message to 
+the user requesting suitable input. 
 
-    def main():
-      ...
+Use your function to ensure that the character index is valid. Here is 
+a continuation of our earlier example to show how the program should behave:
+	
+	Start   = LOG
+    Current = LOG
+    End     = BUG
+    Which character do you want to change? (the first character is 1) 0
+    0 is out of range. Please try again.
+    Which character do you want to change? (the first character is 1) 4
+    4 is out of range. Please try again.
+    Which character do you want to change? (the first character is 1) x
+    x is not a number. Please try again.
+    Which character do you want to change? (the first character is 1) 1
+    What is your new character?
+	
+#### Step 3.5 - Character validation (2 points)
+Write a function to ensure that the user inputs a single character. Here
+is a continuation of our earlier example to show how the program should
+behave once you are using your function:
 
-    main()
+    Which character do you want to change? (the first character is 1) 1
+    What is your new character? bb
+	bb is more than one character. Please try again.
+    What is your new character? b
+	Current = BOG
+    End     = BUG
+    Which character do you want to change? (the first character is 1)
+	
+#### Step 3.6 - Word validation (2 points)
+Unlike the other error-handling steps, this step is straightforward to
+implement without writing an additional function. Before committing
+to the new word with the new character, make sure the new word is a 
+valid word, again using the `dictionary` module. If it is a valid word,
+update your current word, the number of steps, and the solution path.
+If not, print an error message. In either case, the program will resume
+at the top of the `while` loop.
 
-### Step 5 - Play (2 points)
+Here is a continuation of our earlier example with this error-checking
+in place:
+
+	Current = BOG
+    End     = BUG
+    Which character do you want to change? (the first character is 1) 2
+	What is your new character? 4
+	B4G is not a valid word
+	Current = BOG
+	End     = BUG
+	What character do you want to change? (the first character is 1) 2
+	What is your new character? u
+	solution path found in 2 steps.
+	LOG -> BOG -> BUG
+
+### Step 4 - Play (2 points)
 
 Once your program is working, try out some of the transformations below:
 
