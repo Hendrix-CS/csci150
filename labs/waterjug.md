@@ -22,7 +22,7 @@ things will explode and people will die.
 The WaterJug puzzle can be explained as follows:
 
 You have two
-jugs, A and B, and an infinite supply of water. There are three
+jugs, A and B, and an inexhaustible supply of water. There are three
 actions you can perform: (1) you can fill a jug to capacity, (2) you
 can completely empty a jug, and (3) you can pour from one jug to the
 other.  Pouring from one jug to the other stops when the first jug
