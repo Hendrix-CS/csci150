@@ -134,6 +134,18 @@ on the screen. At a minimum, the face should have eyes, ears, a mouth
 and a nose. You can find more shapes on the 
 [Pygame Documentation](https://www.pygame.org/docs/ref/draw.html) page.
 
+Here is a version of `draw_all` that represents the very start of a face. 
+This is intended as inspiration to get you started; please feel free to 
+ignore, modify, or replace any and all aspects of this example.
+
+    def draw_all(surface):
+        surface.fill('white')
+        pygame.draw.circle(surface, 'red', (320, 240), 50)
+        pygame.draw.circle(surface, 'yellow', (295, 215), 18)
+        pygame.draw.circle(surface, 'yellow', (345, 215), 18)
+        pygame.draw.line(surface, 'orange', (300, 270), (340, 270))
+        pygame.display.update()
+
 ## Step 2: Classes (5 points total)
 
 ### Step 2.1: Using the Mouse
@@ -144,30 +156,31 @@ Create a file called `points.py` and enter the code below:
     from pygame.locals import *
 
 
-    def draw_all(surface, points):
+    def draw_all(surface, shapes):
         surface.fill('black')
-        for point in points:
-            pygame.draw.circle(surface, 'white', point, 5)
+        for shape in shapes:
+            pygame.draw.circle(surface, 'white', shape, 5)
         pygame.display.update()
 
 
     def main():
         pygame.init()
         surface = pygame.display.set_mode((640, 480))
-        points = []
+        shapes = []
         running = True
         while running:
-            draw_all(surface, points)
+            draw_all(surface, shapes)
             for event in pygame.event.get():
                 if event.type == QUIT:
                     running = False
                 elif event.type == MOUSEBUTTONDOWN:
-                    points.append((event.pos[0], event.pos[1]))
+                    shapes.append((event.pos[0], event.pos[1]))
         pygame.quit()
 
 
     if __name__ == '__main__':
         main()
+
         
 Run the program. Click the mouse at various locations on the window.
 
@@ -181,7 +194,7 @@ The following elements are distinctive in this program:
 
 We will represent a Face with a class in Python. The face will need to remember
 the x,y coordinates for the center of the face. We will also remember the base color
-used for the face. In the example above, this was red. Notice how the draw function
+used for the face. In the example in Section 1.3, this was red. Notice how the `draw` function
 abstracts away the initial face to be centered around any x,y coordinates. This will
 let us move the face around the screen.  Of course, you should use
 your own face-drawing code in place of the example code shown below.
@@ -200,15 +213,15 @@ your own face-drawing code in place of the example code shown below.
     
 Create a new Python file called `face2.py` and enter your version of the Face class. 
 
-Adapt the code from Step 2.1 to draw a `Face` at each location where the mouse is clicked,
-instead of drawing a simple circle there. You will need to have a `faces` list that stores 
-each `Face` that is created by each mouse click.
+Copy the code from Step 2.1 into `face2.py`. Where that code appends a point to the `shapes`
+list, append a `Face` object instead. Test it out, and make sure it places a `Face` wherever
+you click.
 
 ### Step 2.3: Random Colors (1 point)
 
 Modify your code so that each `Face` placed is given a random color. To assign a random
 `Color`, create a list of all of the eligible colors. Then use `random.choice()` to 
-select a color from that list every time a `Face` is placed.
+select a color from that list every time a new `Face` object is created.
 
 
 ## Step 3: Movement (4 points total)
