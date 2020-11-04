@@ -143,14 +143,11 @@ Create a file called `points.py` and enter the code below:
 	import pygame
 	from pygame.locals import *
 
-	COLORS = {"black": pygame.Color(0, 0, 0),
-			  "white": pygame.Color(255, 255, 255)}
-
 
 	def draw_all(surface, points):
-		surface.fill(COLORS['black'])
+		surface.fill('black')
 		for point in points:
-			pygame.draw.circle(surface, COLORS['white'], point, 5)
+			pygame.draw.circle(surface, 'white', point, 5)
 		pygame.display.update()
 
 
@@ -197,9 +194,9 @@ your own face-drawing code in place of the example code shown below.
 
 		def draw(self, surface):
 			pygame.draw.circle(surface, self.color, (self.x, self.y), 100)
-			pygame.draw.circle(surface, COLORS['yellow'], (self.x - 25, self.y - 25), 35)
-			pygame.draw.circle(surface, COLORS['yellow'], (self.x + 25, self.y - 25), 35)
-			pygame.draw.line(surface, COLORS['orange'], (self.x - 20, self.y + 30), (self.x + 20, self.y + 30))
+			pygame.draw.circle(surface, 'yellow', (self.x - 25, self.y - 25), 35)
+			pygame.draw.circle(surface, 'yellow', (self.x + 25, self.y - 25), 35)
+			pygame.draw.line(surface, 'orange', (self.x - 20, self.y + 30), (self.x + 20, self.y + 30))
 	
 Create a new Python file called `face2.py` and enter your version of the Face class. 
 
@@ -242,7 +239,7 @@ individual `draw` method. Your `draw_all` function should
 now look like this:
 
 	def draw_all(surface, faces):
-		surface.fill(COLORS['white'])
+		surface.fill('white')
 		for face in faces:
 			face.update()
 			face.draw(surface)
