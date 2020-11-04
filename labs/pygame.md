@@ -186,18 +186,21 @@ Run the program. Click the mouse at various locations on the window.
 
 The following elements are distinctive in this program:
 * It checks for the `MOUSEBUTTONDOWN` event type.
-* When it sees that event, it adds an (x, y) coordinate to the `points` list.
-* It draws a white circle at each (x, y) coordinate indicated by a mouse click.
+* When it sees that event, it adds an `(x,y)` coordinate to the `points` list.
+* It draws a white circle at each `(x,y)` coordinate indicated by a mouse click.
 
 
 ### Step 2.2: A Population of Faces (4 points)
 
-We will represent a Face with a class in Python. The face will need to remember
-the x,y coordinates for the center of the face. We will also remember the base color
-used for the face. In the example in Section 1.3, this was red. Notice how the `draw` function
-abstracts away the initial face to be centered around any x,y coordinates. This will
-let us move the face around the screen.  Of course, you should use
-your own face-drawing code in place of the example code shown below.
+We will represent a `Face` with a class in Python. The `Face` will need to remember
+the `(x,y)` coordinates for the center of the face. We will also remember the base color
+used for the face. In the example in Step 1.3, this was red. 
+
+The `draw` method of the `Face` class abstracts the original face from Step 1.3 so it 
+can be centered around any `(x,y)` coordinates. This will let us move the face around
+the screen. To make this work, the circle representing the head will be located at
+`self.x`, `self.y`, and the other components will be represented as offsets from there.
+Of course, you should use your own face-drawing code in place of the example code shown below.
 
     class Face:
         def __init__(self, x, y, color):
