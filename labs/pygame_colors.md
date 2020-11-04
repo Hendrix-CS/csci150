@@ -6,7 +6,8 @@ worktitle: Pygame colors
 ---
 
 The following program generated the list of colors below:
-
+	import pygame
+	
     for color in sorted(pygame.colordict.THECOLORS.items()):
         name = color[0]
         spaces = (22 - len(name)) * ' '
