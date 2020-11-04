@@ -143,7 +143,7 @@ on the screen. At a minimum, the face should have eyes, ears, a mouth
 and a nose. You can find more shapes on the 
 [Pygame Documentation](https://www.pygame.org/docs/ref/draw.html) page.
 
-## Step 2: Classes (5 points)
+## Step 2: Classes (5 points total)
 
 ### Step 2.1: Using the Mouse
 
@@ -189,7 +189,7 @@ The following elements are distinctive in this program:
 * It draws a white circle at each (x, y) coordinate indicated by a mouse click.
 
 
-### Step 2.2: A Population of Faces
+### Step 2.2: A Population of Faces (4 points)
 
 We will represent a Face with a class in Python. The face will need to remember
 the x,y coordinates for the center of the face. We will also remember the base color
@@ -212,9 +212,15 @@ your own face-drawing code in place of the example code shown below.
 	
 Create a new Python file called `face2.py` and enter your version of the Face class. 
 
-Adapt the code from Step 2.1 to draw a Face at each location where the mouse is clicked,
+Adapt the code from Step 2.1 to draw a `Face` at each location where the mouse is clicked,
 instead of drawing a simple circle there. You will need to have a `faces` list that stores 
 each `Face` that is created by each mouse click.
+
+### Step 2.3: Random Colors (1 point)
+
+Modify your code so that each `Face` placed is given a random color. To assign a random
+`Color`, create a list of all of the eligible colors. Then use `random.choice()` to 
+select a color from that list every time a `Face` is placed.
 
 
 ## Step 3: Movement (4 points total)
@@ -263,7 +269,7 @@ Experiment with a few different values for the delay, and
 select the value that yields what is in your opinion the 
 best-looking animation.
 
-### Step 3.2: Bouncing
+### Step 3.2: Bouncing (2 points)
 
 Currently, the faces disappear after a
 while, because they moves off the bottom of the screen.  We would like
@@ -277,14 +283,19 @@ class give the width and height of the window. Think carefully about
 how this information will be conveyed to your `Face` object so that
 it can implement bouncing correctly.
 
-### Step 3.3: Random speeds
+### Step 3.3: Random speeds (2 points)
 
 Abstract the velocities so they are initialized by parameters in
 the `__init__` method, and
 choose random velocities between -5 and 5 for both the x and y
-dimension for each `Face` created. You should now have faces
-moving in all directions and bouncing off of all the walls of the
-window.
+dimension for each `Face` created. As you do not want the `Face` 
+to have a velocity of zero, it is recommended that you generate
+a random number between 1 and 5, and then (using another random
+number) give a 50/50 chance of switching the number to be 
+negative.
+
+You should now have faces moving in all directions and bouncing 
+off of all the walls of the window.
 
 ## Step 4: Extensions (6 points)
 
