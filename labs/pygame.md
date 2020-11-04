@@ -316,7 +316,7 @@ Alter your `update` method of the Face to change the internal pieces of the face
 in a cyclic pattern. For example, the face could smile for a few timesteps, then frown,
 and then go back to smiling. Or the eyeballs could be moving up and down, left and right.
 
-### Extension 6.4: Face collisions
+### Extension 4.4: Face collisions
 
 Right now all the `Face`s pass through each other when they move.
 Add a collision detection method that checks each pair of faces to see if they
