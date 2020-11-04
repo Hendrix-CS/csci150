@@ -307,7 +307,8 @@ face is always completely visible on the screen!
 Make your animations interactive by reacting to input from the
 mouse and the keyboard. For example, you could increase or
 decrease the velocity of all the `Face`s when certain keys are pressed,
-destroy `Face`s when you click them with the mouse, and so forth.
+destroy `Face`s when you click them with the mouse, drag and drop `Face`s from
+one place to another, and so forth.
 
 ### Extension 4.3: Animated faces
 
