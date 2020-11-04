@@ -16,21 +16,21 @@ For today's lab,
 for your operating system. To download and install it on your computer, open the Terminal tab at the bottom of your 
 PyCharm window, then enter the following instruction (on a Mac, use `python3` instead of `python`):
 
-	python -m pip install -U pygame
-	
+    python -m pip install -U pygame
+    
 It should respond with a message like the following:
 
-	Collecting pygame
-	  Downloading pygame-2.0.0-cp38-cp38-win32.whl (4.8 MB)
-		 |████████████████████████████████| 4.8 MB 3.3 MB/s
-	Installing collected packages: pygame
-	Successfully installed pygame-2.0.0
+    Collecting pygame
+      Downloading pygame-2.0.0-cp38-cp38-win32.whl (4.8 MB)
+         |████████████████████████████████| 4.8 MB 3.3 MB/s
+    Installing collected packages: pygame
+    Successfully installed pygame-2.0.0
 
 To make sure it works, try out one of the examples:
 
-	python -m pygame.examples.aliens
-	
-	
+    python -m pygame.examples.aliens
+    
+    
 ## Step 1: Faces (5 points)
 
 ### Step 1.1: The Game Loop
@@ -43,58 +43,58 @@ program when the user closes the window.
 Create a file called `face1.py` and enter the code below:
 
 
-	import pygame
-	from pygame.locals import *
+    import pygame
+    from pygame.locals import *
 
 
-	def main():
-		pygame.init()
-		surface = pygame.display.set_mode((640, 400))
-		running = True
-		while running:
-			pygame.display.update()
-			for event in pygame.event.get():
-				if event.type == QUIT:
-					running = False
-		pygame.quit()
+    def main():
+        pygame.init()
+        surface = pygame.display.set_mode((640, 400))
+        running = True
+        while running:
+            pygame.display.update()
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    running = False
+        pygame.quit()
 
-	if __name__ == '__main__':
-		main()
-		
+    if __name__ == '__main__':
+        main()
+        
 
 ### Step 1.2: Drawing shapes
 
 The program below is a modification of the game loop from Step 1.1. Replace the code from Step 1.1
 in `face1.py` with the code below:
 
-	import pygame
-	from pygame.locals import *
+    import pygame
+    from pygame.locals import *
 
 
-	def draw_all(surface):
-		surface.fill(pygame.Color(255, 255, 255))
-		pygame.draw.circle(surface, pygame.Color(255, 0, 0), (10, 10), 10)
-		pygame.draw.rect(surface, pygame.Color(0, 255, 0), (10, 10, 20, 20))
-		pygame.draw.line(surface, pygame.Color(0, 0, 0), (10, 10), (20, 20))
-		pygame.draw.circle(surface, pygame.Color(0, 0, 0), (30, 30), 10, width=1)
-		pygame.draw.rect(surface, pygame.Color(0, 0, 0), (40, 40, 20, 20), width=1)
-		pygame.display.update()
+    def draw_all(surface):
+        surface.fill(pygame.Color(255, 255, 255))
+        pygame.draw.circle(surface, pygame.Color(255, 0, 0), (10, 10), 10)
+        pygame.draw.rect(surface, pygame.Color(0, 255, 0), (10, 10, 20, 20))
+        pygame.draw.line(surface, pygame.Color(0, 0, 0), (10, 10), (20, 20))
+        pygame.draw.circle(surface, pygame.Color(0, 0, 0), (30, 30), 10, width=1)
+        pygame.draw.rect(surface, pygame.Color(0, 0, 0), (40, 40, 20, 20), width=1)
+        pygame.display.update()
 
 
-	def main():
-		pygame.init()
-		surface = pygame.display.set_mode((640, 480))
-		running = True
-		while running:
-			draw_all(surface)
-			for event in pygame.event.get():
-				if event.type == QUIT:
-					running = False
-		pygame.quit()
+    def main():
+        pygame.init()
+        surface = pygame.display.set_mode((640, 480))
+        running = True
+        while running:
+            draw_all(surface)
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    running = False
+        pygame.quit()
 
 
-	if __name__ == '__main__':
-		main()
+    if __name__ == '__main__':
+        main()
 
 In this program, we have instructed `pygame` to draw several different shapes on the screen.
 When we draw on the screen, we first need to
@@ -111,7 +111,7 @@ You can also refer to colors by name, using a string. Feel free to consult this
 [list of available colors]({{site.baseurl}}/labs/pygame_colors.html) when drawing 
 your `pygame` objects. Using a color string, the fill instruction would look like this:
 
-	surface.fill('white')
+    surface.fill('white')
 
 The next two instructions (drawing a circle and a rectangle) give us filled-in shapes. Each instruction 
 specifies the surface on which it is to be drawn and its color. To draw a circle, we also specify its 
@@ -140,35 +140,35 @@ and a nose. You can find more shapes on the
 
 Create a file called `points.py` and enter the code below:
 
-	import pygame
-	from pygame.locals import *
+    import pygame
+    from pygame.locals import *
 
 
-	def draw_all(surface, points):
-		surface.fill('black')
-		for point in points:
-			pygame.draw.circle(surface, 'white', point, 5)
-		pygame.display.update()
+    def draw_all(surface, points):
+        surface.fill('black')
+        for point in points:
+            pygame.draw.circle(surface, 'white', point, 5)
+        pygame.display.update()
 
 
-	def main():
-		pygame.init()
-		surface = pygame.display.set_mode((640, 480))
-		points = []
-		running = True
-		while running:
-			draw_all(surface, points)
-			for event in pygame.event.get():
-				if event.type == QUIT:
-					running = False
-				elif event.type == MOUSEBUTTONDOWN:
-					points.append((event.pos[0], event.pos[1]))
-		pygame.quit()
+    def main():
+        pygame.init()
+        surface = pygame.display.set_mode((640, 480))
+        points = []
+        running = True
+        while running:
+            draw_all(surface, points)
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    running = False
+                elif event.type == MOUSEBUTTONDOWN:
+                    points.append((event.pos[0], event.pos[1]))
+        pygame.quit()
 
 
-	if __name__ == '__main__':
-		main()
-		
+    if __name__ == '__main__':
+        main()
+        
 Run the program. Click the mouse at various locations on the window.
 
 The following elements are distinctive in this program:
@@ -187,17 +187,17 @@ let us move the face around the screen.  Of course, you should use
 your own face-drawing code in place of the example code shown below.
 
     class Face:
-		def __init__(self, x, y, color):
-			self.x = x
-			self.y = y
-			self.color = color
+        def __init__(self, x, y, color):
+            self.x = x
+            self.y = y
+            self.color = color
 
-		def draw(self, surface):
-			pygame.draw.circle(surface, self.color, (self.x, self.y), 100)
-			pygame.draw.circle(surface, 'yellow', (self.x - 25, self.y - 25), 35)
-			pygame.draw.circle(surface, 'yellow', (self.x + 25, self.y - 25), 35)
-			pygame.draw.line(surface, 'orange', (self.x - 20, self.y + 30), (self.x + 20, self.y + 30))
-	
+        def draw(self, surface):
+            pygame.draw.circle(surface, self.color, (self.x, self.y), 100)
+            pygame.draw.circle(surface, 'yellow', (self.x - 25, self.y - 25), 35)
+            pygame.draw.circle(surface, 'yellow', (self.x + 25, self.y - 25), 35)
+            pygame.draw.line(surface, 'orange', (self.x - 20, self.y + 30), (self.x + 20, self.y + 30))
+    
 Create a new Python file called `face2.py` and enter your version of the Face class. 
 
 Adapt the code from Step 2.1 to draw a `Face` at each location where the mouse is clicked,
@@ -238,19 +238,19 @@ the `update` method of each face before the
 individual `draw` method. Your `draw_all` function should
 now look like this:
 
-	def draw_all(surface, faces):
-		surface.fill('white')
-		for face in faces:
-			face.update()
-			face.draw(surface)
-		pygame.display.update()
+    def draw_all(surface, faces):
+        surface.fill('white')
+        for face in faces:
+            face.update()
+            face.draw(surface)
+        pygame.display.update()
 
 Try it out. Add a few faces. If they fly across the screen
 a bit too quickly to see, we will need to add a delay to 
 our loop. Add the following line to the end of your `while` loop:
 
-	pygame.time.delay(10)
-	
+    pygame.time.delay(10)
+    
 This instruction creates a delay of 10 milliseconds per loop 
 iteration, yielding about 100 frame updates per second. 
 Experiment with a few different values for the delay, and
