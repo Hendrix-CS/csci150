@@ -12,7 +12,7 @@ worktitle: Graphics and Animation
 ## Overview
 
 For today's lab,
-[download the latest version of Pygame (version 3.5.3 as of February 2019)](https://www.pygame.org/wiki/GettingStarted)
+[download the latest version of Pygame](https://www.pygame.org/wiki/GettingStarted)
 for your operating system. To download and install it on your computer, open the Terminal tab at the bottom of your 
 PyCharm window, then enter the following instruction (on a Mac, use `python3` instead of `python`):
 
