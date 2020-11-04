@@ -114,8 +114,13 @@ function calls the Python interpreter to execute its string argument.
 The following function will test whether `__repr__` works for
 any class:
 
-    def test_repr(obj):
+    def repr_works(obj):
         return str(obj) == str(eval(str(obj)))
+		
+Here is an example of how one can use this function:
+
+	jugA = WaterJug(4, 0)
+	assert repr_works(jugA)
 
 ## Step 2: The Puzzle (6 points)
 
