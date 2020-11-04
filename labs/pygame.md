@@ -106,21 +106,12 @@ downwards.
 
 The first instruction (`surface.fill`) sets the background color of the window. Each `pygame.Color`
 object is defined by three parameters, ranging in value from 0 to 255: its red, green, and blue levels.
-You may find it helpful to define a dictionary with some common colors. Here is an example you might use:
 
-    COLORS = {"black":         pygame.Color(0, 0, 0), 
-              "white":         pygame.Color(255, 255, 255),
-              "red":           pygame.Color(255, 0, 0),
-              "green":         pygame.Color(0, 255, 0),
-              "blue":          pygame.Color(0, 0, 255),
-              "yellow":        pygame.Color(255, 255, 0),
-              "orange":        pygame.Color(255, 165, 0),
-              "HendrixOrange": pygame.Color(245, 128, 37),
-              "purple":        pygame.Color(155, 48, 255)}
-			  
-With this dictionary in place, the fill instruction would look like this:
+You can also refer to colors by name, using a string. Feel free to consult this 
+[list of available colors]({{site.baseurl}}/labs/pygame_colors.html) when drawing 
+your `pygame` objects. Using a color string, the fill instruction would look like this:
 
-	surface.fill(COLORS['white'])
+	surface.fill('white')
 
 The next two instructions (drawing a circle and a rectangle) give us filled-in shapes. Each instruction 
 specifies the surface on which it is to be drawn and its color. To draw a circle, we also specify its 
