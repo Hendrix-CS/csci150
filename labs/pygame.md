@@ -224,7 +224,7 @@ you click.
 ### Step 2.3: Random Colors (1 point)
 
 Modify your code so that each `Face` placed is given a random color. To assign a random
-`Color`, create a list of all of the eligible colors. Then use `random.choice()` to 
+`Color`, create a list of colors you would like to employ. Then use `random.choice()` to 
 select a color from that list every time a new `Face` object is created.
 
 
