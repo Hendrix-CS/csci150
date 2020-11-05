@@ -217,7 +217,8 @@ Of course, you should use your own face-drawing code in place of the example cod
 Create a new Python file called `face2.py` and enter your version of the Face class. 
 
 Copy the code from Step 2.1 into `face2.py`. Where that code appends a point to the `shapes`
-list, append a `Face` object instead. Test it out, and make sure it places a `Face` wherever
+list, append a `Face` object instead. Also alter `draw_all` to ask each `shape` to draw itself 
+instead of drawing a circle. Test it out, and make sure it places a `Face` wherever
 you click.
 
 ### Step 2.3: Random Colors (1 point)
