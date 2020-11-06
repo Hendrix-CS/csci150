@@ -193,37 +193,41 @@ The following elements are distinctive in this program:
 ### Step 2.2: A Population of Faces (4 points)
 
 We will represent a `Face` with a class in Python. The `Face` will need to remember
-the `(x,y)` coordinates for the center of the face. We will also remember the base color
-used for the face. In the example in Step 1.3, this was red. 
-
-The `draw` method of the `Face` class abstracts the original face from Step 1.3 so it 
-can be centered around any `(x,y)` coordinates. This will let us move the face around
-the screen. To make this work, the circle representing the head will be located at
-`self.x`, `self.y`, and the other components will be represented as offsets from there.
-Of course, you should use your own face-drawing code in place of the example code shown below.
+the `(x,y)` coordinates for the center of the face. The `draw` method of the `Face` class 
+abstracts the original face from Step 1.3 so it can be centered around any `(x,y)` coordinates. 
+This will let us move the face around the screen. To make this work, the circle representing the 
+head will be located at `self.x`, `self.y`, and the other components will be represented as 
+offsets from there. Of course, you should use your own face-drawing code in place of the 
+example code shown below.
 
     class Face:
-        def __init__(self, x, y, color):
+        def __init__(self, x, y):
             self.x = x
             self.y = y
-            self.color = color
 
         def draw(self, surface):
-            pygame.draw.circle(surface, self.color, (self.x, self.y), 100)
+            pygame.draw.circle(surface, 'red', (self.x, self.y), 100)
             pygame.draw.circle(surface, 'yellow', (self.x - 25, self.y - 25), 35)
             pygame.draw.circle(surface, 'yellow', (self.x + 25, self.y - 25), 35)
             pygame.draw.line(surface, 'orange', (self.x - 20, self.y + 30), (self.x + 20, self.y + 30))
     
 Create a new Python file called `face2.py` and enter your version of the Face class. 
 
-Copy the code from Step 2.1 into `face2.py`. Where that code appends a point to the `shapes`
-list, append a `Face` object instead. Also alter `draw_all` to ask each `shape` to draw itself 
-instead of drawing a circle. Test it out, and make sure it places a `Face` wherever
-you click.
+Copy the code from Step 2.1 into `face2.py`. That code appends an `(x,y)` coordinate to the 
+`shapes` list. Instead of appending that coordinate, append a `Face` object instead.
+Where that code appends a point to the `shapes` Also alter `draw_all` to ask each `shape` 
+to draw itself instead of drawing a circle around an `(x,y)` coordinate. Test it out, and 
+make sure it places a `Face` wherever you click.
 
 ### Step 2.3: Random Colors (1 point)
 
-Modify your code so that each `Face` placed is given a random color. To assign a random
+Modify your `Face` class so that it has a `self.color` attribute. It should be initialized by
+a `color` parameter that you add to the `Face` class's constructor (`__init__`). 
+In the `draw` method of your `Face` class, replace references to the base color used for 
+the face with `self.color`. (In the example of Step 1.3, the base color to be replaced was red.) 
+
+Once these changes to the `Face` class are complete, modify `main` so
+that each `Face` placed is given a random color. To assign a random
 `Color`, create a list of colors you would like to employ. Then use `random.choice()` to 
 select a color from that list every time a new `Face` object is created.
 
@@ -319,21 +323,27 @@ for this new size component, and test it out by drawing smaller and
 larger faces.  Make sure your locations are still chosen so that the
 face is always completely visible on the screen!
 
-### Extension 4.2: Mouse and keyboard input
+### Extension 4.2: Mouse input
 
 Make your animations interactive by reacting to input from the
-mouse and the keyboard. For example, you could increase or
-decrease the velocity of all the `Face`s when certain keys are pressed,
-destroy `Face`s when you click them with the mouse, drag and drop `Face`s from
-one place to another, and so forth.
+mouse. For example, you could randomly change the color of a `Face` 
+when you click it with the mouse, 
+drag and drop `Face`s from one place to another, and so forth.
 
-### Extension 4.3: Animated faces
+### Extension 4.3: Keyboard input
+
+Make your animations interactive by reacting to input from the
+keyboard. For example, you could increase or decrease the velocity 
+of all the `Face`s when certain keys are pressed, randomly change
+their colors, and so forth.
+
+### Extension 4.4: Animated faces
 
 Alter your `update` method of the Face to change the internal pieces of the face
 in a cyclic pattern. For example, the face could smile for a few timesteps, then frown,
 and then go back to smiling. Or the eyeballs could be moving up and down, left and right.
 
-### Extension 4.4: Face collisions
+### Extension 4.5 Face collisions
 
 Right now all the `Face`s pass through each other when they move.
 Add a collision detection method that checks each pair of faces to see if they
