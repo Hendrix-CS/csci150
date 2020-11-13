@@ -128,11 +128,8 @@ Participation points will be assigned as follows:
 |9 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis) | Oct 21-22 | Oct 28-29 |
 |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Oct 28-29 | Nov 4-5 |
 |11| [Graphics and Animation]({{site.baseurl}}/labs/pygame.html) | Nov 4-5 | Nov 11-12 |
-
-<!--
-|12| [Enron's Secrets] | Nov 11-12 | Nov 18-19 |
+|12| [Enron's Secrets] (https://www.kaggle.com/gabrielferrer/finding-evidence-recursively) | Nov 11-12 | Nov 18-19 |
 |13| [Project 3 Workshop] | Nov 18-19 | Dec 7 |
--->
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
@@ -147,7 +144,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 |:--:|-----||:------:|:--------:|:---:|
 |1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1)  | 50  | Sep 7 | Sep 25 |
 |2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | Oct 9 | Oct 23 |
-|3 | [Final Project]({{site.baseurl}}/projects/final_spring2020.html) | 200 | Nov 13 | Dec 7 |
+|3 | [Final Project]({{site.baseurl}}/projects/final_fall2020.html) | 200 | Nov 13 | Dec 7 |
 
 [Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs)
 
