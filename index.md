@@ -115,7 +115,7 @@ obligation, *etc.*). After you have used up your late days, late assignments
 will receive at most half credit.
 
 ## <a name="hwqz">Quizzes</a>: 140 points
-Most class periods featuring new material will end with a quiz. Some quizzes will be adminstered via <a href="https://moodle.hendrix.edu/">Moodle</a>, 
+Most class periods featuring new material will end with a quiz. Some quizzes will be adminstered via <a href="https://moodle.hendrix.edu/">Moodle</a>,
 while others will be coding assignments using <a href="https://codingbat.com/python">CodingBat</a>. Each quiz is worth 5 points, and must be completed by 5 pm of that class day.
 
 ## <a name="participation">Participation</a>: 110 points
@@ -181,9 +181,9 @@ You will have three projects in this course. These projects will cover concepts 
 There will be three in-class exams, the first worth 40 points and the second and
 third worth 70 points. They will consist of short answer questions along with writing and debugging code.
 
-* Exam 1: TBD, covering functions, math, numerical data, conditionals, and binary encoding  
-* Exam 2: TBD, covering input/output, while loops, for loops, lists, and strings 
-* Exam 3: TBD, covering dictionaries, classes and objects 
+* Exam 1: TBD, covering functions, math, numerical data, conditionals, and binary encoding
+* Exam 2: TBD, covering input/output, while loops, for loops, lists, and strings
+* Exam 3: TBD, covering dictionaries, classes and objects
 
 <!--
 [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
