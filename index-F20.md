@@ -33,71 +33,53 @@ Upon completing this course, our goal is for you to be able to:
 
 <hr>
 
-# <a name="calendar">Calendar</a>
+# <a name="inclasscode">Lecture Schedule</a>
 
-| Date     | Topic | In-class code | Notes |
-|:--------:|-------|---------------|-------|
-|          |       |               |       |
-| W 20 Jan |       |               |       |
-| F 22 Jan |       |               |       |
-|          |       |               |       |
-| M 25 Jan |       |               |       |
-| W 27 Jan |       |               |       |
-| F 29 Jan |       |               |       |
-|          |       |               |       |
-| M 1 Feb  |       |               |       |
-| W 3 Feb  |       |               |       |
-| F 5 Feb  |       |               |       |
-|          |       |               |       |
-| M 8 Feb  |       |               |       |
-| W 10 Feb |       |               |       |
-| F 12 Feb |       |               |       |
-|          |       |               |       |
-| M 15 Feb |       |               |       |
-| W 17 Feb |       |               |       |
-| F 19 Feb |       |               |       |
-|          |       |               |       |
-| M 22 Feb |       |               |       |
-| W 24 Feb |       |               |       |
-| F 26 Feb |       |               |       |
-|          |       |               |       |
-| M 1 Mar  |       |               |       |
-| W 3 Mar  |       |               |       |
-| F 5 Mar  |       |               |       |
-|          |       |               |       |
-| M 8 Mar  |       |               |       |
-| W 10 Mar |       |               |       |
-| F 12 Mar |       |               |       |
-|          |       |               |       |
-| M 15 Mar |       |               |       |
-| W 17 Mar |       |               |       |
-| F 19 Mar |       |               |       |
-|          |       |               |       |
-| M 22 Mar |       |               |       |
-| W 24 Mar |       |               |       |
-| F 26 Mar |       |               |       |
-|          |       |               |       |
-| M 29 Mar |       |               |       |
-| W 31 Mar |       |               |       |
-| F 2 Apr  |       |               |       |
-|          |       |               |       |
-| M 5 Apr  |       |               |       |
-| W 7 Apr  |       |               |       |
-| F 9 Apr  |       |               |       |
-|          |       |               |       |
-| M 12 Apr |       |               |       |
-| W 14 Apr |       |               |       |
-| F 16 Apr |       |               |       |
-|          |       |               |       |
-| M 19 Apr |       |               |       |
-| W 21 Apr |       |               |       |
-| F 23 Apr |       |               |       |
-|          |       |               |       |
-| M 26 Apr |       |               |       |
-| W 28 Apr |       |               |       |
-| F 30 Apr |       |               |       |
-|          |       |               |       |
-| F 7 May  |       |               |       |
+When we write code together in class, it will be posted here!
+
+| Date | Topic | Code |
+|:----:|------||-----||
+| F 21 Aug | Intro to Python ||
+| M 24 Aug | Variables, Types, Functions, Math ||
+| W 26 Aug | Booleans ||
+| F 28 Aug | Conditionals ||
+| M 31 Aug | Tracing ||
+| W  2 Sep | Information Encoding ||
+| F  4 Sep | Information Encoding ||
+| M  7 Sep | Project 1 Overview ||
+| W  9 Sep | Exam I Review ||
+| F 11 Sep | Exam I ||
+| M 14 Sep | PyCharm and While Loops ||
+| W 16 Sep | Function Stack Tracing and Collatz ||
+| F 18 Sep | Project 1 Workshop ||
+| M 21 Sep | Project 1 Workshop ||
+| W 23 Sep | Strings: Slicing and Concatenating ||
+| F 25 Sep | More Strings ||
+| M 28 Sep | Lists I ||
+| W 30 Sep | Lists II ||
+| F  2 Oct | Lists III ||
+| M  5 Oct | For Loops I ||
+| W  7 Oct | For Loops II ||
+| F  9 Oct | Project 2 Overview ||
+| M 12 Oct | Exam 2 Review || 
+| W 14 Oct | Exam 2 ||
+| F 16 Oct | Functional Abstraction ||
+| M 19 Oct | Dictionaries I ||
+| W 21 Oct | File I/O ||
+| F 23 Oct | Dictionaries II ||
+| M 26 Oct | Classes and Objects I ||
+| W 28 Oct | Classes and Objects II ||
+| F 30 Oct | Classes and Objects III ||
+| M  2 Nov | Animation I ||
+| W  4 Nov | Animation II ||
+| F  6 Nov | Data Abstraction ||
+| M  9 Nov | Recursion I ||
+| W 11 Nov | Recursion II ||
+| F 13 Nov | Project 3 Overview ||
+| M 16 Nov | Exam 3 Review ||
+| W 18 Nov | Exam 3 ||
+| F 20 Nov | Designing Larger Programs ||
+| M 23 Nov | Concluding Thoughts ||
 
 
 <hr>
@@ -133,23 +115,21 @@ Participation points will be assigned as follows:
 </div>
 <br/>
 
-| # | Name | Assigned | Due |
-|:-:|------|----------|:---:|
-|   |      |          |     |
-
-<!-- |1 | [Kepler and Newton](https://www.kaggle.com/gabrielferrer/kepler-and-newton) | Aug 26-27 | Sep 2-3 | -->
-<!-- |2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Sep 2-3 | Sep 9-10 | -->
-<!-- |3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) | Sep 9-10 | Sep 16-17 | -->
-<!-- |4 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 16-17 | Sep 25 | -->
-<!-- |5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Sep 23-24 | Sep 30-Oct 1 | -->
-<!-- |6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Sep 30-Oct 1 | Oct 7-8 | -->
-<!-- |7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets) | Oct 7-8 | Oct 14-15 | -->
-<!-- |8 | [Project 2 Workshop] | Oct 14-15 | Oct 23 | -->
-<!-- |9 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis) | Oct 21-22 | Oct 28-29 | -->
-<!-- |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Oct 28-29 | Nov 4-5 | -->
-<!-- |11| [Graphics and Animation]({{site.baseurl}}/labs/pygame.html) | Nov 4-5 | Nov 11-12 | -->
-<!-- |12| [Enron's Secrets] (https://www.kaggle.com/gabrielferrer/finding-evidence-recursively) | Nov 11-12 | Nov 18-19 | -->
-<!-- |13| [Project 3 Workshop] | Nov 18-19 | Dec 7 | -->
+| #  | Name | Assigned | Due |
+|:--:|-----||:--------:|:---:|
+|1 | [Kepler and Newton](https://www.kaggle.com/gabrielferrer/kepler-and-newton) | Aug 26-27 | Sep 2-3 |
+|2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Sep 2-3 | Sep 9-10 |
+|3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) | Sep 9-10 | Sep 16-17 |
+|4 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 16-17 | Sep 25 |
+|5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Sep 23-24 | Sep 30-Oct 1 |
+|6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Sep 30-Oct 1 | Oct 7-8 |
+|7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets) | Oct 7-8 | Oct 14-15 |
+|8 | [Project 2 Workshop] | Oct 14-15 | Oct 23 |
+|9 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis) | Oct 21-22 | Oct 28-29 |
+|10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Oct 28-29 | Nov 4-5 |
+|11| [Graphics and Animation]({{site.baseurl}}/labs/pygame.html) | Nov 4-5 | Nov 11-12 |
+|12| [Enron's Secrets] (https://www.kaggle.com/gabrielferrer/finding-evidence-recursively) | Nov 11-12 | Nov 18-19 |
+|13| [Project 3 Workshop] | Nov 18-19 | Dec 7 |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
@@ -160,17 +140,15 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 ## <a name="projects">Projects</a>: 350 points
 
-| # | Name | Points | Assigned | Due |
-|:-:|------|--------|:--------:|:---:|
-|   |      |        |          |     |
+| #  | Name | Points | Assigned | Due |
+|:--:|-----||:------:|:--------:|:---:|
+|1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1)  | 50  | Sep 7 | Sep 25 |
+|2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | Oct 9 | Oct 23 |
+|3 | [Final Project]({{site.baseurl}}/projects/final_fall2020.html) | 200 | Nov 13 | Dec 7 |
 
-<!-- |1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1)  | 50  | Sep 7 | Sep 25 | -->
-<!-- |2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | Oct 9 | Oct 23 | -->
-<!-- |3 | [Final Project]({{site.baseurl}}/projects/final_fall2020.html) | 200 | Nov 13 | Dec 7 | -->
+[Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs)
 
-<!-- [Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs) -->
-
-<!-- [Project 3 Final Rubric](https://drive.google.com/open?id=1rASxQnFIQtA9l62bSoRigYzq5Z57_7um) -->
+[Project 3 Final Rubric](https://drive.google.com/open?id=1rASxQnFIQtA9l62bSoRigYzq5Z57_7um)
 
 You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to three weeks after they are assigned.
 
@@ -181,9 +159,9 @@ You will have three projects in this course. These projects will cover concepts 
 There will be three in-class exams, the first worth 40 points and the second and
 third worth 70 points. They will consist of short answer questions along with writing and debugging code.
 
-* Exam 1: TBD, covering functions, math, numerical data, conditionals, and binary encoding  
-* Exam 2: TBD, covering input/output, while loops, for loops, lists, and strings 
-* Exam 3: TBD, covering dictionaries, classes and objects 
+* Exam 1: Sep 11, covering functions, math, numerical data, conditionals, and binary encoding  
+* Exam 2: Oct 14, covering input/output, while loops, for loops, lists, and strings 
+* Exam 3: Nov 18, covering dictionaries, classes and objects 
 
 <!--
 [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
