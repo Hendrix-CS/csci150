@@ -27,6 +27,8 @@ web/hakyll
 *.o
 *.pdf
 
+.jekyll-cache
+
 exams-solutions/
 csci150-instructors/
 ThinkPython/
