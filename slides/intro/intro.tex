@@ -1,0 +1,205 @@
+% -*- mode: LaTeX; compile-command: "pdflatex intro.tex" -*-
+
+\documentclass[xcolor={usenames,dvipsnames,svgnames,table},12pt]{beamer}
+
+\mode<presentation>
+{
+  \usetheme{default}                          % use a default (plain) theme
+
+  \setbeamertemplate{navigation symbols}{}    % don't show navigation
+                                              % buttons along the
+                                              % bottom
+  \setbeamerfont{normal text}{family=\sffamily}
+
+%  \setbeamertemplate{footline}[frame number]
+
+  \AtBeginSection[]
+  {
+    \begin{frame}<beamer>
+      \frametitle{}
+      \begin{center}
+        {\Huge \insertsectionhead}
+
+        % \vspace{0.25in}
+        % \includegraphics[width=2in]{\secimage}
+      \end{center}
+    \end{frame}
+  }
+}
+
+\newenvironment{xframe}[1][]
+  {\begin{frame}[fragile,environment=xframe,#1]}
+  {\end{frame}}
+
+% uncomment me to get 4 slides per page for printing
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{4 on 1}[uspaper, border shrink=5mm]
+
+% \setbeameroption{show only notes}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\usepackage{ulem}
+\usepackage{url}
+\usepackage{fancyvrb}
+
+\title{CSCI 150, Foundations of Computer Science}
+\date{January 20, 2021}
+\author{Dr.\ Brent Yorgey}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\section{About me}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[width=\textwidth]{homes.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[width=\textwidth]{family-cropped.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[width=\textwidth]{ccc-dark.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[width=\textwidth]{brent-piano-concert.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[width=\textwidth]{bikes.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[width=\textwidth, angle=180]{mama-cook.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[width=\textwidth]{straws-thingy.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[width=\textwidth]{FloorGoban.jpg}
+  \end{center}
+\end{frame}
+
+\section{Your turn!}
+
+\section{About this class}
+
+\begin{frame}{}
+  \begin{center}
+    {\Large What does a computer scientist look like?}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[height=2in]{ada-lovelace.jpeg} \quad
+    \includegraphics[height=2in]{donald-knuth.jpeg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[height=2in]{valerie-taylor.jpg} \quad
+    \includegraphics[height=2in]{james-gosling.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[height=2in]{shafi-goldwasser.jpg} \quad
+    \includegraphics[height=2in]{manuel-blum.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[height=2in]{dabbala-reddy.jpg} \quad
+    \includegraphics[height=2in]{whitfield-diffie.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[height=1.5in]{ellis_skip_young.jpeg} \quad
+    \includegraphics[height=1.5in]{Alan-Turing.jpeg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[height=2in]{Margaret-Hamilton.jpeg} \quad
+    \includegraphics[height=2in]{katherine-johnson.jpeg}
+  \end{center}
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \includegraphics[height=2in]{grace-hopper.jpg} \quad
+    \includegraphics[height=2in]{jean-bartik-cropped.png}
+  \end{center}
+\end{frame}
+
+\newlength{\photosize}
+\setlength{\photosize}{0.45in}
+\begin{frame}{}
+  \begin{center}
+\includegraphics[width=\photosize]{S21/000573252.jpg}
+\includegraphics[width=\photosize]{S21/000571408.jpg}
+\includegraphics[width=\photosize]{S21/000572541.jpg}
+\includegraphics[width=\photosize]{S21/000573733.jpg}
+\includegraphics[width=\photosize]{S21/000570739.jpg}
+\includegraphics[width=\photosize]{S21/000568140.jpg}
+\includegraphics[width=\photosize]{S21/000572865.jpg}
+\includegraphics[width=\photosize]{S21/000568255.jpg}
+\includegraphics[width=\photosize]{S21/000572675.jpg}
+\includegraphics[width=\photosize]{S21/000573492.jpg}
+\includegraphics[width=\photosize]{S21/000568759.jpg}
+\includegraphics[width=\photosize]{S21/000572733.jpg}
+\includegraphics[width=\photosize]{S21/000565383.jpg}
+\includegraphics[width=\photosize]{S21/000565535.jpg}
+\includegraphics[width=\photosize]{S21/000573698.jpg}
+\includegraphics[width=\photosize]{S21/000573019.jpg}
+\includegraphics[width=\photosize]{S21/000565231.jpg}
+\includegraphics[width=\photosize]{S21/000568832.jpg}
+\includegraphics[width=\photosize]{S21/000572633.jpg}
+\includegraphics[width=\photosize]{S21/000569064.jpg}
+\includegraphics[width=\photosize]{S21/000572599.jpg}
+\includegraphics[width=\photosize]{S21/000570543.jpg}
+\includegraphics[width=\photosize]{S21/000567754.jpg}
+\includegraphics[width=\photosize]{S21/000569572.jpg}
+\includegraphics[width=\photosize]{S21/000571405.jpg}
+\includegraphics[width=\photosize]{S21/000573238.jpg}
+\includegraphics[width=\photosize]{S21/000572628.jpg}
+\includegraphics[width=\photosize]{S21/000572775.jpg}
+\includegraphics[width=\photosize]{S21/000573692.jpg}
+\includegraphics[width=\photosize]{S21/000565336.jpg}
+  \end{center}
+\end{frame}
+
+\end{document}
