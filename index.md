@@ -35,107 +35,132 @@ Upon completing this course, our goal is for you to be able to:
 
 # <a name="calendar">Calendar</a>
 
-| Date     | Topic | In-class code | Notes |
-|:--------:|-------|---------------|-------|
-|          |       |               |       |
-| W 20 Jan |       |               |       |
-| F 22 Jan |       |               |       |
-|          |       |               |       |
-| M 25 Jan |       |               |       |
-| W 27 Jan |       |               |       |
-| F 29 Jan |       |               |       |
-|          |       |               |       |
-| M 1 Feb  |       |               |       |
-| W 3 Feb  |       |               |       |
-| F 5 Feb  |       |               |       |
-|          |       |               |       |
-| M 8 Feb  |       |               |       |
-| W 10 Feb |       |               |       |
-| F 12 Feb |       |               |       |
-|          |       |               |       |
-| M 15 Feb |       |               |       |
-| W 17 Feb |       |               |       |
-| F 19 Feb |       |               |       |
-|          |       |               |       |
-| M 22 Feb |       |               |       |
-| W 24 Feb |       |               |       |
-| F 26 Feb |       |               |       |
-|          |       |               |       |
-| M 1 Mar  |       |               |       |
-| W 3 Mar  |       |               |       |
-| F 5 Mar  |       |               |       |
-|          |       |               |       |
-| M 8 Mar  |       |               |       |
-| W 10 Mar |       |               |       |
-| F 12 Mar |       |               |       |
-|          |       |               |       |
-| M 15 Mar |       |               |       |
-| W 17 Mar |       |               |       |
-| F 19 Mar |       |               |       |
-|          |       |               |       |
-| M 22 Mar |       |               |       |
-| W 24 Mar |       |               |       |
-| F 26 Mar |       |               |       |
-|          |       |               |       |
-| M 29 Mar |       |               |       |
-| W 31 Mar |       |               |       |
-| F 2 Apr  |       |               |       |
-|          |       |               |       |
-| M 5 Apr  |       |               |       |
-| W 7 Apr  |       |               |       |
-| F 9 Apr  |       |               |       |
-|          |       |               |       |
-| M 12 Apr |       |               |       |
-| W 14 Apr |       |               |       |
-| F 16 Apr |       |               |       |
-|          |       |               |       |
-| M 19 Apr |       |               |       |
-| W 21 Apr |       |               |       |
-| F 23 Apr |       |               |       |
-|          |       |               |       |
-| M 26 Apr |       |               |       |
-| W 28 Apr |       |               |       |
-| F 30 Apr |       |               |       |
-|          |       |               |       |
-| F 7 May  |       |               |       |
+| Date     | Topic        | In-class code | Notes                                                                       |
+|:--------:|--------------|---------------|-----------------------------------------------------------------------------|
+|          |              |               |                                                                             |
+| W 20 Jan | Intro to CS  |               |                                                                             |
+| F 22 Jan | Intro to 150 |               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) |
+|          |              |               |                                                                             |
+| M 25 Jan |              |               |                                                                             |
+| W 27 Jan |              |               |                                                                             |
+| F 29 Jan |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 1 Feb  |              |               |                                                                             |
+| W 3 Feb  |              |               |                                                                             |
+| F 5 Feb  |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 8 Feb  |              |               |                                                                             |
+| W 10 Feb |              |               |                                                                             |
+| F 12 Feb |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 15 Feb |              |               |                                                                             |
+| W 17 Feb |              |               |                                                                             |
+| F 19 Feb |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 22 Feb |              |               |                                                                             |
+| W 24 Feb |              |               |                                                                             |
+| F 26 Feb |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 1 Mar  |              |               |                                                                             |
+| W 3 Mar  |              |               |                                                                             |
+| F 5 Mar  |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 8 Mar  |              |               |                                                                             |
+| W 10 Mar |              |               |                                                                             |
+| F 12 Mar |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 15 Mar |              |               |                                                                             |
+| W 17 Mar |              |               |                                                                             |
+| F 19 Mar |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 22 Mar |              |               |                                                                             |
+| W 24 Mar |              |               |                                                                             |
+| F 26 Mar |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 29 Mar |              |               |                                                                             |
+| W 31 Mar |              |               |                                                                             |
+| F 2 Apr  |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 5 Apr  |              |               |                                                                             |
+| W 7 Apr  |              |               |                                                                             |
+| F 9 Apr  |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 12 Apr |              |               |                                                                             |
+| W 14 Apr |              |               |                                                                             |
+| F 16 Apr |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 19 Apr |              |               |                                                                             |
+| W 21 Apr |              |               |                                                                             |
+| F 23 Apr |              |               |                                                                             |
+|          |              |               |                                                                             |
+| M 26 Apr |              |               |                                                                             |
+| W 28 Apr |              |               |                                                                             |
+| F 30 Apr |              |               |                                                                             |
+|          |              |               |                                                                             |
+| F 7 May  |              |               |                                                                             |
 
 
 <hr>
 # Coursework
 
-Each student has **four late days** to spend throughout the semester as they wish.
-Simply inform the instructor any time *prior* to the due date for an assignment
-that you wish to use a late day; you may then turn in the assignment up to 24
-hours late. Multiple late days may be used on the same assignment. There are no
-partial late days; turning in an assignment 2 hours late or 20 hours late will
-both use 1 late day. Note that late days are intended to cover both normal
-circumstances (you simply want more time to work on the assignment) and
-exceptional circumstances (you get sick, travel for a game or family
-obligation, *etc.*). After you have used up your late days, late assignments
-will receive at most half credit.
+Each student has **four late days** to spend throughout the semester
+as they wish.  Simply inform the instructor any time *prior* to the
+due date for an assignment that you wish to use a late day; you may
+then turn in the assignment up to 24 hours late. Multiple late days
+may be used on the same assignment. There are no partial late days;
+turning in an assignment 2 hours late or 20 hours late will both use 1
+late day. Note that late days are intended to cover both normal
+circumstances (you simply want more time to work on the assignment)
+and exceptional circumstances (you get sick, travel for a game or
+family obligation, *etc.*). After you have used up your late days,
+late assignments will receive at most half credit.
 
-## <a name="hwqz">Quizzes</a>: 140 points
-Most class periods featuring new material will end with a quiz. Some quizzes will be adminstered via <a href="https://moodle.hendrix.edu/">Moodle</a>,
-while others will be coding assignments using <a href="https://codingbat.com/python">CodingBat</a>. Each quiz is worth 5 points, and must be completed by 5 pm of that class day.
+## <a name="hwqz">Homework and Quizzes</a>: 140 points
 
-## <a name="participation">Participation</a>: 110 points
-Participation points will be assigned as follows:
-* Each student is required to have a one-on-one meeting with the instructor 4 times per semester. Scheduling and following through on each meeting is worth 10 points/meeting.
-* Each student is expected to meet multiple times during each of the 14 lab periods with the instructor and TA. Following through on all lab meetings for a given lab is worth 5 points.
-* Asking the instructor a question during lecture earns 1 extra credit point. (Maximum 1/day)
+| #  | Name | Assigned | Due
+|:-:|-||:-:|:-:|
+|0 | [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) | W Jan 20 | M Jan 25 |
+|1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) | F Jan 22 | W Jan 27 |
+
+<!-- |2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf) | F Sep 6 | W Sep 11 | -->
+<!-- |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 | -->
+<!-- | |Homework Checkin 1 | M Sep 23 | F Oct 4 | -->
+<!-- |4 | [Function and loop practice]({{site.baseurl}}/homework/function-reading.pdf) | F Sep 27 | W Oct 2 | -->
+<!-- |5 | [Strands of DNA]({{site.baseurl}}/homework/dna-strings.html) | F Oct 4 | W Oct 9 | -->
+<!-- |6 | [For loop reading]({{site.baseurl}}/homework/for-reading.pdf) | F Oct 25 | W Oct 30 | -->
+<!-- |7 | [Heap/dictionary reading]({{site.baseurl}}/homework/heap-dict-reading.pdf) | F Nov 1 | W Nov 6 | -->
+<!-- |8 | [Class design practice]({{site.baseurl}}/homework/class-design.pdf) | F Nov 8 | W Nov 13 | -->
+<!-- |9 | [Class reading]({{site.baseurl}}/homework/class-reading.pdf) | F Nov 15 | W Nov 20 | -->
+
+There will often be short homework assignments to be completed over
+the weekend, assigned on Friday and due Wednesday, sometimes with a
+corresponding quiz at the beginning of class on Wednesday.
+
+<!-- ## <a name="participation">Participation</a>: 110 points -->
+
+<!-- Participation points will be assigned as follows: -->
+
+<!-- * Each student is required to have a one-on-one meeting with the -->
+<!--   instructor 4 times per semester. Scheduling and following through on -->
+<!--   each meeting is worth 10 points/meeting. -->
+
+<!-- * Each student is expected to meet multiple times during each of the -->
+<!--   14 lab periods with the instructor and TA. Following through on all -->
+<!--   lab meetings for a given lab is worth 5 points. -->
 
 ## <a name="labs">Labs</a>: 220 points
 
-<div style="text-align: center">
-<a class="btn btn-primary" href="https://moodle.hendrix.edu/">
-  Lab submission (moodle.hendrix.edu)
-</a>
-</div>
-<br/>
+<!-- <div style="text-align: center"> -->
+<!-- <a class="btn btn-primary" href="https://moodle.hendrix.edu/"> -->
+<!--   Lab submission (moodle.hendrix.edu) -->
+<!-- </a> -->
+<!-- </div> -->
+<!-- <br/> -->
 
-| # | Name | Assigned | Due |
-|:-:|------|----------|:---:|
-|   |      |          |     |
+| # | Name      | Assigned  | Due       |
+|:-:|-----------|-----------|:---------:|
+| 0 | Minecraft | Jan 20/21 | Jan 27/28 |
+|   |           |           |           |
 
 <!-- |1 | [Kepler and Newton](https://www.kaggle.com/gabrielferrer/kepler-and-newton) | Aug 26-27 | Sep 2-3 | -->
 <!-- |2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Sep 2-3 | Sep 9-10 | -->
@@ -178,10 +203,11 @@ You will have three projects in this course. These projects will cover concepts 
 
 ## <a name="exams">Exams</a>: 180 points
 
-There will be three in-class exams, the first worth 40 points and the second and
-third worth 70 points. They will consist of short answer questions along with writing and debugging code.
+There will be three in-class exams, the first worth 40 points and the
+second and third worth 70 points. They will consist of short answer
+questions along with writing and debugging code.
 
-* Exam 1: TBD, covering functions, math, numerical data, conditionals, and binary encoding
+* Exam 1: TBD, covering functions, math, numerical data, and conditionals
 * Exam 2: TBD, covering input/output, while loops, for loops, lists, and strings
 * Exam 3: TBD, covering dictionaries, classes and objects
 
@@ -191,7 +217,8 @@ third worth 70 points. They will consist of short answer questions along with wr
 [Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)
 -->
 
-There is no final exam; you will complete a final project instead, as described above under Projects.
+There is no final exam; you will complete a final project instead, as
+described above under Projects.
 
 ## <a name="scale">Grading Scale</a>
 
@@ -202,3 +229,159 @@ There is no final exam; you will complete a final project instead, as described 
 | 700-799   | C   |
 | 600-699   | D   |
 | 0-599     | F   |
+
+
+<hr />
+
+## <a name="expectations">Expectations</a>
+
+Although you and I play different roles in the course, we both have
+your learning as a common goal. There are things I expect from you as
+a student in the course, but there are also things you can expect of
+me as the course instructor and facilitator.
+
+If I am not fulfilling my responsibilities outlined below, you are
+welcome (and encouraged!) to call me out, perhaps via the [anonymous
+feedback form](https://forms.gle/YhPgQTq1FHiH71B6A). I will also
+initiate a conversation if you are not fulfilling yours. However, none
+of us will meet all of the expectations perfectly---me included!---so
+it's also important that we have grace and patience with one another.
+
+<table class="table table-bordered mt-3">
+  <thead>
+    <tr>
+      <th></th>
+      <th>What I expect from you</th>
+      <th>What you can expect from me</th>
+    </tr>
+  </thead>
+
+  <tr>
+    <th>Communication</th>
+    <td>
+      <ul>
+        <li>Check your email and Teams for occasional course
+          announcements.</li>
+        <li>Let me know via email or Teams message if you will need to miss class
+          for some reason.</li>
+        <li>Let me know as soon as possible if you feel you are
+          struggling, would like extra help, or have something
+          going on that will affect your engagement in the
+          course or your ability to fulfill your
+          responsibilities.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Clearly communicate expectations, assignment
+          details and dates, and grading standards.</li>
+        <li>Return grades and feedback on submitted work within
+          one week of submission.</li>
+        <li>Respond to emails within 24 hours.</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <th>Preparation</th>
+    <td>
+      <ul>
+        <li>Come prepared to fully engage in class meetings, with
+          distractions minimized, to the best of your ability.</li>
+        <li>Spend time outside of class actively practicing
+          unfamiliar or shaky concepts or skills (not just
+          reading over notes).</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Have a concrete plan for how we will
+          spend each class meeting, prepared to lead you through the
+          plan.</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <th>Engagement</th>
+    <td>
+      <ul>
+        <li>Actively engage in  lectures by taking notes and
+          asking questions.</li>
+        <li>Actively engage in lab by working with
+          your partner, and
+          working hard towards completing the lab.</li>
+        <li>Abide by the
+        College's <a href="https://www.hendrix.edu/studentlife/handbook.aspx?id=67121">Academic
+        Integrity Policy</a> and
+        the <a href="http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html">Computer
+            Science-specific Academic Integrity Policy</a>.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Make myself available to meet outside of class, and
+          give you my full attention during a meeting.</li>
+        <li>Be committed to your learning, open to feedback and
+          willing to respond in substantive ways to your
+          suggestions or concerns.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+## <a name="attendance">Attendance</a>
+
+Attendance in this class is not required as part of your grade.
+However, I do expect you to attend and appreciate knowing in advance
+if you will need to miss class.
+
+If you have chosen to attend class in person, you are expected to do
+so consistently; you may not decide to attend remotely some days just
+because you feel like it.  However, there are legitimate reasons
+for attending remotely, such as feeling ill or travelling unavoidably.
+
+## <a name="disabilities">Disabilities</a>
+
+If you have a documented disability or some other reason that you
+cannot meet the above expectations, and/or your learning would be best
+served by a modification to the usual course policies, I would be
+happy to work with you—please get in touch (via Teams or email)! The
+course policies are just a means to an end; I don't care about the
+policies per se but I do care about you and your learning.
+
+*It is the policy of Hendrix College to accommodate students with
+disabilities, pursuant to federal and state law. Students should
+contact Julie Brown in the Office of Academic Success (505.2954;
+brownj@hendrix.edu) to begin the accommodation process. Any student
+seeking accommodation in relation to a recognized disability should
+inform the instructor at the beginning of the course.*
+
+## <a name="diversity">Diversity and Inclusion</a>
+
+Hendrix College values a diverse learning environment as outlined in
+the College's Statement on Diversity. All members of this community
+are expected to contribute to a respectful, welcoming, and inclusive
+environment for every other member of the community. If you believe
+you have been the subject of discrimination please contact Dean Mike
+Leblanc at [leblanc@hendrix.edu](mailto:leblanc@hendrix.edu) or
+501-450-1222 or the Title IX Coordinator Allison Vetter at
+[titleix@hendrix.edu](mailto:titleix@hendrix.edu)or 501-505-2901. If
+you have ideas for improving the inclusivity of the classroom
+experience please feel free to [contact
+me](https://forms.gle/YhPgQTq1FHiH71B6A).  For more information on
+Hendrix non-discrimination policies, visit
+[hendrix.edu/nondiscrimination](http://hendrix.edu/nondiscrimination).
+
+## <a name="health">Mental and Physical Health</a>
+
+Hendrix recognizes that many students face mental and/or physical
+health challenges. If your health status will impact attendance or
+assignments, please communicate with me as soon as possible.  If you
+would like to implement academic accommodations, contact Julie Brown
+in the office of Academic Success
+([brownj@hendrix.edu](mailto:brownj@hendrix.edu)).  To maintain
+optimal health, please make use of free campus resources like the
+[Hendrix Medical Clinic](https://www.hendrix.edu/healthservices/) or
+Counseling Services (501.450.1448).  Your health is important, and I
+care more about your health and well-being than I do about this class!

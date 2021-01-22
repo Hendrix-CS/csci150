@@ -5,7 +5,7 @@ num: 1
 worktitle: Minecraft
 ---
 
-*Due: Wednesday, September 4*
+*Due: Wednesday, January 27*
 
 ![](world1.png)
 
@@ -28,7 +28,3 @@ track", does the track appear in the square your character is on, or
 in the square in front of your character?  You can either play with
 the command on code.org to figure it out, or just make a reasonable
 guess and write down your assumption.
-
-You may write your program by hand, or type it and print it out.
-Either way, you should **bring a physical copy of your homework to
-class on Wednesday**.
