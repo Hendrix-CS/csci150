@@ -35,69 +35,77 @@ Upon completing this course, our goal is for you to be able to:
 
 # <a name="calendar">Calendar</a>
 
-| Date     | Topic        | In-class code | Notes                                                                       |
-|:--------:|--------------|---------------|-----------------------------------------------------------------------------|
-|          |              |               |                                                                             |
-| W 20 Jan | Intro to CS  |               |                                                                             |
-| F 22 Jan | Intro to 150 |               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) |
-|          |              |               |                                                                             |
-| M 25 Jan |              |               |                                                                             |
-| W 27 Jan |              |               |                                                                             |
-| F 29 Jan |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 1 Feb  |              |               |                                                                             |
-| W 3 Feb  |              |               |                                                                             |
-| F 5 Feb  |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 8 Feb  |              |               |                                                                             |
-| W 10 Feb |              |               |                                                                             |
-| F 12 Feb |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 15 Feb |              |               |                                                                             |
-| W 17 Feb |              |               |                                                                             |
-| F 19 Feb |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 22 Feb |              |               |                                                                             |
-| W 24 Feb |              |               |                                                                             |
-| F 26 Feb |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 1 Mar  |              |               |                                                                             |
-| W 3 Mar  |              |               |                                                                             |
-| F 5 Mar  |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 8 Mar  |              |               |                                                                             |
-| W 10 Mar |              |               |                                                                             |
-| F 12 Mar |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 15 Mar |              |               |                                                                             |
-| W 17 Mar |              |               |                                                                             |
-| F 19 Mar |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 22 Mar |              |               |                                                                             |
-| W 24 Mar |              |               |                                                                             |
-| F 26 Mar |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 29 Mar |              |               |                                                                             |
-| W 31 Mar |              |               |                                                                             |
-| F 2 Apr  |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 5 Apr  |              |               |                                                                             |
-| W 7 Apr  |              |               |                                                                             |
-| F 9 Apr  |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 12 Apr |              |               |                                                                             |
-| W 14 Apr |              |               |                                                                             |
-| F 16 Apr |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 19 Apr |              |               |                                                                             |
-| W 21 Apr |              |               |                                                                             |
-| F 23 Apr |              |               |                                                                             |
-|          |              |               |                                                                             |
-| M 26 Apr |              |               |                                                                             |
-| W 28 Apr |              |               |                                                                             |
-| F 30 Apr |              |               |                                                                             |
-|          |              |               |                                                                             |
-| F 7 May  |              |               |                                                                             |
+<div style="text-align: center">
+<a class="btn btn-primary" href="{{ site.submission }}">
+  Assignment submission form
+</a>
+</div>
+<br/>
+
+
+| Date     | Topic             | In-class code | Notes                                                                                           |
+|:--------:|-------------------|---------------|-------------------------------------------------------------------------------------------------|
+|          |                   |               |                                                                                                 |
+| W 20 Jan | Intro to CS       |               |                                                                                                 |
+| F 22 Jan | Intro to CSCI 150 |               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) |
+|          |                   |               |                                                                                                 |
+| M 25 Jan |                   |               |                                                                                                 |
+| W 27 Jan |                   |               |                                                                                                 |
+| F 29 Jan |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 1 Feb  |                   |               |                                                                                                 |
+| W 3 Feb  |                   |               |                                                                                                 |
+| F 5 Feb  |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 8 Feb  |                   |               |                                                                                                 |
+| W 10 Feb |                   |               |                                                                                                 |
+| F 12 Feb |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 15 Feb |                   |               |                                                                                                 |
+| W 17 Feb |                   |               |                                                                                                 |
+| F 19 Feb |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 22 Feb |                   |               |                                                                                                 |
+| W 24 Feb |                   |               |                                                                                                 |
+| F 26 Feb |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 1 Mar  |                   |               |                                                                                                 |
+| W 3 Mar  |                   |               |                                                                                                 |
+| F 5 Mar  |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 8 Mar  |                   |               |                                                                                                 |
+| W 10 Mar |                   |               |                                                                                                 |
+| F 12 Mar |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 15 Mar |                   |               |                                                                                                 |
+| W 17 Mar |                   |               |                                                                                                 |
+| F 19 Mar |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 22 Mar |                   |               |                                                                                                 |
+| W 24 Mar |                   |               |                                                                                                 |
+| F 26 Mar |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 29 Mar |                   |               |                                                                                                 |
+| W 31 Mar |                   |               |                                                                                                 |
+| F 2 Apr  |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 5 Apr  |                   |               |                                                                                                 |
+| W 7 Apr  |                   |               |                                                                                                 |
+| F 9 Apr  |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 12 Apr |                   |               |                                                                                                 |
+| W 14 Apr |                   |               |                                                                                                 |
+| F 16 Apr |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 19 Apr |                   |               |                                                                                                 |
+| W 21 Apr |                   |               |                                                                                                 |
+| F 23 Apr |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| M 26 Apr |                   |               |                                                                                                 |
+| W 28 Apr |                   |               |                                                                                                 |
+| F 30 Apr |                   |               |                                                                                                 |
+|          |                   |               |                                                                                                 |
+| F 7 May  |                   |               |                                                                                                 |
 
 
 <hr>
@@ -116,6 +124,13 @@ family obligation, *etc.*). After you have used up your late days,
 late assignments will receive at most half credit.
 
 ## <a name="hwqz">Homework and Quizzes</a>: 140 points
+
+<div style="text-align: center">
+<a class="btn btn-primary" href="{{ site.submission }}">
+  Assignment submission form
+</a>
+</div>
+<br/>
 
 | #  | Name | Assigned | Due
 |:-:|-||:-:|:-:|
@@ -184,6 +199,14 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 **Lab attendance is required**. For this semester, labs will meet virtually online in Microsoft Teams. <!--Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.-->
 
 ## <a name="projects">Projects</a>: 350 points
+
+<div style="text-align: center">
+<a class="btn btn-primary" href="{{ site.submission }}">
+  Assignment submission form
+</a>
+</div>
+<br/>
+
 
 | # | Name | Points | Assigned | Due |
 |:-:|------|--------|:--------:|:---:|
