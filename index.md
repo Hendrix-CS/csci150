@@ -151,6 +151,18 @@ There will often be short homework assignments to be completed over
 the weekend, assigned on Friday and due Wednesday, sometimes with a
 corresponding quiz at the beginning of class on Wednesday.
 
+Homework will generally be turned in electronically [via this Google
+form]({{ site.submission }}).
+
+* If you type a homework using something like Word or Pages, you
+  should export a PDF (this is typically an option under the "File"
+  menu).
+
+* You may also write your homework solutions on physical paper and
+  scan them using an app such as [Genius
+  Scan](https://thegrizzlylabs.com/genius-scan) which can export your
+  document as a PDF.
+
 <!-- ## <a name="participation">Participation</a>: 110 points -->
 
 <!-- Participation points will be assigned as follows: -->
