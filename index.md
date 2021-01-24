@@ -148,7 +148,7 @@ corresponding quiz at the beginning of class on Wednesday.
 <!--   14 lab periods with the instructor and TA. Following through on all -->
 <!--   lab meetings for a given lab is worth 5 points. -->
 
-## <a name="labs">Labs</a>: 220 points
+## <a name="labs">Labs</a>: 260 points
 
 <!-- <div style="text-align: center"> -->
 <!-- <a class="btn btn-primary" href="https://moodle.hendrix.edu/"> -->
@@ -201,10 +201,10 @@ You will have three projects in this course. These projects will cover concepts 
 
 **You must work individually on the projects.** You may discuss concepts and ideas with your classmates, but the code you turn in must be your own. You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
 
-## <a name="exams">Exams</a>: 180 points
+## <a name="exams">Exams</a>: 250 points
 
-There will be three in-class exams, the first worth 40 points and the
-second and third worth 70 points. They will consist of short answer
+There will be three in-class exams, the first worth 50 points and the
+second and third worth 100 points. They will consist of short answer
 questions along with writing and debugging code.
 
 * Exam 1: TBD, covering functions, math, numerical data, and conditionals
