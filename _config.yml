@@ -115,6 +115,13 @@ extra-resources:
     image: assets/images/checkio_logo_small.png
     url: https://py.checkio.org/
 
+defaults:
+  -
+    scope:
+      path: "lectures/S21/in-class/*.html"
+    values:
+      layout: "generic"
+
 # Build settings
 markdown: kramdown
 theme: minima
