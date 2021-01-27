@@ -43,69 +43,69 @@ Upon completing this course, our goal is for you to be able to:
 <br/>
 
 
-| Date     | Topic             | In-class code | Notes                                                                                           |
-|:--------:|-------------------|---------------|-------------------------------------------------------------------------------------------------|
-|          |                   |               |                                                                                                 |
-| W 20 Jan | Intro to CS       |               |                                                                                                 |
-| F 22 Jan | Intro to CSCI 150 |               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) |
-|          |                   |               |                                                                                                 |
-| M 25 Jan |                   |               |                                                                                                 |
-| W 27 Jan |                   |               |                                                                                                 |
-| F 29 Jan |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 1 Feb  |                   |               |                                                                                                 |
-| W 3 Feb  |                   |               |                                                                                                 |
-| F 5 Feb  |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 8 Feb  |                   |               |                                                                                                 |
-| W 10 Feb |                   |               |                                                                                                 |
-| F 12 Feb |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 15 Feb |                   |               |                                                                                                 |
-| W 17 Feb |                   |               |                                                                                                 |
-| F 19 Feb |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 22 Feb |                   |               |                                                                                                 |
-| W 24 Feb |                   |               |                                                                                                 |
-| F 26 Feb |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 1 Mar  |                   |               |                                                                                                 |
-| W 3 Mar  |                   |               |                                                                                                 |
-| F 5 Mar  |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 8 Mar  |                   |               |                                                                                                 |
-| W 10 Mar |                   |               |                                                                                                 |
-| F 12 Mar |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 15 Mar |                   |               |                                                                                                 |
-| W 17 Mar |                   |               |                                                                                                 |
-| F 19 Mar |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 22 Mar |                   |               |                                                                                                 |
-| W 24 Mar |                   |               |                                                                                                 |
-| F 26 Mar |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 29 Mar |                   |               |                                                                                                 |
-| W 31 Mar |                   |               |                                                                                                 |
-| F 2 Apr  |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 5 Apr  |                   |               |                                                                                                 |
-| W 7 Apr  |                   |               |                                                                                                 |
-| F 9 Apr  |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 12 Apr |                   |               |                                                                                                 |
-| W 14 Apr |                   |               |                                                                                                 |
-| F 16 Apr |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 19 Apr |                   |               |                                                                                                 |
-| W 21 Apr |                   |               |                                                                                                 |
-| F 23 Apr |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| M 26 Apr |                   |               |                                                                                                 |
-| W 28 Apr |                   |               |                                                                                                 |
-| F 30 Apr |                   |               |                                                                                                 |
-|          |                   |               |                                                                                                 |
-| F 7 May  |                   |               |                                                                                                 |
+| Date     | Topic                             | In-class code | Notes                                                                                           |
+|:--------:|-----------------------------------|---------------|-------------------------------------------------------------------------------------------------|
+|          |                                   |               |                                                                                                 |
+| W 20 Jan | Intro to CS                       |               |                                                                                                 |
+| F 22 Jan | Intro to CSCI 150                 |               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) |
+|          |                                   |               |                                                                                                 |
+| M 25 Jan | Intro to Python (math, variables) |               |                                                                                                 |
+| W 27 Jan | Intro to Python (functions)       |               |                                                                                                 |
+| F 29 Jan | Booleans                          |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 1 Feb  | Conditionals                      |               |                                                                                                 |
+| W 3 Feb  | Tracing I                         |               |                                                                                                 |
+| F 5 Feb  | *No class*                        |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 8 Feb  | Flex                              |               |                                                                                                 |
+| W 10 Feb | Exam review                       |               |                                                                                                 |
+| F 12 Feb | Exam 1                            |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 15 Feb | Pycharm & I/O; while loops        |               |                                                                                                 |
+| W 17 Feb | While loops                       |               |                                                                                                 |
+| F 19 Feb | Functions, stack tracing          |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 22 Feb | Function abstraction              |               |                                                                                                 |
+| W 24 Feb | Strings                           |               |                                                                                                 |
+| F 26 Feb | String & loop practice            |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 1 Mar  | Lists                             |               |                                                                                                 |
+| W 3 Mar  | Lists                             |               |                                                                                                 |
+| F 5 Mar  | Lists                             |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 8 Mar  | For loops                         |               |                                                                                                 |
+| W 10 Mar | For loops                         |               |                                                                                                 |
+| F 12 Mar | Mutability & references           |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 15 Mar | Dictionaries                      |               |                                                                                                 |
+| W 17 Mar | Dictionaries, file I/O            |               |                                                                                                 |
+| F 19 Mar | Exam review                       |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 22 Mar | Exam 2                            |               |                                                                                                 |
+| W 24 Mar | *No class*                        |               |                                                                                                 |
+| F 26 Mar | Project 2 demo                    |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 29 Mar | Classes & objects                 |               |                                                                                                 |
+| W 31 Mar | Classes & objects                 |               |                                                                                                 |
+| F 2 Apr  | Classes & objects                 |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 5 Apr  | PyGame example                    |               |                                                                                                 |
+| W 7 Apr  | PyGame example                    |               |                                                                                                 |
+| F 9 Apr  | PyGame example                    |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 12 Apr | Recursion                         |               |                                                                                                 |
+| W 14 Apr | Recursion                         |               |                                                                                                 |
+| F 16 Apr | Recursion                         |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 19 Apr | TBA                               |               |                                                                                                 |
+| W 21 Apr | TBA                               |               |                                                                                                 |
+| F 23 Apr | *No class*                        |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| M 26 Apr | Exam 3 review                     |               |                                                                                                 |
+| W 28 Apr | Exam 3                            |               |                                                                                                 |
+| F 30 Apr | Project workshop                  |               |                                                                                                 |
+|          |                                   |               |                                                                                                 |
+| F 7 May  | Final project presentations       |               |                                                                                                 |
 
 
 <hr>
@@ -184,12 +184,11 @@ form]({{ site.submission }}).
 <!-- </div> -->
 <!-- <br/> -->
 
-| # | Name      | Assigned  | Due       |
-|:-:|-----------|-----------|:---------:|
-| 0 | Minecraft | Jan 20/21 | Jan 27/28 |
-|   |           |           |           |
+| # | Name                                                                        | Assigned  | Due       |
+|:-:|-----------------------------------------------------------------------------|-----------|:---------:|
+| 0 | Minecraft                                                                   | Jan 20-21 | Jan 27-28 |
+| 1 | [Kepler and Newton](https://www.kaggle.com/gabrielferrer/kepler-and-newton) | Jan 27-28 | Feb 3-4   |
 
-<!-- |1 | [Kepler and Newton](https://www.kaggle.com/gabrielferrer/kepler-and-newton) | Aug 26-27 | Sep 2-3 | -->
 <!-- |2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Sep 2-3 | Sep 9-10 | -->
 <!-- |3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) | Sep 9-10 | Sep 16-17 | -->
 <!-- |4 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 16-17 | Sep 25 | -->
