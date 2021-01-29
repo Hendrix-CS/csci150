@@ -51,7 +51,7 @@ Upon completing this course, our goal is for you to be able to:
 |          |                                                                                                                                                                            |                                                                |                                                                                                 |
 | M 25 Jan | [Intro to Python (math, variables) <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/dfa302f8-dd40-4585-85dd-f8ea515272f9)        | [Kaggle notebook](https://www.kaggle.com/byorgey/python-intro) |                                                                                                 |
 | W 27 Jan | [Intro to Python (functions) <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/9203c577-0b27-47de-a3ce-63adac8f0e24)              | [Kaggle notebook](https://www.kaggle.com/byorgey/python-intro) |                                                                                                 |
-| F 29 Jan | Booleans                                                                                                                                                                   |                                                                |                                                                                                 |
+| F 29 Jan | Booleans                                                                                                                                                                   |                                                                | HW: [Boolean practice](homework/booleans.pdf)                                                   |
 |          |                                                                                                                                                                            |                                                                |                                                                                                 |
 | M 1 Feb  | Conditionals                                                                                                                                                               |                                                                |                                                                                                 |
 | W 3 Feb  | Tracing I                                                                                                                                                                  |                                                                |                                                                                                 |
@@ -132,12 +132,12 @@ late assignments will receive at most half credit.
 </div>
 <br/>
 
-| #  | Name | Assigned | Due
-|:-:|-||:-:|:-:|
-|0 | [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) | W Jan 20 | M Jan 25 |
-|1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) | F Jan 22 | W Jan 27 |
+| # | Name                                                          | Assigned | Due      |
+|:-:|---------------------------------------------------------------|----------|:--------:|
+| 0 | [Survey](https://forms.gle/dbH9NFzs8opKpwUX7)                 | W Jan 20 | M Jan 25 |
+| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) | F Jan 22 | W Jan 27 |
+| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf)    | F Jan 29 | W Feb 3  |
 
-<!-- |2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf) | F Sep 6 | W Sep 11 | -->
 <!-- |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 | -->
 <!-- | |Homework Checkin 1 | M Sep 23 | F Oct 4 | -->
 <!-- |4 | [Function and loop practice]({{site.baseurl}}/homework/function-reading.pdf) | F Sep 27 | W Oct 2 | -->
