@@ -184,12 +184,12 @@ form]({{ site.submission }}).
 <!-- </div> -->
 <!-- <br/> -->
 
-| # | Name                                                                               | Assigned  | Due       |
-|:-:|------------------------------------------------------------------------------------|-----------|:---------:|
-| 0 | Minecraft                                                                          | Jan 20-21 | Jan 27-28 |
-| 1 | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-and-newton) | Jan 27-28 | Feb 3-4   |
+| # | Name                                                                                      | Assigned  | Due       |
+|:-:|-------------------------------------------------------------------------------------------|-----------|:---------:|
+| 0 | Minecraft                                                                                 | Jan 20-21 | Jan 27-28 |
+| 1 | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-and-newton)        | Jan 27-28 | Feb 3-4   |
+| 2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Feb 3-4   | Feb 10-11 |
 
-<!-- |2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Sep 2-3 | Sep 9-10 | -->
 <!-- |3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) | Sep 9-10 | Sep 16-17 | -->
 <!-- |4 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 16-17 | Sep 25 | -->
 <!-- |5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Sep 23-24 | Sep 30-Oct 1 | -->
