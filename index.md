@@ -53,7 +53,7 @@ Upon completing this course, our goal is for you to be able to:
 | W 27 Jan | [Intro to Python (functions) <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/9203c577-0b27-47de-a3ce-63adac8f0e24)              | [Kaggle notebook](https://www.kaggle.com/byorgey/python-intro) |                                                                                                 |
 | F 29 Jan | [Booleans <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/61dadddb-2257-49e9-bef4-e879b3cb39af)                                 | [Kaggle notebook](https://www.kaggle.com/byorgey/booleans)     | HW: [Boolean practice](homework/booleans.pdf)                                                   |
 |          |                                                                                                                                                                            |                                                                |                                                                                                 |
-| M 1 Feb  | Conditionals                                                                                                                                                               |                                                                |                                                                                                 |
+| M 1 Feb  | [Conditionals <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/bc803e1c-8e2c-409d-82ec-46e269a867e3)                             | [Kaggle notebook](https://www.kaggle.com/byorgey/booleans)     |                                                                                                 |
 | W 3 Feb  | Tracing I                                                                                                                                                                  |                                                                |                                                                                                 |
 | F 5 Feb  | *No class*                                                                                                                                                                 |                                                                |                                                                                                 |
 |          |                                                                                                                                                                            |                                                                |                                                                                                 |
@@ -184,12 +184,12 @@ form]({{ site.submission }}).
 <!-- </div> -->
 <!-- <br/> -->
 
-| # | Name                                                                               | Assigned  | Due       |
-|:-:|------------------------------------------------------------------------------------|-----------|:---------:|
-| 0 | Minecraft                                                                          | Jan 20-21 | Jan 27-28 |
-| 1 | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-and-newton) | Jan 27-28 | Feb 3-4   |
+| # | Name                                                                                      | Assigned  | Due       |
+|:-:|-------------------------------------------------------------------------------------------|-----------|:---------:|
+| 0 | Minecraft                                                                                 | Jan 20-21 | Jan 27-28 |
+| 1 | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-and-newton)        | Jan 27-28 | Feb 3-4   |
+| 2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Feb 3-4   | Feb 10-11 |
 
-<!-- |2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Sep 2-3 | Sep 9-10 | -->
 <!-- |3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) | Sep 9-10 | Sep 16-17 | -->
 <!-- |4 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 16-17 | Sep 25 | -->
 <!-- |5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Sep 23-24 | Sep 30-Oct 1 | -->
