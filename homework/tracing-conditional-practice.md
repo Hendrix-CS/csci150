@@ -1,7 +1,7 @@
 CSCI 150 HW: Python tracing & conditionals practice
 ---------------------------------------------------
 
-*Due: Wednesday, September 18*
+*Due: Monday, February 8*
 
 
 You should consider the code in each exercise separately from the
