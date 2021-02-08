@@ -59,6 +59,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 5 Feb  | *No class*                                                                                                                                                                 |                                                                |                                                                                                 |
 |          |                                                                                                                                                                            |                                                                |                                                                                                 |
 | M 8 Feb  | Binary and information encoding                                                                                                                                            |                                                                | Quiz: tracing & conditionals                                                                    |
+|          |                                                                                                                                                                            |                                                                | HW: [Practice exam](docs/exam1-practice-s21.pdf)                                                |
 | W 10 Feb | Exam review                                                                                                                                                                |                                                                |                                                                                                 |
 | F 12 Feb | Exam 1                                                                                                                                                                     |                                                                |                                                                                                 |
 |          |                                                                                                                                                                            |                                                                |                                                                                                 |
@@ -242,7 +243,8 @@ There will be three in-class exams, the first worth 50 points and the
 second and third worth 100 points. They will consist of short answer
 questions along with writing and debugging code.
 
-* Exam 1: TBD, covering functions, math, numerical data, and conditionals
+* Exam 1: Friday, February 12, covering functions, math, numerical
+  data, and conditionals ([practice exam](docs/exam1-practice-s21.pdf)
 * Exam 2: TBD, covering input/output, while loops, for loops, lists, and strings
 * Exam 3: TBD, covering dictionaries, classes and objects
 
