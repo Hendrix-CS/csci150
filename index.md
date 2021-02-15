@@ -224,11 +224,10 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 <br/>
 
 
-| # | Name | Points | Assigned | Due |
-|:-:|------|--------|:--------:|:---:|
-|   |      |        |          |     |
+| # | Name                                                                          | Points | Assigned | Due    |
+|:-:|-------------------------------------------------------------------------------|--------|:--------:|:------:|
+| 1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1) | 50     | Feb 15   | Feb 22 |
 
-<!-- |1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1)  | 50  | Sep 7 | Sep 25 | -->
 <!-- |2 | [Word Games]({{site.baseurl}}/projects/project2.html) | 100 | Oct 9 | Oct 23 | -->
 <!-- |3 | [Final Project]({{site.baseurl}}/projects/final_fall2020.html) | 200 | Nov 13 | Dec 7 | -->
 
