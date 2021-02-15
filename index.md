@@ -194,9 +194,9 @@ form]({{ site.submission }}).
 | 0 | Minecraft                                                                                 | Jan 20-21 | Jan 27-28 |
 | 1 | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-and-newton)        | Jan 27-28 | Feb 3-4   |
 | 2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Feb 3-4   | Feb 10-11 |
-| 3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | Feb 10-11  | Feb 17-18 |
+| 3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | Feb 10-11 | Feb 17-18 |
+| 4 | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | Feb 17-18 | Feb 24-25 |
 
-<!-- |4 | [Guess My Number]({{site.baseurl}}/labs/guess.html) | Sep 16-17 | Sep 25 | -->
 <!-- |5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) | Sep 23-24 | Sep 30-Oct 1 | -->
 <!-- |6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) | Sep 30-Oct 1 | Oct 7-8 | -->
 <!-- |7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets) | Oct 7-8 | Oct 14-15 | -->
