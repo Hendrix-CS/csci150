@@ -5,6 +5,19 @@
 layout: course-multi
 ---
 
+## <a name="TAs">TAs</a>
+
+* Connor Escajeda (Tuesday 7-9pm)
+* Zoie Keys (Wednesday 7-9pm)
+
+For TA hours click here to join the virtual CS lab:
+
+<div style="text-align: center">
+<a href="https://gather.town/app/51XVXUciIPdVoLaW/CSCI%20Lab">
+  <img src="assets/images/150-lab.png" />
+</a>
+</div>
+
 # <a name="description">Overview</a>
 
 {{ site.description }}
