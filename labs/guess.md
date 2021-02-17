@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 4
+num: 5
 worktitle: Guess My Number
 ---
 
@@ -58,9 +58,9 @@ Start by creating a file called `guess_number.py` and **paste
 the following code into it**:
 
     ######################################
-    # Copyright (c) 2020 YOUR NAME(s) HERE
-    # CSCI 150, Fall 2020
-    # Lab 4: Guess My Number
+    # Copyright (c) 2021 YOUR NAME(s) HERE
+    # CSCI 150, Spring 2021
+    # Lab 5: Guess My Number
     ######################################
 
     import random
@@ -255,7 +255,5 @@ Modify your strategy from Step 4 to ensure that the computer *never* needs more 
   * `guess_number.py`
   * `computer_guess.py`
 
-**Remember to follow** the
-[Python style guide]({{site.baseurl}}/python_style_guide.html)
-and to run the style checker before turning in your programs!
+
 
