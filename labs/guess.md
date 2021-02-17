@@ -255,5 +255,5 @@ Modify your strategy from Step 4 to ensure that the computer *never* needs more 
   * `guess_number.py`
   * `computer_guess.py`
 
-
+**Note**: Make sure to address all style suggestions and warnings highlighted in PyCharm.
 
