@@ -1,37 +1,44 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{article}
+\documentclass[
+]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{hyperref}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -70,26 +77,12 @@
 \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{0}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 
-% set default figure placement to htbp
-\makeatletter
-\def\fps@figure{htbp}
-\makeatother
-
-
+\author{}
 \date{}
 
 \begin{document}
@@ -98,7 +91,7 @@
 \subsection{CSCI 150 HW: function and loop reading
 practice}\label{csci-150-hw-function-and-loop-reading-practice}}
 
-\emph{Due: Wednesday, October 2}
+\emph{Due: Wednesday, February 24}
 
 To receive full credit, for each exercise you should do the following:
 
@@ -134,12 +127,12 @@ exercises.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{def}\NormalTok{ foo(a: }\BuiltInTok{int}\NormalTok{) }\OperatorTok{->} \BuiltInTok{int}\NormalTok{:}
+\KeywordTok{def}\NormalTok{ foo(a: }\BuiltInTok{int}\NormalTok{) }\OperatorTok{{-}\textgreater{}} \BuiltInTok{int}\NormalTok{:}
 \NormalTok{    b }\OperatorTok{=} \DecValTok{3}\OperatorTok{*}\NormalTok{a }\OperatorTok{+} \DecValTok{2}
     \ControlFlowTok{return}\NormalTok{ b}
     \BuiltInTok{print}\NormalTok{(}\StringTok{"In foo"}\NormalTok{)}
 
-\KeywordTok{def}\NormalTok{ bar(x: }\BuiltInTok{int}\NormalTok{, y: }\BuiltInTok{int}\NormalTok{) }\OperatorTok{->} \BuiltInTok{int}\NormalTok{:}
+\KeywordTok{def}\NormalTok{ bar(x: }\BuiltInTok{int}\NormalTok{, y: }\BuiltInTok{int}\NormalTok{) }\OperatorTok{{-}\textgreater{}} \BuiltInTok{int}\NormalTok{:}
     \ControlFlowTok{return}\NormalTok{ foo(x) }\OperatorTok{+}\NormalTok{ foo(y)}
 
 \KeywordTok{def}\NormalTok{ main1():}
@@ -164,7 +157,7 @@ exercises.
 
 \KeywordTok{def}\NormalTok{ f3(n: }\BuiltInTok{int}\NormalTok{):}
 \NormalTok{    f2()}
-    \ControlFlowTok{if}\NormalTok{ n }\OperatorTok{>} \DecValTok{5}\NormalTok{:}
+    \ControlFlowTok{if}\NormalTok{ n }\OperatorTok{\textgreater{}} \DecValTok{5}\NormalTok{:}
         \BuiltInTok{print}\NormalTok{(}\StringTok{"snake"}\NormalTok{)}
 \NormalTok{        f1()}
     \ControlFlowTok{else}\NormalTok{:}
@@ -185,9 +178,9 @@ exercises.
 \KeywordTok{def}\NormalTok{ main3():}
 \NormalTok{    s: }\BuiltInTok{int} \OperatorTok{=} \DecValTok{0}
 \NormalTok{    i: }\BuiltInTok{int} \OperatorTok{=} \DecValTok{0}
-    \ControlFlowTok{while}\NormalTok{ i }\OperatorTok{<} \DecValTok{5}\NormalTok{:}
+    \ControlFlowTok{while}\NormalTok{ i }\OperatorTok{\textless{}} \DecValTok{5}\NormalTok{:}
 \NormalTok{        j: }\BuiltInTok{int} \OperatorTok{=} \DecValTok{0}
-        \ControlFlowTok{while}\NormalTok{ j }\OperatorTok{<}\NormalTok{ i:}
+        \ControlFlowTok{while}\NormalTok{ j }\OperatorTok{\textless{}}\NormalTok{ i:}
 \NormalTok{            s }\OperatorTok{+=}\NormalTok{ j}
 \NormalTok{            j }\OperatorTok{+=} \DecValTok{1}
 \NormalTok{        i }\OperatorTok{+=} \DecValTok{1}

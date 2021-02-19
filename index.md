@@ -82,7 +82,7 @@ Upon completing this course, our goal is for you to be able to:
 | M 15 Feb | [Pycharm & I/O; while loops <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/bfd48614-6c4c-471b-a47a-d432a899d9ca)               | [Intro.py](lectures/S21/in-class/Intro.py)                      | [Project 1](https://www.kaggle.com/gabrielferrer/project-1) assigned                            |
 |          |                                                                                                                                                                            | [while_intro.py](lectures/S21/in-class/while_intro.py)          |                                                                                                 |
 | W 17 Feb | While loops                                                                                                                                                                |                                                                 |                                                                                                 |
-| F 19 Feb | Functions, stack tracing                                                                                                                                                   |                                                                 |                                                                                                 |
+| F 19 Feb | Functions, stack tracing                                                                                                                                                   |                                                                 | HW: [Function and loop reading practice](homework/function-reading.pdf)                         |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M 22 Feb | Function abstraction                                                                                                                                                       |                                                                 |                                                                                                 |
 | W 24 Feb | Strings                                                                                                                                                                    |                                                                 |                                                                                                 |
@@ -151,11 +151,13 @@ late assignments will receive at most half credit.
 </div>
 <br/>
 
-| # | Name                                                          | Assigned | Due      |
-|:-:|---------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://forms.gle/dbH9NFzs8opKpwUX7)                 | W Jan 20 | M Jan 25 |
-| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) | F Jan 22 | W Jan 27 |
-| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf)    | F Jan 29 | W Feb 3  |
+| # | Name                                                                | Assigned | Due      |
+|:-:|---------------------------------------------------------------------|----------|:--------:|
+| 0 | [Survey](https://forms.gle/dbH9NFzs8opKpwUX7)                       | W Jan 20 | M Jan 25 |
+| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)       | F Jan 22 | W Jan 27 |
+| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf)          | F Jan 29 | W Feb 3  |
+| 3 | [Function and loop reading practice](homework/function-reading.pdf) | F Feb 19 | W Feb 24 |
+|   |                                                                     |          |          |
 
 <!-- |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 | -->
 <!-- | |Homework Checkin 1 | M Sep 23 | F Oct 4 | -->
