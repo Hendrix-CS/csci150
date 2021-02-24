@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 5
+num: 6
 worktitle: Mutation is the Word
 ---
 
