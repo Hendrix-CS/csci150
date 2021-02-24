@@ -265,8 +265,9 @@ in the `Evaluation Document`.
 
 ## What to Hand In
 
-Make sure you have followed the [Python Style Guide](../python_style_guide.html), and
-have run your project through the Automated Style Checker.
+<!--Make sure you have followed the [Python Style Guide](../python_style_guide.html), and
+have run your project through the Automated Style Checker.-->
+Make sure you examine all of the style suggestions that PyCharm makes, and adjust your code accordingly.
 
 You must hand in:
 
