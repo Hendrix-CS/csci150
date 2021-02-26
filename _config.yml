@@ -121,6 +121,11 @@ defaults:
       path: "lectures/S21/in-class/*.html"
     values:
       layout: "generic"
+  -
+    scope:
+      path: "homework/*.md"
+    values:
+      layout: "generic"
 
 # Build settings
 markdown: kramdown
