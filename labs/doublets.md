@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 6
+num: 5
 worktitle: Mutation is the Word
 ---
 
@@ -11,8 +11,8 @@ In this lab we will make extensive use of while loops and strings.  We will expl
 mutation of strings (words, DNA, ...) through playing the game Doublets.
 
 ## Materials
-* [Common English Words](../data/english3.txt)
-* [dictionary.py](../code/dictionary.py) Python Module
+* <a href="../data/english3.txt download>Common English Words</a>
+* <a href="../code/dictionary.py" download>`dictionary.py`</a> Python Module
 * Lab Partner
 
 ## Description
@@ -95,22 +95,59 @@ will always enter exactly what is expected.
     What is your new character? D
     Solution path found in 4 steps.
     CAT -> CAB -> COB -> COG -> DOG
+	
+### Step 2 - Initial Implementation (4 points total)
 
-### Step 2 - Implement Incrementally (3 points)
+#### Step 2.1 - `swap_character()` (1 point)
 
-Now take your pseduocode description and begin to implement your
-program in Python.  Your program should be
-named `doublets.py`.  Write your code in small sections and
-test incrementally. **Never write more than 5-10 lines of code without
-testing your changes!**  For example, you might start by making the
-program ask the user for a starting word.  Once you have verified that
-this part runs successfully and behaves how it is supposed to, you can
-add the next part, and so on.
+Create a new Python file named `doublets.py`. Begin by writing the `swap_character()` 
+function:
 
+	def swap_character(word: str, where: int, updated: str) -> str:
+
+Given a word, the index of a character in the word to replace, and a new character to 
+insert, this function will return a new string with the new character in place of the old
+character. In keeping with our example transcript above, the `where` variable will be an
+integer between 1 and the length of `word`. 
+
+To implement `swap_character()`, you will need to use string slicing and string 
+concatenation.
+
+Here are a few examples you can use to test your implementation of `swap_character()`:
+* `swap_character("cat", 3, "r")`: `car`
+* `swap_character("track", 3, "u")`: `truck`
+* `swap_character("talk", 1, "w")`: `walk`
+
+#### Step 2.2 - Main program (2 points)
+
+Based on your pseduocode description, implement your program in Python, within 
+a function named `main()`. Include the printing of the number of solution steps, but
+do not include the solution chain until Step 2.3. 
+
+Place all of your code into a function named `main()`. The program structure should 
+look something like this:
+
+    def main():
+      ...
+	  
+	  
+	def swap_character(word: str, where: int, updated: str) -> str:
+	  ...
+
+
+    main()
+	
 Be sure you can successfully play a game of Doublets with your
-program, as shown in the example above, before moving on to Step 3.
+program, as shown in the example above, before moving on to the next step.
 
-### Step 3 - Error Handling and Function Decomposition (10 points total)
+#### Step 2.3 - Solution Path (1 point)
+
+Create a string variable to store the solution chain. It should initially be the starting
+word. On each loop step, concatenate `" -> "` and the current word. Then print it out 
+at the end of the program.
+
+
+### Step 3 - Error Handling and Function Decomposition (9 points total)
 
 Of course the user might not always enter input in the expected form.
 In this step, you will incrementally modify your program to ensure that 
@@ -118,22 +155,26 @@ the user only enters valid input. Building a program with robust error
 handling is much easier if it is decomposed into functions, so we will
 introduce error handling and functions into our program together.
 
-#### Step 3.1 - Starting function decomposition (1 point)
-First, place all of your code from Step 2 into a function named `main()`. 
-It should look something like this:
+#### Step 3.1 - Starting word validation (2 points)
+Write a function called `get_start_word()` to get the starting word from the user.
+First, create the function header:
 
-    def main():
-      ...
-
-    main()
+	def get_start_word() -> str:
 	
-#### Step 3.2 - Starting word validation (2 points)
-Next, write a function that ensures that the user inputs a valid word. 
-For English word validation, download the text file [`english3.txt`](../data/english3.txt)
-and the python module [`dictionary.py`](../code/dictionary.py) files, and
-make sure they are in the same folder where you will put your lab. (To download these files,
-you will need to right-click on them. A regular click will display their contents in your
-browser.) You **do not need to copy and paste** anything!  At the top of your
+	
+In Step 2.2, you wrote an `input` instruction to request the starting word. Copy it into 
+`get_start_word()`. On the next line, add a `return` statement to send the value 
+back to the function caller. Then replace the original input statement with a call 
+to `get_start_word()`. 
+
+This sets up the structure for validating our input. By handling the input validation
+in a function, we keep the `main()` code straightforward and uncluttered.
+
+For English word validation, download the text file 
+<a href="../data/english3.txt download>`english3.txt`</a>
+and the Python module 
+<a href="../code/dictionary.py" download>`dictionary.py`</a> files, and
+make sure they are in the same folder where you will put your lab. At the top of your
 Python program, you should put
 
     import dictionary
@@ -148,32 +189,34 @@ otherwise.  You can call the function by writing something like
     dictionary.valid_word(some_word, 'english3.txt')
 	
 Handling erroneous input requires using a loop. The following example shows
-a loop structure that you may find helpful:
+a loop structure that you may find useful in completing `get_start_word()`:
 
 	valid = False
 	while not valid:
 		word = input("Enter a word that is at least four letters long: ")
-		if len(word) >= 4:
-			valid = True
-		else:
+		if len(word) < 4:
 			print(f"{word} is less than four letters long. Please try again.")
+		else:
+			valid = True
 			
-Use your function to ensure that the starting word is valid. Here is an example
-of how the program would behave with the error checking in place:
+Here is an example of how the program would behave with the error checking in place:
 
     What is the starting word? lig
 	lig is not a word. Please try again.
 	What is the starting word? log
     What is the ending word?
 
-#### Step 3.3 - Ending word validation (1 point)
+#### Step 3.2 - Ending word validation (1 point)
 Write a function to validate the ending word. This will be a slightly more complex 
-variation of the function you wrote in Step 3.2, as it must ensure not only that 
+variation of the function you wrote in Step 3.1, as it must ensure not only that 
 the word is valid, it must also ensure that the word is of the same length as the
-starting word. 
+starting word. Here is the function definition header:
 
-Use your function to ensure that the ending word is valid and of the correct length. Here is 
-a continuation of our earlier example to show how the program should behave:
+	def get_end_word(start_word_length: int) -> str:
+
+Replace your original `input` statement with a call to `get_end_word()` to ensure 
+that the ending word is valid and of the correct length. Here is a continuation of 
+our earlier example to show how the program should behave:
 
 	What is the starting word? log
     What is the ending word? worm
@@ -186,14 +229,17 @@ a continuation of our earlier example to show how the program should behave:
     End     = BUG
     Which character do you want to change? (the first character is 1)
 	
-#### Step 3.4 - Character index validation (2 points)
+#### Step 3.3 - Character index validation (2 points)
 Write a function to validate the user's input of a character index to change. 
 It should return an integer between 1 and the length of the current word. Any 
 non-integer or any integer outside that range should result in a message to 
-the user requesting suitable input. 
+the user requesting suitable input. Here is the function declaration header:
 
-Use your function to ensure that the character index is valid. Here is 
-a continuation of our earlier example to show how the program should behave:
+	def get_index(current_word_len: int) -> int:
+
+Replace your original `input` statement with a call to `get_index()` to ensure valid
+input. Here is a continuation of our earlier example to show how the program should 
+behave:
 	
 	Start   = LOG
     Current = LOG
@@ -207,9 +253,14 @@ a continuation of our earlier example to show how the program should behave:
     Which character do you want to change? (the first character is 1) 1
     What is your new character?
 	
-#### Step 3.5 - Character validation (2 points)
-Write a function to ensure that the user inputs a single character. Here
-is a continuation of our earlier example to show how the program should
+#### Step 3.4 - Character validation (2 points)
+Write a function to ensure that the user inputs a single character. Here is
+the function declaration header:
+
+	def get_one_character() -> str:
+
+Replace your original `input` statement with a call to `get_one_character()`.
+Here is a continuation of our earlier example to show how the program should
 behave once you are using your function:
 
     Which character do you want to change? (the first character is 1) 1
@@ -220,12 +271,12 @@ behave once you are using your function:
     End     = BUG
     Which character do you want to change? (the first character is 1)
 	
-#### Step 3.6 - Word validation (2 points)
+#### Step 3.5 - Word validation (2 points)
 Unlike the other error-handling steps, this step is straightforward to
 implement without writing an additional function. Before committing
-to the new word with the new character, make sure the new word is a 
-valid word, again using the `dictionary` module. If it is a valid word,
-update your current word, the number of steps, and the solution path.
+to the new word with the new character, make sure the new word obtained from calling
+`swap_character()` is a valid word, again using the `dictionary` module. If it is a 
+valid word, update your current word, the number of steps, and the solution path.
 If not, print an error message. In either case, the program will resume
 at the top of the `while` loop.
 

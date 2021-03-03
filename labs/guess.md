@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 5
+num: 4
 worktitle: Guess My Number
 ---
 
@@ -21,7 +21,7 @@ that require user input. [PyCharm](https://www.jetbrains.com/pycharm/) is an
 that lets us write these types of programs in Python.
 
 Open PyCharm and create a new project (by going to the <kbd>File</kbd> menu
-and selecting <kbd>New Project</kbd>).  Name it something like `Lab_05_Guess_My_Number`.  
+and selecting <kbd>New Project</kbd>).  Name it something like `Lab_04_Guess_My_Number`.  
 Accept the other defaults and click <kbd>Create</kbd>.
 
 At this point you will have a new, empty project.  Each project can
@@ -60,7 +60,7 @@ the following code into it**:
     ######################################
     # Copyright (c) 2021 YOUR NAME(s) HERE
     # CSCI 150, Spring 2021
-    # Lab 5: Guess My Number
+    # Lab 4: Guess My Number
     ######################################
 
     import random
