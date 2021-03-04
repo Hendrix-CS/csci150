@@ -114,9 +114,9 @@ To implement `swap_character()`, you will need to use string slicing and string
 concatenation.
 
 Here are a few examples you can use to test your implementation of `swap_character()`:
-* `swap_character("cat", 3, "r")`: `car`
-* `swap_character("track", 3, "u")`: `truck`
-* `swap_character("talk", 1, "w")`: `walk`
+* `swap_character("cat", 3, "r")` should return `"car"`
+* `swap_character("track", 3, "u")` should return `"truck"`
+* `swap_character("talk", 1, "w")` should return `"walk"`
 
 #### Step 2.2 - Main program (2 points)
 
