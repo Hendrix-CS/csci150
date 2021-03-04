@@ -126,8 +126,7 @@ character position to change and new character to use, call `swap_character()` t
 build the updated word. Include the printing of the number of solution steps, but
 do not include the solution chain until Step 2.3. 
 
-Place all of your code into a function named `main()`. The program structure should 
-look something like this:
+The program structure should look something like this:
 
     def main():
       ...
