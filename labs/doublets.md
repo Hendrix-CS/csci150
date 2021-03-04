@@ -11,7 +11,7 @@ In this lab we will make extensive use of while loops and strings.  We will expl
 mutation of strings (words, DNA, ...) through playing the game Doublets.
 
 ## Materials
-* <a href="../data/english3.txt download>Common English Words</a>
+* <a href="../data/english3.txt" download>Common English Words</a>
 * <a href="../code/dictionary.py" download>`dictionary.py`</a> Python Module
 * Lab Partner
 
@@ -171,7 +171,7 @@ This sets up the structure for validating our input. By handling the input valid
 in a function, we keep the `main()` code straightforward and uncluttered.
 
 For English word validation, download the text file 
-<a href="../data/english3.txt download>`english3.txt`</a>
+<a href="../data/english3.txt" download>`english3.txt`</a>
 and the Python module 
 <a href="../code/dictionary.py" download>`dictionary.py`</a> files, and
 make sure they are in the same folder where you will put your lab. At the top of your
