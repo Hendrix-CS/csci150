@@ -121,7 +121,9 @@ Here are a few examples you can use to test your implementation of `swap_charact
 #### Step 2.2 - Main program (2 points)
 
 Based on your pseduocode description, implement your program in Python, within 
-a function named `main()`. Include the printing of the number of solution steps, but
+a function named `main()`. When you have received the user's input concerning the
+character position to change and new character to use, call `swap_character()` to
+build the updated word. Include the printing of the number of solution steps, but
 do not include the solution chain until Step 2.3. 
 
 Place all of your code into a function named `main()`. The program structure should 
