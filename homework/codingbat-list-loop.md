@@ -9,7 +9,7 @@ CSCI 150 HW: CodingBat List and Loop practice
 
 Complete **at least 7** of the following exercises in CodingBat.  Be
 sure to share your progress with me, by going to "prefs" and entering
-my email address (`yorgey@hendrix.edu`) in the "Teacher Share" box.
+my email address (`yorgey@hendrix.edu`) in the "Teacher Share" box. 
 
 - [a_to_e](https://codingbat.com/prob/p269089)
 - [num_vowels](https://codingbat.com/prob/p266191)
