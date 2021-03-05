@@ -160,6 +160,7 @@ late assignments will receive at most half credit.
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf)                | F Jan 29 | W Feb 3  |
 | 3 | [Function and loop reading practice](homework/function-reading.pdf)       | F Feb 19 | W Feb 24 |
 | 4 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 26 | W Mar 3  |
+| 5 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 5  | W Mar 10 |
 
 <!-- |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 | -->
 <!-- | |Homework Checkin 1 | M Sep 23 | F Oct 4 | -->
