@@ -2221,16 +2221,9 @@ def listmax(nums: List[int]) -> int:
 \end{reflect}
 
 \newpage
-\class{\notready Lists III}
+\class{\ready Lists III}
 
 \subsection*{Setup}
-
-\begin{itemize}
-\item \notready Practice exam is posted on the class website.  Talk
-  about some good study strategies.  Study \emph{for} the practice
-  exam, then take it under test conditions!  Come in on Monday ready
-  to go over it with other students.
-\end{itemize}
 
 Have them work in pairs (randomly assigned?) to write some list
 practice functions.  Pick some of the following.
@@ -2292,12 +2285,7 @@ def onlyevens(lst: List[int]) -> List[int]:
 \end{verbatim}
 
 \newpage
-\class{\notready For loops}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Reminder: project 2 due one week from Friday.
-\end{itemize}
+\class{\ready For loops}
 
 \subsection*{For Loops}
 
@@ -2327,7 +2315,7 @@ This also works for lists:
 \begin{verbatim}
 animals: List[str] = ["cow", "chicken", "pig", "rabbit"]
 for animal in animals:
-  print("And on this farm he had a " + animal + "!")
+  print(f"And on this farm he had a {animal}! EIEIO!")
 \end{verbatim}
 
 General form:
@@ -2870,6 +2858,15 @@ def frequency_counts(s: str) -> Dict[str, float]:
 \newpage
 \class{\notready File I/O, dictionary practice}
 
+
+\begin{itemize}
+\item \notready Practice exam is posted on the class website.  Talk
+  about some good study strategies.  Study \emph{for} the practice
+  exam, then take it under test conditions!  Come in on Monday ready
+  to go over it with other students.
+\end{itemize}
+
+
 Our programs have no state between each time they are called.
 Everything is stored in memory during the program, but afterwards,
 it's all gone.  This is RAM.  We need hard drive storage to keep it
@@ -3106,6 +3103,8 @@ on:
   to \eg pick random words, generate files with different word
   lists, etc.
 \end{reflect}
+
+
 
 
 \newpage
