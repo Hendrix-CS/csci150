@@ -217,8 +217,8 @@ form]({{ site.submission }}).
 | 4 | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | Feb 17-18 | Feb 24-25 |
 | 5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | Feb 24-25 | Mar 3-4   |
 | 6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | Mar 3-4   | Mar 10-11 |
+| 7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | Mar 10-11 | Mar 17-18 |
 
-<!-- |7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets) | Oct 7-8 | Oct 14-15 | -->
 <!-- |8 | [Project 2 Workshop] | Oct 14-15 | Oct 23 | -->
 <!-- |9 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis) | Oct 21-22 | Oct 28-29 | -->
 <!-- |10| [Water Jugs]({{site.baseurl}}/labs/waterjug.html) | Oct 28-29 | Nov 4-5 | -->
