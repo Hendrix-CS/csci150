@@ -139,3 +139,56 @@ animals: List[str] = ['stingray', 'horse', 'llama', 'frog']
 # Works!
 gerbil_list = ['gerbil']
 animals = animals + gerbil_list * 3
+
+
+## Example list functions
+
+# Find the product of a list of numbers
+def prod_list(nums: List[int]) -> int:
+    i: int = 0
+    prod_so_far: int = 1
+    while i < len(nums):
+        prod_so_far *= nums[i]
+        i += 1
+    return prod_so_far
+
+# Find the maximum value in a non-empty list of numbers
+#
+# e.g.  max_list([2,7,3]) = 7
+#       max_list([2,2,2,2]) = 2
+#       max_list([217]) = 217
+def max_list(nums: List[int]) -> int:
+    i: int = 1
+    max_so_far: int = nums[0]
+    while i < len(nums):
+        if nums[i] > max_so_far:
+            max_so_far = nums[i]
+        i += 1
+    return max_so_far
+
+
+# This version works for lists of *nonnegative* ints
+#   but it doesn't work if we give it all negative numbers!
+# def max_list(nums: List[int]) -> int:
+#     i: int = 0
+#     max_so_far: int = 0
+#     while i < len(nums):
+#         if nums[i] > max_so_far:
+#             max_so_far = nums[i]
+#         i += 1
+#     return max_so_far
+
+# Return a new list which contains only the even
+# numbers from the input.
+#
+# e.g. onlyevens([1,5,6,2,3,7,8]) = [6,2,8]
+#      onlyevens([1,7,3]) = []
+
+def onlyevens(nums: List[int]) -> List[int]:
+    i: int = 0
+    evens: List[int] = []
+    while i < len(nums):
+        if nums[i] % 2 == 0:
+            evens.append(nums[i])
+        i += 1
+    return evens
