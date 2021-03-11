@@ -263,11 +263,14 @@ representing the different menu choices that will be available to the
 user: there should be an option to add a todo, remove a todo, replace a
 todo, search for a todo, or quit.
 
-Now, replace steps 3 and 4 from the list of steps above with a loop
-that keeps printing the list of todos and then prompting the user
-for their choice from the menu (using the `get_choice` function
-you wrote in Step 1 and the list of menu choices) until they
-choose to quit.  At this point the only active menu choice is the
+Now, replace steps 3 and 4 from the list of steps above with a loop:
+* The loop will exit when the user selects option `4`.
+* At each iteration of the loop:
+  * Using `print_numbered_list`, display the current todo list.
+  * Using `get_choice`, request a menu option from the user, using the
+    list of menu options you created earlier.
+	
+At this point the only active menu choice is the
 option to quit. Nothing will actually happen when they choose 
 anything else from the menu; you will fix that in the next step.
 
