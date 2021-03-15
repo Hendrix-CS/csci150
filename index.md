@@ -98,7 +98,7 @@ Upon completing this course, our goal is for you to be able to:
 | W 10 Mar | [For loops: index ranges <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/ac5599d8-7e16-4e7d-8ab5-c1f86d8174d4)                  | [for_loops.py](lectures/S21/in-class/for_loops.py)              |                                                                                                 |
 | F 12 Mar | [Mutability & references <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/7faa16bb-f2ae-411a-a983-7e05da1d5e5b)                  | [heap.py](lectures/S21/in-class/heap.py)                        | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)                            |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 15 Mar | Dictionaries                                                                                                                                                               |                                                                 |                                                                                                 |
+| M 15 Mar | Dictionaries                                                                                                                                                               |                                                                 | HW: [Practice exam](docs/exam2-practice-s21.pdf)                                                                                                |
 | W 17 Mar | Dictionaries, file I/O                                                                                                                                                     |                                                                 |                                                                                                 |
 | F 19 Mar | Exam review                                                                                                                                                                |                                                                 |                                                                                                 |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
@@ -266,9 +266,10 @@ second and third worth 100 points. They will consist of short answer
 questions along with writing and debugging code.
 
 * Exam 1: Friday, February 12, covering functions, math, numerical
-  data, and conditionals ([practice exam](docs/exam1-practice-s21.pdf)
-* Exam 2: TBD, covering input/output, while loops, for loops, lists, and strings
-* Exam 3: TBD, covering dictionaries, classes and objects
+  data, and conditionals ([practice exam](docs/exam1-practice-s21.pdf))
+* Exam 2: Monday, March 22, covering input/output, while loops, for
+  loops, lists, and strings ([practice exam](docs/exam2-practice-s21.pdf))
+* Exam 3: Wednesday, April 28, covering dictionaries, classes and objects
 
 <!--
 [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
