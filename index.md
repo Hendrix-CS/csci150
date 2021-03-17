@@ -219,6 +219,7 @@ form]({{ site.submission }}).
 | 5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | Feb 24-25 | Mar 3-4   |
 | 6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | Mar 3-4   | Mar 10-11 |
 | 7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | Mar 10-11 | Mar 17-18 |
+| 8 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | Mar 17-18 | Mar 24-25 |
 
 <!-- |8 | [Project 2 Workshop] | Oct 14-15 | Oct 23 | -->
 <!-- |9 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis) | Oct 21-22 | Oct 28-29 | -->
