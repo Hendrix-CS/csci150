@@ -269,7 +269,7 @@ questions along with writing and debugging code.
 * Exam 1: Friday, February 12, covering functions, math, numerical
   data, and conditionals ([practice exam](docs/exam1-practice-s21.pdf))
 * Exam 2: Monday, March 22, covering input/output, while loops, for
-  loops, lists, and strings ([practice exam](docs/exam2-practice-s21.pdf))
+  loops, lists, and strings ([practice exam](docs/exam2-practice-s21.pdf); [practice exam solutions](docs/exam2-practice-solutions-s21.pdf))
 * Exam 3: Wednesday, April 28, covering dictionaries, classes and objects
 
 <!--
