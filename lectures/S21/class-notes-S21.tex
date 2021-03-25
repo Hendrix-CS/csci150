@@ -2857,15 +2857,15 @@ def frequency_counts(s: str) -> Dict[str, float]:
 \end{reflect}
 
 \newpage
-\class{\notready File I/O, dictionary practice}
+\class{\ready File I/O, dictionary practice}
 
 
-\begin{itemize}
-\item \notready Practice exam is posted on the class website.  Talk
-  about some good study strategies.  Study \emph{for} the practice
-  exam, then take it under test conditions!  Come in on Monday ready
-  to go over it with other students.
-\end{itemize}
+% \begin{itemize}
+% \item \notready Practice exam is posted on the class website.  Talk
+%   about some good study strategies.  Study \emph{for} the practice
+%   exam, then take it under test conditions!  Come in on Monday ready
+%   to go over it with other students.
+% \end{itemize}
 
 
 Our programs have no state between each time they are called.
@@ -2919,7 +2919,7 @@ FINISH writing \verb|frequency_count| and \verb|normalize| from last
 class.  Maybe run them on the contents of a file.
 
 \newpage
-\lab{Sentiment Analysis}
+\lab{\ready Sentiment Analysis}
 
 \begin{reflect}{Brent, S'16}
   I wrote this lab fresh in S'16, based on a Nifty Assignment @
@@ -2930,14 +2930,13 @@ class.  Maybe run them on the contents of a file.
 \end{reflect}
 
 \newpage
-\class{\notready Exam 2 review}
+\class{\ready Exam 2 review}
 
 \begin{itemize}
-\item \notready \textbf{Assign} Project 2.  Due Friday, October 1.
 \item Put them in pairs and have them go through exam together.
 \end{itemize}
 
-\class{\notready Exam 2}
+\class{\ready Exam 2}
 
 \begin{reflect}{Brent, S'16}
   In the Fall 2015 semester, Exam 2 was on the Wednesday right before
@@ -2985,93 +2984,9 @@ class.  Maybe run them on the contents of a file.
 \holiday{Spring break}
 
 \newpage
-\section*{\notready Heap tracing examples, dictionary practice}
+\class{\ready Project 2 demo}
 
-\notready EXTRA MATERIAL, put this somewhere!!
-
-Go through some more examples of tracing with stack \& heap:
-
-\begin{verbatim}
-from typing import *
-
-## This is an example to use to follow tracing with the Heap
-## The Heap will contain any lists and dictionaries that are built,
-## as their variables are references to the object.  The variables names
-## themselves still go in the stack, with an arrow to the Heap.
-## Strings, ints, floats will go in the stack
-
-## List version
-## change_list will add a few values to a list
-def change_list(lst: List[int]) -> List[int]:
-    for i in range(4):
-        lst.append(i**2)
-
-    lst.append(42)
-
-    return lst
-
-def main():
-    mylist : List[int] = [0,5,-2,8]
-    print(mylist)
-    templist : List[int] = mylist
-    print("Change: ", change_list(templist))
-    print(mylist)
-    templist[1] = -17
-    print(mylist)
-
-main()
-
-## String Version
-## This works differently.  Since strings are immutable, any time a string
-## is modified, a new instance of the string is created.
-
-def change_string(s : str) -> str:
-    for i in range(4):
-        s += str(i**2)
-
-    s += '42'
-
-    return s
-
-def main1():
-    mystring : str = 'abcd'
-    print(mystring)
-    tempstring : str = mystring
-    print("Change: ", change_string(tempstring))
-    print(mystring)
-    ## We cannot write an equivalent to templist[1] = -17,
-    ## since we cannot individually change the value of a single character
-    ## in a string
-
-main1()
-\end{verbatim}
-
-Then have students write
-\verb|normalize(d: Dict[str, int]) -> d: Dict[str, float]|.  Requires
-first adding up all counts.  Emphasize that we don't want to modify
-the original dict, make a new one to return!
-
-\begin{verbatim}
-# Given a dictionary of counts, return a new normalized dictionary
-# where each key maps to its frequency, by dividing each count by the
-# total count.
-def normalize(counts: Dict[str, int]) -> Dict[str, float]:
-
-    total: int = 0
-    for k in counts:
-        total += counts[k]
-
-    freqs: Dict[str, float] = {}
-    for k in counts:
-        freqs[k] = counts[k] / total
-
-    return freqs
-\end{verbatim}
-
-\newpage
-\class{\notready Project 2 demo}
-
-Introduce Project 2 (word games).
+Introduce \notready Project 2 (word games).
 
 \begin{reflect}{Brent, S'18}
   Did this at the beginning of lab instead of using class time on it.
@@ -3104,9 +3019,6 @@ on:
   to \eg pick random words, generate files with different word
   lists, etc.
 \end{reflect}
-
-
-
 
 \newpage
 \class{\notready Intro to classes \& objects}
@@ -4200,5 +4112,91 @@ def fib_m(n: int) -> int:
 % \class{\notready Something fun?}
 
 \class{\notready Free/project help}
+
+
+\newpage
+\section*{\notready Heap tracing examples, dictionary practice}
+
+\notready EXTRA MATERIAL, put this somewhere!!
+
+Go through some more examples of tracing with stack \& heap:
+
+\begin{verbatim}
+from typing import *
+
+## This is an example to use to follow tracing with the Heap
+## The Heap will contain any lists and dictionaries that are built,
+## as their variables are references to the object.  The variables names
+## themselves still go in the stack, with an arrow to the Heap.
+## Strings, ints, floats will go in the stack
+
+## List version
+## change_list will add a few values to a list
+def change_list(lst: List[int]) -> List[int]:
+    for i in range(4):
+        lst.append(i**2)
+
+    lst.append(42)
+
+    return lst
+
+def main():
+    mylist : List[int] = [0,5,-2,8]
+    print(mylist)
+    templist : List[int] = mylist
+    print("Change: ", change_list(templist))
+    print(mylist)
+    templist[1] = -17
+    print(mylist)
+
+main()
+
+## String Version
+## This works differently.  Since strings are immutable, any time a string
+## is modified, a new instance of the string is created.
+
+def change_string(s : str) -> str:
+    for i in range(4):
+        s += str(i**2)
+
+    s += '42'
+
+    return s
+
+def main1():
+    mystring : str = 'abcd'
+    print(mystring)
+    tempstring : str = mystring
+    print("Change: ", change_string(tempstring))
+    print(mystring)
+    ## We cannot write an equivalent to templist[1] = -17,
+    ## since we cannot individually change the value of a single character
+    ## in a string
+
+main1()
+\end{verbatim}
+
+Then have students write
+\verb|normalize(d: Dict[str, int]) -> d: Dict[str, float]|.  Requires
+first adding up all counts.  Emphasize that we don't want to modify
+the original dict, make a new one to return!
+
+\begin{verbatim}
+# Given a dictionary of counts, return a new normalized dictionary
+# where each key maps to its frequency, by dividing each count by the
+# total count.
+def normalize(counts: Dict[str, int]) -> Dict[str, float]:
+
+    total: int = 0
+    for k in counts:
+        total += counts[k]
+
+    freqs: Dict[str, float] = {}
+    for k in counts:
+        freqs[k] = counts[k] / total
+
+    return freqs
+\end{verbatim}
+
 
 \end{document}

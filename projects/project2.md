@@ -7,21 +7,19 @@ worktitle: Word Games
 
 ## Description
 
-For this project, we will explore more complex interactions with the
-user by implementing conditional statements and loops. You will create a
-program for users to play a [word game](http://en.wikipedia.org/wiki/Word_game)
-of your choice.
+For this project, you will create a program for users to play a [word
+game](http://en.wikipedia.org/wiki/Word_game) of your choice.
 
 In particular, your project should be complex enough that it includes
 several of the following concepts we have discussed in class:
 
 *   Booleans
 *   Functions
-*   Conditional Statements
+*   Conditional statements
 *   Loops
 *   Strings
 *   Lists
-*   File input
+*   File input/output
 
 (It is not an absolute requirement for your program to contain every
 single one of the above elements; but if it does not need most of them,
@@ -29,12 +27,12 @@ then your program is probably not interesting/complex enough.) The game
 can be for one person against a computer, or two players against each
 other.
 
-Some examples are
+Some examples include:
 
 *   [Last Letter First
     Letter](http://www.greatschools.org/students/activities/slideshows/2812-family-word-games.gs?page=3)
-    using Countries, State Names, Foods, etc.
-*   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows) *using words*
+    using countries, state names, foods, etc.
+*   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows) *using words, not numbers*
 *   [Ghost](http://en.wikipedia.org/wiki/Ghost_%28game%29)
 *   [Boggle](http://en.wikipedia.org/wiki/Boggle)
 *   [Prolix](http://boardgamegeek.com/boardgame/39635/prolix)
@@ -43,12 +41,13 @@ Some examples are
 
 **Do not feel limited by the games on this list**. Find a game that
 interests you and implement it. If you choose something else, check with
-your professor first, so we can advise you on the scope of your project.
+one of your instructors first, so we can advise you on the scope of your project.
 
 ## Requirements
 
-You should explain the game to the user, being clear exactly what input
-is expected and valid whenever requesting information from them.
+Your program should explain the game to the user, being clear exactly
+what input is expected and valid whenever requesting information from
+them.
 
 The user must be able to
 
@@ -69,7 +68,7 @@ turns.
 
 ## Warnings
 
-*   **Get started early**! Pick a game and run it by me. We are happy to
+*   **Get started early**! Pick a game and run it by us. We are happy to
     help you think through the design of your program.
 *   If you are not confident with the use of functions to structure your
     code, we highly recommend *first* getting something very basic to
@@ -77,15 +76,12 @@ turns.
     parts of your code into functions. Then repeat the process, adding
     functionality incrementally.
 *   Historically, project 2 is the point in the semester where some
-    students become **tempted to cheat** by copying others' code. Do not
-    succumb to this temptation! Review the
-    [Academic Integrity](http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html) guidelines for CSCI. Get started early, come for help often.
-    You **can** do this project!
+    students become **tempted to cheat** by copying others' code. Do
+    not succumb to this temptation! Review the [Academic
+    Integrity](http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html)
+    guidelines for CSCI. Get started early, come for help often.  You
+    **can** do this project!
 
 ## What to Hand In
 
 You must hand in all files necessary to run your code.
-
-Make sure you have followed the [Python Style Guide](../python_style_guide.html),
-and have run your project through
-the Automated Style Checker.
