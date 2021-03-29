@@ -3092,8 +3092,15 @@ out the answer empirically.
   \verb|a_cake.num_candles = 4|. Draw a stack/heap diagram:
   \verb|a_cake| variable on the stack, \verb|Cake| object in the heap,
   containing a \verb|num_candles| variable.
-\item Create an \verb|__init__| method with a parameter. (Explain
-  \verb|self|; explain \verb|__init__|.)
+\item Make it into a \verb|dataclass|:
+\begin{verbatim}
+from dataclasses import dataclass
+
+@dataclass
+class Cake:
+    num_candles: int
+\end{verbatim}
+
 \item Create \verb|blowout| method which picks a random number of
   candles to blow out and subtracts from \verb|num_candles|.
   Emphasize difference between local variable (where we store the
