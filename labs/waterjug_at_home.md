@@ -138,7 +138,17 @@ examples:
 	assert jugA.contents == 0
 
 If all tests pass, it will print a success message. If any of the assertions fail,
-you will see an appropriate message.
+you will see an appropriate message. For example, if you were to test the incomplete
+code above, the first assertion would fail, and you would get something like 
+the following message:
+
+	Traceback (most recent call last):
+	  File "C:/Users/ferrer/PycharmProjects/waterjug/waterjug.py", line 44, in <module>
+		test()
+	  File "C:/Users/ferrer/PycharmProjects/waterjug/waterjug.py", line 24, in test
+		assert jugA.contents == 4
+	AssertionError
+
 
 
 ## Step 2: The Puzzle (10 points)
