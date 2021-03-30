@@ -221,7 +221,7 @@ form]({{ site.submission }}).
 | 6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | Mar 3-4   | Mar 10-11 |
 | 7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | Mar 10-11 | Mar 17-18 |
 | 8 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | Mar 17-18 | Mar 31-Apr 1 |
-| 9 | [Water Jugs]({{site.baseurl}}/labs/waterjug_at_home.html) 
+| 9 | [Water Jugs]({{site.baseurl}}/labs/waterjug_at_home.html) 								| Mar 31    | Apr 8 |
 
 <!-- |11| [Graphics and Animation]({{site.baseurl}}/labs/pygame.html) | Nov 4-5 | Nov 11-12 | -->
 <!-- |12| [Enron's Secrets] (https://www.kaggle.com/gabrielferrer/finding-evidence-recursively) | Nov 11-12 | Nov 18-19 | -->
