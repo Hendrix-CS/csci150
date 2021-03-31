@@ -160,9 +160,9 @@ you will need the following line at the top of your file:
 
     from waterjug import WaterJug
 	
-**Note**: If you named the file from Part 1 anything other than `waterjug.py`,
+{% include note.html content="If you named the file from Part 1 anything other than `waterjug.py`,
 this `import` line **will not work**. Make sure that the file from Part 1 is
-named `waterjug.py` before you continue.	
+named `waterjug.py` before you continue." %}	
 
 Your program should:
 
