@@ -159,6 +159,10 @@ water jugs puzzle.  To use the `WaterJug` class,
 you will need the following line at the top of your file:
 
     from waterjug import WaterJug
+	
+**Note**: If you named the file from Part 1 anything other than `waterjug.py`,
+this `import` line **will not work**. Make sure that the file from Part 1 is
+named `waterjug.py` before you continue.	
 
 Your program should:
 
@@ -167,6 +171,9 @@ Your program should:
 * Ask the user the goal quantity of water
 * Create the necessary empty `WaterJug` objects
 * While the goal has not been met:
+	 * Display the current status of each `WaterJug`. 
+	   * If `j` is a `WaterJug`, `print(j)` will display its value 
+	     as shown in the example below.
 	 * Give the user a list of the options
 	     * fill A, fill B
 		 * empty A, empty B
@@ -178,6 +185,7 @@ to reach the goal. You will need to maintain this solution path
 using a list or a string.
 
 Here is an example run of the program for you to emulate:
+
 	Enter the capacity of Jug A: 4
 	Enter the capacity of Jug B: 3
 	Enter the goal quantity of water for Jug A: 2
