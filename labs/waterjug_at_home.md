@@ -68,51 +68,51 @@ Methods:
 Implement this class in Python. Here is an incomplete implementation you can use 
 as a guide:
 
-	from dataclasses import dataclass
+    from dataclasses import dataclass
 
 
-	@dataclass
-	class WaterJug:
-		capacity: int
-		contents: int
+    @dataclass
+    class WaterJug:
+        capacity: int
+        contents: int
 
-		def fill(self):
-			pass # Your code here
+        def fill(self):
+            pass # Your code here
 
-		def empty(self):
-			pass # Your code here
+        def empty(self):
+            pass # Your code here
 
-		def pour(self, other: 'WaterJug'):
-			pass # Your code here
-
-
-	def test():
-		jugA = WaterJug(4, 0)
-		jugB = WaterJug(3, 0)
-		jugA.fill()
-		assert jugA.capacity == 4
-		assert jugA.contents == 4
-		jugA.pour(jugB)
-		assert jugA.contents == 1
-		assert jugB.contents == 3
-		assert jugA.capacity == 4
-		assert jugB.capacity == 3
-		jugB.empty()
-		assert jugB.contents == 0
-		assert jugB.capacity == 3
-		jugA.pour(jugB)
-		assert jugA.contents == 0
-		assert jugB.contents == 1
-		jugA.fill()
-		jugA.pour(jugB)
-		assert jugA.contents == 2
-		assert jugB.contents == 3
-		print("All tests passed")
+        def pour(self, other: 'WaterJug'):
+            pass # Your code here
 
 
-	if __name__ == '__main__':
-		test()
-	
+    def test():
+        jugA = WaterJug(4, 0)
+        jugB = WaterJug(3, 0)
+        jugA.fill()
+        assert jugA.capacity == 4
+        assert jugA.contents == 4
+        jugA.pour(jugB)
+        assert jugA.contents == 1
+        assert jugB.contents == 3
+        assert jugA.capacity == 4
+        assert jugB.capacity == 3
+        jugB.empty()
+        assert jugB.contents == 0
+        assert jugB.capacity == 3
+        jugA.pour(jugB)
+        assert jugA.contents == 0
+        assert jugB.contents == 1
+        jugA.fill()
+        jugA.pour(jugB)
+        assert jugA.contents == 2
+        assert jugB.contents == 3
+        print("All tests passed")
+
+
+    if __name__ == '__main__':
+        test()
+    
 
 
 {% include warning.html content="Be careful with your methods to make
@@ -133,21 +133,21 @@ at that point. An assertion is a claim that a given statement is true. If the
 statement is not true, the program ends with an error message. Here are some 
 examples:
 
-	jugA = WaterJug(4, 0)
-	assert jugA.capacity == 4
-	assert jugA.contents == 0
+    jugA = WaterJug(4, 0)
+    assert jugA.capacity == 4
+    assert jugA.contents == 0
 
 If all tests pass, it will print a success message. If any of the assertions fail,
 you will see an appropriate message. For example, if you were to test the incomplete
 code above, the first assertion would fail, and you would get something like 
 the following message:
 
-	Traceback (most recent call last):
-	  File "C:/Users/ferrer/PycharmProjects/waterjug/waterjug.py", line 44, in <module>
-		test()
-	  File "C:/Users/ferrer/PycharmProjects/waterjug/waterjug.py", line 24, in test
-		assert jugA.contents == 4
-	AssertionError
+    Traceback (most recent call last):
+      File "C:/Users/ferrer/PycharmProjects/waterjug/waterjug.py", line 44, in <module>
+        test()
+      File "C:/Users/ferrer/PycharmProjects/waterjug/waterjug.py", line 24, in test
+        assert jugA.contents == 4
+    AssertionError
 
 
 
@@ -159,10 +159,10 @@ water jugs puzzle.  To use the `WaterJug` class,
 you will need the following line at the top of your file:
 
     from waterjug import WaterJug
-	
+    
 {% include note.html content="If you named the file from Part 1 anything other than `waterjug.py`,
 this `import` line **will not work**. Make sure that the file from Part 1 is
-named `waterjug.py` before you continue." %}	
+named `waterjug.py` before you continue." %}    
 
 Your program should:
 
@@ -171,49 +171,49 @@ Your program should:
 * Ask the user the goal quantity of water
 * Create the necessary empty `WaterJug` objects
 * While the goal has not been met:
-	 * Display the current status of each `WaterJug`. 
-	   * If `j` is a `WaterJug`, `print(j)` will display its value 
-	     as shown in the example below.
-	 * Give the user a list of the options
-	     * fill A, fill B
-		 * empty A, empty B
-		 * pour A B, pour B A
-	 * Ask the user for their option selection
-	 * Perform the selected option
+     * Display the current status of each `WaterJug`. 
+       * If `j` is a `WaterJug`, `print(j)` will display its value 
+         as shown in the example below.
+     * Give the user a list of the options
+         * fill A, fill B
+         * empty A, empty B
+         * pour A B, pour B A
+     * Ask the user for their option selection
+     * Perform the selected option
 * When the goal is met, print the solution path found by the user
 to reach the goal. You will need to maintain this solution path
 using a list or a string.
 
 Here is an example run of the program for you to emulate:
 
-	Enter the capacity of Jug A: 4
-	Enter the capacity of Jug B: 3
-	Enter the goal quantity of water for Jug A: 2
+    Enter the capacity of Jug A: 4
+    Enter the capacity of Jug B: 3
+    Enter the goal quantity of water for Jug A: 2
 
-	A: WaterJug(capacity=4, contents=0) B: WaterJug(capacity=3, contents=0)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
+    A: WaterJug(capacity=4, contents=0) B: WaterJug(capacity=3, contents=0)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
 
-	A: WaterJug(capacity=4, contents=4) B: WaterJug(capacity=3, contents=0)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
+    A: WaterJug(capacity=4, contents=4) B: WaterJug(capacity=3, contents=0)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
 
-	A: WaterJug(capacity=4, contents=1) B: WaterJug(capacity=3, contents=3)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): empty B
+    A: WaterJug(capacity=4, contents=1) B: WaterJug(capacity=3, contents=3)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): empty B
 
-	A: WaterJug(capacity=4, contents=1) B: WaterJug(capacity=3, contents=0)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
+    A: WaterJug(capacity=4, contents=1) B: WaterJug(capacity=3, contents=0)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
 
-	A: WaterJug(capacity=4, contents=0) B: WaterJug(capacity=3, contents=1)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
+    A: WaterJug(capacity=4, contents=0) B: WaterJug(capacity=3, contents=1)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
 
-	A: WaterJug(capacity=4, contents=4) B: WaterJug(capacity=3, contents=1)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
-	Goal achieved!
-	fill A
-	pour A B
-	empty B
-	pour A B
-	fill A
-	pour A B
+    A: WaterJug(capacity=4, contents=4) B: WaterJug(capacity=3, contents=1)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
+    Goal achieved!
+    fill A
+    pour A B
+    empty B
+    pour A B
+    fill A
+    pour A B
 
 {% include important.html content="Do not just put everything in `main`.
 You should break your code up into functions appropriately." %}
