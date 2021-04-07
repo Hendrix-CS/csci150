@@ -241,11 +241,11 @@ the `update` method of each face before the
 individual `draw` method. Your `draw_all` function should
 now look like this:
 
-    def draw_all(surface, faces):
+    def draw_all(surface, shapes):
         surface.fill('white')
-        for face in faces:
-            face.update()
-            face.draw(surface)
+        for shape in shapes:
+            shape.update()
+            shape.draw(surface)
         pygame.display.update()
 
 Try it out. Add a few faces. If they fly across the screen
@@ -333,4 +333,4 @@ are intersecting, and if so, makes them bounce off of each other.
 
 ## What to Hand In
 
-Submit `face1.py` and `face2.py` via Moodle.
+Submit `face1.py` and `face2.py` via Teams.
