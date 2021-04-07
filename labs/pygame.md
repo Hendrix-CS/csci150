@@ -143,18 +143,39 @@ ignore, modify, or replace any and all aspects of this example.
 
 ## Step 2: Classes (5 points total)
 
-### Step 2.1: Using the Mouse
+### Step 2.1: Placing faces with the Mouse (3 points)
 
-Create a file called `points.py` and enter the code below:
+We will represent a `Face` with a class in Python. The `Face` will need to remember
+the `(x,y)` coordinates for the center of the face. The `draw` method of the `Face` class 
+abstracts the original face from Step 1.3 so it can be centered around any `(x,y)` coordinates. 
+This will let us move the face around the screen. To make this work, the circle representing the 
+head will be located at `self.x`, `self.y`, and the other components will be represented as 
+offsets from there. Of course, you should use your own face-drawing code in place of the 
+example code shown below.
 
+Create a file called `face2.py` and enter the code below:
+
+    from dataclasses import dataclass
     import pygame
     from pygame.locals import *
+
+
+    @dataclass
+    class Face:
+        x: int
+        y: int
+
+        def draw(self, surface):
+            pygame.draw.circle(surface, 'red', (self.x, self.y), 100)
+            pygame.draw.circle(surface, 'yellow', (self.x - 25, self.y - 25), 35)
+            pygame.draw.circle(surface, 'yellow', (self.x + 25, self.y - 25), 35)
+            pygame.draw.line(surface, 'orange', (self.x - 20, self.y + 30), (self.x + 20, self.y + 30))
 
 
     def draw_all(surface, shapes):
         surface.fill('black')
         for shape in shapes:
-            pygame.draw.circle(surface, 'white', shape, 5)
+            shape.draw(surface)
         pygame.display.update()
 
 
@@ -169,55 +190,24 @@ Create a file called `points.py` and enter the code below:
                 if event.type == QUIT:
                     running = False
                 elif event.type == MOUSEBUTTONDOWN:
-                    shapes.append((event.pos[0], event.pos[1]))
+                    shapes.append(Face(event.pos[0], event.pos[1]))
         pygame.quit()
 
 
     if __name__ == '__main__':
         main()
 
+
         
-Run the program. Click the mouse at various locations on the window.
-
-The following elements are distinctive in this program:
-* It checks for the `MOUSEBUTTONDOWN` event type.
-* When it sees that event, it adds an `(x,y)` coordinate to the `points` list.
-* It draws a white circle at each `(x,y)` coordinate indicated by a mouse click.
+Run the program. Click the mouse at various locations on the window. Every time
+the user clicks the mouse, it detects a `MOUSEBUTTONDOWN` event type. When it
+sees that event, it adds a `Face` object to the `shapes` list.
 
 
-### Step 2.2: A Population of Faces (4 points)
+### Step 2.2: Random Colors (2 points)
 
-We will represent a `Face` with a class in Python. The `Face` will need to remember
-the `(x,y)` coordinates for the center of the face. The `draw` method of the `Face` class 
-abstracts the original face from Step 1.3 so it can be centered around any `(x,y)` coordinates. 
-This will let us move the face around the screen. To make this work, the circle representing the 
-head will be located at `self.x`, `self.y`, and the other components will be represented as 
-offsets from there. Of course, you should use your own face-drawing code in place of the 
-example code shown below.
-
-    class Face:
-        def __init__(self, x, y):
-            self.x = x
-            self.y = y
-
-        def draw(self, surface):
-            pygame.draw.circle(surface, 'red', (self.x, self.y), 100)
-            pygame.draw.circle(surface, 'yellow', (self.x - 25, self.y - 25), 35)
-            pygame.draw.circle(surface, 'yellow', (self.x + 25, self.y - 25), 35)
-            pygame.draw.line(surface, 'orange', (self.x - 20, self.y + 30), (self.x + 20, self.y + 30))
-    
-Create a new Python file called `face2.py` and enter your version of the Face class. 
-
-Copy the code from Step 2.1 into `face2.py`. That code appends an `(x,y)` coordinate to the 
-`shapes` list. Instead of appending that coordinate, append a `Face` object instead.
-Where that code appends a point to the `shapes` Also alter `draw_all` to ask each `shape` 
-to draw itself instead of drawing a circle around an `(x,y)` coordinate. Test it out, and 
-make sure it places a `Face` wherever you click.
-
-### Step 2.3: Random Colors (1 point)
-
-Modify your `Face` class so that it has a `self.color` attribute. It should be initialized by
-a `color` parameter that you add to the `Face` class's constructor (`__init__`). 
+Modify your `Face` class so that it has a `color` attribute in addition to its
+`x` and `y` attributes. 
 In the `draw` method of your `Face` class, replace references to the base color used for 
 the face with `self.color`. (In the example of Step 1.3, the base color to be replaced was red.) 
 
@@ -235,10 +225,7 @@ With the faces being drawn by an object, we
 can now make these objects move. Add new attributes to
 your `Face`, called `velocity_x` and `velocity_y`, to capture
 the velocity of the `Face`. For now, initialize them to 1, so they will
-be moving at a speed of 1 pixel per update, as shown here:
-
-        self.velocity_x = 1
-        self.velocity_y = 1
+be moving at a speed of 1 pixel per update.
 
 Next, add a new method to your `Face` class
 called `update`. When called, this function will change the
@@ -289,10 +276,9 @@ it can implement bouncing correctly.
 
 ### Step 3.3: Random speeds (2 points)
 
-Abstract the velocities so they are initialized by parameters in
-the `__init__` method, and
-choose random velocities between -5 and 5 for both the x and y
-dimension for each `Face` created. As you do not want the `Face` 
+Each time you create a `Face` object, pass to the constructor random
+velocities between -5 and 5 for both the x and y
+dimension. As you do not want the `Face` 
 to have a velocity of zero, it is recommended that you generate
 a random number between 1 and 5, and then (using another random
 number) give a 50/50 chance of switching the number to be 
