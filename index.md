@@ -223,7 +223,7 @@ form]({{ site.submission }}).
 | 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | Mar 10-11 | Mar 17-18    |
 | 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | Mar 17-18 | Mar 31-Apr 1 |
 | 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug_at_home.html)                                 | Mar 31    | Apr 7-8      |
-| 11 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                               | Apr 7-8   | Apr 14-15    |
+| 10 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                               | Apr 7-8   | Apr 14-15    |
 
 <!-- |12| [Enron's Secrets] (https://www.kaggle.com/gabrielferrer/finding-evidence-recursively) | Nov 11-12 | Nov 18-19 | -->
 <!-- |13| [Project 3 Workshop] | Nov 18-19 | Dec 7 | -->
