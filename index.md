@@ -211,20 +211,20 @@ form]({{ site.submission }}).
 <!-- </div> -->
 <!-- <br/> -->
 
-| # | Name                                                                                      | Assigned  | Due       |
-|:-:|-------------------------------------------------------------------------------------------|-----------|:---------:|
-| 0 | Minecraft                                                                                 | Jan 20-21 | Jan 27-28 |
-| 1 | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-and-newton)        | Jan 27-28 | Feb 3-4   |
-| 2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Feb 3-4   | Feb 10-11 |
-| 3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | Feb 10-11 | Feb 17-18 |
-| 4 | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | Feb 17-18 | Feb 24-25 |
-| 5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | Feb 24-25 | Mar 3-4   |
-| 6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | Mar 3-4   | Mar 10-11 |
-| 7 | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | Mar 10-11 | Mar 17-18 |
-| 8 | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | Mar 17-18 | Mar 31-Apr 1 |
-| 9 | [Water Jugs]({{site.baseurl}}/labs/waterjug_at_home.html) 								| Mar 31    | Apr 7-8 |
+| #  | Name                                                                                      | Assigned  | Due          |
+|:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
+| 0  | Minecraft                                                                                 | Jan 20-21 | Jan 27-28    |
+| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-and-newton)        | Jan 27-28 | Feb 3-4      |
+| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Feb 3-4   | Feb 10-11    |
+| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | Feb 10-11 | Feb 17-18    |
+| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | Feb 17-18 | Feb 24-25    |
+| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | Feb 24-25 | Mar 3-4      |
+| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | Mar 3-4   | Mar 10-11    |
+| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | Mar 10-11 | Mar 17-18    |
+| 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | Mar 17-18 | Mar 31-Apr 1 |
+| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug_at_home.html)                                 | Mar 31    | Apr 7-8      |
+| 11 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                               | Apr 7-8   | Apr 14-15    |
 
-<!-- |11| [Graphics and Animation]({{site.baseurl}}/labs/pygame.html) | Nov 4-5 | Nov 11-12 | -->
 <!-- |12| [Enron's Secrets] (https://www.kaggle.com/gabrielferrer/finding-evidence-recursively) | Nov 11-12 | Nov 18-19 | -->
 <!-- |13| [Project 3 Workshop] | Nov 18-19 | Dec 7 | -->
 
