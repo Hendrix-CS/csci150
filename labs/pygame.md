@@ -272,7 +272,8 @@ that dimension by -1.
 The `get_width()` and `get_height()` methods of the `pygame.Surface` 
 class give the width and height of the window. Think carefully about
 how this information will be conveyed to your `Face` object so that
-it can implement bouncing correctly.
+it can implement bouncing correctly. One approach would be to add
+your `surface` object as a parameter to `update()`.
 
 ### Step 3.3: Random speeds (2 points)
 
