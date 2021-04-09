@@ -224,8 +224,8 @@ form]({{ site.submission }}).
 | 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | Mar 17-18 | Mar 31-Apr 1 |
 | 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug_at_home.html)                                 | Mar 31    | Apr 7-8      |
 | 10 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                               | Apr 7-8   | Apr 14-15    |
+| 11 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)      | Apr 14-15 | Apr 21-22    |
 
-<!-- |12| [Enron's Secrets] (https://www.kaggle.com/gabrielferrer/finding-evidence-recursively) | Nov 11-12 | Nov 18-19 | -->
 <!-- |13| [Project 3 Workshop] | Nov 18-19 | Dec 7 | -->
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
