@@ -260,17 +260,16 @@ You will have three projects in this course. These projects will cover concepts 
 
 **You must work individually on the projects.** You may discuss concepts and ideas with your classmates, but the code you turn in must be your own. You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
 
-## <a name="exams">Exams</a>: 250 points
+## <a name="exams">Exams</a>: ~~250~~ 150 points
 
-There will be three in-class exams, the first worth 50 points and the
-second and third worth 100 points. They will consist of short answer
+There will be ~~three~~ two in-class exams, the first worth 50 points
+and the second worth 100 points. They will consist of short answer
 questions along with writing and debugging code.
 
 * Exam 1: Friday, February 12, covering functions, math, numerical
   data, and conditionals ([practice exam](docs/exam1-practice-s21.pdf))
 * Exam 2: Monday, March 22, covering input/output, while loops, for
   loops, lists, and strings ([practice exam](docs/exam2-practice-s21.pdf); [practice exam solutions](docs/exam2-practice-solutions-s21.pdf))
-* Exam 3: Wednesday, April 28, covering dictionaries, classes and objects
 
 <!--
 [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
@@ -283,13 +282,13 @@ described above under Projects.
 
 ## <a name="scale">Grading Scale</a>
 
-| Score  | Grade  |
-|:------:|:------:|
-| 900-1000  | A   |
-| 800-899   | B   |
-| 700-799   | C   |
-| 600-699   | D   |
-| 0-599     | F   |
+| Score   | Grade |
+|:-------:|:-----:|
+| 800-900 | A     |
+| 700-799 | B     |
+| 600-699 | C     |
+| 500-599 | D     |
+| 0-499   | F     |
 
 
 <hr />
