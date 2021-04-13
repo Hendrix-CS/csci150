@@ -3,8 +3,8 @@ layout: work
 type: Project
 num: 3
 worktitle: Final Project
-designdue: Sometime
-finaldue: Tuesday, May 12
+designdue: Wednesday, April 21
+finaldue: Monday, May 10
 ---
 
 ## Description
@@ -16,8 +16,8 @@ Important dates
 ---------------
 
 -   Project design due (20): **{{page.designdue}} @ 5pm**
+-   Presentations (30): **{{page.finaldue}}, 2-5pm**
 -   Project due (150): **{{page.finaldue}} @ 8pm**
--   Presentations (30): **{{page.finaldue}}, 8:30-11:30am**
 
 Guidelines
 ----------
@@ -71,12 +71,13 @@ Presentation
 ------------
 
 Everyone will present their projects on {{page.finaldue}}.
-Your presentation, using PowerPoint, Prezi, the chalkboard, or some
+Your presentation, using PowerPoint, Prezi, a chalkboard, or some
 other appropriate presentation medium, will be **at most 6 minutes
 long**. (We are serious about this; presentations that are too long will
 lose points and/or be rudely cut off. Practice beforehand to make sure
 you have a good sense for how much time you have. Six minutes is not
-very long at all.)
+very long at all.)  The presentations will take place virtually via
+Microsoft Teams.
 
 Your presentation should include **three slides** and a **quick demo of
 your project**. The three slides should answer three questions, one per
@@ -112,7 +113,7 @@ You should turn in
 -   **All** the Python source files, data files, etc. necessary to run
     your project.
 
-Of course, the [Python style guide]({{site.baseurl}}/python_style_guide.html) and
-[style checker]({{site.baseurl}}/python_style_guide.html) still apply!
+<!-- Of course, the [Python style guide]({{site.baseurl}}/python_style_guide.html) and -->
+<!-- [style checker]({{site.baseurl}}/python_style_guide.html) still apply! -->
 
 ------------------------------------------------------------------------
