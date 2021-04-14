@@ -3726,7 +3726,7 @@ of comments and narrating thought process.
 
 
 \newpage
-\class{\notready Recursion II: recursive functions}
+\class{\ready Recursion II: recursive functions}
 
 \subsection*{Setup}
 
@@ -3791,7 +3791,7 @@ Finish implementation of list product from last class.
 \lab{Enron's Secrets}
 
 \newpage
-\class{\notready Recursion III (W 3/13)}
+\class{\notready Recursion III}
 
 \subsection*{Setup}
 \begin{itemize}
@@ -3813,16 +3813,15 @@ the product of a list or reverse a string etc. using recursion, but I
 really would make recursive trees.
 
 \begin{verbatim}
+from typing import *
+
 # Trees
 
+@dataclass
 class Tree:
 
-    # self.value  --- value @ the root
-    # self.children: List[Tree]
-
-    def __init__(self, value, children):
-        self.value = value
-        self.children = children
+    value                 # value @ the root
+    children: List[Tree]  # children
 
     # Return the number of items in the whole tree
     def size(self) -> int:
