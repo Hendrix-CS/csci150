@@ -26,7 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 number: CSCI 150
 title: Foundations of Computer Science
-semester: Spring 2021
+semester: Fall 2021
 
 navigation:
   - title: Overview
@@ -55,12 +55,12 @@ navigation:
     url: '#commitments'
 
 instructors:
-  - id: yorgey
-    name: Dr. Brent Yorgey
-    email: yorgey@hendrix.edu
-    web: http://ozark.hendrix.edu/~yorgey
-    phone: (501) 450-1377
-    officehours: https://byorgey.youcanbook.me
+  - id: seme
+    name: Prof. Lars Seme
+    email: seme@hendrix.edu
+    web: https://www.hendrix.edu/mathcs/profile.aspx?id=70795
+    phone: (501) 450-1256
+    officehours: TBD
   - id: ferrer
     name: Dr. Gabriel Ferrer
     email: ferrer@hendrix.edu
@@ -69,23 +69,27 @@ instructors:
     officehours: https://drferrer.youcanbook.me/
   - id: wilson
     name: Prof. Josh Wilson
-    email: TBD
+    email: wilsonj@hendrix.edu
     web: TBD
     phone: TBD
     officehours: TBD
 
 offerings:
   - name: LECTURE 01
-    loc: Cabe Theater
+    loc: M.C. Reynolds 315
     time: MWF 8:10am - 9:00am (A1)
-    instructor: yorgey
+    instructor: seme
+  - name: LECTURE 02
+    loc: M.C. Reynolds 110
+    time: MWF 11:10am - 12:00pm (A4)
+    instructor: ferrer
   - name: LAB L1
-    loc: Bailey Lab / Microsoft Teams
-    time: W 1:35pm - 4:25pm (L8)
+    loc: Bailey Lab
+    time: W 1:10pm - 4:00pm (L8)
     instructor: ferrer
   - name: LAB L2
-    loc: Bailey Lab / Microsoft Teams
-    time: R 1:35pm - 4:25pm (L9)
+    loc: Bailey Lab 
+    time: R 1:10pm - 4:00pm (L9)
     instructor: wilson
 
 submission: https://forms.gle/JBLQRF736S46KTxP9
