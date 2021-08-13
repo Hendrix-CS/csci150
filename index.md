@@ -7,8 +7,8 @@ layout: course-multi
 
 ## <a name="TAs">TAs</a>
 
-* Connor Escajeda (Tuesday 7-9pm)
-* Zoie Keys (Wednesday 7-9pm)
+* TBA
+* TBA
 
 For TA hours click here to join the virtual CS lab:
 
