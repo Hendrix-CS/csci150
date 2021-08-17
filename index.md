@@ -66,6 +66,8 @@ Upon completing this course, our goal is for you to be able to:
 | F  3 Sep | Booleans                                  | [Kaggle notebook](https://www.kaggle.com/byorgey/booleans)      | HW: [Boolean practice](homework/booleans.pdf)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M 6 Sep  | *No class*                                                                                                                                                                 |                                                                 |                                                                                                 |
+
+
 | W 8 Sep  | Conditionals | | |
 
 <!--
