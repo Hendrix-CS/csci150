@@ -66,11 +66,59 @@ Upon completing this course, our goal is for you to be able to:
 | W  1 Sep | Intro to Python (functions)               | [Kaggle notebook](https://www.kaggle.com/byorgey/python-intro)  |                                                                                                 |
 | F  3 Sep | Booleans                                  | [Kaggle notebook](https://www.kaggle.com/byorgey/booleans)      | HW: [Boolean practice](homework/booleans.pdf)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M  6 Sep | *No class*                                                                                                                                                                 |                                                                 |                                                                                                 |
-| W  8 Sep | Conditionals | | |
-| F 10 Sep | Tracing I | | | 
+| M  6 Sep | *No class; Labor Day*                                                                                                                                                                 |                                                                 |                                                                                                 |
+| W  8 Sep | Conditionals 
+| F 10 Sep | Tracing I 
 | 
-| M 13 Sep | Binary and information encoding | | |
+| M 13 Sep | Binary and information encoding 
+| W 15 Sep | 
+| F 17 Sep | Exam 1 Review
+| 
+| M 20 Sep | Exam 1
+| W 22 Sep |
+| F 24 Sep |
+|
+| M 27 Sep |
+| W 29 Sep |
+| F  1 Oct |
+| 
+| M  4 Oct |
+| W  6 Oct |
+| F  8 Oct |
+|
+| M 11 Oct |
+| W 13 Oct |
+| F 15 Oct | *No class; Fall Break*
+|
+| M 18 Oct |
+| W 20 Oct |
+| F 22 Oct |
+|
+| M 25 Oct |
+| W 27 Oct |
+| F 29 Oct |
+|
+| M  1 Nov |
+| W  3 Nov |
+| F  5 Nov |
+| 
+| M  8 Nov |
+| W 10 Nov |
+| F 12 Nov |
+|
+| M 15 Nov |
+| W 17 Nov |
+| F 19 Nov |
+|
+| M 22 Nov |
+| W 24 Nov | *No class; Thanksgiving Break*
+| F 26 Nov | *No class; Thanksgiving Break* 
+|
+| M 29 Nov |
+| W  1 Dec |
+| F  3 Dec |
+|
+| F 10 Dec | Final Project Presentations (Ferrer 8:30-11:30 am; Seme 2-5 pm)
 
 <!--
 | Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
@@ -230,18 +278,18 @@ form]({{ site.submission }}).
 
 | #  | Name                                                                                      | Assigned  | Due          |
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
-| 0  | Minecraft                                                                                 | Jan 20-21 | Jan 27-28    |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-and-newton)        | Jan 27-28 | Feb 3-4      |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Feb 3-4   | Feb 10-11    |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | Feb 10-11 | Feb 17-18    |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | Feb 17-18 | Feb 24-25    |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | Feb 24-25 | Mar 3-4      |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | Mar 3-4   | Mar 10-11    |
-| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | Mar 10-11 | Mar 17-18    |
-| 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | Mar 17-18 | Mar 31-Apr 1 |
-| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug_at_home.html)                                 | Mar 31    | Apr 7-8      |
-| 10 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                               | Apr 7-8   | Apr 14-15    |
-| 11 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)      | Apr 14-15 | Apr 21-22    |
+| 0  | Minecraft                                                                                 | Aug 25-26 | Sep 1-2      |
+| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-and-newton)        | Sep 1-2   | Sep 8-9      |
+| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Sep 8-9   | Sep 15-16    |
+| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | Sep 15-16 | Sep 22-23    |
+| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | Sep 22-23 | Sep 29-30    |
+| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | Sep 29-30 | Oct 6-7      |
+| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | Oct 6-7   | Oct 20-21    |
+| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | Oct 20-21 | Oct 27-28    |
+| 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | Oct 27-28 | Nov 3-4      |
+| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug_at_home.html)                                 | Nov 3-4   | Nov 10-11    |
+| 10 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                               | Nov 10-11 | Nov 17-18    |
+| 11 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)      | Nov 17-18 | Dec 1-3      |
 
 <!-- |13| [Project 3 Workshop] | Nov 18-19 | Dec 7 | -->
 
