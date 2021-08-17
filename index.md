@@ -35,7 +35,7 @@ Upon completing this course, our goal is for you to be able to:
   * Making and testing hypotheses.
 * Use modular components to decompose problems and assemble solutions.
 * Create abstract, generalized models from specific, complex examples.
-* Find pertinent information from 
+* Find pertinent information from programming language documentation.
 
 ## <a name="resources">Resources</a>
 
@@ -71,145 +71,63 @@ Upon completing this course, our goal is for you to be able to:
 | F 10 Sep | Tracing I 
 | 
 | M 13 Sep | Binary and information encoding 
-| W 15 Sep | 
+| W 15 Sep | Pycharm & I/O
 | F 17 Sep | Exam 1 Review
 | 
 | M 20 Sep | Exam 1
-| W 22 Sep |
-| F 24 Sep |
+| W 22 Sep | The `while` loop
+| F 24 Sep | Functions and stack tracing
 |
-| M 27 Sep |
-| W 29 Sep |
-| F  1 Oct |
+| M 27 Sep | Tracing example; strings
+| W 29 Sep | String & loop practice
+| F  1 Oct | Function abstraction
 | 
-| M  4 Oct |
-| W  6 Oct |
-| F  8 Oct |
+| M  4 Oct | Lists
+| W  6 Oct | List processing examples
+| F  8 Oct | Exam 2 Review
 |
-| M 11 Oct |
-| W 13 Oct |
+| M 11 Oct | Exam 2
+| W 13 Oct | Mutability & references
 | F 15 Oct | *No class; Fall Break*
 |
-| M 18 Oct |
-| W 20 Oct |
-| F 22 Oct |
+| M 18 Oct | `for` loops
+| W 20 Oct | `for` loops: index ranges
+| F 22 Oct | File I/O
 |
-| M 25 Oct |
-| W 27 Oct |
-| F 29 Oct |
+| M 25 Oct | Dictionaries
+| W 27 Oct | Dictionaries
+| F 29 Oct | Introduction to classes and objects
 |
-| M  1 Nov |
-| W  3 Nov |
-| F  5 Nov |
+| M  1 Nov | Classes/objects example 1
+| W  3 Nov | Classes/objects example 2
+| F  5 Nov | Exam 3 Review
 | 
-| M  8 Nov |
-| W 10 Nov |
-| F 12 Nov |
+| M  8 Nov | Exam 3
+| W 10 Nov | Graphics and Pygame
+| F 12 Nov | Graphics and Pygame
 |
-| M 15 Nov |
-| W 17 Nov |
-| F 19 Nov |
+| M 15 Nov | Introduction to recursion
+| W 17 Nov | Recursion (trees)
+| F 19 Nov | Recursion
 |
-| M 22 Nov |
+| M 22 Nov | Structuring larger programs 1
 | W 24 Nov | *No class; Thanksgiving Break*
 | F 26 Nov | *No class; Thanksgiving Break* 
 |
-| M 29 Nov |
-| W  1 Dec |
-| F  3 Dec |
+| M 29 Nov | Structuring larger programs 2
+| W  1 Dec | Structuring larger programs 3
+| F  3 Dec | Project 3 work
 |
 | F 10 Dec | Final Project Presentations (Ferrer 8:30-11:30 am; Seme 2-5 pm)
-
-<!--
-| Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
-|:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| W 20 Jan | Intro to CS                                                                                                                                                                |                                                                 |                                                                                                 |
-| F 22 Jan | [Intro to CSCI 150; Algorithms and errors <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/24055e79-83d4-4eab-ad1f-a92695259727) | [Lecture notes](lectures/S21/in-class/01-22.html)               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 25 Jan | [Intro to Python (math, variables) <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/dfa302f8-dd40-4585-85dd-f8ea515272f9)        | [Kaggle notebook](https://www.kaggle.com/byorgey/python-intro)  |                                                                                                 |
-| W 27 Jan | [Intro to Python (functions) <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/9203c577-0b27-47de-a3ce-63adac8f0e24)              | [Kaggle notebook](https://www.kaggle.com/byorgey/python-intro)  |                                                                                                 |
-| F 29 Jan | [Booleans <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/61dadddb-2257-49e9-bef4-e879b3cb39af)                                 | [Kaggle notebook](https://www.kaggle.com/byorgey/booleans)      | HW: [Boolean practice](homework/booleans.pdf)                                                   |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 1 Feb  | [Conditionals <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/bc803e1c-8e2c-409d-82ec-46e269a867e3)                             | [Kaggle notebook](https://www.kaggle.com/byorgey/booleans)      |                                                                                                 |
-| W 3 Feb  | [Tracing I <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/309015f3-be3f-4712-b8e7-842c1e34b740)                                | [Kaggle notebook](https://www.kaggle.com/byorgey/tracing-i)     | HW: [Tracing & conditional practice](homework/tracing-conditional-practice.pdf)                 |
-|          |                                                                                                                                                                            | [example 1](images/trace1.png) [example 2](images/trace2.png)   |                                                                                                 |
-| F 5 Feb  | *No class*                                                                                                                                                                 |                                                                 |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 8 Feb  | [Binary and information encoding <img src ="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/315bfbeb-ae51-4145-a365-412147bb9dca)         | [Lecture notes](lectures/S21/in-class/02-08.html)               | Quiz: tracing & conditionals                                                                    |
-|          |                                                                                                                                                                            |                                                                 | HW: [Practice exam](docs/exam1-practice-s21.pdf)                                                |
-| W 10 Feb | [Exam 1 review <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/098489f1-c90f-4292-b490-a12cf13e5534)                            | [Kaggle notebook](https://www.kaggle.com/byorgey/exam-1-review) |                                                                                                 |
-|          |                                                                                                                                                                            | [converting to binary](images/convert_binary.png)               |                                                                                                 |
-|          |                                                                                                                                                                            | [logic table](images/logic_table.png)                           |                                                                                                 |
-|          |                                                                                                                                                                            | [tracing](images/cond_trace.png)                                |                                                                                                 |
-| F 12 Feb | Exam 1                                                                                                                                                                     |                                                                 |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 15 Feb | [Pycharm & I/O; while loops <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/bfd48614-6c4c-471b-a47a-d432a899d9ca)               | [Intro.py](lectures/S21/in-class/Intro.py)                      | [Project 1](https://www.kaggle.com/gabrielferrer/project-1) assigned                            |
-|          |                                                                                                                                                                            | [while_intro.py](lectures/S21/in-class/while_intro.py)          |                                                                                                 |
-|          | [No video due to Teams bug]                                                                                                                                                |                                                                 |                                                                                                 |
-| W 17 Feb | While loops                                                                                                                                                                | [while_intro.py](lectures/S21/in-class/while_intro.py)          |                                                                                                 |
-| F 19 Feb | [Functions and stack tracing <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/9ee65f74-0ef8-460b-9d4f-3c2c495f95f3)              | [functions.py](lectures/S21/in-class/functions.py)              | HW: [Function and loop reading practice](homework/function-reading.pdf)                         |
-|          | [Tracing example <img src="assets/images/yt.png" width="24px" />](https://youtu.be/yAhR2TVKRx8)                                                                            |                                                                 |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 22 Feb | [Function abstraction <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/5c3f6cbf-ab34-459b-a636-e975bfd9f748)                     | [hilow.py](lectures/S21/in-class/hilow.py)                      |                                                                                                 |
-| W 24 Feb | *No class*                                                                                                                                                                 |                                                                 |                                                                                                 |
-| F 26 Feb | [String & loop practice <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/ccf29b1e-ec89-404d-99e8-0c88e96b0211)                   | [string-practice.py](lectures/S21/in-class/string-practice.py)  | HW: [CodingBat string and loop practice](homework/codingbat-string-loop.html)                   |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 1 Mar  | [Lists 1 <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/16e1c6c5-e482-4002-8cad-9ad7a332736d)                                  | [lists.py](lectures/S21/in-class/lists.py)                      |                                                                                                 |
-| W 3 Mar  | [Lists 2 <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/0e2cbcc1-efc8-4aa5-b63c-dbc2d64e1604)                                  | [lists.py](lectures/S21/in-class/lists.py)                      |                                                                                                 |
-| F 5 Mar  | [List processing examples <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/cf19169e-059b-4fb6-b3f7-961d3af450c2)                 | [lists.py](lectures/S21/in-class/lists.py)                      | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)                       |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 8 Mar  | [For loops <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/56cc59f7-1302-4f89-9cb7-bd4bd221e744)                                | [for_loops.py](lectures/S21/in-class/for_loops.py)              |                                                                                                 |
-| W 10 Mar | [For loops: index ranges <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/ac5599d8-7e16-4e7d-8ab5-c1f86d8174d4)                  | [for_loops.py](lectures/S21/in-class/for_loops.py)              |                                                                                                 |
-| F 12 Mar | [Mutability & references <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/7faa16bb-f2ae-411a-a983-7e05da1d5e5b)                  | [heap.py](lectures/S21/in-class/heap.py)                        | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)                            |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 15 Mar | [Dictionaries <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/11028e9e-d914-436c-8462-e5ea2a0085f1)                             | [dictionaries.py](lectures/S21/in-class/dictionaries.py)        | HW: [Practice exam](docs/exam2-practice-s21.pdf)                                                |
-| W 17 Mar | [Dictionaries, file I/O <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/970e3a23-c0ab-4d52-a126-e7070144794e)                   | [files.py](lectures/S21/in-class/files.py)                      |                                                                                                 |
-|          |                                                                                                                                                                            | [dictionaries.py](lectures/S21/in-class/dictionaries.py)        |                                                                                                 |
-| F 19 Mar | [Exam 2 review <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/748b73c7-6d1b-45e8-b1f8-7a5b83e9bcf6)                            |                                                                 |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 22 Mar | Exam 2 (no class meeting)                                                                                                                                                  |                                                                 |                                                                                                 |
-| W 24 Mar | *No class*                                                                                                                                                                 |                                                                 |                                                                                                 |
-| F 26 Mar | [Project 2 demo <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/41eb378e-f41c-4c76-9181-cacc0e10aec5)                           | [project2_demo.py](lectures/S21/in-class/project2_demo.py)      | [Project 2]({{site.baseurl}}/projects/project2.html) assigned                                   |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 29 Mar | [Introduction to classes and objects <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/260b8ba4-dd62-4e99-8435-8840fbfd84aa)      | [cake.py](lectures/S21/in-class/cake.py)                        |                                                                                                 |
-| W 31 Mar | [Classes & objects: Cake](https://web.microsoftstream.com/video/07a17c56-4c06-495b-a6ea-0fe5a06743ef)                                                                      | [cake.py](lectures/S21/in-class/cake.py)                        |                                                                                                 |
-| F 2 Apr  | [Classes & objects: Traffic lights](https://web.microsoftstream.com/video/d88653d9-b6c8-4d51-9dcb-b5c537b77448)                                                            | [traffic.py](lectures/S21/in-class/traffic.py)                  |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 5 Apr  | *No class*                                                                                                                                                                 |                                                                 |                                                                                                 |
-| W 7 Apr  | [PyGame example <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/de025f1c-29f4-43e0-85dc-56a807f05e45)                           | [paint.py](lectures/S21/in-class/paint.py)                      |                                                                                                 |
-| F 9 Apr  | [PyGame example <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/bd3882ee-a035-4882-b312-e34501cc18f6)                           | [paint.py](lectures/S21/in-class/paint.py)                      |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 12 Apr | [Introduction to recursion <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/13634572-7e6e-4f39-a293-2f41ea78ee5f)                | [recursion.py](lectures/S21/in-class/recursion.py)              |                                                                                                 |
-| W 14 Apr | [Recursion (trees) <img src="assets/images/stream.png" width="24px" />](https://web.microsoftstream.com/video/033fb44e-caa5-4165-be52-45f99061cb48)                        | [tree.py](lectures/S21/in-class/tree.py)                        |                                                                                                 |
-| F 16 Apr | Recursion                                                                                                                                                                  |                                                                 |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 19 Apr | TBA                                                                                                                                                                        |                                                                 |                                                                                                 |
-| W 21 Apr | TBA                                                                                                                                                                        |                                                                 |                                                                                                 |
-| F 23 Apr | *No class*                                                                                                                                                                 |                                                                 |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 26 Apr | TBA                                                                                                                                                                        |                                                                 |                                                                                                 |
-| W 28 Apr | TBA                                                                                                                                                                        |                                                                 |                                                                                                 |
-| F 30 Apr | Project workshop                                                                                                                                                           |                                                                 |                                                                                                 |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 10 May | Final project presentations (2-5pm)                                                                                                                                        |                                                                 |                                                                                                 |
--->
 
 <hr>
 # Coursework
 
-Each student has **four late days** to spend throughout the semester
-as they wish.  Simply inform the instructor any time *prior* to the
-due date for an assignment that you wish to use a late day; you may
-then turn in the assignment up to 24 hours late. Multiple late days
-may be used on the same assignment. There are no partial late days;
-turning in an assignment 2 hours late or 20 hours late will both use 1
-late day. Note that late days are intended to cover both normal
-circumstances (you simply want more time to work on the assignment)
-and exceptional circumstances (you get sick, travel for a game or
-family obligation, *etc.*). After you have used up your late days,
-late assignments will receive at most half credit.
+## <a name="latedays">Late Policy</a>
+If a student needs an extension, the instructor must be notified by email or Microsoft Teams message by 4 pm on the 
+day prior to the due date. This notification email must state the duration of the requested 
+extension. The instructor reserves the right to decline a request for an extension, but 
+the intention is that most requests for extensions will be granted.
 
 ## <a name="hwqz">Homework and Quizzes</a>: 140 points
 
@@ -311,9 +229,9 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | # | Name                                                                          | Points | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|--------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1) | 50     | Feb 15   | Feb 22 |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | 100    | Mar 26   | Apr 9  |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | 200    | April 15 | May 10 |
+| 1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1) | 50     | Sep 22   | Oct 4  |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | 100    | Oct 29   | Nov 17 |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | 200    | Nov 19   | Dec 10 |
 
 <!-- [Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs) -->
 
