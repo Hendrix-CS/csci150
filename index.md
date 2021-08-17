@@ -62,9 +62,9 @@ Upon completing this course, our goal is for you to be able to:
 | W 25 Aug | Intro to CS                                                                                                                                                                |                                                                 |                                                                                                 |
 | F 27 Aug | Intro to CSCI 150; Algorithms and errors  | [Lecture notes](lectures/S21/in-class/01-22.html)               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 30 Aug | Intro to Python (math, variables)         | [Kaggle notebook](https://www.kaggle.com/byorgey/python-intro)  |                                                                                                 |
-| W  1 Sep | Intro to Python (functions)               | [Kaggle notebook](https://www.kaggle.com/byorgey/python-intro)  |                                                                                                 |
-| F  3 Sep | Booleans                                  | [Kaggle notebook](https://www.kaggle.com/byorgey/booleans)      | HW: [Boolean practice](homework/booleans.pdf)                                                   |
+| M 30 Aug | Intro to Python (math, variables)         |   |                                                                                                 |
+| W  1 Sep | Intro to Python (functions)               |   |                                                                                                 |
+| F  3 Sep | Booleans                                  |   | HW: [Boolean practice](homework/booleans.pdf)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  6 Sep | *No class; Labor Day*                                                                                                                                                                 |                                                                 |                                                                                                 |
 | W  8 Sep | Conditionals 
@@ -279,19 +279,18 @@ form]({{ site.submission }}).
 | #  | Name                                                                                      | Assigned  | Due          |
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
 | 0  | Minecraft                                                                                 | Aug 25-26 | Sep 1-2      |
-| 1  | [Kepler, Newton, Einstein] <!--(https://www.kaggle.com/gabrielferrer/kepler-and-newton)-->        | Sep 1-2   | Sep 8-9      |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | Sep 8-9   | Sep 15-16    |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | Sep 15-16 | Sep 22-23    |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | Sep 22-23 | Sep 29-30    |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | Sep 29-30 | Oct 6-7      |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | Oct 6-7   | Oct 20-21    |
-| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | Oct 20-21 | Oct 27-28    |
-| 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | Oct 27-28 | Nov 3-4      |
-| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug_at_home.html)                                 | Nov 3-4   | Nov 10-11    |
-| 10 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                               | Nov 10-11 | Nov 17-18    |
-| 11 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)      | Nov 17-18 | Dec 1-3      |
-
-<!-- |13| [Project 3 Workshop] | Nov 18-19 | Dec 7 | -->
+| 1  | Kepler, Newton, Einstein <!--](https://www.kaggle.com/gabrielferrer/kepler-and-newton)-->        | Sep 1-2   | Sep 8-9      |
+| 2  | Diagnosing Heart Disease <!--](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)--> | Sep 8-9   | Sep 15-16    |
+| 3  | This Day in History <!--](https://www.kaggle.com/gabrielferrer/this-day-in-history)-->           | Sep 15-16 | Sep 22-23    |
+| 4  | Guess My Number <!--]({{site.baseurl}}/labs/guess.html)                               -->        | Sep 22-23 | Sep 29-30    |
+| 5  | Mutation is the Word <!--]({{site.baseurl}}/labs/doublets.html)                       -->        | Sep 29-30 | Oct 6-7      |
+| 6  | Todo Manager <!--]({{site.baseurl}}/labs/todo-manager.html)                           -->        | Oct 6-7   | Oct 20-21    |
+| 7  | Caesar’s Secrets <!--](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)         -->        | Oct 20-21 | Oct 27-28    |
+| 8  | Sentiment Analysis <!--](https://www.kaggle.com/gabrielferrer/sentiment-analysis)     -->        | Oct 27-28 | Nov 3-4      |
+| 9  | Water Jugs <!--]({{site.baseurl}}/labs/waterjug_at_home.html)                         -->        | Nov 3-4   | Nov 10-11    |
+| 10 | Graphics and Animation <!--]({{site.baseurl}}/labs/pygame.html)                       -->        | Nov 10-11 | Nov 17-18    |
+| 11 | Enron's Secrets <!--](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->      | Nov 17-18 | Dec 1-3      |
+| 12 | Project 3 Workshop                                                                               | Dec 1-3   | Dec 10 | 
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
