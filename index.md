@@ -55,6 +55,7 @@ Upon completing this course, our goal is for you to be able to:
 </a>
 </div>
 <br/>
+
 | Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
@@ -65,10 +66,11 @@ Upon completing this course, our goal is for you to be able to:
 | W  1 Sep | Intro to Python (functions)               | [Kaggle notebook](https://www.kaggle.com/byorgey/python-intro)  |                                                                                                 |
 | F  3 Sep | Booleans                                  | [Kaggle notebook](https://www.kaggle.com/byorgey/booleans)      | HW: [Boolean practice](homework/booleans.pdf)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 6 Sep  | *No class*                                                                                                                                                                 |                                                                 |                                                                                                 |
-
-
-| W 8 Sep  | Conditionals | | |
+| M  6 Sep | *No class*                                                                                                                                                                 |                                                                 |                                                                                                 |
+| W  8 Sep | Conditionals | | |
+| F 10 Sep | Tracing I | | | 
+| 
+| M 13 Sep | Binary and information encoding | | |
 
 <!--
 | Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
