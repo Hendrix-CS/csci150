@@ -223,11 +223,11 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 <br/>
 
 
-| # | Name                                                                          | Points | Assigned | Due    |
-|:-:|-------------------------------------------------------------------------------|--------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1) | 50     | Sep 22   | Oct 4  |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | 100    | Oct 29   | Nov 15 |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | 200    | Nov 17   | Dec 10 |
+| # | Name                                                                          | Assigned | Due    |
+|:-:|-------------------------------------------------------------------------------|:--------:|:------:|
+| 1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1) | Sep 22   | Oct 4  |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | Oct 29   | Nov 15 |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | Nov 17   | Dec 10 |
 
 <!-- [Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs) -->
 
