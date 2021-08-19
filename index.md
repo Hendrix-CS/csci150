@@ -7,9 +7,10 @@ layout: course-multi
 
 ## <a name="TAs">TAs</a>
 
-* TBA
-* TBA
+* Morgan McLeod (Wednesday Lab)
+* Zoie Keys (Thursday Lab)
 
+<!--
 For TA hours click here to join the virtual CS lab:
 
 <div style="text-align: center">
@@ -17,6 +18,7 @@ For TA hours click here to join the virtual CS lab:
   <img src="assets/images/150-lab.png" />
 </a>
 </div>
+-->
 
 # <a name="description">Overview</a>
 
@@ -60,7 +62,7 @@ Upon completing this course, our goal is for you to be able to:
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | W 25 Aug | Intro to CS                                                                                                                                                                |                                                                 |                                                                                                 |
-| F 27 Aug | Intro to CSCI 150; Algorithms and errors  | [Lecture notes](lectures/S21/in-class/01-22.html)               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/dbH9NFzs8opKpwUX7) |
+| F 27 Aug | Intro to CSCI 150; Algorithms and errors  | [Lecture notes](lectures/F21/in-class/08-27.html)               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://docs.google.com/forms/d/e/1FAIpQLSd3G8ttxm_lzeLU6PAamV6cPTOmTpByiBcybNKsOK4jpMa32A/viewform) |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M 30 Aug | Intro to Python (math, variables)         |   |                                                                                                 |
 | W  1 Sep | Intro to Python (functions)               |   |                                                                                                 |
@@ -68,7 +70,7 @@ Upon completing this course, our goal is for you to be able to:
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  6 Sep | *No class; Labor Day*                                                                                                                                                                 |                                                                 |                                                                                                 |
 | W  8 Sep | Conditionals 
-| F 10 Sep | Tracing I 
+| F 10 Sep | Tracing I 								   |   | HW: [CodingBat Conditional Practice](homework/codingbat-conditional.html)
 | 
 | M 13 Sep | Binary and information encoding 
 | W 15 Sep | Pycharm & I/O
@@ -76,13 +78,14 @@ Upon completing this course, our goal is for you to be able to:
 | 
 | M 20 Sep | Exam 1
 | W 22 Sep | The `while` loop
-| F 24 Sep | Functions and stack tracing
+| F 24 Sep | Functions and stack tracing			   |   | HW: [Function and loop reading practice](homework/function-reading.pdf)
+|          |                                           |   | Project 1: [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1)
 |
 | M 27 Sep | Tracing example; strings
 | W 29 Sep | String & loop practice
-| F  1 Oct | Function abstraction
+| F  1 Oct | Function abstraction					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 | 
-| M  4 Oct | Lists
+| M  4 Oct | Lists                                     |   | Project 1 due
 | W  6 Oct | List processing examples
 | F  8 Oct | Exam 2 Review
 |
@@ -90,13 +93,13 @@ Upon completing this course, our goal is for you to be able to:
 | W 13 Oct | Mutability & references
 | F 15 Oct | *No class; Fall Break*
 |
-| M 18 Oct | `for` loops
+| M 18 Oct | `for` loops							   |   | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 | W 20 Oct | `for` loops: index ranges
 | F 22 Oct | File I/O
 |
-| M 25 Oct | Dictionaries
+| M 25 Oct | Dictionaries                              |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 | W 27 Oct | Dictionaries
-| F 29 Oct | Introduction to classes and objects
+| F 29 Oct | Introduction to classes and objects       |   | Project 2: [Word Games]({{site.baseurl}}/projects/project2.html)
 |
 | M  1 Nov | Classes/objects example 1
 | W  3 Nov | Classes/objects example 2
@@ -106,8 +109,8 @@ Upon completing this course, our goal is for you to be able to:
 | W 10 Nov | Graphics and Pygame
 | F 12 Nov | Graphics and Pygame
 |
-| M 15 Nov | Introduction to recursion
-| W 17 Nov | Recursion (trees)
+| M 15 Nov | Introduction to recursion                 |   | Project 2 due
+| W 17 Nov | Recursion (trees)                         |   | Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
 | F 19 Nov | Recursion
 |
 | M 22 Nov | Structuring larger programs 1
@@ -116,7 +119,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 29 Nov | Structuring larger programs 2
 | W  1 Dec | Structuring larger programs 3
-| F  3 Dec | Project 3 work
+| F  3 Dec | Course summary and feedback
 |
 | F 10 Dec | Final Project Presentations (Ferrer 8:30-11:30 am; Seme 2-5 pm)
 
@@ -124,12 +127,17 @@ Upon completing this course, our goal is for you to be able to:
 # Coursework
 
 ## <a name="latedays">Late Policy</a>
-If a student needs an extension, the instructor must be notified by email or Microsoft Teams message by 4 pm on the 
-day prior to the due date. This notification email must state the duration of the requested 
+If a student needs an extension, the instructor must be notified by email or Microsoft Teams message prior to the 
+deadline. This notification email must state the duration of the requested 
 extension. The instructor reserves the right to decline a request for an extension, but 
 the intention is that most requests for extensions will be granted.
 
-## <a name="hwqz">Homework and Quizzes</a>: 140 points
+## <a name="participation">Course Participation</a>
+
+* Each student should schedule and attend at least three Office Hour meetings with the instructor at some point during the semester.
+
+
+## <a name="hwqz">Homework</a>
 
 <div style="text-align: center">
 <a class="btn btn-primary" href="{{ site.submission }}">
@@ -140,13 +148,14 @@ the intention is that most requests for extensions will be granted.
 
 | # | Name                                                                      | Assigned | Due      |
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://forms.gle/dbH9NFzs8opKpwUX7)                             | W Jan 20 | M Jan 25 |
-| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 22 | W Jan 27 |
-| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf)                | F Jan 29 | W Feb 3  |
-| 3 | [Function and loop reading practice](homework/function-reading.pdf)       | F Feb 19 | W Feb 24 |
-| 4 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 26 | W Mar 3  |
-| 5 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 5  | W Mar 10 |
-| 6 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | F Mar 12 | W Mar 17 |
+| 0 | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSd3G8ttxm_lzeLU6PAamV6cPTOmTpByiBcybNKsOK4jpMa32A/viewform)                             | W Jan 20 | M Jan 25 |
+| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 27 | W Sep 1  |
+| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf)                | F Sep 3  | W Sep 8  |
+| 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Sep 10 | W Sep 15 |
+| 4 | [Function and loop reading practice](homework/function-reading.pdf)       | F Sep 24 | W Sep 29 |
+| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Oct 1  | W Oct 6  |
+| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | M Oct 18 | F Oct 22 |
+| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Oct 25 | F Oct 29 |
 
 <!-- |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 | -->
 <!-- | |Homework Checkin 1 | M Sep 23 | F Oct 4 | -->
@@ -158,8 +167,7 @@ the intention is that most requests for extensions will be granted.
 <!-- |9 | [Class reading]({{site.baseurl}}/homework/class-reading.pdf) | F Nov 15 | W Nov 20 | -->
 
 There will often be short homework assignments to be completed over
-the weekend, assigned on Friday and due Wednesday, sometimes with a
-corresponding quiz at the beginning of class on Wednesday.
+the weekend, typically assigned on Friday and due Wednesday.
 
 Homework will generally be turned in electronically [via this Google
 form]({{ site.submission }}).
@@ -173,19 +181,7 @@ form]({{ site.submission }}).
   Scan](https://thegrizzlylabs.com/genius-scan) which can export your
   document as a PDF.
 
-<!-- ## <a name="participation">Participation</a>: 110 points -->
-
-<!-- Participation points will be assigned as follows: -->
-
-<!-- * Each student is required to have a one-on-one meeting with the -->
-<!--   instructor 4 times per semester. Scheduling and following through on -->
-<!--   each meeting is worth 10 points/meeting. -->
-
-<!-- * Each student is expected to meet multiple times during each of the -->
-<!--   14 lab periods with the instructor and TA. Following through on all -->
-<!--   lab meetings for a given lab is worth 5 points. -->
-
-## <a name="labs">Labs</a>: 260 points
+## <a name="labs">Labs</a>
 
 <!-- <div style="text-align: center"> -->
 <!-- <a class="btn btn-primary" href="https://moodle.hendrix.edu/"> -->
@@ -215,9 +211,9 @@ Much of your experience with programming in this course will be through weekly l
 <!--On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.-->
 On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. Each partner should **submit their own solution** to the assignment.
 
-**Lab attendance is required**. For this semester, labs will meet virtually online in Microsoft Teams. <!--Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.-->
+**Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
 
-## <a name="projects">Projects</a>: 350 points
+## <a name="projects">Projects</a>
 
 <div style="text-align: center">
 <a class="btn btn-primary" href="{{ site.submission }}">
@@ -230,8 +226,8 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 | # | Name                                                                          | Points | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|--------|:--------:|:------:|
 | 1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1) | 50     | Sep 22   | Oct 4  |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | 100    | Oct 29   | Nov 17 |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | 200    | Nov 19   | Dec 10 |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | 100    | Oct 29   | Nov 15 |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | 200    | Nov 17   | Dec 10 |
 
 <!-- [Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs) -->
 
@@ -241,16 +237,17 @@ You will have three projects in this course. These projects will cover concepts 
 
 **You must work individually on the projects.** You may discuss concepts and ideas with your classmates, but the code you turn in must be your own. You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
 
-## <a name="exams">Exams</a>: ~~250~~ 150 points
+## <a name="exams">Exams</a>
 
-There will be ~~three~~ two in-class exams, the first worth 50 points
-and the second worth 100 points. They will consist of short answer
-questions along with writing and debugging code.
+There will be three exams. Each exam will have two parts:
+* In-class written part: Analysis and tracing of Python code samples.
+* Take-home part: At the end of the written exam will appear some Python coding problems, the solutions to which are to be 
+submitted by the start of the next class period.
 
-* Exam 1: Friday, February 12, covering functions, math, numerical
-  data, and conditionals ([practice exam](docs/exam1-practice-s21.pdf))
-* Exam 2: Monday, March 22, covering input/output, while loops, for
-  loops, lists, and strings ([practice exam](docs/exam2-practice-s21.pdf); [practice exam solutions](docs/exam2-practice-solutions-s21.pdf))
+* Exam 1: Monday, September 20, covering functions, math, numerical
+  data, and conditionals <!--([practice exam](docs/exam1-practice-s21.pdf))-->
+* Exam 2: Monday, October 11, covering input/output, `while` loops, and strings <!--([practice exam](docs/exam2-practice-s21.pdf); [practice exam solutions](docs/exam2-practice-solutions-s21.pdf))-->
+* Exam 3: Monday, November 8, covering `for` loops, lists, dictionaries, and file I/O.
 
 <!--
 [Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
@@ -261,15 +258,40 @@ questions along with writing and debugging code.
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
 
-## <a name="scale">Grading Scale</a>
+## <a name="grading">Specifications Grading</a>
+Each assignment is assessed as **Missing**, **Partial**, or **Complete**. 
+Criteria for the latter two categories will be specified for each assignment. Final course
+grades are earned based on cumulative assignment outcomes:
 
-| Score   | Grade |
-|:-------:|:-----:|
-| 800-900 | A     |
-| 700-799 | B     |
-| 600-699 | C     |
-| 500-599 | D     |
-| 0-499   | F     |
+* To earn an A in the course, a student will:
+  * **Complete** all three exams.
+  * **Complete** all three projects.
+  * **Complete** a minimum of seven homework assignments.
+  * No unexcused lab absences, and **Complete** a minimum of 11 lab assignments.
+  * Schedule and attend a minimum of three Office Hours meetings.
+  * No **Missing** work.
+* To earn a B in the course, a student will: 
+  * **Complete** a minimum of two exams and at least **Partially Complete** the remaining exam.
+  * **Complete** a minimum of two projects and at least **Partially Complete** the remaining project.
+  * **Complete** a minimum of three homework assignments and at least **Partially Complete** a minimum of three more.
+  * No unexcused lab absences, **Complete** a minimum of six of the lab assignments, and at least **Partially Complete** a minimum of six more.
+  * Schedule and attend at least two Office Hours meetings
+* To earn a C in the course, a student will:
+  * At least **Partially Complete** all three exams.
+  * At least **Partially Complete** all three projects.
+  * At least **Partially Complete** a minimum of five homework assignments.
+  * Up to two unexcused lab absences and at least **Partially Complete** a minimum of 10 lab assignments.
+  * Schedule and attend at least one Office Hours meeting
+* To earn a D in the course, a student will:
+  * At least **Partially Complete** a minimum of two exams.
+  * At least **Partially Complete** a minimum of two projects.
+  * At least **Partially Complete** a minimum of three homework assignments.
+  * Up to three unexcused lab absences and at least **Partially Complete** a minimum of nine lab assignments.
+
+### Revising submitted work
+If a submitted assignment receives a **Partial** assessment and the student seeks a **Complete** assessment:
+* The student will schedule and attend an Office Hours meeting to discuss the necessary revisions and establish a deadline for their submission.
+* If the student submits the revisions by the agreed deadline, the revised project will receive a **Complete** assessment.
 
 
 <hr />
@@ -376,11 +398,12 @@ it's also important that we have grace and patience with one another.
 Attendance in this class is not required as part of your grade.
 However, I do expect you to attend and appreciate knowing in advance
 if you will need to miss class.
-
+<!--
 If you have chosen to attend class in person, you are expected to do
 so consistently; you may not decide to attend remotely some days just
 because you feel like it.  However, there are legitimate reasons
 for attending remotely, such as feeling ill or travelling unavoidably.
+-->
 
 ## <a name="disabilities">Disabilities</a>
 
