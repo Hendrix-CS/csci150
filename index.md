@@ -283,7 +283,7 @@ grades are earned based on cumulative assignment outcomes:
   * At least **Partially Complete** all three exams.
   * At least **Partially Complete** all three projects.
   * At least **Partially Complete** a minimum of five homework assignments.
-  * Up to two unexcused lab absences and at least **Partially Complete** a minimum of 10 lab assignments.
+  * Up to two unexcused lab absences, **Complete** at least three of the lab assignments, and at least **Partially Complete** a minimum of seven more.
   * Schedule and attend at least one Office Hours meeting
 * To earn a D in the course, a student will:
   * At least **Partially Complete** a minimum of two exams.
