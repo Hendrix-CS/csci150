@@ -270,15 +270,14 @@ grades are earned based on cumulative assignment outcomes:
 * To earn an A in the course, a student will:
   * **Complete** all three exams.
   * **Complete** all three projects.
-  * **Complete** a minimum of seven homework assignments.
-  * No unexcused lab absences, and **Complete** a minimum of 11 lab assignments.
+  * **Complete** a minimum of seven homework assignments, with an eighth one at least **Partially Complete**.
+  * Up to one unexcused lab absence, and **Complete** a minimum of 11 lab assignments, with the 12th one at least **Partially Complete**.
   * Schedule and attend a minimum of three Office Hours meetings.
-  * No **Missing** work.
 * To earn a B in the course, a student will:
   * **Complete** a minimum of two exams and at least **Partially Complete** the remaining exam.
   * **Complete** a minimum of two projects and at least **Partially Complete** the remaining project.
   * **Complete** a minimum of three homework assignments and at least **Partially Complete** a minimum of three more.
-  * No unexcused lab absences, **Complete** a minimum of six of the lab assignments, and at least **Partially Complete** a minimum of six more.
+  * Up to one unexcused lab absence, **Complete** a minimum of six of the lab assignments, and at least **Partially Complete** a minimum of six more.
   * Schedule and attend at least two Office Hours meetings
 * To earn a C in the course, a student will:
   * At least **Partially Complete** all three exams.
