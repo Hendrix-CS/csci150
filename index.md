@@ -110,8 +110,8 @@ Upon completing this course, our goal is for you to be able to:
 | W 10 Nov | Graphics and Pygame
 | F 12 Nov | Graphics and Pygame
 |
-| M 15 Nov | Introduction to recursion                 |   | Project 2 due
-| W 17 Nov | Recursion (trees)                         |   | Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
+| M 15 Nov | Introduction to recursion                 |   | Project 2 due; Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
+| W 17 Nov | Recursion (trees)                         |   | 
 | F 19 Nov | Recursion
 |
 | M 22 Nov | Structuring larger programs 1             |   | Project 3 proposal due
