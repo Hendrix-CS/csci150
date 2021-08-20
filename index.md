@@ -218,13 +218,14 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 **Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
 
 ## <a name="projects">Projects</a>
-
+<!--
 <div style="text-align: center">
 <a class="btn btn-primary" href="{{ site.submission }}">
   Assignment submission form
 </a>
 </div>
 <br/>
+-->
 
 
 | # | Name                                                                          | Assigned | Due    |
