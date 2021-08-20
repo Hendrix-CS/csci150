@@ -114,7 +114,7 @@ Upon completing this course, our goal is for you to be able to:
 | W 17 Nov | Recursion (trees)                         |   | Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
 | F 19 Nov | Recursion
 |
-| M 22 Nov | Structuring larger programs 1
+| M 22 Nov | Structuring larger programs 1             |   | Project 3 proposal due
 | W 24 Nov | *No class; Thanksgiving Break*
 | F 26 Nov | *No class; Thanksgiving Break*
 |
