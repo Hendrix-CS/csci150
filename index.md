@@ -130,8 +130,8 @@ Upon completing this course, our goal is for you to be able to:
 ## <a name="latedays">Late Policy</a>
 If a student needs an extension, the instructor must be notified by email or Microsoft Teams message prior to the
 deadline. This notification email must state the duration of the requested
-extension. The instructor reserves the right to decline a request for an extension, but
-the intention is that most requests for extensions will be granted.
+extension. The instructor reserves the right to decline a request for an extension, but aside from 
+the final project the intention is that most requests for extensions will be granted.
 
 ## <a name="participation">Course Participation</a>
 
@@ -196,7 +196,7 @@ Homework will generally be turned in electronically via Microsoft Teams.
 
 | #  | Name                                                                                      | Assigned  | Due          |
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
-| 0  | Minecraft                                                                                 | Aug 25-26 | Sep 1-2      |
+| 0  | [Minecraft] ({{site.baseurl}}/labs/minecraft.html)                                                                                 | Aug 25-26 | Sep 1-2      |
 | 1  | Kepler, Newton, Einstein <!--](https://www.kaggle.com/gabrielferrer/kepler-and-newton)-->        | Sep 1-2   | Sep 8-9      |
 | 2  | Diagnosing Heart Disease <!--](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)--> | Sep 8-9   | Sep 15-16    |
 | 3  | This Day in History <!--](https://www.kaggle.com/gabrielferrer/this-day-in-history)-->           | Sep 15-16 | Sep 22-23    |
