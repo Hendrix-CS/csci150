@@ -50,13 +50,14 @@ Upon completing this course, our goal is for you to be able to:
 <hr>
 
 # <a name="calendar">Calendar</a>
-
+<!--
 <div style="text-align: center">
 <a class="btn btn-primary" href="{{ site.submission }}">
   Assignment submission form
 </a>
 </div>
 <br/>
+-->
 
 | Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -134,17 +135,20 @@ the intention is that most requests for extensions will be granted.
 
 ## <a name="participation">Course Participation</a>
 
-* Each student should schedule and attend at least three Office Hour meetings with the instructor at some point during the semester.
+* Each student should schedule and attend at least three Office Hour meetings with their lecture instructor at some 
+point during the semester.
 
 
 ## <a name="hwqz">Homework</a>
 
+<!--
 <div style="text-align: center">
 <a class="btn btn-primary" href="{{ site.submission }}">
   Assignment submission form
 </a>
 </div>
 <br/>
+-->
 
 | # | Name                                                                      | Assigned | Due      |
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
@@ -169,8 +173,8 @@ the intention is that most requests for extensions will be granted.
 There will often be short homework assignments to be completed over
 the weekend, typically assigned on Friday and due Wednesday.
 
-Homework will generally be turned in electronically [via this Google
-form]({{ site.submission }}).
+Homework will generally be turned in electronically via Microsoft Teams.
+<!--[via this Google form]({{ site.submission }}). -->
 
 * If you type a homework using something like Word or Pages, you
   should export a PDF (this is typically an option under the "File"
