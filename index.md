@@ -66,7 +66,7 @@ Upon completing this course, our goal is for you to be able to:
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M 30 Aug | Intro to Python (math, variables)         |   |                                                                                                 |
 | W  1 Sep | Intro to Python (functions)               |   |                                                                                                 |
-| F  3 Sep | Booleans                                  |   | HW: [Boolean practice](homework/booleans.pdf)                                                   |
+| F  3 Sep | Booleans                                  |   | HW: [Boolean practice](homework/booleans.html)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  6 Sep | *No class; Labor Day*                                                                                                                                                                 |                                                                 |                                                                                                 |
 | W  8 Sep | Conditionals
@@ -78,7 +78,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 20 Sep | Exam 1
 | W 22 Sep | The `while` loop
-| F 24 Sep | Functions and stack tracing			   |   | HW: [Function and loop reading practice](homework/function-reading.pdf)
+| F 24 Sep | Functions and stack tracing			   |   | HW: [Function and loop reading practice](homework/function-reading.html)
 |          |                                           |   | Project 1: [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1)
 |
 | M 27 Sep | Tracing example; strings
@@ -152,7 +152,7 @@ the intention is that most requests for extensions will be granted.
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 27 | W Sep 1  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                | F Sep 3  | W Sep 8  |
 | 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Sep 10 | W Sep 15 |
-| 4 | [Function and loop reading practice](homework/function-reading.pdf)       | F Sep 24 | W Sep 29 |
+| 4 | [Function and loop reading practice](homework/function-reading.html)       | F Sep 24 | W Sep 29 |
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Oct 1  | W Oct 6  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | M Oct 18 | F Oct 22 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Oct 25 | F Oct 29 |
