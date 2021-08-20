@@ -20,7 +20,7 @@ To receive full credit, for each exercise you should do the following:
 For each expression, decide whether it will evaluate to `True` or
 `False`.
 
-1.    `False and (True or False)`
+1. `False and (True or False)`
 2. `(True and (not (False or False))) and (False or (True or False))`
 3. `3 ** 2 + 4 ** 2 == 5 ** 2`
 4. `50 < 99 / 3`
