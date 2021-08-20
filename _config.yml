@@ -60,7 +60,7 @@ instructors:
     email: seme@hendrix.edu
     web: https://www.hendrix.edu/mathcs/profile.aspx?id=70795
     phone: (501) 450-1256
-    officehours: TBD
+    officehours: http://google.com
   - id: ferrer
     name: Dr. Gabriel Ferrer
     email: ferrer@hendrix.edu
@@ -88,7 +88,7 @@ offerings:
     time: W 1:10pm - 4:00pm (L8)
     instructor: ferrer
   - name: LAB L2
-    loc: Bailey Lab 
+    loc: Bailey Lab
     time: R 1:10pm - 4:00pm (L9)
     instructor: wilson
 
