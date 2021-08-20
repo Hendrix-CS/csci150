@@ -20,14 +20,14 @@ To receive full credit, for each exercise you should do the following:
 For each expression, decide whether it will evaluate to `True` or
 `False`.
 
-* `False and (True or False)`
-* `(True and (not (False or False))) and (False or (True or False))`
-* `3 ** 2 + 4 ** 2 == 5 ** 2`
-* `50 < 99 / 3`
-* `((1 < 2) and ("hi" > "there")) or (99 != 9)`
-* `"egg" < "excellent"`
-* `"arm" < "aardvark"`
-* `False != (True != (False != (False != True)))`
+1. `False and (True or False)`
+2. `(True and (not (False or False))) and (False or (True or False))`
+3. `3 ** 2 + 4 ** 2 == 5 ** 2`
+4. `50 < 99 / 3`
+5. `((1 < 2) and ("hi" > "there")) or (99 != 9)`
+6. `"egg" < "excellent"`
+7. `"arm" < "aardvark"`
+8. `False != (True != (False != (False != True)))`
 
 Your solution should be hand-written (or typed) and contain the following:
 
