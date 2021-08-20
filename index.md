@@ -150,7 +150,7 @@ the intention is that most requests for extensions will be granted.
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
 | 0 | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSd3G8ttxm_lzeLU6PAamV6cPTOmTpByiBcybNKsOK4jpMa32A/viewform)                             | W Aug 25 | M Aug 30  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 27 | W Sep 1  |
-| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf)                | F Sep 3  | W Sep 8  |
+| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                | F Sep 3  | W Sep 8  |
 | 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Sep 10 | W Sep 15 |
 | 4 | [Function and loop reading practice](homework/function-reading.pdf)       | F Sep 24 | W Sep 29 |
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Oct 1  | W Oct 6  |
