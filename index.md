@@ -69,13 +69,13 @@ Upon completing this course, our goal is for you to be able to:
 | F  3 Sep | Booleans                                  |   | HW: [Boolean practice](homework/booleans.pdf)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  6 Sep | *No class; Labor Day*                                                                                                                                                                 |                                                                 |                                                                                                 |
-| W  8 Sep | Conditionals 
+| W  8 Sep | Conditionals
 | F 10 Sep | Tracing I 								   |   | HW: [CodingBat Conditional Practice](homework/codingbat-conditional.html)
-| 
-| M 13 Sep | Binary and information encoding 
+|
+| M 13 Sep | Binary and information encoding
 | W 15 Sep | Pycharm & I/O
 | F 17 Sep | Exam 1 Review
-| 
+|
 | M 20 Sep | Exam 1
 | W 22 Sep | The `while` loop
 | F 24 Sep | Functions and stack tracing			   |   | HW: [Function and loop reading practice](homework/function-reading.pdf)
@@ -84,7 +84,7 @@ Upon completing this course, our goal is for you to be able to:
 | M 27 Sep | Tracing example; strings
 | W 29 Sep | String & loop practice
 | F  1 Oct | Function abstraction					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
-| 
+|
 | M  4 Oct | Lists                                     |   | Project 1 due
 | W  6 Oct | List processing examples
 | F  8 Oct | Exam 2 Review
@@ -104,7 +104,7 @@ Upon completing this course, our goal is for you to be able to:
 | M  1 Nov | Classes/objects example 1
 | W  3 Nov | Classes/objects example 2
 | F  5 Nov | Exam 3 Review
-| 
+|
 | M  8 Nov | Exam 3
 | W 10 Nov | Graphics and Pygame
 | F 12 Nov | Graphics and Pygame
@@ -115,7 +115,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 22 Nov | Structuring larger programs 1
 | W 24 Nov | *No class; Thanksgiving Break*
-| F 26 Nov | *No class; Thanksgiving Break* 
+| F 26 Nov | *No class; Thanksgiving Break*
 |
 | M 29 Nov | Structuring larger programs 2
 | W  1 Dec | Structuring larger programs 3
@@ -127,9 +127,9 @@ Upon completing this course, our goal is for you to be able to:
 # Coursework
 
 ## <a name="latedays">Late Policy</a>
-If a student needs an extension, the instructor must be notified by email or Microsoft Teams message prior to the 
-deadline. This notification email must state the duration of the requested 
-extension. The instructor reserves the right to decline a request for an extension, but 
+If a student needs an extension, the instructor must be notified by email or Microsoft Teams message prior to the
+deadline. This notification email must state the duration of the requested
+extension. The instructor reserves the right to decline a request for an extension, but
 the intention is that most requests for extensions will be granted.
 
 ## <a name="participation">Course Participation</a>
@@ -148,7 +148,7 @@ the intention is that most requests for extensions will be granted.
 
 | # | Name                                                                      | Assigned | Due      |
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSd3G8ttxm_lzeLU6PAamV6cPTOmTpByiBcybNKsOK4jpMa32A/viewform)                             | W Jan 20 | M Jan 25 |
+| 0 | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSd3G8ttxm_lzeLU6PAamV6cPTOmTpByiBcybNKsOK4jpMa32A/viewform)                             | W Aug 25 | M Aug 30  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 27 | W Sep 1  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.pdf)                | F Sep 3  | W Sep 8  |
 | 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Sep 10 | W Sep 15 |
@@ -204,7 +204,7 @@ form]({{ site.submission }}).
 | 9  | Water Jugs <!--]({{site.baseurl}}/labs/waterjug_at_home.html)                         -->        | Nov 3-4   | Nov 10-11    |
 | 10 | Graphics and Animation <!--]({{site.baseurl}}/labs/pygame.html)                       -->        | Nov 10-11 | Nov 17-18    |
 | 11 | Enron's Secrets <!--](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->      | Nov 17-18 | Dec 1-3      |
-| 12 | Project 3 Workshop                                                                               | Dec 1-3   | Dec 10 | 
+| 12 | Project 3 Workshop                                                                               | Dec 1-3   | Dec 10 |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
 
@@ -241,7 +241,7 @@ You will have three projects in this course. These projects will cover concepts 
 
 There will be three exams. Each exam will have two parts:
 * In-class written part: Analysis and tracing of Python code samples.
-* Take-home part: At the end of the written exam will appear some Python coding problems, the solutions to which are to be 
+* Take-home part: At the end of the written exam will appear some Python coding problems, the solutions to which are to be
 submitted by the start of the next class period.
 
 * Exam 1: Monday, September 20, covering functions, math, numerical
@@ -259,7 +259,7 @@ There is no final exam; you will complete a final project instead, as
 described above under Projects.
 
 ## <a name="grading">Specifications Grading</a>
-Each assignment is assessed as **Missing**, **Partial**, or **Complete**. 
+Each assignment is assessed as **Missing**, **Partial**, or **Complete**.
 Criteria for the latter two categories will be specified for each assignment. Final course
 grades are earned based on cumulative assignment outcomes:
 
@@ -270,7 +270,7 @@ grades are earned based on cumulative assignment outcomes:
   * No unexcused lab absences, and **Complete** a minimum of 11 lab assignments.
   * Schedule and attend a minimum of three Office Hours meetings.
   * No **Missing** work.
-* To earn a B in the course, a student will: 
+* To earn a B in the course, a student will:
   * **Complete** a minimum of two exams and at least **Partially Complete** the remaining exam.
   * **Complete** a minimum of two projects and at least **Partially Complete** the remaining project.
   * **Complete** a minimum of three homework assignments and at least **Partially Complete** a minimum of three more.
