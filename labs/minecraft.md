@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 1
+num: 0
 worktitle: Introduction and Minecraft
 ---
 
