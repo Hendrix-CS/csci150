@@ -29,5 +29,12 @@ For each expression, decide whether it will evaluate to `True` or
 * `"arm" < "aardvark"`
 * `False != (True != (False != (False != True)))`
 
-As usual for this semester, you should submit your work as a PDF,
-either by creating it on a computer in the first place or by scanning it.
+Your solution should be hand-written (or typed) and contain the following:
+
+For each line of code above, write down your *original* prediction. If your check (step 2) matched, put a check mark. Otherwise, put an X. If you wrote an X, then write a brief sentence explaining what you got wrong initially and why the code produces the answer it does.
+
+To be considered **complete** you must work each given problem, and you must have the correct answer (after step 2 if needed), along with correct explanations where appropriate. An assignment will be considered **partial** if there are no more than 2 wrong answers (after step 2) and no more than two explanations that are given are incorrect.
+
+
+<!---As usual for this semester, you should submit your work as a PDF,
+either by creating it on a computer in the first place or by scanning it.-->
