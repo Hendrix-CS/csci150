@@ -1,7 +1,7 @@
 CSCI 150 HW: boolean practice
 -----------------------------
 
-*Due: Wednesday, February 3*
+*Due: Friday, September 3*
 
 To receive full credit, for each exercise you should do the following:
 
