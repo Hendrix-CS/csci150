@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: CodingBat String and Loop practice
 -----------------------------------------------
 
-*Due: Wednesday, September 6*
+*Due: Wednesday, October 6*
 
 Complete **at least 7** of the following exercises in CodingBat.  Be
 sure to share your progress with me, by going to "prefs" and entering
