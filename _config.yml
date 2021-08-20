@@ -104,6 +104,9 @@ resources:
   - name: Pycharm
     image: assets/images/pycharmlogo.png
     url: https://www.jetbrains.com/pycharm/
+  - name: CodingBat Python
+    image: assets/images/codingbat.jpg
+    url: https://codingbat.com/python
 
 extra-resources:
   - name: "How to Think Like a Computer Scientist: Interactive Edition"
@@ -112,9 +115,6 @@ extra-resources:
   - name: Python Tutor
     image: assets/images/python_tutor.png
     url: http://pythontutor.com/
-  - name: CodingBat Python
-    image: assets/images/codingbat.jpg
-    url: https://codingbat.com/python
   - name: CheckiO Python Practice
     image: assets/images/checkio_logo_small.png
     url: https://py.checkio.org/
