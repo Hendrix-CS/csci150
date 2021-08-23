@@ -152,7 +152,7 @@ point during the semester.
 
 | # | Name                                                                      | Assigned | Due      |
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSd3G8ttxm_lzeLU6PAamV6cPTOmTpByiBcybNKsOK4jpMa32A/viewform)                             | W Aug 25 | M Aug 30  |
+| 0 | [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8)                             | W Aug 25 | M Aug 30  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 27 | W Sep 1  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                | F Sep 3  | W Sep 8  |
 | 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Sep 10 | W Sep 15 |
