@@ -264,8 +264,8 @@ There is no final exam; you will complete a final project instead, as
 described above under Projects.
 
 ## <a name="grading">Specifications Grading</a>
-Each assignment is assessed as **Missing**, **Partial**, or **Complete**.
-Criteria for the latter two categories will be specified for each assignment. Final course
+Each assignment is assessed as **Complete**, **Partially Complete** or **Missing**.
+Criteria for the first two categories will be specified for each assignment. Final course
 grades are earned based on cumulative assignment outcomes:
 
 * To earn an A in the course, a student will:
