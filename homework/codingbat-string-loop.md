@@ -7,9 +7,9 @@ CSCI 150 HW: CodingBat String and Loop practice
 
 *Due: Wednesday, October 6*
 
-Complete **at least 7** of the following exercises in CodingBat.  Be
+Consider the following exercises in CodingBat.  Be
 sure to share your progress with me, by going to "prefs" and entering
-my email address (`yorgey@hendrix.edu`) in the "Teacher Share" box.
+your instructor's email address (`seme@hendrix.edu` or `ferrer@hendrix.edu`) in the "Teacher Share" box.
 
 - [Factorial](https://codingbat.com/prob/p267310)
 - [Multiply_Odds](https://codingbat.com/prob/p252445)
@@ -21,3 +21,9 @@ my email address (`yorgey@hendrix.edu`) in the "Teacher Share" box.
 - [without_end](https://codingbat.com/prob/p138533)
 - [combo_string](https://codingbat.com/prob/p194053)
 - [left_2](https://codingbat.com/prob/p160545)
+
+
+## Specifications
+
+- To be considered **complete** you must finish at least 7 of the exercises.
+- To be considered **partial** you must finish at least 4 exercises, with an additional 3 attempted.
