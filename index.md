@@ -63,7 +63,7 @@ Upon completing this course, our goal is for you to be able to:
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | W 25 Aug | Intro to CS                                                                                                                                                                |                                                                 |                                                                                                 |
-| F 27 Aug | Intro to CSCI 150; Algorithms and errors  | [Lecture notes](lectures/F21/in-class/08-27.html)               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://docs.google.com/forms/d/e/1FAIpQLSd3G8ttxm_lzeLU6PAamV6cPTOmTpByiBcybNKsOK4jpMa32A/viewform) |
+| F 27 Aug | Intro to CSCI 150; Algorithms and errors  | [Lecture notes](lectures/F21/in-class/08-27.html)               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8) |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M 30 Aug | Intro to Python (math, variables)         |   |                                                                                                 |
 | W  1 Sep | Intro to Python (functions)               |   |                                                                                                 |
@@ -111,7 +111,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 12 Nov | Graphics and Pygame
 |
 | M 15 Nov | Introduction to recursion                 |   | Project 2 due; Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
-| W 17 Nov | Recursion (trees)                         |   | 
+| W 17 Nov | Recursion (trees)                         |   |
 | F 19 Nov | Recursion
 |
 | M 22 Nov | Structuring larger programs 1             |   | Project 3 proposal due
@@ -130,12 +130,12 @@ Upon completing this course, our goal is for you to be able to:
 ## <a name="latedays">Late Policy</a>
 If a student needs an extension, the instructor must be notified by email or Microsoft Teams message prior to the
 deadline. This notification email must state the duration of the requested
-extension. The instructor reserves the right to decline a request for an extension, but aside from 
+extension. The instructor reserves the right to decline a request for an extension, but aside from
 the final project the intention is that most requests for extensions will be granted.
 
 ## <a name="participation">Course Participation</a>
 
-* Each student should schedule and attend at least three Office Hour meetings with their lecture instructor at some 
+* Each student should schedule and attend at least three Office Hour meetings with their lecture instructor at some
 point during the semester.
 
 
@@ -152,7 +152,7 @@ point during the semester.
 
 | # | Name                                                                      | Assigned | Due      |
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSd3G8ttxm_lzeLU6PAamV6cPTOmTpByiBcybNKsOK4jpMa32A/viewform)                             | W Aug 25 | M Aug 30  |
+| 0 | [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8)                             | W Aug 25 | M Aug 30  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 27 | W Sep 1  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                | F Sep 3  | W Sep 8  |
 | 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Sep 10 | W Sep 15 |
@@ -173,8 +173,10 @@ point during the semester.
 There will often be short homework assignments to be completed over
 the weekend, typically assigned on Friday and due Wednesday.
 
-Homework will generally be turned in electronically via Microsoft Teams.
-<!--[via this Google form]({{ site.submission }}). -->
+CodingBat homework will be submitted electronically through CodingBat. By-hand homework will be submitted at the start of class time -- you can write (neatly) or type such solutions.
+
+<!---Homework will generally be turned in electronically via Microsoft Teams.
+
 
 * If you type a homework using something like Word or Pages, you
   should export a PDF (this is typically an option under the "File"
@@ -183,7 +185,7 @@ Homework will generally be turned in electronically via Microsoft Teams.
 * You may also write your homework solutions on physical paper and
   scan them using an app such as [Genius
   Scan](https://thegrizzlylabs.com/genius-scan) which can export your
-  document as a PDF.
+  document as a PDF. -->
 
 ## <a name="labs">Labs</a>
 
@@ -210,7 +212,7 @@ Homework will generally be turned in electronically via Microsoft Teams.
 | 11 | Enron's Secrets <!--](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->      | Nov 17-18 | Dec 1-3      |
 | 12 | Project 3 Workshop                                                                               | Dec 1-3   | Dec 10 |
 
-Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**. All labs are weighted equally within the lab portion of your final grade.
+Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
 <!--On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.-->
 On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. Each partner should **submit their own solution** to the assignment.
@@ -379,7 +381,7 @@ it's also important that we have grace and patience with one another.
           your partner, and
           working hard towards completing the lab.</li>
         <li>Abide by the
-        College's <a href="https://www.hendrix.edu/studentlife/handbook.aspx?id=67121">Academic
+        College's <a href="https://www.hendrix.edu/Catalog/2021-2022/Academic_Policies_and_Regulations/Policies_and_Appeals/Academic_Integrity/">Academic
         Integrity Policy</a> and
         the <a href="http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html">Computer
             Science-specific Academic Integrity Policy</a>.</li>

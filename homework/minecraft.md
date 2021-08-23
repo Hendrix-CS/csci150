@@ -28,3 +28,8 @@ track", does the track appear in the square your character is on, or
 in the square in front of your character?  You can either play with
 the command on code.org to figure it out, or just make a reasonable
 guess and write down your assumption.
+
+## Specifications
+
+- A submission will be **complete** provided your instructions successfully complete both assigned tasks
+- A submission will be **partial** provided you give good-faith efforts at each task.
