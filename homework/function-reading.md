@@ -9,7 +9,7 @@ To receive full credit, for each exercise you should do the following:
    Python interpreter.  (You are welcome to refer to your notes or
    textbook, read Python documentation, look at examples from class,
    *etc.*; just don't actually run any code.)  Trace the execution of
-   the code in the exercise.
+   the code in the exercise, including updating variables and any printed output.
 
 2. **Check**: Run the code.  Does the actual output agree with what
    you wrote down in step 1?
@@ -86,3 +86,13 @@ other exercises.
 
     main3()
     ```
+
+Your solution should be hand-written (or typed) and contain the following:
+
+- For each piece of code, you should turn in a completed trace, including any printed output, which was generated prior to running the code on a machine.
+- If your check in step 2 indicated a mistake, correct it, and explain what you got wrong initially and why the code produces the answer it does.
+
+## Specifications
+
+- To be considered **complete** you must work each given problem, and you must have the correct answer (after step 2 if needed), along with correct explanations where appropriate.
+- An assignment will be considered **partial** provided each problem has been attempted and after step 2 all printed output is correct.
