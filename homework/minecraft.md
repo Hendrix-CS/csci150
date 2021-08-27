@@ -29,6 +29,13 @@ in the square in front of your character?  You can either play with
 the command on code.org to figure it out, or just make a reasonable
 guess and write down your assumption.
 
+## To Submit
+
+On paper (handwritten or typed):
+- A list of all Minecraft instructions used in your program.
+  - For each instruction, a description of what it does.
+- Your program, achieving both of the above objectives.
+
 ## Specifications
 
 - A submission will be **complete** provided your instructions successfully complete both assigned tasks
