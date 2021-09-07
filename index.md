@@ -7,8 +7,9 @@ layout: course-multi
 
 ## <a name="TAs">TAs</a>
 
-* Morgan McLeod (Wednesday Lab)
-* Zoie Keys (Thursday Lab)
+* Morgan McLeod (Wednesday Lab; Wednesday evening 8-10 pm)
+* Zoie Keys (Wednesday and Thursday Lab; Tuesday evening 6:30-8:30 pm)
+* Alysse Robinson (Thursday Lab)
 
 <!--
 For TA hours click here to join the virtual CS lab:
