@@ -257,8 +257,9 @@ submitted by the start of the next class period.
 * Exam 2: Monday, October 11, covering input/output, `while` loops, and strings <!--([practice exam](docs/exam2-practice-s21.pdf); [practice exam solutions](docs/exam2-practice-solutions-s21.pdf))-->
 * Exam 3: Monday, November 8, covering `for` loops, lists, dictionaries, and file I/O.
 
+[Exam 1 Practice Problems](docs/exam1-practice.pdf)
+
 <!--
-[Practice Exam 1](https://drive.google.com/open?id=1TucpuX2lwRqQ4d1y3QMO5ad9gm7DqKwt)
 [Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)
 [Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)
 -->
