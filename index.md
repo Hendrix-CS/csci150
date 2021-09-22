@@ -81,7 +81,7 @@ Upon completing this course, our goal is for you to be able to:
 | M 20 Sep | Exam 1
 | W 22 Sep | The `while` loop
 | F 24 Sep | Functions and stack tracing			   |   | HW: [Function and loop reading practice](homework/function-reading.html)
-|          |                                           |   | Project 1: [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1)
+|          |                                           |   | Project 1: [Civic Assistance Q/A System](projects/project1.html)
 |
 | M 27 Sep | Tracing example; strings
 | W 29 Sep | String & loop practice
@@ -203,7 +203,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)        | Sep 1-2   | Sep 8-9      |
 | 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)      | Sep 8-9   | Sep 15-16    |
 | 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)                | Sep 15-16 | Sep 22-23    |
-| 4  | Guess My Number <!--]({{site.baseurl}}/labs/guess.html)                               -->        | Sep 22-23 | Sep 29-30    |
+| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                            | Sep 22-23 | Sep 29-30    |
 | 5  | Mutation is the Word <!--]({{site.baseurl}}/labs/doublets.html)                       -->        | Sep 29-30 | Oct 6-7      |
 | 6  | Todo Manager <!--]({{site.baseurl}}/labs/todo-manager.html)                           -->        | Oct 6-7   | Oct 20-21    |
 | 7  | Caesar’s Secrets <!--](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)         -->        | Oct 20-21 | Oct 27-28    |
@@ -233,7 +233,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System](https://www.kaggle.com/gabrielferrer/project-1) | Sep 22   | Oct 4  |
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)        | Sep 22   | Oct 4  |
 | 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | Oct 29   | Nov 15 |
 | 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | Nov 17   | Dec 10 |
 
@@ -253,16 +253,9 @@ There will be three exams. Each exam will have two parts:
 submitted by the start of the next class period.
 
 * Exam 1: Monday, September 20, covering functions, math, numerical
-  data, and conditionals <!--([practice exam](docs/exam1-practice-s21.pdf))-->
+  data, and conditionals ([practice exam](docs/exam1-practice.pdf))
 * Exam 2: Monday, October 11, covering input/output, `while` loops, and strings <!--([practice exam](docs/exam2-practice-s21.pdf); [practice exam solutions](docs/exam2-practice-solutions-s21.pdf))-->
 * Exam 3: Monday, November 8, covering `for` loops, lists, dictionaries, and file I/O.
-
-[Exam 1 Practice Problems](docs/exam1-practice.pdf)
-
-<!--
-[Practice Exam 2](https://drive.google.com/open?id=199t6fRH6k7h6cuxvzyZUrlSf0IcGgkX4)
-[Practice Exam 3](https://drive.google.com/open?id=19x3xRhRSXLz0qEw153hhjdhFL4P5kRbw)
--->
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
