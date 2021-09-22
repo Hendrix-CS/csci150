@@ -13,6 +13,14 @@ Python by implementing the classic game "Guess My Number".
 Be sure to **read carefully!** This lab writeup has lots of hints
 and instructions to help you along the way.
 
+## Grading Criteria
+
+* A **Complete** submission includes:
+  * Correct function definitions for Steps 1, 2, 3, 4, and 5.
+  * No Pycharm style warnings.
+* A **Partially Complete** submission includes:
+  * Correct function definitions for Steps 1, 2, and 3.
+
 ## Step 0: Getting started
 
 In this and the following labs, we will be creating interactive programs
@@ -21,7 +29,7 @@ that require user input. [PyCharm](https://www.jetbrains.com/pycharm/) is an
 that lets us write these types of programs in Python.
 
 Open PyCharm and create a new project (by going to the <kbd>File</kbd> menu
-and selecting <kbd>New Project</kbd>).  Name it something like `Lab_04_Guess_My_Number`.  
+and selecting <kbd>New Project</kbd>).  Name it `labs_150`.  
 Accept the other defaults and click <kbd>Create</kbd>.
 
 At this point you will have a new, empty project.  Each project can
@@ -32,7 +40,7 @@ Python File</kbd>.  Then you can type in a name for the file.  Note that
 you should not include `.py` on the end of the name;
 PyCharm will add `.py` for you.
 
-## Step 1 (6 points)
+## Step 1 
 
 For the first step, you will implement a basic version of the game.
 Here is what a sample run of the program might look like:
@@ -59,14 +67,16 @@ the following code into it**:
 
     ######################################
     # Copyright (c) 2021 YOUR NAME(s) HERE
-    # CSCI 150, Spring 2021
+    # CSCI 150, Fall 2021
     # Lab 4: Guess My Number
     ######################################
 
     import random
 
+
     def main():
         # Write your code here
+
 
     # Call main() as the last thing in the file
     main()
@@ -74,7 +84,7 @@ the following code into it**:
 Update it with your name. **Inside the `main()` function**,
 you should implement the game as illustrated above.
 
-* Use `random.randint(1,100)` to pick a random number
+* Use `random.randint(1, 100)` to pick a random number
 between 1 and 100.
 * Of course you will need a `while` loop to keep
 prompting the user for their guess.  As the loop control variable,
@@ -85,7 +95,7 @@ number.
 * As in the Collatz example in class, you will need to use a
 separate counter variable to keep track of the number of guesses.
 
-## Step 2 (3 points)
+## Step 2 
 
 Your game works now, but it has a problem:
 
@@ -122,7 +132,7 @@ template you can use as a starting point; copy it into your file
 
         # We only do this conversion at the end, once we know
         # guess_str looks like an int
-        guess: int = int(guess_str)
+        guess = int(guess_str)
 
         # Finally, return the user's guess
         return guess
@@ -142,11 +152,11 @@ asks the user for their input with a call to your
 new `input_guess()` function.  That is, instead of
 something like
 
-    guess: int = int(input("Your guess? "))
+    guess = int(input("Your guess? "))
 
 you should now have
 
-    guess: int = input_guess()
+    guess = input_guess()
 
 Here's what the output of your program might look like once you
 complete this step:
@@ -165,15 +175,23 @@ complete this step:
 If you like, you may also modify `input_guess()` so that it
 ensures the user's guess is between 1 and 100, but this is not required.
 
-## Step 3 (3 points)
+## Step 3
 
 Since this game is so addictive, it's inconvenient to re-run it every
 time we want to play.  In this step, you will modify the game so that
 the user can keep playing multiple rounds until they decide to stop.
 
-You should put another `while` loop around an appropriate
-part of your `main()` function so that it will repeat the
-entire game until the user wants to stop.  Here is what the output of
+First, create a new function called `run_game()`. It will not have
+any parameters nor will it return any value. Cut and paste the part
+of `main()` that begins with generating the random number to 
+guess and ends with printing the number of guesses into this
+new function. Then place a call to `run_game()` in `main()` where
+that code used to be. Test the program and ensure it still works.
+
+Next, write a new `while` loop in `main()`. Inside the loop, 
+call `run_game()` to play one round of the game. Then, ask the 
+user whether they wish to play again. The loop should end if the
+user does not wish to play again.  Here is what the output of
 your program might look like once you get this to work:
 
     Welcome to guess the number!
@@ -205,8 +223,9 @@ your program might look like once you get this to work:
     Your guess? 23
     You got it!  It took you 7 guesses.
     Would you like to play again? (yes/no) no
+	
 
-## Step 4 (5 points)
+## Step 4
 
 Finally, create a new file called `computer_guess.py`.  You
 should implement the same game, but with the roles reversed!  That is,
@@ -243,10 +262,12 @@ A few hints:
     inputs something unexpected, as in the example above.
   * Your program should offer the option of playing again as long as
     the user wants to continue playing.
-  * Feel free to just put everything inside a `main()`
-    function; you need not worry about writing any functions for this step.
+  * Write a `play_once()` function that plays one round of the game.
+  * In `main()`, call `play_once()` from within a `while` loop that
+	asks the user whether they wish to play again, much as we did
+	in Step 3.
 	
-## Step 5: 3 points
+## Step 5: 
 
 Modify your strategy from Step 4 to ensure that the computer *never* needs more than 7 guesses to win.
 
