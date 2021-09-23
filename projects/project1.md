@@ -109,7 +109,7 @@ Try it out with the code below.
 
 
 **It is not necessary** to check that the user inputs the correct kind of answer. However, your instructions should make clear what answer(s) are expected. That is,
-iyou should do something like:  "Are you a current Hendrix Student ('y' or 'n')?" It is okay if your code crashes if someone accidentally enters 'yes' -- you do not need to check for this.
+you should do something like:  "Are you a current Hendrix Student ('y' or 'n')?" It is okay if your code crashes if someone accidentally enters 'yes' -- you do not need to check for this.
 
 ### Type Conversion
 
@@ -161,4 +161,4 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
     data (`str`, `int`, `float`) are requested. An example of
 	meeting this criterion is having five questions that expect
 	strings	and one question that expects an integer from the user.
-  * For each question it is clear to the user what kind of input they should enter; for example, do you want 'y' or 'yes' for an affirmative?
+  * For each question, direction to the user are clear as to what kind of input they should enter; for example, do you want 'y' or 'yes' for an affirmative?
