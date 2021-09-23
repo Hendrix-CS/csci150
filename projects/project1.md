@@ -7,28 +7,28 @@ worktitle: Civic Assistance System
 
 ## Description
 
-Many elements of our civic lives are governed by processes and 
-regulations. While they may be confusing and complicated, these 
-processes form a common way that we coordinate our interactions, 
-hopefully for the benefit of all. We can use our computing skills 
+Many elements of our civic lives are governed by processes and
+regulations. While they may be confusing and complicated, these
+processes form a common way that we coordinate our interactions,
+hopefully for the benefit of all. We can use our computing skills
 to help facilitate a clear understanding of these processes.
 
-For this project, you will create a program that interacts with a 
-user by asking questions. Follow-up questions depend upon the 
-previous questions asked. The questions and answers should guide 
+For this project, you will create a program that interacts with a
+user by asking questions. Follow-up questions depend upon the
+previous questions asked. The questions and answers should guide
 the user towards solving a concrete problem.
 
-The content of the questions and answers should be related to a 
-citizen interacting with their government in some real-life civic 
-realm. You can ask the user for strings, integers, or floats. The 
-program must contain at least **six distinct questions** it can ask. 
-Every question after the first question might or might not be asked, 
+The content of the questions and answers should be related to a
+citizen interacting with their government in some real-life civic
+realm. You can ask the user for strings, integers, or floats. The
+program must contain at least **six distinct questions** it can ask.
+Every question after the first question might or might not be asked,
 depending on the answers to previous questions.
 
-Here is a list of potential interactions you might attempt to 
-simulate. This is by no means comprehensive and is meant as 
-inspiration for your program. You may choose one of these, or 
-one of your own, as long as you provide a citation in your code 
+Here is a list of potential interactions you might attempt to
+simulate. This is by no means comprehensive and is meant as
+inspiration for your program. You may choose one of these, or
+one of your own, as long as you provide a citation in your code
 to your connected real-world civic interaction.
 
 * [Apply to be a U.S. Citizen](https://www.uscis.gov/citizenship/learners/apply-citizenship)
@@ -43,7 +43,7 @@ to your connected real-world civic interaction.
 
 ### Example
 
-Here are two transcripts from an example system, to give you a sense as to what your program needs to be able to do. 
+Here are two transcripts from an example system, to give you a sense as to what your program needs to be able to do.
 
 #### Transcript 1
     Welcome to the DMV. Would you like to "register" or "renew" a vehicle?  register
@@ -60,7 +60,7 @@ Here are two transcripts from an example system, to give you a sense as to what 
     Was this a "new" or "used" purchase?  used
     Did you bring the title for the vehicle?  no
     Please return when you have the title with all signatures from the buyer and seller.
-	
+
 ## Input/Output
 
 To complete this program, you will need to learn about the `print` function, the `input` function, and type conversion functions.
@@ -69,11 +69,11 @@ To complete this program, you will need to learn about the `print` function, the
 
 The `print(str)` function instructs Python to display a string to the user.
 
-Try it out with the code examples below. Notice how it is displaying 
+Try it out with the code examples below. Notice how it is displaying
 strings, but not with the normal '' around the text.
 
 	print("Hello world!")
-	
+
 	x = 6
 	if x > 5:
 		print("High")
@@ -83,7 +83,7 @@ strings, but not with the normal '' around the text.
 	print("This is")
 	print("a lot")
 	print("of text")
-	
+
 If we want to print a string that includes information stored in variables, we can use a special type of string called a *format string* or *f-string*. When we preface the string with an *f*,  we can include whatever variables we want inside curly brackets, like so:
 
 	x = 22
@@ -100,26 +100,30 @@ Try it out with the code below.
 
 	name = input("What is your name? ")
 	print(f"Hi, {name}!")
-	
+
 	animal = input("What is your favorite animal? ")
 	if animal == "lemur":
 		print("Mine too!")
 	else:
 		print(f"That's nice, I guess {animal}s are OK.")
-		
+
+
+**It is not necessary** to check that the user inputs the correct kind of answer. However, your instructions should make clear what answer(s) are expected. That is,
+iyou should do something like:  "Are you a current Hendrix Student ('y' or 'n')?" It is okay if your code crashes if someone accidentally enters 'yes' -- you do not need to check for this.
+
 ### Type Conversion
 
 The `input(str)` function will always return a `str`. Even if you type in a number. This can cause problems, as shown below.
 
 	x = input("Type a number between 1 and 10. ")
 	print(x + 3)
-	
+
 We can fix this with conversion functions. `int(str)` will take a `str` as a parameter, and return an `int`.
 
 	x = input("Type a number between 1 and 10. ")
 	y = int(x)
 	print(y + 3)
-	
+
 Of course, the user could make a mistake and not enter an integer at all. For now, assume you have good users who always enter the correct type. Later, we will see how to fix this error.
 
 If converting the result of a call to `input(str)`, you can usually do the conversion at the same time.
@@ -129,7 +133,7 @@ If converting the result of a call to `input(str)`, you can usually do the conve
 		print(f"{x} is too high.")
 	else:
 		print(f"{x} is too low.")
-		
+
 ### Reflection
 
 Along with your code, you should complete a short reflection on the following questions:
@@ -146,12 +150,15 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
 * A **Partially Complete** project:
   * Follows the above guidelines for user input and output.
   * Asks six distinct questions.
+  * No runtime errors for any expected user input.
+  * No syntax errors.
 
 * A **Complete** project:
   * Meets all **Partially Complete** criteria.
   * No Pycharm style warnings.
   * No grammatical or spelling errors.
-  * Among the six or more questions, at least two distinct types of 
-    data (`str`, `int`, `float`) are requested. An example of 
-	meeting this criterion is having five questions that expect 
+  * Among the six or more questions, at least two distinct types of
+    data (`str`, `int`, `float`) are requested. An example of
+	meeting this criterion is having five questions that expect
 	strings	and one question that expects an integer from the user.
+  * For each question it is clear to the user what kind of input they should enter; for example, do you want 'y' or 'yes' for an affirmative?
