@@ -266,6 +266,8 @@ A few hints:
   * In `main()`, call `play_once()` from within a `while` loop that
 	asks the user whether they wish to play again, much as we did
 	in Step 3.
+  * Do **not** use a random number to generate the computer's guess.
+    The computer's strategy should be systematic and deterministic.  
 	
 ## Step 5: 
 
