@@ -155,10 +155,14 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
 
 * A **Complete** project:
   * Meets all **Partially Complete** criteria.
+  * Includes the Reflection described above.
   * No Pycharm style warnings.
   * No grammatical or spelling errors.
   * Among the six or more questions, at least two distinct types of
     data (`str`, `int`, `float`) are requested. An example of
 	meeting this criterion is having five questions that expect
 	strings	and one question that expects an integer from the user.
-  * For each question, direction to the user are clear as to what kind of input they should enter; for example, do you want 'y' or 'yes' for an affirmative?
+  * For each question, directions to the user are clear as to what 
+    kind of input they should enter; for example: "Do you want 'y' 
+	or 'yes' for an affirmative?"
+  
