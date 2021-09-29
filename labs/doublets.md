@@ -49,7 +49,22 @@ David B. Searls entitled
 Our task for this lab is to create a Python program that lets a user play the Doublets game
 and enforces all the rules given above by Lewis Carroll.
 
-### Step 1 - Develop Pseudocode (3 points)
+## Grading Criteria
+
+* A **Complete** submission includes:
+  * An Evaluation Document containing:
+    * Pseudocode from Step 1
+	* Thoughtful answers to questions from Step 4
+  * `doublets.py`
+    * Correctly implements all features from Step 2 and Step 3
+  * No Pycharm style warnings.
+* A **Partially Complete** submission includes:
+  * An Evaluation Document containing:
+    * Pseudocode from Step 1
+  * `doublets.py`
+    * Correctly implements all features from Step 2
+
+### Step 1 - Develop Pseudocode
 
 Develop an algorithmic solution using
 *pseudocode*.  This should correspond to the structure of a
@@ -96,9 +111,12 @@ will always enter exactly what is expected.
     Solution path found in 4 steps.
     CAT -> CAB -> COB -> COG -> DOG
 	
-### Step 2 - Initial Implementation (4 points total)
+Create a text file which will serve as your Evaluation Document.
+Include your pseudocode in this file.
+	
+### Step 2 - Initial Implementation 
 
-#### Step 2.1 - `swap_character()` (1 point)
+#### Step 2.1 - `swap_character()` 
 
 Create a new Python file named `doublets.py`. Begin by writing the `swap_character()` 
 function:
@@ -118,7 +136,7 @@ Here are a few examples you can use to test your implementation of `swap_charact
 * `swap_character("track", 3, "u")` should return `"truck"`
 * `swap_character("talk", 1, "w")` should return `"walk"`
 
-#### Step 2.2 - Main program (2 points)
+#### Step 2.2 - Main program
 
 Based on your pseduocode description, implement your program in Python, within 
 a function named `main()`. When you have received the user's input concerning the
@@ -141,14 +159,14 @@ The program structure should look something like this:
 Be sure you can successfully play a game of Doublets with your
 program, as shown in the example above, before moving on to the next step.
 
-#### Step 2.3 - Solution Path (1 point)
+#### Step 2.3 - Solution Path
 
 Create a string variable to store the solution chain. It should initially be the starting
 word. On each loop step, concatenate `" -> "` and the current word. Then print it out 
 at the end of the program.
 
 
-### Step 3 - Error Handling and Function Decomposition (9 points total)
+### Step 3 - Error Handling and Function Decomposition
 
 Of course the user might not always enter input in the expected form.
 In this step, you will incrementally modify your program to ensure that 
@@ -156,7 +174,7 @@ the user only enters valid input. Building a program with robust error
 handling is much easier if it is decomposed into functions, so we will
 introduce error handling and functions into our program together.
 
-#### Step 3.1 - Starting word validation (2 points)
+#### Step 3.1 - Starting word validation
 Write a function called `get_start_word()` to get the starting word from the user.
 First, create the function header:
 
@@ -207,7 +225,7 @@ Here is an example of how the program would behave with the error checking in pl
 	What is the starting word? log
     What is the ending word?
 
-#### Step 3.2 - Ending word validation (1 point)
+#### Step 3.2 - Ending word validation 
 Write a function to validate the ending word. This will be a slightly more complex 
 variation of the function you wrote in Step 3.1, as it must ensure not only that 
 the word is valid, it must also ensure that the word is of the same length as the
@@ -230,7 +248,7 @@ our earlier example to show how the program should behave:
     End     = BUG
     Which character do you want to change? (the first character is 1)
 	
-#### Step 3.3 - Character index validation (2 points)
+#### Step 3.3 - Character index validation
 Write a function to validate the user's input of a character index to change. 
 It should return an integer between 1 and the length of the current word. Any 
 non-integer or any integer outside that range should result in a message to 
@@ -254,7 +272,7 @@ behave:
     Which character do you want to change? (the first character is 1) 1
     What is your new character?
 	
-#### Step 3.4 - Character validation (2 points)
+#### Step 3.4 - Character validation 
 Write a function to ensure that the user inputs a single character. Here is
 the function declaration header:
 
@@ -272,7 +290,7 @@ behave once you are using your function:
     End     = BUG
     Which character do you want to change? (the first character is 1)
 	
-#### Step 3.5 - Word validation (2 points)
+#### Step 3.5 - Word validation 
 Unlike the other error-handling steps, this step is straightforward to
 implement without writing an additional function. Before committing
 to the new word with the new character, make sure the new word obtained from calling
@@ -296,7 +314,7 @@ in place:
 	solution path found in 2 steps.
 	LOG -> BOG -> BUG
 
-### Step 4 - Play (2 points)
+### Step 4 - Play
 
 Once your program is working, try out some of the transformations below:
 
@@ -307,7 +325,7 @@ Once your program is working, try out some of the transformations below:
 
 What is the minimum number of steps you can achieve for each?
 
-### Future Thoughts (2 points)
+### Future Thoughts
 
 Your `doublets.py` program lets the user chose what character to change at each step,
 and then verifies that each new word is a valid word.  Can you think of a way to always find the
@@ -317,8 +335,6 @@ in the `Evaluation Document`.
 
 ## What to Hand In
 
-<!--Make sure you have followed the [Python Style Guide](../python_style_guide.html), and
-have run your project through the Automated Style Checker.-->
 Make sure you examine all of the style suggestions that PyCharm makes, and adjust your code accordingly.
 
 You must hand in:
