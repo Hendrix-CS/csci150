@@ -204,7 +204,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)      | Sep 8-9   | Sep 15-16    |
 | 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)                | Sep 15-16 | Sep 22-23    |
 | 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                            | Sep 22-23 | Sep 29-30    |
-| 5  | Mutation is the Word <!--]({{site.baseurl}}/labs/doublets.html)                       -->        | Sep 29-30 | Oct 6-7      |
+| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                    | Sep 29-30 | Oct 6-7      |
 | 6  | Todo Manager <!--]({{site.baseurl}}/labs/todo-manager.html)                           -->        | Oct 6-7   | Oct 20-21    |
 | 7  | Caesar’s Secrets <!--](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)         -->        | Oct 20-21 | Oct 27-28    |
 | 8  | Sentiment Analysis <!--](https://www.kaggle.com/gabrielferrer/sentiment-analysis)     -->        | Oct 27-28 | Nov 3-4      |
