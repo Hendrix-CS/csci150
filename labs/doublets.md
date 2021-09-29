@@ -63,6 +63,7 @@ and enforces all the rules given above by Lewis Carroll.
     * Pseudocode from Step 1
   * `doublets.py`
     * Correctly implements all features from Step 2
+	* Includes serious attempts at completing at least three of the requirements for Step 3.
 
 ### Step 1 - Develop Pseudocode
 
