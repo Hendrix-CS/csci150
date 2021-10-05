@@ -63,14 +63,14 @@ Common types, operators, and identity elements:
 		
 ## Check if a property is always true
 
-	always = true
+	always = True
 	while always and condition:
 		if not property:
 			always = False
 			
 ## Check if a property is ever true
 
-	ever = false
+	ever = False
 	while not ever and condition:
 		if property:
 			ever = True
@@ -254,3 +254,23 @@ Common types, operators, and identity elements:
 				unique.append(items_sold[i])
 			i += 1
 		return unique
+		
+	# Check if a property is true of some elements of a sequence
+	def has_vowels(s: str) -> bool:
+		ever = False
+		i = 0
+		while not ever and i < len(s):
+			if s[i] in 'aeiou':
+				ever = True
+			i += 1
+		return ever
+
+	# Check if a property is true of all elements of a sequence
+	def only_vowels(s: str) -> bool:
+		always = True
+		i = 0
+		while always and i < len(s):
+			if s[i] not in 'aeiou':
+				always = False
+			i += 1
+		return always
