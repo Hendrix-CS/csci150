@@ -32,13 +32,17 @@ Common types, operators, and identity elements:
 * `float`
   * `+`: `0.0`
   * `*`: `1.0`
-* `bool`
-  * `and`: `True`
-  * `or`: `False`
 * `str`
   * `+`: `''` or `""`
 * `List`
   * `.append()`: `[]`
+  
+  
+## Mathematical Calculation
+	
+	result = appropriate starting value
+	while the calculation is not complete:
+		update result by one step
   
   
 ## Count until a condition is met
@@ -153,4 +157,100 @@ Common types, operators, and identity elements:
 			finished = True
 		else:
 			count += 1
+			
+## Examples
 
+	# Count instances from user inputs
+	def count_short_words() -> int:
+		count = 0
+		finished = False
+		while not finished:
+			word = input("Enter a word: ")
+			if len(word) == 0:
+				finished = True
+			elif len(word) <= 4:
+				count += 1
+				print(f"{word} is short!")
+			else:
+				print(f"{word} is long.")
+		return count
+		
+	# Accumulate from sequence
+	def reverse(s: str) -> str:
+		opposite = '' 
+		i = 0
+		while i < len(s):
+			opposite = s[i] + opposite
+			i += 1
+		return opposite
+		
+	# Accumulate from sequence
+	def smallest_letter(s: str) -> str:
+		smallest = s[0]
+		i = 1
+		while i < len(s):
+			if s[i] < smallest:
+				smallest = s[i]
+			i += 1
+		return smallest	
+
+	# Computation
+	# Count until a condition is met
+	def logarithm(n: int, base: int) -> int:
+		count = 0
+		while n > 1:
+			n //= base
+			count += 1
+		return count
+		
+	# Computation
+	def power(base: int, exponent: int) -> int:
+		product = 1
+		while exponent > 0:
+			product *= base
+			exponent -= 1
+		return product	
+		
+	# Traverse a sequence
+	def prefixes(s: str):
+		i = 0
+		while i < len(s):
+			print(s[:i+1])
+			i += 1
+			
+	# Traverse a sequence
+	def in_betweens(s: str, length: int):
+		i = 0
+		while i < len(s) - 1:
+			print(s[i : i + length])
+			i += 1
+			
+	# Filter a sequence
+	def vowels_only(s: str) -> str:
+		vowels = ''
+		i = 0
+		while i < len(s):
+			if s[i] in 'aeiou':
+				vowels += s[i]
+			i += 1
+		return vowels
+		
+	# Count instances from a sequence
+	def vowel_count(s: str) -> int:
+		count = 0
+		i = 0
+		while i < len(s):
+			if s[i] in 'aeiou':
+				count += 1
+			i += 1
+		return count
+		
+	# Filter a sequence
+	def unique_items(items_sold: List[str]) -> List[str]:
+		i = 0
+		unique = []
+		while i < len(items_sold):
+			if items_sold[i] not in unique:
+				unique.append(items_sold[i])
+			i += 1
+		return unique
