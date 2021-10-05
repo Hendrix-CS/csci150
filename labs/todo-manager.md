@@ -116,8 +116,17 @@ the lab:
     3) Search
     4) Quit
     Your choice? 4
+	
+## Grading Criteria
 
-## Step 1: Bits and Pieces (4 points total)
+* A **Complete** submission includes:
+  * All steps complete.
+  * No Pycharm style warnings.
+* A **Partially Complete** submission includes:
+  * All steps up to and including 4.1 complete.
+
+
+## Step 1: Bits and Pieces 
 
 Create a new Python file called `todo_manager.py`, and put
 your name, date, copyright notice, *etc.* at the top. Also,
@@ -130,7 +139,22 @@ involving lists.
 
 Now follow the instructions below to write some functions you will need.
 
-#### 1.1 Print Numbered List (2 points)
+#### 1.1 Turn a list into a string
+
+Write a function called `list_into_lines(items: List[str]) -> str`.
+
+Given a list of strings, this function should create a single string
+that combines all of the strings from the list, putting a newline
+character (`\n`) between each string. For example:
+
+	list_into_lines(['red', 'yellow', 'blue'])
+	'red\nyellow\nblue\n'
+	print(list_into_lines(['red', 'yellow', 'blue']))
+	red
+	yellow
+	blue
+
+#### 1.2 Print Numbered List 
 
 Write a function called `print_numbered_list(items: List[str])`.
 
@@ -152,7 +176,7 @@ if you type
 at the prompt, you should see the output shown above.
 
 
-#### 1.2 Get choice (2 points)
+#### 1.3 Get choice
 
 Write a function called `get_choice(prompt: str, choices: List[str]) -> int`.
 
@@ -196,8 +220,9 @@ test it**.  For example, you might see something like this:
     1) no way
     OK? 1
     1
+	
 
-## Step 2: Loading and Saving (2 points)
+## Step 2: Loading and Saving 
 
 A todo list manager isn't much good without being able to load and
 save lists of todos!  You wouldn't want to have to type in all your
@@ -217,7 +242,7 @@ now, you can just copy and paste these functions into your program.
             lines = [l.rstrip() for l in f.readlines()]
             f.close()
             return lines
-        except:
+        except FileNotFoundError:
             print(f"Warning, file {filename} does not exist.")
             return []
 
@@ -243,9 +268,8 @@ Now define a function `main()` which does the following:
      function (see the next paragraph for a helpful hint).
 
 Note that `save_file` expects a string, not a list of strings,
-so you will have to turn the list of todos into a single string
-using something like `'\n'.join(todos)`, which puts the
-list of todos together with a newline character in between each one.
+so you will have call `list_into_lines` to turn your list of strings
+into a single string before calling it.
 
 Again, you should be sure to test your `main()` function. (You can use
 whatever file name you want for your todo list; if it doesn't already
@@ -253,7 +277,7 @@ exist, it will be created by `save_file`.)  You should be able to tell
 if the loading and saving is working since after running `main()` your
 todo file should have one more line at the end.
 
-## Step 3: Menu (2 points)
+## Step 3: Menu 
 
 Now modify your `main()` function so it lets the user repeatedly
 choose options from a menu.
@@ -274,7 +298,7 @@ At this point the only active menu choice is the
 option to quit. Nothing will actually happen when they choose 
 anything else from the menu; you will fix that in the next step.
 
-## Step 4: Operations (12 points total)
+## Step 4: Operations 
 
 Now it's time to actually implement the operations!  Below are
 descriptions of what the different menu choices should do.  You can
@@ -284,12 +308,12 @@ inspiration.
 **Be sure to test that each operation works before moving on to the
 next!**
 
-#### 4.1 add (3 points)
+#### 4.1 add 
 
 If the user chooses to add a new todo item, you should prompt them for
 a new todo and add it to the end of the list.
 
-#### 4.2 remove (3 points)
+#### 4.2 remove 
 
 If the user chooses to remove a todo item, you should
 use `get_choice` to ask for the index of the item they
@@ -301,7 +325,7 @@ and the user's choice is stored in a variable
 called `choice`, you could
 write `todos.pop(choice)`.
 
-#### 4.3 replace (3 points)
+#### 4.3 replace 
 
 This should work similarly to remove: ask the user which item they
 would like to replace; if they make a valid choice, prompt them for a
@@ -309,7 +333,7 @@ new todo item, and replace the item at the index they chose.  (*Hint*:
 replacing an item should be only one line of code!  Look in your notes
 from class if you don't remember how to do it.)
 
-#### 4.4 search (3 points)
+#### 4.4 search 
 
 You should first write a function
 <pre>

@@ -1,3 +1,7 @@
+---
+layout: work
+---
+
 # Loop Design Patterns
 
 ## Receive input until we are finished
