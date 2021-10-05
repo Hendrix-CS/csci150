@@ -88,7 +88,7 @@ Upon completing this course, our goal is for you to be able to:
 | F  1 Oct | Function abstraction					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
 | M  4 Oct | Lists                                     |   | Project 1 due
-| W  6 Oct | List processing examples
+| W  6 Oct | List processing examples				   | [Loop Patterns](lectures/loop_recipes.html)
 | F  8 Oct | Exam 2 Review
 |
 | M 11 Oct | Exam 2
