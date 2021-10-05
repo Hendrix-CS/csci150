@@ -2,8 +2,7 @@
 
 ## Receive input until we are finished
 
-### Input, Sentinel
-
+	# Input, Sentinel
 	finished = False
 	while not finished:
 		response = input("Enter input: ")
@@ -12,8 +11,7 @@
 		else:
 			# Do other things with response
 			
-### Input, Seeded
-
+	# Input, Seeded
 	response = seed value; loop condition will be true
 	while response indicates we are not finished:
 		response = input("Enter input: ")
@@ -102,8 +100,7 @@ Common types, operators, and identity elements:
 		
 ## Some combinations
 
-### Accumulate from user inputs
-
+	# Accumulate from user inputs
 	accumulator = identity element of type and operator
 	finished = False
 	while not finished:
@@ -114,12 +111,46 @@ Common types, operators, and identity elements:
 			# Transform value to target type if needed
 			accumulator = accumulator [operator] value
 
-### Accumulate from sequence
-	
+	# Accumulate from sequence
 	accumulator = identity element of type and operator
 	i = 0
 	while i < len(sequence):
 		accumulator = accumulator [operator] sequence[i]
 		i += 1
-
+		
+	# Count instances from user inputs
+	finished = False
+	count = 0
+	while not finished:
+		response = input("Enter input: ")
+		if response indicates we are finished:
+			finished = True
+		elif response matches our target property:
+			count += 1
+			
+	# Count instances from a sequence
+	count = 0
+	i = 0
+	while i < len(sequence):
+		if sequence[i] matches our target property:
+			count += 1
+		i += 1
+		
+	# Check if a property is true of all elements of a sequence
+	always = true
+	i = 0
+	while always and i < len(sequence):
+		if sequence[i] does not match our property:
+			always = False
+		i += 1
+		
+	# Count until a condition is met from input
+	finished = False
+	count = 0
+	while not finished:
+		response = input("Enter input: ")
+		if response indicates we are finished:
+			finished = True
+		else:
+			count += 1
 
