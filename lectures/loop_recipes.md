@@ -225,7 +225,7 @@ Common types, operators, and identity elements:
     # Traverse a sequence
     def in_betweens(s: str, length: int):
         i = 0
-        while i < len(s) - 1:
+        while i < len(s) - length + 1:
             print(s[i : i + length])
             i += 1
             
