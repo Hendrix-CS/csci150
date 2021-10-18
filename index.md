@@ -9,7 +9,7 @@ layout: course-multi
 
 * Morgan McLeod (Wednesday Lab; Wednesday evening 8-10 pm)
 * Zoie Keys (Wednesday and Thursday Lab; Tuesday evening 6:30-8:30 pm)
-* Alysse Robinson (Thursday Lab)
+* Alysse Robinson (Thursday Lab; Thursday evening 6-8 pm)
 
 <!--
 For TA hours click here to join the virtual CS lab:
@@ -95,8 +95,8 @@ Upon completing this course, our goal is for you to be able to:
 | W 13 Oct | Mutability & references
 | F 15 Oct | *No class; Fall Break*
 |
-| M 18 Oct | `for` loops							   |   | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
-| W 20 Oct | `for` loops: index ranges
+| M 18 Oct | `for` loops: index ranges							   |   | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
+| W 20 Oct | `for` loops: lists and strings
 | F 22 Oct | File I/O
 |
 | M 25 Oct | Dictionaries                              |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
