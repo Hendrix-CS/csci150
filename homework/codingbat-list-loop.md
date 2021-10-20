@@ -12,10 +12,10 @@ sure to share your progress with me, by going to "prefs" and entering
 your instructor's email address (`seme@hendrix.edu` or `ferrer@hendrix.edu`) in the "Teacher Share" box.
 
 - [a_to_e](https://codingbat.com/prob/p269089)
-- [num_vowels](https://codingbat.com/prob/p266191)
+<!-- - [num_vowels](https://codingbat.com/prob/p266191)-->
 - [quadruple_minus_three](https://codingbat.com/prob/p257566)
 - [compound_interest](https://codingbat.com/prob/p284403)
-- [logarithm](https://codingbat.com/prob/p218022)
+<!-- - [logarithm](https://codingbat.com/prob/p218022)-->
 - [count_evens](https://codingbat.com/prob/p189616)
 - [centered_average](https://codingbat.com/prob/p126968)
 - [sum13](https://codingbat.com/prob/p167025)
