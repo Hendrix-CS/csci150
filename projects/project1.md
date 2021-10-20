@@ -158,6 +158,8 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
   * Includes the Reflection described above.
   * No Pycharm style warnings -- exception: if your nested `if` statements cause a line to be too long, that is fine.
   * No grammatical or spelling errors.
+  <!-- Add next time: All responses to answers make sense in context.-->
+  <!-- Maybe ban quit() and the like -->
   * Among the six or more questions, at least two distinct types of
     data (`str`, `int`, `float`) are requested. An example of
 	meeting this criterion is having five questions that expect

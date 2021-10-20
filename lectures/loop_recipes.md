@@ -1,8 +1,6 @@
 ---
-layout: work
+worktitle: Loop Design Patterns
 ---
-
-# Loop Design Patterns
 
 ## Receive input until we are finished
 
