@@ -207,7 +207,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                    | Sep 29-30 | Oct 6-7      |
 | 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                        | Oct 6-7   | Oct 20-21    |
 | 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                      | Oct 20-21 | Oct 27-28    |
-| 8  | Sentiment Analysis <!--](https://www.kaggle.com/gabrielferrer/sentiment-analysis)     -->        | Oct 27-28 | Nov 3-4      |
+| 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                  | Oct 27-28 | Nov 3-4      |
 | 9  | Water Jugs <!--]({{site.baseurl}}/labs/waterjug_at_home.html)                         -->        | Nov 3-4   | Nov 10-11    |
 | 10 | Graphics and Animation <!--]({{site.baseurl}}/labs/pygame.html)                       -->        | Nov 10-11 | Nov 17-18    |
 | 11 | Enron's Secrets <!--](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->      | Nov 17-18 | Dec 1-3      |
