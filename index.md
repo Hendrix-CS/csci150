@@ -161,6 +161,10 @@ point during the semester.
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Oct 1  | W Oct 6  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | M Oct 18 | F Oct 22 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Oct 25 | F Oct 29 |
+| 8 | [Optional Heap Tracing Homework](homework/Heap-Tracing_Examples.pdf)      | W Oct 27 | W Nov 3 |
+
+Homework 8 is optional, and will prepare you for the Heap Tracing part of Exam 3. If you turn it in,
+it will replace your lowest single homework.
 
 <!-- |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 | -->
 <!-- | |Homework Checkin 1 | M Sep 23 | F Oct 4 | -->
