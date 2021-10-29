@@ -20,6 +20,8 @@ several of the following concepts we have discussed in class:
 *   Strings
 *   Lists
 *   File input/output
+*   Dictionaries
+*   Classes and Objects
 
 (It is not an absolute requirement for your program to contain every
 single one of the above elements; but if it does not need most of them,
@@ -58,7 +60,7 @@ The user must be able to
 * make mistakes in entry of information and be prompted to correct their
 input.
 
-Your code must make good use of functions. Using functions will reduce
+**Your code must make good use of functions**. Using functions will reduce
 the amount of code you need to write as well as make your program easier
 to debug. However, do not write [spaghetti
 code](http://en.wikipedia.org/wiki/Spaghetti_code), where functions call
@@ -85,3 +87,18 @@ turns.
 ## What to Hand In
 
 You must hand in all files necessary to run your code.
+
+
+## Grading Criteria
+* A **Partially Complete** project:
+  * Explains the game to the user, making clear exactly what input
+    is expected and valid whenever it requests information from them.
+  * Enables the human player to play a word game to completion without any errors.
+  * The word game is complex enough to employ at least **three** of the concepts from the list above.
+* A **Complete** project meets the criteria for **Partially Complete**, and meets the following additional criteria:
+  * The word game is complex enough to employ at least **five** of the concepts from the list above.
+  * Has at least three levels of difficulty.
+  * Offers the chance to play the game again when finished.
+  * Enables the user to correct mistakes in the entry of information.
+  * Makes good use of functions.
+  * Contains no "spaghetti code".
