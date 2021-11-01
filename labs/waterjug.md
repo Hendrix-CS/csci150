@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 10
+num: 9
 worktitle: Waterjugs
 ---
 
@@ -47,31 +47,73 @@ We now have exactly 2 gallons of water jug in A.  (Try it!).  Phew,
 we're still alive!  Wouldn't it be nice to have a computer program
 to help us solve this?
 
-## Step 1: The `WaterJug` class (8 points total)
+## Step 1: The `WaterJug` class 
 
 Open a file named `waterjug.py`. In this file, you will define
-the `WaterJug` class.
-
-### Writing the WaterJug class (4 points)
-
-Each `WaterJug` object will need to have two variables
+the `WaterJug` class. Each `WaterJug` object will need to have two variables
 that we can think of as the state of that `WaterJug`:
 
   * an `int` for `capacity`
   * an `int` for `contents`
 
-Also, a `WaterJug` needs some functionality to change the state of the internal components.
-In object-oriented programming, these are called methods.
+Also, a `WaterJug` needs functions to change the state of the internal components.
+In object-oriented programming, these functions are called **methods**.
 
 Methods:
 
-  * `__init__(self, capacity: int, contents: int)` constructor method
-  * `__repr__(self)` returns a string representing the value of the `WaterJug` object
   * `fill(self)` to fill up the `WaterJug` completely
   * `empty(self)` to completely empty the `WaterJug`
   * `pour(self, other: 'WaterJug')` to pour as much of the contents of this `WaterJug` into the other as is allowed
 
-Implement this class in Python.
+Implement this class in Python. Here is an incomplete implementation you can use 
+as a guide:
+
+    class WaterJug:
+		def __init__(self, capacity: int, contents: int):
+			self.capacity = capacity
+			self.contents = contents
+			
+		def __repr__(self):
+			return f'WaterJug(capacity={self.capacity},contents={self.contents})'
+
+        def fill(self):
+            pass # Your code here
+
+        def empty(self):
+            pass # Your code here
+
+        def pour(self, other: 'WaterJug'):
+            pass # Your code here
+
+
+    def test():
+        jugA = WaterJug(4, 0)
+        jugB = WaterJug(3, 0)
+        jugA.fill()
+        assert jugA.capacity == 4
+        assert jugA.contents == 4
+        jugA.pour(jugB)
+        assert jugA.contents == 1
+        assert jugB.contents == 3
+        assert jugA.capacity == 4
+        assert jugB.capacity == 3
+        jugB.empty()
+        assert jugB.contents == 0
+        assert jugB.capacity == 3
+        jugA.pour(jugB)
+        assert jugA.contents == 0
+        assert jugB.contents == 1
+        jugA.fill()
+        jugA.pour(jugB)
+        assert jugA.contents == 2
+        assert jugB.contents == 3
+        print("All tests passed")
+
+
+    if __name__ == '__main__':
+        test()
+    
+
 
 {% include warning.html content="Be careful with your methods to make
 sure a malicious programmer (or buggy code) cannot violate the
@@ -81,48 +123,34 @@ than `capacity`." %}
 
 {% include tip.html content="Don't forget where to use the `self` keyword." %}
 
-### Testing the WaterJug class (4 points)
+### Testing the WaterJug class 
 
-At the end of your file, place the following lines of code:
-
-    if __name__ == '__main__':
-        test()
-
-Above that, write a function named `test()` that tests
-your class and ensures that it works.  Make sure your test code uses all
+At the end of your file, we included some tests. The test code uses all
 of the methods of the class.  
 
-For each test, write an *assertion* using Python's `assert` statement. 
-An assertion is a claim that a given statement is true. If the statement 
-is not true, the program ends with an error message. Here are some examples:
+Each test uses Python's `assert` statement to determine if the code is correct 
+at that point. An assertion is a claim that a given statement is true. If the 
+statement is not true, the program ends with an error message. Here are some 
+examples:
 
-	jugA = WaterJug(4, 0)
-	assert jugA.capacity == 4
-	assert jugA.contents == 0
+    jugA = WaterJug(4, 0)
+    assert jugA.capacity == 4
+    assert jugA.contents == 0
 
-If all tests pass, it should print a success message.
+If all tests pass, it will print a success message. If any of the assertions fail,
+you will see an appropriate message. For example, if you were to test the incomplete
+code above, the first assertion would fail, and you would get something like 
+the following message:
 
-One approach to creating a good test function is to write code that
-simulates the six actions above with Jugs A and B that leaves 2 gallons
-of water in Jug A.
+    Traceback (most recent call last):
+      File "C:/Users/ferrer/PycharmProjects/waterjug/waterjug.py", line 44, in <module>
+        test()
+      File "C:/Users/ferrer/PycharmProjects/waterjug/waterjug.py", line 24, in test
+        assert jugA.contents == 4
+    AssertionError
 
-The `__repr__` method needs to return a string that, if
-typed into the Python shell, would reconstruct the original object.
-The `str` function calls `__repr__` for its argument
-in order to create its string representation. The `eval`
-function calls the Python interpreter to execute its string argument.
-The following function will test whether `__repr__` works for
-any class:
 
-    def repr_works(obj):
-        return str(obj) == str(eval(str(obj)))
-		
-Here is an example of how one can use this function:
-
-	jugA = WaterJug(4, 0)
-	assert repr_works(jugA)
-
-## Step 2: The Puzzle (6 points)
+## Step 2: The Puzzle
 
 In a new file, `step2.py`, write a program
 that allows the user to set up and then solve a
@@ -179,7 +207,7 @@ You should break your code up into functions appropriately." %}
 {% include note.html content="It is not necessary to validate user input. For this
 assignment, you may assume that all user input is valid." %}
 
-## Step 3: Generalizing (6 points)
+## Step 3: Generalizing
 
 In a new file, `step3.py`, generalize your program from Step 2 so
 that it works with any number
@@ -200,25 +228,25 @@ Here is an example run for your program to emulate:
 	Enter capacity for jug 1: 4
 	Enter capacity for jug 2: 5
 	What is the goal amount (for any jug)? 2
-	Jug 0: WaterJug(4,0)
-	Jug 1: WaterJug(4,0)
-	Jug 2: WaterJug(5,0)
+	Jug 0: WaterJug(capacity=4,contents=0)
+	Jug 1: WaterJug(capacity=4,contents=0)
+	Jug 2: WaterJug(capacity=5,contents=0)
 	Enter command (fill, empty, pour) followed by jug number(s): fill 2
-	Jug 0: WaterJug(4,0)
-	Jug 1: WaterJug(4,0)
-	Jug 2: WaterJug(5,5)
+	Jug 0: WaterJug(capacity=4,contents=0)
+	Jug 1: WaterJug(capacity=4,contents=0)
+	Jug 2: WaterJug(capacity=5,contents=5)
 	Enter command (fill, empty, pour) followed by jug number(s): pour 2 0
-	Jug 0: WaterJug(4,4)
-	Jug 1: WaterJug(4,0)
-	Jug 2: WaterJug(5,1)
+	Jug 0: WaterJug(capacity=4,contents=4)
+	Jug 1: WaterJug(capacity=4,contents=0)
+	Jug 2: WaterJug(capacity=5,contents=1)
 	Enter command (fill, empty, pour) followed by jug number(s): pour 2 1
-	Jug 0: WaterJug(4,4)
-	Jug 1: WaterJug(4,1)
-	Jug 2: WaterJug(5,0)
+	Jug 0: WaterJug(capacity=4,contents=4)
+	Jug 1: WaterJug(capacity=4,contents=1)
+	Jug 2: WaterJug(capacity=5,contents=0)
 	Enter command (fill, empty, pour) followed by jug number(s): fill 2
-	Jug 0: WaterJug(4,4)
-	Jug 1: WaterJug(4,1)
-	Jug 2: WaterJug(5,5)
+	Jug 0: WaterJug(capacity=4,contents=4)
+	Jug 1: WaterJug(capacity=4,contents=1)
+	Jug 2: WaterJug(capacity=5,contents=5)
 	Enter command (fill, empty, pour) followed by jug number(s): pour 2 1
 	Congratulations! Goal achieved.
 	fill 2
@@ -231,10 +259,6 @@ You never know when a Python class could save your life.  And
 remember, "Think fast, Look alive, Die hard."
 
 ## What to Hand In
-Make sure
-you have followed the
-[Python Style Guide](../python_style_guide.html), and
-have run your project through the Automated Style Checker.
 
 You must hand in:
 
