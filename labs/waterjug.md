@@ -17,6 +17,16 @@ In Die Hard III, a mad bomber is chasing Bruce Willis
 and Samuel L. Jackson.  They must solve different puzzles or else
 things will explode and people will die.
 
+## Grading Criteria
+
+* A **Complete** submission includes:
+  * All 3 steps complete.
+  * On Steps 2 and 3, the solution is decomposed in a natural way 
+    into at least two functions.
+  * No Pycharm style warnings.
+* A **Partially Complete** submission includes:
+  * Steps 1 and 2 complete.
+
 ### Example
 
 The WaterJug puzzle can be explained as follows:
