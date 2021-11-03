@@ -8,7 +8,7 @@ layout: course-multi
 ## <a name="TAs">TAs</a>
 
 * Morgan McLeod (Wednesday Lab; Wednesday evening 8-10 pm)
-* Zoie Keys (Wednesday and Thursday Lab; Tuesday evening 6:30-8:30 pm)
+* Zoie Keys (Wednesday and Thursday Lab; Tuesday evening 7-8:30 pm)
 * Alysse Robinson (Thursday Lab; Thursday evening 6-8 pm)
 
 <!--
