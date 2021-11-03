@@ -259,7 +259,7 @@ submitted by the start of the next class period.
 * Exam 1: Monday, September 20, covering functions, math, numerical
   data, and conditionals ([practice exam](docs/exam1-practice.pdf))
 * Exam 2: Monday, October 11, covering input/output, `while` loops, and strings ([practice exam](docs/exam2-practice.pdf))
-* Exam 3: Monday, November 8, covering `for` loops, lists, dictionaries, and file I/O.
+* Exam 3: Monday, November 8, covering `for` loops, lists, dictionaries, and file I/O.([practice exam](docs/exam3-practice.pdf))
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
