@@ -162,6 +162,7 @@ point during the semester.
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | M Oct 18 | F Oct 22 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Oct 25 | F Oct 29 |
 | 8 | [Optional Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)      | W Oct 27 | W Nov 3 |
+|   | [Optional Homework Solutions](homework/Heap-Tracing-Examples-Sample-Solutions.pdf)| | |
 
 Homework 8 is optional, and will prepare you for the Heap Tracing part of Exam 3. If you turn it in,
 it will replace your lowest single homework.
@@ -259,7 +260,7 @@ submitted by the start of the next class period.
 * Exam 1: Monday, September 20, covering functions, math, numerical
   data, and conditionals ([practice exam](docs/exam1-practice.pdf))
 * Exam 2: Monday, October 11, covering input/output, `while` loops, and strings ([practice exam](docs/exam2-practice.pdf))
-* Exam 3: Monday, November 8, covering `for` loops, lists, dictionaries, and file I/O.
+* Exam 3: Monday, November 8, covering `for` loops, lists, dictionaries, and file I/O.([practice exam](docs/exam3-practice.pdf))
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
