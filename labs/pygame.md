@@ -9,6 +9,14 @@ worktitle: Graphics and Animation
 
 * [Pygame](https://www.pygame.org/)
 
+## Grading Criteria
+
+* A **Complete** submission includes:
+  * All 4 steps complete.
+  * No Pycharm style warnings.
+* A **Partially Complete** submission includes:
+  * Steps 1, 2, and 3.1 complete.
+
 ## Overview
 
 For today's lab,
@@ -25,14 +33,6 @@ computer:
   The image below shows what this should look like.
   
 <img src="https://hendrix-cs.github.io{{site.baseurl}}/assets/images/pygame_install.png" width=500>
-
-## Grading Criteria
-
-* A **Complete** submission includes:
-  * All 4 steps complete.
-  * No Pycharm style warnings.
-* A **Partially Complete** submission includes:
-  * Steps 1, 2, and 3.1 complete.
 
 ## Step 1: Faces 
 
