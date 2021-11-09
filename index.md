@@ -213,7 +213,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                      | Oct 20-21 | Oct 27-28    |
 | 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                  | Oct 27-28 | Nov 3-4      |
 | 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                              | Nov 3-4   | Nov 10-11    |
-| 10 | Graphics and Animation <!--]({{site.baseurl}}/labs/pygame.html)                       -->        | Nov 10-11 | Nov 17-18    |
+| 10 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                                    | Nov 10-11 | Nov 17-18    |
 | 11 | Enron's Secrets <!--](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->      | Nov 17-18 | Dec 1-3      |
 | 12 | Project 3 Workshop                                                                               | Dec 1-3   | Dec 10 |
 

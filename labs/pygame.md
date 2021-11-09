@@ -26,7 +26,15 @@ computer:
   
 <img src="https://hendrix-cs.github.io{{site.baseurl}}/assets/images/pygame_install.png" width=500>
 
-## Step 1: Faces (5 points)
+## Grading Criteria
+
+* A **Complete** submission includes:
+  * All 4 steps complete.
+  * No Pycharm style warnings.
+* A **Partially Complete** submission includes:
+  * Steps 1, 2, and 3.1 complete.
+
+## Step 1: Faces 
 
 ### Step 1.1: The Game Loop
 
@@ -141,9 +149,9 @@ ignore, modify, or replace any and all aspects of this example.
         pygame.draw.line(surface, 'orange', (300, 270), (340, 270))
         pygame.display.update()
 
-## Step 2: Classes (5 points total)
+## Step 2: Classes 
 
-### Step 2.1: Placing faces with the Mouse (3 points)
+### Step 2.1: Placing faces with the Mouse 
 
 We will represent a `Face` with a class in Python. The `Face` will need to remember
 the `(x,y)` coordinates for the center of the face. The `draw` method of the `Face` class 
@@ -155,15 +163,14 @@ example code shown below.
 
 Create a file called `face2.py` and enter the code below:
 
-    from dataclasses import dataclass
     import pygame
     from pygame.locals import *
 
 
-    @dataclass
     class Face:
-        x: int
-        y: int
+        def __init__(self, x: int, y: int):
+			self.x = x
+			self.y = y
 
         def draw(self, surface):
             pygame.draw.circle(surface, 'red', (self.x, self.y), 100)
@@ -204,7 +211,7 @@ the user clicks the mouse, it detects a `MOUSEBUTTONDOWN` event type. When it
 sees that event, it adds a `Face` object to the `shapes` list.
 
 
-### Step 2.2: Random Colors (2 points)
+### Step 2.2: Random Colors 
 
 Modify your `Face` class so that it has a `color` attribute in addition to its
 `x` and `y` attributes. 
@@ -217,7 +224,7 @@ that each `Face` placed is given a random color. To assign a random
 select a color from that list every time a new `Face` object is created.
 
 
-## Step 3: Movement (4 points total)
+## Step 3: Movement 
 
 ### Step 3.1: Animation
 
@@ -260,7 +267,7 @@ Experiment with a few different values for the delay, and
 select the value that yields what is in your opinion the 
 best-looking animation.
 
-### Step 3.2: Bouncing (2 points)
+### Step 3.2: Bouncing 
 
 Currently, the faces disappear after a
 while, because they moves off the bottom of the screen.  We would like
@@ -275,7 +282,7 @@ how this information will be conveyed to your `Face` object so that
 it can implement bouncing correctly. One approach would be to add
 your `surface` object as a parameter to `update()`.
 
-### Step 3.3: Random speeds (2 points)
+### Step 3.3: Random speeds 
 
 Each time you create a `Face` object, pass to the constructor random
 velocities between -5 and 5 for both the x and y
@@ -288,10 +295,9 @@ negative.
 You should now have faces moving in all directions and bouncing 
 off of all the walls of the window.
 
-## Step 4: Extensions (6 points)
+## Step 4: Extensions 
 
 Augment your animation with two of the following extensions. 
-Each completed extension is worth 3 points.
 Feel free to make use of [Pygame's documentation](https://www.pygame.org/docs/)
 as needed.
 
