@@ -169,8 +169,8 @@ Create a file called `face2.py` and enter the code below:
 
     class Face:
         def __init__(self, x: int, y: int):
-			self.x = x
-			self.y = y
+            self.x = x
+            self.y = y
 
         def draw(self, surface):
             pygame.draw.circle(surface, 'red', (self.x, self.y), 100)
@@ -210,6 +210,10 @@ Run the program. Click the mouse at various locations on the window. Every time
 the user clicks the mouse, it detects a `MOUSEBUTTONDOWN` event type. When it
 sees that event, it adds a `Face` object to the `shapes` list.
 
+Modify the `Face` class so that it looks just like the face you
+designed in Step 1.3. Make sure that all of the parts of the 
+face appear in the right relationships regardless of screen 
+location.
 
 ### Step 2.2: Random Colors 
 
