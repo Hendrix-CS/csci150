@@ -31,10 +31,11 @@ other.
 
 Some examples include:
 
+*   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows) *using words, not numbers*
+*   [Hangman](https://en.wikipedia.org/wiki/Hangman_(game))
 *   [Last Letter First
     Letter](http://www.greatschools.org/students/activities/slideshows/2812-family-word-games.gs?page=3)
     using countries, state names, foods, etc.
-*   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows) *using words, not numbers*
 *   [Ghost](http://en.wikipedia.org/wiki/Ghost_%28game%29)
 *   [Boggle](http://en.wikipedia.org/wiki/Boggle)
 *   [Prolix](http://boardgamegeek.com/boardgame/39635/prolix)
