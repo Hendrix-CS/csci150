@@ -3,21 +3,20 @@ layout: work
 type: Project
 num: 3
 worktitle: Final Project
-designdue: Wednesday, April 21
-finaldue: Monday, May 10
+designdue: Monday, November 22
+finaldue: Friday, December 10
 ---
 
 ## Description
 
-Instead of a final exam, you will complete a final project which will
-count for 200 points of your final grade in the course.
+Instead of a final exam, you will complete a final project.
 
 Important dates
 ---------------
 
--   Project design due (20): **{{page.designdue}} @ 5pm**
--   Presentations (30): **{{page.finaldue}}, 2-5pm**
--   Project due (150): **{{page.finaldue}} @ 8pm**
+-   Project design due: **{{page.designdue}} @ start of class**
+-   Presentations: **{{page.finaldue}}, Final Exam Period**
+-   Project due: **{{page.finaldue}} @ Final Exam Period**
 
 Guidelines
 ----------
@@ -50,18 +49,15 @@ implementing your project before this!" %}
 
 Your design must include:
 
--   A description of the classes you will use to decompose the
-    information in your project, with a list of the variables and
-    methods in each class.
 -   A description the main algorithm which will control the project.
--   A list of functions you will use to decompose the project, with the
-    inputs, output, and description for each.
 -   A timeline of steps you will take to complete your project with
     deadlines for each step. Plan not just what you must do but the
     ordering of steps that will allow you to complete by the final
     deadline.
 -   A description of the way(s) in which your project goes beyond what
     we have done in class and labs.
+-   A description of how you envision the project code will be 
+    decomposed into classes, methods, and functions. 
 
 You should be as detailed as possible for full credit in your
 description. Time spent on the design will pay off immensely as you
@@ -71,18 +67,17 @@ Presentation
 ------------
 
 Everyone will present their projects on {{page.finaldue}}.
-Your presentation, using PowerPoint, Prezi, a chalkboard, or some
+Your presentation, using PowerPoint, Google Slides, Prezi, or some
 other appropriate presentation medium, will be **at most 6 minutes
 long**. (We are serious about this; presentations that are too long will
 lose points and/or be rudely cut off. Practice beforehand to make sure
 you have a good sense for how much time you have. Six minutes is not
-very long at all.)  The presentations will take place virtually via
-Microsoft Teams.
+very long at all.)  
 
-Your presentation should include **three slides** and a **quick demo of
-your project**. The three slides should answer three questions, one per
+Your presentation should include **four slides** and a **quick demo of your project**. 
+The slides should answer the following questions, one per
 slide:
-
+-   What is the name of your project, and who worked on it? (title slide)
 -   What is the overall idea of your project?
 -   What is interesting/unique about your project?
 -   What was one of the biggest challenges you faced and how did you
@@ -112,6 +107,28 @@ You should turn in
     notes to the grader.
 -   **All** the Python source files, data files, etc. necessary to run
     your project.
+
+## Grading Criteria
+* A **Complete** project includes:
+  * A design document submitted on-time and meeting the requirements given earlier.
+  * A presentation lasting five to six minutes and consisting of four slides, 
+    meeting the criteria given above.
+  * An implementation in which the following are true:
+    * The program is sufficiently complex and goes beyond what we have
+	  done in class or lab.
+	* Makes appropriate use of classes, methods, and functions 
+	  to encapsulate and structure data.
+	* No runtime errors, including those resulting from erroneous user input.
+	* No syntax errors.
+	* Instructor feedback is properly incorporated into the final program.
+* A **Partially Complete** project:
+  * A design document is submitted.
+  * A presentation lasting no more than six minutes and addresses at least
+    some of the criteria given above.
+  * An implementation in which:
+    * The program is sufficiently complex and goes beyond what we have
+	  done in class or lab.
+	* No syntax errors.
 
 <!-- Of course, the [Python style guide]({{site.baseurl}}/python_style_guide.html) and -->
 <!-- [style checker]({{site.baseurl}}/python_style_guide.html) still apply! -->
