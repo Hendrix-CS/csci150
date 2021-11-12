@@ -47,8 +47,9 @@ your project and planning details of how you will implement it.
 {% include warning.html content="You should start thinking about, designing, and even
 implementing your project before this!" %}
 
-Your design must include:
+Your design document must include:
 
+-   Your name, and also the name of your collaborator if it is a team project.
 -   A description the main algorithm which will control the project.
 -   A timeline of steps you will take to complete your project with
     deadlines for each step. Plan not just what you must do but the
