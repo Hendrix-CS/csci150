@@ -50,15 +50,15 @@ implementing your project before this!" %}
 Your design document must include:
 
 -   Your name, and also the name of your collaborator if it is a team project.
--   A description the main algorithm which will control the project.
+-   A description of the way(s) in which your project goes beyond what
+    we have done in class and labs.
+-   A description of the main algorithm which will control the project.
+-   A description of how you envision the project code will be 
+    decomposed into classes, methods, and functions. 
 -   A timeline of steps you will take to complete your project with
     deadlines for each step. Plan not just what you must do but the
     ordering of steps that will allow you to complete by the final
     deadline.
--   A description of the way(s) in which your project goes beyond what
-    we have done in class and labs.
--   A description of how you envision the project code will be 
-    decomposed into classes, methods, and functions. 
 
 You should be as detailed as possible for full credit in your
 description. Time spent on the design will pay off immensely as you
