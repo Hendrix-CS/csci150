@@ -284,7 +284,9 @@ grades are earned based on cumulative assignment outcomes:
   * Schedule and attend at least two Office Hours meetings
 * To earn a C in the course, a student will:
   * At least **Partially Complete** a minimum of two exams.
-  * At least **Partially Complete** all three projects.
+  * One of the following:
+    * At least **Partially Complete** all three projects.
+	* **Complete** the final project and at least **Partially Complete** one of the first two projects.
   * At least **Partially Complete** a minimum of five homework assignments.
   * Up to two unexcused lab absences, **Complete** at least three of the lab assignments, and at least **Partially Complete** a minimum of seven more.
   * Schedule and attend at least one Office Hours meeting
