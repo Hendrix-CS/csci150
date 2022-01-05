@@ -40,9 +40,29 @@ by typing the code into a Python interpreter (i.e. Kaggle). You must show the up
 1.
 
 `x = 7
+
  y = 2
+
  x = y - 3
+
  z = x + y ** 3`
+
+
+ 2.
+
+ `a = 2
+
+  b = a + 4
+
+  a = a + 3
+
+  if a = a + 3:
+
+    c = 7
+
+  else:
+
+    c = a * b`
 
 
 ## Specifications
