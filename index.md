@@ -63,61 +63,65 @@ Upon completing this course, our goal is for you to be able to:
 | Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| W 25 Aug | Intro to CS                                                                                                                                                                |                                                                 |                                                                                                 |
-| F 27 Aug | Intro to CSCI 150; Algorithms and errors  | [Lecture notes](lectures/F21/in-class/08-27.html)               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8) |
+| W 19 Jan | Intro to CS                                                                                                                                                                |                                                                 |                                                                                                 |
+| F 21 Jan | Intro to CSCI 150; Algorithms and errors  | [Lecture notes](lectures/F21/in-class/08-27.html)               | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8) |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 30 Aug | Intro to Python (math, variables)         |   |                                                                                                 |
-| W  1 Sep | Intro to Python (functions)               |   |                                                                                                 |
-| F  3 Sep | Booleans                                  |   | HW: [Boolean practice](homework/booleans.html)                                                   |
+| M 24 Jan | Intro to Python (math, variables)         |   |                                                                                                 |
+| W  26 Jan | Intro to Python (functions)               |   |                                                                                                 |
+| F  28 Jan | Booleans                                  |   | HW: [Boolean practice](homework/booleans.html)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M  6 Sep | *No class; Labor Day*                                                                                                                                                                 |                                                                 |                                                                                                 |
-| W  8 Sep | Conditionals
-| F 10 Sep | Tracing I 								   |   | HW: [CodingBat Conditional Practice](homework/codingbat-conditional.html)
+| M  31 Jan | *No class; Labor Day*                                                                                                                                                                 |                                                                 |                                                                                                 |
+| W  2 Feb | Conditionals
+| F 4 Feb | Tracing I 								   |   | HW: [CodingBat Conditional Practice](homework/codingbat-conditional.html)
 |
-| M 13 Sep | Binary and information encoding
-| W 15 Sep | Pycharm & I/O
-| F 17 Sep | Exam 1 Review
+| M 7 Feb | Binary and information encoding
+| W 9 Feb | Pycharm & I/O
+| F 11 Feb | Exam 1 Review
 |
-| M 20 Sep | Exam 1
-| W 22 Sep | The `while` loop
-| F 24 Sep | Functions and stack tracing			   |   | HW: [Function and loop reading practice](homework/function-reading.html)
+| M 14 Feb | Exam 1
+| W 16 Feb | The `while` loop
+| F 18 Feb | Functions and stack tracing			   |   | HW: [Function and loop reading practice](homework/function-reading.html)
 |          |                                           |   | Project 1: [Civic Assistance Q/A System](projects/project1.html)
 |
-| M 27 Sep | Tracing example; strings
-| W 29 Sep | String & loop practice
-| F  1 Oct | Function abstraction					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
+| M 21 Feb | Tracing example; strings
+| W 23 Feb| String & loop practice
+| F 25 Feb | Function abstraction					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
-| M  4 Oct | Lists                                     |   | Project 1 due
-| W  6 Oct | List processing examples				   | [Loop Patterns](lectures/loop_recipes.html)
-| F  8 Oct | Exam 2 Review
+| M  28 Feb | Lists                                     |   | Project 1 due
+| W  2 Mar | List processing examples				   | [Loop Patterns](lectures/loop_recipes.html)
+| F  4 Mar | Exam 2 Review
 |
-| M 11 Oct | Exam 2
-| W 13 Oct | Mutability & references
-| F 15 Oct | *No class; Fall Break*
+| M 7 Mar | Exam 2
+| W 9 Mar | Mutability & references
+| F 11 Mar | *No class; Fall Break*
 |
-| M 18 Oct | `for` loops: index ranges							   |   | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
-| W 20 Oct | `for` loops: lists and strings
-| F 22 Oct | File I/O
+| M 14 Mar | `for` loops: index ranges							   |   | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
+| W 16 Mar | `for` loops: lists and strings
+| F 18 Mar | File I/O
 |
-| M 25 Oct | Dictionaries                              |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
-| W 27 Oct | Dictionaries
-| F 29 Oct | Introduction to classes and objects       |   | Project 2: [Word Games]({{site.baseurl}}/projects/project2.html)
+| M 21 Mar | *No class; Spring Break*                             
+| W 23 Mar | *No class; Spring Break*
+| F 25 Mar | *No class; Spring Break*
 |
-| M  1 Nov | Classes/objects example 1
-| W  3 Nov | Classes/objects example 2
-| F  5 Nov | Exam 3 Review
+| M 28 Mar | Dictionaries                              |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
+| W 30 Mar | Dictionaries
+| F 1 Apr | Introduction to classes and objects       |   | Project 2: [Word Games]({{site.baseurl}}/projects/project2.html)
 |
-| M  8 Nov | Exam 3
-| W 10 Nov | Graphics and Pygame
-| F 12 Nov | Graphics and Pygame
+| M  4 Apr | Classes/objects example 1
+| W  6 Apr | Classes/objects example 2
+| F  8 Apr | Exam 3 Review
 |
-| M 15 Nov | Introduction to recursion                 |   | Project 2 due; Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
-| W 17 Nov | Recursion (trees)                         |   |
-| F 19 Nov | Recursion
+| M  11 Apr | Exam 3
+| W  13 Apr | Graphics and Pygame
+| F 15 Apr | Graphics and Pygame
 |
-| M 22 Nov | Structuring larger programs 1             |   | Project 3 proposal due
-| W 24 Nov | *No class; Thanksgiving Break*
-| F 26 Nov | *No class; Thanksgiving Break*
+| M 18 Apr | Introduction to recursion                 |   | Project 2 due; Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
+| W 20 Apr | Recursion (trees)                         |   |
+| F 22 Apr | Recursion
+|
+| M 25 Apr | Structuring larger programs 1             |   | Project 3 proposal due
+| W 27 Apr | *No class; Thanksgiving Break*
+| F 29 Apr | *No class; Thanksgiving Break*
 |
 | M 29 Nov | Structuring larger programs 2
 | W  1 Dec | Structuring larger programs 3
