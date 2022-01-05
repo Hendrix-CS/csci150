@@ -39,13 +39,10 @@ by typing the code into a Python interpreter (i.e. Kaggle). You must show the up
 
 1.
 
-`x = 7
-
- y = 2
-
- x = y - 3
-
- z = x + y ** 3`
+  x = 7
+  y = 2
+  x = y - 3
+  z = x + y ** 3
 
 
  2.
