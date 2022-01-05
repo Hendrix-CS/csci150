@@ -53,8 +53,10 @@ by typing the code into a Python interpreter (i.e. Kaggle). You must show the up
 
     if a = a + 3:
       c = 7
+      a = 1
     else:
       c = a * b
+      b = 10
 
 
 ## Specifications
