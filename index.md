@@ -62,7 +62,7 @@ Upon completing this course, our goal is for you to be able to:
 | Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| W 19 Jan | Intro to CS                                                                                                                                                                |                                                                 |                                                                                                 |
+| W 19 Jan | Intro to CS                                                                                                                                                                |                                                                 |   [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8)                                                                                                |
 | F 21 Jan | Intro to CSCI 150; Algorithms and errors  |              | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8) |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M 24 Jan | Intro to Python (math, variables)         |   |                                                                                                 |
@@ -78,16 +78,15 @@ Upon completing this course, our goal is for you to be able to:
 | F 11 Feb | Exam 1 Review
 |
 | M 14 Feb | **Exam 1**
-| W 16 Feb | The `while` loop
-| F 18 Feb | Functions and stack tracing			   |   | HW: [Function and loop reading practice](homework/function-reading.html)
-|          |                                           |   | Project 1: [Civic Assistance Q/A System](projects/project1.html)
+| W 16 Feb | The `while` loop |    |  HW: [Function and loop reading practice](homework/function-reading.html)
+| F 18 Feb | Functions and stack tracing			   |   | Project 1: [Civic Assistance Q/A System](projects/project1.html)
 |
 | M 21 Feb | *No class; Mid-Winter Break*
 | W 23 Feb|  Tracing and Strings
 | F 25 Feb | Strings and Loops					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
-| M  28 Feb | Lists                                     |   | Project 1 due
-| W  2 Mar | List processing examples				   
+| M  28 Feb | Lists                                  |   |   
+| W  2 Mar | List processing examples				   |   | Project 1 due
 | F  4 Mar | Function Abstraction
 |
 | M 7 Mar | The `for` loop
@@ -95,7 +94,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 11 Mar | Exam 2 Review
 |
 | M 14 Mar | **Exam 2**							   |   | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
-| W 16 Mar | File I/O
+| W 16 Mar | File I/O |  | Project 2 Introduced
 | F 18 Mar | The Heap and Mutability
 |
 | M 21 Mar | *No class; Spring Break*                             
@@ -103,22 +102,24 @@ Upon completing this course, our goal is for you to be able to:
 | F 25 Mar | *No class; Spring Break*
 |
 | M 28 Mar | Dictionaries                              |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
+| | | |Project 2 Assigned
 | W 30 Mar | Dictionaries
-| F 1 Apr | Introduction to classes and objects       |   | Project 2: [Word Games]({{site.baseurl}}/projects/project2.html)
+| F 1 Apr | Introduction to classes and objects       |   | [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)  Project 2: [Word Games]({{site.baseurl}}/projects/project2.html)
 |
 | M  4 Apr | Classes/objects example 1
 | W  6 Apr | Classes/objects example 2
-| F  8 Apr | PyGame Intro
+| F  8 Apr | PyGame Intro |            | [Class design practice]({{site.baseurl}}/homework/class-design.pdf)
 |
-| M  11 Apr | Working in PyGame
+| M  11 Apr | Working in PyGame | |Project 2 due
+| | | |Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
 | W  13 Apr | Classes and Games
-| F 15 Apr | Exam 3 Review
+| F 15 Apr | Exam 3 Review     |  | Project 3 proposal due
 |
-| M 18 Apr | **Exam 3**                 |   | Project 2 due; Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
+| M 18 Apr | **Exam 3**                 |   |  
 | W 20 Apr | Recursion                         |   |
 | F 22 Apr | Recursion (trees)
 |
-| M 25 Apr | Structuring larger programs 1             |   | Project 3 proposal due
+| M 25 Apr | Structuring larger programs 1             |   |
 | W 27 Apr | Structuring larger programs 2
 | F 29 Apr | Project Workshop in Class
 |
@@ -159,7 +160,7 @@ point during the semester.
 | 4 | [Function Stack and Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
-| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 | F Apr 1 |
+| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 |** F Apr 1** |
 | 8 | [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)               | F Apr 1  | W Apr 6|
 | 9 | [Class design practice]({{site.baseurl}}/homework/class-design.pdf)       | F Apr 8  | W Apr 13 |
 
@@ -202,19 +203,20 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 
 | #  | Name                                                                                      | Assigned  | Due          |
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
-| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                                                                 | Aug 25-26 | Sep 1-2      |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)        | Sep 1-2   | Sep 8-9      |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)      | Sep 8-9   | Sep 15-16    |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)                | Sep 15-16 | Sep 22-23    |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                            | Sep 22-23 | Sep 29-30    |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                    | Sep 29-30 | Oct 6-7      |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                        | Oct 6-7   | Oct 20-21    |
-| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                      | Oct 20-21 | Oct 27-28    |
-| 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                  | Oct 27-28 | Nov 3-4      |
-| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                              | Nov 3-4   | Nov 10-11    |
-| 10 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                                    | Nov 10-11 | Nov 17-18    |
-| 11 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)           | Nov 17-18 | Dec 1-3      |
-| 12 | Project 3 Workshop                                                                             | Dec 1-3   | Dec 10       |
+| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                              | 19-20 Jan  | 26-27 Jan      |
+| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)        | 26-27 Jan   | 2-3 Feb       |
+| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)      | 2-3 Feb   | 9-10 Feb     |
+| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)                | 9-10 Feb  | 16-17 Feb    |
+| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                            | 16-17 Feb | 23-24 Feb    |
+| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                    | 23-24 Feb | 2-3 Mar      |
+| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                        | 2-3 Mar   | 9-10 Mar    |
+| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                      | 9-10 Mar  | 16-17 Mar    |
+| 8  | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                          | 16-17 Mar | 30-31 Mar    |
+| 9  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                  | 30-31 May |  6-7 Apr    |
+| 10  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                             | 6-7 Apr   | 13-14 Apr   |
+| 11 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                                    | 13-14 Apr | 20-21 Apr    |
+| 12 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)           | 20-21 Apr |  27-28 Apr      |
+| 13 | Project 3 Workshop                                                                             | 27-28 Apr | 6 May       |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
@@ -236,9 +238,9 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)        | Sep 24   | Oct 4  |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | Oct 29   | Nov 15 |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | Nov 17   | Dec 10 |
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)        | 18 Feb   | 2 Mar  |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | 28 Mar   | 11 Apr |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | 11 Apr   | 6 May  |
 
 <!-- [Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs) -->
 
@@ -255,10 +257,10 @@ There will be three exams. Each exam will have two parts:
 * Take-home part: At the end of the written exam will appear some Python coding problems, the solutions to which are to be
 submitted by the start of the next class period.
 
-* Exam 1: Monday, September 20, covering functions, math, numerical
-  data, and conditionals ([practice exam](docs/exam1-practice.pdf))
-* Exam 2: Monday, October 11, covering input/output, `while` loops, and strings ([practice exam](docs/exam2-practice.pdf))
-* Exam 3: Monday, November 8, covering `for` loops, lists, dictionaries, and file I/O.([practice exam](docs/exam3-practice.pdf))
+* Exam 1: Monday, February 14, covering functions, math, numerical
+  data, and conditionals
+* Exam 2: Monday,March 14, covering input/output, `while` loops, `for` loop,  strings , and lists
+* Exam 3: Monday, November 8, covering  dictionaries, file I/O, and classes.
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
@@ -269,35 +271,39 @@ Criteria for the first two categories will be specified for each assignment. Fin
 grades are earned based on cumulative assignment outcomes:
 
 * To earn an A in the course, a student will:
-  * **Complete** all three exams.
+  * **Complete** two exams and at least **Partially Complete** the remaining exam.
   * **Complete** all three projects.
-  * **Complete** a minimum of seven homework assignments, with an eighth one at least **Partially Complete**.
-  * Up to one unexcused lab absence, and **Complete** a minimum of 11 lab assignments, with the 12th one at least **Partially Complete**.
+  * **Complete** a minimum of eight homework assignments, with the other two at least **Partially Complete**.
+  * Up to one unexcused lab absence, and **Complete** a minimum of 11 lab assignments, with the other two at least **Partially Complete**.
   * Schedule and attend a minimum of three Office Hours meetings.
 * To earn a B in the course, a student will:
-  * **Complete** a minimum of two exams and at least **Partially Complete** the remaining exam.
+  * **Complete** two exams and at least **Partially Complete** the remaining exam.
   * **Complete** a minimum of two projects and at least **Partially Complete** the remaining project.
-  * **Complete** a minimum of three homework assignments and at least **Partially Complete** a minimum of three more.
-  * Up to one unexcused lab absence, **Complete** a minimum of six of the lab assignments, and at least **Partially Complete** a minimum of six more.
+  * **Complete** a minimum of four homework assignments and at least **Partially Complete** a minimum of four more.
+  * Up to one unexcused lab absence, **Complete** a minimum of eight of the lab assignments, and at least **Partially Complete** a minimum of four more.
   * Schedule and attend at least two Office Hours meetings
 * To earn a C in the course, a student will:
   * At least **Partially Complete** a minimum of two exams.
   * One of the following:
     * At least **Partially Complete** all three projects.
 	* **Complete** the final project and at least **Partially Complete** one of the first two projects.
-  * At least **Partially Complete** a minimum of five homework assignments.
-  * Up to two unexcused lab absences, **Complete** at least three of the lab assignments, and at least **Partially Complete** a minimum of seven more.
+  * At least **Partially Complete** a minimum of six homework assignments.
+  * Up to two unexcused lab absences, **Complete** at least four of the lab assignments, and at least **Partially Complete** a minimum of six more.
   * Schedule and attend at least one Office Hours meeting
 * To earn a D in the course, a student will:
   * At least **Partially Complete** a minimum of two exams.
   * At least **Partially Complete** a minimum of two projects.
-  * At least **Partially Complete** a minimum of three homework assignments.
+  * At least **Partially Complete** a minimum of four homework assignments.
   * Up to three unexcused lab absences and at least **Partially Complete** a minimum of nine lab assignments.
 
 ### Revising submitted work
 If a submitted assignment receives a **Partial** assessment and the student seeks a **Complete** assessment:
-* The student will schedule and attend an Office Hours meeting to discuss the necessary revisions and establish a deadline for their submission.
-* If the student submits the revisions by the agreed deadline, the revised project will receive a **Complete** assessment.
+* In most cases, detailed feedback will be provided with requirements necessary for a revision to be considered **Complete**. A deadline will also be established.
+* If the student has any questions or is uncertain what those requirements are, they should schedule an office hour appointment.
+* Individual students can request extensions of their deadlines -- typically, unless the student has abused this throughout the semester, requests will be granted.
+* If the student submits revisions which meet the requirements by the deadline, the revised work will receive a **Complete** assessment.
+
+If a submitted assignment receives a **Missing** assessment, a similar list of requirements will be provided. In most cases, a **Missing** assignment can only be upgraded to **Partially Complete**, but the instructor reserves the right to allow students to achieve **Complete** on a case-by-case basis.
 
 
 <hr />
