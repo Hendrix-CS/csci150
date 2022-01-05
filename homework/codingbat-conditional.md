@@ -2,14 +2,24 @@
 layout: generic
 ---
 
-CSCI 150 HW: CodingBat String and Loop practice
+CSCI 150 HW: CodingBat Conditional Practice and By-Hand Tracing
 -----------------------------------------------
 
-*Due: Wednesday, September 15*
+*Due: Wednesday, February 9*
 
-Consider the following exercises in CodingBat.  Be
-sure to share your progress with me, by going to "prefs" and entering
-your instructor's email address (`seme@hendrix.edu` or `ferrer@hendrix.edu`) in the "Teacher Share" box.
+This homework set has two components:
+* CodingBat -- where you will write a bit of code (see below) and it will be automatically assessed
+* By-hand tacing, which you will turn in in classes
+
+# CodingBat
+
+You will want to make an account on CodingBat. Please use your Hendrix email as your account email.
+Please also keep up with your own password -- there is no way for me to recover it for you!
+
+ Be sure to share your progress with me, by going to "prefs" and entering
+your instructor's email address (`seme@hendrix.edu`) in the "Teacher Share" box.
+
+You should complete at least 7 of the following:
 
 - [Cigar Party](https://codingbat.com/prob/p195669)
 - [Date Fashion](https://codingbat.com/prob/p129125)
@@ -21,6 +31,18 @@ your instructor's email address (`seme@hendrix.edu` or `ferrer@hendrix.edu`) in 
 - [Love 6](https://codingbat.com/prob/p100958)
 - [In 1 to 10](https://codingbat.com/prob/p158497)
 - [Near 10](https://codingbat.com/prob/p165321)
+
+# By-Hand Tracing
+
+Turn in your by-hand tracing for each section of code shown below. You are *strongly* encouraged to check your answers
+by typing the code into a Python interpreter (i.e. Kaggle). You must show the updating of values as the code runs.
+
+1.
+
+`x = 7
+ y = 2
+ x = y - 3
+ z = x + y ** 3`
 
 
 ## Specifications
