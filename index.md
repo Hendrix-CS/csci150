@@ -69,7 +69,7 @@ Upon completing this course, our goal is for you to be able to:
 | W  26 Jan | Intro to Python (functions)               |   |                                                                                                 |
 | F  28 Jan | Booleans                                  |   | HW: [Boolean practice](homework/booleans.html)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M  31 Jan | Conditionals Day*                                                                                                                                                                 |                                                                 |                                                                                                 |
+| M  31 Jan | Conditionals                                                                                                                                                              |                                                                 |                                                                                                 |
 | W  2 Feb | Tracing I
 | F 4 Feb | Tracing II 								   |   | HW: [CodingBat Conditional Practice](homework/codingbat-conditional.html)
 |
@@ -77,7 +77,7 @@ Upon completing this course, our goal is for you to be able to:
 | W 9 Feb | Binary  and I/O
 | F 11 Feb | Exam 1 Review
 |
-| M 14 Feb | Exam 1
+| M 14 Feb | **Exam 1**
 | W 16 Feb | The `while` loop
 | F 18 Feb | Functions and stack tracing			   |   | HW: [Function and loop reading practice](homework/function-reading.html)
 |          |                                           |   | Project 1: [Civic Assistance Q/A System](projects/project1.html)
@@ -87,14 +87,14 @@ Upon completing this course, our goal is for you to be able to:
 | F 25 Feb | Strings and Loops					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
 | M  28 Feb | Lists                                     |   | Project 1 due
-| W  2 Mar | List processing examples				   | [Loop Patterns](lectures/loop_recipes.html)
+| W  2 Mar | List processing examples				   
 | F  4 Mar | Function Abstraction
 |
 | M 7 Mar | The `for` loop
-| W 9 Mar | More `for` loop practice
+| W 9 Mar | More `for` loop practice | [Loop Patterns](lectures/loop_recipes.html)
 | F 11 Mar | Exam 2 Review
 |
-| M 14 Mar | Exam 2							   |   | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
+| M 14 Mar | **Exam 2**							   |   | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 | W 16 Mar | File I/O
 | F 18 Mar | The Heap and Mutability
 |
@@ -114,7 +114,7 @@ Upon completing this course, our goal is for you to be able to:
 | W  13 Apr | Classes and Games
 | F 15 Apr | Exam 3 Review
 |
-| M 18 Apr | Exam 3                 |   | Project 2 due; Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
+| M 18 Apr | **Exam 3**                 |   | Project 2 due; Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
 | W 20 Apr | Recursion                         |   |
 | F 22 Apr | Recursion (trees)
 |
@@ -152,19 +152,18 @@ point during the semester.
 
 | # | Name                                                                      | Assigned | Due      |
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8)                             | W Aug 25 | M Aug 30  |
-| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 27 | W Sep 1  |
-| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                | F Sep 3  | W Sep 8  |
-| 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Sep 10 | W Sep 15 |
-| 4 | [Function and loop reading practice](homework/function-reading.html)       | F Sep 24 | W Sep 29 |
-| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Oct 1  | W Oct 6  |
-| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | M Oct 18 | F Oct 22 |
-| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Oct 25 | F Oct 29 |
-| 8 | [Optional Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)      | W Oct 27 | W Nov 3 |
-|   | [Optional Homework Solutions](homework/Heap-Tracing-Examples-Sample-Solutions.pdf)| | |
+| 0 | [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8)                             | W Jan 19 | M Jan 24  |
+| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 21 | W Jan 26  |
+| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 28 | W Feb 2  |
+| 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Feb 4  | W Feb 9 |
+| 4 | [Function Stack and Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |
+| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
+| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
+| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 | F Apr 1 |
+| 8 | [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)               | F Apr 1  | W Apr 6|
+| 9 | [Class design practice]({{site.baseurl}}/homework/class-design.pdf)       | F Apr 8  | W Apr 13 |
 
-Homework 8 is optional, and will prepare you for the Heap Tracing part of Exam 3. If you turn it in,
-it will replace your lowest single homework.
+
 
 <!-- |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 | -->
 <!-- | |Homework Checkin 1 | M Sep 23 | F Oct 4 | -->
