@@ -63,7 +63,7 @@ Upon completing this course, our goal is for you to be able to:
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | W 19 Jan | Intro to CS                                                                                                                                                                |                                                                 |   [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8)                                                                                                |
-| F 21 Jan | Intro to CSCI 150; Algorithms and errors  |              | HW: [Minecraft by hand](homework/minecraft.html); [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8) |
+| F 21 Jan | Intro to CSCI 150; Algorithms and errors  |              | HW: [Minecraft by hand](homework/minecraft.html) |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M 24 Jan | Intro to Python (math, variables)         |   |                                                                                                 |
 | W  26 Jan | Intro to Python (functions)               |   |                                                                                                 |
@@ -71,7 +71,7 @@ Upon completing this course, our goal is for you to be able to:
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  31 Jan | Conditionals                                                                                                                                                              |                                                                 |                                                                                                 |
 | W  2 Feb | Tracing I
-| F 4 Feb | Tracing II 								   |   | HW: [CodingBat Conditional Practice](homework/codingbat-conditional.html)
+| F 4 Feb | Tracing II 								   |   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |
 | M 7 Feb | Pycharm
 | W 9 Feb | Binary  and I/O
@@ -160,7 +160,7 @@ point during the semester.
 | 4 | [Function Stack and Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
-| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 |** F Apr 1** |
+| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 |**F Apr 1** |
 | 8 | [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)               | F Apr 1  | W Apr 6|
 | 9 | [Class design practice]({{site.baseurl}}/homework/class-design.pdf)       | F Apr 8  | W Apr 13 |
 
@@ -259,8 +259,8 @@ submitted by the start of the next class period.
 
 * Exam 1: Monday, February 14, covering functions, math, numerical
   data, and conditionals
-* Exam 2: Monday,March 14, covering input/output, `while` loops, `for` loop,  strings , and lists
-* Exam 3: Monday, November 8, covering  dictionaries, file I/O, and classes.
+* Exam 2: Monday, March 14, covering input/output, `while` loops, `for` loop,  strings , and lists
+* Exam 3: Monday, April 18, covering  dictionaries, file I/O, and classes.
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
@@ -298,7 +298,7 @@ grades are earned based on cumulative assignment outcomes:
 
 ### Revising submitted work
 If a submitted assignment receives a **Partial** assessment and the student seeks a **Complete** assessment:
-* In most cases, detailed feedback will be provided with requirements necessary for a revision to be considered **Complete**. A deadline will also be established.
+* In most cases, detailed feedback will be provided with requirements necessary for a revision to be considered **Complete**. A deadline will also be established -- typically a week after the assignment is returned.
 * If the student has any questions or is uncertain what those requirements are, they should schedule an office hour appointment.
 * Individual students can request extensions of their deadlines -- typically, unless the student has abused this throughout the semester, requests will be granted.
 * If the student submits revisions which meet the requirements by the deadline, the revised work will receive a **Complete** assessment.
