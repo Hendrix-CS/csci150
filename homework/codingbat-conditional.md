@@ -61,5 +61,5 @@ by typing the code into a Python interpreter (i.e. Kaggle). You must show the up
 
 ## Specifications
 
-- To be considered **complete** you must finish at least 7 of the exercises.
-- To be considered **partial** you must finish at least 4 exercises, with an additional 3 attempted.
+- To be considered **complete** you must finish at least 7 of the CodingBat exercises and all values in your tracing must match the correct final values.
+- To be considered **partial** you must finish at least 4 exercises, with an additional 3 attempted and at least one tracing problem has all correct final values.
