@@ -189,7 +189,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 
 * You may also write your homework solutions on physical paper and
   scan them using an app such as [Genius
-  Scan](https://thegrizzlylabs.com/genius-scan) which can export your
+  Scan](https://thegrizzlylabs.com/genius-scan) which can export your 
   document as a PDF. -->
 
 ## <a name="labs">Labs</a>
