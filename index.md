@@ -79,7 +79,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 14 Feb | **Exam 1**
 | W 16 Feb | The `while` loop |    |  HW: [Function and loop reading practice](homework/function-reading.html)
-| F 18 Feb | Functions and stack tracing			   |   | Project 1: [Civic Assistance Q/A System](projects/project1.html)
+| F 18 Feb | Functions and stack tracing			   |   | Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
 |
 | M 21 Feb | *No class; Mid-Winter Break*
 | W 23 Feb|  Tracing and Strings
@@ -102,16 +102,16 @@ Upon completing this course, our goal is for you to be able to:
 | F 25 Mar | *No class; Spring Break*
 |
 | M 28 Mar | Dictionaries                              |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
-| | | |Project 2 Assigned
+| | | |Project 2 Assigned: [Word Games]({{site.baseurl}}/projects/project2.html)
 | W 30 Mar | Dictionaries
-| F 1 Apr | Introduction to classes and objects       |   | HW: [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)  Project 2: [Word Games]({{site.baseurl}}/projects/project2.html)
+| F 1 Apr | Introduction to classes and objects       |   | HW: [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)  
 |
 | M  4 Apr | Classes/objects example 1
 | W  6 Apr | Classes/objects example 2
 | F  8 Apr | PyGame Intro |            | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
 | M  11 Apr | Working in PyGame | |Project 2 due
-| | | |Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
+| | | |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
 | W  13 Apr | Classes and Games
 | F 15 Apr | Exam 3 Review     |  | Project 3 proposal due
 |
