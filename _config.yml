@@ -26,7 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 number: CSCI 150
 title: Foundations of Computer Science
-semester: Fall 2021
+semester: Spring 2022
 
 navigation:
   - title: Overview
@@ -76,13 +76,9 @@ instructors:
 
 offerings:
   - name: LECTURE 01
-    loc: M.C. Reynolds 315
+    loc: M.C. Reynolds 110
     time: MWF 8:10am - 9:00am (A1)
     instructor: seme
-  - name: LECTURE 02
-    loc: M.C. Reynolds 110
-    time: MWF 11:10am - 12:00pm (A4)
-    instructor: ferrer
   - name: LAB L1
     loc: Bailey Lab
     time: W 1:10pm - 4:00pm (L8)
