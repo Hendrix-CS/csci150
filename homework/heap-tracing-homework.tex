@@ -1,0 +1,188 @@
+% -*- mode: LaTeX; compile-command: "pdflatex exam1.tex" -*-
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{amsmath, url, array}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth 7in
+\topmargin -.75in
+\textheight 9in
+\pagestyle{empty}
+\setlength{\parindent}{0in}
+\setlength{\unitlength}{0.85in}
+
+\begin{document}
+
+\textbf{CSCI 150 }
+
+\vspace{0.1in}
+
+\begin{center}
+  \textbf{Tracing with the Heap}
+\end{center}
+
+\vspace{0.2in}
+\textbf{Due Wednesday, April 6}
+
+\vspace{0.2in}
+
+\textbf{Grading Specifications:}
+
+You will earn a \textbf{Complete} provide that:
+\begin{itemize}
+  \item all five problems are attempted,
+  \item at least three a completely correct, showing all changes in the stack and heap as appropriate,
+  \item a fourth has minor computational/careless error, but shows correct interactions with the heap, and
+  \item on all five, there is no confusion about print vs return values.
+\end{itemize}
+
+You will earn a \textbf{Partially Complete} provided that:
+\begin{itemize}
+  \item  at least four are attempted,
+  \item  on at least three, interactions with the heap are correct, except for minor computational errors, and
+  \item  there is no confusion on at least two about print vs return values
+\end{itemize}
+
+You are \textbf{STRONGLY} encouraged to copy the code shown into a .py file or Kaggle notebook and run them. See if you printed output matches. Add additional print statements along the way to see if you are updating the heap/stack variables correctly. If you are confused, seek help from classmates, the CSCI tutors, or your instructor.
+
+\vspace{0.2in}
+For all, you might find it useful to include
+\vspace{0.1in}
+
+\verb|from typing import *|
+
+\vspace{0.1in}
+
+as the first line of your .py file or first cell in your Kaggle notebook
+
+
+
+\begin{enumerate}
+
+\item  \
+
+\begin{verbatim}
+def main1():
+    a_list = [1, 2, 3]
+    b_list = a_list
+    temp_list = []
+    for item in a_list:
+        temp_list.append(item * 2)
+
+    b_list.append(47)
+    a_list[1] = -7
+
+    print(a_list)
+    print(b_list)
+    print(temp_list)
+
+main1()
+\end{verbatim}
+\newpage
+
+\item  \
+
+\begin{verbatim}
+def main2():
+    a_dict = {1: 'cat', 2: 'dog', 34: 'fish'}
+    b_dict = a_dict
+    temp_dict = {}
+    for item in a_dict:
+        temp_dict[item] = a_dict[item] + '!!'
+
+    b_dict[100] = 'pig'
+    a_dict[2] = 'snail'
+
+    print(a_dict)
+    print(b_dict)
+    print(temp_dict)
+
+main2()
+\end{verbatim}
+\vfill
+
+\item \
+\begin{verbatim}
+def main3():
+    a_str = 'bye'
+    b_str = a_str
+    temp_str = ''
+    for item in a_str:
+        temp_str += item + '!'
+
+    b_str += 'z'
+
+
+    print(a_str)
+    print(b_str)
+    print(temp_str)
+
+main3()
+\end{verbatim}
+\vfill
+\vfill
+\newpage
+
+\item \
+
+\begin{verbatim}
+def f1(a: Dict[str, int]) -> int:
+    sum1 = 0
+    for key in a:
+        if a[key] >= 0:
+            sum1 += a[key]
+        else:
+            a[key] = 0
+
+    return sum1
+
+def main4():
+    b = {'Seme' : 23, 'Ferrer' : 12, 'Wilson' : -7}
+    print(f1(b))
+    print(b)
+
+main4()
+\end{verbatim}
+\vfill
+
+\item \
+\begin{verbatim}
+def g1(s: str) -> int:
+    if 'a' in s:
+        s = 'boo'
+
+    return len(s)
+
+def g2(lst: List[int]):
+    s = 'exam'
+
+    if len(lst) < len(s):
+        print('Too short')
+    else:
+        i = 0
+        for char in s:
+            lst[i] = g1(char)
+            i += 1
+
+
+def main5():
+    a_list = [6,2,9,8]
+    g2(a_list)
+    print(a_list)
+
+main5()
+\end{verbatim}
+
+\vfill
+\vfill
+
+
+\end{enumerate}
+
+\end{document} 
