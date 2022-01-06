@@ -1,0 +1,310 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\oddsidemargin =-0.5in
+\evensidemargin = -0.5in
+\rightmargin = +0.5in
+\textwidth = 8in
+
+\hypertarget{csci-150-hw-class-design-practice}{%
+\subsection{CSCI 150 HW: Dictionary and Class Homework
+practice}\label{csci-150-hw-class-design-practice}}
+
+\emph{Due: Wednesday,  April 13}
+
+To receive full credit, for each exercise you should do the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Design}: First, design a Python class as requested in the
+  exercise. Type in your class definition.
+\item
+  \textbf{Check}: Run the provided test code. Does your actual output
+  agree with the given correct output?
+\item
+  \textbf{Evaluate}: If the actual output does not match the expected
+  output, keep experimenting, consult the textbook or Python
+  documentation, ask a friend or TA or professor, \emph{etc.} until you
+  can fix your class definition and explain what your
+  misunderstanding(s) were. (You do not need to do anything for step 3
+  if the outputs already agree exactly.)
+\end{enumerate}
+
+You should consider the code in each exercise separately from the other
+exercises.
+
+\vspace{0.2in}
+
+Upload your code to the class Teams page.
+
+\begin{enumerate}
+\item Write a function \verb|vowel_count| which takes in a list of strings (all lower case) and returns a dictionary, keyed on the five vowels a, e, i, o, and u. The value for each should be the total number of entries in the list which contain at least a single copy of that vowel. For example,
+    
+    \begin{verbatim}
+      
+      vowel_count(['time', 'is', 'the', 'end']) returns
+      {'a': 0, 'e': 3, 'i': 2, 'o': 0, 'u': 0}
+      
+      
+      vowel_count(['aardvark', 'facetious', 'too', 'to', 'two']) returns
+      {'a': 2, 'e': 1, 'i': 1, 'o': 4', 'u': 1}
+      
+      (note that we are not counting the total number of a's, or e's, 
+      but how many individual entries in the list contain at least one a)
+    \end{verbatim}
+
+
+\item  Write a function \texttt{char\_remaining} which takes a string as input and returns a dictionary whose keys are the characters in the string and values are the number of characters in the string remaining after the \emph{first} occurance of the keyed-character.  For example:
+
+    \begin{verbatim}
+      char_remaining('Hello') returns
+       {'H': 4, 'e': 3, 'l': 2, 'o': 0}
+
+
+      char_remaininf('CSCI 150 class') returns
+       {'C': 13, 'S': 12, 'I': 10, ' ': 9, '1': 8, '5': 7, '0': 6, 'c': 4, 'l': 3, 'a': 2, 's':1}
+    \end{verbatim}
+    
+\item  Write a function \verb|dict_count| which takes in two parameters: \verb|d|, which is a dictionary keyed on strings with integer values, and \verb|s| a single character string. The function should return an integer which is the sum of all values which correspond to keys which contain \verb|s|.  For example:
+    
+    \begin{verbatim}
+      
+      if d = {'hi': 3, 'there': 2, 'bye': 6} and s = 'h', then 
+      dict(count(d,s)) returns 5
+      
+      if d = {'hi': 3, 'there': 2, 'bye': 6} and s = 'a', then
+      dict(count(d,s)) returns 0
+      
+      if d = {'hi': 3, 'there': 2, 'bye': 6} and s = 'e', then
+      dict(count(d,s)) returns 7
+      
+    \end{verbatim}
+
+
+
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Write a Python class \texttt{BouncyBall}, which represents a bouncy
+  ball containing a certain amount of air.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    When a \texttt{BouncyBall} object is first created, it should have
+    10 units of air.
+  \item
+    There should be a method \texttt{bounce()} which normally prints the
+    word \texttt{Bounce!} and decreases the amount of air in the ball by
+    two units. However, if the amount of air is less than or equal to
+    three, then \texttt{bounce()} does not decrease the amount of air
+    and prints \texttt{Thupp.} instead of \texttt{Bounce!}.
+  \item
+    There should be a method \texttt{inflate()} which increases the
+    amount of air by three units. If the amount of air ever becomes
+    greater than 12, then the ball explodes by printing
+    \texttt{BANG!!!}.
+  \item
+    You cannot bounce or inflate an exploded ball. After a ball
+    explodes, calling \texttt{bounce()} or \texttt{inflate()} should
+    just cause a message to be printed such as
+    \texttt{Sorry,\ you\ cannot\ bounce\ this\ \ ball!\ \ It\ has\ exploded.}
+  \end{itemize}
+
+  To test your class, you can type in and run the following code:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ main():}
+\NormalTok{    b }\OperatorTok{=}\NormalTok{ BouncyBall()}
+
+    \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{6}\NormalTok{):}
+\NormalTok{        b.bounce()}
+
+\NormalTok{    b.inflate()}
+\NormalTok{    b.bounce()}
+\NormalTok{    b.bounce()}
+
+    \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{5}\NormalTok{):}
+\NormalTok{        b.inflate()}
+
+\NormalTok{    b.bounce()}
+
+\NormalTok{main()}
+\end{Highlighting}
+\end{Shaded}
+
+  If your definition of \texttt{BouncyBall} is correct, \texttt{main()}
+  should produce the following output:
+
+\begin{verbatim}
+Bounce!
+Bounce!
+Bounce!
+Bounce!
+Thupp.
+Thupp.
+Bounce!
+Thupp.
+BANG!!!
+Sorry, you cannot inflate this ball!  It has exploded.
+Sorry, you cannot bounce this ball!  It has exploded.
+\end{verbatim}
+\item
+  Write a Python class \texttt{Gradebook} which works as follows:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    When a new \texttt{Gradebook} object is first created, it should
+    start out with an empty list of grades, and zero points of extra
+    credit.
+  \item
+    There should be a method \texttt{add\_grade(g:\ int)} which adds the
+    grade \texttt{g} to the end of the list.
+  \item
+    There should be a method \texttt{add\_ec(ec:\ int)} which adds
+    \texttt{ec} points of extra credit to the current amount of extra
+    credit.
+  \item
+    There should be a method \texttt{average()} which computes and
+    returns the average of all the grades so far (the sum of all the
+    grades, plus the extra credit score, divided by the number of
+    grades).
+  \end{itemize}
+
+  You can test your implementation of \texttt{Gradebook} by running the
+  code below:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ main():}
+\NormalTok{    gb }\OperatorTok{=}\NormalTok{ Gradebook()}
+\NormalTok{    gb.add_grade(}\DecValTok{90}\NormalTok{)}
+\NormalTok{    gb.add_grade(}\DecValTok{83}\NormalTok{)}
+\NormalTok{    gb.add_grade(}\DecValTok{97}\NormalTok{)}
+\NormalTok{    gb.add_ec(}\DecValTok{10}\NormalTok{)}
+
+    \BuiltInTok{print}\NormalTok{(gb.average())}
+
+\NormalTok{main()}
+\end{Highlighting}
+\end{Shaded}
+
+  If your definition of \texttt{Gradebook} is correct, this should print
+  \texttt{93.33333333333333}.
+\end{enumerate}
+
+\vspace{0.2in}
+
+\textbf{Specifications:}
+
+To earn a \textbf{Complete} on this assignment, you need to:
+\begin{itemize}
+  \item All five problems are attempted
+  \item Four of the five are completely correct; the fifth has a minor, non-obvious error not easily detectible through simple testing.
+  \item  There are no \verb|return| vs \verb|print| issues.
+\end{itemize}
+
+To earn a \textbf{Partially Complete}, you need to:
+\begin{itemize}
+  \item  At least four of five are attempted
+  \item  At least two are completely correct
+  \item  At least one class problem has a correct \verb|__init__| method
+  \item  There are no \verb|return| vs \verb|print| issues. 
+\end{itemize}
+
+\end{document} 
