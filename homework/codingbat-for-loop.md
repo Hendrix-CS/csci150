@@ -5,11 +5,11 @@ layout: generic
 CSCI 150 HW: CodingBat more loop practice
 ---------------------------------------------
 
-*Due: Friday, October 29*
+*Due: Friday, April 1*
 
 Consider the following exercises in CodingBat.  Be
 sure to share your progress with me, by going to "prefs" and entering
-your instructor's email address (`seme@hendrix.edu` or `ferrer@hendrix.edu`) in the "Teacher Share" box.
+your instructor's email address (`seme@hendrix.edu`) in the "Teacher Share" box.
 
 - [string_splosion](https://codingbat.com/prob/p118366)
 - [string_bits](https://codingbat.com/prob/p113152)

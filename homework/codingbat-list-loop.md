@@ -5,11 +5,11 @@ layout: generic
 CSCI 150 HW: CodingBat List and Loop practice
 ---------------------------------------------
 
-*Due: Friday, October 22*
+*Due: Wednesday, March 9*
 
 Consider the following exercises in CodingBat.  Be
 sure to share your progress with me, by going to "prefs" and entering
-your instructor's email address (`seme@hendrix.edu` or `ferrer@hendrix.edu`) in the "Teacher Share" box.
+your instructor's email address (`seme@hendrix.edu`) in the "Teacher Share" box.
 
 - [a_to_e](https://codingbat.com/prob/p269089)
 <!-- - [num_vowels](https://codingbat.com/prob/p266191)-->
