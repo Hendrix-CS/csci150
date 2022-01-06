@@ -108,7 +108,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M  4 Apr | Classes/objects example 1
 | W  6 Apr | Classes/objects example 2
-| F  8 Apr | PyGame Intro |            | [Class design practice]({{site.baseurl}}/homework/class-design.pdf)
+| F  8 Apr | PyGame Intro |            | [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
 | M  11 Apr | Working in PyGame | |Project 2 due
 | | | |Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
@@ -162,7 +162,7 @@ point during the semester.
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 |**F Apr 1** |
 | 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Apr 1  | W Apr 6|
-| 9 | [Dicitonary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Apr 8  | W Apr 13 |
+| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Apr 8  | W Apr 13 |
 
 
 
