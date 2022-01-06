@@ -161,7 +161,7 @@ point during the semester.
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 |**F Apr 1** |
-| 8 | [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)               | F Apr 1  | W Apr 6|
+| 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Apr 1  | W Apr 6|
 | 9 | [Class design practice]({{site.baseurl}}/homework/class-design.pdf)       | F Apr 8  | W Apr 13 |
 
 
@@ -189,7 +189,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 
 * You may also write your homework solutions on physical paper and
   scan them using an app such as [Genius
-  Scan](https://thegrizzlylabs.com/genius-scan) which can export your 
+  Scan](https://thegrizzlylabs.com/genius-scan) which can export your
   document as a PDF. -->
 
 ## <a name="labs">Labs</a>
