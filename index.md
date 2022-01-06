@@ -104,11 +104,11 @@ Upon completing this course, our goal is for you to be able to:
 | M 28 Mar | Dictionaries                              |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 | | | |Project 2 Assigned
 | W 30 Mar | Dictionaries
-| F 1 Apr | Introduction to classes and objects       |   | [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)  Project 2: [Word Games]({{site.baseurl}}/projects/project2.html)
+| F 1 Apr | Introduction to classes and objects       |   | HW: [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)  Project 2: [Word Games]({{site.baseurl}}/projects/project2.html)
 |
 | M  4 Apr | Classes/objects example 1
 | W  6 Apr | Classes/objects example 2
-| F  8 Apr | PyGame Intro |            | [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
+| F  8 Apr | PyGame Intro |            | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
 | M  11 Apr | Working in PyGame | |Project 2 due
 | | | |Project 3: [Final Project]({{site.baseurl}}/projects/final.html)
