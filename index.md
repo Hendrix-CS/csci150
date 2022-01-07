@@ -62,7 +62,7 @@ Upon completing this course, our goal is for you to be able to:
 | Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| W 19 Jan | Intro to CS                                                                                                                                                                |                                                                 |   [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8)                                                                                                |
+| W 19 Jan | Intro to CS                                                                                                                                                                |                                                                 |   [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                                                                                                |
 | F 21 Jan | Intro to CSCI 150; Algorithms and errors  |              | HW: [Minecraft by hand](homework/minecraft.html) |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M 24 Jan | Intro to Python (math, variables)         |   |                                                                                                 |
@@ -153,7 +153,7 @@ point during the semester.
 
 | # | Name                                                                      | Assigned | Due      |
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://forms.gle/5kaNfu8Ta2fVZntR8)                             | W Jan 19 | M Jan 24  |
+| 0 | [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                             | W Jan 19 | M Jan 24  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 21 | W Jan 26  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 28 | W Feb 2  |
 | 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Feb 4  | W Feb 9 |
