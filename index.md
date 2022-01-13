@@ -317,7 +317,7 @@ me as the course instructor and facilitator.
 
 If I am not fulfilling my responsibilities outlined below, you are
 welcome (and encouraged!) to call me out, perhaps via the [anonymous
-feedback form](https://forms.gle/YhPgQTq1FHiH71B6A). I will also
+feedback form](https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link). I will also
 initiate a conversation if you are not fulfilling yours. However, none
 of us will meet all of the expectations perfectly---me included!---so
 it's also important that we have grace and patience with one another.
@@ -445,7 +445,7 @@ Leblanc at [leblanc@hendrix.edu](mailto:leblanc@hendrix.edu) or
 [titleix@hendrix.edu](mailto:titleix@hendrix.edu)or 501-505-2901. If
 you have ideas for improving the inclusivity of the classroom
 experience please feel free to [contact
-me](https://forms.gle/YhPgQTq1FHiH71B6A).  For more information on
+me](https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link).  For more information on
 Hendrix non-discrimination policies, visit
 [hendrix.edu/nondiscrimination](http://hendrix.edu/nondiscrimination).
 
