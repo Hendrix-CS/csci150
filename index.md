@@ -204,18 +204,18 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | #  | Name                                                                                      | Assigned  | Due          |
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
 | 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                              | 19-20 Jan  | 26-27 Jan      |
-| 1  | <!---[Kepler, 1Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein) --->       | 26-27 Jan   | 2-3 Feb       |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)      | 2-3 Feb   | 9-10 Feb     |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)                | 9-10 Feb  | 16-17 Feb    |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                            | 16-17 Feb | 23-24 Feb    |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                    | 23-24 Feb | 2-3 Mar      |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                        | 2-3 Mar   | 9-10 Mar    |
-| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                      | 9-10 Mar  | 16-17 Mar    |
-| 8  | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                          | 16-17 Mar | 30-31 Mar    |
-| 9  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                  | 30-31 May |  6-7 Apr    |
-| 10  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                             | 6-7 Apr   | 13-14 Apr   |
-| 11 | [Graphics and Animation]({{site.baseurl}}/labs/pygame.html)                                    | 13-14 Apr | 20-21 Apr    |
-| 12 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)           | 20-21 Apr |  27-28 Apr      |
+| 1  | Kepler, Newton, Einstein <!---https://www.kaggle.com/gabrielferrer/kepler-newton-einstein) --->       | 26-27 Jan   | 2-3 Feb       |
+| 2  | Diagnosing Heart Disease<!---https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) --->     | 2-3 Feb   | 9-10 Feb     |
+| 3  | This Day in History<!---https://www.kaggle.com/gabrielferrer/this-day-in-history) --->               | 9-10 Feb  | 16-17 Feb    |
+| 4  | Guess My Number<!---{{site.baseurl}}/labs/guess.html)     --->                                       | 16-17 Feb | 23-24 Feb    |
+| 5  | Mutation is the Word<!---{{site.baseurl}}/labs/doublets.html)  --->                                  | 23-24 Feb | 2-3 Mar      |
+| 6  | Todo Manager<!---{{site.baseurl}}/labs/todo-manager.html)    --->                                    | 2-3 Mar   | 9-10 Mar    |
+| 7  | Caesar’s Secrets<!---https://www.kaggle.com/gabrielferrer/caesar-s-secrets) --->                     | 9-10 Mar  | 16-17 Mar    |
+| 8  | Tornado Sirens<!---https://www.kaggle.com/gabrielferrer/tornado-sirens)    --->                      | 16-17 Mar | 30-31 Mar    |
+| 9  | Sentiment Analysis<!---https://www.kaggle.com/gabrielferrer/sentiment-analysis) --->                 | 30-31 May |  6-7 Apr    |
+| 10  | Water Jugs<!---{{site.baseurl}}/labs/waterjug.html)       --->                                      | 6-7 Apr   | 13-14 Apr   |
+| 11 | Graphics and Animation<!---{{site.baseurl}}/labs/pygame.html)   --->                                 | 13-14 Apr | 20-21 Apr    |
+| 12 | Enron's Secrets<!---https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)  --->         | 20-21 Apr |  27-28 Apr      |
 | 13 | Project 3 Workshop                                                                             | 27-28 Apr | 6 May       |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
@@ -238,9 +238,9 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)        | 18 Feb   | 2 Mar  |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                         | 28 Mar   | 11 Apr |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                         | 11 Apr   | 6 May  |
+| 1 | Civic Assistance Q/A System<!---{{site.baseurl}}/projects/project1.html)  --->      | 18 Feb   | 2 Mar  |
+| 2 | Word Games<!---{{site.baseurl}}/projects/project2.html)    --->                     | 28 Mar   | 11 Apr |
+| 3 | Final Project<!---({{site.baseurl}}/projects/final.html)   --->                      | 11 Apr   | 6 May  |
 
 <!-- [Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs) -->
 
