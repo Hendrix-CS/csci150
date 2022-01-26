@@ -7,7 +7,10 @@ layout: course-multi
 
 ## <a name="TAs">TAs</a>
 
-* TBA
+| Time   | Monday      | Tuesday  | Wednesday |
+|:------:|-------------|----------|-----------|
+|6-8 pm  |Ketty Dusenge|Simon Reid| |
+|8-10 pm |Zoie Keys    |Zach Gray |Ryan Fuller|
 
 
 <!--
