@@ -9,7 +9,7 @@ layout: course-multi
 
 | Time   | Monday      | Tuesday  | Wednesday |
 |:------:|-------------|----------|-----------|
-|6-8 pm  |Ketty Dusenge|Simon Reid| |
+|6-8 pm  |Ketty Dusenge|Simon Reid|Simon Reid |
 |8-10 pm |Zoie Keys    |Zach Gray |Ryan Fuller|
 
 
