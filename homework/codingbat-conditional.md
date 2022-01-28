@@ -9,7 +9,7 @@ CSCI 150 HW: CodingBat Conditional Practice and By-Hand Tracing
 
 This homework set has two components:
 * CodingBat -- where you will write a bit of code (see below) and it will be automatically assessed
-* By-hand tacing, which you will turn in in classes
+* By-hand tacing, which you will turn in an on-paper version in class
 
 # CodingBat
 
@@ -35,7 +35,7 @@ You should complete at least 7 of the following:
 # By-Hand Tracing
 
 Turn in your by-hand tracing for each section of code shown below. You are *strongly* encouraged to check your answers
-by typing the code into a Python interpreter (i.e. Kaggle). You must show the updating of values as the code runs.
+by typing the code into a Python interpreter (i.e. Kaggle). Your by-hand work should show the updating of values as necessary.
 
 1.
 
