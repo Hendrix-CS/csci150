@@ -159,7 +159,7 @@ point during the semester.
 | 0 | [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                             | W Jan 19 | M Jan 24  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 21 | W Jan 26  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 28 | W Feb 2  |
-| 3 | [CodingBat Conditional Practice](homework/codingbat-conditional.html)     | F Feb 4  | W Feb 9 |
+| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 4  | W Feb 9 |
 | 4 | [Function Stack and Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
