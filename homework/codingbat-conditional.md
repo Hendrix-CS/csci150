@@ -51,7 +51,7 @@ by typing the code into a Python interpreter (i.e. Kaggle). Your by-hand work sh
     b = a + 4
     a = a + 3
 
-    if a = a + 3:
+    if a == a + 3:
       c = 7
       a = 1
     else:
