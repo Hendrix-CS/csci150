@@ -73,7 +73,7 @@ Upon completing this course, our goal is for you to be able to:
 | F  28 Jan | Booleans                                  |[Booleans](https://www.kaggle.com/larskseme/2022-01-28-booleans)   | HW: [Boolean practice](homework/booleans.html)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  31 Jan | Conditionals                                                                                                                                                              |[Conditionals](https://www.kaggle.com/larskseme/2022-01-31-conditionals)                                                                 |                                                                                                 |
-| W  2 Feb | Tracing I  [Tracing Introduction](https://www.kaggle.com/larskseme/2022-02-02-program-tracing-intro)
+| W  2 Feb | Tracing I  |[Tracing Introduction](https://www.kaggle.com/larskseme/2022-02-02-program-tracing-intro)
 | F 4 Feb | Tracing II 								   |   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |
 | M 7 Feb | Pycharm
