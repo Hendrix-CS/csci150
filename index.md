@@ -74,7 +74,7 @@ Upon completing this course, our goal is for you to be able to:
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  31 Jan | Conditionals                                                                                                                                                              |[Conditionals](https://www.kaggle.com/larskseme/2022-01-31-conditionals)                                                                 |                                                                                                 |
 | W  2 Feb | Tracing I  |[Tracing Introduction](https://www.kaggle.com/larskseme/2022-02-02-program-tracing-intro)
-| F 4 Feb | Tracing II 								   |   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
+| F 4 Feb | Tracing II 								   |[Video for Class](https://hendrix-my.sharepoint.com/:v:/g/personal/seme_hendrix_edu/EQipyWpt05RHhfBPzGIUaNMBAmJfqkCkmSkCWQKK2cTsBQ?e=edqKqJ)   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |
 | M 7 Feb | Pycharm
 | W 9 Feb | Binary  and I/O
