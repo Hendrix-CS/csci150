@@ -208,7 +208,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
 | 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                              | 19-20 Jan  | 26-27 Jan      |
 | 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)     | 26-27 Jan   | 2-3 Feb       |
-| 2  | Diagnosing Heart Disease<!---https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) --->     | 2-3 Feb   | 9-10 Feb     |
+| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)     | 2-3 Feb   | 9-10 Feb     |
 | 3  | This Day in History<!---https://www.kaggle.com/gabrielferrer/this-day-in-history) --->               | 9-10 Feb  | 16-17 Feb    |
 | 4  | Guess My Number<!---{{site.baseurl}}/labs/guess.html)     --->                                       | 16-17 Feb | 23-24 Feb    |
 | 5  | Mutation is the Word<!---{{site.baseurl}}/labs/doublets.html)  --->                                  | 23-24 Feb | 2-3 Mar      |
