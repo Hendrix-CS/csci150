@@ -261,7 +261,7 @@ There will be three exams. Each exam will have two parts:
 submitted by the start of the next class period.
 
 * Exam 1: Monday, February 14, covering functions, math, numerical
-  data, and conditionals
+  data, and conditionals  [Practice Exam 1]({{site.baseurl}}/exams/exam1-practice-spring-2022.pdf)
 * Exam 2: Monday, March 14, covering input/output, `while` loops, `for` loop,  strings , and lists
 * Exam 3: Monday, April 18, covering  dictionaries, file I/O, and classes.
 
