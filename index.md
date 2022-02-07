@@ -76,7 +76,7 @@ Upon completing this course, our goal is for you to be able to:
 | W  2 Feb | Tracing I  |[Tracing Introduction](https://www.kaggle.com/larskseme/2022-02-02-program-tracing-intro)
 | F 4 Feb | Tracing II 								   |[Video for Class](https://hendrix-my.sharepoint.com/:v:/g/personal/seme_hendrix_edu/EQipyWpt05RHhfBPzGIUaNMBAmJfqkCkmSkCWQKK2cTsBQ?e=edqKqJ)   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |
-| M 7 Feb | Pycharm
+| M 7 Feb | Pycharm |[Intro to Pycharm](/code/spring2022/2022-02-07-Intro-to-Pycharm.py)
 | W 9 Feb | Binary  and I/O
 | F 11 Feb | Exam 1 Review
 |
