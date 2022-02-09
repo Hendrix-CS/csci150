@@ -77,7 +77,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 4 Feb | Tracing II 								   |[Video for Class](https://hendrix-my.sharepoint.com/:v:/g/personal/seme_hendrix_edu/EQipyWpt05RHhfBPzGIUaNMBAmJfqkCkmSkCWQKK2cTsBQ?e=edqKqJ)   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |
 | M 7 Feb | Pycharm |[Intro to Pycharm](/code/spring2022/2022-02-07-Intro-to-Pycharm.py)
-| W 9 Feb | Binary  and I/O
+| W 9 Feb | Binary  and I/O |[Binary and I/0](https://www.kaggle.com/larskseme/2022-02-09-binary-and-inputoutput)
 | F 11 Feb | Exam 1 Review
 |
 | M 14 Feb | **Exam 1**
@@ -209,7 +209,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                              | 19-20 Jan  | 26-27 Jan      |
 | 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)     | 26-27 Jan   | 2-3 Feb       |
 | 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)     | 2-3 Feb   | 9-10 Feb     |
-| 3  | This Day in History<!---https://www.kaggle.com/gabrielferrer/this-day-in-history) --->               | 9-10 Feb  | 16-17 Feb    |
+| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)               | 9-10 Feb  | 16-17 Feb    |
 | 4  | Guess My Number<!---{{site.baseurl}}/labs/guess.html)     --->                                       | 16-17 Feb | 23-24 Feb    |
 | 5  | Mutation is the Word<!---{{site.baseurl}}/labs/doublets.html)  --->                                  | 23-24 Feb | 2-3 Mar      |
 | 6  | Todo Manager<!---{{site.baseurl}}/labs/todo-manager.html)    --->                                    | 2-3 Mar   | 9-10 Mar    |
