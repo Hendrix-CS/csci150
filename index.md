@@ -89,8 +89,8 @@ Upon completing this course, our goal is for you to be able to:
 | F 25 Feb | Strings and Loops					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
 | M  28 Feb | Lists                                  |   |   
-| W  2 Mar | List processing examples				   |   | Project 1 due
-| F  4 Mar | Function Abstraction
+| W  2 Mar | List processing examples				   |   |
+| F  4 Mar | Function Abstraction | |Project 1 due
 |
 | M 7 Mar | The `for` loop
 | W 9 Mar | More `for` loop practice | [Loop Patterns](lectures/loop_recipes.html)
