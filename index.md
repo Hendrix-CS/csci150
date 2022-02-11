@@ -78,7 +78,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 7 Feb | Pycharm |[Intro to Pycharm](/code/spring2022/2022-02-07-Intro-to-Pycharm.py)
 | W 9 Feb | Binary  and I/O |[Binary and I/0](https://www.kaggle.com/larskseme/2022-02-09-binary-and-inputoutput)
-| F 11 Feb | Exam 1 Review
+| F 11 Feb | Exam 1 Review |[Exam 1 Review](https://www.kaggle.com/larskseme/practice-exam-1)
 |
 | M 14 Feb | **Exam 1**
 | W 16 Feb | The `while` loop |    |  HW: [Function and loop reading practice](homework/function-reading.html)
