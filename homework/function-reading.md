@@ -1,4 +1,4 @@
-CSCI 150 HW: function and loop reading practice
+CSCI 150 HW: Function Stack Tracing
 -----------------------------------------------
 
 *Due: Friday, February 25*

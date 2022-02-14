@@ -81,8 +81,8 @@ Upon completing this course, our goal is for you to be able to:
 | F 11 Feb | Exam 1 Review |[Exam 1 Review](https://www.kaggle.com/larskseme/practice-exam-1)
 |
 | M 14 Feb | **Exam 1**
-| W 16 Feb | The `while` loop |    |  HW: [Function and loop reading practice](homework/function-reading.html)
-| F 18 Feb | Functions and stack tracing			   |   | Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
+| W 16 Feb | The `while` loop |    |  Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
+| F 18 Feb | Functions and stack tracing			   |   |HW: [Function Stack Tracing](homework/function-reading.html)
 |
 | M 21 Feb | *No class; Mid-Winter Break*
 | W 23 Feb|  Tracing and Strings
@@ -160,7 +160,7 @@ point during the semester.
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 21 | W Jan 26  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 28 | W Feb 2  |
 | 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 4  | W Feb 9 |
-| 4 | [Function Stack and Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |
+| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 |**F Apr 1** |
