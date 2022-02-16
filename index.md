@@ -81,7 +81,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 11 Feb | Exam 1 Review |[Exam 1 Review](https://www.kaggle.com/larskseme/practice-exam-1)
 |
 | M 14 Feb | **Exam 1**
-| W 16 Feb | The `while` loop |    |  Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
+| W 16 Feb | The `while` loop | [While Loops](/code/spring2022/2022-02-16-While-loops.py)   |  Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
 | F 18 Feb | Functions and stack tracing			   |   |HW: [Function Stack Tracing](homework/function-reading.html)
 |
 | M 21 Feb | *No class; Mid-Winter Break*
