@@ -66,8 +66,8 @@ Start by creating a file called `guess_number.py` and **paste
 the following code into it**:
 
     ######################################
-    # Copyright (c) 2021 YOUR NAME(s) HERE
-    # CSCI 150, Fall 2021
+    # Copyright (c) 2022 YOUR NAME(s) HERE
+    # CSCI 150, Fall 2022
     # Lab 4: Guess My Number
     ######################################
 
