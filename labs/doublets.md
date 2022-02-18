@@ -132,7 +132,8 @@ integer between 1 and the length of `word`.
 To implement `swap_character()`, you will need to use string slicing and string 
 concatenation.
 
-Here are a few examples you can use to test your implementation of `swap_character()`:
+Here are a few examples. Test your implementation of `swap_character()` in the Python Console
+at the bottom of the PyCharm window with these examples:
 * `swap_character("cat", 3, "r")` should return `"car"`
 * `swap_character("track", 3, "u")` should return `"truck"`
 * `swap_character("talk", 1, "w")` should return `"walk"`
@@ -219,6 +220,10 @@ a loop structure that you may find useful in completing `get_start_word()`:
 		else:
 			valid = True
 			
+Test your program in the Python Console before incorporating it into the rest of the program.
+When you test it in the console, give it a few invalid words followed by a valid word to ensure
+it behaves correctly.
+			
 Here is an example of how the program would behave with the error checking in place:
 
     What is the starting word? lig
@@ -235,8 +240,13 @@ starting word. Here is the function definition header:
 	def get_end_word(start_word_length: int) -> str:
 
 Replace your original `input` statement with a call to `get_end_word()` to ensure 
-that the ending word is valid and of the correct length. Here is a continuation of 
-our earlier example to show how the program should behave:
+that the ending word is valid and of the correct length. Test the function in the
+Python Console first. Make sure it only allows words of the specified word length.
+For example, if you test it as `get_end_word(5)`, it should only allow you to enter
+words of length 5.
+
+Here is a continuation of our earlier example to show how the program as a whole 
+should behave once you have incorporated `get_end_word()`:
 
 	What is the starting word? log
     What is the ending word? worm
@@ -258,8 +268,10 @@ the user requesting suitable input. Here is the function declaration header:
 	def get_index(current_word_len: int) -> int:
 
 Replace your original `input` statement with a call to `get_index()` to ensure valid
-input. Here is a continuation of our earlier example to show how the program should 
-behave:
+input. Try `get_index(5)` in the Python Console. It should only allow you to enter numbers 
+from 1 to 5.
+
+Here is a continuation of our earlier example to show how the program should behave:
 	
 	Start   = LOG
     Current = LOG
@@ -280,6 +292,10 @@ the function declaration header:
 	def get_one_character() -> str:
 
 Replace your original `input` statement with a call to `get_one_character()`.
+Test it in the Python Console. Make sure it only allows single-character answers.
+Try testing it by typing the Enter key without any input: it should ask the user
+to try again in that case as well.
+
 Here is a continuation of our earlier example to show how the program should
 behave once you are using your function:
 
