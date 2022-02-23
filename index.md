@@ -85,7 +85,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 18 Feb | Functions and stack tracing			   |[Functions and Stack Tracing](/code/spring2022/2022-02-18-Function-Stack-Tracing.py)   |HW: [Function Stack Tracing](homework/function-reading.html)
 |
 | M 21 Feb | *No class; Mid-Winter Break*
-| W 23 Feb|  Tracing and Strings
+| W 23 Feb|  Tracing and Strings |[Tracing and Intro to Strings](/code/spring2022/2022-02-13-Tracing-and-Strings.py)
 | F 25 Feb | Strings and Loops					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
 | M  28 Feb | Lists                                  |   |   
@@ -211,7 +211,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)     | 2-3 Feb   | 9-10 Feb     |
 | 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)               | 9-10 Feb  | 16-17 Feb    |
 | 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                         | 16-17 Feb | 23-24 Feb    |
-| 5  | Mutation is the Word<!---{{site.baseurl}}/labs/doublets.html)  --->                                  | 23-24 Feb | 2-3 Mar      |
+| 5  | [Mutation is the Word](){{site.baseurl}}/labs/doublets.html)                                   | 23-24 Feb | 2-3 Mar      |
 | 6  | Todo Manager<!---{{site.baseurl}}/labs/todo-manager.html)    --->                                    | 2-3 Mar   | 9-10 Mar    |
 | 7  | Caesar’s Secrets<!---https://www.kaggle.com/gabrielferrer/caesar-s-secrets) --->                     | 9-10 Mar  | 16-17 Mar    |
 | 8  | Tornado Sirens<!---https://www.kaggle.com/gabrielferrer/tornado-sirens)    --->                      | 16-17 Mar | 30-31 Mar    |
