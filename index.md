@@ -241,7 +241,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
-| 1 | Civic Assistance Q/A System<!---{{site.baseurl}}/projects/project1.html)  --->      | 18 Feb   | 2 Mar  |
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 18 Feb   | 2 Mar  |
 | 2 | Word Games<!---{{site.baseurl}}/projects/project2.html)    --->                     | 28 Mar   | 11 Apr |
 | 3 | Final Project<!---({{site.baseurl}}/projects/final.html)   --->                      | 11 Apr   | 6 May  |
 
