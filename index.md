@@ -86,7 +86,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 21 Feb | *No class; Mid-Winter Break*
 | W 23 Feb|  Tracing and Strings |[Tracing and Intro to Strings](/code/spring2022/2022-02-23-Tracing-and-Strings.py)
-| F 25 Feb | Strings and Loops					   |   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
+| F 25 Feb | Strings and Loops					   |[Strings and Loops](/code/spring2022/2022-02-25-String-and-Loop-Practice.py)   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
 | M  28 Feb | Lists                                  |   |   
 | W  2 Mar | List processing examples				   |   |
