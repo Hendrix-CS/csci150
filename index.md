@@ -91,12 +91,13 @@ Upon completing this course, our goal is for you to be able to:
 | M  28 Feb | Lists                                  |   |   
 | W  2 Mar | List processing examples				   |   |
 | F  4 Mar | Function Abstraction | |Project 1 due
+| | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
 | M 7 Mar | The `for` loop
 | W 9 Mar | More `for` loop practice | [Loop Patterns](lectures/loop_recipes.html)
 | F 11 Mar | Exam 2 Review
 |
-| M 14 Mar | **Exam 2**							   |   | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
+| M 14 Mar | **Exam 2**							   |   |
 | W 16 Mar | File I/O |  | Project 2 Introduced
 | F 18 Mar | The Heap and Mutability
 |
