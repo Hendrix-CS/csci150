@@ -56,7 +56,7 @@ Other characters (spaces, punctuation, emojis, whatever) are left alone.
 
 * `s.upper()` returns a new string where any lower-case alphabetic characters are replaced with their upper-case equivalent.
 
-* `s.digit()` returns the boolean `True` is each character of `s` is a digit and `False` otherwise. Note that `"-12".isdigit()` returns `False` since the negative sign is not a digit.
+* `s.isdigit()` returns the boolean `True` is each character of `s` is a digit and `False` otherwise. Note that `"-12".isdigit()` returns `False` since the negative sign is not a digit.
 
 * `s.count(t: str)` returns an integer count of the number of occurrences of `t` within `s`.
 
