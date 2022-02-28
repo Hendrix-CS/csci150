@@ -33,6 +33,20 @@ which is the number of characters in the string or elements in the list.
 
 Using our above examples, `len(s) = 7` and `len(lst) = 3`.
 
+# Concatenation
+
+Strings and lists can be concatenated -- that is, you can "glue" two or more together using `+`.
+
+If `s = "example"` and `v = "hello"` then `s + v = "examplehello"`.
+
+Likewise, if `lst = [7, 2, -5]` and `mst = [11, 3, 3, 8]` then `lst + mst = [7, 2, -5, 11, 3, 3, 8]`.
+
+You can make multiple concatenated copies of a string or list by multiplication:
+
+`s * 3 = "exampleexampleexample"` and `lst * 3 = [7, 2, -5, 7, 2, -5, 7, 2, -5]`.
+
+In all of these cases, the original string or list is left unchanged.
+
 # String Methods
 
 The following are common built-in methods which act on strings.
@@ -50,283 +64,30 @@ Other characters (spaces, punctuation, emojis, whatever) are left alone.
 
 `s.replace(t: str, u: str)` returns a new string where each occurrence of `t` is replaced with `u`.
 
+
+
 **Immutability:** Note that the first two and last three return new strings as their value, but do not change the string `s`. Strings are immutable.
 
 # List methods
 
 The following are common built-in methods which act on lists.
 
+`lst.count(item)` returns an integer count of the number of occurrences of `item` within the elements of `lst`.
 
+`list.index(item)` returns the integer index of the first occurrence of `item` within `lst`. If `item` is not in `lst` it throws a `value error`.
 
-    # Input, Sentinel
-    finished = False
-    while not finished:
-        response = input("Enter input: ")
-        if response indicates we are finished:
-            finished = True
-        else:
-            # Do other things with response
+`lst.remove(item)` changes `lst` so that the first occurrence of `item` is removed. If `item` is not in `lst`, it throws a `value error`.
 
-    # Input, Seeded
-    response = seed value; loop condition will be true
-    while response indicates we are not finished:
-        response = input("Enter input: ")
-        # Do other things with response
+`lst.pop(i: int)` changes `lst` by removing the entry in index `i`. This entry is returned as well. Throws an `index error` if `i` is not a valid index for `lst`.
 
+`lst.append(item)` changes `lst` by adding `item` to the end of the list.
 
-## Accumulation
+**Mutability:** Unlike strings, lists *are* mutable. Notice that each of `remove()`, `pop()`, and `append()` change the value of the list. In addition, you can explicitly change a particular index directly -- `lst[2] = 123` will change the value of `lst` to `[7, 2, 123]`. You cannot change a string in this way: `s[2] = "b"` will not produce "exbmple" but instead an error.
 
-    accumulator = identity value for operator and type
-    while the loop keeps going:
-        accumulator = accumulator [operator] value
-        # Do other relevant things
+# Split and Join
 
-Common types, operators, and identity elements:
-* `int`
-  * `+`: `0`
-  * `*`: `1`
-* `float`
-  * `+`: `0.0`
-  * `*`: `1.0`
-* `str`
-  * `+`: `''` or `""`
-* `List`
-  * `.append()`: `[]`
+These two combine strings and lists:
 
+`s.split(t: str)` returns a new *list* based on `s` where `t` is the delimiter -- that is, each occurrence of `t` is the "signpost" to stop and start a new entry in the list. For example, `"abcahcarcctt".split("c")` returns `['ab', 'ah', 'ar', '', 'tt']`.
 
-## Mathematical Calculation
-
-    result = appropriate starting value
-    while the calculation is not complete:
-        update result by one step
-
-
-## Count until a condition is met
-
-    count = 0
-    while condition is not met:
-        count += 1
-        # other pertinent updates to variables
-
-
-## Count instances of a property
-
-    count = 0
-    while condition is not met:
-        if property is true:
-            count += 1
-        # other stuff
-
-## Check if a property is always true
-
-    always = True
-    while always and condition:
-        if not property:
-            always = False
-
-## Check if a property is ever true
-
-    ever = False
-    while not ever and condition:
-        if property:
-            ever = True
-
-
-## Traverse a sequence
-
-    i = 0
-    while i < len(sequence):
-        # Do something with sequence[i]
-        i += 1
-
-## Filter a sequence
-
-    new_sequence = empty sequence
-    i = 0
-    while i < len(sequence):
-        if property(sequence[i]):
-            add sequence[i] to new_sequence
-        i += 1
-
-
-## Map a sequence
-
-    new_sequence = empty sequence
-    i = 0
-    while i < len(sequence):
-        add transform(sequence[i]) to new_sequence
-        i += 1
-
-
-## Some combinations
-
-    # Accumulate from user inputs
-    accumulator = identity element of type and operator
-    finished = False
-    while not finished:
-        value = input("Enter value: ")
-        if value indicates we're done:
-            finished = True
-        else:
-            # Transform value to target type if needed
-            accumulator = accumulator [operator] value
-
-    # Accumulate from sequence
-    accumulator = identity element of type and operator
-    i = 0
-    while i < len(sequence):
-        accumulator = accumulator [operator] sequence[i]
-        i += 1
-
-    # Count instances from user inputs
-    finished = False
-    count = 0
-    while not finished:
-        response = input("Enter input: ")
-        if response indicates we are finished:
-            finished = True
-        elif response matches our target property:
-            count += 1
-
-    # Count instances from a sequence
-    count = 0
-    i = 0
-    while i < len(sequence):
-        if sequence[i] matches our target property:
-            count += 1
-        i += 1
-
-    # Check if a property is true of all elements of a sequence
-    always = true
-    i = 0
-    while always and i < len(sequence):
-        if sequence[i] does not match our property:
-            always = False
-        i += 1
-
-    # Count until a condition is met from input
-    finished = False
-    count = 0
-    while not finished:
-        response = input("Enter input: ")
-        if response indicates we are finished:
-            finished = True
-        else:
-            count += 1
-
-## Examples
-
-    # Count instances from user inputs
-    def count_short_words() -> int:
-        count = 0
-        finished = False
-        while not finished:
-            word = input("Enter a word: ")
-            if len(word) == 0:
-                finished = True
-            elif len(word) <= 4:
-                count += 1
-                print(f"{word} is short!")
-            else:
-                print(f"{word} is long.")
-        return count
-
-    # Accumulate from sequence
-    def reverse(s: str) -> str:
-        opposite = ''
-        i = 0
-        while i < len(s):
-            opposite = s[i] + opposite
-            i += 1
-        return opposite
-
-    # Accumulate from sequence
-    def smallest_letter(s: str) -> str:
-        smallest = s[0]
-        i = 1
-        while i < len(s):
-            if s[i] < smallest:
-                smallest = s[i]
-            i += 1
-        return smallest    
-
-    # Computation
-    # Count until a condition is met
-    def logarithm(n: int, base: int) -> int:
-        count = 0
-        while n > 1:
-            n //= base
-            count += 1
-        return count
-
-    # Computation
-    def power(base: int, exponent: int) -> int:
-        product = 1
-        while exponent > 0:
-            product *= base
-            exponent -= 1
-        return product    
-
-    # Traverse a sequence
-    def prefixes(s: str):
-        i = 0
-        while i < len(s):
-            print(s[:i+1])
-            i += 1
-
-    # Traverse a sequence
-    def in_betweens(s: str, length: int):
-        i = 0
-        while i < len(s) - length + 1:
-            print(s[i : i + length])
-            i += 1
-
-    # Filter a sequence
-    def vowels_only(s: str) -> str:
-        vowels = ''
-        i = 0
-        while i < len(s):
-            if s[i] in 'aeiou':
-                vowels += s[i]
-            i += 1
-        return vowels
-
-    # Count instances from a sequence
-    def vowel_count(s: str) -> int:
-        count = 0
-        i = 0
-        while i < len(s):
-            if s[i] in 'aeiou':
-                count += 1
-            i += 1
-        return count
-
-    # Filter a sequence
-    def unique_items(items_sold: List[str]) -> List[str]:
-        i = 0
-        unique = []
-        while i < len(items_sold):
-            if items_sold[i] not in unique:
-                unique.append(items_sold[i])
-            i += 1
-        return unique
-
-    # Check if a property is true of some elements of a sequence
-    def has_vowels(s: str) -> bool:
-        ever = False
-        i = 0
-        while not ever and i < len(s):
-            if s[i] in 'aeiou':
-                ever = True
-            i += 1
-        return ever
-
-    # Check if a property is true of all elements of a sequence
-    def only_vowels(s: str) -> bool:
-        always = True
-        i = 0
-        while always and i < len(s):
-            if s[i] not in 'aeiou':
-                always = False
-            i += 1
-        return always
+`s.join(lst)` will return a single string which puts a copy of `s` between each entry of `lst`. For example, `",".join(["ab","hi there", "bye"])` will return `"ab,hi there,bye"`. Note that `join` will only work if the elements of `lst` are themselves strings.
