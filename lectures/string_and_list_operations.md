@@ -9,7 +9,7 @@ Strings and lists are each indexed. In Python, we index starting at 0, so that
 in `s = "example"` we see that `s[2] = "a"` and in `lst = [7, 2, -5]` we see that
 `lst[2] = -5`.
 
-Negative indicies are allowed, where index `-1` is the last character/entry and
+Negative indices are allowed, where index `-1` is the last character/entry and
 index `-2` is the next to last etc.
 
 An `index out of range` error occurs if an index is called that is too large (or too negative),
@@ -33,6 +33,28 @@ which is the number of characters in the string or elements in the list.
 
 Using our above examples, `len(s) = 7` and `len(lst) = 3`.
 
+# String Methods
+
+The following are common built-in methods which act on strings.
+
+`s.lower()` returns a new string where any upper-case alphabetic characters are replaced with their lower-case equivalent.
+Other characters (spaces, punctuation, emojis, whatever) are left alone.
+
+`s.upper()` returns a new string where any lower-case alphabetic characters are replaced with their upper-case equivalent.
+
+`s.digit()` returns the boolean `True` is each character of `s` is a digit and `False` otherwise. Note that `"-12".isdigit()` returns `False` since the negative sign is not a digit.
+
+`s.count(t: str)` returns an integer count of the number of occurrences of `t` within `s`.
+
+`s.find(t: str)` returns the integer index of the first occurrence of `t` in `s`. If `t` is not present, it returns `-1`.
+
+`s.replace(t: str, u: str)` returns a new string where each occurrence of `t` is replaced with `u`.
+
+**Immutability:** Note that the first two and last three return new strings as their value, but do not change the string `s`. Strings are immutable.
+
+# List methods
+
+The following are common built-in methods which act on lists.
 
 
 
