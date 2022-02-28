@@ -3,18 +3,38 @@ worktitle: Strings and Lists
 ---
 
 Working with Strings and Lists
-## Indexing
+# Indexing
 
 Strings and lists are each indexed. In Python, we index starting at 0, so that
 in `s = "example"` we see that `s[2] = "a"` and in `lst = [7, 2, -5]` we see that
 `lst[2] = -5`.
 
-# Slices
+Negative indicies are allowed, where index `-1` is the last character/entry and
+index `-2` is the next to last etc.
+
+An `index out of range` error occurs if an index is called that is too large (or too negative),
+such as `s[10]` on the string above.
+
+## Slices
 A slice of a string or list is a segment which you call as `s[a:b]` or `lst[a:b]`.
 In both cases, the slice starts with index `a` and goes up to, but does not include
 the element `b`. Thus, `s[1:4] = "xam"` and `lst[0:2] = [7,2]`.
 
 The slice `t[a:]` starts at index `a` and goes to the end of the object `t`.
+
+The slice `t[:b]` starts at the beginning and goes up to, but does not include index `b`.
+
+The slice `t[a:a]` returns the empty string or empty list. Slicing cannot create an
+index error. In the above example, `s[100:100]` would simply return the empty string `""`.
+
+## Length
+For a string `s` or list `lst`, the built-in Python function `len()` returns an integer
+which is the number of characters in the string or elements in the list.
+
+Using our above examples, `len(s) = 7` and `len(lst) = 3`.
+
+
+
 
     # Input, Sentinel
     finished = False
