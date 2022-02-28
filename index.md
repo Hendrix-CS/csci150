@@ -89,6 +89,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 25 Feb | Strings and Loops					   |[Strings and Loops](/code/spring2022/2022-02-25-String-and-Loop-Practice.py)   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
 | M  28 Feb | Lists                                  |   |   
+| | |[String and List Operations](lectures/string_and_list_operations.html)
 | W  2 Mar | List processing examples				   |   |
 | F  4 Mar | Function Abstraction | |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
