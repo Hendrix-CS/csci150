@@ -51,18 +51,18 @@ In all of these cases, the original string or list is left unchanged.
 
 The following are common built-in methods which act on strings.
 
-`s.lower()` returns a new string where any upper-case alphabetic characters are replaced with their lower-case equivalent.
+* `s.lower()` returns a new string where any upper-case alphabetic characters are replaced with their lower-case equivalent.
 Other characters (spaces, punctuation, emojis, whatever) are left alone.
 
-`s.upper()` returns a new string where any lower-case alphabetic characters are replaced with their upper-case equivalent.
+* `s.upper()` returns a new string where any lower-case alphabetic characters are replaced with their upper-case equivalent.
 
-`s.digit()` returns the boolean `True` is each character of `s` is a digit and `False` otherwise. Note that `"-12".isdigit()` returns `False` since the negative sign is not a digit.
+* `s.digit()` returns the boolean `True` is each character of `s` is a digit and `False` otherwise. Note that `"-12".isdigit()` returns `False` since the negative sign is not a digit.
 
-`s.count(t: str)` returns an integer count of the number of occurrences of `t` within `s`.
+* `s.count(t: str)` returns an integer count of the number of occurrences of `t` within `s`.
 
-`s.find(t: str)` returns the integer index of the first occurrence of `t` in `s`. If `t` is not present, it returns `-1`.
+* `s.find(t: str)` returns the integer index of the first occurrence of `t` in `s`. If `t` is not present, it returns `-1`.
 
-`s.replace(t: str, u: str)` returns a new string where each occurrence of `t` is replaced with `u`.
+* `s.replace(t: str, u: str)` returns a new string where each occurrence of `t` is replaced with `u`.
 
 
 
@@ -72,15 +72,15 @@ Other characters (spaces, punctuation, emojis, whatever) are left alone.
 
 The following are common built-in methods which act on lists.
 
-`lst.count(item)` returns an integer count of the number of occurrences of `item` within the elements of `lst`.
+* `lst.count(item)` returns an integer count of the number of occurrences of `item` within the elements of `lst`.
 
-`list.index(item)` returns the integer index of the first occurrence of `item` within `lst`. If `item` is not in `lst` it throws a `value error`.
+* `list.index(item)` returns the integer index of the first occurrence of `item` within `lst`. If `item` is not in `lst` it throws a `value error`.
 
-`lst.remove(item)` changes `lst` so that the first occurrence of `item` is removed. If `item` is not in `lst`, it throws a `value error`.
+* `lst.remove(item)` changes `lst` so that the first occurrence of `item` is removed. If `item` is not in `lst`, it throws a `value error`.
 
-`lst.pop(i: int)` changes `lst` by removing the entry in index `i`. This entry is returned as well. Throws an `index error` if `i` is not a valid index for `lst`.
+* `lst.pop(i: int)` changes `lst` by removing the entry in index `i`. This entry is returned as well. Throws an `index error` if `i` is not a valid index for `lst`.
 
-`lst.append(item)` changes `lst` by adding `item` to the end of the list.
+* `lst.append(item)` changes `lst` by adding `item` to the end of the list.
 
 **Mutability:** Unlike strings, lists *are* mutable. Notice that each of `remove()`, `pop()`, and `append()` change the value of the list. In addition, you can explicitly change a particular index directly -- `lst[2] = 123` will change the value of `lst` to `[7, 2, 123]`. You cannot change a string in this way: `s[2] = "b"` will not produce "exbmple" but instead an error.
 
@@ -88,6 +88,6 @@ The following are common built-in methods which act on lists.
 
 These two combine strings and lists:
 
-`s.split(t: str)` returns a new *list* based on `s` where `t` is the delimiter -- that is, each occurrence of `t` is the "signpost" to stop and start a new entry in the list. For example, `"abcahcarcctt".split("c")` returns `['ab', 'ah', 'ar', '', 'tt']`.
+* `s.split(t: str)` returns a new *list* based on `s` where `t` is the delimiter -- that is, each occurrence of `t` is the "signpost" to stop and start a new entry in the list. For example, `"abcahcarcctt".split("c")` returns `['ab', 'ah', 'ar', '', 'tt']`.
 
-`s.join(lst)` will return a single string which puts a copy of `s` between each entry of `lst`. For example, `",".join(["ab","hi there", "bye"])` will return `"ab,hi there,bye"`. Note that `join` will only work if the elements of `lst` are themselves strings.
+* `s.join(lst)` will return a single string which puts a copy of `s` between each entry of `lst`. For example, `",".join(["ab","hi there", "bye"])` will return `"ab,hi there,bye"`. Note that `join` will only work if the elements of `lst` are themselves strings.
