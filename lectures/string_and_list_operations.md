@@ -6,8 +6,15 @@ Working with Strings and Lists
 ## Indexing
 
 Strings and lists are each indexed. In Python, we index starting at 0, so that
-in `s = "example"` we see that `s[2] = a` and in `lst = [7, 2, -5]` we see that
+in `s = "example"` we see that `s[2] = "a"` and in `lst = [7, 2, -5]` we see that
 `lst[2] = -5`.
+
+# Slices
+A slice of a string or list is a segment which you call as `s[a:b]` or `lst[a:b]`.
+In both cases, the slice starts with index `a` and goes up to, but does not include
+the element `b`. Thus, `s[1:4] = "xam"` and `lst[0:2] = [7,2]`.
+
+The slice `t[a:]` starts at index `a` and goes to the end of the object `t`.
 
     # Input, Sentinel
     finished = False
