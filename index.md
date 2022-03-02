@@ -90,7 +90,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M  28 Feb | Lists  |  [Intro to Lists](/code/spring2022/2022-02-28-Intro-to-Lists.py)
 | |                               |  [String and List Operations](lectures/string_and_list_operations.html) |   
-| W  2 Mar | List processing examples				   |   |
+| W  2 Mar | List processing examples				   | [List Processing](/code/spring2022/2022-03-02-List-Processing-Examples.py)  |
 | F  4 Mar | Function Abstraction | |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
@@ -156,13 +156,13 @@ point during the semester.
 <br/>
 -->
 
-| # | Name                                                                      | Assigned | Due      |
+| # | Name                                                                      | Assigned | Due      |Sample Solutions
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
 | 0 | [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                             | W Jan 19 | M Jan 24  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 21 | W Jan 26  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 28 | W Feb 2  |
-| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 4  | W Feb 9 |
-| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |
+| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 4  | W Feb 9 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)
+| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** ||[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 |**F Apr 1** |
