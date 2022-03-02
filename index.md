@@ -74,6 +74,7 @@ Upon completing this course, our goal is for you to be able to:
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  31 Jan | Conditionals                                                                                                                                                              |[Conditionals](https://www.kaggle.com/larskseme/2022-01-31-conditionals)                                                                 |                                                                                                 |
 | W  2 Feb | Tracing I  |[Tracing Introduction](https://www.kaggle.com/larskseme/2022-02-02-program-tracing-intro)
+| | |[Tracing Pdfs](/code/spring2022/200-02-02-Initial-Tracing-Examples.pdf)
 | F 4 Feb | Tracing II 								   |[Video for Class](https://hendrix-my.sharepoint.com/:v:/g/personal/seme_hendrix_edu/EQipyWpt05RHhfBPzGIUaNMBAmJfqkCkmSkCWQKK2cTsBQ?e=edqKqJ)   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |
 | M 7 Feb | Pycharm |[Intro to Pycharm](/code/spring2022/2022-02-07-Intro-to-Pycharm.py)
@@ -83,6 +84,7 @@ Upon completing this course, our goal is for you to be able to:
 | M 14 Feb | **Exam 1**
 | W 16 Feb | The `while` loop | [While Loops](/code/spring2022/2022-02-16-While-loops.py)   |  Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
 | F 18 Feb | Functions and stack tracing			   |[Functions and Stack Tracing](/code/spring2022/2022-02-18-Function-Stack-Tracing.py)   |HW: [Function Stack Tracing](homework/function-reading.html)
+| | |[Tracing Pdfs](/code/spring2022/2022-02-18-Function-Stack-Tracing.pdf)
 |
 | M 21 Feb | *No class; Mid-Winter Break*
 | W 23 Feb|  Tracing and Strings |[Tracing and Intro to Strings](/code/spring2022/2022-02-23-Tracing-and-Strings.py)
@@ -162,7 +164,7 @@ point during the semester.
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 21 | W Jan 26  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 28 | W Feb 2  |
 | 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 4  | W Feb 9 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)
-| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** ||[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
+| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 |**F Apr 1** |
