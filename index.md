@@ -93,7 +93,7 @@ Upon completing this course, our goal is for you to be able to:
 | M  28 Feb | Lists  |  [Intro to Lists](/code/spring2022/2022-02-28-Intro-to-Lists.py)
 | |                               |  [String and List Operations](lectures/string_and_list_operations.html) |   
 | W  2 Mar | List processing examples				   | [List Processing](/code/spring2022/2022-03-02-List-Processing-Examples.py)  |
-| F  4 Mar | Function Abstraction | |Project 1 due
+| F  4 Mar | Function Abstraction |[Function Abstraction](/code/spring2022/2022-03-04-Function-Abstraction.py) |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
 | M 7 Mar | The `for` loop
