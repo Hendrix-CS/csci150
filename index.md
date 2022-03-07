@@ -98,7 +98,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 7 Mar | The `for` loop
 | W 9 Mar | More `for` loop practice | [Loop Patterns](lectures/loop_recipes.html)
-| F 11 Mar | Exam 2 Review
+| F 11 Mar | Exam 2 Review |[In-Class Solutions](/code/spring2022/exam2-practice-spring-2022-in-class-solutions.pdf) |[take-Home Solutions](/code/spring2022/2022-03-11-Exam-2-Practice-Solutions.py)
 |
 | M 14 Mar | **Exam 2**							   |   |
 | W 16 Mar | File I/O |  | Project 2 Introduced
