@@ -96,7 +96,7 @@ Upon completing this course, our goal is for you to be able to:
 | F  4 Mar | Function Abstraction |[Function Abstraction](/code/spring2022/2022-03-04-Function-Abstraction.py) |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
-| M 7 Mar | The `for` loop
+| M 7 Mar | The `for` loop | [For Loops](/code/spring2022/2022-03-07-For-loops.py)
 | W 9 Mar | More `for` loop practice | [Loop Patterns](lectures/loop_recipes.html)
 | F 11 Mar | Exam 2 Review |[In-Class Solutions](/code/spring2022/exam2-practice-spring-2022-in-class-solutions.pdf) |[take-Home Solutions](/code/spring2022/2022-03-11-Exam-2-Practice-Solutions.py)
 |
