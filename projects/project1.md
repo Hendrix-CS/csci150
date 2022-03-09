@@ -62,6 +62,15 @@ Here are two transcripts from an example system, to give you a sense as to what 
     Did you bring the title for the vehicle?  no
     Please return when you have the title with all signatures from the buyer and seller.
 
+## Conditionals
+
+Throughout the project, you should use conditionals (`if`, `elif`, `else`, as appropriate) to control
+the flow. In general, you should ask the user a question and then determine what to do next depending
+on their answer. In some cases, their answer will indicate that the program should stop. *However*,
+this should be handled directly by the conditionals and the flow, not by resorting to any of
+`quit()` or `exit()` or similar. Check with your instructor if you are not sure whether your
+have followed this instruction correctly.
+
 ## Input/Output
 
 To complete this program, you will need to learn about the `print` function, the `input` function, and type conversion functions.
@@ -159,6 +168,8 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
   * Includes the Reflection described above.
   * No Pycharm style warnings -- exception: if your nested `if` statements cause a line to be too long, that is fine.
   * No grammatical or spelling errors.
+  * No use of `quit()` or `exit()` -- the program flows and exists organically
+  * The flow of the questions -- and response of the pgram -- makes sense in the context given.
   <!-- Add next time: All responses to answers make sense in context.-->
   <!-- Maybe ban quit() and the like -->
   * Among the six or more questions, at least two distinct types of
