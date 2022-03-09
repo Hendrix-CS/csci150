@@ -168,8 +168,8 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
   * Includes the Reflection described above.
   * No Pycharm style warnings -- exception: if your nested `if` statements cause a line to be too long, that is fine.
   * No grammatical or spelling errors.
-  * No use of `quit()` or `exit()` -- the program flows and exists organically
-  * The flow of the questions -- and response of the pgram -- makes sense in the context given.
+  * No use of `quit()` or `exit()` -- the program flows and exits organically
+  * The flow of the questions -- and response of the program -- makes sense in the context given.
   <!-- Add next time: All responses to answers make sense in context.-->
   <!-- Maybe ban quit() and the like -->
   * Among the six or more questions, at least two distinct types of
