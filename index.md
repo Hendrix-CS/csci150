@@ -221,8 +221,8 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                     | 9-10 Mar  | 16-17 Mar    |
 | 8  | Tornado Sirens<!---https://www.kaggle.com/gabrielferrer/tornado-sirens)    --->                      | 16-17 Mar | 30-31 Mar    |
 | 9  | Sentiment Analysis<!---https://www.kaggle.com/gabrielferrer/sentiment-analysis) --->                 | 30-31 May |  6-7 Apr    |
-| 10  | Water Jugs<!---{{site.baseurl}}/labs/waterjug.html)       --->                                      | 6-7 Apr   | 13-14 Apr   |
-| 11 | Graphics and Animation<!---{{site.baseurl}}/labs/pygame.html)   --->                                 | 13-14 Apr | 20-21 Apr    |
+| 10 | Water Jugs<!---{{site.baseurl}}/labs/waterjug.html)       --->                                      | 6-7 Apr   | 13-14 Apr   |
+| 11 | Faces<!---{{site.baseurl}}/labs/pygame.html)   --->                                 | 13-14 Apr | 20-21 Apr    |
 | 12 | Enron's Secrets<!---https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)  --->         | 20-21 Apr |  27-28 Apr      |
 | 13 | Project 3 Workshop                                                                             | 27-28 Apr | 6 May       |
 
