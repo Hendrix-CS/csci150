@@ -105,7 +105,8 @@ Upon completing this course, our goal is for you to be able to:
 | W 16 Mar | File I/O |[Tuples and File IO](/code/spring2022/2022-03-16-File-IO.py)  | Project 2 Introduced
 | | |[Sample Text File](/code/spring2022/sample-text-file.txt)
 | | |[Course List File](/code/spring2022/course-list.txt)
-| F 18 Mar | The Heap and Mutability
+| F 18 Mar | The Heap and Mutability|[Heap and Mutability](/code/spring2022/2022-03-18-Heap-and-Mutability.py)
+| | |[Initial Heap Tracing](/code/spring2022/2022-03-18-Initial-Heap-Tracing.pdf)
 |
 | M 21 Mar | *No class; Spring Break*                             
 | W 23 Mar | *No class; Spring Break*
