@@ -1,0 +1,19 @@
+Name;Classification;GPA
+Kirk, James;Masters;3.21
+Sulu, Hikaru;Freshman;4.00
+Uhura, Nyota;Sophomore;3.56
+Chekov, Pavel;Junior;2.34
+Scott, Montgomery; Senior;3.98
+Picard, Jean-Luc;Junior;3.67
+Riker, William;Junior;2.34
+Troi, Deanna;Sophomore;4.00
+Leforge, Geordi;Freshman;3.21
+Data, Data;Junior;4.00
+Crusher, Beverly;Senior;4.00
+Crusher, Wesley;Freshman;4.00
+Sisko, Benjamin;Junior;3.95
+Bashir, Julian;Sophomore;3.99
+Dax, Jadzia;Freshman;3.58
+Janeway, Kathryn;Junior;3.45
+Paris, Tom;Freshman;2.34
+Kim, Harry;Freshman;3.20

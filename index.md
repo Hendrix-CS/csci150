@@ -102,14 +102,17 @@ Upon completing this course, our goal is for you to be able to:
 | F 11 Mar | Exam 2 Review |[In-Class Solutions](/code/spring2022/exam2-practice-spring-2022-in-class-solutions.pdf) |[take-Home Solutions](/code/spring2022/2022-03-11-Exam-2-Practice-Solutions.py)
 |
 | M 14 Mar | **Exam 2**							   |   |
-| W 16 Mar | File I/O |  | Project 2 Introduced
-| F 18 Mar | The Heap and Mutability
+| W 16 Mar | File I/O |[Tuples and File IO](/code/spring2022/2022-03-16-File-IO.py)  | Project 2 Introduced
+| | |[Sample Text File](/code/spring2022/sample-text-file.txt)
+| | |[Course List File](/code/spring2022/course-list.txt)
+| F 18 Mar | The Heap and Mutability|[Heap and Mutability](/code/spring2022/2022-03-18-Heap-and-Mutability.py)
+| | |[Initial Heap Tracing](/code/spring2022/2022-03-18-Initial-Heap-Tracing.pdf)
 |
 | M 21 Mar | *No class; Spring Break*                             
 | W 23 Mar | *No class; Spring Break*
 | F 25 Mar | *No class; Spring Break*
 |
-| M 28 Mar | Dictionaries                              |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
+| M 28 Mar | Dictionaries                              |[Intro to Dictionaries](/code/spring2022/2022-03-28-Intro-to-Dictionaries.py)   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 | | | |Project 2 Assigned: [Word Games]({{site.baseurl}}/projects/project2.html)
 | W 30 Mar | Dictionaries
 | F 1 Apr | Introduction to classes and objects       |   | HW: [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)  
@@ -168,7 +171,7 @@ point during the semester.
 | 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
-| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | W Mar 16 |**F Apr 1** |
+| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Mar 28 |**F Apr 1** |
 | 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Apr 1  | W Apr 6|
 | 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Apr 8  | W Apr 13 |
 
@@ -219,7 +222,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                   | 23-24 Feb | 2-3 Mar      |
 | 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                  | 2-3 Mar   | 9-10 Mar    |
 | 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                     | 9-10 Mar  | 16-17 Mar    |
-| 8  | Tornado Sirens<!---https://www.kaggle.com/gabrielferrer/tornado-sirens)    --->                      | 16-17 Mar | 30-31 Mar    |
+| 8  | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                      | 16-17 Mar | 30-31 Mar    |
 | 9  | Sentiment Analysis<!---https://www.kaggle.com/gabrielferrer/sentiment-analysis) --->                 | 30-31 May |  6-7 Apr    |
 | 10 | Water Jugs<!---{{site.baseurl}}/labs/waterjug.html)       --->                                      | 6-7 Apr   | 13-14 Apr   |
 | 11 | Faces<!---{{site.baseurl}}/labs/pygame.html)   --->                                 | 13-14 Apr | 20-21 Apr    |
@@ -247,7 +250,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
 | 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 18 Feb   | 2 Mar  |
-| 2 | Word Games<!---{{site.baseurl}}/projects/project2.html)    --->                     | 28 Mar   | 11 Apr |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                        | 28 Mar   | 11 Apr |
 | 3 | Final Project<!---({{site.baseurl}}/projects/final.html)   --->                      | 11 Apr   | 6 May  |
 
 <!-- [Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs) -->
