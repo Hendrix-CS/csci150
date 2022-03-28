@@ -112,7 +112,7 @@ Upon completing this course, our goal is for you to be able to:
 | W 23 Mar | *No class; Spring Break*
 | F 25 Mar | *No class; Spring Break*
 |
-| M 28 Mar | Dictionaries                              |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
+| M 28 Mar | Dictionaries                              |[Intro to Dictionaries](/code/spring2022/2022-03-28-Intro-to-Dictionaries.py)   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 | | | |Project 2 Assigned: [Word Games]({{site.baseurl}}/projects/project2.html)
 | W 30 Mar | Dictionaries
 | F 1 Apr | Introduction to classes and objects       |   | HW: [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)  
