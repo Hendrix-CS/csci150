@@ -12,7 +12,7 @@ mutation of strings (words, DNA, ...) through playing the game Doublets.
 
 ## Materials
 * <a href="../data/english3.txt" download>Common English Words</a>
-* <a href="../code/dictionary.py" download>`dictionary.py`</a> Python Module
+* <a href="../code/spellcheck.py" download>`spellcheck.py`</a> Python Module
 * Lab Partner
 
 ## Description
@@ -194,20 +194,20 @@ in a function, we keep the `main()` code straightforward and uncluttered.
 For English word validation, download the text file 
 <a href="../data/english3.txt" download>`english3.txt`</a>
 and the Python module 
-<a href="../code/dictionary.py" download>`dictionary.py`</a> files, and
+<a href="../code/spellcheck.py" download>`spellcheck.py`</a> files, and
 make sure they are in the same folder where you will put your lab. At the top of your
 Python program, you should put
 
-    import dictionary
+    import spellcheck
 
-which will allow you to use the functions in `dictionary.py`.
+which will allow you to use the functions in `spellcheck.py`.
 
-The dictionary module contains a function
+The `spellcheck` module contains a function
 `valid_word(word, file)`, which will
 return `True` if the word is found in the file and `False`
 otherwise.  You can call the function by writing something like
 
-    dictionary.valid_word(some_word, 'english3.txt')
+    spellcheck.valid_word(some_word, 'english3.txt')
 	
 Handling erroneous input requires using a loop. The following example shows
 a loop structure that you may find useful in completing `get_start_word()`:
@@ -311,7 +311,7 @@ behave once you are using your function:
 Unlike the other error-handling steps, this step is straightforward to
 implement without writing an additional function. Before committing
 to the new word with the new character, make sure the new word obtained from calling
-`swap_character()` is a valid word, again using the `dictionary` module. If it is a 
+`swap_character()` is a valid word, again using the `spellcheck` module. If it is a 
 valid word, update your current word, the number of steps, and the solution path.
 If not, print an error message. In either case, the program will resume
 at the top of the `while` loop.
@@ -359,10 +359,10 @@ You must hand in:
 * Evaluation Document (containing pseudocode, and answers to
 	"Future thoughts" questions)
 * `doublets.py`
-* `dictionary.py`
+* `spellcheck.py`
 * `english3.txt`
 
-(Yes, please turn in `dictionary.py`
+(Yes, please turn in `spellcheck.py`
 and `english3.txt` even though you did not create them---it makes
 the grading process much easier!)
 
