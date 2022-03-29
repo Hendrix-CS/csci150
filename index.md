@@ -115,7 +115,7 @@ Upon completing this course, our goal is for you to be able to:
 | M 28 Mar | Dictionaries                              |[Intro to Dictionaries](/code/spring2022/2022-03-28-Intro-to-Dictionaries.py)   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 | | |[Alice Text](/code/spring2022/alice.txt) |Project 2 Assigned: [Word Games]({{site.baseurl}}/projects/project2.html)
 | W 30 Mar | Dictionaries
-| F 1 Apr | Introduction to classes and objects       |   | HW: [Heap Tracing Homework](homework/Heap-Tracing-Examples.pdf)  
+| F 1 Apr | Introduction to classes and objects       |   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
 |
 | M  4 Apr | Classes/objects example 1
 | W  6 Apr | Classes/objects example 2
