@@ -1,0 +1,6 @@
+soap,3.25
+shampoo,5.37
+towel,10.24
+coke,1.25
+bread,3.50
+milk,4.15
