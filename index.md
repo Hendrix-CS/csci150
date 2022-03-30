@@ -114,7 +114,10 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 28 Mar | Dictionaries                              |[Intro to Dictionaries](/code/spring2022/2022-03-28-Intro-to-Dictionaries.py)   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 | | |[Alice Text](/code/spring2022/alice.txt) |Project 2 Assigned: [Word Games]({{site.baseurl}}/projects/project2.html)
-| W 30 Mar | Dictionaries
+| W 30 Mar | Dictionaries |[More Dictionaries](/code/spring2022/2022-03-30-More-Dictionaries.py)
+| | |[Store Inventory File](/code/spring2022/store_inventory.txt)
+| | |[Zipcode File](/code/spring2022/zipcodes.txt)
+| | |[Dictionary Tracing Example](/code/spring2022/2022-03-30-Dictionary-Tracing.pdf)
 | F 1 Apr | Introduction to classes and objects       |   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
 |
 | M  4 Apr | Classes/objects example 1
@@ -223,7 +226,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                  | 2-3 Mar   | 9-10 Mar    |
 | 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                     | 9-10 Mar  | 16-17 Mar    |
 | 8  | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                      | 16-17 Mar | 30-31 Mar    |
-| 9  | Sentiment Analysis<!---https://www.kaggle.com/gabrielferrer/sentiment-analysis) --->                 | 30-31 May |  6-7 Apr    |
+| 9  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                 | 30-31 May |  6-7 Apr    |
 | 10 | Water Jugs<!---{{site.baseurl}}/labs/waterjug.html)       --->                                      | 6-7 Apr   | 13-14 Apr   |
 | 11 | Faces<!---{{site.baseurl}}/labs/pygame.html)   --->                                 | 13-14 Apr | 20-21 Apr    |
 | 12 | Enron's Secrets<!---https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)  --->         | 20-21 Apr |  27-28 Apr      |
