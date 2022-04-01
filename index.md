@@ -118,7 +118,8 @@ Upon completing this course, our goal is for you to be able to:
 | | |[Store Inventory File](/code/spring2022/store_inventory.txt)
 | | |[Zipcode File](/code/spring2022/zipcodes.txt)
 | | |[Dictionary Tracing Example](/code/spring2022/2022-03-30-Dictionary-Tracing.pdf)
-| F 1 Apr | Introduction to classes and objects       |   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
+| F 1 Apr | Introduction to classes and objects       |[Classes Intro](/code/spring2022/2022-04-01-Intro-to-Classes.py)   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
+| | |[Tracing Solution](/code/spring2022/2022-04-01-Heap-Tracing.pdf)
 |
 | M  4 Apr | Classes/objects example 1
 | W  6 Apr | Classes/objects example 2
