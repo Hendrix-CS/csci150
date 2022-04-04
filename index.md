@@ -121,7 +121,8 @@ Upon completing this course, our goal is for you to be able to:
 | F 1 Apr | Introduction to classes and objects       |[Classes Intro](/code/spring2022/2022-04-01-Intro-to-Classes.py)   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
 | | |[Tracing Solution](/code/spring2022/2022-04-01-Heap-Tracing.pdf)
 |
-| M  4 Apr | Classes/objects example 1
+| M  4 Apr | Classes/objects example 1|[Class Examples Day 1](/code/spring2022/2022-04-04-Class-Examples-Day-1.py)
+| | |[Tracing Solution](/code/spring2022/2022-04-04-Heap-Tracing.pdf)
 | W  6 Apr | Classes/objects example 2
 | F  8 Apr | PyGame Intro |            | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
