@@ -18,7 +18,7 @@ Important dates
 -   Presentations: **{{page.finaldue}}, Final Exam Period**
 -   Project due: **{{page.finaldue}} @ Final Exam Period**
 
-Note: Gneerally, no extensions will be granted for the final project! Exceptions to this may be worked out *at least* two days in advance of a due date.
+Note: Generally, no extensions will be granted for the final project! Exceptions to this may be worked out *at least* two days in advance of a due date.
 
 Guidelines
 ----------
