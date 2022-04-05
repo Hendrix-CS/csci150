@@ -3,8 +3,8 @@ layout: work
 type: Project
 num: 3
 worktitle: Final Project
-designdue: Monday, November 22
-finaldue: Friday, December 10
+designdue: Friday, April 15
+finaldue: Friday, May 6
 ---
 
 ## Description
@@ -17,6 +17,8 @@ Important dates
 -   Project design due: **{{page.designdue}} @ start of class**
 -   Presentations: **{{page.finaldue}}, Final Exam Period**
 -   Project due: **{{page.finaldue}} @ Final Exam Period**
+
+Note: Gneerally, no extensions will be granted for the final project! Exceptions to this may be worked out *at least* two days in advance of a due date.
 
 Guidelines
 ----------
@@ -36,7 +38,7 @@ the deadline to start thinking about your final project will be too
 late.
 
 Projects **must** make use of Python `class`es to encapsulate and
-structure data.
+structure data -- or have a well-reasoned epxlanation as part of the design document about why classes are uncessary.
 
 Design
 ------
@@ -53,8 +55,8 @@ Your design document must include:
 -   A description of the way(s) in which your project goes beyond what
     we have done in class and labs.
 -   A description of the main algorithm which will control the project.
--   A description of how you envision the project code will be 
-    decomposed into classes, methods, and functions. 
+-   A description of how you envision the project code will be
+    decomposed into classes, methods, and functions.
 -   A timeline of steps you will take to complete your project with
     deadlines for each step. Plan not just what you must do but the
     ordering of steps that will allow you to complete by the final
@@ -75,7 +77,7 @@ lose points and/or be rudely cut off. Practice beforehand to make sure
 you have a good sense for how much time you have. Six minutes is not
 very long at all.)  
 
-Your presentation should include **four slides** and a **quick demo of your project**. 
+Your presentation should include **four slides** and a **quick demo of your project**.
 The slides should answer the following questions, one per
 slide:
 -   What is the name of your project, and who worked on it? (title slide)
@@ -112,12 +114,12 @@ You should turn in
 ## Grading Criteria
 * A **Complete** project includes:
   * A design document submitted on-time and meeting the requirements given earlier.
-  * A presentation lasting five to six minutes and consisting of four slides, 
+  * A presentation lasting five to six minutes and consisting of four slides,
     meeting the criteria given above.
   * An implementation in which the following are true:
     * The program is sufficiently complex and goes beyond what we have
 	  done in class or lab.
-	* Makes appropriate use of classes, methods, and functions 
+	* Makes appropriate use of classes, methods, and functions
 	  to encapsulate and structure data.
 	* No runtime errors, including those resulting from erroneous user input.
 	* No syntax errors.
