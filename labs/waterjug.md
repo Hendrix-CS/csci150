@@ -2,7 +2,7 @@
 layout: work
 type: Lab
 num: 10
-worktitle: Waterjugs
+worktitle: Water Jugs
 ---
 
 ## Overview
@@ -79,12 +79,12 @@ Implement this class in Python. Here is an incomplete implementation you can use
 as a guide:
 
     class WaterJug:
-		def __init__(self, capacity: int, contents: int):
-			self.capacity = capacity
-			self.contents = contents
+        def __init__(self, capacity: int, contents: int):
+            self.capacity = capacity
+            self.contents = contents
 			
-		def __repr__(self):
-			return f'WaterJug(capacity={self.capacity},contents={self.contents})'
+        def __repr__(self):
+            return f'WaterJug(capacity={self.capacity},contents={self.contents})'
 
         def fill(self):
             pass # Your code here
