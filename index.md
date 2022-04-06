@@ -123,13 +123,14 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M  4 Apr | Classes/objects example 1|[Class Examples Day 1](/code/spring2022/2022-04-04-Class-Examples-Day-1.py)
 | | |[Tracing Solution](/code/spring2022/2022-04-04-Heap-Tracing.pdf)
-| W  6 Apr | Classes/objects example 2
+| W  6 Apr | Classes/objects example 2|[Class Examples Day 2](/code/spring/2022-04-06-Class-Examples-Day2.py)
+| | |[Book List File](/code/spring2022/books.txt)
 | F  8 Apr | PyGame Intro |            | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
 | M  11 Apr | Working in PyGame | |Project 2 due
 | | | |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
 | W  13 Apr | Classes and Games
-| F 15 Apr | Exam 3 Review     |[Tracing Solutions](/code/spring2022/2022-04-15-Practice-Exam3-Tracing-Solutions.pdf)  |
+| F 15 Apr | Exam 3 Review     |[Tracing Solutions](/code/spring2022/2022-04-15-Practice-Exam-3-Tracing-Solutions.pdf)  |
 | | |[Code Solutions](/code/spring2022/2022-04-15-Practice-Exam-3-Solutions.py)
 |
 | M 18 Apr | **Exam 3**                 |   |  Project 3 proposal due
