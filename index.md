@@ -129,9 +129,10 @@ Upon completing this course, our goal is for you to be able to:
 | M  11 Apr | Working in PyGame | |Project 2 due
 | | | |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
 | W  13 Apr | Classes and Games
-| F 15 Apr | Exam 3 Review     |  | Project 3 proposal due
+| F 15 Apr | Exam 3 Review     |[Tracing Solutions](/code/spring2022/2022-04-15-Practice-Exam3-Tracing-Solutions.pdf)  |
+| | |[Code Solutions](/code/spring2022/2022-04-15-Practice-Exam-3-Solutions.py)
 |
-| M 18 Apr | **Exam 3**                 |   |  
+| M 18 Apr | **Exam 3**                 |   |  Project 3 proposal due
 | W 20 Apr | Recursion                         |   |
 | F 22 Apr | Recursion (trees)
 |
@@ -229,7 +230,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                     | 9-10 Mar  | 16-17 Mar    |
 | 8  | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                      | 16-17 Mar | 30-31 Mar    |
 | 9  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                 | 30-31 Mar |  6-7 Apr    |
-| 10 | Water Jugs<!---{{site.baseurl}}/labs/waterjug.html)       --->                                      | 6-7 Apr   | 13-14 Apr   |
+| 10 | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                       | 6-7 Apr   | 13-14 Apr   |
 | 11 | Faces<!---{{site.baseurl}}/labs/pygame.html)   --->                                 | 13-14 Apr | 20-21 Apr    |
 | 12 | Enron's Secrets<!---https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)  --->         | 20-21 Apr |  27-28 Apr      |
 | 13 | Project 3 Workshop                                                                             | 27-28 Apr | 6 May       |
@@ -276,7 +277,7 @@ submitted by the start of the next class period.
 * Exam 1: Monday, February 14, covering functions, math, numerical
   data, and conditionals  [Practice Exam 1]({{site.baseurl}}/exams/exam1-practice-spring-2022.pdf)
 * Exam 2: Monday, March 14, covering input/output, `while` loops,  strings , and lists  [Practice Exam 2]({{site.baseurl}}/exams/exam2-practice-spring-2022.pdf)
-* Exam 3: Monday, April 18, covering  dictionaries, file I/O, and classes.
+* Exam 3: Monday, April 18, covering  the heap, dictionaries,  and classes.  [Practice Exam 3](/exams/exam3-practice-spring-2022.pdf)
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
