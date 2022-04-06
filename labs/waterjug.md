@@ -189,27 +189,27 @@ using a list or a string.
 Here is an example run of the program for you to emulate:
 
 	Enter the capacity of Jug A: 4
-	Enter the capacity of Jug B: 3
-	Enter the goal quantity of water for Jug A: 2
-	A: WaterJug(4,0) B: WaterJug(3,0)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
-	A: WaterJug(4,4) B: WaterJug(3,0)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
-	A: WaterJug(4,1) B: WaterJug(3,3)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): empty B
-	A: WaterJug(4,1) B: WaterJug(3,0)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
-	A: WaterJug(4,0) B: WaterJug(3,1)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
-	A: WaterJug(4,4) B: WaterJug(3,1)
-	Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
-	Goal achieved!
-	fill A
-	pour A B
-	empty B
-	pour A B
-	fill A
-	pour A B
+    Enter the capacity of Jug B: 3
+    Enter the goal quantity of water for Jug A: 2
+    A: WaterJug(capacity=4,contents=0) B: WaterJug(capacity=3,contents=0)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
+    A: WaterJug(capacity=4,contents=4) B: WaterJug(capacity=3,contents=0)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
+    A: WaterJug(capacity=4,contents=1) B: WaterJug(capacity=3,contents=3)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): empty B
+    A: WaterJug(capacity=4,contents=1) B: WaterJug(capacity=3,contents=0)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
+    A: WaterJug(capacity=4,contents=0) B: WaterJug(capacity=3,contents=1)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): fill A
+    A: WaterJug(capacity=4,contents=4) B: WaterJug(capacity=3,contents=1)
+    Enter your choice: fill (A,B); empty (A,B); pour (A B, B A): pour A B
+    Goal achieved!
+    fill A
+    pour A B
+    empty B
+    pour A B
+    fill A
+    pour A B
 
 {% include important.html content="Do not just put everything in `main`.
 You should break your code up into functions appropriately." %}
