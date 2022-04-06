@@ -12,7 +12,7 @@ mathematics, instantiable classes, and bone-chilling terror. ;) Always
 a famous puzzle in the Artifical Intelligence circles, the
 [WaterJug](https://www.youtube.com/watch?v=BVtQNK_ZUJg)
 came to popular culture through the classic action movie
-[Die Hard III](http://us.imdb.com/Title?Die+Hard%3A+With+a+Vengeance+(1995)).
+[Die Hard III](https://en.wikipedia.org/wiki/Die_Hard_with_a_Vengeance).
 In Die Hard III, a mad bomber is chasing Bruce Willis
 and Samuel L. Jackson.  They must solve different puzzles or else
 things will explode and people will die.
