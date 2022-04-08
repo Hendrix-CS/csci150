@@ -125,7 +125,7 @@ Upon completing this course, our goal is for you to be able to:
 | | |[Tracing Solution](/code/spring2022/2022-04-04-Heap-Tracing.pdf)
 | W  6 Apr | Classes/objects example 2|[Class Examples Day 2](/code/spring/2022-04-06-Class-Examples-Day2.py)
 | | |[Book List File](/code/spring2022/books.txt)
-| F  8 Apr | PyGame Intro |            | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
+| F  8 Apr | PyGame Intro | [Pygame Intro](/code/spring2022/2022-04-08-Pygame-Intro.py)           | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
 | M  11 Apr | Working in PyGame | |Project 2 due
 | | | |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
@@ -179,7 +179,7 @@ point during the semester.
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Mar 28 |**F Apr 1** |
-| 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Apr 1  | W Apr 6|
+| 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Apr 1  | W Apr 6|[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)
 | 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Apr 8  | W Apr 13 |
 
 
