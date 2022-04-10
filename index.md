@@ -127,7 +127,7 @@ Upon completing this course, our goal is for you to be able to:
 | | |[Book List File](/code/spring2022/books.txt)
 | F  8 Apr | PyGame Intro | [Pygame Intro](/code/spring2022/2022-04-08-Pygame-Intro.py)           | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
-| M  11 Apr | Working in PyGame | |Project 2 due
+| M  11 Apr | Working in PyGame |[Pygame Day 2](/code/spring2002/2022-04-11-Working-in-pygame.py) |Project 2 due
 | | | |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
 | W  13 Apr | Classes and Games
 | F 15 Apr | Exam 3 Review     |[Tracing Solutions](/code/spring2022/2022-04-15-Practice-Exam-3-Tracing-Solutions.pdf)  |
