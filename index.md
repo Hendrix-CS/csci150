@@ -129,7 +129,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M  11 Apr | Working in PyGame |[Pygame Day 2](/code/spring2022/2022-04-11-Working-in-pygame.py) |Project 2 due
 | | | |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
-| W  13 Apr | Classes and Games
+| W  13 Apr | Classes and Games |[Classes and Games](/code/spring2022/2022-04-13-Pygame-and-Classes.py)
 | F 15 Apr | Exam 3 Review     |[Tracing Solutions](/code/spring2022/2022-04-15-Practice-Exam-3-Tracing-Solutions.pdf)  |
 | | |[Code Solutions](/code/spring2022/2022-04-15-Practice-Exam-3-Solutions.py)
 |
