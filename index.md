@@ -134,7 +134,7 @@ Upon completing this course, our goal is for you to be able to:
 | | |[Code Solutions](/code/spring2022/2022-04-15-Practice-Exam-3-Solutions.py)
 |
 | M 18 Apr | **Exam 3**                 |   |  Project 3 proposal due
-| W 20 Apr | Recursion                         |   |
+| W 20 Apr | Recursion                         |[Recursion](/code/spring2022/2022-04-20-Recursion.py)   |
 | F 22 Apr | Recursion (trees)
 |
 | M 25 Apr | Structuring larger programs 1             |   |
@@ -233,7 +233,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 9  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                 | 30-31 Mar |  6-7 Apr    |
 | 10 | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                       | 6-7 Apr   | 13-14 Apr   |
 | 11 | [Faces]({{site.baseurl}}/labs/pygame.html)                                | 13-14 Apr | 20-21 Apr    |
-| 12 | Enron's Secrets<!---https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)  --->         | 20-21 Apr |  27-28 Apr      |
+| 12 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)           | 20-21 Apr |  27-28 Apr      |
 | 13 | Project 3 Workshop                                                                             | 27-28 Apr | 6 May       |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
