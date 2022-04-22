@@ -135,7 +135,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 18 Apr | **Exam 3**                 |   |  Project 3 proposal due
 | W 20 Apr | Recursion                         |[Recursion](/code/spring2022/2022-04-20-Recursion.py)   |
-| F 22 Apr | Recursion (trees)
+| F 22 Apr | Recursion (trees) |[Trees](/code/spring2022/2022-04-20-Recursion-Trees.py)
 |
 | M 25 Apr | Structuring larger programs 1             |   |
 | W 27 Apr | Structuring larger programs 2
