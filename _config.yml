@@ -26,7 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 number: CSCI 150
 title: Foundations of Computer Science
-semester: Spring 2022
+semester: Fall 2022
 
 navigation:
   - title: Overview
@@ -61,32 +61,36 @@ instructors:
     web: https://www.hendrix.edu/mathcs/profile.aspx?id=70795
     phone: (501) 450-1256
     officehours: https://hendrix-cs.github.io/csci150/instructors/seme.html
-  - id: ferrer
-    name: Dr. Gabriel Ferrer
-    email: ferrer@hendrix.edu
-    web: http://ozark.hendrix.edu/~ferrer
-    phone: (501) 450-3879
+  - id: yorgey
+    name: Dr. Brent Yorgey
+    email: yorgey@hendrix.edu
+    web: http://ozark.hendrix.edu/~yorgey
+    phone: (501)-450-1377
     officehours: https://drferrer.youcanbook.me/
-  - id: wilson
-    name: Prof. Josh Wilson
-    email: wilsonj@hendrix.edu
+  - id: mccune
+    name: Prof. Jared McCune
+    email: mccune@hendrix.edu
     web: TBD
     phone: TBD
     officehours: TBD
 
 offerings:
   - name: LECTURE 01
-    loc: M.C. Reynolds 110
+    loc: M.C. Reynolds 315
     time: MWF 8:10am - 9:00am (A1)
     instructor: seme
+  - name: LECTURE 02
+    loc: M.C. Reynolds 315
+    time: MWF 11:10am - 12:00pm (A4)
+    instructor: yorgey
   - name: LAB L1
     loc: Bailey Lab
     time: W 1:10pm - 4:00pm (L8)
-    instructor: ferrer
+    instructor: yorgey
   - name: LAB L2
     loc: Bailey Lab
     time: R 1:10pm - 4:00pm (L9)
-    instructor: wilson
+    instructor: mccune
 
 submission: https://forms.gle/JBLQRF736S46KTxP9
 
