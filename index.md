@@ -158,7 +158,7 @@ point during the semester.
 -->
 
 | # | Name                                                                      | Assigned | Due      |Sample Solutions
-|:-:|---------------------------------------------------------------------------|----------|:--------:|
+|:-:|---------------------------------------------------------------------------|----------|:--------|
 | 0 | Survey                                                                    | W Aug 24 | M Aug 29  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 26 | W Aug 31  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Sep 2  | W Sep 7  |
