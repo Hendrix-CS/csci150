@@ -64,8 +64,8 @@ Upon completing this course, our goal is for you to be able to:
 <br/>
 -->
 
-| Date |Topic  | Seme Notes/Code | Yorgey Notes/Code      | HW and Links    |
-|:----:|:------|:----------------|:-----------------------|:----------|
+| Date  |Topic  | Seme Notes/Code | Yorgey Notes/Code      | HW and Links    |
+|:------|:------|:----------------|:-----------------------|:----------|
 
 | W  24 Aug| Intro to CS  |            | |HW: Survey
 | F 26 Aug | Intro to CSCI 150; Algorithms and errors  |          |    | HW: [Minecraft by hand](homework/minecraft.html) |
