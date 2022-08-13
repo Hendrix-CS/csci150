@@ -71,68 +71,65 @@ Upon completing this course, our goal is for you to be able to:
 |
 | W  24 Aug| Intro to CS  |            | |HW: Survey
 | F 26 Aug | Intro to CSCI 150; Algorithms and errors  |          |    | HW: [Minecraft by hand](homework/minecraft.html) |
-
-<!---| M 29 Aug | Intro to Python (math, variables)         |  |             |
+|
+| M 29 Aug | Intro to Python (math, variables)         |  |             |
 | W  31 Aug | Intro to Python (functions)               | |                    |
 | F  2 Sep | Booleans                          |  | | HW: [Boolean practice](homework/booleans.html)     |
-
+|
 | M  5 Sep| *Labor Day*                 |  |  |                        
 | W  7 Sep | Conditionals  | | |
 | F 9 Sep | Tracing I 								|   |  | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
-
+|
 | M 12 Sep | Tracing II | | |
 | W 14 Sep | PyCharm and I/O | | |
 | F 16 Sep | Exam 1 Review | | |
-
+|
 | M 19 Sep | **Exam 1** | | |
 | W 21 Sep | The `while` loop |    | |  Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
 | F 23 Sep | Functions and stack tracing			 |  |  |HW: [Function Stack Tracing](homework/function-reading.html)
-
-
+|
 | M 26 Sep |Binary/Stack Tracing  | |
 | W 28 Sep|  Tracing and Strings | | |
 | F 30 Sep | Strings and Loops					 |  |  | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
-
+|
 | M  3 Oct | Lists  |        | |            
 | W  5 Oct | List processing examples				 | |
 | F  7 Oct | Function Abstraction | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
-
+|
 | M 10 Oct  | The `for` loop | | |
 | W 12 Oct | More `for` loop practice | | |
 | F 14 Oct | *Fall Break* | | |
-
+|
 | M 17 Oct | File I/O							| | |
 | W 19 Oct | The Heap and Mutability | | |
 | F 21 Oct | Exam 2 Review| | |
-
-
+|
 | M 24 Oct |  **Exam 2**                      | |     
 | W 26 Oct |Dictionaries I | |
 | F 28 Oct |Dictionaries II | |
-
+|
 | M 31 Oct | Intro to Classes                    |          |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 | W 2 Nov | Classes and Objects | | |
 | F 4 Nov | Classes and Objects   |    |   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
-
-
+|
 | M  7 Nov | Intro to PyGame| | |
 | W  9 Nov | PyGame| | |
 | F  11 Nov | Classes and PyGame |        |    | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
-
+|
 | M  14 Nov | Final Project Discussion  | |  |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
 | W  16 Nov | Heap Tracing Practice  | | |
 | F 18 Nov | Exam 3 Review     | | |
-
+|
 | M 21 Nov | **Exam 3**        | | |         
 | T 22 Nov | ** Exam 3 Take Home Due**| By 11:59pm |By 11:59 pm |
 | W 22 Nov | *Thanksgiving Break*                     | |  |
 | F 24 Nov | *Thanksgiving Break* | | |
-
+|
 | M 28 Nov | Recursion      | | |      
 | W 30 Nov | Recursion (trees) | | |
 | F 2 Dec | Project Workshop in Class | | |
-
-| F 9 Dec | Final Project Presentations| 2-5pm (Seme)| 8:30-11:30am (Yorgey)--->
+|
+| F 9 Dec | Final Project Presentations| 2-5pm (Seme)| 8:30-11:30am (Yorgey)
 
 <hr>
 # Coursework
