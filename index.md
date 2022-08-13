@@ -64,13 +64,13 @@ Upon completing this course, our goal is for you to be able to:
 <br/>
 -->
 
-| Date |Topic  | Seme Notes/Code | Yorgey Notes/Code      | HW and Links                  |
-|:--------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|:----------|
+| Date |Topic  | Seme Notes/Code | Yorgey Notes/Code      | HW and Links    |
+|:----:|:------|:----------------|:-----------------------|:----------|
 
 | W  24 Aug| Intro to CS  |            | |HW: Survey
 | F 26 Aug | Intro to CSCI 150; Algorithms and errors  |          |    | HW: [Minecraft by hand](homework/minecraft.html) |
 
-| M 29 Aug | Intro to Python (math, variables)         |  |             |
+<!---| M 29 Aug | Intro to Python (math, variables)         |  |             |
 | W  31 Aug | Intro to Python (functions)               | |                    |
 | F  2 Sep | Booleans                          |  | | HW: [Boolean practice](homework/booleans.html)     |
 
@@ -130,7 +130,7 @@ Upon completing this course, our goal is for you to be able to:
 | W 30 Nov | Recursion (trees) | | |
 | F 2 Dec | Project Workshop in Class | | |
 
-| F 9 Dec | Final Project Presentations| 2-5pm (Seme)| 8:30-11:30am (Yorgey)|
+| F 9 Dec | Final Project Presentations| 2-5pm (Seme)| 8:30-11:30am (Yorgey)--->
 
 <hr>
 # Coursework
