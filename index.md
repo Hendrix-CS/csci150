@@ -162,12 +162,12 @@ point during the semester.
 | 0 | Survey                                                                    | W Aug 24 | M Aug 29  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 26 | W Aug 31  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Sep 2  | W Sep 7  |
-| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Sep 9  | W Sep 14 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)
-| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Sep 23 | W Sep 28 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
+| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Sep 9  | W Sep 14 |<!---[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)--->
+| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Sep 23 | W Sep 28 |<!---[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)--->
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Sep 30 | W Oct 5  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Oct 7  | W Oct 12 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | F Oct 28 | W Nov 2 |
-| 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Nov 4  | W Nov 9|[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)
+| 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Nov 4  | W Nov 9|<!---[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)--->
 | 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Nov 11  | W Nov 16 |
 
 
@@ -189,19 +189,19 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 <!-- <br/> -->
 
 | #  | Name                                                                                      | Assigned  | Due          |
-|:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
+|:--:|-------------------------------------------------------------------------------------------|-----------|:------------|
 | 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 24-25 Aug  | 31 Aug-1 Sep |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 31 Aug-1 Sep   | 7-8 Sep  |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 7-8 Sep   |14-15 Sep    |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 14-15 Sep  |  21-22 Sep    |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 21-22 Sep | 28-29 Sep    |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 28-29 Sep | 5-6 Oct       |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 5-6 Oct   | 19-20 Oct    |
-| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 19-20 Oct  | 26-27 Oct    |
-| 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | 26-27 Oct |  2-3 Nov    |
-| 9 | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                          | 2-3 Nov   | 9-10 Nov   |
-| 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 9-10 Nov | 16-17 Nov    |
-| 11 | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                     | 16-17 Nov |  30 Nov - 1 Dec      |
+| 1  | Kepler, Newton, Einstein<!---(https://www.kaggle.com/gabrielferrer/kepler-newton-einstein) --->  | 31 Aug-1 Sep   | 7-8 Sep  |
+| 2  | Diagnosing Heart Disease<!---(https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)---> | 7-8 Sep   |14-15 Sep    |
+| 3  | This Day in History<!---(https://www.kaggle.com/gabrielferrer/this-day-in-history)    --->       | 14-15 Sep  |  21-22 Sep    |
+| 4  | Guess My Number<!---({{site.baseurl}}/labs/guess.html)        --->                               | 21-22 Sep | 28-29 Sep    |
+| 5  | Mutation is the Word<!---({{site.baseurl}}/labs/doublets.html)   --->                            | 28-29 Sep | 5-6 Oct       |
+| 6  | Todo Manager<!---({{site.baseurl}}/labs/todo-manager.html)         --->                          | 5-6 Oct   | 19-20 Oct    |
+| 7  | Caesar’s Secrets<!---(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)     --->            | 19-20 Oct  | 26-27 Oct    |
+| 8  | Sentiment Analysis<!---(https://www.kaggle.com/gabrielferrer/sentiment-analysis)  --->           | 26-27 Oct |  2-3 Nov    |
+| 9  | Water Jugs<!---({{site.baseurl}}/labs/waterjug.html)    --->                                      | 2-3 Nov   | 9-10 Nov   |
+| 10 | Faces<!---({{site.baseurl}}/labs/pygame.html)   --->                                             | 9-10 Nov | 16-17 Nov    |
+| 11 | Tornado Sirens<!---(https://www.kaggle.com/gabrielferrer/tornado-sirens)--->                     | 16-17 Nov |  30 Nov - 1 Dec      |
 | 12 | Project 3 Workshop                                                                        | 30 Nov - 1 Dec | 9 Dec       |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
@@ -239,14 +239,14 @@ You will have three projects in this course. These projects will cover concepts 
 ## <a name="exams">Exams</a>
 
 There will be three exams. Each exam will have two parts:
-* In-class written part: Analysis and tracing of Python code samples.
+* In-class written part: Analysis and tracing of Python code samples. You may also be asked to write short snippets of code.
 * Take-home part: At the end of the written exam will appear some Python coding problems, the solutions to which are to be
 submitted by the start of the next class period.
 
-* Exam 1: Monday, February 14, covering functions, math, numerical
+* Exam 1: Monday, September 19, covering functions, math, numerical
   data, and conditionals  
-* Exam 2: Monday, March 14, covering input/output, `while` loops,  strings , and lists  
-* Exam 3: Monday, April 18, covering  the heap, dictionaries,  and classes.  
+* Exam 2: Monday, October 24, covering input/output, `while` loops,  strings , and lists  
+* Exam 3: Monday, November 21, covering  the heap, dictionaries,  and classes.  
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
@@ -260,13 +260,13 @@ grades are earned based on cumulative assignment outcomes:
   * **Complete** two exams and at least **Partially Complete** the remaining exam.
   * **Complete** all three projects.
   * **Complete** a minimum of eight homework assignments, with the other two at least **Partially Complete**.
-  * Up to one unexcused lab absence, and **Complete** a minimum of 11 lab assignments, with the other two at least **Partially Complete**.
+  * Up to one unexcused lab absence, and **Complete** a minimum of ten lab assignments, with the other two at least **Partially Complete**.
   * Schedule and attend a minimum of three Office Hours meetings.
 * To earn a B in the course, a student will:
   * **Complete** two exams and at least **Partially Complete** the remaining exam.
   * **Complete** a minimum of two projects and at least **Partially Complete** the remaining project.
   * **Complete** a minimum of four homework assignments and at least **Partially Complete** a minimum of four more.
-  * Up to one unexcused lab absence, **Complete** a minimum of eight of the lab assignments, and at least **Partially Complete** a minimum of four more.
+  * Up to one unexcused lab absence, **Complete** a minimum of seven of the lab assignments, and at least **Partially Complete** a minimum of four more.
   * Schedule and attend at least two Office Hours meetings
 * To earn a C in the course, a student will:
   * At least **Partially Complete** a minimum of two exams.
@@ -274,13 +274,13 @@ grades are earned based on cumulative assignment outcomes:
     * At least **Partially Complete** all three projects.
 	* **Complete** the final project and at least **Partially Complete** one of the first two projects.
   * At least **Partially Complete** a minimum of six homework assignments.
-  * Up to two unexcused lab absences, **Complete** at least four of the lab assignments, and at least **Partially Complete** a minimum of six more.
+  * Up to two unexcused lab absences, **Complete** at least three of the lab assignments, and at least **Partially Complete** a minimum of six more.
   * Schedule and attend at least one Office Hours meeting
 * To earn a D in the course, a student will:
   * At least **Partially Complete** a minimum of two exams.
   * At least **Partially Complete** a minimum of two projects.
   * At least **Partially Complete** a minimum of four homework assignments.
-  * Up to three unexcused lab absences and at least **Partially Complete** a minimum of nine lab assignments.
+  * Up to three unexcused lab absences and at least **Partially Complete** a minimum of eight lab assignments.
 
 ### Revising submitted work
 If a submitted assignment receives a **Partial** assessment and the student seeks a **Complete** assessment:
@@ -302,8 +302,8 @@ a student in the course, but there are also things you can expect of
 me as the course instructor and facilitator.
 
 If I am not fulfilling my responsibilities outlined below, you are
-welcome (and encouraged!) to call me out, perhaps via the [anonymous
-feedback form](https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link). I will also
+welcome (and encouraged!) to call me out, perhaps via the anonymous
+feedback forms here (Prof. Seme) (https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link) and [Dr. Yorgey]((https://forms.gle/YhPgQTq1FHiH71B6A)). I will also
 initiate a conversation if you are not fulfilling yours. However, none
 of us will meet all of the expectations perfectly---me included!---so
 it's also important that we have grace and patience with one another.
@@ -427,7 +427,7 @@ are expected to contribute to a respectful, welcoming, and inclusive
 environment for every other member of the community. If you believe
 you have been the subject of discrimination please contact Dean Mike
 Leblanc at [leblanc@hendrix.edu](mailto:leblanc@hendrix.edu) or
-501-450-1222 or the Title IX Coordinator Allison Vetter at
+501-450-1222 or the Title IX Coordinator Jennifer Fulbright  at
 [titleix@hendrix.edu](mailto:titleix@hendrix.edu)or 501-505-2901. If
 you have ideas for improving the inclusivity of the classroom
 experience please feel free to [contact
