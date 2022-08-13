@@ -68,7 +68,7 @@ Upon completing this course, our goal is for you to be able to:
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | W  24 Aug| Intro to CS  |            | |
 | F 26 Aug | Intro to CSCI 150; Algorithms and errors  |          |    | HW: [Minecraft by hand](homework/minecraft.html) |
-|                           
+
 | M 29 Aug | Intro to Python (math, variables)         |  |             |
 | W  31 Aug | Intro to Python (functions)               | |                    |
 | F  2 Sep | Booleans                          |  | | HW: [Boolean practice](homework/booleans.html)     |
@@ -76,11 +76,11 @@ Upon completing this course, our goal is for you to be able to:
 | M  5 Sep| Conditionals                 |  |  |                        
 | W  7 Sep | Tracing I  | | |
 | F 9 Sep | Tracing II 								|   |  | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
-|
+
 | M 12 Sep | Pycharm | | |
 | W 14 Sep | Binary  and I/O | | |
 | F 16 Sep | Exam 1 Review | | |
-|
+
 | M 19 Sep | **Exam 1** | | |
 | W 21 Sep | The `while` loop |    | |  Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
 | F 23 Sep | Functions and stack tracing			 |  |  |HW: [Function Stack Tracing](homework/function-reading.html)
