@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: CodingBat Conditional Practice and By-Hand Tracing
 -----------------------------------------------
 
-*Due: Wednesday, February 9*
+*Due: Wednesday, September 14*
 
 This homework set has two components:
 * CodingBat -- where you will write a bit of code (see below) and it will be automatically assessed
