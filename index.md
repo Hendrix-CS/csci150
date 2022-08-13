@@ -69,7 +69,7 @@ Upon completing this course, our goal is for you to be able to:
 | Date  |Topic  | Seme Notes/Code | Yorgey Notes/Code      | HW and Links    |
 |:------|:------|:----------------|:-----------------------|:----------|
 |
-| W  24 Aug| Intro to CS  |            | |HW: Survey
+| W  24 Aug| Intro to CS  | [Intro](https://www.kaggle.com/larskseme/2022-08-24-day-1-introduction)           | |HW: Survey
 | F 26 Aug | Intro to CSCI 150; Algorithms and errors  |          |    | HW: [Minecraft by hand](homework/minecraft.html) |
 |
 | M 29 Aug | Intro to Python (math, variables)         |  |             |
