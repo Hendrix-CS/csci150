@@ -85,52 +85,50 @@ Upon completing this course, our goal is for you to be able to:
 | W 21 Sep | The `while` loop |    | |  Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
 | F 23 Sep | Functions and stack tracing			 |  |  |HW: [Function Stack Tracing](homework/function-reading.html)
 
-|
+
 | M 26 Sep |  | |
 | W 28 Sep|  Tracing and Strings | | |
 | F 30 Sep | Strings and Loops					 |  |  | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
-|
+
 | M  3 Oct | Lists  |        | |            
 | W  5 Oct | List processing examples				 | |
 | F  7 Oct | Function Abstraction | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
-|
+
 | M 10 Oct  | The `for` loop | | |
 | W 12 Oct | More `for` loop practice | | |
-
 | F 14 Oct | Exam 2 Review | | |
-|
+
 | M 17 Oct | **Exam 2**							| | |
 | W 19 Oct | File I/O | | |
 | F 21 Oct | The Heap and Mutability| | |
 
-|
+
 | M 24 Oct |                        | |     
 | W 26 Oct | | |
 | F 28 Oct | | |
-|
-| M 31 Oct | Dictionaries                    |          |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 
+| M 31 Oct | Dictionaries                    |          |   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 | W 2 Nov | Dictionaries | | |
 | F 4 Nov | Introduction to classes and objects   |    |   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
 
-|
+
 | M  9 Nov | Classes/objects example 1| | |
 | W  11 Nov | Classes/objects example 2| | |
 | F  13 Nov | PyGame Intro |        |    | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
-|
+
 | M  16 Nov | Working in PyGame  | |  |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
 | W  18 Nov | Classes and Games  | | |
 | F 20 Nov | Exam 3 Review     | | |
-|
+
 | M 21 Nov | **Exam 3**        | | |         
 | T 22 Nov | ** Exam 3 Take Home Due**| By 11:59pm |By 11:59 pm |
 | W 22 Nov | Recursion                     | |  |
 | F 24 Nov | Recursion (trees) | | |
-|
+
 | M 28 Nov | Structuring larger programs 1       | | |      
 | W 30 Nov | Structuring larger programs 2 | | |
 | F 2 Dec | Project Workshop in Class | | |
-|
+
 | F 9 Dec | Final Project Presentations| 2-5pm (Seme)| 8:30-11:30am (Yorgey)|
 
 <hr>
