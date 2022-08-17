@@ -303,7 +303,7 @@ me as the course instructor and facilitator.
 
 If I am not fulfilling my responsibilities outlined below, you are
 welcome (and encouraged!) to call me out, perhaps via the anonymous
-feedback forms here (Prof. Seme) (https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link) and [Dr. Yorgey]((https://forms.gle/YhPgQTq1FHiH71B6A)). I will also
+feedback forms here [Prof. Seme](https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link) and [Dr. Yorgey]((https://forms.gle/YhPgQTq1FHiH71B6A)). I will also
 initiate a conversation if you are not fulfilling yours. However, none
 of us will meet all of the expectations perfectly---me included!---so
 it's also important that we have grace and patience with one another.
