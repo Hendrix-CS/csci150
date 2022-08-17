@@ -14,7 +14,7 @@ character's actions in the virtual world Minecraft.
 ## Materials
 
 * Quotes on paper from previous courses
-* [Minecraft at Code.org](http://studio.code.org/join/XGHRWB)
+* [Minecraft at Code.org](http://studio.code.org/join/XHKPTH)
 * Lab Partner
 
 ### Step 1
