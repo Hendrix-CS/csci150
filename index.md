@@ -85,7 +85,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 16 Sep | Exam 1 Review | | |
 |
 | M 19 Sep | **Exam 1** | | |
-| W 21 Sep | The `while` loop |    | |  Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
+| W 21 Sep | The `while` loop |    | |  Project 1 Assigned: Civic Assistance Q/A System<!---(projects/project1.html)--->
 | F 23 Sep | Functions and stack tracing			 |  |  |HW: [Function Stack Tracing](homework/function-reading.html)
 |
 | M 26 Sep |Binary/Stack Tracing  | |
@@ -96,7 +96,7 @@ Upon completing this course, our goal is for you to be able to:
 | W  5 Oct | List processing examples				 | |
 | F  7 Oct | Function Abstraction | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
-| M 10 Oct  | The `for` loop | | |
+| M 10 Oct  | The `for` loop | | |Project 2 Assigned: Word Games
 | W 12 Oct | More `for` loop practice | | |
 | F 14 Oct | *Fall Break* | |
 |
@@ -116,7 +116,7 @@ Upon completing this course, our goal is for you to be able to:
 | W  9 Nov | PyGame| | |
 | F  11 Nov | Classes and PyGame |        |    | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
-| M  14 Nov | Final Project Discussion  | |  |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
+| M  14 Nov | Final Project Discussion  | |  |Project 3 Assigned: Final Project<!---({{site.baseurl}}/projects/final.html)--->
 | W  16 Nov | Heap Tracing Practice  | | |
 | F 18 Nov | Exam 3 Review     | | |
 |
