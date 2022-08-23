@@ -69,7 +69,7 @@ Upon completing this course, our goal is for you to be able to:
 | Date  |Topic  | Seme Notes/Code | Yorgey Notes/Code      | HW and Links    |
 |:------|:------|:----------------|:-----------------------|:----------|
 |
-| W  24 Aug| Intro to CS  | [Intro](https://www.kaggle.com/larskseme/2022-08-24-day-1-introduction)           | |HW: Survey
+| W  24 Aug| Intro to CS  | [Intro](https://www.kaggle.com/larskseme/2022-08-24-day-1-introduction)           | |HW: [Survey](https://forms.gle/Qxv1awsVXyj2iH487)
 | F 26 Aug | Intro to CSCI 150; Algorithms and errors  |        |    | HW: [Minecraft by hand](homework/minecraft.html) |
 |
 | M 29 Aug | Intro to Python (math, variables)         |  |             |
@@ -159,7 +159,7 @@ point during the semester.
 
 | # | Name                                                                      | Assigned | Due      |Sample Solutions
 |:-:|---------------------------------------------------------------------------|----------|:--------|
-| 0 | Survey                                                                    | W Aug 24 | M Aug 29  |
+| 0 | [Survey](https://forms.gle/Qxv1awsVXyj2iH487)                                                                    | W Aug 24 | M Aug 29  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Aug 26 | W Aug 31  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Sep 2  | W Sep 7  |
 | 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Sep 9  | W Sep 14 |<!---[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)--->
