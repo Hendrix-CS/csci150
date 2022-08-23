@@ -92,7 +92,7 @@ Upon completing this course, our goal is for you to be able to:
 | W 28 Sep|  Tracing and Strings | | |
 | F 30 Sep | Strings and Loops					 |  |  | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
-| M  3 Oct | Lists  |        | |            
+| M  3 Oct | Lists  |        | | Project 1 Due           
 | W  5 Oct | List processing examples				 | |
 | F  7 Oct | Function Abstraction | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
@@ -112,13 +112,13 @@ Upon completing this course, our goal is for you to be able to:
 | W 2 Nov | Classes and Objects | | |
 | F 4 Nov | Classes and Objects   |    |   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
 |
-| M  7 Nov | Intro to PyGame| | |
+| M  7 Nov | Intro to PyGame| | |Project 2 Due
 | W  9 Nov | PyGame| | |
 | F  11 Nov | Classes and PyGame |        |    | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
 | M  14 Nov | Final Project Discussion  | |  |Project 3 Assigned: Final Project<!---({{site.baseurl}}/projects/final.html)--->
 | W  16 Nov | Heap Tracing Practice  | | |
-| F 18 Nov | Exam 3 Review     | | |
+| F 18 Nov | Exam 3 Review     | | |Project 3 Proposal Due
 |
 | M 21 Nov | **Exam 3**        | | |         
 | T 22 Nov | ** Exam 3 Take Home Due**| By 11:59pm |By 11:59 pm |
