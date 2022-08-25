@@ -70,7 +70,7 @@ Upon completing this course, our goal is for you to be able to:
 |:------|:------|:----------------|:-----------------------|:----------|
 |
 | W  24 Aug| Intro to CS  | [Intro](https://www.kaggle.com/larskseme/2022-08-24-day-1-introduction)           | |HW: [Survey](https://forms.gle/Qxv1awsVXyj2iH487)
-| F 26 Aug | Intro to CSCI 150; Algorithms and errors  |        |    | HW: [Minecraft by hand](homework/minecraft.html) |
+| F 26 Aug | Intro to CSCI 150; Algorithms and errors  |[Algor and Errors](https://www.kaggle.com/code/larskseme/2022-08-26-algorithms-and-errors)        |    | HW: [Minecraft by hand](homework/minecraft.html) |
 |
 | M 29 Aug | Intro to Python (math, variables)         |  |             |
 | W  31 Aug | Intro to Python (functions)               | |                    |
