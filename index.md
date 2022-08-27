@@ -55,16 +55,6 @@ Upon completing this course, our goal is for you to be able to:
 <hr>
 
 # <a name="calendar">Calendar</a>
-<!--
-<div style="text-align: center">
-<a class="btn btn-primary" href="{{ site.submission }}">
-  Assignment submission form
-</a>
-</div>
-<br/>
--->
-
-
 
 | Date      | Topic                                    | Seme Notes/Code                                                                            | Yorgey Notes/Code                                                                                                                                                                  | HW and Links                                                                                  |
 |:----------|:-----------------------------------------|:-------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------|
@@ -181,12 +171,13 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 
 ## <a name="labs">Labs</a>
 
-<!-- <div style="text-align: center"> -->
-<!-- <a class="btn btn-primary" href="https://moodle.hendrix.edu/"> -->
-<!--   Lab submission (moodle.hendrix.edu) -->
-<!-- </a> -->
-<!-- </div> -->
-<!-- <br/> -->
+
+<div style="text-align: center">
+<a class="btn btn-primary" href="{{ site.submission }}">
+  Lab submission form
+</a>
+</div>
+<br/>
 
 | #  | Name                                                                                      | Assigned  | Due          |
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------|
