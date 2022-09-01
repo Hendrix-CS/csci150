@@ -7,7 +7,11 @@ layout: course-multi
 
 ## <a name="TAs">TAs</a>
 
-TBA
+* Daniel Burnett
+* Mason
+* Simon Reid
+* Ted Bjurlin
+* Zoie Keys
 
 <!--| Time   | Monday      | Tuesday  | Wednesday |
 |:------:|-------------|----------|-----------|
