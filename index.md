@@ -55,81 +55,71 @@ Upon completing this course, our goal is for you to be able to:
 <hr>
 
 # <a name="calendar">Calendar</a>
-<!--
-<div style="text-align: center">
-<a class="btn btn-primary" href="{{ site.submission }}">
-  Assignment submission form
-</a>
-</div>
-<br/>
--->
 
-
-
-| Date  |Topic  | Seme Notes/Code | Yorgey Notes/Code      | HW and Links    |
-|:------|:------|:----------------|:-----------------------|:----------|
-|
-| W  24 Aug| Intro to CS  | [Intro](https://www.kaggle.com/larskseme/2022-08-24-day-1-introduction)           | |HW: [Survey](https://forms.gle/Qxv1awsVXyj2iH487)
-| F 26 Aug | Intro to CSCI 150; Algorithms and errors  |[Algor and Errors](https://www.kaggle.com/code/larskseme/2022-08-26-algorithms-and-errors)        |    | HW: [Minecraft by hand](homework/minecraft.html) |
-|
-| M 29 Aug | Intro to Python (math, variables)         |  |             |
-| W  31 Aug | Intro to Python (functions)               | |                    |
-| F  2 Sep | Booleans                          |  | | HW: [Boolean practice](homework/booleans.html)     |
-|
-| M  5 Sep| *Labor Day*                 |  |  |                        
-| W  7 Sep | Conditionals  | | |
-| F 9 Sep | Tracing I 								|   |  | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
-|
-| M 12 Sep | Tracing II | | |
-| W 14 Sep | PyCharm and I/O | | |
-| F 16 Sep | Exam 1 Review | | |
-|
-| M 19 Sep | **Exam 1** | | |
-| W 21 Sep | The `while` loop |    | |  Project 1 Assigned: Civic Assistance Q/A System<!---(projects/project1.html)--->
-| F 23 Sep | Functions and stack tracing			 |  |  |HW: [Function Stack Tracing](homework/function-reading.html)
-|
-| M 26 Sep |Binary/Stack Tracing  | |
-| W 28 Sep|  Tracing and Strings | | |
-| F 30 Sep | Strings and Loops					 |  |  | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
-|
-| M  3 Oct | Lists  |        | | Project 1 Due           
-| W  5 Oct | List processing examples				 | |
-| F  7 Oct | Function Abstraction | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
-|
-| M 10 Oct  | The `for` loop | | |Project 2 Assigned: Word Games
-| W 12 Oct | More `for` loop practice | | |
-| F 14 Oct | *Fall Break* | |
-|
-| M 17 Oct | File I/O							| | |
-| W 19 Oct | The Heap and Mutability | | |
-| F 21 Oct | Exam 2 Review| | |
-|
-| M 24 Oct |  **Exam 2**                      | |     
-| W 26 Oct |Dictionaries I | |
-| F 28 Oct |Dictionaries II | ||HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
-|
-| M 31 Oct | Intro to Classes                    |          |   |
-| W 2 Nov | Classes and Objects | | |
-| F 4 Nov | Classes and Objects   |    |   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
-|
-| M  7 Nov | Intro to PyGame| | |Project 2 Due
-| W  9 Nov | PyGame| | |
-| F  11 Nov | Classes and PyGame |        |    | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
-|
-| M  14 Nov | Final Project Discussion  | |  |Project 3 Assigned: Final Project<!---({{site.baseurl}}/projects/final.html)--->
-| W  16 Nov | Heap Tracing Practice  | | |
-| F 18 Nov | Exam 3 Review     | | |Project 3 Proposal Due
-|
-| M 21 Nov | **Exam 3**        | | |         
-| T 22 Nov | ** Exam 3 Take Home Due**| By 11:59pm |By 11:59 pm |
-| W 22 Nov | *Thanksgiving Break*                     | |  |
-| F 24 Nov | *Thanksgiving Break* | | |
-|
-| M 28 Nov | Recursion      | | |      
-| W 30 Nov | Recursion (trees) | | |
-| F 2 Dec | Project Workshop in Class | | |
-|
-| F 9 Dec | Final Project Presentations| 2-5pm (Seme)| 8:30-11:30am (Yorgey)
+| Date      | Topic                                    | Seme Notes/Code                                                                            | Yorgey Notes/Code                                                                                                                                                                  | HW and Links                                                                                  |
+|:----------|:-----------------------------------------|:-------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------|
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W  24 Aug | Intro to CS                              | [Intro](https://www.kaggle.com/larskseme/2022-08-24-day-1-introduction)                    |                                                                                                                                                                                    | HW: [Survey](https://forms.gle/Qxv1awsVXyj2iH487)                                             |
+| F 26 Aug  | Intro to CSCI 150; Algorithms and errors | [Algor and Errors](https://www.kaggle.com/code/larskseme/2022-08-26-algorithms-and-errors) | [<img src="assets/images/yt.png" width="24px" />](https://youtu.be/9fm8896Uxb8) [<img src="assets/images/PDF2.png" width="24px" />](lectures/F22/2022-08-26-algorithms-errors.pdf) | HW: [Minecraft by hand](homework/minecraft.html)                                              |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 29 Aug  | Intro to Python (math, variables)        |[Math & Var](https://www.kaggle.com/code/larskseme/2022-08-29-intro-to-python-math-and-variables)                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W  31 Aug | Intro to Python (functions)              |[Functions](https://www.kaggle.com/code/larskseme/2022-08-31-functions)                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F  2 Sep  | Booleans                                 |                                                                                            |                                                                                                                                                                                    | HW: [Boolean practice](homework/booleans.html)                                                |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M  5 Sep  | *Labor Day*                              |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W  7 Sep  | Conditionals                             |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 9 Sep   | Tracing I                                |                                                                                            |                                                                                                                                                                                    | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 12 Sep  | Tracing II                               |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W 14 Sep  | PyCharm and I/O                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 16 Sep  | Exam 1 Review                            |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 19 Sep  | **Exam 1**                               |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W 21 Sep  | The `while` loop                         |                                                                                            |                                                                                                                                                                                    | Project 1 Assigned: Civic Assistance Q/A System<!---(projects/project1.html)--->              |
+| F 23 Sep  | Functions and stack tracing              |                                                                                            |                                                                                                                                                                                    | HW: [Function Stack Tracing](homework/function-reading.html)                                  |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 26 Sep  | Binary/Stack Tracing                     |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W 28 Sep  | Tracing and Strings                      |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 30 Sep  | Strings and Loops                        |                                                                                            |                                                                                                                                                                                    | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)                 |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M  3 Oct  | Lists                                    |                                                                                            |                                                                                                                                                                                    | Project 1 Due                                                                                 |
+| W  5 Oct  | List processing examples                 |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F  7 Oct  | Function Abstraction                     |                                                                                            |                                                                                                                                                                                    | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)                     |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 10 Oct  | The `for` loop                           |                                                                                            |                                                                                                                                                                                    | Project 2 Assigned: Word Games                                                                |
+| W 12 Oct  | More `for` loop practice                 |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 14 Oct  | *Fall Break*                             |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 17 Oct  | File I/O                                 |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W 19 Oct  | The Heap and Mutability                  |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 21 Oct  | Exam 2 Review                            |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 24 Oct  | **Exam 2**                               |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W 26 Oct  | Dictionaries I                           |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 28 Oct  | Dictionaries II                          |                                                                                            |                                                                                                                                                                                    | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)                          |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 31 Oct  | Intro to Classes                         |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W 2 Nov   | Classes and Objects                      |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 4 Nov   | Classes and Objects                      |                                                                                            |                                                                                                                                                                                    | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)                               |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M  7 Nov  | Intro to PyGame                          |                                                                                            |                                                                                                                                                                                    | Project 2 Due                                                                                 |
+| W  9 Nov  | PyGame                                   |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F  11 Nov | Classes and PyGame                       |                                                                                            |                                                                                                                                                                                    | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)                  |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M  14 Nov | Final Project Discussion                 |                                                                                            |                                                                                                                                                                                    | Project 3 Assigned: Final Project<!---({{site.baseurl}}/projects/final.html)--->              |
+| W  16 Nov | Heap Tracing Practice                    |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 18 Nov  | Exam 3 Review                            |                                                                                            |                                                                                                                                                                                    | Project 3 Proposal Due                                                                        |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 21 Nov  | **Exam 3**                               |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| T 22 Nov  | ** Exam 3 Take Home Due**                | By 11:59pm                                                                                 | By 11:59 pm                                                                                                                                                                        |                                                                                               |
+| W 22 Nov  | *Thanksgiving Break*                     |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 24 Nov  | *Thanksgiving Break*                     |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| M 28 Nov  | Recursion                                |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| W 30 Nov  | Recursion (trees)                        |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 2 Dec   | Project Workshop in Class                |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+|           |                                          |                                                                                            |                                                                                                                                                                                    |                                                                                               |
+| F 9 Dec   | Final Project Presentations              | 2-5pm (Seme)                                                                               | 8:30-11:30am (Yorgey)                                                                                                                                                              |                                                                                               |
 
 <hr>
 # Coursework
@@ -181,17 +171,18 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 
 ## <a name="labs">Labs</a>
 
-<!-- <div style="text-align: center"> -->
-<!-- <a class="btn btn-primary" href="https://moodle.hendrix.edu/"> -->
-<!--   Lab submission (moodle.hendrix.edu) -->
-<!-- </a> -->
-<!-- </div> -->
-<!-- <br/> -->
+
+<div style="text-align: center">
+<a class="btn btn-primary" href="{{ site.submission }}">
+  Lab submission form
+</a>
+</div>
+<br/>
 
 | #  | Name                                                                                      | Assigned  | Due          |
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------|
 | 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 24-25 Aug  | 31 Aug-1 Sep |
-| 1  | Kepler, Newton, Einstein<!---(https://www.kaggle.com/gabrielferrer/kepler-newton-einstein) --->  | 31 Aug-1 Sep   | 7-8 Sep  |
+| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 31 Aug-1 Sep   | 7-8 Sep  |
 | 2  | Diagnosing Heart Disease<!---(https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)---> | 7-8 Sep   |14-15 Sep    |
 | 3  | This Day in History<!---(https://www.kaggle.com/gabrielferrer/this-day-in-history)    --->       | 14-15 Sep  |  21-22 Sep    |
 | 4  | Guess My Number<!---({{site.baseurl}}/labs/guess.html)        --->                               | 21-22 Sep | 28-29 Sep    |
