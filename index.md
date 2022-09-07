@@ -187,7 +187,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------|
 | 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 24-25 Aug  | 31 Aug-1 Sep |
 | 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 31 Aug-1 Sep   | 7-8 Sep  |
-| 2  | Diagnosing Heart Disease<!---(https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)---> | 7-8 Sep   |14-15 Sep    |
+| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 7-8 Sep   |14-15 Sep    |
 | 3  | This Day in History<!---(https://www.kaggle.com/gabrielferrer/this-day-in-history)    --->       | 14-15 Sep  |  21-22 Sep    |
 | 4  | Guess My Number<!---({{site.baseurl}}/labs/guess.html)        --->                               | 21-22 Sep | 28-29 Sep    |
 | 5  | Mutation is the Word<!---({{site.baseurl}}/labs/doublets.html)   --->                            | 28-29 Sep | 5-6 Oct       |
