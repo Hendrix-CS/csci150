@@ -586,13 +586,14 @@ can guess what comparisons do for strings.  Come up with a hypothesis,
 test it.
 
 \newpage
-\class{\notready Conditionals}
+\holiday{Labor Day}
 
-\subsection*{Setup/administrivia}
+\class{\ready Conditionals}
+
+\subsection*{Setup}
 
 \begin{itemize}
-\item CS history! (Lovelace + Babbage)
-\item Reminder: HW due and quiz on Wednesday (Booleans)
+\item (Collect Boolean HW)
 \end{itemize}
 
 \subsection*{Conditionals}
@@ -700,14 +701,57 @@ def raffle2() -> str:
         return "You get a stick of gum!"
 \end{verbatim}
 
+Do one last example: Hailstone function from first class!
+
 \newpage
-\class{\notready Tracing I}
+\lab{Big Data/Heart Disease}
+
+\begin{reflect}{Brent, S'16}
+  \begin{itemize}
+  \item Spend a few minutes at the beginning explaining the graphs,
+    especially the Boolean ones.
+  \item Make sure they don't re-save the data files from Excel---it
+    messes up the formatting!  Opening in Excel to \emph{look at} the
+    data files is OK, just don't save.
+  \item Try to guide them to using nested ifs.
+  \item Make sure they understand why it's ineffective to make a huge
+    condition with a bunch of ANDs.
+  \item Make sure they understand why it's ineffective to have a
+    string of independent ifs, where each one sets \texttt{prediction}
+    (overriding whatever \texttt{prediction} was set to before).
+  \end{itemize}
+
+  Other than those gotchas, lab seems to go OK.
+\end{reflect}
+
+\begin{reflect}{Gabe, F'16}
+\begin{itemize}
+\item First lab section: Seems a bit short - took most students 2 hours.
+\item Second lab section: Nobody finished in less than 2.5 hours. Go figure!
+\item The students found the histograms very confusing. In particular, the
+axes were unclear for the string-valued elements.
+\end{itemize}
+\end{reflect}
+\begin{reflect}{Mark, F'16}
+\begin{itemize}
+\item can't get 100\% on 4a, since {\tt 63, False} is found in both categories. Is possible to get 100\% on 4b and 4c.
+\item the chart for chest\_pain has one of the data points swapped, second bar is "asymptomatic", should have been first.
+\end{itemize}
+\end{reflect}
+\begin{reflect}{Brent, S'17}
+This lab seemed to go very well this year.  The students were
+definitely engaged and learning a lot.  A few started leaving after 2
+hours but probably 2/3 of the class was still working at the 3 hour
+mark (but most were just finishing or very close).
+\end{reflect}
+
+\newpage
+\class{\ready Tracing I}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item (Collect Boolean HW)
-\item QUIZ: Booleans (see \verb|csci150-instructors/quiz/booleans.pdf|)
+\item Show them HW, briefly show CodingBat
 \end{itemize}
 
 \subsection*{Tracing}
@@ -843,50 +887,6 @@ in the lab when your code isn't doing what you expect.
 \end{reflect}
 
 \newpage
-\lab{Big Data/Heart Disease}
-
-\begin{reflect}{Brent, S'16}
-  \begin{itemize}
-  \item Spend a few minutes at the beginning explaining the graphs,
-    especially the Boolean ones.
-  \item Make sure they don't re-save the data files from Excel---it
-    messes up the formatting!  Opening in Excel to \emph{look at} the
-    data files is OK, just don't save.
-  \item Try to guide them to using nested ifs.
-  \item Make sure they understand why it's ineffective to make a huge
-    condition with a bunch of ANDs.
-  \item Make sure they understand why it's ineffective to have a
-    string of independent ifs, where each one sets \texttt{prediction}
-    (overriding whatever \texttt{prediction} was set to before).
-  \end{itemize}
-
-  Other than those gotchas, lab seems to go OK.
-\end{reflect}
-
-\begin{reflect}{Gabe, F'16}
-\begin{itemize}
-\item First lab section: Seems a bit short - took most students 2 hours.
-\item Second lab section: Nobody finished in less than 2.5 hours. Go figure!
-\item The students found the histograms very confusing. In particular, the
-axes were unclear for the string-valued elements.
-\end{itemize}
-\end{reflect}
-\begin{reflect}{Mark, F'16}
-\begin{itemize}
-\item can't get 100\% on 4a, since {\tt 63, False} is found in both categories. Is possible to get 100\% on 4b and 4c.
-\item the chart for chest\_pain has one of the data points swapped, second bar is "asymptomatic", should have been first.
-\end{itemize}
-\end{reflect}
-\begin{reflect}{Brent, S'17}
-This lab seemed to go very well this year.  The students were
-definitely engaged and learning a lot.  A few started leaving after 2
-hours but probably 2/3 of the class was still working at the 3 hour
-mark (but most were just finishing or very close).
-\end{reflect}
-
-\newpage
-
-\holiday{Spring Break}
 
 \class{\notready Binary and information encoding}
 
