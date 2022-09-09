@@ -7,16 +7,14 @@ layout: course-multi
 
 ## <a name="TAs">TAs</a>
 
-* Daniel Burnett
-* Mason
-* Simon Reid
-* Ted Bjurlin
-* Zoie Keys
+TAs will be available to help during the scheduled lab times, and also
+available on Monday, Tuesday, and Thursday evenings in the library lab
+according to the following schedule:
 
-<!--| Time   | Monday      | Tuesday  | Wednesday |
-|:------:|-------------|----------|-----------|
-|6-8 pm  |Ketty Dusenge|Simon Reid|Simon Reid |
-|8-10 pm |Zoie Keys    |Zach Gray |Ryan Fuller|-->
+| Time    | Monday         | Tuesday       | Thursday |
+|:-------:|----------------|---------------|----------|
+| 6-8 pm  | Mason          | Trey Hoopchuk | Simon    |
+| 8-10 pm | Daniel Burnett | Zoie Keys     |          |
 
 
 <!--
