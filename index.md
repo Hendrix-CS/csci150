@@ -185,21 +185,21 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 </div>
 <br/>
 
-| #  | Name                                                                                      | Assigned  | Due          |
-|:--:|-------------------------------------------------------------------------------------------|-----------|:------------|
-| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 24-25 Aug  | 31 Aug-1 Sep |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 31 Aug-1 Sep   | 7-8 Sep  |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 7-8 Sep   |14-15 Sep    |
-| 3  | This Day in History<!---(https://www.kaggle.com/gabrielferrer/this-day-in-history)    --->       | 14-15 Sep  |  21-22 Sep    |
-| 4  | Guess My Number<!---({{site.baseurl}}/labs/guess.html)        --->                               | 21-22 Sep | 28-29 Sep    |
-| 5  | Mutation is the Word<!---({{site.baseurl}}/labs/doublets.html)   --->                            | 28-29 Sep | 5-6 Oct       |
-| 6  | Todo Manager<!---({{site.baseurl}}/labs/todo-manager.html)         --->                          | 5-6 Oct   | 19-20 Oct    |
-| 7  | Caesar’s Secrets<!---(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)     --->            | 19-20 Oct  | 26-27 Oct    |
-| 8  | Sentiment Analysis<!---(https://www.kaggle.com/gabrielferrer/sentiment-analysis)  --->           | 26-27 Oct |  2-3 Nov    |
-| 9  | Water Jugs<!---({{site.baseurl}}/labs/waterjug.html)    --->                                      | 2-3 Nov   | 9-10 Nov   |
-| 10 | Faces<!---({{site.baseurl}}/labs/pygame.html)   --->                                             | 9-10 Nov | 16-17 Nov    |
-| 11 | Tornado Sirens<!---(https://www.kaggle.com/gabrielferrer/tornado-sirens)--->                     | 16-17 Nov |  30 Nov - 1 Dec      |
-| 12 | Project 3 Workshop                                                                        | 30 Nov - 1 Dec | 9 Dec       |
+| #  | Name                                                                                      | Assigned       | Due            |
+|:--:|-------------------------------------------------------------------------------------------|----------------|:---------------|
+| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 24-25 Aug      | 31 Aug-1 Sep   |
+| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 31 Aug-1 Sep   | 7-8 Sep        |
+| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 7-8 Sep        | 14-15 Sep      |
+| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 14-15 Sep      | 21-22 Sep      |
+| 4  | Guess My Number<!---({{site.baseurl}}/labs/guess.html)        --->                        | 21-22 Sep      | 28-29 Sep      |
+| 5  | Mutation is the Word<!---({{site.baseurl}}/labs/doublets.html)   --->                     | 28-29 Sep      | 5-6 Oct        |
+| 6  | Todo Manager<!---({{site.baseurl}}/labs/todo-manager.html)         --->                   | 5-6 Oct        | 19-20 Oct      |
+| 7  | Caesar’s Secrets<!---(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)     --->     | 19-20 Oct      | 26-27 Oct      |
+| 8  | Sentiment Analysis<!---(https://www.kaggle.com/gabrielferrer/sentiment-analysis)  --->    | 26-27 Oct      | 2-3 Nov        |
+| 9  | Water Jugs<!---({{site.baseurl}}/labs/waterjug.html)    --->                              | 2-3 Nov        | 9-10 Nov       |
+| 10 | Faces<!---({{site.baseurl}}/labs/pygame.html)   --->                                      | 9-10 Nov       | 16-17 Nov      |
+| 11 | Tornado Sirens<!---(https://www.kaggle.com/gabrielferrer/tornado-sirens)--->              | 16-17 Nov      | 30 Nov - 1 Dec |
+| 12 | Project 3 Workshop                                                                        | 30 Nov - 1 Dec | 9 Dec          |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
