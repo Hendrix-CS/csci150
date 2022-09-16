@@ -128,7 +128,7 @@ Upon completing this course, our goal is for you to be able to:
 [yorgey-tracing-video]: https://hendrix.sharepoint.com/sites/Section_28123/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F28123%2FShared%20Documents%2FGeneral%2FRecordings%2F09%5F09%5F%20Introduction%20to%20Tracing%2D20220909%5F111033%2DMeeting%20Recording%2Emp4
 [yorgey-pycharm-video]: https://hendrix.sharepoint.com/sites/Section_28123/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F28123%2FShared%20Documents%2FGeneral%2FRecordings%2FIntro%20to%20PyCharm%2D20220914%5F111103%2DMeeting%20Recording%2Emp4
 [yorgey-exam1-PDF]: lectures/F22/2022-09-16-tracing-exam1.pdf
-[yorgey-exam1-kaggle]: https://www.kaggle.com/byorgey/practice-exam-f22/edit
+[yorgey-exam1-kaggle]: https://www.kaggle.com/byorgey/practice-exam-f22
 [yorgey-exam1-video]: https://hendrix.sharepoint.com/sites/Section_28123/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F28123%2FShared%20Documents%2FGeneral%2FRecordings%2FExam%201%20review%2D20220916%5F112417%2DMeeting%20Recording%2Emp4
 
 <hr>
