@@ -204,7 +204,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
 
-On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. Each partner should **submit their own solution** to the assignment.
+On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work.
 
 **Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
 
