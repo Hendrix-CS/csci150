@@ -13,7 +13,7 @@ according to the following schedule:
 
 | Time    | Monday         | Tuesday       | Thursday |
 |:-------:|----------------|---------------|----------|
-| 6-8 pm  | Mason          | Trey Hoopchuk | Simon  & Ted Bjurlin(6:30)  |
+| 6-8 pm  | Mason          | Trey Hoopchuk | Simon Reid & Ted Bjurlin(6:30)  |
 | 8-10 pm | Daniel Burnett | Zoie Keys     | Ted Bjurlin         |
 
 
