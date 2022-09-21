@@ -143,7 +143,7 @@ your `main()` function!).
 
 If the user's input is stored as a string in the
 variable `guess_str`, you can check whether it is valid
-using `guess_str.isdigit()`, which is a True or False value
+using `guess_str.isdigit()`, which is a `True` or `False` value
 telling you whether the string `guess_str` consists of all
 digits or not.
 
