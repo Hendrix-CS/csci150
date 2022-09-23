@@ -246,7 +246,7 @@ There will be three exams. Each exam will have two parts:
 submitted by the start of the next class period.
 
 * Exam 1: Monday, September 19, covering functions, math, numerical
-  data, and conditionals  [Exam #1 Practice](/exams/cs150-exam1-practice-fall2022.pdf) [Exam #1 Redo](/exams/exam1-redo-fall.2022.pdf)
+  data, and conditionals  [Exam #1 Practice](/exams/cs150-exam1-practice-fall2022.pdf) [Exam #1 Redo](/exams/exam1-redo-fall-2022.pdf)
 * Exam 2: Monday, October 24, covering input/output, `while` loops,  strings , and lists  
 * Exam 3: Monday, November 21, covering  the heap, dictionaries,  and classes.  
 
