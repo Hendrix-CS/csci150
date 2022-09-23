@@ -170,8 +170,6 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
   * No grammatical or spelling errors.
   * No use of `quit()` or `exit()` -- the program flows and exits organically
   * The flow of the questions -- and response of the program -- makes sense in the context given.
-  <!-- Add next time: All responses to answers make sense in context.-->
-  <!-- Maybe ban quit() and the like -->
   * Among the six or more questions, at least two distinct types of
     data (`str`, `int`, `float`) are requested. An example of
 	meeting this criterion is having five questions that expect
@@ -179,3 +177,10 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
   * For each question, directions to the user are clear as to what
     kind of input they should enter; for example: "Do you want 'y'
 	or 'yes' for an affirmative?"
+
+### Submission
+
+* If you are in Prof. Seme's section, you should submit your project
+  via Teams.
+* If you are in Prof. Yorgey's section, you should submit your project
+  via the [same form used to submit labs]({{ site.submission }}).
