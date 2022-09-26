@@ -886,28 +886,332 @@ in the lab when your code isn't doing what you expect.
   let them go 5 minutes early.
 \end{reflect}
 
-\newpage
+\holiday{Doctor appointment}
 
-\class{\notready Binary and information encoding}
+\newpage
+\class{\ready PyCharm and I/O}
+
+\subsection*{PyCharm}
+
+Introduce PyCharm.  Help them get it installed on their personal
+laptops.
+
+Store code in a \verb|.py| file.  (Kind of like
+one giant code cell in a notebook.)  Notebooks are great for
+interactive things, explanations, documents with computational
+content, etc., but sometimes you just want a Python program to run on
+your computer and do something.  PyCharm also has a lot more nice
+features to help you write Python programs, e.g. it can check your
+types. From now on we'll use both, the next few labs will use PyCharm.
+
+\emph{Quickly} show them:
+\begin{itemize}
+\item \verb|print|
+\item \verb|input|
+\item \verb|int|, \verb|float| conversion functions.
+\item Format strings.
+\end{itemize}
+Note that the project has some instruction on these as well, they will
+get more practice.
+
+Show them how to run code in PyCharm.  Show them how to get a prompt.
+Show them how to make comments!
+
+\newpage
+\lab{\ready This Day in History}
+
+This can be used as a comprehensive review of everything on Exam 1.
+
+\begin{reflect}{Brent, F'18}
+  For this lab they need both mod and integer division, so we covered
+  them briefly at the start of lab.  I also explicitly showed them how
+  to use mod 100 to find the last two digits of a number.  That aspect
+  of the lab went pretty well, most students figured out how to use
+  mod appropriately.
+
+  Common mistakes (aside from the usual confusion over the rule for
+  leap year) included:
+  \begin{itemize}
+  \item Taking the mod of \verb|dow| too early, \emph{i.e.} writing
+    additional code that added offset factors to \verb|dow| in later
+    steps and not reducing it mod 7 afterwards.
+  \item The usual things re conditions \emph{e.g.} writing \texttt{if month
+    == 3 or 5}, or \texttt{if month = 3}, or writing a sequence of
+    \verb|if| instead of \texttt{if... elif... elif}.
+  \end{itemize}
+
+  As an aside, during the lab I wondered how to write the condition
+  for a leap year without using nested conditionals.  Here are four
+  different Boolean expressions I came up with that all work:
+\begin{verbatim}
+(y % 4 == 0) and ((y % 100 == 0) == (y % 400 == 0))
+(y % 4 == 0) and not (y % 100 == 0 and y % 400 != 0)
+(y % 4 == 0) and (y % 100 != 0 or y % 400 == 0)
+(y % 4 == 0) != ((y % 100 == 0) != (y % 400 == 0))
+\end{verbatim}
+  Obviously we would never expect students to come up with any of these!
+\end{reflect}
+
+\begin{reflect}{Brent, F'19}
+  Now that we have converted to using notebooks at the beginning of
+  the course, we included a section introducing them to mod and
+  integer division at the start of the lab, which seemed to work very
+  well!
+\end{reflect}
+
+\newpage
+\class{\ready Exam 1 review}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Note we \emph{do} still have lab today/tomorrow!  Should be a
+  nice review for Exam 1.
+\end{itemize}
+
+\subsection*{Sample exam}
+
+Go over sample exam solutions.
+
+\newpage
+\class{\ready Exam 1}
+
+\begin{itemize}
+\item Note, no HW this weekend.
+\end{itemize}
+
+\begin{reflect}{Brent, S'18}
+  Because of pushing exam 1 back one day, I only have \emph{two}
+  lectures instead of three to prepare for Guess My Number lab.  What
+  I plan to do is introduce while loops first (1 lecture), and then a
+  basic intro to functions (1 lecture).  Functions are not actually
+  super necessary for the lab, so it's OK to cover more about
+  functions in another class after the lab.
+
+  In the past I have used functions while doing examples for while
+  loops (\eg testing the Collatz conjecture), but that's not
+  critical---it's easy to do the examples without using loops.  It
+  might even give nice material to motivate the process of function
+  abstraction later.
+\end{reflect}
+
+\begin{reflect}{Brent, F'19}
+  Now that they already have plenty of experience using functions with
+  notebooks, we can just spend the two lectures introducing them to
+  PyCharm, I/O, and while loops.
+\end{reflect}
+
+\newpage
+\class{\ready While loops}
+
+\subsection*{Setup}
+\begin{itemize}
+\item \textbf{Assign Project 1}.  Linked from website. Due 1.5 weeks from
+  today (midnight on Monday).
+\end{itemize}
+
+\subsection*{While loops}
+
+Introduce while loops---this is a momentous day!  Once we add while
+loops you can (in theory) write \emph{any program you can imagine}.
+Note, this also means things get harder!  If you thought stuff up to
+exam 1 was easy, don't get lulled into false sense of security. Spend
+a little bit talking about how to study.
+
+Explain syntax.  Syntax and semantics are very much like \verb|if|
+(without \verb|else|): difference is that \verb|if| executes 0 or 1
+time, \verb|while| executes any number of times (0 or more).
+
+Do an example: count from 1 to 10.  Play with boundary conditions,
+order of statements inside the loop.
+
+% \newpage
+% \class{\notready More while loops, Collatz conjecture}
+
+% \subsection*{Setup}
+% \begin{itemize}
+% \item History: ENIAC.  Watch ENIAC programmers trailer.
+% \item Reminder: projects!  Due Monday.
+% \item Put some code with while loop up for them to figure out what it
+%   does as they come in?
+% \end{itemize}
+
+Point out three usual components of a while loop:
+\begin{itemize}
+\item Declare and initialize variable(s) you need
+\item Write the condition with those variables
+\item Change those variables somewhere in the loop (often at the
+  end)
+\end{itemize}
+
+Do another example: keep printing ``hi'' and asking ``Do you want to
+stop?'' until says yes --- have students write this code together on
+their computers/paper.  Then have two or three share code?  There are
+two decent ways to write this --- using input variable to control loop
+(but then you have to initialize it with a bogus value), or using a
+boolean (sentinel).
+
+\subsection*{Collatz}
+
+Recall Collatz Conjecture.  Idea: write a program to test the
+conjecture.  Start by writing inner loop with a particular starting
+number.  Then put that in a loop to do it repeatedly for different
+numbers.
+
+\textbf{Note:} if not introduced previously, can use this opportunity
+in passing to introduce abbreviated assignment forms like \verb|+=|.
+
+\begin{verbatim}
+n: int = 1
+
+max: int = int(input("Test numbers up to: "))
+
+while n < max:
+    count: int = 0
+    m: int = n
+    while m != 1:
+        if m % 2 == 0:
+            m //= 2
+        else:
+            m = 3*m + 1
+        count += 1
+
+    print(f'{n}: {count}')
+
+    n += 1
+\end{verbatim}
+
+(What happens if we take out \verb|max| check and just say
+\verb|while true|?  A legitimate use of an infinite loop!)
+
+\newpage
+\lab{\ready Guess My Number}
+
+Have the students write both versions of the game (in the first
+version, the computer picks the number; in the second, the computer
+guesses).
+
+\begin{reflect}{Brent, F'18}
+  Went pretty well I think.  As usual:
+  \begin{itemize}
+  \item I saw quite a few students tried to use recursion to do the
+    ``play again'' looping.
+  \item Of course many students struggled to figure out how to have
+    the computer play.
+  \end{itemize}
+\end{reflect}
+
+\newpage
+\class{\ready Functions Revealed}
 
 \subsection*{Setup/administrivia}
 
 \begin{itemize}
-\item \notready \textbf{Quiz}: conditionals and tracing
-  (\texttt{csci150-instructors/quiz/quiz3-alt-cond-practice.py}).
-\item Exam 1 on Friday!  In class, closed notes, closed computer.
-  Covers material through today. Practice exam posted on website; for
-  homework please do it for Wednesday (not to turn in).  Wednesday
-  will be review.  \textbf{Important}: This class is about
-  \textbf{doing} more than \textbf{knowing}.  One of the \textbf{worst
-    ways} you can study is to just review your notes, because it gives
-  you a false sense of familiarity/security without actually giving
-  you any practice actually writing code.  Much better way to study is
-  to \textbf{do} things: more tracing exercises; rewrite code from
-  class or lab; write some code of your own.  Review book/notes as
-  needed, to answer specific questions/confusions you come across.
-\item Show them my virtual office in Gather!  Have online students
-  help test it.
+\item \ready HW due Wednesday (function \& loop reading)
+\item Reminder: project 1 due a week from Monday.
+\end{itemize}
+
+\subsection*{Finish while}
+
+First, finish up Collatz example if not done.
+
+\subsection*{More on functions}
+
+\begin{itemize}
+\item From now on, \emph{everything} must be in a function!  Make a
+  \verb|main()| function like on the lab, call to \verb|main()| at the
+  very end.
+
+\item \textbf{They must write a comment before every function!}
+  Comment should clearly explain what the function does.  Points for
+  ``documentation'' category of grading rubric.
+
+\item Function definition makes a variable which is a function
+  object. (Note hex value in output! =) To call it, use parentheses.
+  \textbf{Every function call must always have parentheses after it.}
+
+\item Put function definitions in a script.  Note the definition
+  itself does not cause the function to be executed.  Python goes
+  through the file from top to bottom; when it reaches a definition it
+  simply \emph{remembers} it for later.  This means functions must be
+  defined before they are used, but it is perfectly OK to call a
+  function from inside another function \emph{before} it is defined.
+  So order of function definitions doesn't matter; pick an order that
+  makes sense.
+
+\item The inputs to a function in its definition are called
+  \emph{parameters}.  The actual inputs we give when we call a
+  function are called \emph{arguments}.
+
+\item Variables created inside functions are \textbf{local}!
+  Parameters are also local.  Show some examples.
+
+\item Note we can put types on variables as well as function
+  declaration.
+\end{itemize}
+
+Along the way show PyCharm error highlighting.
+
+\subsection*{Flow of execution \& tracing with stack diagrams}
+
+Execution starts at the first line of a program and continues.  But
+when a function is called, execution jumps to that function, and when
+done picks back up where it left off.  This can get complicated, since
+functions can call other functions!  In general Python has to keep
+track of a ``stack'' of places to resume.  Imagine you were reading a
+book but it told you to go read another book and then come back.  Then
+THAT book told you to go read another book, etc.  You would keep the
+old books, with bookmarks, in a pile.  When you finally finish a book,
+pick up the next book from the top of the pile and continue.
+
+Do an example. Make some functions that call other functions,
+etc. Introduce an error and see the ``traceback''.
+
+Put this on board/screen (see \texttt{stacktrace.py} in lecture notes
+directory):
+\begin{verbatim}
+def g(z: int):
+    z = z*3
+    print(z)
+
+def f(x: int):
+    g(x)
+    g(x + 2)
+    print(x)
+
+f(3)
+\end{verbatim}
+First have them try to predict output.  Compare with others, see if
+they can agree.  Then show them method for formally tracing the
+execution, with space for \textbf{scratch}, \textbf{stack}, and
+\textbf{output}.  Stack grows down from the top.  See template on next page.
+They will do more examples on HW!
+
+\newpage
+\noindent
+  \begin{tabular}{| >{\centering\bfseries}p{2.8in} | >{\centering\arraybackslash\bfseries}p{2.8in} |}
+    \hline
+    Scratch & Stack \\
+    \hline & \\[1in]
+    \cline{2-2} & \\[1in]
+    \cline{2-2} & \\[1in]
+    \cline{2-2} & \\[1in]
+    \cline{2-2} & \\[1in]
+    \hline
+  \end{tabular} \bigskip
+
+  \noindent \textbf{Printed output}
+
+\newpage
+
+\class{\ready Binary and information encoding}
+
+\subsection*{Setup/administrivia}
+
+\begin{itemize}
+\item Tell them about metacognitive learning strategies workshop!
+\item Hand back graded stuff, remind about revising
+\item Reminders: HW due Wednesday; project 1 due next Monday.
 \end{itemize}
 
 \begin{reflect}{Brent, S'21}
@@ -932,9 +1236,6 @@ in the lab when your code isn't doing what you expect.
 \begin{reflect}{Brent, F'21}
   Actually put this in my history slides and had already presented it
   earlier.
-\end{reflect}
-\begin{reflect}{Brent, F'22}
-  Ended up cancelling this class due to a doctor appointment.
 \end{reflect}
 
 \subsection*{Aside: history of information}
@@ -1184,320 +1485,6 @@ Can mention something about how video and audio are represented.
   of---\emph{compression}.
 \item Audio: sequence of ``samples''.
 \end{itemize}
-
-\newpage
-\class{\ready PyCharm and I/O}
-
-\subsection*{PyCharm}
-
-Introduce PyCharm.  Help them get it installed on their personal
-laptops.
-
-Store code in a \verb|.py| file.  (Kind of like
-one giant code cell in a notebook.)  Notebooks are great for
-interactive things, explanations, documents with computational
-content, etc., but sometimes you just want a Python program to run on
-your computer and do something.  PyCharm also has a lot more nice
-features to help you write Python programs, e.g. it can check your
-types. From now on we'll use both, the next few labs will use PyCharm.
-
-\emph{Quickly} show them:
-\begin{itemize}
-\item \verb|print|
-\item \verb|input|
-\item \verb|int|, \verb|float| conversion functions.
-\item Format strings.
-\end{itemize}
-Note that the project has some instruction on these as well, they will
-get more practice.
-
-Show them how to run code in PyCharm.  Show them how to get a prompt.
-Show them how to make comments!
-
-\newpage
-\lab{\ready This Day in History}
-
-This can be used as a comprehensive review of everything on Exam 1.
-
-\begin{reflect}{Brent, F'18}
-  For this lab they need both mod and integer division, so we covered
-  them briefly at the start of lab.  I also explicitly showed them how
-  to use mod 100 to find the last two digits of a number.  That aspect
-  of the lab went pretty well, most students figured out how to use
-  mod appropriately.
-
-  Common mistakes (aside from the usual confusion over the rule for
-  leap year) included:
-  \begin{itemize}
-  \item Taking the mod of \verb|dow| too early, \emph{i.e.} writing
-    additional code that added offset factors to \verb|dow| in later
-    steps and not reducing it mod 7 afterwards.
-  \item The usual things re conditions \emph{e.g.} writing \texttt{if month
-    == 3 or 5}, or \texttt{if month = 3}, or writing a sequence of
-    \verb|if| instead of \texttt{if... elif... elif}.
-  \end{itemize}
-
-  As an aside, during the lab I wondered how to write the condition
-  for a leap year without using nested conditionals.  Here are four
-  different Boolean expressions I came up with that all work:
-\begin{verbatim}
-(y % 4 == 0) and ((y % 100 == 0) == (y % 400 == 0))
-(y % 4 == 0) and not (y % 100 == 0 and y % 400 != 0)
-(y % 4 == 0) and (y % 100 != 0 or y % 400 == 0)
-(y % 4 == 0) != ((y % 100 == 0) != (y % 400 == 0))
-\end{verbatim}
-  Obviously we would never expect students to come up with any of these!
-\end{reflect}
-
-\begin{reflect}{Brent, F'19}
-  Now that we have converted to using notebooks at the beginning of
-  the course, we included a section introducing them to mod and
-  integer division at the start of the lab, which seemed to work very
-  well!
-\end{reflect}
-
-\newpage
-\class{\ready Exam 1 review}
-
-\subsection*{Setup}
-
-\begin{itemize}
-\item Note we \emph{do} still have lab today/tomorrow!  Should be a
-  nice review for Exam 1.
-\end{itemize}
-
-\subsection*{Sample exam}
-
-Go over sample exam solutions.
-
-\newpage
-\class{\ready Exam 1}
-
-\begin{itemize}
-\item Note, no HW this weekend.
-\end{itemize}
-
-\begin{reflect}{Brent, S'18}
-  Because of pushing exam 1 back one day, I only have \emph{two}
-  lectures instead of three to prepare for Guess My Number lab.  What
-  I plan to do is introduce while loops first (1 lecture), and then a
-  basic intro to functions (1 lecture).  Functions are not actually
-  super necessary for the lab, so it's OK to cover more about
-  functions in another class after the lab.
-
-  In the past I have used functions while doing examples for while
-  loops (\eg testing the Collatz conjecture), but that's not
-  critical---it's easy to do the examples without using loops.  It
-  might even give nice material to motivate the process of function
-  abstraction later.
-\end{reflect}
-
-\begin{reflect}{Brent, F'19}
-  Now that they already have plenty of experience using functions with
-  notebooks, we can just spend the two lectures introducing them to
-  PyCharm, I/O, and while loops.
-\end{reflect}
-
-\newpage
-\class{\ready While loops}
-
-\subsection*{Setup}
-\begin{itemize}
-\item \textbf{Assign Project 1}.  Linked from website. Due 1.5 weeks from
-  today (midnight on Monday).
-\end{itemize}
-
-\subsection*{While loops}
-
-Introduce while loops---this is a momentous day!  Once we add while
-loops you can (in theory) write \emph{any program you can imagine}.
-Note, this also means things get harder!  If you thought stuff up to
-exam 1 was easy, don't get lulled into false sense of security. Spend
-a little bit talking about how to study.
-
-Explain syntax.  Syntax and semantics are very much like \verb|if|
-(without \verb|else|): difference is that \verb|if| executes 0 or 1
-time, \verb|while| executes any number of times (0 or more).
-
-Do an example: count from 1 to 10.  Play with boundary conditions,
-order of statements inside the loop.
-
-% \newpage
-% \class{\notready More while loops, Collatz conjecture}
-
-% \subsection*{Setup}
-% \begin{itemize}
-% \item History: ENIAC.  Watch ENIAC programmers trailer.
-% \item Reminder: projects!  Due Monday.
-% \item Put some code with while loop up for them to figure out what it
-%   does as they come in?
-% \end{itemize}
-
-Point out three usual components of a while loop:
-\begin{itemize}
-\item Declare and initialize variable(s) you need
-\item Write the condition with those variables
-\item Change those variables somewhere in the loop (often at the
-  end)
-\end{itemize}
-
-Do another example: keep printing ``hi'' and asking ``Do you want to
-stop?'' until says yes --- have students write this code together on
-their computers/paper.  Then have two or three share code?  There are
-two decent ways to write this --- using input variable to control loop
-(but then you have to initialize it with a bogus value), or using a
-boolean (sentinel).
-
-\subsection*{Collatz}
-
-Recall Collatz Conjecture.  Idea: write a program to test the
-conjecture.  Start by writing inner loop with a particular starting
-number.  Then put that in a loop to do it repeatedly for different
-numbers.
-
-\textbf{Note:} if not introduced previously, can use this opportunity
-in passing to introduce abbreviated assignment forms like \verb|+=|.
-
-\begin{verbatim}
-n: int = 1
-
-max: int = int(input("Test numbers up to: "))
-
-while n < max:
-    count: int = 0
-    m: int = n
-    while m != 1:
-        if m % 2 == 0:
-            m //= 2
-        else:
-            m = 3*m + 1
-        count += 1
-
-    print(f'{n}: {count}')
-
-    n += 1
-\end{verbatim}
-
-(What happens if we take out \verb|max| check and just say
-\verb|while true|?  A legitimate use of an infinite loop!)
-
-\newpage
-\lab{\ready Guess My Number}
-
-Have the students write both versions of the game (in the first
-version, the computer picks the number; in the second, the computer
-guesses).
-
-\begin{reflect}{Brent, F'18}
-  Went pretty well I think.  As usual:
-  \begin{itemize}
-  \item I saw quite a few students tried to use recursion to do the
-    ``play again'' looping.
-  \item Of course many students struggled to figure out how to have
-    the computer play.
-  \end{itemize}
-\end{reflect}
-
-\newpage
-\class{\notready Functions Revealed}
-
-\subsection*{Setup/administrivia}
-
-\begin{itemize}
-\item \ready HW due Wednesday (function \& loop reading)
-\item Reminder: project 1 due a week from Monday.
-\end{itemize}
-
-\subsection*{Finish while}
-
-First, finish up Collatz example if not done.
-
-\subsection*{More on functions}
-
-\begin{itemize}
-\item From now on, \emph{everything} must be in a function!  Make a
-  \verb|main()| function like on the lab, call to \verb|main()| at the
-  very end.
-
-\item \textbf{They must write a comment before every function!}
-  Comment should clearly explain what the function does.  Points for
-  ``documentation'' category of grading rubric.
-
-\item Function definition makes a variable which is a function
-  object. (Note hex value in output! =) To call it, use parentheses.
-  \textbf{Every function call must always have parentheses after it.}
-
-\item Put function definitions in a script.  Note the definition
-  itself does not cause the function to be executed.  Python goes
-  through the file from top to bottom; when it reaches a definition it
-  simply \emph{remembers} it for later.  This means functions must be
-  defined before they are used, but it is perfectly OK to call a
-  function from inside another function \emph{before} it is defined.
-  So order of function definitions doesn't matter; pick an order that
-  makes sense.
-
-\item The inputs to a function in its definition are called
-  \emph{parameters}.  The actual inputs we give when we call a
-  function are called \emph{arguments}.
-
-\item Variables created inside functions are \textbf{local}!
-  Parameters are also local.  Show some examples.
-
-\item Note we can put types on variables as well as function
-  declaration.
-\end{itemize}
-
-Along the way show PyCharm error highlighting.
-
-\subsection*{Flow of execution \& tracing with stack diagrams}
-
-Execution starts at the first line of a program and continues.  But
-when a function is called, execution jumps to that function, and when
-done picks back up where it left off.  This can get complicated, since
-functions can call other functions!  In general Python has to keep
-track of a ``stack'' of places to resume.  Imagine you were reading a
-book but it told you to go read another book and then come back.  Then
-THAT book told you to go read another book, etc.  You would keep the
-old books, with bookmarks, in a pile.  When you finally finish a book,
-pick up the next book from the top of the pile and continue.
-
-Do an example. Make some functions that call other functions,
-etc. Introduce an error and see the ``traceback''.
-
-Put this on board/screen (see \texttt{stacktrace.py} in lecture notes
-directory):
-\begin{verbatim}
-def g(z: int):
-    z = z*3
-    print(z)
-
-def f(x: int):
-    g(x)
-    g(x + 2)
-    print(x)
-
-f(3)
-\end{verbatim}
-First have them try to predict output.  Compare with others, see if
-they can agree.  Then show them method for formally tracing the
-execution, with space for \textbf{scratch}, \textbf{stack}, and
-\textbf{output}.  Stack grows down from the top.  See template on next page.
-They will do more examples on HW!
-
-\newpage
-\noindent
-  \begin{tabular}{| >{\centering\bfseries}p{2.8in} | >{\centering\arraybackslash\bfseries}p{2.8in} |}
-    \hline
-    Scratch & Stack \\
-    \hline & \\[1in]
-    \cline{2-2} & \\[1in]
-    \cline{2-2} & \\[1in]
-    \cline{2-2} & \\[1in]
-    \cline{2-2} & \\[1in]
-    \hline
-  \end{tabular} \bigskip
-
-  \noindent \textbf{Printed output}
 
 \newpage
 \class{\notready Function Abstraction}
