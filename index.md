@@ -170,6 +170,7 @@ point during the semester.
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Sep 2  | W Sep 7  |
 | 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Sep 9  | W Sep 14 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)
 | 4 | [Function Stack Tracing](homework/function-reading.html)              | F Sep 23 | W Sep 28 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
+| |[HW 4 Redo](/homework/HW4-Redo-Problems.pdf)
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Sep 30 | W Oct 5  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Oct 7  | W Oct 12 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | F Oct 28 | W Nov 2 |
