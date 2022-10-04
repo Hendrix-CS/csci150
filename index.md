@@ -204,9 +204,10 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 7-8 Sep        | 14-15 Sep      |
 | 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 14-15 Sep      | 21-22 Sep      |
 | 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 21-22 Sep      | 28-29 Sep      |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                  | 28-29 Sep      | 5-6 Oct        |
-| 6  | Todo Manager<!---({{site.baseurl}}/labs/todo-manager.html)         --->                   | 5-6 Oct        | 19-20 Oct      |
-| 7  | Caesar’s Secrets<!---(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)     --->     | 19-20 Oct      | 26-27 Oct      |
+| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 28-29 Sep      | 5-6 Oct        |
+| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 5-6 Oct        | 19-20 Oct      |
+|    | *No lab (fall break)*                                                                     | 12-13 Oct      |                |
+| 7  | Caesar's Secrets<!---(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)     --->     | 19-20 Oct      | 26-27 Oct      |
 | 8  | Sentiment Analysis<!---(https://www.kaggle.com/gabrielferrer/sentiment-analysis)  --->    | 26-27 Oct      | 2-3 Nov        |
 | 9  | Water Jugs<!---({{site.baseurl}}/labs/waterjug.html)    --->                              | 2-3 Nov        | 9-10 Nov       |
 | 10 | Faces<!---({{site.baseurl}}/labs/pygame.html)   --->                                      | 9-10 Nov       | 16-17 Nov      |
