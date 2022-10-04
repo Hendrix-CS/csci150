@@ -116,7 +116,7 @@ the lab:
     3) Search
     4) Quit
     Your choice? 4
-	
+
 ## Grading Criteria
 
 * A **Complete** submission includes:
@@ -126,7 +126,7 @@ the lab:
   * All steps up to and including 4.1 complete.
 
 
-## Step 1: Bits and Pieces 
+## Step 1: Bits and Pieces
 
 Create a new Python file called `todo_manager.py`, and put
 your name, date, copyright notice, *etc.* at the top. Also,
@@ -154,7 +154,7 @@ character (`\n`) between each string. For example:
 	yellow
 	blue
 
-#### 1.2 Print Numbered List 
+#### 1.2 Print Numbered List
 
 Write a function called `print_numbered_list(items: List[str])`.
 
@@ -220,9 +220,9 @@ test it**.  For example, you might see something like this:
     1) no way
     OK? 1
     1
-	
 
-## Step 2: Loading and Saving 
+
+## Step 2: Loading and Saving
 
 A todo list manager isn't much good without being able to load and
 save lists of todos!  You wouldn't want to have to type in all your
@@ -268,7 +268,7 @@ Now define a function `main()` which does the following:
      function (see the next paragraph for a helpful hint).
 
 Note that `save_file` expects a string, not a list of strings,
-so you will have call `list_into_lines` to turn your list of strings
+so you will have to call `list_into_lines` to turn your list of strings
 into a single string before calling it.
 
 Again, you should be sure to test your `main()` function. (You can use
@@ -277,28 +277,29 @@ exist, it will be created by `save_file`.)  You should be able to tell
 if the loading and saving is working since after running `main()` your
 todo file should have one more line at the end.
 
-## Step 3: Menu 
+## Step 3: Menu
 
-Now modify your `main()` function so it lets the user repeatedly
-choose options from a menu.
+Now we will modify your `main()` function so it lets the user
+repeatedly choose options from a menu.
 
-First, create a list of strings
-representing the different menu choices that will be available to the
-user: there should be an option to add a todo, remove a todo, replace a
-todo, search for a todo, or quit.
+First, create a list of strings representing the different menu
+choices that will be available to the user: there should be an option
+to add a todo, remove a todo, replace a todo, search for a todo, or
+quit.
 
-Now, replace steps 3 and 4 from the list of steps above with a loop:
+Now, delete the code from `main()` thats prints the list and adds a
+fake todo item to the end, and replace it with a loop:
 * The loop will exit when the user selects option `4`.
 * At each iteration of the loop:
   * Using `print_numbered_list`, display the current todo list.
   * Using `get_choice`, request a menu option from the user, using the
     list of menu options you created earlier.
-	
-At this point the only active menu choice is the
-option to quit. Nothing will actually happen when they choose 
-anything else from the menu; you will fix that in the next step.
 
-## Step 4: Operations 
+At this point the only active menu choice is the option to
+quit. Nothing will actually happen when you choose anything else from
+the menu; you will fix that in the next step.
+
+## Step 4: Operations
 
 Now it's time to actually implement the operations!  Below are
 descriptions of what the different menu choices should do.  You can
@@ -308,12 +309,12 @@ inspiration.
 **Be sure to test that each operation works before moving on to the
 next!**
 
-#### 4.1 add 
+#### 4.1 add
 
 If the user chooses to add a new todo item, you should prompt them for
 a new todo and add it to the end of the list.
 
-#### 4.2 remove 
+#### 4.2 remove
 
 If the user chooses to remove a todo item, you should
 use `get_choice` to ask for the index of the item they
@@ -325,7 +326,7 @@ and the user's choice is stored in a variable
 called `choice`, you could
 write `todos.pop(choice)`.
 
-#### 4.3 replace 
+#### 4.3 replace
 
 This should work similarly to remove: ask the user which item they
 would like to replace; if they make a valid choice, prompt them for a
@@ -333,7 +334,7 @@ new todo item, and replace the item at the index they chose.  (*Hint*:
 replacing an item should be only one line of code!  Look in your notes
 from class if you don't remember how to do it.)
 
-#### 4.4 search 
+#### 4.4 search
 
 You should first write a function
 <pre>
@@ -366,3 +367,5 @@ nice or add your own extra features.
 ## What to turn in
 
 * `todo_manager.py`
+    - Make sure you address any Pycharm style warnings before turning
+      in your code!
