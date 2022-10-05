@@ -1487,125 +1487,11 @@ Can mention something about how video and audio are represented.
 \end{itemize}
 
 \newpage
-\class{\notready Function Abstraction}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Reminder: HW due Wednesday with quiz: functions (tracing with
-  stack) and loops
-\item Project 1 due today (any time today).
-\end{itemize}
-
-\subsection*{Why functions?}
-
-Get them to discuss why this is a worthwhile feature.  Why define
-functions?  Pair \& share.
-
-From Downey:
-
-\begin{itemize}
-\item Creating a new function gives you an opportunity to name a group
-  of statements, which makes your program easier to read and debug.
-\item  Functions can make a program smaller by eliminating repetitive code.
-  Later, if you make a change, you only have to make it in one place.
-\item Dividing a long program into
-  functions allows you to debug the parts one at a time and then
-  assemble them into a working whole.
-\item Well-designed functions are often useful for many programs.
-  Once you write and debug one, you can reuse it.
-\end{itemize}
-
-\subsection*{Function abstraction}
-
-Start with this code to play a simple guessing game (see
-\verb|code/hilow.py|):
-
-\begin{verbatim}
-import random
-
-repeat = "yes"
-while repeat == "yes":
-    print("This is the game of HIGH and LOW. The computer will pick a")
-    print("random number, and you will need to guess if the next number")
-    print("picked by the computer will be higher than the current")
-    print("number. You get 10 chances to guess.")
-    count = 0
-    correct = 0
-    r = random.randint(1, 10)
-    while count < 10:
-        print(f"The current number is {r}.")
-        guess = input("Do you think the next number will be higher (yes or no)? ")
-        next_r = random.randint(1, 10)
-        print(f"The next number is {next_r}.")
-        if (guess == "yes" and next_r > r) or (guess == "no" and next_r <= r):
-            correct += 1
-            print("You were right!")
-        else:
-            print("Sorry, you were wrong.")
-        r = next_r
-        count += 1
-    print(f"You got {correct} out of {count} guesses correct!")
-    repeat = input("Do you want to play again? ")
-print("Thanks for playing!")
-\end{verbatim}
-
-Get them to make suggestions, work on decomposing it into functions.
-Things to emphasize along the way:
-
-\begin{itemize}
-\item Functions are for decomposing tasks \emph{hierarchically}.
-  Functions aren't for chaining: \emph{i.e.}\ a function should \emph{not}
-  call ``the thing that happens next'' as the last line. Can show them
-  something like this example:
-\begin{verbatim}
-# BAD
-
-def f1():
-    do some stuff
-    f2()
-
-def f2():
-    do more stuff
-    f3()
-
-def f3():
-    yet more stuff
-\end{verbatim}
-  Instead it should be decomposed like so:
-\begin{verbatim}
-# GOOD
-
-def main():
-    f1()   # first step
-    f2()   # second step
-    f3()   # third step
-
-def f1():
-    do some stuff
-    # f1 doesn't know or care what comes next after it.
-    # That's main's job.
-
-def f2():
-    do more stuff
-
-def f3():
-    yet more stuff
-\end{verbatim}
-\item Managing information flow is very important.  Decide which
-  function ``owns'' a variable.  To get it to another function---give
-  it to the function as an argument.  To get a value back---return it,
-  then save it in a variable.
-\end{itemize}
-
-\newpage
-\class{Strings}
+\class{\ready Strings}
 
 \subsection*{Setup}
 \begin{itemize}
 \item Collect HW (function/loop tracing).
-\item \notready Quiz: function tracing
-  (\texttt{csci150-instructors/quiz/function-tracing.py}).  Draw
-  template on board to remind them, then put code on projector.
 \end{itemize}
 
 \begin{reflect}{Brent}
@@ -1711,12 +1597,11 @@ We know about strings, but we can't actually do anything with them yet.
 \end{reflect}
 
 \newpage
-\class{\notready More string \& loop practice; sentinel loops}
+\class{\ready More string \& loop practice; sentinel loops}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \notready Show them HW: CodingBat string \& loop practice
-\item Show them Python Tutor.
+\item \ready Show them HW: CodingBat string \& loop practice
 \end{itemize}
 
 Today's focus is on getting the students to do more hands-on exercises
@@ -1863,14 +1748,8 @@ def triangle(n: int):
         rowCount += 1
 \end{verbatim}
 
-
 \newpage
-\class{\notready Lists I}
-
-\subsection*{Setup}
-\begin{itemize}
-\item String quiz on Wednesday.
-\end{itemize}
+\class{\ready Lists I}
 
 \subsection*{Lists}
 
@@ -2020,15 +1899,18 @@ def read_inputs2():
 \end{verbatim}
 
 \newpage
-\class{\notready Lists II}
+\class{\ready Lists II}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item \notready \textbf{Quiz} (strings): see
-  \texttt{csci150-instructors/quiz/string.py}
-\item Quiz retakes!
+\item Show them Python Tutor.
 \end{itemize}
+
+\subsection*{Element testing}
+
+You can use \verb|in| to test whether something is an element of a
+list.  Show some examples.  Can also use with strings.
 
 \subsection*{Lists and strings}
 
@@ -2069,6 +1951,12 @@ not actually the same.
 \end{itemize}
 
 \subsection*{List appending practice}
+
+\begin{reflect}{Brent, F'22}
+  Probably going to skip this time around.  We only have 2 days for
+  lists instead of 3.  More important to get practice writing list
+  functions.
+\end{reflect}
 
 Have students find a partner. Suppose \verb|animals| is a list of
 strings, how can you append 3 copies of \verb|"gerbil"| onto the end?
@@ -2156,60 +2044,7 @@ animals = ['skua', 'killer whale', 'spider', 'orangutan', 'goat']
 
 \subsection*{More list practice}
 
-\textbf{If} there's class time left (I don't plan to have any left),
-could have them practice writing one or more of these functions.
-Otherwise we will do more list function writing practice on Friday.
-
-\begin{verbatim}
-from typing import *
-
-# Find the sum of a list of integers.
-def listsum(nums: List[int]) -> int:
-    i = 0
-    s = 0
-    while i < len(nums):
-        s += nums[i]
-        i += 1
-    return s
-
-# Find the product of a list of integers.
-def listprod(nums: List[int]) -> int:
-    i = 0
-    p = 1
-    while i < len(nums):
-        p *= nums[i]
-        i += 1
-    return p
-
-# Find the maximum value in a nonempty list of
-# integers.
-def listmax(nums: List[int]) -> int:
-    m = nums[0]
-    i = 1
-    while i < len(nums):
-        if nums[i] > m:
-            m = nums[i]
-        i += 1
-    return m
-\end{verbatim}
-
-\newpage
-\lab{Todo manager}
-
-\begin{reflect}{Brent, F'19}
-  Lab seemed to go really well this semester.  It was exhausting since
-  I spent the entire time going from group to group helping---as soon
-  as I finished helping one group there was always another group
-  wanting help.  But everyone seemed to be making good productive
-  progress.
-\end{reflect}
-
-\newpage
-\class{\notready Lists III}
-
-\subsection*{Setup}
-
-Have them work in pairs (randomly assigned?) to write some list
+Have them work in groups (randomly assigned?) to write some list
 practice functions.  Pick some of the following.
 
 \begin{verbatim}
@@ -2244,6 +2079,46 @@ def listmax(nums: List[int]) -> int:
         i += 1
     return m
 
+# given a list of integers, lst, and a single integer n,
+# count how many integers in lst are smaller than n
+def small_count(lst: List[int], n: int) -> int:
+
+    i = 0
+    count = 0
+    while i < len(lst):
+        if lst[i] < n:
+            count += 1
+        i += 1
+
+# given a list of strings and a character, return a count of the
+# number of strings (i.e. items in the list)
+# which contain at least one occurrence of the character.
+
+def count_occur(lst: List[str], s: str) -> int:
+    i = 0
+    count = 0
+    while i < len(lst):
+        if s in lst[i]:
+            count += 1
+        i += 1
+
+    return count
+
+# given a list of strings, each of which is a single lower case word, 
+# return True if the list is in alphabetical order
+
+def alpha_order(lst: List[str]) -> bool:
+
+    i = 0
+
+    while i < len(lst)-1:
+
+        if lst[i+1] < lst[i]:
+            return False
+
+        i += 1
+    return True
+
 # Find the index of the given string in the list, or return -1 if the
 # list does not contain the string.
 def listfind(search_term: str, lst: List[str]) -> int:
@@ -2267,6 +2142,135 @@ def onlyevens(lst: List[int]) -> List[int]:
 
     return result
 \end{verbatim}
+
+\newpage
+\lab{Todo manager}
+
+\begin{reflect}{Brent, F'19}
+  Lab seemed to go really well this semester.  It was exhausting since
+  I spent the entire time going from group to group helping---as soon
+  as I finished helping one group there was always another group
+  wanting help.  But everyone seemed to be making good productive
+  progress.
+\end{reflect}
+
+\newpage
+\class{\notready Function Abstraction}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: HW due Wednesday with quiz: functions (tracing with
+  stack) and loops
+\item Project 1 due today (any time today).
+\end{itemize}
+
+\subsection*{Why functions?}
+
+Get them to discuss why this is a worthwhile feature.  Why define
+functions?  Pair \& share.
+
+From Downey:
+
+\begin{itemize}
+\item Creating a new function gives you an opportunity to name a group
+  of statements, which makes your program easier to read and debug.
+\item  Functions can make a program smaller by eliminating repetitive code.
+  Later, if you make a change, you only have to make it in one place.
+\item Dividing a long program into
+  functions allows you to debug the parts one at a time and then
+  assemble them into a working whole.
+\item Well-designed functions are often useful for many programs.
+  Once you write and debug one, you can reuse it.
+\end{itemize}
+
+\subsection*{Function abstraction}
+
+Start with this code to play a simple guessing game (see
+\verb|code/hilow.py|):
+
+\begin{verbatim}
+import random
+
+repeat = "yes"
+while repeat == "yes":
+    print("This is the game of HIGH and LOW. The computer will pick a")
+    print("random number, and you will need to guess if the next number")
+    print("picked by the computer will be higher than the current")
+    print("number. You get 10 chances to guess.")
+    count = 0
+    correct = 0
+    r = random.randint(1, 10)
+    while count < 10:
+        print(f"The current number is {r}.")
+        guess = input("Do you think the next number will be higher (yes or no)? ")
+        next_r = random.randint(1, 10)
+        print(f"The next number is {next_r}.")
+        if (guess == "yes" and next_r > r) or (guess == "no" and next_r <= r):
+            correct += 1
+            print("You were right!")
+        else:
+            print("Sorry, you were wrong.")
+        r = next_r
+        count += 1
+    print(f"You got {correct} out of {count} guesses correct!")
+    repeat = input("Do you want to play again? ")
+print("Thanks for playing!")
+\end{verbatim}
+
+Get them to make suggestions, work on decomposing it into functions.
+Things to emphasize along the way:
+
+\begin{itemize}
+\item Functions are for decomposing tasks \emph{hierarchically}.
+  Functions aren't for chaining: \emph{i.e.}\ a function should \emph{not}
+  call ``the thing that happens next'' as the last line. Can show them
+  something like this example:
+\begin{verbatim}
+# BAD
+
+def f1():
+    do some stuff
+    f2()
+
+def f2():
+    do more stuff
+    f3()
+
+def f3():
+    yet more stuff
+\end{verbatim}
+  Instead it should be decomposed like so:
+\begin{verbatim}
+# GOOD
+
+def main():
+    f1()   # first step
+    f2()   # second step
+    f3()   # third step
+
+def f1():
+    do some stuff
+    # f1 doesn't know or care what comes next after it.
+    # That's main's job.
+
+def f2():
+    do more stuff
+
+def f3():
+    yet more stuff
+\end{verbatim}
+\item Managing information flow is very important.  Decide which
+  function ``owns'' a variable.  To get it to another function---give
+  it to the function as an argument.  To get a value back---return it,
+  then save it in a variable.
+\end{itemize}
+
+
+\newpage
+\class{\notready Lists III}
+
+\subsection*{Setup}
+
 
 \newpage
 \class{\notready For loops}
