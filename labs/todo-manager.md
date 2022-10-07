@@ -154,6 +154,10 @@ character (`\n`) between each string. For example:
 	yellow
 	blue
 
+**Hint**: you should not need a `while` loop!  It is possible to
+implement this function in only one line of code.  Look at your notes
+from class!
+
 #### 1.2 Print Numbered List
 
 Write a function called `print_numbered_list(items: List[str])`.
