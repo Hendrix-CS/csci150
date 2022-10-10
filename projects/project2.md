@@ -21,8 +21,6 @@ several of the following concepts we have discussed in class:
 *   Strings
 *   Lists
 *   File input/output
-*   Dictionaries
-*   Classes and Objects
 
 (It is not an absolute requirement for your program to contain every
 single one of the above elements; but if it does not need most of them,
@@ -32,7 +30,8 @@ other.
 
 Some examples include:
 
-*   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows) *using words, not numbers*
+*   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows)
+    (using **words**, not numbers) or [Wordle](https://en.wikipedia.org/wiki/Wordle)
 *   [Hangman](https://en.wikipedia.org/wiki/Hangman_(game))
 *   [Last Letter First
     Letter](http://www.greatschools.org/students/activities/slideshows/2812-family-word-games.gs?page=3)
@@ -43,7 +42,7 @@ Some examples include:
 *   a program to let a user solve a
     [Cryptogram](http://en.wikipedia.org/wiki/Cryptogram)
 
-**Do not feel limited by the games on this list**. Find a game that
+**Do not feel limited by the games on this list**. Find a word game that
 interests you and implement it. If you choose something else, check with
 one of your instructors first, so we can advise you on the scope of your project.
 
@@ -102,5 +101,6 @@ You must hand in all files necessary to run your code.
   * Has at least three levels of difficulty.
   * Offers the chance to play the game again when finished.
   * Enables the user to correct mistakes in the entry of information.
-  * Makes good use of functions.
-  * Contains no "spaghetti code".
+  * Makes good use of functions to structure the project.
+    - Functions are relatively short and conceptually do a single job
+    - Functions are used to hierarchically decompose the program
