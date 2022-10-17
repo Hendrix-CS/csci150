@@ -2374,13 +2374,55 @@ def contains(haystack: List[int], needle: int) -> bool:
 \end{verbatim}
 
 \newpage
-\class{\notready More for loops: index ranges}
+\class{\ready More for loops: index ranges}
 
-\subsection*{Setup}
+Let's practice writing a function together using a for loop.
+\begin{verbatim}
+# Find the index of the first occurrence of needle in haystack, or -1
+# if it is not found.
+def find(needle: str, haystack: str):
+    for c in haystack:
+        if c == needle:
+            return ???  # What do we return here?
+    return -1
+\end{verbatim}
+
+Doesn't work, since we don't have the index!
 \begin{itemize}
-\item Quiz: lists
+\item Show them \verb|range|.  Type \verb|range(4,10)| at the prompt;
+  doesn't evaluate.  We can turn it into a list with \verb|list| to
+  see what it is: \verb|[4, 5, 6, 7, 8, 9]|.  Just like a slice: start
+  at first index, up to but not including the last.
+\item If we only give one index, it's like a slice without the first
+  index: start at zero, go up to but not including the last.
+  e.g. show \verb|range(10)|.
+\item Hence we can get all the indices of a list with
+  \verb|range(len(lst))|.
 \end{itemize}
 
+We can now do a for loop over a range.  This gives us access to the
+indices but still better than a while loop.
+
+\begin{verbatim}
+# Return the index of the first occurrence of character target in s, or -1 if it
+# is not found.
+def find(s: str, target: str):
+    for i in range(len(s)):
+        if s[i] == target:
+            return i
+    return -1
+\end{verbatim}
+
+There are other reasons we might want to talk about the indices
+explicitly:
+\begin{itemize}
+\item To use or remember an index for later
+\item To loop over two lists at the same time
+\item To compare items that are next to each other
+\item To be able to modify the contents of a list item.
+\end{itemize}
+
+We'll see examples of all of these.  Let's practice.
 
 Show them, or recall, an example like this:
 \begin{verbatim}
@@ -2402,50 +2444,10 @@ the indices, since the only way to change an element in a list is to
 say something like \verb|animals[2] = ...| We can do this using
 \verb|range|.
 
-\begin{itemize}
-\item Show them \verb|range|.  Type \verb|range(4,10)| at the prompt;
-  doesn't evaluate.  We can turn it into a list with \verb|list| to
-  see what it is: \verb|[4, 5, 6, 7, 8, 9]|.  Just like a slice: start
-  at first index, up to but not including the last.
-\item If we only give one index, it's like a slice without the first
-  index: start at zero, go up to but not including the last.
-  e.g. show \verb|range(10)|.
-\item Hence we can get all the indices of a list with
-  \verb|range(len(lst))|.
-\end{itemize}
-
 Like so:
 \begin{verbatim}
 for i in range(len(animals)):
     animals[i] += '!'
-\end{verbatim}
-
-There are other reasons we might want to talk about the indices
-explicitly:
-\begin{itemize}
-\item To use or remember an index for later
-\item To loop over two lists at the same time
-\item To compare items that are next to each other
-\end{itemize}
-
-We'll see examples of all of these.  Let's practice.  Do one together first:
-\begin{verbatim}
-# Return the index of the first occurrence of character target in s, or -1 if it
-# is not found.
-def find(s: str, target: str):
-    for i in range(len(s)):
-        if s[i] == target:
-            return i
-    return -1
-\end{verbatim}
-Notice how we needed the index so we could return it!  This won't
-work (maybe show this one first to show why it doesn't work):
-\begin{verbatim}
-def find(s: str, target: str):
-    for c in s:
-        if c == target:
-            return ???  # What do we return here?
-    return -1
 \end{verbatim}
 
 Now have them do one:
@@ -2574,26 +2576,87 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 
 \holiday{Fall break}
 
-\lab{\notready Caesar's Secrets}
+\newpage
+\class{\ready File I/O}
 
-\begin{reflect}{Brent, S'17}
-  This lab seemed to go well, though it's definitely hard.  Most
-  students were not finished by the end of the lab period.
-\end{reflect}
+\begin{itemize}
+\item \ready Practice exam is posted on the class website.  Talk
+  about some good study strategies.  Study \emph{for} the practice
+  exam, then take it under test conditions!  Come in on Friday ready
+  to go over it with other students.
+\end{itemize}
 
-\begin{reflect}{Brent, S'18}
-  Only had time to introduce for loops at the very end of the lecture
-  right before the lab.  So spent some time at the beginning of the
-  lab doing more exercises writing for loops, with mixed success (I
-  think it went better in Mark's lab than in mine).  In the end most
-  students were making progress on the lab by the end; a few had
-  finished; a few were just getting encrypt/decrypt to work.
-\end{reflect}
+Our programs have no state between each time they are called.
+Everything is stored in memory (RAM) during the program, but
+afterwards, it's all gone.  We need hard drive storage to keep it
+around.  Talk a bit about difference between RAM and hard disk, why we
+need both.
 
-\begin{reflect}{Brent, F'18}
-  Much, much better this year, with more time spent on lists and for
-  loops leading up to it!
-\end{reflect}
+Data is stored on hard disk in \emph{files}.  We gave you code to
+read/write files for todo manager lab, but now we're going to learn
+how to do it.  You may find it useful on your word game project;
+you'll get more practice on next week's lab.
+
+Note a file is just a sequence of bits.  Use hexdump to show
+\texttt{english3.txt}.
+
+\subsection*{Reading from a file}
+
+To read from a file:
+
+\begin{verbatim}
+fin = open("myfile.txt", "r")
+\end{verbatim}
+
+Two ways to get stuff out of the file.
+
+\begin{verbatim}
+s = fin.read()
+\end{verbatim}
+
+which returns a string that includes all the carriage returns, or
+
+\begin{verbatim}
+for line in fin.readlines():
+    l = line.strip()
+\end{verbatim}
+
+which strips them out of each line as it is added. \verb|readlines()|
+returns a list of strings.
+
+After both, say \verb|fin.close()| to finish accessing the file.
+
+Examples:
+\begin{itemize}
+\item Read in this python file as a string with \verb|read()|, look at
+  length etc.
+\item Read in \verb|english3.txt| using \verb|read()|, then using
+  \verb|readlines()|.  Make a wordlist, count the number of words that
+  don't contain the letter e.
+\item Read in ???, split lines separated by space?
+\end{itemize}
+
+\subsection*{Writing to a file}
+
+To write to a file:
+
+\begin{verbatim}
+fout = open("myfile.txt", "w")
+\end{verbatim}
+
+WARNING! This will overwrite the file if it exists!
+
+Then to save data in the file, write out as strings:
+
+\begin{verbatim}
+fout.write("hello")
+fout.write("world")
+fout.close()
+\end{verbatim}
+Note the need for newline characters.
+
+Example: define \verb|make_file| function which prompts the user for
+a list of strings, then writes them all to a file.
 
 \newpage
 
@@ -2729,6 +2792,27 @@ def main():
 
 Then go over it carefully.
 
+\lab{\notready Caesar's Secrets}
+
+\begin{reflect}{Brent, S'17}
+  This lab seemed to go well, though it's definitely hard.  Most
+  students were not finished by the end of the lab period.
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Only had time to introduce for loops at the very end of the lecture
+  right before the lab.  So spent some time at the beginning of the
+  lab doing more exercises writing for loops, with mixed success (I
+  think it went better in Mark's lab than in mine).  In the end most
+  students were making progress on the lab by the end; a few had
+  finished; a few were just getting encrypt/decrypt to work.
+\end{reflect}
+
+\begin{reflect}{Brent, F'18}
+  Much, much better this year, with more time spent on lists and for
+  loops leading up to it!
+\end{reflect}
+
 \newpage
 \class{\notready Dictionaries}
 
@@ -2845,7 +2929,7 @@ def frequency_counts(s: str) -> Dict[str, float]:
 \end{reflect}
 
 \newpage
-\class{\notready File I/O, dictionary practice}
+\class{\notready dictionary practice}
 
 
 % \begin{itemize}
