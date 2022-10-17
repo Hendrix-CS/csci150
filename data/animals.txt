@@ -1,0 +1,6 @@
+spider 8 1
+octopus 8 5
+eagle 2 5
+dog 4 3
+ant 6 4
+starfish 5 5
