@@ -141,6 +141,7 @@ Upon completing this course, our goal is for you to be able to:
 [y-abstraction-video]: https://hendrix.sharepoint.com/sites/Section_28123/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F28123%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F7%5F%20Function%20Abstraction%2D20221007%5F111027%2DMeeting%20Recording%2Emp4
 [y-for-video]: https://hendrix.sharepoint.com/sites/Section_28123/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F28123%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F10%5F%20for%20loops%2D20221010%5F111042%2DMeeting%20Recording%2Emp4
 [y-for2-video]: https://hendrix.sharepoint.com/sites/Section_28123/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F28123%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F12%5F%20more%20for%20loops%2D20221012%5F111430%2DMeeting%20Recording%2Emp4
+[y-io-video]: https://hendrix.sharepoint.com/sites/Section_28123/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F28123%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F17%5F%20file%20I%5FO%2D20221017%5F111103%2DMeeting%20Recording%2Emp4
 
 <hr>
 # Coursework
@@ -211,7 +212,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 28-29 Sep      | 5-6 Oct        |
 | 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 5-6 Oct        | 19-20 Oct      |
 |    | *No lab (fall break)*                                                                     | 12-13 Oct      |                |
-| 7  | Caesar's Secrets<!---(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)     --->     | 19-20 Oct      | 26-27 Oct      |
+| 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 19-20 Oct      | 26-27 Oct      |
 | 8  | Sentiment Analysis<!---(https://www.kaggle.com/gabrielferrer/sentiment-analysis)  --->    | 26-27 Oct      | 2-3 Nov        |
 | 9  | Water Jugs<!---({{site.baseurl}}/labs/waterjug.html)    --->                              | 2-3 Nov        | 9-10 Nov       |
 | 10 | Faces<!---({{site.baseurl}}/labs/pygame.html)   --->                                      | 9-10 Nov       | 16-17 Nov      |
