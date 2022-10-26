@@ -2144,7 +2144,7 @@ def onlyevens(lst: List[int]) -> List[int]:
 \end{verbatim}
 
 \newpage
-\lab{Todo manager}
+\lab{\ready Todo manager}
 
 \begin{reflect}{Brent, F'19}
   Lab seemed to go really well this semester.  It was exhausting since
@@ -2660,14 +2660,7 @@ a list of strings, then writes them all to a file.
 
 \newpage
 
-\class{\notready Mutability, objects, and references}
-
-\subsection*{Setup}
-
-\begin{itemize}
-\item Assign HW: ??? (due Wednesday)
-\item Quiz Wednesday on for loops.
-\end{itemize}
+\class{\ready Mutability, objects, and references}
 
 Warm-up: what happens here?  Find partner \& decide.
 \begin{verbatim}
@@ -2792,7 +2785,8 @@ def main():
 
 Then go over it carefully.
 
-\lab{\notready Caesar's Secrets}
+\newpage
+\lab{\ready Caesar's Secrets}
 
 \begin{reflect}{Brent, S'17}
   This lab seemed to go well, though it's definitely hard.  Most
@@ -2814,17 +2808,59 @@ Then go over it carefully.
 \end{reflect}
 
 \newpage
-\class{\notready Dictionaries}
-
-\subsection*{Setup}
+\class{\ready Exam 2 review}
 
 \begin{itemize}
-\item Remember HW (for loop reading practice) and quiz Wednesday.
-\item Exam 2 is one week from today.  Practice exam linked from
-  website.  We will go over it in class on Friday.
+\item Put them in pairs and have them go through exam together.
 \end{itemize}
 
-\subsection*{Dictionaries}
+\class{\ready Exam 2}
+
+\begin{reflect}{Brent, S'16}
+  In the Fall 2015 semester, Exam 2 was on the Wednesday right before
+  Fall Break.  In Spring 2016, it was on a Tuesday two weeks before
+  spring break. (The ``normal'' thing would have been to have the exam
+  review day on Friday, then the exam on Monday, and no lab on
+  Tuesday, but I was at SIGCSE on the Friday, so I gave them the
+  practice exam over the weekend while I was at SIGCSE, spent Monday
+  reviewing the practice exam, and held the exam during the lab slot
+  for that week.)
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  In Spring 2017, Exam 2 was on a Wednesday a week and a half before
+  spring break.  For lab the following day (Thursday) I had them start
+  on their projects, \emph{i.e.} not leave lab until they had a solid
+  project idea.
+
+  As usual this exam was a doozy. Average class score on the exam was
+  71, median 73.5, max 100 ($\times 2$), min 21 (ouch).
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Again the Wednesday 1.5 weeks before spring break; lab the same \&
+  following days again was used to start on project 2.
+
+  Average was much higher this time, 83.  I made it a bit easier by
+  not requiring them to *write* any for loops (though they still had
+  to read several).
+\end{reflect}
+
+\begin{reflect}{Brent, F'18}
+  Again on the Wednesday right before fall break.  This time the exam
+  didn't even have for loops at all, since we spent more time
+  practicing with lists and put off for loops until after the exam.
+  Average was back down in the 71--73 range, min 28, max 100---pretty
+  much the same distribution as S'17.
+\end{reflect}
+
+\begin{reflect}{Brent, F'19}
+  Mark's section had a higher average this year (84), mine averaged
+  76, still higher than previous years.  Low was a 40.
+\end{reflect}
+
+\newpage
+\class{\ready Dictionaries}
 
 Recall lists.  Draw an alternate picture of lists as a mapping from
 indices to values. For example \verb|['tapir', 'ferret', 'alligator']|
@@ -2852,6 +2888,7 @@ Show how to make this dictionary.
 \begin{itemize}
 \item Write using curly braces and colons.
 \item Alternatively, start with empty one and add them.
+\item Show type \texttt{Dict[k,v]}.
 \end{itemize}
 
 Dictionaries are like functions mapping keys to values.  Consequences:
@@ -2929,69 +2966,7 @@ def frequency_counts(s: str) -> Dict[str, float]:
 \end{reflect}
 
 \newpage
-\class{\notready dictionary practice}
-
-
-% \begin{itemize}
-% \item \notready Practice exam is posted on the class website.  Talk
-%   about some good study strategies.  Study \emph{for} the practice
-%   exam, then take it under test conditions!  Come in on Monday ready
-%   to go over it with other students.
-% \end{itemize}
-
-
-Our programs have no state between each time they are called.
-Everything is stored in memory during the program, but afterwards,
-it's all gone.  This is RAM.  We need hard drive storage to keep it
-around.  Save and read things in files.
-
-To write to a file:
-
-\begin{verbatim}
-fout = open("myfile.txt", "w")
-\end{verbatim}
-
-then to save data in the file, write out as strings:
-
-\begin{verbatim}
-fout.write("hello\n")
-fout.write("world\n")
-fout.close()
-\end{verbatim}
-Note the newline characters.
-
-To read from a file:
-
-\begin{verbatim}
-fin = open("myfile.txt", "r")
-\end{verbatim}
-
-Two ways to get stuff out of the file.
-
-\begin{verbatim}
-s = fin.read()
-\end{verbatim}
-
-which returns a string that includes all the carriage returns, or
-
-\begin{verbatim}
-s = ""
-for line in fin.readlines():
-    s += line.strip()
-\end{verbatim}
-
-which strips them out of each line as it is added. \verb|readlines()|
-returns a list of strings.
-
-After both, say \verb|fin.close()| to finish accessing the file.
-
-\subsection*{Dictionary practice}
-
-FINISH writing \verb|frequency_count| and \verb|normalize| from last
-class.  Maybe run them on the contents of a file.
-
-\newpage
-\lab{\notready Sentiment Analysis}
+\lab{\ready Sentiment Analysis}
 
 \begin{reflect}{Brent, S'16}
   I wrote this lab fresh in S'16, based on a Nifty Assignment @
@@ -3002,58 +2977,10 @@ class.  Maybe run them on the contents of a file.
 \end{reflect}
 
 \newpage
-\class{\notready Exam 2 review}
+\class{\notready Dictionary practice}
 
-\begin{itemize}
-\item Put them in pairs and have them go through exam together.
-\end{itemize}
-
-\class{\notready Exam 2}
-
-\begin{reflect}{Brent, S'16}
-  In the Fall 2015 semester, Exam 2 was on the Wednesday right before
-  Fall Break.  In Spring 2016, it was on a Tuesday two weeks before
-  spring break. (The ``normal'' thing would have been to have the exam
-  review day on Friday, then the exam on Monday, and no lab on
-  Tuesday, but I was at SIGCSE on the Friday, so I gave them the
-  practice exam over the weekend while I was at SIGCSE, spent Monday
-  reviewing the practice exam, and held the exam during the lab slot
-  for that week.)
-\end{reflect}
-
-\begin{reflect}{Brent, S'17}
-  In Spring 2017, Exam 2 was on a Wednesday a week and a half before
-  spring break.  For lab the following day (Thursday) I had them start
-  on their projects, \emph{i.e.} not leave lab until they had a solid
-  project idea.
-
-  As usual this exam was a doozy. Average class score on the exam was
-  71, median 73.5, max 100 ($\times 2$), min 21 (ouch).
-\end{reflect}
-
-\begin{reflect}{Brent, S'18}
-  Again the Wednesday 1.5 weeks before spring break; lab the same \&
-  following days again was used to start on project 2.
-
-  Average was much higher this time, 83.  I made it a bit easier by
-  not requiring them to *write* any for loops (though they still had
-  to read several).
-\end{reflect}
-
-\begin{reflect}{Brent, F'18}
-  Again on the Wednesday right before fall break.  This time the exam
-  didn't even have for loops at all, since we spent more time
-  practicing with lists and put off for loops until after the exam.
-  Average was back down in the 71--73 range, min 28, max 100---pretty
-  much the same distribution as S'17.
-\end{reflect}
-
-\begin{reflect}{Brent, F'19}
-  Mark's section had a higher average this year (84), mine averaged
-  76, still higher than previous years.  Low was a 40.
-\end{reflect}
-
-\holiday{Spring break}
+FINISH writing \verb|frequency_count| and \verb|normalize| from last
+class.  Maybe run them on the contents of a file.
 
 \newpage
 \class{\notready Project 2 demo}
