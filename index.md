@@ -271,7 +271,7 @@ submitted by the start of the next class period.
 * Exam 2: Monday, October 24, covering input/output, `while` loops,
   strings , and lists
     - [Exam #2 Practice](/exams/cs150-exam2-practice-fall2022.pdf)
-    - [Exam #2 Redo](/exams/exam2-redo-fall-2022.pdf)
+    - [Exam #2 Redo](/exams/exam2-redo-fall2022.pdf)
 * Exam 3: Monday, November 21, covering  the heap, dictionaries,  and classes.
 
 There is no final exam; you will complete a final project instead, as
