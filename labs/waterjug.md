@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 10
+num: 9
 worktitle: Water Jugs
 ---
 
@@ -21,7 +21,7 @@ things will explode and people will die.
 
 * A **Complete** submission includes:
   * All 3 steps complete.
-  * On Steps 2 and 3, the solution is decomposed in a natural way 
+  * On Steps 2 and 3, the solution is decomposed in a natural way
     into at least two functions.
   * No Pycharm style warnings.
 * A **Partially Complete** submission includes:
@@ -57,7 +57,7 @@ We now have exactly 2 gallons of water jug in A.  (Try it!).  Phew,
 we're still alive!  Wouldn't it be nice to have a computer program
 to help us solve this?
 
-## Step 1: The `WaterJug` class 
+## Step 1: The `WaterJug` class
 
 Open a file named `waterjug.py`. In this file, you will define
 the `WaterJug` class. Each `WaterJug` object will need to have two variables
@@ -75,14 +75,14 @@ Methods:
   * `empty(self)` to completely empty the `WaterJug`
   * `pour(self, other: 'WaterJug')` to pour as much of the contents of this `WaterJug` into the other as is allowed
 
-Implement this class in Python. Here is an incomplete implementation you can use 
+Implement this class in Python. Here is an incomplete implementation you can use
 as a guide:
 
     class WaterJug:
         def __init__(self, capacity: int, contents: int):
             self.capacity = capacity
             self.contents = contents
-			
+
         def __repr__(self):
             return f'WaterJug(capacity={self.capacity},contents={self.contents})'
 
@@ -122,7 +122,7 @@ as a guide:
 
     if __name__ == '__main__':
         test()
-    
+
 
 
 {% include warning.html content="Be careful with your methods to make
@@ -133,14 +133,14 @@ than `capacity`." %}
 
 {% include tip.html content="Don't forget where to use the `self` keyword." %}
 
-### Testing the WaterJug class 
+### Testing the WaterJug class
 
 At the end of your file, we included some tests. The test code uses all
-of the methods of the class.  
+of the methods of the class.
 
-Each test uses Python's `assert` statement to determine if the code is correct 
-at that point. An assertion is a claim that a given statement is true. If the 
-statement is not true, the program ends with an error message. Here are some 
+Each test uses Python's `assert` statement to determine if the code is correct
+at that point. An assertion is a claim that a given statement is true. If the
+statement is not true, the program ends with an error message. Here are some
 examples:
 
     jugA = WaterJug(4, 0)
@@ -149,7 +149,7 @@ examples:
 
 If all tests pass, it will print a success message. If any of the assertions fail,
 you will see an appropriate message. For example, if you were to test the incomplete
-code above, the first assertion would fail, and you would get something like 
+code above, the first assertion would fail, and you would get something like
 the following message:
 
     Traceback (most recent call last):
