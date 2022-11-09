@@ -230,7 +230,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 19-20 Oct      | 26-27 Oct      |
 | 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | 26-27 Oct      | 2-3 Nov        |
 | 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 2-3 Nov        | 9-10 Nov       |
-| 10 | Faces<!---({{site.baseurl}}/labs/pygame.html)   --->                                      | 9-10 Nov       | 16-17 Nov      |
+| 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 9-10 Nov       | 16-17 Nov      |
 | 11 | Tornado Sirens<!---(https://www.kaggle.com/gabrielferrer/tornado-sirens)--->              | 16-17 Nov      | 30 Nov - 1 Dec |
 | 12 | Project 3 Workshop                                                                        | 30 Nov - 1 Dec | 9 Dec          |
 
