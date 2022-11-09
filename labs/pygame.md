@@ -22,19 +22,17 @@ worktitle: Graphics and Animation
 
 ## Overview
 
-For today's lab,
-[download the latest version of Pygame](https://www.pygame.org/wiki/GettingStarted)
-for your operating system. To download and install it on your 
+For today's lab, you'll need PyGame. To download and install it on your
 computer:
 * Create a new PyCharm project.
 * Create a new Python file (e.g. `main.py`) within that project.
 * Type `import pygame` at the top of the file. The word `pygame`
   will be underlined in red. (If it is not underlined in red, it is
   because `pygame` is already installed.)
-* Place your cursor atop the word `pygame`. Type Alt-Enter to bring up 
+* Place your cursor atop the word `pygame`. Type Alt-Enter to bring up
   autocorrections. It should bring up an option to install pygame.
   The image below shows what this should look like.
-  
+
 <img src="https://hendrix-cs.github.io{{site.baseurl}}/assets/images/pygame_install.png" width=500>
 
 ## Step 1: Faces 
