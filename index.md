@@ -282,7 +282,9 @@ submitted by the start of the next class period.
   strings , and lists
     - [Exam #2 Practice](/exams/cs150-exam2-practice-fall2022.pdf)
     - [Exam #2 Redo](/exams/exam2-redo-fall2022.pdf)
-* Exam 3: Monday, November 21, covering  the heap, dictionaries,  and classes.
+* Exam 3: Monday, November 21, covering  the heap, dictionaries,  and
+  classes.
+    - [Exam #3 Practice](/exams/cs150-exam3-practice-fall2022.pdf)
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
