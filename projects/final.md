@@ -38,7 +38,7 @@ the deadline to start thinking about your final project will be too
 late.
 
 Projects **must** make use of Python `class`es to encapsulate and
-structure data -- or have a well-reasoned epxlanation as part of the design document about why classes are uncessary.
+structure data -- or have a well-reasoned explanation as part of the design document about why classes are uncessary.
 
 Design
 ------
