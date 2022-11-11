@@ -196,7 +196,7 @@ point during the semester.
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Sep 30 | W Oct 5  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Oct 7  | W Oct 12 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | F Oct 28 | W Nov 2 |
-| 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Nov 4  | W Nov 9|<!---[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)--->
+| 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Nov 4  | W Nov 9|[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)
 | 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Nov 11  | W Nov 16 |
 
 
