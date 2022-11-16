@@ -234,8 +234,8 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | 26-27 Oct      | 2-3 Nov        |
 | 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 2-3 Nov        | 9-10 Nov       |
 | 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 9-10 Nov       | 16-17 Nov      |
-| 11 | Tornado Sirens<!---(https://www.kaggle.com/gabrielferrer/tornado-sirens)--->              | 16-17 Nov      | 30 Nov - 1 Dec |
-| 12 | Project 3 Workshop                                                                        | 30 Nov - 1 Dec | 9 Dec          |
+| 11 | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                     | 16-17 Nov      | 30 Nov - 1 Dec |
+| 12 | (Optional) Project 3 Workshop                                                             | 30 Nov - 1 Dec |                |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
