@@ -201,7 +201,7 @@ point during the semester.
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Oct 7  | W Oct 12 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | F Oct 28 | W Nov 2 |
 | 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Nov 4  | W Nov 9|[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)
-| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Nov 11  | W Nov 16 |
+| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Nov 11  | W Nov 16 |[Sample Solution](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/ESkS1s-E3eFOgRqoyrOiNq0BMVbkPY6-vmE7059j97sxCA?e=n2n3Dl)
 
 
 
@@ -289,6 +289,7 @@ submitted by the start of the next class period.
 * Exam 3: Monday, November 21, covering  the heap, dictionaries,  and
   classes.
     - [Exam #3 Practice](/exams/cs150-exam3-practice-fall2022.pdf)
+    - [Exam #3 Take Home Problem #2 Dictionary](/exams/Exam3-Take-home.py)
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
