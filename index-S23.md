@@ -7,11 +7,11 @@ layout: course-multi
 
 ## <a name="TAs">TAs</a>
 
-| Time   | Monday      | Tuesday  | Wednesday |
+<!--| Time   | Monday      | Tuesday  | Wednesday |
 |:------:|-------------|----------|-----------|
 |6-8 pm  |Ketty Dusenge|Simon Reid|Simon Reid |
-|8-10 pm |Zoie Keys    |Zach Gray |Ryan Fuller|
-
+|8-10 pm |Zoie Keys    |Zach Gray |Ryan Fuller|-->
+TBA
 
 <!--
 For TA hours click here to join the virtual CS lab:
@@ -65,83 +65,70 @@ Upon completing this course, our goal is for you to be able to:
 | Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| W 19 Jan | Intro to CS                                                                                                                                                                |   [Intro to CS](https://www.kaggle.com/larskseme/2022-01-19-csci-150-day-1-introduction)                                                              |   [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                                                                                                |
-| F 21 Jan | Intro to CSCI 150; Algorithms and errors  | [Algorithms and Errors](https://www.kaggle.com/larskseme/2022-01-21-algorithms-and-errors)             | HW: [Minecraft by hand](homework/minecraft.html) |
+| W 18 Jan | Intro to CS                                                                                                                                                                |                                      |   [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                                                                                                |
+| F 21 Jan | Intro to CSCI 150; Algorithms and errors  | | HW: [Minecraft by hand](homework/minecraft.html) |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 24 Jan | Intro to Python (math, variables)         |[Math and Variables](https://www.kaggle.com/larskseme/2022-01-24-intro-to-python-math-variables)   |                                                                                                 |
-| W  26 Jan | Intro to Python (functions)               |[Intro to Functions](https://www.kaggle.com/larskseme/2022-01-26-intro-to-python-functions)  |                                                                                                 |
-| F  28 Jan | Booleans                                  |[Booleans](https://www.kaggle.com/larskseme/2022-01-28-booleans)   | HW: [Boolean practice](homework/booleans.html)                                                   |
+| M 23 Jan | Intro to Python (math, variables)         | |                                                                                                 |
+| W  25 Jan | Intro to Python (functions)               | |                                                                                                 |
+| F  27 Jan | Booleans                                  | | HW: [Boolean practice](homework/booleans.html)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M  31 Jan | Conditionals                                                                                                                                                              |[Conditionals](https://www.kaggle.com/larskseme/2022-01-31-conditionals)                                                                 |                                                                                                 |
-| W  2 Feb | Tracing I  |[Tracing Introduction](https://www.kaggle.com/larskseme/2022-02-02-program-tracing-intro)
-| | |[Tracing Pdfs](/code/spring2022/2022-02-02-Initial-Tracing-Examples.pdf)
-| F 4 Feb | Tracing II 								   |[Video for Class](https://hendrix-my.sharepoint.com/:v:/g/personal/seme_hendrix_edu/EQipyWpt05RHhfBPzGIUaNMBAmJfqkCkmSkCWQKK2cTsBQ?e=edqKqJ)   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
+| M  30 Jan | Conditionals                                                                                                                                                              |                       |                                                                                                 |
+| W  1 Feb | Tracing I  |
+| F 3 Feb | Tracing II 								   |   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |
-| M 7 Feb | Pycharm |[Intro to Pycharm](/code/spring2022/2022-02-07-Intro-to-Pycharm.py)
-| W 9 Feb | Binary  and I/O |[Binary and I/0](https://www.kaggle.com/larskseme/2022-02-09-binary-and-inputoutput)
-| F 11 Feb | Exam 1 Review |[Exam 1 Review](https://www.kaggle.com/larskseme/practice-exam-1)
+| M 6 Feb | Pycharm |
+| W 8 Feb | Binary  and I/O |
+| F 10 Feb | Exam 1 Review |
 |
-| M 14 Feb | **Exam 1**
-| W 16 Feb | The `while` loop | [While Loops](/code/spring2022/2022-02-16-While-loops.py)   |  Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)
-| F 18 Feb | Functions and stack tracing			   |[Functions and Stack Tracing](/code/spring2022/2022-02-18-Function-Stack-Tracing.py)   |HW: [Function Stack Tracing](homework/function-reading.html)
-| | |[Tracing Pdfs](/code/spring2022/2022-02-18-Function-Stack-Tracing.pdf)
+| M 13 Feb | **Exam 1**
+| W 15 Feb | The `while` loop |    |  Project 1 Assigned: Civic Assistance Q/A System <!--(projects/project1.html)-->
+| F 17 Feb | Functions and stack tracing			   ||HW: [Function Stack Tracing](homework/function-reading.html)
 |
-| M 21 Feb | *No class; Mid-Winter Break*
-| W 23 Feb|  Tracing and Strings |[Tracing and Intro to Strings](/code/spring2022/2022-02-23-Tracing-and-Strings.py)
-| F 25 Feb | Strings and Loops					   |[Strings and Loops](/code/spring2022/2022-02-25-String-and-Loop-Practice.py)   | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
+| M 20 Feb | *No class; Mid-Winter Break*
+| W 22 Feb|  Tracing and Strings |
+| F 24 Feb | Strings and Loops					   | | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
-| M  28 Feb | Lists  |  [Intro to Lists](/code/spring2022/2022-02-28-Intro-to-Lists.py)
+| M  27 Feb | Lists  |  [Intro to Lists](/code/spring2022/2022-02-28-Intro-to-Lists.py)
 | |                               |  [String and List Operations](lectures/string_and_list_operations.html) |   
-| W  2 Mar | List processing examples				   | [List Processing](/code/spring2022/2022-03-02-List-Processing-Examples.py)  |
-| F  4 Mar | Function Abstraction |[Function Abstraction](/code/spring2022/2022-03-04-Function-Abstraction.py) |Project 1 due
+| W  1 Mar | List processing examples				   | [List Processing](/code/spring2022/2022-03-02-List-Processing-Examples.py)  |
+| F  3 Mar | Function Abstraction | |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
-| M 7 Mar | The `for` loop | [For Loops](/code/spring2022/2022-03-07-For-loops.py)
-| W 9 Mar | More `for` loop practice | [More for Loops](/code/spring2022/2022-03-09-More-For-Loops.py)
-| | |[Loop Patterns](lectures/loop_recipes.html)
-| F 11 Mar | Exam 2 Review |[In-Class Solutions](/code/spring2022/exam2-practice-spring-2022-in-class-solutions.pdf) |[take-Home Solutions](/code/spring2022/2022-03-11-Exam-2-Practice-Solutions.py)
+| M 6 Mar | The `for` loop |
+| W 8 Mar | More `for` loop practice |
+| F 10 Mar | Exam 2 Review ||
 |
-| M 14 Mar | **Exam 2**							   |   |
-| W 16 Mar | File I/O |[Tuples and File IO](/code/spring2022/2022-03-16-File-IO.py)  | Project 2 Introduced
-| | |[Sample Text File](/code/spring2022/sample-text-file.txt)
-| | |[Course List File](/code/spring2022/course-list.txt)
-| F 18 Mar | The Heap and Mutability|[Heap and Mutability](/code/spring2022/2022-03-18-Heap-and-Mutability.py)
-| | |[Initial Heap Tracing](/code/spring2022/2022-03-18-Initial-Heap-Tracing.pdf)
+| M 13 Mar | **Exam 2**							   |   |
+| W 15 Mar | File I/O |  | Project 2 Introduced
+| F 17 Mar | The Heap and Mutability|
 |
-| M 21 Mar | *No class; Spring Break*                             
-| W 23 Mar | *No class; Spring Break*
-| F 25 Mar | *No class; Spring Break*
+| M 20 Mar | *No class; Spring Break*                             
+| W 22 Mar | *No class; Spring Break*
+| F 24 Mar | *No class; Spring Break*
 |
-| M 28 Mar | Dictionaries                              |[Intro to Dictionaries](/code/spring2022/2022-03-28-Intro-to-Dictionaries.py)   | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
-| | |[Alice Text](/code/spring2022/alice.txt) |Project 2 Assigned: [Word Games]({{site.baseurl}}/projects/project2.html)
-| W 30 Mar | Dictionaries |[More Dictionaries](/code/spring2022/2022-03-30-More-Dictionaries.py)
-| | |[Store Inventory File](/code/spring2022/store_inventory.txt)
-| | |[Zipcode File](/code/spring2022/zipcodes.txt)
-| | |[Dictionary Tracing Example](/code/spring2022/2022-03-30-Dictionary-Tracing.pdf)
-| F 1 Apr | Introduction to classes and objects       |[Classes Intro](/code/spring2022/2022-04-01-Intro-to-Classes.py)   | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
-| | |[Tracing Solution](/code/spring2022/2022-04-01-Heap-Tracing.pdf)
+| M 27 Mar | Dictionaries                              || HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
+| | | |Project 2 Assigned: Word Games <!--({{site.baseurl}}/projects/project2.html)-->
+| W 29 Mar | Dictionaries |
+| F 31 Mar | Introduction to classes and objects       || HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
 |
-| M  4 Apr | Classes/objects example 1|[Class Examples Day 1](/code/spring2022/2022-04-04-Class-Examples-Day-1.py)
-| | |[Tracing Solution](/code/spring2022/2022-04-04-Heap-Tracing.pdf)
-| W  6 Apr | Classes/objects example 2|[Class Examples Day 2](/code/spring/2022-04-06-Class-Examples-Day2.py)
-| | |[Book List File](/code/spring2022/books.txt)
-| F  8 Apr | PyGame Intro | [Pygame Intro](/code/spring2022/2022-04-08-Pygame-Intro.py)           | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
+| M  3 Apr | Classes/objects example 1|
+| W  5 Apr | Classes/objects example 2|
+| F  7 Apr | PyGame Intro |            | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
-| M  11 Apr | Working in PyGame |[Pygame Day 2](/code/spring2022/2022-04-11-Working-in-pygame.py) |Project 2 due
-| | | |Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)
-| W  13 Apr | Classes and Games |[Classes and Games](/code/spring2022/2022-04-13-Pygame-and-Classes.py)
-| F 15 Apr | Exam 3 Review     |[Tracing Solutions](/code/spring2022/2022-04-15-Practice-Exam-3-Tracing-Solutions.pdf)  |
-| | |[Code Solutions](/code/spring2022/2022-04-15-Practice-Exam-3-Solutions.py)
+| M  10 Apr | Working in PyGame | |Project 2 due
+| | | |Project 3 Assigned: Final Project <!--({{site.baseurl}}/projects/final.html)-->
+| W  12 Apr | Classes and Games |
+| F 14 Apr | Exam 3 Review     | |
 |
-| M 18 Apr | **Exam 3**                 |   |  Project 3 proposal due
-| W 20 Apr | Recursion                         |[Recursion](/code/spring2022/2022-04-20-Recursion.py)   |
-| F 22 Apr | Recursion (trees) |[Trees](/code/spring2022/2022-04-22-Recursion-Trees.py)
+| M 17 Apr | **Exam 3**                 |   |  Project 3 proposal due
+| W 20 Apr | Recursion                         |   |
+| F 21 Apr | Recursion (trees) |
 |
-| M 25 Apr | Structuring larger programs 1             |[Trees and More](/code/spring2022/2022-04-25-Trees.py)  |
-| W 27 Apr | Structuring larger programs 2
-| F 29 Apr | Project Workshop in Class
+| M 24 Apr | Structuring larger programs 1             |  |
+| W 26 Apr | Structuring larger programs 2
+| F 28 Apr | Project Workshop in Class
 |
-| F 6 May | Final Project Presentations (2-5 pm)
+| F 5 May | Final Project Presentations (2-5 pm)
 
 <hr>
 # Coursework
