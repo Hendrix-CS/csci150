@@ -172,8 +172,7 @@ point during the semester.
 
 
 
-There will often be short homework assignments to be completed over
-the weekend, typically assigned on Friday and due Wednesday.
+There will often be short homework assignments to be completed , typically assigned on Friday and due Wednesday.
 CodingBat homework will be submitted electronically through CodingBat. By-hand homework will be submitted at the start of class time -- you can write (neatly) or type such solutions.
 
 
