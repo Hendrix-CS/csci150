@@ -174,7 +174,6 @@ point during the semester.
 
 There will often be short homework assignments to be completed over
 the weekend, typically assigned on Friday and due Wednesday.
-
 CodingBat homework will be submitted electronically through CodingBat. By-hand homework will be submitted at the start of class time -- you can write (neatly) or type such solutions.
 
 
@@ -241,10 +240,10 @@ There will be three exams. Each exam will have two parts:
 * Take-home part: At the end of the written exam will appear some Python coding problems, the solutions to which are to be
 submitted by the start of the next class period.
 
-* Exam 1: Monday, February 14, covering functions, math, numerical
+* Exam 1: Monday, February 13, covering functions, math, numerical
   data, and conditionals  
-* Exam 2: Monday, March 14, covering input/output, `while` loops,  strings , and lists  
-* Exam 3: Monday, April 18, covering  the heap, dictionaries,  and classes.  
+* Exam 2: Monday, March 13, covering input/output, `while` loops,  strings , and lists  
+* Exam 3: Monday, April 17, covering  the heap, dictionaries,  and classes.  
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
