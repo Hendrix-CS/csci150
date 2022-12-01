@@ -88,9 +88,9 @@ Upon completing this course, our goal is for you to be able to:
 | W 22 Feb|  Tracing and Strings |
 | F 24 Feb | Strings and Loops					   | | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
-| M  27 Feb | Lists  |  [Intro to Lists](/code/spring2022/2022-02-28-Intro-to-Lists.py)
-| |                               |  [String and List Operations](lectures/string_and_list_operations.html) |   
-| W  1 Mar | List processing examples				   | [List Processing](/code/spring2022/2022-03-02-List-Processing-Examples.py)  |
+| M  27 Feb | Lists  |  
+| |                               |   |   
+| W  1 Mar | List processing examples				   |
 | F  3 Mar | Function Abstraction | |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
@@ -113,7 +113,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M  3 Apr | Classes/objects example 1|
 | W  5 Apr | Classes/objects example 2|
-| F  7 Apr | PyGame Intro |            | HW: [Class design practice]({{site.baseurl}}/homework/dict-class-design.pdf)
+| F  7 Apr | PyGame Intro |            | HW: [Class & Dictionary Practice]({{site.baseurl}}/homework/dict-class-design.pdf)
 |
 | M  10 Apr | Working in PyGame | |Project 2 due
 | | | |Project 3 Assigned: Final Project <!--({{site.baseurl}}/projects/final.html)-->
@@ -158,44 +158,25 @@ point during the semester.
 
 | # | Name                                                                      | Assigned | Due      |Sample Solutions
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                             | W Jan 19 | M Jan 24  |
-| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 21 | W Jan 26  |
-| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 28 | W Feb 2  |
-| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 4  | W Feb 9 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)
-| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 18 | **F Feb 25** |[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
-| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 25 | W Mar 2  |
-| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 4  | W Mar 9 |
-| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Mar 28 |**F Apr 1** |
-| 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Apr 1  | W Apr 6|[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)
-| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Apr 8  | W Apr 13 |
+| 0 | [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                             | W Jan 18 | M Jan 23  |
+| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 20 | W Jan 25  |
+| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 27 | W Feb 1  |
+| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 2  | W Feb 9 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)
+| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 17 | **F Feb 24** |[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
+| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 24 | W Mar 1  |
+| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 3  | W Mar 8 |
+| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Mar 27 |F **Mar 31** |
+| 8 | [Heap Tracing Homework](homework/heap-tracing-homework.pdf)               | F Mar 31  | W Apr 5|[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)
+| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-design.pdf)       | F Apr 7  | W Apr 12 |
 
 
 
-<!-- |3 | [Tracing & conditional practice]({{site.baseurl}}/homework/tracing-conditional-practice.pdf) | F Sep 13 | W Sep 18 | -->
-<!-- | |Homework Checkin 1 | M Sep 23 | F Oct 4 | -->
-<!-- |4 | [Function and loop practice]({{site.baseurl}}/homework/function-reading.pdf) | F Sep 27 | W Oct 2 | -->
-<!-- |5 | [Strands of DNA]({{site.baseurl}}/homework/dna-strings.html) | F Oct 4 | W Oct 9 | -->
-<!-- |6 | [For loop reading]({{site.baseurl}}/homework/for-reading.pdf) | F Oct 25 | W Oct 30 | -->
-<!-- |7 | [Heap/dictionary reading]({{site.baseurl}}/homework/heap-dict-reading.pdf) | F Nov 1 | W Nov 6 | -->
-<!-- |8 | [Class design practice]({{site.baseurl}}/homework/class-design.pdf) | F Nov 8 | W Nov 13 | -->
-<!-- |9 | [Class reading]({{site.baseurl}}/homework/class-reading.pdf) | F Nov 15 | W Nov 20 | -->
 
 There will often be short homework assignments to be completed over
 the weekend, typically assigned on Friday and due Wednesday.
 
 CodingBat homework will be submitted electronically through CodingBat. By-hand homework will be submitted at the start of class time -- you can write (neatly) or type such solutions.
 
-<!---Homework will generally be turned in electronically via Microsoft Teams.
-
-
-* If you type a homework using something like Word or Pages, you
-  should export a PDF (this is typically an option under the "File"
-  menu).
-
-* You may also write your homework solutions on physical paper and
-  scan them using an app such as [Genius
-  Scan](https://thegrizzlylabs.com/genius-scan) which can export your
-  document as a PDF. -->
 
 ## <a name="labs">Labs</a>
 
@@ -208,20 +189,20 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 
 | #  | Name                                                                                      | Assigned  | Due          |
 |:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
-| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                              | 19-20 Jan  | 26-27 Jan      |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)     | 26-27 Jan   | 2-3 Feb       |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)     | 2-3 Feb   | 9-10 Feb     |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)               | 9-10 Feb  | 16-17 Feb    |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                         | 16-17 Feb | 23-24 Feb    |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                   | 23-24 Feb | 2-3 Mar      |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                  | 2-3 Mar   | 9-10 Mar    |
-| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                     | 9-10 Mar  | 16-17 Mar    |
-| 8  | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                      | 16-17 Mar | 30-31 Mar    |
-| 9  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                 | 30-31 Mar |  6-7 Apr    |
-| 10 | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                       | 6-7 Apr   | 13-14 Apr   |
-| 11 | [Faces]({{site.baseurl}}/labs/pygame.html)                                | 13-14 Apr | 20-21 Apr    |
-| 12 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)           | 20-21 Apr |  27-28 Apr      |
-| 13 | Project 3 Workshop                                                                             | 27-28 Apr | 6 May       |
+| 0  | Minecraft<!--({{site.baseurl}}/labs/minecraft.html)-->                                              | 18-19 Jan  | 25-26 Jan      |
+| 1  | Kepler, Newton, Einstein<!--(https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)-->     | 25-26 Jan   | 1-2 Feb       |
+| 2  | Diagnosing Heart Disease<!--(https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)-->     | 1-2 Feb   | 8-9 Feb     |
+| 3  | This Day in History<!--(https://www.kaggle.com/gabrielferrer/this-day-in-history)-->               | 8-9 Feb  | 15-16 Feb    |
+| 4  | Guess My Number<!--({{site.baseurl}}/labs/guess.html)-->                                         | 15-16 Feb | 22-23 Feb    |
+| 5  | Mutation is the Word<!--({{site.baseurl}}/labs/doublets.html)-->                                   | 22-23 Feb | 1-3 Mar      |
+| 6  | Todo Manager<!--({{site.baseurl}}/labs/todo-manager.html)-->                                  | 1-2 Mar   | 8-9 Mar    |
+| 7  | Caesar’s Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                     | 8-9 Mar  | 15-16 Mar    |
+| 8  | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                      | 15-16 Mar | 29-30 Mar    |
+| 9  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->                | 29-30 Mar |  5-6 Apr    |
+| 10 | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                       | 5-6 Apr   | 12-13 Apr   |
+| 11 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                             | 12-13 Apr | 19-20 Apr    |
+| 12 | Enron's Secrets<!--(https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->           | 19-20 Apr |  26-27 Apr      |
+| 13 | Project 3 Workshop                                                                             | 26-27 Apr | 6 May       |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
@@ -243,13 +224,11 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 18 Feb   | 2 Mar  |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                        | 28 Mar   | 11 Apr |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                     | 11 Apr   | 6 May  |
+| 1 | Civic Assistance Q/A System<!--({{site.baseurl}}/projects/project1.html)-->      | 7 Feb   | 1 Mar  |
+| 2 | Word Games<!--({{site.baseurl}}/projects/project2.html)-->                        | 27 Mar   | 10 Apr |
+| 3 | Final Project<!--({{site.baseurl}}/projects/final.html)-->                     | 10 Apr   | 5 May  |
 
-<!-- [Project 3 Design Rubric](https://drive.google.com/open?id=13kDzy15b63Ibytd23pBZ_nQqiKLSfxEs) -->
 
-<!-- [Project 3 Final Rubric](https://drive.google.com/open?id=1rASxQnFIQtA9l62bSoRigYzq5Z57_7um) -->
 
 You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to three weeks after they are assigned.
 
@@ -263,9 +242,9 @@ There will be three exams. Each exam will have two parts:
 submitted by the start of the next class period.
 
 * Exam 1: Monday, February 14, covering functions, math, numerical
-  data, and conditionals  [Practice Exam 1]({{site.baseurl}}/exams/exam1-practice-spring-2022.pdf)
-* Exam 2: Monday, March 14, covering input/output, `while` loops,  strings , and lists  [Practice Exam 2]({{site.baseurl}}/exams/exam2-practice-spring-2022.pdf)
-* Exam 3: Monday, April 18, covering  the heap, dictionaries,  and classes.  [Practice Exam 3](/exams/exam3-practice-spring-2022.pdf)
+  data, and conditionals  
+* Exam 2: Monday, March 14, covering input/output, `while` loops,  strings , and lists  
+* Exam 3: Monday, April 18, covering  the heap, dictionaries,  and classes.  
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
