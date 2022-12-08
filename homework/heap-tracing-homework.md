@@ -26,7 +26,6 @@ You should consider the code in each exercise separately from the
 other exercises.
 
 1.
-    ``` 
 
     def main1():
       a_list = [1, 2, 3]
@@ -43,42 +42,21 @@ other exercises.
         print(temp_list)
 
     main1()
-    ```
 
-2. Consider the functions defined below.  What is printed by `main2()`?
 
-    ``` python
-    def bbb(d: Dict[str, str]) -> Dict[str, List[str]]:
-        mystery = {}
-        for word in d:
-            if d[word] not in mystery:
-                mystery[d[word]] = []
-            mystery[d[word]].append(word)
-        return mystery
-
+2.
     def main2():
-        wordmap = {'hi':'there', 'whoa':'there'}
-        wordmap['whoa'] = 'nelly'
-        wordmap['you']  = 'there'
-        print(bbb(wordmap))
-    ```
+      a_dict = {1: 'cat', 2: 'dog', 34: 'fish'}
+      b_dict = a_dict
+      temp_dict = {}
+      for item in a_dict:
+        temp_dict[item] = a_dict[item] + '!!'
 
-3. Consider the functions defined below.  What is printed by `main3()`?
+      b_dict[100] = 'pig'
+      a_dict[2] = 'snail'
 
-    ``` python
-    def f(nums: List[int]) -> List[int]:
-        nums[1] += 5
-        nums = [6,7]
-        nums[0] *= 2
-        return nums
+      print(a_dict)
+      print(b_dict)
+      print(temp_dict)
 
-    def g(ns: List[int]):
-        print(ns)
-        f(ns)
-        print(ns)
-
-    def main3():
-        mylist = [6,1,5,2]
-        g([3] + mylist)
-        print(mylist[0])
-    ```
+    main2()
