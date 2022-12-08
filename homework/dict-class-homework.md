@@ -30,6 +30,9 @@ Upload your code to the class Team page as instructed. For each problem, in addi
    explain why the code works the way it does *and* what your
    misunderstanding(s) were in part 1.
 
+
+
+
 1. Write a function `vowel_count` which takes in a list of strings (all lower case) and returns a dictionary, keyed on the five vowels a, e, i, o, and u. The value for each should be the total number of entries in the list which contain at least a single copy of that vowel. For example,
 
 `vowel_count(['time', 'is', 'the', 'end'])` returns  `{'a': 0, 'e': 3, 'i': 2, 'o': 0, 'u': 0}`
