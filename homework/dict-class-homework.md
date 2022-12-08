@@ -1,26 +1,37 @@
 CSCI 150 HW: Heap Tracing Practice
 ---------------------------------------
 
-*Due: Wednesday, April 5*
+*Due: Wednesday, April 12*
 
 **Grading Specifications**
 
 You will earn a **Complete** provided that:
 - all five problems are attempted,
-- at least three are completely correct, showing all changes in the stack and heap as appropriate
-- a fourth has minor computational/careless error, but shows correct interactions with the heap, and
+- aFour of the five are completely correct; the fifth has a minor, non-obvious error not easily detectible through simple testing, and
 - on all five, there is no confusion about print vs return values.
 
 You will earn a **Partially Complete** provided that:
-- at least four are attempted
-- on at least three, interactions with the heap are correct, except for minor computational errors, and
-- there is no confusion on at least two about print vs return values
+- at least four are attempted,
+- at least two are completely correct,
+- at least one class problem has a corerctly implemented `__init()__` method, and
+- there is no confusion about print vs return values
 
-You are *STRONGLY* encouraged to copy the code shown into a .py file or Kaggle notebook and run them. If you do so, you might consider adding
+Upload your
+1. **Predict**: First, complete the exercise *without* using the
+   Python interpreter.
+
+2. **Check**: Run the your code against the examples provided.  Does the actual
+   output agree with what you wrote down in step 1?
+
+3. **Evaluate**: If your answer in step 1 was different than the
+   actual output, keep experimenting with it, consult an online
+   reference, ask a friend or TA or professor, *etc.* until you can
+   explain why the code works the way it does *and* what your
+   misunderstanding(s) were in part 1.
 
 `from typing import *`
 
-as the first line of your code.See if you printed output matches. Add additional print statements along the way to see if you are updating the heap/stack variables correctly. If you are confused, seek help from classmates, the CSCI tutors, or your instructor. 
+as the first line of your code.
 
 You should consider the code in each exercise separately from the
 other exercises.
