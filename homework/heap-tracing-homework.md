@@ -34,12 +34,12 @@ other exercises.
       for item in a_list:
         temp_list.append(item * 2)
 
-        b_list.append(47)
-        a_list[1] = -7
+      b_list.append(47)
+      a_list[1] = -7
 
-        print(a_list)
-        print(b_list)
-        print(temp_list)
+      print(a_list)
+      print(b_list)
+      print(temp_list)
 
     main1()
 
@@ -107,7 +107,7 @@ other exercises.
       if 'a' in s:
         s = 'boo'
 
-        return len(s)
+      return len(s)
 
     def g2(lst: List[int]):
       s = 'exam'
@@ -117,8 +117,8 @@ other exercises.
       else:
         i = 0
         for char in s:
-            lst[i] = g1(char)
-            i += 1
+          lst[i] = g1(char)
+          i += 1
 
 
     def main5():
