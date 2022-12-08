@@ -18,13 +18,13 @@ You will earn a **Partially Complete** provided that:
 
 Upload your code to the class Team page as instructed. For each problem, in addition to the code itself, you should have one or more lines of comments which describe what happened, following the 3 steps below:
 
-1. **Design**: FFirst, write a function or design a Python class as requested in the
+1\. **Design**: FFirst, write a function or design a Python class as requested in the
   exercise.
 
-2. **Check**: Run the your code against the examples provided.  Does the actual
+2\. **Check**: Run the your code against the examples provided.  Does the actual
    output agree with the given correct output?
 
-3. **Evaluate**: If your answer in step 1 was different than the
+3\. **Evaluate**: If your answer in step 1 was different than the
    actual output, keep experimenting with it, consult an online
    reference, ask a friend or TA or professor, *etc.* until you can
    explain why the code works the way it does *and* what your
