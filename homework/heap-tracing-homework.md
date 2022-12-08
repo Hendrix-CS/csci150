@@ -26,7 +26,8 @@ You should consider the code in each exercise separately from the
 other exercises.
 
 1.
-    ``` python
+    ``` 
+
     def main1():
       a_list = [1, 2, 3]
       b_list = a_list
