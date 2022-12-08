@@ -16,12 +16,13 @@ You will earn a **Partially Complete** provided that:
 - at least one class problem has a corerctly implemented `__init()__` method, and
 - there is no confusion about print vs return values
 
-Upload your
-1. **Predict**: First, complete the exercise *without* using the
-   Python interpreter.
+Upload your code to the class Team page as instructed. For each problem, in addition to the code itself, you should have one or more lines of comments which describe what happened, following the 3 steps below:
+
+1. **Design**: FFirst, write a function or design a Python class as requested in the
+  exercise.
 
 2. **Check**: Run the your code against the examples provided.  Does the actual
-   output agree with what you wrote down in step 1?
+   output agree with the given correct output?
 
 3. **Evaluate**: If your answer in step 1 was different than the
    actual output, keep experimenting with it, consult an online
@@ -29,112 +30,12 @@ Upload your
    explain why the code works the way it does *and* what your
    misunderstanding(s) were in part 1.
 
-`from typing import *`
+1. Write a function `vowel_count` which takes in a list of strings (all lower case) and returns a dictionary, keyed on the five vowels a, e, i, o, and u. The value for each should be the total number of entries in the list which contain at least a single copy of that vowel. For example,
 
-as the first line of your code.
-
-You should consider the code in each exercise separately from the
-other exercises.
-
-1.
-
-    def main1():
-      a_list = [1, 2, 3]
-      b_list = a_list
-      temp_list = []
-      for item in a_list:
-        temp_list.append(item * 2)
-
-      b_list.append(47)
-      a_list[1] = -7
-
-      print(a_list)
-      print(b_list)
-      print(temp_list)
-
-    main1()
+`vowel_count(['time', 'is', 'the', 'end'])` returns  `{'a': 0, 'e': 3, 'i': 2, 'o': 0, 'u': 0}`
 
 
-2.
+`vowel_count(['aardvark', 'facetious', 'too', 'to', 'two'])` returns `{'a': 2, 'e': 1, 'i': 1, 'o': 4, 'u': 1}`
 
-    def main2():
-      a_dict = {1: 'cat', 2: 'dog', 34: 'fish'}
-      b_dict = a_dict
-      temp_dict = {}
-      for item in a_dict:
-        temp_dict[item] = a_dict[item] + '!!'
-
-      b_dict[100] = 'pig'
-      a_dict[2] = 'snail'
-
-      print(a_dict)
-      print(b_dict)
-      print(temp_dict)
-
-    main2()
-
-3.
-
-    def main3():
-      a_str = 'bye'
-      b_str = a_str
-      temp_str = ''
-      for item in a_str:
-        temp_str += item + '!'
-
-      b_str += 'z'
-
-
-      print(a_str)
-      print(b_str)
-      print(temp_str)
-
-    main3()
-
-
-4.
-
-    def f1(a: Dict[str, int]) -> int:
-      sum1 = 0
-      for key in a:
-        if a[key] >= 0:
-            sum1 += a[key]
-        else:
-            a[key] = 0
-
-      return sum1
-
-    def main4():
-      b = {'Seme' : 23, 'Ferrer' : 12, 'Wilson' : -7}
-      print(f1(b))
-      print(b)
-
-    main4()
-
-
-5.
-
-    def g1(s: str) -> int:
-      if 'a' in s:
-        s = 'boo'
-
-      return len(s)
-
-    def g2(lst: List[int]):
-      s = 'exam'
-
-      if len(lst) < len(s):
-        print('Too short')
-      else:
-        i = 0
-        for char in s:
-          lst[i] = g1(char)
-          i += 1
-
-
-    def main5():
-      a_list = [6,2,9,8]
-      g2(a_list)
-      print(a_list)
-
-    main5()
+(note that we are not counting the total number of a's, or e's,
+but how many individual entries in the list contain at least one a)
