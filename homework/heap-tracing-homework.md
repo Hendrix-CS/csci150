@@ -45,6 +45,7 @@ other exercises.
 
 
 2.
+
     def main2():
       a_dict = {1: 'cat', 2: 'dog', 34: 'fish'}
       b_dict = a_dict
@@ -60,3 +61,69 @@ other exercises.
       print(temp_dict)
 
     main2()
+
+3.
+
+    def main3():
+      a_str = 'bye'
+      b_str = a_str
+      temp_str = ''
+      for item in a_str:
+        temp_str += item + '!'
+
+      b_str += 'z'
+
+
+      print(a_str)
+      print(b_str)
+      print(temp_str)
+
+    main3()
+
+
+4.
+
+    def f1(a: Dict[str, int]) -> int:
+      sum1 = 0
+      for key in a:
+        if a[key] >= 0:
+            sum1 += a[key]
+        else:
+            a[key] = 0
+
+      return sum1
+
+    def main4():
+      b = {'Seme' : 23, 'Ferrer' : 12, 'Wilson' : -7}
+      print(f1(b))
+      print(b)
+
+    main4()
+
+
+5.
+
+    def g1(s: str) -> int:
+      if 'a' in s:
+        s = 'boo'
+
+        return len(s)
+
+    def g2(lst: List[int]):
+      s = 'exam'
+
+      if len(lst) < len(s):
+        print('Too short')
+      else:
+        i = 0
+        for char in s:
+            lst[i] = g1(char)
+            i += 1
+
+
+    def main5():
+      a_list = [6,2,9,8]
+      g2(a_list)
+      print(a_list)
+
+    main5()
