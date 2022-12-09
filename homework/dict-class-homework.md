@@ -99,3 +99,33 @@ If you have done everything correctly, it should produce the following:
   BANG!!!
   Sorry, you cannot inflate this ball!  It has exploded.
   Sorry, you cannot bounce this ball!  It has exploded.
+
+
+5\.
+
+Write a Python class` Gradebook` which works as follows:
+• When a new `Gradebook` object is first created, it should start out
+with an empty list of grades, and zero points of extra credit.
+
+- There should be a method `add_grade(g: int)` which adds the grade
+`g` to the end of the list.
+- There should be a `method add_ec(ec: int)` which adds `ec` points
+of extra credit to the current amount of extra credit.
+- There should be a method `average()` which computes and returns
+the average of all the grades so far (the sum of all the grades, plus
+the extra credit score, divided by the number of grades).
+
+
+You can test your implementation of Gradebook by running the code below:
+  def main():
+    gb = Gradebook()
+    gb.add_grade(90)
+    gb.add_grade(83)
+    gb.add_grade(97)
+    gb.add_ec(10)
+
+    print(gb.average())
+
+  main()
+
+If your definition of `Gradebook` is correct, this should print `93.33333333333333`
