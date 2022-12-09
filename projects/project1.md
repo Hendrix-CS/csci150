@@ -5,7 +5,7 @@ num: 1
 worktitle: Civic Assistance System
 ---
 
-**Due Monday, October 3**
+**Due Friday, March 3**
 ## Description
 
 Many elements of our civic lives are governed by processes and

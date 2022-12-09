@@ -5,7 +5,7 @@ num: 2
 worktitle: Word Games
 ---
 
-**Due Monday, November 7**
+**Due Monday, April 10**
 ## Description
 
 For this project, you will create a program for users to play a [word

@@ -161,7 +161,7 @@ point during the semester.
 | 0 | [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                             | W Jan 18 | M Jan 23  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 20 | W Jan 25  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 27 | W Feb 1  |
-| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 2  | W Feb 9 |<!--[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)-->
+| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 2  | W Feb 8 |<!--[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)-->
 | 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 17 | **F Feb 24** |<!--[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)-->
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 24 | W Mar 1  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 3  | W Mar 8 |
@@ -222,7 +222,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
-| 1 | Civic Assistance Q/A System<!--({{site.baseurl}}/projects/project1.html)-->      | 15 Feb   | 1 Mar  |
+| 1 | Civic Assistance Q/A System<!--({{site.baseurl}}/projects/project1.html)-->      | 15 Feb   | 3 Mar  |
 | 2 | Word Games<!--({{site.baseurl}}/projects/project2.html)-->                        | 27 Mar   | 10 Apr |
 | 3 | Final Project<!--({{site.baseurl}}/projects/final.html)-->                     | 10 Apr   | 5 May  |
 
