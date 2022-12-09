@@ -1,4 +1,4 @@
-CSCI 150 HW: Heap Tracing Practice
+CSCI 150 HW: Dictionary and Class Homework
 ---------------------------------------
 
 *Due: Wednesday, April 12*
@@ -72,33 +72,33 @@ but how many individual entries in the list contain at least one a)
 To test your class, you can type in and run the following code:
 
 
-  b = BouncyBall()
-  for i in range(6):
+    b = BouncyBall()
+    for i in range(6):
+      b.bounce()
+
+    b.inflate()
+    b.bounce()
     b.bounce()
 
-  b.inflate()
-  b.bounce()
-  b.bounce()
+    for i in range(5):
+      b.inflate()
 
-  for i in range(5):
-    b.inflate()
-
-  b.bounce()
+    b.bounce()
 
 
 If you have done everything correctly, it should produce the following:
 
-  Bounce!
-  Bounce!
-  Bounce!
-  Bounce!
-  Thupp.
-  Thupp.
-  Bounce!
-  Thupp.
-  BANG!!!
-  Sorry, you cannot inflate this ball!  It has exploded.
-  Sorry, you cannot bounce this ball!  It has exploded.
+    Bounce!
+    Bounce!
+    Bounce!
+    Bounce!
+    Thupp.
+    Thupp.
+    Bounce!
+    Thupp.
+    BANG!!!
+    Sorry, you cannot inflate this ball!  It has exploded.
+    Sorry, you cannot bounce this ball!  It has exploded.
 
 
 5\.
@@ -117,15 +117,16 @@ the extra credit score, divided by the number of grades).
 
 
 You can test your implementation of Gradebook by running the code below:
-  def main():
-    gb = Gradebook()
-    gb.add_grade(90)
-    gb.add_grade(83)
-    gb.add_grade(97)
-    gb.add_ec(10)
 
-    print(gb.average())
+    def main():
+      gb = Gradebook()
+      gb.add_grade(90)
+      gb.add_grade(83)
+      gb.add_grade(97)
+      gb.add_ec(10)
 
-  main()
+      print(gb.average())
+
+    main()
 
 If your definition of `Gradebook` is correct, this should print `93.33333333333333`
