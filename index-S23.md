@@ -88,8 +88,7 @@ Upon completing this course, our goal is for you to be able to:
 | W 22 Feb|  Tracing and Strings |
 | F 24 Feb | Strings and Loops					   | | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
-| M  27 Feb | Lists  |  
-| |                               |   |   
+| M  27 Feb | Lists  |                                |   |   
 | W  1 Mar | List processing examples				   |
 | F  3 Mar | Function Abstraction | |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
