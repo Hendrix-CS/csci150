@@ -157,7 +157,7 @@ point during the semester.
 
 | # | Name                                                                      | Assigned | Due      |Sample Solutions
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                             | W Jan 18 | M Jan 23  |
+| 0 | Survey(<!--https://forms.gle/QcKEsPYPYAfnsiAQ8)-->                             | W Jan 18 | M Jan 23  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 20 | W Jan 25  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 27 | W Feb 1  |
 | 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 2  | W Feb 8 |<!--[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)-->
