@@ -199,7 +199,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 10 | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                       | 5-6 Apr   | 12-13 Apr   |
 | 11 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                             | 12-13 Apr | 19-20 Apr    |
 | 12 | Enron's Secrets<!--(https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->           | 19-20 Apr |  26-27 Apr      |
-| 13 | Project 3 Workshop                                                                             | 26-27 Apr | 6 May       |
+| 13 | Project 3 Workshop                                                                             | 26-27 Apr | 5 May       |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
