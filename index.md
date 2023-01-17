@@ -184,22 +184,22 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 <!-- </div> -->
 <!-- <br/> -->
 
-| #  | Name                                                                                      | Assigned  | Due          |
-|:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
-| 0  | Minecraft<!--({{site.baseurl}}/labs/minecraft.html)-->                                              | 18-19 Jan  | 25-26 Jan      |
-| 1  | Kepler, Newton, Einstein<!--(https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)-->     | 25-26 Jan   | 1-2 Feb       |
-| 2  | Diagnosing Heart Disease<!--(https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)-->     | 1-2 Feb   | 8-9 Feb     |
-| 3  | This Day in History<!--(https://www.kaggle.com/gabrielferrer/this-day-in-history)-->               | 8-9 Feb  | 15-16 Feb    |
-| 4  | Guess My Number<!--({{site.baseurl}}/labs/guess.html)-->                                         | 15-16 Feb | 22-23 Feb    |
-| 5  | Mutation is the Word<!--({{site.baseurl}}/labs/doublets.html)-->                                   | 22-23 Feb | 1-3 Mar      |
-| 6  | Todo Manager<!--({{site.baseurl}}/labs/todo-manager.html)-->                                  | 1-2 Mar   | 8-9 Mar    |
-| 7  | Caesar’s Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                     | 8-9 Mar  | 15-16 Mar    |
-| 8  | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                      | 15-16 Mar | 29-30 Mar    |
-| 9  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->                | 29-30 Mar |  5-6 Apr    |
-| 10 | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                       | 5-6 Apr   | 12-13 Apr   |
-| 11 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                             | 12-13 Apr | 19-20 Apr    |
-| 12 | Enron's Secrets<!--(https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->           | 19-20 Apr |  26-27 Apr      |
-| 13 | Project 3 Workshop                                                                             | 26-27 Apr | 5 May       |
+| #  | Name                                                                                           | Assigned  | Due       |
+|:--:|------------------------------------------------------------------------------------------------|-----------|:---------:|
+| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                              | 18-19 Jan | 25-26 Jan |
+| 1  | Kepler, Newton, Einstein<!--(https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)-->   | 25-26 Jan | 1-2 Feb   |
+| 2  | Diagnosing Heart Disease<!--(https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)--> | 1-2 Feb   | 8-9 Feb   |
+| 3  | This Day in History<!--(https://www.kaggle.com/gabrielferrer/this-day-in-history)-->           | 8-9 Feb   | 15-16 Feb |
+| 4  | Guess My Number<!--({{site.baseurl}}/labs/guess.html)-->                                       | 15-16 Feb | 22-23 Feb |
+| 5  | Mutation is the Word<!--({{site.baseurl}}/labs/doublets.html)-->                               | 22-23 Feb | 1-3 Mar   |
+| 6  | Todo Manager<!--({{site.baseurl}}/labs/todo-manager.html)-->                                   | 1-2 Mar   | 8-9 Mar   |
+| 7  | Caesar’s Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                 | 8-9 Mar   | 15-16 Mar |
+| 8  | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                     | 15-16 Mar | 29-30 Mar |
+| 9  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->            | 29-30 Mar | 5-6 Apr   |
+| 10 | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                         | 5-6 Apr   | 12-13 Apr |
+| 11 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                                             | 12-13 Apr | 19-20 Apr |
+| 12 | Enron's Secrets<!--(https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->      | 19-20 Apr | 26-27 Apr |
+| 13 | Project 3 Workshop                                                                             | 26-27 Apr | 5 May     |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
