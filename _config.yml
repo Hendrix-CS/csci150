@@ -72,7 +72,7 @@ instructors:
     email: stanleyj@hendrix.edu
     web: TBD
     phone: TBD
-    officehours: instructors/stanley.pdf
+    officehours: https://hendrix-cs.github.io/csci150/instructors/stanley.pdf
 
 offerings:
   - name: LECTURE 01
