@@ -65,12 +65,12 @@ Upon completing this course, our goal is for you to be able to:
 | Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
 |:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| W 18 Jan | Intro to CS                                                                                                                                                                |[Intro](https://www.kaggle.com/code/larskseme/2023-01-18-day-1-introduction)                                      |   [Survey](https://forms.gle/xwQESACLYUpc1i9R9)                                                                                               |
-| F 21 Jan | Intro to CSCI 150; Algorithms and errors  |[Algorithms](https://www.kaggle.com/code/larskseme/2023-01-20-algorithms-and-errors) | HW: [Minecraft by hand](homework/minecraft.html) |
+| W 18 Jan | Intro to CS                                                                                                                                                                |                                      |   [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                                                                                                |
+| F 21 Jan | Intro to CSCI 150; Algorithms and errors  | | HW: [Minecraft by hand](homework/minecraft.html) |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 23 Jan | Intro to Python (math, variables)         |[Math and Variables](https://www.kaggle.com/code/larskseme/2023-01-23-intro-to-python-math-and-variables) |                                                                                                 |
-| W  25 Jan | Intro to Python (functions)               |[Functions](https://www.kaggle.com/code/larskseme/2023-01-25-functions) |                                                                                                 |
-| F  27 Jan | Booleans                                  |[Booleans](https://www.kaggle.com/code/larskseme/2023-01-27-booleans) | HW: [Boolean practice](homework/booleans.html)                                                   |
+| M 23 Jan | Intro to Python (math, variables)         | |                                                                                                 |
+| W  25 Jan | Intro to Python (functions)               | |                                                                                                 |
+| F  27 Jan | Booleans                                  | | HW: [Boolean practice](homework/booleans.html)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  30 Jan | Conditionals                                                                                                                                                              |                       |                                                                                                 |
 | W  1 Feb | Tracing I  |
@@ -157,7 +157,7 @@ point during the semester.
 
 | # | Name                                                                      | Assigned | Due      |Sample Solutions
 |:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://forms.gle/xwQESACLYUpc1i9R9)                                                           | W Jan 18 |F Jan 20  |
+| 0 | [Survey](https://forms.gle/QcKEsPYPYAfnsiAQ8)                             | W Jan 18 | M Jan 23  |
 | 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 20 | W Jan 25  |
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 27 | W Feb 1  |
 | 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 2  | W Feb 8 |<!--[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)-->
@@ -184,22 +184,22 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 <!-- </div> -->
 <!-- <br/> -->
 
-| #  | Name                                                                                           | Assigned  | Due       |
-|:--:|------------------------------------------------------------------------------------------------|-----------|:---------:|
-| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                              | 18-19 Jan | 25-26 Jan |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)        | 25-26 Jan | 1-2 Feb   |
-| 2  | Diagnosing Heart Disease<!--(https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)--> | 1-2 Feb   | 8-9 Feb   |
-| 3  | This Day in History<!--(https://www.kaggle.com/gabrielferrer/this-day-in-history)-->           | 8-9 Feb   | 15-16 Feb |
-| 4  | Guess My Number<!--({{site.baseurl}}/labs/guess.html)-->                                       | 15-16 Feb | 22-23 Feb |
-| 5  | Mutation is the Word<!--({{site.baseurl}}/labs/doublets.html)-->                               | 22-23 Feb | 1-3 Mar   |
-| 6  | Todo Manager<!--({{site.baseurl}}/labs/todo-manager.html)-->                                   | 1-2 Mar   | 8-9 Mar   |
-| 7  | Caesar’s Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                 | 8-9 Mar   | 15-16 Mar |
-| 8  | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                     | 15-16 Mar | 29-30 Mar |
-| 9  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->            | 29-30 Mar | 5-6 Apr   |
-| 10 | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                         | 5-6 Apr   | 12-13 Apr |
-| 11 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                                             | 12-13 Apr | 19-20 Apr |
-| 12 | Enron's Secrets<!--(https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->      | 19-20 Apr | 26-27 Apr |
-| 13 | Project 3 Workshop                                                                             | 26-27 Apr | 5 May     |
+| #  | Name                                                                                      | Assigned  | Due          |
+|:--:|-------------------------------------------------------------------------------------------|-----------|:------------:|
+| 0  | Minecraft<!--({{site.baseurl}}/labs/minecraft.html)-->                                              | 18-19 Jan  | 25-26 Jan      |
+| 1  | Kepler, Newton, Einstein<!--(https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)-->     | 25-26 Jan   | 1-2 Feb       |
+| 2  | Diagnosing Heart Disease<!--(https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)-->     | 1-2 Feb   | 8-9 Feb     |
+| 3  | This Day in History<!--(https://www.kaggle.com/gabrielferrer/this-day-in-history)-->               | 8-9 Feb  | 15-16 Feb    |
+| 4  | Guess My Number<!--({{site.baseurl}}/labs/guess.html)-->                                         | 15-16 Feb | 22-23 Feb    |
+| 5  | Mutation is the Word<!--({{site.baseurl}}/labs/doublets.html)-->                                   | 22-23 Feb | 1-3 Mar      |
+| 6  | Todo Manager<!--({{site.baseurl}}/labs/todo-manager.html)-->                                  | 1-2 Mar   | 8-9 Mar    |
+| 7  | Caesar’s Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                     | 8-9 Mar  | 15-16 Mar    |
+| 8  | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                      | 15-16 Mar | 29-30 Mar    |
+| 9  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->                | 29-30 Mar |  5-6 Apr    |
+| 10 | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                       | 5-6 Apr   | 12-13 Apr   |
+| 11 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                             | 12-13 Apr | 19-20 Apr    |
+| 12 | Enron's Secrets<!--(https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->           | 19-20 Apr |  26-27 Apr      |
+| 13 | Project 3 Workshop                                                                             | 26-27 Apr | 6 May       |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 

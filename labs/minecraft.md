@@ -14,7 +14,7 @@ character's actions in the virtual world Minecraft.
 ## Materials
 
 * Quotes on paper from previous courses
-* [Minecraft at Code.org](http://studio.code.org/join/XHKPTH)
+* [Minecraft at Code.org](https://studio.code.org/join/GQHDZK)
 * Lab Partner
 
 ### Step 1
@@ -28,11 +28,11 @@ If there are an odd number of students in the lab, one pair will become a trio.
 
 Pick up a slip of paper from the instructor, containing a modified quotation from students in previous similar computer science labs. Once all students have a slip of paper, you will then be asked to read your quote aloud.
 
-Once all students have read their comments aloud, we will talk through the implications of the situations.  
+Once all students have read their comments aloud, we will talk through the implications of the situations.
 
 ### Step 2
 
-Now, form a small group of three to four of your peers to come up with suggestions for a **Lab Code of Conduct** for this section. If you wish, you can also submit suggestions to your lab instructor privately.  
+Now, form a small group of three to four of your peers to come up with suggestions for a **Lab Code of Conduct** for this section. If you wish, you can also submit suggestions to your lab instructor privately.
 
 Before next week's lab, your instructor will combine these suggestions into a single document, which you will be asked to sign. If you have concerns over the final document and are unwilling to sign, please discuss them privately with your instructor.
 
