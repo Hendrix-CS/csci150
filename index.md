@@ -73,7 +73,7 @@ Upon completing this course, our goal is for you to be able to:
 | F  27 Jan | Booleans                                  |[Booleans](https://www.kaggle.com/code/larskseme/2023-01-27-booleans) | HW: [Boolean practice](homework/booleans.html)                                                   |
 |          |                                                                                                                                                                            |                                                                 |                                                                                                 |
 | M  30 Jan | Conditionals                                                                                                                                                              |[Conditionals](https://www.kaggle.com/code/larskseme/2023-01-30-conditionals)                       |                                                                                                 |
-| W  1 Feb | Tracing I  |
+| W  1 Feb | Tracing I  |[Tracing -- Kaggle](https://www.kaggle.com/code/larskseme/2023-02-01-tracing) [Video](https://hendrix-my.sharepoint.com/personal/seme_hendrix_edu/Documents/Recordings/CSCI%20150%20Tracing%20Day%201-20230131_193052-Meeting%20Recording.mp4?web=1)
 | F 3 Feb | Tracing II 								   |   | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |
 | M 6 Feb | Pycharm |
