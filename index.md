@@ -78,7 +78,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 6 Feb | Pycharm |
 | W 8 Feb | Binary  and I/O |
-| F 10 Feb | Exam 1 Review |
+| F 10 Feb | Exam 1 Review |[Exam #1 Practice](https://www.kaggle.com/larskseme/2023-02-10-practice-exam-1)
 |
 | M 13 Feb | **Exam 1**
 | W 15 Feb | The `while` loop |    |  Project 1 Assigned: Civic Assistance Q/A System <!--(projects/project1.html)-->
