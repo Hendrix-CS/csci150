@@ -77,7 +77,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 3 Feb | Tracing II 								   | [Tracing II](https://www.kaggle.com/larskseme/2023-02-03-tracing-day-ii)  | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |
 | M 6 Feb | Pycharm and I/O |[Print and Input](https://www.kaggle.com/code/larskseme/2023-02-06-pycharm-and-i-o)
-| W 8 Feb | Binary  |
+| W 8 Feb | Binary  |[Binary](https://www.kaggle.com/code/larskseme/2023-02-08-binary)
 | F 10 Feb | Exam 1 Review |[Exam #1 Practice](https://www.kaggle.com/larskseme/2023-02-10-practice-exam-1)
 |
 | M 13 Feb | **Exam 1**
