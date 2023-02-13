@@ -71,7 +71,7 @@ the following code into it**:
 
     ######################################
     # Copyright (c) 2023 YOUR NAME(s) HERE
-    # CSCI 150, Fall 2023
+    # CSCI 150, Spring 2023
     # Lab 4: Guess My Number
     ######################################
 
