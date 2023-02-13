@@ -15,6 +15,10 @@ and instructions to help you along the way.
 
 ## Grading Criteria
 
+To receive credit, one **correctly named** assignment file (a `.ipynb`) per pair must be submitted via Teams.
+* The file naming convention for lab assignments is `L{lab_number}_{Lastname_1}{Lastname_2}.ipynb`, where `{Lastname_i}` is the capitalized last name of group member *i*. 
+  * For example, if Dr. Stanley and Dr. Yorgey are a group for lab 1, then their submission will be titled `L1_StanleyYorgey.ipynb`.
+ 
 * A **Complete** submission includes:
   * Correct function definitions for Steps 1, 2, 3, 4, and 5.
   * No Pycharm style warnings.
@@ -66,8 +70,8 @@ Start by creating a file called `guess_number.py` and **paste
 the following code into it**:
 
     ######################################
-    # Copyright (c) 2022 YOUR NAME(s) HERE
-    # CSCI 150, Fall 2022
+    # Copyright (c) 2023 YOUR NAME(s) HERE
+    # CSCI 150, Fall 2023
     # Lab 4: Guess My Number
     ######################################
 
