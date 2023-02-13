@@ -7,11 +7,11 @@ layout: course-multi
 
 ## <a name="TAs">TAs</a>
 
-<!--| Time   | Monday      | Tuesday  | Wednesday |
+| Time   |Sunday| Monday      | Tuesday  | Wednesday |Thursday|
 |:------:|-------------|----------|-----------|
-|6-8 pm  |Ketty Dusenge|Simon Reid|Simon Reid |
-|8-10 pm |Zoie Keys    |Zach Gray |Ryan Fuller|-->
-TBA
+|6-8 pm  | Ted | Simon |Matthew | | |
+|8-10 pm || Ryan | Riley| |Zoie|
+
 
 <!--
 For TA hours click here to join the virtual CS lab:
