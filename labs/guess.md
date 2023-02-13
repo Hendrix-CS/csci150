@@ -232,9 +232,10 @@ your program might look like once you get this to work:
 
 ## Step 4
 
-Finally, create a new file called `computer_guess.py`.  You
-should implement the same game, but with the roles reversed!  That is,
-the human user picks a number, and the computer tries to guess it.
+Finally, create a new file called `computer_guess.py`. Starting with 
+the template provided in step 1, implement the same game, but with 
+the roles reversed!  That is, the human user picks a number, and the 
+computer tries to guess it.
 Here is an example of what your program's output might look like:
 
     Welcome to guess the number!  You pick a number from 1-100
