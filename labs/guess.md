@@ -123,12 +123,13 @@ You should write a new function called `input_guess()`.  Here is a
 template you can use as a starting point; copy it into your file
 (after `import random` and before `def main():`):
 
-    # input_guess prompts the user for their guess, and keeps prompting
-    # until it is valid.
-    #
-    # Input:  none
-    # Output: a valid guess (int)
+    
     def input_guess() -> int:
+        # input_guess prompts the user for their guess, and keeps prompting
+        # until it is valid.
+        #
+        # Input:  none
+        # Output: a valid guess (int)
         # Keep prompting the user for their guess until they enter
         # something valid
 
