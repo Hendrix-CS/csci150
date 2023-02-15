@@ -15,9 +15,9 @@ and instructions to help you along the way.
 
 ## Grading Criteria
 
-To receive credit, one **correctly named** assignment file (a `.ipynb`) per pair must be submitted via Teams.
-* The file naming convention for lab assignments is `L{lab_number}_{Lastname_1}{Lastname_2}.ipynb`, where `{Lastname_i}` is the capitalized last name of group member *i*. 
-  * For example, if Dr. Stanley and Dr. Yorgey are a group for lab 1, then their submission will be titled `L1_StanleyYorgey.ipynb`.
+To receive credit, two **correctly named** assignment files (of format `.py`) per pair must be submitted via Teams.
+* The file naming convention for lab assignments ending in `.py` is `L{lab_number}_{Lastname_1}{Lastname_2}_{filename}.py`, where `{Lastname_i}` is the capitalized last name of group member i and `{filename}` is the filename specified in the assignment. If your group has three members, the convention is `L{lab_number}_{Lastname_1}{Lastname_2}{Lastname_3}_{filename}.py`,
+	* For example, if Dr. Stanley and Dr. Yorgey are a group for lab 4, which expects `guess_number.py` and `computer_guess.py`, then they will submit `L4_StanleyYorgey_guess_number.py` and `L4_StanleyYorgey_computer_guess.py`.
  
 * A **Complete** submission includes:
   * Correct function definitions for Steps 1, 2, 3, 4, and 5.
@@ -280,9 +280,9 @@ A few hints:
 Modify your strategy from Step 4 to ensure that the computer *never* needs more than 7 guesses to win.
 
 ## What to turn in
-
-  * `guess_number.py`
-  * `computer_guess.py`
+Two correctly labeled files (see grading criteria for an example)
+  * `L{lab_number}_{Lastname_1}{Lastname_2}_guess_number.py`
+  * `L{lab_number}_{Lastname_1}{Lastname_2}_computer_guess.py`
 
 **Note**: Make sure to address all style suggestions and warnings highlighted in PyCharm.
 
