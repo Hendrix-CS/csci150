@@ -81,7 +81,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 10 Feb | Exam 1 Review |[Exam #1 Practice](https://www.kaggle.com/larskseme/2023-02-10-practice-exam-1)
 |
 | M 13 Feb | **Exam 1**
-| W 15 Feb | The `while` loop |    |  Project 1 Assigned: Civic Assistance Q/A System <!--(projects/project1.html)-->
+| W 15 Feb | The `while` loop |[While](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EXKx85Gt-0ZDgo9JaE1HunMBOat7ti7dNBVYVo6vDIkOwA?e=ujuNnw)    |  [Project 1 Assigned: Civic Assistance Q/A System](projects/project1.html)
 | F 17 Feb | Functions and stack tracing			   ||HW: [Function Stack Tracing](homework/function-reading.html)
 |
 | M 20 Feb | *No class; Mid-Winter Break*
@@ -221,7 +221,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
-| 1 | Civic Assistance Q/A System<!--({{site.baseurl}}/projects/project1.html)-->      | 15 Feb   | 3 Mar  |
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 15 Feb   | 3 Mar  |
 | 2 | Word Games<!--({{site.baseurl}}/projects/project2.html)-->                        | 27 Mar   | 10 Apr |
 | 3 | Final Project<!--({{site.baseurl}}/projects/final.html)-->                     | 10 Apr   | 5 May  |
 
