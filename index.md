@@ -82,7 +82,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 13 Feb | **Exam 1**
 | W 15 Feb | The `while` loop |[While](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EXKx85Gt-0ZDgo9JaE1HunMBOat7ti7dNBVYVo6vDIkOwA?e=ujuNnw)    |  [Project 1 Assigned: Civic Assistance Q/A System](projects/project1.html)
-| F 17 Feb | Functions and stack tracing			   ||HW: [Function Stack Tracing](homework/function-reading.html)
+| F 17 Feb | Functions and stack tracing			   |[Stack Tracing](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/Eeg_cgYBb-RMqcvsxjpSloQBFgkreboHc3NSYfhhmNd0EQ?e=boFavp)|HW: [Function Stack Tracing](homework/function-reading.html)
 |
 | M 20 Feb | *No class; Mid-Winter Break*
 | W 22 Feb|  Tracing and Strings |
