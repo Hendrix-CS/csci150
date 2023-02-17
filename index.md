@@ -239,7 +239,7 @@ There will be three exams. Each exam will have two parts:
 submitted by the start of the next class period.
 
 * Exam 1: Monday, February 13, covering functions, math, numerical
-  data, and conditionals   [Practice Exam 1](/exams/cs150-exam1-practice-spring2023.pdf)
+  data, and conditionals   [Practice Exam 1](/exams/cs150-exam1-practice-spring2023.pdf)  [Exam 1 Redo Problems](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EeIcwhaL8x9AjC4wuBhUbRYBewIy5fUmLyZrx9RM7R6hDg?e=Cmlhrz)
 * Exam 2: Monday, March 13, covering input/output, `while` loops,  strings , and lists  
 * Exam 3: Monday, April 17, covering  the heap, dictionaries,  and classes.  
 
