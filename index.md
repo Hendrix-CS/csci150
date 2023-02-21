@@ -85,7 +85,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 17 Feb | Functions and stack tracing			   |[Stack Tracing](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/Eeg_cgYBb-RMqcvsxjpSloQBFgkreboHc3NSYfhhmNd0EQ?e=boFavp)|HW: [Function Stack Tracing](homework/function-reading.html)
 |
 | M 20 Feb | *No class; Mid-Winter Break*
-| W 22 Feb|  Tracing and Strings |
+| W 22 Feb|  Tracing and Strings |[Tracing and Strings](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/Ec-JX8Py2odPoPWI7VOzCu0Bo_6OW3rzo8etwx-L2TgHpA?e=LYi7Re)
 | F 24 Feb | Strings and Loops					   | | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
 | M  27 Feb | Lists  |                                |   |   
