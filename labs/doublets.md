@@ -351,8 +351,11 @@ What is the minimum number of steps you can achieve for each?
 
 Your `doublets.py` program lets the user chose what character to change at each step,
 and then verifies that each new word is a valid word.  
-##### Question 4.1: Can you think of a way to always find the minimum number of steps to transform one word to another?  
-##### Question 4.2: How will you know if a path between two words can be found? 
+##### Question 4.1:
+Can you think of a way to always find the minimum number of steps to transform one word to another?  
+##### Question 4.2: 
+How will you know if a path between two words can be found? 
+
 Include your answers to these questions in the `Evaluation Document`.
 
 ## What to Hand In
