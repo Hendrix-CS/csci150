@@ -191,7 +191,7 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)      | 1-2 Feb   | 8-9 Feb   |
 | 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)                | 8-9 Feb   | 15-16 Feb |
 | 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                            | 15-16 Feb | 22-23 Feb |
-| 5  | Mutation is the Word<!--({{site.baseurl}}/labs/doublets.html)-->                               | 22-23 Feb | 1-3 Mar   |
+| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                    | 22-23 Feb | 1-3 Mar   |
 | 6  | Todo Manager<!--({{site.baseurl}}/labs/todo-manager.html)-->                                   | 1-2 Mar   | 8-9 Mar   |
 | 7  | Caesar’s Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                 | 8-9 Mar   | 15-16 Mar |
 | 8  | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                     | 15-16 Mar | 29-30 Mar |
