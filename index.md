@@ -88,7 +88,7 @@ Upon completing this course, our goal is for you to be able to:
 | W 22 Feb|  Tracing and Strings |[Tracing and Strings](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/Ec-JX8Py2odPoPWI7VOzCu0Bo_6OW3rzo8etwx-L2TgHpA?e=LYi7Re)
 | F 24 Feb | Strings and Loops					   |[Strings and Loops](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/ET6VTu1CQzZFiNd5IfwG3A4BxJEcUe9Bz6_oI3cpGw5Mnw?e=fHz0aJ) | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |
-| M  27 Feb | Lists  |                                |   |   
+| M  27 Feb | Lists  |[Lists](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EbcoiweIJmxGh_GT4Ui4IDIBlYytxeQSMPip7sPsjWXEOw?e=k1n87s)                                |   |   
 | W  1 Mar | List processing examples				   |
 | F  3 Mar | Function Abstraction | |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
