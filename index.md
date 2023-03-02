@@ -90,7 +90,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M  27 Feb | Lists  |[Lists](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EbcoiweIJmxGh_GT4Ui4IDIBlYytxeQSMPip7sPsjWXEOw?e=k1n87s)                                |   |   
 | W  1 Mar | List processing examples				   |[List Examples](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/ESiMJBjQKKNLlCCTaNAGL4UBK5UXdxHw6N8b8CSgBBH3KQ?e=NDDWge)
-| F  3 Mar | Function Abstraction | |Project 1 due
+| F  3 Mar | Function Abstraction |[Abstraction Example](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EcpSlxShAiVPr8t79KGegjUBBJrz_VaRkPcRQilOiM7jQg?e=ZqhHvT) |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
 | M 6 Mar | The `for` loop |
