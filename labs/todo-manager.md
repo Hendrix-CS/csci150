@@ -147,9 +147,12 @@ Given a list of strings, this function should create a single string
 that combines all of the strings from the list, putting a newline
 character (`\n`) between each string. For example:
 
-	list_into_lines(['red', 'yellow', 'blue'])
+	>>> list_into_lines(['red', 'yellow', 'blue'])
 	'red\nyellow\nblue\n'
-	print(list_into_lines(['red', 'yellow', 'blue']))
+
+You can also test your function like this:
+
+	>>> print(list_into_lines(['red', 'yellow', 'blue']))
 	red
 	yellow
 	blue
