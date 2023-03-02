@@ -1,0 +1,142 @@
+% -*- mode: LaTeX; compile-command: "pdflatex exam2-inclass-fall-2022.tex" -*-
+\documentclass{article}
+
+\usepackage{amsmath, url, graphicx, array}
+
+\begin{document}
+
+\title{CSCI 150: Exam 2 -- In Class}
+\author{}
+\date{Monday, March 13, 2023}
+
+\maketitle
+
+\thispagestyle{empty}
+
+ You will have 50
+minutes to complete this exam. \textbf{You are not allowed to use your
+  notes, textbook, phone or computer.  Partial credit for incorrect answers can be given only
+  if you show your work.}  \bigskip
+
+  \vspace{0.3in}
+
+Print your name : \underline{\phantom{XXXXXXXXXXXXXXXXXXXXXXXXX}}
+\vspace{1in}
+
+
+
+\newpage
+
+\textbf{For each of questions \ref{traceAAA}--\ref{traceWhile}, trace
+  the execution of the given code, showing the function stack and any
+  printed output.}
+
+\begin{enumerate}
+
+\item \mbox{} \label{traceAAA}
+\begin{verbatim}
+def aaa(x : int) -> int:
+    y = 5
+    if x < y:
+        return x * y
+    else:
+        return x - y
+
+def bbb(x: int):
+    print(f'The number is {aaa(x + 3)}.')
+    return x + 6
+    print('Done!')
+
+def main1():
+    print(bbb(7))
+    print(bbb(-1))
+
+main1()
+\end{verbatim}
+
+
+
+
+\newpage
+
+\item \mbox{} \label{tracef1}
+\begin{verbatim}
+def f1():
+    print('Test')
+
+def f2(n: int):
+    f1()
+    if n < 2:
+        print(n)
+    else:
+        f1()
+        print(n)
+        f1()
+        print(n+1)
+        f1()
+
+def main2():
+    f2(1)
+    f2(2)
+
+main2()
+\end{verbatim}
+
+\newpage
+\item \mbox{} \label{traceWhile}
+
+\begin{verbatim}
+def main3():
+    s = 'raining'
+    t = ''
+    i = 0
+    j = 0
+
+    while i < len(s):
+        if s[i] < 'i':
+            t += s[i]
+        else:
+            j += i
+        i += 1
+
+    print(t)
+    print(j)
+
+main3()
+\end{verbatim}
+
+\eject
+\item Write a function \verb|count_after| which takes two parameters, a string \verb|s|, which might be empty or contain a number of characters (but will always be a lower case alphabetic), and a string \verb|char|, which will always be a single lower case alphabetic. Your function should return the number of characters in the string \verb|s| which come after \verb|char| in the alphabet.
+
+    For example:
+    \begin{itemize}
+      \item \verb|count_after('hendrix', 'g')| returns \verb|5| (since each of 'h', 'n', 'r', 'i', and 'x' come after 'g')
+      \item \verb|count_after('pepper', 'p')| returns \verb|1| (since only the 'r' comes after 'p')
+      \item \verb|count_after('xray', 'w')| returns \verb|2|
+      \item \verb|count_after('', 'a')| returns \verb|0|
+    \end{itemize}
+
+    \vspace{0.2in}
+
+    \verb|def counter_after(s: str, char: str) -> int:|
+    \eject
+
+  \item Write a function \verb|div_two| which takes in a positive integer \verb|n| -- you can assume it will always be positive, and returns the number of times necessary for \verb|n| to be divided by \verb|2| to get less than or equal to \verb|1|. You will want to use regular division here: \verb|/|  (i.e. single slash)
+
+For example:
+    \begin{itemize}
+      \item \verb|div_two(5)| returns \verb|3|, since we get the sequence 5 (step 0), 2.5 (step 1), 1.125 (step 2), and finally 0.625 (step 3)
+      \item \verb|div_two(4)| returns \verb|2|, since we get the sequence 4 (step 0), 2.0 (step 1), 1.0 (step 2)
+      \item \verb|div_two(8)| returns \verb|3|, since we get 8, 4.0, 2.0, 1.0
+      \item \verb|div_two(11)| returns \verb|4|, since we get 11, 5.5, 2.75, 1.375, 0.6875
+      \item \verb|div_two(1)| returns \verb|0|, since we do not need to take any steps!
+    \end{itemize}
+
+    \vspace{0.2in}
+
+
+    \verb|def div_two(n: int) -> int:|
+
+\end{enumerate}
+
+\end{document} 

@@ -1,0 +1,300 @@
+% -*- mode: LaTeX; compile-command: "pdflatex exam1-practice-f19.tex" -*-
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth 7in
+\topmargin -.75in
+\textheight 9in
+\pagestyle{empty}
+\setlength{\parindent}{0in}
+\setlength{\unitlength}{0.7in}
+
+
+\DeclareMathOperator{\acos}{acos}
+
+\newcommand{\vs}{\vspace{0.1in}}
+
+\begin{document}
+
+\title{CSCI 150: Exam 2 Practice}
+\date{\today}
+
+\maketitle
+
+\noindent{\bf Directions:}  Exam \#2 occurs in two parts, an in-class and take-home.
+
+\vs
+
+\vs
+
+\textbf{In-class:} The in-class portion will take place during regular class time on Monday, March 13. You will have 50 minutes to complete the exam. For the in-class portion, you may not use a computer, calculator, or other device. It will consist of tracing the execution of three pieces of code and writing two straight forward functions by hand. You must work the in-class without reference to notes, or any other resource.
+
+\vs
+
+\textbf{Take-home:} The take-home will be given to you as you leave the in-class. You should create a single .py file, and upload your file to the assignment on the class TEAM page. You will be asked to write 5 separate functions. Your solutions are due at the start of class on \textbf{Wednesday, March 15}.  Like on the Codingbat conditional homework and the practice exam below, example input and output will be provided. For the take home, the \emph{only} resources you may use are the following:
+\begin{itemize}
+  \item  any code you have created for class, including homework and labs
+  \item  any notes you have taken during class
+  \item  code and any other material that Prof. Seme, Dr. Stanley, or Dr. Yorgey have posted to either the lecture or lab Teams pages
+  \item  any information directly linked from the class homepage, \texttt{https://hendrix-cs.github.io/csci150/}
+  \item  anything in the official Python documentation, \texttt{https://docs.python.org/3/}
+\end{itemize}
+
+ You may not talk to a classmate, friend (real-life or Facebook), Siri, or anyone other than me about this exam until you turn it in, nor search the Internet or library or any reference other than those listed above for assistance.  You may not even mention anything about how long it took you to complete the exam, that you found problem \#2 particularly difficult (or easy), or in fact talk at all about the exam or Computer Science with anyone other than your instructor from Monday, 8:10am - Wednesday 8:10am.  Anyone who \emph{gives} answers is equally in violation of the Academic Integrity Policy as one who \emph{receives} them. All suspected violations will be reported to that committee.
+
+ \vs
+
+ \textbf{If you have ANY questions about what you would like to do is allowed, please ASK!}
+
+ \vs
+
+ \vs
+
+ \textbf{Important!} The use of a \verb|for| loop is not required on any problem on this exam, but you are welcome to use one where it is appropriate. A \verb|while| loop will also work where repetition is needed.
+
+
+\textbf{Specifications Assessment:}  Exam \#2 will be marked \textbf{Complete} provided:
+
+\begin{itemize}
+\item	Each problem is attempted
+\item	On the in-class:
+\begin{itemize}
+\item	At least one tracing problem is completely correct, one other has a single mistake, and the third makes clear that you understand how the stack works.
+\item  Excepting minor syntax issues, at least one by-hand code writing problem is correct, and the other misses a single case; both answers exhibit clear evidence that the student understands the basic structure of Python functions, conditionals, and loops.
+\end{itemize}
+\item	On the take-home:
+\begin{itemize}
+\item	No syntax errors in any code
+\item	No runtime errors with any of the examples given
+\item	3 out of 5 produce the right answer in all circumstances, 1 produces the right answer in all examples given, and the last produces right answers in at least two of the given examples
+\end{itemize}
+\end{itemize}
+Exam \#2 will be marked \textbf{partially complete} provided:
+\begin{itemize}
+\item	At most one problem on the in-class and one on the take-home are not attempted
+\item	On the in-class:
+\begin{itemize}
+\item  At least one tracing problem has all calls to the stack correct; loop variables are mostly updated correctly on at least one tracing problem.
+\item  By-hand code: At least one attempted solution would work in some circumstances; syntax errors are minor, and the work shown shows a basic grasp of Python structure
+\end{itemize}
+\item	On the take-home:
+\begin{itemize}
+\item	No syntax errors in any code
+\item	At least 3 functions produce no runtime errors with the examples given and 2 produce no runtime errors at all
+\item	At least 1 function produces the right answers in all circumstances, and one other produces the right answer on the examples given.
+\end{itemize}
+\end{itemize}
+
+The instructor will return your exam along with a rubric detailing your progress and assessment. If you earned less than a \textbf{Complete} instructions will be provided on that rubric about how to attempt to raise your assessment. In most cases, a \textbf{Missing} can only be ``upgraded'' to a \textbf{Partially Complete,} though the instructor reserves to right to allow \textbf{Missing} to become \textbf{Complete} in some circumstances.
+
+\vs
+
+In general, the student will be expected to correct all errors, complete additional problems as assigned, and meet with the instructor in office hours to discus their work.
+
+
+\newpage
+
+
+\textbf{In-Class Practice}
+
+\begin{enumerate}
+
+\item Trace the following code:
+
+\begin{verbatim}
+def main1():
+    a = 4
+    b = 7
+    s = 1
+
+    while a < b:
+        s *= a
+        a += 1
+
+    print(s)
+
+main1()
+\end{verbatim}
+
+
+\item  Trace the following code:
+
+\begin{verbatim}
+def f1():
+    print('Hello there')
+
+def f2(x: int):
+    if x < 2:
+        f1()
+        x = 7
+    elif x == 7:
+        f1()
+        f1()
+    else:
+        f1()
+        print('Goodbye!')
+        f1()
+
+def main2():
+    f2(5)
+    f2(0)
+
+
+main2()
+\end{verbatim}
+
+\newpage
+
+\item  Trace the following code:
+
+\begin{verbatim}
+def top(s: str) -> bool:
+    i = 0
+    k = 0
+    while i < len(s):
+        if s[i] <= 'm':
+            k +=1
+        i += 1
+    return k
+
+def main3():
+    print(top('exam'))
+    print(top('hello'))
+
+main3()
+\end{verbatim}
+
+\newpage
+
+
+
+
+
+\newpage
+
+For the next two, write code which will accomplish the following task. As practice for the in-class part of the exam, you should do this without any use of a Python interpreter -- that is, you should do this entirely by hand.
+
+\item Write a function \verb|same_char| which takes in two string parameters, \verb|s| and \verb|t|, which are guaranteed to be of the same length (you do not have to check or worry about this). It should return an integer which counts the number of times that the corresponding characters in the two strings are equal.
+
+    For example, \verb|same_char('smart','start')| should return \verb|4|, since the \verb|'s', 'a', 'r', 't'| all match. Likewise, \verb|same_char('aaaa', 'bbab')| would return \verb|1|.
+
+\item Write a function \verb|positive_only| which takes in a list of integers, \verb|lst|, as its parameter. It should return a list which contains exactly the entries in \verb|lst| which are positive.
+
+    For example, \verb|positive_only([4, -5, 0, 1, 2])| should return \verb|[4, 1, 2]|, and \verb|positive_only([-3, 0, -1])| should return \verb|[]|.
+\end{enumerate}
+\newpage
+\textbf{Take-Home Practice}
+
+\begin{enumerate}
+
+\item  Write a function \verb|word_count| which asks the user to enter a word, and continues to ask this question until the user enters 'exit' at which point the function returns the number of words entered (not counting 'exit' itself. The function \verb|word_count| should take no parameters, but return an \verb|int|.
+
+    Consider the following example transcripts:
+
+\begin{verbatim}
+Please enter a word ('exit' to quit): apple
+Please enter a word ('exit' to quit): high school
+Please enter a word ('exit' to quit): apple
+Please enter a word ('exit' to quit): exit
+\end{verbatim}
+The function should return \verb|3|. (Notice that it does not care that `apple' was given twice, nor that 'high school' has a space. It simply counts the number of entries made by the user until 'exit' is input).  Here are two more example transcripts:
+
+\begin{verbatim}
+Please enter a word ('exit' to quit): sdsdfsdf
+Please enter a word ('exit' to quit): car
+Please enter a word ('exit' to quit): banana
+Please enter a word ('exit' to quit): treadffd
+Please enter a word ('exit' to quit): exit
+\end{verbatim}
+will return \verb|4|. (Again, it does not check in anyway that the entries are ``real'' words.)
+
+Finally,
+
+\begin{verbatim}
+Please enter a word ('exit' to quit): exit
+\end{verbatim}
+will return \verb|0|.
+
+\textbf{Note:} The function you write will require an \verb|input| statement as part of the code! (You do not need to try to ``validate'' that input in any way.)
+
+
+
+\item  Write a function \verb|my_replace| which takes in three string parameters, \verb|s|, \verb|t|, and \verb|u|, where \verb|s| can be of any length and \verb|t| and \verb|u| are each always a single character, and returns \verb|s|, but with each occurrence of  \verb|t| in \verb|s| replaced with \verb|u|. You must do this using a \verb|while| loop or a \verb|for| loop and without using the built-in Python \verb|replace| method.
+
+For example:
+
+\begin{itemize}
+  \item  \verb|my_replace('hello','l','m')| should return \verb|'hemmo'|
+  \item  \verb|my_replace('hello','h','m')| should return \verb|'mello'|
+  \item  \verb|my_replace('hello','x','m')| should return \verb|'hello'|
+  \item  \verb|my_replace('','l','m')| should return \verb|''|
+  \item  \verb|my_replace('testing','t','q')| should return \verb|'qesqing'|
+\end{itemize}
+
+\item Write a function \verb|suffix_to_prefix| which takes two parameters, a string \verb|s|, and a non-negative integer \verb|n|. It should take the final $n$ characters of the string (the suffix) and return a string with them as the prefix to the original string. (The value of $n$ will always be less than or equal to the length of the string.
+
+For example:
+
+\begin{itemize}
+\item \verb|suffix_to_prefix('string', 3)| should return \verb|'ingstr'|  (the final three characters of 'string' have moved to the front)
+\item \verb|suffix_to_prefix('traffic', 2)| should return \verb|'ictraff'| (the final two characters of 'traffic' have moved to the front)
+\item \verb|suffix_to_prefix('hendrix', 4)| should return \verb|'drixhen'|
+\item \verb|suffix_to_prefix('hendrix', 0)| should return \verb|'hendrix'| (since 0 characters were moved)
+\item \verb|suffix_to_prefix('hendrix', 7)| should return \verb|'hendrix'| (since all of the characters were moved!)
+\end{itemize}
+
+
+
+\item  Write a function \verb|sum_between| which takes in two integer parameters \verb|a| and \verb|b| and returns the sum of all of the integers between $a$ and $b$ (inclusive). If $a > b$, it should return $0$.
+
+For example:
+
+\begin{itemize}
+  \item  \verb|sum_between(3,5)| should return 12
+  \item  \verb|sum_between(-2,4)| should return 7
+  \item  \verb|sum_between(6,6)| should return 6
+  \item  \verb|sum_between(7,2)| should return 0 (since $7 > 2$).
+    \item  \verb|sum_between(-3,3)| should return 0 (since $(-3) + (-2) + (-1) + 0 + 1 + 2 + 3 =0$)
+\end{itemize}
+
+\item Write a function \verb|make_numb| which takes in a list of non-negative, single-digit integers \verb|lst| and returns a single integer which is the result of concatenating the integers together. The list will always contain at least one entry.
+
+    For example:
+
+\begin{itemize}
+  \item  \verb|make_num([7, 3, 0, 1]| should return \verb|7301|
+  \item  \verb|make_num([5]| should return \verb|5|
+  \item  \verb|make_num([1, 2, 3, 4, 5]| should return \verb|12345|
+\end{itemize}
+
+\textbf{Hint:} There are at least two distinct ways to do this:
+\begin{itemize}
+  \item Convert the entries to strings, glue them together, and convert back to an integer
+  \item Use ``place arithmetic'' -- that is, in the first example above, \verb|[7, 3, 0, 1]| corresponds to $$ 7 \times 10^3 + 3 \times 10^2 + 0 \times 10^1 + 1 \times 10^0$$
+\end{itemize}
+Either method is valid.
+
+
+\item  Write a function \verb|list_min| which takes in a list \verb|lst| of integers and returns the \emph{index} of the smallest integer in the list. You can assume that \verb|lst| will always be non-empty. If the smallest integer appears more than once, the first index (i.e. lowest number) should be returned.
+
+    For example:
+
+    \begin{itemize}
+      \item  \verb|lst_min([3, 9, 1, 4, 3, 1, 7])| should return \verb|2|   (since \verb|1| is the lowest character and its first occurrence is in index 2.)
+      \item  \verb|lst_min([7])| should return \verb|0|
+      \item  \verb|lst_min([-2, -5, 0, 1, -2)| should return \verb|1|
+      \item  \verb|lst_min([3, 3, 3])| should return \verb|0|
+    \end{itemize}
+
+
+
+
+\end{enumerate}
+
+\end{document} 
