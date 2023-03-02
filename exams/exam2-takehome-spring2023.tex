@@ -1,0 +1,167 @@
+% -*- mode: LaTeX; compile-command: "pdflatex exam2-takehome-fall-2022.tex" -*-
+\documentclass{article}
+
+\usepackage{amsmath, url, graphicx, array, hyperref}
+
+\begin{document}
+
+\title{CSCI 150: Exam 2 -- Take Home}
+\author{}
+\date{Due at the beginning of class\\Wednesday, March 15, 2023}
+
+\maketitle
+
+\thispagestyle{empty}
+
+Please turn in a \emph{single} \texttt{.py} file, uploaded to the Exam \#2 assignment on Teams.
+
+
+
+Use comments (\verb|#|) to indicate which problem is
+which. \textbf{IMPORTANT:} Please use the same names for the functions
+and the same order for the parameters as we do in the problems. It makes it significantly easier for us to grade. Thank you!!
+
+The \emph{only} resources you may use are the following:
+\begin{itemize}
+  \item  any code you have created for class, including homework and labs
+  \item  any notes you have taken during class
+  \item  code and any other material your instructors have posted to either the lecture or lab Teams pages
+  \item  any information directly linked from the class homepage, \\ \texttt{https://hendrix-cs.github.io/csci150/}
+  \item  anything in the official Python documentation, \texttt{https://docs.python.org/3/}
+\end{itemize}
+
+ You may not talk to a classmate, friend (real-life or Facebook), Siri, or anyone other than me about this exam until you turn it in, nor search the Internet or library or any reference other than those listed above for assistance.  You may not even mention anything about how long it took you to complete the exam, that you found problem \#2 particularly difficult (or easy), or in fact talk at all about the exam or Computer Science with anyone other than your instructor from Monday, 8:10am - Wednesday 8:10am.  Anyone who \emph{gives} answers is equally in violation of the Academic Integrity Policy as one who \emph{receives} them. All suspected violations will be reported to that committee.
+
+
+
+\newpage
+
+\begin{enumerate}
+\item Write a function \verb|count_triples| which take in a list of integers \verb|lst| as a parameter and return a count of the number of entries in the list which are a triple (i.e. a multiple of three). Note that $0$ and $-6$ and $81$ are all multiples of 3. [Hint: The modulo operation \verb|%| will be useful here!] It is possible that the list will be empty.
+
+    For example:
+
+\verb|count_triples([5, 3, 6, 8, 9])| returns \verb|3|
+
+\verb|count_triples([1, 2, 5, 7])| returns \verb|0|
+
+\verb|count_triples([3, 6, 12, 6, 0])| returns \verb|5|
+
+\verb|count_triples([-3, -3, -6])| returns \verb|3|
+
+\verb|count_triples([])| returns \verb|0|
+
+\vfill
+
+\item Write a function \verb|between_ab| which takes in three string parameters: \verb|s| which will always be lower case alphabetic, but might be empty, have one, or have multiple characters, and then two single character, lower-case alphabetic strings \verb|a| and \verb|b|. The function \verb|between_ab| will return \verb|True| if each character of \verb|s| is between \verb|a| and \verb|b| (inclusive, so that \verb|a <= char <= b|) and \verb|False| otherwise.
+
+    For example:
+
+\verb|between_ab('test','a','z')| returns \verb|True|, since each character of \verb|'test'| is at least as big as \verb|'a'| but not bigger than \verb|'z'|
+
+\verb|between_ab('test','a','b')| returns \verb|False|, since \verb|'t'| does not live between \verb|'a'| and \verb|'b'|
+
+\verb|between_ab('hendrix','d','x')| returns \verb|True|
+
+\verb|between_ab('hendrix','e','x')| returns \verb|False| -- note that the \verb|'d'| in \verb|'hendrix'| is the problem
+
+\verb|between_ab('','a','z')| returns \verb|True|
+
+\verb|between_ab('test','z','a')| returns \verb|False|, since it is not true that \verb|'z' <= 't' <= 'a'|
+
+\vfill
+\eject
+
+\item Write a function \verb|interpol| which has two string parameters, \verb|s| which might be empty or have multiple characters and \verb|char| which will always be a single character. It should return a string where \verb|char| in put in between each of the characters of \verb|s|.
+
+    For example:
+
+\verb|interpol('test','X')| returns \verb|'tXeXsXt'| -- note that it does \emph{not} add an \texttt{'X'} after the final \verb|'t'| in \verb|'test'|!!
+
+\verb|interpol('test','#')| returns \verb|'t#e#s#t'|
+
+\verb|interpol('','X')| returns \verb|''| -- since there are no places to insert
+
+\verb|interpol('b','X')| returns \verb|'b'| - again, since we can't put \verb|'X'| between consecutive characters, since there are not any!
+
+\verb|interpol('rrr','r')| returns \verb|'rrrrr'|
+
+[Hint: Problem \#3 is a bit tricky to deal with. You'll likely have to try a bunch of things to get it to work!]
+\vfill
+
+\item Write a function \verb|multiply_by| which takes in two parameters, \verb|lst|, a list of integers (which could be empty!) and \verb|n|, an integer. Your function should return a new list where each new entry is the old entry, but multiplied by \verb|n|.
+
+    For example:
+
+\verb|multiply_by([1, 2, 3, 4], 6)| returns \verb|[6, 12, 18, 24])|
+
+\verb|multiply_by([2, 2, 2], -5)| returns \verb|[-10, -10, -10])|
+
+\verb|multiply_by([], 3)| returns \verb|[])|
+
+\verb|multiply_by([6, 8, 1, -3, 1], 0)| returns \verb| [0, 0, 0, 0, 0])|
+
+\vfill
+\eject
+
+\item Write a function \verb|negative_sum| which asks the user to
+  input integers -- it continues to ask the user to input an integer
+  until they enter \verb|'exit'|, at which point the function then returns
+  the \emph{sum} of only the negative values they entered. You can assume that the
+  user will follow directions (i.e. they will not enter 'sdkfhs' or
+  '12.3' at any time).
+
+
+    Consider the following example transcripts:
+
+\begin{verbatim}
+Please enter an integer ('exit' to quit): 2
+Please enter an integer ('exit' to quit): -3
+Please enter an integer ('exit' to quit): -7
+Please enter an integer ('exit' to quit): exit
+\end{verbatim}
+The function should return \verb|-10|, since we want to return the sum  $(-3) + (-7) = -10$.  Here are three more example transcripts:
+
+\begin{verbatim}
+Please enter an integer ('exit' to quit): -5
+Please enter an integer ('exit' to quit): 2
+Please enter an integer ('exit' to quit): 2
+Please enter an integer ('exit' to quit): 1
+Please enter an integer ('exit' to quit): exit
+\end{verbatim}
+will return \verb|-5|.
+
+\begin{verbatim}
+Please enter an integer ('exit' to quit): 1
+Please enter an integer ('exit' to quit): 8
+Please enter an integer ('exit' to quit): exit
+\end{verbatim}
+will return \verb|0|.
+
+\begin{verbatim}
+Please enter an integer ('exit' to quit): 0
+Please enter an integer ('exit' to quit): -5
+Please enter an integer ('exit' to quit): -3
+Please enter an integer ('exit' to quit): 7
+Please enter an integer ('exit' to quit): -3
+Please enter an integer ('exit' to quit): -4
+Please enter an integer ('exit' to quit): exit
+\end{verbatim}
+will return \verb|-15|.
+
+\textbf{Hints:}
+\begin{itemize}
+  \item You will require an \verb|input| statement as part of your
+    code -- but there is no need to try to validate the user input --
+    assume the user follows directions. (You will not need any format checking or \verb|.isdigit()| or anything.)
+  \item Remember that \texttt{input} always returns a string!
+  \item Finally, note that \verb|negative_sum()| itself takes no parameters.
+
+\end{itemize}
+
+
+
+
+\end{enumerate}
+
+\end{document} 

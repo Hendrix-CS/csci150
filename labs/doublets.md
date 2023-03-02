@@ -51,15 +51,20 @@ and enforces all the rules given above by Lewis Carroll.
 
 ## Grading Criteria
 
+To receive credit, two **correctly named** assignment files per pair must be submitted via Teams.
+
+* The file naming convention for lab assignments is `L{lab_number}_{Lastname_1}{Lastname_2}_{filename}`, where `{Lastname_i}` is the capitalized last name of group member i and `{filename}` is the filename specified in the assignment. If your group has three members, the convention is `L{lab_number}_{Lastname_1}{Lastname_2}{Lastname_3}_{filename}`,
+	* For example, if Dr. Stanley and Dr. Yorgey are a group for lab 5, which expects `evaluation.txt` and `doublets.py`, then they will submit `L5_StanleyYorgey_evaluation.txt` and `L5_StanleyYorgey_doublets.py`.
+
 * A **Complete** submission includes:
-  * An Evaluation Document containing:
+  * An Evaluation Document, `evaluation.txt`, containing:
     * Pseudocode from Step 1
-	* Thoughtful answers to questions from Step 4
+    * Thoughtful answers to questions 4.1 and 4.2
   * `doublets.py`
     * Correctly implements all features from Step 2 and Step 3
   * No Pycharm style warnings.
 * A **Partially Complete** submission includes:
-  * An Evaluation Document containing:
+  * An Evaluation Document, `evaluation.txt`, containing:
     * Pseudocode from Step 1
   * `doublets.py`
     * Correctly implements all features from Step 2
@@ -112,7 +117,7 @@ will always enter exactly what is expected.
     Solution path found in 4 steps.
     CAT -> CAB -> COB -> COG -> DOG
 	
-Create a text file which will serve as your Evaluation Document.
+Create a text file, `evaluation.txt`, which will serve as your Evaluation Document. You can create this file using PyCharm.
 Include your pseudocode in this file.
 	
 ### Step 2 - Initial Implementation 
@@ -345,10 +350,13 @@ What is the minimum number of steps you can achieve for each?
 ### Future Thoughts
 
 Your `doublets.py` program lets the user chose what character to change at each step,
-and then verifies that each new word is a valid word.  Can you think of a way to always find the
-minimum number of steps to transform one word to another?  How will you know if a path
-between two words can be found? Include your answers to these questions
-in the `Evaluation Document`.
+and then verifies that each new word is a valid word.  
+##### Question 4.1:
+Can you think of a way to always find the minimum number of steps to transform one word to another?  
+##### Question 4.2: 
+How will you know if a path between two words can be found? 
+
+Include your answers to these questions in the `Evaluation Document`.
 
 ## What to Hand In
 
@@ -356,12 +364,13 @@ Make sure you examine all of the style suggestions that PyCharm makes, and adjus
 
 You must hand in:
 
-* Evaluation Document (containing pseudocode, and answers to
-	"Future thoughts" questions)
-* `doublets.py`
+* `L5_{Lastname_1}{Lastname_2}_evaluation.txt` (containing pseudocode, and answers to
+	"Future thoughts" questions 4.1 and 4.2)
+* `L5_{Lastname_1}{Lastname_2}_doublets.py`
 * `spellcheck.py`
 * `english3.txt`
 
+Please do **not** rename `spellcheck.py` or `english3.py`.
 (Yes, please turn in `spellcheck.py`
 and `english3.txt` even though you did not create them---it makes
 the grading process much easier!)

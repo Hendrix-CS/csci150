@@ -177,10 +177,3 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
   * For each question, directions to the user are clear as to what
     kind of input they should enter; for example: "Do you want 'y'
 	or 'yes' for an affirmative?"
-
-### Submission
-
-* If you are in Prof. Seme's section, you should submit your project
-  via Teams.
-* If you are in Prof. Yorgey's section, you should submit your project
-  via the [same form used to submit labs]({{ site.submission }}).

@@ -118,6 +118,9 @@ the lab:
     Your choice? 4
 
 ## Grading Criteria
+To receive credit, ones **correctly named** assignment file per pair must be submitted via Teams.
+* The file naming convention for lab assignments is `L{lab_number}_{Lastname_1}{Lastname_2}_{filename}`, where `{Lastname_i}` is the capitalized last name of group member i and `{filename}` is the filename specified in the assignment. If your group has three members, the convention is `L{lab_number}_{Lastname_1}{Lastname_2}{Lastname_3}_{filename}`,
+	* For example, if Dr. Stanley and Dr. Yorgey are a group for lab 6, which expects `todo_manager.py`, then they will submit `L6_StanleyYorgey_todo_manager.py`.
 
 * A **Complete** submission includes:
   * All steps complete.
@@ -373,6 +376,6 @@ nice or add your own extra features.
 
 ## What to turn in
 
-* `todo_manager.py`
+* `L6_{Lastname_1}{Lastname_2}_todo_manager.py`
     - Make sure you address any Pycharm style warnings before turning
       in your code!
