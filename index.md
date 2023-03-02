@@ -95,7 +95,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 6 Mar | The `for` loop |
 | W 8 Mar | More `for` loop practice |
-| F 10 Mar | Exam 2 Review ||
+| F 10 Mar | Exam 2 Review |[Exam 2 Sample Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/Eagg_hwMEfBLlmijslgfxLMBWXNNcTVu_Oib9V3b6kLq6A?e=Y6gF6u)|
 |
 | M 13 Mar | **Exam 2**							   |   |
 | W 15 Mar | File I/O |  | Project 2 Introduced
