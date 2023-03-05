@@ -93,7 +93,7 @@ Upon completing this course, our goal is for you to be able to:
 | F  3 Mar | Function Abstraction |[Abstraction Example](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EcpSlxShAiVPr8t79KGegjUBBJrz_VaRkPcRQilOiM7jQg?e=ZqhHvT) |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
-| M 6 Mar | The `for` loop |
+| M 6 Mar | The `for` loop |[For Loops](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EVFtt4v5g-pEoBKySI8NO_0BiQkz3KdaMzPCymng9LiMfg?e=yYqSUw)
 | W 8 Mar | More `for` loop practice |
 | F 10 Mar | Exam 2 Review |[Exam 2 Sample Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/Eagg_hwMEfBLlmijslgfxLMBWXNNcTVu_Oib9V3b6kLq6A?e=Y6gF6u)|
 |
@@ -241,7 +241,7 @@ submitted by the start of the next class period.
 
 * Exam 1: Monday, February 13, covering functions, math, numerical
   data, and conditionals   [Practice Exam 1](/exams/cs150-exam1-practice-spring2023.pdf)  [Exam 1 Redo Problems](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EeIcwhaL8x9AjC4wuBhUbRYBewIy5fUmLyZrx9RM7R6hDg?e=Cmlhrz)
-* Exam 2: Monday, March 13, covering input/output, `while` loops,  strings , and lists  [Practice Exam 2](/exams/exam2-practice-spring-2023.pdf) 
+* Exam 2: Monday, March 13, covering input/output, `while` loops,  strings , and lists  [Practice Exam 2](/exams/exam2-practice-spring-2023.pdf)
 * Exam 3: Monday, April 17, covering  the heap, dictionaries,  and classes.  
 
 There is no final exam; you will complete a final project instead, as
