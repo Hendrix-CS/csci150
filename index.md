@@ -10,7 +10,7 @@ layout: course-multi
 | Time   |Sunday| Monday      | Tuesday  | Wednesday |Thursday|
 |:------:|-------------|----------|-----------|
 |6-8 pm  | Ted | Simon |Matthew | | |
-|8-10 pm || Ryan | Riley| |Zoie|
+|8-10 pm || Ryan | | Riley |Zoie|
 
 
 <!--
