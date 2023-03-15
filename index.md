@@ -98,7 +98,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 10 Mar | Exam 2 Review |[Exam 2 Sample Solutions](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EV-3EAioMLBMrvO1w0_ECrsBH2x1U6uxAfX3Fw3aMJM62g?e=gVPNke)|
 |
 | M 13 Mar | **Exam 2**							   |   |
-| W 15 Mar | File I/O |  | Project 2 Introduced
+| W 15 Mar | File I/O |[File IO.py](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EYmcX6PpzL1Ot8oJvpFcrqwBFoI5LfuUg2XqQWvjp2GCAg?e=8yy4gy) [sample-text-file.txt](https://hendrix-my.sharepoint.com/:t:/g/personal/seme_hendrix_edu/EW6NM8xOhShMiyLQZkKf8_gB1p7kRF6tuMAUH9Se871n6Q?e=4XVQ9R)   | Project 2 Introduced
 | F 17 Mar | The Heap and Mutability|
 |
 | M 20 Mar | *No class; Spring Break*                             
