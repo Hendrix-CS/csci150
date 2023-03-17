@@ -99,7 +99,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 13 Mar | **Exam 2**							   |   |
 | W 15 Mar | File I/O |[File IO.py](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EYmcX6PpzL1Ot8oJvpFcrqwBFoI5LfuUg2XqQWvjp2GCAg?e=8yy4gy) [sample-text-file.txt](https://hendrix-my.sharepoint.com/:t:/g/personal/seme_hendrix_edu/EW6NM8xOhShMiyLQZkKf8_gB1p7kRF6tuMAUH9Se871n6Q?e=4XVQ9R)   | Project 2 Introduced
-| F 17 Mar | The Heap and Mutability|
+| F 17 Mar | The Heap and Mutability|[The Heap](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EQ3Rfz-JMTtOrMe9kTlcKzMBSMJB5xv4wS9cZJARSN4Kmg?e=mAcWKx)
 |
 | M 20 Mar | *No class; Spring Break*                             
 | W 22 Mar | *No class; Spring Break*
