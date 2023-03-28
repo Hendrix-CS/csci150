@@ -107,7 +107,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M 27 Mar | Dictionaries                              |[Dictionaries](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EW5halwJrv5Ou2gDb-82hk8BfNBTWNG64Fuhk0BGQrsEDA?e=KrTp3A)| HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
 | | | |[Project 2 Assigned: Word Games]({{site.baseurl}}/projects/project2.html)
-| W 29 Mar | Dictionaries |
+| W 29 Mar | Dictionaries |[More Dictionaries](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EWHXh2HhDEFCiVkTTgK8Qr0BbDHGrtCRVgwezW0dFgxFiw?e=OvS3cE)
 | F 31 Mar | Introduction to classes and objects       || HW: [Heap Tracing Homework](homework/heap-tracing-homework.html)  
 |
 | M  3 Apr | Classes/objects example 1|
