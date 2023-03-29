@@ -224,7 +224,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
 | 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 15 Feb   | 3 Mar  |
-| 2 | [Word Games](){{site.baseurl}}/projects/project2.html)                       | 27 Mar   | 10 Apr |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                       | 27 Mar   | 10 Apr |
 | 3 | Final Project<!--({{site.baseurl}}/projects/final.html)-->                     | 10 Apr   | 5 May  |
 
 
