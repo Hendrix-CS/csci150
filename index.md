@@ -109,7 +109,7 @@ Upon completing this course, our goal is for you to be able to:
 | | | |[Project 2 Assigned: Word Games]({{site.baseurl}}/projects/project2.html)
 | W 29 Mar | Dictionaries |[More Dictionaries](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EWHXh2HhDEFCiVkTTgK8Qr0BbDHGrtCRVgwezW0dFgxFiw?e=OvS3cE)
 | | |[zipcodes.txt](https://hendrix-my.sharepoint.com/:t:/g/personal/seme_hendrix_edu/EVXHdz_8gspMseXRRDPYCNQB_ZfSR1zbdcYyfA2nlt-sXQ?e=E3h1Xa)
-| F 31 Mar | Introduction to classes and objects       || HW: [Heap Tracing Homework](homework/heap-tracing-homework.html)  
+| F 31 Mar | Introduction to classes and objects       |[Intro to Classes](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EbuFmOkFoONBllhKy-vMpBwBaX_PFKCMInjUdSRwijeo6w?e=CMKcfe)| HW: [Heap Tracing Homework](homework/heap-tracing-homework.html)  
 |
 | M  3 Apr | Classes/objects example 1|
 | W  5 Apr | Classes/objects example 2|
