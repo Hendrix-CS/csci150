@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 9
+num: 10
 worktitle: Water Jugs
 ---
 
@@ -18,6 +18,10 @@ and Samuel L. Jackson.  They must solve different puzzles or else
 things will explode and people will die.
 
 ## Grading Criteria
+
+* To receive credit, three **correctly named** assignment files per pair must be submitted via Teams.
+  * The file naming convention for lab assignments is `L{lab_number}_{Lastname_1}{Lastname_2}_{filename}`, where `{Lastname_i}` is the capitalized last name of group member i and `{filename}` is the filename specified in the assignment. If your group has three members, the convention is `L{lab_number}_{Lastname_1}{Lastname_2}{Lastname_3}_{filename}`,
+  * For example, if Dr. Stanley and Dr. Yorgey are a group for lab 5, which expects `waterjug.py`, `step2.py`, and `step3.py`, then they will submit `L10_StanleyYorgey_waterjug.py`, `L10_StanleyYorgey_step2.py`, and `L10_StanleyYorgey_step3.py`.
 
 * A **Complete** submission includes:
   * All 3 steps complete.
