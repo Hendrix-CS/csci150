@@ -111,7 +111,7 @@ Upon completing this course, our goal is for you to be able to:
 | | |[zipcodes.txt](https://hendrix-my.sharepoint.com/:t:/g/personal/seme_hendrix_edu/EVXHdz_8gspMseXRRDPYCNQB_ZfSR1zbdcYyfA2nlt-sXQ?e=E3h1Xa)
 | F 31 Mar | Introduction to classes and objects       |[Intro to Classes](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EbuFmOkFoONBllhKy-vMpBwBaX_PFKCMInjUdSRwijeo6w?e=CMKcfe)| HW: [Heap Tracing Homework](homework/heap-tracing-homework.html)  
 |
-| M  3 Apr | Classes/objects example 1|
+| M  3 Apr | Classes/objects example 1|[Class Examples 1](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdAOdBUVGONMtpGqPY1UQh8Bow5cOd3FGLzcapxBEyDU3w?e=B2DC5c)
 | W  5 Apr | Classes/objects example 2|
 | F  7 Apr | PyGame Intro |            | HW: [Class & Dictionary Practice]({{site.baseurl}}/homework/dict-class-homework.html)
 |
