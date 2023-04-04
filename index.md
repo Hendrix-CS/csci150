@@ -119,7 +119,7 @@ Upon completing this course, our goal is for you to be able to:
 | M  10 Apr | Working in PyGame | |Project 2 due
 | | | |Project 3 Assigned: Final Project <!--({{site.baseurl}}/projects/final.html)-->
 | W  12 Apr | Classes and Games |
-| F 14 Apr | Exam 3 Review     | |
+| F 14 Apr | Exam 3 Review     |[Exam 3 Practice Sample Solutions](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaHDn1CtMEhDuN4dyJ_dip4BIqsCP7UJTdRpdUbyiWq-0g?e=1PFz11)] |
 |
 | M 17 Apr | **Exam 3**                 |   |  Project 3 proposal due
 | W 20 Apr | Recursion                         |   |
@@ -244,7 +244,7 @@ submitted by the start of the next class period.
 * Exam 1: Monday, February 13, covering functions, math, numerical
   data, and conditionals   [Practice Exam 1](/exams/cs150-exam1-practice-spring2023.pdf)  [Exam 1 Redo Problems](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EeIcwhaL8x9AjC4wuBhUbRYBewIy5fUmLyZrx9RM7R6hDg?e=Cmlhrz)
 * Exam 2: Monday, March 13, covering input/output, `while` loops,  strings , and lists  [Practice Exam 2](/exams/exam2-practice-spring-2023.pdf)  [Exam 2 Redo Problems](/exams/exam2-redo-spring2023.pdf)
-* Exam 3: Monday, April 17, covering  the heap, dictionaries,  and classes.  
+* Exam 3: Monday, April 17, covering  the heap, dictionaries,  and classes.   [Practice Exam 3](/exams/exam3-practice-spring2023.pdf)
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.
