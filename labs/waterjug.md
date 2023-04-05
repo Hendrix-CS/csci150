@@ -63,7 +63,7 @@ to help us solve this?
 
 ## Step 1: The `WaterJug` class
 
-Open a file named `waterjug.py`. In this file, you will define
+Open a file named `L10_{Lastname_1}{Lastname_2}_waterjug.py` according to the filename conventions outlined above. In this file, you will define
 the `WaterJug` class. Each `WaterJug` object will need to have two variables
 that we can think of as the state of that `WaterJug`:
 
@@ -166,14 +166,16 @@ the following message:
 
 ## Step 2: The Puzzle
 
-In a new file, `step2.py`, write a program
+In a new file, `L10_{Lastname_1}{Lastname_2}_step2.py`, write a program
 that allows the user to set up and then solve a
 water jugs puzzle.  To use the `WaterJug` class,
 you will need the following line at the top of your file:
 
-    from waterjug import WaterJug
+    from L10_{Lastname_1}{Lastname_2}_waterjug import WaterJug
 
-Your program should:
+ where `{Lastname_i}` is the capitalized last name of group member i.
+ 
+ Your program should:
 
 * Ask the user the capacity of the first `WaterJug`
 * Ask the user the capacity of the second `WaterJug`
@@ -223,7 +225,7 @@ assignment, you may assume that all user input is valid." %}
 
 ## Step 3: Generalizing
 
-In a new file, `step3.py`, generalize your program from Step 2 so
+In a new file, `L10_{Lastname_1}{Lastname_2}_step3.py`, generalize your program from Step 2 so
 that it works with any number
 of `WaterJug`s instead of just 2.  In particular, the
 program should:
@@ -276,6 +278,6 @@ remember, "Think fast, Look alive, Die hard."
 
 You must hand in:
 
-  * `waterjug.py`
-  * `step2.py`
-  * `step3.py`
+  * `L10_{Lastname_1}{Lastname_2}_waterjug.py`
+  * `L10_{Lastname_1}{Lastname_2}_step2.py`
+  * `L10_{Lastname_1}{Lastname_2}_waterjug.py`
