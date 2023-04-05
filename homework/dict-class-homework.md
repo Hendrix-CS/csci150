@@ -16,9 +16,9 @@ You will earn a **Partially Complete** provided that:
 - at least one class problem has a corerctly implemented `__init()__` method, and
 - there is no confusion about print vs return values
 
-Upload your code to the class Team page as instructed. For each problem, in addition to the code itself, you should have one or more lines of comments which describe what happened, following the 3 steps below:
+Upload your code to the class Team page using the file name **HW9Lastname.py**. For each problem, in addition to the code itself, you should have one or more lines of comments which describe what happened, following the 3 steps below:
 
-1\. **Design**: FFirst, write a function or design a Python class as requested in the
+1\. **Design**: First, write a function or design a Python class as requested in the
   exercise.
 
 2\. **Check**: Run the your code against the examples provided.  Does the actual
