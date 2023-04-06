@@ -114,7 +114,7 @@ Upon completing this course, our goal is for you to be able to:
 | M  3 Apr | Classes/objects example 1|[Class Examples 1](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdAOdBUVGONMtpGqPY1UQh8Bow5cOd3FGLzcapxBEyDU3w?e=B2DC5c)
 | W  5 Apr | Classes/objects example 2|[Class Examples 2](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EX0bL7dlTatNlN2parRgQHMBk5QHkMpR_3O7sOn4aonCNw?e=XA9bCg)
 |  | |[books.txt](https://hendrix-my.sharepoint.com/:t:/g/personal/seme_hendrix_edu/EcGCjyK0rPJHt-CxEcMgwioBbjRaeNX_pxGMaAHFVhpLmQ?e=HWvlvJ)
-| F  7 Apr | PyGame Intro |            | HW: [Class & Dictionary Practice]({{site.baseurl}}/homework/dict-class-homework.html)
+| F  7 Apr | PyGame Intro |[Pygame Intro](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUCvAWopYvtFkav3bRUqBXABFl4zM8B9BvJ6LbdETkV2dQ?e=uX5xMD)            | HW: [Class & Dictionary Practice]({{site.baseurl}}/homework/dict-class-homework.html)
 |
 | M  10 Apr | Working in PyGame | |Project 2 due
 | | | |Project 3 Assigned: Final Project <!--({{site.baseurl}}/projects/final.html)-->
