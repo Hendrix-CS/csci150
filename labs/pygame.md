@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 10
+num: 11
 worktitle: Graphics and Animation
 ---
 
@@ -10,7 +10,10 @@ worktitle: Graphics and Animation
 * [Pygame](https://www.pygame.org/)
 
 ## Grading Criteria
-
+* To receive credit, two **correctly named** assignment files per pair must be submitted via Teams.
+  * The file naming convention for lab assignments is `L{lab_number}_{Lastname_1}{Lastname_2}_{filename}`, where `{Lastname_i}` is the capitalized last name of group member i and `{filename}` is the filename specified in the assignment. If your group has three members, the convention is `L{lab_number}_{Lastname_1}{Lastname_2}{Lastname_3}_{filename}`,
+  * For example, if Dr. Stanley and Dr. Yorgey are a group for lab 11, which expects `face1.py` and `face2.py`, then they will submit `L11_StanleyYorgey_face1.py` and `L11_StanleyYorgey_face2.py`.
+ 
 * A **Complete** submission includes:
   * All 4 steps complete.
   * In Steps 1.3 and 2.1, the designed face includes
@@ -353,4 +356,4 @@ are intersecting, and if so, makes them bounce off of each other.
 
 ## What to Hand In
 
-Submit `face1.py` and `face2.py` via Teams.
+Submit (correctly named) `face1.py` and `face2.py` via Teams.
