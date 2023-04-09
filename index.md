@@ -116,7 +116,7 @@ Upon completing this course, our goal is for you to be able to:
 |  | |[books.txt](https://hendrix-my.sharepoint.com/:t:/g/personal/seme_hendrix_edu/EcGCjyK0rPJHt-CxEcMgwioBbjRaeNX_pxGMaAHFVhpLmQ?e=HWvlvJ)
 | F  7 Apr | PyGame Intro |[Pygame Intro](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUCvAWopYvtFkav3bRUqBXABFl4zM8B9BvJ6LbdETkV2dQ?e=uX5xMD)            | HW: [Class & Dictionary Practice]({{site.baseurl}}/homework/dict-class-homework.html)
 |
-| M  10 Apr | Working in PyGame | |Project 2 due
+| M  10 Apr | Working in PyGame |[Working in Pygame](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUg3fXqPwAtAgt0LXHyqZF4BMKxLaDbtcSTwxWjPuVGwhA?e=1E7fPi) |Project 2 due
 | | | |Project 3 Assigned: Final Project <!--({{site.baseurl}}/projects/final.html)-->
 | W  12 Apr | Classes and Games |
 | F 14 Apr | Exam 3 Review     |[Exam 3 Practice Sample Solutions](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaHDn1CtMEhDuN4dyJ_dip4BIqsCP7UJTdRpdUbyiWq-0g?e=1PFz11)|
