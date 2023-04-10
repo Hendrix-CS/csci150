@@ -117,7 +117,7 @@ Upon completing this course, our goal is for you to be able to:
 | F  7 Apr | PyGame Intro |[Pygame Intro](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUCvAWopYvtFkav3bRUqBXABFl4zM8B9BvJ6LbdETkV2dQ?e=uX5xMD)            | HW: [Class & Dictionary Practice]({{site.baseurl}}/homework/dict-class-homework.html)
 |
 | M  10 Apr | Working in PyGame |[Working in Pygame](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUg3fXqPwAtAgt0LXHyqZF4BMKxLaDbtcSTwxWjPuVGwhA?e=1E7fPi) |Project 2 due
-| | | |Project 3 Assigned: Final Project <!--({{site.baseurl}}/projects/final.html)-->
+| | |[doh.mp3](https://hendrix-my.sharepoint.com/:f:/g/personal/seme_hendrix_edu/EkJv6cEbd3ZJku0-rBCu-JQByrdD90kd4HOlKvkF1VN0fg?e=IVDeo7) |[Project 3 Assigned: Final Project]({{site.baseurl}}/projects/final.html)
 | W  12 Apr | Classes and Games |
 | F 14 Apr | Exam 3 Review     |[Exam 3 Practice Sample Solutions](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaHDn1CtMEhDuN4dyJ_dip4BIqsCP7UJTdRpdUbyiWq-0g?e=1PFz11)|
 |
@@ -226,7 +226,7 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
 | 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 15 Feb   | 3 Mar  |
 | 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                       | 27 Mar   | 10 Apr |
-| 3 | Final Project<!--({{site.baseurl}}/projects/final.html)-->                     | 10 Apr   | 5 May  |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                     | 10 Apr   | 5 May  |
 
 
 
