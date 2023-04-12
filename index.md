@@ -118,7 +118,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | M  10 Apr | Working in PyGame |[Working in Pygame](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUg3fXqPwAtAgt0LXHyqZF4BMKxLaDbtcSTwxWjPuVGwhA?e=1E7fPi) |Project 2 due
 | | |[doh.mp3](https://hendrix-my.sharepoint.com/:f:/g/personal/seme_hendrix_edu/EkJv6cEbd3ZJku0-rBCu-JQByrdD90kd4HOlKvkF1VN0fg?e=IVDeo7) |[Project 3 Assigned: Final Project]({{site.baseurl}}/projects/final.html)
-| W  12 Apr | Classes and Games |
+| W  12 Apr | Classes and Games |[Classes and Games](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUtGgUH_sOZDmEimAp3jcTABZnRY7TP55nsS7Q6AIL2xgQ?e=o7Qb6v)
 | F 14 Apr | Exam 3 Review     |[Exam 3 Practice Sample Solutions](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaHDn1CtMEhDuN4dyJ_dip4BIqsCP7UJTdRpdUbyiWq-0g?e=1PFz11)|
 |
 | M 17 Apr | **Exam 3**                 |   |  Project 3 proposal due
