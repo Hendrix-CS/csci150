@@ -169,7 +169,7 @@ point during the semester.
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 3  | W Mar 8 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Mar 27 |F **Mar 31** |
 | 8 | [Heap Tracing Homework](homework/heap-tracing-homework)               | F Mar 31  | W Apr 5|[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)
-| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework)       | F Apr 7  | W Apr 12 |
+| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework)       | F Apr 7  | W Apr 12 |[Sample Solution](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdQKSKuWJ0ROpBpp9DFkY3wBenDzB7uWRcglObOq43whcw?e=WIOeN2)
 
 
 
