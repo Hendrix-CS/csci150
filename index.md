@@ -122,7 +122,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 14 Apr | Exam 3 Review     |[Exam 3 Practice Sample Solutions](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaHDn1CtMEhDuN4dyJ_dip4BIqsCP7UJTdRpdUbyiWq-0g?e=1PFz11)|
 |
 | M 17 Apr | **Exam 3**                 |   |  Project 3 proposal due
-| W 20 Apr | Recursion                         |   |
+| W 20 Apr | Recursion                         |[Recursion](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaNmdTDY0ltBjAiqnDDoPZwBq0Kxeoo-9dcLWEAJu9uyhQ?e=vXD6ZM)   |
 | F 21 Apr | Recursion (trees) |
 |
 | M 24 Apr | Structuring larger programs 1             |  |
