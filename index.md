@@ -125,8 +125,8 @@ Upon completing this course, our goal is for you to be able to:
 | W 20 Apr | Recursion                         |[Recursion](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaNmdTDY0ltBjAiqnDDoPZwBq0Kxeoo-9dcLWEAJu9uyhQ?e=vXD6ZM)   |
 | F 21 Apr | Recursion (trees) |[Trees](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EXAXjQtoqbJKlbIlziRtoEkB_zM1Ei5gehgxM-oe6p5PDw?e=NSIJyM)
 |
-| M 24 Apr | Structuring larger programs 1             |  |
-| W 26 Apr | Structuring larger programs 2
+| M 24 Apr | Time Efficiency             |[Time Efficiency](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaCGl4Nf5rtMpOooLNfZtzIBPpuASA21mmswsX8_zUNvPw?e=3zkzBq)  |
+| W 26 Apr | Project Workshop in Class
 | F 28 Apr | Project Workshop in Class
 |
 | F 5 May | Final Project Presentations (2-5 pm)
