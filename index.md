@@ -5,12 +5,12 @@
 layout: course-multi
 ---
 
-## <a name="TAs">TAs</a>
+<!-- ## <a name="TA Office Hours">TAs</a> -->
 
-| Time   |Sunday| Monday      | Tuesday  | Wednesday |Thursday|
-|:------:|-------------|----------|-----------|
-|6-8 pm  | Ted | Simon |Matthew | | |
-|8-10 pm || Ryan | Riley| |Zoie|
+<!-- | Time   |Sunday| Monday      | Tuesday  | Wednesday |Thursday| -->
+<!-- |:------:|-------------|----------|-----------| -->
+<!-- |6-8 pm  | Ted | Simon |Matthew | | | -->
+<!-- |8-10 pm || Ryan | Riley| |Zoie| -->
 
 
 <!--
@@ -62,81 +62,81 @@ Upon completing this course, our goal is for you to be able to:
 <br/>
 -->
 
-| Date     | Topic                                                                                                                                                                      | Lecture notes & code                                            | HW and Links                                                                                    |
-|:--------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| W 18 Jan | Intro to CS                                                                                                                                                                |[Intro](https://www.kaggle.com/code/larskseme/2023-01-18-day-1-introduction)                                      |   [Survey](https://forms.gle/xwQESACLYUpc1i9R9)                                                                                               |
-| F 21 Jan | Intro to CSCI 150; Algorithms and errors  |[Algorithms](https://www.kaggle.com/code/larskseme/2023-01-20-algorithms-and-errors) | HW: [Minecraft by hand](homework/minecraft.html) |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M 23 Jan | Intro to Python (math, variables)         |[Math and Variables](https://www.kaggle.com/code/larskseme/2023-01-23-intro-to-python-math-and-variables) |                                                                                                 |
-| W  25 Jan | Intro to Python (functions)               |[Functions](https://www.kaggle.com/code/larskseme/2023-01-25-functions) |                                                                                                 |
-| F  27 Jan | Booleans                                  |[Booleans](https://www.kaggle.com/code/larskseme/2023-01-27-booleans) | HW: [Boolean practice](homework/booleans.html)                                                   |
-|          |                                                                                                                                                                            |                                                                 |                                                                                                 |
-| M  30 Jan | Conditionals                                                                                                                                                              |[Conditionals](https://www.kaggle.com/code/larskseme/2023-01-30-conditionals)                       |                                                                                                 |
-| W  1 Feb | Tracing I  |[Tracing -- Kaggle](https://www.kaggle.com/code/larskseme/2023-02-01-tracing)  [Video](https://hendrix-my.sharepoint.com/:v:/g/personal/seme_hendrix_edu/Ebm57yZvh_dJqOfKQiKE8skBIqoQKwq3i5WrJVKd-qD_qg?e=QlDTXe)
-| F 3 Feb | Tracing II 								   | [Tracing II](https://www.kaggle.com/larskseme/2023-02-03-tracing-day-ii)  | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
-|
-| M 6 Feb | Pycharm and I/O |[Print and Input](https://www.kaggle.com/code/larskseme/2023-02-06-pycharm-and-i-o)
-| W 8 Feb | Binary  |[Binary](https://www.kaggle.com/code/larskseme/2023-02-08-binary)
-| F 10 Feb | Exam 1 Review |[Exam #1 Practice](https://www.kaggle.com/larskseme/2023-02-10-practice-exam-1)
-|
-| M 13 Feb | **Exam 1**
-| W 15 Feb | The `while` loop |[While](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EXKx85Gt-0ZDgo9JaE1HunMBOat7ti7dNBVYVo6vDIkOwA?e=ujuNnw)    |  [Project 1 Assigned: Civic Assistance Q/A System](projects/project1.html)
-| F 17 Feb | Functions and stack tracing			   |[Stack Tracing](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/Eeg_cgYBb-RMqcvsxjpSloQBFgkreboHc3NSYfhhmNd0EQ?e=boFavp)|HW: [Function Stack Tracing](homework/function-reading.html)
-|
-| M 20 Feb | *No class; Mid-Winter Break*
-| W 22 Feb|  Tracing and Strings |[Tracing and Strings](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/Ec-JX8Py2odPoPWI7VOzCu0Bo_6OW3rzo8etwx-L2TgHpA?e=LYi7Re)
-| F 24 Feb | Strings and Loops					   |[Strings and Loops](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/ET6VTu1CQzZFiNd5IfwG3A4BxJEcUe9Bz6_oI3cpGw5Mnw?e=fHz0aJ) | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
-|
-| M  27 Feb | Lists  |[Lists](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EbcoiweIJmxGh_GT4Ui4IDIBlYytxeQSMPip7sPsjWXEOw?e=k1n87s)                                |   |   
-| W  1 Mar | List processing examples				   |[List Examples](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/ESiMJBjQKKNLlCCTaNAGL4UBK5UXdxHw6N8b8CSgBBH3KQ?e=NDDWge)
-| F  3 Mar | Function Abstraction |[Abstraction Example](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EcpSlxShAiVPr8t79KGegjUBBJrz_VaRkPcRQilOiM7jQg?e=ZqhHvT) |Project 1 due
-| | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
-|
-| M 6 Mar | The `for` loop |
-| W 8 Mar | More `for` loop practice |
-| F 10 Mar | Exam 2 Review |[Exam 2 Sample Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/Eagg_hwMEfBLlmijslgfxLMBWXNNcTVu_Oib9V3b6kLq6A?e=Y6gF6u)|
-|
-| M 13 Mar | **Exam 2**							   |   |
-| W 15 Mar | File I/O |  | Project 2 Introduced
-| F 17 Mar | The Heap and Mutability|
-|
-| M 20 Mar | *No class; Spring Break*                             
-| W 22 Mar | *No class; Spring Break*
-| F 24 Mar | *No class; Spring Break*
-|
-| M 27 Mar | Dictionaries                              || HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
-| | | |Project 2 Assigned: Word Games <!--({{site.baseurl}}/projects/project2.html)-->
-| W 29 Mar | Dictionaries |
-| F 31 Mar | Introduction to classes and objects       || HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
-|
-| M  3 Apr | Classes/objects example 1|
-| W  5 Apr | Classes/objects example 2|
-| F  7 Apr | PyGame Intro |            | HW: [Class & Dictionary Practice]({{site.baseurl}}/homework/dict-class-design.pdf)
-|
-| M  10 Apr | Working in PyGame | |Project 2 due
-| | | |Project 3 Assigned: Final Project <!--({{site.baseurl}}/projects/final.html)-->
-| W  12 Apr | Classes and Games |
-| F 14 Apr | Exam 3 Review     | |
-|
-| M 17 Apr | **Exam 3**                 |   |  Project 3 proposal due
-| W 20 Apr | Recursion                         |   |
-| F 21 Apr | Recursion (trees) |
-|
-| M 24 Apr | Structuring larger programs 1             |  |
-| W 26 Apr | Structuring larger programs 2
-| F 28 Apr | Project Workshop in Class
-|
-| F 5 May | Final Project Presentations (2-5 pm)
+| Date     | Topic                                    | HW and Links                                                                                  |
+|:---------|:-----------------------------------------|:----------------------------------------------------------------------------------------------|
+|          |                                          |                                                                                               |
+| W 23 Aug | Intro to CS                              | HW: [Survey](XXX)                                                                             |
+| F 25 Aug | Intro to CSCI 150; Algorithms and errors | HW: [Minecraft by hand](homework/minecraft.html)                                              |
+|          |                                          |                                                                                               |
+| M 28 Aug | Intro to Python (math, variables)        |                                                                                               |
+| W 30 Aug | Intro to Python (functions)              |                                                                                               |
+| F  1 Sep | Booleans                                 | HW: [Boolean practice](homework/booleans.html)                                                |
+|          |                                          |                                                                                               |
+| M  4 Sep | *Labor Day*                              |                                                                                               |
+| W  6 Sep | Conditionals                             |                                                                                               |
+| F  8 Sep | Tracing I                                | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) |
+|          |                                          |                                                                                               |
+| M 11 Sep | Tracing II                               |                                                                                               |
+| W 13 Sep | PyCharm and I/O                          |                                                                                               |
+| F 15 Sep | Exam 1 Review                            |                                                                                               |
+|          |                                          |                                                                                               |
+| M 18 Sep | **Exam 1**                               |                                                                                               |
+| W 20 Sep | The `while` loop                         | Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)                     |
+| F 22 Sep | Functions and stack tracing              | HW: [Function Stack Tracing](homework/function-reading.html)                                  |
+|          |                                          |                                                                                               |
+| M 25 Sep | Binary/Stack Tracing                     |                                                                                               |
+| W 27 Sep | Tracing and Strings                      |                                                                                               |
+| F 29 Sep | Strings and Loops                        | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)                 |
+|          |                                          |                                                                                               |
+| M  2 Oct | Lists                                    | Project 1 Due                                                                                 |
+| W  4 Oct | List processing examples                 |                                                                                               |
+| F  6 Oct | Function Abstraction                     | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)                     |
+|          |                                          |                                                                                               |
+| M  9 Oct | The `for` loop                           | Project 2 Assigned: [Word Games](projects/project2.html)                                      |
+| W 11 Oct | More `for` loop practice                 |                                                                                               |
+| F 13 Oct | *Fall Break*                             |                                                                                               |
+|          |                                          |                                                                                               |
+| M 16 Oct | File I/O                                 |                                                                                               |
+| W 18 Oct | The Heap and Mutability                  |                                                                                               |
+| F 20 Oct | Exam 2 Review                            |                                                                                               |
+|          |                                          |                                                                                               |
+| M 23 Oct | **Exam 2**                               |                                                                                               |
+| W 25 Oct | Dictionaries I                           |                                                                                               |
+| F 27 Oct | Dictionaries II                          | HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)                          |
+|          |                                          |                                                                                               |
+| M 30 Oct | Intro to Classes                         |                                                                                               |
+| W  1 Nov | Classes/objects example 1                |                                                                                               |
+| F  3 Nov | Classes/objects example 2                | HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)                               |
+|          |                                          |                                                                                               |
+| M  6 Nov | Intro to PyGame                          | Project 2 Due                                                                                 |
+| W  8 Nov | PyGame                                   |                                                                                               |
+| F 10 Nov | Classes and PyGame                       | HW: [Class & Dictionary practice]({{site.baseurl}}/homework/dict-class-design.pdf)            |
+|          |                                          |                                                                                               |
+| M 13 Nov | Final Project Discussion                 | Project 3 Assigned: [Final Project]({{site.baseurl}}/projects/final.html)                     |
+| W 15 Nov | Heap Tracing Practice                    |                                                                                               |
+| F 17 Nov | Exam 3 Review                            | Project 3 Proposal Due                                                                        |
+|          |                                          |                                                                                               |
+| M 20 Nov | **Exam 3**                               |                                                                                               |
+| T 21 Nov | ** Exam 3 Take Home Due**                |                                                                                               |
+| W 22 Nov | *Thanksgiving Break*                     |                                                                                               |
+| F 24 Nov | *Thanksgiving Break*                     |                                                                                               |
+|          |                                          |                                                                                               |
+| M 27 Nov | Recursion                                |                                                                                               |
+| W 29 Nov | Recursion (trees)                        |                                                                                               |
+| F  1 Dec | Project Workshop in Class                |                                                                                               |
+|          |                                          |                                                                                               |
+| F 8 Dec  | Final Project Presentations              |                                                                                               |
 
 <hr>
 # Coursework
 
 ## <a name="latedays">Late Policy</a>
+
 If a student needs an extension, the instructor must be notified by email or Microsoft Teams message prior to the
 deadline. This notification email must state the duration of the requested
 extension. The instructor reserves the right to decline a request for an extension, but aside from
-the final project the intention is that most requests for extensions will be granted.
+the final project the intention is that most requests for extensions
+will be cheerfully granted.
 
 ## <a name="participation">Course Participation</a>
 
@@ -155,21 +155,19 @@ point during the semester.
 <br/>
 -->
 
-| # | Name                                                                      | Assigned | Due      |Sample Solutions
-|:-:|---------------------------------------------------------------------------|----------|:--------:|
-| 0 | [Survey](https://forms.gle/xwQESACLYUpc1i9R9)                                                           | W Jan 18 |F Jan 20  |
-| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)             | F Jan 20 | W Jan 25  |
-| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 27 | W Feb 1  |
-| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 2  | W Feb 8 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)
-| 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 17 | **F Feb 24** |[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
-| |[HW 4 Redo](/homework/HW4-Redo-Problems.pdf)
-| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 24 | W Mar 1  |
-| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 3  | W Mar 8 |
-| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Mar 27 |F **Mar 31** |
-| 8 | [Heap Tracing Homework](homework/heap-tracing-homework)               | F Mar 31  | W Apr 5|<!--[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)-->
-| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework)       | F Apr 7  | W Apr 12 |
-
-
+| # | Name                                                                                      | Assigned | Due          | Sample Solutions                                                                                           |
+|:-:|-------------------------------------------------------------------------------------------|----------|:------------:|------------------------------------------------------------------------------------------------------------|
+| 0 | [Survey](https://forms.gle/xwQESACLYUpc1i9R9)                                             | W Jan 18 | F Jan 20     |                                                                                                            |
+| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)                             | F Jan 20 | W Jan 25     |                                                                                                            |
+| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                               | F Jan 27 | W Feb 1      |                                                                                                            |
+| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) | F Feb 2  | W Feb 8      | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)  -->               |
+| 4 | [Function Stack Tracing](homework/function-reading.html)                                  | F Feb 17 | **F Feb 24** | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf) --> |
+|   | [HW 4 Redo](/homework/HW4-Redo-Problems.pdf)                                              |          |              |                                                                                                            |
+| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html)                 | F Feb 24 | W Mar 1      |                                                                                                            |
+| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)                     | F Mar 3  | W Mar 8      |                                                                                                            |
+| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)                          | M Mar 27 | F **Mar 31** |                                                                                                            |
+| 8 | [Heap Tracing Homework](homework/heap-tracing-homework)                                   | F Mar 31 | W Apr 5      | <!--[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)-->        |
+| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework)            | F Apr 7  | W Apr 12     |                                                                                                            |
 
 
 There will often be short homework assignments to be completed , typically assigned on Friday and due Wednesday.
@@ -178,34 +176,35 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 
 ## <a name="labs">Labs</a>
 
-<!-- <div style="text-align: center"> -->
-<!-- <a class="btn btn-primary" href="https://moodle.hendrix.edu/"> -->
-<!--   Lab submission (moodle.hendrix.edu) -->
-<!-- </a> -->
-<!-- </div> -->
-<!-- <br/> -->
+<div style="text-align: center">
+<a class="btn btn-primary" href="https://app.codegra.de/">
+  Lab submission (CodeGrade)
+</a>
+</div>
+<br/>
 
-| #  | Name                                                                                           | Assigned  | Due       |
-|:--:|------------------------------------------------------------------------------------------------|-----------|:---------:|
-| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                              | 18-19 Jan | 25-26 Jan |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)        | 25-26 Jan | 1-2 Feb   |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)      | 1-2 Feb   | 8-9 Feb   |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)                | 8-9 Feb   | 15-16 Feb |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                            | 15-16 Feb | 22-23 Feb |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                    | 22-23 Feb | 1-3 Mar   |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                        | 1-2 Mar   | 8-9 Mar   |
-| 7  | Caesar’s Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                 | 8-9 Mar   | 15-16 Mar |
-| 8  | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                     | 15-16 Mar | 29-30 Mar |
-| 9  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->            | 29-30 Mar | 5-6 Apr   |
-| 10 | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                         | 5-6 Apr   | 12-13 Apr |
-| 11 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                                             | 12-13 Apr | 19-20 Apr |
-| 12 | Enron's Secrets<!--(https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->      | 19-20 Apr | 26-27 Apr |
-| 13 | Project 3 Workshop                                                                             | 26-27 Apr | 5 May     |
+| #  | Name                                                                                                                        | Assigned  | Due       |
+|:--:|-----------------------------------------------------------------------------------------------------------------------------|-----------|:----------|
+| 0  | Minecraft <!-- [Minecraft]({{site.baseurl}}/labs/minecraft.html) -->                                                        | 23-24 Aug | 30-31 Aug |
+| 1  | Kepler, Newton, Einstein <!-- [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein) -->   | 30-31 Aug | 6-7 Sep   |
+| 2  | Diagnosing Heart Disease <!-- [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) --> | 6-7 Sep   | 13-14 Sep |
+| 3  | This Day in History <!-- [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) -->                | 13-14 Sep | 20-21 Sep |
+| 4  | Guess My Number <!-- [Guess My Number]({{site.baseurl}}/labs/guess.html) -->                                                | 20-21 Sep | 27-28 Sep |
+| 5  | Mutation is the Word <!-- [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) -->                                   | 27-28 Sep | 4-5 Oct   |
+| 6  | Todo Manager <!-- [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) -->                                               | 4-5 Oct   | 18-19 Oct |
+|    | **No lab** (fall break)                                                                                                     | 11-12 Oct |           |
+| 7  | Caesar's Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                                              | 18-19 Oct | 25-26 Oct |
+| 8  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->                                         | 25-26 Oct | 1-2 Nov   |
+| 9  | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                                                      | 1-2 Nov   | 8-9 Nov   |
+| 10 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                                                                          | 8-9 Nov   | 15-16 Nov |
+| 11 | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                                                  | 15-16 Nov | 29-30 Nov |
+| 12 | (Optional) Project 3 Workshop                                                                                               | 29-30 Nov |           |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
-<!--On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.-->
-On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. Each partner should **submit their own solution** to the assignment.
+On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.
+
+<!-- On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. Each partner should **submit their own solution** to the assignment. -->
 
 **Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
 
@@ -220,11 +219,11 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 -->
 
 
-| # | Name                                                                          | Assigned | Due    |
-|:-:|-------------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 15 Feb   | 3 Mar  |
-| 2 | Word Games<!--({{site.baseurl}}/projects/project2.html)-->                        | 27 Mar   | 10 Apr |
-| 3 | Final Project<!--({{site.baseurl}}/projects/final.html)-->                     | 10 Apr   | 5 May  |
+| # | Name                                                                   | Assigned | Due    |
+|:-:|------------------------------------------------------------------------|:--------:|:------:|
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 15 Feb   | 3 Mar  |
+| 2 | Word Games<!--({{site.baseurl}}/projects/project2.html)-->             | 27 Mar   | 10 Apr |
+| 3 | Final Project<!--({{site.baseurl}}/projects/final.html)-->             | 10 Apr   | 5 May  |
 
 
 
@@ -299,7 +298,7 @@ me as the course instructor and facilitator.
 
 If I am not fulfilling my responsibilities outlined below, you are
 welcome (and encouraged!) to call me out, perhaps via the [anonymous
-feedback form](https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link). I will also
+feedback form](https://docs.google.com/forms/d/e/1FAIpQLSecdjyRdCiHkCv5Y5WF09RHLgdf9bl1WoeJQJZmnErPCd8YxA/viewform). I will also
 initiate a conversation if you are not fulfilling yours. However, none
 of us will meet all of the expectations perfectly---me included!---so
 it's also important that we have grace and patience with one another.
@@ -392,12 +391,6 @@ it's also important that we have grace and patience with one another.
 Attendance in this class is not required as part of your grade.
 However, I do expect you to attend and appreciate knowing in advance
 if you will need to miss class.
-<!--
-If you have chosen to attend class in person, you are expected to do
-so consistently; you may not decide to attend remotely some days just
-because you feel like it.  However, there are legitimate reasons
-for attending remotely, such as feeling ill or travelling unavoidably.
--->
 
 ## <a name="disabilities">Disabilities</a>
 
@@ -423,8 +416,8 @@ are expected to contribute to a respectful, welcoming, and inclusive
 environment for every other member of the community. If you believe
 you have been the subject of discrimination please contact Dean Mike
 Leblanc at [leblanc@hendrix.edu](mailto:leblanc@hendrix.edu) or
-501-450-1222 or the Title IX Coordinator Allison Vetter at
-[titleix@hendrix.edu](mailto:titleix@hendrix.edu)or 501-505-2901. If
+501-450-1222 or the Title IX Coordinator Jennifer Fulbright at
+[titleix@hendrix.edu](mailto:titleix@hendrix.edu) or 501-505-2901. If
 you have ideas for improving the inclusivity of the classroom
 experience please feel free to [contact
 me](https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link).  For more information on
