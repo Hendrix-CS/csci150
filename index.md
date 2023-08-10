@@ -5,7 +5,9 @@
 layout: course-multi
 ---
 
-<!-- ## <a name="TA Office Hours">TAs</a> -->
+## <a name="TA Office Hours">TAs</a>
+
+TBD
 
 <!-- | Time   |Sunday| Monday      | Tuesday  | Wednesday |Thursday| -->
 <!-- |:------:|-------------|----------|-----------| -->
@@ -155,25 +157,28 @@ point during the semester.
 <br/>
 -->
 
-| # | Name                                                                                      | Assigned | Due          | Sample Solutions                                                                                                                               |
-|:-:|-------------------------------------------------------------------------------------------|----------|:------------:|------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 | [Survey](https://forms.gle/xwQESACLYUpc1i9R9)                                             | W Jan 18 | F Jan 20     |                                                                                                                                                |
-| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)                             | F Jan 20 | W Jan 25     |                                                                                                                                                |
-| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                               | F Jan 27 | W Feb 1      |                                                                                                                                                |
-| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) | F Feb 2  | W Feb 8      | [Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)                                                             |
-| 4 | [Function Stack Tracing](homework/function-reading.html)                                  | F Feb 17 | **F Feb 24** | [Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)                                              |
-|   | [HW 4 Redo](/homework/HW4-Redo-Problems.pdf)                                              |          |              | [Tracing Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EUz_HXO6PH1AtK7UOh4P9hMBax6AG-jKpSwj-VwR7SScfw?e=zneGLv) |
-| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html)                 | F Feb 24 | W Mar 1      |                                                                                                                                                |
-| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)                     | F Mar 3  | W Mar 8      |                                                                                                                                                |
-| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)                          | M Mar 27 | F **Mar 31** |                                                                                                                                                |
-| 8 | [Heap Tracing Homework](homework/heap-tracing-homework)                                   | F Mar 31 | W Apr 5      | [Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)                                                   |
-| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework)            | F Apr 7  | W Apr 12     | [Sample Solution](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdQKSKuWJ0ROpBpp9DFkY3wBenDzB7uWRcglObOq43whcw?e=WIOeN2)   |
+| # | Name                                                                                                                                                  | Assigned | Due      | Sample Solutions                                                                                                                                      |
+|:-:|-------------------------------------------------------------------------------------------------------------------------------------------------------|----------|:---------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0 | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdn8ol52p2CB3DSkFp3Q04VBxaT8IA0IqjiMJKa_jRxFYFQpg/viewform)                                         | W Aug 23 | M Aug 28 |                                                                                                                                                       |
+| 1 | Minecraft by hand <!-- [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) -->                                                              | F Aug 26 | W Aug 30 |                                                                                                                                                       |
+| 2 | Boolean practice <!-- [Boolean practice]({{site.baseurl}}/homework/booleans.html) -->                                                                 | F Sep 1  | W Sep 6  |                                                                                                                                                       |
+| 3 | CodingBat Conditional and By Hand Tracing Practice <!-- [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) --> | F Sep 8  | W Sep 13 | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf) -->                                                           |
+| 4 | Function Stack Tracing <!-- [Function Stack Tracing](homework/function-reading.html) -->                                                              | F Sep 22 | W Sep 27 | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf) -->                                            |
+| 5 | CodingBat String and Loop practice <!-- [CodingBat String and Loop practice](homework/codingbat-string-loop.html) -->                                 | F Sep 29 | W Oct 4  |                                                                                                                                                       |
+| 6 | CodingBat List and Loop practice <!-- [CodingBat List and Loop practice](homework/codingbat-list-loop.html) -->                                       | F Oct 6  | W Oct 11 |                                                                                                                                                       |
+| 7 | CodingBat more loop practice <!-- [CodingBat more loop practice](homework/codingbat-for-loop.html) -->                                                | F Oct 27 | W Nov 1  |                                                                                                                                                       |
+| 8 | Heap Tracing Homework <!-- [Heap Tracing Homework](homework/heap-tracing-homework) -->                                                                | F Nov 3  | W Nov 8  | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf) -->                                                 |
+| 9 | Dictionary and Class Homework <!-- [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework) -->                                 | F Nov 10 | W Nov 15 | <!-- [Sample Solution](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdQKSKuWJ0ROpBpp9DFkY3wBenDzB7uWRcglObOq43whcw?e=WIOeN2) --> |
 
 
+<!-- |   | [HW 4 Redo](/homework/HW4-Redo-Problems.pdf)                                              |          |          | <\!-- [Tracing Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EUz_HXO6PH1AtK7UOh4P9hMBax6AG-jKpSwj-VwR7SScfw?e=zneGLv) -\-> | -->
 
 
-There will often be short homework assignments to be completed , typically assigned on Friday and due Wednesday.
-CodingBat homework will be submitted electronically through CodingBat. By-hand homework will be submitted at the start of class time -- you can write (neatly) or type such solutions.
+There will often be short homework assignments to be completed,
+typically assigned on Friday and due Wednesday.  CodingBat homework
+will be submitted electronically through CodingBat. By-hand homework
+will be submitted at the start of class time -- you can write (neatly)
+or type such solutions.
 
 
 ## <a name="labs">Labs</a>
