@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 9
+num: 10
 worktitle: Water Jugs
 ---
 
@@ -18,6 +18,10 @@ and Samuel L. Jackson.  They must solve different puzzles or else
 things will explode and people will die.
 
 ## Grading Criteria
+
+* To receive credit, three **correctly named** assignment files per pair must be submitted via Teams.
+  * The file naming convention for lab assignments is `L{lab_number}_{Lastname_1}{Lastname_2}_{filename}`, where `{Lastname_i}` is the capitalized last name of group member i and `{filename}` is the filename specified in the assignment. If your group has three members, the convention is `L{lab_number}_{Lastname_1}{Lastname_2}{Lastname_3}_{filename}`,
+  * For example, if Dr. Stanley and Dr. Yorgey are a group for lab 10, which expects `waterjug.py`, `step2.py`, and `step3.py`, then they will submit `L10_StanleyYorgey_waterjug.py`, `L10_StanleyYorgey_step2.py`, and `L10_StanleyYorgey_step3.py`.
 
 * A **Complete** submission includes:
   * All 3 steps complete.
@@ -59,7 +63,7 @@ to help us solve this?
 
 ## Step 1: The `WaterJug` class
 
-Open a file named `waterjug.py`. In this file, you will define
+Open a file named `L10_{Lastname_1}{Lastname_2}_waterjug.py` according to the filename conventions outlined above. In this file, you will define
 the `WaterJug` class. Each `WaterJug` object will need to have two variables
 that we can think of as the state of that `WaterJug`:
 
@@ -162,14 +166,16 @@ the following message:
 
 ## Step 2: The Puzzle
 
-In a new file, `step2.py`, write a program
+In a new file, `L10_{Lastname_1}{Lastname_2}_step2.py`, write a program
 that allows the user to set up and then solve a
 water jugs puzzle.  To use the `WaterJug` class,
 you will need the following line at the top of your file:
 
-    from waterjug import WaterJug
+    from L10_{Lastname_1}{Lastname_2}_waterjug import WaterJug
 
-Your program should:
+ where `{Lastname_i}` is the capitalized last name of group member i.
+ 
+ Your program should:
 
 * Ask the user the capacity of the first `WaterJug`
 * Ask the user the capacity of the second `WaterJug`
@@ -219,7 +225,7 @@ assignment, you may assume that all user input is valid." %}
 
 ## Step 3: Generalizing
 
-In a new file, `step3.py`, generalize your program from Step 2 so
+In a new file, `L10_{Lastname_1}{Lastname_2}_step3.py`, generalize your program from Step 2 so
 that it works with any number
 of `WaterJug`s instead of just 2.  In particular, the
 program should:
@@ -272,6 +278,6 @@ remember, "Think fast, Look alive, Die hard."
 
 You must hand in:
 
-  * `waterjug.py`
-  * `step2.py`
-  * `step3.py`
+  * `L10_{Lastname_1}{Lastname_2}_waterjug.py`
+  * `L10_{Lastname_1}{Lastname_2}_step2.py`
+  * `L10_{Lastname_1}{Lastname_2}_waterjug.py`

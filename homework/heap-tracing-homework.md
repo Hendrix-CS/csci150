@@ -20,7 +20,7 @@ You are *STRONGLY* encouraged to copy the code shown into a .py file or Kaggle n
 
 `from typing import *`
 
-as the first line of your code.See if you printed output matches. Add additional print statements along the way to see if you are updating the heap/stack variables correctly. If you are confused, seek help from classmates, the CSCI tutors, or your instructor. 
+as the first line of your code. See if your printed output matches. Add additional print statements along the way to see if you are updating the heap/stack variables correctly. If you are confused, seek help from classmates, the CSCI tutors, or your instructor.
 
 You should consider the code in each exercise separately from the
 other exercises.

@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 10
+num: 11
 worktitle: Graphics and Animation
 ---
 
@@ -10,7 +10,10 @@ worktitle: Graphics and Animation
 * [Pygame](https://www.pygame.org/)
 
 ## Grading Criteria
-
+* To receive credit, two **correctly named** assignment files per pair must be submitted via Teams.
+  * The file naming convention for lab assignments is `L{lab_number}_{Lastname_1}{Lastname_2}_{filename}`, where `{Lastname_i}` is the capitalized last name of group member i and `{filename}` is the filename specified in the assignment. If your group has three members, the convention is `L{lab_number}_{Lastname_1}{Lastname_2}{Lastname_3}_{filename}`,
+  * For example, if Dr. Stanley and Dr. Yorgey are a group for lab 11, which expects `face1.py` and `face2.py`, then they will submit `L11_StanleyYorgey_face1.py` and `L11_StanleyYorgey_face2.py`.
+ 
 * A **Complete** submission includes:
   * All 4 steps complete.
   * In Steps 1.3 and 2.1, the designed face includes
@@ -22,18 +25,26 @@ worktitle: Graphics and Animation
 
 ## Overview
 
-For today's lab, you'll need PyGame. To download and install it on your
+For today's lab, you'll need PyGame 2.2.0. To download and install it on your
 computer:
 * Create a new PyCharm project.
-* Create a new Python file (e.g. `main.py`) within that project.
-* Type `import pygame` at the top of the file. The word `pygame`
-  will be underlined in red. (If it is not underlined in red, it is
-  because `pygame` is already installed.)
-* Place your cursor atop the word `pygame`. Type Alt-Enter to bring up
-  autocorrections. It should bring up an option to install pygame.
-  The image below shows what this should look like.
+* On the bottom of your screen, click `Python Packages`.
+  * If this is not visible, you can click `View -> Tool Windows -> Python Packages`.
+  * The `Python Packages` pane will appear at the bottom of the Pycharm main window.
+* In the top left of the `Python Packages` pane, enter `pygame` in the search bar.
+* Select the first result - `pygame`.
+* **If pygame is installed with the correct version**, the right side of the pane will show `2.2.0` with three vertical dots next to it.
+  * Proceed with the lab 
+* **If pygame is installed with the incorrect version**, you will need to delete it.
+  * Click the three vertical dots to open a context menu.
+  * Click `Delete Package`.
+  * Proceed with re-installing Pygame version 2.2.0 (see below).
+* **If pygame is not installed (or after you have uninstalled it)**, the right side of the screen will show `latest` and `Install Package`. 
+  * Click `latest`, which opens a context menu for version selection.
+  * Click 2.2.0
+  * Click `Install Package` to install Pygame 2.2.0
 
-<img src="https://hendrix-cs.github.io{{site.baseurl}}/assets/images/pygame_install.png" width=500>
+
 
 ## Step 1: Faces 
 
@@ -345,4 +356,4 @@ are intersecting, and if so, makes them bounce off of each other.
 
 ## What to Hand In
 
-Submit `face1.py` and `face2.py` via Teams.
+Submit (correctly named) `face1.py` and `face2.py` via Teams.

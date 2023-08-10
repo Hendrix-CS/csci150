@@ -155,19 +155,21 @@ point during the semester.
 <br/>
 -->
 
-| # | Name                                                                                      | Assigned | Due          | Sample Solutions                                                                                           |
-|:-:|-------------------------------------------------------------------------------------------|----------|:------------:|------------------------------------------------------------------------------------------------------------|
-| 0 | [Survey](https://forms.gle/xwQESACLYUpc1i9R9)                                             | W Jan 18 | F Jan 20     |                                                                                                            |
-| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)                             | F Jan 20 | W Jan 25     |                                                                                                            |
-| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                               | F Jan 27 | W Feb 1      |                                                                                                            |
-| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) | F Feb 2  | W Feb 8      | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)  -->               |
-| 4 | [Function Stack Tracing](homework/function-reading.html)                                  | F Feb 17 | **F Feb 24** | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf) --> |
-|   | [HW 4 Redo](/homework/HW4-Redo-Problems.pdf)                                              |          |              |                                                                                                            |
-| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html)                 | F Feb 24 | W Mar 1      |                                                                                                            |
-| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)                     | F Mar 3  | W Mar 8      |                                                                                                            |
-| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)                          | M Mar 27 | F **Mar 31** |                                                                                                            |
-| 8 | [Heap Tracing Homework](homework/heap-tracing-homework)                                   | F Mar 31 | W Apr 5      | <!--[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)-->        |
-| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework)            | F Apr 7  | W Apr 12     |                                                                                                            |
+| # | Name                                                                                      | Assigned | Due          | Sample Solutions                                                                                                                               |
+|:-:|-------------------------------------------------------------------------------------------|----------|:------------:|------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0 | [Survey](https://forms.gle/xwQESACLYUpc1i9R9)                                             | W Jan 18 | F Jan 20     |                                                                                                                                                |
+| 1 | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)                             | F Jan 20 | W Jan 25     |                                                                                                                                                |
+| 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                               | F Jan 27 | W Feb 1      |                                                                                                                                                |
+| 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) | F Feb 2  | W Feb 8      | [Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)                                                             |
+| 4 | [Function Stack Tracing](homework/function-reading.html)                                  | F Feb 17 | **F Feb 24** | [Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)                                              |
+|   | [HW 4 Redo](/homework/HW4-Redo-Problems.pdf)                                              |          |              | [Tracing Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EUz_HXO6PH1AtK7UOh4P9hMBax6AG-jKpSwj-VwR7SScfw?e=zneGLv) |
+| 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html)                 | F Feb 24 | W Mar 1      |                                                                                                                                                |
+| 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)                     | F Mar 3  | W Mar 8      |                                                                                                                                                |
+| 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)                          | M Mar 27 | F **Mar 31** |                                                                                                                                                |
+| 8 | [Heap Tracing Homework](homework/heap-tracing-homework)                                   | F Mar 31 | W Apr 5      | [Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)                                                   |
+| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework)            | F Apr 7  | W Apr 12     | [Sample Solution](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdQKSKuWJ0ROpBpp9DFkY3wBenDzB7uWRcglObOq43whcw?e=WIOeN2)   |
+
+
 
 
 There will often be short homework assignments to be completed , typically assigned on Friday and due Wednesday.
@@ -219,11 +221,11 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 -->
 
 
-| # | Name                                                                   | Assigned | Due    |
-|:-:|------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 15 Feb   | 3 Mar  |
-| 2 | Word Games<!--({{site.baseurl}}/projects/project2.html)-->             | 27 Mar   | 10 Apr |
-| 3 | Final Project<!--({{site.baseurl}}/projects/final.html)-->             | 10 Apr   | 5 May  |
+| # | Name                                                                          | Assigned | Due    |
+|:-:|-------------------------------------------------------------------------------|:--------:|:------:|
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 15 Feb   | 3 Mar  |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                       | 27 Mar   | 10 Apr |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                     | 10 Apr   | 5 May  |
 
 
 
@@ -239,9 +241,15 @@ There will be three exams. Each exam will have two parts:
 submitted by the start of the next class period.
 
 * Exam 1: Monday, February 13, covering functions, math, numerical
-  data, and conditionals   [Practice Exam 1](/exams/cs150-exam1-practice-spring2023.pdf)  [Exam 1 Redo Problems](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EeIcwhaL8x9AjC4wuBhUbRYBewIy5fUmLyZrx9RM7R6hDg?e=Cmlhrz)
-* Exam 2: Monday, March 13, covering input/output, `while` loops,  strings , and lists  [Practice Exam 2](/exams/exam2-practice-spring-2023.pdf) 
-* Exam 3: Monday, April 17, covering  the heap, dictionaries,  and classes.  
+  data, and conditionals   
+  - [Practice Exam 1](/exams/cs150-exam1-practice-spring2023.pdf)
+  - [Exam 1 Redo Problems](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EeIcwhaL8x9AjC4wuBhUbRYBewIy5fUmLyZrx9RM7R6hDg?e=Cmlhrz)
+* Exam 2: Monday, March 13, covering input/output, `while` loops,  strings , and lists  
+   - [Practice Exam 2](/exams/exam2-practice-spring-2023.pdf)  
+   - [Exam 2 Redo Problems](/exams/exam2-redo-spring2023.pdf)
+* Exam 3: Monday, April 17, covering  the heap, dictionaries,  and classes.   
+   - [Practice Exam 3](/exams/exam3-practice-spring2023.pdf)  
+   - [Exam 3 Redo](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/ES7ktV7eUYxKsyLr9jMkqZkBBOnVXoeTOcKeYyjIyOqDEw?e=hhFy5u)
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.

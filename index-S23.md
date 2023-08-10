@@ -10,7 +10,7 @@ layout: course-multi
 | Time   |Sunday| Monday      | Tuesday  | Wednesday |Thursday|
 |:------:|-------------|----------|-----------|
 |6-8 pm  | Ted | Simon |Matthew | | |
-|8-10 pm || Ryan | Riley| |Zoie|
+|8-10 pm || Ryan | | Riley |Zoie|
 
 
 <!--
@@ -93,38 +93,40 @@ Upon completing this course, our goal is for you to be able to:
 | F  3 Mar | Function Abstraction |[Abstraction Example](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EcpSlxShAiVPr8t79KGegjUBBJrz_VaRkPcRQilOiM7jQg?e=ZqhHvT) |Project 1 due
 | | | |HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |
-| M 6 Mar | The `for` loop |
-| W 8 Mar | More `for` loop practice |
-| F 10 Mar | Exam 2 Review |[Exam 2 Sample Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/Eagg_hwMEfBLlmijslgfxLMBWXNNcTVu_Oib9V3b6kLq6A?e=Y6gF6u)|
+| M 6 Mar | The `for` loop |[For Loops](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EVFtt4v5g-pEoBKySI8NO_0BiQkz3KdaMzPCymng9LiMfg?e=yYqSUw)
+| W 8 Mar | More `for` loop practice |[More for loops](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EecA1QkiZHdJsbqktYrWX54BaJZn_XjYd3sVZeioJH0NXA?e=FE5mCU)
+| F 10 Mar | Exam 2 Review |[Exam 2 Sample Solutions](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EV-3EAioMLBMrvO1w0_ECrsBH2x1U6uxAfX3Fw3aMJM62g?e=gVPNke)|
 |
 | M 13 Mar | **Exam 2**							   |   |
-| W 15 Mar | File I/O |  | Project 2 Introduced
-| F 17 Mar | The Heap and Mutability|
+| W 15 Mar | File I/O |[File IO.py](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EYmcX6PpzL1Ot8oJvpFcrqwBFoI5LfuUg2XqQWvjp2GCAg?e=8yy4gy) [sample-text-file.txt](https://hendrix-my.sharepoint.com/:t:/g/personal/seme_hendrix_edu/EW6NM8xOhShMiyLQZkKf8_gB1p7kRF6tuMAUH9Se871n6Q?e=4XVQ9R)   | Project 2 Introduced
+| F 17 Mar | The Heap and Mutability|[The Heap](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EQ3Rfz-JMTtOrMe9kTlcKzMBSMJB5xv4wS9cZJARSN4Kmg?e=mAcWKx)
 |
 | M 20 Mar | *No class; Spring Break*                             
 | W 22 Mar | *No class; Spring Break*
 | F 24 Mar | *No class; Spring Break*
 |
-| M 27 Mar | Dictionaries                              || HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
-| | | |Project 2 Assigned: Word Games <!--({{site.baseurl}}/projects/project2.html)-->
-| W 29 Mar | Dictionaries |
-| F 31 Mar | Introduction to classes and objects       || HW: [Heap Tracing Homework](homework/heap-tracing-homework.pdf)  
+| M 27 Mar | Dictionaries                              |[Dictionaries](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EW5halwJrv5Ou2gDb-82hk8BfNBTWNG64Fuhk0BGQrsEDA?e=KrTp3A)| HW: [CodingBat more loop practice](homework/codingbat-for-loop.html)
+| | | |[Project 2 Assigned: Word Games]({{site.baseurl}}/projects/project2.html)
+| W 29 Mar | Dictionaries |[More Dictionaries](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EWHXh2HhDEFCiVkTTgK8Qr0BbDHGrtCRVgwezW0dFgxFiw?e=OvS3cE)
+| | |[zipcodes.txt](https://hendrix-my.sharepoint.com/:t:/g/personal/seme_hendrix_edu/EVXHdz_8gspMseXRRDPYCNQB_ZfSR1zbdcYyfA2nlt-sXQ?e=E3h1Xa)
+| F 31 Mar | Introduction to classes and objects       |[Intro to Classes](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EbuFmOkFoONBllhKy-vMpBwBaX_PFKCMInjUdSRwijeo6w?e=CMKcfe)| HW: [Heap Tracing Homework](homework/heap-tracing-homework.html)  
 |
-| M  3 Apr | Classes/objects example 1|
-| W  5 Apr | Classes/objects example 2|
-| F  7 Apr | PyGame Intro |            | HW: [Class & Dictionary Practice]({{site.baseurl}}/homework/dict-class-design.pdf)
+| M  3 Apr | Classes/objects example 1|[Class Examples 1](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdAOdBUVGONMtpGqPY1UQh8Bow5cOd3FGLzcapxBEyDU3w?e=B2DC5c)
+| W  5 Apr | Classes/objects example 2|[Class Examples 2](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EX0bL7dlTatNlN2parRgQHMBk5QHkMpR_3O7sOn4aonCNw?e=XA9bCg)
+|  | |[books.txt](https://hendrix-my.sharepoint.com/:t:/g/personal/seme_hendrix_edu/EcGCjyK0rPJHt-CxEcMgwioBbjRaeNX_pxGMaAHFVhpLmQ?e=HWvlvJ)
+| F  7 Apr | PyGame Intro |[Pygame Intro](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUCvAWopYvtFkav3bRUqBXABFl4zM8B9BvJ6LbdETkV2dQ?e=uX5xMD)            | HW: [Class & Dictionary Practice]({{site.baseurl}}/homework/dict-class-homework.html)
 |
-| M  10 Apr | Working in PyGame | |Project 2 due
-| | | |Project 3 Assigned: Final Project <!--({{site.baseurl}}/projects/final.html)-->
-| W  12 Apr | Classes and Games |
-| F 14 Apr | Exam 3 Review     | |
+| M  10 Apr | Working in PyGame |[Working in Pygame](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUg3fXqPwAtAgt0LXHyqZF4BMKxLaDbtcSTwxWjPuVGwhA?e=1E7fPi) |Project 2 due
+| | |[doh.mp3](https://hendrix-my.sharepoint.com/:f:/g/personal/seme_hendrix_edu/EkJv6cEbd3ZJku0-rBCu-JQByrdD90kd4HOlKvkF1VN0fg?e=IVDeo7) |[Project 3 Assigned: Final Project]({{site.baseurl}}/projects/final.html)
+| W  12 Apr | Classes and Games |[Classes and Games](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EUtGgUH_sOZDmEimAp3jcTABZnRY7TP55nsS7Q6AIL2xgQ?e=o7Qb6v)
+| F 14 Apr | Exam 3 Review     |[Exam 3 Practice Sample Solutions](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaHDn1CtMEhDuN4dyJ_dip4BIqsCP7UJTdRpdUbyiWq-0g?e=1PFz11)|
 |
 | M 17 Apr | **Exam 3**                 |   |  Project 3 proposal due
-| W 20 Apr | Recursion                         |   |
-| F 21 Apr | Recursion (trees) |
+| W 20 Apr | Recursion                         |[Recursion](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaNmdTDY0ltBjAiqnDDoPZwBq0Kxeoo-9dcLWEAJu9uyhQ?e=vXD6ZM)   |
+| F 21 Apr | Recursion (trees) |[Trees](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EXAXjQtoqbJKlbIlziRtoEkB_zM1Ei5gehgxM-oe6p5PDw?e=NSIJyM)
 |
-| M 24 Apr | Structuring larger programs 1             |  |
-| W 26 Apr | Structuring larger programs 2
+| M 24 Apr | Time Efficiency             |[Time Efficiency](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EaCGl4Nf5rtMpOooLNfZtzIBPpuASA21mmswsX8_zUNvPw?e=3zkzBq)  |
+| W 26 Apr | Project Workshop in Class
 | F 28 Apr | Project Workshop in Class
 |
 | F 5 May | Final Project Presentations (2-5 pm)
@@ -162,12 +164,12 @@ point during the semester.
 | 2 | [Boolean practice]({{site.baseurl}}/homework/booleans.html)               | F Jan 27 | W Feb 1  |
 | 3 | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)     | F Feb 2  | W Feb 8 |[Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)
 | 4 | [Function Stack Tracing](homework/function-reading.html)              | F Feb 17 | **F Feb 24** |[Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)
-| |[HW 4 Redo](/homework/HW4-Redo-Problems.pdf)
+| |[HW 4 Redo](/homework/HW4-Redo-Problems.pdf) | | |[Tracing Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EUz_HXO6PH1AtK7UOh4P9hMBax6AG-jKpSwj-VwR7SScfw?e=zneGLv)
 | 5 | [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | F Feb 24 | W Mar 1  |
 | 6 | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)     | F Mar 3  | W Mar 8 |
 | 7 | [CodingBat more loop practice](homework/codingbat-for-loop.html)          | M Mar 27 |F **Mar 31** |
-| 8 | [Heap Tracing Homework](homework/heap-tracing-homework)               | F Mar 31  | W Apr 5|<!--[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)-->
-| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework)       | F Apr 7  | W Apr 12 |
+| 8 | [Heap Tracing Homework](homework/heap-tracing-homework)               | F Mar 31  | W Apr 5|[Tracing Solutions](/homework/tracing-sample-solutions/HW-8-Heap-Heap-Tracing-Solutions.pdf)
+| 9 | [Dictionary and Class Homework]({{site.baseurl}}/homework/dict-class-homework)       | F Apr 7  | W Apr 12 |[Sample Solution](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdQKSKuWJ0ROpBpp9DFkY3wBenDzB7uWRcglObOq43whcw?e=WIOeN2)
 
 
 
@@ -194,12 +196,12 @@ CodingBat homework will be submitted electronically through CodingBat. By-hand h
 | 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                            | 15-16 Feb | 22-23 Feb |
 | 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                    | 22-23 Feb | 1-3 Mar   |
 | 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                        | 1-2 Mar   | 8-9 Mar   |
-| 7  | Caesar’s Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                 | 8-9 Mar   | 15-16 Mar |
-| 8  | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                     | 15-16 Mar | 29-30 Mar |
-| 9  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->            | 29-30 Mar | 5-6 Apr   |
-| 10 | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                         | 5-6 Apr   | 12-13 Apr |
-| 11 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                                             | 12-13 Apr | 19-20 Apr |
-| 12 | Enron's Secrets<!--(https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)-->      | 19-20 Apr | 26-27 Apr |
+| 7  | [Caesar’s Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                      | 8-9 Mar   | 15-16 Mar |
+| 8  | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                          | 15-16 Mar | 29-30 Mar |
+| 9  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)                  | 29-30 Mar | 5-6 Apr   |
+| 10 | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                              | 5-6 Apr   | 12-13 Apr |
+| 11 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                     | 12-13 Apr | 19-20 Apr |
+| 12 | [Enron's Secrets](https://www.kaggle.com/gabrielferrer/finding-evidence-recursively)           | 19-20 Apr | 26-27 Apr |
 | 13 | Project 3 Workshop                                                                             | 26-27 Apr | 5 May     |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
@@ -223,8 +225,8 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 | # | Name                                                                          | Assigned | Due    |
 |:-:|-------------------------------------------------------------------------------|:--------:|:------:|
 | 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 15 Feb   | 3 Mar  |
-| 2 | Word Games<!--({{site.baseurl}}/projects/project2.html)-->                        | 27 Mar   | 10 Apr |
-| 3 | Final Project<!--({{site.baseurl}}/projects/final.html)-->                     | 10 Apr   | 5 May  |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                       | 27 Mar   | 10 Apr |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                     | 10 Apr   | 5 May  |
 
 
 
@@ -240,9 +242,15 @@ There will be three exams. Each exam will have two parts:
 submitted by the start of the next class period.
 
 * Exam 1: Monday, February 13, covering functions, math, numerical
-  data, and conditionals   [Practice Exam 1](/exams/cs150-exam1-practice-spring2023.pdf)  [Exam 1 Redo Problems](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EeIcwhaL8x9AjC4wuBhUbRYBewIy5fUmLyZrx9RM7R6hDg?e=Cmlhrz)
-* Exam 2: Monday, March 13, covering input/output, `while` loops,  strings , and lists  [Practice Exam 2](/exams/exam2-practice-spring-2023.pdf) 
-* Exam 3: Monday, April 17, covering  the heap, dictionaries,  and classes.  
+  data, and conditionals   
+  - [Practice Exam 1](/exams/cs150-exam1-practice-spring2023.pdf)
+  - [Exam 1 Redo Problems](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EeIcwhaL8x9AjC4wuBhUbRYBewIy5fUmLyZrx9RM7R6hDg?e=Cmlhrz)
+* Exam 2: Monday, March 13, covering input/output, `while` loops,  strings , and lists  
+   - [Practice Exam 2](/exams/exam2-practice-spring-2023.pdf)  
+   - [Exam 2 Redo Problems](/exams/exam2-redo-spring2023.pdf)
+* Exam 3: Monday, April 17, covering  the heap, dictionaries,  and classes.   
+   - [Practice Exam 3](/exams/exam3-practice-spring2023.pdf)  
+   - [Exam 3 Redo](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/ES7ktV7eUYxKsyLr9jMkqZkBBOnVXoeTOcKeYyjIyOqDEw?e=hhFy5u)
 
 There is no final exam; you will complete a final project instead, as
 described above under Projects.

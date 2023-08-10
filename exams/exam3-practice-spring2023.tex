@@ -1,0 +1,459 @@
+% -*- mode: LaTeX; compile-command: "pdflatex exam3-practice.tex" -*-
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{url}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth 7in
+\topmargin -.75in
+\textheight 9in
+\pagestyle{empty}
+\setlength{\parindent}{0in}
+\setlength{\unitlength}{0.7in}
+
+
+\DeclareMathOperator{\acos}{acos}
+
+\newcommand{\vs}{\vspace{0.1in}}
+
+\begin{document}
+
+\title{CSCI 150: Exam 3 Practice}
+\date{Friday, April 14, 2023}
+
+\maketitle
+
+\noindent{\bf Directions:}  Exam \#3 occurs in two parts, an in-class and take-home.
+
+\vs
+
+\vs
+
+\textbf{In-class:} The in-class portion will take place during regular class time on Monday, April 17. You will have 50 minutes to complete the exam. For the in-class portion, you may not use a computer, calculator, or other device. It will consist of tracing the execution of three pieces of code and writing two straightforward functions by hand. You must work the in-class without reference to notes, or any other resource.
+
+\vs
+
+\textbf{Take-home:} The take-home will be given to you on Monday, April 17. You should create a single \texttt{.py} file, and submit your file as instructed. You will be asked to write 5 separate functions. Your solutions are due by classtime on \textbf{Wednesday, April 19}.  Like on the Codingbat homeworks and the practice exam below, example input and output will be provided. For the take home, the \emph{only} resources you may use are the following:
+\begin{itemize}
+  \item  any code you have created for class, including homework and labs
+  \item  any notes you have taken during class
+  \item  code and any other material that Prof. Seme, Dr. Stanley,
+    or Prof. Yorgey have posted to either the lecture or lab Teams pages
+  \item  any information directly linked from the class homepage, \texttt{https://hendrix-cs.github.io/csci150/}
+  \item  anything in the official Python documentation, \texttt{https://docs.python.org/3/}
+\end{itemize}
+
+ You may not talk to a classmate, friend (real-life or Facebook), Siri, or anyone other than me about this exam until you turn it in, nor search the Internet or library or any reference other than those listed above for assistance.  You may not even mention anything about how long it took you to complete the exam, that you found problem \#2 particularly difficult (or easy), or in fact talk at all about the exam or Computer Science with anyone other than your instructor from Monday, 8:10am--Wednesday, 8:10am.  Anyone who \emph{gives} answers is equally in violation of the Academic Integrity Policy as one who \emph{receives} them. All suspected violations will be reported to that committee.
+
+ \vs
+
+ \textbf{If you have ANY questions about what you would like to do is allowed, please ASK!}
+
+ \vs
+
+ \vs
+
+
+\textbf{Specifications Assessment:}  Exam \#3 will be marked \textbf{Complete} provided:
+
+\begin{itemize}
+\item	Each problem is attempted
+\item	On the in-class:
+\begin{itemize}
+\item	At least one tracing problem is completely correct, one other has a single mistake, and the third makes clear that you understand how the stack and heap work.
+\item  Excepting minor syntax issues, at least one by-hand code writing problem is correct, and the other misses a single case; both answers exhibit clear evidence that the student understands the basic structure of Python functions, dictionaries, and classes.
+\end{itemize}
+\item	On the take-home:
+\begin{itemize}
+\item	No syntax errors in any code
+\item	No runtime errors with any of the examples given
+\item	3 out of 5 produce the right answer in all circumstances, 1 produces the right answer in all examples given, and the last produces right answers in at least two of the given examples
+\end{itemize}
+\end{itemize}
+Exam \#3 will be marked \textbf{partially complete} provided:
+\begin{itemize}
+\item	At most one problem on the in-class and one on the take-home are not attempted
+\item	On the in-class:
+\begin{itemize}
+\item  At least one tracing problem has all calls to the stack correct; loop variables are mostly updated correctly on at least one tracing problem; at least one problem shows significant understanding of the heap.
+\item  By-hand code: At least one attempted solution would work in some circumstances; syntax errors are minor, and the work shown shows a basic graph of Python structure; at least one shows understanding of either dictionaries or classes
+\end{itemize}
+\item	On the take-home:
+\begin{itemize}
+\item	No syntax errors in any code
+\item	At least 3 functions produce no runtime errors with the examples given and 2 produce no runtime errors at all
+\item	At least 1 function produces the right answers in all circumstances, and one other produces the right answer on the examples given.
+\end{itemize}
+\end{itemize}
+
+The instructor will return your exam along with a rubric detailing your progress and assessment. If you earned less than a \textbf{Complete} instructions will be provided on that rubric about how to attempt to raise your assessment. In most cases, a \textbf{Missing} can only be ``upgraded'' to a \textbf{Partially Complete,} though the instructor reserves to right to allow \textbf{Missing} to become \textbf{Complete} in some circumstances.
+
+\vs
+
+In general, the student will be expected to correct all errors, complete additional problems as assigned, and meet with the instructor in office hours to discus their work.
+
+
+\newpage
+
+
+\textbf{In Class Tracing:}
+\begin{enumerate}
+
+
+\item Trace the following code, showing all interactions with the stack and the heap.
+
+
+\begin{verbatim}
+def main1():
+    a = [7, 2, 6, 1]
+    b = a
+    c = [7, 2, 6, 1]
+
+    for item in c:
+        if item > 4:
+            a.append(item * 2)
+    print(b)
+    print(c)
+
+main1()
+\end{verbatim}
+
+\item  Trace the following code, showing all interactions with the stack and the heap.
+
+\begin{verbatim}
+def f1(s: str) -> int:
+    if 'a' in s:
+        return 0
+    print('No a')
+    return len(s)
+
+def main2():
+    lst = ['test', 'exam', 'ant', 'banana', 'smile']
+    d = {}
+
+    for item in lst:
+        d[item] = f1(item)
+
+
+    print(d)
+
+main2()
+\end{verbatim}
+
+\newpage
+\item  Trace the following code, showing all interactions with the stack and the heap.
+
+\begin{verbatim}
+def g1(lst: List[int]):
+    if len(lst) < 2:
+        lst.append(17)
+    else:
+        print('Long!')
+
+def g2(my_list: List[int]) -> int:
+    g1(my_list)
+    g1(my_list)
+    return len(my_list)
+    g1(my_list)
+
+def main3():
+    your_list = [6]
+    z = g2(your_list)
+    print(z)
+
+    new_list = []
+    g2(new_list)
+    print(new_list)
+
+main3()
+\end{verbatim}
+
+\textbf{In-class Coding:}
+\item Write a function \verb|str_dictionary| which takes a string
+  \verb|s| as a parameter.  \verb|s| will only contain lowercase
+  letters---although it could be empty. Your function should return a
+  dictionary, using the characters of \verb|s| as keys, with each
+  having a value which is the number of times that the character
+  appears in the string \verb|s|.
+
+    For example,
+    \begin{itemize}
+      \item \verb|str_dictionary('hello')| returns \verb|{'h': 1, 'e': 1, 'l': 2, 'o': 1}|
+      \item \verb|str_dictionary('')| returns \verb|{}|
+      \item \verb|str_dictionary('aababcabcdabcde')| returns \verb|{'a': 5, 'b': 4, 'c': 3, 'd': 2, 'e': 1}|
+
+    \end{itemize}
+
+\begin{verbatim}
+str_dictionary(s: str) -> Dict[str, int]:
+    # write your code here
+\end{verbatim}
+\newpage
+
+\item On the next page, write a class \verb|CokeBottle| which models a
+  simple plastic bottle of Coke. A bottle should have two attributes,
+  a boolean \verb|open| which is \verb|True| when the bottle is open
+  and \verb|False| otherwise (users can open or close the bottle as
+  they choose), and an \verb|amount| (an integer, in ounces), which is
+  set to 20 initially. The bottle starts out closed.
+
+    There should be two methods:
+    \begin{itemize}
+      \item \verb|drink(n: int)| which will drink $n$ ounces -- you can assume that $n$ will always be positive. If you drink more than the bottle contains, just set \verb|amount| to 0. However, you cannot drink from a closed bottle or from an empty bottle -- if you try, a message should be printed to the user.
+      \item \verb|toggle_cap()| which changes the cap from open to closed or vice-versa. There are no restrictions on when you can change the status of the cap.
+    \end{itemize}
+
+    Consider the following two transcripts of a session in the console:
+
+    \begin{verbatim}
+      >>> a = CokeBottle()
+      >>> a.drink(4)
+      You cannot drink from a closed bottle
+
+      >>> a.toggle_cap()
+      >>> a.drink(4)
+      >>> a.toggle_cap()
+      >>> a.amount
+
+      16
+      >>> a.open
+      False
+
+    \end{verbatim}
+
+        \begin{verbatim}
+      >>> b = CokeBottle()
+      >>> b.toggle_cap()
+      >>> b.drink(12)
+      >>> b.toggle_cap()
+      >>> b.amount
+      8
+
+      >>> b.toggle_cap()
+      >>> b.drink(11)
+      >>> b.drink(3)
+      You cannot drink from an empty bottle.
+
+      >>> b.amount
+      0
+
+    \end{verbatim}
+
+\newpage
+\begin{verbatim}
+class CokeBottle:
+
+    def __init__(self):
+        # add code here
+
+
+
+
+
+    def drink(self, n: int):
+        # add code here
+
+
+
+
+
+
+    def toggle_cap(self):
+        # add code here
+
+
+
+
+
+
+
+
+
+\end{verbatim}
+
+
+\textbf{Take-Home}
+
+\item  Write a function \verb|in_order| which takes in a string \verb|s| and returns \verb|True| if the characters in the string occurs in alphabetical order and \verb|False| otherwise. You can assume the string will only have lowercase letters and not any spaces, digits, or other special characters. Repeated letters are considered in order, and the empty string is considered to be in order.
+
+    For example:
+
+   \begin{itemize}
+  \item \verb|in_order('cot')| should return \verb|True|
+  \item \verb|in_order('boot')| should return \verb|True|
+  \item \verb|in_order('cook')| should return \verb|False| (since `k' comes before `o')
+  \item \verb|in_order('')| should return \verb|True|
+  \item \verb|in_order('cat')| should return \verb|False|
+
+\end{itemize}
+
+\item Write a function \verb|word_hist| that takes a sentence \verb|s| as a parameter and
+  returns a dictionary where the keys are words and the values are the
+  number of times each word was found in the sentence. All words
+  should be treated as lowercase--that is, \emph{you} might have to \verb|.lower()| them. Also, the word \verb|"lemurs"| is awesome,
+  so it should be counted 3 times whenever seen. There will be no punctuation or other non-space, non-alphabetic characters in \verb|s|.
+
+For example, supposing that
+
+
+\verb|s1 = "She sells what she sells and what she sells is lemurs"|
+
+\verb|s2 = "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo"|\footnote{\url{https://en.wikipedia.org/wiki/Buffalo_buffalo_Buffalo_buffalo_buffalo_buffalo_Buffalo_buffalo}}
+
+then \verb|word_hist(s1)| yields
+\begin{quote}
+  \verb|{'she': 3, 'sells': 3, 'what': 2, 'and': 1, 'is': 1, 'lemurs': 3}|,
+\end{quote}
+
+and \verb|word_hist(s2)| yields
+\begin{quote}
+\verb|{'buffalo': 8}|.
+\end{quote}
+
+Hint: Use the \verb|split()| function on a string to turn it into a
+list of words.
+
+\item  Write a function \verb|pref_dict| which will take parameters \verb|lst|, a list of strings, and \verb|n|, a non-negative integer. The value of \verb|n| will be a prefix length.The function will return a dictionary, keyed on the prefix, and with value the number of strings in the list which start with that prefix.
+
+The \verb|n| will always be less than or equal to the length of the shortest word.
+
+For example:
+
+\begin{itemize}
+  \item  \verb|pref_dict(['car', 'cat', 'hat', 'mouse', 'more'], 2)| will return \verb|{'ca': 2, 'ha': 1, 'mo': 2}|
+  \item  \verb|pref_dict(['threw', 'at', 'attention', 'through', 'attempt', 'thrush'], 2)| will return \verb|{'th': 3, 'at': 3}|
+ \item  \verb|pref_dict(['car', 'cat', 'hat', 'mouse', 'more'], 0)| will return \verb|{'': 5}|
+\end{itemize}
+
+
+[For the two classes below, you are not required to include \verb|__repr__()| or \verb|__str__()| methods, but are welcome to if you find them useful.]
+
+
+\item  Create an \verb|Animal| class. Each animal will have two attributes, a string \verb|color| (such as \verb|'red'| or |'blue'|) and a positive integer \verb|size|. These will be assigned upon creation of each object in the class. You will then include two methods:
+
+    \begin{itemize}
+      \item \verb|grow|, which takes in an integer parameter (which could be negative). This will increase the size of the animal by that amount (or decrease it, if the parameter was negative). However, no animal can ever have a size smaller than 1.
+      \item \verb|is_friendly| which takes no outside parameters, but returns a boolean deciding if the animal is friendly by the following rule: Small animals (those with a size smaller than 10) are friendly. Big animals (with a size greater than 24) are never friendly. Medium animals (with a size between 10 and 24, inclusive) are friendly only if they are yellow or blue. Finally, however, red animals are never friendly, no matter their size.  (Note that animals
+  can have other colors besides red, blue, and yellow.) [The details of this might look familiar!]
+    \end{itemize}
+
+    To check, consider the following console transcripts:
+
+    \begin{verbatim}
+>>> a = Animal('blue', 12)
+>>> a.is_friendly()
+True
+
+>>> a.grow(10)
+>>> a.is_friendly()
+True
+
+>>> a.grow(20)
+>>> a.is_friendly()
+False
+
+    \end{verbatim}
+
+    \begin{verbatim}
+>>> b = Animal('red', 20)
+>>> b.is_friendly()
+False
+
+>>> b.grow(7)
+>>> b.size
+27
+
+>>> b.grow(-20)
+>>> b.size
+7
+
+>>> b.is_friendly()
+False
+
+>>> b.grow(-10)
+>>> b.size
+1
+    \end{verbatim}
+
+\item Create a \verb|Character| class, which represents a character in the world's most boring video game. When instantiated, a Character object has the following attributes:
+\begin{itemize}
+  \item  \verb|energy| -- An energy level, always a positive integer, set initially as 20 units.
+  \item \verb|dist| -- A total distance travelled, also always an integer, and initially set to 0.
+\end{itemize}
+
+A Character can do four things, each of which should be a method:
+\begin{itemize}
+  \item \verb|walk(n: int)| -- the character moves a distance of $n$, which takes one unit of energy for each unit moved. If the character runs out of energy, they stop moving (that is, suppose a character has 4 units of energy. If you call \verb|move(7)|, the character's energy should drop to 0 and they should only move a total of 4 units.
+  \item \verb|run(n: int)| -- like walk, except that you use three times as much energy. (If you end up with an energy of 2 or less, notice that you cannot run anymore)
+  \item \verb|eat(n: int)| -- increases energy by $n$ units
+  \item \verb|rest()| -- increase energy by 5 units
+\end{itemize}
+
+Consider the following console transcript:
+
+\begin{verbatim}
+>>> a = Character()
+>>> a.walk(3)
+>>> a.energy
+17
+
+>>> a.dist
+3
+
+>>> a.run(4)
+>>> a.energy
+5
+
+>>> a.dist
+7
+
+>>> a.rest()
+>>> a.energy
+10
+
+>>> a.run(5)
+>>> a.run(3)
+>>> a.dist
+10
+
+>>> a.energy
+1
+
+>>> a.rest()
+>>> a.rest()
+>>> a.energy
+11
+
+>>> a.eat(3)
+>>> a.energy
+14
+
+>>> a.dist
+10
+
+>>> a.walk(9)
+>>> a.dist
+19
+
+>>> a.energy
+5
+
+>>> a.walk(8)
+>>> a.dist
+24
+
+>>> a.energy
+0
+\end{verbatim}
+
+
+
+
+\end{enumerate}
+
+\end{document} 
