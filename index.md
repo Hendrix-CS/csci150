@@ -138,16 +138,38 @@ Upon completing this course, our goal is for you to be able to:
 
 ## <a name="latedays">Late Policy</a>
 
-If a student needs an extension, the instructor must be notified by
-email or Microsoft Teams message prior to the deadline. This
-notification email must state the duration of the requested
-extension. The instructor reserves the right to decline a request for
-an extension, but aside from the final project the intention is that
-most requests for extensions will be cheerfully granted.
+[*Adapted from Spencer Bagley and David Clark, via [Robert
+Talbert](https://rtalbert.org/a-real-world-approach-to-deadlines/)*]
+
+CSCI 150 uses a **real-world policy** on due dates---but this may not
+mean what you think!  In the *real* real world, due dates exist but
+they are often not ironclad.  The purpose of deadlines is usually to
+help motivate you to complete the task, but if you need more time to
+get the job done well, you email whoever set the deadline to ask if
+you can have more time.  Studies have shown that deadline extension
+requests---in moderation and when truly needed---often lead to
+*better* employee evaluations (not to mention better work). [*See [Go
+Ahead and Ask for More Time on that
+Deadline](https://hbr.org/2021/12/go-ahead-and-ask-for-more-time-on-that-deadline)
+by Ashley Williams*.]
+
+**If you need an extension on a due date, email me and explain what
+you need**, and it will probably be fine.  It helps if you propose a
+concrete new deadline (*e.g.* "I can get it done by 5pm on
+Wednesday").  If you ask for lots of extensions, we'll work together
+to find a way to help you keep up.  Note, however, that late
+submissions may not receive feedback as quickly as on-time
+submissions.
+
+If you have significant extenuating circumstances that cause you to
+miss multiple deadlines, please [come to office
+hours](byorgey.youcanbook.me) to discuss broader accommodations.  I'm
+happy to be flexible, but it helps to know what you need so I can
+figure out the best way to help.
 
 ## <a name="participation">Course Participation</a>
 
-Each student should schedule and attend at least two Office Hour
+Each student should schedule and attend at least two office hour
 meetings with either their lecture or lab instructor at some point
 during the semester.
 
@@ -213,7 +235,7 @@ you can write (neatly) or type and print such solutions.
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
-On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment. If students working as partners wish to turn in a lab late, both students must use a late day.
+On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment.
 
 <!-- On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. Each partner should **submit their own solution** to the assignment. -->
 
