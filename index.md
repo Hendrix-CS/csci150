@@ -194,22 +194,22 @@ you can write (neatly) or type and print such solutions.
 </div>
 <br/>
 
-| #  | Name                                                                                                                        | Assigned  | Due       |
-|:--:|-----------------------------------------------------------------------------------------------------------------------------|-----------|:----------|
-| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                                                           | 23-24 Aug | 30-31 Aug |
-| 1  | Kepler, Newton, Einstein <!-- [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein) -->   | 30-31 Aug | 6-7 Sep   |
-| 2  | Diagnosing Heart Disease <!-- [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) --> | 6-7 Sep   | 13-14 Sep |
-| 3  | This Day in History <!-- [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) -->                | 13-14 Sep | 20-21 Sep |
-| 4  | Guess My Number <!-- [Guess My Number]({{site.baseurl}}/labs/guess.html) -->                                                | 20-21 Sep | 27-28 Sep |
-| 5  | Mutation is the Word <!-- [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) -->                                   | 27-28 Sep | 4-5 Oct   |
-| 6  | Todo Manager <!-- [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) -->                                               | 4-5 Oct   | 18-19 Oct |
-|    | **No lab** (fall break)                                                                                                     | 11-12 Oct |           |
-| 7  | Caesar's Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                                              | 18-19 Oct | 25-26 Oct |
-| 8  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->                                         | 25-26 Oct | 1-2 Nov   |
-| 9  | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                                                      | 1-2 Nov   | 8-9 Nov   |
-| 10 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                                                                          | 8-9 Nov   | 15-16 Nov |
-| 11 | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                                                  | 15-16 Nov | 29-30 Nov |
-| 12 | (Optional) Project 3 Workshop                                                                                               | 29-30 Nov |           |
+| #  | Name                                                                                                                        | Average time | Assigned  | Due       |
+|:--:|-----------------------------------------------------------------------------------------------------------------------------|--------------|-----------|:----------|
+| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                                                           | 1:30         | 23-24 Aug | 30-31 Aug |
+| 1  | Kepler, Newton, Einstein <!-- [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein) -->   | 2:00         | 30-31 Aug | 6-7 Sep   |
+| 2  | Diagnosing Heart Disease <!-- [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) --> | 2:30         | 6-7 Sep   | 13-14 Sep |
+| 3  | This Day in History <!-- [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) -->                | 1:47         | 13-14 Sep | 20-21 Sep |
+| 4  | Guess My Number <!-- [Guess My Number]({{site.baseurl}}/labs/guess.html) -->                                                | 2:55         | 20-21 Sep | 27-28 Sep |
+| 5  | Mutation is the Word <!-- [Mutation is the Word]({{site.baseurl}}/labs/doublets.html) -->                                   | 4:08         | 27-28 Sep | 4-5 Oct   |
+| 6  | Todo Manager <!-- [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) -->                                               | 3:14         | 4-5 Oct   | 18-19 Oct |
+|    | **No lab** (fall break)                                                                                                     |              | 11-12 Oct |           |
+| 7  | Caesar's Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->                                              | 3:31         | 18-19 Oct | 25-26 Oct |
+| 8  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->                                         | 3:13         | 25-26 Oct | 1-2 Nov   |
+| 9  | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                                                      | 3:11         | 1-2 Nov   | 8-9 Nov   |
+| 10 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                                                                          | 2:17         | 8-9 Nov   | 15-16 Nov |
+| 11 | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                                                  | 3:22         | 15-16 Nov | 29-30 Nov |
+| 12 | (Optional) Project 3 Workshop                                                                                               |              | 29-30 Nov |           |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
@@ -230,11 +230,11 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 -->
 
 
-| # | Name                                                                                                        | Assigned | Due   |
-|:-:|-------------------------------------------------------------------------------------------------------------|:--------:|:-----:|
-| 1 | Civic Assistance Q/A System <!-- [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) --> | 20 Sep   | 2 Oct |
-| 2 | Word Games <!-- [Word Games]({{site.baseurl}}/projects/project2.html) -->                                   | 9 Oct    | 6 Nov |
-| 3 | Final Project <!-- [Final Project]({{site.baseurl}}/projects/final.html) -->                                | 13 Nov   | 8 Dec |
+| # | Name                                                                                                        | Average time | Assigned | Due   |
+|:-:|-------------------------------------------------------------------------------------------------------------|--------------|:--------:|:-----:|
+| 1 | Civic Assistance Q/A System <!-- [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) --> | 3:30         | 20 Sep   | 2 Oct |
+| 2 | Word Games <!-- [Word Games]({{site.baseurl}}/projects/project2.html) -->                                   | 5:50         | 9 Oct    | 6 Nov |
+| 3 | Final Project <!-- [Final Project]({{site.baseurl}}/projects/final.html) -->                                | 12:45        | 13 Nov   | 8 Dec |
 
 You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to three weeks after they are assigned.
 
