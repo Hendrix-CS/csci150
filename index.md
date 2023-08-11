@@ -136,17 +136,22 @@ Upon completing this course, our goal is for you to be able to:
 
 ## <a name="latedays">Late Policy</a>
 
-If a student needs an extension, the instructor must be notified by email or Microsoft Teams message prior to the
-deadline. This notification email must state the duration of the requested
-extension. The instructor reserves the right to decline a request for an extension, but aside from
-the final project the intention is that most requests for extensions
-will be cheerfully granted.
+XXX tokens? Late days?
+
+<!-- If a student needs an extension, the instructor must be notified by -->
+<!-- email or Microsoft Teams message prior to the deadline. This -->
+<!-- notification email must state the duration of the requested -->
+<!-- extension. The instructor reserves the right to decline a request for -->
+<!-- an extension, but aside from the final project the intention is that -->
+<!-- most requests for extensions will be cheerfully granted. -->
 
 ## <a name="participation">Course Participation</a>
 
-* Each student should schedule and attend at least three Office Hour meetings with their lecture instructor at some
-point during the semester.
 
+
+<!-- Each student should schedule and attend at least three Office Hour -->
+<!-- meetings with their lecture instructor at some point during the -->
+<!-- semester. -->
 
 ## <a name="hwqz">Homework</a>
 
@@ -175,12 +180,11 @@ point during the semester.
 
 <!-- |   | [HW 4 Redo](/homework/HW4-Redo-Problems.pdf)                                              |          |          | <\!-- [Tracing Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EUz_HXO6PH1AtK7UOh4P9hMBax6AG-jKpSwj-VwR7SScfw?e=zneGLv) -\-> | -->
 
-
 There will often be short homework assignments to be completed,
-typically assigned on Friday and due Wednesday.  CodingBat homework
-will be submitted electronically through CodingBat. By-hand homework
-will be submitted at the start of class time -- you can write (neatly)
-or type such solutions.
+typically assigned on Friday and due Wednesday.  Homework with coding
+practice problems will be submitted electronically. By-hand homework
+should be submitted on physical paper at the start of class time --
+you can write (neatly) or type and print such solutions.
 
 
 ## <a name="labs">Labs</a>
