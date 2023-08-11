@@ -128,6 +128,8 @@ Upon completing this course, our goal is for you to be able to:
 | F  1 Dec | Project Workshop in Class                |                                                                                                                                                           |
 |          |                                          |                                                                                                                                                           |
 | F 8 Dec  | Final Project Presentations              |                                                                                                                                                           |
+|          | 11am section: 8:30am-11:30am             |                                                                                                                                                           |
+|          | 8am section: 2:00pm-5:00pm               |                                                                                                                                                           |
 
 [survey]: https://docs.google.com/forms/d/e/1FAIpQLSdn8ol52p2CB3DSkFp3Q04VBxaT8IA0IqjiMJKa_jRxFYFQpg/viewform
 
@@ -136,22 +138,18 @@ Upon completing this course, our goal is for you to be able to:
 
 ## <a name="latedays">Late Policy</a>
 
-XXX tokens? Late days?
-
-<!-- If a student needs an extension, the instructor must be notified by -->
-<!-- email or Microsoft Teams message prior to the deadline. This -->
-<!-- notification email must state the duration of the requested -->
-<!-- extension. The instructor reserves the right to decline a request for -->
-<!-- an extension, but aside from the final project the intention is that -->
-<!-- most requests for extensions will be cheerfully granted. -->
+If a student needs an extension, the instructor must be notified by
+email or Microsoft Teams message prior to the deadline. This
+notification email must state the duration of the requested
+extension. The instructor reserves the right to decline a request for
+an extension, but aside from the final project the intention is that
+most requests for extensions will be cheerfully granted.
 
 ## <a name="participation">Course Participation</a>
 
-
-
-<!-- Each student should schedule and attend at least three Office Hour -->
-<!-- meetings with their lecture instructor at some point during the -->
-<!-- semester. -->
+Each student should schedule and attend at least two Office Hour
+meetings with either their lecture or lab instructor at some point
+during the semester.
 
 ## <a name="hwqz">Homework</a>
 
@@ -232,13 +230,11 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 -->
 
 
-| # | Name                                                                          | Assigned | Due    |
-|:-:|-------------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)      | 15 Feb   | 3 Mar  |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                       | 27 Mar   | 10 Apr |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                     | 10 Apr   | 5 May  |
-
-
+| # | Name                                                                                                        | Assigned | Due   |
+|:-:|-------------------------------------------------------------------------------------------------------------|:--------:|:-----:|
+| 1 | Civic Assistance Q/A System <!-- [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) --> | 20 Sep   | 2 Oct |
+| 2 | Word Games <!-- [Word Games]({{site.baseurl}}/projects/project2.html) -->                                   | 9 Oct    | 6 Nov |
+| 3 | Final Project <!-- [Final Project]({{site.baseurl}}/projects/final.html) -->                                | 13 Nov   | 8 Dec |
 
 You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to three weeks after they are assigned.
 
@@ -266,7 +262,8 @@ There is no final exam; you will complete a final project instead, as
 described above under Projects.
 
 ## <a name="grading">Specifications Grading</a>
-Each assignment is assessed as **Complete**, **Partially Complete** or **Missing**.
+
+Each assignment is assessed as **Complete**, **Partially Complete** or **Incomplete**.
 Criteria for the first two categories will be specified for each assignment. Final course
 grades are earned based on cumulative assignment outcomes:
 
@@ -275,13 +272,13 @@ grades are earned based on cumulative assignment outcomes:
   * **Complete** all three projects.
   * **Complete** a minimum of eight homework assignments, with the other two at least **Partially Complete**.
   * Up to one unexcused lab absence, and **Complete** a minimum of 11 lab assignments, with the other two at least **Partially Complete**.
-  * Schedule and attend a minimum of three Office Hours meetings.
+  * Schedule and attend a minimum of two Office Hours meetings.
 * To earn a B in the course, a student will:
   * **Complete** two exams and at least **Partially Complete** the remaining exam.
   * **Complete** a minimum of two projects and at least **Partially Complete** the remaining project.
   * **Complete** a minimum of four homework assignments and at least **Partially Complete** a minimum of four more.
   * Up to one unexcused lab absence, **Complete** a minimum of eight of the lab assignments, and at least **Partially Complete** a minimum of four more.
-  * Schedule and attend at least two Office Hours meetings
+  * Schedule and attend at least one Office Hours meeting.
 * To earn a C in the course, a student will:
   * At least **Partially Complete** a minimum of two exams.
   * One of the following:
@@ -289,7 +286,7 @@ grades are earned based on cumulative assignment outcomes:
 	* **Complete** the final project and at least **Partially Complete** one of the first two projects.
   * At least **Partially Complete** a minimum of six homework assignments.
   * Up to two unexcused lab absences, **Complete** at least four of the lab assignments, and at least **Partially Complete** a minimum of six more.
-  * Schedule and attend at least one Office Hours meeting
+  * Schedule and attend at least one Office Hours meeting.
 * To earn a D in the course, a student will:
   * At least **Partially Complete** a minimum of two exams.
   * At least **Partially Complete** a minimum of two projects.
@@ -303,7 +300,7 @@ If a submitted assignment receives a **Partial** assessment and the student seek
 * Individual students can request extensions of their deadlines -- typically, unless the student has abused this throughout the semester, requests will be granted.
 * If the student submits revisions which meet the requirements by the deadline, the revised work will receive a **Complete** assessment.
 
-If a submitted assignment receives a **Missing** assessment, a similar list of requirements will be provided. In most cases, a **Missing** assignment can only be upgraded to **Partially Complete**, but the instructor reserves the right to allow students to achieve **Complete** on a case-by-case basis.
+If a submitted assignment receives a **Incomplete** assessment, a similar list of requirements will be provided. In most cases, an **Incomplete** assignment can only be upgraded to **Partially Complete**, but the instructor reserves the right to allow students to achieve **Complete** on a case-by-case basis.
 
 
 <hr />
