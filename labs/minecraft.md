@@ -14,8 +14,10 @@ character's actions in the virtual world Minecraft.
 ## Materials
 
 * Quotes on paper from previous courses
-* [Minecraft at Code.org](https://studio.code.org/join/GQHDZK)
+* [Minecraft at Code.org][hourofcode]
 * Lab Partner
+
+[hourofcode][https://studio.code.org/join/HZWYBP]
 
 ### Step 1
 
@@ -40,10 +42,11 @@ Before next week's lab, your instructor will combine these suggestions into a si
 
 Find your assigned Lab Partner to begin pair programming.
 
-Follow the link above and sign up for an account at Code.org. **Be
-sure to use one of your Hendrix email address**, since this is the only way
-we will be able to assign you a grade for this lab.  Also,
-put **both partners' full names in the name field**.
+[Follow the link to our Code.org section][hourofcode] and sign up for
+an account at Code.org. **Be sure to use one of your Hendrix email
+address**, since this is the only way we will be able to assign you a
+grade for this lab.  Also, put **both partners' full names in the name
+field**.
 
 Work through the stages of the Minecraft programming section. First,
 just try to solve each puzzle by piecing together a valid

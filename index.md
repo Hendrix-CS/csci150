@@ -198,7 +198,7 @@ you can write (neatly) or type and print such solutions.
 
 | #  | Name                                                                                                                        | Assigned  | Due       |
 |:--:|-----------------------------------------------------------------------------------------------------------------------------|-----------|:----------|
-| 0  | Minecraft <!-- [Minecraft]({{site.baseurl}}/labs/minecraft.html) -->                                                        | 23-24 Aug | 30-31 Aug |
+| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                                                           | 23-24 Aug | 30-31 Aug |
 | 1  | Kepler, Newton, Einstein <!-- [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein) -->   | 30-31 Aug | 6-7 Sep   |
 | 2  | Diagnosing Heart Disease <!-- [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) --> | 6-7 Sep   | 13-14 Sep |
 | 3  | This Day in History <!-- [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history) -->                | 13-14 Sep | 20-21 Sep |
