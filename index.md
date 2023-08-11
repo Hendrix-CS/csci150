@@ -119,7 +119,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 17 Nov | Exam 3 Review                            | Project 3 Proposal Due                                                                                                                                    |
 |          |                                          |                                                                                                                                                           |
 | M 20 Nov | **Exam 3**                               |                                                                                                                                                           |
-| T 21 Nov | ** Exam 3 Take Home Due**                |                                                                                                                                                           |
+| T 21 Nov | **Exam 3 Take Home Due**                 |                                                                                                                                                           |
 | W 22 Nov | *Thanksgiving Break*                     |                                                                                                                                                           |
 | F 24 Nov | *Thanksgiving Break*                     |                                                                                                                                                           |
 |          |                                          |                                                                                                                                                           |
