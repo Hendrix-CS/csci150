@@ -67,7 +67,7 @@ Upon completing this course, our goal is for you to be able to:
 | Date     | Topic                                    | HW and Links                                                                                  |
 |:---------|:-----------------------------------------|:----------------------------------------------------------------------------------------------|
 |          |                                          |                                                                                               |
-| W 23 Aug | Intro to CS                              | HW: [Survey](XXX)                                                                             |
+| W 23 Aug | Intro to CS                              | HW: [Survey][survey]                                                                          |
 | F 25 Aug | Intro to CSCI 150; Algorithms and errors | HW: [Minecraft by hand](homework/minecraft.html)                                              |
 |          |                                          |                                                                                               |
 | M 28 Aug | Intro to Python (math, variables)        |                                                                                               |
@@ -129,6 +129,8 @@ Upon completing this course, our goal is for you to be able to:
 |          |                                          |                                                                                               |
 | F 8 Dec  | Final Project Presentations              |                                                                                               |
 
+[survey]: https://docs.google.com/forms/d/e/1FAIpQLSdn8ol52p2CB3DSkFp3Q04VBxaT8IA0IqjiMJKa_jRxFYFQpg/viewform
+
 <hr>
 # Coursework
 
@@ -159,7 +161,7 @@ point during the semester.
 
 | # | Name                                                                                                                                                  | Assigned | Due      | Sample Solutions                                                                                                                                      |
 |:-:|-------------------------------------------------------------------------------------------------------------------------------------------------------|----------|:---------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdn8ol52p2CB3DSkFp3Q04VBxaT8IA0IqjiMJKa_jRxFYFQpg/viewform)                                         | W Aug 23 | M Aug 28 |                                                                                                                                                       |
+| 0 | [Survey][survey]                                                                                                                                      | W Aug 23 | M Aug 28 |                                                                                                                                                       |
 | 1 | Minecraft by hand <!-- [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html) -->                                                              | F Aug 26 | W Aug 30 |                                                                                                                                                       |
 | 2 | Boolean practice <!-- [Boolean practice]({{site.baseurl}}/homework/booleans.html) -->                                                                 | F Sep 1  | W Sep 6  |                                                                                                                                                       |
 | 3 | CodingBat Conditional and By Hand Tracing Practice <!-- [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) --> | F Sep 8  | W Sep 13 | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf) -->                                                           |
