@@ -15,24 +15,36 @@ TEST_TAG = "CodeGrade Tag"
 def walk_cells(data, tag, ignore=None, test_tag=TEST_TAG):
     """
     Walk through all cells of the notebook, combining all code cells until the
-    given tag was found (inclusive). If an ignore tag is given, the code cell
+    given tag was found (inclusive). If an ignore tag is given, code cells
     with that tag will be left out.
+
+    If the given tag is found in a code cell, output all cumulative
+    code cells through that one.  If the given tag is found in a
+    markdown cell, output that cell only.
+
+    Returns a tuple of a list of cells and an appropriate file extension (either py or md).
     """
     cells = []
     for cell in data["cells"]:
+        cell_lines = cell["source"].split("\n")
         if cell["cell_type"] == "code":
             add_cell = True
-            for line in cell["source"]:
+            for line in cell_lines:
                 if test_tag in line and tag in line:
                     cells.append(cell["source"])
-                    return cells
+                    return cells, "py"
                 if ignore:
                     if test_tag in line and ignore in line:
                         add_cell = False
             if add_cell:
                 cells.append(cell["source"])
 
-    return []
+        elif cell["cell_type"] == "markdown":
+            for line in cell_lines:
+                if test_tag in line and tag in line:
+                    return [cell["source"]], "md"
+
+    return [], ""
 
 def convert_lines(cell, wrap_print):
     """
@@ -86,18 +98,18 @@ args = parser.parse_args()
 
 with open(args.jupyter_file) as f:
     if args.ignore:
-        cells = walk_cells(json.load(f), args.tag, ignore=args.ignore, test_tag=args.custom_test_tag)
+        cells, ext = walk_cells(json.load(f), args.tag, ignore=args.ignore, test_tag=args.custom_test_tag)
     else:
-        cells = walk_cells(json.load(f), args.tag, test_tag=args.custom_test_tag)
+        cells, ext = walk_cells(json.load(f), args.tag, test_tag=args.custom_test_tag)
 
 if len(cells) == 0:
-    print('Tag not found, do not remove comments with "' + args.custom_test_tag + '" from the notebook cells.')
+    print(f"Tag '{args.tag}' not found, do not remove comments with '{args.custom_test_tag}' from the notebook cells.")
     exit(1)
 
 python_string = to_string(cells, args.execute_all, args.wrap_print)
 
 if args.to_file:
-    with open(Path(args.tag + '.py'), 'w') as f:
+    with open(Path(args.tag + '.' + ext), 'w') as f:
         f.write(python_string)
 else:
     program = compile(python_string, 'temp', 'exec')
