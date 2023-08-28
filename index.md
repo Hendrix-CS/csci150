@@ -71,6 +71,8 @@ Upon completing this course, our goal is for you to be able to:
 | F 25 Aug | Intro to CSCI 150; Algorithms and errors [![pdf](i/PDF2.png)][intro1-p] [![pdf](i/PDF2.png)][intro2-p] | HW: [Minecraft by hand](homework/minecraft.html)                                                                                                          |
 |          |                                                                                                        |                                                                                                                                                           |
 | M 28 Aug | Intro to Python (math, variables)                                                                      | HW: [Sign up for CodeGrade](https://app.codegra.de/courses/5296/enroll/4caed24b-96c6-4d0f-9d80-a6d7d6cc02f6)                                              |
+|          | 8am: [![stream](i/stream.png)][py1-v] [![kaggle](i/kaggle.png)][py1-k]                                 |                                                                                                                                                           |
+|          | 11am: [![stream](i/stream.png)][py2-v] [![kaggle](i/kaggle.png)][py2-k]                                |                                                                                                                                                           |
 | W 30 Aug | Intro to Python (functions)                                                                            |                                                                                                                                                           |
 | F  1 Sep | Booleans                                                                                               | HW: Boolean practice <!-- [Boolean practice](homework/booleans.html) -->                                                                                  |
 |          |                                                                                                        |                                                                                                                                                           |
@@ -134,6 +136,10 @@ Upon completing this course, our goal is for you to be able to:
 [survey]: https://docs.google.com/forms/d/e/1FAIpQLSdn8ol52p2CB3DSkFp3Q04VBxaT8IA0IqjiMJKa_jRxFYFQpg/viewform
 [intro1-p]: lectures/F23/2023-08-23-01-intro.pdf
 [intro2-p]: lectures/F23/2023-08-23-02-intro.pdf
+[py1-v]: https://hendrix.sharepoint.com/sites/Section_29461/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29461%2FShared%20Documents%2FGeneral%2FRecordings%2F8%5F28%5F%20Python%20I%2D20230828%5F081037%2DMeeting%20Recording%2Emp4
+[py1-k]: https://www.kaggle.com/byorgey/2023-08-28-introduction-to-python-01
+[py2-v]: https://hendrix.sharepoint.com/sites/Section_29462/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29462%2FShared%20Documents%2FGeneral%2FRecordings%2F8%5F28%5F%20Intro%20to%20Python%2D20230828%5F113247%2DMeeting%20Recording%2Emp4
+[py2-k]: https://www.kaggle.com/byorgey/2023-08-28-python-intro-02
 
 <hr>
 # Coursework

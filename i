@@ -1,1 +1,1 @@
-images
+assets/images

@@ -25,6 +25,7 @@ body {
 img[alt=yt] { width: 24px; }
 img[alt=stream] { width: 24px; }
 img[alt=pdf] { width: 24px; }
+img[alt=kaggle] { width: 24px; }
 
 /* From Codecademy Make-A-Website */
 .jumbotron {
