@@ -71,7 +71,6 @@ Upon completing this course, our goal is for you to be able to:
 | F 25 Aug | Intro to CSCI 150; Algorithms and errors | [![pdf](i/PDF2.png)][intro1-p]                                         | [![pdf](i/PDF2.png)][intro2-p]                                         | HW: [Minecraft by hand](homework/minecraft.html)                                                                                                          |
 |          |                                          |                                                                        |                                                                        |                                                                                                                                                           |
 | M 28 Aug | Intro to Python (math, variables)        | [![stream](i/stream.png)][py1-v] [![kaggle](i/kaggle_icon.png)][py1-k] | [![stream](i/stream.png)][py2-v] [![kaggle](i/kaggle_icon.png)][py2-k] | HW: [Sign up for CodeGrade](https://app.codegra.de/courses/5296/enroll/4caed24b-96c6-4d0f-9d80-a6d7d6cc02f6)                                              |
-|          |                                          |                                                                        |                                                                        |                                                                                                                                                           |
 | W 30 Aug | Intro to Python (functions)              |                                                                        |                                                                        |                                                                                                                                                           |
 | F  1 Sep | Booleans                                 |                                                                        |                                                                        | HW: Boolean practice <!-- [Boolean practice](homework/booleans.html) -->                                                                                  |
 |          |                                          |                                                                        |                                                                        |                                                                                                                                                           |
@@ -224,6 +223,8 @@ you can write (neatly) or type and print such solutions.
 </a>
 </div>
 <br/>
+
+<p><a href="docs/code-of-conduct/23F/code-of-conduct-23F-W.pdf">Wednesday Lab Code of Conduct</a></p>
 
 | #  | Name                                                                                                                        | Completion time | Assigned  | Due       |
 |:--:|-----------------------------------------------------------------------------------------------------------------------------|-----------------|-----------|:----------|
