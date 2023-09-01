@@ -54,6 +54,11 @@ def convert_lines(cell, wrap_print):
     result of the last line in a cell, but after converting to Python code
     a print statement is needed to print out that result.)
     """
+
+    # Don't crash on blank cells
+    if cell == "":
+        return ""
+
     string = ""
     for line in cell[:-1]:
         string += line
