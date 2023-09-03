@@ -1,5 +1,5 @@
 age,female,chest_pain,rest_bps,cholesterol,high_fasting_blood_sugar,rest_ecg,maximum_heart_rate,exercise_angina,vessels,heart_disease
-63,False,typical angina,145,233,True,hypertrophy,150,False,0,False
+62,False,typical angina,145,233,True,hypertrophy,150,False,0,False
 67,False,asymptomatic,160,286,False,hypertrophy,108,True,3,True
 67,False,asymptomatic,120,229,False,hypertrophy,129,True,2,True
 37,False,non-anginal pain,130,250,False,normal,187,False,0,False
