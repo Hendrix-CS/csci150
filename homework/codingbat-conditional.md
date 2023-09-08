@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: CodingBat Conditional Practice and By-Hand Tracing
 -----------------------------------------------
 
-*Due: Wednesday, February 8*
+*Due: Wednesday, September 13*
 
 This homework set has two components:
 * CodingBat -- where you will write a bit of code (see below) and it will be automatically assessed
@@ -16,10 +16,10 @@ This homework set has two components:
 You will want to make an account on CodingBat. Please use your Hendrix email as your account email.
 Please also keep up with your own password -- there is no way for me to recover it for you!
 
- Be sure to share your progress with me, by going to "prefs" and entering
-your instructor's email address (`seme@hendrix.edu`) in the "Teacher Share" box.
+Be sure to share your progress with me, by going to "prefs" and entering
+your instructor's email address (`yorgey@hendrix.edu`) in the "Teacher Share" box.
 
-You should complete at least 7 of the following:
+You should complete **at least 7** of the following:
 
 - [Cigar Party](https://codingbat.com/prob/p195669)
 - [Date Fashion](https://codingbat.com/prob/p129125)
