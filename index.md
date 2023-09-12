@@ -182,7 +182,7 @@ submissions.
 
 If you have significant extenuating circumstances that cause you to
 miss multiple deadlines, please [come to office
-hours](byorgey.youcanbook.me) to discuss broader accommodations.  I'm
+hours](https://byorgey.youcanbook.me) to discuss broader accommodations.  I'm
 happy to be flexible, but it helps to know what you need so I can
 figure out the best way to help.
 
