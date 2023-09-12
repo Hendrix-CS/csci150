@@ -78,7 +78,7 @@ Upon completing this course, our goal is for you to be able to:
 | W  6 Sep | Conditionals                             |                                                                            |                                                                            |                                                                                                                           |
 | F  8 Sep | Tracing I                                |                                                                            |                                                                            | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)                             |
 |          |                                          |                                                                            |                                                                            |                                                                                                                           |
-| M 11 Sep | PyCharm and I/O                          |                                                                            |                                                                            |                                                                                                                           |
+| M 11 Sep | PyCharm and I/O                          | [![stream](i/stream.png)][pyc1-v] [![python](i/py.png)][pyc1-py]           | [![stream](i/stream.png)][pyc2-v] [![python](i/py.png)][pyc2-py]           |                                                                                                                           |
 | W 13 Sep | Generative AI                            |                                                                            |                                                                            |                                                                                                                           |
 | F 15 Sep | Exam 1 Review                            |                                                                            |                                                                            |                                                                                                                           |
 |          |                                          |                                                                            |                                                                            |                                                                                                                           |
@@ -147,6 +147,10 @@ Upon completing this course, our goal is for you to be able to:
 [bool1-v]: https://hendrix.sharepoint.com/sites/Section_29461/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29461%2FShared%20Documents%2FGeneral%2FRecordings%2F9%5F1%5F%20Booleans%2D20230901%5F081054%2DMeeting%20Recording%2Emp4
 [bool2-k]: https://www.kaggle.com/byorgey/2023-09-01-booleans-02
 [bool2-v]: https://hendrix.sharepoint.com/sites/Section_29462/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29462%2FShared%20Documents%2FGeneral%2FRecordings%2F9%5F1%5F%20Booleans%2D20230901%5F111026%2DMeeting%20Recording%2Emp4
+[pyc1-py]: lectures/F23/demo_file.py
+[pyc1-v]: https://hendrix.sharepoint.com/sites/Section_29461/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29461%2FShared%20Documents%2FGeneral%2FRecordings%2F9%5F11%5F%20PyCharm%20%2B%20I%5FO%2D20230911%5F081217%2DMeeting%20Recording%2Emp4
+[pyc2-py]: lectures/F23/python_demo.py
+[pyc2-v]: https://hendrix.sharepoint.com/sites/Section_29462/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29462%2FShared%20Documents%2FGeneral%2FRecordings%2F9%5F11%5F%20PyCharm%20%2B%20I%5FO%2D20230911%5F111055%2DMeeting%20Recording%2Emp4
 
 <hr>
 # Coursework
