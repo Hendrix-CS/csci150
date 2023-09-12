@@ -78,7 +78,7 @@ Upon completing this course, our goal is for you to be able to:
 | W  6 Sep | Conditionals                             |                                                                            |                                                                            |                                                                                                                           |
 | F  8 Sep | Tracing I                                |                                                                            |                                                                            | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)                             |
 |          |                                          |                                                                            |                                                                            |                                                                                                                           |
-| M 11 Sep | PyCharm and I/O                          | [![stream](i/stream.png)][pyc1-v] [![python](i/py.png)][pyc1-py]           | [![stream](i/stream.png)][pyc2-v] [![python](i/py.png)][pyc2-py]           |                                                                                                                           |
+| M 11 Sep | PyCharm and I/O                          | [![stream](i/stream.png)][pyc1-v] [![python](i/py.png)][pyc1-py]           | [![stream](i/stream.png)][pyc2-v] [![python](i/py.png)][pyc2-py]           | [Practice Exam 1](/exams/cs150-exam1-practice-fall2023.pdf)                                                               |
 | W 13 Sep | Generative AI                            |                                                                            |                                                                            |                                                                                                                           |
 | F 15 Sep | Exam 1 Review                            |                                                                            |                                                                            |                                                                                                                           |
 |          |                                          |                                                                            |                                                                            |                                                                                                                           |
@@ -293,7 +293,7 @@ submitted by the start of the next class period.
 
 * Exam 1: Monday, September 18, covering functions, math, numerical
   data, and conditionals
-  <!-- - [Practice Exam 1](/exams/cs150-exam1-practice-spring2023.pdf) -->
+  - [Practice Exam 1](/exams/cs150-exam1-practice-fall2023.pdf)
   <!-- - [Exam 1 Redo Problems](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EeIcwhaL8x9AjC4wuBhUbRYBewIy5fUmLyZrx9RM7R6hDg?e=Cmlhrz) -->
 * Exam 2: Monday, October 23, covering input/output, `while` loops, strings, and lists
    <!-- - [Practice Exam 2](/exams/exam2-practice-spring-2023.pdf)   -->
