@@ -7,12 +7,9 @@ layout: course-multi
 
 ## <a name="TAs">TA Office Hours</a>
 
-TBD
-
-<!-- | Time   |Sunday| Monday      | Tuesday  | Wednesday |Thursday| -->
-<!-- |:------:|-------------|----------|-----------| -->
-<!-- |6-8 pm  | Ted | Simon |Matthew | | | -->
-<!-- |8-10 pm || Ryan | Riley| |Zoie| -->
+| Sunday      | Monday      | Tuesday    | Wednesday    | Thursday   |
+|-------------|-------------|------------|--------------|------------|
+| Riley (7-9) | Chris (6-8) | Ryan (6-8) | Joseph (6-8) | Jada (7-9) |
 
 
 <!--
