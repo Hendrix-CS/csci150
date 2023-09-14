@@ -150,7 +150,7 @@ Upon completing this course, our goal is for you to be able to:
 [pyc2-v]: https://hendrix.sharepoint.com/sites/Section_29462/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29462%2FShared%20Documents%2FGeneral%2FRecordings%2F9%5F11%5F%20PyCharm%20%2B%20I%5FO%2D20230911%5F111055%2DMeeting%20Recording%2Emp4
 [ai1-v]: https://hendrix.sharepoint.com/sites/Section_29461/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29461%2FShared%20Documents%2FGeneral%2FRecordings%2FGenerative%20AI%2D20230913%5F081038%2DMeeting%20Recording%2Emp4
 [ai2-v]: https://hendrix.sharepoint.com/sites/Section_29462/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29462%2FShared%20Documents%2FGeneral%2FRecordings%2F9%5F13%5F%20Generative%20AI%2D20230913%5F111100%2DMeeting%20Recording%2Emp4
-[tracing-v]: https://hendrix.sharepoint.com/sites/Section_28123/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F28123%2FShared%20Documents%2FGeneral%2FRecordings%2F09%5F09%5F%20Introduction%20to%20Tracing%2D20220909%5F111033%2DMeeting%20Recording%2Emp4
+[tracing-v]: https://hendrix.sharepoint.com/:v:/s/Section_28123/EasCDBqu6n1NoVh5RhbYoRwBLLL93QGMDh3H7_6Izr5yGA?e=7CXkNv
 
 <hr>
 # Coursework
