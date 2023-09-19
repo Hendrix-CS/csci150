@@ -927,7 +927,7 @@ Show them how to run code in PyCharm.  Show them how to get a prompt.
 Show them how to make comments!
 
 \newpage
-\lab{\notready This Day in History}
+\lab{\ready This Day in History}
 
 This can be used as a comprehensive review of everything on Exam 1.
 
@@ -969,19 +969,158 @@ This can be used as a comprehensive review of everything on Exam 1.
 \end{reflect}
 
 \newpage
-\class{\notready Generative AI}
+\class{\ready Generative AI}
 
 \subsection*{Setup}
 
 \begin{itemize}
 \item Note we \emph{do} still have lab today/tomorrow!  Should be a
   nice review for Exam 1.
-\item Show slides: what does a computer scientist look like?
-\item CS history! (Lovelace + Babbage)
+\item Exam 1 Monday, do practice exam for Friday!
+  \begin{itemize}
+    \item In-class vs take-home
+    \item No PyCharm, I/O stuff on lab this week or HW
+  \end{itemize}
+\item HW due today, will also collect older HW
+\item Remember: can always ask for any extensions
+\item Show how to sign up for office hours
 \end{itemize}
 
+\subsection*{Discussion notes}
+
+\begin{itemize}
+  \item Generative AI systems
+\begin{itemize}
+  \item
+    ChatGPT (Open AI), Bard (Google), GrammarlyGO, GitHub Copilot
+  \item
+    DALL.E, Stable Diffusion, Midjourney
+  \end{itemize}
+\item
+  How many have tried one?
+\item
+  How do they work?
+
+  \begin{itemize}
+
+  \item
+    Fundamentally they are just computer programs running a function:
+    prompt -\textgreater{} response.
+  \item
+    Interesting difference is that they are \textbf{trained}, not
+    written directly with a bunch of Python code.
+
+    \begin{itemize}
+
+    \item
+      Give it a ton of examples, e.g.~text or images from the Internet.
+    \item
+      ``Learns'' what examples have in common.
+
+      \begin{itemize}
+
+      \item
+        Training takes a lot of input data and a lot of computational
+        effort. You have to have a ton of computers etc, i.e.~be a big
+        company.
+      \end{itemize}
+    \item
+      Basic version (we've had this for a while): can then
+      \textbf{predict} which new inputs are similar to training data.
+
+      \begin{itemize}
+
+      \item
+        Example: Heart Disease lab. Function at the end was generated
+        automatically by looking at data and learning what diseased
+        patients had in common.
+      \end{itemize}
+    \item
+      Advanced version (last few years): can \textbf{generate} new
+      things that are similar.
+
+      \begin{itemize}
+
+      \item
+        Note once the training is done, not as much work to run it in
+        generation mode, mid-sized models can be run on a desktop
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  What are they good at / not good at?
+
+  \begin{itemize}
+
+  \item
+    Good at coming up with things that sound / look good
+  \item
+    Have no idea of what is true/false
+  \item
+    Have all the same bias as the training data that went into it.
+  \item
+    Not good at learning new things incrementally
+  \end{itemize}
+\item
+  Try out some examples with ChatGPT.
+
+  \begin{itemize}
+
+  \item
+    See how we can get it to say something false.
+  \item
+    Try writing some Python code.
+  \end{itemize}
+\item
+  Why bother learning computer programming if you can just tell the
+  computer what you want in English?
+
+  \begin{itemize}
+
+  \item
+    The generated code isn't always correct! You need to understand + be
+    able to review it.
+  \item
+    It ultimately can only do kind of simple, small things, not build
+    big systems. Someone needs to put them together.
+  \end{itemize}
+\item
+  Academic Integrity?
+
+  \begin{itemize}
+
+  \item
+    Goal: learning!
+  \item
+    Make sure you're clear with faculty on what is allowed.
+  \item
+    Make sure to cite if you used Grammarly, ChatGPT, etc.
+  \item
+    This class: code must be your own.
+
+    \begin{itemize}
+
+    \item
+      Tempting to get code from web searches, now generative AI.
+    \item
+      Don't use these, but if you do, at least cite them.
+    \end{itemize}
+  \end{itemize}
+\item
+  How will these affect society? (discussion)
+
+  \begin{itemize}
+
+  \item
+    Partly depends on choices you make!
+  \item
+    Big companies want you to use them etc.
+  \end{itemize}
+\end{itemize}
+
+
 \newpage
-\class{\notready Exam 1 review}
+\class{\ready Exam 1 review}
 
 \subsection*{Setup}
 
@@ -990,7 +1129,7 @@ This can be used as a comprehensive review of everything on Exam 1.
 Go over sample exam solutions.
 
 \newpage
-\class{\notready Exam 1}
+\class{\ready Exam 1}
 
 \begin{itemize}
 \item Note, no HW this weekend.
@@ -1018,12 +1157,14 @@ Go over sample exam solutions.
 \end{reflect}
 
 \newpage
-\class{\notready While loops}
+\class{\ready While loops}
 
 \subsection*{Setup}
 \begin{itemize}
 \item \textbf{Assign Project 1}.  Linked from website. Due 1.5 weeks from
   today (midnight on Monday).
+\item History: ENIAC. Show Wikipedia page, watch ENIAC programmers
+  trailer.
 \end{itemize}
 
 \subsection*{While loops}
@@ -1046,7 +1187,6 @@ order of statements inside the loop.
 
 % \subsection*{Setup}
 % \begin{itemize}
-% \item History: ENIAC.  Watch ENIAC programmers trailer.
 % \item Reminder: projects!  Due Monday.
 % \item Put some code with while loop up for them to figure out what it
 %   does as they come in?
@@ -1059,13 +1199,6 @@ Point out three usual components of a while loop:
 \item Change those variables somewhere in the loop (often at the
   end)
 \end{itemize}
-
-Do another example: keep printing ``hi'' and asking ``Do you want to
-stop?'' until says yes --- have students write this code together on
-their computers/paper.  Then have two or three share code?  There are
-two decent ways to write this --- using input variable to control loop
-(but then you have to initialize it with a bogus value), or using a
-boolean (sentinel).
 
 \subsection*{Collatz}
 
@@ -1099,6 +1232,16 @@ while n < max:
 
 (What happens if we take out \verb|max| check and just say
 \verb|while true|?  A legitimate use of an infinite loop!)
+
+\subsection*{Sentinel example}
+
+Do another example: keep printing ``hi'' and asking ``Do you want to
+stop?'' until says yes --- have students write this code together on
+their computers/paper.  Then have two or three share code?  There are
+two decent ways to write this --- using input variable to control loop
+(but then you have to initialize it with a bogus value), or using a
+boolean (sentinel).
+
 
 \newpage
 \lab{\notready Guess My Number}
@@ -2120,7 +2263,7 @@ def count_occur(lst: List[str], s: str) -> int:
 
     return count
 
-# given a list of strings, each of which is a single lower case word, 
+# given a list of strings, each of which is a single lower case word,
 # return True if the list is in alphabetical order
 
 def alpha_order(lst: List[str]) -> bool:
