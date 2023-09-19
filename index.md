@@ -80,7 +80,7 @@ Upon completing this course, our goal is for you to be able to:
 | F 15 Sep | Exam 1 Review                            | [![stream](i/stream.png)][exam11-v] [![kaggle](i/kaggle_icon.png)][exam11-k] | [![stream](i/stream.png)][exam12-v] [![kaggle](i/kaggle_icon.png)][exam12-k] |                                                                                                                           |
 |          |                                          |                                                                              |                                                                              |                                                                                                                           |
 | M 18 Sep | **Exam 1**                               |                                                                              |                                                                              |                                                                                                                           |
-| W 20 Sep | The `while` loop                         |                                                                              |                                                                              | Project 1 Assigned: Civic Assistance Q/A System <!-- [Civic Assistance Q/A System](projects/project1.html) -->            |
+| W 20 Sep | The `while` loop                         |                                                                              |                                                                              | Project 1 Assigned: [Civic Assistance Q/A System](projects/project1.html)                                                 |
 | F 22 Sep | Functions and stack tracing              |                                                                              |                                                                              | HW: Function Stack Tracing <!-- [Function Stack Tracing](homework/function-reading.html) -->                              |
 |          |                                          |                                                                              |                                                                              |                                                                                                                           |
 | M 25 Sep | Binary/Stack Tracing                     |                                                                              |                                                                              |                                                                                                                           |
@@ -278,11 +278,11 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 -->
 
 
-| # | Name                                                                                                        | Average time | Assigned | Due   |
-|:-:|-------------------------------------------------------------------------------------------------------------|--------------|:--------:|:-----:|
-| 1 | Civic Assistance Q/A System <!-- [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) --> | 3:30         | 20 Sep   | 2 Oct |
-| 2 | Word Games <!-- [Word Games]({{site.baseurl}}/projects/project2.html) -->                                   | 5:50         | 9 Oct    | 6 Nov |
-| 3 | Final Project <!-- [Final Project]({{site.baseurl}}/projects/final.html) -->                                | 12:45        | 13 Nov   | 8 Dec |
+| # | Name                                                                         | Average time | Assigned | Due   |
+|:-:|------------------------------------------------------------------------------|--------------|:--------:|:-----:|
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)       | 3:30         | 20 Sep   | 2 Oct |
+| 2 | Word Games <!-- [Word Games]({{site.baseurl}}/projects/project2.html) -->    | 5:50         | 9 Oct    | 6 Nov |
+| 3 | Final Project <!-- [Final Project]({{site.baseurl}}/projects/final.html) --> | 12:45        | 13 Nov   | 8 Dec |
 
 You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to three weeks after they are assigned.
 
