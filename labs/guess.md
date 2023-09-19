@@ -15,13 +15,11 @@ and instructions to help you along the way.
 
 ## Grading Criteria
 
-To receive credit, two **correctly named** assignment files (of format `.py`) per pair must be submitted via Teams.
-* The file naming convention for lab assignments ending in `.py` is `L{lab_number}_{Lastname_1}{Lastname_2}_{filename}.py`, where `{Lastname_i}` is the capitalized last name of group member i and `{filename}` is the filename specified in the assignment. If your group has three members, the convention is `L{lab_number}_{Lastname_1}{Lastname_2}{Lastname_3}_{filename}.py`,
-	* For example, if Dr. Stanley and Dr. Yorgey are a group for lab 4, which expects `guess_number.py` and `computer_guess.py`, then they will submit `L4_StanleyYorgey_guess_number.py` and `L4_StanleyYorgey_computer_guess.py`.
- 
+To receive credit, two Python (`.py`) files per pair must be submitted via CodeGrade.
+
 * A **Complete** submission includes:
   * Correct function definitions for Steps 1, 2, 3, 4, and 5.
-  * No Pycharm style warnings.
+  * No style warnings.
 * A **Partially Complete** submission includes:
   * Correct function definitions for Steps 1, 2, and 3.
 
@@ -33,7 +31,7 @@ that require user input. [PyCharm](https://www.jetbrains.com/pycharm/) is an
 that lets us write these types of programs in Python.
 
 Open PyCharm and create a new project (by going to the <kbd>File</kbd> menu
-and selecting <kbd>New Project</kbd>).  Name it `labs_150`.  
+and selecting <kbd>New Project</kbd>).  Name it `labs_150`.
 Accept the other defaults and click <kbd>Create</kbd>.
 
 At this point you will have a new, empty project.  Each project can
@@ -44,7 +42,7 @@ Python File</kbd>.  Then you can type in a name for the file.  Note that
 you should not include `.py` on the end of the name;
 PyCharm will add `.py` for you.
 
-## Step 1 
+## Step 1
 
 For the first step, you will implement a basic version of the game.
 Here is what a sample run of the program might look like:
@@ -99,7 +97,7 @@ number.
 * As in the Collatz example in class, you will need to use a
 separate counter variable to keep track of the number of guesses.
 
-## Step 2 
+## Step 2
 
 Your game works now, but it has a problem:
 
@@ -123,7 +121,7 @@ You should write a new function called `input_guess()`.  Here is a
 template you can use as a starting point; copy it into your file
 (after `import random` and before `def main():`):
 
-    
+
     def input_guess() -> int:
         # input_guess prompts the user for their guess, and keeps prompting
         # until it is valid.
@@ -188,13 +186,13 @@ the user can keep playing multiple rounds until they decide to stop.
 
 First, create a new function called `run_game()`. It will not have
 any parameters nor will it return any value. Cut and paste the part
-of `main()` that begins with generating the random number to 
+of `main()` that begins with generating the random number to
 guess and ends with printing the number of guesses into this
 new function. Then place a call to `run_game()` in `main()` where
 that code used to be. Test the program and ensure it still works.
 
-Next, write a new `while` loop in `main()`. Inside the loop, 
-call `run_game()` to play one round of the game. Then, ask the 
+Next, write a new `while` loop in `main()`. Inside the loop,
+call `run_game()` to play one round of the game. Then, ask the
 user whether they wish to play again. The loop should end if the
 user does not wish to play again.  Here is what the output of
 your program might look like once you get this to work:
@@ -228,13 +226,12 @@ your program might look like once you get this to work:
     Your guess? 23
     You got it!  It took you 7 guesses.
     Would you like to play again? (yes/no) no
-	
 
 ## Step 4
 
-Finally, create a new file called `computer_guess.py`. Starting with 
-the template provided in step 1, implement the same game, but with 
-the roles reversed!  That is, the human user picks a number, and the 
+Finally, create a new file called `computer_guess.py`. Starting with
+the template provided in step 1, implement the same game, but with
+the roles reversed!  That is, the human user picks a number, and the
 computer tries to guess it.
 Here is an example of what your program's output might look like:
 
@@ -273,16 +270,9 @@ A few hints:
 	asks the user whether they wish to play again, much as we did
 	in Step 3.
   * Do **not** use a random number to generate the computer's guess.
-    The computer's strategy should be systematic and deterministic.  
-	
-## Step 5: 
+    The computer's strategy should be systematic and deterministic.
 
-Modify your strategy from Step 4 to ensure that the computer *never* needs more than 7 guesses to win.
+## Step 5:
 
-## What to turn in
-Two correctly labeled files (see grading criteria for an example)
-  * `L{lab_number}_{Lastname_1}{Lastname_2}_guess_number.py`
-  * `L{lab_number}_{Lastname_1}{Lastname_2}_computer_guess.py`
-
-**Note**: Make sure to address all style suggestions and warnings highlighted in PyCharm.
-
+Modify your strategy from Step 4 to ensure that the computer *never*
+needs more than 7 guesses to win.
