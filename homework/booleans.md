@@ -1,3 +1,7 @@
+---
+layout: generic
+---
+
 CSCI 150 HW: boolean practice
 -----------------------------
 
