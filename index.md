@@ -181,8 +181,8 @@ Upon completing this course, our goal is for you to be able to:
 [str2-k]: https://www.kaggle.com/byorgey/strings-2
 [strl1-k]: https://www.kaggle.com/code/byorgey/string-and-loop-practice-1
 [strl1-v]: https://hendrix.sharepoint.com/sites/Section_29461/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29461%2FShared%20Documents%2FGeneral%2FRecordings%2F9%5F29%5F%20String%20%2B%20loop%20practice%2D20230929%5F081025%2DMeeting%20Recording%2Emp4
-[strl2-k]: https://www.kaggle.com/code/byorgey/string-and-loop-practice-2
-[strl2-v]:
+<!-- [strl2-k]: https://www.kaggle.com/code/byorgey/string-and-loop-practice-2 -->
+<!-- [strl2-v]: -->
 
 
 <hr>
