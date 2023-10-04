@@ -1959,12 +1959,11 @@ but you shouldn't!  There are better ways to put things of different
 types together (objects), we will learn about that later in the
 semester.  A list should only hold things that are all of the same
 type. However, notice that if we ask for the \verb|type| of a list
-Python only says \verb|list|.  If we say \verb|from typing import *|
-then we can use \verb|List| which lets us specify the type of the
-items in the list:
+Python only says \verb|list|.  We can also specify the type of the
+elements by writing \verb|list[...]|.
 
 \begin{verbatim}
-def sum_list(nums: List[int]) -> int:
+def sum_list(nums: list[int]) -> int:
 \end{verbatim}
 
 Now have them implement the \verb|sum_list| function.
@@ -1974,7 +1973,7 @@ Next, have them implement this:
 # Repeatedly prompt the user for an input until they type 'quit'.
 # Then return the list of all the inputs the user gave (not including
 # the word 'quit').
-def read_inputs() -> List[str]:
+def read_inputs() -> list[str]:
 \end{verbatim}
 
 Might be some difficulty with including a stray empty string at the
@@ -1994,11 +1993,9 @@ opportunity to emphasize the use of sentinel loops.
 \end{reflect}
 
 \begin{verbatim}
-from typing import *
-
 # Input: items (list)
 # Print the items in the list, one per line.
-def explode_list(items: List[str]):
+def explode_list(items: list[str]):
     n = 0
     while n < len(items):
         print(items[n])
@@ -2206,10 +2203,8 @@ Have them work in groups (randomly assigned?) to write some list
 practice functions.  Pick some of the following.
 
 \begin{verbatim}
-from typing import *
-
 # Find the sum of a list of integers.
-def listsum(nums: List[int]) -> int:
+def listsum(nums: list[int]) -> int:
     i = 0
     s = 0
     while i < len(nums):
@@ -2218,7 +2213,7 @@ def listsum(nums: List[int]) -> int:
     return s
 
 # Find the product of a list of integers.
-def listprod(nums: List[int]) -> int:
+def listprod(nums: list[int]) -> int:
     i = 0
     p = 1
     while i < len(nums):
@@ -2228,7 +2223,7 @@ def listprod(nums: List[int]) -> int:
 
 # Find the maximum value in a nonempty list of
 # integers.
-def listmax(nums: List[int]) -> int:
+def listmax(nums: list[int]) -> int:
     m = nums[0]
     i = 1
     while i < len(nums):
@@ -2239,7 +2234,7 @@ def listmax(nums: List[int]) -> int:
 
 # given a list of integers, lst, and a single integer n,
 # count how many integers in lst are smaller than n
-def small_count(lst: List[int], n: int) -> int:
+def small_count(lst: list[int], n: int) -> int:
 
     i = 0
     count = 0
@@ -2252,7 +2247,7 @@ def small_count(lst: List[int], n: int) -> int:
 # number of strings (i.e. items in the list)
 # which contain at least one occurrence of the character.
 
-def count_occur(lst: List[str], s: str) -> int:
+def count_occur(lst: list[str], s: str) -> int:
     i = 0
     count = 0
     while i < len(lst):
@@ -2265,7 +2260,7 @@ def count_occur(lst: List[str], s: str) -> int:
 # given a list of strings, each of which is a single lower case word,
 # return True if the list is in alphabetical order
 
-def alpha_order(lst: List[str]) -> bool:
+def alpha_order(lst: list[str]) -> bool:
 
     i = 0
 
@@ -2279,7 +2274,7 @@ def alpha_order(lst: List[str]) -> bool:
 
 # Find the index of the given string in the list, or return -1 if the
 # list does not contain the string.
-def listfind(search_term: str, lst: List[str]) -> int:
+def listfind(search_term: str, lst: list[str]) -> int:
     i = 0
     while i < len(lst):
         if lst[i] == search_term:
@@ -2289,8 +2284,8 @@ def listfind(search_term: str, lst: List[str]) -> int:
 
 # Return a new list which contains only the even numbers from the
 # input.  For example, onlyevens([1,5,6,2,3,3,8]) should return [6,2,8].
-def onlyevens(lst: List[int]) -> List[int]:
-    result: List[int] = []
+def onlyevens(lst: list[int]) -> list[int]:
+    result: list[int] = []
     i: int = 0
 
     while i < len(lst):
@@ -2457,7 +2452,7 @@ errors putting the starting or ending indices at the wrong number.
 
 This also works for lists:
 \begin{verbatim}
-animals: List[str] = ["cow", "chicken", "pig", "rabbit"]
+animals: list[str] = ["cow", "chicken", "pig", "rabbit"]
 for animal in animals:
   print(f"And on this farm he had a {animal}! EIEIO!")
 \end{verbatim}
@@ -2508,8 +2503,8 @@ Then give them this to practice writing in groups:
 # Return a new list with only the strings of length 5 or more.
 # e.g. filter_long(['hi','there','xyz','abcdefg']) = ['there','abcdefg']
 
-def filter_long(strs: List[str]) -> List[str]:
-    result: List[str] = []
+def filter_long(strs: list[str]) -> list[str]:
+    result: list[str] = []
     for s in strs:
         if len(s) >= 5:
             result.append(s)
@@ -2524,7 +2519,7 @@ def filter_long(strs: List[str]) -> List[str]:
 # Say whether the list contains the int we're looking for
 # e.g. contains([1,2,3,4], 3) = True
 #      contains([1,2,3,4], 7) = False
-def contains(haystack: List[int], needle: int) -> bool:
+def contains(haystack: list[int], needle: int) -> bool:
     for n in haystack:
         if n == needle:
             return True
@@ -2611,8 +2606,8 @@ for i in range(len(animals)):
 Now have them do one:
 \begin{verbatim}
 # Return a list of all the indces where target occurs in s.
-def find_all(s: str, target: str) -> List[int]:
-    all_the_things: List[int] = []
+def find_all(s: str, target: str) -> list[int]:
+    all_the_things: list[int] = []
     for i in range(len(s)):
         if s[i] == target:
             all_the_things.append(i)
@@ -2626,7 +2621,7 @@ interesting mistakes, then go over the solution:
 # e.g.  is_sorted([2,5,6,9,9]) = True
 #       is_sorted([2,5,3,9,9]) = False
 
-def is_sorted(nums: List[int]) -> bool:
+def is_sorted(nums: list[int]) -> bool:
     for i in range(len(nums) - 1):
         if nums[i] > nums[i+1]:
             return False
@@ -2692,14 +2687,14 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 % Go over each and try it.
 
 % \begin{verbatim}
-% def oogie(m: List[int]) -> int:
+% def oogie(m: list[int]) -> int:
 %     p = m[0]
 %     for g in m:
 %         if g > p:
 %             p = g
 %     return p
 
-% def yayaya(q: List[str]) -> bool:
+% def yayaya(q: list[str]) -> bool:
 %     for y in range(len(q) - 1):
 %         if q[y] == q[y + 1]:
 %             return True
@@ -2711,7 +2706,7 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 % Additional practice:
 
 % \begin{verbatim}
-% def pulu(r: int) -> List[int]:
+% def pulu(r: int) -> list[int]:
 %     b = []
 %     for k in range(r):
 %         b.append(k ** 3)
@@ -2913,7 +2908,7 @@ Some related things:
 This has implications for function parameters as well.  Consider:
 
 \begin{verbatim}
-def release(animals: List[str]):
+def release(animals: list[str]):
   while len(animals) > 2:
     animals.pop(0)
 
@@ -2931,7 +2926,7 @@ Every time we create a new list, we draw it in the heap (anywhere!).
 Have them try another example:
 
 \begin{verbatim}
-def slicer(nums: List[int]) -> List[int]:
+def slicer(nums: list[int]) -> list[int]:
   first3 = nums[:3]
   first3[2] *= 3
   return first3
@@ -3046,7 +3041,7 @@ Show how to make this dictionary.
 \begin{itemize}
 \item Write using curly braces and colons.
 \item Alternatively, start with empty one and add them.
-\item Show type \texttt{Dict[k,v]}.
+\item Show type \texttt{dict[k,v]}.
 \end{itemize}
 
 Dictionaries are like functions mapping keys to values.  Consequences:
@@ -3086,22 +3081,20 @@ or alphabet string etc.
 
 \newpage
 \begin{verbatim}
-from typing import *
-
 # Given a string s, return a dictionary mapping each character in the
 # string to the proportion of times it occurs.
 #
 # For example,
 #   frequency_counts('hello') = {'e': 0.2, 'h': 0.2, 'o': 0.2, 'l': 0.4}
 
-def frequency_counts(s: str) -> Dict[str, float]:
-    counts: Dict[str, int] = {}
+def frequency_counts(s: str) -> dict[str, float]:
+    counts: dict[str, int] = {}
     for c in s:
         if c not in counts:
             counts[c] = 0
         counts[c] += 1
 
-    freqs: Dict[str, float] = {}
+    freqs: dict[str, float] = {}
     for c in counts:
         freqs[c] = counts[c] / len(s)
 
@@ -3116,7 +3109,7 @@ def frequency_counts(s: str) -> Dict[str, float]:
 \begin{reflect}{Brent, F'18}
   Didn't quite get through writing \verb|frequency_counts|.  Note last
   time I decomposed it in terms of a function
-  \verb|normalize(Dict[str,int]) -> Dict[str,float]|, but this time I
+  \verb|normalize(dict[str,int]) -> dict[str,float]|, but this time I
   found myself in the moment just writing the version above.  This
   actually makes some sense since we don't have to recompute the sum
   of all counts, we can just divide by \verb|len(s)|.  In a later
@@ -3517,19 +3510,18 @@ class Passenger:
 \end{verbatim}
 
 \begin{verbatim}
-from typing import *
 from Passenger import *
 
 class Elevator:
 
     # going_up (up/down): bool
-    # destinations: List[int]
+    # destinations: list[int]
     # total_weight: int
     # weight_limit: int
     # current_floor: int
     # door_open: bool
     # max_floor: int
-    # passengers: List[Passenger]
+    # passengers: list[Passenger]
 
     def __init__(self, max_floor: int):
         self.max_floor = max_floor
@@ -3552,7 +3544,7 @@ class Elevator:
         elif self.current_floor == self.max_floor:
             self.going_up = False
 
-        new_passengers: List[Passenger] = []
+        new_passengers: list[Passenger] = []
         for p in self.passengers:
             if p.get_dest_floor() == self.current_floor:
                 print("Passenger %d gets off" % p.get_ID())
@@ -3646,19 +3638,18 @@ class Passenger:
 \noindent \texttt{Elevator.py}:
 
 \begin{verbatim}
-from typing import *
 from Passenger import *
 
 class Elevator:
 
     # going_up (up/down): bool
-    # destinations: List[int]
+    # destinations: list[int]
     # total_weight: int
     # weight_limit: int
     # current_floor: int
     # door_open: bool
     # max_floor: int
-    # passengers: List[Passenger]
+    # passengers: list[Passenger]
 
     def __init__(self, max_floor: int):
         self.max_floor = max_floor
@@ -3683,7 +3674,7 @@ class Elevator:
         elif self.current_floor == self.max_floor:
             self.going_up = False
 
-        new_passengers: List[Passenger] = []
+        new_passengers: list[Passenger] = []
         for p in self.passengers:
             if p.get_dest_floor() == self.current_floor:
                 print("Passenger %d gets off" % p.get_ID())
@@ -3717,11 +3708,11 @@ class Building:
     # Variables:
     # num_floors: int
     # num_elevators: int
-    # waiting_passengers: Dict[int, List[Passenger]]
+    # waiting_passengers: dict[int, list[Passenger]]
        # key = floor
        # value = passengers waiting on that floor
     # elevator: Elevator
-       # (later, List[Elevator])
+       # (later, list[Elevator])
 
     def __init__(self, num_floors: int, num_passengers: int):
         self.num_floors = num_floors
@@ -3966,15 +3957,13 @@ the product of a list or reverse a string etc. using recursion, but I
 really would make recursive trees.
 
 \begin{verbatim}
-from typing import *
-
 # Trees
 
 @dataclass
 class Tree:
 
     value                 # value @ the root
-    children: List[Tree]  # children
+    children: list[Tree]  # children
 
     # Return the number of items in the whole tree
     def size(self) -> int:
@@ -4065,8 +4054,6 @@ Just have fun with it!
 # Solution: ("memoization") - keep a dictionary that
 # remembers previous results.
 
-from typing import *
-
 # Original version (slow!)
 def fib(n: int) -> int:
     if n <= 1:
@@ -4075,7 +4062,7 @@ def fib(n: int) -> int:
         return fib(n-1) + fib(n-2)
 
 
-fib_dict: Dict[int, int] = {0: 0, 1: 1}
+fib_dict: dict[int, int] = {0: 0, 1: 1}
 
 # Memoized version
 def fib_m(n: int) -> int:
@@ -4296,8 +4283,6 @@ def fib_m(n: int) -> int:
 Go through some more examples of tracing with stack \& heap:
 
 \begin{verbatim}
-from typing import *
-
 ## This is an example to use to follow tracing with the Heap
 ## The Heap will contain any lists and dictionaries that are built,
 ## as their variables are references to the object.  The variables names
@@ -4306,7 +4291,7 @@ from typing import *
 
 ## List version
 ## change_list will add a few values to a list
-def change_list(lst: List[int]) -> List[int]:
+def change_list(lst: list[int]) -> list[int]:
     for i in range(4):
         lst.append(i**2)
 
@@ -4315,9 +4300,9 @@ def change_list(lst: List[int]) -> List[int]:
     return lst
 
 def main():
-    mylist : List[int] = [0,5,-2,8]
+    mylist : list[int] = [0,5,-2,8]
     print(mylist)
-    templist : List[int] = mylist
+    templist : list[int] = mylist
     print("Change: ", change_list(templist))
     print(mylist)
     templist[1] = -17
@@ -4351,7 +4336,7 @@ main1()
 \end{verbatim}
 
 Then have students write
-\verb|normalize(d: Dict[str, int]) -> d: Dict[str, float]|.  Requires
+\verb|normalize(d: dict[str, int]) -> d: dict[str, float]|.  Requires
 first adding up all counts.  Emphasize that we don't want to modify
 the original dict, make a new one to return!
 
@@ -4359,13 +4344,13 @@ the original dict, make a new one to return!
 # Given a dictionary of counts, return a new normalized dictionary
 # where each key maps to its frequency, by dividing each count by the
 # total count.
-def normalize(counts: Dict[str, int]) -> Dict[str, float]:
+def normalize(counts: dict[str, int]) -> dict[str, float]:
 
     total: int = 0
     for k in counts:
         total += counts[k]
 
-    freqs: Dict[str, float] = {}
+    freqs: dict[str, float] = {}
     for k in counts:
         freqs[k] = counts[k] / total
 

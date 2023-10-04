@@ -129,15 +129,10 @@ the lab:
 ## Step 1: Bits and Pieces
 
 Create a new Python file called `todo_manager.py`, and put
-your name, date, copyright notice, *etc.* at the top. Also,
-don't forget to include the line
+your name and date at the top.
 
-    from typing import *
-
-at the top of your file, which you will need in order to write types
-involving lists.
-
-Now follow the instructions below to write some functions you will need.
+Now follow the instructions below to write some functions you will
+need.
 
 #### 1.1 Turn a list into a string
 
