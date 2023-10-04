@@ -282,7 +282,7 @@ you can write (neatly) or type and print such solutions.
 | 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 2-3 hrs         | 13-14 Sep | 20-21 Sep |
 | 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 3-4 hrs         | 20-21 Sep | 27-28 Sep |
 | 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         | 27-28 Sep | 4-5 Oct   |
-| 6  | Todo Manager <!-- [Todo Manager]({{site.baseurl}}/labs/todo-manager.html) -->             | 3.5-4.5 hrs     | 4-5 Oct   | 18-19 Oct |
+| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 4-5 Oct   | 18-19 Oct |
 |    | **No lab** (fall break)                                                                   |                 | 11-12 Oct |           |
 | 7  | Caesar's Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->            | 3.5-4.5 hrs     | 18-19 Oct | 25-26 Oct |
 | 8  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->       | 3.5-4.5 hrs     | 25-26 Oct | 1-2 Nov   |
