@@ -267,10 +267,10 @@ Now define a function `main()` which does the following:
   1. Prompt the user for the name of the file containing their todo list.
   2. Open the file (using the `load_list_from_file` function) and store
      the returned list in a variable.
-  3. Print out the todo list using `print_numbered_list`.
-  4. Add a fake todo item to the end of the list (this part is just
+  3. Add a fake todo item to the end of the list (this part is just
      temporary, to make sure everything else is working; you will
      remove it in the next step).
+  4. Print out the todo list using `print_numbered_list`.
   5. Save the new, extended list back to the file using the `save_file`
      function (see the next paragraph for a helpful hint).
 
@@ -281,8 +281,8 @@ into a single string before calling it.
 Again, you should be sure to test your `main()` function. (You can use
 whatever file name you want for your todo list; if it doesn't already
 exist, it will be created by `save_file`.)  You should be able to tell
-if the loading and saving is working since after running `main()` your
-todo file should have one more line at the end.
+if the loading and saving is working since every time you run `main()`
+your todo list should have one additional item added to the end.
 
 ## Step 3: Menu
 
@@ -294,8 +294,9 @@ choices that will be available to the user: there should be an option
 to add a todo, remove a todo, replace a todo, search for a todo, or
 quit.
 
-Now, delete the code from `main()` thats prints the list and adds a
-fake todo item to the end, and replace it with a loop:
+Now, delete the code from `main()` thats adds a fake todo item to the
+end and prints the list (steps 3 and 4 above), and replace it with a
+loop:
 * The loop will exit when the user selects option `4`.
 * At each iteration of the loop:
   * Using `print_numbered_list`, display the current todo list.
