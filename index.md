@@ -193,6 +193,10 @@ Upon completing this course, our goal is for you to be able to:
 [abs1-py]: lectures/F23/8am/hilow1.py
 [abs2-v]: https://hendrix.sharepoint.com/sites/Section_29462/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29462%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F6%5F%20Function%20abstraction%2D20231006%5F111059%2DMeeting%20Recording%2Emp4
 [abs2-py]: lectures/F23/11am/hilow2.py
+[for1-v]: https://hendrix.sharepoint.com/sites/Section_29461/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29461%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F9%5F%20for%20loops%2D20231009%5F081130%2DMeeting%20Recording%2Emp4
+[for1-py]: lectures/F23/8am/for1.py
+[for2-v]: https://hendrix.sharepoint.com/sites/Section_29462/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29462%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F9%5F%20for%20loops%2D20231009%5F111157%2DMeeting%20Recording%2Emp4
+[for2-py]: lectures/F23/11am/for2.py
 
 <hr>
 # Coursework
