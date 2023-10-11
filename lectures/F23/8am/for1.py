@@ -67,3 +67,69 @@ def filter_long(msgs: list[str]) -> list[str]:
         if len(msg) < 25:
             new_msgs.append(msg)
     return new_msgs
+
+# find(haystack, needle) should return the index of the first occurrence of needle in haystack,
+# or -1 if it is not found.
+#
+# e.g.
+#    find('banana', 'a') == 1
+#    find('Good morning CSCI 150', 'C') == 13
+#    find('banana', 'z') == -1
+# def find(haystack: str, needle: str) -> int:
+#     for c in haystack:
+#         if c == needle:
+#             return ???
+
+# problem --- how do we know what index to return?
+# Potential solutions:
+#   1. Go back to using a while loop with an index variable =(
+#   2. Keep using a for loop but keep track of an index variable too. =(
+#   3. Use a for loop over a range!
+
+# find(haystack, needle) should return the index of the first occurrence of needle in haystack,
+# or -1 if it is not found.
+#
+# e.g.
+#    find('banana', 'a') == 1
+#    find('Good morning CSCI 150', 'C') == 13
+#    find('banana', 'z') == -1
+def find(haystack: str, needle: str) -> int:
+    for i in range(len(haystack)):
+        if haystack[i] == needle:
+            return i  # return immediately: we found it!
+
+    # If it makes it all the way through the for loop,
+    # it means it never found the needle (since if it had,
+    # it would have returned and never reached this line).
+    return -1
+
+# find_all(haystack, needle) should return a list of all indices where needle
+# occurs in haystack.
+#
+# e.g.
+#   find_all('banana', 'a') == [1, 3, 5]
+#   find_all('Good morning CSCI 150', 'C') == [13, 15]
+#   find_all('banana', 'z') == []
+def find_all(haystack: str, needle: str) -> list[int]:
+    found: list[int] = []
+    for i in range(len(haystack)):
+        if haystack[i] == needle:
+            found.append(i)
+
+    return found
+
+# is_sorted should check whether the list is sorted in order from smallest to biggest.
+#
+# e.g.
+#   is_sorted([1,3,7,12]) == True
+#   is_sorted([1,1,1,2,3]) == True
+#   is_sorted([1,2,1]) == False
+#   is_sorted([20,7,3]) == False
+#   is_sorted([]) == True
+#   is_sorted([5]) == True
+def is_sorted(nums: list[int]) -> bool:
+    for i in range(len(nums) - 1):
+        if nums[i] > nums[i+1]:
+            return False
+
+    return True
