@@ -300,7 +300,7 @@ you can write (neatly) or type and print such solutions.
 | 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         | 27-28 Sep | 4-5 Oct   |
 | 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 4-5 Oct   | 18-19 Oct |
 |    | **No lab** (fall break)                                                                   |                 | 11-12 Oct |           |
-| 7  | Caesar's Secrets<!--(https://www.kaggle.com/gabrielferrer/caesar-s-secrets)-->            | 3.5-4.5 hrs     | 18-19 Oct | 25-26 Oct |
+| 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 18-19 Oct | 25-26 Oct |
 | 8  | Sentiment Analysis<!--(https://www.kaggle.com/gabrielferrer/sentiment-analysis) -->       | 3.5-4.5 hrs     | 25-26 Oct | 1-2 Nov   |
 | 9  | Water Jugs<!--({{site.baseurl}}/labs/waterjug.html)-->                                    | 3.5-4.5 hrs     | 1-2 Nov   | 8-9 Nov   |
 | 10 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                                        | 2.5-3.5 hrs     | 8-9 Nov   | 15-16 Nov |
