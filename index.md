@@ -209,6 +209,12 @@ Upon completing this course, our goal is for you to be able to:
 [heap2-v]: https://hendrix.sharepoint.com/sites/Section_29462/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29462%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F18%5F%20Mutability%2C%20references%2C%20%26%20the%20heap%2D20231018%5F111341%2DMeeting%20Recording%2Emp4
 [heap2-p]: lectures/F23/11am/2023-10-18-heap-tracing.pdf
 [heap2-k]: https://www.kaggle.com/code/byorgey/mutability-references-the-heap-11am
+[exam21-v]: https://hendrix.sharepoint.com/sites/Section_29461/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29461%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F20%5F%20Exam%202%20review%2D20231020%5F081442%2DMeeting%20Recording%2Emp4
+[exam21-k]: https://www.kaggle.com/code/byorgey/exam-2-review-8am
+[exam21-p]: lectures/F23/8am/2023-10-20-exam20-review.pdf
+[exam22-v]: https://hendrix.sharepoint.com/sites/Section_29462/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F29462%2FShared%20Documents%2FGeneral%2FRecordings%2F10%5F20%5F%20Exam%202%20review%2D20231020%5F111005%2DMeeting%20Recording%2Emp4
+[exam22-k]: https://www.kaggle.com/code/byorgey/exam-2-review-11am
+[exam22-p]: lectures/F23/8am/2023-10-20-exam20-review.pdf
 
 <hr>
 # Coursework
