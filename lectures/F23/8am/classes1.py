@@ -14,36 +14,27 @@
 # *Classes* are like blueprints for objects.  A class says what a bunch of objects
 # are all going to be like.
 
-import random
+from cake import *
 
-class Cake:    # class names starting with uppercase is standard style
+# Create a cake with a certain number of candles and report how many
+# blows are needed to blow out all the candles.
+def happy_birthday(num_candles: int) -> int:
+    cake: Cake = Cake(num_candles)
+    while not cake.all_out():
+        cake.blow_out()
+    return cake.get_num_blows()
 
-    # '__init__' is a special name that will be used every time
-    # we create a new object of this class.
-    # e.g. it is called automatically every time we say Cake().
-    #
-    # 'self' is a special reference to the object being created.
-    # It is always filled in automatically by Python; we never
-    # have to give it as a parameter.
-    def __init__(self, candles: int):
-        # Create a 'num_candles' variable inside the
-        # object being created.
-        self.num_candles = candles
+# Run 1000 experiments with the given number of candles, return
+# average number of blows needed.
+def average_blows(num_candles: int) -> float:
+    total: int = 0
+    for _ in range(1000):
+        total += happy_birthday(num_candles)
 
-    # Method to blow out a random number of candles.
-    # self will always be the first parameter to any method defined inside a class.
-    def blow_out(self):
-        c: int = random.randint(1, self.num_candles)
-        self.num_candles -= c
+    return total / 1000
 
-    def all_out(self) -> bool:
-        return self.num_candles == 0
+def main():
+    for n in range(1000):
+        print(f'{n*100} {average_blows(n*100)}')
 
-        # if self.num_candles == 0:
-        #     return True
-        # else:
-        #     return False
-
-# To create a new object of this class:
-# cake: Cake = Cake()
-# "variable cake has type Cake, and is equal to a new Cake object"
+main()

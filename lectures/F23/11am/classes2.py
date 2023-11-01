@@ -37,8 +37,43 @@ class Cake:
         self.num_candles -= c
         self.num_blows += 1
 
-# my_cake: Cake = Cake()  # Create a new Cake object and put it in my_cake,
+    def all_out(self) -> bool:
+        return self.num_candles == 0
+
+        # if self.num_candles == 0:
+        #     return True
+        # else:
+        #     return False
+
+    def get_num_blows(self) -> int:
+        return self.num_blows
+
+# my_cake: Cake = Cake(100)  # Create a new Cake object and put it in my_cake,
 #   which is a variable that will store references to Cake objects
 
 # A "dot" as in  my_cake.num_candles  means
 # "follow the reference/arrow to the other end".
+
+# Create a cake with the given number of candles and report how
+# many blows it took to blow all the candles out.
+def happy_birthday(num_candles: int) -> int:
+    cake: Cake = Cake(num_candles)
+    while not cake.all_out():
+        cake.blow_out()
+
+    return cake.get_num_blows()
+
+# Try 1000 cakes with the given number of candles and report
+# the average number of blows needed.
+def average_blows(num_candles: int) -> float:
+    total: int = 0
+    for _ in range(1000):   # do something 1000 times
+        total += happy_birthday(num_candles)
+
+    return total / 1000
+
+def main():
+    for n in range(1000):
+        print(f'{100*n}, {average_blows(100*n)}')
+
+main()
