@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 10
+num: 9
 worktitle: Water Jugs
 ---
 
