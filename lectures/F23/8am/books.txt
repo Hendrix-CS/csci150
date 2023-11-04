@@ -1,0 +1,4 @@
+300,The Odyssey,Homer,Epic,True,192
+300,The Iliad,Homer,Epic,False,0
+250,Pride and Prejudice,Jane Austen,Classic,False,0
+40,Leaves of North-South-Western Arkansas,L. Pinkett,Nature,False,0
