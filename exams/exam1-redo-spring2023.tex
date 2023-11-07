@@ -1,0 +1,143 @@
+\documentclass{article}[10 pt]
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+
+\oddsidemargin -.5in \evensidemargin -.5in \textwidth 7in \topmargin
+-.75in \textheight 9in \pagestyle{empty}
+\setlength{\unitlength}{1in}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\vs}{\vspace{0.1in}}
+
+\begin{document}
+
+
+
+\thispagestyle{empty}
+
+\noindent{\bf  CSCI 150 - Spring 2023} \hspace{1in}
+
+\vspace{.15in}
+
+{\centerline{\bf Exam I Redo Problems  }}
+
+\vspace{.2in}
+
+
+\noindent{\bf Directions:} If you earned less than a \textbf{Complete} on Exam \#1, your individual rubric sheet will list which problem(s) you need to do, and the due date (likely 2/24/23). Below are the problems you will choose from. \textbf{Please turn in your original in-class Exam and your rubric sheet} when you turn in the redo.
+
+
+
+\vs
+
+\vs
+
+
+
+\begin{enumerate}
+
+\item \textbf{Booleans} If you need to rework one or two, please make sure to include a brief explanation, and show your work to receive credit.
+
+\begin{enumerate}
+\item \verb|True or ( (5 > 2) and (6 != 5))|
+
+\item \verb|('test' < 'text') and (False or (True and False))|
+
+
+\end{enumerate}
+
+\item \textbf{Tracing} Trace the execution of the following Python program.
+\begin{enumerate}
+
+\item \
+
+\begin{verbatim}
+x = 7
+y = 12
+z = y - x + 1
+z = z + 2
+if z == z + 2:
+    x = 9
+elif x == 9:
+    y = 5
+else:
+    x = 2
+    y = 8
+
+z = x + y
+\end{verbatim}
+
+
+\item \
+
+\begin{verbatim}
+a = 4
+b = 5
+s = 'sad'
+t = 'happy'
+
+if s < t or a > b:
+    a = a + b
+
+    if a == a + b:
+        w = 'now'
+    else:
+        w = 'then'
+
+else:
+    if b != a:
+        w = 'later'
+        b = b - a
+    else:
+        w = 'gator'
+        a = a + b
+\end{verbatim}
+
+\end{enumerate}
+
+
+\item \textbf{Coding of Functions}
+
+\begin{enumerate}
+
+
+  \item Write a function \texttt{pairs} which, given three integers $a$, $b$, and $c$, returns \texttt{True} if exactly two of them are equal and \texttt{False} otherwise.
+
+  For example:
+
+  \texttt{pairs(5, 2, 5)} returns \texttt{True}
+
+  \texttt{pairs(1, 2, 3)} returns \texttt{False}
+
+  \texttt{pairs(4, 4, -4)} returns \texttt{True}
+
+  \texttt{pairs(7, 7, 7)} returns \texttt{False}
+
+
+\item  Usain Bolt wants to write a function \texttt{run\_today} to decide whether the weather is good enough to go for a run. The weather will always be a combination of a temperature (an integer, which could be positive, negative, or zero) and a \texttt{str} condition, which has multiple possible values.
+
+    If the temperature is less than 10 or greater than 100, he will not run, and so it should return \texttt{False}, except if the condition is \texttt{`rain'} in which case he will not run unless the temperature is between 40 and 80 (inclusive). Finally, if the condition is \texttt{`cloudy'} he will run no matter the temperature, even if the temperature is above 100 or below 10.
+
+    The function should return \texttt{True} if he will run and \texttt{False} if he will not.
+
+    For example:
+
+    \texttt{run\_today(75, 'sunny')} will return \texttt{True}
+
+     \texttt{run\_today(5, 'sunny')} will return \texttt{False}
+
+      \texttt{run\_today(50, 'rain')} will return \texttt{True}
+
+       \texttt{run\_today(95, 'rain')} will return \texttt{False}
+
+        \texttt{run\_today(120, 'cloudy')} will return \texttt{True}
+
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document} 

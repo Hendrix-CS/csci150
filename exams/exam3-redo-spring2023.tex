@@ -1,0 +1,184 @@
+% -*- mode: LaTeX; compile-command: "pdflatex exam1.tex" -*-
+\documentclass{article}
+
+\usepackage{amsmath, url, graphicx, array}
+
+\begin{document}
+
+\title{CSCI 150: Exam 3 -- Redo}
+\author{}
+\date{Due by Friday, April 28, classtime}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\textbf{Directions:} If you received less than a \emph{Complete} assessment on Exam \#3, this contains extra problems that you might need to work. Please check \emph{your} assessment rubric form from the exam. Follow the directions for which problems you need to do.
+
+\begin{itemize}
+  \item You must turn in the rubric form along with your redo
+  \item If you have any tracing problems to do, those should be done on paper and submitted to me by the due date
+  \item If you have to rework either \#4 or \#5 from the in-class, your solutions should be written out by hand -- though you are welcome to test your code on a machine. Please pay attention to indentation!
+  \item Any functions you redo from either the Take-Home or the document below should be together in a single .py file submitted through Teams uploaded with a new name to the original Exam \#3 assignment.
+  \item For the redo, you can ask me any questions, as well as your classmates, and the CSCI tutors. You may not look up anything on the internet, except for the resources on the class Teams page, the class webpage, or the official Python 3 documentation. Unsure? Ask me!!
+\end{itemize}
+
+
+  \vspace{0.3in}
+
+
+
+
+
+\newpage
+
+\section*{Tracing}
+
+\textbf{Tracing Problem \#1:}  Trace the following code:
+
+\vspace{0.15in}
+
+\begin{verbatim}
+def f1(y: int) -> int:
+    if y % 2 == 0:
+        return y // 2
+    else:
+        return y + 5
+
+def main1():
+    a_list = [7, 2, 1, 4]
+    b_list = a_list
+
+    for i in range(len(a_list)):
+        a_list[i] = f1(a_list[i])
+
+    print(a_list)
+    print(b_list)
+
+main1()
+\end{verbatim}
+
+
+\textbf{Tracing Problem \#2:}  Trace the following code:
+
+\vspace{0.15in}
+
+\begin{verbatim}
+def main2():
+    a_dict = {1: 'hi', 2: 'there', 3: 'how', 4: 'are', 5: 'you?'}
+    b_dict = {}
+
+    for key in a_dict:
+        b_dict[key] = len(a_dict[key])
+
+    a_dict[6] = 'Fine!'
+
+    print(a_dict)
+    print(b_dict)
+
+main2()
+\end{verbatim}
+
+\newpage
+
+\textbf{Tracing Problem \#3}
+\begin{verbatim}
+ef g1(lst: List[int], s: str, n: int) -> int:
+    if n < len(lst):
+        lst[n] = len(s)
+        return n
+    else:
+        return len(s)
+
+def main3():
+    x_list = [5, 2, 1, 9]
+    y_list = x_list
+
+    a_dict = {'see': 2, 'you': 5, 'later': 1}
+    b_dict = a_dict
+    for key in b_dict:
+        b_dict[key] = g1(y_list, key, b_dict[key])
+
+    print(x_list)
+    print(y_list)
+
+    print(a_dict)
+    print(b_dict)
+
+main3()
+
+\end{verbatim}
+
+\vspace{0.15in}
+
+\section*{Additional Coding}
+
+\begin{enumerate}
+\item Write a function \verb|in_values| which takes two parameters: a dictionary \verb|d|, with string keys and whose values are lists of integers, and a single integer \verb|n|. The function returns \verb|True| if \verb|n| is in \emph{each} of the lists.  For example,  if \verb|d = {'a': [1, 2, 3], 'b': [3, 5, 0], 'c': [1, 3]}| then:
+      \begin{itemize}
+        \item \verb|in_values(d, 3)| would return \verb|True|
+        \item \verb|in_values(d, 1)| would return \verb|False|
+        \item \verb|in_values(d, 0)| would return \verb|False|
+      \end{itemize}
+
+\item Write a function \verb|multi_dict| which, given a dictionary, \verb|dict_1| whose keys are strings and values are integers, returns a new dictionary which contains only those keys of \verb|dict_1| which have positive value -- and those values should all be triple their value in \verb|dict_1|. Important: Do not accidentally change the value of \verb|dict_1| in the process.
+
+    For example:
+    \begin{itemize}
+      \item \verb|multi_dict({'a': 3, 'b' : 7, 'c': -3, 'd': 0})| returns \verb|{'a': 9, 'b': 21}|
+      \item \verb|multi_dict({'a': 0, 'b' : 0, 'c': -0, 'd': 0})| returns \verb|{}|
+      \item \verb|multi_dict({'ab': -2, 'bb' : 11, 'cb': 0, 'db': 4, 'eb': 5})| returns \verb|{'bb': 33, 'db': 12, 'eb': 15}|
+      \item \verb|multi_dict({})| returns \verb|{}|
+    \end{itemize}
+
+\item Write a class \verb|Pet| which will represent a small household pet. Each \verb|Pet| has the following attributes:
+
+\begin{itemize}
+  \item \verb|kind| -- a string which describes the type of pet (`dog', `cat', `fish', etc) This is a parameter passed on object creation
+  \item \verb|size| -- an integer (always positive) and also a parameter passed on creation
+  \item \verb|energy| -- also an integer, set to 20 units on creation
+\end{itemize}
+
+In addition to the \verb|__init__| method, there are three other methods:
+\begin{itemize}
+  \item \verb|eat(n: int)| which increases energy by $n$ units
+  \item \verb|run(n: int)| which reduces energy by a total of $size \times n$ units (i.e. larger animals use more energy to run than smaller ones). The energy cannot drop below 0. If it does, reset it to zero. If the energy is ever equal to or below zero, it should also print out \verb|I am tired and need a nap!|. You can ask an animal to run regardless of its energy, however. (So, an animal with energy = 0 can run; it will print the nap statement above, and simply have its energy set to 0. Likewise, an animal with 10 units of energy could be asked to run 1000 steps if you want to -- again, this will simply set the energy to 0 and print the nap statement.)
+  \item \verb|nap()| which increases energy by 2 units \emph{unless} the kind is `cat', in which case energy should increase by 8 units.
+\end{itemize}
+
+You are welcome, but not required, to add in either or both of \verb|__repr__()| or \verb|__str__()| methods.
+
+The following is a transcript from the console using \verb|Pet|:
+
+\begin{verbatim}
+>>> a = Pet('fish', 2)
+>>> b = Pet('cat', 5)
+>>> c = Pet('dog', 12)
+>>> a.eat(3)
+>>> b.nap()
+>>> b.energy
+28
+
+>>> c.run(1)
+>>> c.energy
+8
+
+>>> c.run(1)
+I am tired and need a nap!
+
+>>> c.energy
+0
+
+>>> c.eat(25)
+>>> c.run(2)
+>>> c.energy
+1
+
+>>> a.energy
+23
+
+
+\end{verbatim}
+
+\end{enumerate}
+\end{document} 
