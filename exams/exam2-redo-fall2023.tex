@@ -1,0 +1,159 @@
+% -*- mode: LaTeX; compile-command: "pdflatex exam2-redo-fall2023.tex" -*-
+\documentclass{article}
+
+\usepackage{amsmath, url, graphicx, array}
+
+\begin{document}
+
+\title{CSCI 150: Exam 2---Redo Problems}
+\author{}
+\date{}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\textbf{Directions:} If you received less than a \emph{Complete}
+assessment on Exam \#2, this contains extra problems that you might
+need to work. Please check \emph{your} assessment rubric form from the
+exam. Follow the directions for which problems you need to do.
+
+\begin{itemize}
+  \item If you have any tracing problems to do, those should be done on paper
+  \item If you have to rework either \#4 or \#5 from the in-class,
+    your solutions should be written out by hand -- though you are
+    welcome to test your code on a machine. Please pay attention to
+    indentation!
+  \item Any functions you redo from either the Take-Home or the
+    document below should be together in a single .py or .ipynb file.
+  \item For the redo, you can ask me any questions, as well as your
+    classmates, and the CSCI tutors. You may not look up anything on
+    the internet, except for the resources on the class Teams page,
+    the class webpage, or the official Python 3 documentation.
+\end{itemize}
+
+
+  \vspace{0.3in}
+
+
+
+
+
+\newpage
+
+\section*{Tracing}
+
+\textbf{Tracing Problem \#1:}  Trace the following code:
+
+\vspace{0.15in}
+
+\begin{verbatim}
+def f1(n: int) -> str:
+    a = 'exam 2'
+    i = 0
+    while i < len(a):
+        if n >= len(a):
+            return a
+        else:
+            if a[i] > a[n]:
+                return a[0:i]
+        i += 1
+    print('Hello')
+    return a
+
+def f2(n: int) -> int:
+    if n < 6:
+         return len(f1(n))
+
+    print(n)
+    return len(f1(n // 2))
+
+def main1():
+    print(f2(3))
+    print(f2(10))
+    print(f1(7))
+
+main1()
+\end{verbatim}
+
+\newpage
+
+\textbf{Tracing Problem \#2:}  Trace the following code:
+
+\vspace{0.15in}
+
+\begin{verbatim}
+def main2():
+    i = 0
+    s = 'computer'
+    t = 'a'
+    j = 0
+    while i < len(s):
+        if s[i] > t:
+            t = s[i]
+        else:
+            j += i
+        i += 1
+
+    print(t)
+    print(j)
+
+main2()
+\end{verbatim}
+
+\vspace{0.15in}
+
+\section*{Additional Coding}
+
+\begin{enumerate}
+\item Write a function \verb|list_diff| which takes in a list of intergers \verb|lst|, which will always have at least two entries. Your function should return the difference between adjacent entries as a new list.
+
+    For example:
+
+    \begin{itemize}
+      \item \verb|list_diff([7, 2, 2, 4, 10])| should return \verb|[5, 0, -2, -6]|. (Notice that the answer does pay attention to the order in which the entries appear!)
+      \item \verb|list_diff([3, 3, 3, 3])| should return \verb|[0, 0, 0]|
+      \item \verb|list_diff([4, 3, 2, 1, 0, -1])| should return \verb|[1, 1, 1, 1, 1]|
+      \item \verb|list_diff([6, 4])| should return \verb|[2]|
+      \item \verb|list_diff([12, 16, 0, -3, 11, 19, 1])| should return \verb|[-4, 16, 3, -14, -8, 18]|
+    \end{itemize}
+
+
+\item Write a function \verb|str_count| which takes no parameters, but asks the user to input a string \verb|s| (always assumed to be lower case letters) and an integer \verb|n|, and returns an integer. If $n$ is either longer than or equal to the length of \verb|s| or negative, the function should return \verb|0|. Otherwise, it should return a count of the number of characters in \verb|s| closer to the front of the alphabet than \verb|s[n]|.
+
+For example, consider the following transcript:
+
+\begin{verbatim}
+Please enter a string of lower case letters: hello
+Please enter an integer: 3
+\end{verbatim}
+This should return \verb|2|, since the `h' and `e' are each smaller than \verb|s[3] = `l'|.
+
+\vspace{0.15in}
+
+\begin{verbatim}
+Please enter a string of lower case letters: hello
+Please enter an integer: 2
+\end{verbatim}
+This should return \verb|2|, since the `h' and `e' are each smaller than \verb|s[2] = `l'|.
+
+\begin{verbatim}
+Please enter a string of lower case letters: hendrix
+Please enter an integer: 3
+\end{verbatim}
+This should return \verb|0|, since no letter of `hendrix' is smaller than `d`.
+
+\begin{verbatim}
+Please enter a string of lower case letters: hendrix
+Please enter an integer: 7
+\end{verbatim}
+This should return \verb|0|, since 7 is at least as long as `hendrix'
+
+\begin{verbatim}
+Please enter a string of lower case letters: william
+Please enter an integer: 6
+\end{verbatim}
+This should return \verb|5|.
+
+\end{enumerate}
+\end{document} 
