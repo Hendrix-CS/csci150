@@ -16,7 +16,6 @@ worktitle: Graphics and Animation
   * In Steps 1.3 and 2.1, the designed face includes
     numerous interesting elements beyond the provided
 	example.
-  * No Pycharm style warnings.
 * A **Partially Complete** submission includes:
   * Steps 1, 2, and 3.1 complete.
 
