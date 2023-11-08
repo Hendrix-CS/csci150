@@ -346,7 +346,7 @@ you can write (neatly) or type and print such solutions.
 | 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 18-19 Oct | 25-26 Oct |
 | 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | 3.5-4.5 hrs     | 25-26 Oct | 1-2 Nov   |
 | 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 3.5-4.5 hrs     | 1-2 Nov   | 8-9 Nov   |
-| 10 | Faces<!--({{site.baseurl}}/labs/pygame.html)   -->                                        | 2.5-3.5 hrs     | 8-9 Nov   | 15-16 Nov |
+| 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 2.5-3.5 hrs     | 8-9 Nov   | 15-16 Nov |
 | 11 | Tornado Sirens<!--(https://www.kaggle.com/gabrielferrer/tornado-sirens)-->                | 3.5-4.5 hrs     | 15-16 Nov | 29-30 Nov |
 | 12 | (Optional) Project 3 Workshop                                                             |                 | 29-30 Nov |           |
 
