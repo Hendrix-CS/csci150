@@ -1,22 +1,24 @@
 CSCI 150 HW: Dictionary and Class Homework
 ---------------------------------------
 
-*Due: Wednesday, April 12*
+*Due: Wednesday, November 15*
 
 **Grading Specifications**
 
 You will earn a **Complete** provided that:
 - all five problems are attempted,
-- aFour of the five are completely correct; the fifth has a minor, non-obvious error not easily detectible through simple testing, and
-- on all five, there is no confusion about print vs return values.
+- four of the five are completely correct; the fifth has a minor, non-obvious error not easily detectible through simple testing,
+- on all five, there is no confusion about print vs return values, and
+- all problems include a check/evaluation section as explained below.
 
 You will earn a **Partially Complete** provided that:
 - at least four are attempted,
 - at least two are completely correct,
-- at least one class problem has a corerctly implemented `__init()__` method, and
-- there is no confusion about print vs return values
+- at least one class problem has a correctly implemented `__init()__` method,
+- there is no confusion about print vs return values, and
+- all problems include a check/evaluation section as explained below.
 
-Upload your code to the class Team page using the file name **HW9Lastname.py**. For each problem, in addition to the code itself, you should have one or more lines of comments which describe what happened, following the 3 steps below:
+For each problem, in addition to the code itself, you should have one or more lines of comments which describe what happened, following the 3 steps below:
 
 1\. **Design**: First, write a function or design a Python class as requested in the
   exercise.
@@ -29,8 +31,6 @@ Upload your code to the class Team page using the file name **HW9Lastname.py**. 
    reference, ask a friend or TA or professor, *etc.* until you can
    explain why the code works the way it does *and* what your
    misunderstanding(s) were in part 1.
-
-
 
 
 1\. Write a function `vowel_count` which takes in a list of strings (all lower case) and returns a dictionary, keyed on the five vowels a, e, i, o, and u. The value for each should be the total number of entries in the list which contain at least a single copy of that vowel. For example,
