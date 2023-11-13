@@ -3,8 +3,8 @@ layout: work
 type: Project
 num: 3
 worktitle: Final Project
-designdue: Monday, April 17
-finaldue: Friday, May 5
+designdue: Friday, November 17
+finaldue: Friday, December 8
 ---
 
 ## Description
@@ -66,7 +66,10 @@ You should be as detailed as possible for full credit in your
 description. Time spent on the design will pay off immensely as you
 implement your project.
 
-A sample design document for Prof. Seme's *Star Trek* game can be found [HERE](https://hendrix-my.sharepoint.com/:w:/g/personal/seme_hendrix_edu/EaY-fc3O7LRHi8WH1e9I3g4BEB2ZBM-df1IQjxfkJMq-FA?e=XuP2ej). You are welcome to use this as a starting point.
+A sample design document for Prof. Seme's *Star Trek* game can be
+found
+[HERE](https://hendrix-my.sharepoint.com/:w:/g/personal/seme_hendrix_edu/EaY-fc3O7LRHi8WH1e9I3g4BEB2ZBM-df1IQjxfkJMq-FA?e=XuP2ej). You
+are welcome to use this as a starting point.
 
 Presentation
 ------------
@@ -77,7 +80,7 @@ other appropriate presentation medium, will be **at most 6 minutes
 long**. (We are serious about this; presentations that are too long will
 lose points and/or be rudely cut off. Practice beforehand to make sure
 you have a good sense for how much time you have. Six minutes is not
-very long at all.)  
+very long at all.)
 
 Your presentation should include **four slides** and a **quick demo of your project**.
 The slides should answer the following questions, one per
