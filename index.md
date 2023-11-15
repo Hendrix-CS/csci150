@@ -376,11 +376,11 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 -->
 
 
-| # | Name                                                                         | Average time | Assigned | Due   |
-|:-:|------------------------------------------------------------------------------|--------------|:--------:|:-----:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html)       | 3:30         | 20 Sep   | 2 Oct |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                        | 5:50         | 9 Oct    | 6 Nov |
-| 3 | Final Project <!-- [Final Project]({{site.baseurl}}/projects/final.html) --> | 12:45        | 13 Nov   | 8 Dec |
+| # | Name                                                                   | Average time | Assigned | Due   |
+|:-:|------------------------------------------------------------------------|--------------|:--------:|:-----:|
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 3:30         | 20 Sep   | 2 Oct |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  | 5:50         | 9 Oct    | 6 Nov |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  | 12:45        | 13 Nov   | 8 Dec |
 
 You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to three weeks after they are assigned.
 
