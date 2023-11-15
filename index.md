@@ -387,7 +387,7 @@ You will have three projects in this course. These projects will cover concepts 
 
 ## <a name="exams">Exams</a>
 
-There will be ~three~ two exams. Each exam will have two parts:
+There will be ~~three~~ two exams. Each exam will have two parts:
 * In-class written part: Analysis and tracing of Python code samples.
 * Take-home part: At the end of the written exam will appear some Python coding problems, the solutions to which are to be
 submitted by the start of the next class period.
@@ -399,7 +399,7 @@ submitted by the start of the next class period.
 * Exam 2: Monday, October 23, covering input/output, `while` loops, strings, and lists
    - [Practice Exam 2](/exams/cs150-exam2-practice-fall2023.pdf)
    - [Exam 2 Redo Problems](/exams/exam2-redo-fall2023.pdf)
-* ~Exam 3: Monday, November 20, covering the heap, dictionaries, and classes~
+* ~~Exam 3: Monday, November 20, covering the heap, dictionaries, and classes~~
    <!-- - [Practice Exam 3](/exams/exam3-practice-spring2023.pdf)   -->
    <!-- - [Exam 3 Redo](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/ES7ktV7eUYxKsyLr9jMkqZkBBOnVXoeTOcKeYyjIyOqDEw?e=hhFy5u) -->
 
@@ -413,13 +413,13 @@ Criteria for the first two categories will be specified for each assignment. Fin
 grades are earned based on cumulative assignment outcomes:
 
 * To earn an A in the course, a student will:
-  * **Complete** two exams ~and at least **Partially Complete** the remaining exam.~
+  * **Complete** two exams ~~and at least **Partially Complete** the remaining exam.~~
   * **Complete** all three projects.
   * **Complete** a minimum of eight homework assignments, with the other two at least **Partially Complete**.
   * Up to one unexcused lab absence, and **Complete** a minimum of 11 lab assignments, with the other two at least **Partially Complete**.
   * Schedule and attend a minimum of two Office Hours meetings.
 * To earn a B in the course, a student will:
-  * **Complete** ~two exams~ one exam and at least **Partially Complete** the remaining exam.
+  * **Complete** ~~two exams~~ one exam and at least **Partially Complete** the remaining exam.
   * **Complete** a minimum of two projects and at least **Partially Complete** the remaining project.
   * **Complete** a minimum of four homework assignments and at least **Partially Complete** a minimum of four more.
   * Up to one unexcused lab absence, **Complete** a minimum of eight of the lab assignments, and at least **Partially Complete** a minimum of four more.
