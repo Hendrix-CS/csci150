@@ -3,6 +3,39 @@ import random
 import pygame
 from pygame.locals import *
 
+# Where could we look for information/help on displaying images in PyGame?
+#
+# - PyGame documentation ("Sprite"?)
+# - Google ("how do I display images in PyGame?")
+# - Other resources you have been given
+# - ChatGPT/GitHub Copilot/etc. - ask them to write an example program
+
+# Drawing text:
+# https://stackoverflow.com/a/10077748/305559
+# # initialize font; must be called after 'pygame.init()' to avoid 'Font not Initialized' error
+# myfont = pygame.font.SysFont("monospace", 15)
+#
+# # render text
+# label = myfont.render("Some text!", 1, (255,255,0))
+# screen.blit(label, (100, 100))
+#
+# https://www.geeksforgeeks.org/python-display-text-to-pygame-window/
+class Score:
+    def __init__(self):
+        self.score = 0
+
+        self.font = pygame.font.SysFont("monospace", 60)
+
+    def update(self, surface):
+        pass
+
+    def draw(self, surface):
+        txt = self.font.render(str(self.score), 1, 'black')
+        surface.blit(txt, (100, 100))
+
+    def should_delete(self):
+        return False
+
 class Apple:
 
     def __init__(self, x, y):
@@ -34,18 +67,25 @@ class Player:
         self.vx = 0
         self.vy = 0
 
+        # Used https://www.geeksforgeeks.org/python-display-images-with-pygame/#
+        # and https://pythonprogramming.net/displaying-images-pygame/
+        # as examples for how to load + draw images
+
+        self.image = pygame.image.load("pythonlogo.png")
+
     def update(self, surface):
         self.x += self.vx
         self.y += self.vy
 
-    def draw(self, surface):
+    def draw_stick_figure(self, surface):
         pygame.draw.line(surface, 'black', (self.x, self.y-10), (self.x, self.y+10))
         pygame.draw.line(surface, 'black', (self.x, self.y+10), (self.x-10, self.y+20))
         pygame.draw.line(surface, 'black', (self.x, self.y+10), (self.x+10, self.y+20))
         pygame.draw.circle(surface, 'black', (self.x, self.y - 20), 10, width=1)
         pygame.draw.line(surface, 'black', (self.x-5,self.y), (self.x+5, self.y))
 
-        # pygame.draw.rect(surface, 'red', self.hitbox(), width=2)
+    def draw(self, surface):
+        surface.blit(self.image, (self.x, self.y))
 
     def hitbox(self) -> Rect:
         return Rect(self.x-10, self.y-30, 20, 50)
@@ -75,9 +115,11 @@ class Game:
         apple = Apple(100, 100)
         self.apples = [apple]
 
+        self.score = Score()
+
         # Objects list will hold all the objects in the game,
         # which must all have .update() and .draw() methods.
-        self.objects = [self.player, apple]
+        self.objects = [self.player, apple, self.score]
 
     def update(self, surface):
         for o in self.objects:
@@ -89,6 +131,7 @@ class Game:
                 print(self.num_apples)
                 apple.eaten = True
                 self.spawn_apple(surface)
+                self.score.score += 1
 
         if random.random() < 0.05:
             self.spawn_apple(surface)

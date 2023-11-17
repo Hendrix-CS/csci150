@@ -4,6 +4,41 @@ import random
 import pygame
 from pygame.locals import *
 
+# Where can we look for help adding text to PyGame?
+#
+# - PyGame documentation
+# - Ask a friend
+# - Google it!   "how to add text to the screen in PyGame"
+#   - Or search YouTube
+# - Ask ChatGPT or GitHub Copilot ...
+
+SECOND_EVENT = pygame.USEREVENT + 1
+
+class Score:
+
+    def __init__(self):
+        self.score = 0
+        self.font = pygame.font.Font('freesansbold.ttf', 64)
+
+    def add(self, s: int):
+        self.score += s
+
+    def reset(self):
+        self.score = 0
+
+    def update(self, surface):
+        pass
+
+    def draw(self, surface):
+        # Referred to https://www.geeksforgeeks.org/python-display-text-to-pygame-window/#
+        # for an example of how to draw text
+
+        text = self.font.render(str(self.score), True, 'black')
+        textRect = text.get_rect()
+        textRect.center = (40, 40)
+
+        surface.blit(text, textRect)
+
 class Lava:
 
     def __init__(self, x, y):
@@ -32,8 +67,13 @@ class Player:
         self.vx = 0
         self.vy = 0
 
+        self.image = pygame.transform.scale(pygame.image.load("pygame.png"), (50, 50))
+
     def draw(self, surface):
-        pygame.draw.polygon(surface, 'green', [(self.x - 20, self.y), (self.x + 20, self.y), (self.x, self.y - 20 * math.sqrt(3))])
+        imgRect = self.image.get_rect()
+        imgRect.center = (self.x, self.y)
+        surface.blit(self.image, imgRect)
+        # pygame.draw.polygon(surface, 'green', [(self.x - 20, self.y), (self.x + 20, self.y), (self.x, self.y - 20 * math.sqrt(3))])
 
     def update(self, surface):
         self.x += self.vx
@@ -60,6 +100,9 @@ class Game:
 
         self.lava_blocks = []
 
+        self.score = Score()
+        self.objects.append(self.score)
+
     def update(self, surface):
         if random.random() < 0.3:
             lava = Lava(random.randint(0, surface.get_width()), random.randint(0, surface.get_height()))
@@ -72,6 +115,7 @@ class Game:
         for lava in self.lava_blocks:
             if self.player.hitbox().colliderect(lava.hitbox()):
                 print("Ouch!")
+                self.score.reset()
 
     def draw(self, surface):
         surface.fill('white')
@@ -106,6 +150,9 @@ def handle_input(game: Game) -> bool:
             elif event.key == K_LEFT:
                 game.player.add_vel(5, 0)
 
+        elif event.type == SECOND_EVENT:
+            game.score.add(1)
+
     return True
 
 def main():
@@ -113,6 +160,8 @@ def main():
     surface = pygame.display.set_mode((640*2, 480*2))
 
     game = Game()
+
+    pygame.time.set_timer(SECOND_EVENT, 1000)
 
     clock = pygame.time.Clock()
 
