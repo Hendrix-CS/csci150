@@ -422,13 +422,13 @@ grades are earned based on cumulative assignment outcomes:
 * To earn an A in the course, a student will:
   * **Complete** two exams ~~and at least **Partially Complete** the remaining exam.~~
   * **Complete** all three projects.
-  * **Complete** a minimum of eight homework assignments, with the other two at least **Partially Complete**.
+  * **Complete** a minimum of ~~eight~~ six homework assignments, with the other two at least **Partially Complete**.
   * Up to one unexcused lab absence, and **Complete** a minimum of 11 lab assignments, with the other two at least **Partially Complete**.
   * Schedule and attend a minimum of two Office Hours meetings.
 * To earn a B in the course, a student will:
   * **Complete** ~~two exams~~ one exam and at least **Partially Complete** the remaining exam.
   * **Complete** a minimum of two projects and at least **Partially Complete** the remaining project.
-  * **Complete** a minimum of four homework assignments and at least **Partially Complete** a minimum of four more.
+  * **Complete** a minimum of ~~four~~ three homework assignments and at least **Partially Complete** a minimum of ~~four~~ three more.
   * Up to one unexcused lab absence, **Complete** a minimum of eight of the lab assignments, and at least **Partially Complete** a minimum of four more.
   * Schedule and attend at least one Office Hours meeting.
 * To earn a C in the course, a student will:
@@ -436,7 +436,7 @@ grades are earned based on cumulative assignment outcomes:
   * One of the following:
     * At least **Partially Complete** all three projects.
 	* **Complete** the final project and at least **Partially Complete** one of the first two projects.
-  * At least **Partially Complete** a minimum of six homework assignments.
+  * At least **Partially Complete** a minimum of five homework assignments.
   * Up to two unexcused lab absences, **Complete** at least four of the lab assignments, and at least **Partially Complete** a minimum of six more.
   * Schedule and attend at least one Office Hours meeting.
 * To earn a D in the course, a student will:
