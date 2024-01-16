@@ -42,13 +42,13 @@ navigation:
   - title: Coursework
     subfolderitems:
       - page: Homework
-        url: '#hwqz'
+        url: '#hw'
+      - page: Quizzes
+        url: '#quizzes'
       - page: Labs
         url: '#labs'
       - page: Projects
         url: '#projects'
-      - page: Exams
-        url: '#exams'
       - page: Scale
         url: '#scale'
   - page: Commitments
