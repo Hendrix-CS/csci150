@@ -285,41 +285,41 @@ for each project.
 ## <a name="grading">Specifications Grading</a>
 
 Final course grades are earned based on cumulative assignment outcomes. For each
-category of assignment, there are three levels of mastery:
+category of assignment, there are three levels of mastery: Basic, Intermediate, and Advanced.
 
 ### Labs
-* Level 1: Complete 8 labs, maximum of two unexcused absences
-* Level 2: Complete 10 labs, maximum of one unexcused absence
-* Level 3: Complete all 12 labs, no unexcused absences
+* Basic: Complete 8 labs, maximum of two unexcused absences
+* Intermediate: Complete 10 labs, maximum of one unexcused absence
+* Advanced: Complete all 12 labs, no unexcused absences
 
 ### Homework/Quizzes
 Out of 13 homeworks and 13 quizzes (26 total assignments):
-* Level 1: Complete 14 homeworks and quizzes
-* Level 2: Complete 20 homeworks and quizzes
-* Level 3: Complete 24 homeworks and quizzes
+* Basic: Complete 14 homeworks and quizzes
+* Intermediate: Complete 19 homeworks and quizzes
+* Advanced: Complete 24 homeworks and quizzes
 
 ### Projects
 There are two levels for each project. The final project counts as two projects. For the overall project level:
-* Level 1: Complete four levels of projects
-* Level 2: Complete six levels of projects
-* Level 3: Complete eight levels of projects
+* Basic: Complete four levels of projects
+* Intermediate: Complete six levels of projects
+* Advanced: Complete eight levels of projects
 
 ### Final Course Grade
 * To earn an A in the course, a student will:
   * Complete the course survey.
-  * Complete Level 3 in every category
+  * Achieve **Advanced** in every category
 * To earn a B in the course, a student will:
   * Complete the course survey.
-  * Complete Level 3 in two categories.
-  * Complete Level 2 in the third category.
+  * Achieve **Intermediate** in two categories.
+  * Achieve **Advanced** in the third category.
 * To earn a C in the course, a student will:
   * Complete the course survey
-  * Complete a total of seven levels among the three categories.
-* To earn a D in the course, a student will:
-  * Complete at least Level 1 in each of the three categories.
   * One of:
-    * Complete Level 2 in two catgories.
-    * Complete Level 3 in one category.
+    * Achieve **Intermediate** in all three categories.
+    * Achieve **Advanced** in one category, **Intermediate** in a second category, and **Basic** in the third category.
+* To earn a D in the course, a student will:
+  * Achieve at least **Basic** in all the three categories.
+  * Achieve **Intermediate** or **Advanced** in at least one category.
 
 
 <hr />
