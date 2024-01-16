@@ -51,68 +51,68 @@ Upon completing this course, our goal is for you to be able to:
 <br/>
 -->
 
-| Date   |   Day   |   Topic/Activity           |   Assigned                                   |   Due     |
-|  ---   |   ---   |        ---                 |     ---                                                          |   ---     |
-| 1/17   |   Weds  |  Introduction to CS        | [Survey](https://forms.gle/VLRVHjUAisWP5R9J8)
-| 1/19   |   Fri   |  Algorithms and Errors     | HW: [Minecraft by hand](homework/minecraft.html) | Survey
+| Date   |   Day   |   Topic/Activity           |   Assigned                                       |   Due     |
+|  ---   |   ---   |        ---                 |     ---                                          |   ---     |
+| 17 Jan |   Weds  |  Introduction to CS        | [Survey](https://forms.gle/VLRVHjUAisWP5R9J8)
+| 19 Jan |   Fri   |  Algorithms and Errors     | HW: [Minecraft by hand](homework/minecraft.html) | Survey
 |   
-| 1/22   |   Mon   |  Python: Math & Variables  |                                                  | HW: Minecraft by hand
-| 1/24   |   Weds  |  Python: Functions         | HW: Math and Variables
-| 1/26   |   Fri   |  Python: Booleans
+| 22 Jan |   Mon   |  Python<br>Math & Variables|                                                  | HW: Minecraft by hand
+| 24 Jan |   Weds  |  Functions                 | HW: Math and Variables
+| 26 Jan |   Fri   |  Booleans
 |
-| 1/29   |   Mon   |  Python: Conditionals      |                                                  | HW: Math and Variables
-| 1/31   |   Weds  |  Tracing I                 | HW: [Boolean practice](homework/booleans.html)
-| 2/2    |   Fri   |  Pycharm
+| 29 Jan |   Mon   |  Conditionals              |                                                  | HW: Math and Variables
+| 31 Jan |   Weds  |  Tracing I                 | HW: [Boolean practice](homework/booleans.html)
+|  2 Feb |   Fri   |  Pycharm
 |                 
-| 2/5    |   Mon   |  I/O                       |                                                  | HW: Boolean practice
-| 2/7    |   Weds  |  More Conditionals         | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
-| 2/9    |   Fri   |  The `while` loop
+|  5 Feb |   Mon   |  I/O                       |                                                  | HW: Boolean practice
+|  7 Feb |   Weds  |  More Conditionals         | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
+|  9 Feb |   Fri   |  The `while` loop
 |            
-| 2/12   |   Mon   |  More `while` loop<br>Generative AI | Project 1: [Civic Assistance Q/A System](projects/project1.html) | HW: CodingBat Conditional and By Hand Tracing Practice              
-| 2/14   |   Weds  |  Functions & Stack Tracing | HW: Loops I
-| 2/16   |   Fri   |  Functions & Stack Tracing
+| 12 Feb |   Mon   |  More `while` loop<br>Generative AI | Project 1: [Civic Assistance Q/A System](projects/project1.html) | HW: CodingBat Conditional and By Hand Tracing Practice              
+| 14 Feb |   Weds  |  Functions & Stack Tracing | HW: Loops I
+| 16 Feb |   Fri   |  Functions & Stack Tracing
 |
-| 2/19   |   Mon   |  **Winter Break - No class**
-| 2/21   |   Weds  |  Strings                   | HW: [Function Stack Tracing](homework/function-reading.html) | HW: Loops I
-| 2/23   |   Fri   |  Strings and Loops         |                                                              | Project 1                           
+| 19 Feb |   Mon   |  **Winter Break - No class**
+| 21 Feb |   Weds  |  Strings                   | HW: [Function Stack Tracing](homework/function-reading.html) | HW: Loops I
+| 23 Feb |   Fri   |  Strings and Loops         |                                                              | Project 1                           
 |
-| 2/26   |   Mon   |  Lists                     |                                                              | HW: Function Stack Tracing
-| 2/28   |   Weds  |  List Processing Examples  | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
-| 3/1    |   Fri   |  Function Abstraction      |                                    
+| 26 Feb |   Mon   |  Lists                     |                                                              | HW: Function Stack Tracing
+| 28 Feb |   Weds  |  List Processing Examples  | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
+|  1 Mar |   Fri   |  Function Abstraction      |                                    
 |
-| 3/4    |   Mon   |  The `for` loop            | Project 2: [Word Games](projects/project2.html)              | HW: CodingBat String and Loop Practice
-| 3/6    |   Weds  |  More `for` loop practice  | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
-| 3/8    |   Fri   |  Common loop patterns
+|  4 Mar |   Mon   |  The `for` loop            | Project 2: [Word Games](projects/project2.html)              | HW: CodingBat String and Loop Practice
+|  6 Mar |   Weds  |  More `for` loop practice  | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
+|  8 Mar |   Fri   |  Common loop patterns
 |
-| 3/11   |   Mon   |  File I/O                  |                                                              | HW: CodingBat List and Loop Practice
-| 3/13   |   Weds  |  More File I/O             | HW: File I/O
-| 3/15   |   Fri   |  The Heap and Mutability   
-|                                                                 | Lab 9     |
-| 3/18   |   Mon   | **Spring Break - No class**
-| 3/20   |   Weds  | **Spring Break - No class**
-| 3/22   |   Fri   | **Spring Break - No class**
+| 11 Mar |   Mon   |  File I/O                  |                                                              | HW: CodingBat List and Loop Practice
+| 13 Mar |   Weds  |  More File I/O             | HW: File I/O
+| 15 Mar |   Fri   |  The Heap and Mutability   |                                                              | Project 2 
+|                                                                 
+| 18 Mar |   Mon   | **Spring Break - No class**
+| 20 Mar |   Weds  | **Spring Break - No class**
+| 22 Mar |   Fri   | **Spring Break - No class**
 |
-| 3/25   |   Mon   | Dictionaries I             |                                                              | HW: File I/O
-| 3/27   |   Weds  | Dictionaries II            | HW: Dictionaries
-| 3/29   |   Fri   | Binary and Information Encoding  |                                                        | Project 2 
+| 25 Mar |   Mon   | Dictionaries I             |                                                              | HW: File I/O
+| 27 Mar |   Weds  | Dictionaries II            | HW: Dictionaries
+| 29 Mar |   Fri   | Final Project Discussion   | [Final project]({{site.baseurl}}/projects/project.html)
 |
-| 4/1    |   Mon   | Classes                    |                                                              | HW: Dictionaries
-| 4/3    |   Weds  | Class/object examples (cake; car) | HW: Classes
-| 4/5    |   Fri   | Class/object examples (bookshelf) 
+|  1 Apr |   Mon   | Classes                    |                                                              | HW: Dictionaries
+|  3 Apr |   Weds  | Class/object examples (cake; car) | HW: Classes
+|  5 Apr |   Fri   | Class/object examples (bookshelf) 
 |                                                            
-| 4/8    |   Mon   | ** Eclipse - No class **   
-| 4/10   |   Weds  | PyGame animation           | HW: PyGame                                                   | HW: Classes
-| 4/12   |   Fri   | Final Project Discussion   | [Final project]({{site.baseurl}}/projects/project.html)
+|  8 Apr |   Mon   | **Eclipse - No class**   
+| 10 Apr |   Weds  | PyGame animation           | HW: PyGame                                                   | HW: Classes
+| 12 Apr |   Fri   | Classes and PyGame 
 |                                                              
-| 4/15   |   Mon   | Classes and PyGame         |                                                              | HW: PyGame
-| 4/17   |   Weds  | Recursion I                | HW: Recursion
-| 4/19   |   Fri   | Recursion II: Trees
+| 15 Apr |   Mon   | Recursion I                |                                                              | HW: PyGame
+| 17 Apr |   Weds  | Recursion II: Trees        | HW: Recursion
+| 19 Apr |   Fri   | Recursion III: Applications|                                                              | [Final project]({{site.baseurl}}/projects/project.html): Progress Report
 |
-| 4/22   |   Mon   | Recursion III: Applications                                                               | HW: Recursion
-| 4/24   |   Weds  | Project Workshop                                                                  | [Final project]({{site.baseurl}}/projects/project.html): Progress Report                             
-| 4/26   |   Fri   | Retrospective    
+| 22 Apr |   Mon   | Binary and Information Encoding                                                           | HW: Recursion
+| 24 Apr |   Weds  | Project Workshop                                                                                               
+| 26 Apr |   Fri   | Retrospective    
 |                                                              
-| 5/3    |   Fri 2:00-5:00 pm| Final Project Presentations                                                                                  |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            |
+|  3 May |   Fri 2:00-5:00 pm| Final Project Presentations                                                                                  |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            |
 
 <hr>
 # Coursework
@@ -122,10 +122,12 @@ Upon completing this course, our goal is for you to be able to:
 Each student begins the semester with **six tokens**. 
 * Send Dr. Ferrer a message on Teams to spend a token.
 * Students may **spend** tokens as follows:
-  * Spend **one** token to submit a revised version of an assignment, in the event the assignment is not Complete.
+  * Spend **one** token to submit a revised version of a project, in the event the project was assessed at Level 1.
+  * Spend **one** token to retake an attempted quiz or resubmit an attempted homework.
   * Spend **two** tokens to request an extension on an assignment deadline. 
     * When requesting an extension, specify the new deadline that you think will suffice.
     * Most deadline requests will be approved, but the instructor reserves the right to limit extensions if he deems them unreasonable.
+  * Spend **three** tokens to take a missed quiz resulting from an **unexcused** absence.
   * Spend **three** tokens to submit an assignment after its deadline (including extended deadlines).
 * To earn additional tokens:
   * Earn **one** token by booking and attending an office hours appointment. 
@@ -152,23 +154,21 @@ during the semester.
 </div>
 <br/>
 -->
-
+<!--
 | #   | Name                                                                                                     | Assigned | Due      | Sample Solutions                                                                                                                                      |
 |:---:|----------------------------------------------------------------------------------------------------------|----------|:---------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0   | [Survey][survey]                                                                                         | W Aug 23 | M Aug 28 |                                                                                                                                                       |
 | 1   | [Minecraft by hand]({{site.baseurl}}/homework/minecraft.html)                                            | F Aug 26 | W Aug 30 |                                                                                                                                                       |
 | 1.5 | [Sign up for CodeGrade](https://app.codegra.de/courses/5296/enroll/fedf2cf9-bdb3-489d-860b-9f68fd53bd7f) | M Aug 28 | W Aug 30 |                                                                                                                                                       |
 | 2   | [Boolean practice]({{site.baseurl}}/homework/booleans.html)                                              | F Sep 1  | W Sep 6  |                                                                                                                                                       |
-| 3   | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)                | F Sep 8  | W Sep 13 | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf) -->                                                           |
-| 4   | [Function Stack Tracing](homework/function-reading.html)                                                 | F Sep 22 | W Sep 27 | <!-- [Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf) -->                                            |
+| 3   | [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)                | F Sep 8  | W Sep 13 |  [Tracing Solutions](/homework/tracing-sample-solutions/HW-3-Tracing-Solutions.pdf)                                                            |
+| 4   | [Function Stack Tracing](homework/function-reading.html)                                                 | F Sep 22 | W Sep 27 |  [Tracing Solutions](/homework/tracing-sample-solutions/HW-4-Function-Stack-Tracing-Solutions.pdf)                                             |
 | 5   | [CodingBat String and Loop practice](homework/codingbat-string-loop.html)                                | F Sep 29 | W Oct 4  |                                                                                                                                                       |
 | 6   | [CodingBat List and Loop practice](homework/codingbat-list-loop.html)                                    | F Oct 6  | W Oct 11 |                                                                                                                                                       |
 | 7   | [CodingBat more loop practice](homework/codingbat-for-loop.html)                                         | F Oct 27 | W Nov 1  |                                                                                                                                                       |
-| 8   | [Dictionary & Class Practice]({{site.baseurl}}/homework/dict-class-homework)                             | F Nov 10 | W Nov 15 | <!-- [Sample Solution](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdQKSKuWJ0ROpBpp9DFkY3wBenDzB7uWRcglObOq43whcw?e=WIOeN2) --> |
-
-
-<!-- |   | [HW 4 Redo](/homework/HW4-Redo-Problems.pdf)                                              |          |          | <\!-- [Tracing Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EUz_HXO6PH1AtK7UOh4P9hMBax6AG-jKpSwj-VwR7SScfw?e=zneGLv) -\-> | -->
-
+| 8   | [Dictionary & Class Practice]({{site.baseurl}}/homework/dict-class-homework)                             | F Nov 10 | W Nov 15 |  [Sample Solution](https://hendrix-my.sharepoint.com/:u:/g/personal/seme_hendrix_edu/EdQKSKuWJ0ROpBpp9DFkY3wBenDzB7uWRcglObOq43whcw?e=WIOeN2)  |
+                                         |          |          | <\!-- [Tracing Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EUz_HXO6PH1AtK7UOh4P9hMBax6AG-jKpSwj-VwR7SScfw?e=zneGLv) 
+-->
 There will often be short homework assignments to be completed,
 typically assigned on Wednesday and due Monday.  Homework with coding
 practice problems will be submitted electronically. By-hand homework
@@ -177,18 +177,25 @@ you can write (neatly) or type and print such solutions.
 
 ## <a name="quizzes">Quizzes</a>
 
-A short quiz will be given in class every Wednesday. Each quiz
+A short quiz will be given in class every Wednesday. The subject matter 
+will correspond to the topic of the homework due that same week. Each quiz
 will contain one or more short problems that should be solvable within
 10 minutes. 
 
 Quizzes are pass-fail. If a student does not pass a quiz, or does not
 attend class on a quiz day for any reason, they can make up the quiz by 
-visiting the instructor's office on one of the following make-up days:
+visiting the instructor's office on one of the following make-up times:
+* Tuesday, February 6, 11:10-12:00
+* Tuesday, February 20, 11:10-12:00
 * Thursday, February 29, 11:10-12:00
 * Thursday, March 28, 11:10-12:00
+* Tuesday, April 9, 11:10-12:00 
 * Thursday, April 18, 11:10-12:00
 
 Quiz make-ups can also be arranged on Monday, April 29, the Reading Day.
+
+Missing a quiz is **excused** if the student communicates to the instructor
+**prior to class that day** that it is necessary for the student to miss class.
 
 If extenuating circumstances make all of the above make-up times impossible
 to arrange, a student should communicate with the instructor to determine
@@ -207,28 +214,42 @@ other potential arrangements.
 
 | #  | Name                                                                                      | Completion time | Assigned  | Due       |
 |:--:|-------------------------------------------------------------------------------------------|-----------------|-----------|:----------|
-| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 1-2 hrs         | 23-24 Aug | 30-31 Aug |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 2-3 hrs         | 30-31 Aug | 6-7 Sep   |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 2.5-3.5 hrs     | 6-7 Sep   | 13-14 Sep |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 2-3 hrs         | 13-14 Sep | 20-21 Sep |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 3-4 hrs         | 20-21 Sep | 27-28 Sep |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         | 27-28 Sep | 4-5 Oct   |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 4-5 Oct   | 18-19 Oct |
-|    | **No lab** (fall break)                                                                   |                 | 11-12 Oct |           |
-| 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 18-19 Oct | 25-26 Oct |
-| 8  | [Sentiment Analysis](https://www.kaggle.com/gabrielferrer/sentiment-analysis)             | 3.5-4.5 hrs     | 25-26 Oct | 1-2 Nov   |
-| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 3.5-4.5 hrs     | 1-2 Nov   | 8-9 Nov   |
-| 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 2.5-3.5 hrs     | 8-9 Nov   | 15-16 Nov |
-| 11 | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                     | 3.5-4.5 hrs     | 15-16 Nov | 29-30 Nov |
-| 12 | (Optional) Project 3 Workshop                                                             |                 | 29-30 Nov |           |
+| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 1-2 hrs         | 17-18 Jan | 24-25 Jan |
+| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 2-3 hrs         | 24-25 Jan|31 Jan-1 Feb|
+| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 2.5-3.5 hrs     |31 Jan-1 Feb| 7-8 Feb  |
+| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 2-3 hrs         | 7-8 Feb   | 14-15 Feb |
+| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 3-4 hrs         | 14-15 Feb | 21-22 Feb |
+| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         | 21-22 Feb | 28-29 Feb |
+| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 28-29 Feb | 6-7 Mar   |
+| 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 6-7 Mar   | 13-14 Mar |
+|    | Project 2 Workshop                                                                        |                 | 13-14 Mar |           |
+| 8  | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                  |                 | 27-28 Mar | 3-4 Apr   |
+| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 3.5-4.5 hrs     | 3-4 Apr   | 10-11 Apr |
+| 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 2.5-3.5 hrs     | 10-11 Apr | 17-18 Apr |
+| 11 | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                     | 3.5-4.5 hrs     | 17-18 Apr | 24-25 Apr |
+|    | Project 3 Workshop                                                                        |                 | 24-25 Apr |           |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
-On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. A partnership should only turn in a **single copy** of the assignment.
+Each lab consists of a series of milestones. At the start of each lab, you will receive a sheet of paper listing the 
+milestones for that lab. As you achieve each milestone, you will demonstrate to the instructor or TA that you have met the
+milestone, and they will record this achievement on your checklist. When you complete all of the lab milestones, you will 
+submit the milestone checklist.
 
-<!-- On these labs, you will work with a partner on the lab assignments. Their name must be listed on any code you hand in as joint work. Each partner should **submit their own solution** to the assignment. -->
+If you complete the lab during the lab period, hand your checklist to your lab instructor before you leave the lab. If you
+require additional time beyond the lab period to complete the lab, either the instructor or the lab TA can check off the
+remaining milestones during office hours. You can then submit the completed checklist to the instructor at the start of 
+the next lab.
 
-**Lab attendance is required**. Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
+You will work with a partner on each lab assignment. Each partner will have their own milestone checklist. If they do not 
+complete the milestones during the lab period, they should find time outside of lab to work together to complete them. If 
+they are unable to do so, only the instructor is authorized to record milestones for students working alone.
+
+**Lab attendance is required**. If an extenuating circumstance impedes the attendance of lab, the student must contact
+the lab instructor **prior to the start of the lab** for the absence to be **excused**. The student is still responsible
+for completing the lab activity on-time.
+
+Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
 
 ## <a name="projects">Projects</a>
 <!--
@@ -239,63 +260,66 @@ On these labs, you will work with a partner on the lab assignments. Their name m
 </div>
 <br/>
 -->
-
+<!--
 
 | # | Name                                                                   | Average time | Assigned | Due   |
 |:-:|------------------------------------------------------------------------|--------------|:--------:|:-----:|
 | 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 3:30         | 20 Sep   | 2 Oct |
 | 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  | 5:50         | 9 Oct    | 6 Nov |
 | 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  | 12:45        | 13 Nov   | 8 Dec |
+-->
 
-You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to three weeks after they are assigned.
+You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to four weeks after they are assigned.
 
 **You must work individually on the projects.** You may discuss concepts and ideas with your classmates, but the code you turn in must be your own. You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
 
+| # | Name                                                                   | Assigned | Due    |
+|:-:|------------------------------------------------------------------------|:--------:|:------:|
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 12 Feb   | 23 Feb |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  |  4 Mar   | 15 Mar |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  | 29 Mar   |  3 May |
+
+Each project will be assessed as **Level 1 Complete** or **Level 2 Complete**, with criteria specified individually
+for each project.
+
 ## <a name="grading">Specifications Grading</a>
 
-Each assignment is assessed as **Complete**, **Partially Complete** or **Incomplete**.
-Criteria for the first two categories will be specified for each assignment. Final course
-grades are earned based on cumulative assignment outcomes:
+Final course grades are earned based on cumulative assignment outcomes. For each
+category of assignment, there are three levels of mastery:
 
+### Labs
+* Level 1: Complete 8 labs, maximum of two unexcused absences
+* Level 2: Complete 10 labs, maximum of one unexcused absence
+* Level 3: Complete all 12 labs, no unexcused absences
+
+### Homework/Quizzes
+Out of 13 homeworks and 13 quizzes (26 total assignments):
+* Level 1: Complete 14 homeworks and quizzes
+* Level 2: Complete 20 homeworks and quizzes
+* Level 3: Complete 24 homeworks and quizzes
+
+### Projects
+There are two levels for each project. The final project counts as two projects. For the overall project level:
+* Level 1: Complete four levels of projects
+* Level 2: Complete six levels of projects
+* Level 3: Complete eight levels of projects
+
+### Final Course Grade
 * To earn an A in the course, a student will:
-  * **Complete** two exams ~~and at least **Partially Complete** the remaining exam.~~
-  * **Complete** all three projects.
-  * **Complete** a minimum of ~~eight~~ six homework assignments, with the other two at least **Partially Complete**.
-  * Up to one unexcused lab absence, and **Complete** a minimum of
-    ~~11~~ 10 lab assignments, with the other two at least **Partially Complete**.
-  * Schedule and attend a minimum of two Office Hours meetings.
+  * Complete the course survey.
+  * Complete Level 3 in every category
 * To earn a B in the course, a student will:
-  * **Complete** ~~two exams~~ one exam and at least **Partially Complete** the remaining exam.
-  * **Complete** a minimum of two projects and at least **Partially Complete** the remaining project.
-  * **Complete** a minimum of ~~four~~ three homework assignments and at least **Partially Complete** a minimum of ~~four~~ three more.
-  * Up to one unexcused lab absence, **Complete** a minimum of
-    ~~eight~~ seven of the lab assignments, and at least **Partially Complete** a minimum of four more.
-  * Schedule and attend at least one Office Hours meeting.
+  * Complete the course survey.
+  * Complete Level 3 in two categories.
+  * Complete Level 2 in the third category.
 * To earn a C in the course, a student will:
-  * At least **Partially Complete** a minimum of two exams.
-  * One of the following:
-    * At least **Partially Complete** all three projects.
-	* **Complete** the final project and at least **Partially Complete** one of the first two projects.
-  * At least **Partially Complete** a minimum of five homework assignments.
-  * Up to two unexcused lab absences, **Complete** at least four of
-    the lab assignments, and at least **Partially Complete** a minimum
-    of ~~six~~ five more.
-  * Schedule and attend at least one Office Hours meeting.
+  * Complete the course survey
+  * Complete a total of seven levels among the three categories.
 * To earn a D in the course, a student will:
-  * At least **Partially Complete** a minimum of two exams.
-  * At least **Partially Complete** a minimum of two projects.
-  * At least **Partially Complete** a minimum of four homework assignments.
-  * Up to three unexcused lab absences and at least **Partially
-    Complete** a minimum of ~~nine~~ eight lab assignments.
-
-### Revising submitted work
-If a submitted assignment receives a **Partial** assessment and the student seeks a **Complete** assessment:
-* In most cases, detailed feedback will be provided with requirements necessary for a revision to be considered **Complete**. A deadline will also be established -- typically a week after the assignment is returned.
-* If the student has any questions or is uncertain what those requirements are, they should schedule an office hour appointment.
-* Individual students can request extensions of their deadlines -- typically, unless the student has abused this throughout the semester, requests will be granted.
-* If the student submits revisions which meet the requirements by the deadline, the revised work will receive a **Complete** assessment.
-
-If a submitted assignment receives a **Incomplete** assessment, a similar list of requirements will be provided. In most cases, an **Incomplete** assignment can only be upgraded to **Partially Complete**, but the instructor reserves the right to allow students to achieve **Complete** on a case-by-case basis.
+  * Complete at least Level 1 in each of the three categories.
+  * One of:
+    * Complete Level 2 in two catgories.
+    * Complete Level 3 in one category.
 
 
 <hr />
