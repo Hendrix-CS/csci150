@@ -212,8 +212,9 @@ other potential arrangements.
 
 <p><a href="docs/code-of-conduct/23F/code-of-conduct-23F-W.pdf">Wednesday Lab Code of Conduct</a></p>
 -->
+
 | #  | Name                                                                                      | Completion time | Assigned  | Due       |
-|:--:|-------------------------------------------------------------------------------------------|-----------------|-----------|:----------|
+|:--:|-------------------------------------------------------------------------------------------|-----------------|-----------|-----------|
 | 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 1-2 hrs         | 17-18 Jan | 24-25 Jan |
 | 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 2-3 hrs         | 24-25 Jan|31 Jan-1 Feb|
 | 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 2.5-3.5 hrs     |31 Jan-1 Feb| 7-8 Feb  |
