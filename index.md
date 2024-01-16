@@ -108,7 +108,7 @@ Upon completing this course, our goal is for you to be able to:
 | 17 Apr |   Weds  | Recursion II: Trees        | HW: Recursion
 | 19 Apr |   Fri   | Recursion III: Applications|                                                              | [Final project]({{site.baseurl}}/projects/project.html): Progress Report
 |
-| 22 Apr |   Mon   | Binary and Information Encoding                                                           | HW: Recursion
+| 22 Apr |   Mon   | Binary and Information Encoding|                                                           | HW: Recursion
 | 24 Apr |   Weds  | Project Workshop                                                                                               
 | 26 Apr |   Fri   | Retrospective    
 |                                                              
