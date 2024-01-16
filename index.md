@@ -285,24 +285,24 @@ for each project.
 ## <a name="grading">Specifications Grading</a>
 
 Final course grades are earned based on cumulative assignment outcomes. For each
-category of assignment, there are three levels of mastery: Basic, Intermediate, and Advanced.
+category of assignment, there are three levels of mastery: **Basic**, **Intermediate**, and **Advanced**.
 
 ### Labs
-* Basic: Complete 8 labs, maximum of two unexcused absences
-* Intermediate: Complete 10 labs, maximum of one unexcused absence
-* Advanced: Complete all 12 labs, no unexcused absences
+* **Basic**: Complete 8 labs, maximum of two unexcused absences
+* **Intermediate**: Complete 10 labs, maximum of one unexcused absence
+* **Advanced**: Complete all 12 labs, no unexcused absences
 
 ### Homework/Quizzes
 Out of 13 homeworks and 13 quizzes (26 total assignments):
-* Basic: Complete 14 homeworks and quizzes
-* Intermediate: Complete 19 homeworks and quizzes
-* Advanced: Complete 24 homeworks and quizzes
+* **Basic**: Complete 14 homeworks and quizzes
+* **Intermediate**: Complete 19 homeworks and quizzes
+* **Advanced**: Complete 24 homeworks and quizzes
 
 ### Projects
 There are two levels for each project. The final project counts as two projects. For the overall project level:
-* Basic: Complete four levels of projects
-* Intermediate: Complete six levels of projects
-* Advanced: Complete eight levels of projects
+* **Basic**: Complete four levels of projects
+* **Intermediate**: Complete six levels of projects
+* **Advanced**: Complete eight levels of projects
 
 ### Final Course Grade
 * To earn an A in the course, a student will:
@@ -310,7 +310,7 @@ There are two levels for each project. The final project counts as two projects.
   * Achieve **Advanced** in every category
 * To earn a B in the course, a student will:
   * Complete the course survey.
-  * Achieve **Intermediate** in two categories.
+  * Achieve at least **Intermediate** in two categories.
   * Achieve **Advanced** in the third category.
 * To earn a C in the course, a student will:
   * Complete the course survey
