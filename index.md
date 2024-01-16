@@ -117,36 +117,24 @@ Upon completing this course, our goal is for you to be able to:
 <hr>
 # Coursework
 
-## <a name="latedays">Late Policy</a>
+## Tokens
 
-[*Adapted from Spencer Bagley and David Clark, via [Robert
-Talbert](https://rtalbert.org/a-real-world-approach-to-deadlines/)*]
+Each student begins the semester with **six tokens**. 
+* Send Dr. Ferrer a message on Teams to spend a token.
+* Students may **spend** tokens as follows:
+  * Spend **one** token to submit a revised version of an assignment, in the event the assignment is not Complete.
+  * Spend **two** tokens to request an extension on an assignment deadline. 
+    * When requesting an extension, specify the new deadline that you think will suffice.
+    * Most deadline requests will be approved, but the instructor reserves the right to limit extensions if he deems them unreasonable.
+  * Spend **three** tokens to submit an assignment after its deadline (including extended deadlines).
+* To earn additional tokens:
+  * Earn **one** token by booking and attending an office hours appointment. 
+    * A student may earn up to **one token per week** from attending office hours, and a maximum of **six** tokens over the course of 
+      the semester.
+  * Earn **two** tokens by creating a homework problem to illustrate a concept.
+  * Earn **four** tokens by creating a 2-4 minute video educating a viewer about a concept from the course.
+* Students may not go into token debt - to spend tokens, a student must have a positive balance.
 
-CSCI 150 uses a **real-world policy** on due dates---but this may not
-mean what you think!  In the *real* real world, due dates exist but
-they are often not ironclad.  The purpose of deadlines is usually to
-help motivate you to complete the task, but if you need more time to
-get the job done well, you email whoever set the deadline to ask if
-you can have more time.  Studies have shown that deadline extension
-requests---in moderation and when truly needed---often lead to
-*better* employee evaluations (not to mention better work). [*See [Go
-Ahead and Ask for More Time on that
-Deadline](https://hbr.org/2021/12/go-ahead-and-ask-for-more-time-on-that-deadline)
-by Ashley Williams*.]
-
-**If you need an extension on a due date, email me and explain what
-you need**, and it will probably be fine.  It helps if you propose a
-concrete new deadline (*e.g.* "I can get it done by 5pm on
-Wednesday").  If you ask for lots of extensions, we'll work together
-to find a way to help you keep up.  Note, however, that late
-submissions may not receive feedback as quickly as on-time
-submissions.
-
-If you have significant extenuating circumstances that cause you to
-miss multiple deadlines, please [come to office
-hours](https://byorgey.youcanbook.me) to discuss broader accommodations.  I'm
-happy to be flexible, but it helps to know what you need so I can
-figure out the best way to help.
 
 ## <a name="participation">Course Participation</a>
 
@@ -182,14 +170,14 @@ during the semester.
 <!-- |   | [HW 4 Redo](/homework/HW4-Redo-Problems.pdf)                                              |          |          | <\!-- [Tracing Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EUz_HXO6PH1AtK7UOh4P9hMBax6AG-jKpSwj-VwR7SScfw?e=zneGLv) -\-> | -->
 
 There will often be short homework assignments to be completed,
-typically assigned on Friday and due Wednesday.  Homework with coding
+typically assigned on Wednesday and due Monday.  Homework with coding
 practice problems will be submitted electronically. By-hand homework
 should be submitted on physical paper at the start of class time --
 you can write (neatly) or type and print such solutions.
 
 ## <a name="quizzes">Quizzes</a>
 
-A short quiz will be given in class almost every Wednesday. Each quiz
+A short quiz will be given in class every Wednesday. Each quiz
 will contain one or more short problems that should be solvable within
 10 minutes. 
 
