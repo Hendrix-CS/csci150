@@ -9,18 +9,8 @@ layout: course-multi
 
 | Sunday      | Monday      | Tuesday    | Wednesday    | Thursday   |
 |-------------|-------------|------------|--------------|------------|
-| Riley (7-9) | Chris (6-8) | Ryan (6-8) | Joseph (6-8) | Jada (7-9) |
+| TBA   (7-9) | TBA   (6-8) | TBA  (6-8) | TBA    (6-8) | TBA  (7-9) |
 
-
-<!--
-For TA hours click here to join the virtual CS lab:
-
-<div style="text-align: center">
-<a href="https://gather.town/app/51XVXUciIPdVoLaW/CSCI%20Lab">
-  <img src="assets/images/150-lab.png" />
-</a>
-</div>
--->
 
 # <a name="description">Overview</a>
 

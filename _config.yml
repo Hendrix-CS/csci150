@@ -26,7 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 number: CSCI 150
 title: Foundations of Computer Science
-semester: Fall 2023
+semester: Spring 2024
 
 navigation:
   - title: Overview
@@ -77,21 +77,17 @@ offerings:
   - name: LECTURE 01
     loc: M.C. Reynolds 110
     time: MWF 8:10am - 9:00am (A1)
-    instructor: yorgey
-  - name: LECTURE 02
-    loc: M.C. Reynolds 315
-    time: MWF 11:10am - 12:00pm (A4)
-    instructor: yorgey
+    instructor: ferrer
   - name: LAB L1
     loc: Bailey Lab
     time: W 1:10pm - 4:00pm (L8)
-    instructor: yorgey
+    instructor: ferrer
   - name: LAB L2
     loc: Bailey Lab
     time: R 1:10pm - 4:00pm (L9)
-    instructor: goadrich
+    instructor: yorgey
 
-submission: XXX CodeGrade
+#submission: XXX CodeGrade
 
 resources:
   - name: Python 3
@@ -103,9 +99,9 @@ resources:
   - name: Pycharm
     image: assets/images/pycharmlogo.png
     url: https://www.jetbrains.com/pycharm/
-  - name: CodeGrade
-    image: assets/images/codegrade_logo.png
-    url: https://app.codegra.de/
+  #- name: CodeGrade
+  #  image: assets/images/codegrade_logo.png
+  #  url: https://app.codegra.de/
 
 extra-resources:
   - name: CodingBat Python
