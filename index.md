@@ -202,7 +202,7 @@ to arrange, a student should communicate with the instructor to determine
 other potential arrangements.
 
 ## <a name="labs">Labs</a>
-
+<!--
 <div style="text-align: center">
 <a class="btn btn-primary" href="https://app.codegra.de/">
   Lab submission (CodeGrade)
@@ -211,7 +211,7 @@ other potential arrangements.
 <br/>
 
 <p><a href="docs/code-of-conduct/23F/code-of-conduct-23F-W.pdf">Wednesday Lab Code of Conduct</a></p>
-
+-->
 | #  | Name                                                                                      | Completion time | Assigned  | Due       |
 |:--:|-------------------------------------------------------------------------------------------|-----------------|-----------|:----------|
 | 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 1-2 hrs         | 17-18 Jan | 24-25 Jan |
