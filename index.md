@@ -138,12 +138,6 @@ Each student begins the semester with **six tokens**.
 * Students may not go into token debt - to spend tokens, a student must have a positive balance.
 
 
-## <a name="participation">Course Participation</a>
-
-Each student should schedule and attend at least two office hour
-meetings with either their lecture or lab instructor at some point
-during the semester.
-
 ## <a name="hw">Homework</a>
 
 <!--
@@ -184,21 +178,24 @@ will contain one or more short problems that should be solvable within
 
 Quizzes are pass-fail. If a student does not pass a quiz, or does not
 attend class on a quiz day for any reason, they can make up the quiz by 
-visiting the instructor's office on one of the following make-up times:
+visiting the instructor's office during a scheduled make-up time. The 
+schedule will be announced during the second week of classes.
+<!--
 * Tuesday, February 6, 11:10-12:00
 * Tuesday, February 20, 11:10-12:00
 * Thursday, February 29, 11:10-12:00
 * Thursday, March 28, 11:10-12:00
 * Tuesday, April 9, 11:10-12:00 
 * Thursday, April 18, 11:10-12:00
+-->
 
 Quiz make-ups can also be arranged on Monday, April 29, the Reading Day.
 
 Missing a quiz is **excused** if the student communicates to the instructor
 **prior to class that day** that it is necessary for the student to miss class.
 
-If extenuating circumstances make all of the above make-up times impossible
-to arrange, a student should communicate with the instructor to determine
+If extenuating circumstances make the scheduled make-up times impossible
+to attend, a student should communicate with the instructor to determine
 other potential arrangements.
 
 ## <a name="labs">Labs</a>
@@ -331,13 +328,14 @@ Although you and I play different roles in the course, we both have
 your learning as a common goal. There are things I expect from you as
 a student in the course, but there are also things you can expect of
 me as the course instructor and facilitator.
-
+<!--
 If I am not fulfilling my responsibilities outlined below, you are
 welcome (and encouraged!) to call me out, perhaps via the [anonymous
 feedback form](https://docs.google.com/forms/d/e/1FAIpQLSecdjyRdCiHkCv5Y5WF09RHLgdf9bl1WoeJQJZmnErPCd8YxA/viewform). I will also
 initiate a conversation if you are not fulfilling yours. However, none
 of us will meet all of the expectations perfectly---me included!---so
 it's also important that we have grace and patience with one another.
+-->
 
 <table class="table table-bordered mt-3">
   <thead>
