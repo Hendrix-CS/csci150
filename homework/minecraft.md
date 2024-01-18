@@ -39,4 +39,3 @@ On paper (handwritten or typed):
 ## Specifications
 
 - A submission will be **complete** provided your instructions successfully complete both assigned tasks
-- A submission will be **partially complete** provided you give good-faith efforts at each task.

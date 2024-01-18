@@ -100,16 +100,16 @@ Upon completing this course, our goal is for you to be able to:
 |  3 Apr |   Weds  | Class/object examples (cake; car) | File I/O     
 |  5 Apr |   Fri   | Class/object examples (bookshelf) 
 |                                                            
-|  8 Apr |   Mon   | **Eclipse - No class**   
-| 10 Apr |   Weds  | PyGame animation           | Dictionaries | HW: PyGame                                                   | HW: Classes
+|  8 Apr |   Mon   | **Eclipse - No class**     |                        |                                                | HW: Classes (Slide under instructors's door)
+| 10 Apr |   Weds  | PyGame animation           | Dictionaries | HW: PyGame                                                   
 | 12 Apr |   Fri   | Classes and PyGame 
 |                                                              
 | 15 Apr |   Mon   | Recursion I                |              | HW: Recursion                                          | HW: PyGame
-| 17 Apr |   Weds  | Recursion II: Trees        | 
+| 17 Apr |   Weds  | Recursion II: Trees        | Classes      |
 | 19 Apr |   Fri   | Recursion III: Applications|              |                                                | [Final project]({{site.baseurl}}/projects/project.html): Progress Report
 |
-| 22 Apr |   Mon   | Binary and Information Encoding|                                                           | HW: Recursion
-| 24 Apr |   Weds  | Project Workshop           | Classes |                                                                                    
+| 22 Apr |   Mon   | Binary and Information Encoding|           |                                                | HW: Recursion
+| 24 Apr |   Weds  | Project Workshop           | PyGame |                                                                                    
 | 26 Apr |   Fri   | Retrospective    
 |                                                              
 |  3 May |   Fri 2:00-5:00 pm| Final Project Presentations                                                                                  |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            |
@@ -171,9 +171,8 @@ you can write (neatly) or type and print such solutions.
 
 ## <a name="quizzes">Quizzes</a>
 
-A short quiz will be given in class every Wednesday. The subject matter 
-will correspond to the topic of the homework due that same week. Each quiz
-will contain one or more short problems that should be solvable within
+A short quiz will be given at the start of class on most Wednesdays. Each 
+quiz will contain one or more short problems that should be solvable within
 10 minutes. 
 
 Quizzes are pass-fail. If a student does not pass a quiz, or does not
@@ -273,8 +272,8 @@ You will have three projects in this course. These projects will cover concepts 
 
 | # | Name                                                                   | Assigned | Due    |
 |:-:|------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 12 Feb   | 23 Feb |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  |  4 Mar   | 15 Mar |
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) |  9 Feb   | 23 Feb |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  |  1 Mar   | 15 Mar |
 | 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  | 29 Mar   |  3 May |
 
 Each project will be assessed as **Level 1 Complete** or **Level 2 Complete**, with criteria specified individually
@@ -291,13 +290,13 @@ category of assignment, there are three levels of mastery: **Basic**, **Intermed
 * **Advanced**: Complete all 12 labs, no unexcused absences
 
 ### Homework/Quizzes
-Out of 13 homeworks and 13 quizzes (26 total assignments):
-* **Basic**: Complete 14 homeworks and quizzes
-* **Intermediate**: Complete 19 homeworks and quizzes
-* **Advanced**: Complete 24 homeworks and quizzes
+Out of 13 homeworks and 12 quizzes (25 total assignments):
+* **Basic**: Complete 13 homeworks and quizzes
+* **Intermediate**: Complete 18 homeworks and quizzes
+* **Advanced**: Complete 23 homeworks and quizzes
 
 ### Projects
-There are two levels for each project. The final project counts as two projects. For the overall project level:
+There are two levels for each project. The final project counts as two projects. Add up total project levels completed:
 * **Basic**: Complete four levels of projects
 * **Intermediate**: Complete six levels of projects
 * **Advanced**: Complete eight levels of projects
