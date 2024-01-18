@@ -179,6 +179,7 @@ Quizzes are pass-fail. If a student does not pass a quiz, or does not
 attend class on a quiz day for any reason, they can make up the quiz by 
 visiting the instructor's office during a scheduled make-up time. The 
 schedule will be announced during the second week of classes.
+
 <!--
 * Tuesday, February 6, 11:10-12:00
 * Tuesday, February 20, 11:10-12:00
