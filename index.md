@@ -51,65 +51,65 @@ Upon completing this course, our goal is for you to be able to:
 <br/>
 -->
 
-| Date   |   Day   |   Topic/Activity           |   Assigned                                       |   Due     |
-|  ---   |   ---   |        ---                 |     ---                                          |   ---     |
-| 17 Jan |   Weds  |  Introduction to CS        | [Survey](https://forms.gle/VLRVHjUAisWP5R9J8)
-| 19 Jan |   Fri   |  Algorithms and Errors     | HW: [Minecraft by hand](homework/minecraft.html) | Survey
+| Date   |   Day   |   Topic/Activity           | Quiz              |   Assigned                                       |   Due     |
+|  ---   |   ---   |        ---                 | ---               |     ---                                          |   ---     |
+| 17 Jan |   Weds  |  Introduction to CS        |                   | [Survey](https://forms.gle/VLRVHjUAisWP5R9J8)
+| 19 Jan |   Fri   |  Algorithms and Errors     |                   | HW: [Minecraft by hand](homework/minecraft.html) | Survey
 |   
-| 22 Jan |   Mon   |  Python<br>Math & Variables|                                                  | HW: Minecraft by hand
-| 24 Jan |   Weds  |  Functions                 | HW: Math and Variables
-| 26 Jan |   Fri   |  Booleans
+| 22 Jan |   Mon   |  Python<br>Math & Variables|                   | HW: Math and Variables                           | HW: Minecraft by hand
+| 24 Jan |   Weds  |  Functions                 |           
+| 26 Jan |   Fri   |  Booleans                  |                   |                                                  
 |
-| 29 Jan |   Mon   |  Conditionals              |                                                  | HW: Math and Variables
-| 31 Jan |   Weds  |  Tracing I                 | HW: [Boolean practice](homework/booleans.html)
-|  2 Feb |   Fri   |  Pycharm
+| 29 Jan |   Mon   |  Conditionals              |                   | HW: [Boolean practice](homework/booleans.html)                    | HW: Math and Variables                  
+| 31 Jan |   Weds  |  Tracing I                 | Minecraft by Hand
+|  2 Feb |   Fri   |  Pycharm                   |                    |                                                  
 |                 
-|  5 Feb |   Mon   |  I/O                       |                                                  | HW: Boolean practice
-|  7 Feb |   Weds  |  More Conditionals<br>Quiz: Math and Variables         | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
-|  9 Feb |   Fri   |  The `while` loop
+|  5 Feb |   Mon   |  I/O                       |                    | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) | HW: Boolean Practice                           
+|  7 Feb |   Weds  |  More Conditionals         | Math and Variables | 
+|  9 Feb |   Fri   |  The `while` loop          |                    | Project 1: [Civic Assistance Q/A System](projects/project1.html) 
 |            
-| 12 Feb |   Mon   |  More `while` loop<br>Generative AI | Project 1: [Civic Assistance Q/A System](projects/project1.html) | HW: CodingBat Conditional and By Hand Tracing Practice              
-| 14 Feb |   Weds  |  Functions & Stack Tracing<br>Quiz: Booleans | HW: Loops I
-| 16 Feb |   Fri   |  Functions & Stack Tracing
+| 12 Feb |   Mon   |  More `while` loop<br>Generative AI |           | HW: Loops                                       | HW: CodingBat Conditional and By Hand Tracing Practice
+| 14 Feb |   Weds  |  Functions & Stack Tracing | Booleans
+| 16 Feb |   Fri   |  Functions & Stack Tracing |                    | HW: [Function Stack Tracing](homework/function-reading.html) | HW: Loops                                                              
 |
 | 19 Feb |   Mon   |  **Winter Break - No class**
-| 21 Feb |   Weds  |  Strings<br>Quiz: Tracing and Conditionals                   | HW: [Function Stack Tracing](homework/function-reading.html) | HW: Loops I
-| 23 Feb |   Fri   |  Strings and Loops         |                                                              | Project 1                           
+| 21 Feb |   Weds  |  Strings                   | Conditionals       |  
+| 23 Feb |   Fri   |  Strings and Loops         |                    |                                                              | Project 1                           
 |
-| 26 Feb |   Mon   |  Lists                     |                                                              | HW: Function Stack Tracing
-| 28 Feb |   Weds  |  List Processing Examples<br>Quiz: Loops  | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
-|  1 Mar |   Fri   |  Function Abstraction      |                                    
+| 26 Feb |   Mon   |  Lists                     |                    | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | HW: Function Stack Tracing
+| 28 Feb |   Weds  |  List Processing Examples  | Loops
+|  1 Mar |   Fri   |  Function Abstraction      |                    | Project 2: [Word Games](projects/project2.html)                                                                                  
 |
-|  4 Mar |   Mon   |  The `for` loop            | Project 2: [Word Games](projects/project2.html)              | HW: CodingBat String and Loop Practice
-|  6 Mar |   Weds  |  More `for` loop practice<br>Quiz: Function Stack Tracing  | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
+|  4 Mar |   Mon   |  The `for` loop            |                        | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html) | HW: CodingBat String and Loop Practice
+|  6 Mar |   Weds  |  More `for` loop practice  | Function Stack Tracing | 
 |  8 Mar |   Fri   |  Common loop patterns
 |
-| 11 Mar |   Mon   |  File I/O                  |                                                              | HW: CodingBat List and Loop Practice
-| 13 Mar |   Weds  |  More File I/O<br>Quiz: Strings and Loops             | HW: File I/O
+| 11 Mar |   Mon   |  File I/O                  |                        | HW: File I/O                        | HW: CodingBat List and Loop Practice
+| 13 Mar |   Weds  |  More File I/O             | Strings and Loops      | 
 | 15 Mar |   Fri   |  The Heap and Mutability   |                                                              | Project 2 
 |                                                                 
 | 18 Mar |   Mon   | **Spring Break - No class**
 | 20 Mar |   Weds  | **Spring Break - No class**
 | 22 Mar |   Fri   | **Spring Break - No class**
 |
-| 25 Mar |   Mon   | Dictionaries I             |                                                              | HW: File I/O
-| 27 Mar |   Weds  | Dictionaries II<br>Quiz: Lists and Loops            | HW: Dictionaries
-| 29 Mar |   Fri   | Final Project Discussion   | [Final project]({{site.baseurl}}/projects/project.html)
+| 25 Mar |   Mon   | Dictionaries I             |                        | HW: Dictionaries                                       | HW: File I/O
+| 27 Mar |   Weds  | Dictionaries II            | Lists and Loops        | 
+| 29 Mar |   Fri   | Final Project Discussion   |                        | [Final project]({{site.baseurl}}/projects/project.html)
 |
-|  1 Apr |   Mon   | Classes                    |                                                              | HW: Dictionaries
-|  3 Apr |   Weds  | Class/object examples (cake; car)<br>Quiz: File I/O | HW: Classes
+|  1 Apr |   Mon   | Classes                    |                        |     HW: Classes                                  | HW: Dictionaries
+|  3 Apr |   Weds  | Class/object examples (cake; car) | File I/O     
 |  5 Apr |   Fri   | Class/object examples (bookshelf) 
 |                                                            
 |  8 Apr |   Mon   | **Eclipse - No class**   
-| 10 Apr |   Weds  | PyGame animation<br>Quiz: Dictionaries           | HW: PyGame                                                   | HW: Classes
+| 10 Apr |   Weds  | PyGame animation           | Dictionaries | HW: PyGame                                                   | HW: Classes
 | 12 Apr |   Fri   | Classes and PyGame 
 |                                                              
-| 15 Apr |   Mon   | Recursion I                |                                                              | HW: PyGame
-| 17 Apr |   Weds  | Recursion II: Trees<br>Quiz: Classes        | HW: Recursion
-| 19 Apr |   Fri   | Recursion III: Applications|                                                              | [Final project]({{site.baseurl}}/projects/project.html): Progress Report
+| 15 Apr |   Mon   | Recursion I                |              | HW: Recursion                                          | HW: PyGame
+| 17 Apr |   Weds  | Recursion II: Trees        | 
+| 19 Apr |   Fri   | Recursion III: Applications|              |                                                | [Final project]({{site.baseurl}}/projects/project.html): Progress Report
 |
 | 22 Apr |   Mon   | Binary and Information Encoding|                                                           | HW: Recursion
-| 24 Apr |   Weds  | Project Workshop<br>Quiz: PyGame                                                                                               
+| 24 Apr |   Weds  | Project Workshop           | Classes |                                                                                    
 | 26 Apr |   Fri   | Retrospective    
 |                                                              
 |  3 May |   Fri 2:00-5:00 pm| Final Project Presentations                                                                                  |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            |
