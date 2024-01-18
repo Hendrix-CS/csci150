@@ -65,27 +65,27 @@ Upon completing this course, our goal is for you to be able to:
 |  2 Feb |   Fri   |  Pycharm
 |                 
 |  5 Feb |   Mon   |  I/O                       |                                                  | HW: Boolean practice
-|  7 Feb |   Weds  |  More Conditionals         | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
+|  7 Feb |   Weds  |  More Conditionals<br>Quiz: Math and Variables         | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html)
 |  9 Feb |   Fri   |  The `while` loop
 |            
 | 12 Feb |   Mon   |  More `while` loop<br>Generative AI | Project 1: [Civic Assistance Q/A System](projects/project1.html) | HW: CodingBat Conditional and By Hand Tracing Practice              
-| 14 Feb |   Weds  |  Functions & Stack Tracing | HW: Loops I
+| 14 Feb |   Weds  |  Functions & Stack Tracing<br>Quiz: Booleans | HW: Loops I
 | 16 Feb |   Fri   |  Functions & Stack Tracing
 |
 | 19 Feb |   Mon   |  **Winter Break - No class**
-| 21 Feb |   Weds  |  Strings                   | HW: [Function Stack Tracing](homework/function-reading.html) | HW: Loops I
+| 21 Feb |   Weds  |  Strings<br>Quiz: Tracing and Conditionals                   | HW: [Function Stack Tracing](homework/function-reading.html) | HW: Loops I
 | 23 Feb |   Fri   |  Strings and Loops         |                                                              | Project 1                           
 |
 | 26 Feb |   Mon   |  Lists                     |                                                              | HW: Function Stack Tracing
-| 28 Feb |   Weds  |  List Processing Examples  | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
+| 28 Feb |   Weds  |  List Processing Examples<br>Quiz: Loops  | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html)
 |  1 Mar |   Fri   |  Function Abstraction      |                                    
 |
 |  4 Mar |   Mon   |  The `for` loop            | Project 2: [Word Games](projects/project2.html)              | HW: CodingBat String and Loop Practice
-|  6 Mar |   Weds  |  More `for` loop practice  | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
+|  6 Mar |   Weds  |  More `for` loop practice<br>Quiz: Function Stack Tracing  | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html)
 |  8 Mar |   Fri   |  Common loop patterns
 |
 | 11 Mar |   Mon   |  File I/O                  |                                                              | HW: CodingBat List and Loop Practice
-| 13 Mar |   Weds  |  More File I/O             | HW: File I/O
+| 13 Mar |   Weds  |  More File I/O<br>Quiz: Strings and Loops             | HW: File I/O
 | 15 Mar |   Fri   |  The Heap and Mutability   |                                                              | Project 2 
 |                                                                 
 | 18 Mar |   Mon   | **Spring Break - No class**
@@ -93,23 +93,23 @@ Upon completing this course, our goal is for you to be able to:
 | 22 Mar |   Fri   | **Spring Break - No class**
 |
 | 25 Mar |   Mon   | Dictionaries I             |                                                              | HW: File I/O
-| 27 Mar |   Weds  | Dictionaries II            | HW: Dictionaries
+| 27 Mar |   Weds  | Dictionaries II<br>Quiz: Lists and Loops            | HW: Dictionaries
 | 29 Mar |   Fri   | Final Project Discussion   | [Final project]({{site.baseurl}}/projects/project.html)
 |
 |  1 Apr |   Mon   | Classes                    |                                                              | HW: Dictionaries
-|  3 Apr |   Weds  | Class/object examples (cake; car) | HW: Classes
+|  3 Apr |   Weds  | Class/object examples (cake; car)<br>Quiz: File I/O | HW: Classes
 |  5 Apr |   Fri   | Class/object examples (bookshelf) 
 |                                                            
 |  8 Apr |   Mon   | **Eclipse - No class**   
-| 10 Apr |   Weds  | PyGame animation           | HW: PyGame                                                   | HW: Classes
+| 10 Apr |   Weds  | PyGame animation<br>Quiz: Dictionaries           | HW: PyGame                                                   | HW: Classes
 | 12 Apr |   Fri   | Classes and PyGame 
 |                                                              
 | 15 Apr |   Mon   | Recursion I                |                                                              | HW: PyGame
-| 17 Apr |   Weds  | Recursion II: Trees        | HW: Recursion
+| 17 Apr |   Weds  | Recursion II: Trees<br>Quiz: Classes        | HW: Recursion
 | 19 Apr |   Fri   | Recursion III: Applications|                                                              | [Final project]({{site.baseurl}}/projects/project.html): Progress Report
 |
 | 22 Apr |   Mon   | Binary and Information Encoding|                                                           | HW: Recursion
-| 24 Apr |   Weds  | Project Workshop                                                                                               
+| 24 Apr |   Weds  | Project Workshop<br>Quiz: PyGame                                                                                               
 | 26 Apr |   Fri   | Retrospective    
 |                                                              
 |  3 May |   Fri 2:00-5:00 pm| Final Project Presentations                                                                                  |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            |
