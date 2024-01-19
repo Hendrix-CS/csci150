@@ -164,14 +164,14 @@ Each student begins the semester with **six tokens**.
                                          |          |          | <\!-- [Tracing Solutions](https://hendrix-my.sharepoint.com/:b:/g/personal/seme_hendrix_edu/EUz_HXO6PH1AtK7UOh4P9hMBax6AG-jKpSwj-VwR7SScfw?e=zneGLv) 
 -->
 There will often be short homework assignments to be completed,
-typically assigned on Wednesday and due Monday.  Homework with coding
-practice problems will be submitted electronically. By-hand homework
-should be submitted on physical paper at the start of class time --
-you can write (neatly) or type and print such solutions.
+typically assigned on Monday and due the following Monday.  Homework 
+with coding practice problems will be submitted electronically. 
+By-hand homework should be submitted on physical paper at the start 
+of class time -- you can write (neatly) or type and print such solutions.
 
 ## <a name="quizzes">Quizzes</a>
 
-A short quiz will be given at the start of class on most Wednesdays. Each 
+A short quiz will be given at the end of class on most Wednesdays. Each 
 quiz will contain one or more short problems that should be solvable within
 10 minutes. 
 
