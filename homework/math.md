@@ -2,10 +2,10 @@
 layout: generic
 ---
 
-CSCI 150 HW: Boolean Practice
+CSCI 150 HW: Math Practice
 -----------------------------
 
-*Due: Monday, February 5*
+*Due: Monday, January 29*
 
 To receive credit, for each exercise you should do the following:
 
@@ -21,17 +21,23 @@ To receive credit, for each exercise you should do the following:
    explain why the code works the way it does *and* what your
    misunderstanding(s) were in part 1.
 
-For each expression, decide whether it will evaluate to `True` or
-`False`.
+Some of the exercises use variables. Assume the variables have been initialized 
+as follows:
+```
+x = 7
+y = 3
+```
 
-1. `False and (True or False)`
-2. `(True and (not (False or False))) and (False or (True or False))`
-3. `3 ** 2 + 4 ** 2 == 5 ** 2`
-4. `50 < 99 / 3`
-5. `((1 < 2) and ("hi" > "there")) or (99 != 9)`
-6. `"egg" < "excellent"`
-7. `"arm" < "aardvark"`
-8. `False != (True != (False != (False != True)))`
+Exercises:
+`4 * 3`
+`7 / 2`
+`7 // 2`
+`7 % 2`
+`(x + 1) % 3`
+`10 - y * 2`
+`4 + x + 18 // y`
+`2 * (y + 4) + x`
+
 
 Your solution should be hand-written (or typed) and contain the following:
 

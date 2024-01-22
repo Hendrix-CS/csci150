@@ -56,7 +56,7 @@ Upon completing this course, our goal is for you to be able to:
 | 17 Jan |   Weds  |  Introduction to CS        |                   | [Survey](https://forms.gle/VLRVHjUAisWP5R9J8)
 | 19 Jan |   Fri   |  Algorithms and Errors     |                   | HW: [Minecraft by hand](homework/minecraft.html) | Survey
 |   
-| 22 Jan |   Mon   |  Python<br>Math & Variables|                   | HW: Math and Variables                           | HW: Minecraft by hand
+| 22 Jan |   Mon   |  Python<br>Math & Variables|                   | HW: [Math and Variables](homework/math.html)                           | HW: Minecraft by hand
 | 24 Jan |   Weds  |  Functions                 |           
 | 26 Jan |   Fri   |  Booleans                  |                   |                                                  
 |
