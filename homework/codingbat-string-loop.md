@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: CodingBat String Practice
 --------------------------------------
 
-Due: Monday, March 4*
+Due: *Monday, March 4*
 
 Consider the following exercises in CodingBat.
 
