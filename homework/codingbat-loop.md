@@ -14,8 +14,13 @@ Consider the following exercises in CodingBat.
 - [triple_minus_one](https://codingbat.com/prob/p284602)
 - [alternate_add](https://codingbat.com/prob/p278944)
 - [find_square_root](https://codingbat.com/prob/p247057)
+- [a_to_e](https://codingbat.com/prob/p269089)
+- [num_vowels](https://codingbat.com/prob/p266191)
+- [quadruple_minus_three](https://codingbat.com/prob/p257566)
+- [compound_interest](https://codingbat.com/prob/p284403)
+- [logarithm](https://codingbat.com/prob/p218022)
 
 
 ## Specifications
 
-- To be considered **complete** you must finish all five exercises.
+- To be considered **complete** you must finish at least **seven** of the above exercises.
