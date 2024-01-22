@@ -29,14 +29,14 @@ y = 3
 ```
 
 Exercises:
-`4 * 3`
-`7 / 2`
-`7 // 2`
-`7 % 2`
-`(x + 1) % 3`
-`10 - y * 2`
-`4 + x + 18 // y`
-`2 * (y + 4) + x`
+1. `4 * 3`
+2. `7 / 2`
+3. `7 // 2`
+4. `7 % 2`
+5. `(x + 1) % 3`
+6. `10 - y * 2`
+7. `4 + x + 18 // y`
+8. `2 * (y + 4) + x`
 
 
 Your solution should be hand-written (or typed) and contain the following:
