@@ -37,7 +37,7 @@ Exercises:
 6. `10 - y * 2`
 7. `4 + x + 18 // y`
 8. `2 * (y + 4) + x`
-
+9. `y**3 + x**2`
 
 Your solution should be hand-written (or typed) and contain the following:
 
