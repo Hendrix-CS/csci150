@@ -20,4 +20,5 @@ Consider the following exercises in CodingBat.
 
 ## Specifications
 
-- To be considered **complete** you must finish all seven exercises.
+- To be considered **complete** you must finish at least five exercises.
+  - For each exercise beyond five that you complete, you will earn one bonus token.
