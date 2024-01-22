@@ -119,7 +119,7 @@ You should turn in
     your project.
 
 ## Grading Criteria
-* A **Complete** project includes:
+* A **Level 2** project includes:
   * A design document submitted on-time and meeting the requirements given earlier.
   * A presentation lasting five to six minutes and consisting of four slides,
     meeting the criteria given above.
@@ -131,7 +131,7 @@ You should turn in
 	* No runtime errors, including those resulting from erroneous user input.
 	* No syntax errors.
 	* Instructor feedback is properly incorporated into the final program.
-* A **Partially Complete** project:
+* A **Level 1** project:
   * A design document is submitted.
   * A presentation lasting no more than six minutes and addresses at least
     some of the criteria given above.

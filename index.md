@@ -98,7 +98,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 |  1 Apr |   Mon   | Classes                    |                        |     HW: Classes                                  | HW: Dictionaries
 |  3 Apr |   Weds  | Class/object examples (cake; car) | File I/O     
-|  5 Apr |   Fri   | Class/object examples (bookshelf) 
+|  5 Apr |   Fri   | Class/object examples (bookshelf) |                 | | [Final project]({{site.baseurl}}/projects/project.html): Design Document
 |                                                            
 |  8 Apr |   Mon   | **Eclipse - No class**     |                        |                                                | HW: Classes (Slide under instructors's door)
 | 10 Apr |   Weds  | PyGame animation           | Dictionaries | HW: PyGame                                                   

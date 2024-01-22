@@ -91,12 +91,12 @@ You must hand in all files necessary to run your code.
 
 
 ## Grading Criteria
-* A **Partially Complete** project:
+* A **Level 1** project:
   * Explains the game to the user, making clear exactly what input
     is expected and valid whenever it requests information from them.
   * Enables the human player to play a word game to completion without any errors.
   * The word game is complex enough to employ at least **three** of the concepts from the list above.
-* A **Complete** project meets the criteria for **Partially Complete**, and meets the following additional criteria:
+* A **Level 2** project meets the criteria for **Level 1**, and meets the following additional criteria:
   * The word game is complex enough to employ at least **five** of the concepts from the list above.
   * Has at least three levels of difficulty.
   * Offers the chance to play the game again when finished.

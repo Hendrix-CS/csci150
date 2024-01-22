@@ -157,14 +157,14 @@ Get started early! Pick an idea and run it by us. We are happy to help you think
 
 ### Grading Criteria
 
-* A **Partially Complete** project:
+* A **Level 1** project:
   * Follows the above guidelines for user input and output.
   * Asks six distinct questions.
   * No runtime errors for any expected user input.
   * No syntax errors.
 
-* A **Complete** project:
-  * Meets all **Partially Complete** criteria.
+* A **Level 2** project:
+  * Meets all **Level 1** criteria.
   * Includes the Reflection described above.
   * No Pycharm style warnings -- exception: if your nested `if` statements cause a line to be too long, that is fine.
   * No grammatical or spelling errors.
