@@ -68,7 +68,7 @@ Upon completing this course, our goal is for you to be able to:
 |  7 Feb |   Weds  |  More Conditionals         | Math and Variables | 
 |  9 Feb |   Fri   |  The `while` loop          |                    | Project 1: [Civic Assistance Q/A System](projects/project1.html) 
 |            
-| 12 Feb |   Mon   |  More `while` loop<br>Generative AI |           | HW: [Loops](homework/codingbat-loops.html)                             | HW: CodingBat Conditional and By Hand Tracing Practice
+| 12 Feb |   Mon   |  More `while` loop<br>Generative AI |           | HW: [Loops](homework/codingbat-loop.html)                             | HW: CodingBat Conditional and By Hand Tracing Practice
 | 14 Feb |   Weds  |  Functions & Stack Tracing | Booleans
 | 16 Feb |   Fri   |  Functions & Stack Tracing |                    | HW: [Function Stack Tracing](homework/function-reading.html) |                                                          
 |
