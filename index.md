@@ -86,7 +86,7 @@ Upon completing this course, our goal is for you to be able to:
 |
 | 11 Mar |   Mon   |  File I/O                  |                        | HW: File I/O                        | HW: CodingBat List and Loop Practice
 | 13 Mar |   Weds  |  More File I/O             | Strings and Loops      | 
-| 15 Mar |   Fri   |  The Heap and Mutability   |                                                              | Project 2 
+| 15 Mar |   Fri   |  The Heap and Mutability   |                        |                                      | Project 2 
 |                                                                 
 | 18 Mar |   Mon   | **Spring Break - No class**
 | 20 Mar |   Weds  | **Spring Break - No class**
