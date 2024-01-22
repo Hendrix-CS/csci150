@@ -72,7 +72,7 @@ Upon completing this course, our goal is for you to be able to:
 | 14 Feb |   Weds  |  Functions & Stack Tracing | Booleans
 | 16 Feb |   Fri   |  Functions & Stack Tracing |                    | HW: [Function Stack Tracing](homework/function-reading.html) |                                                          
 |
-| 19 Feb |   Mon   |  **Winter Break - No class**|                   |               | HW: Loops (Slide under instructors's door)
+| 19 Feb |   Mon   |  **Winter Break - No class**|                   |               | HW: Loops
 | 21 Feb |   Weds  |  Strings                   | Conditionals       |  
 | 23 Feb |   Fri   |  Strings and Loops         |                    |                                                              | Project 1                           
 |

@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: Function Stack Tracing
 -----------------------------------------------
 
-*Due: Friday, September 29*
+*Due: Monday, February 26*
 
 To receive full credit, for each exercise you should do the following:
 
@@ -99,4 +99,3 @@ Your solution should be hand-written (or typed) and contain the following:
 ## Specifications
 
 - To be considered **complete** you must work each given problem, and you must have the correct answer (after step 2 if needed), along with correct explanations where appropriate.
-- An assignment will be considered **partial** provided each problem has been attempted and after step 2 all printed output is correct.

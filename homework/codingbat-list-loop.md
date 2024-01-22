@@ -5,11 +5,11 @@ layout: generic
 CSCI 150 HW: CodingBat List and Loop practice
 ---------------------------------------------
 
-*Due: Wednesday, October 11*
+*Due: Monday, March 11*
 
 Consider the following exercises in CodingBat.  Be
 sure to share your progress with me, by going to "prefs" and entering
-your instructor's email address (`yorgey@hendrix.edu`) in the "Teacher Share" box.
+your instructor's email address (`ferrer@hendrix.edu`) in the "Teacher Share" box.
 
 - [a_to_e](https://codingbat.com/prob/p269089)
 <!-- - [num_vowels](https://codingbat.com/prob/p266191)-->
@@ -26,4 +26,3 @@ your instructor's email address (`yorgey@hendrix.edu`) in the "Teacher Share" bo
 ## Specifications
 
 - To be considered **complete** you must finish at least 7 of the exercises.
-- To be considered **partial** you must finish at least 4 exercises, with an additional 3 attempted.

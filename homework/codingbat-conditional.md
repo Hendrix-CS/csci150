@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: CodingBat Conditional Practice and By-Hand Tracing
 -----------------------------------------------
 
-*Due: Wednesday, September 13*
+*Due: Monday, February 12*
 
 This homework set has two components:
 * CodingBat -- where you will write a bit of code (see below) and it will be automatically assessed
@@ -17,7 +17,7 @@ You will want to make an account on CodingBat. Please use your Hendrix email as 
 Please also keep up with your own password -- there is no way for me to recover it for you!
 
 Be sure to share your progress with me, by going to "prefs" and entering
-your instructor's email address (`yorgey@hendrix.edu`) in the "Teacher Share" box.
+your instructor's email address (`ferrer@hendrix.edu`) in the "Teacher Share" box.
 
 You should complete **at least 7** of the following:
 
@@ -62,4 +62,3 @@ by typing the code into a Python interpreter (i.e. Kaggle). Your by-hand work sh
 ## Specifications
 
 - To be considered **complete** you must finish at least 7 of the CodingBat exercises and all values in your tracing must match the correct final values.
-- To be considered **partial** you must finish at least 4 exercises, with an additional 3 attempted and at least one tracing problem has all correct final values.
