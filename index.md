@@ -7,9 +7,10 @@ layout: course-multi
 
 ## <a name="TAs">TA Office Hours</a>
 
-| Sunday      | Monday      | Tuesday    | Wednesday    | Thursday   |
-|-------------|-------------|------------|--------------|------------|
-| TBA   (7-9) | TBA   (6-8) | TBA  (6-8) | TBA    (6-8) | TBA  (7-9) |
+| Sunday       | Monday            | Tuesday    | Wednesday      |
+|--------------|-------------------|------------|----------------|
+| Ted (7-9)    | Leigh (3:30-5:30) | Ryan (6-9) | Madeline (7-9) |
+|              | Ryan (6-8)        |
 
 
 # <a name="description">Overview</a>
