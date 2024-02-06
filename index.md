@@ -115,7 +115,7 @@ Upon completing this course, our goal is for you to be able to:
 |                                                              
 |  3 May |   Fri 2:00-5:00 pm| Final Project Presentations     
 
-# Code from Lectures
+# <a name="code">Code from Lectures</a>
 
 * [`int` data, `float` data, and functions](https://www.kaggle.com/gabrielferrer/csci-150-s24-ints-floats-functions)                                                                       |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            
 * [Boolean Expressions](https://www.kaggle.com/gabrielferrer/csci-150-s24-boolean-expressions)

@@ -41,6 +41,8 @@ navigation:
     url: '#calendar'
   - title: Coursework
     subfolderitems:
+      - page: Code from Lectures
+        url: '#code'
       - page: Homework
         url: '#hw'
       - page: Quizzes
