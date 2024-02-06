@@ -113,7 +113,15 @@ Upon completing this course, our goal is for you to be able to:
 | 24 Apr |   Weds  | Project Workshop           | PyGame |                                                                                    
 | 26 Apr |   Fri   | Retrospective    
 |                                                              
-|  3 May |   Fri 2:00-5:00 pm| Final Project Presentations                                                                                  |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            |
+|  3 May |   Fri 2:00-5:00 pm| Final Project Presentations     
+
+# Code from Lectures
+
+* [`int` data, `float` data, and functions](https://www.kaggle.com/gabrielferrer/csci-150-s24-ints-floats-functions)                                                                       |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            
+* [Boolean Expressions](https://www.kaggle.com/gabrielferrer/csci-150-s24-boolean-expressions)
+* [`if` Examples](https://www.kaggle.com/gabrielferrer/csci-150-s24-if-examples)
+* [Input/Output]()
+
 
 <hr>
 # Coursework
