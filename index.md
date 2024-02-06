@@ -120,7 +120,12 @@ Upon completing this course, our goal is for you to be able to:
 * [`int` data, `float` data, and functions](https://www.kaggle.com/gabrielferrer/csci-150-s24-ints-floats-functions)                                                                       |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            
 * [Boolean Expressions](https://www.kaggle.com/gabrielferrer/csci-150-s24-boolean-expressions)
 * [`if` Examples](https://www.kaggle.com/gabrielferrer/csci-150-s24-if-examples)
-* [Input/Output]()
+* Input/Output
+  * [io_monday.py]({{site.baseurl}}/lectures/S24/io_monday.py)
+  * [io_monday_2.py]({{site.baseurl}}/lectures/S24/io_monday_2.py)
+  * [io_monday_if.py]({{site.baseurl}}/lectures/S24/io_monday_if.py)
+  * [io_monday_num.py]({{site.baseurl}}/lectures/S24/io_monday_num.py)
+  
 
 
 <hr>
