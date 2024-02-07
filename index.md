@@ -125,6 +125,8 @@ Upon completing this course, our goal is for you to be able to:
   * [io_monday_2.py]({{site.baseurl}}/lectures/S24/io_monday_2.py)
   * [io_monday_if.py]({{site.baseurl}}/lectures/S24/io_monday_if.py)
   * [io_monday_num.py]({{site.baseurl}}/lectures/S24/io_monday_num.py)
+  * [retirement.py]({{site.baseurl}}/lectures/S24/retirement.py)
+  * [voting.py]({{site.baseurl}}/lectures/S24/voting.py)
   
 
 
