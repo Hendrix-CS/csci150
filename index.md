@@ -127,7 +127,11 @@ Upon completing this course, our goal is for you to be able to:
   * [io_monday_num.py]({{site.baseurl}}/lectures/S24/io_monday_num.py)
   * [retirement.py]({{site.baseurl}}/lectures/S24/retirement.py)
   * [voting.py]({{site.baseurl}}/lectures/S24/voting.py)
-  
+* `while`
+  * [short_name.py]({{site.baseurl}}/lectures/S24/short_name.py)
+  * [average.py]({{site.baseurl}}/lectures/S24/average.py)
+  * [evens.py]({{site.baseurl}}/lectures/S24/evens.py)
+  * [conjecture.py]({{site.baseurl}}/lectures/S24/conjecture.py)
 
 
 <hr>
