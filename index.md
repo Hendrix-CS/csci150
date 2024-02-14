@@ -133,7 +133,7 @@ Upon completing this course, our goal is for you to be able to:
   * [evens.py]({{site.baseurl}}/lectures/S24/evens.py)
   * [conjecture.py]({{site.baseurl}}/lectures/S24/conjecture.py)
   * [pi_calc.py]({{site.baseurl}}/lectures/S24/pi_calc.py)
-
+  * [fuel.py]({{site.baseurl}}/lectures/S24/fuel.py)
 
 <hr>
 # Coursework
