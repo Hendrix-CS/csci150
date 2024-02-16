@@ -134,6 +134,7 @@ Upon completing this course, our goal is for you to be able to:
   * [conjecture.py]({{site.baseurl}}/lectures/S24/conjecture.py)
   * [pi_calc.py]({{site.baseurl}}/lectures/S24/pi_calc.py)
   * [fuel.py]({{site.baseurl}}/lectures/S24/fuel.py)
+  * [function_demo.py]({{site.baseurl}}/lectures/S24/function_demo.py)
 
 <hr>
 # Coursework
