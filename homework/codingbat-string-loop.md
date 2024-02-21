@@ -2,20 +2,17 @@
 layout: generic
 ---
 
-CSCI 150 HW: CodingBat String and Loop practice
------------------------------------------------
+CSCI 150 HW: CodingBat String Practice
+--------------------------------------
 
-*Due: Wednesday, October 4*
+Due: *Monday, March 4*
 
 Consider the following exercises in CodingBat.
 
-- [Factorial](https://codingbat.com/prob/p267310)
-- [Multiply_Odds](https://codingbat.com/prob/p252445)
-- [triple_minus_one](https://codingbat.com/prob/p284602)
-- [alternate_add](https://codingbat.com/prob/p278944)
-- [find_square_root](https://codingbat.com/prob/p247057)
 - [make_abba](https://codingbat.com/prob/p182144)
+- [a_to_e](https://codingbat.com/prob/p269089)
 - [make_out_word](https://codingbat.com/prob/p129981)
+- [num_vowels](https://codingbat.com/prob/p266191)
 - [without_end](https://codingbat.com/prob/p138533)
 - [combo_string](https://codingbat.com/prob/p194053)
 - [left_2](https://codingbat.com/prob/p160545)
@@ -23,5 +20,5 @@ Consider the following exercises in CodingBat.
 
 ## Specifications
 
-- To be considered **complete** you must finish at least 7 of the exercises.
-- To be considered **partial** you must finish at least 4 exercises, with an additional 3 attempted.
+- To be considered **complete** you must finish at least five exercises.
+  - For each exercise beyond five that you complete, you will earn one bonus token.

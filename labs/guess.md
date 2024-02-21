@@ -15,13 +15,9 @@ and instructions to help you along the way.
 
 ## Grading Criteria
 
-To receive credit, two Python (`.py`) files per pair must be submitted via CodeGrade.
-
-* A **Complete** submission includes:
-  * Correct function definitions for Steps 1, 2, 3, 4, and 5.
-  * No style warnings.
-* A **Partially Complete** submission includes:
-  * Correct function definitions for Steps 1, 2, and 3.
+To receive credit, each pair muust complete two Python (`.py`) files:
+* `guess_number.py` includes function definitions for Steps 1, 2, and 3.
+* `computer_guess.py` includes function definitions for Steps 4 and 5.
 
 ## Step 0: Getting started
 
@@ -68,7 +64,7 @@ Start by creating a file called `guess_number.py` and **paste
 the following code into it**:
 
     ######################################
-    # Copyright (c) 2023 YOUR NAME(s) HERE
+    # Copyright (c) 2024 YOUR NAME(s) HERE
     # CSCI 150, Spring 2023
     # Lab 4: Guess My Number
     ######################################

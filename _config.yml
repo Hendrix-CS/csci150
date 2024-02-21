@@ -26,7 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 number: CSCI 150
 title: Foundations of Computer Science
-semester: Fall 2023
+semester: Spring 2024
 
 navigation:
   - title: Overview
@@ -41,14 +41,16 @@ navigation:
     url: '#calendar'
   - title: Coursework
     subfolderitems:
+      - page: Code from Lectures
+        url: '#code'
       - page: Homework
-        url: '#hwqz'
+        url: '#hw'
+      - page: Quizzes
+        url: '#quizzes'
       - page: Labs
         url: '#labs'
       - page: Projects
         url: '#projects'
-      - page: Exams
-        url: '#exams'
       - page: Scale
         url: '#scale'
   - page: Commitments
@@ -72,26 +74,28 @@ instructors:
     web: http://mark.goadrich.com/
     phone: (501) 450-1367
     officehours: http://markgoadrich.youcanbook.me/
+  - id: ferrer
+    name: Dr. Gabriel Ferrer
+    email: ferrer@hendrix.edu
+    web: https://gjf2a.github.io/
+    phone: (501) 450-3879
+    officehours: https://drferrer.youcanbook.me/
 
 offerings:
   - name: LECTURE 01
     loc: M.C. Reynolds 110
     time: MWF 8:10am - 9:00am (A1)
-    instructor: yorgey
-  - name: LECTURE 02
-    loc: M.C. Reynolds 315
-    time: MWF 11:10am - 12:00pm (A4)
-    instructor: yorgey
+    instructor: ferrer
   - name: LAB L1
     loc: Bailey Lab
     time: W 1:10pm - 4:00pm (L8)
-    instructor: yorgey
+    instructor: ferrer
   - name: LAB L2
     loc: Bailey Lab
     time: R 1:10pm - 4:00pm (L9)
-    instructor: goadrich
+    instructor: yorgey
 
-submission: XXX CodeGrade
+#submission: XXX CodeGrade
 
 resources:
   - name: Python 3
@@ -103,9 +107,9 @@ resources:
   - name: Pycharm
     image: assets/images/pycharmlogo.png
     url: https://www.jetbrains.com/pycharm/
-  - name: CodeGrade
-    image: assets/images/codegrade_logo.png
-    url: https://app.codegra.de/
+  #- name: CodeGrade
+  #  image: assets/images/codegrade_logo.png
+  #  url: https://app.codegra.de/
 
 extra-resources:
   - name: CodingBat Python

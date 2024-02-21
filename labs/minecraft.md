@@ -17,7 +17,7 @@ character's actions in the virtual world Minecraft.
 * [Minecraft at Code.org][hourofcode]
 * Lab Partner
 
-[hourofcode]: https://studio.code.org/join/HZWYBP
+[hourofcode]: https://studio.code.org/join/LCFCJT
 
 ### Step 1
 
@@ -65,5 +65,3 @@ by clicking the link above, we can automatically track your progress.
 
 * To **Complete** the lab, finish all stages (other than the final "open-ended" stage)
   with the minimum number of blocks.
-* If all stages are finished, but some of them do not use the minimum number of blocks, it
-  is **Partially Complete**.
