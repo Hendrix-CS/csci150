@@ -44,28 +44,10 @@ English words, such as might be used in good society.
 
 (More details on the connection between Lewis Carroll and genetics can be found in an article by
 David B. Searls entitled
-[From *Jabberwocky* to Genome: Lewis Carroll and Computational Biology](http://www.liebertonline.com/doi/abs/10.1089/10665270152530881).
+[From *Jabberwocky* to Genome: Lewis Carroll and Computational Biology](http://www.liebertonline.com/doi/abs/10.1089/10665270152530881).)
 
 Our task for this lab is to create a Python program that lets a user play the Doublets game
 and enforces all the rules given above by Lewis Carroll.
-
-## Grading Criteria
-
-To receive credit, two assignment files per pair must be submitted via Teams.
-
-* A **Complete** submission includes:
-  * An Evaluation Document, `evaluation.txt`, containing:
-    * Pseudocode from Step 1
-    * Thoughtful answers to questions 4.1 and 4.2
-  * `doublets.py`
-    * Correctly implements all features from Step 2 and Step 3
-  * No Pycharm style warnings.
-* A **Partially Complete** submission includes:
-  * An Evaluation Document, `evaluation.txt`, containing:
-    * Pseudocode from Step 1
-  * `doublets.py`
-    * Correctly implements all features from Step 2
-	* Includes serious attempts at completing at least three of the requirements for Step 3.
 
 ### Step 1 - Develop Pseudocode
 
@@ -114,15 +96,14 @@ will always enter exactly what is expected.
     Solution path found in 4 steps.
     CAT -> CAB -> COB -> COG -> DOG
 
-Create a text file, `evaluation.txt`, which will serve as your Evaluation Document. You can create this file using PyCharm.
-Include your pseudocode in this file.
+Create a new Python file named `doublets.py` and write your pseudocode
+in some comments.
 
 ### Step 2 - Initial Implementation
 
 #### Step 2.1 - `swap_character()`
 
-Create a new Python file named `doublets.py`. Begin by writing the `swap_character()`
-function:
+Now begin by writing the `swap_character()` function:
 
 	def swap_character(word: str, where: int, updated: str) -> str:
 
@@ -335,34 +316,16 @@ in place:
 
 ### Step 4 - Play
 
-Once your program is working, try out some of the transformations below:
+Once your program is working, use it to create at least two puzzles,
+with solutions.  One puzzle should be between two four-letter words,
+requiring at least four steps; another puzzle should be between two
+five-letter words, requring at least five steps.  If you would like a
+challenge, you can try solving some of the puzzles below, and include
+your solutions:
 
 * FIRE -- HEAT
 * SLEEP -- DREAM
 * APE -- MAN
 * WHITE -- BLACK
 
-What is the minimum number of steps you can achieve for each?
-
-### Future Thoughts
-
-Your `doublets.py` program lets the user chose what character to change at each step,
-and then verifies that each new word is a valid word.
-
-##### Question 4.1:
-Can you think of a way to always find the minimum number of steps to transform one word to another?
-
-##### Question 4.2:
-How will you know if a path between two words can be found?
-
-Include your answers to these questions in the `Evaluation Document`.
-
-## What to Hand In
-
-Make sure you examine all of the style suggestions that PyCharm makes,
-and adjust your code accordingly.
-
-You must hand in:
-
-* `evaluation.txt` (containing pseudocode, and answers to "Future thoughts" questions 4.1 and 4.2)
-* `doublets.py`
+However, you are also welcome to create your own puzzles.
