@@ -122,8 +122,6 @@ the lab:
 * A **Complete** submission includes:
   * All steps complete.
   * No Pycharm style warnings.
-* A **Partially Complete** submission includes:
-  * All steps up to and including 4.1 complete.
 
 
 ## Step 1: Bits and Pieces
@@ -131,19 +129,21 @@ the lab:
 Create a new Python file called `todo_manager.py`, and put
 your name and date at the top.
 
+Also add the line `from typing import *` right below the name and date.
+
 Now follow the instructions below to write some functions you will
 need.
 
 #### 1.1 Turn a list into a string
 
-Write a function called `list_into_lines(items: list[str]) -> str`.
+Write a function called `list_into_lines(items: List[str]) -> str`.
 
 Given a list of strings, this function should create a single string
 that combines all of the strings from the list, putting a newline
 character (`\n`) between each string. For example:
 
 	>>> list_into_lines(['red', 'yellow', 'blue'])
-	'red\nyellow\nblue\n'
+	'red\nyellow\nblue'
 
 You can also test your function like this:
 
@@ -158,7 +158,7 @@ from class!
 
 #### 1.2 Print Numbered List
 
-Write a function called `print_numbered_list(items: list[str])`.
+Write a function called `print_numbered_list(items: List[str])`.
 
 This function should take a list of strings as input and `print` them
 out, one per line, with numbers in front of them.  For example, if
@@ -180,7 +180,7 @@ at the prompt, you should see the output shown above.
 
 #### 1.3 Get choice
 
-Write a function called `get_choice(prompt: str, choices: list[str]) -> int`.
+Write a function called `get_choice(prompt: str, choices: List[str]) -> int`.
 
 This function takes as input a prompt string and a list of
 choices, and returns an `int` corresponding to the
@@ -238,7 +238,7 @@ now, you can just copy and paste these functions into your program.
     # of strings, one per line; OR print a warning and return the empty
     # list if there is an error opening the file (e.g. if the file does
     # not exist).
-    def load_list_from_file(filename: str) -> list[str]:
+    def load_list_from_file(filename: str) -> List[str]:
         try:
             f = open(filename, 'r')
             lines = [l.rstrip() for l in f.readlines()]
@@ -337,11 +337,11 @@ new todo item, and replace the item at the index they chose.  (*Hint*:
 replacing an item should be only one line of code!  Look in your notes
 from class if you don't remember how to do it.)
 
-#### 4.4 search
+#### 4.4 find_all()
 
-You should first write a function
+Write a function
 <pre>
-def find_all(term: str, items: list[str]) -> list[str]:
+def find_all(term: str, items: List[str]) -> List[str]:
 </pre>
 which takes a search term and a list of items, and returns the list of
 only those items from the list which contain the search term.  You can
@@ -355,6 +355,8 @@ Test your function in the console: for example, you should get
 >>> find_all("ab", ["baby", "dog", "cat", "absolute", "table", "python"])
 ["baby", "absolute", "table"]
 </pre>
+
+#### 4.5 search
 
 Now implement the search menu choice: prompt the user what they want
 to search for, use `find_all` to get the todos that match
