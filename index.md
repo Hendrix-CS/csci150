@@ -137,6 +137,8 @@ Upon completing this course, our goal is for you to be able to:
   * [function_demo.py]({{site.baseurl}}/lectures/S24/function_demo.py)
 * Loops with strings and lists
   * [indexing.py]({{site.baseurl}}/lectures/S24/indexing.py)
+* Function abstraction
+  * [math_test.py]({{site.baseurl}}/lectures/S24/math_test.py)
 
 <hr>
 # Coursework
