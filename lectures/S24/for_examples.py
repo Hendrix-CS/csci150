@@ -31,7 +31,6 @@ def ascending_2(nums: List[int]) -> bool:
 
 def lines_with(filename: str, target: str) -> List[str]:
     with open(filename) as file_handle:
-        file_handle = open(filename)
         result = []
         for line in file_handle:
             if target in line:
