@@ -140,7 +140,8 @@ Upon completing this course, our goal is for you to be able to:
   * [money.py]({{site.baseurl}}/lectures/S24/money.py)
 * Function abstraction
   * [math_test.py]({{site.baseurl}}/lectures/S24/math_test.py)
-
+* `for` loops
+  * [for_examples.py]({{site.baseurl}}/lectures/S24/for_examples.py)
 <hr>
 # Coursework
 
