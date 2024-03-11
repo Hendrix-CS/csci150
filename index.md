@@ -85,7 +85,7 @@ Upon completing this course, our goal is for you to be able to:
 |  6 Mar |   Weds  |  More `for` loop practice  | Function Stack Tracing | 
 |  8 Mar |   Fri   |  Common loop patterns
 |
-| 11 Mar |   Mon   |  File I/O                  |                        | HW: File I/O                        | HW: CodingBat List and Loop Practice
+| 11 Mar |   Mon   |  File I/O                  |                        | HW: [File I/O]({{site.baseurl}}/homework/file.html)                        | HW: CodingBat List and Loop Practice
 | 13 Mar |   Weds  |  More File I/O             | Strings and Loops      | 
 | 15 Mar |   Fri   |  The Heap and Mutability   |                        |                                      | Project 2 
 |                                                                 
@@ -142,6 +142,8 @@ Upon completing this course, our goal is for you to be able to:
   * [math_test.py]({{site.baseurl}}/lectures/S24/math_test.py)
 * `for` loops
   * [for_examples.py]({{site.baseurl}}/lectures/S24/for_examples.py)
+* File examples
+  * [Kaggle](https://www.kaggle.com/code/markgoadrich/notebooke88a77bba6)
 <hr>
 # Coursework
 
