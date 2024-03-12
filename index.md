@@ -144,6 +144,8 @@ Upon completing this course, our goal is for you to be able to:
   * [for_examples.py]({{site.baseurl}}/lectures/S24/for_examples.py)
 * File examples
   * [Kaggle](https://www.kaggle.com/code/markgoadrich/notebooke88a77bba6)
+  * [cash_register.py]({{site.baseurl}}/lectures/S24/cash_register.py)
+  * [cash_analyzer.py]({{site.baseurl}}/lectures/S24/cash_analyzer.py)
 <hr>
 # Coursework
 
