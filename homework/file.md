@@ -1,5 +1,9 @@
-CSCI 150 HW: File I/O
---------------------------------------
+---
+layout: work
+type: Homework
+num: 9
+worktitle: File I/O
+---
 
 Write two functions:
 1. The first function, `list_output()`, should write each element of a list to a separate line of a file.
