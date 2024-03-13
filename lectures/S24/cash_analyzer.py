@@ -1,5 +1,6 @@
 from typing import *
 
+
 def read_file_data(filename: str) -> Tuple[List[str], List[int], List[int]]:
     names = []
     prices = []
@@ -32,6 +33,11 @@ def main():
             for q in quantities:
                 total += q
             print(f"Total items sold: {total}")
-
+        elif request == 'popular':
+            most_popular = 0
+            for i in range(1, len(quantities)):
+                if quantities[i] > quantities[most_popular]:
+                    most_popular = i
+            print(f"Most popular item: Sold {quantities[most_popular]} of {names[most_popular]}.")
 
 main()
