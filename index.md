@@ -146,6 +146,8 @@ Upon completing this course, our goal is for you to be able to:
   * [Kaggle](https://www.kaggle.com/code/markgoadrich/notebooke88a77bba6)
   * [cash_register.py]({{site.baseurl}}/lectures/S24/cash_register.py)
   * [cash_analyzer.py]({{site.baseurl}}/lectures/S24/cash_analyzer.py)
+  * [file_read_demo.py]({{site.baseurl}}/lectures/S24/file_read_demo.py)
+  * [readlines_demo.py]({{site.baseurl}}/lectures/S24/readlines_demo.py)
 * Dictionary examples
   * [dictionary_examples.py]({{site.baseurl}}/lectures/S24/dictionary_examples.py)
 <hr>
