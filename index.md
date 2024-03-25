@@ -117,8 +117,8 @@ Upon completing this course, our goal is for you to be able to:
 
 # <a name="code">Code from Lectures</a>
 
-* [`int` data, `float` data, and functions](https://www.kaggle.com/gabrielferrer/csci-150-s24-ints-floats-functions)                                                                       |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            
 * [Boolean Expressions](https://www.kaggle.com/gabrielferrer/csci-150-s24-boolean-expressions)
+* [`int` data, `float` data, and functions](https://www.kaggle.com/gabrielferrer/csci-150-s24-ints-floats-functions)                                                                       |                                                                                                                                    |                                                                                                                                    |                                                                                                                                                                                                                                                                                                                            
 * [`if` Examples](https://www.kaggle.com/gabrielferrer/csci-150-s24-if-examples)
 * Input/Output
   * [io_monday.py]({{site.baseurl}}/lectures/S24/io_monday.py)
@@ -146,6 +146,8 @@ Upon completing this course, our goal is for you to be able to:
   * [Kaggle](https://www.kaggle.com/code/markgoadrich/notebooke88a77bba6)
   * [cash_register.py]({{site.baseurl}}/lectures/S24/cash_register.py)
   * [cash_analyzer.py]({{site.baseurl}}/lectures/S24/cash_analyzer.py)
+* Dictionary examples
+  * [dictionary_examples.py]({{site.baseurl}}/lectures/S24/dictionary_examples.py)
 <hr>
 # Coursework
 

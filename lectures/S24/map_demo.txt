@@ -1,0 +1,6 @@
+entrance,yard,living room
+yard,entrance,backyard
+living room,dining room,kitchen
+kitchen,living room,backyard,dining room
+backyard,kitchen,yard
+dining room,living room,kitchen
