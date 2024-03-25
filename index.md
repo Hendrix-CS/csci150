@@ -93,7 +93,7 @@ Upon completing this course, our goal is for you to be able to:
 | 20 Mar |   Weds  | **Spring Break - No class**
 | 22 Mar |   Fri   | **Spring Break - No class**
 |
-| 25 Mar |   Mon   | Dictionaries I             |                        | HW: Dictionaries                                       | HW: File I/O
+| 25 Mar |   Mon   | Dictionaries I             |                        | HW: [Dictionaries]({{site.baseurl}}/homework/dictionary.html)                                       | HW: File I/O
 | 27 Mar |   Weds  | Dictionaries II            | Lists and Loops        | 
 | 29 Mar |   Fri   | Final Project Discussion   |                        | [Final project]({{site.baseurl}}/projects/final.html)
 |
