@@ -74,3 +74,52 @@ def build_map(filename: str) -> Dict[str,List[str]]:
             locations = line.strip().split(',')
             map[locations[0]] = locations[1:]
         return map
+
+
+def bartender():
+    tabs = {}
+    command = ""
+    while command != 'quit':
+        print("1: Input a transaction")
+        print("2: Check out")
+        print("3: List all tabs")
+        command = input("Enter number or 'quit' to exit")
+        if command == '1':
+            record_tab(tabs)
+        elif command == '2':
+            check_out(tabs)
+        elif command == '3':
+            display_tabs(tabs)
+
+
+def record_tab(tabs: Dict[str,int]):
+    customer = input("Enter name: ")
+    cost = int(input("Cost of drink, in cents: "))
+    if customer in tabs:
+        tabs[customer] += cost
+    else:
+        tabs[customer] = cost
+
+
+def check_out(tabs: Dict[str,int]):
+    customer = input("Enter name: ")
+    if customer in tabs:
+        print(f"{customer} owes {tabs[customer]} cents.")
+        money = int(input(f"How much money did {customer} pay? "))
+        if money < tabs[customer]:
+            tabs[customer] -= money
+            print(f"{customer} still owes {tabs[customer]} cents.")
+        else:
+            change = money - tabs[customer]
+            tabs.pop(customer)
+            if change == 0:
+                print(f"{customer} has settled up exactly.")
+            else:
+                print(f"Hand {customer} {change} cents back.")
+    else:
+        print(f"{customer} does not have a tab")
+
+
+def display_tabs(tabs: Dict[str, int]):
+    for customer in tabs:
+        print(f"{customer}: {tabs[customer]}")
