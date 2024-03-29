@@ -3,7 +3,7 @@ layout: work
 type: Project
 num: 3
 worktitle: Final Project
-designdue: Friday, April 5
+designdue: Friday, April 12
 finaldue: Friday, May 3
 ---
 
