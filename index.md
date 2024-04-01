@@ -97,7 +97,7 @@ Upon completing this course, our goal is for you to be able to:
 | 27 Mar |   Weds  | Dictionaries II            | Lists and Loops        | 
 | 29 Mar |   Fri   | Final Project Discussion   |                        | [Final project]({{site.baseurl}}/projects/final.html)
 |
-|  1 Apr |   Mon   | Classes                    |                        |     HW: Classes                                  | HW: Dictionaries
+|  1 Apr |   Mon   | Classes                    |                        |     HW: [Classes]({{site.baseurl}}/homework/class-design.html)                                  | HW: Dictionaries
 |  3 Apr |   Weds  | Class/object examples (cake; car) | File I/O     
 |  5 Apr |   Fri   | Class/object examples (bookshelf) |                 | | [Final project]({{site.baseurl}}/projects/final.html): Design Document
 |                                                            

@@ -1,7 +1,9 @@
-CSCI 150 HW: class design practice
---------------------------------------------------------------
-
-*Due: Wednesday, November 13*
+--
+layout: work
+type: Homework
+num: 11
+worktitle: Classes
+---
 
 To receive full credit, for each exercise you should do the following:
 
