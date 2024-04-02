@@ -103,7 +103,7 @@ Upon completing this course, our goal is for you to be able to:
 |                                                            
 |  8 Apr |   Mon   | **Eclipse - No class**     |                        |                                                | HW: Classes (Slide under instructors's door)
 | 10 Apr |   Weds  | PyGame animation           | Dictionaries | HW: PyGame                                                   
-| 12 Apr |   Fri   | Classes and PyGame         |              | [Final project]({{site.baseurl}}/projects/final.html): Design Document
+| 12 Apr |   Fri   | Classes and PyGame         |              |         | [Final project]({{site.baseurl}}/projects/final.html): Design Document
 |                                                              
 | 15 Apr |   Mon   | Recursion I                |              | HW: Recursion                                          | HW: PyGame
 | 17 Apr |   Weds  | Recursion II: Trees        | Classes      |
