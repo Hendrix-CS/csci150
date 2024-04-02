@@ -150,6 +150,10 @@ Upon completing this course, our goal is for you to be able to:
   * [readlines_demo.py]({{site.baseurl}}/lectures/S24/readlines_demo.py)
 * Dictionary examples
   * [dictionary_examples.py]({{site.baseurl}}/lectures/S24/dictionary_examples.py)
+* Classes
+  * [cash_analyzer_2.py]({{site.baseurl}}/lectures/S24/cash_analyzer_2.py)
+  * [cash_analyzer_3.py]({{site.baseurl}}/lectures/S24/cash_analyzer_3.py)
+  * [student.py]({{site.baseurl}}/lectures/S24/student.py)
 <hr>
 # Coursework
 
