@@ -154,6 +154,7 @@ Upon completing this course, our goal is for you to be able to:
   * [cash_analyzer_2.py]({{site.baseurl}}/lectures/S24/cash_analyzer_2.py)
   * [cash_analyzer_3.py]({{site.baseurl}}/lectures/S24/cash_analyzer_3.py)
   * [student.py]({{site.baseurl}}/lectures/S24/student.py)
+  * [student_app.py]({{site.baseurl}}/lectures/S24/student_app.py)
 <hr>
 # Coursework
 
