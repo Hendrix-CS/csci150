@@ -258,10 +258,3 @@ Here is an example run for your program to emulate:
 You never know when a Python class could save your life.  And
 remember, "Think fast, Look alive, Die hard."
 
-## What to Hand In
-
-You must hand in:
-
-  * `waterjug.py`
-  * `step2.py`
-  * `step3.py`

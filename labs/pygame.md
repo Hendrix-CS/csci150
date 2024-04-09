@@ -9,16 +9,6 @@ worktitle: Graphics and Animation
 
 * [Pygame](https://www.pygame.org/)
 
-## Grading Criteria
-
-* A **Complete** submission includes:
-  * All 4 steps complete.
-  * In Steps 1.3 and 2.1, the designed face includes
-    numerous interesting elements beyond the provided
-	example.
-* A **Partially Complete** submission includes:
-  * Steps 1, 2, and 3.1 complete.
-
 ## Overview
 
 For today's lab, you'll need PyGame. To download and install it on your
@@ -363,7 +353,3 @@ Right now all the `Face`s pass through each other when they move.
 Add a collision detection method that checks each pair of faces to see if they
 are intersecting, and if so, makes them bounce off of each other.
 
-
-## What to Hand In
-
-Submit `face1.py` and `face2.py` via CodeGrade.
