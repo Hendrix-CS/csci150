@@ -102,7 +102,7 @@ Upon completing this course, our goal is for you to be able to:
 |  5 Apr |   Fri   | Class/object examples (bookshelf) |                 | | 
 |                                                            
 |  8 Apr |   Mon   | **Eclipse - No class**     |                        |                                                | HW: Classes (Slide under instructors's door)
-| 10 Apr |   Weds  | PyGame animation           | Dictionaries | HW: PyGame                                                   
+| 10 Apr |   Weds  | PyGame animation           | Dictionaries | HW: [PyGame]({{site.baseurl}}/homework/pygame.html)
 | 12 Apr |   Fri   | Classes and PyGame         |              |         | [Final project]({{site.baseurl}}/projects/final.html): Design Document
 |                                                              
 | 15 Apr |   Mon   | Recursion I                |              | HW: Recursion                                          | HW: PyGame
@@ -155,6 +155,7 @@ Upon completing this course, our goal is for you to be able to:
   * [cash_analyzer_3.py]({{site.baseurl}}/lectures/S24/cash_analyzer_3.py)
   * [student.py]({{site.baseurl}}/lectures/S24/student.py)
   * [student_app.py]({{site.baseurl}}/lectures/S24/student_app.py)
+  * [2025-04-05-Book-Class-Example.py]({{site.baseurl}}/lectures/S24/2025-04-05-Book-Class-Example.py)
 <hr>
 # Coursework
 
