@@ -156,6 +156,8 @@ Upon completing this course, our goal is for you to be able to:
   * [student.py]({{site.baseurl}}/lectures/S24/student.py)
   * [student_app.py]({{site.baseurl}}/lectures/S24/student_app.py)
   * [2025-04-05-Book-Class-Example.py]({{site.baseurl}}/lectures/S24/2025-04-05-Book-Class-Example.py)
+* Pygame
+  * [pygame_demo.py]({{site.baseurl}}/lectures/S24/pygame_demo.py)
 <hr>
 # Coursework
 
