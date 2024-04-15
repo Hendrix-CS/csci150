@@ -105,7 +105,7 @@ Upon completing this course, our goal is for you to be able to:
 | 10 Apr |   Weds  | PyGame animation           | Dictionaries | HW: [PyGame]({{site.baseurl}}/homework/pygame.html)
 | 12 Apr |   Fri   | Classes and PyGame         |              |         | [Final project]({{site.baseurl}}/projects/final.html): Design Document
 |                                                              
-| 15 Apr |   Mon   | Recursion I                |              | HW: Recursion                                          | HW: PyGame
+| 15 Apr |   Mon   | Recursion I                |              | HW: [Recursion]({{site.baseurl}}/homework/recursion.html) | HW: PyGame
 | 17 Apr |   Weds  | Recursion II: Trees        | Classes      |
 | 19 Apr |   Fri   | Recursion III: Applications|              |                                                | [Final project]({{site.baseurl}}/projects/final.html): Progress Report
 |

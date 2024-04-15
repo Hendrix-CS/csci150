@@ -1,8 +1,6 @@
 CSCI 150 HW: recursion
 --------------------------------------------------------------
 
-*Due: Wednesday, November 14*
-
 To receive full credit, for each exercise you should do the following:
 
 1. **Design**: First, write a Python function as requested in the
@@ -21,13 +19,12 @@ To receive full credit, for each exercise you should do the following:
 You should consider the code in each exercise separately from the
 other exercises.
 
-1. Recall that on the second exam, you were asked to write a function
-   `logarithm(b,n)`, which counts how many times `n` has to be divided
-   by `b` before falling below `b`:
+1. Consider the function `logarithm(b,n)` given below, which counts how many 
+  times `n` has to be divided by `b` before falling below `b`:
 
     ``` python
     def logarithm(b: float, n: float) -> int:
-        count: int = 0
+        count = 0
         while n >= b:
             count += 1
             n /= b
