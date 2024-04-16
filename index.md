@@ -158,6 +158,8 @@ Upon completing this course, our goal is for you to be able to:
   * [2025-04-05-Book-Class-Example.py]({{site.baseurl}}/lectures/S24/2025-04-05-Book-Class-Example.py)
 * Pygame
   * [pygame_demo.py]({{site.baseurl}}/lectures/S24/pygame_demo.py)
+* Recursion
+  * [recursion.py]({{site.baseurl}}/lectures/S24/recursion.py)
 <hr>
 # Coursework
 
