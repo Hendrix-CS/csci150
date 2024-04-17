@@ -109,8 +109,8 @@ Upon completing this course, our goal is for you to be able to:
 | 17 Apr |   Weds  | Recursion II: Trees        | Classes      |
 | 19 Apr |   Fri   | Recursion III: Applications|              |                                                | [Final project]({{site.baseurl}}/projects/final.html): Progress Report
 |
-| 22 Apr |   Mon   | Binary and Information Encoding|           |                                                | HW: Recursion
-| 24 Apr |   Weds  | Project Workshop           | PyGame |                                                                                    
+| 22 Apr |   Mon   | Binary and Information Encoding|          |                                                | HW: Recursion
+| 24 Apr |   Weds  | Project Workshop           |              |                                                                                    
 | 26 Apr |   Fri   | Retrospective    
 |                                                              
 |  3 May |   Fri 2:00-5:00 pm| Final Project Presentations     
@@ -337,10 +337,10 @@ category of assignment, there are three levels of mastery: **Basic**, **Intermed
 * **Advanced**: Complete all 12 labs, no unexcused absences
 
 ### Homework/Quizzes
-Out of 13 homeworks and 12 quizzes (25 total assignments):
-* **Basic**: Complete 13 homeworks and quizzes
-* **Intermediate**: Complete 18 homeworks and quizzes
-* **Advanced**: Complete 23 homeworks and quizzes
+Out of 13 homeworks and 11 quizzes (24 total assignments):
+* **Basic**: Complete 12 homeworks and quizzes
+* **Intermediate**: Complete 17 homeworks and quizzes
+* **Advanced**: Complete 22 homeworks and quizzes
 
 ### Projects
 There are two levels for each project. The final project counts as two projects. Add up total project levels completed:
