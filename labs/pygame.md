@@ -24,6 +24,16 @@ computer:
 
 <img src="https://hendrix-cs.github.io{{site.baseurl}}/assets/images/pygame_install.png" width=500>
 
+### Alternative PyGame installation
+
+If the above approach does not work, try this:
+* Go to the `View` menu.
+* From the `Tool Windows` menu, select `Python Packages`
+* When the search bar opens up, type `pygame`.
+* An underlined `install` text should appear near it. Click on it, and it should install PyGame.
+
+<img src="https://hendrix-cs.github.io{{site.baseurl}}/assets/images/pycharm_python_packages.png" width=500>
+
 
 <!-- For today's lab, you'll need PyGame 2.2.0. To download and install it on your -->
 <!-- computer: -->
