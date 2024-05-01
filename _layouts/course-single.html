@@ -30,6 +30,14 @@ layout: default
           </div>
         </div>
 
+        {% if site.jumbourl %}
+        <div class="row">
+          <div class="col-md-12 text-center small">
+            <p>background image from <a href="{{ site.jumbourl }}">{{ site.jumbotext }}</a></p>
+          </div>
+        </div>
+        {% endif %}
+
       </div>
     </section>
 
