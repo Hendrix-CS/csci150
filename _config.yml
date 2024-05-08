@@ -26,7 +26,7 @@ url: "https://hendrix-cs.github.io" # the base hostname & protocol for your site
 
 number: CSCI 150
 title: Foundations of Computer Science
-semester: Spring 2024
+semester: Fall 2024
 hypothesis: false
 
 jumbotext: slidebackground.com
@@ -88,6 +88,10 @@ instructors:
 offerings:
   - name: LECTURE 01
     loc: M.C. Reynolds 110
+    time: MWF 11:10am - 12:00pm (A4)
+    instructor: seme
+  - name: LECTURE 02
+    loc: M.C. Reynolds 110
     time: MWF 8:10am - 9:00am (A1)
     instructor: ferrer
   - name: LAB L1
@@ -99,8 +103,6 @@ offerings:
     time: R 1:10pm - 4:00pm (L9)
     instructor: yorgey
 
-#submission: XXX CodeGrade
-
 resources:
   - name: Python 3
     image: assets/images/pythonlogo.png
@@ -111,9 +113,6 @@ resources:
   - name: Pycharm
     image: assets/images/pycharmlogo.png
     url: https://www.jetbrains.com/pycharm/
-  #- name: CodeGrade
-  #  image: assets/images/codegrade_logo.png
-  #  url: https://app.codegra.de/
 
 extra-resources:
   - name: CodingBat Python
