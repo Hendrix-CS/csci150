@@ -98,7 +98,7 @@ Upon completing this course, our goal is for you to be able to:
 |  6 Nov |   Weds  | Class/object examples (cake; car) | File I/O     
 |  8 Nov |   Fri   | Class/object examples (bookshelf) |                 | | 
 |                                                            
-| 11 Nov |   Mon   | PyGame animation           |                        |                                                | HW: Classes (Slide under instructors's door)
+| 11 Nov |   Mon   | PyGame animation           |                        |                                                | HW: Classes
 | 13 Nov |   Weds  | Classes and PyGame         | Dictionaries | HW: [PyGame]({{site.baseurl}}/homework/pygame.html)
 | 15 Nov |   Fri   | Classes and PyGame         |              |         | [Final project]({{site.baseurl}}/projects/final.html): Design Document
 |                                                              
@@ -303,17 +303,17 @@ From the three projects, 18 total credits are available:
 ### Final Course Grade
 * To earn an A in the course, a student will:
   * Complete the course survey.
-  * Achieve **Advanced** in every category
+  * Achieve **Advanced** in all three categories
 * To earn a B in the course, a student will:
   * Complete the course survey.
-  * Achieve at least **Intermediate** in two categories.
-  * Achieve **Advanced** in the third category.
+  * Achieve at least **Intermediate** in all three categories.
+  * Achieve **Advanced** in at least one category.
 * To earn a C in the course, a student will:
   * Complete the course survey
   * Achieve at least **Basic** in all three categories.
-  * One of:
-    * Achieve **Advanced** in one category.
-    * Achieve **Intermediate** in two categories.
+  * Achieve one of:
+    * **Advanced** in at least one category.
+    * **Intermediate** in at least two categories.
 * To earn a D in the course, a student will:
   * Achieve at least **Basic** in all three categories.
 
