@@ -177,8 +177,8 @@ electronically. By-hand homework should be submitted on physical paper at
 the start of class time -- you can write (neatly) or type and print such 
 solutions.
 
-Each correct homework earns one credit. Submitting a homework on time earns
-an additional credit. If a homework is incorrect and does not receive credit,
+Each correct homework earns **one credit**. Submitting a homework **on time** earns
+**one additional credit**. If a homework is incorrect and does not receive credit,
 a student who wishes to revise the homework will be expected to visit office 
 hours for feedback prior to submitting the revision.
 
@@ -189,9 +189,9 @@ quiz will contain one or more short problems that should be solvable within
 10 minutes. 
 
 Quizzes are scored as follows:
-* 2 credits: All answers correct
-* 1 credit: At least some answers correct
-* 0 credits: No answers correct
+* **2 credits**: All answers correct
+* **1 credit**: At least some answers correct
+* **0 credits**: No answers correct
 
 A student may retake a given quiz twice. For each retake, the student must
 schedule an office hours appointment. Prior to the appointment, the student
@@ -240,7 +240,8 @@ require additional time beyond the lab period to complete the lab, either the in
 remaining milestones during office hours. You can then submit the completed checklist to the instructor at the start of 
 the next lab.
 
-Each completed lab earns one credit. Submitting the completed checklist by the start of the next lab earns one additional credit.
+Each completed lab earns **one credit**. Submitting the completed checklist by the start of the next lab earns 
+**one additional credit**.
 
 You will work with a partner on each lab assignment. Each partner will have their own milestone checklist. If they do not 
 complete the milestones during the lab period, they should find time outside of lab to work together to complete them. If 
@@ -266,10 +267,11 @@ You will have three projects in this course. These projects will cover concepts 
 | 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  |  1 Nov   | 13 Dec |
 
 Each project will be assessed as **Level 1 Complete** or **Level 2 Complete**, with criteria specified individually
-for each project. Projects earn credits as follows:
+for each project. Note that the final project must be submitted on-time to earn credit - no final projects
+will be accepted late. Projects earn **credits** as follows:
 
 | Project | Level 1 Credit | Level 2 Credit | On-time Bonus | Maximum Credit |
-| ------- | ---------      | ----------     | ------------- | -------------- |
+| ------: | ---------:     | ----------:    | ------------: | -------------: |
 | 1       | 2              | 4              | 1             | 5              |
 | 2       | 2              | 4              | 1             | 5              |
 | 3       | 4              | 8              | None          | 8              |
