@@ -177,10 +177,11 @@ electronically. By-hand homework should be submitted on physical paper at
 the start of class time -- you can write (neatly) or type and print such 
 solutions.
 
-Each correct homework earns **one credit**. Submitting a homework **on time** earns
-**one additional credit**. If a homework is incorrect and does not receive credit,
-a student who wishes to revise the homework will be expected to visit office 
-hours for feedback prior to submitting the revision.
+Each correct homework earns **one credit**. Submitting a sincere attempt at 
+completing the homework **on time** earns **one additional credit**. If a 
+homework is incorrect and does not receive credit, a student who wishes to 
+revise the homework will be expected to visit office hours for feedback 
+prior to submitting the revision.
 
 ## <a name="quizzes">Quizzes</a>
 
