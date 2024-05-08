@@ -107,8 +107,8 @@ Upon completing this course, our goal is for you to be able to:
 | 22 Nov |   Fri   | Recursion III: Applications|              |                                                | [Final project]({{site.baseurl}}/projects/final.html): Progress Report
 |
 | 25 Nov |   Mon   | Binary and Information Encoding|          |                                                | HW: Recursion
-| 27 Nov |   Wed   | ** Thanksgiving - No class**
-| 29 Nov |   Wed   | ** Thanksgiving - No class**
+| 27 Nov |   Wed   | **Thanksgiving - No class**
+| 29 Nov |   Wed   | **Thanksgiving - No class**
 |
 |  2 Dec |   Mon   | Project Workshop           |              |                                                                                    
 |  4 Dec |   Fri   | Project Workshop    
@@ -239,6 +239,8 @@ require additional time beyond the lab period to complete the lab, either the in
 remaining milestones during office hours. You can then submit the completed checklist to the instructor at the start of 
 the next lab.
 
+Each completed lab earns one credit. Submitting the completed checklist by the start of the next lab earns one additional credit.
+
 You will work with a partner on each lab assignment. Each partner will have their own milestone checklist. If they do not 
 complete the milestones during the lab period, they should find time outside of lab to work together to complete them. If 
 they are unable to do so, only the instructor is authorized to record milestones for students working alone.
@@ -258,12 +260,19 @@ You will have three projects in this course. These projects will cover concepts 
 
 | # | Name                                                                   | Assigned | Due    |
 |:-:|------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) |  9 Feb   | 23 Feb |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  |  1 Mar   | 15 Mar |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  | 29 Mar   |  3 May |
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 20 Sep   |  4 Oct |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  | 11 Oct   | 25 Oct |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  |  1 Nov   | 13 Dec |
 
 Each project will be assessed as **Level 1 Complete** or **Level 2 Complete**, with criteria specified individually
-for each project.
+for each project. Projects earn credits as follows:
+
+| Project | Level 1 Credit | Level 2 Credit | On-time Bonus | Maximum Credit |
+| ------- | ---------      | ----------     | ------------- | -------------- |
+| 1       | 2              | 4              | 1             | 5              |
+| 2       | 2              | 4              | 1             | 5              |
+| 3       | 4              | 8              | None          | 8              |
+
 
 ## <a name="grading">Specifications Grading</a>
 
@@ -271,21 +280,22 @@ Final course grades are earned based on cumulative assignment outcomes. For each
 category of assignment, there are three levels of mastery: **Basic**, **Intermediate**, and **Advanced**.
 
 ### Labs
-* **Basic**: Complete 8 labs, maximum of two unexcused absences
-* **Intermediate**: Complete 10 labs, maximum of one unexcused absence
-* **Advanced**: Complete all 12 labs, no unexcused absences
+From the 12 labs, 24 total credits are available:
+* **Basic**: Earn 15 lab credits, maximum of two unexcused absences
+* **Intermediate**: Earn 19 lab credits, maximum of one unexcused absence
+* **Advanced**: Earn 23 lab credits, no unexcused absences
 
 ### Homework/Quizzes
-Out of 13 homeworks and 11 quizzes (24 total assignments):
-* **Basic**: Complete 12 homeworks and quizzes
-* **Intermediate**: Complete 17 homeworks and quizzes
-* **Advanced**: Complete 22 homeworks and quizzes
+Out of 13 homeworks and 11 quizzes, 48 total credits are available:
+* **Basic**: Earn 24 homework and quiz credits
+* **Intermediate**: Earn 34 homework and quiz credits
+* **Advanced**: Earn 44 homework and quiz credits
 
 ### Projects
-There are two levels for each project. The final project counts as two projects. Add up total project levels completed:
-* **Basic**: Complete four levels of projects
-* **Intermediate**: Complete six levels of projects
-* **Advanced**: Complete eight levels of projects
+From the three projects, 18 total credits are available:
+* **Basic**: Earn 9 project credits
+* **Intermediate**: Earn 13 project credits
+* **Advanced**: Earn 17 project credits
 
 ### Final Course Grade
 * To earn an A in the course, a student will:
@@ -297,12 +307,12 @@ There are two levels for each project. The final project counts as two projects.
   * Achieve **Advanced** in the third category.
 * To earn a C in the course, a student will:
   * Complete the course survey
+  * Achieve at least **Basic** in all three categories.
   * One of:
-    * Achieve **Intermediate** in all three categories.
-    * Achieve **Advanced** in one category, **Intermediate** in a second category, and **Basic** in the third category.
+    * Achieve **Advanced** in one category.
+    * Achieve **Intermediate** in two categories.
 * To earn a D in the course, a student will:
-  * Achieve at least **Basic** in all the three categories.
-  * Achieve **Intermediate** or **Advanced** in at least one category.
+  * Achieve at least **Basic** in all three categories.
 
 
 <hr />
