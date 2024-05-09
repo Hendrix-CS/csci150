@@ -249,7 +249,7 @@ complete the milestones during the lab period, they should find time outside of 
 they are unable to do so, only the instructor is authorized to record milestones for students working alone.
 
 **Lab attendance is required**. If an extenuating circumstance impedes the attendance of lab, the student must contact
-the lab instructor **prior to the start of the lab** for the absence to be **excused**. The student is still responsible
+the lab instructor to discuss that circumstance for the absence to be **excused**. The student is still responsible
 for completing the lab activity on-time.
 
 Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
@@ -271,12 +271,14 @@ Each project will be assessed as **Level 1 Complete** or **Level 2 Complete**, w
 for each project. Note that the final project must be submitted on-time to earn credit - no final projects
 will be accepted late. Projects earn **credits** as follows:
 
-| Project | Level 1 Credit | Level 2 Credit | On-time Bonus | Maximum Credit |
-| ------: | ---------:     | ----------:    | ------------: | -------------: |
-| 1       | 2              | 4              | 1             | 5              |
-| 2       | 2              | 4              | 1             | 5              |
-| 3       | 4              | 8              | None          | 8              |
+| Project | Level 1 Complete | Level 2 Complete | On-time Bonus | Maximum Credit |
+| ------: | ---------:       | ----------:      | ------------: | -------------: |
+| 1       | 2                | 4                | 1             | 5              |
+| 2       | 2                | 4                | 1             | 5              |
+| 3       | 4                | 8                | None          | 8              |
 
+If a project receives less than Level 2 Complete, a student may submit a revised version of the project after an
+office hours meeting with the instructor to discuss how the project should be improved.
 
 ## <a name="grading">Specifications Grading</a>
 
@@ -288,6 +290,9 @@ From the 12 labs, 24 total credits are available:
 * **Basic**: Earn 15 lab credits, maximum of two unexcused absences
 * **Intermediate**: Earn 19 lab credits, maximum of one unexcused absence
 * **Advanced**: Earn 23 lab credits, no unexcused absences
+
+**Remember**: For an absence to be **excused**, the student must discuss the 
+circumstances with the lab instructor.
 
 ### Homework/Quizzes
 Out of 13 homeworks and 11 quizzes, 48 total credits are available:
