@@ -14,7 +14,7 @@ layout: course-multi
 
 
 <!--
-For TA hours click here to join the virtual CS lab:
+For TA hours click here to join the virtual CS lab: test
 
 <div style="text-align: center">
 <a href="https://gather.town/app/51XVXUciIPdVoLaW/CSCI%20Lab">
