@@ -14,7 +14,7 @@ layout: course-multi
 
 
 <!--
-For TA hours click here to join the virtual CS lab: test
+For TA hours click here to join the virtual CS lab:
 
 <div style="text-align: center">
 <a href="https://gather.town/app/51XVXUciIPdVoLaW/CSCI%20Lab">
@@ -29,7 +29,7 @@ For TA hours click here to join the virtual CS lab: test
 
 ## <a name="goals">Learning Goals</a>
 
-Upon completing this course, our goal is for you to be able to:
+Upon completing this course, our goal is for you to be able to: test
 
 * Build computer programs to:
   * Effectively solve realistic problems.
