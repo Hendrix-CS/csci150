@@ -66,7 +66,7 @@ instructors:
     email: seme@hendrix.edu
     web: https://www.hendrix.edu/mathcs/profile.aspx?id=70795
     phone: (501) 450-1256
-    officehours: /instructors/Seme-office-hours.pdf
+    officehours: /csci150/instructors/Seme-office-hours.pdf
   - id: yorgey
     name: Dr. Brent Yorgey
     email: yorgey@hendrix.edu
