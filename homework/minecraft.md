@@ -5,7 +5,7 @@ num: 1
 worktitle: Minecraft
 ---
 
-*Due: Monday, January 22*
+*Due: Wednesday, September 4*
 
 ![](world1.png)
 
