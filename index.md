@@ -119,7 +119,9 @@ Upon completing this course, our goal is for you to be able to:
 # <a name="code">Code from Lectures</a>
 
 * Examples from lecture will be posted here!
-| **Date** |**Ferrer** | **Seme**|
+
+| Date |Ferrer | Seme|
+|---|---|---|
 | Aug 28 | |[Intro to CS](https://www.kaggle.com/code/larskseme/2024-08-28-introduction-to-cs)| 
 
 <!--
