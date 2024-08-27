@@ -459,11 +459,8 @@ environment for every other member of the community. If you believe
 you have been the subject of discrimination please contact Dean Donna Eddleman 
 at [eddleman@hendrix.edu](mailto:eddleman@hendrix.edu) or
 501-450-1222 or the Title IX Coordinator Jennifer Fulbright at
-[titleix@hendrix.edu](mailto:titleix@hendrix.edu) or 501-505-2901. If
-you have ideas for improving the inclusivity of the classroom
-experience please feel free to [contact
-me](https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link).  For more information on
-Hendrix non-discrimination policies, visit
+[titleix@hendrix.edu](mailto:titleix@hendrix.edu) or 501-505-2901. 
+For more information on Hendrix non-discrimination policies, visit
 [hendrix.edu/nondiscrimination](http://hendrix.edu/nondiscrimination).
 
 ## <a name="health">Mental and Physical Health</a>
