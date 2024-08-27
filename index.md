@@ -456,8 +456,8 @@ Hendrix College values a diverse learning environment as outlined in
 the College's Statement on Diversity. All members of this community
 are expected to contribute to a respectful, welcoming, and inclusive
 environment for every other member of the community. If you believe
-you have been the subject of discrimination please contact Dean Mike
-Leblanc at [leblanc@hendrix.edu](mailto:leblanc@hendrix.edu) or
+you have been the subject of discrimination please contact Dean Donna Eddleman 
+at [eddleman@hendrix.edu](mailto:eddleman@hendrix.edu) or
 501-450-1222 or the Title IX Coordinator Jennifer Fulbright at
 [titleix@hendrix.edu](mailto:titleix@hendrix.edu) or 501-505-2901. If
 you have ideas for improving the inclusivity of the classroom
