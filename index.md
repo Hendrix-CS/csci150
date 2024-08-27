@@ -332,7 +332,3 @@ From the three projects, 18 total credits are available:
     * **Intermediate** in at least two categories.
 * To earn a D in the course, a student will:
   * Achieve at least **Basic** in all three categories.
-
-
-<hr />
-
