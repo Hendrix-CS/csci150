@@ -306,7 +306,7 @@ Out of 13 homeworks and 11 quizzes, 48 total credits are available:
 
 ### Projects
 From the three projects, 18 total credits are available:
-* **Basic**: Earn 9 project credits
+* **Basic**: Earn 8 project credits
 * **Intermediate**: Earn 13 project credits
 * **Advanced**: Earn 17 project credits
 
