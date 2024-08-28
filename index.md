@@ -55,7 +55,7 @@ Upon completing this course, our goal is for you to be able to:
 
 | Date   |   Day   |   Topic/Activity           | Quiz              |   Assigned                                       |   Due     |
 |  ---   |   ---   |        ---                 | ---               |     ---                                          |   ---     |
-| 28 Aug |   Weds  |  Introduction to CS        |                   | [Survey]([https://forms.gle/VLRVHjUAisWP5R9J8](https://docs.google.com/forms/d/e/1FAIpQLSehAgXD8n1Kkn9ZJ2nViXywtfGl5WYiUueNCd_YRSmukBtJnQ/viewform?usp=sf_link))
+| 28 Aug |   Weds  |  Introduction to CS        |                   | [Survey](https://forms.gle/VLRVHjUAisWP5R9J8](https://docs.google.com/forms/d/e/1FAIpQLSehAgXD8n1Kkn9ZJ2nViXywtfGl5WYiUueNCd_YRSmukBtJnQ/viewform?usp=sf_link)
 | 30 Aug |   Fri   |  Algorithms and Errors     |                   | HW: [Minecraft by hand](homework/minecraft.html) | Survey
 |   
 |  2 Sep |   Mon   |  **Labor Day - No class**  |                   
