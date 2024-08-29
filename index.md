@@ -57,63 +57,63 @@ Upon completing this course, our goal is for you to be able to:
 |  ---   |   ---   |        ---                 | ---               |     ---                                          |   ---     |
 | 28 Aug |   Weds  |  Introduction to CS        |                   | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSehAgXD8n1Kkn9ZJ2nViXywtfGl5WYiUueNCd_YRSmukBtJnQ/viewform?usp=sf_link)
 | 30 Aug |   Fri   |  Algorithms and Errors     |                   | HW: [Minecraft by hand](homework/minecraft.html) | Survey
-|   
+|   | | | | |
 |  2 Sep |   Mon   |  **Labor Day - No class**  |                   
 |  4 Sep |   Weds  |  Python<br>Math & Variables|                   | HW: [Math and Variables](homework/math.html)                           | HW: Minecraft by hand 
 |  6 Sep |   Fri   |  Functions                 |                   |                                                  
-|
-|  9 Sep |   Mon   |  Booleans                  |                   | HW: [Boolean practice](homework/booleans.html)                    | HW: Math and Variables                  
+|  | | | | |
+|  9 Sep |   Mon   |  Booleans                  |                   | HW: [Boolean practice](homework/booleans.html)                    | HW: Math and Variables                    | | | | |
 | 11 Sep |   Weds  |  Conditionals              | Minecraft by Hand
 | 13 Sep |   Fri   |  Tracing I                 |                    |                                                  
-|                 
+|           | | | | |        
 | 16 Sep |   Mon   |  Pycharm<br>I/O            |                    | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) | HW: Boolean Practice                           
 | 18 Sep |   Weds  |  More Conditionals         | Math and Variables | 
 | 20 Sep |   Fri   |  The `while` loop          |                    | Project 1: [Civic Assistance Q/A System](projects/project1.html) 
-|            
+|      | | | | |        
 | 23 Sep |   Mon   |  More `while` loop<br>Generative AI |           | HW: [Loops](homework/codingbat-loop.html)                             | HW: CodingBat Conditional and By Hand Tracing Practice
 | 25 Sep |   Weds  |  Functions & Stack Tracing | Booleans
 | 27 Sep |   Fri   |  Functions & Stack Tracing |                    | HW: [Function Stack Tracing](homework/function-reading.html) |                                                          
-|
+|  | | | | |
 | 30 Sep |   Mon   |  Strings                   |                    |               | HW: Loops
 |  2 Oct |   Weds  |  Strings and Loops         | Conditionals       |  
 |  4 Oct |   Fri   |  More Strings and Loops    |                    |                                                              | Project 1                           
-|
+|  | | | | |
 |  7 Oct |   Mon   |  Lists                     |                    | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | HW: Function Stack Tracing
 |  9 Oct |   Weds  |  List Processing Examples  | Loops
 | 11 Oct |   Fri   |  Function Abstraction      |                    | Project 2: [Word Games](projects/project2.html)                                                                                  
-|
+|  | | | | |
 | 14 Oct |   Mon   |  The `for` loop            |                        | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html) | HW: CodingBat String and Loop Practice
 | 16 Oct |   Weds  |  Common loop patterns      | Function Stack Tracing | 
 | 18 Oct |   Fri   |  **Fall Break - No class** |
-|
+|  | | | | |
 | 21 Oct |   Mon   |  File I/O                  |                        | HW: [File I/O]({{site.baseurl}}/homework/file.html)                        | HW: CodingBat List and Loop Practice
 | 23 Oct |   Weds  |  More File I/O             | Strings and Loops      | 
 | 25 Oct |   Fri   |  The Heap and Mutability   |                        |                                      | Project 2 
-|                                                                 
+|     | | | | |                                                              
 | 28 Oct |   Mon   | Dictionaries I             |                        | HW: [Dictionaries]({{site.baseurl}}/homework/dictionary.html)                                       | HW: File I/O
 | 30 Oct |   Weds  | Dictionaries II            | Lists and Loops        | 
 |  1 Nov |   Fri   | Final Project Discussion   |                        | [Final project]({{site.baseurl}}/projects/final.html)
-|
+|  | | | | |
 |  4 Nov |   Mon   | Classes                    |                        |     HW: [Classes]({{site.baseurl}}/homework/class-design.html)                                  | HW: Dictionaries
 |  6 Nov |   Weds  | Class/object examples (cake; car) | File I/O     
 |  8 Nov |   Fri   | Class/object examples (bookshelf) |                 | | 
-|                                                            
+|       | | | | |                                                       
 | 11 Nov |   Mon   | PyGame animation           |                        |                                                | HW: Classes
 | 13 Nov |   Weds  | Classes and PyGame         | Dictionaries | HW: [PyGame]({{site.baseurl}}/homework/pygame.html)
 | 15 Nov |   Fri   | Classes and PyGame         |              |         | [Final project]({{site.baseurl}}/projects/final.html): Design Document
-|                                                              
+|       | | | | |                                                         
 | 18 Nov |   Mon   | Recursion I                |              | HW: [Recursion]({{site.baseurl}}/homework/recursion.html) | HW: PyGame
 | 20 Nov |   Weds  | Recursion II: Trees        | Classes      |
 | 22 Nov |   Fri   | Recursion III: Applications|              |                                                | [Final project]({{site.baseurl}}/projects/final.html): Progress Report
-|
+|  | | | | |
 | 25 Nov |   Mon   | Binary and Information Encoding|          |                                                | HW: Recursion
 | 27 Nov |   Wed   | **Thanksgiving - No class**
 | 29 Nov |   Wed   | **Thanksgiving - No class**
-|
+|  | | | | |
 |  2 Dec |   Mon   | Project Workshop           |              |                                                                                    
 |  4 Dec |   Fri   | Project Workshop    
 |  6 Dec |   Fri   | Retrospective    
-|                                                              
+|        | | | | |                                                        
 | 13 Dec |   Fri 8:30-11:30 am (Seme)<br>2:00-5:00 pm (Ferrer) | Final Project Presentations     
 
 # <a name="code">Code from Lectures</a>
@@ -123,6 +123,7 @@ Upon completing this course, our goal is for you to be able to:
 | Date |Ferrer | Seme|
 |---|---|---|
 | Aug 28 | |[Intro to CS](https://www.kaggle.com/code/larskseme/2024-08-28-introduction-to-cs)| 
+| Aug 30 | |[Errors, Algorithms, and Math in Python](https://www.kaggle.com/code/larskseme/2024-08-30-algorithms-and-errors)|
 
 <!--
 * [Boolean Expressions](https://www.kaggle.com/gabrielferrer/csci-150-s24-boolean-expressions)
