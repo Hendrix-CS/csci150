@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: Math Practice
 -----------------------------
 
-*Due: Monday, January 29*
+*Due: Monday, September 9*
 
 To receive credit, for each exercise you should do the following:
 
