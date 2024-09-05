@@ -55,65 +55,65 @@ Upon completing this course, our goal is for you to be able to:
 
 | Date   |   Day   |   Topic/Activity           | Quiz              |   Assigned                                       |   Due     |
 |  ---   |   ---   |        ---                 | ---               |     ---                                          |   ---     |
-| 28 Aug |   Weds  |  Introduction to CS        |                   | [Survey](https://forms.gle/VLRVHjUAisWP5R9J8)
+| 28 Aug |   Weds  |  Introduction to CS        |                   | [Survey](https://docs.google.com/forms/d/e/1FAIpQLSehAgXD8n1Kkn9ZJ2nViXywtfGl5WYiUueNCd_YRSmukBtJnQ/viewform?usp=sf_link)
 | 30 Aug |   Fri   |  Algorithms and Errors     |                   | HW: [Minecraft by hand](homework/minecraft.html) | Survey
-|   
+|   | | | | |
 |  2 Sep |   Mon   |  **Labor Day - No class**  |                   
 |  4 Sep |   Weds  |  Python<br>Math & Variables|                   | HW: [Math and Variables](homework/math.html)                           | HW: Minecraft by hand 
 |  6 Sep |   Fri   |  Functions                 |                   |                                                  
-|
-|  9 Sep |   Mon   |  Booleans                  |                   | HW: [Boolean practice](homework/booleans.html)                    | HW: Math and Variables                  
+|  | | | | |
+|  9 Sep |   Mon   |  Booleans                  |                   | HW: [Boolean practice](homework/booleans.html)                    | HW: Math and Variables                    | | | | |
 | 11 Sep |   Weds  |  Conditionals              | Minecraft by Hand
 | 13 Sep |   Fri   |  Tracing I                 |                    |                                                  
-|                 
+|           | | | | |        
 | 16 Sep |   Mon   |  Pycharm<br>I/O            |                    | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) | HW: Boolean Practice                           
 | 18 Sep |   Weds  |  More Conditionals         | Math and Variables | 
 | 20 Sep |   Fri   |  The `while` loop          |                    | Project 1: [Civic Assistance Q/A System](projects/project1.html) 
-|            
+|      | | | | |        
 | 23 Sep |   Mon   |  More `while` loop<br>Generative AI |           | HW: [Loops](homework/codingbat-loop.html)                             | HW: CodingBat Conditional and By Hand Tracing Practice
 | 25 Sep |   Weds  |  Functions & Stack Tracing | Booleans
 | 27 Sep |   Fri   |  Functions & Stack Tracing |                    | HW: [Function Stack Tracing](homework/function-reading.html) |                                                          
-|
+|  | | | | |
 | 30 Sep |   Mon   |  Strings                   |                    |               | HW: Loops
 |  2 Oct |   Weds  |  Strings and Loops         | Conditionals       |  
 |  4 Oct |   Fri   |  More Strings and Loops    |                    |                                                              | Project 1                           
-|
+|  | | | | |
 |  7 Oct |   Mon   |  Lists                     |                    | HW: [CodingBat String and Loop practice](homework/codingbat-string-loop.html) | HW: Function Stack Tracing
 |  9 Oct |   Weds  |  List Processing Examples  | Loops
 | 11 Oct |   Fri   |  Function Abstraction      |                    | Project 2: [Word Games](projects/project2.html)                                                                                  
-|
+|  | | | | |
 | 14 Oct |   Mon   |  The `for` loop            |                        | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html) | HW: CodingBat String and Loop Practice
 | 16 Oct |   Weds  |  Common loop patterns      | Function Stack Tracing | 
 | 18 Oct |   Fri   |  **Fall Break - No class** |
-|
+|  | | | | |
 | 21 Oct |   Mon   |  File I/O                  |                        | HW: [File I/O]({{site.baseurl}}/homework/file.html)                        | HW: CodingBat List and Loop Practice
 | 23 Oct |   Weds  |  More File I/O             | Strings and Loops      | 
 | 25 Oct |   Fri   |  The Heap and Mutability   |                        |                                      | Project 2 
-|                                                                 
+|     | | | | |                                                              
 | 28 Oct |   Mon   | Dictionaries I             |                        | HW: [Dictionaries]({{site.baseurl}}/homework/dictionary.html)                                       | HW: File I/O
 | 30 Oct |   Weds  | Dictionaries II            | Lists and Loops        | 
 |  1 Nov |   Fri   | Final Project Discussion   |                        | [Final project]({{site.baseurl}}/projects/final.html)
-|
+|  | | | | |
 |  4 Nov |   Mon   | Classes                    |                        |     HW: [Classes]({{site.baseurl}}/homework/class-design.html)                                  | HW: Dictionaries
 |  6 Nov |   Weds  | Class/object examples (cake; car) | File I/O     
 |  8 Nov |   Fri   | Class/object examples (bookshelf) |                 | | 
-|                                                            
+|       | | | | |                                                       
 | 11 Nov |   Mon   | PyGame animation           |                        |                                                | HW: Classes
 | 13 Nov |   Weds  | Classes and PyGame         | Dictionaries | HW: [PyGame]({{site.baseurl}}/homework/pygame.html)
 | 15 Nov |   Fri   | Classes and PyGame         |              |         | [Final project]({{site.baseurl}}/projects/final.html): Design Document
-|                                                              
+|       | | | | |                                                         
 | 18 Nov |   Mon   | Recursion I                |              | HW: [Recursion]({{site.baseurl}}/homework/recursion.html) | HW: PyGame
 | 20 Nov |   Weds  | Recursion II: Trees        | Classes      |
 | 22 Nov |   Fri   | Recursion III: Applications|              |                                                | [Final project]({{site.baseurl}}/projects/final.html): Progress Report
-|
+|  | | | | |
 | 25 Nov |   Mon   | Binary and Information Encoding|          |                                                | HW: Recursion
 | 27 Nov |   Wed   | **Thanksgiving - No class**
 | 29 Nov |   Wed   | **Thanksgiving - No class**
-|
+|  | | | | |
 |  2 Dec |   Mon   | Project Workshop           |              |                                                                                    
 |  4 Dec |   Fri   | Project Workshop    
 |  6 Dec |   Fri   | Retrospective    
-|                                                              
+|        | | | | |                                                        
 | 13 Dec |   Fri 8:30-11:30 am (Seme)<br>2:00-5:00 pm (Ferrer) | Final Project Presentations     
 
 # <a name="code">Code from Lectures</a>
@@ -123,6 +123,8 @@ Upon completing this course, our goal is for you to be able to:
 | Date |Ferrer | Seme|
 |---|---|---|
 | Aug 28 | |[Intro to CS](https://www.kaggle.com/code/larskseme/2024-08-28-introduction-to-cs)| 
+| Aug 30 | |[Errors, Algorithms, and Math in Python](https://www.kaggle.com/code/larskseme/2024-08-30-algorithms-and-errors)|
+| Sep 3 | | [Math, Variables, Functions](https://www.kaggle.com/code/larskseme/2024-09-04-variables-and-functions) |
 
 <!--
 * [Boolean Expressions](https://www.kaggle.com/gabrielferrer/csci-150-s24-boolean-expressions)
@@ -263,7 +265,9 @@ Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go
 
 You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to four weeks after they are assigned.
 
-**You must work individually on the projects.** You may discuss concepts and ideas with your classmates, but the code you turn in must be your own. You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
+You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
+
+{% include warning.html content="You must work individually on the projects. You may discuss concepts and ideas with your classmates, but the **code or work you turn in must be your own**. Use of any resources (TA, StackOverflow, ChatGPT, etc) must be cited, and an overreliance on those resources can be counterproductive to developing your own ability to make progress in this and other courses." %}
 
 | # | Name                                                                   | Assigned | Due    |
 |:-:|------------------------------------------------------------------------|:--------:|:------:|
@@ -283,6 +287,12 @@ will be accepted late. Projects earn **credits** as follows:
 
 If a project receives less than Level 2 Complete, a student may submit a revised version of the project after an
 office hours meeting with the instructor to discuss how the project should be improved.
+
+## <a name="attendance">Attendance</a>
+
+Attendance in this class is not required as part of your grade.
+However, I do expect you to attend and appreciate knowing in advance
+if you will need to miss class.
 
 ## <a name="grading">Specifications Grading</a>
 
@@ -326,155 +336,3 @@ From the three projects, 18 total credits are available:
     * **Intermediate** in at least two categories.
 * To earn a D in the course, a student will:
   * Achieve at least **Basic** in all three categories.
-
-
-<hr />
-
-## <a name="expectations">Expectations</a>
-
-Although you and I play different roles in the course, we both have
-your learning as a common goal. There are things I expect from you as
-a student in the course, but there are also things you can expect of
-me as the course instructor and facilitator.
-<!--
-If I am not fulfilling my responsibilities outlined below, you are
-welcome (and encouraged!) to call me out, perhaps via the [anonymous
-feedback form](https://docs.google.com/forms/d/e/1FAIpQLSecdjyRdCiHkCv5Y5WF09RHLgdf9bl1WoeJQJZmnErPCd8YxA/viewform). I will also
-initiate a conversation if you are not fulfilling yours. However, none
-of us will meet all of the expectations perfectly---me included!---so
-it's also important that we have grace and patience with one another.
--->
-
-<table class="table table-bordered mt-3">
-  <thead>
-    <tr>
-      <th></th>
-      <th>What I expect from you</th>
-      <th>What you can expect from me</th>
-    </tr>
-  </thead>
-
-  <tr>
-    <th>Communication</th>
-    <td>
-      <ul>
-        <li>Check your email and Teams for occasional course
-          announcements.</li>
-        <li>Let me know via email or Teams message if you will need to miss class
-          for some reason.</li>
-        <li>Let me know as soon as possible if you feel you are
-          struggling, would like extra help, or have something
-          going on that will affect your engagement in the
-          course or your ability to fulfill your
-          responsibilities.</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Clearly communicate expectations, assignment
-          details and dates, and grading standards.</li>
-        <li>Return grades and feedback on submitted work within
-          one week of submission.</li>
-        <li>Respond to emails within 24 hours.</li>
-      </ul>
-    </td>
-  </tr>
-
-  <tr>
-    <th>Preparation</th>
-    <td>
-      <ul>
-        <li>Come prepared to fully engage in class meetings, with
-          distractions minimized, to the best of your ability.</li>
-        <li>Spend time outside of class actively practicing
-          unfamiliar or shaky concepts or skills (not just
-          reading over notes).</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Have a concrete plan for how we will
-          spend each class meeting, prepared to lead you through the
-          plan.</li>
-      </ul>
-    </td>
-  </tr>
-
-  <tr>
-    <th>Engagement</th>
-    <td>
-      <ul>
-        <li>Actively engage in  lectures by taking notes and
-          asking questions.</li>
-        <li>Actively engage in lab by working with
-          your partner, and
-          working hard towards completing the lab.</li>
-        <li>Abide by the
-        College's <a href="https://www.hendrix.edu/Catalog/2021-2022/Academic_Policies_and_Regulations/Policies_and_Appeals/Academic_Integrity/">Academic
-        Integrity Policy</a> and
-        the <a href="http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html">Computer
-            Science-specific Academic Integrity Policy</a>.</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Make myself available to meet outside of class, and
-          give you my full attention during a meeting.</li>
-        <li>Be committed to your learning, open to feedback and
-          willing to respond in substantive ways to your
-          suggestions or concerns.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-## <a name="attendance">Attendance</a>
-
-Attendance in this class is not required as part of your grade.
-However, I do expect you to attend and appreciate knowing in advance
-if you will need to miss class.
-
-## <a name="disabilities">Disabilities</a>
-
-If you have a documented disability or some other reason that you
-cannot meet the above expectations, and/or your learning would be best
-served by a modification to the usual course policies, I would be
-happy to work with you—please get in touch (via Teams or email)! The
-course policies are just a means to an end; I don't care about the
-policies per se but I do care about you and your learning.
-
-*It is the policy of Hendrix College to accommodate students with
-disabilities, pursuant to federal and state law. Students should
-contact Julie Brown in the Office of Academic Success (505.2954;
-brownj@hendrix.edu) to begin the accommodation process. Any student
-seeking accommodation in relation to a recognized disability should
-inform the instructor at the beginning of the course.*
-
-## <a name="diversity">Diversity and Inclusion</a>
-
-Hendrix College values a diverse learning environment as outlined in
-the College's Statement on Diversity. All members of this community
-are expected to contribute to a respectful, welcoming, and inclusive
-environment for every other member of the community. If you believe
-you have been the subject of discrimination please contact Dean Mike
-Leblanc at [leblanc@hendrix.edu](mailto:leblanc@hendrix.edu) or
-501-450-1222 or the Title IX Coordinator Jennifer Fulbright at
-[titleix@hendrix.edu](mailto:titleix@hendrix.edu) or 501-505-2901. If
-you have ideas for improving the inclusivity of the classroom
-experience please feel free to [contact
-me](https://docs.google.com/forms/d/e/1FAIpQLScytpXo5uLAoZu_zrVRsL9mbbwSn5PR8izfNBgbgSzO7u6Baw/viewform?usp=sf_link).  For more information on
-Hendrix non-discrimination policies, visit
-[hendrix.edu/nondiscrimination](http://hendrix.edu/nondiscrimination).
-
-## <a name="health">Mental and Physical Health</a>
-
-Hendrix recognizes that many students face mental and/or physical
-health challenges. If your health status will impact attendance or
-assignments, please communicate with me as soon as possible.  If you
-would like to implement academic accommodations, contact Julie Brown
-in the office of Academic Success
-([brownj@hendrix.edu](mailto:brownj@hendrix.edu)).  To maintain
-optimal health, please make use of free campus resources like the
-[Hendrix Medical Clinic](https://www.hendrix.edu/healthservices/) or
-Counseling Services (501.450.1448).  Your health is important, and I
-care more about your health and well-being than I do about this class!
