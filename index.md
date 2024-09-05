@@ -215,9 +215,9 @@ A student may book an office hours appointment to take a quiz missed due to
 an excused absence.
 
 ## <a name="labs">Labs</a>
-<!--
-<p><a href="docs/code-of-conduct/23F/code-of-conduct-23F-W.pdf">Wednesday Lab Code of Conduct</a></p>
--->
+
+### Codes of Conduct
+* [Wednesday Lab Code of Conduct](docs/code-of-conduct/24F/Wednesday_lab.html)
 
 | #  | Name                                                                                      | Completion time | Assigned  | Due       |
 |:--:|-------------------------------------------------------------------------------------------|-----------------|-----------|-----------|
