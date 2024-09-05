@@ -1,10 +1,3 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: course-multi
----
-
 # Code of Conduct, CSCI 150 Lab Wednesday 1-4 pm
 
 As students working in partnerships, we commit to:
