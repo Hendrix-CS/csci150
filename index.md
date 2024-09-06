@@ -124,7 +124,9 @@ Upon completing this course, our goal is for you to be able to:
 |---|---|---|
 | Aug 28 | |[Intro to CS](https://www.kaggle.com/code/larskseme/2024-08-28-introduction-to-cs)| 
 | Aug 30 | |[Errors, Algorithms, and Math in Python](https://www.kaggle.com/code/larskseme/2024-08-30-algorithms-and-errors)|
-| Sep 3 | | [Math, Variables, Functions](https://www.kaggle.com/code/larskseme/2024-09-04-variables-and-functions) |
+| Sep 4 | | [Math, Variables, Functions](https://www.kaggle.com/code/larskseme/2024-09-04-variables-and-functions) |
+| Sep 6 | | [More Functions](https://www.kaggle.com/code/larskseme/2024-09-06-functions) |
+
 
 <!--
 * [Boolean Expressions](https://www.kaggle.com/gabrielferrer/csci-150-s24-boolean-expressions)
