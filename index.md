@@ -126,6 +126,7 @@ Upon completing this course, our goal is for you to be able to:
 | Aug 30 | |[Errors, Algorithms, and Math in Python](https://www.kaggle.com/code/larskseme/2024-08-30-algorithms-and-errors)|
 | Sep 4 | | [Math, Variables, Functions](https://www.kaggle.com/code/larskseme/2024-09-04-variables-and-functions) |
 | Sep 6 | | [More Functions](https://www.kaggle.com/code/larskseme/2024-09-06-functions) |
+| Sep 9 | | [Booleans](https://www.kaggle.com/code/larskseme/2024-09-09-booleans) |
 
 
 <!--
