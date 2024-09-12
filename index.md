@@ -128,6 +128,7 @@ Upon completing this course, our goal is for you to be able to:
 | Sep 6 | | [More Functions](https://www.kaggle.com/code/larskseme/2024-09-06-functions) |
 | Sep 9 | | [Booleans](https://www.kaggle.com/code/larskseme/2024-09-09-booleans) |
 | Sep 11 | |[Conditionals](https://www.kaggle.com/code/larskseme/2024-09-11-conditionals) |
+| Sep 13 | |[Tracing Intro]({{site.baseurl}}/lectures/F24/Seme/2024-09-13-Tracing-Introduction-Sample-Solutions.pdf) |
 
 
 <!--
