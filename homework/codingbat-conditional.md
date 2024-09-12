@@ -17,7 +17,7 @@ You will want to make an account on CodingBat. Please use your Hendrix email as 
 Please also keep up with your own password -- there is no way for me to recover it for you!
 
 Be sure to share your progress with me, by going to "prefs" and entering
-your instructor's email address (`ferrer@hendrix.edu`) in the "Teacher Share" box.
+your instructor's email address (`ferrer@hendrix.edu` or `seme@hendrix.edu`) in the "Teacher Share" box.
 
 You should complete **at least seven** of the following:
 
