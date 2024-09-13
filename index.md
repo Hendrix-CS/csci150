@@ -8,10 +8,10 @@ layout: course-multi
 
 ## <a name="TAs">TA Office Hours</a>
 
-| Sunday       | Monday            | Tuesday    | Wednesday      |
-|--------------|-------------------|------------|----------------|
-| TBA          | TBA               | TBA        | TBA            |
-|              | TBA               |
+| Sunday           | Monday         | Tuesday     | Wednesday     | Thursday
+|------------------|----------------|-------------|---------------|--------- 
+| 6-8 PM           | 5:30-7:30      | 7-9 PM      | 7-9 PM        | 6-8 PM
+| Katherine Reid   | Leigh Johnston | Ted Bjurlin | Joseph Washum | Jauss Favorite
 
 
 # <a name="description">Overview</a>
