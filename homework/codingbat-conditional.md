@@ -19,7 +19,7 @@ Please also keep up with your own password -- there is no way for me to recover 
 Be sure to share your progress with me, by going to "prefs" and entering
 your instructor's email address (`ferrer@hendrix.edu` or `seme@hendrix.edu`) in the "Teacher Share" box.
 
-You should complete **at least seven** of the following:
+You should complete **at least seven** of the following. Completing more than seven is highly recommended for additional practice:
 
 - [Cigar Party](https://codingbat.com/prob/p195669)
 - [Date Fashion](https://codingbat.com/prob/p129125)
@@ -31,8 +31,6 @@ You should complete **at least seven** of the following:
 - [Love 6](https://codingbat.com/prob/p100958)
 - [In 1 to 10](https://codingbat.com/prob/p158497)
 - [Near 10](https://codingbat.com/prob/p165321)
-
-For each exercise beyond seven that you complete, you will earn one bonus token.
 
 # By-Hand Tracing
 
