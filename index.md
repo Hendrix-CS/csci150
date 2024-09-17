@@ -70,7 +70,7 @@ Upon completing this course, our goal is for you to be able to:
 | 18 Sep |   Weds  |  More Conditionals         | Math and Variables | 
 | 20 Sep |   Fri   |  The `while` loop          |                    | Project 1: [Civic Assistance Q/A System](projects/project1.html) 
 |      | | | | |        
-| 23 Sep |   Mon   |  More `while` loop<br>Generative AI |           | HW: [Loops](homework/codingbat-loop.html)                             | HW: CodingBat Conditional and By Hand Tracing Practice
+| 23 Sep |   Mon   |  More `while` loop         |                    | HW: [Loops](homework/codingbat-loop.html)                             | HW: CodingBat Conditional and By Hand Tracing Practice
 | 25 Sep |   Weds  |  Functions & Stack Tracing | Booleans
 | 27 Sep |   Fri   |  Functions & Stack Tracing |                    | HW: [Function Stack Tracing](homework/function-reading.html) |                                                          
 |  | | | | |
@@ -110,7 +110,7 @@ Upon completing this course, our goal is for you to be able to:
 | 27 Nov |   Wed   | **Thanksgiving - No class**
 | 29 Nov |   Wed   | **Thanksgiving - No class**
 |  | | | | |
-|  2 Dec |   Mon   | Project Workshop           |              |                                                                                    
+|  2 Dec |   Mon   | Generative AI               |              |                                                                                    
 |  4 Dec |   Fri   | Project Workshop    
 |  6 Dec |   Fri   | Retrospective    
 |        | | | | |                                                        
