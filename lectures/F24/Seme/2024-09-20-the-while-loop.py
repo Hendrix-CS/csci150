@@ -3,6 +3,17 @@
 
 # Homework is due on Monday CodingBat & Tracing
 
+# # f-strings   "format strings"
+# x = 3
+# s = 'My favorite number is '
+# print(s,x)
+# print(f'My favorite number is {x}.')
+# a = 7
+# b = True
+# c = 12.7
+# s = f'I like the number {x} but not the number {c}. The boolean value of b is {b}.'
+# print(s)
+
 
 # Recall the 5 aspects of an algorithm:
 #
@@ -81,7 +92,7 @@ def while_input_ex() -> int:
 # '12.456'.isdigit()   # returns False
 
 def pos_int_input() -> int:
-    success = False
+    success = False # sentinel
     while not success:
         str_n = input('Please enter a positive integer: ')
         if str_n.isdigit():
