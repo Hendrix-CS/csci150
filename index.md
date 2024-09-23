@@ -132,6 +132,7 @@ Upon completing this course, our goal is for you to be able to:
 | Sep 16 | |[PyCharm and I/O](https://www.kaggle.com/code/larskseme/2024-09-16-pycharm-and-i-o)|
 | Sep 18 | |[More Conditionals]({{site.baseurl}}/lectures/F24/Seme/2024-09-18-More-Conditionals.py) |
 | Sep 20 | |[The While Loop]({{site.baseurl}}/lectures/F24/Seme/2024-09-20-the-while-loop.py) |
+| Sep 20 | |[More While Loops]({{site.baseurl}}/lectures/F24/Seme/2024-09-23-More_While-Loops.py) |
 
 
 <!--
