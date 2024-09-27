@@ -72,9 +72,9 @@ Upon completing this course, our goal is for you to be able to:
 |      | | | | |        
 | 23 Sep |   Mon   |  More `while` loop         |                    | HW: [Loops](homework/codingbat-loop.html)                             | HW: CodingBat Conditional and By Hand Tracing Practice
 | 25 Sep |   Weds  |  Functions & Stack Tracing | Booleans
-| 27 Sep |   Fri   |  Functions & Stack Tracing |                    | HW: [Function Stack Tracing](homework/function-reading.html) |                                                          
+| 27 Sep |   Fri   |  Functions & Stack Tracing |                    |  |                                                          
 |  | | | | |
-| 30 Sep |   Mon   |  Strings                   |                    |               | HW: Loops
+| 30 Sep |   Mon   |  Strings                   |                    | HW: [Function Stack Tracing](homework/function-reading.html)              | HW: Loops
 |  2 Oct |   Weds  |  Strings and Loops         | Conditionals       |  
 |  4 Oct |   Fri   |  More Strings and Loops    |                    |                                                              | Project 1                           
 |  | | | | |
