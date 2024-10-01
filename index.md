@@ -135,7 +135,7 @@ Upon completing this course, our goal is for you to be able to:
 | Sep 20 | |[More While Loops]({{site.baseurl}}/lectures/F24/Seme/2024-09-23-More-While-Loops.py) |
 | Sep 25 | |[Stack Tracing]({{site.baseurl}}/lectures/F24/Seme/2024-09-25-Function-Stack-Tracing-Solutions.pdf) |
 | Sep 27 | |[More Stack Tracing]({{site.baseurl}}/lectures/F24/Seme/2024-09-27-More-Tracing-Examples-Solutions.pdf) |
-| Sep 30 | |[Strings]({{site.baseurl}}/lectures/F24/Seme/2024-09-30-Strings.py) |
+| Oct 2 | |[Strings and Loops]({{site.baseurl}}/lectures/F24/Seme/2024-10-02-Strings-and-Loops.py) |
 
 
 <!--
