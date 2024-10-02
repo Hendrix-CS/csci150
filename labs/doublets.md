@@ -115,7 +115,7 @@ integer between 1 and the length of `word`.
 To implement `swap_character()`:
 * Use string slicing and string concatenation.
 * Do **not** use a `while` loop.
-* Do **not** use `input`. All of the input you need is given by the three parameters (`word`, `where`, and `updated').
+* Do **not** use `input`. All of the input you need is given by the three parameters (`word`, `where`, and `updated`).
 
 Here are a few examples. Test your implementation of `swap_character()` in the Python Console
 at the bottom of the PyCharm window with these examples:
