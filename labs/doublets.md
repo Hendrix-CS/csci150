@@ -195,7 +195,10 @@ otherwise.  You can call the function by writing something like
     spellcheck.valid_word(some_word, 'english3.txt')
 
 Handling erroneous input requires using a loop. The following example shows
-a loop structure that you may find useful in completing `get_start_word()`:
+a loop structure that you may find useful in completing
+`get_start_word()`.  This is **just an example**; instead of checking
+whether the word has four letters, you should check whether it is a
+valid English word.
 
 	valid = False
 	while not valid:
