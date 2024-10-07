@@ -137,6 +137,7 @@ Upon completing this course, our goal is for you to be able to:
 | Sep 27 | |[More Stack Tracing]({{site.baseurl}}/lectures/F24/Seme/2024-09-27-More-Tracing-Examples-Solutions.pdf) |
 | Oct 2 | |[Strings and Loops]({{site.baseurl}}/lectures/F24/Seme/2024-10-02-String-and-Loops.py) |
 | Oct 4 | |[More Strings and Loops - Input Checking]({{site.baseurl}}/lectures/F24/Seme/2024-10-04-More-Strings-and-Loops.py) |
+| Oct 7 | |[Lists]({{site.baseurl}}/lectures/F24/Seme/2024-10-07-Lists.py) |
 
 
 <!--
