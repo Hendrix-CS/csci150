@@ -42,13 +42,28 @@ def list_sum(lst: List[int]) -> int:
 
 # given a list of integers, return their product
 def list_prod(lst: List[int]) -> int:
-    1
+    i = 0
+    our_prod = 1
+    while i < len(lst):
+        our_prod *= lst[i]
+        i += 1
+    return our_prod
 
 
 # given a list of integers, lst, and a single integer n,
 # count how many integers in lst are smaller than n
 def small_count(lst: List[int], n: int) -> int:
-    1
+    i = 0
+    count = 0
+
+    while i < len(lst):
+        if lst[i] < n:
+            count += 1
+
+        i += 1
+    return count
+
+
 
 # given a list of strings and a character, return a count of the number of strings (i.e. items in the list)
 # which contain at least one occurrence of the character.
@@ -56,7 +71,16 @@ def small_count(lst: List[int], n: int) -> int:
 new_list = ['apples','bananas','pears','oranges','tangerines']
 
 def count_occur(lst: List[str], s: str) -> int:
-    1
+    i = 0
+    count = 0
+
+    while i < len(lst):
+        if s in lst[i]:
+            count += 1
+
+        i += 1
+    return count
+
 
 
 
@@ -65,7 +89,28 @@ def count_occur(lst: List[str], s: str) -> int:
 # return True if the list is in alphabetical order
 
 def alpha_order(lst: List[str]) -> bool:
-    1
+    i = 0
+
+    while i < len(lst) - 1:
+        if lst[i] > lst[i + 1]:
+            return False
+
+
+        i += 1
+
+    return True
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
