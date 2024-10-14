@@ -53,7 +53,7 @@ from typing import *
 
 # they are really useful -- but one issue is forgetting to increment the counter
 #
-# s = 'abcde'
+s = 'abcde'
 # i = 0
 # while i < len(s):
 #     print(s[i])
@@ -69,7 +69,7 @@ from typing import *
 #     print(s[i])
 #     i += 1
 # #
-# s = 'abcdef'
+# s = 'abcde'
 # for char in s:
 #     print(char)
 
@@ -82,17 +82,17 @@ from typing import *
 
 # Benefits:
 # no indexing errors or infinite loops
-
-# Costs:
-#  you only have access to the current value of <variable>
-# #
+#
+# # Costs:
+# #  you only have access to the current value of <variable>
+# # #
 # s='abcdef'
 # i = 0
 # while i < len(s):
 #     print(i, s[0:i])
 #     i += 1
 #
-#
+# #
 # s = 'abcdef'
 # index = 0
 # word = ''
@@ -100,9 +100,9 @@ from typing import *
 #     print(index, word)
 #     index += 1
 #     word += char
+# # #
+# # # We can't do this by using 'char' in s
 # #
-# # We can't do this by using 'char' in s
-#
 # s = 'abcdef'
 # for i in range(len(s)):
 #     print(i, s[0:i])
@@ -158,13 +158,31 @@ def excite2(lst: List[str]) ->List[str]:
 def excite3(lst: List[str]) -> List[str]:
     for word in lst:
         word += '!'
-    return lst
+    return word
 
 ######
 
+# returns true if c is in s, false otherwise
 def string_find(s: str, c: str) -> bool:
-    1
+
+    for char in s:
+        if char == c:
+            return True
+
+    return False
+
 
 # given a list of ints, return True if there are an even number of odd integers
 def even_odds(lst: List[int]) -> bool:
-    1
+    flag = True
+    for item in lst:
+        if item % 2 == 1:
+            flag = not flag
+
+    return flag
+
+def do_not_do_this(lst):
+    for item in lst:
+        lst.append(5)
+
+    return lst
