@@ -7,7 +7,17 @@ from typing import *
 
 # Coding Bat: Sample
 def sum67(nums):
-    1
+    sum = 0
+    flag = True
+    for number in nums:
+        if number == 6:
+            flag = False
+
+        if flag:
+            sum += number
+
+        elif number == 7:
+            flag = True
 
 
 # Write functions which
@@ -21,12 +31,15 @@ def sum67(nums):
 # replace it with item // 7
 
 def sevens(lst: List[int]) -> List[int]:
-
     for item in lst:
         if item % 7 == 0:
             item = item // 7
-
     return lst
+
+
+
+
+
 
 # the above does not work -- it does not change the values of anything *in* the list
 
