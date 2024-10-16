@@ -1,5 +1,5 @@
 from typing import *
-# Project #2 Due Next Friday!
+# Project #2 New Due Date -- Wednesday, October 30!!
 # CodingBat homework on loops and lists due Monday
 #   -- for the homework, you can either use while or for as you see fit
 
@@ -7,18 +7,7 @@ from typing import *
 
 # Coding Bat: Sample
 def sum67(nums):
-    sum = 0
-    flag = True
-    i = 0
-    while i < len(nums):
-        if nums[i] == 6:
-            flag = False
-        elif flag:
-            sum += nums[i]
-        elif nums[i] == 7:
-            flag = True
-        i += 1
-    return sum
+    1
 
 
 # Write functions which
@@ -67,15 +56,6 @@ def sevens4(lst: List[int]) -> List[int]:
     return new_list
 
 
-# given a list of ints, return a new list with all multiples of seven *removed*
-
-def remove_seven(lst: List[int]) -> List[int]:
-    new_list = []
-    for item in lst:
-        if item % 7 != 0:
-            new_list.append(item)
-
-    return new_list
 
 
 
@@ -89,4 +69,4 @@ def remove_seven(lst: List[int]) -> List[int]:
 
 ## Common Loop Patterns
 
-https://hendrix-cs.github.io/csci150/lectures/loop_recipes
+#https://hendrix-cs.github.io/csci150/lectures/loop_recipes
