@@ -83,7 +83,7 @@ Upon completing this course, our goal is for you to be able to:
 | 11 Oct |   Fri   |  Function Abstraction      |                    | Project 2: [Word Games](projects/project2.html)                                                                                  
 |  | | | | |
 | 14 Oct |   Mon   |  The `for` loop            |                        | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html) | HW: CodingBat String and Loop Practice
-| 16 Oct |   Weds  |  [Common loop patterns]({{site.baseurl}}/lectures/loop_recipes.md)      | Function Stack Tracing | 
+| 16 Oct |   Weds  |  [Common loop patterns]({{site.baseurl}}/lectures/loop_recipes.html)      | Function Stack Tracing | 
 | 18 Oct |   Fri   |  **Fall Break - No class** |
 |  | | | | |
 | 21 Oct |   Mon   |  File I/O                  |                        | HW: [File I/O]({{site.baseurl}}/homework/file.html)                        | HW: CodingBat List and Loop Practice
