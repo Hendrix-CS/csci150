@@ -83,15 +83,15 @@ Upon completing this course, our goal is for you to be able to:
 | 11 Oct |   Fri   |  Function Abstraction      |                    | Project 2: [Word Games](projects/project2.html)                                                                                  
 |  | | | | |
 | 14 Oct |   Mon   |  The `for` loop            |                        | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html) | HW: CodingBat String and Loop Practice
-| 16 Oct |   Weds  |  Common loop patterns      | Function Stack Tracing | 
+| 16 Oct |   Weds  |  [Common loop patterns]({{site.baseurl}}/lectures/loop_recipes.md)      | Function Stack Tracing | 
 | 18 Oct |   Fri   |  **Fall Break - No class** |
 |  | | | | |
 | 21 Oct |   Mon   |  File I/O                  |                        | HW: [File I/O]({{site.baseurl}}/homework/file.html)                        | HW: CodingBat List and Loop Practice
 | 23 Oct |   Weds  |  More File I/O             | Strings and Loops      | 
-| 25 Oct |   Fri   |  The Heap and Mutability   |                        |                                      | Project 2 
+| 25 Oct |   Fri   |  The Heap and Mutability   |                        |                                      
 |     | | | | |                                                              
 | 28 Oct |   Mon   | Dictionaries I             |                        | HW: [Dictionaries]({{site.baseurl}}/homework/dictionary.html)                                       | HW: File I/O
-| 30 Oct |   Weds  | Dictionaries II            | Lists and Loops        | 
+| 30 Oct |   Weds  | Dictionaries II            | Lists and Loops        |                                                       | Project 2 
 |  1 Nov |   Fri   | Final Project Discussion   |                        | [Final project]({{site.baseurl}}/projects/final.html)
 |  | | | | |
 |  4 Nov |   Mon   | Classes                    |                        |     HW: [Classes]({{site.baseurl}}/homework/class-design.html)                                  | HW: Dictionaries
