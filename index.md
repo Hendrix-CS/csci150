@@ -141,7 +141,9 @@ Upon completing this course, our goal is for you to be able to:
 | Oct 9 | |[List Processing Examples]({{site.baseurl}}/lectures/F24/Seme/2024-10-09-List-Processing-Examples.py) |
 | Oct 11 | |[Function Abstraction]({{site.baseurl}}/lectures/F24/Seme/2024-10-11-Function-Abstraction.py) |
 | Oct 14 | |[For Loops]({{site.baseurl}}/lectures/F24/Seme/2024-10-14-For-loops.py) |
-| Oct 14 | |[More For Loops]({{site.baseurl}}/lectures/F24/Seme/2024-10-16-More-For-Loops.py) |
+| Oct 16 | |[More For Loops]({{site.baseurl}}/lectures/F24/Seme/2024-10-16-More-For-Loops.py) |
+| Oct 21 | |[File IO]({{site.baseurl}}/lectures/F24/Seme/2024-10-12-File-IO.py) |
+| Oct 21 | |[Sample Text File]({{site.baseurl}}/lectures/F24/Seme/sample-text-file.txt) |
 
 
 
