@@ -98,8 +98,8 @@ Upon completing this course, our goal is for you to be able to:
 |  6 Nov |   Weds  | Class/object examples (cake; car) | File I/O     
 |  8 Nov |   Fri   | Class/object examples (bookshelf) |                 | | 
 |       | | | | |                                                       
-| 11 Nov |   Mon   | PyGame animation           |                        |                                                | HW: Classes
-| 13 Nov |   Weds  | Classes and PyGame         | Dictionaries | HW: [PyGame]({{site.baseurl}}/homework/pygame.html)
+| 11 Nov |   Mon   | PyGame animation           |                        |  HW: [PyGame]({{site.baseurl}}/homework/pygame.html)   | HW: Classes
+| 13 Nov |   Weds  | Classes and PyGame         | Dictionaries |
 | 15 Nov |   Fri   | Classes and PyGame         |              |         | [Final project]({{site.baseurl}}/projects/final.html): Design Document
 |       | | | | |                                                         
 | 18 Nov |   Mon   | Recursion I                |              | HW: [Recursion]({{site.baseurl}}/homework/recursion.html) | HW: PyGame
