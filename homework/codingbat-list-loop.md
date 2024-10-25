@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: CodingBat List and Loop practice
 ---------------------------------------------
 
-*Due: Monday, March 11*
+*Due: Monday, October 21*
 
 Consider the following exercises in CodingBat.  
 

@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: Function Stack Tracing
 -----------------------------------------------
 
-*Due: Monday, February 26*
+*Due: Monday, October 7*
 
 To receive full credit, for each exercise you should do the following:
 

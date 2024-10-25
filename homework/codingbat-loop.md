@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: CodingBat Loop Practice
 ------------------------------------
 
-*Due: Monday, February 19*
+*Due: Monday, September 30*
 
 Consider the following exercises in CodingBat.
 
@@ -22,4 +22,3 @@ Consider the following exercises in CodingBat.
 ## Specifications
 
 - To be considered **complete** you must finish at least **five** of the above exercises.
-  - For each exercise beyond five that you complete, you will earn one bonus token.

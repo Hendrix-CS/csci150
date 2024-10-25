@@ -84,6 +84,10 @@ Common types, operators, and identity elements:
     while i < len(sequence):
         # Do something with sequence[i]
         i += 1
+
+    # Using `for`
+    for i in range(len(sequence)):
+        # Do something with sequence[i]
         
 ## Filter a sequence
 
@@ -94,6 +98,11 @@ Common types, operators, and identity elements:
             add sequence[i] to new_sequence
         i += 1
 
+    # Using `for`
+    new_sequence = empty sequence
+    for i in range(len(sequence)):
+        if property(sequence[i]):
+            add sequence[i] to new_sequence
 
 ## Map a sequence
 
@@ -102,6 +111,11 @@ Common types, operators, and identity elements:
     while i < len(sequence):
         add transform(sequence[i]) to new_sequence
         i += 1
+
+    # Using `for`
+    new_sequence = empty sequence
+    for i in range(len(sequence)):
+        add transform(sequence[i]) to new_sequence
         
         
 ## Some combinations
@@ -180,20 +194,16 @@ Common types, operators, and identity elements:
     # Accumulate from sequence
     def reverse(s: str) -> str:
         opposite = '' 
-        i = 0
-        while i < len(s):
+        for i in range(len(s)):
             opposite = s[i] + opposite
-            i += 1
         return opposite
         
     # Accumulate from sequence
     def smallest_letter(s: str) -> str:
         smallest = s[0]
-        i = 1
-        while i < len(s):
+        for i in range(1, len(s)):
             if s[i] < smallest:
                 smallest = s[i]
-            i += 1
         return smallest    
 
     # Computation
@@ -215,46 +225,36 @@ Common types, operators, and identity elements:
         
     # Traverse a sequence
     def prefixes(s: str):
-        i = 0
-        while i < len(s):
+        for i in range(len(s)):
             print(s[:i+1])
-            i += 1
             
     # Traverse a sequence
     def in_betweens(s: str, length: int):
-        i = 0
-        while i < len(s) - length + 1:
+        for i in range(len(s) - length + 1):
             print(s[i : i + length])
-            i += 1
             
     # Filter a sequence
     def vowels_only(s: str) -> str:
         vowels = ''
-        i = 0
-        while i < len(s):
+        for i in range(len(s)):
             if s[i] in 'aeiou':
                 vowels += s[i]
-            i += 1
         return vowels
         
     # Count instances from a sequence
     def vowel_count(s: str) -> int:
         count = 0
-        i = 0
-        while i < len(s):
+        for i in range(len(s)):
             if s[i] in 'aeiou':
                 count += 1
-            i += 1
         return count
         
     # Filter a sequence
     def unique_items(items_sold: List[str]) -> List[str]:
-        i = 0
         unique = []
-        while i < len(items_sold):
+        for i in range(len(items_sold)):
             if items_sold[i] not in unique:
                 unique.append(items_sold[i])
-            i += 1
         return unique
         
     # Check if a property is true of some elements of a sequence

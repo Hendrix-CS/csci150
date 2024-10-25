@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: Boolean Practice
 -----------------------------
 
-*Due: Monday, February 5*
+*Due: Monday, September 16*
 
 To receive credit, for each exercise you should do the following:
 

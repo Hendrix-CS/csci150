@@ -112,8 +112,10 @@ insert, this function will return a new string with the new character in place o
 character. In keeping with our example transcript above, the `where` variable will be an
 integer between 1 and the length of `word`.
 
-To implement `swap_character()`, you will need to use string slicing and string
-concatenation.
+To implement `swap_character()`:
+* Use string slicing and string concatenation.
+* Do **not** use a `while` loop.
+* Do **not** use `input`. All of the input you need is given by the three parameters (`word`, `where`, and `updated`).
 
 Here are a few examples. Test your implementation of `swap_character()` in the Python Console
 at the bottom of the PyCharm window with these examples:
@@ -193,7 +195,10 @@ otherwise.  You can call the function by writing something like
     spellcheck.valid_word(some_word, 'english3.txt')
 
 Handling erroneous input requires using a loop. The following example shows
-a loop structure that you may find useful in completing `get_start_word()`:
+a loop structure that you may find useful in completing
+`get_start_word()`.  This is **just an example**; instead of checking
+whether the word has four letters, you should check whether it is a
+valid English word.
 
 	valid = False
 	while not valid:

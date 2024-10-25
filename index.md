@@ -8,10 +8,10 @@ layout: course-multi
 
 ## <a name="TAs">TA Office Hours</a>
 
-| Sunday       | Monday            | Tuesday    | Wednesday      |
-|--------------|-------------------|------------|----------------|
-| TBA          | TBA               | TBA        | TBA            |
-|              | TBA               |
+| Sunday           | Monday         | Tuesday     | Wednesday     | Thursday
+|------------------|----------------|-------------|---------------|--------- 
+| 6-8 PM           | 5-7 PM         | 7-9 PM      | 7-9 PM        | 6-8 PM
+| Katherine Reid   | Leigh Johnston | Ted Bjurlin | Joseph Washum | Jauss Favorite
 
 
 # <a name="description">Overview</a>
@@ -70,11 +70,11 @@ Upon completing this course, our goal is for you to be able to:
 | 18 Sep |   Weds  |  More Conditionals         | Math and Variables | 
 | 20 Sep |   Fri   |  The `while` loop          |                    | Project 1: [Civic Assistance Q/A System](projects/project1.html) 
 |      | | | | |        
-| 23 Sep |   Mon   |  More `while` loop<br>Generative AI |           | HW: [Loops](homework/codingbat-loop.html)                             | HW: CodingBat Conditional and By Hand Tracing Practice
+| 23 Sep |   Mon   |  More `while` loop         |                    | HW: [Loops](homework/codingbat-loop.html)                             | HW: CodingBat Conditional and By Hand Tracing Practice
 | 25 Sep |   Weds  |  Functions & Stack Tracing | Booleans
-| 27 Sep |   Fri   |  Functions & Stack Tracing |                    | HW: [Function Stack Tracing](homework/function-reading.html) |                                                          
+| 27 Sep |   Fri   |  Functions & Stack Tracing |                    |  |                                                          
 |  | | | | |
-| 30 Sep |   Mon   |  Strings                   |                    |               | HW: Loops
+| 30 Sep |   Mon   |  Strings                   |                    | HW: [Function Stack Tracing](homework/function-reading.html)              | HW: Loops
 |  2 Oct |   Weds  |  Strings and Loops         | Conditionals       |  
 |  4 Oct |   Fri   |  More Strings and Loops    |                    |                                                              | Project 1                           
 |  | | | | |
@@ -83,23 +83,23 @@ Upon completing this course, our goal is for you to be able to:
 | 11 Oct |   Fri   |  Function Abstraction      |                    | Project 2: [Word Games](projects/project2.html)                                                                                  
 |  | | | | |
 | 14 Oct |   Mon   |  The `for` loop            |                        | HW: [CodingBat List and Loop practice](homework/codingbat-list-loop.html) | HW: CodingBat String and Loop Practice
-| 16 Oct |   Weds  |  Common loop patterns      | Function Stack Tracing | 
+| 16 Oct |   Weds  |  [Common loop patterns]({{site.baseurl}}/lectures/loop_recipes.html)      | Function Stack Tracing | 
 | 18 Oct |   Fri   |  **Fall Break - No class** |
 |  | | | | |
 | 21 Oct |   Mon   |  File I/O                  |                        | HW: [File I/O]({{site.baseurl}}/homework/file.html)                        | HW: CodingBat List and Loop Practice
 | 23 Oct |   Weds  |  More File I/O             | Strings and Loops      | 
-| 25 Oct |   Fri   |  The Heap and Mutability   |                        |                                      | Project 2 
+| 25 Oct |   Fri   |  The Heap and Mutability   |                        |                                      
 |     | | | | |                                                              
 | 28 Oct |   Mon   | Dictionaries I             |                        | HW: [Dictionaries]({{site.baseurl}}/homework/dictionary.html)                                       | HW: File I/O
-| 30 Oct |   Weds  | Dictionaries II            | Lists and Loops        | 
+| 30 Oct |   Weds  | Dictionaries II            | Lists and Loops        |                                                       | Project 2 
 |  1 Nov |   Fri   | Final Project Discussion   |                        | [Final project]({{site.baseurl}}/projects/final.html)
 |  | | | | |
 |  4 Nov |   Mon   | Classes                    |                        |     HW: [Classes]({{site.baseurl}}/homework/class-design.html)                                  | HW: Dictionaries
 |  6 Nov |   Weds  | Class/object examples (cake; car) | File I/O     
 |  8 Nov |   Fri   | Class/object examples (bookshelf) |                 | | 
 |       | | | | |                                                       
-| 11 Nov |   Mon   | PyGame animation           |                        |                                                | HW: Classes
-| 13 Nov |   Weds  | Classes and PyGame         | Dictionaries | HW: [PyGame]({{site.baseurl}}/homework/pygame.html)
+| 11 Nov |   Mon   | PyGame animation           |                        |  HW: [PyGame]({{site.baseurl}}/homework/pygame.html)   | HW: Classes
+| 13 Nov |   Weds  | Classes and PyGame         | Dictionaries |
 | 15 Nov |   Fri   | Classes and PyGame         |              |         | [Final project]({{site.baseurl}}/projects/final.html): Design Document
 |       | | | | |                                                         
 | 18 Nov |   Mon   | Recursion I                |              | HW: [Recursion]({{site.baseurl}}/homework/recursion.html) | HW: PyGame
@@ -110,7 +110,7 @@ Upon completing this course, our goal is for you to be able to:
 | 27 Nov |   Wed   | **Thanksgiving - No class**
 | 29 Nov |   Wed   | **Thanksgiving - No class**
 |  | | | | |
-|  2 Dec |   Mon   | Project Workshop           |              |                                                                                    
+|  2 Dec |   Mon   | Generative AI               |              |                                                                                    
 |  4 Dec |   Fri   | Project Workshop    
 |  6 Dec |   Fri   | Retrospective    
 |        | | | | |                                                        
@@ -124,6 +124,31 @@ Upon completing this course, our goal is for you to be able to:
 |---|---|---|
 | Aug 28 | |[Intro to CS](https://www.kaggle.com/code/larskseme/2024-08-28-introduction-to-cs)| 
 | Aug 30 | |[Errors, Algorithms, and Math in Python](https://www.kaggle.com/code/larskseme/2024-08-30-algorithms-and-errors)|
+| Sep 4 | | [Math, Variables, Functions](https://www.kaggle.com/code/larskseme/2024-09-04-variables-and-functions) |
+| Sep 6 | | [More Functions](https://www.kaggle.com/code/larskseme/2024-09-06-functions) |
+| Sep 9 | | [Booleans](https://www.kaggle.com/code/larskseme/2024-09-09-booleans) |
+| Sep 11 | |[Conditionals](https://www.kaggle.com/code/larskseme/2024-09-11-conditionals) |
+| Sep 13 | |[Tracing Intro]({{site.baseurl}}/lectures/F24/Seme/2024-09-13-Tracing-Introduction-Sample-Solutions.pdf) |
+| Sep 16 | |[PyCharm and I/O](https://www.kaggle.com/code/larskseme/2024-09-16-pycharm-and-i-o)|
+| Sep 18 | |[More Conditionals]({{site.baseurl}}/lectures/F24/Seme/2024-09-18-More-Conditionals.py) |
+| Sep 20 | |[The While Loop]({{site.baseurl}}/lectures/F24/Seme/2024-09-20-the-while-loop.py) |
+| Sep 20 | |[More While Loops]({{site.baseurl}}/lectures/F24/Seme/2024-09-23-More-While-Loops.py) |
+| Sep 25 | |[Stack Tracing]({{site.baseurl}}/lectures/F24/Seme/2024-09-25-Function-Stack-Tracing-Solutions.pdf) |
+| Sep 27 | |[More Stack Tracing]({{site.baseurl}}/lectures/F24/Seme/2024-09-27-More-Tracing-Examples-Solutions.pdf) |
+| Oct 2 | |[Strings and Loops]({{site.baseurl}}/lectures/F24/Seme/2024-10-02-String-and-Loops.py) |
+| Oct 4 | |[More Strings and Loops - Input Checking]({{site.baseurl}}/lectures/F24/Seme/2024-10-04-More-Strings-and-Loops.py) |
+| Oct 7 | |[Lists]({{site.baseurl}}/lectures/F24/Seme/2024-10-07-Lists.py) |
+| Oct 9 | |[List Processing Examples]({{site.baseurl}}/lectures/F24/Seme/2024-10-09-List-Processing-Examples.py) |
+| Oct 11 | |[Function Abstraction]({{site.baseurl}}/lectures/F24/Seme/2024-10-11-Function-Abstraction.py) |
+| Oct 14 | |[For Loops]({{site.baseurl}}/lectures/F24/Seme/2024-10-14-For-loops.py) |
+| Oct 16 | |[More For Loops]({{site.baseurl}}/lectures/F24/Seme/2024-10-16-More-For-Loops.py) |
+| Oct 21 | |[File IO]({{site.baseurl}}/lectures/F24/Seme/2024-10-21-File-IO.py) |
+|  | |[Sample Text File]({{site.baseurl}}/lectures/F24/Seme/sample-text-file.txt) |
+| Oct 23 | |[More File IO]({{site.baseurl}}/lectures/F24/Seme/2024-10-23-More-File-IO.py) |
+|  | |[Sample Data File]({{site.baseurl}}/lectures/F24/Seme/data-practice.txt) |
+| Oct 25 | |[Heap and Mutability]({{site.baseurl}}/lectures/F24/Seme/2024-10-25-Heap-and-Mutability.py) |
+
+
 
 <!--
 * [Boolean Expressions](https://www.kaggle.com/gabrielferrer/csci-150-s24-boolean-expressions)
@@ -214,9 +239,8 @@ A student may book an office hours appointment to take a quiz missed due to
 an excused absence.
 
 ## <a name="labs">Labs</a>
-<!--
-<p><a href="docs/code-of-conduct/23F/code-of-conduct-23F-W.pdf">Wednesday Lab Code of Conduct</a></p>
--->
+
+* [Wednesday Lab Code of Conduct](docs/code-of-conduct/24F/Wednesday_lab.html)
 
 | #  | Name                                                                                      | Completion time | Assigned  | Due       |
 |:--:|-------------------------------------------------------------------------------------------|-----------------|-----------|-----------|

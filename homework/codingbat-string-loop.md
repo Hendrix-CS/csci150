@@ -5,7 +5,7 @@ layout: generic
 CSCI 150 HW: CodingBat String Practice
 --------------------------------------
 
-Due: *Monday, March 4*
+Due: *Monday, October 14*
 
 Consider the following exercises in CodingBat.
 
@@ -20,5 +20,5 @@ Consider the following exercises in CodingBat.
 
 ## Specifications
 
-- To be considered **complete** you must finish at least five exercises.
-  - For each exercise beyond five that you complete, you will earn one bonus token.
+To be considered **complete** you must finish at least five exercises.
+

@@ -5,7 +5,7 @@ num: 2
 worktitle: Word Games
 ---
 
-**Due Friday, March 15**
+**Due Friday, October 30**
 ## Description
 
 For this project, you will create a program for users to play a [word
@@ -33,14 +33,16 @@ Some examples include:
 *   [Bulls and Cows](http://en.wikipedia.org/wiki/Bulls_and_cows)
     (using **words**, not numbers) or [Wordle](https://en.wikipedia.org/wiki/Wordle)
 *   [Hangman](https://en.wikipedia.org/wiki/Hangman_(game))
-*   [Last Letter First
-    Letter](http://www.greatschools.org/students/activities/slideshows/2812-family-word-games.gs?page=3)
-    using countries, state names, foods, etc.
 *   [Ghost](http://en.wikipedia.org/wiki/Ghost_%28game%29)
+*   [Wheel of Fortune](https://en.wikipedia.org/wiki/Wheel_of_Fortune_(American_game_show))
+    * No need for three players or an animated wheel.
 *   [Boggle](http://en.wikipedia.org/wiki/Boggle)
 *   [Prolix](http://boardgamegeek.com/boardgame/39635/prolix)
 *   a program to let a user solve a
     [Cryptogram](http://en.wikipedia.org/wiki/Cryptogram)
+*   [Last Letter First
+    Letter](http://www.greatschools.org/students/activities/slideshows/2812-family-word-games.gs?page=3)
+    using countries, state names, foods, etc.
 
 **Do not feel limited by the games on this list**. Find a word game that
 interests you and implement it. If you choose something else, check with
