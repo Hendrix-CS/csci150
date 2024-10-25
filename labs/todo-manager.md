@@ -129,14 +129,12 @@ the lab:
 Create a new Python file called `todo_manager.py`, and put
 your name and date at the top.
 
-Also add the line `from typing import *` right below the name and date.
-
 Now follow the instructions below to write some functions you will
 need.
 
 #### 1.1 Turn a list into a string
 
-Write a function called `list_into_lines(items: List[str]) -> str`.
+Write a function called `list_into_lines(items: list[str]) -> str`.
 
 Given a list of strings, this function should create a single string
 that combines all of the strings from the list, putting a newline
@@ -158,7 +156,7 @@ from class!
 
 #### 1.2 Print Numbered List
 
-Write a function called `print_numbered_list(items: List[str])`.
+Write a function called `print_numbered_list(items: list[str])`.
 
 This function should take a list of strings as input and `print` them
 out, one per line, with numbers in front of them.  For example, if
@@ -180,7 +178,7 @@ at the prompt, you should see the output shown above.
 
 #### 1.3 Get choice
 
-Write a function called `get_choice(prompt: str, choices: List[str]) -> int`.
+Write a function called `get_choice(prompt: str, choices: list[str]) -> int`.
 
 This function takes as input a prompt string and a list of
 choices, and returns an `int` corresponding to the
@@ -238,7 +236,7 @@ now, you can just copy and paste these functions into your program.
     # of strings, one per line; OR print a warning and return the empty
     # list if there is an error opening the file (e.g. if the file does
     # not exist).
-    def load_list_from_file(filename: str) -> List[str]:
+    def load_list_from_file(filename: str) -> list[str]:
         try:
             f = open(filename, 'r')
             lines = [l.rstrip() for l in f.readlines()]
@@ -341,7 +339,7 @@ from class if you don't remember how to do it.)
 
 Write a function
 <pre>
-def find_all(term: str, items: List[str]) -> List[str]:
+def find_all(term: str, items: list[str]) -> list[str]:
 </pre>
 which takes a search term and a list of items, and returns the list of
 only those items from the list which contain the search term.  You can
