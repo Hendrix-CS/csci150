@@ -144,8 +144,9 @@ Upon completing this course, our goal is for you to be able to:
 | Oct 16 | |[More For Loops]({{site.baseurl}}/lectures/F24/Seme/2024-10-16-More-For-Loops.py) |
 | Oct 21 | |[File IO]({{site.baseurl}}/lectures/F24/Seme/2024-10-21-File-IO.py) |
 |  | |[Sample Text File]({{site.baseurl}}/lectures/F24/Seme/sample-text-file.txt) |
-| Oct 23 | |[MOre File IO]({{site.baseurl}}/lectures/F24/Seme/2024-10-23-More-File-IO.py) |
+| Oct 23 | |[More File IO]({{site.baseurl}}/lectures/F24/Seme/2024-10-23-More-File-IO.py) |
 |  | |[Sample Data File]({{site.baseurl}}/lectures/F24/Seme/data-practice.txt) |
+| Oct 25 | |[Heap and Mutability]({{site.baseurl}}/lectures/F24/Seme/2024-10-25-Heap-and-Mutability.py) |
 
 
 
