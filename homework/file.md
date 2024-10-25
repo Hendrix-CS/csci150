@@ -17,9 +17,9 @@ list_output("letters.txt", items)
 
 should create the following file:
 ```
-0 a
-1 b
-2 c
+0 alpha
+1 beta
+2 gamma
 ```
 
 Note -- `list_output()` takes **two** parameters -- a string, which is the name of the output file, and the list.
