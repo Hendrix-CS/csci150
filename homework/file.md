@@ -11,7 +11,7 @@ Write two functions:
 Each item should be prefixed by its index.  For example:
 
 ```
-items = ['a', 'b', 'c']
+items = ['alpha', 'beta', 'gamma']
 list_output("letters.txt", items)
 ```
 
