@@ -147,6 +147,7 @@ Upon completing this course, our goal is for you to be able to:
 | Oct 23 | |[More File IO]({{site.baseurl}}/lectures/F24/Seme/2024-10-23-More-File-IO.py) |
 |  | |[Sample Data File]({{site.baseurl}}/lectures/F24/Seme/data-practice.txt) |
 | Oct 25 | |[Heap and Mutability]({{site.baseurl}}/lectures/F24/Seme/2024-10-25-Heap-and-Mutability.py) |
+| Oct 28 | |[Intro to Dictionaries]({{site.baseurl}}/lectures/F24/Seme/2024-10-28-Intro-to-Dictionaries.py) |
 
 
 
