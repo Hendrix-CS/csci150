@@ -148,6 +148,7 @@ Upon completing this course, our goal is for you to be able to:
 |  | |[Sample Data File]({{site.baseurl}}/lectures/F24/Seme/data-practice.txt) |
 | Oct 25 | |[Heap and Mutability]({{site.baseurl}}/lectures/F24/Seme/2024-10-25-Heap-and-Mutability.py) |
 | Oct 28 | |[Intro to Dictionaries]({{site.baseurl}}/lectures/F24/Seme/2024-10-28-Intro-to-Dictionaries.py) |
+| Oct 30 | |[More Dictionaries]({{site.baseurl}}/lectures/F24/Seme/2024-10-30-More-Dictionaries.py) |
 
 
 
