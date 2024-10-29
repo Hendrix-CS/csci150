@@ -5,6 +5,8 @@ num: 10
 worktitle: Dictionaries
 ---
 
+**Due Monday, November 4**
+
 Write two functions:
 1. The first function, `vowel_histogram(s: str) -> Dict[str,int]`, should return a dictionary
 where the keys are vowels (a, e, i, o, u) and the values are the number of occurrences of each
@@ -22,3 +24,4 @@ dictionary with the smallest value. Here is an example of calling the function i
 >>> min_key({'a': 4, 'b': -5, 'c': 2, 'd': -7, 'e': 4})
 'd'
 ```
+If the smallest key happens to occur more than once, a solution which returns any key (associated with that value) will be considered correct.
