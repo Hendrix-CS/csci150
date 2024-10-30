@@ -11,20 +11,62 @@ from typing import *
 # Given a list of distinct strings, each string is the key and the value
 # is the number of 't's in the string
 def t_count(lst: List[str]) -> Dict[str,int]:
-    1
+    return_dict  = {}
+    for item in lst:
+        c = item.count('t')
+        return_dict[item] = c
+
+    return return_dict
+
+
 
 # for each integer 0, 1, ..., n:
 # the key is the integer and the value is the
 # number of times you need to //2 to get 0
 
 def div_count(n: int) -> Dict[int,int]:
-    1
+    div_dict = {}
+    i = 0
+    while i <= n:
+        count = 0
+        num = i
+        while num > 0:
+            num = num // 2
+            count += 1
+
+        div_dict[i] = count
+
+        i += 1
+
+
+
+    return div_dict
 
 # Same idea a before, except the keys are the
 # number of times needed and the value is the
 # list of numbers:
 def rev_div_count(n: int) -> Dict[int,List[int]]:
-    1
+    div_dict = {}
+    i = 0
+    while i <= n:
+        count = 0
+        num = i
+        while num > 0:
+            num = num // 2
+            count += 1
+
+        if count not in div_dict:
+            div_dict[count] = []
+        div_dict[count].append(i)
+
+
+
+        i += 1
+
+
+
+
+    return div_dict
 
 # The user will enter  words
 # Each word will do into a dictionary, keyed on word length, with value the list
@@ -70,6 +112,11 @@ def word_count() -> Dict[int, List[str]]:
 # value_find(d, 7) would return []
 
 def value_find(d: Dict[str, List[int]], n: int) -> List[str]:
-    1
+    return_lst = []
+    for k in d:
+        if n in d[k]:
+            return_lst.append(k)
+
+    return return_lst
 
 
