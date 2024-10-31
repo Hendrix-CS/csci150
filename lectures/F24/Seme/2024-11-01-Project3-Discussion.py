@@ -5,7 +5,7 @@
 # You can do almost anything: Commons options include:
 # -- simple video game
 # -- a very updated version of your Word game -- need to be substantial
-# -- extend an idea from lab -- again substantially
+# -- extend an idea from lab -- again substantial update/improvement
 # -- data analysis
 
 # In class, I will show a few examples of final projects
