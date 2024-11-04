@@ -150,6 +150,7 @@ Upon completing this course, our goal is for you to be able to:
 | Oct 28 | |[Intro to Dictionaries]({{site.baseurl}}/lectures/F24/Seme/2024-10-28-Intro-to-Dictionaries.py) |
 | Oct 30 | |[More Dictionaries]({{site.baseurl}}/lectures/F24/Seme/2024-10-30-More-Dictionaries.py) |
 | Nov 1 | |[Final Project Information]({{site.baseurl}}/lectures/F24/Seme/2024-11-01-Project3-Discussion.py) |
+| Nov 4 | |[Intro to Classes]({{site.baseurl}}/lectures/F24/Seme/2024-11-04-Intro-to-Classes.py) |
 
 
 
