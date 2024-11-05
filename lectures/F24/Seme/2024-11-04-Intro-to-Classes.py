@@ -58,8 +58,7 @@ from typing import *
 #  (notice a theme with our family....)
 
 #  What things might we want to keep up with?
-#     Make (Honda, Toyota, Ford)
-#     Model
+
 #    Milleage
 #    Gas Tank (Capacity & current level)
 #    lots of other things
@@ -82,8 +81,6 @@ from typing import *
 
 class Car:
     # though not required, the style in Python is to Capitalize the name of the class
-
-
 
     def __init__(self, curr_gas: float, tank_cap: float, mpg: float):
 
@@ -128,36 +125,37 @@ class Car:
             self.milleage += dist
 
     # # this method is nice, but basically is replaced with __str__ and __repr__ above.
-    # def status(self):
-    #     print(f'This car is a {self.make} {self.model}.')
-    #     print(f'It currently has {self.gas} gallons in the tank, which holds {self.tank_cap} gallons.')
-    #     print(f'The car has {self.milleage} miles on it.')
+    def status(self):
+        print(f'It currently has {self.gas} gallons in the tank, which holds {self.tank_cap} gallons.')
+        print(f'The car has {self.milleage} miles on it.')
     #
+
+
+
+
+
+
+
 
 class Student:
 
     def __init__(self, name: str, id: int):
         self.name = name
         self.id = id
-        self.yr = 'Freshman'
+        self.courses = []
         self.credits = 0
-        self.schedule = []
+        self.year = 'freshman'
 
-    def add_course(self,course: str):
-        self.schedule.append(course)
+    def add_course(self, course: str):
+        self.courses.append(course)
         self.credits += 1
 
     def drop_course(self, course: str):
-        if course in self.schedule:
-            self.schedule.remove(course)
+        if course not in self.courses:
+            print(f'That course is not on {self.name}s schedule.')
         else:
-            print(f'{} is not enrolled in {course}')
-
-    def is_full_time(self) -> bool:
-        if self.credits >= 3:
-            return True
-        else:
-            return False
+            self.courses.remove(course)
+            self.credits -= 1
 
 
 
@@ -173,5 +171,44 @@ class Student:
 
 
 
-
-
+# class Student:
+#
+#     def __init__(self, name: str, id: int):
+#         self.name = name
+#         self.id = id
+#         self.yr = 'Freshman'
+#         self.credits = 0
+#         self.schedule = []
+#
+#     def add_course(self,course: str):
+#         self.schedule.append(course)
+#         self.credits += 1
+#
+#     def drop_course(self, course: str):
+#         if course in self.schedule:
+#             self.schedule.remove(course)
+#         else:
+#             print(f'{} is not enrolled in {course}')
+#
+#     def is_full_time(self) -> bool:
+#         if self.credits >= 3:
+#             return True
+#         else:
+#             return False
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
