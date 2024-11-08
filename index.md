@@ -120,7 +120,7 @@ Upon completing this course, our goal is for you to be able to:
 
 * Examples from lecture will be posted here!
 
-| Date |Ferrer | Seme|
+| Date |[Ferrer](https://github.com/gjf2a/pycharmInClass) | Seme|
 |---|---|---|
 | Aug 28 | |[Intro to CS](https://www.kaggle.com/code/larskseme/2024-08-28-introduction-to-cs)| 
 | Aug 30 | |[Errors, Algorithms, and Math in Python](https://www.kaggle.com/code/larskseme/2024-08-30-algorithms-and-errors)|
