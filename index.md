@@ -154,6 +154,7 @@ Upon completing this course, our goal is for you to be able to:
 | Nov 6 | |[Class Examples]({{site.baseurl}}/lectures/F24/Seme/2024-11-06-Class-Examples-Day1.py) |
 | Nov 8 | |[More Class Examples]({{site.baseurl}}/lectures/F24/Seme/2024-11-08-Class-Examples-Day2.py) |
 |  | |[Book List]({{site.baseurl}}/lectures/F24/Seme/books.txt) |
+|Nov 11  | |[Pygame Intro]({{site.baseurl}}/lectures/F24/Seme/2024-11-11-Pygame-Intro.py) |
 
 
 
