@@ -39,20 +39,22 @@ def draw_all(surface):
 
 
     # #
-    pygame.draw.circle(surface, pygame.Color(255, 0, 0), (200, 100), 90)
+
+    pygame.draw.circle(surface, pygame.Color(0,255,0), (400,400), 300)
+    pygame.draw.circle(surface, pygame.Color(50, 0, 200), (500, 600), 20)
 
     #
     # # rectangles -- syntax is (where, color, (upperleftx, upperlefty, width, height)
     #
-    #pygame.draw.rect(surface, pygame.Color(0, 255, 255), (600, 0,100,300))
+    pygame.draw.rect(surface, pygame.Color(0, 255, 255), (600, 0,100,300))
 
 
     #
     # # line -- syntax is (where, color, (startx, starty), (endx,endy))
-    #pygame.draw.line(surface, pygame.Color(0, 0, 0), (10, 10), (200, 20))
+    pygame.draw.line(surface, pygame.Color(0, 0, 0), (10, 10), (200, 20))
     #
-    # for i in range(1,101,10):
-    #     pygame.draw.circle(surface,pygame.Color(  i,255- i,i),(10+i,200-3 * i), i)
+    for i in range(1,101,10):
+        pygame.draw.circle(surface,pygame.Color(  i,255- i,i),(10+i,200-3 * i), i)
     #
 
     pygame.display.update()
@@ -72,7 +74,7 @@ def main():
                 running = False
     pygame.quit()
 
-main()
+#main()
 
 
 def draw_all2(surface,offset):
@@ -99,4 +101,4 @@ def main2():
                 offset += 5
     pygame.quit()
 
-#main2()
+main2()
