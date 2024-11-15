@@ -104,7 +104,7 @@ Upon completing this course, our goal is for you to be able to:
 |       | | | | |                                                         
 | 18 Nov |   Mon   | Recursion I                |              | HW: [Recursion]({{site.baseurl}}/homework/recursion.html) | HW: PyGame
 | 20 Nov |   Weds  | Recursion II: Trees        | Classes      |
-| 22 Nov |   Fri   | Recursion III: Applications|              |                                                | [Final project]({{site.baseurl}}/projects/final.html): Progress Report
+| 22 Nov |   Fri   | Recursion III: Applications|              |                                                | 
 |  | | | | |
 | 25 Nov |   Mon   | Binary and Information Encoding|          |                                                | HW: Recursion
 | 27 Nov |   Wed   | **Thanksgiving - No class**
