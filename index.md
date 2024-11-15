@@ -157,6 +157,9 @@ Upon completing this course, our goal is for you to be able to:
 | Nov 11 | |[PyGame Intro]({{site.baseurl}}/lectures/F24/Seme/2024-11-11-Pygame-Intro.py) |
 | Nov 13 | |[More PyGame]({{site.baseurl}}/lectures/F24/Seme/2024-11-13-Working-in-pygame.py) |
 | | |[Sound File]({{site.baseurl}}/lectures/F24/Seme/doh.mp3) |
+| Nov 15 | |[Even More PyGame]({{site.baseurl}}/lectures/F24/Seme/2024-11-15-Pygame-and-Classes.py) |
+| | |[Homer1]({{site.baseurl}}/lectures/F24/Seme/homer1.png) |
+| | |[Homer2]({{site.baseurl}}/lectures/F24/Seme/homer2.png) |
 
 
 
