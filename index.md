@@ -160,6 +160,7 @@ Upon completing this course, our goal is for you to be able to:
 | Nov 15 | |[Even More PyGame]({{site.baseurl}}/lectures/F24/Seme/2024-11-15-Pygame-and-Classes.py) |
 | | |[Homer1]({{site.baseurl}}/lectures/F24/Seme/homer1.png) |
 | | |[Homer2]({{site.baseurl}}/lectures/F24/Seme/homer2.png) |
+| Nov 18 | |[Recursion]({{site.baseurl}}/lectures/F24/Seme/2024-11-18-Recursion.py) |
 
 
 
