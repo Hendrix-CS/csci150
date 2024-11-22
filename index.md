@@ -162,7 +162,7 @@ Upon completing this course, our goal is for you to be able to:
 | | |[Homer2]({{site.baseurl}}/lectures/F24/Seme/homer2.png) |
 | Nov 18 | |[Recursion]({{site.baseurl}}/lectures/F24/Seme/2024-11-18-Recursion.py) |
 | Nov 20 | |[Recursion]({{site.baseurl}}/lectures/F24/Seme/2024-11-20-Recursion-Trees.py) |
-| Nov 20 | |[Time Efficiency]({{site.baseurl}}/lectures/F24/Seme/2024-11-22-Time-Efficiency.py) |
+| Nov 22 | |[Time Efficiency]({{site.baseurl}}/lectures/F24/Seme/2024-11-22-Time-Efficiency.py) |
 
 
 
