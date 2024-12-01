@@ -164,6 +164,7 @@ Upon completing this course, our goal is for you to be able to:
 | Nov 20 | |[Recursion]({{site.baseurl}}/lectures/F24/Seme/2024-11-20-Recursion-Trees.py) |
 | Nov 22 | |[Time Efficiency]({{site.baseurl}}/lectures/F24/Seme/2024-11-22-Time-Efficiency.py) |
 | Nov 25 | |[Binary & Information Encoding](https://www.kaggle.com/code/larskseme/2024-11-25-binary-and-info-encoding) |
+| Dec 2 | |[Generative AI]({{site.baseurl}}/lectures/F24/Seme/2024-12-02-Generative-AI.py) |
 
 
 
