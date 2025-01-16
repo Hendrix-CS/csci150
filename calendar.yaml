@@ -28,20 +28,54 @@ entries:
   ##################################################
 
   - Date: 2025-01-27
+    Topic: 'Python, Math & Variables'
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/math.html
+          text: Math and Variables
+    Due: 'HW: Minecraft by hand'
   - Date: 2025-01-29
+    Topic: Functions
   - Date: 2025-01-31
+    Topic: Booleans
 
   ##################################################
 
   - Date: 2025-02-03
+    Topic: Conditionals
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/booleans.html
+          text: Boolean practice
+    Due: 'HW: Math and Variables'
   - Date: 2025-02-05
+    Topic: Tracing I
+    Quiz: Minecraft by Hand
   - Date: 2025-02-07
+    Topic: Pycharm
 
   ##################################################
 
   - Date: 2025-02-10
+    Topic: I/O
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/codingbat-conditional.html
+          text: CodingBat Conditional and By Hand Tracing Practice
+    Due: 'HW: Boolean Practice'
   - Date: 2025-02-12
+    Topic: More Conditionals
+    Quiz: Math and Variables
   - Date: 2025-02-14
+    Topic: While loops
+    Resources:
+      - 'Project 1:'
+      - link:
+          url: projects/project1.html
+          text: Civic Assistance Q/A System
 
   ##################################################
 
@@ -49,31 +83,60 @@ entries:
     Topic:
       emph: 'No class (Mid-winter break)'
   - Date: 2025-02-19
+    Topic: 'More while loops, Functions & Stack Tracing'
   - Date: 2025-02-21
+    Topic: 'Functions & Stack Tracing'
 
   ##################################################
 
   - Date: 2025-02-24
+    Topic: Strings
   - Date: 2025-02-26
+    Topic: Strings and Loops
   - Date: 2025-02-28
+    Topic: Generative AI
 
   ##################################################
 
   - Date: 2025-03-03
+    Topic: Lists
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/math.html
+          text: Math and Variables
   - Date: 2025-03-05
+    Topic: List Processing Examples
   - Date: 2025-03-07
+    Topic: Function Abstraction
 
   ##################################################
 
   - Date: 2025-03-10
+    Topic: For loops
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/math.html
+          text: Math and Variables
   - Date: 2025-03-12
+    Topic: For loop practice
   - Date: 2025-03-14
+    Topic: Common loop patterns
 
   ##################################################
 
   - Date: 2025-03-17
+    Topic: File I/O
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/math.html
+          text: Math and Variables
   - Date: 2025-03-19
+    Topic: More File I/O
   - Date: 2025-03-21
+    Topic: The Heap and Mutability
 
   ##################################################
 
@@ -90,32 +153,67 @@ entries:
   ##################################################
 
   - Date: 2025-03-31
+    Topic: Dictionaries I
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/math.html
+          text: Math and Variables
   - Date: 2025-04-02
+    Topic: Dictionaries II
   - Date: 2025-04-04
+    Topic: Final Project Discussion
 
   ##################################################
 
   - Date: 2025-04-07
+    Topic: Classes
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/math.html
+          text: Math and Variables
   - Date: 2025-04-09
+    Topic: Class/object examples (cake; car)
   - Date: 2025-04-11
+    Topic: Class/object examples (bookshelf)
 
   ##################################################
 
   - Date: 2025-04-14
+    Topic: PyGame
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/math.html
+          text: Math and Variables
   - Date: 2025-04-16
+    Topic: Classes and PyGame
   - Date: 2025-04-18
+    Topic: Classes and PyGame
 
   ##################################################
 
   - Date: 2025-04-21
+    Topic: Recursion I
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/math.html
+          text: Math and Variables
   - Date: 2025-04-23
+    Topic: 'Recursion II: Trees'
   - Date: 2025-04-25
+    Topic: 'Recursion III: Applications'
 
   ##################################################
 
   - Date: 2025-04-28
+    Topic: Binary and Information Encoding
   - Date: 2025-04-30
+    Topic: Project Workshop
   - Date: 2025-05-02
+    Topic: Retrospective
 
   ##################################################
 

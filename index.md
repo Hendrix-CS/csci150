@@ -53,68 +53,68 @@ Upon completing this course, our goal is for you to be able to:
 
 <!-- BEGIN CALENDAR -->
 
-| Date         | Topic & Notes                       | Quiz | Assignments & Resources                          | Due    |
-|--------------|-------------------------------------|------|--------------------------------------------------|--------|
-| **W 22 Jan** | Introduction to CS                  |      | [Survey](https://forms.gle/57J7q71S2DqcFqKdA)    |        |
-| **F 24 Jan** | Algorithms and Errors               |      | HW: [Minecraft by hand](homework/minecraft.html) | Survey |
-|              |                                     |      |                                                  |        |
-| **M 27 Jan** |                                     |      |                                                  |        |
-| **W 29 Jan** |                                     |      |                                                  |        |
-| **F 31 Jan** |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 3 Feb**  |                                     |      |                                                  |        |
-| **W 5 Feb**  |                                     |      |                                                  |        |
-| **F 7 Feb**  |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 10 Feb** |                                     |      |                                                  |        |
-| **W 12 Feb** |                                     |      |                                                  |        |
-| **F 14 Feb** |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 17 Feb** | *No class (Mid-winter break)*       |      |                                                  |        |
-| **W 19 Feb** |                                     |      |                                                  |        |
-| **F 21 Feb** |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 24 Feb** |                                     |      |                                                  |        |
-| **W 26 Feb** |                                     |      |                                                  |        |
-| **F 28 Feb** |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 3 Mar**  |                                     |      |                                                  |        |
-| **W 5 Mar**  |                                     |      |                                                  |        |
-| **F 7 Mar**  |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 10 Mar** |                                     |      |                                                  |        |
-| **W 12 Mar** |                                     |      |                                                  |        |
-| **F 14 Mar** |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 17 Mar** |                                     |      |                                                  |        |
-| **W 19 Mar** |                                     |      |                                                  |        |
-| **F 21 Mar** |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 24 Mar** | *No class (Spring break)*           |      |                                                  |        |
-| **W 26 Mar** | *No class (Spring break)*           |      |                                                  |        |
-| **F 28 Mar** | *No class (Spring break)*           |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 31 Mar** |                                     |      |                                                  |        |
-| **W 2 Apr**  |                                     |      |                                                  |        |
-| **F 4 Apr**  |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 7 Apr**  |                                     |      |                                                  |        |
-| **W 9 Apr**  |                                     |      |                                                  |        |
-| **F 11 Apr** |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 14 Apr** |                                     |      |                                                  |        |
-| **W 16 Apr** |                                     |      |                                                  |        |
-| **F 18 Apr** |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 21 Apr** |                                     |      |                                                  |        |
-| **W 23 Apr** |                                     |      |                                                  |        |
-| **F 25 Apr** |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **M 28 Apr** |                                     |      |                                                  |        |
-| **W 30 Apr** |                                     |      |                                                  |        |
-| **F 2 May**  |                                     |      |                                                  |        |
-|              |                                     |      |                                                  |        |
-| **F 9 May**  | Final project presentations (2-5pm) |      |                                                  |        |
+| Date         | Topic & Notes                               | Quiz               | Assignments & Resources                                                                       | Due                    |
+|--------------|---------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------|------------------------|
+| **W 22 Jan** | Introduction to CS                          |                    | [Survey](https://forms.gle/57J7q71S2DqcFqKdA)                                                 |                        |
+| **F 24 Jan** | Algorithms and Errors                       |                    | HW: [Minecraft by hand](homework/minecraft.html)                                              | Survey                 |
+|              |                                             |                    |                                                                                               |                        |
+| **M 27 Jan** | Python, Math & Variables                    |                    | HW: [Math and Variables](homework/math.html)                                                  | HW: Minecraft by hand  |
+| **W 29 Jan** | Functions                                   |                    |                                                                                               |                        |
+| **F 31 Jan** | Booleans                                    |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 3 Feb**  | Conditionals                                |                    | HW: [Boolean practice](homework/booleans.html)                                                | HW: Math and Variables |
+| **W 5 Feb**  | Tracing I                                   | Minecraft by Hand  |                                                                                               |                        |
+| **F 7 Feb**  | Pycharm                                     |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 10 Feb** | I/O                                         |                    | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) | HW: Boolean Practice   |
+| **W 12 Feb** | More Conditionals                           | Math and Variables |                                                                                               |                        |
+| **F 14 Feb** | While loops                                 |                    | Project 1: [Civic Assistance Q/A System](projects/project1.html)                              |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 17 Feb** | *No class (Mid-winter break)*               |                    |                                                                                               |                        |
+| **W 19 Feb** | More while loops, Functions & Stack Tracing |                    |                                                                                               |                        |
+| **F 21 Feb** | Functions & Stack Tracing                   |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 24 Feb** | Strings                                     |                    |                                                                                               |                        |
+| **W 26 Feb** | Strings and Loops                           |                    |                                                                                               |                        |
+| **F 28 Feb** | Generative AI                               |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 3 Mar**  | Lists                                       |                    | HW: [Math and Variables](homework/math.html)                                                  |                        |
+| **W 5 Mar**  | List Processing Examples                    |                    |                                                                                               |                        |
+| **F 7 Mar**  | Function Abstraction                        |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 10 Mar** | For loops                                   |                    | HW: [Math and Variables](homework/math.html)                                                  |                        |
+| **W 12 Mar** | For loop practice                           |                    |                                                                                               |                        |
+| **F 14 Mar** | Common loop patterns                        |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 17 Mar** | File I/O                                    |                    | HW: [Math and Variables](homework/math.html)                                                  |                        |
+| **W 19 Mar** | More File I/O                               |                    |                                                                                               |                        |
+| **F 21 Mar** | The Heap and Mutability                     |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 24 Mar** | *No class (Spring break)*                   |                    |                                                                                               |                        |
+| **W 26 Mar** | *No class (Spring break)*                   |                    |                                                                                               |                        |
+| **F 28 Mar** | *No class (Spring break)*                   |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 31 Mar** | Dictionaries I                              |                    | HW: [Math and Variables](homework/math.html)                                                  |                        |
+| **W 2 Apr**  | Dictionaries II                             |                    |                                                                                               |                        |
+| **F 4 Apr**  | Final Project Discussion                    |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 7 Apr**  | Classes                                     |                    | HW: [Math and Variables](homework/math.html)                                                  |                        |
+| **W 9 Apr**  | Class/object examples (cake; car)           |                    |                                                                                               |                        |
+| **F 11 Apr** | Class/object examples (bookshelf)           |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 14 Apr** | PyGame                                      |                    | HW: [Math and Variables](homework/math.html)                                                  |                        |
+| **W 16 Apr** | Classes and PyGame                          |                    |                                                                                               |                        |
+| **F 18 Apr** | Classes and PyGame                          |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 21 Apr** | Recursion I                                 |                    | HW: [Math and Variables](homework/math.html)                                                  |                        |
+| **W 23 Apr** | Recursion II: Trees                         |                    |                                                                                               |                        |
+| **F 25 Apr** | Recursion III: Applications                 |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **M 28 Apr** | Binary and Information Encoding             |                    |                                                                                               |                        |
+| **W 30 Apr** | Project Workshop                            |                    |                                                                                               |                        |
+| **F 2 May**  | Retrospective                               |                    |                                                                                               |                        |
+|              |                                             |                    |                                                                                               |                        |
+| **F 9 May**  | Final project presentations (2-5pm)         |                    |                                                                                               |                        |
 
 <!-- END CALENDAR -->
 
