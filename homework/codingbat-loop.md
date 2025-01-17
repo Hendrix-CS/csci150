@@ -1,11 +1,11 @@
 ---
-layout: generic
+layout: work
+type: Homework
+num: 5
+worktitle: CodingBat Loop Practice
 ---
 
-CSCI 150 HW: CodingBat Loop Practice
-------------------------------------
-
-*Due: Monday, September 30*
+*Due: Monday, February 24*
 
 Consider the following exercises in CodingBat.
 

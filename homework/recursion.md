@@ -1,5 +1,9 @@
-CSCI 150 HW: recursion
---------------------------------------------------------------
+---
+layout: work
+type: Homework
+num: 13
+worktitle: Recursion
+---
 
 To receive full credit, for each exercise you should do the following:
 

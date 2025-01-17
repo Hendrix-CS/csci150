@@ -48,7 +48,7 @@ entries:
       - 'HW:'
       - link:
           url: homework/booleans.html
-          text: Boolean practice
+          text: Boolean Practice
     Due: 'HW: Math and Variables'
   - Date: 2025-02-05
     Topic: Tracing I
@@ -72,29 +72,46 @@ entries:
   - Date: 2025-02-14
     Topic: While loops
     Resources:
-      - 'Project 1:'
-      - link:
-          url: projects/project1.html
-          text: Civic Assistance Q/A System
+      rows:
+        -
+          - 'Project 1:'
+          - link:
+              url: projects/project1.html
+              text: Civic Assistance Q/A System
+        -
+          - 'HW:'
+          - link:
+              url: homework/codingbat-loop.html
+              text: CodingBat Loop Practice
 
   ##################################################
 
   - Date: 2025-02-17
     Topic:
       emph: 'No class (Mid-winter break)'
+    Due: 'HW: CodingBag Conditional and By Hand Tracing Practice'
   - Date: 2025-02-19
     Topic: 'More while loops, Functions & Stack Tracing'
+    Quiz: Booleans
   - Date: 2025-02-21
     Topic: 'Functions & Stack Tracing'
+    Resources:
+      - 'HW:'
+      - link:
+          url: homework/function-reading.html
+          text: Function Stack Tracing
 
   ##################################################
 
   - Date: 2025-02-24
     Topic: Strings
+    Due: 'HW: CodingBat Loop Practice'
   - Date: 2025-02-26
     Topic: Strings and Loops
+    Quiz: Conditionals
   - Date: 2025-02-28
     Topic: Generative AI
+    Due: Project 1
 
   ##################################################
 
@@ -103,12 +120,19 @@ entries:
     Resources:
       - 'HW:'
       - link:
-          url: homework/math.html
-          text: Math and Variables
+          url: homework/codingbat-string-loop.html
+          text: CodingBat String and Loop Practice
+    Due: 'HW: Function Stack Tracing'
   - Date: 2025-03-05
     Topic: List Processing Examples
+    Quiz: Loops
   - Date: 2025-03-07
     Topic: Function Abstraction
+    Resources:
+      - 'Project 2:'
+      - link:
+          url: projects/project2.html
+          text: Word Games
 
   ##################################################
 
@@ -117,10 +141,12 @@ entries:
     Resources:
       - 'HW:'
       - link:
-          url: homework/math.html
-          text: Math and Variables
+          url: homework/codingbat-list-loop.html
+          text: CodingBat List and Loop Practice
+    Due: 'HW: CodingBat String and Loop Practice'
   - Date: 2025-03-12
-    Topic: For loop practice
+    Topic: For loop Practice
+    Quiz: Function Stack Tracing
   - Date: 2025-03-14
     Topic: Common loop patterns
 
@@ -131,12 +157,15 @@ entries:
     Resources:
       - 'HW:'
       - link:
-          url: homework/math.html
-          text: Math and Variables
+          url: homework/file.html
+          text: File I/O
+    Due: 'HW: CodingBat List and Loop Practice'
   - Date: 2025-03-19
     Topic: More File I/O
+    Quiz: Strings and Loops
   - Date: 2025-03-21
     Topic: The Heap and Mutability
+    Due: Project 2
 
   ##################################################
 
@@ -157,12 +186,18 @@ entries:
     Resources:
       - 'HW:'
       - link:
-          url: homework/math.html
-          text: Math and Variables
+          url: homework/dictionary.html
+          text: Dictionaries
+    Due: 'HW: File I/O'
   - Date: 2025-04-02
     Topic: Dictionaries II
+    Quiz: Lists and Loops
   - Date: 2025-04-04
     Topic: Final Project Discussion
+    Resources:
+      link:
+        url: projects/final.html
+        text: Final project
 
   ##################################################
 
@@ -171,10 +206,12 @@ entries:
     Resources:
       - 'HW:'
       - link:
-          url: homework/math.html
-          text: Math and Variables
+          url: homework/class-design.html
+          text: Classes
+    Due: 'HW: Dictionaries'
   - Date: 2025-04-09
     Topic: Class/object examples (cake; car)
+    Quiz: File I/O
   - Date: 2025-04-11
     Topic: Class/object examples (bookshelf)
 
@@ -185,12 +222,19 @@ entries:
     Resources:
       - 'HW:'
       - link:
-          url: homework/math.html
-          text: Math and Variables
+          url: homework/pygame.html
+          text: PyGame
+    Due: 'HW: Classes'
   - Date: 2025-04-16
     Topic: Classes and PyGame
+    Quiz: Dictionaries
   - Date: 2025-04-18
     Topic: Classes and PyGame
+    Due:
+      - link:
+          url: projects/final.html
+          text: Final project
+      - Design Document
 
   ##################################################
 
@@ -199,10 +243,12 @@ entries:
     Resources:
       - 'HW:'
       - link:
-          url: homework/math.html
-          text: Math and Variables
+          url: homework/recursion.html
+          text: Recursion
+    Due: 'HW: PyGame'
   - Date: 2025-04-23
     Topic: 'Recursion II: Trees'
+    Quiz: Classes
   - Date: 2025-04-25
     Topic: 'Recursion III: Applications'
 
@@ -210,6 +256,7 @@ entries:
 
   - Date: 2025-04-28
     Topic: Binary and Information Encoding
+    Due: 'HW: Recursion'
   - Date: 2025-04-30
     Topic: Project Workshop
   - Date: 2025-05-02

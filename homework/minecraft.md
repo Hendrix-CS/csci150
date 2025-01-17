@@ -2,10 +2,10 @@
 layout: work
 type: Homework
 num: 1
-worktitle: Minecraft
+worktitle: Minecraft by hand
 ---
 
-*Due: Wednesday, September 4*
+*Due: Monday, January 27*
 
 ![](world1.png)
 

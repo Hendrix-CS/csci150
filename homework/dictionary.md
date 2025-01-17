@@ -5,8 +5,6 @@ num: 10
 worktitle: Dictionaries
 ---
 
-**Due Monday, November 4**
-
 Write two functions:
 1. The first function, `vowel_histogram(s: str) -> Dict[str,int]`, should return a dictionary
 where the keys are vowels (a, e, i, o, u) and the values are the number of occurrences of each
