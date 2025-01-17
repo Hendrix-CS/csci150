@@ -123,23 +123,23 @@ Upon completing this course, our goal is for you to be able to:
 
 ## <a name="hw">Homework</a>
 
-Short homework assignments will be typically assigned on Monday and due the 
-following Monday.  Homework with coding practice problems will be submitted 
-electronically. By-hand homework should be submitted on physical paper at 
-the start of class time -- you can write (neatly) or type and print such 
+Short homework assignments will be typically assigned on Monday and due the
+following Monday.  Homework with coding practice problems will be submitted
+electronically. By-hand homework should be submitted on physical paper at
+the start of class time -- you can write (neatly) or type and print such
 solutions.
 
-Each correct homework earns **one credit**. Submitting a sincere attempt at 
-completing the homework **on time** earns **one additional credit**. If a 
-homework is incorrect and does not receive credit, a student who wishes to 
-revise the homework will be expected to visit office hours for feedback 
+Each correct homework earns **one credit**. Submitting a sincere attempt at
+completing the homework **on time** earns **one additional credit**. If a
+homework is incorrect and does not receive credit, a student who wishes to
+revise the homework will be expected to visit office hours for feedback
 prior to submitting the revision.
 
 ## <a name="quizzes">Quizzes</a>
 
-A short quiz will be given at the end of class on most Wednesdays. Each 
+A short quiz will be given at the end of class on most Wednesdays. Each
 quiz will contain one or more short problems that should be solvable within
-10 minutes. 
+10 minutes.
 
 Quizzes are scored as follows:
 * **2 credits**: All answers correct
@@ -150,7 +150,7 @@ A student may retake a given quiz twice. For each retake, the student must
 schedule an office hours appointment. Prior to the appointment, the student
 is expected to have run the code from the quiz in Python and achieved an
 understanding of why their answers were not correct. At the appointment,
-the student will be expected to explain as best they are able why their 
+the student will be expected to explain as best they are able why their
 original answers were incorrect and what the correct answers should be.
 After a satisfactory explanation, the instructor will give the student
 a makeup quiz.
@@ -250,7 +250,7 @@ From the 12 labs, 24 total credits are available:
 * **Intermediate**: Earn 19 lab credits, maximum of one unexcused absence
 * **Advanced**: Earn 23 lab credits, no unexcused absences
 
-**Remember**: For an absence to be **excused**, the student must discuss the 
+**Remember**: For an absence to be **excused**, the student must discuss the
 circumstances with the lab instructor.
 
 ### Homework/Quizzes
