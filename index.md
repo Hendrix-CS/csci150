@@ -162,41 +162,40 @@ an excused absence.
 
 ## <a name="labs">Labs</a>
 
-* [Wednesday Lab Code of Conduct](docs/code-of-conduct/24F/Wednesday_lab.html)
-
-| #  | Name                                                                                      | Completion time | Assigned  | Due       |
-|:--:|-------------------------------------------------------------------------------------------|-----------------|-----------|-----------|
-| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 1-2 hrs         | 28-29 Aug |   4-5 Sep |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 2-3 hrs         |   4-5 Sep | 11-12 Sep |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 2.5-3.5 hrs     | 11-12 Sep | 18-19 Sep |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 2-3 hrs         | 18-19 Sep | 25-26 Sep |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 3-4 hrs         | 25-26 Sep |   2-3 Oct |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         |   2-3 Oct |  9-10 Oct |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     |  9-10 Oct | 23-24 Oct |
-| 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 23-24 Oct | 30-31 Oct |
-| 8  | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                  | 2-3 hrs         | 30-31 Oct |   6-7 Nov |
-| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 3.5-4.5 hrs     |   6-7 Nov | 13-14 Nov |
-| 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 2.5-3.5 hrs     | 13-14 Nov | 20-21 Nov |
-| 11 | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                     | 3.5-4.5 hrs     | 20-21 Nov |   4-5 Dec |
-|    | Project 3 Workshop                                                                        |                 |   4-5 Dec |           |
+| #  | Name                                                                                      | Completion time | Assigned     | Due          |
+|:--:|-------------------------------------------------------------------------------------------|-----------------|--------------|--------------|
+| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 1-2 hrs         | 22-23 Jan    | 29-30 Jan    |
+| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 2-3 hrs         | 29-30 Jan    | 5-6 Feb      |
+| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 2.5-3.5 hrs     | 5-6 Feb      | 12-13 Feb    |
+| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 2-3 hrs         | 12-13 Feb    | 19-20 Feb    |
+| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 3-4 hrs         | 19-20 Feb    | 26-27 Feb    |
+| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         | 26-27 Feb    | 5-6 Mar      |
+| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 5-6 Mar      | 12-13 Mar    |
+| 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 12-13 Mar    | 19-20 Mar    |
+|    | Project 2 Workshop                                                                        |                 | 19-20 Mar    |              |
+| 8  | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                  | 2-3 hrs         | 2-3 Apr      | 9-10 Apr     |
+| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 3.5-4.5 hrs     | 9-10 Apr     | 16-17  Apr   |
+| 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 2.5-3.5 hrs     | 16-17 Apr    | 23-24 Apr    |
+| 11 | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                     | 3.5-4.5 hrs     | 23-24 Apr    | 30 Apr-1 May |
+|    | Project 3 Workshop                                                                        |                 | 30 Apr-1 May |              |
 
 Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
 
-Each lab consists of a series of milestones. At the start of each lab, you will receive a sheet of paper listing the 
+Each lab consists of a series of milestones. At the start of each lab, you will receive a sheet of paper listing the
 milestones for that lab. As you achieve each milestone, you will demonstrate to the instructor or TA that you have met the
-milestone, and they will record this achievement on your checklist. When you complete all of the lab milestones, you will 
+milestone, and they will record this achievement on your checklist. When you complete all of the lab milestones, you will
 submit the milestone checklist.
 
 If you complete the lab during the lab period, hand your checklist to your lab instructor before you leave the lab. If you
 require additional time beyond the lab period to complete the lab, either the instructor or the lab TA can check off the
-remaining milestones during office hours. You can then submit the completed checklist to the instructor at the start of 
+remaining milestones during office hours. You can then submit the completed checklist to the instructor at the start of
 the next lab.
 
-Each completed lab earns **one credit**. Submitting the completed checklist by the start of the next lab earns 
+Each completed lab earns **one credit**. Submitting the completed checklist by the start of the next lab earns
 **one additional credit**.
 
-You will work with a partner on each lab assignment. Each partner will have their own milestone checklist. If they do not 
-complete the milestones during the lab period, they should find time outside of lab to work together to complete them. If 
+You will work with a partner on each lab assignment. Each partner will have their own milestone checklist. If they do not
+complete the milestones during the lab period, they should find time outside of lab to work together to complete them. If
 they are unable to do so, only the instructor is authorized to record milestones for students working alone.
 
 **Lab attendance is required**. If an extenuating circumstance impedes the attendance of lab, the student must contact
