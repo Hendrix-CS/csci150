@@ -1,11 +1,11 @@
 ---
-layout: generic
+layout: work
+type: Homework
+num: 3
+worktitle: Boolean Practice
 ---
 
-CSCI 150 HW: Boolean Practice
------------------------------
-
-*Due: Monday, September 16*
+*Due: Monday, February 10*
 
 To receive credit, for each exercise you should do the following:
 

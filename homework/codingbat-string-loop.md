@@ -1,11 +1,9 @@
 ---
-layout: generic
+layout: work
+type: Homework
+num: 7
+worktitle: CodingBat String and Loop Practice
 ---
-
-CSCI 150 HW: CodingBat String Practice
---------------------------------------
-
-Due: *Monday, October 14*
 
 Consider the following exercises in CodingBat.
 

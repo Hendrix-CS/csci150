@@ -1,11 +1,11 @@
 ---
-layout: generic
+layout: work
+type: Homework
+num: 6
+worktitle: Function Stack Tracing
 ---
 
-CSCI 150 HW: Function Stack Tracing
------------------------------------------------
-
-*Due: Monday, October 7*
+*Due: Monday, March 3*
 
 To receive full credit, for each exercise you should do the following:
 

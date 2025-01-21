@@ -1,11 +1,11 @@
 ---
-layout: generic
+layout: work
+type: Homework
+num: 2
+worktitle: Math and Variables
 ---
 
-CSCI 150 HW: Math Practice
------------------------------
-
-*Due: Monday, September 9*
+*Due: Monday, February 3*
 
 To receive credit, for each exercise you should do the following:
 
