@@ -19,7 +19,10 @@ entries:
         url: https://forms.gle/57J7q71S2DqcFqKdA
         text: Survey
   - Date: 2025-01-24
-    Topic: Algorithms and Errors
+    Topic:
+      - Algorithms and Errors
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F24%5F%20Algorithms%20and%20syllabus%2D20250124%5F081358%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E86357e84%2Dd3cf%2D43b0%2Db9d6%2D40cb832bc6a0
+      - pdf: lectures/S25/2025-01-22-intro.pdf
     Resources:
       - 'HW:'
       - link:
