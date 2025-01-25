@@ -65,6 +65,12 @@ img {
   visibility: hidden;
 }
 
+img[alt=python] { width: 24px; }
+img[alt=yt] { width: 24px; }
+img[alt=stream] { width: 24px; }
+img[alt=pdf] { width: 24px; }
+img[alt=disco] { width: 24px; }
+
 /* From Codecademy Make-A-Website */
 .jumbotron {
   display: flex;
