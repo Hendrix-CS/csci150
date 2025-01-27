@@ -33,7 +33,10 @@ entries:
   ##################################################
 
   - Date: 2025-01-27
-    Topic: 'Python, Math & Variables'
+    Topic:
+      - 'Python, Math & Variables'
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F27%5F%20Python%20Math%20%26%20Variables%2D20250127%5F082953%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7b5f366e%2D8459%2D4e2f%2D8ced%2D1a67789e1c84
+      - kaggle: https://www.kaggle.com/code/byorgey/1-27-python-math-variables
     Resources:
       - 'HW:'
       - link:
