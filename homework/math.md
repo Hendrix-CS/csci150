@@ -31,13 +31,12 @@ y = 3
 Exercises:
 1. `4 * 3`
 2. `7 / 2`
-3. `7 // 2`
-4. `7 % 2`
-5. `(x + 1) % 3`
-6. `10 - y * 2`
-7. `4 + x + 18 // y`
-8. `2 * (y + 4) + x`
-9. `y**3 + x**2`
+3. `0 / 7`
+4. `7 / 0`
+5. `10 - y * 2`
+6. `4 + x + 18 / y`
+7. `2 * (y + 4) + x`
+8. `y**3 + x**2`
 
 Your solution should be hand-written (or typed) and contain the following:
 
