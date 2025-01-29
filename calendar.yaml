@@ -44,7 +44,10 @@ entries:
           text: Math and Variables
     Due: 'HW: Minecraft by hand'
   - Date: 2025-01-29
-    Topic: Functions
+    Topic:
+      - Functions
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F29%5F%20Box%20volume%20%28functions%29%2D20250129%5F081119%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E20b19d5e%2Da8d0%2D4eda%2Dbc2c%2D84480aa0f1a6
+      - kaggle: https://www.kaggle.com/code/byorgey/1-29-functions
   - Date: 2025-01-31
     Topic: Booleans
 
