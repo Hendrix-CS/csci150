@@ -623,9 +623,16 @@ can guess what comparisons do for strings.  Come up with a hypothesis,
 test it.
 
 \newpage
-\holiday{Labor Day}
+\class{\ready Conditionals}
 
-\class{\notready Conditionals}
+\subsection*{Setup}
+\begin{itemize}
+\item Collect math practice HW.
+\item Hand back graded Minecraft HW.
+\item Mention HW assigned today (Boolean practice).
+\item Mention quiz Wednesday: will show Minecraft scenario, give a
+  goal, you must write some code.
+\end{itemize}
 
 \subsection*{Conditionals}
 
@@ -719,20 +726,22 @@ def raffle2() -> str:
   r = random.random()
   if r < 0.1:
     return "Wow, you are unlucky! Try again next time."
+  elif r > 0.9:
+    return "You get a car!!!11"
+  elif r > 0.7:
+    return "You get a bike!"
+  elif r > 0.5:
+    return "You get a book!"
+  elif r > 0.3:
+    return "You get a sock!"
   else:
-    if r > 0.9:
-        return "You get a car!!!11"
-    elif r > 0.7:
-        return "You get a bike!"
-    elif r > 0.5:
-        return "You get a book!"
-    elif r > 0.3:
-        return "You get a sock!"
-    else:
-        return "You get a stick of gum!"
+    return "You get a stick of gum!"
 \end{verbatim}
 
-Do one last example: Hailstone function from first class!
+\noindent
+\textbf{Do one last example}: Hailstone function from first class!
+(Need to be able to test if number is even\dots just mention in
+passing + promise we will learn more about this later.)
 
 \newpage
 \lab{Big Data/Heart Disease}

@@ -57,7 +57,10 @@ entries:
   ##################################################
 
   - Date: 2025-02-03
-    Topic: Conditionals
+    Topic:
+      - Conditionals
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F2%5F3%5F%20Conditionals%2D20250203%5F081452%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8ca81f6e%2D2600%2D408c%2Db112%2Dde0370d5b3fa
+      - kaggle: https://www.kaggle.com/code/byorgey/2-3-conditionals
     Resources:
       - 'HW:'
       - link:
