@@ -68,7 +68,11 @@ entries:
           text: Boolean Practice
     Due: 'HW: Math and Variables'
   - Date: 2025-02-05
-    Topic: Tracing I
+    Topic:
+      - Tracing I
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F2%5F5%5F%20Tracing%20I%2D20250205%5F081158%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9bc99161%2D0d78%2D46fd%2D8f16%2D5a2a9c0d7479
+      - kaggle: https://www.kaggle.com/code/byorgey/2-5-tracing-i
+      - pdf: lectures/S25/2025-02-05-tracing-I.pdf
     Quiz: Minecraft by Hand
   - Date: 2025-02-07
     Topic: Pycharm
