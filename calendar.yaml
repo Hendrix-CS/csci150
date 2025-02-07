@@ -75,7 +75,9 @@ entries:
       - pdf: lectures/S25/2025-02-05-tracing-I.pdf
     Quiz: Minecraft by Hand
   - Date: 2025-02-07
-    Topic: Pycharm
+    Topic:
+      - Pycharm
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F2%5F7%5F%20PyCharm%2D20250207%5F081207%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E958bd072%2D8029%2D4f75%2Da55d%2Dfcdf60ec8eea
 
   ##################################################
 
