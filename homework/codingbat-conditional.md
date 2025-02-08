@@ -17,13 +17,13 @@ You will want to make an account on CodingBat. Please use your Hendrix email as 
 Please also keep up with your own password -- there is no way for me to recover it for you!
 
 Be sure to share your progress with me, by going to "prefs" and entering
-your instructor's email address (`ferrer@hendrix.edu` or `seme@hendrix.edu`) in the "Teacher Share" box.
+your instructor's email address (`yorgey@hendrix.edu`) in the "Teacher Share" box.
 
 You should complete **at least seven** of the following. Completing more than seven is highly recommended for additional practice:
 
 - [Cigar Party](https://codingbat.com/prob/p195669)
 - [Date Fashion](https://codingbat.com/prob/p129125)
-- [Or 3 5](https://codingbat.com/prob/p288587?parent=/home/ferrer@hendrix.edu)
+- [Or 3 5](https://codingbat.com/prob/p288587)
 - [Squirrel Play](https://codingbat.com/prob/p135815)
 - [Caught Speeding](https://codingbat.com/prob/p137202)
 - [Sorta Sum](https://codingbat.com/prob/p116620)
@@ -34,8 +34,11 @@ You should complete **at least seven** of the following. Completing more than se
 
 # By-Hand Tracing
 
-Turn in your by-hand tracing for each section of code shown below. You are *strongly* encouraged to check your answers
-by typing the code into a Python interpreter (i.e. Kaggle). Your by-hand work should show the updating of values as necessary.
+Turn in your by-hand tracing for each section of code shown below,
+using the format we learned in class. You are *strongly* encouraged to
+check your answers by typing the code into a Python interpreter
+(i.e. Kaggle). Your by-hand work should show the updating of values as
+necessary.
 
 1.
 
