@@ -8,9 +8,10 @@ layout: course-multi
 
 ## <a name="TAs">TA Office Hours</a>
 
-| Monday | Tuesday | Wednesday | Thursday |
-|--------|---------|-----------|----------|
-| TBD    | TBD     | TBD       | TBD      |
+| Monday    | Tuesday   | Wednesday      | Thursday |
+|-----------|-----------|----------------|----------|
+| Sarah 7-9 | Jauss 6-8 | Katherine 8-10 | Ted 7-10 |
+|           | Ted 8-10  |                |          |
 
 # <a name="description">Overview</a>
 
