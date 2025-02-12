@@ -94,7 +94,9 @@ entries:
           text: CodingBat Conditional and By Hand Tracing Practice
     Due: 'HW: Boolean Practice'
   - Date: 2025-02-12
-    Topic: More Conditionals
+    Topic:
+      - More Conditional Practice
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F12%5F%20More%20Conditional%20Practice%2D20250212%5F081219%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E1e81c597%2D6ebd%2D40f4%2Da822%2D8f83c817e241
     Quiz: Math and Variables
   - Date: 2025-02-14
     Topic: While loops
