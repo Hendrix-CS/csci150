@@ -991,159 +991,21 @@ Note that the project has some instruction on these as well, they will
 get more practice.
 
 \newpage
-\class{\notready Generative AI}
+\class{\notready More Conditional Practice}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item Note we \emph{do} still have lab today/tomorrow!  Should be a
-  nice review for Exam 1.
-\item Exam 1 Monday, do practice exam for Friday!
-  \begin{itemize}
-    \item In-class vs take-home
-    \item No PyCharm, I/O stuff on lab this week or HW
-  \end{itemize}
-\item HW due today, will also collect older HW
-\item Remember: can always ask for any extensions
-\item Show how to sign up for office hours
+\item Mention TA evening lab hours!
+\item Remember to leave 20 minutes for quiz @ end!
 \end{itemize}
 
-\subsection*{Discussion notes}
-
-\begin{itemize}
-  \item Generative AI systems
-\begin{itemize}
-  \item
-    ChatGPT (Open AI), Bard (Google), GrammarlyGO, GitHub Copilot
-  \item
-    DALL.E, Stable Diffusion, Midjourney
-  \end{itemize}
-\item
-  How many have tried one?
-\item
-  How do they work?
-
-  \begin{itemize}
-
-  \item
-    Fundamentally they are just computer programs running a function:
-    prompt -\textgreater{} response.
-  \item
-    Interesting difference is that they are \textbf{trained}, not
-    written directly with a bunch of Python code.
-
-    \begin{itemize}
-
-    \item
-      Give it a ton of examples, e.g.~text or images from the Internet.
-    \item
-      ``Learns'' what examples have in common.
-
-      \begin{itemize}
-
-      \item
-        Training takes a lot of input data and a lot of computational
-        effort. You have to have a ton of computers etc, i.e.~be a big
-        company.
-      \end{itemize}
-    \item
-      Basic version (we've had this for a while): can then
-      \textbf{predict} which new inputs are similar to training data.
-
-      \begin{itemize}
-
-      \item
-        Example: Heart Disease lab. Function at the end was generated
-        automatically by looking at data and learning what diseased
-        patients had in common.
-      \end{itemize}
-    \item
-      Advanced version (last few years): can \textbf{generate} new
-      things that are similar.
-
-      \begin{itemize}
-
-      \item
-        Note once the training is done, not as much work to run it in
-        generation mode, mid-sized models can be run on a desktop
-      \end{itemize}
-    \end{itemize}
-  \end{itemize}
-\item
-  What are they good at / not good at?
-
-  \begin{itemize}
-
-  \item
-    Good at coming up with things that sound / look good
-  \item
-    Have no idea of what is true/false
-  \item
-    Have all the same bias as the training data that went into it.
-  \item
-    Not good at learning new things incrementally
-  \end{itemize}
-\item
-  Try out some examples with ChatGPT.
-
-  \begin{itemize}
-
-  \item
-    See how we can get it to say something false.
-  \item
-    Try writing some Python code.
-  \end{itemize}
-\item
-  Why bother learning computer programming if you can just tell the
-  computer what you want in English?
-
-  \begin{itemize}
-
-  \item
-    The generated code isn't always correct! You need to understand + be
-    able to review it.
-  \item
-    It ultimately can only do kind of simple, small things, not build
-    big systems. Someone needs to put them together.
-  \end{itemize}
-\item
-  Academic Integrity?
-
-  \begin{itemize}
-
-  \item
-    Goal: learning!
-  \item
-    Make sure you're clear with faculty on what is allowed.
-  \item
-    Make sure to cite if you used Grammarly, ChatGPT, etc.
-  \item
-    This class: code must be your own.
-
-    \begin{itemize}
-
-    \item
-      Tempting to get code from web searches, now generative AI.
-    \item
-      Don't use these, but if you do, at least cite them.
-    \end{itemize}
-  \end{itemize}
-\item
-  How will these affect society? (discussion)
-
-  \begin{itemize}
-
-  \item
-    Partly depends on choices you make!
-  \item
-    Big companies want you to use them etc.
-  \end{itemize}
-\end{itemize}
+Do some CodingBat exercises together---Python Logic-2. (The Logic-1
+are all for homework.)  Get them to find a partner or 2, work on them
+together on paper?
 
 \newpage
 \lab{\notready This Day in History}
-
-This can be used as a comprehensive review of everything on Exam 1.
 
 \begin{reflect}{Brent, F'18}
   For this lab they need both mod and integer division, so we covered
@@ -1180,43 +1042,6 @@ This can be used as a comprehensive review of everything on Exam 1.
   the course, we included a section introducing them to mod and
   integer division at the start of the lab, which seemed to work very
   well!
-\end{reflect}
-
-\newpage
-\class{\notready Exam 1 review}
-
-\subsection*{Setup}
-
-\subsection*{Sample exam}
-
-Go over sample exam solutions.
-
-\newpage
-\class{\notready Exam 1}
-
-\begin{itemize}
-\item Note, no HW this weekend.
-\end{itemize}
-
-\begin{reflect}{Brent, S'18}
-  Because of pushing exam 1 back one day, I only have \emph{two}
-  lectures instead of three to prepare for Guess My Number lab.  What
-  I plan to do is introduce while loops first (1 lecture), and then a
-  basic intro to functions (1 lecture).  Functions are not actually
-  super necessary for the lab, so it's OK to cover more about
-  functions in another class after the lab.
-
-  In the past I have used functions while doing examples for while
-  loops (\eg testing the Collatz conjecture), but that's not
-  critical---it's easy to do the examples without using loops.  It
-  might even give nice material to motivate the process of function
-  abstraction later.
-\end{reflect}
-
-\begin{reflect}{Brent, F'19}
-  Now that they already have plenty of experience using functions with
-  notebooks, we can just spend the two lectures introducing them to
-  PyCharm, I/O, and while loops.
 \end{reflect}
 
 \newpage
@@ -4420,6 +4245,157 @@ def normalize(counts: dict[str, int]) -> dict[str, float]:
 
     return freqs
 \end{verbatim}
+
+
+\newpage
+\class{\notready Generative AI}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Note we \emph{do} still have lab today/tomorrow!  Should be a
+  nice review for Exam 1.
+\item Exam 1 Monday, do practice exam for Friday!
+  \begin{itemize}
+    \item In-class vs take-home
+    \item No PyCharm, I/O stuff on lab this week or HW
+  \end{itemize}
+\item HW due today, will also collect older HW
+\item Remember: can always ask for any extensions
+\item Show how to sign up for office hours
+\end{itemize}
+
+\subsection*{Discussion notes}
+
+\begin{itemize}
+  \item Generative AI systems
+\begin{itemize}
+  \item
+    ChatGPT (Open AI), Bard (Google), GrammarlyGO, GitHub Copilot
+  \item
+    DALL.E, Stable Diffusion, Midjourney
+  \end{itemize}
+\item
+  How many have tried one?
+\item
+  How do they work?
+
+  \begin{itemize}
+
+  \item
+    Fundamentally they are just computer programs running a function:
+    prompt -\textgreater{} response.
+  \item
+    Interesting difference is that they are \textbf{trained}, not
+    written directly with a bunch of Python code.
+
+    \begin{itemize}
+
+    \item
+      Give it a ton of examples, e.g.~text or images from the Internet.
+    \item
+      ``Learns'' what examples have in common.
+
+      \begin{itemize}
+
+      \item
+        Training takes a lot of input data and a lot of computational
+        effort. You have to have a ton of computers etc, i.e.~be a big
+        company.
+      \end{itemize}
+    \item
+      Basic version (we've had this for a while): can then
+      \textbf{predict} which new inputs are similar to training data.
+
+      \begin{itemize}
+
+      \item
+        Example: Heart Disease lab. Function at the end was generated
+        automatically by looking at data and learning what diseased
+        patients had in common.
+      \end{itemize}
+    \item
+      Advanced version (last few years): can \textbf{generate} new
+      things that are similar.
+
+      \begin{itemize}
+
+      \item
+        Note once the training is done, not as much work to run it in
+        generation mode, mid-sized models can be run on a desktop
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  What are they good at / not good at?
+
+  \begin{itemize}
+
+  \item
+    Good at coming up with things that sound / look good
+  \item
+    Have no idea of what is true/false
+  \item
+    Have all the same bias as the training data that went into it.
+  \item
+    Not good at learning new things incrementally
+  \end{itemize}
+\item
+  Try out some examples with ChatGPT.
+
+  \begin{itemize}
+
+  \item
+    See how we can get it to say something false.
+  \item
+    Try writing some Python code.
+  \end{itemize}
+\item
+  Why bother learning computer programming if you can just tell the
+  computer what you want in English?
+
+  \begin{itemize}
+
+  \item
+    The generated code isn't always correct! You need to understand + be
+    able to review it.
+  \item
+    It ultimately can only do kind of simple, small things, not build
+    big systems. Someone needs to put them together.
+  \end{itemize}
+\item
+  Academic Integrity?
+
+  \begin{itemize}
+
+  \item
+    Goal: learning!
+  \item
+    Make sure you're clear with faculty on what is allowed.
+  \item
+    Make sure to cite if you used Grammarly, ChatGPT, etc.
+  \item
+    This class: code must be your own.
+
+    \begin{itemize}
+
+    \item
+      Tempting to get code from web searches, now generative AI.
+    \item
+      Don't use these, but if you do, at least cite them.
+    \end{itemize}
+  \end{itemize}
+\item
+  How will these affect society? (discussion)
+
+  \begin{itemize}
+
+  \item
+    Partly depends on choices you make!
+  \item
+    Big companies want you to use them etc.
+  \end{itemize}
+\end{itemize}
 
 
 \end{document}
