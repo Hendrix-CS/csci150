@@ -13,12 +13,6 @@ Python by implementing the classic game "Guess My Number".
 Be sure to **read carefully!** This lab writeup has lots of hints
 and instructions to help you along the way.
 
-## Grading Criteria
-
-To receive credit, each pair muust complete two Python (`.py`) files:
-* `guess_number.py` includes function definitions for Steps 1, 2, and 3.
-* `computer_guess.py` includes function definitions for Steps 4 and 5.
-
 ## Step 0: Getting started
 
 In this and the following labs, we will be creating interactive programs
@@ -79,7 +73,7 @@ the following code into it**:
     # Call main() as the last thing in the file
     main()
 
-Update it with your name. **Inside the `main()` function**,
+Update it with your names. **Inside the `main()` function**,
 you should implement the game as illustrated above.
 
 * Use `random.randint(1, 100)` to pick a random number
