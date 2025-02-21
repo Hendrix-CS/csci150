@@ -124,27 +124,36 @@ entries:
       emph: 'No class (Mid-winter break)'
     Due: 'HW: CodingBag Conditional and By Hand Tracing Practice'
   - Date: 2025-02-19
-    Topic: 'More while loops'
-    Quiz: Booleans
+    Topic: 'No class (snow)'
   - Date: 2025-02-21
+    Topic: More while loops
+
+  ##################################################
+
+  - Date: 2025-02-24
     Topic: 'Functions & Stack Tracing'
     Resources:
       - 'HW:'
       - link:
           url: homework/function-reading.html
           text: Function Stack Tracing
+  - Date: 2025-02-26
+    Topic: While loop practice
+    Quiz: Booleans
+  - Date: 2025-02-28
+    Topic: 'Binary & Information Encoding'
+    Due: Project 1
 
   ##################################################
 
-  - Date: 2025-02-24
+  - Date: 2025-03-03
     Topic: Strings
     Due: 'HW: CodingBat Loop Practice'
-  - Date: 2025-02-26
+  - Date: 2025-03-05
     Topic: Strings and Loops
     Quiz: Conditionals
-  - Date: 2025-02-28
+  - Date: 2025-03-07
     Topic: Generative AI
-    Due: Project 1
 
   ##################################################
 
