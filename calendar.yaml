@@ -122,7 +122,6 @@ entries:
   - Date: 2025-02-17
     Topic:
       emph: 'No class (Mid-winter break)'
-    Due: 'HW: CodingBag Conditional and By Hand Tracing Practice'
   - Date: 2025-02-19
     Topic: 'No class (snow)'
   - Date: 2025-02-21
@@ -140,6 +139,7 @@ entries:
       - link:
           url: homework/function-reading.html
           text: Function Stack Tracing
+    Due: 'HW: CodingBat Conditional and By Hand Tracing Practice'
   - Date: 2025-02-26
     Topic: While loop practice
     Quiz: Booleans
