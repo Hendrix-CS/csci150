@@ -43,14 +43,13 @@ Upon completing this course, our goal is for you to be able to:
 <hr>
 
 # <a name="calendar">Calendar</a>
-<!--
+
 <div style="text-align: center">
 <a class="btn btn-primary" href="{{ site.submission }}">
-  Assignment submission form
+  Project submission form
 </a>
 </div>
 <br/>
--->
 
 <!-- BEGIN CALENDAR -->
 
@@ -213,6 +212,12 @@ Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go
 
 ## <a name="projects">Projects</a>
 
+<div style="text-align: center">
+<a class="btn btn-primary" href="{{ site.submission }}">
+  Project submission form
+</a>
+</div>
+<br/>
 
 You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to four weeks after they are assigned.
 
