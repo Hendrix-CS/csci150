@@ -7,6 +7,12 @@ worktitle: Civic Assistance System
 
 **Due Friday, February 28**
 
+<div style="text-align: center">
+<a class="btn btn-primary" href="{{ site.submission }}">
+  Project submission form
+</a>
+</div>
+
 ## Description
 
 Many elements of our civic lives are governed by processes and
