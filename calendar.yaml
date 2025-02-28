@@ -152,7 +152,10 @@ entries:
       - code: while_loops.py
     Quiz: Booleans
   - Date: 2025-02-28
-    Topic: 'Binary & Information Encoding'
+    Topic:
+      - 'Binary & Information Encoding'
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F28%5F%20Binary%20%2B%20information%20encoding%2D20250228%5F081239%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8c6ecdf5%2D26cf%2D42ad%2D8b1f%2D748e8f77aa9b
+      - pdf: lectures/S25/2025-02-28-binary.pdf
     Due: Project 1
 
   ##################################################
