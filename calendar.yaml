@@ -171,7 +171,7 @@ entries:
 
   ##################################################
 
-  - Date: 2025-03-03
+  - Date: 2025-03-10
     Topic: Lists
     Resources:
       - 'HW:'
@@ -179,10 +179,10 @@ entries:
           url: homework/codingbat-string-loop.html
           text: CodingBat String and Loop Practice
     Due: 'HW: Function Stack Tracing'
-  - Date: 2025-03-05
+  - Date: 2025-03-12
     Topic: List Processing Examples
     Quiz: Loops
-  - Date: 2025-03-07
+  - Date: 2025-03-14
     Topic: Function Abstraction
     Resources:
       - 'Project 2:'
@@ -192,7 +192,7 @@ entries:
 
   ##################################################
 
-  - Date: 2025-03-10
+  - Date: 2025-03-17
     Topic: For loops
     Resources:
       - 'HW:'
@@ -200,10 +200,10 @@ entries:
           url: homework/codingbat-list-loop.html
           text: CodingBat List and Loop Practice
     Due: 'HW: CodingBat String and Loop Practice'
-  - Date: 2025-03-12
+  - Date: 2025-03-19
     Topic: For loop Practice
     Quiz: Function Stack Tracing
-  - Date: 2025-03-14
+  - Date: 2025-03-21
     Topic: Common loop patterns
 
   ##################################################
