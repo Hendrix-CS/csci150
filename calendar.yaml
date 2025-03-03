@@ -161,7 +161,10 @@ entries:
   ##################################################
 
   - Date: 2025-03-03
-    Topic: Strings
+    Topic:
+      - Strings
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F3%5F%20Strings%2D20250303%5F081245%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb4b9d343%2Dbc75%2D40e6%2D8935%2Dacb537d81199
+      - kaggle: https://www.kaggle.com/code/byorgey/3-3-strings
     Due: 'HW: CodingBat Loop Practice'
   - Date: 2025-03-05
     Topic: Strings and Loops
