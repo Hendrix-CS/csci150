@@ -321,12 +321,12 @@ in place:
 
 ### Step 4 - Play
 
-Once your program is working, use it to create at least two puzzles,
-with solutions.  One puzzle should be between two four-letter words,
-requiring at least four steps; another puzzle should be between two
-five-letter words, requring at least five steps.  If you would like a
-challenge, you can try solving some of the puzzles below, and include
-your solutions:
+Once your program is working, use it to help you create at least two
+puzzles, with solutions.  One puzzle should be between two four-letter
+words, requiring at least four steps; another puzzle should be between
+two five-letter words, requring at least five steps.  If you would
+like a challenge, you can try solving some of the puzzles below, and
+include your solutions:
 
 * FIRE -- HEAT
 * SLEEP -- DREAM
