@@ -1613,69 +1613,11 @@ We know about strings, but we can't actually do anything with them yet.
 (If time, do more examples from Friday.)
 
 \newpage
-\lab{Mutation is the Word (Doublets)}
-
-\begin{reflect}{Brent S'16}
-  This lab is a lot harder than the previous labs.  Definitely worth
-  warning them to start early, emphasizing that they probably won't
-  finish within the alloted lab time, can come and ask questions, etc.
-
-  One of the biggest confusions typically has to do with managing
-  information flow.  That is, now that we are using functions for
-  everything, variables are local, so need to pass things as
-  parameters and return values back.  I keep thinking about whether
-  there is a gentler way to introduce this but I'm not sure.  If we
-  tried to talk about ``managing information flow'' explicitly it
-  would just go over their heads until they had actually grappled with
-  it in a real program.  So perhaps the shock is unavoidable.
-
-  However, see \textbf{(CRAZY?) IDEA} in reflections above, after
-  coding bat lab.  Maybe switch loops and functions, so the doublets
-  lab is just writing top-level code with a bunch of loops---really
-  focusing on just the loops.  Then the next lab will get them to
-  think about abstracting functions from existing code.
-\end{reflect}
-
-\begin{reflect}{Brent, S'17}
-  The lab went a lot better this time (though it was still hard!),
-  after (1) prefacing it with the ``Guess My Number'' lab which gave
-  them practice writing while loops, and (2) going over the process of
-  function abstraction in class, and encouraging them to first get a
-  working doublets program and THEN abstract it out into functions.
-\end{reflect}
-
-\begin{reflect}{Brent, S'18}
-  Used a similar approach as last time, and it seemed to go well.
-\end{reflect}
-
-\begin{reflect}{Gabe, F'18}
-  I think [the lab] would benefit from some restructuring, along the
-  following lines:
-  \begin{itemize}
-  \item Step 1: Pseudocode.
-  \item Step 2: Basic implementation. No mention of functions or error
-    handling. Just get it working for the case of the perfectly
-    behaved user.
-  \item Step 3: Incorporate error handling.
-  \item Step 4: Refactor into functions.
-  \end{itemize}
-  I explained it this way verbally, which was helpful I think, and
-  perhaps it would be easier for them to follow if we made it
-  explicit. We might also consider refactoring into functions after
-  the basic implementation but before the error handling.
-\end{reflect}
-
-\begin{reflect}{Brent, F'19}
-  Lab has now been restructed as above and seemed to go very well.
-  Everyone seemed to be making productive progress.
-\end{reflect}
-
-\newpage
-\class{\notready More string \& loop practice; sentinel loops}
+\class{\ready More string \& loop practice; sentinel loops}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \notready Show them HW: CodingBat string \& loop practice
+\item Remember to leave time for quiz!
 \end{itemize}
 
 Today's focus is on getting the students to do more hands-on exercises
@@ -1821,6 +1763,226 @@ def triangle(n: int):
 
         rowCount += 1
 \end{verbatim}
+
+\newpage
+\lab{Mutation is the Word (Doublets)}
+
+\begin{reflect}{Brent S'16}
+  This lab is a lot harder than the previous labs.  Definitely worth
+  warning them to start early, emphasizing that they probably won't
+  finish within the alloted lab time, can come and ask questions, etc.
+
+  One of the biggest confusions typically has to do with managing
+  information flow.  That is, now that we are using functions for
+  everything, variables are local, so need to pass things as
+  parameters and return values back.  I keep thinking about whether
+  there is a gentler way to introduce this but I'm not sure.  If we
+  tried to talk about ``managing information flow'' explicitly it
+  would just go over their heads until they had actually grappled with
+  it in a real program.  So perhaps the shock is unavoidable.
+
+  However, see \textbf{(CRAZY?) IDEA} in reflections above, after
+  coding bat lab.  Maybe switch loops and functions, so the doublets
+  lab is just writing top-level code with a bunch of loops---really
+  focusing on just the loops.  Then the next lab will get them to
+  think about abstracting functions from existing code.
+\end{reflect}
+
+\begin{reflect}{Brent, S'17}
+  The lab went a lot better this time (though it was still hard!),
+  after (1) prefacing it with the ``Guess My Number'' lab which gave
+  them practice writing while loops, and (2) going over the process of
+  function abstraction in class, and encouraging them to first get a
+  working doublets program and THEN abstract it out into functions.
+\end{reflect}
+
+\begin{reflect}{Brent, S'18}
+  Used a similar approach as last time, and it seemed to go well.
+\end{reflect}
+
+\begin{reflect}{Gabe, F'18}
+  I think [the lab] would benefit from some restructuring, along the
+  following lines:
+  \begin{itemize}
+  \item Step 1: Pseudocode.
+  \item Step 2: Basic implementation. No mention of functions or error
+    handling. Just get it working for the case of the perfectly
+    behaved user.
+  \item Step 3: Incorporate error handling.
+  \item Step 4: Refactor into functions.
+  \end{itemize}
+  I explained it this way verbally, which was helpful I think, and
+  perhaps it would be easier for them to follow if we made it
+  explicit. We might also consider refactoring into functions after
+  the basic implementation but before the error handling.
+\end{reflect}
+
+\begin{reflect}{Brent, F'19}
+  Lab has now been restructed as above and seemed to go very well.
+  Everyone seemed to be making productive progress.
+\end{reflect}
+
+\newpage
+\class{\notready Generative AI}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Note we \emph{do} still have lab today/tomorrow!  Should be a
+  nice review for Exam 1.
+\item Exam 1 Monday, do practice exam for Friday!
+  \begin{itemize}
+    \item In-class vs take-home
+    \item No PyCharm, I/O stuff on lab this week or HW
+  \end{itemize}
+\item HW due today, will also collect older HW
+\item Remember: can always ask for any extensions
+\item Show how to sign up for office hours
+\end{itemize}
+
+\subsection*{Discussion notes}
+
+\begin{itemize}
+  \item Generative AI systems
+\begin{itemize}
+  \item
+    ChatGPT (Open AI), Bard (Google), GrammarlyGO, GitHub Copilot
+  \item
+    DALL.E, Stable Diffusion, Midjourney
+  \end{itemize}
+\item
+  How many have tried one?
+\item
+  How do they work?
+
+  \begin{itemize}
+
+  \item
+    Fundamentally they are just computer programs running a function:
+    prompt -\textgreater{} response.
+  \item
+    Interesting difference is that they are \textbf{trained}, not
+    written directly with a bunch of Python code.
+
+    \begin{itemize}
+
+    \item
+      Give it a ton of examples, e.g.~text or images from the Internet.
+    \item
+      ``Learns'' what examples have in common.
+
+      \begin{itemize}
+
+      \item
+        Training takes a lot of input data and a lot of computational
+        effort. You have to have a ton of computers etc, i.e.~be a big
+        company.
+      \end{itemize}
+    \item
+      Basic version (we've had this for a while): can then
+      \textbf{predict} which new inputs are similar to training data.
+
+      \begin{itemize}
+
+      \item
+        Example: Heart Disease lab. Function at the end was generated
+        automatically by looking at data and learning what diseased
+        patients had in common.
+      \end{itemize}
+    \item
+      Advanced version (last few years): can \textbf{generate} new
+      things that are similar.
+
+      \begin{itemize}
+
+      \item
+        Note once the training is done, not as much work to run it in
+        generation mode, mid-sized models can be run on a desktop
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  What are they good at / not good at?
+
+  \begin{itemize}
+
+  \item
+    Good at coming up with things that sound / look good
+  \item
+    Have no idea of what is true/false
+  \item
+    Have all the same bias as the training data that went into it.
+  \item
+    Not good at learning new things incrementally
+  \end{itemize}
+\item
+  Try out some examples with ChatGPT.
+
+  \begin{itemize}
+
+  \item
+    See how we can get it to say something false.
+  \item
+    Try writing some Python code.
+  \end{itemize}
+\item
+  Why bother learning computer programming if you can just tell the
+  computer what you want in English?
+
+  \begin{itemize}
+
+  \item
+    The generated code isn't always correct! You need to understand + be
+    able to review it.
+  \item
+    It ultimately can only do kind of simple, small things, not build
+    big systems. Someone needs to put them together.
+  \end{itemize}
+\item
+  Academic Integrity?
+
+  \begin{itemize}
+
+  \item
+    Goal: learning!
+  \item
+    Make sure you're clear with faculty on what is allowed.
+  \item
+    Make sure to cite if you used Grammarly, ChatGPT, etc.
+  \item
+    This class: code must be your own.
+
+    \begin{itemize}
+
+    \item
+      Tempting to get code from web searches, now generative AI.
+    \item
+      Don't use these, but if you do, at least cite them.
+    \end{itemize}
+  \end{itemize}
+\item
+  How will these affect society? (discussion)
+
+  \begin{itemize}
+
+  \item
+    Partly depends on choices you make!
+  \item
+    Big companies want you to use them etc.
+  \end{itemize}
+\item More random thoughts dump, need to incorporate above
+  \begin{itemize}
+  \item Big companies have poured literally billions of dollars into
+    this, but no one seems to want it.
+  \item Microsoft has been quietly backing out of plans to build data
+    centers.
+  \item Common argument: in the future employers will want this so you
+    need to learn it.  False!  If everyone is using generative AI the
+    people who have a really valuable skill will be the ones who can
+    do stuff \emph{without} using generative AI!  Even OpenAI forbids
+    people from using generative AI in their applications.
+  \end{itemize}
+\end{itemize}
 
 \newpage
 \class{\notready Lists I}
@@ -4272,157 +4434,5 @@ def normalize(counts: dict[str, int]) -> dict[str, float]:
 
     return freqs
 \end{verbatim}
-
-
-\newpage
-\class{\notready Generative AI}
-
-\subsection*{Setup}
-
-\begin{itemize}
-\item Note we \emph{do} still have lab today/tomorrow!  Should be a
-  nice review for Exam 1.
-\item Exam 1 Monday, do practice exam for Friday!
-  \begin{itemize}
-    \item In-class vs take-home
-    \item No PyCharm, I/O stuff on lab this week or HW
-  \end{itemize}
-\item HW due today, will also collect older HW
-\item Remember: can always ask for any extensions
-\item Show how to sign up for office hours
-\end{itemize}
-
-\subsection*{Discussion notes}
-
-\begin{itemize}
-  \item Generative AI systems
-\begin{itemize}
-  \item
-    ChatGPT (Open AI), Bard (Google), GrammarlyGO, GitHub Copilot
-  \item
-    DALL.E, Stable Diffusion, Midjourney
-  \end{itemize}
-\item
-  How many have tried one?
-\item
-  How do they work?
-
-  \begin{itemize}
-
-  \item
-    Fundamentally they are just computer programs running a function:
-    prompt -\textgreater{} response.
-  \item
-    Interesting difference is that they are \textbf{trained}, not
-    written directly with a bunch of Python code.
-
-    \begin{itemize}
-
-    \item
-      Give it a ton of examples, e.g.~text or images from the Internet.
-    \item
-      ``Learns'' what examples have in common.
-
-      \begin{itemize}
-
-      \item
-        Training takes a lot of input data and a lot of computational
-        effort. You have to have a ton of computers etc, i.e.~be a big
-        company.
-      \end{itemize}
-    \item
-      Basic version (we've had this for a while): can then
-      \textbf{predict} which new inputs are similar to training data.
-
-      \begin{itemize}
-
-      \item
-        Example: Heart Disease lab. Function at the end was generated
-        automatically by looking at data and learning what diseased
-        patients had in common.
-      \end{itemize}
-    \item
-      Advanced version (last few years): can \textbf{generate} new
-      things that are similar.
-
-      \begin{itemize}
-
-      \item
-        Note once the training is done, not as much work to run it in
-        generation mode, mid-sized models can be run on a desktop
-      \end{itemize}
-    \end{itemize}
-  \end{itemize}
-\item
-  What are they good at / not good at?
-
-  \begin{itemize}
-
-  \item
-    Good at coming up with things that sound / look good
-  \item
-    Have no idea of what is true/false
-  \item
-    Have all the same bias as the training data that went into it.
-  \item
-    Not good at learning new things incrementally
-  \end{itemize}
-\item
-  Try out some examples with ChatGPT.
-
-  \begin{itemize}
-
-  \item
-    See how we can get it to say something false.
-  \item
-    Try writing some Python code.
-  \end{itemize}
-\item
-  Why bother learning computer programming if you can just tell the
-  computer what you want in English?
-
-  \begin{itemize}
-
-  \item
-    The generated code isn't always correct! You need to understand + be
-    able to review it.
-  \item
-    It ultimately can only do kind of simple, small things, not build
-    big systems. Someone needs to put them together.
-  \end{itemize}
-\item
-  Academic Integrity?
-
-  \begin{itemize}
-
-  \item
-    Goal: learning!
-  \item
-    Make sure you're clear with faculty on what is allowed.
-  \item
-    Make sure to cite if you used Grammarly, ChatGPT, etc.
-  \item
-    This class: code must be your own.
-
-    \begin{itemize}
-
-    \item
-      Tempting to get code from web searches, now generative AI.
-    \item
-      Don't use these, but if you do, at least cite them.
-    \end{itemize}
-  \end{itemize}
-\item
-  How will these affect society? (discussion)
-
-  \begin{itemize}
-
-  \item
-    Partly depends on choices you make!
-  \item
-    Big companies want you to use them etc.
-  \end{itemize}
-\end{itemize}
-
 
 \end{document}
