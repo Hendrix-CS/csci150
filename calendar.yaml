@@ -164,13 +164,16 @@ entries:
     Topic:
       - Strings
       - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F3%5F%20Strings%2D20250303%5F081245%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb4b9d343%2Dbc75%2D40e6%2D8935%2Dacb537d81199
-      - kaggle: https://www.kaggle.com/code/byorgey/3-3-strings
+      - kaggle: https://www.kaggle.com/code/byorgey/3-3-3-5-strings
     Due: 'HW: CodingBat Loop Practice'
   - Date: 2025-03-05
-    Topic: Strings and Loops
-    Quiz: Conditionals
+    Topic:
+      - String and loop practice
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F5%5F%20string%20and%20loop%20practice%2D20250305%5F081404%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E872a128d%2D4f64%2D4d9b%2D98f3%2Df896fc6467b0
+      - kaggle: https://www.kaggle.com/code/byorgey/3-3-3-5-strings
   - Date: 2025-03-07
     Topic: Generative AI
+    Quiz: Conditionals
 
   ##################################################
 
