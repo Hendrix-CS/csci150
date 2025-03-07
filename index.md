@@ -227,9 +227,9 @@ You will be graded not only on correctness, but also technique, documentation an
 
 | # | Name                                                                   | Assigned | Due    |
 |:-:|------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 20 Sep   |  4 Oct |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  | 11 Oct   | 25 Oct |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  |  1 Nov   | 13 Dec |
+| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 14 Feb   | 28 Feb |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  | 14 Mar   | 4 Apr  |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  | 4 Apr    | 9 May  |
 
 Each project will be assessed as **Level 1 Complete** or **Level 2 Complete**, with criteria specified individually
 for each project. Note that the final project must be submitted on-time to earn credit - no final projects
