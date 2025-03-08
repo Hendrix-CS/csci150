@@ -117,13 +117,6 @@ the lab:
     4) Quit
     Your choice? 4
 
-## Grading Criteria
-
-* A **Complete** submission includes:
-  * All steps complete.
-  * No Pycharm style warnings.
-
-
 ## Step 1: Bits and Pieces
 
 Create a new Python file called `todo_manager.py`, and put
@@ -154,6 +147,9 @@ You can also test your function like this:
 implement this function in only one line of code.  Look at your notes
 from class!
 
+**Hint**: make sure this function `return`s the result; it should not
+`print` anything!
+
 #### 1.2 Print Numbered List
 
 Write a function called `print_numbered_list(items: list[str])`.
@@ -166,6 +162,9 @@ should print out
     0) hat
     1) socks
     2) shoes
+
+Unlike `list_into_lines`, this function's job is to actually `print`
+something on the screen, not to `return` anything.
 
 **Be sure to test your function** by right-clicking and choosing "Run File in Console"
 and then trying your function with different inputs.  For example,

@@ -175,8 +175,8 @@ an excused absence.
 |   | (No lab - snow)                                                                           |                 | 19-20 Feb |           |
 | 4 | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 3-4 hrs         | 26-27 Feb | 5-6 Mar   |
 | 5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         | 5-6 Mar   | 12-13 Mar |
+| 6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 12-13 Mar | 19-20 Mar |
 
-<!-- | 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 5-6 Mar      | 12-13 Mar    | -->
 <!-- | 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 12-13 Mar    | 19-20 Mar    | -->
 <!-- |    | Project 2 Workshop                                                                        |                 | 19-20 Mar    |              | -->
 <!-- | 8  | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                  | 2-3 hrs         | 2-3 Apr      | 9-10 Apr     | -->
