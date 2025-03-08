@@ -212,26 +212,26 @@ entries:
     Topic: For loop Practice
     Quiz: Function Stack Tracing
   - Date: 2025-03-21
-    Topic: Common loop patterns
-
-  ##################################################
-
-  - Date: 2025-03-17
     Topic: File I/O
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/file.html
-          text: File I/O
-    Due: 'HW: CodingBat List and Loop Practice'
-  - Date: 2025-03-19
-    Topic: More File I/O
-    Quiz: Strings and Loops
-  - Date: 2025-03-21
-    Topic: The Heap and Mutability
-    Due: Project 2
 
   ##################################################
+
+  # - Date: 2025-03-17
+  #   Topic: File I/O
+  #   Resources:
+  #     - 'HW:'
+  #     - link:
+  #         url: homework/file.html
+  #         text: File I/O
+  #   Due: 'HW: CodingBat List and Loop Practice'
+  # - Date: 2025-03-19
+  #   Topic: More File I/O
+  #   Quiz: Strings and Loops
+  # - Date: 2025-03-21
+  #   Topic: The Heap and Mutability
+  #   Due: Project 2
+
+  # ##################################################
 
   - Date: 2025-03-24
     Topic:
@@ -252,7 +252,7 @@ entries:
       - link:
           url: homework/dictionary.html
           text: Dictionaries
-    Due: 'HW: File I/O'
+    Due: 'HW: CodingBat List and Loop Practice'
   - Date: 2025-04-02
     Topic: Dictionaries II
     Quiz: Lists and Loops
@@ -262,6 +262,7 @@ entries:
       link:
         url: projects/final.html
         text: Final project
+    Due: Project 2
 
   ##################################################
 
