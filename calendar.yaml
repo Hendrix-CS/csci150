@@ -191,7 +191,10 @@ entries:
           text: CodingBat String and Loop Practice
     Due: 'HW: Function Stack Tracing'
   - Date: 2025-03-12
-    Topic: List Processing Examples
+    Topic:
+      - More lists
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F12%5F%20more%20lists%2D20250312%5F081142%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecfc023ef%2D0099%2D46d7%2D8263%2D74f317031b53
+      - kaggle: https://www.kaggle.com/code/byorgey/3-10-lists
     Quiz: Loops
   - Date: 2025-03-14
     Topic: Function Abstraction
