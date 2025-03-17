@@ -2488,12 +2488,14 @@ def f3():
 \end{itemize}
 
 \newpage
-\class{\notready For loops}
+\class{\ready For loops}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item Note project 2 assigned.
+\item Note new CodingBat HW, due after spring break.
+\item Note project 2 due at end of week after spring break.  We'll
+  talk about file I/O on Friday.
 \end{itemize}
 
 \subsection*{For Loops}
@@ -2508,8 +2510,8 @@ def explode(s: str):
     i += 1
 \end{verbatim}
 Recall how easy it was to make errors like starting index at the wrong
-place, using \verb|<=| instead of \verb|<|, and so on.  Well, it turns
-out there is a better way!
+place, using \verb|<=| instead of \verb|<|, forgetting the
+\verb|i += 1|, and so on.  Well, it turns out there is a better way!
 \begin{verbatim}
 def explode(s: str):
   for c in s:
@@ -2529,13 +2531,13 @@ for animal in animals:
 
 General form:
 \begin{verbatim}
-for <new variable> in <list expression>:
+for <new variable> in <string or list expression>:
     ... do stuff with variable ...
 \end{verbatim}
 
 The loop will execute a number of times equal to the length of the
-list.  Each time, \verb|<new variable>| will be assigned the next
-element of the list.
+string or list.  Each time, \verb|<new variable>| will be assigned the
+next element.
 
 Have students talk in groups to come up with questions.  Get one
 question from each group.  Some of the things that came up in F'18
@@ -2797,8 +2799,6 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
 %   \verb|is_sorted| next class.
 % \end{reflect}
 
-\holiday{Fall break}
-
 \newpage
 \class{\notready File I/O}
 
@@ -2880,6 +2880,10 @@ Note the need for newline characters.
 
 Example: define \verb|make_file| function which prompts the user for
 a list of strings, then writes them all to a file.
+
+\holiday{Spring break}
+\holiday{Spring break}
+\holiday{Spring break}
 
 \newpage
 
