@@ -210,7 +210,10 @@ entries:
   ##################################################
 
   - Date: 2025-03-17
-    Topic: For loops
+    Topic:
+      - For loops
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F17%5F%20for%20loops%2D20250317%5F081029%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecbb0f5e0%2D24ca%2D4f30%2Db1b2%2D059e053eee18
+      - kaggle: https://www.kaggle.com/code/byorgey/3-17-for-loops
     Resources:
       - 'HW:'
       - link:
