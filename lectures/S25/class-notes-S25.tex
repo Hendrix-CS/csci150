@@ -2599,13 +2599,21 @@ def contains(haystack: list[int], needle: int) -> bool:
 \end{verbatim}
 
 \newpage
-\class{\notready More for loops: index ranges}
+\class{\ready More for loops: index ranges}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Lab this week, due after spring break.
+\end{itemize}
+
+\subsection*{Index ranges}
 
 Let's practice writing a function together using a for loop.
 \begin{verbatim}
 # Find the index of the first occurrence of needle in haystack, or -1
 # if it is not found.
-def find(needle: str, haystack: str):
+def find(needle: str, haystack: str) -> int:
     for c in haystack:
         if c == needle:
             return ???  # What do we return here?
