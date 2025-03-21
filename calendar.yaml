@@ -226,7 +226,10 @@ entries:
       - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F19%5F%20more%20for%20loops%2C%20index%20ranges%2D20250319%5F081129%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E226c43f7%2D1697%2D4a92%2D8cc8%2De1e38cdb8d45
       - kaggle: https://www.kaggle.com/code/byorgey/3-17-for-loops
   - Date: 2025-03-21
-    Topic: File I/O
+    Topic:
+      - File I/O
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F21%5F%20File%20I%5FO%2D20250321%5F081354%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7d9d85a2%2D09c3%2D4c9f%2D8ae2%2D1e3a85228d76
+      - code: FileIO.py
     Quiz: Function Stack Tracing
 
   ##################################################
@@ -291,7 +294,6 @@ entries:
     Due: 'HW: Dictionaries'
   - Date: 2025-04-09
     Topic: Class/object examples (cake; car)
-    Quiz: File I/O
   - Date: 2025-04-11
     Topic: Class/object examples (bookshelf)
 
