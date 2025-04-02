@@ -2940,15 +2940,12 @@ their habitat ID numbers.
 'B19' -> 'ferret'
 'B12' -> 'alligator'
 \end{verbatim}
-Or we could use numbers as keys.  Important point: keys have to be
-immutable.  So we can't use \eg lists or dictionaries as keys.
+Or we could use numbers as keys.  [Note: keys have to be
+immutable.  So we can't use \eg lists or dictionaries as keys.]
 
-Show how to make this dictionary.
-\begin{itemize}
-\item Write using curly braces and colons.
-\item Alternatively, start with empty one and add them.
-\item Show type \texttt{dict[k,v]}.
-\end{itemize}
+Show how to make this dictionary: write using curly braces and colons.
+
+Show syntax for looking up a key, how to modify value at a key (OR add a new key!).
 
 Dictionaries are like functions mapping keys to values.  Consequences:
 \begin{itemize}
@@ -2960,7 +2957,8 @@ Dictionaries are like functions mapping keys to values.  Consequences:
 
 Rewrite \verb|frequency_counts(s)| to return a dictionary.  Why this is
 better: directly look up by letter value.  No need to use \verb|ord|
-or alphabet string etc.
+or alphabet string etc.  Along the way, show type \verb|dict[k,v]|,
+show \verb|in| operator for checking keys.
 
 \begin{verbatim}
 # Given a string s, return a dictionary mapping each character in the
