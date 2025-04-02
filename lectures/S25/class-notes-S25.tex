@@ -2958,31 +2958,6 @@ Dictionaries are like functions mapping keys to values.  Consequences:
 \item You can only look up a value by key, not a key by value.
 \end{itemize}
 
-Other things we can do with a dictionary (illustrate these at the
-Python prompt and/or with some sample code):
-\begin{itemize}
-\item Get list of all keys with \verb|keys()|
-\item Get list of all values with \verb|values()|
-\item Check if a key is in the dictionary using \verb|in|
-\item Ask for the number of keys with \verb|len|
-\item Delete a mapping with \verb|del|
-\item Iterate over keys with \verb|for|
-\end{itemize}
-
-Show
-\url{https://docs.python.org/3.7/library/stdtypes.html#mapping-types-dict}.
-
-Note (as of Python version 3.6) the keys will always be in the same
-order you put them in.
-
-\begin{reflect}{Brent, S'17}
-  Only made it to here.  Did frequency counting the following class.
-\end{reflect}
-
-\class{\ready Dictionaries II}
-
-Do as much of this as there is time for; finish next class.
-
 Rewrite \verb|frequency_counts(s)| to return a dictionary.  Why this is
 better: directly look up by letter value.  No need to use \verb|ord|
 or alphabet string etc.
@@ -3002,16 +2977,47 @@ def frequency_counts(s: str) -> dict[str, int]:
         counts[c] += 1
 
     return counts
+\end{verbatim}
 
-def normalize(d: dict[str, int]) -> dict[str, float]:
-    etc.
+\begin{reflect}{Brent, S'17}
+  Only made it to here.  Did frequency counting the following class.
+\end{reflect}
+
+\class{\ready Dictionaries II}
+
+\begin{itemize}
+\item Project 2 due Friday!
+\item REMEMBER TO MAKE TIME FOR QUIZ
+\end{itemize}
+
+Show how to loop over keys of a dictionary.  Write \verb|normalize|:
+
+\begin{verbatim}
+def normalize(counts: dict[str, int]) -> dict[str, float]:
+    total = 0
+    for c in counts:
+        total += counts[c]
 
     freqs: dict[str, float] = {}
     for c in counts:
-        freqs[c] = counts[c] / n
+        freqs[c] = counts[c] / total
 
     return freqs
 \end{verbatim}
+
+Other things we can do with a dictionary (illustrate these at the
+Python prompt and/or with some sample code):
+\begin{itemize}
+\item Check if a key is in the dictionary using \verb|in|
+\item Iterate over keys with \verb|for|
+\item Delete a mapping with \verb|del|
+\item Get list of all keys with \verb|keys()|
+\item Get list of all values with \verb|values()|
+\item Ask for the number of keys with \verb|len|
+\end{itemize}
+
+Show
+\url{https://docs.python.org/3.7/library/stdtypes.html#mapping-types-dict}.
 
 \begin{reflect}{Brent, S'18}
   Made it through writing \verb|frequency_count| (but not
