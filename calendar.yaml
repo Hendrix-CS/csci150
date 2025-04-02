@@ -276,7 +276,10 @@ entries:
           text: Dictionaries
     Due: 'HW: CodingBat List and Loop Practice'
   - Date: 2025-04-02
-    Topic: Dictionaries II
+    Topic:
+      - Dictionaries II
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F2%5F%20Dictionaries%20II%2D20250402%5F081202%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E21bfb276%2Da45d%2D4589%2D84a4%2D2f6bfe351d44
+      - kaggle: https://www.kaggle.com/code/byorgey/3-31-dictionaries
     Quiz: Lists and Loops
   - Date: 2025-04-04
     Topic: Final Project Discussion
