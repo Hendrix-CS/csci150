@@ -282,7 +282,9 @@ entries:
       - kaggle: https://www.kaggle.com/code/byorgey/3-31-dictionaries
     Quiz: Lists and Loops
   - Date: 2025-04-04
-    Topic: Final Project Discussion
+    Topic:
+      - Final Project Discussion
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F4%5F%20Final%20project%20discussion%2D20250404%5F081203%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6452f867%2Db2e2%2D4944%2D8827%2D5ef9b122c6eb
     Resources:
       link:
         url: projects/final.html
