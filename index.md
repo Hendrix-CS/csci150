@@ -162,21 +162,20 @@ an excused absence.
 
 ## <a name="labs">Labs</a>
 
-| # | Name                                                                                      | Completion time | Assigned  | Due       |
-|:-:|-------------------------------------------------------------------------------------------|-----------------|-----------|-----------|
-| 0 | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 1-2 hrs         | 22-23 Jan | 29-30 Jan |
-| 1 | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 2-3 hrs         | 29-30 Jan | 5-6 Feb   |
-| 2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 2.5-3.5 hrs     | 5-6 Feb   | 12-13 Feb |
-| 3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 2-3 hrs         | 12-13 Feb | 19-20 Feb |
-|   | (No lab - snow)                                                                           |                 | 19-20 Feb |           |
-| 4 | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 3-4 hrs         | 26-27 Feb | 5-6 Mar   |
-| 5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         | 5-6 Mar   | 12-13 Mar |
-| 6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 12-13 Mar | 19-20 Mar |
-| 7 | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 19-20     | 2-3 Apr   |
-| 8 | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                  | 2-3 hrs         | 2-3 Apr   | 9-10 Apr  |
+| # | Name                                                                                      | Completion time | Assigned  | Due        |
+|:-:|-------------------------------------------------------------------------------------------|-----------------|-----------|------------|
+| 0 | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 1-2 hrs         | 22-23 Jan | 29-30 Jan  |
+| 1 | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 2-3 hrs         | 29-30 Jan | 5-6 Feb    |
+| 2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 2.5-3.5 hrs     | 5-6 Feb   | 12-13 Feb  |
+| 3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 2-3 hrs         | 12-13 Feb | 19-20 Feb  |
+|   | (No lab - snow)                                                                           |                 | 19-20 Feb |            |
+| 4 | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 3-4 hrs         | 26-27 Feb | 5-6 Mar    |
+| 5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         | 5-6 Mar   | 12-13 Mar  |
+| 6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 12-13 Mar | 19-20 Mar  |
+| 7 | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 19-20     | 2-3 Apr    |
+| 8 | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                  | 2.5-3.5 hrs     | 2-3 Apr   | 9-10 Apr   |
+| 9 | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 3.5-4.5 hrs     | 9-10 Apr  | 16-17  Apr |
 
-<!-- |    | Project 2 Workshop                                                                        |                 | 19-20 Mar    |              | -->
-<!-- | 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 3.5-4.5 hrs     | 9-10 Apr     | 16-17  Apr   | -->
 <!-- | 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 2.5-3.5 hrs     | 16-17 Apr    | 23-24 Apr    | -->
 <!-- | 11 | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                     | 3.5-4.5 hrs     | 23-24 Apr    | 30 Apr-1 May | -->
 <!-- |    | Project 3 Workshop                                                                        |                 | 30 Apr-1 May |              | -->
