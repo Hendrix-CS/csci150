@@ -294,7 +294,10 @@ entries:
   ##################################################
 
   - Date: 2025-04-07
-    Topic: Classes
+    Topic:
+      - Classes
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F7%5F%20Introduction%20to%20classes%2D20250407%5F081209%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed52a0d13%2Dae07%2D4f01%2D88f4%2Da09fc11c24f9
+      - kaggle: https://www.kaggle.com/code/byorgey/4-7-classes
     Resources:
       - 'HW:'
       - link:
