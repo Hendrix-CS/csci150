@@ -3053,12 +3053,6 @@ Show
 \item Note no quiz this Wednesday.
 \end{itemize}
 
-\begin{reflect}{Brent}
-  Totally OK if this doesn't all fit into one lecture (it probably
-  won't).  Basically we have 3 lectures to get through \verb|Cake| and
-  \verb|TrafficLight|.
-\end{reflect}
-
 Introduce the Birthday Cake Problem: you have a cake with $n$ lit
 candles.  You choose a uniform random number from $1$ to $n$
 (\emph{i.e.} roll an ``$n$-sided die'') and blow out that many
@@ -3132,19 +3126,7 @@ class Cake:
   object.
 \end{itemize}
 
-\newpage
-\class{\notready More classes \& objects}
-
-\subsection*{Setup}
 \begin{itemize}
-\item Collect HW (dictionary \& heap reading)
-\item \notready Quiz (see \texttt{csci150-instructors/quiz/dict-heap-quiz.py})
-\end{itemize}
-
-\subsection*{More Cake}
-
-\begin{itemize}
-\item Review code from Monday.  Get them to write \verb|allout|.
 \item Fill out the rest of the simulation.  Maybe get them to write
   some of the methods.  Below is what I've ended up with in previous
   years.
@@ -3209,14 +3191,28 @@ main()
   terms of this higher-level vocabulary (``blow out some candles'',
   ``keep looping until all the candles are out'', etc.)
 
-\item Run it and paste output into Excel, do a regression to show that
-  it is close to natural log! [In fact there is a nice analytical
-  argument showing that the expected number of iterations required to
-  blow out $n$ candles is exactly $H_n = \sum_{1 \leq k \leq n} 1/k$,
-  the $n$th harmonic number, and
-  $\lim_{n \to \infty} H_n = \ln n + \gamma$, where
-  $\gamma \approx 0.577216\dots$ is the Euler-Mascheroni constant.
-  But there's no need to tell them any of this.]
+\item IF TIME, Run it and paste output into Excel, do a regression to
+  show that it is close to natural log! [In fact there is a nice
+    analytical argument showing that the expected number of iterations
+    required to blow out $n$ candles is exactly $H_n = \sum_{1 \leq k
+      \leq n} 1/k$, the $n$th harmonic number, and $\lim_{n \to
+      \infty} H_n = \ln n + \gamma$, where $\gamma \approx
+    0.577216\dots$ is the Euler-Mascheroni constant.  But there's no
+    need to tell them any of this.]
+\end{itemize}
+
+\newpage
+\class{\notready More classes \& objects}
+
+\subsection*{Setup}
+\begin{itemize}
+  \item ?
+\end{itemize}
+
+Do more class/object examples:
+\begin{itemize}
+\item Fountain (see example from past exams)
+\item Car (gas, gas tank capacity, mileage, mpg; fill, drive)
 \end{itemize}
 
 \newpage
@@ -3242,106 +3238,7 @@ main()
   \texttt{homework/class-design}).  Quiz Wednesday.
 \end{itemize}
 
-\subsection*{Traffic lights}
-
-\begin{verbatim}
-# Traffic light
-#
-# How would you model it in Python?
-# What functions should it have?
-# How would it work?
-
-# Possible functions:
-#   - separate red, green, yellow light functions
-#   - interval function
-#   - sensor
-#   - change to next color
-#   - say what the current color is
-#   - run
-# Variables / state:
-#   - current color
-#   - timer (time left until next change?)
-
-
-# Version 1:
-#   - easy to write
-#   - tedious (imagine cycling through 20 colors)
-#   - difficult to change
-class TrafficLight:
-
-    # Variables:
-    #   - current_color (string)
-
-    # Create a new red traffic light
-    def __init__(self):
-        self.current_color = "RED"
-
-    # Change to next color
-    def change(self):
-        if self.current_color == "RED":
-            self.current_color = "GREEN"
-        elif self.current_color == "GREEN":
-            self.current_color = "YELLOW"
-        elif self.current_color == "YELLOW":
-            self.current_color = "ORANGE"
-        elif self.current_color == "ORANGE":
-            self.current_color = "RED"
-        else:
-            print "The sky is falling!!"  # This should never happen
-
-    # Return the current color
-    def color(self):
-        return self.current_color
-
-# Version 2:
-# Use a dictionary of colors
-class TrafficLight2:
-
-    # Variables:
-    #   - current_color
-    #   - color_dict
-
-    def __init__(self):
-        self.current_color = "RED"
-        self.color_dict = \
-          { "RED" : "GREEN",
-            "GREEN" : "YELLOW",
-            "YELLOW" : "ORANGE",
-            "ORANGE" : "RED" }
-
-    def change(self):
-        self.current_color = self.color_dict[self.current_color]
-
-    def color(self):
-        return self.current_color
-
-# Version 3: list of colors
-class TrafficLight3:
-
-    # Variables:
-    #   - color_list
-    #   - current_index
-
-    def __init__(self):
-        self.color_list = ["RED", "GREEN", "YELLOW", "ORANGE"]
-        self.current_index = 0
-
-    def change(self):
-        self.current_index += 1
-        self.current_index %= len(self.color_list)
-
-    def color(self):
-        return self.color_list[self.current_index]
-
-def main():
-    t = TrafficLight3()  # we can switch and it works the same
-    print t.color()
-    for i in range(10):
-        t.change()
-        print t.color()
-
-main()
-\end{verbatim}
+More examples: book + shelf?  Elevator simulation?
 
 \newpage
 \class{\notready Extended example I}
@@ -3952,15 +3849,6 @@ def fib_m(n: int) -> int:
 \end{verbatim}
 
 \newpage
-\class{\notready Josh guest lecture?}
-\class{\notready Josh guest lecture?}
-
-\lab{Tornados}
-
-\holiday{Spring break}
-
-\class{\notready Exam 3 review}
-\class{\notready Exam 3}
 
 % \newpage
 % \class{\notready Queues I}
@@ -4361,6 +4249,5 @@ def main():
 \end{verbatim}
 
 Then go over it carefully.
-
 
 \end{document}
