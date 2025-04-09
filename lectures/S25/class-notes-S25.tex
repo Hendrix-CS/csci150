@@ -3202,18 +3202,91 @@ main()
 \end{itemize}
 
 \newpage
-\class{\notready More classes \& objects}
+\class{\ready More classes \& objects}
 
-\subsection*{Setup}
-\begin{itemize}
-  \item ?
-\end{itemize}
+More class/object examples: fountain, car.  Here's the code we ended
+up with in spring 2025:
 
-Do more class/object examples:
-\begin{itemize}
-\item Fountain (see example from past exams)
-\item Car (gas, gas tank capacity, mileage, mpg; fill, drive)
-\end{itemize}
+\begin{verbatim}
+# A fountain has:
+#   - a capacity (= total amount of water it can hold)
+#   - a current amount of water
+#   - whether it is currently running
+#
+# Things a fountain can do:
+#
+#   - Turn on/off
+#   - Fill or drain water
+#   - Print out its current status
+
+from dataclasses import dataclass
+
+@dataclass
+class Fountain:
+
+    # 1. list all the fields we want (= variables stored in a Fountain object)
+    capacity: int           # capacity in liters
+    water: int              # current amount of water in liters
+    running: bool = False   # whether it is running - defaults to False.
+
+    # 2. Write some methods, i.e. things a Fountain object can do.
+
+    # Turn the fountain on
+    def turn_on(self):
+        # Make sure fountain is not empty before turning on
+        if self.water > 0:
+            self.running = True
+        else:
+            print("Can't turn on an empty fountain!")
+
+    def turn_off(self):
+        self.running = False
+
+    def print_status(self):
+        if self.running:
+            print('sploosh!')
+
+        print(f'The fountain contains {self.water}L, and has a capacity of {self.capacity}L.')
+
+    def modify_water(self, delta: int):
+        self.water += delta
+        if self.water > self.capacity:
+            print(f"{self.water - self.capacity} liters slosh over the side!")
+            self.water = self.capacity
+        elif self.water <= 0:
+            self.running = False
+            self.water = 0
+\end{verbatim}
+
+\begin{verbatim}
+from dataclasses import dataclass
+
+@dataclass
+class Car:
+
+    gas: float       # Amount of gas in the tank, in gallons
+    mileage: float   # Mileage on the odometer
+    speed: float     # Current speed in miles per hour
+    passengers: int  # Number of passengers
+
+    def change_passengers(self, num_passengers: int):
+        if self.speed == 0:
+            self.passengers = num_passengers
+        else:
+            print('Stop first, do you want to get killed!?')
+
+    def fill_gas(self, added_gas: float):
+        if self.speed == 0:
+            self.gas += added_gas
+        else:
+            print(f"You can't fill up while driving {self.speed} miles per hour!")
+
+    def drive(self, driving_speed: float, driving_time: float):
+        self.speed = driving_speed
+        miles_driven = driving_speed * driving_time
+        self.mileage += miles_driven
+        self.gas -= miles_driven / 20
+\end{verbatim}
 
 \newpage
 \lab{Die Hard/Water Jug}
