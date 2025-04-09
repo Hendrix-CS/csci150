@@ -305,7 +305,11 @@ entries:
           text: Classes
     Due: 'HW: Dictionaries'
   - Date: 2025-04-09
-    Topic: Class/object examples (cake; car)
+    Topic:
+      - Class/object examples (fountain; car)
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F9%5F%20Class%20%2B%20object%20examples%2D20250409%5F081642%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E2a60c756%2De9a5%2D4313%2Da943%2D5beead72316f
+      - code: Fountain.py
+      - code: Car.py
   - Date: 2025-04-11
     Topic: Class/object examples (bookshelf)
 
