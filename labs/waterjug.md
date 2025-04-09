@@ -49,12 +49,14 @@ to help us solve this?
 
 ## Step 1: The `WaterJug` class
 
-Create a file named `waterjug.py`. In this file, you will define
-the `WaterJug` class. Each `WaterJug` object will need to have two variables
-that we can think of as the state of that `WaterJug`:
+Create a file named `waterjug.py`. In this file, you will define the
+`WaterJug` class. Each `WaterJug` object will need to have two fields
+(variables) that we can think of as the state of that `WaterJug`:
 
-  * an `int` for `capacity`
-  * an `int` for `contents`
+  * an `int` called `capacity`, which is the maximum amount of water
+    the jug can hold
+  * an `int` called `contents`, which is the amount of water
+    currently in the jug
 
 Also, a `WaterJug` needs functions to change the state of the internal components.
 In object-oriented programming, these functions are called **methods**.
@@ -68,13 +70,12 @@ Methods:
 Implement this class in Python. Here is an incomplete implementation you can use
 as a guide:
 
-    class WaterJug:
-        def __init__(self, capacity: int, contents: int):
-            self.capacity = capacity
-            self.contents = contents
+    from dataclasses import dataclass
 
-        def __repr__(self):
-            return f'WaterJug(capacity={self.capacity},contents={self.contents})'
+    @dataclass
+    class WaterJug:
+        capacity: int
+        contents: int
 
         def fill(self):
             pass # Your code here
@@ -112,7 +113,6 @@ as a guide:
 
     if __name__ == '__main__':
         test()
-
 
 
 {% include warning.html content="Be careful with your methods to make
