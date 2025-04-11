@@ -3302,335 +3302,154 @@ class Car:
 \end{reflect}
 
 \newpage
-\class{\notready Classes \& objects III}
+\class{\ready Classes \& objects III}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item \notready Assign HW: class design practice (see
-  \texttt{homework/class-design}).  Quiz Wednesday.
+\item Note HW: class design practice.
+\item Note final project design due in one week.
 \end{itemize}
 
-More examples: book + shelf?  Elevator simulation?
+We did an extended example with multiple interacting classes.  Here's
+what we ended up with:
 
-\newpage
-\class{\notready Extended example I}
-
-\begin{reflect}{Brent, F'19}
-  I did the elevator simulation again, Mark did card games with Uno
-  and blackjack.  The specific example doesn't matter that much, as
-  long as they see designing and implementing multiple classes working
-  together.
-\end{reflect}
-
-As a slightly larger example involving several classes working
-together let's implement a simple elevator simulation.
-
-Here's the code we wrote in class:
+First, \texttt{Weapon.py}:
 
 \begin{verbatim}
-class Passenger:
-
-    # Variables:
-    # current_floor: int
-    # destination_floor: int
-    # in_elevator: bool
-    # weight: int
-    # ID: int
-
-    def __init__(self, ID: int, current_floor: int, destination_floor: int, weight: int):
-        self.ID = ID
-        self.current_floor = current_floor
-        self.destination_floor = destination_floor
-        self.weight = weight
-
-        self.in_elevator = False
-
-    def __repr__(self):
-        return ('Passenger(%d, %d, %d, %d)'
-                % (self.ID, self.current_floor, self.destination_floor, self.weight))
-
-    def get_ID(self) -> int:
-        return self.ID
-
-    def get_dest_floor(self) -> int:
-        return self.destination_floor
-\end{verbatim}
-
-\begin{verbatim}
-from Passenger import *
-
-class Elevator:
-
-    # going_up (up/down): bool
-    # destinations: list[int]
-    # total_weight: int
-    # weight_limit: int
-    # current_floor: int
-    # door_open: bool
-    # max_floor: int
-    # passengers: list[Passenger]
-
-    def __init__(self, max_floor: int):
-        self.max_floor = max_floor
-
-        self.going_up = True
-        self.current_floor = 1
-        self.passengers = []
-
-    # Move one floor in the current direction
-    # Let any passengers out who want to get out
-    # Turn around if @ top or bottom floor.
-    def move(self):
-        if self.going_up:
-            self.current_floor += 1
-        else:
-            self.current_floor -= 1
-
-        if self.current_floor == 1:
-            self.going_up = True
-        elif self.current_floor == self.max_floor:
-            self.going_up = False
-
-        new_passengers: list[Passenger] = []
-        for p in self.passengers:
-            if p.get_dest_floor() == self.current_floor:
-                print("Passenger %d gets off" % p.get_ID())
-            else:
-                new_passengers.append(p)
-        self.passengers = new_passengers
-
-    # Let a passenger on the elevator
-    def add_passenger(self, p: Passenger):
-        self.passengers.append(p)
-
-    # Return the current floor
-    def get_current_floor(self):
-        return self.current_floor
-\end{verbatim}
-
-And finally we made a tester:
-
-\begin{verbatim}
-from Passenger import *
-from Elevator import *
-
-def main():
-    e = Elevator(5)
-
-    for i in range(20):
-        e.move()
-        print(e.get_current_floor())
-
-main()
-\end{verbatim}
-
-Next time we will test passengers getting off the elevator, and make a
-Building class.  Then extend the simulation in various ways.
-
-\newpage
-\class{\notready Extended example II}
-
-\subsection*{Setup}
-
-\begin{itemize}
-\item \notready Quiz: class design.  See \texttt{csci150-instructors/quiz/classes.py}.
-\end{itemize}
-
-\subsection*{Extended example, continued}
-
-Here's how the code ended up in Spring 2019:
-
-\newpage
-\noindent \texttt{Passenger.py}:
-
-\begin{verbatim}
-class Passenger:
-
-    # Variables:
-    # current_floor: int
-    # destination_floor: int
-    # in_elevator: bool
-    # weight: int
-    # ID: int
-
-    def __init__(self, ID: int, current_floor: int, destination_floor: int, weight: int):
-        self.ID = ID
-        self.current_floor = current_floor
-        self.destination_floor = destination_floor
-        self.weight = weight
-
-        self.in_elevator = False
-
-    def __repr__(self):
-        return ('Passenger(%d, %d, %d, %d)'
-                % (self.ID, self.current_floor, self.destination_floor, self.weight))
-
-    def get_ID(self) -> int:
-        return self.ID
-
-    def get_current_floor(self) -> int:
-        return self.current_floor
-
-    def get_dest_floor(self) -> int:
-        return self.destination_floor
-
-    def get_in(self):
-        self.in_elevator = True
-
-    def get_out(self):
-        self.in_elevator = False
-\end{verbatim}
-
-\newpage
-\noindent \texttt{Elevator.py}:
-
-\begin{verbatim}
-from Passenger import *
-
-class Elevator:
-
-    # going_up (up/down): bool
-    # destinations: list[int]
-    # total_weight: int
-    # weight_limit: int
-    # current_floor: int
-    # door_open: bool
-    # max_floor: int
-    # passengers: list[Passenger]
-
-    def __init__(self, max_floor: int):
-        self.max_floor = max_floor
-
-        self.going_up = True
-        self.current_floor = 1
-        self.passengers = []
-
-    # Move one floor in the current direction
-    # Let any passengers out who want to get out
-    # Turn around if @ top or bottom floor.
-    def move(self):
-        if self.going_up:
-            self.current_floor += 1
-        else:
-            self.current_floor -= 1
-
-        print("FLOOR %d" % self.current_floor)
-
-        if self.current_floor == 1:
-            self.going_up = True
-        elif self.current_floor == self.max_floor:
-            self.going_up = False
-
-        new_passengers: list[Passenger] = []
-        for p in self.passengers:
-            if p.get_dest_floor() == self.current_floor:
-                print("Passenger %d gets off" % p.get_ID())
-                p.get_out()
-            else:
-                new_passengers.append(p)
-        self.passengers = new_passengers
-
-    # Let a passenger on the elevator
-    def add_passenger(self, p: Passenger):
-        self.passengers.append(p)
-        p.get_in()
-
-    # Return the current floor
-    def get_current_floor(self):
-        return self.current_floor
-\end{verbatim}
-
-\newpage
-\noindent \texttt{Building.py}:
-
-\begin{verbatim}
-from Passenger import *
-from Elevator import *
-
+from dataclasses import dataclass
 import random
-import time
 
-class Building:
+@dataclass
+class Weapon:
+    name: str
+    damage: int       # max damage it can do
+    durability: int   # how many times you can use it before it breaks
 
-    # Variables:
-    # num_floors: int
-    # num_elevators: int
-    # waiting_passengers: dict[int, list[Passenger]]
-       # key = floor
-       # value = passengers waiting on that floor
-    # elevator: Elevator
-       # (later, list[Elevator])
+    # Pick a random amount of damage and decrease the durability
+    def use(self) -> int:
+        self.durability -= 1
+        critical_hit = (random.randint(1,12) == 12)
 
-    def __init__(self, num_floors: int, num_passengers: int):
-        self.num_floors = num_floors
-        self.elevator = Elevator(self.num_floors)
+        if critical_hit:
+            return 2 * self.damage
+        else:
+            return random.randint(1, self.damage)
 
-        self.waiting_passengers = {}
+    def is_broken(self) -> bool:
+        return self.durability <= 0
 
-        for i in range(num_passengers):
-            p: Passenger = Passenger(i, random.randint(1, num_floors), random.randint(1, num_floors), random.randint(1, 300))
+    def display(self) -> str:
+        return f'{self.name} ({self.damage})'
 
-            # Create the list for p's floor if it doesn't already exist
-            if p.get_current_floor() not in self.waiting_passengers:
-                self.waiting_passengers[p.get_current_floor()] = []
+def random_weapon(cur_round: int) -> Weapon:
+    dmg = random.randint(1, cur_round)
+    dur = random.randint(1, cur_round)
+    adjectives = "big enchanted dragon small wobbly brittle blazing indestructible cursed".split()
+    weapons = "sword bow axe staff spear nunchucks slingshot scissors toothpick".split()
+    name = random.choice(adjectives) + " " + random.choice(weapons)
 
-            # Add p to the line of passengers waiting on that floor
-            self.waiting_passengers[p.get_current_floor()].append(p)
-
-    # Move the elevator and put waiting people on it
-    def update(self):
-
-        # Move the elevator one floor (and let passengers off)
-        self.elevator.move()
-
-        # Put people on the elevator
-        if self.elevator.get_current_floor() in self.waiting_passengers:
-            for p in self.waiting_passengers[self.elevator.get_current_floor()]:
-                print("Passenger %d gets on the elevator" % p.get_ID())
-                self.elevator.add_passenger(p)
-
-        # No one is waiting on that floor anymore
-        self.waiting_passengers[self.elevator.get_current_floor()] = []
-
-    def run(self):
-        while True:
-            self.update()
-            time.sleep(1)
+    return Weapon(name, dmg, dur)
 \end{verbatim}
 
-\newpage
-\noindent \texttt{Test.py}:
+Next, \texttt{Character.py}:
+\begin{verbatim}
+from dataclasses import dataclass
+
+from Weapon import *
+
+@dataclass
+class Character:
+    name: str
+    hp: int
+    weapon: Weapon
+
+    def heal(self, hp: int):
+        self.hp += hp
+
+    def attack(self, other: 'Character') -> int:
+        dmg = self.weapon.use()
+        other.hp -= dmg
+        return dmg
+
+    def is_dead(self) -> bool:
+        return self.hp <= 0
+
+    def display(self) -> str:
+        return f'{self.name} ({self.hp})'
+
+def random_enemy(cur_round: int) -> Character:
+    hp = random.randint(1, cur_round)
+    adjectives = "enraged magnificent microscopic vicious".split()
+    names = "dave cthulhu vampire chicken_jockey newt axolotl goblin IRS_agent".split()
+    for i in range(len(names)):
+        names[i] = names[i].replace('_', ' ')
+    name = random.choice(adjectives) + " " + random.choice(names)
+    return Character(name, hp, random_weapon(cur_round))
+\end{verbatim}
+
+Finally, putting it together with \texttt{RPG.py}:
 
 \begin{verbatim}
-from Passenger import *
-from Elevator import *
-from Building import *
-import time
+from Character import *
 
 def main():
-    # e = Elevator(5)
-    #
-    # e.add_passenger(Passenger(101, 1, 3, 90))
-    # e.add_passenger(Passenger(297, 1, 2, 150))
-    # e.add_passenger(Passenger(311, 1, 5, 3))
-    #
-    # for i in range(20):
-    #     time.sleep(2)
-    #     e.move()
-    #     print(e.get_current_floor())
+    cur_round: int = 0
+    name = input("What is your name, adventurer? ")
 
-    b = Building(10, 30)
-    b.run()
+    player = Character(name, 10, Weapon('rock', 1, 5))
+
+    while not player.is_dead():
+        cur_round += 1
+        print()
+        input("Hit Enter when you're ready for the next round!")
+        print("------------------------------------------------")
+        print(f'Round {cur_round}')
+        print(player.display())
+        print(f'Weapon: {player.weapon.display()}')
+
+        n = random.randint(1, 4)
+        if n == 1:
+            hp = random.randint(1, cur_round)
+            print(f'You find a potion! It increases your HP by {hp}!')
+            player.heal(hp)
+        elif n == 2:
+            print("Nothing happens!")
+        elif n == 3:
+            new_weapon = random_weapon(cur_round)
+            print(f'You find a {new_weapon.display()}!')
+            if new_weapon.damage > player.weapon.damage:
+                print(f'You throw away your {player.weapon.display()} and pick it up!')
+                player.weapon = new_weapon
+            else:
+                print(f'You decide to keep your {player.weapon.display()}.')
+        elif n == 4:
+            enemy = random_enemy(cur_round)
+
+            print(f'A {enemy.display()} appears!')
+            while not (player.is_dead() or enemy.is_dead()):
+                dmg = player.attack(enemy)
+                print(f'You hit it with your {player.weapon.name} for {dmg} damage!')
+                if enemy.is_dead():
+                    print('It died!')
+                else:
+                    dmg = enemy.attack(player)
+                    print(f'It hits you with its {enemy.weapon.name} for {dmg} damage!')
+                    if player.is_dead():
+                        print('You died!')
 
 main()
 \end{verbatim}
 
 \newpage
-\lab{Graphics \& Animation}
+\class{PyGame}
+
+\class{PyGame II}
+
+\lab{Faces}
 
 \newpage
-\class{Extended example III}
+\class{PyGame III}
 
 % \begin{itemize}
 % \item \notready HW assignment?  Practice with writing/reading code
