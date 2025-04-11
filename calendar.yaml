@@ -311,7 +311,12 @@ entries:
       - code: Fountain.py
       - code: Car.py
   - Date: 2025-04-11
-    Topic: Class/object examples (bookshelf)
+    Topic:
+      - Class/object examples (idle RPG)
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F11%5F%20more%20class%2Bobject%20examples%20%28idle%20RPG%29%2D20250411%5F081137%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E01c0e56a%2D1b04%2D427c%2D9b7c%2Def74027051cf
+      - code: Weapon.py
+      - code: Character.py
+      - code: RPG.py
 
   ##################################################
 
