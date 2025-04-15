@@ -332,10 +332,10 @@ entries:
           text: PyGame
     Due: 'HW: Classes'
   - Date: 2025-04-16
-    Topic: Classes and PyGame
+    Topic: PyGame + animation
     Quiz: Dictionaries
   - Date: 2025-04-18
-    Topic: Classes and PyGame
+    Topic: PyGame + classes
     Due:
       - link:
           url: projects/final.html

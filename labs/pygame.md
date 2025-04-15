@@ -187,12 +187,12 @@ Create a file called `face2.py` and enter the code below:
 
     import pygame
     from pygame.locals import *
+    from dataclasses import dataclass
 
-
+    @dataclass
     class Face:
-        def __init__(self, x: int, y: int):
-            self.x = x
-            self.y = y
+        x: int
+        y: int
 
         def draw(self, surface):
             pygame.draw.circle(surface, 'red', (self.x, self.y), 100)
