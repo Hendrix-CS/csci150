@@ -296,7 +296,7 @@ best-looking animation.
 ### Step 3.2: Bouncing
 
 Currently, the faces disappear after a
-while, because they moves off the bottom of the screen.  We would like
+while, because they move off the bottom of the screen.  We would like
 to keep them bouncing inside the window. Add in checks to
 the `update` method to reverse the appropriate velocity
 component when a face hits a wall, by multiplying the velocity in
