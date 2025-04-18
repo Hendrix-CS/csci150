@@ -338,7 +338,11 @@ entries:
       - code: animation.py
     Quiz: Dictionaries
   - Date: 2025-04-18
-    Topic: PyGame + classes
+    Topic:
+      - Making a simple game with PyGame
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F18%5F%20making%20a%20simple%20game%2D20250418%5F081238%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb3c462a6%2D6eff%2D412b%2Db9ad%2D30fdfd5ef4e6
+      - code: game.py
+      - code: game_skeleton.py
     Due:
       - link:
           url: projects/final.html
