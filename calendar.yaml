@@ -370,7 +370,10 @@ entries:
       - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F23%5F%20more%20recursion%2D20250423%5F081050%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Edd19589b%2Df3ce%2D4637%2D8f21%2D199b79de0db1
     Quiz: Classes
   - Date: 2025-04-25
-    Topic: 'Recursion III: Applications'
+    Topic:
+      - 'Recursion III: fun with recursion'
+      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F25%5F%20fun%20with%20recursion%2D20250425%5F081508%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E64a0fca2%2D5c5c%2D4e3c%2Dbcaf%2D38dfad6a4f06
+      - code: Fibonacci.py
 
   ##################################################
 
