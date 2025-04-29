@@ -259,10 +259,10 @@ From the 12 labs, 24 total credits are available:
 circumstances with the lab instructor.
 
 ### Homework/Quizzes
-Out of 13 homeworks and 11 quizzes, 48 total credits are available:
-* **Basic**: Earn 24 homework and quiz credits
-* **Intermediate**: Earn 34 homework and quiz credits
-* **Advanced**: Earn 44 homework and quiz credits
+Out of 13 homeworks and 9 quizzes, 44 total credits are available:
+* **Basic**: Earn 22 homework and quiz credits
+* **Intermediate**: Earn 31 homework and quiz credits
+* **Advanced**: Earn 40 homework and quiz credits
 
 ### Projects
 From the three projects, 18 total credits are available:
