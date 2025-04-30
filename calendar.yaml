@@ -385,9 +385,26 @@ entries:
       - kaggle: https://www.kaggle.com/code/byorgey/4-28-mutability-references
     Due: 'HW: Recursion'
   - Date: 2025-04-30
-    Topic: TBD
+    Topic: After 150, Kattis
+    Resources:
+      rows:
+        - link:
+            text: Leggja saman
+            url: https://open.kattis.com/problems/leggjasaman
+        - link:
+            text: Cold-puter Science
+            url: https://open.kattis.com/problems/cold
+        - link:
+            text: Baby Bites
+            url: https://open.kattis.com/problems/babybites
+        - link:
+            text: Saving Princess Peach
+            url: https://open.kattis.com/problems/princesspeach
+        - link:
+            text: Babelfish
+            url: https://open.kattis.com/problems/babelfish
   - Date: 2025-05-02
-    Topic: Project Workshop
+    Topic: Project Workshop / open office hours
 
   ##################################################
 
