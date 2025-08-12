@@ -6,12 +6,11 @@ layout: course-multi
 ---
 <br/>
 
-## <a name="TAs">TA Office Hours</a>
+## <a name="TAs">TA Office Hours (TBD)</a>
 
-| Monday    | Tuesday   | Wednesday      | Thursday |
-|-----------|-----------|----------------|----------|
-| Sarah 7-9 | Jauss 6-8 | Katherine 8-10 | Ted 7-10 |
-|           | Ted 8-10  |                |          |
+| Monday | Tuesday | Wednesday | Thursday |
+|--------|---------|-----------|----------|
+|        |         |           |          |
 
 # <a name="description">Overview</a>
 
@@ -123,90 +122,140 @@ Upon completing this course, our goal is for you to be able to:
 
 <!-- END CALENDAR -->
 
+XXX integrate this into the calendar?
+
+| #  | Name                                                                                       | Completion time | Assigned | Due |
+|:--:|--------------------------------------------------------------------------------------------|-----------------|----------|-----|
+| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                          | 1-2 hrs         |          |     |
+| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)    | 2-3 hrs         |          |     |
+| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)  | 2.5-3.5 hrs     |          |     |
+| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)            | 2-3 hrs         |          |     |
+| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                        | 3-4 hrs         |          |     |
+| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                | 4-5 hrs         |          |     |
+| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                    | 3.5-4.5 hrs     |          |     |
+| 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                  | 3.5-4.5 hrs     |          |     |
+| 8  | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                   | 2.5-3.5 hrs     |          |     |
+| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                          | 3.5-4.5 hrs     |          |     |
+| 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                 | 2.5-3.5 hrs     |          |     |
+| 11 | [Enron's Secrets](https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively/) |                 |          |     |
+|    | Project 3 Workshop                                                                         |                 |          |     |
+
 # Coursework
 
-## <a name="hw">Homework</a>
+## <a name="modules">Modules</a>
 
-Short homework assignments will be typically assigned on Monday and due the
-following Monday.  Homework with coding practice problems will be submitted
-electronically. By-hand homework should be submitted on physical paper at
-the start of class time -- you can write (neatly) or type and print such
-solutions.
+Most of your work in this course will be organized around a series of
+*modules*, each module typically lasting one week and focusing on a
+particular topic.  Most modules will have three components:
 
-Each correct homework earns **one credit**. Submitting a sincere attempt at
-completing the homework **on time** earns **one additional credit**. If a
-homework is incorrect and does not receive credit, a student who wishes to
-revise the homework will be expected to visit office hours for feedback
-prior to submitting the revision.
+* A *[lab](#labs)*, in which you get to put into practice what we have been
+  learning in class, in partnership with other students and with the
+  help of a lab instructor and TAs.
 
-## <a name="quizzes">Quizzes</a>
+* A *[homework](#hw)* assignment, giving you more individual, focused
+  practice following the lab.
 
-A short quiz will be given at the end of class on most Wednesdays. Each
-quiz will contain one or more short problems that should be solvable within
-10 minutes.
+* A *[quiz](#quizzes)* that tests your understanding of the relevant concepts and
+  skills.
 
-Quizzes are scored as follows:
-* **2 credits**: All answers correct
-* **1 credit**: At least some answers correct
-* **0 credits**: No answers correct
+**In order to get credit for a module**, you must complete the **lab**
+and receive credit for the **quiz**.  If you do not receive credit for
+a quiz, you may retake a new version of the quiz after coming to
+office hours with the relevant completed homework assignment; see
+below for more details.
 
-A student may retake a given quiz twice. For each retake, the student must
-schedule an office hours appointment. Prior to the appointment, the student
-is expected to have run the code from the quiz in Python and achieved an
-understanding of why their answers were not correct. At the appointment,
-the student will be expected to explain as best they are able why their
-original answers were incorrect and what the correct answers should be.
-After a satisfactory explanation, the instructor will give the student
-a makeup quiz.
+### <a name="labs">Labs</a>
 
-Missing a quiz is **excused** if the student communicates to the instructor
-**prior to class that day** that it is necessary for the student to miss class.
-A student may book an office hours appointment to take a quiz missed due to
-an excused absence.
+Much of your hands-on experience with programming in this course will
+be through weekly labs. During each scheduled lab period, you will
+spend time working with an assigned partner on a lab exercise, with
+the help of the lab instructor and TAs. The lab is due **by the start
+of the following lab**.
 
-## <a name="labs">Labs</a>
+#### Lab completion and grading
 
-| #  | Name                                                                                       | Completion time | Assigned     | Due          |
-|:--:|--------------------------------------------------------------------------------------------|-----------------|--------------|--------------|
-| 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                          | 1-2 hrs         | 22-23 Jan    | 29-30 Jan    |
-| 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)    | 2-3 hrs         | 29-30 Jan    | 5-6 Feb      |
-| 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)  | 2.5-3.5 hrs     | 5-6 Feb      | 12-13 Feb    |
-| 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)            | 2-3 hrs         | 12-13 Feb    | 19-20 Feb    |
-|    | (No lab - snow)                                                                            |                 | 19-20 Feb    |              |
-| 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                        | 3-4 hrs         | 26-27 Feb    | 5-6 Mar      |
-| 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                | 4-5 hrs         | 5-6 Mar      | 12-13 Mar    |
-| 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                    | 3.5-4.5 hrs     | 12-13 Mar    | 19-20 Mar    |
-| 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                  | 3.5-4.5 hrs     | 19-20        | 2-3 Apr      |
-| 8  | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                   | 2.5-3.5 hrs     | 2-3 Apr      | 9-10 Apr     |
-| 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                          | 3.5-4.5 hrs     | 9-10 Apr     | 16-17  Apr   |
-| 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                 | 2.5-3.5 hrs     | 16-17 Apr    | 23-24 Apr    |
-| 11 | [Enron's Secrets](https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively/) |                 | 23-24 Apr    | 30 Apr-1 May |
-|    | Project 3 Workshop                                                                         |                 | 30 Apr-1 May |              |
+Each lab consists of a series of milestones. At the start of each lab,
+you will receive a sheet of paper listing the milestones for that
+lab. As you achieve each milestone, you will demonstrate to the
+instructor or TA that you have met the milestone, and they will record
+this achievement on your checklist. If you complete the lab during the
+lab period, hand your checklist to your lab instructor before you
+leave the lab. If you require additional time beyond the lab period to
+complete the lab, either the instructor or the lab TA can check off
+the remaining milestones during office hours. You can then submit the
+completed checklist to the instructor at the start of the next lab.
 
-Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
+You will work with a partner on each lab assignment. Each partner will
+have their own milestone checklist. If you and your partner do not
+complete the milestones during the lab period, you should find time
+outside of lab to work together to complete it during the following
+week.  If this is not possible for some reason, talk to one of the
+course instructors. **TAs can only check off lab milestones if both
+partners are present.**
 
-Each lab consists of a series of milestones. At the start of each lab, you will receive a sheet of paper listing the
-milestones for that lab. As you achieve each milestone, you will demonstrate to the instructor or TA that you have met the
-milestone, and they will record this achievement on your checklist. When you complete all of the lab milestones, you will
-submit the milestone checklist.
+#### Lab attendance
 
-If you complete the lab during the lab period, hand your checklist to your lab instructor before you leave the lab. If you
-require additional time beyond the lab period to complete the lab, either the instructor or the lab TA can check off the
-remaining milestones during office hours. You can then submit the completed checklist to the instructor at the start of
-the next lab.
+**Lab attendance is required**. If you know you must miss a lab due to
+sports travel, illness, or some other reason, you should contact your
+lab instructor before lab (or, in the case of emergencies, as soon as
+possible).  Your lab absence will then be considered excused.
+However, you are still responsible for completing the lab activity on
+time.  If you wish, your lab instructor may be able to pair you with
+another student who was absent; or you may complete the lab on your
+own.  In either case, you are still welcome to get help on the lab
+from an instructor or TAs.
 
-Each completed lab earns **one credit**. Submitting the completed checklist by the start of the next lab earns
-**one additional credit**.
+Labs take place in the **Snoddy Computer Lab**, in the Bailey
+Library. As you go through the exterior door of the library, turn
+immediately to your left and enter the Snoddy Academic Resource
+Center:
 
-You will work with a partner on each lab assignment. Each partner will have their own milestone checklist. If they do not
-complete the milestones during the lab period, they should find time outside of lab to work together to complete them. If
-they are unable to do so, only the instructor is authorized to record milestones for students working alone.
+![](https://www.hendrix.edu/uploadedImages/Bailey_Library/Snoddy.jpg)
 
-**Lab attendance is required**. If an extenuating circumstance impedes the attendance of lab, the student must contact
-the lab instructor to discuss that circumstance for the absence to be **excused**. The student is still responsible
-for completing the lab activity on-time.
+Continue through the door at the far end of the hall (just visible in
+the above picture) into the first computer lab, and then enter the
+second lab at the back.
 
-Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
+### <a name="hw">Homework</a>
+
+Each week, you will be given a homework assignment, typically due on
+Monday.  These assignments will help you individually practice and
+solidify the skills and concepts from a given module, and prepare you
+to take the quiz.
+
+If you turn in your homework in class on Monday, it will be checked
+and returned to you with feedback on Wednesday, before the
+corresponding quiz on Friday.
+
+Homework assignments do not directly contribute to your final grade in the
+course. However, they will prepare you for the quizzes; in addition,
+if you do not initially receive credit on a quiz, you must complete
+the corresponding homework assignment before you may retake the quiz
+(see below).
+
+### <a name="quizzes">Quizzes</a>
+
+A short quiz will be given at the end of class on most Fridays. Each
+quiz will contain one or more problems or short-answer questions that
+should be solvable within 10 minutes or so.
+
+Quizzes are graded credit/no credit.
+
+If you do not receive credit for a quiz, you may retake it as follows:
+
+- Schedule an office hours appointment with an instructor.
+- You must bring the quiz and **completed homework assignment** from the
+  corresponding module with your to the office hours appointment.
+- After going over the quiz and homework, if the instructor is
+  satisfied that your understanding has improved, you may retake a
+  different version of the same quiz.
+- Alternatively, the instructor may give you additional practice
+  problems to work before coming back to retake the quiz on a later
+  date.
+
+Missed quizzes may be made up on a subsequent quiz day (there will
+usually be sufficient time allotted to take more than one quiz), or
+you may book an office hours appointment to take a missed quiz.
 
 ## <a name="projects">Projects</a>
 
@@ -217,76 +266,80 @@ Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go
 </div>
 <br/>
 
-You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to four weeks after they are assigned.
+Projects give you an opportunity to synthesize multiple concepts and
+skills from class into a working whole, as well as an opportunity to
+engage your creativity.
 
-You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
+| # | Name                                                         | Assigned | Due |
+|:-:|--------------------------------------------------------------|:--------:|:---:|
+| 1 | [Expert System XXX]({{site.baseurl}}/projects/project1.html) |          |     |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)        |          |     |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)        |          |     |
 
-{% include warning.html content="You must work individually on the projects. You may discuss concepts and ideas with your classmates, but the **code or work you turn in must be your own**. Use of any resources (TA, StackOverflow, ChatGPT, etc) must be cited, and an overreliance on those resources can be counterproductive to developing your own ability to make progress in this and other courses." %}
+Each project will have a detailed *specification* explaining the
+required criteria for a successful project.  Each project will be
+graded out of 3 points:
 
-| # | Name                                                                   | Assigned | Due    |
-|:-:|------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 14 Feb   | 28 Feb |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  | 14 Mar   | 4 Apr  |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  | 4 Apr    | 9 May  |
+- 1 point for being turned in on time (late projects may still be
+  submitted for a maximum of 2 points)
+- 1 point for a project that meets the basic requirements (as
+  specified in the project description)
+- 1 additional point for a project that meets the full requirements
 
-Each project will be assessed as **Level 1 Complete** or **Level 2 Complete**, with criteria specified individually
-for each project. Note that the final project must be submitted on-time to earn credit - no final projects
-will be accepted late. Projects earn **credits** as follows:
+### Project submission
 
-| Project | Level 1 Complete | Level 2 Complete | On-time Bonus | Maximum Credit |
-| ------: | ---------:       | ----------:      | ------------: | -------------: |
-| 1       | 2                | 4                | 1             | 5              |
-| 2       | 2                | 4                | 1             | 5              |
-| 3       | 4                | 8                | None          | 8              |
+You may ask for an extension at any time prior to the deadline for
+projects 1 and 2: just let an instructor know that you would like an
+extension, and specify your new deadline.  A project submitted by the
+new, extended deadline will still be considered on time.
 
-If a project receives less than Level 2 Complete, a student may submit a revised version of the project after an
-office hours meeting with the instructor to discuss how the project should be improved.
+The first such request for a given project will be automatically
+granted.  Typically, only one extension will be given for each
+project; however, requests for additional extensions will be
+considered on a case-by-case basis.
+
+Extensions on the final project will only be granted in exceptional
+circumstances.
+
+### Project grading
+
+Graded projects will be returned XXX
+
+Except for final project XXX
 
 ## <a name="attendance">Attendance</a>
 
 Attendance in this class is not required as part of your grade.
-However, I do expect you to attend and appreciate knowing in advance
+However, we do expect you to attend and appreciate knowing in advance
 if you will need to miss class.
 
-## <a name="grading">Specifications Grading</a>
+## <a name="grading">Grading</a>
 
-Final course grades are earned based on cumulative assignment outcomes. For each
-category of assignment, there are three levels of mastery: **Basic**, **Intermediate**, and **Advanced**.
-
-### Labs
-From the 12 labs, 24 total credits are available:
-* **Basic**: Earn 15 lab credits, maximum of two unexcused absences
-* **Intermediate**: Earn 19 lab credits, maximum of one unexcused absence
-* **Advanced**: Earn 23 lab credits, no unexcused absences
-
-**Remember**: For an absence to be **excused**, the student must discuss the
-circumstances with the lab instructor.
-
-### Homework/Quizzes
-Out of 13 homeworks and 9 quizzes, 44 total credits are available:
-* **Basic**: Earn 22 homework and quiz credits
-* **Intermediate**: Earn 31 homework and quiz credits
-* **Advanced**: Earn 40 homework and quiz credits
-
-### Projects
-From the three projects, 18 total credits are available:
-* **Basic**: Earn 8 project credits
-* **Intermediate**: Earn 13 project credits
-* **Advanced**: Earn 17 project credits
-
-### Final Course Grade
 * To earn an A in the course, a student will:
   * Complete the course survey.
-  * Achieve **Advanced** in all three categories
+  * Complete at least XXX out of XXX modules.
+  * Have at most one unexcused lab absence.
+  * Earn at least 8 project points.
 * To earn a B in the course, a student will:
   * Complete the course survey.
-  * Achieve at least **Intermediate** in all three categories.
-  * Achieve **Advanced** in at least one category.
+  * Complete at least XXX out of XXX modules.
+  * Have at most two unexcused lab absences.
+  * Earn at least 6 project points.
 * To earn a C in the course, a student will:
-  * Complete the course survey
-  * Achieve at least **Basic** in all three categories.
-  * Achieve one of:
-    * **Advanced** in at least one category.
-    * **Intermediate** in at least two categories.
+  * Complete the course survey.
+  * Complete at least XXX out of XXX modules.
+  * Have at most three unexcused lab absences.
+  * Earn at least 4 project points.
 * To earn a D in the course, a student will:
-  * Achieve at least **Basic** in all three categories.
+  * Complete at least XXX out of XXX modules.
+  * Have at most three unexcused lab absences.
+  * Earn at least 3 project points.
+
+This information is summarized in the table below:
+
+| Grade | Modules | Lab unexcused absences | Project points |
+|:-----:|:-------:|:----------------------:|:--------------:|
+| A     |         | ≤ 1                    | 8              |
+| B     |         | ≤ 2                    | 6              |
+| C     |         | ≤ 3                    | 4              |
+| D     |         | ≤ 3                    | 3              |
