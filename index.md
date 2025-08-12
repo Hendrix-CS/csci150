@@ -245,7 +245,7 @@ If you do not receive credit for a quiz, you may retake it as follows:
 
 - Schedule an office hours appointment with an instructor.
 - You must bring the quiz and **completed homework assignment** from the
-  corresponding module with your to the office hours appointment.
+  corresponding module with you to the office hours appointment.
 - After going over the quiz and homework, if the instructor is
   satisfied that your understanding has improved, you may retake a
   different version of the same quiz.
@@ -303,9 +303,14 @@ circumstances.
 
 ### Project grading
 
-Graded projects will be returned XXX
+Projects that do not receive full credit will be returned with
+detailed feedback explaining what you must revise or improve to
+receive a higher grade, along with a new deadline for the revisions.
 
-Except for final project XXX
+There will not be an opportunity to revise the final project.
+However, you are welcome to visit office hours to get feedback on your
+final project along the way; the grade your get on the final project
+should not be a surprise.
 
 ## <a name="attendance">Attendance</a>
 
