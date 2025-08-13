@@ -93,7 +93,7 @@ Upon completing this course, our goal is for you to be able to:
 | 7: File I/O                   | **M 13 Oct** | File I/O                          |                                 | Project 2 assigned |
 |                               | **W 15 Oct** | File I/O                          | HW 7: File I/O                  |                    |
 |                               |              | HW 6 review + quiz                | Quiz 6: Lists                   |                    |
-|                               |              |                                   | *No lab - Fall break*           |                    |
+|                               |              |                                   | *No Lab 7 - Fall break*         |                    |
 |                               | **F 17 Oct** | *No class - Fall break*           |                                 |                    |
 |                               |              |                                   |                                 |                    |
 | 8: For Loops                  | **M 20 Oct** | For loops                         |                                 |                    |
@@ -119,7 +119,7 @@ Upon completing this course, our goal is for you to be able to:
 | 12: Recursion                 | **M 17 Nov** | Recursion                         |                                 |                    |
 |                               | **W 19 Nov** | Recursion: trees                  | Lab 12: Enron's Secrets         |                    |
 |                               |              |                                   | HW 12: Trees & Recursion        |                    |
-|                               | **F 21 Nov** | Recursion: applications           | *No quiz*                       |                    |
+|                               | **F 21 Nov** | Recursion: applications           | *No Quiz 11*                    |                    |
 |                               |              |                                   |                                 |                    |
 |                               | **M 24 Nov** | Binary & information encoding     |                                 |                    |
 |                               | **W 26 Nov** | *No class - Thanksgiving*         |                                 |                    |
@@ -136,8 +136,8 @@ Upon completing this course, our goal is for you to be able to:
 ## <a name="modules">Modules</a>
 
 Most of your work in this course will be organized around a series of
-*modules*, each module typically lasting one week and focusing on a
-particular topic.  Most modules will have three components:
+twelve *modules*, each module typically lasting one week and focusing
+on a particular topic.  Most modules will have three components:
 
 * A *[lab](#labs)*, in which you get to put into practice what we have been
   learning in class, in partnership with other students and with the
@@ -154,6 +154,11 @@ and receive credit for the **quiz**.  If you do not receive credit for
 a quiz, you may retake a new version of the quiz after coming to
 office hours with the relevant completed homework assignment; see
 below for more details.
+
+The exceptions are:
+
+- Module 7, which has a quiz but no lab
+- Module 11, which has a lab but no quiz
 
 ### <a name="labs">Labs</a>
 
@@ -236,7 +241,11 @@ If you do not receive credit for a quiz, you may retake it as follows:
 
 - Schedule an office hours appointment with an instructor.
 - You must bring the quiz and **completed homework assignment** from the
-  corresponding module with you to the office hours appointment.
+  corresponding module with you to the office hours appointment.  It
+  does not matter whether you already completed and turned in the homework
+  before taking the quiz, or whether you complete it after realizing
+  that you will need to retake the quiz; either way, you must bring it
+  with you.
 - After going over the quiz and homework, if the instructor is
   satisfied that your understanding has improved, you may retake a
   different version of the same quiz.
@@ -313,21 +322,21 @@ if you will need to miss class.
 
 * To earn an A in the course, a student will:
   * Complete the course survey.
-  * Complete at least XXX out of XXX modules.
+  * Complete at least 11 out of 12 modules.
   * Have at most one unexcused lab absence.
   * Earn at least 8 project points.
 * To earn a B in the course, a student will:
   * Complete the course survey.
-  * Complete at least XXX out of XXX modules.
+  * Complete at least 9 out of 12 modules.
   * Have at most two unexcused lab absences.
   * Earn at least 6 project points.
 * To earn a C in the course, a student will:
   * Complete the course survey.
-  * Complete at least XXX out of XXX modules.
+  * Complete at least 8 out of 12 modules.
   * Have at most three unexcused lab absences.
   * Earn at least 4 project points.
 * To earn a D in the course, a student will:
-  * Complete at least XXX out of XXX modules.
+  * Complete at least 6 out of 12 modules.
   * Have at most three unexcused lab absences.
   * Earn at least 3 project points.
 
@@ -335,7 +344,7 @@ This information is summarized in the table below:
 
 | Grade | Modules | Lab unexcused absences | Project points |
 |:-----:|:-------:|:----------------------:|:--------------:|
-| A     |         | ≤ 1                    | 8              |
-| B     |         | ≤ 2                    | 6              |
-| C     |         | ≤ 3                    | 4              |
-| D     |         | ≤ 3                    | 3              |
+| A     | 11      | ≤ 1                    | 8              |
+| B     | 9       | ≤ 2                    | 6              |
+| C     | 8       | ≤ 3                    | 4              |
+| D     | 6       | ≤ 3                    | 3              |
