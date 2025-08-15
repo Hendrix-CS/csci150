@@ -1,367 +1,261 @@
 name: CSCI 150, Foundations of Computer Science
 semester: Spring 2025
-period: A1
-columns: [Date, Topic, Quiz, Resources, Due]
+period: A2
+columns: [Module, Date, Topic, Assignments, Projects]
 headers:
   Topic: 'Topic & Notes'
-  Resources: 'Assignments & Resources'
+  Assignments: 'Module Components'
 codedir: 'lectures/S25'
 
 entries:
 
   ##################################################
 
-  - Date: 2025-01-22
-    Topic:
-      - Introduction to CS
-      - pdf: lectures/S25/2025-01-22-intro.pdf
-    Resources:
-      link:
-        url: https://forms.gle/57J7q71S2DqcFqKdA
-        text: Survey
-  - Date: 2025-01-24
-    Topic:
-      - Algorithms and Errors
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F24%5F%20Algorithms%20and%20syllabus%2D20250124%5F081358%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E86357e84%2Dd3cf%2D43b0%2Db9d6%2D40cb832bc6a0
-      - pdf: lectures/S25/2025-01-22-intro.pdf
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/minecraft.html
-          text: Minecraft by hand
-    Due: Survey
-
-  ##################################################
-
-  - Date: 2025-01-27
-    Topic:
-      - 'Python, Math & Variables'
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F27%5F%20Python%20Math%20%26%20Variables%2D20250127%5F082953%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7b5f366e%2D8459%2D4e2f%2D8ced%2D1a67789e1c84
-      - kaggle: https://www.kaggle.com/code/byorgey/1-27-python-math-variables
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/math.html
-          text: Math and Variables
-    Due: 'HW: Minecraft by hand'
-  - Date: 2025-01-29
-    Topic:
-      - Functions
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F29%5F%20Box%20volume%20%28functions%29%2D20250129%5F081119%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E20b19d5e%2Da8d0%2D4eda%2Dbc2c%2D84480aa0f1a6
-      - kaggle: https://www.kaggle.com/code/byorgey/1-29-functions
-  - Date: 2025-01-31
-    Topic:
-      - Booleans
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F31%5F%20Booleans%2D20250131%5F081041%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E69bc5df1%2Df0dc%2D4a0c%2Da35b%2D10be49c6810c
-      - kaggle: https://www.kaggle.com/code/byorgey/1-31-booleans
-
-  ##################################################
-
-  - Date: 2025-02-03
-    Topic:
-      - Conditionals
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F2%5F3%5F%20Conditionals%2D20250203%5F081452%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8ca81f6e%2D2600%2D408c%2Db112%2Dde0370d5b3fa
-      - kaggle: https://www.kaggle.com/code/byorgey/2-3-conditionals
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/booleans.html
-          text: Boolean Practice
-    Due: 'HW: Math and Variables'
-  - Date: 2025-02-05
-    Topic:
-      - Tracing I
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F2%5F5%5F%20Tracing%20I%2D20250205%5F081158%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9bc99161%2D0d78%2D46fd%2D8f16%2D5a2a9c0d7479
-      - kaggle: https://www.kaggle.com/code/byorgey/2-5-tracing-i
-      - pdf: lectures/S25/2025-02-05-tracing-I.pdf
-    Quiz: Minecraft by Hand
-  - Date: 2025-02-07
-    Topic:
-      - Pycharm
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F2%5F7%5F%20PyCharm%2D20250207%5F081207%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E958bd072%2D8029%2D4f75%2Da55d%2Dfcdf60ec8eea
-
-  ##################################################
-
-  - Date: 2025-02-10
-    Topic:
-      - I/O
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F10%5F%20I%5FO%2D20250210%5F081150%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea31a6795%2D1be8%2D452e%2Da0d6%2Dc0203bddc940
-      - code: demo.py
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/codingbat-conditional.html
-          text: CodingBat Conditional and By Hand Tracing Practice
-    Due: 'HW: Boolean Practice'
-  - Date: 2025-02-12
-    Topic:
-      - More Conditional Practice
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F12%5F%20More%20Conditional%20Practice%2D20250212%5F081219%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E1e81c597%2D6ebd%2D40f4%2Da822%2D8f83c817e241
-    Quiz: Math and Variables
-  - Date: 2025-02-14
-    Topic:
-      - While loops
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F14%5F%20while%20loops%2D20250214%5F081519%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ece29b2c4%2D5477%2D481e%2Dade0%2Deb7d83ec26f6
-      - code: while.py
-      - code: collatz.py
-    Resources:
+  - Date: 2025-08-27
+    Topic: Introduction to Computer Science
+    Assignments:
       rows:
-        -
-          - 'Project 1:'
-          - link:
-              url: projects/project1.html
-              text: Civic Assistance Q/A System
-        -
-          - 'HW:'
-          - link:
-              url: homework/codingbat-loop.html
-              text: CodingBat Loop Practice
+        - 'Lab 0: Minecraft'
+        - CSCI Student Survey
+  - Date: 2025-08-29
+    Topic: Algorithms and Errors
 
   ##################################################
 
-  - Date: 2025-02-17
+  - Date: 2025-09-01
     Topic:
-      emph: 'No class (Mid-winter break)'
-  - Date: 2025-02-19
-    Topic: 'No class (snow)'
-  - Date: 2025-02-21
+      emph: 'No class - Labor Day'
+  - Date: 2025-09-03
+    Module: '1: Math & Variables in Python'
     Topic:
-      - More while loops
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F21%5F%20More%20while%20loops%2D20250221%5F081129%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E3b887934%2Da4a6%2D40e2%2Dab5b%2D810b4d0fbc9d
-      - code: collatz.py
+      rows:
+        - Python
+        - 'Math & Variables'
+    Assignments:
+      rows:
+        - 'Lab 1: Kepler, Newton, Einstein'
+        - 'HW 1: Math & Variables'
+  - Date: 2025-09-05
+    Topic: Functions
 
   ##################################################
 
-  - Date: 2025-02-24
-    Topic:
-      - 'Functions & Stack Tracing'
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F24%5F%20Functions%2D20250224%5F081048%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E28f3bc30%2D855b%2D46a8%2Db34c%2Df67455ad6e65
-      - pdf: lectures/S25/2025-02-24-function-tracing.pdf
-      - code: functions.py
-      - code: fun_example.py
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/function-reading.html
-          text: Function Stack Tracing
-    Due: 'HW: CodingBat Conditional and By Hand Tracing Practice'
-  - Date: 2025-02-26
-    Topic:
-      - While loop practice
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F26%5F%20More%20while%20loop%20examples%2D20250226%5F081158%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9ad8501a%2D9dd8%2D4363%2Da70d%2D04a5d7f9162a
-      - code: while_loops.py
-    Quiz: Booleans
-  - Date: 2025-02-28
-    Topic:
-      - 'Binary & Information Encoding'
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F28%5F%20Binary%20%2B%20information%20encoding%2D20250228%5F081239%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8c6ecdf5%2D26cf%2D42ad%2D8b1f%2D748e8f77aa9b
-      - pdf: lectures/S25/2025-02-28-binary.pdf
-    Due: Project 1
+  - Date: 2025-09-08
+    Module: '2: Booleans & Conditionals'
+    Topic: Booleans
+  - Date: 2025-09-10
+    Topic: Conditionals
+    Assignments:
+      rows:
+        - 'Lab 2: Heart Disease'
+        - 'HW 2: Booleans & Conditionals'
+  - Date: 2025-09-12
+    Topic: Tracing
+    Assignments:
+      - 'Quiz 1: Math & Variables'
 
   ##################################################
 
-  - Date: 2025-03-03
+  - Date: 2025-09-15
+    Module: '3: Tracing and the Stack'
+    Topic: 'More tracing & the function stack'
+  - Date: 2025-09-17
+    Topic: 'Tracing with the function stack'
+    Assignments:
+      rows:
+        - 'Lab 3: This Day in History'
+        - 'HW 3: Tracing'
+    Projects: 'Project 1 assigned'
+  - Date: 2025-09-19
     Topic:
-      - Strings
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F3%5F%20Strings%2D20250303%5F081245%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb4b9d343%2Dbc75%2D40e6%2D8935%2Dacb537d81199
-      - kaggle: https://www.kaggle.com/code/byorgey/3-3-3-5-strings
-    Due: 'HW: CodingBat Loop Practice'
-  - Date: 2025-03-05
-    Topic:
-      - String and loop practice
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F5%5F%20string%20and%20loop%20practice%2D20250305%5F081404%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E872a128d%2D4f64%2D4d9b%2D98f3%2Df896fc6467b0
-      - kaggle: https://www.kaggle.com/code/byorgey/3-3-3-5-strings
-  - Date: 2025-03-07
-    Topic:
-      - Generative AI
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F7%5F%20Generative%20AI%2D20250307%5F081343%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E4f33c30b%2Dee00%2D45c6%2D9b04%2D2d51c09ffb91
-    Quiz: Conditionals
+      rows:
+        - 'Stack tracing'
+        - 'PyCharm installation'
+    Assignments: 'Quiz 2: Booleans & Conditionals'
 
   ##################################################
 
-  - Date: 2025-03-10
+  - Date: 2025-09-22
+    Module: '4: While Loops'
     Topic:
-      - Lists
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F10%5F10%5F%20Lists%2D20250310%5F081103%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E526b9de9%2D2ea5%2D4179%2D82ce%2D8a2de504e9a8
-      - kaggle: https://www.kaggle.com/code/byorgey/3-10-lists
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/codingbat-string-loop.html
-          text: CodingBat String and Loop Practice
-    Due: 'HW: Function Stack Tracing'
-  - Date: 2025-03-12
-    Topic:
-      - More lists
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F12%5F%20more%20lists%2D20250312%5F081142%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecfc023ef%2D0099%2D46d7%2D8263%2D74f317031b53
-      - kaggle: https://www.kaggle.com/code/byorgey/3-10-lists
-    Quiz: Loops
-  - Date: 2025-03-14
-    Topic:
-      - Function Abstraction
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F14%5F%20Function%20abstraction%2D20250314%5F081047%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec6a77573%2D9179%2D44a5%2D89db%2Db3fcfc35c877
-      - code: hilow.py
-    Resources:
-      - 'Project 2:'
-      - link:
-          url: projects/project2.html
-          text: Word Games
+      rows:
+        - I/O
+        - Introduction to while loops
+  - Date: 2025-09-24
+    Topic: While loops
+    Assignments:
+      rows:
+        - 'Lab 4: Guess My Number'
+        - 'HW 4: While Loops'
+  - Date: 2025-09-26
+    Topic: While loops
+    Assignments: 'Quiz 3: Tracing'
 
   ##################################################
 
-  - Date: 2025-03-17
-    Topic:
-      - For loops
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F17%5F%20for%20loops%2D20250317%5F081029%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecbb0f5e0%2D24ca%2D4f30%2Db1b2%2D059e053eee18
-      - kaggle: https://www.kaggle.com/code/byorgey/3-17-for-loops
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/codingbat-list-loop.html
-          text: CodingBat List and Loop Practice
-    Due: 'HW: CodingBat String and Loop Practice'
-  - Date: 2025-03-19
-    Topic:
-      - For loop practice, index ranges
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F19%5F%20more%20for%20loops%2C%20index%20ranges%2D20250319%5F081129%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E226c43f7%2D1697%2D4a92%2D8cc8%2De1e38cdb8d45
-      - kaggle: https://www.kaggle.com/code/byorgey/3-17-for-loops
-  - Date: 2025-03-21
-    Topic:
-      - File I/O
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F21%5F%20File%20I%5FO%2D20250321%5F081354%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7d9d85a2%2D09c3%2D4c9f%2D8ae2%2D1e3a85228d76
-      - code: FileIO.py
-    Quiz: Function Stack Tracing
+  - Date: 2025-09-29
+    Module: '5: Strings'
+    Topic: Strings
+  - Date: 2025-10-01
+    Topic: Strings and Loops
+    Assignments:
+      rows:
+        - 'Lab 5: Doublets'
+        - 'HW 5: Strings'
+    Projects: 'Project 1 Due'
+  - Date: 2025-10-03
+    Topic: Strings and Loops
+    Assignments: 'Quiz 4: While Loops'
 
   ##################################################
 
-  # - Date: 2025-03-17
-  #   Topic: File I/O
-  #   Resources:
-  #     - 'HW:'
-  #     - link:
-  #         url: homework/file.html
-  #         text: File I/O
-  #   Due: 'HW: CodingBat List and Loop Practice'
-  # - Date: 2025-03-19
-  #   Topic: More File I/O
-  #   Quiz: Strings and Loops
-  # - Date: 2025-03-21
-  #   Topic: The Heap and Mutability
-  #   Due: Project 2
-
-  # ##################################################
-
-  - Date: 2025-03-24
-    Topic:
-      emph: 'No class (Spring break)'
-  - Date: 2025-03-26
-    Topic:
-      emph: 'No class (Spring break)'
-  - Date: 2025-03-28
-    Topic:
-      emph: 'No class (Spring break)'
+  - Date: 2025-10-06
+    Module: '6: Lists'
+    Topic: Lists
+  - Date: 2025-10-08
+    Topic: List processing examples
+    Assignments:
+      rows:
+        - 'Lab 6: To Do Manager'
+        - 'HW 6: Lists'
+  - Date: 2025-10-10
+    Topic: Function abstraction
 
   ##################################################
 
-  - Date: 2025-03-31
+  - Date: 2025-10-13
+    Module: '7: File I/O'
+    Topic: File I/O
+    Projects: 'Project 2 assigned'
+  - Date: 2025-10-15
     Topic:
-      - Dictionaries I
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F31%5F%20Dictionaries%2D20250331%5F081103%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E25125d94%2De4af%2D4151%2D9d4d%2D98da6ce3e1c2
-      - pdf: lectures/S25/2025-03-31-dictionaries.pdf
-      - kaggle: https://www.kaggle.com/code/byorgey/3-31-dictionaries
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/dictionary.html
-          text: Dictionaries
-    Due: 'HW: CodingBat List and Loop Practice'
-  - Date: 2025-04-02
+      rows:
+        - File I/O
+        - HW 6 review + quiz
+    Assignments:
+      rows:
+        - 'HW 7: File I/O'
+        - 'Quiz 6: Lists'
+        - emph:
+            'No Lab 7 - Fall break'
+  - Date: 2025-10-17
     Topic:
-      - Dictionaries II
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F2%5F%20Dictionaries%20II%2D20250402%5F081202%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E21bfb276%2Da45d%2D4589%2D84a4%2D2f6bfe351d44
-      - kaggle: https://www.kaggle.com/code/byorgey/3-31-dictionaries
-    Quiz: Lists and Loops
-  - Date: 2025-04-04
-    Topic:
-      - Final Project Discussion
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F4%5F%20Final%20project%20discussion%2D20250404%5F081203%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6452f867%2Db2e2%2D4944%2D8827%2D5ef9b122c6eb
-    Resources:
-      link:
-        url: projects/final.html
-        text: Final project
-    Due: Project 2
+      emph: 'No class - Fall break'
 
   ##################################################
 
-  - Date: 2025-04-07
-    Topic:
-      - Classes
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F7%5F%20Introduction%20to%20classes%2D20250407%5F081209%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed52a0d13%2Dae07%2D4f01%2D88f4%2Da09fc11c24f9
-      - kaggle: https://www.kaggle.com/code/byorgey/4-7-classes
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/class-design.html
-          text: Classes
-    Due: 'HW: Dictionaries'
-  - Date: 2025-04-09
-    Topic:
-      - Class/object examples (fountain; car)
-      - stream: https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F9%5F%20Class%20%2B%20object%20examples%2D20250409%5F081642%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E2a60c756%2De9a5%2D4313%2Da943%2D5beead72316f
-      - code: Fountain.py
-      - code: Car.py
-  - Date: 2025-04-11
-    Topic: Class/object examples (bookshelf)
+  - Date: 2025-10-20
+    Module: '8: For Loops'
+    Topic: For loops
+  - Date: 2025-10-22
+    Topic: Common loop patterns
+    Assignments:
+      rows:
+        - |
+            Lab 8: Caesar's Secrets
+        - 'HW 8: For Loops'
+  - Date: 2025-10-24
+    Topic: Mutability and the heap
+    Assignments: 'Quiz 7: File I/O'
 
   ##################################################
 
-  - Date: 2025-04-14
-    Topic: PyGame
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/pygame.html
-          text: PyGame
-    Due: 'HW: Classes'
-  - Date: 2025-04-16
+  - Date: 2025-10-27
+    Module: '9: Dictionaries'
+    Topic: Dictionaries
+  - Date: 2025-10-29
+    Topic: Dictionaries
+    Assignments:
+      rows:
+        - 'Lab 9: Asteriskbucks'
+        - 'HW 9: Dictionaries'
+    Projects: 'Project 2 due'
+  - Date: 2025-10-31
+    Topic: Final Project discussion
+    Assignments: 'Quiz 8: For Loops'
+    Projects: 'Project 3 assigned'
+
+  ##################################################
+
+  - Date: 2025-11-03
+    Module: '10: Classes'
+    Topic: Classes
+  - Date: 2025-11-05
+    Topic: Class & object examples
+    Assignments:
+      rows:
+        - 'Lab 10: Water Jugs'
+        - 'HW 10: Classes'
+  - Date: 2025-11-07
+    Topic: Class & object examples
+    Assignments: 'Quiz 9: Dictionaries'
+
+  ##################################################
+
+  - Date: 2025-11-10
+    Module: '11: PyGame'
+    Topic: PyGame animation
+  - Date: 2025-11-12
     Topic: Classes and PyGame
-    Quiz: Dictionaries
-  - Date: 2025-04-18
+    Assignments:
+      rows:
+        - 'Lab 11: Faces'
+        - emph: 'No homework'
+  - Date: 2025-11-14
     Topic: Classes and PyGame
-    Due:
-      - link:
-          url: projects/final.html
-          text: Final project
-      - Design Document
+    Assignments: 'Quiz 10: Classes'
 
   ##################################################
 
-  - Date: 2025-04-21
-    Topic: Recursion I
-    Resources:
-      - 'HW:'
-      - link:
-          url: homework/recursion.html
-          text: Recursion
-    Due: 'HW: PyGame'
-  - Date: 2025-04-23
-    Topic: 'Recursion II: Trees'
-    Quiz: Classes
-  - Date: 2025-04-25
-    Topic: 'Recursion III: Applications'
+  - Date: 2025-11-17
+    Module: '12: Recursion'
+    Topic: Recursion
+  - Date: 2025-11-19
+    Topic: 'Recursion: trees'
+    Assignments:
+      rows:
+        - |
+            Lab 12: Enron's Secrets
+        - 'HW 12: Trees & Recursion'
+  - Date: 2025-11-21
+    Topic: 'Recursion: applications'
+    Assignments:
+      emph: 'No Quiz 11'
 
   ##################################################
 
-  - Date: 2025-04-28
-    Topic: Binary and Information Encoding
-    Due: 'HW: Recursion'
-  - Date: 2025-04-30
-    Topic: Project Workshop
-  - Date: 2025-05-02
+  - Date: 2025-11-24
+    Topic: Binary & information encoding
+  - Date: 2025-11-26
+    Topic:
+      emph: 'No class - Thanksgiving'
+  - Date: 2025-11-28
+    Topic:
+      emph: 'No class - Thanksgiving'
+
+  ##################################################
+
+  - Date: 2025-12-01
+    Topic: Generative AI
+  - Date: 2025-12-03
+    Topic: Project workshop
+    Assignments: 'Lab: Final project workshop'
+  - Date: 2025-12-05
     Topic: Retrospective
+    Assignments: 'Quiz 12: Trees & Recursion'
 
-  ##################################################
-
-  - Date: 2025-05-09
-    Topic: Final project presentations (2-5pm)
-
+# | #  | Name                                                                                       | Completion time | Assigned | Due |
+# |:--:|--------------------------------------------------------------------------------------------|-----------------|----------|-----|
+# | 0  | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                          | 1-2 hrs         |          |     |
+# | 1  | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)    | 2-3 hrs         |          |     |
+# | 2  | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease)  | 2.5-3.5 hrs     |          |     |
+# | 3  | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)            | 2-3 hrs         |          |     |
+# | 4  | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                        | 3-4 hrs         |          |     |
+# | 5  | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                                | 4-5 hrs         |          |     |
+# | 6  | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                    | 3.5-4.5 hrs     |          |     |
+# | 7  | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                  | 3.5-4.5 hrs     |          |     |
+# | 8  | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                   | 2.5-3.5 hrs     |          |     |
+# | 9  | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                          | 3.5-4.5 hrs     |          |     |
+# | 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                 | 2.5-3.5 hrs     |          |     |
+# | 11 | [Enron's Secrets](https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively/) |                 |          |     |
+# |    | Project 3 Workshop                                                                         |                 |          |     |

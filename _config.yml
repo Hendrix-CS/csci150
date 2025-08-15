@@ -26,13 +26,13 @@ url: "https://hendrix-cs.github.io" # the base hostname & protocol for your site
 
 number: CSCI 150
 title: Foundations of Computer Science
-semester: Spring 2025
+semester: Fall 2025
 hypothesis: false
 
 jumbotext: slidebackground.com
 jumbourl: https://www.slidebackground.com/collection/technology
 
-submission: https://forms.gle/RJDwwSaU4azBUYQs8
+submission: XXX
 
 navigation:
   - title: Overview
@@ -45,18 +45,18 @@ navigation:
         url: '#resources'
   - page: Calendar
     url: '#calendar'
-  - title: Coursework
+  - title: Modules
     subfolderitems:
+      - page: Labs
+        url: '#labs'
       - page: Homework
         url: '#hw'
       - page: Quizzes
         url: '#quizzes'
-      - page: Labs
-        url: '#labs'
-      - page: Projects
-        url: '#projects'
-      - page: Scale
-        url: '#scale'
+  - page: Projects
+    url: '#projects'
+  - page: Grading
+    url: '#grading'
   - page: Commitments
     url: '#commitments'
 
@@ -84,11 +84,18 @@ instructors:
     web: https://gjf2a.github.io/
     phone: (501) 450-3879
     officehours: https://drferrer.youcanbook.me/
+  - id: delevan
+    name: Dr. Brian Delevan
+    email: delavan@hendrix.edu
 
 offerings:
   - name: LECTURE 01
-    loc: M.C. Reynolds 110
-    time: MWF 8:10am - 9:00am (A1)
+    loc: MC Reynolds 110
+    time: MWF 9:10am - 10:00am (A2)
+    instructor: seme
+  - name: LECTURE 02
+    loc: MC Reynolds 315
+    time: MWF 11:10am - noon (A4)
     instructor: yorgey
   - name: LAB L1
     loc: Bailey Lab
@@ -97,7 +104,7 @@ offerings:
   - name: LAB L2
     loc: Bailey Lab
     time: R 1:10pm - 4:00pm (L9)
-    instructor: ferrer
+    instructor: delevan
 
 resources:
   - name: Python 3
@@ -144,6 +151,7 @@ plugins: []
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - csci150-instructors/
   - Gemfile
   - Gemfile.lock
   - node_modules

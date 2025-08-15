@@ -6,12 +6,11 @@ layout: course-multi
 ---
 <br/>
 
-## <a name="TAs">TA Office Hours</a>
+## <a name="TAs">TA Office Hours (TBD)</a>
 
-| Monday    | Tuesday   | Wednesday      | Thursday |
-|-----------|-----------|----------------|----------|
-| Sarah 7-9 | Jauss 6-8 | Katherine 8-10 | Ted 7-10 |
-|           | Ted 8-10  |                |          |
+| Monday | Tuesday | Wednesday | Thursday |
+|--------|---------|-----------|----------|
+|        |         |           |          |
 
 # <a name="description">Overview</a>
 
@@ -44,246 +43,308 @@ Upon completing this course, our goal is for you to be able to:
 
 # <a name="calendar">Calendar</a>
 
-<div style="text-align: center">
-<a class="btn btn-primary" href="{{ site.submission }}">
-  Project submission form
-</a>
-</div>
-<br/>
+<!-- <div style="text-align: center"> -->
+<!-- <a class="btn btn-primary" href="{{ site.submission }}"> -->
+<!--   Project submission form -->
+<!-- </a> -->
+<!-- </div> -->
+<!-- <br/> -->
 
 <!-- BEGIN CALENDAR -->
 
-| Date         | Topic & Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Quiz                   | Assignments & Resources                                                                       | Due                                                    |
-|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| **W 22 Jan** | Introduction to CS [![pdf](icons/pdf.png)](lectures/S25/2025-01-22-intro.pdf)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                        | [Survey](https://forms.gle/57J7q71S2DqcFqKdA)                                                 |                                                        |
-| **F 24 Jan** | Algorithms and Errors [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F24%5F%20Algorithms%20and%20syllabus%2D20250124%5F081358%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E86357e84%2Dd3cf%2D43b0%2Db9d6%2D40cb832bc6a0) [![pdf](icons/pdf.png)](lectures/S25/2025-01-22-intro.pdf)                                                                                                         |                        | HW: [Minecraft by hand](homework/minecraft.html)                                              | Survey                                                 |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 27 Jan** | Python, Math & Variables [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F27%5F%20Python%20Math%20%26%20Variables%2D20250127%5F082953%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7b5f366e%2D8459%2D4e2f%2D8ced%2D1a67789e1c84) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/1-27-python-math-variables)                                                               |                        | HW: [Math and Variables](homework/math.html)                                                  | HW: Minecraft by hand                                  |
-| **W 29 Jan** | Functions [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F29%5F%20Box%20volume%20%28functions%29%2D20250129%5F081119%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E20b19d5e%2Da8d0%2D4eda%2Dbc2c%2D84480aa0f1a6) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/1-29-functions)                                                                                           |                        |                                                                                               |                                                        |
-| **F 31 Jan** | Booleans [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F1%5F31%5F%20Booleans%2D20250131%5F081041%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E69bc5df1%2Df0dc%2D4a0c%2Da35b%2D10be49c6810c) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/1-31-booleans)                                                                                                                   |                        |                                                                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 3 Feb**  | Conditionals [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F2%5F3%5F%20Conditionals%2D20250203%5F081452%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8ca81f6e%2D2600%2D408c%2Db112%2Dde0370d5b3fa) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/2-3-conditionals)                                                                                                         |                        | HW: [Boolean Practice](homework/booleans.html)                                                | HW: Math and Variables                                 |
-| **W 5 Feb**  | Tracing I [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F2%5F5%5F%20Tracing%20I%2D20250205%5F081158%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9bc99161%2D0d78%2D46fd%2D8f16%2D5a2a9c0d7479) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/2-5-tracing-i) [![pdf](icons/pdf.png)](lectures/S25/2025-02-05-tracing-I.pdf)                                                 | Minecraft by Hand      |                                                                                               |                                                        |
-| **F 7 Feb**  | Pycharm [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FRecordings%2F2%5F7%5F%20PyCharm%2D20250207%5F081207%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E958bd072%2D8029%2D4f75%2Da55d%2Dfcdf60ec8eea)                                                                                                                                                                                                       |                        |                                                                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 10 Feb** | I/O [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F10%5F%20I%5FO%2D20250210%5F081150%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea31a6795%2D1be8%2D452e%2Da0d6%2Dc0203bddc940) [demo.py](lectures/S25/demo.py)                                                                                                                                                          |                        | HW: [CodingBat Conditional and By Hand Tracing Practice](homework/codingbat-conditional.html) | HW: Boolean Practice                                   |
-| **W 12 Feb** | More Conditional Practice [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F12%5F%20More%20Conditional%20Practice%2D20250212%5F081219%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E1e81c597%2D6ebd%2D40f4%2Da822%2D8f83c817e241)                                                                                                                                            | Math and Variables     |                                                                                               |                                                        |
-| **F 14 Feb** | While loops [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F14%5F%20while%20loops%2D20250214%5F081519%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ece29b2c4%2D5477%2D481e%2Dade0%2Deb7d83ec26f6) [while.py](lectures/S25/while.py) [collatz.py](lectures/S25/collatz.py)                                                                                                  |                        | Project 1: [Civic Assistance Q/A System](projects/project1.html)                              |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        | HW: [CodingBat Loop Practice](homework/codingbat-loop.html)                                   |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 17 Feb** | *No class (Mid-winter break)*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                        |                                                                                               |                                                        |
-| **W 19 Feb** | No class (snow)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **F 21 Feb** | More while loops [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F21%5F%20More%20while%20loops%2D20250221%5F081129%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E3b887934%2Da4a6%2D40e2%2Dab5b%2D810b4d0fbc9d) [collatz.py](lectures/S25/collatz.py)                                                                                                                        |                        |                                                                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 24 Feb** | Functions & Stack Tracing [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F24%5F%20Functions%2D20250224%5F081048%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E28f3bc30%2D855b%2D46a8%2Db34c%2Df67455ad6e65) [![pdf](icons/pdf.png)](lectures/S25/2025-02-24-function-tracing.pdf) [functions.py](lectures/S25/functions.py) [fun\_example.py](lectures/S25/fun_example.py) |                        | HW: [Function Stack Tracing](homework/function-reading.html)                                  | HW: CodingBat Conditional and By Hand Tracing Practice |
-| **W 26 Feb** | While loop practice [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F26%5F%20More%20while%20loop%20examples%2D20250226%5F081158%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9ad8501a%2D9dd8%2D4363%2Da70d%2D04a5d7f9162a) [while\_loops.py](lectures/S25/while_loops.py)                                                                                                  | Booleans               |                                                                                               |                                                        |
-| **F 28 Feb** | Binary & Information Encoding [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F2%5F28%5F%20Binary%20%2B%20information%20encoding%2D20250228%5F081239%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8c6ecdf5%2D26cf%2D42ad%2D8b1f%2D748e8f77aa9b) [![pdf](icons/pdf.png)](lectures/S25/2025-02-28-binary.pdf)                                                                    |                        |                                                                                               | Project 1                                              |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 3 Mar**  | Strings [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F3%5F%20Strings%2D20250303%5F081245%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb4b9d343%2Dbc75%2D40e6%2D8935%2Dacb537d81199) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/3-3-3-5-strings)                                                                                                  |                        |                                                                                               | HW: CodingBat Loop Practice                            |
-| **W 5 Mar**  | String and loop practice [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F5%5F%20string%20and%20loop%20practice%2D20250305%5F081404%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E872a128d%2D4f64%2D4d9b%2D98f3%2Df896fc6467b0) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/3-3-3-5-strings)                                                          |                        |                                                                                               |                                                        |
-| **F 7 Mar**  | Generative AI [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F7%5F%20Generative%20AI%2D20250307%5F081343%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E4f33c30b%2Dee00%2D45c6%2D9b04%2D2d51c09ffb91)                                                                                                                                                                       | Conditionals           |                                                                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 10 Mar** | Lists [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F10%5F10%5F%20Lists%2D20250310%5F081103%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E526b9de9%2D2ea5%2D4179%2D82ce%2D8a2de504e9a8) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/3-10-lists)                                                                                                         |                        | HW: [CodingBat String and Loop Practice](homework/codingbat-string-loop.html)                 | HW: Function Stack Tracing                             |
-| **W 12 Mar** | More lists [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F12%5F%20more%20lists%2D20250312%5F081142%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecfc023ef%2D0099%2D46d7%2D8263%2D74f317031b53) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/3-10-lists)                                                                                              | Loops                  |                                                                                               |                                                        |
-| **F 14 Mar** | Function Abstraction [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F14%5F%20Function%20abstraction%2D20250314%5F081047%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec6a77573%2D9179%2D44a5%2D89db%2Db3fcfc35c877) [hilow.py](lectures/S25/hilow.py)                                                                                                                      |                        | Project 2: [Word Games](projects/project2.html)                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 17 Mar** | For loops [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F17%5F%20for%20loops%2D20250317%5F081029%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecbb0f5e0%2D24ca%2D4f30%2Db1b2%2D059e053eee18) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/3-17-for-loops)                                                                                            |                        | HW: [CodingBat List and Loop Practice](homework/codingbat-list-loop.html)                     | HW: CodingBat String and Loop Practice                 |
-| **W 19 Mar** | For loop practice, index ranges [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F19%5F%20more%20for%20loops%2C%20index%20ranges%2D20250319%5F081129%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E226c43f7%2D1697%2D4a92%2D8cc8%2De1e38cdb8d45) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/3-17-for-loops)                                           |                        |                                                                                               |                                                        |
-| **F 21 Mar** | File I/O [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F21%5F%20File%20I%5FO%2D20250321%5F081354%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7d9d85a2%2D09c3%2D4c9f%2D8ae2%2D1e3a85228d76) [FileIO.py](lectures/S25/FileIO.py)                                                                                                                                          | Function Stack Tracing |                                                                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 24 Mar** | *No class (Spring break)*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                        |                                                                                               |                                                        |
-| **W 26 Mar** | *No class (Spring break)*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                        |                                                                                               |                                                        |
-| **F 28 Mar** | *No class (Spring break)*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                        |                                                                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 31 Mar** | Dictionaries I [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F3%5F31%5F%20Dictionaries%2D20250331%5F081103%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E25125d94%2De4af%2D4151%2D9d4d%2D98da6ce3e1c2) [![pdf](icons/pdf.png)](lectures/S25/2025-03-31-dictionaries.pdf) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/3-31-dictionaries)                 |                        | HW: [Dictionaries](homework/dictionary.html)                                                  | HW: CodingBat List and Loop Practice                   |
-| **W 2 Apr**  | Dictionaries II [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F2%5F%20Dictionaries%20II%2D20250402%5F081202%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E21bfb276%2Da45d%2D4589%2D84a4%2D2f6bfe351d44) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/3-31-dictionaries)                                                                              | Lists and Loops        |                                                                                               |                                                        |
-| **F 4 Apr**  | Final Project Discussion [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F4%5F%20Final%20project%20discussion%2D20250404%5F081203%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6452f867%2Db2e2%2D4944%2D8827%2D5ef9b122c6eb)                                                                                                                                               |                        | [Final project](projects/final.html)                                                          | Project 2                                              |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 7 Apr**  | Classes [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F7%5F%20Introduction%20to%20classes%2D20250407%5F081209%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed52a0d13%2Dae07%2D4f01%2D88f4%2Da09fc11c24f9) [![kaggle](icons/kaggle.png)](https://www.kaggle.com/code/byorgey/4-7-classes)                                                                                  |                        | HW: [Classes](homework/class-design.html)                                                     | HW: Dictionaries                                       |
-| **W 9 Apr**  | Class/object examples (fountain; car) [![stream](icons/stream.png)](https://hendrix.sharepoint.com/sites/Section_30770/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F30770%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F4%5F9%5F%20Class%20%2B%20object%20examples%2D20250409%5F081642%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E2a60c756%2De9a5%2D4313%2Da943%2D5beead72316f) [Fountain.py](lectures/S25/Fountain.py) [Car.py](lectures/S25/Car.py)                                                         |                        |                                                                                               |                                                        |
-| **F 11 Apr** | Class/object examples (bookshelf)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                        |                                                                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 14 Apr** | PyGame                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                        | HW: [PyGame](homework/pygame.html)                                                            | HW: Classes                                            |
-| **W 16 Apr** | Classes and PyGame                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Dictionaries           |                                                                                               |                                                        |
-| **F 18 Apr** | Classes and PyGame                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                        |                                                                                               | [Final project](projects/final.html) Design Document   |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 21 Apr** | Recursion I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                        | HW: [Recursion](homework/recursion.html)                                                      | HW: PyGame                                             |
-| **W 23 Apr** | Recursion II: Trees                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Classes                |                                                                                               |                                                        |
-| **F 25 Apr** | Recursion III: Applications                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                        |                                                                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **M 28 Apr** | Binary and Information Encoding                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               | HW: Recursion                                          |
-| **W 30 Apr** | Project Workshop                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                        |                                                                                               |                                                        |
-| **F 2 May**  | Retrospective                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                        |                                                                                               |                                                        |
-|              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                        |                                                                                               |                                                        |
-| **F 9 May**  | Final project presentations (2-5pm)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                        |                                                                                               |                                                        |
+| Module                        | Date         | Topic & Notes                     | Module Components               | Projects           |
+|-------------------------------|--------------|-----------------------------------|---------------------------------|--------------------|
+|                               | **W 27 Aug** | Introduction to Computer Science  | Lab 0: Minecraft                |                    |
+|                               |              |                                   | CSCI Student Survey             |                    |
+|                               | **F 29 Aug** | Algorithms and Errors             |                                 |                    |
+|                               |              |                                   |                                 |                    |
+|                               | **M 1 Sep**  | *No class - Labor Day*            |                                 |                    |
+| 1: Math & Variables in Python | **W 3 Sep**  | Python                            | Lab 1: Kepler, Newton, Einstein |                    |
+|                               |              | Math & Variables                  | HW 1: Math & Variables          |                    |
+|                               | **F 5 Sep**  | Functions                         |                                 |                    |
+|                               |              |                                   |                                 |                    |
+| 2: Booleans & Conditionals    | **M 8 Sep**  | Booleans                          |                                 |                    |
+|                               | **W 10 Sep** | Conditionals                      | Lab 2: Heart Disease            |                    |
+|                               |              |                                   | HW 2: Booleans & Conditionals   |                    |
+|                               | **F 12 Sep** | Tracing                           | Quiz 1: Math & Variables        |                    |
+|                               |              |                                   |                                 |                    |
+| 3: Tracing and the Stack      | **M 15 Sep** | More tracing & the function stack |                                 |                    |
+|                               | **W 17 Sep** | Tracing with the function stack   | Lab 3: This Day in History      | Project 1 assigned |
+|                               |              |                                   | HW 3: Tracing                   |                    |
+|                               | **F 19 Sep** | Stack tracing                     | Quiz 2: Booleans & Conditionals |                    |
+|                               |              | PyCharm installation              |                                 |                    |
+|                               |              |                                   |                                 |                    |
+| 4: While Loops                | **M 22 Sep** | I/O                               |                                 |                    |
+|                               |              | Introduction to while loops       |                                 |                    |
+|                               | **W 24 Sep** | While loops                       | Lab 4: Guess My Number          |                    |
+|                               |              |                                   | HW 4: While Loops               |                    |
+|                               | **F 26 Sep** | While loops                       | Quiz 3: Tracing                 |                    |
+|                               |              |                                   |                                 |                    |
+| 5: Strings                    | **M 29 Sep** | Strings                           |                                 |                    |
+|                               | **W 1 Oct**  | Strings and Loops                 | Lab 5: Doublets                 | Project 1 Due      |
+|                               |              |                                   | HW 5: Strings                   |                    |
+|                               | **F 3 Oct**  | Strings and Loops                 | Quiz 4: While Loops             |                    |
+|                               |              |                                   |                                 |                    |
+| 6: Lists                      | **M 6 Oct**  | Lists                             |                                 |                    |
+|                               | **W 8 Oct**  | List processing examples          | Lab 6: To Do Manager            |                    |
+|                               |              |                                   | HW 6: Lists                     |                    |
+|                               | **F 10 Oct** | Function abstraction              |                                 |                    |
+|                               |              |                                   |                                 |                    |
+| 7: File I/O                   | **M 13 Oct** | File I/O                          |                                 | Project 2 assigned |
+|                               | **W 15 Oct** | File I/O                          | HW 7: File I/O                  |                    |
+|                               |              | HW 6 review + quiz                | Quiz 6: Lists                   |                    |
+|                               |              |                                   | *No Lab 7 - Fall break*         |                    |
+|                               | **F 17 Oct** | *No class - Fall break*           |                                 |                    |
+|                               |              |                                   |                                 |                    |
+| 8: For Loops                  | **M 20 Oct** | For loops                         |                                 |                    |
+|                               | **W 22 Oct** | Common loop patterns              | Lab 8: Caesar's Secrets         |                    |
+|                               |              |                                   | HW 8: For Loops                 |                    |
+|                               | **F 24 Oct** | Mutability and the heap           | Quiz 7: File I/O                |                    |
+|                               |              |                                   |                                 |                    |
+| 9: Dictionaries               | **M 27 Oct** | Dictionaries                      |                                 |                    |
+|                               | **W 29 Oct** | Dictionaries                      | Lab 9: Asteriskbucks            | Project 2 due      |
+|                               |              |                                   | HW 9: Dictionaries              |                    |
+|                               | **F 31 Oct** | Final Project discussion          | Quiz 8: For Loops               | Project 3 assigned |
+|                               |              |                                   |                                 |                    |
+| 10: Classes                   | **M 3 Nov**  | Classes                           |                                 |                    |
+|                               | **W 5 Nov**  | Class & object examples           | Lab 10: Water Jugs              |                    |
+|                               |              |                                   | HW 10: Classes                  |                    |
+|                               | **F 7 Nov**  | Class & object examples           | Quiz 9: Dictionaries            |                    |
+|                               |              |                                   |                                 |                    |
+| 11: PyGame                    | **M 10 Nov** | PyGame animation                  |                                 |                    |
+|                               | **W 12 Nov** | Classes and PyGame                | Lab 11: Faces                   |                    |
+|                               |              |                                   | *No homework*                   |                    |
+|                               | **F 14 Nov** | Classes and PyGame                | Quiz 10: Classes                |                    |
+|                               |              |                                   |                                 |                    |
+| 12: Recursion                 | **M 17 Nov** | Recursion                         |                                 |                    |
+|                               | **W 19 Nov** | Recursion: trees                  | Lab 12: Enron's Secrets         |                    |
+|                               |              |                                   | HW 12: Trees & Recursion        |                    |
+|                               | **F 21 Nov** | Recursion: applications           | *No Quiz 11*                    |                    |
+|                               |              |                                   |                                 |                    |
+|                               | **M 24 Nov** | Binary & information encoding     |                                 |                    |
+|                               | **W 26 Nov** | *No class - Thanksgiving*         |                                 |                    |
+|                               | **F 28 Nov** | *No class - Thanksgiving*         |                                 |                    |
+|                               |              |                                   |                                 |                    |
+|                               | **M 1 Dec**  | Generative AI                     |                                 |                    |
+|                               | **W 3 Dec**  | Project workshop                  | Lab: Final project workshop     |                    |
+|                               | **F 5 Dec**  | Retrospective                     | Quiz 12: Trees & Recursion      |                    |
 
 <!-- END CALENDAR -->
 
 # Coursework
 
-## <a name="hw">Homework</a>
+## <a name="modules">Modules</a>
 
-Short homework assignments will be typically assigned on Monday and due the
-following Monday.  Homework with coding practice problems will be submitted
-electronically. By-hand homework should be submitted on physical paper at
-the start of class time -- you can write (neatly) or type and print such
-solutions.
+Most of your work in this course will be organized around a series of
+twelve *modules*, each module typically lasting one week and focusing
+on a particular topic.  Most modules will have three components:
 
-Each correct homework earns **one credit**. Submitting a sincere attempt at
-completing the homework **on time** earns **one additional credit**. If a
-homework is incorrect and does not receive credit, a student who wishes to
-revise the homework will be expected to visit office hours for feedback
-prior to submitting the revision.
+* A *[lab](#labs)*, in which you get to put into practice what we have been
+  learning in class, in partnership with other students and with the
+  help of a lab instructor and TAs.
 
-## <a name="quizzes">Quizzes</a>
+* A *[homework](#hw)* assignment, giving you more individual, focused
+  practice following the lab.
 
-A short quiz will be given at the end of class on most Wednesdays. Each
-quiz will contain one or more short problems that should be solvable within
-10 minutes.
+* A *[quiz](#quizzes)* that tests your understanding of the relevant concepts and
+  skills.
 
-Quizzes are scored as follows:
-* **2 credits**: All answers correct
-* **1 credit**: At least some answers correct
-* **0 credits**: No answers correct
+**In order to get credit for a module**, you must complete the **lab**
+and receive credit for the **quiz**.  If you do not receive credit for
+a quiz, you may retake a new version of the quiz after coming to
+office hours with the relevant completed homework assignment; see
+below for more details.
 
-A student may retake a given quiz twice. For each retake, the student must
-schedule an office hours appointment. Prior to the appointment, the student
-is expected to have run the code from the quiz in Python and achieved an
-understanding of why their answers were not correct. At the appointment,
-the student will be expected to explain as best they are able why their
-original answers were incorrect and what the correct answers should be.
-After a satisfactory explanation, the instructor will give the student
-a makeup quiz.
+The exceptions are:
 
-Missing a quiz is **excused** if the student communicates to the instructor
-**prior to class that day** that it is necessary for the student to miss class.
-A student may book an office hours appointment to take a quiz missed due to
-an excused absence.
+- Module 7, which has a quiz but no lab
+- Module 11, which has a lab but no quiz
 
-## <a name="labs">Labs</a>
+### <a name="labs">Labs</a>
 
-| # | Name                                                                                      | Completion time | Assigned  | Due        |
-|:-:|-------------------------------------------------------------------------------------------|-----------------|-----------|------------|
-| 0 | [Minecraft]({{site.baseurl}}/labs/minecraft.html)                                         | 1-2 hrs         | 22-23 Jan | 29-30 Jan  |
-| 1 | [Kepler, Newton, Einstein](https://www.kaggle.com/gabrielferrer/kepler-newton-einstein)   | 2-3 hrs         | 29-30 Jan | 5-6 Feb    |
-| 2 | [Diagnosing Heart Disease](https://www.kaggle.com/gabrielferrer/diagnosing-heart-disease) | 2.5-3.5 hrs     | 5-6 Feb   | 12-13 Feb  |
-| 3 | [This Day in History](https://www.kaggle.com/gabrielferrer/this-day-in-history)           | 2-3 hrs         | 12-13 Feb | 19-20 Feb  |
-|   | (No lab - snow)                                                                           |                 | 19-20 Feb |            |
-| 4 | [Guess My Number]({{site.baseurl}}/labs/guess.html)                                       | 3-4 hrs         | 26-27 Feb | 5-6 Mar    |
-| 5 | [Mutation is the Word]({{site.baseurl}}/labs/doublets.html)                               | 4-5 hrs         | 5-6 Mar   | 12-13 Mar  |
-| 6 | [Todo Manager]({{site.baseurl}}/labs/todo-manager.html)                                   | 3.5-4.5 hrs     | 12-13 Mar | 19-20 Mar  |
-| 7 | [Caesar's Secrets](https://www.kaggle.com/gabrielferrer/caesar-s-secrets)                 | 3.5-4.5 hrs     | 19-20     | 2-3 Apr    |
-| 8 | [Asteriskbucks](https://www.kaggle.com/code/gabrielferrer/asteriskbucks)                  | 2.5-3.5 hrs     | 2-3 Apr   | 9-10 Apr   |
-| 9 | [Water Jugs]({{site.baseurl}}/labs/waterjug.html)                                         | 3.5-4.5 hrs     | 9-10 Apr  | 16-17  Apr |
+Much of your hands-on experience with programming in this course will
+be through weekly labs. During each scheduled lab period, you will
+spend time working with an assigned partner on a lab exercise, with
+the help of the lab instructor and TAs. The lab is due **by the start
+of the following lab**.
 
-<!-- | 10 | [Faces]({{site.baseurl}}/labs/pygame.html)                                                | 2.5-3.5 hrs     | 16-17 Apr    | 23-24 Apr    | -->
-<!-- | 11 | [Tornado Sirens](https://www.kaggle.com/gabrielferrer/tornado-sirens)                     | 3.5-4.5 hrs     | 23-24 Apr    | 30 Apr-1 May | -->
-<!-- |    | Project 3 Workshop                                                                        |                 | 30 Apr-1 May |              | -->
+#### Lab completion and grading
 
-Much of your experience with programming in this course will be through weekly labs. Each lab will be assigned in lab with time allotted to work through the materials, and will be due **by the start of the following lab**.
+Each lab consists of a series of milestones. At the start of each lab,
+you will receive a sheet of paper listing the milestones for that
+lab. As you achieve each milestone, you will demonstrate to the
+instructor or TA that you have met the milestone, and they will record
+this achievement on your checklist. If you complete the lab during the
+lab period, hand your checklist to your lab instructor before you
+leave the lab. If you require additional time beyond the lab period to
+complete the lab, either the instructor or the lab TA can check off
+the remaining milestones during office hours. You can then submit the
+completed checklist to the instructor at the start of the next lab.
 
-Each lab consists of a series of milestones. At the start of each lab, you will receive a sheet of paper listing the
-milestones for that lab. As you achieve each milestone, you will demonstrate to the instructor or TA that you have met the
-milestone, and they will record this achievement on your checklist. When you complete all of the lab milestones, you will
-submit the milestone checklist.
+You will work with a partner on each lab assignment. Each partner will
+have their own milestone checklist. If you and your partner do not
+complete the milestones during the lab period, you should find time
+outside of lab to work together to complete it during the following
+week.  If this is not possible for some reason, talk to one of the
+course instructors. **TAs can only check off lab milestones if both
+partners are present.**
 
-If you complete the lab during the lab period, hand your checklist to your lab instructor before you leave the lab. If you
-require additional time beyond the lab period to complete the lab, either the instructor or the lab TA can check off the
-remaining milestones during office hours. You can then submit the completed checklist to the instructor at the start of
-the next lab.
+#### Lab attendance
 
-Each completed lab earns **one credit**. Submitting the completed checklist by the start of the next lab earns
-**one additional credit**.
+**Lab attendance is required**. If you know you must miss a lab due to
+sports travel, illness, or some other reason, you should contact your
+lab instructor before lab (or, in the case of emergencies, as soon as
+possible).  Your lab absence will then be considered excused.
+However, you are still responsible for completing the lab activity on
+time.  If you wish, your lab instructor may be able to pair you with
+another student who was absent; or you may complete the lab on your
+own.  In either case, you are still welcome to get help on the lab
+from an instructor or TAs.
 
-You will work with a partner on each lab assignment. Each partner will have their own milestone checklist. If they do not
-complete the milestones during the lab period, they should find time outside of lab to work together to complete them. If
-they are unable to do so, only the instructor is authorized to record milestones for students working alone.
+Labs take place in the **Snoddy Computer Lab**, in the Bailey
+Library. As you go through the exterior door of the library, turn
+immediately to your left and enter the Snoddy Academic Resource
+Center:
 
-**Lab attendance is required**. If an extenuating circumstance impedes the attendance of lab, the student must contact
-the lab instructor to discuss that circumstance for the absence to be **excused**. The student is still responsible
-for completing the lab activity on-time.
+![](https://www.hendrix.edu/uploadedImages/Bailey_Library/Snoddy.jpg)
 
-Labs take place in the **Snoddy Computer Lab**, in the Bailey Library. As you go through the exterior door of the library, turn immediately to your left and enter the Snoddy Academic Resource Center. Continue through the door at the far end of the hall into the first computer lab, and then enter the second lab at the back.
+Continue through the door at the far end of the hall (just visible in
+the above picture) into the first computer lab, and then enter the
+second lab at the back.
+
+### <a name="hw">Homework</a>
+
+Each week, you will be given a homework assignment, typically due on
+Monday.  These assignments will help you individually practice and
+solidify the skills and concepts from a given module, and prepare you
+to take the quiz.
+
+If you turn in your homework in class on Monday, it will be checked
+and returned to you with feedback on Wednesday, before the
+corresponding quiz on Friday.
+
+Homework assignments do not directly contribute to your final grade in the
+course. However, they will prepare you for the quizzes; in addition,
+if you do not initially receive credit on a quiz, you must complete
+the corresponding homework assignment before you may retake the quiz
+(see below).
+
+### <a name="quizzes">Quizzes</a>
+
+A short quiz will be given at the end of class on most Fridays. Each
+quiz will contain one or more problems or short-answer questions that
+should be solvable within 10 minutes or so.
+
+Quizzes are graded credit/no credit.
+
+If you do not receive credit for a quiz, you may retake it as follows:
+
+- Schedule an office hours appointment with an instructor.
+- You must bring the quiz and **completed homework assignment** from the
+  corresponding module with you to the office hours appointment.  It
+  does not matter whether you already completed and turned in the homework
+  before taking the quiz, or whether you complete it after realizing
+  that you will need to retake the quiz; either way, you must bring it
+  with you.
+- After going over the quiz and homework, if the instructor is
+  satisfied that your understanding has improved, you may retake a
+  different version of the same quiz.
+- Alternatively, the instructor may give you additional practice
+  problems to work before coming back to retake the quiz on a later
+  date.
+
+Missed quizzes may be made up on a subsequent quiz day (there will
+usually be sufficient time allotted to take more than one quiz), or
+you may book an office hours appointment to take a missed quiz.
 
 ## <a name="projects">Projects</a>
 
-<div style="text-align: center">
-<a class="btn btn-primary" href="{{ site.submission }}">
-  Project submission form
-</a>
-</div>
-<br/>
+<!-- <div style="text-align: center"> -->
+<!-- <a class="btn btn-primary" href="{{ site.submission }}"> -->
+<!--   Project submission form -->
+<!-- </a> -->
+<!-- </div> -->
+<!-- <br/> -->
 
-You will have three projects in this course. These projects will cover concepts we have discussed in class and in labs, and will be due approximately two to four weeks after they are assigned.
+Projects give you an opportunity to synthesize multiple concepts and
+skills from class into a working whole, as well as an opportunity to
+engage your creativity.
 
-You will be graded not only on correctness, but also technique, documentation and evaluation of your solution. Further details on the grading standards and handin instructions for each project will be given when they are assigned.
+| # | Name                                                         | Assigned | Due |
+|:-:|--------------------------------------------------------------|:--------:|:---:|
+| 1 | [Expert System XXX]({{site.baseurl}}/projects/project1.html) |          |     |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)        |          |     |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)        |          |     |
 
-{% include warning.html content="You must work individually on the projects. You may discuss concepts and ideas with your classmates, but the **code or work you turn in must be your own**. Use of any resources (TA, StackOverflow, ChatGPT, etc) must be cited, and an overreliance on those resources can be counterproductive to developing your own ability to make progress in this and other courses." %}
+Each project will have a detailed *specification* explaining the
+required criteria for a successful project.  Each project will be
+graded out of 3 points:
 
-| # | Name                                                                   | Assigned | Due    |
-|:-:|------------------------------------------------------------------------|:--------:|:------:|
-| 1 | [Civic Assistance Q/A System]({{site.baseurl}}/projects/project1.html) | 14 Feb   | 28 Feb |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)                  | 14 Mar   | 4 Apr  |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)                  | 4 Apr    | 9 May  |
+- 1 point for being turned in on time (late projects may still be
+  submitted for a maximum of 2 points)
+- 1 point for a project that meets the basic requirements (as
+  specified in the project description)
+- 1 additional point for a project that meets the full requirements
 
-Each project will be assessed as **Level 1 Complete** or **Level 2 Complete**, with criteria specified individually
-for each project. Note that the final project must be submitted on-time to earn credit - no final projects
-will be accepted late. Projects earn **credits** as follows:
+### Project submission
 
-| Project | Level 1 Complete | Level 2 Complete | On-time Bonus | Maximum Credit |
-| ------: | ---------:       | ----------:      | ------------: | -------------: |
-| 1       | 2                | 4                | 1             | 5              |
-| 2       | 2                | 4                | 1             | 5              |
-| 3       | 4                | 8                | None          | 8              |
+You may ask for an extension at any time prior to the deadline for
+projects 1 and 2: just let an instructor know that you would like an
+extension, and specify your new deadline.  A project submitted by the
+new, extended deadline will still be considered on time.
 
-If a project receives less than Level 2 Complete, a student may submit a revised version of the project after an
-office hours meeting with the instructor to discuss how the project should be improved.
+The first such request for a given project will be automatically
+granted.  Typically, only one extension will be given for each
+project; however, requests for additional extensions will be
+considered on a case-by-case basis.
+
+Extensions on the final project will only be granted in exceptional
+circumstances.
+
+### Project grading
+
+Projects that do not receive full credit will be returned with
+detailed feedback explaining what you must revise or improve to
+receive a higher grade, along with a new deadline for the revisions.
+
+There will not be an opportunity to revise the final project.
+However, you are welcome to visit office hours to get feedback on your
+final project along the way; the grade your get on the final project
+should not be a surprise.
 
 ## <a name="attendance">Attendance</a>
 
 Attendance in this class is not required as part of your grade.
-However, I do expect you to attend and appreciate knowing in advance
+However, we do expect you to attend and appreciate knowing in advance
 if you will need to miss class.
 
-## <a name="grading">Specifications Grading</a>
+## <a name="grading">Grading</a>
 
-Final course grades are earned based on cumulative assignment outcomes. For each
-category of assignment, there are three levels of mastery: **Basic**, **Intermediate**, and **Advanced**.
-
-### Labs
-From the 12 labs, 24 total credits are available:
-* **Basic**: Earn 15 lab credits, maximum of two unexcused absences
-* **Intermediate**: Earn 19 lab credits, maximum of one unexcused absence
-* **Advanced**: Earn 23 lab credits, no unexcused absences
-
-**Remember**: For an absence to be **excused**, the student must discuss the
-circumstances with the lab instructor.
-
-### Homework/Quizzes
-Out of 13 homeworks and 11 quizzes, 48 total credits are available:
-* **Basic**: Earn 24 homework and quiz credits
-* **Intermediate**: Earn 34 homework and quiz credits
-* **Advanced**: Earn 44 homework and quiz credits
-
-### Projects
-From the three projects, 18 total credits are available:
-* **Basic**: Earn 8 project credits
-* **Intermediate**: Earn 13 project credits
-* **Advanced**: Earn 17 project credits
-
-### Final Course Grade
 * To earn an A in the course, a student will:
   * Complete the course survey.
-  * Achieve **Advanced** in all three categories
+  * Complete at least 11 out of 12 modules.
+  * Have at most one unexcused lab absence.
+  * Earn at least 8 project points.
 * To earn a B in the course, a student will:
   * Complete the course survey.
-  * Achieve at least **Intermediate** in all three categories.
-  * Achieve **Advanced** in at least one category.
+  * Complete at least 9 out of 12 modules.
+  * Have at most two unexcused lab absences.
+  * Earn at least 6 project points.
 * To earn a C in the course, a student will:
-  * Complete the course survey
-  * Achieve at least **Basic** in all three categories.
-  * Achieve one of:
-    * **Advanced** in at least one category.
-    * **Intermediate** in at least two categories.
+  * Complete the course survey.
+  * Complete at least 8 out of 12 modules.
+  * Have at most three unexcused lab absences.
+  * Earn at least 4 project points.
 * To earn a D in the course, a student will:
-  * Achieve at least **Basic** in all three categories.
+  * Complete at least 6 out of 12 modules.
+  * Have at most three unexcused lab absences.
+  * Earn at least 3 project points.
+
+This information is summarized in the table below:
+
+| Grade | Modules | Lab unexcused absences | Project points |
+|:-----:|:-------:|:----------------------:|:--------------:|
+| A     | 11      | ≤ 1                    | 8              |
+| B     | 9       | ≤ 2                    | 6              |
+| C     | 8       | ≤ 3                    | 4              |
+| D     | 6       | ≤ 3                    | 3              |
