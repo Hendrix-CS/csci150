@@ -189,6 +189,17 @@ week.  If this is not possible for some reason, talk to one of the
 course instructors. **TAs can only check off lab milestones if both
 partners are present.**
 
+#### Late lab submission
+
+Completed labs are due by the start of the following lab (*i.e.*
+typically in one week, sometimes two).  **If you cannot submit a lab
+by the due date**, you may request an extension by sending a message
+to one of your instructors, with a specific new deadline by which you
+will submit the lab.  In order to turn in a lab late (*i.e.* after
+either the original deadline or your agreed, new deadline if you
+requested an extension), you must first schedule an office hours
+meeting with an instructor to discuss your progress in the course.
+
 #### Lab attendance
 
 **Lab attendance is required**. If you know you must miss a lab due to
