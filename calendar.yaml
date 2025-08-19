@@ -16,7 +16,9 @@ entries:
     Assignments:
       rows:
         - 'Lab 0: Minecraft'
-        - CSCI Student Survey
+        - link:
+            text: CSCI Student Survey
+            url: https://docs.google.com/forms/d/e/1FAIpQLSeQGqE8Y764GekmoTdWrZ7WcYmZRVbO4pel1EeX2GqR7yA4TA/viewform
   - Date: 2025-08-29
     Topic: Algorithms and Errors
 

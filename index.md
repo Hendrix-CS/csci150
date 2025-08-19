@@ -332,17 +332,17 @@ if you will need to miss class.
 ## <a name="grading">Grading</a>
 
 * To earn an A in the course, a student will:
-  * Complete the course survey.
+  * Complete the CSCI student survey.
   * Complete at least 11 out of 12 modules.
   * Have at most one unexcused lab absence.
   * Earn at least 8 project points.
 * To earn a B in the course, a student will:
-  * Complete the course survey.
+  * Complete the CSCI student survey.
   * Complete at least 9 out of 12 modules.
   * Have at most two unexcused lab absences.
   * Earn at least 6 project points.
 * To earn a C in the course, a student will:
-  * Complete the course survey.
+  * Complete the CSCI student survey.
   * Complete at least 8 out of 12 modules.
   * Have at most three unexcused lab absences.
   * Earn at least 4 project points.
