@@ -3,8 +3,8 @@ layout: work
 type: Project
 num: 3
 worktitle: Final Project
-designdue: Friday, April 18
-finaldue: Friday, May 9
+designdue: Friday, November 14
+finaldue: Friday, December 12 (A4) or Monday, December 15 (A2)
 ---
 
 ## Description
@@ -74,42 +74,11 @@ are welcome to use this as a starting point.
 Demo
 ----
 
-During the scheduled final exam time on {{page.finaldue}} from 2-5pm,
+During the scheduled final exam time on {{page.finaldue}} at 9:00am,
 everyone will have the opportunity to demo their projects.  We will
 meet in MC Reynolds 314, and split into 2 or 3 groups.  Each group
 will have a turn to be prepared to demo their projects while the other
 group(s) can wander around and look at everyone else's.
-
-<!-- Your presentation, using PowerPoint, Google Slides, Prezi, or some -->
-<!-- other appropriate presentation medium, will be **at most 6 minutes -->
-<!-- long**. (We are serious about this; presentations that are too long will -->
-<!-- lose points and/or be rudely cut off. Practice beforehand to make sure -->
-<!-- you have a good sense for how much time you have. Six minutes is not -->
-<!-- very long at all.) -->
-
-<!-- Your presentation should include **four slides** and a **quick demo of your project**. -->
-<!-- The slides should answer the following questions, one per -->
-<!-- slide: -->
-<!-- -   What is the name of your project, and who worked on it? (title slide) -->
-<!-- -   What is the overall idea of your project? -->
-<!-- -   What is interesting/unique about your project? -->
-<!-- -   What was one of the biggest challenges you faced and how did you -->
-<!--     overcome it? -->
-
-<!-- You might plan to spend, for example, 30 seconds on each slide and then -->
-<!-- use the remaining time doing the demo. -->
-
-<!-- {% include note.html content=" **Do not show us your code**! This is super boring and wastes a lot of -->
-<!-- time. If there is some specific code you want to show us to illustrate -->
-<!-- something that is interesting/unique about your project, or about a -->
-<!-- challenge you overcame, copy it onto one of your slides." %} -->
-
-<!-- If you worked on the project with a partner, **both partners** must be -->
-<!-- involved in giving the presentation. For example, you might have one -->
-<!-- partner present the slides and the other present the project demo (but -->
-<!-- feel free to do whatever makes sense). -->
-
-<!-- A sample for Prof. Seme's game can be found [HERE](https://hendrix-my.sharepoint.com/:p:/g/personal/seme_hendrix_edu/EUL8Yei2NfVGi_-3Rg7HVoEBefTxO8s_OOdMYAHYITGOpg?e=E0hu5x) -->
 
 What to turn in
 ---------------
