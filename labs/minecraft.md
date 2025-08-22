@@ -17,7 +17,7 @@ character's actions in the virtual world Minecraft.
 * [Minecraft at Code.org][hourofcode]
 * Lab Partner
 
-[hourofcode]: https://studio.code.org/join/JLZGRW
+[hourofcode]: https://studio.code.org/join/CRNFJC
 
 ### Step 1
 
