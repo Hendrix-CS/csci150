@@ -281,11 +281,11 @@ Projects give you an opportunity to synthesize multiple concepts and
 skills from class into a working whole, as well as an opportunity to
 engage your creativity.
 
-| # | Name                                                     | Assigned | Due   |
-|:-:|----------------------------------------------------------|:--------:|:-----:|
-| 1 | [Expert System]({{site.baseurl}}/projects/project1.html) | 9/17     | 10/1  |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)    | 10/13    | 10/29 |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)    | 10/31    | 12/12 |
+| # | Name                                                        | Assigned | Due   |
+|:-:|-------------------------------------------------------------|:--------:|:-----:|
+| 1 | [Expert System]({{site.baseurl}}/projects/project1_if.html) | 9/17     | 10/1  |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)       | 10/13    | 10/29 |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)       | 10/31    | 12/12 |
 
 Each project will have a detailed *specification* explaining the
 required criteria for a successful project.  Each project will be
