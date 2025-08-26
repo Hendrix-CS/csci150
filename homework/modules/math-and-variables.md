@@ -1,13 +1,17 @@
 ---
 layout: work
 type: Homework
-num: 2
+num: 1
 worktitle: Math and Variables
 ---
 
-*Due: Monday, February 3*
+*Due: Monday, September 8*
 
-To receive credit, for each exercise you should do the following:
+Remember that homework is not formally assessed. However, any problems turned in by the due date will be checked and feedback provided.
+
+If you need to redo the associate quiz module, before you retake the quiz, you *must* have the homework completed and checked by your instructor.
+
+For each exercise you should do the following:
 
 1. **Predict**: First, complete the exercise *without* using the
    Python interpreter.
@@ -44,14 +48,4 @@ Your solution should be hand-written (or typed) and contain the following:
 - If your check (step 2) matched, put a check mark. Otherwise, put an X.
 - If you wrote an X, then write a brief sentence explaining what you got wrong initially and why the code produces the answer it does.
 
-## Specifications
 
-- To be considered **complete** you must work each given problem, and you must have the correct answer (after step 2 if needed), along with correct explanations where appropriate.
-
-<!--
-- An assignment will be considered **partial** if there are no more than 2 wrong answers (after step 2) and no more than two explanations that are given are incorrect.
--->
-
-
-<!---As usual for this semester, you should submit your work as a PDF,
-either by creating it on a computer in the first place or by scanning it.-->
