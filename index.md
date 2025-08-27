@@ -54,7 +54,7 @@ Upon completing this course, our goal is for you to be able to:
 
 | Module                        | Date         | Topic & Notes                     | Module Components                                                                                                          | Projects                 |
 |-------------------------------|--------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------|
-|                               | **W 27 Aug** | Introduction to Computer Science  | Lab 0: Minecraft                                                                                                           |                          |
+|                               | **W 27 Aug** | Introduction to Computer Science  | [Lab 0: Minecraft](https://studio.code.org/join/CRNFJC)                                                                    |                          |
 |                               |              |                                   | [CSCI Student Survey](https://docs.google.com/forms/d/e/1FAIpQLSeQGqE8Y764GekmoTdWrZ7WcYmZRVbO4pel1EeX2GqR7yA4TA/viewform) |                          |
 |                               | **F 29 Aug** | Algorithms and Errors             |                                                                                                                            |                          |
 |                               |              |                                   |                                                                                                                            |                          |
