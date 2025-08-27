@@ -35,6 +35,18 @@ For each expression, decide whether it will evaluate to `True` or
 7. `"arm" < "aardvark"`
 8. `False != (True != (False != (False != True)))`
 
+Now, assume that the following variable assignments have been made:
+```
+x = 7
+y = 2
+```
+
+9. `x < y`
+10. `x + y == (y + 1) ** y`
+11. `not( x < y )`
+12. `(2 < y) or (3 < x)`
+
+
 Your solution should be hand-written (or typed) and contain the following:
 
 - For each line of code above, write down your *original* prediction.
