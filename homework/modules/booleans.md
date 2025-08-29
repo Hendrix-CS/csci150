@@ -2,7 +2,7 @@
 layout: work
 type: Homework
 num: 2
-worktitle: Boolean Practice
+worktitle: Booleans and Conditionals
 ---
 
 *Due: Monday, September 15*
@@ -45,6 +45,41 @@ y = 2
 10. `x + y == (y + 1) ** y`
 11. `not( x < y )`
 12. `(2 < y) or (3 < x)`
+
+
+13. What is the value of `a` after the following lines have run:
+
+```python
+a = 3
+b = a
+b = b + 2
+```
+
+14. What is printed by the following code:
+
+```python
+s = 'hi'
+t = 'hello'
+if s < t:
+   print(t)
+elif s == t:
+   print('same!')
+else:
+   print(s)
+```
+
+15. What is the value of `x` after the following lines are run:
+
+```python
+x = 5
+if x < 6:
+   x = x + 10
+elif x > 9:
+   x = 100
+else:
+   x = 20
+```
+
 
 
 Your solution should be hand-written (or typed) and contain the following:
