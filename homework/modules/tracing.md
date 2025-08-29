@@ -1,13 +1,13 @@
 ---
 layout: work
 type: Homework
-num: 6
+num: 3
 worktitle: Function Stack Tracing
 ---
 
-*Due: Monday, March 3*
+*Due: Monday, September 22*
 
-To receive full credit, for each exercise you should do the following:
+
 
 1. **Predict**: First, complete the exercise *without* using the
    Python interpreter.  (You are welcome to refer to your notes or
@@ -29,8 +29,26 @@ To receive full credit, for each exercise you should do the following:
 You should consider the code in each exercise separately from the
 other exercises.
 
-1. Consider the functions defined below.  Trace the execution when
-   `main1()` is called.
+1. Consider the functions defined below. Trace the execution when `main1()` is called.
+
+   ``` python
+   def func(x: int) -> int:
+       x = x + 3
+       if x > 5:
+           return x
+       else:
+           return x - 7
+
+   def main1():
+       print(func(4))
+       print(func(2))
+       print(func(8))
+
+   main1()
+   ```
+
+2. Consider the functions defined below.  Trace the execution when
+   `main2()` is called.
 
     ``` python
     def foo(a: int) -> int:
@@ -41,14 +59,14 @@ other exercises.
     def bar(x: int, y: int) -> int:
         return foo(x) + foo(y)
 
-    def main1():
+    def main2():
         print(f"The value is {bar(2,3)}")
 
-    main1()
+    main2()
     ```
 
-2. Consider the functions defined below.  Trace the execution when
-   `main2()` is called.
+3. Consider the functions defined below.  Trace the execution when
+   `main3()` is called.
 
     ``` python
     def f1():
@@ -71,31 +89,14 @@ other exercises.
         f3(2)
         f3(6)
 
-    main2()
-    ```
-
-3. Trace the execution when `main3` is called.
-
-    ``` python
-    def main3():
-        s: int = 0
-        i: int = 0
-        while i < 5:
-            j: int = 0
-            while j < i:
-                s += j
-                j += 1
-            i += 1
-        print(s)
-
     main3()
     ```
+
+
 
 Your solution should be hand-written (or typed) and contain the following:
 
 - For each piece of code, you should turn in a completed trace, including any printed output, which was generated prior to running the code on a machine.
 - If your check in step 2 indicated a mistake, correct it, and explain what you got wrong initially and why the code produces the answer it does.
 
-## Specifications
 
-- To be considered **complete** you must work each given problem, and you must have the correct answer (after step 2 if needed), along with correct explanations where appropriate.
