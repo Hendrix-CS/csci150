@@ -42,7 +42,9 @@ entries:
         - 'Math & Variables'
     Assignments:
       rows:
-        - 'Lab 1: Kepler, Newton, Einstein'
+        - link:
+            text: 'Lab 1: Kepler, Newton, Einstein'
+            url: https://www.kaggle.com/code/gabrielferrer/kepler-newton-einstein
         - 'HW 1: Math & Variables'
   - Date: 2025-09-05
     Topic: Functions
