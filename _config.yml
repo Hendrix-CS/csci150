@@ -142,6 +142,11 @@ defaults:
       path: "homework/*.md"
     values:
       layout: "generic"
+  -
+    scope:
+      path: "homework/modules/*.md"
+    values:
+      layout: "generic"
 
 # Build settings
 markdown: kramdown

@@ -9,7 +9,8 @@ worktitle: Math and Variables
 
 Remember that homework is not formally assessed. However, any problems turned in by the due date will be checked and feedback provided.
 
-If you need to redo the associate quiz module, before you retake the quiz, you *must* have the homework completed and checked by your instructor.
+If you need to retake the associated module quiz, you *must* have the
+homework completed and checked by your instructor before you retake the quiz.
 
 For each exercise you should do the following:
 
@@ -25,7 +26,7 @@ For each exercise you should do the following:
    explain why the code works the way it does *and* what your
    misunderstanding(s) were in part 1.
 
-Some of the exercises use variables. Assume the variables have been initialized 
+Some of the exercises use variables. Assume the variables have been initialized
 as follows:
 ```
 x = 7
@@ -47,5 +48,3 @@ Your solution should be hand-written (or typed) and contain the following:
 - For each line of code above, write down your *original* prediction.
 - If your check (step 2) matched, put a check mark. Otherwise, put an X.
 - If you wrote an X, then write a brief sentence explaining what you got wrong initially and why the code produces the answer it does.
-
-
