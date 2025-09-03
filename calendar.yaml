@@ -44,7 +44,7 @@ entries:
       rows:
         - link:
             text: 'Lab 1: Kepler, Newton, Einstein'
-            url: https://www.kaggle.com/code/gabrielferrer/kepler-newton-einstein
+            url: https://www.kaggle.com/code/byorgey/kepler-newton-einstein
         - link:
             text: 'HW 1: Math & Variables'
             url: homework/modules/math-and-variables.html
