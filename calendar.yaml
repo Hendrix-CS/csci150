@@ -1,9 +1,8 @@
 name: CSCI 150, Foundations of Computer Science
 semester: Spring 2025
 period: A2
-columns: [Module, Date, Topic, Assignments, Projects]
+columns: [Module, Date, Topic, 9am, 11am, Assignments, Projects]
 headers:
-  Topic: 'Topic & Notes'
   Assignments: 'Module Components'
 codedir: 'lectures/S25'
 
@@ -12,8 +11,10 @@ entries:
   ##################################################
 
   - Date: 2025-08-27
-    Topic:
-      - Introduction to Computer Science
+    Topic: Introduction to Computer Science
+    9am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2025-08-27-introduction-to-cs
+    11am:
       - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F827%20Introduction%20to%20CSCI%20150%2D20250827%5F111547%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea54135a6%2D4743%2D4ba4%2Da4f2%2D319f54f3fca0
     Assignments:
       rows:
@@ -24,8 +25,10 @@ entries:
             text: CSCI Student Survey
             url: https://docs.google.com/forms/d/e/1FAIpQLSeQGqE8Y764GekmoTdWrZ7WcYmZRVbO4pel1EeX2GqR7yA4TA/viewform
   - Date: 2025-08-29
-    Topic:
-      - Algorithms and Errors
+    Topic: Algorithms and Errors
+    9am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2025-08-29-algorithms-and-errors
+    11am:
       - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F829%20Algorithms%20%2B%20Course%20overview%2D20250829%5F111031%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E73c9bbca%2Dbae8%2D47b6%2D9a62%2D809575f36548
       - pdf: lectures/F25/2025-08-29-algorithms.pdf
 
@@ -39,10 +42,12 @@ entries:
     Topic:
       rows:
         - Python
-        -
-          - 'Math & Variables'
-          - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F93%20Introduction%20to%20Python%2D20250903%5F111022%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebc05f295%2D9aeb%2D4c8d%2D88e8%2D8318e9b8a426
-          - kaggle: https://www.kaggle.com/code/byorgey/9-3-introduction-to-python
+        - 'Math & Variables'
+    9am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-03-intro-to-python-math-and-variables
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F93%20Introduction%20to%20Python%2D20250903%5F111022%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebc05f295%2D9aeb%2D4c8d%2D88e8%2D8318e9b8a426
+      - kaggle: https://www.kaggle.com/code/byorgey/9-3-introduction-to-python
     Assignments:
       rows:
         - link:
