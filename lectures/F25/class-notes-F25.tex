@@ -256,7 +256,7 @@ Syllabus review online.
 
 \holiday{Labor Day}
 
-\class{\notready Python I}
+\class{\ready Python I}
 
 \subsection*{Setup/administrivia}
 
@@ -404,7 +404,6 @@ x = 5
   Choose descriptive variable names! a, b, c, d, e, don't really help.
   Use names like \texttt{width}, \texttt{height},
   \texttt{num\_cats}, \etc
-
 \end{itemize}
 
 % \textbf{Mention HW assignment}: Minecraft by hand.  Posted on
@@ -435,53 +434,14 @@ x = 5
 
 \end{reflect}
 
-\newpage
-
-\class{\notready Python II, Box Volume}
-
-\subsection*{Setup/administrivia}
-\begin{itemize}
-\item Mention homework.
-% \item Bring color printouts of Minecraft world.
-\end{itemize}
-
-\subsection*{Minecraft pair simulation exercise}
-
-\begin{reflect}{Brent, S'25}
-  Skipped the pair simulation exercise this time.
-\end{reflect}
-
-Have the students pair up and exchange programs (which they wrote for
-HW).  Give each pair/group a color printout of the minecraft world for
-the assignment, to use for reference.  Give them 10--15 minutes to
-simulate each others' programs and confirm whether they work properly.
-(See whose is shortest? Any interesting/surprising solutions?)  Then
-collect the assignments.
-
-\begin{reflect}{Brent, S'21}
-  Couldn't really do this since they are socially distanced and I had
-  them turn in HW electronically.
-\end{reflect}
-
-Why did we do this?  One of the reasons the Minecraft Hour of Code lab
-was much easier than the programming we will do for the rest of the
-semester we already talked about---because it allows far fewer syntax
-errors.  But another, perhaps more important, reason is that it gives
-you immediate, visual feedback when you run your program, such that
-you can follow along and quickly figure out what's happening when
-something goes wrong.  When writing a Python program we won't have
-that luxury.  Being able to accurately predict what a program will do
-without running it on the computer is an extremely important
-skill---in fact, there is actual research that shows this skill is
-highly correlated with your performance in this class!  So we will
-have lots more opportunities to practice it.
-
-\begin{reflect}{Brent, F'19}
-  We used to cover basic I/O here (\texttt{print}, \texttt{input}) but
-  now that we're doing stuff in notebooks it's irrelevant until later.
-\end{reflect}
-
 \subsection*{Our first function!}
+
+\begin{reflect}{F'25}
+  Because of Labor Day, we only had one class to get them ready for
+  the first lab, which uses functions.  So I just showed them a
+  function very quickly in the last 5 minutes of class.  Will plan to
+  go over it again/more at the beginning of the next.
+\end{reflect}
 
 We want to write some Python code to compute the volume of a box.
 We're going to use a \emph{function} which is like making a little
@@ -504,6 +464,87 @@ We can make variables to hold intermediate results.  We output the
 final result using the \verb|return| keyword.
 
 Test it out at the prompt with different inputs!
+
+\lab{Kepler \& Newton}
+
+\textbf{Talk to TAs before lab about common errors so they can help
+  give good hints when they see them.}
+
+\begin{reflect}{Brent, S' 16}
+This lab seemed to go pretty well.  Common errors:
+\begin{itemize}
+\item Forgetting that \eg \verb|1/3| is 0, not $0.333\dots$ (to take
+  cube root).  [This is no longer a problem with Python 3.]
+\item Dividing by $1.4\times 10^n$ is not the same as multiplying by
+  $1.4 \times 10^{-n}$.
+\item Bad parenthesization.
+\item Algebra mistakes.
+\end{itemize}
+
+\end{reflect}
+
+\begin{reflect}{Brent, S' 17}
+  I had forgotten to tell them a few minor things but cleared them up
+  easily during lab.  Some interesting errors I saw this time around:
+  \begin{itemize}
+  \item \verb|6.67 * 10e-11|.  Hint: \verb|10e-11| and \verb|1e-11|
+    are not the same.  Either \verb|6.67e-11| or
+    %
+    \verb|6.67 * (10 ** -11)| are both fine.
+  \item As usual many students missed the ``kilo'' in ``149 million
+    kilometers'' and were off by a factor of 1000.
+  \end{itemize}
+\end{reflect}
+
+\begin{reflect}{Brent, F'18}
+  Went pretty well.  Some errors from this time:
+  \begin{itemize}
+  \item They didn't know about creating project vs creating a file,
+    lots of projects named \texttt{orbit\_kepler.py} (not a big deal).
+  \item Converting from days to seconds but then using the old days
+    variable in the formula later.
+  \item \verb|(4 * pi) ** 2| vs \verb|4 * pi**2|.
+  \item \verb|x / y * z| vs \verb|x / (y * z)|.
+  \end{itemize}
+\end{reflect}
+
+\newpage
+
+\class{\ready Python II, Box Volume}
+
+\subsection*{Setup/administrivia}
+\begin{itemize}
+\item Remind re: homework.
+\item History: Lovelace \& Babbage.
+\end{itemize}
+
+\subsection*{Our first function!}
+
+We want to write some Python code to compute the volume of a box.
+We're going to use a \emph{function} which is like making a little
+machine or box that takes some \emph{inputs} (\emph{parameters}) in
+one end and produces an \emph{output} or \emph{result} on the other
+end.  Draw a generic picture.
+
+\begin{verbatim}
+def box_volume(width: float, height: float, depth: float) -> float:
+  volume = width * height * depth
+  return volume
+\end{verbatim}
+
+The first line says what the function is called, the names and types
+of its inputs, and the type of its output.  Draw a picture: a machine
+labelled \verb|box_volume| with three labelled inputs and one
+output.  Write out the code by hand and label all the parts: keywords,
+name, parentheses (required!), parameters, types, output type, colon
+(required!), indentation.
+
+We can make variables to hold intermediate results.  We output the
+final result using the \verb|return| keyword.
+
+Test it out at the prompt with different inputs!  See what happens
+without \verb|return|!  Note colon, automatic indentation.  Talk about
+different errors.
 
 Once this is working, write some other functions:
 \begin{itemize}
@@ -551,53 +592,6 @@ composition!
     this later in the course.
   \end{itemize}
 \end{reflect}
-
-\newpage
-
-\lab{Kepler \& Newton}
-
-\textbf{Talk to TAs before lab about common errors so they can help
-  give good hints when they see them.}
-
-\begin{reflect}{Brent, S' 16}
-This lab seemed to go pretty well.  Common errors:
-\begin{itemize}
-\item Forgetting that \eg \verb|1/3| is 0, not $0.333\dots$ (to take
-  cube root).  [This is no longer a problem with Python 3.]
-\item Dividing by $1.4\times 10^n$ is not the same as multiplying by
-  $1.4 \times 10^{-n}$.
-\item Bad parenthesization.
-\item Algebra mistakes.
-\end{itemize}
-
-\end{reflect}
-
-\begin{reflect}{Brent, S' 17}
-  I had forgotten to tell them a few minor things but cleared them up
-  easily during lab.  Some interesting errors I saw this time around:
-  \begin{itemize}
-  \item \verb|6.67 * 10e-11|.  Hint: \verb|10e-11| and \verb|1e-11|
-    are not the same.  Either \verb|6.67e-11| or
-    %
-    \verb|6.67 * (10 ** -11)| are both fine.
-  \item As usual many students missed the ``kilo'' in ``149 million
-    kilometers'' and were off by a factor of 1000.
-  \end{itemize}
-\end{reflect}
-
-\begin{reflect}{Brent, F'18}
-  Went pretty well.  Some errors from this time:
-  \begin{itemize}
-  \item They didn't know about creating project vs creating a file,
-    lots of projects named \texttt{orbit\_kepler.py} (not a big deal).
-  \item Converting from days to seconds but then using the old days
-    variable in the formula later.
-  \item \verb|(4 * pi) ** 2| vs \verb|4 * pi**2|.
-  \item \verb|x / y * z| vs \verb|x / (y * z)|.
-  \end{itemize}
-\end{reflect}
-
-\newpage
 
 \class{\notready Booleans}
 
