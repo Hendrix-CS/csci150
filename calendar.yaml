@@ -58,6 +58,8 @@ entries:
             url: homework/modules/math-and-variables.html
   - Date: 2025-09-05
     Topic: Functions
+    9am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-05-functions
 
   ##################################################
 
