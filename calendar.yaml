@@ -72,6 +72,8 @@ entries:
     Topic: Booleans
   - Date: 2025-09-10
     Topic: Conditionals
+    9am:
+      -  kaggle: https://www.kaggle.com/code/larskseme/2025-09-08-booleans
     Assignments:
       rows:
         - 'Lab 2: Heart Disease'
