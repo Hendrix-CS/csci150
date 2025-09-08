@@ -35,11 +35,11 @@ For each expression, decide whether it will evaluate to `True` or
 7. `"arm" < "aardvark"`
 8. `False != (True != (False != (False != True)))`
 
-Now, assume that the following variable assignments have been made:
-```
-x = 7
-y = 2
-```
+    For problems 9-12, assume that the following variable assignments have been made:
+    ```
+    x = 7
+    y = 2
+    ```
 
 9. `x < y`
 10. `x + y == (y + 1) ** y`
@@ -49,38 +49,36 @@ y = 2
 
 13. What is the value of `a` after the following lines have run:
 
-```python
-a = 3
-b = a
-b = b + 2
-```
+    ```python
+    a = 3
+    b = a
+    b = b + 2
+    ```
 
 14. What is printed by the following code:
 
-```python
-s = 'hi'
-t = 'hello'
-if s < t:
-   print(t)
-elif s == t:
-   print('same!')
-else:
-   print(s)
-```
+    ```python
+    s = 'hi'
+    t = 'hello'
+    if s < t:
+       print(t)
+    elif s == t:
+       print('same!')
+    else:
+       print(s)
+    ```
 
 15. What is the value of `x` after the following lines are run:
 
-```python
-x = 5
-if x < 6:
-   x = x + 10
-elif x > 9:
-   x = 100
-else:
-   x = 20
-```
-
-
+    ```python
+    x = 5
+    if x < 6:
+       x = x + 10
+    elif x > 9:
+       x = 100
+    else:
+       x = 20
+    ```
 
 Your solution should be hand-written (or typed) and contain the following:
 
