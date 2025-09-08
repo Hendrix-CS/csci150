@@ -76,7 +76,9 @@ entries:
       -  kaggle: https://www.kaggle.com/code/larskseme/2025-09-08-booleans
     Assignments:
       rows:
-        - 'Lab 2: Heart Disease'
+        - link:
+            text: 'Lab 2: Heart Disease'
+            url: https://www.kaggle.com/code/gabrielferrer/diagnosing-heart-disease
         - link:
             text: 'HW 2: Booleans & Conditionals'
             url: homework/modules/booleans.html
