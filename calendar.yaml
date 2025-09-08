@@ -77,7 +77,9 @@ entries:
     Assignments:
       rows:
         - 'Lab 2: Heart Disease'
-        - 'HW 2: Booleans & Conditionals'
+        - link:
+            text: 'HW 2: Booleans & Conditionals'
+            url: homework/modules/booleans.html
   - Date: 2025-09-12
     Topic: Tracing
     Assignments:
