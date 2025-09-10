@@ -79,6 +79,8 @@ entries:
     Topic: Conditionals
     9am:
       - kaggle: https://www.kaggle.com/code/larskseme/2025-09-10-conditionals
+    11am:
+      - kaggle: https://www.kaggle.com/code/byorgey/9-10-conditionals
     Assignments:
       rows:
         - link:
