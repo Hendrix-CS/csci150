@@ -753,19 +753,66 @@ def raffle2() -> str:
     return "You get a stick of gum!"
 \end{verbatim}
 
-\noindent
-\textbf{Do one last example}: Hailstone function from first class!
-(Need to be able to test if number is even\dots just mention in
-passing + promise we will learn more about this later.)
+\newpage
+\lab{\ready Big Data/Heart Disease}
+
+\begin{reflect}{Brent, S'16}
+  \begin{itemize}
+  \item Spend a few minutes at the beginning explaining the graphs,
+    especially the Boolean ones.
+  \item Make sure they don't re-save the data files from Excel---it
+    messes up the formatting!  Opening in Excel to \emph{look at} the
+    data files is OK, just don't save.
+  \item Try to guide them to using nested ifs.
+  \item Make sure they understand why it's ineffective to make a huge
+    condition with a bunch of ANDs.
+  \item Make sure they understand why it's ineffective to have a
+    string of independent ifs, where each one sets \texttt{prediction}
+    (overriding whatever \texttt{prediction} was set to before).
+  \end{itemize}
+
+  Other than those gotchas, lab seems to go OK.
+\end{reflect}
+
+\begin{reflect}{Gabe, F'16}
+\begin{itemize}
+\item First lab section: Seems a bit short - took most students 2 hours.
+\item Second lab section: Nobody finished in less than 2.5 hours. Go figure!
+\item The students found the histograms very confusing. In particular, the
+axes were unclear for the string-valued elements.
+\end{itemize}
+\end{reflect}
+\begin{reflect}{Mark, F'16}
+\begin{itemize}
+\item can't get 100\% on 4a, since {\tt 63, False} is found in both categories. Is possible to get 100\% on 4b and 4c.
+\item the chart for chest\_pain has one of the data points swapped, second bar is "asymptomatic", should have been first.
+\end{itemize}
+\end{reflect}
+\begin{reflect}{Brent, S'17}
+This lab seemed to go very well this year.  The students were
+definitely engaged and learning a lot.  A few started leaving after 2
+hours but probably 2/3 of the class was still working at the 3 hour
+mark (but most were just finishing or very close).
+\end{reflect}
 
 \newpage
-\class{\notready Tracing I}
+\class{\ready Tracing I}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item Remember to leave 10--15 minutes at the end of class for the quiz.
+\item Announce TA office hours!
+\item Reminder: quiz today @ end of class.  Credit/no credit.  If no
+  credit, come to office hours with HW to retake.  Can retake as many
+  times as you need!  Goal is for you to learn, not to label you with
+  a number.
+\item \textbf{Remember to leave 10--15 minutes at the end of class for the quiz.}
 \end{itemize}
+
+\noindent
+\textbf{Do one last example}: Hailstone function from first class!
+(Need to be able to test if number is even\dots just mention in
+passing + promise we will learn more about this later.)
 
 \subsection*{Tracing}
 
@@ -816,136 +863,7 @@ which leads to \bigskip
 The exact contents of ``scratch'' is not important.  But the contents
 of the variable section should look exactly like that.
 
-Have them do one on their own paper:
-
-\begin{verbatim}
-hello = "zebra"
-shoes = 73
-z = 5
-msg = "hello"
-if shoes > z * 7 or msg == "hi":
-    z = 7
-    if msg == hello:
-        z = z + 12
-    else:
-        z = shoes + z
-    shoes = 2
-else:
-    shoes = z
-\end{verbatim}
-
-Then go over it all together.
-
-\begin{reflect}{Brent, F'19}
-
-  We used to use this:
-
-  \begin{verbatim}
-z: str = "5"
-msg: str = "hello"
-print("z is " + z)
-z = z + "2"
-y: int = int(z) + 2
-print(msg + "! " + z + " " + str(y))
-\end{verbatim}
-
-  But now that we do notebooks first they haven't seen \verb|print| or
-  string manipulation yet.  So we do conditionals first to allow for
-  something complex enough to trace.
-\end{reflect}
-
-Have them compare with a partner.  Then go over it quickly on the
-computer.
-
-\begin{reflect}{Brent, S'21}
-  Due to COVID and social distancing, couldn't really put them in
-  groups.  But going over all of this up to here took the whole
-  period anyway.
-\end{reflect}
-
-\subsection*{Minecraft by Hand quiz}
-
-Leave 15 minutes at end of class for quiz.
-
-\subsection*{Code swap exercise}
-
-Now give them 5-10 minutes with the same partner to make up a tracing
-exercise.  Then we will swap with another group.  Try to trick them!
-
-Let them swap and try to trace the other pair's code.  If you think
-there is a syntax error or some other kind of error, talk to the group
-that made it to clarify what they meant or how to fix it.
-
-To wrap up, explain that one of the reasons we did this was to force
-them into the mode where they turn off the part of their brain that
-tries to figure out what the code \emph{means} and just use the part
-of their brain that can emulate the computer and follow the code
-step-by-step to see what it \emph{does}.  This is an important skill,
-but it can be difficult especially when you are the one who wrote the
-code, because it's hard to forget about what you \emph{want} the
-program to mean.  I hope you will see tracing this way as not just
-something we are making you do in class, but as a tool you can use \eg
-in the lab when your code isn't doing what you expect.
-
-\begin{reflect}{Brent, F'19}
-  I had them work in pairs to create programs to try to trick another
-  pair and then swap and try to trace the execution of the other
-  pair's code.  This was a great success!  They came up with all kinds
-  of creative ways to try to trick each other and it seemed like they
-  got really good practice thinking about the details of Python
-  execution.
-\end{reflect}
-\begin{reflect}{Brent, S'19}
-  The above went really well---it doesn't seem like a lot of material
-  but they asked a lot of great questions about exactly what would
-  happen in various scenarios.  We still had about 10 minutes left but
-  I judged it didn't make sense to do the below (make up an exercise
-  and swap) in the remaining time, so I just talked about the HW and
-  let them go 5 minutes early.
-\end{reflect}
-
-\newpage
-\lab{\notready Big Data/Heart Disease}
-
-\begin{reflect}{Brent, S'16}
-  \begin{itemize}
-  \item Spend a few minutes at the beginning explaining the graphs,
-    especially the Boolean ones.
-  \item Make sure they don't re-save the data files from Excel---it
-    messes up the formatting!  Opening in Excel to \emph{look at} the
-    data files is OK, just don't save.
-  \item Try to guide them to using nested ifs.
-  \item Make sure they understand why it's ineffective to make a huge
-    condition with a bunch of ANDs.
-  \item Make sure they understand why it's ineffective to have a
-    string of independent ifs, where each one sets \texttt{prediction}
-    (overriding whatever \texttt{prediction} was set to before).
-  \end{itemize}
-
-  Other than those gotchas, lab seems to go OK.
-\end{reflect}
-
-\begin{reflect}{Gabe, F'16}
-\begin{itemize}
-\item First lab section: Seems a bit short - took most students 2 hours.
-\item Second lab section: Nobody finished in less than 2.5 hours. Go figure!
-\item The students found the histograms very confusing. In particular, the
-axes were unclear for the string-valued elements.
-\end{itemize}
-\end{reflect}
-\begin{reflect}{Mark, F'16}
-\begin{itemize}
-\item can't get 100\% on 4a, since {\tt 63, False} is found in both categories. Is possible to get 100\% on 4b and 4c.
-\item the chart for chest\_pain has one of the data points swapped, second bar is "asymptomatic", should have been first.
-\end{itemize}
-\end{reflect}
-\begin{reflect}{Brent, S'17}
-This lab seemed to go very well this year.  The students were
-definitely engaged and learning a lot.  A few started leaving after 2
-hours but probably 2/3 of the class was still working at the 3 hour
-mark (but most were just finishing or very close).
-\end{reflect}
-
+Have them practice ones printed out.
 
 \newpage
 \class{\notready PyCharm}

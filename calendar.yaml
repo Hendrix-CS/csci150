@@ -94,6 +94,9 @@ entries:
     Topic: Tracing
     9am:
       - kaggle: https://www.kaggle.com/code/larskseme/2025-09-12-tracing
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F912%20Tracing%2D20250912%5F111022%2DMeeting%20Recording%2Emp4
+      - pdf: lectures/F25/2025-09-12-tracing.pdf
     Assignments:
       - 'Quiz 1: Math & Variables'
 
