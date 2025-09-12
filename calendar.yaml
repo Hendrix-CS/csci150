@@ -92,6 +92,8 @@ entries:
             url: homework/modules/booleans.html
   - Date: 2025-09-12
     Topic: Tracing
+    9am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-12-tracing
     Assignments:
       - 'Quiz 1: Math & Variables'
 
