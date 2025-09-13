@@ -107,6 +107,8 @@ entries:
     Topic: 'More tracing & the function stack'
   - Date: 2025-09-17
     Topic: 'Tracing with the function stack'
+    9am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-15-function-stack-tracing
     Assignments:
       rows:
         - 'Lab 3: This Day in History'
