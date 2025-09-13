@@ -1,0 +1,82 @@
+% -*- mode: LaTeX; compile-command: "pdflatex no-genAI.tex" -*-
+
+\documentclass[xcolor={usenames,dvipsnames,svgnames,table},12pt]{beamer}
+
+\mode<presentation>
+{
+  \usetheme{default}                          % use a default (plain) theme
+
+  \setbeamertemplate{navigation symbols}{}    % don't show navigation
+                                              % buttons along the
+                                              % bottom
+  \setbeamerfont{normal text}{family=\sffamily}
+
+%  \setbeamertemplate{footline}[frame number]
+
+  \AtBeginSection[]
+  {
+    \begin{frame}<beamer>
+      \frametitle{}
+      \begin{center}
+        {\Huge \insertsectionhead}
+
+        % \vspace{0.25in}
+        % \includegraphics[width=2in]{\secimage}
+      \end{center}
+    \end{frame}
+  }
+}
+
+\newenvironment{xframe}[1][]
+  {\begin{frame}[fragile,environment=xframe,#1]}
+  {\end{frame}}
+
+% uncomment me to get 4 slides per page for printing
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{4 on 1}[uspaper, border shrink=5mm]
+
+% \setbeameroption{show only notes}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\usepackage{ulem}
+\usepackage{url}
+\usepackage{fancyvrb}
+
+\title{Six reasons you should not be using generative AI}
+\date{}
+% \author{Dr.\ Brent Yorgey}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Learning}
+  \begin{itemize}
+  \item Learning = engagement + cognitive effort
+  \item You are probably \href{https://www.pnas.org/doi/10.1073/pnas.1821936116}{bad at judging how much you are learning}
+  \item \url{https://arxiv.org/abs/2506.08872}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Correctness}
+\end{frame}
+
+\begin{frame}{Economics}
+\end{frame}
+
+\begin{frame}{Environment}
+\end{frame}
+
+\begin{frame}{Justice}
+\end{frame}
+
+\begin{frame}{Mental Health}
+\end{frame}
+
+\end{document}
