@@ -105,10 +105,14 @@ entries:
   - Date: 2025-09-15
     Module: '3: Tracing and the Stack'
     Topic: 'More tracing & the function stack'
-  - Date: 2025-09-17
-    Topic: 'Tracing with the function stack'
     9am:
       - kaggle: https://www.kaggle.com/code/larskseme/2025-09-15-function-stack-tracing
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F915%20Tracing%20%26%20function%20stack%2D20250915%5F111337%2DMeeting%20Recording%2Emp4
+      - kaggle: https://www.kaggle.com/code/byorgey/9-15-function-tracing
+      - pdf: lectures/F25/2025-09-12-tracing.pdf
+  - Date: 2025-09-17
+    Topic: 'Tracing with the function stack'
     Assignments:
       rows:
         - 'Lab 3: This Day in History'
