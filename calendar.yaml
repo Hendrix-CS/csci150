@@ -115,8 +115,12 @@ entries:
     Topic: 'Tracing with the function stack'
     Assignments:
       rows:
-        - 'Lab 3: This Day in History'
-        - 'HW 3: Tracing'
+        - link:
+            text: 'Lab 3: This Day in History'
+            url: https://www.kaggle.com/code/gabrielferrer/this-day-in-history
+        - link:
+            text: 'HW 3: Tracing'
+            url: homework/modules/tracing.html
     Projects: 'Project 1 assigned'
   - Date: 2025-09-19
     Topic:
