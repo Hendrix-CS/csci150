@@ -123,7 +123,10 @@ entries:
         - link:
             text: 'HW 3: Tracing'
             url: homework/modules/tracing.html
-    Projects: 'Project 1 assigned'
+    Projects:
+      - link:
+          text: 'Project 1 assigned'
+          url: projects/project1_if.html
   - Date: 2025-09-19
     Topic:
       rows:

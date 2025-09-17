@@ -638,16 +638,7 @@ can guess what comparisons do for strings.  Come up with a hypothesis,
 test it.
 
 \newpage
-\class{\notready Conditionals}
-
-\subsection*{Setup}
-\begin{itemize}
-\item Collect math practice HW.
-\item Hand back graded Minecraft HW.
-\item Mention HW assigned today (Boolean practice).
-\item Mention quiz Wednesday: will show Minecraft scenario, give a
-  goal, you must write some code.
-\end{itemize}
+\class{\ready Conditionals}
 
 \subsection*{Conditionals}
 
@@ -863,17 +854,72 @@ which leads to \bigskip
 The exact contents of ``scratch'' is not important.  But the contents
 of the variable section should look exactly like that.
 
-Have them practice ones printed out.
+\newpage
+\class{\ready Function Stack Tracing}
+
+\subsection*{Setup}
+\begin{itemize}
+\item Reminder: quiz Friday on Booleans + conditionals.
+  \begin{itemize}
+  \item Evaluate some Boolean (true/false) expressions.
+  \item Predict output of simple programs using conditionals.
+  \item Write a simple function using conditionals.  Don't worry about
+    exact syntax.  Ideas/structures are the important thing.
+  \end{itemize}
+\item For Friday: try installing PyCharm
+\item Go over project 1
+\end{itemize}
+
+Function stack tracing: have them practice on printed out examples, review.
 
 \newpage
-\class{\notready PyCharm}
+\lab{\ready This Day in History}
+
+\begin{reflect}{Brent, F'18}
+  For this lab they need both mod and integer division, so we covered
+  them briefly at the start of lab.  I also explicitly showed them how
+  to use mod 100 to find the last two digits of a number.  That aspect
+  of the lab went pretty well, most students figured out how to use
+  mod appropriately.
+
+  Common mistakes (aside from the usual confusion over the rule for
+  leap year) included:
+  \begin{itemize}
+  \item Taking the mod of \verb|dow| too early, \emph{i.e.} writing
+    additional code that added offset factors to \verb|dow| in later
+    steps and not reducing it mod 7 afterwards.
+  \item The usual things re conditions \emph{e.g.} writing \texttt{if month
+    == 3 or 5}, or \texttt{if month = 3}, or writing a sequence of
+    \verb|if| instead of \texttt{if... elif... elif}.
+  \end{itemize}
+
+  As an aside, during the lab I wondered how to write the condition
+  for a leap year without using nested conditionals.  Here are four
+  different Boolean expressions I came up with that all work:
+\begin{verbatim}
+(y % 4 == 0) and ((y % 100 == 0) == (y % 400 == 0))
+(y % 4 == 0) and not (y % 100 == 0 and y % 400 != 0)
+(y % 4 == 0) and (y % 100 != 0 or y % 400 == 0)
+(y % 4 == 0) != ((y % 100 == 0) != (y % 400 == 0))
+\end{verbatim}
+  Obviously we would never expect students to come up with any of these!
+\end{reflect}
+
+\begin{reflect}{Brent, F'19}
+  Now that we have converted to using notebooks at the beginning of
+  the course, we included a section introducing them to mod and
+  integer division at the start of the lab, which seemed to work very
+  well!
+\end{reflect}
+
+\newpage
+\class{\notready PyCharm installation}
 
 \subsection*{Setup}
 
 \subsection*{PyCharm}
 
-Introduce PyCharm.  Help them get it installed on their personal
-laptops.
+Basic introduction to PyCharm.
 
 Store code in a \verb|.py| file.  (Kind of like
 one giant code cell in a notebook.)  Notebooks are great for
@@ -885,6 +931,15 @@ types. From now on we'll use both, the next few labs will use PyCharm.
 
 Show them how to run code in PyCharm.  Show them how to get a prompt.
 Show them how to make comments!
+
+\subsection*{Quiz}
+
+Boolean quiz.
+
+\subsection*{PyCharm installation}
+
+Help them get Python + PyCharm installed on their personal
+laptops.
 
 \newpage
 \class{\notready I/O}
@@ -951,46 +1006,6 @@ together on paper?
   saying something again; they didn't all stick to that exactly but I
   think it was better than it could have been, maybe 5 or 6 people
   ended up contributing.
-\end{reflect}
-
-\newpage
-\lab{\notready This Day in History}
-
-\begin{reflect}{Brent, F'18}
-  For this lab they need both mod and integer division, so we covered
-  them briefly at the start of lab.  I also explicitly showed them how
-  to use mod 100 to find the last two digits of a number.  That aspect
-  of the lab went pretty well, most students figured out how to use
-  mod appropriately.
-
-  Common mistakes (aside from the usual confusion over the rule for
-  leap year) included:
-  \begin{itemize}
-  \item Taking the mod of \verb|dow| too early, \emph{i.e.} writing
-    additional code that added offset factors to \verb|dow| in later
-    steps and not reducing it mod 7 afterwards.
-  \item The usual things re conditions \emph{e.g.} writing \texttt{if month
-    == 3 or 5}, or \texttt{if month = 3}, or writing a sequence of
-    \verb|if| instead of \texttt{if... elif... elif}.
-  \end{itemize}
-
-  As an aside, during the lab I wondered how to write the condition
-  for a leap year without using nested conditionals.  Here are four
-  different Boolean expressions I came up with that all work:
-\begin{verbatim}
-(y % 4 == 0) and ((y % 100 == 0) == (y % 400 == 0))
-(y % 4 == 0) and not (y % 100 == 0 and y % 400 != 0)
-(y % 4 == 0) and (y % 100 != 0 or y % 400 == 0)
-(y % 4 == 0) != ((y % 100 == 0) != (y % 400 == 0))
-\end{verbatim}
-  Obviously we would never expect students to come up with any of these!
-\end{reflect}
-
-\begin{reflect}{Brent, F'19}
-  Now that we have converted to using notebooks at the beginning of
-  the course, we included a section introducing them to mod and
-  integer division at the start of the lab, which seemed to work very
-  well!
 \end{reflect}
 
 \newpage
