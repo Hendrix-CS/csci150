@@ -113,6 +113,8 @@ entries:
       - pdf: lectures/F25/2025-09-12-tracing.pdf
   - Date: 2025-09-17
     Topic: 'Tracing with the function stack'
+    9am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-17-more-function-stack-tracing
     Assignments:
       rows:
         - link:
