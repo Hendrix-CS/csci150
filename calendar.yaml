@@ -115,6 +115,9 @@ entries:
     Topic: 'Tracing with the function stack'
     9am:
       - kaggle: https://www.kaggle.com/code/larskseme/2025-09-17-more-function-stack-tracing
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F917%20Function%20stack%20tracing%2D20250917%5F111228%2DMeeting%20Recording%2Emp4
+      - pdf: lectures/F25/2025-09-12-tracing.pdf
     Assignments:
       rows:
         - link:
