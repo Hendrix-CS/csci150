@@ -131,12 +131,11 @@ entries:
           text: 'Project 1 assigned'
           url: projects/project1_if.html
   - Date: 2025-09-19
-    Topic:
-      rows:
-        - 'Stack tracing'
-        - 'PyCharm installation'
-        9am:
-          - python: lectures/F25/Seme/2025-09-19-Intro-to-PyCharm.py
+    Topic: 'PyCharm'
+    9am:
+      - python: lectures/F25/Seme/2025-09-19-Intro-to-PyCharm.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2FPyCharm%2D20250919%5F113309%2DMeeting%20Recording%2Emp4
     Assignments: 'Quiz 2: Booleans & Conditionals'
 
   ##################################################
