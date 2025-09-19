@@ -640,6 +640,13 @@ test it.
 \newpage
 \class{\ready Conditionals}
 
+\subsection*{Setup}
+\begin{itemize}
+\item Hand back graded math HW.
+\item Mention HW assigned today (Boolean practice).
+\item Quiz Friday: arithmetic in Python.
+\end{itemize}
+
 \subsection*{Conditionals}
 
 You already know about conditionals.  Here's how we do them in Python.
@@ -655,8 +662,8 @@ def get_secrets(passwd: str) -> str:
 \end{verbatim}
 
 Tabbing is important!  Colon is important!  The thing after {\tt if}
-can be \emph{any expression which evaluates to {\tt true} or {\tt
-    false}}.  So what kinds of things could go there?  Comparisons,
+can be \emph{any expression which evaluates to a {\tt bool} ({\tt true} or {\tt
+    false})}.  So what kinds of things could go there?  Comparisons,
 \verb|and|, \verb|or|, a variable storing a \verb|bool| value, a
 function that returns a \verb|bool|, \etc
 
@@ -854,7 +861,69 @@ which leads to \bigskip
 The exact contents of ``scratch'' is not important.  But the contents
 of the variable section should look exactly like that.
 
+\class{\ready More tracing \& the function stack}
+
+\subsection*{Setup/administrivia}
+
+\begin{itemize}
+\item Return quiz 1?
+\end{itemize}
+
+\subsection*{Tracing}
+
+Finish doing \& going over tracing exercises from last class.
+
+\subsection*{Flow of execution \& tracing with stack diagrams}
+
+Execution starts at the first line of a program and continues.  But
+when a function is called, execution jumps to that function, and when
+done picks back up where it left off.  This can get complicated, since
+functions can call other functions!  In general Python has to keep
+track of a ``stack'' of places to resume.  Imagine you were reading a
+book but it told you to go read another book and then come back.  Then
+THAT book told you to go read another book, etc.  You would keep the
+old books, with bookmarks, in a pile.  When you finally finish a book,
+pick up the next book from the top of the pile and continue.
+
+Do an example. Make some functions that call other functions,
+etc. Introduce an error and see the ``traceback''.
+
+Put this on board/screen (see \texttt{stacktrace.py} in lecture notes
+directory):
+\begin{verbatim}
+def g(z: int):
+    z = z*3
+    print(z)
+
+def f(x: int):
+    g(x)
+    g(x + 2)
+    print(x)
+
+f(3)
+\end{verbatim}
+First have them try to predict output.  Compare with others, see if
+they can agree.  Then show them method for formally tracing the
+execution, with space for \textbf{scratch}, \textbf{stack}, and
+\textbf{output}.  Stack grows down from the top.  See template on next page.
+They will do more examples on HW!
+
 \newpage
+\noindent
+  \begin{tabular}{| >{\centering\bfseries}p{2.8in} | >{\centering\arraybackslash\bfseries}p{2.8in} |}
+    \hline
+    Scratch & Stack \\
+    \hline & \\[1in]
+    \cline{2-2} & \\[1in]
+    \cline{2-2} & \\[1in]
+    \cline{2-2} & \\[1in]
+    \cline{2-2} & \\[1in]
+    \hline
+  \end{tabular} \bigskip
+
+  \noindent \textbf{Printed output}
+
+  \newpage
 \class{\ready Function Stack Tracing}
 
 \subsection*{Setup}
@@ -913,9 +982,18 @@ Function stack tracing: have them practice on printed out examples, review.
 \end{reflect}
 
 \newpage
-\class{\notready PyCharm installation}
+\class{\ready PyCharm}
 
 \subsection*{Setup}
+
+\begin{itemize}
+\item Anti-AI argument.
+\item Reminder: project 1.
+\end{itemize}
+
+\subsection*{Quiz}
+
+Boolean quiz.
 
 \subsection*{PyCharm}
 
@@ -930,11 +1008,6 @@ features to help you write Python programs, e.g. it can check your
 types. From now on we'll use both, the next few labs will use PyCharm.
 
 Show them how to run code in PyCharm.  Show them how to get a prompt.
-Show them how to make comments!
-
-\subsection*{Quiz}
-
-Boolean quiz.
 
 \subsection*{PyCharm installation}
 
@@ -1087,103 +1160,6 @@ while n < max:
 
 (What happens if we take out \verb|max| check and just say
 \verb|while true|?  A legitimate use of an infinite loop!)
-
-\newpage
-\class{\notready Functions Revealed}
-
-\subsection*{Setup/administrivia}
-
-\begin{itemize}
-\item \notready HW due in 2 weeks (function stack tracing); see also
-  CodingBat HW.
-\item Project 1 due Friday.
-\end{itemize}
-
-\subsection*{More on functions}
-
-\begin{itemize}
-\item From now on, \emph{everything} must be in a function!  Make a
-  \verb|main()| function like on the lab, call to \verb|main()| at the
-  very end.
-
-\item \textbf{They must write a comment before every function!}
-  Comment should clearly explain what the function does.
-
-\item Function definition makes a variable which is a function
-  object. (Note hex value in output! =) To call it, use parentheses.
-  \textbf{Every function call must always have parentheses after it.}
-
-\item Put function definitions in a script.  Note the definition
-  itself does not cause the function to be executed.  Python goes
-  through the file from top to bottom; when it reaches a definition it
-  simply \emph{remembers} it for later.  This means functions must be
-  defined before they are used, but it is perfectly OK to call a
-  function from inside another function \emph{before} it is defined.
-  So order of function definitions doesn't matter; pick an order that
-  makes sense.
-
-\item The inputs to a function in its definition are called
-  \emph{parameters}.  The actual inputs we give when we call a
-  function are called \emph{arguments}.
-
-\item Variables created inside functions are \textbf{local}!
-  Parameters are also local.  Show some examples.
-
-\item Note we can put types on variables as well as function
-  declaration.
-\end{itemize}
-
-Along the way show PyCharm error highlighting.
-
-\subsection*{Flow of execution \& tracing with stack diagrams}
-
-Execution starts at the first line of a program and continues.  But
-when a function is called, execution jumps to that function, and when
-done picks back up where it left off.  This can get complicated, since
-functions can call other functions!  In general Python has to keep
-track of a ``stack'' of places to resume.  Imagine you were reading a
-book but it told you to go read another book and then come back.  Then
-THAT book told you to go read another book, etc.  You would keep the
-old books, with bookmarks, in a pile.  When you finally finish a book,
-pick up the next book from the top of the pile and continue.
-
-Do an example. Make some functions that call other functions,
-etc. Introduce an error and see the ``traceback''.
-
-Put this on board/screen (see \texttt{stacktrace.py} in lecture notes
-directory):
-\begin{verbatim}
-def g(z: int):
-    z = z*3
-    print(z)
-
-def f(x: int):
-    g(x)
-    g(x + 2)
-    print(x)
-
-f(3)
-\end{verbatim}
-First have them try to predict output.  Compare with others, see if
-they can agree.  Then show them method for formally tracing the
-execution, with space for \textbf{scratch}, \textbf{stack}, and
-\textbf{output}.  Stack grows down from the top.  See template on next page.
-They will do more examples on HW!
-
-\newpage
-\noindent
-  \begin{tabular}{| >{\centering\bfseries}p{2.8in} | >{\centering\arraybackslash\bfseries}p{2.8in} |}
-    \hline
-    Scratch & Stack \\
-    \hline & \\[1in]
-    \cline{2-2} & \\[1in]
-    \cline{2-2} & \\[1in]
-    \cline{2-2} & \\[1in]
-    \cline{2-2} & \\[1in]
-    \hline
-  \end{tabular} \bigskip
-
-  \noindent \textbf{Printed output}
 
 \newpage
 \class{\notready More while loop practice}
@@ -2333,6 +2309,42 @@ def onlyevens(lst: list[int]) -> list[int]:
 \begin{itemize}
 \item Go over Project 2.
 \end{itemize}
+
+\subsection*{More on functions}
+
+\begin{itemize}
+\item From now on, \emph{everything} must be in a function!  Make a
+  \verb|main()| function like on the lab, call to \verb|main()| at the
+  very end.
+
+\item \textbf{They must write a comment before every function!}
+  Comment should clearly explain what the function does.
+
+\item Function definition makes a variable which is a function
+  object. (Note hex value in output! =) To call it, use parentheses.
+  \textbf{Every function call must always have parentheses after it.}
+
+\item Put function definitions in a script.  Note the definition
+  itself does not cause the function to be executed.  Python goes
+  through the file from top to bottom; when it reaches a definition it
+  simply \emph{remembers} it for later.  This means functions must be
+  defined before they are used, but it is perfectly OK to call a
+  function from inside another function \emph{before} it is defined.
+  So order of function definitions doesn't matter; pick an order that
+  makes sense.
+
+\item The inputs to a function in its definition are called
+  \emph{parameters}.  The actual inputs we give when we call a
+  function are called \emph{arguments}.
+
+\item Variables created inside functions are \textbf{local}!
+  Parameters are also local.  Show some examples.
+
+\item Note we can put types on variables as well as function
+  declaration.
+\end{itemize}
+
+Along the way show PyCharm error highlighting.
 
 \subsection*{Why functions?}
 
