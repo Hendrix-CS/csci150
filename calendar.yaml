@@ -146,6 +146,8 @@ entries:
       rows:
         - I/O
         - Introduction to while loops
+    9am:
+      - python: lectures/F25/Seme/2025-09-22-the-while-loop.py
   - Date: 2025-09-24
     Topic: While loops
     Assignments:
