@@ -148,6 +148,9 @@ entries:
         - Introduction to while loops
     9am:
       - python: lectures/F25/Seme/2025-09-22-the-while-loop.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F922%20IO%2C%20PyCharm%2C%20while%20loops%2D20250922%5F111033%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/io.py
   - Date: 2025-09-24
     Topic: While loops
     Assignments:
