@@ -42,22 +42,23 @@ In addition, for the following two code snippets:
 
 
 1. Write down everything that is printed:
-```python
-n = 5
-i = 0
-while i < n:
-  print(i * n)
-  i += 1
 
-```
+    ```python
+    n = 5
+    i = 0
+    while i < n:
+      print(i * n)
+      i += 1
+    ```
 
 2. What is the value of `s` after the code is run?
-```python
-s = 5
-i = 0
-while i < 6:
-  s += (i ** 2)
-  i += 2
-```
+
+    ```python
+    s = 5
+    i = 0
+    while i < 6:
+      s += (i ** 2)
+      i += 2
+    ```
 
 
