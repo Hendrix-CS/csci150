@@ -262,7 +262,7 @@ A few hints:
   * Do **not** use a random number to generate the computer's guess.
     The computer's strategy should be systematic and deterministic.
 
-## Step 5:
+## Optional Step 5:
 
 Modify your strategy from Step 4 to ensure that the computer *never*
-needs more than 7 guesses to win.
+needs more than 7 guesses to win!

@@ -152,7 +152,9 @@ entries:
     Topic: While loops
     Assignments:
       rows:
-        - 'Lab 4: Guess My Number'
+        - link:
+            text: 'Lab 4: Guess My Number'
+            url: labs/guess.html
         - 'HW 4: While Loops'
   - Date: 2025-09-26
     Topic: While loops
