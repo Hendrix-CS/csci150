@@ -57,12 +57,6 @@ Here is what a sample run of the program might look like:
 Start by creating a file called `guess_number.py` and **paste
 the following code into it**:
 
-    ######################################
-    # Copyright (c) 2024 YOUR NAME(s) HERE
-    # CSCI 150, Spring 2023
-    # Lab 4: Guess My Number
-    ######################################
-
     import random
 
 
@@ -73,7 +67,7 @@ the following code into it**:
     # Call main() as the last thing in the file
     main()
 
-Update it with your names. **Inside the `main()` function**,
+**Inside the `main()` function**,
 you should implement the game as illustrated above.
 
 * Use `random.randint(1, 100)` to pick a random number
@@ -111,7 +105,6 @@ You should write a new function called `input_guess()`.  Here is a
 template you can use as a starting point; copy it into your file
 (after `import random` and before `def main():`):
 
-
     def input_guess() -> int:
         # input_guess prompts the user for their guess, and keeps prompting
         # until it is valid.
@@ -134,11 +127,11 @@ Be sure that the comments and the `def` start all the way
 over in the leftmost column of your file (do **not** put it inside
 your `main()` function!).
 
-If the user's input is stored as a string in the
+{% include tip.html content="If the user's input is stored as a string in the
 variable `guess_str`, you can check whether it is valid
-using `guess_str.isdigit()`, which is a `True` or `False` value
+using `guess_str.isdigit()`, which is a Boolean (`True` or `False`) value
 telling you whether the string `guess_str` consists of all
-digits or not.
+digits or not." %}
 
 Finally, replace the part of your `main()` function that
 asks the user for their input with a call to your
