@@ -153,6 +153,8 @@ entries:
       - python: lectures/F25/Yorgey/io.py
   - Date: 2025-09-24
     Topic: While loops
+    9am:
+      - python: lectures/F25/Seme/2025-09-24-more-while-loops.py
     Assignments:
       rows:
         - link:
