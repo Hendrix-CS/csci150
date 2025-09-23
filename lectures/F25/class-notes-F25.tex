@@ -1015,7 +1015,7 @@ Help them get Python + PyCharm installed on their personal
 laptops.
 
 \newpage
-\class{\notready I/O, Intro to while loops}
+\class{\ready I/O, Intro to while loops}
 
 \subsection*{Setup}
 
@@ -1061,8 +1061,7 @@ get more practice.
 \subsection*{While loops}
 
 Finally, introduce \verb|while| loops.  Change function to keep
-prompting until entering a big number.  Example to count from 0 to 10,
-etc. if time.
+prompting until entering a big number.
 
 %% \newpage
 %% \class{\notready More Conditional Practice}
@@ -1095,14 +1094,13 @@ etc. if time.
 %% \end{reflect}
 
 \newpage
-\class{\notready While loops}
+\class{\ready While loops}
 
 \subsection*{Setup}
 \begin{itemize}
-\item \textbf{Assign Project 1}.  Linked from website. Due 2 weeks from
-  today.
 \item Mention CodingBat HW.
-\item History: Babbage + Lovelace
+\item Anti-AI: economics
+\item Tell them about metacognitive learning strategies workshop!
 \end{itemize}
 
 \subsection*{While loops}
@@ -1128,17 +1126,21 @@ Point out three usual components of a while loop:
   end)
 \end{itemize}
 
-\holiday{Mid-winter break}
+Example: add up numbers from 1 to 10.
 
-\holiday{Snow day}
+\subsection*{Sentinel example}
+
+Redo example from last class: keep prompting for a number until user
+enters one $> 100$.  But this time, do it with a sentinel variable.
+There are two decent ways to write this --- using input variable to
+control loop (but then you have to initialize it with a bogus value),
+or using a boolean (sentinel).
 
 \class{\notready More while loops}
 
 \subsection*{Setup}
 \begin{itemize}
 \item Remind them re: project 1.
-\item No quiz this week.
-\item Tell them about metacognitive learning strategies workshop!
 \end{itemize}
 
 \subsection*{Collatz}
@@ -1184,15 +1186,6 @@ while n < max:
 \item Hand back graded stuff, remind about revising
 \item Reminders: project 1 due Friday at midnight.
 \end{itemize}
-
-\subsection*{Sentinel example}
-
-Do another example: keep printing ``hi'' and asking ``Do you want to
-stop?'' until says yes --- have students write this code together on
-their computers/paper.  Then have two or three share code?  There are
-two decent ways to write this --- using input variable to control loop
-(but then you have to initialize it with a bogus value), or using a
-boolean (sentinel).
 
 Extend our Collatz example to prompt user if they want to try another
 number?
