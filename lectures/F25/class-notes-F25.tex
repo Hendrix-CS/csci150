@@ -1136,11 +1136,28 @@ There are two decent ways to write this --- using input variable to
 control loop (but then you have to initialize it with a bogus value),
 or using a boolean (sentinel).
 
-\class{\notready More while loops}
+\lab{\ready Guess My Number}
+
+Have the students write both versions of the game (in the first
+version, the computer picks the number; in the second, the computer
+guesses).
+
+\begin{reflect}{Brent, F'18}
+  Went pretty well I think.  As usual:
+  \begin{itemize}
+  \item I saw quite a few students tried to use recursion to do the
+    ``play again'' looping.
+  \item Of course many students struggled to figure out how to have
+    the computer play.
+  \end{itemize}
+\end{reflect}
+
+\class{\ready More while loops}
 
 \subsection*{Setup}
 \begin{itemize}
 \item Remind them re: project 1.
+\item Remember to leave 10--15 minutes for quiz!
 \end{itemize}
 
 \subsection*{Collatz}
@@ -1176,37 +1193,8 @@ while n < max:
 (What happens if we take out \verb|max| check and just say
 \verb|while true|?  A legitimate use of an infinite loop!)
 
-\newpage
-\class{\notready More while loop practice}
-
-\subsection*{Setup/administrivia}
-
-\begin{itemize}
-\item Remember to leave time for quiz!
-\item Hand back graded stuff, remind about revising
-\item Reminders: project 1 due Friday at midnight.
-\end{itemize}
-
 Extend our Collatz example to prompt user if they want to try another
 number?
-
-If time, start on binary encoding.
-
-\lab{\notready Guess My Number}
-
-Have the students write both versions of the game (in the first
-version, the computer picks the number; in the second, the computer
-guesses).
-
-\begin{reflect}{Brent, F'18}
-  Went pretty well I think.  As usual:
-  \begin{itemize}
-  \item I saw quite a few students tried to use recursion to do the
-    ``play again'' looping.
-  \item Of course many students struggled to figure out how to have
-    the computer play.
-  \end{itemize}
-\end{reflect}
 
 \newpage
 \class{\notready Binary and information encoding}
