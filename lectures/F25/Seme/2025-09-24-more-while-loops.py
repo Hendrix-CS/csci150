@@ -28,10 +28,23 @@
 # and returns the sum 0 + 1 + 2 + ... + n
 
 def sum_to(n: int) -> int:
-   1
+   s = 0
+   cur = 0
+   while cur <= n:
+       s += cur
+       cur += 1
+
+   return s
+
+
 
 def factorial(n: int) -> int:
-    1
+    f = 1
+    i = 1
+    while i <= n:
+        f *= i
+        i += 1
+    return f
 
 # now write factorial(n), which given non-negative n, finds
 #  n! = 1 * 2 * 3 * ... * n.  (Note that 0! = 1, by definition).
@@ -59,6 +72,8 @@ def entry() -> int:
             n = int(str_n)
             if 2 <= n <= 5:
                 successful = True
+        else:
+            print('Please follow directions!')
 
     return n
 
@@ -78,7 +93,15 @@ def entry() -> int:
 
 # Continually prompt the user to enter 'y' or 'n' -- when they do, return that value
 def y_or_n() -> str:
-    1
+    sentinel = False
+    while not sentinel:
+        ans = input('Please answer y or n ')
+        if ans == 'y' or ans == 'n':
+            sentinel = True
+        else:
+            print('I am sorry, I did not understand. Please only type (y) or (n)')
+
+    return ans
 
 
 
