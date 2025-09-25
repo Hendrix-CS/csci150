@@ -156,6 +156,7 @@ entries:
     9am:
       - python: lectures/F25/Seme/2025-09-24-more-while-loops.py
     11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F924%20while%20loops%2D20250924%5F111443%2DMeeting%20Recording%2Emp4
       - python: lectures/F25/Yorgey/while.py
     Assignments:
       rows:
