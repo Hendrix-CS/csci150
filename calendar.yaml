@@ -168,6 +168,8 @@ entries:
             url: homework/modules/while_loops.html
   - Date: 2025-09-26
     Topic: While loops
+    9am:
+      - python: lectures/F25/Seme/2025-09-26-even-more-while-loops.py
     Assignments: 'Quiz 3: Tracing'
 
   ##################################################
