@@ -182,6 +182,8 @@ entries:
     Topic: Strings
   - Date: 2025-10-01
     Topic: Strings and Loops
+    9am: 
+      - python: lectures/F25/Seme/2025-09-29-Strings.py
     Assignments:
       rows:
         - 'Lab 5: Doublets'
