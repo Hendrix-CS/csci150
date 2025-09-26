@@ -170,6 +170,9 @@ entries:
     Topic: While loops
     9am:
       - python: lectures/F25/Seme/2025-09-26-even-more-while-loops.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F926%20more%20while%20loops%2D20250926%5F111128%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/collatz.py
     Assignments: 'Quiz 3: Tracing'
 
   ##################################################

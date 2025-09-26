@@ -35,3 +35,22 @@ def sum_up_to(n: int) -> int:
         sum = sum + count  # OR   sum += count
         count = count + 1  # OR   count += 1
     return sum
+
+# "Sentinel loops"
+#
+# Control a while loop with a Boolean variable.
+
+# Keeps prompting the user for a number until they enter one > 100.
+def get_big_number() -> int:
+    # Create a boolean variable to control the loop; make sure to name it
+    # using some sort of adjective or predicate that makes it clear
+    # what True and False mean.
+    number_is_big = False
+    while not number_is_big:
+        n = int(input("Please enter a big number: "))
+        if n <= 100:
+            print("That's not big enough, please try again.")
+        else:
+            number_is_big = True
+
+    return n
