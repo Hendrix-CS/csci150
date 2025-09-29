@@ -7,8 +7,8 @@ worktitle: Mutation is the Word
 
 ## Overview
 
-In this lab we will make extensive use of while loops and strings.  We will explore
-mutation of strings (words, DNA, ...) through playing the game Doublets.
+In this lab we will make extensive use of while loops and strings
+through the game Doublets.
 
 ## Materials
 * <a href="../data/english3.txt" download>Common English Words</a>
@@ -52,7 +52,7 @@ and enforces all the rules given above by Lewis Carroll.
 ### Step 1 - Develop Pseudocode
 
 Develop an algorithmic solution using
-*pseudocode*.  This should correspond to the structure of a
+*pseudocode*.  This should correspond to the **structure** of a
 Python program, but is written in English instead of Python.
 
 For example, pseudocode for a guessing-game could look like this:
@@ -61,10 +61,10 @@ For example, pseudocode for a guessing-game could look like this:
     While the human has not guessed the number:
         Request a guess from the human
         If it's too high or too low, say so
-    Congratulate the human on their insight
+    Congratulate the human
 
 The point is that this is *structured* like Python, using indentation
-and hinting at loops and conditionals.  But the individual pieces are
+and using things like loops and conditionals.  But the individual pieces are
 just English descriptions, which you will later translate into precise
 Python code.  You do **not** need to use any functions at this
 point---we will do that later.
@@ -97,41 +97,46 @@ will always enter exactly what is expected.
     CAT -> CAB -> COB -> COG -> DOG
 
 Create a new Python file named `doublets.py` and write your pseudocode
-in some comments.
+in some comments.  Study the example above and try to write structured
+pseudocode for a program that can play this game.
 
 ### Step 2 - Initial Implementation
 
 #### Step 2.1 - `swap_character()`
 
-Now begin by writing the `swap_character()` function:
+Before turning your pseudocode into Python, let's first accomplish a
+helpful subtask.  You should write a `swap_character()` function:
 
 	def swap_character(word: str, where: int, updated: str) -> str:
 
-Given a word, the index of a character in the word to replace, and a new character to
-insert, this function will return a new string with the new character in place of the old
-character. In keeping with our example transcript above, the `where` variable will be an
-integer between 1 and the length of `word`.
+Given a word (`word`), the index of a character in the word to replace
+(`where`), and a new character to insert (`updated`), this function
+should return a new string with the new character in place of the old
+character. In keeping with our example transcript above, the `where`
+variable will be an integer between 1 and the length of `word`.
 
 To implement `swap_character()`:
 * Use string slicing and string concatenation.
 * Do **not** use a `while` loop.
 * Do **not** use `input`. All of the input you need is given by the three parameters (`word`, `where`, and `updated`).
 
-Here are a few examples. Test your implementation of `swap_character()` in the Python Console
-at the bottom of the PyCharm window with these examples:
+Here are a few examples. Test your implementation of
+`swap_character()` in the Python Console with these examples:
 * `swap_character("cat", 3, "r")` should return `"car"`
 * `swap_character("track", 3, "u")` should return `"truck"`
 * `swap_character("talk", 1, "w")` should return `"walk"`
+* `swap_character("book", 3, "n")` should return `"bonk"`
 
 #### Step 2.2 - Main program
 
-Based on your pseduocode description, implement your program in Python, within
-a function named `main()`. When you have received the user's input concerning the
-character position to change and new character to use, call `swap_character()` to
-build the updated word. Include the printing of the number of solution steps, but
-do not include the solution chain until Step 2.3.
+Based on your pseduocode description, implement your program in
+Python, within a function named `main()`. After prompting the user to
+`input` the position to change and the new character to use, call
+`swap_character()` to build the updated word. You should print the
+number of solution steps, but you do not yet need to print the actual
+chain of steps (you will add that in Step 2.3).
 
-The program structure should look something like this:
+Your program structure should look something like this:
 
     def main():
       ...
@@ -152,7 +157,6 @@ Create a string variable to store the solution chain. It should initially be the
 word. On each loop step, concatenate `" -> "` and the current word. Then print it out
 at the end of the program.
 
-
 ### Step 3 - Error Handling and Function Decomposition
 
 Of course the user might not always enter input in the expected form.
@@ -162,6 +166,7 @@ handling is much easier if it is decomposed into functions, so we will
 introduce error handling and functions into our program together.
 
 #### Step 3.1 - Starting word validation
+
 Write a function called `get_start_word()` to get the starting word from the user.
 First, create the function header:
 
@@ -171,7 +176,8 @@ First, create the function header:
 In Step 2.2, you wrote an `input` instruction to request the starting word. Copy it into
 `get_start_word()`. On the next line, add a `return` statement to send the value
 back to the function caller. Then replace the original input statement with a call
-to `get_start_word()`.
+to `get_start_word()`, and make sure your program still runs and
+behaves as before.
 
 This sets up the structure for validating our input. By handling the input validation
 in a function, we keep the `main()` code straightforward and uncluttered.
@@ -179,18 +185,18 @@ in a function, we keep the `main()` code straightforward and uncluttered.
 For English word validation, download the text file
 <a href="../data/english3.txt" download>`english3.txt`</a>
 and the Python module
-<a href="../code/spellcheck.py" download>`spellcheck.py`</a> files, and
-make sure they are in the same folder where you will put your lab. At the top of your
-Python program, you should put
+<a href="../code/spellcheck.py" download>`spellcheck.py`</a>, and
+make sure they are in the same project folder where you put your lab. At the top of your
+Python program, you should write
 
     import spellcheck
 
 which will allow you to use the functions in `spellcheck.py`.
 
-The `spellcheck` module contains a function
-`valid_word(word, file)`, which will
-return `True` if the word is found in the file and `False`
-otherwise.  You can call the function by writing something like
+The `spellcheck` module contains a function `valid_word(word,
+filename)`, which returns `True` if the word is found in the file and
+`False` otherwise.  You can call the function by writing something
+like
 
     spellcheck.valid_word(some_word, 'english3.txt')
 
@@ -220,10 +226,12 @@ Here is an example of how the program would behave with the error checking in pl
     What is the ending word?
 
 #### Step 3.2 - Ending word validation
-Write a function to validate the ending word. This will be a slightly more complex
-variation of the function you wrote in Step 3.1, as it must ensure not only that
-the word is valid, it must also ensure that the word is of the same length as the
-starting word. Here is the function definition header:
+
+Write a function to validate the ending word. This will be a slightly
+more complex variation of the function you wrote in Step 3.1, as it
+must ensure not only that the word is valid, but also that the word is
+of the same length as the starting word. Here is the function
+definition header:
 
 	def get_end_word(start_word_length: int) -> str:
 
@@ -331,6 +339,5 @@ include your solutions:
 * FIRE -- HEAT
 * SLEEP -- DREAM
 * APE -- MAN
-* WHITE -- BLACK
 
 However, you are also welcome to create your own puzzles.
