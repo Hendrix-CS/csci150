@@ -7,11 +7,7 @@ worktitle: Expert System
 
 **Due Wednesday, October 1**
 
-<div style="text-align: center">
-<a class="btn btn-primary" href="{{ site.submission }}">
-  Project submission form
-</a>
-</div>
+**Submit via Teams**
 
 ## Description
 
@@ -25,22 +21,6 @@ reason and good taste. You can ask the user for strings, integers, or
 floats. The program must contain at least **six distinct questions**
 it can ask, and it should be able to ask different questions depending
 on the answers to previous questions.
-
-Here is a list of potential interactions you might attempt to
-simulate. This is by no means comprehensive and is meant as
-inspiration for your program. You may choose one of these, or
-one of your own, as long as you provide a citation in your code
-to your connected real-world civic interaction.
-
-* [Apply to be a U.S. Citizen](https://www.uscis.gov/citizenship/learners/apply-citizenship)
-* [Voter Registration](https://www.usa.gov/register-to-vote)
-* [How to Mail a Package](https://pe.usps.com/text/pub52/pub52c2_022.htm)
-* [Register and Renew your Vehicle in Arkansas](https://www.dfa.arkansas.gov/motor-vehicle/vehicle-tag-renewal/)
-* [Filing Taxes](https://www.irs.gov/pub/irs-pdf/i1040gi.pdf)
-* [Permit applications for Conway, AR](http://cityofconway.org/pages/permits-inspections/)
-* [Renovations in the Historic District of Gretna, LA](https://www.gretnala.com/wp-content/uploads/2017/10/1503007315_01128.pdf)
-* [How to do Business with the U.S. Department of Transportation Pipeline and Hazardous Materials Safety Administration](https://www.phmsa.dot.gov/pipeline/special-permits-state-waivers/special-permits-and-state-waivers-overview)
-* [The California Environmental Quality Act](http://resources.ca.gov/ceqa/flowchart/)
 
 ### Example
 
