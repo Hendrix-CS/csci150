@@ -1063,36 +1063,6 @@ get more practice.
 Finally, introduce \verb|while| loops.  Change function to keep
 prompting until entering a big number.
 
-%% \newpage
-%% \class{\notready More Conditional Practice}
-
-%% \subsection*{Setup}
-
-%% \begin{itemize}
-%% \item Mention TA evening lab hours!
-%% \item Remember to leave 20 minutes for quiz @ end!
-%% \end{itemize}
-
-%% Do some CodingBat exercises together---Python Logic-2. (The Logic-1
-%% are all for homework.)  Get them to find a partner or 2, work on them
-%% together on paper?
-
-%% \begin{reflect}{Brent, S'25}
-%%   Had them find a random partner and work out \verb|lone_sum|
-%%   together, then typed up a solution and talked through it.  On
-%%   particular thing we talked about was the need to put the most
-%%   specific cases first.  This came up multiple times in the lab which
-%%   worked out well: students we able to make the connection.
-
-%%   Then had them go back to their seats, called up a volunteer, and had
-%%   them all tell the volunteer what to type in order to solve
-%%   \verb|no_teen_sum|.  Worked fairly well.  I told them once they said
-%%   something they should wait for 3 or 4 other people to talk before
-%%   saying something again; they didn't all stick to that exactly but I
-%%   think it was better than it could have been, maybe 5 or 6 people
-%%   ended up contributing.
-%% \end{reflect}
-
 \newpage
 \class{\ready While loops}
 
@@ -1197,297 +1167,16 @@ Extend our Collatz example to prompt user if they want to try another
 number?
 
 \newpage
-\class{\notready Binary and information encoding}
-
-\subsection*{Setup/administrivia}
-
-\begin{itemize}
-\item Reminders?
-\end{itemize}
-
-\begin{reflect}{Brent, S'21}
-  Because of ``Spring break'' day, only 1 day for Information encoding
-  so just planning to skip it instead.  We will probably be a bit
-  behind and can use this day for more practice etc\dots
-
-  Well, so that's what I thought when planning out the course, but in
-  fact we are not behind, so I will just go through a basic version of
-  it as lecture, minus having them all work on answering questions in
-  groups etc.
-\end{reflect}
-
-\begin{reflect}{Brent, F'18}
-  Skipped this aside; there was too much other stuff going on at the
-  beginning of class (quiz, handing back stuff, etc.) and I wanted to
-  make sure I got through the binary stuff (which I did).
-\end{reflect}
-\begin{reflect}{Brent, F'19}
-  This time I did actually do the aside which was fun.
-\end{reflect}
-\begin{reflect}{Brent, F'21}
-  Actually put this in my history slides and had already presented it
-  earlier.
-\end{reflect}
-
-\subsection*{Aside: history of information}
-
-How many of you have heard of Ada Lovelace?  How about Charles
-Babbage?
-
-Ada Lovelace: 1815--1852, first programmer.  Wrote
-programs for Charles Babbage's Analytical Engine (never built, but
-definitely works in principle).  Babbage's purpose for the AE was
-limited to making tables of numbers, but Lovelace had a much more
-expansive and far-seeing vision:
-
-\begin{quote}
-``[The Analytical Engine] might act upon other things besides number,
-were objects found whose mutual fundamental relations could be
-expressed by those of the abstract science of operations, and which
-should be also susceptible of adaptations to the action of the
-operating notation and mechanism of the engine...
-
-Supposing, for instance, that the fundamental relations of pitched
-sounds in the science of harmony and of musical composition were
-susceptible of such expression and adaptations, the engine might
-compose elaborate and scientific pieces of music of any degree of
-complexity or extent.''
-\end{quote}
-
-She saw potential for computers to operate on many kinds of
-information instead of just making tables of numbers, and we know that
-they can indeed do just that!  In fact, she even missed one very
-important development, that computers can not only \emph{operate} on
-these kinds of information, but allow us to \emph{communicate} using
-these kinds of information as well.  Over the next 2 classes we will
-consider some of the fundamentals that make this possible.
-
-\subsection*{Binary}
-
-Computers represent numbers using \emph{binary} = base 2 instead of
-base 10.  Recall how base 10 works: ones ($=10^0$) place, tens
-($=10^1$) place, hundreds ($=10^2$) place, \dots  And ten different
-digits.  For example \[ 4397_{10} = 4 \times 10^3 + \dots \] Base 2 is
-the same but
-\begin{itemize}
-\item We use $2$ instead of $10$ (ones place, 2's place, 4's place,
-  8's place\dots)
-\item We use $2$ digits $(0,1)$ instead of $10$.  Called \emph{bits} =
-  \emph{bi}nary dig\emph{its}.
-\end{itemize}
-Computers do everything in binary since (1) it is no less expressive
-than \eg decimal and (2) from a physical point of view, it is easier
-to design hardware that can distinguish two different states
-(\eg high and low voltage) than 10.
-
-Converting base $2$ to base $10$: have them do some
-examples. \eg $10110100_2 = ?$  Then do one example together on the
-board, \[ 10110100_2 = 1 \times 2^7 + 1 \times 2^5 + \dots \]
-
-Note 1 \emph{byte} = 8 bits.  Incidentally, one \emph{kilobyte} is not
-$1000$ bytes, but actually $2^{10} = 1024$ bytes!  Megabyte is
-$2^{20}$ bytes, and so on.
-
-Some questions.  Pair and work on these. [Find your bit-partner:
-figure out the correct base-10 number for your partner and find them
-that way!]
-
-\begin{enumerate}
-\item How many different binary numbers are there using $4$ bits?
-\item How many different binary numbers using $n$ bits are there?
-  (Write out 16 binary numbers using $4$ bits.)
-\item What is the biggest number that can be represented using $n$
-  bits?
-\item Convert to binary: $103_{10}$. (Don't tell them how to do it;
-  see if they can figure it out.  Write a list of powers of 2 on the
-  board for them.)
-\end{enumerate}
-
-Talk about answers to first three questions.  Promise we will talk
-about conversion next class.
-
-% \newpage
-% \class{\notready Information encoding II}
-
-% \subsection*{Setup}
-% \begin{itemize}
-% \item \notready \textbf{Assign practice exam}---not collected or graded, but we
-%   will go over it on Wednesday.  In your best interest to go through
-%   it and come prepared!
-% \end{itemize}
-
-Remember converting $103_{10}$ to binary last class?  You probably
-naturally came up with something like the standard greedy algorithm.
-Go over algorithm:
-
-\begin{itemize}
-\item Find largest power of two $\leq n$, say, $2^k$.
-\item As long as $n > 0$:
-  \begin{itemize}
-  \item If $2^k \leq n$
-    \begin{itemize}
-    \item subtract $2^k$ from $n$
-    \item write a $1$ (in the $2^k$ place)
-    \end{itemize}
-  \item else
-    \begin{itemize}
-    \item  write a $0$ in the $2^k$ place
-    \end{itemize}
-  \item Decrease $k$ by $1$.
-  \end{itemize}
-\end{itemize}
-
-(This has all five usual aspects of algorithms: input, output, math,
-conditionals, repetition.  We can't quite write this algorithm in
-Python yet because we don't know how to do repetition.  Soon!)  Do an
-example together on the board, \eg $103_{10}$ or something else. I've
-found it seems to help some students to show them how to write out
-blanks to represent different places in the binary number, then fill
-them in with 1's or 0's, like so:
-\[ \underset{32}{\underline{\phantom{XX}}} \; \underset{16}{\underline{\phantom{XX}}} \; \underset{8}{\underline{\phantom{XX}}} \; \underset{4}{\underline{\phantom{XX}}} \; \underset{2}{\underline{\phantom{XX}}} \; \underset{1}{\underline{\phantom{XX}}} \]
-though I emphasize that I don't require them to do this.
-
-\subsection*{Hexadecimal}
-
-\begin{reflect}{Brent, F'19}
-  In the past I've sometimes not gotten to hexadecimal and then had to
-  send them an email about it because it's on the exam!  Not ideal.
-  So I'm moving this section earlier to be sure to go over it.  The
-  other stuff about representing text, images, etc. is fun and we can
-  get through as much as there is time for.
-\end{reflect}
-
-Base $16$.  Need 16 symbols: 0--9, a--f. So $a_{16} = 10_{10}$ and so
-on. $\mbox{ace}_{16} = ?$
-
-Note, we can group the binary digits into 4s.  $16 = 2^4$.  So each 4
-bits corresponds to 1 hexadecimal digit.  Conversion back and forth is
-super easy.  We often use hexadecimal as a more convenient way to read
-and write binary.  Easier for humans to read and remember.
-
-Show entering hexadecimal directly into Python using \verb|0xace|
-notation.
-
-Show example of RGB colors expressed in hexadecimal: show
-\verb|style.css| from course website.
-
-\subsection*{Representing integers}
-
-Integers are represented in binary inside the computer.  Show entering
-binary numbers directly into Python using \verb|0b10110| notation.
-
-Most modern computers use $64$ bits to represent an integer (\emph{how
-  big is that?}); some use $32$. Show Python doesn't care, abstracted
-it away.  In Python 3, everything is \texttt{int}; there is also
-\texttt{long} which can be as big as you want.
-
-What about negative numbers?  One possibility: use one bit for sign
-(plus or minus).  (Turns out there is a better way, ``$2$'s
-complement''; learn about it in CSO or ask if you are curious.)
-
-\subsection*{Representing text}
-
-Basic idea: use a different number to represent each letter.  ASCII
-(American Std. Code for Info. Exch.) --- early 1960's.  Specified
-$128$ different characters, each using $7$ bits.  (In many cases 1 bit
-left over for parity checking or just set to $0$.)
-\begin{itemize}
-\item Show ASCII chart.
-\item Illustrate chr and ord functions in python.
-\end{itemize}
-$128$ characters may have been enough for the white, American,
-English-speaking men who made it up.  But it sure isn't any more.
-Unicode---currently over 137,000 characters. (How many bits needed?
-Often uses a more complex scheme, UTF-8, to allow different numbers of
-bits per character, so files using ASCII don't need to be re-encoded.
-Ask if you're curious.)
-
-\subsection*{Representing images}
-
-Image = grid of colored points (``pixels'' = \emph{pic}ture
-\emph{el}ements).  Each pixel = mix of red, green, blue (additive
-primary colors). (Have you ever put a tiny drop of water on your phone
-screen to see the pixels magnified?  It's pretty interesting, try it
-if you haven't!) Each primary color has 256 possible intensities, from
-0 (off) to 255 (as bright as possible).  So each primary = 8 bits (1
-byte), each pixel = 24 bits.  How many bits/bytes for a
-$500 \times 500$ image?
-
-\begin{reflect}{Brent, F'18}
-  Got too carried away talking about ASCII and Unicode, images,
-  \emph{etc.} (there was also a bunch of stuff at the start of class:
-  handing things back, a quiz, \emph{etc.}) so I didn't actually make
-  it to talking about hexadecimal.  (Apparently neither did Lars.)  So
-  I sent them an email afterwards, reproduced in the LaTeX comment below.
-\end{reflect}
-
-% Hi all,
-
-% There was one thing I didn't quite get to at the end of class today.
-% It's not hard to explain, but important.
-
-% "Hexadecimal" means base 16, just like "decimal" means base 10 and "binary" means base 2.  To write numbers in base 16, we need 16 "digits"---so we use the digits 0-9 as usual and then the letters A-F.  So A represents 10, B represents 11, and so on, up to F which represents 15.  (Often lowercase letters are used as well, it doesn't matter if they are upper- or lowercase.)
-
-% For example, the hexadecimal number 3ACE means
-
-% 3 * 16^3 + A * 16^2 + C * 16^1 + E * 16^0
-% = 3 * 4096 + 10 * 256 + 12 * 16 + 14
-% = 15054
-
-% in base 10.
-
-% Every hexadecimal digit corresponds to exactly 4 bits, so hexadecimal is often used as a convenient and more human-friendly way to represent sequences of bits.  For example, 3ACE is equivalent to 0011101011001110 --- which do you find easier to read?
-
-% You may have seen hexadecimal notation before --- for example when a computer crashes it often displays a long sequence of numbers and letters, which is a hexadecimal number representing the memory address where the crash occurred.  Another place where you see hexadecimal notation is in writing down colors.  We talked in class about how a color is represented by 3 bytes; each byte is 8 bits which can be written using two hexadecimal digits.  For example, the color "lime" can be represented as AAFF32.  AA represents the amount of red (A * 16 + A = 10*16 + 10 = 170), FF is the amount of green (F * 16 + F = 15*16 + 15 = 255), and 32 is the amount of blue (note this is 32 in base 16, which is not the same as 32 in base 10!  3 * 16 + 2 = 50 base 10).
-
-% If you have any questions we can go over them on Wednesday!
-
-\begin{reflect}{Brent}
-  There probably won't be time to cover anything past this point.
-  Including it here just in case there's extra time.
-\end{reflect}
-
-\subsection*{Representing floating-point numbers}
-
-Back to base $10$: what does $123.45$ mean?
-\[ \dots + 4 \times 10^{-1} + 5 \times 10^{-2} \]
-We can do binary ``decimals'' (``binarals''?) the same way: \[
-1101.011 = 1 \times 2^3 + \dots + 1 \times 2^{-1} + 1 \times 2^{-2} =
-13 \frac{3}{8} \]  Also recall ``scientific notation'', \eg $1.23
-\times 10^{17}$.  This is how ``floating point'' numbers are
-represented: scientific notation, but in base $2$.  For example, with
-$64$ bits:
-\begin{itemize}
-\item 1 bit for sign ($\pm$)
-\item $11$ bits for exponent (base $2$ integer)
-\item $52$ bits for value
-\end{itemize}
-\eg $-1011011 \times 2^{-3}$.
-
-How would you represent $0.1_{10}$?  Can't represent exactly using
-base $2$ (infinite)! Show $0.1 + 0.1 + 0.1$ at python prompt.
-
-\subsection*{Video, audio}
-
-Can mention something about how video and audio are represented.
-\begin{itemize}
-\item Video: sequence of frames, each frame is an image.  Of course
-  there is lots of redundancy to take advantage
-  of---\emph{compression}.
-\item Audio: sequence of ``samples''.
-\end{itemize}
-
-\newpage
-\class{\notready Strings}
+\class{\ready Strings}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Remind them of LhtL sessions?
-\item Quiz Wednesday: conditionals
+  \item Reminder, project 1 due Wednesday.  Let me know if you want an
+    extension.
 \end{itemize}
 
 \begin{reflect}{Brent}
-  Note, this continues on Friday, so it's OK if we don't quite get
+  Note, this continues on Wednesday, so it's OK if we don't quite get
   through everything, or go fast and have time to start doing more
   stuff from the beginning of Friday etc.
 \end{reflect}
@@ -3692,6 +3381,288 @@ print(f'Most steps was {max_steps} starting from {max_n}')
   old fractal recursion lab, but it was too hot in the classroom and I
   let them go early.
 \end{reflect}
+
+\newpage
+\class{\notready Binary and information encoding}
+
+\subsection*{Setup/administrivia}
+
+\begin{itemize}
+\item Reminders?
+\end{itemize}
+
+\begin{reflect}{Brent, S'21}
+  Because of ``Spring break'' day, only 1 day for Information encoding
+  so just planning to skip it instead.  We will probably be a bit
+  behind and can use this day for more practice etc\dots
+
+  Well, so that's what I thought when planning out the course, but in
+  fact we are not behind, so I will just go through a basic version of
+  it as lecture, minus having them all work on answering questions in
+  groups etc.
+\end{reflect}
+
+\begin{reflect}{Brent, F'18}
+  Skipped this aside; there was too much other stuff going on at the
+  beginning of class (quiz, handing back stuff, etc.) and I wanted to
+  make sure I got through the binary stuff (which I did).
+\end{reflect}
+\begin{reflect}{Brent, F'19}
+  This time I did actually do the aside which was fun.
+\end{reflect}
+\begin{reflect}{Brent, F'21}
+  Actually put this in my history slides and had already presented it
+  earlier.
+\end{reflect}
+
+\subsection*{Aside: history of information}
+
+How many of you have heard of Ada Lovelace?  How about Charles
+Babbage?
+
+Ada Lovelace: 1815--1852, first programmer.  Wrote
+programs for Charles Babbage's Analytical Engine (never built, but
+definitely works in principle).  Babbage's purpose for the AE was
+limited to making tables of numbers, but Lovelace had a much more
+expansive and far-seeing vision:
+
+\begin{quote}
+``[The Analytical Engine] might act upon other things besides number,
+were objects found whose mutual fundamental relations could be
+expressed by those of the abstract science of operations, and which
+should be also susceptible of adaptations to the action of the
+operating notation and mechanism of the engine...
+
+Supposing, for instance, that the fundamental relations of pitched
+sounds in the science of harmony and of musical composition were
+susceptible of such expression and adaptations, the engine might
+compose elaborate and scientific pieces of music of any degree of
+complexity or extent.''
+\end{quote}
+
+She saw potential for computers to operate on many kinds of
+information instead of just making tables of numbers, and we know that
+they can indeed do just that!  In fact, she even missed one very
+important development, that computers can not only \emph{operate} on
+these kinds of information, but allow us to \emph{communicate} using
+these kinds of information as well.  Over the next 2 classes we will
+consider some of the fundamentals that make this possible.
+
+\subsection*{Binary}
+
+Computers represent numbers using \emph{binary} = base 2 instead of
+base 10.  Recall how base 10 works: ones ($=10^0$) place, tens
+($=10^1$) place, hundreds ($=10^2$) place, \dots  And ten different
+digits.  For example \[ 4397_{10} = 4 \times 10^3 + \dots \] Base 2 is
+the same but
+\begin{itemize}
+\item We use $2$ instead of $10$ (ones place, 2's place, 4's place,
+  8's place\dots)
+\item We use $2$ digits $(0,1)$ instead of $10$.  Called \emph{bits} =
+  \emph{bi}nary dig\emph{its}.
+\end{itemize}
+Computers do everything in binary since (1) it is no less expressive
+than \eg decimal and (2) from a physical point of view, it is easier
+to design hardware that can distinguish two different states
+(\eg high and low voltage) than 10.
+
+Converting base $2$ to base $10$: have them do some
+examples. \eg $10110100_2 = ?$  Then do one example together on the
+board, \[ 10110100_2 = 1 \times 2^7 + 1 \times 2^5 + \dots \]
+
+Note 1 \emph{byte} = 8 bits.  Incidentally, one \emph{kilobyte} is not
+$1000$ bytes, but actually $2^{10} = 1024$ bytes!  Megabyte is
+$2^{20}$ bytes, and so on.
+
+Some questions.  Pair and work on these. [Find your bit-partner:
+figure out the correct base-10 number for your partner and find them
+that way!]
+
+\begin{enumerate}
+\item How many different binary numbers are there using $4$ bits?
+\item How many different binary numbers using $n$ bits are there?
+  (Write out 16 binary numbers using $4$ bits.)
+\item What is the biggest number that can be represented using $n$
+  bits?
+\item Convert to binary: $103_{10}$. (Don't tell them how to do it;
+  see if they can figure it out.  Write a list of powers of 2 on the
+  board for them.)
+\end{enumerate}
+
+Talk about answers to first three questions.  Promise we will talk
+about conversion next class.
+
+% \newpage
+% \class{\notready Information encoding II}
+
+% \subsection*{Setup}
+% \begin{itemize}
+% \item \notready \textbf{Assign practice exam}---not collected or graded, but we
+%   will go over it on Wednesday.  In your best interest to go through
+%   it and come prepared!
+% \end{itemize}
+
+Remember converting $103_{10}$ to binary last class?  You probably
+naturally came up with something like the standard greedy algorithm.
+Go over algorithm:
+
+\begin{itemize}
+\item Find largest power of two $\leq n$, say, $2^k$.
+\item As long as $n > 0$:
+  \begin{itemize}
+  \item If $2^k \leq n$
+    \begin{itemize}
+    \item subtract $2^k$ from $n$
+    \item write a $1$ (in the $2^k$ place)
+    \end{itemize}
+  \item else
+    \begin{itemize}
+    \item  write a $0$ in the $2^k$ place
+    \end{itemize}
+  \item Decrease $k$ by $1$.
+  \end{itemize}
+\end{itemize}
+
+(This has all five usual aspects of algorithms: input, output, math,
+conditionals, repetition.  We can't quite write this algorithm in
+Python yet because we don't know how to do repetition.  Soon!)  Do an
+example together on the board, \eg $103_{10}$ or something else. I've
+found it seems to help some students to show them how to write out
+blanks to represent different places in the binary number, then fill
+them in with 1's or 0's, like so:
+\[ \underset{32}{\underline{\phantom{XX}}} \; \underset{16}{\underline{\phantom{XX}}} \; \underset{8}{\underline{\phantom{XX}}} \; \underset{4}{\underline{\phantom{XX}}} \; \underset{2}{\underline{\phantom{XX}}} \; \underset{1}{\underline{\phantom{XX}}} \]
+though I emphasize that I don't require them to do this.
+
+\subsection*{Hexadecimal}
+
+\begin{reflect}{Brent, F'19}
+  In the past I've sometimes not gotten to hexadecimal and then had to
+  send them an email about it because it's on the exam!  Not ideal.
+  So I'm moving this section earlier to be sure to go over it.  The
+  other stuff about representing text, images, etc. is fun and we can
+  get through as much as there is time for.
+\end{reflect}
+
+Base $16$.  Need 16 symbols: 0--9, a--f. So $a_{16} = 10_{10}$ and so
+on. $\mbox{ace}_{16} = ?$
+
+Note, we can group the binary digits into 4s.  $16 = 2^4$.  So each 4
+bits corresponds to 1 hexadecimal digit.  Conversion back and forth is
+super easy.  We often use hexadecimal as a more convenient way to read
+and write binary.  Easier for humans to read and remember.
+
+Show entering hexadecimal directly into Python using \verb|0xace|
+notation.
+
+Show example of RGB colors expressed in hexadecimal: show
+\verb|style.css| from course website.
+
+\subsection*{Representing integers}
+
+Integers are represented in binary inside the computer.  Show entering
+binary numbers directly into Python using \verb|0b10110| notation.
+
+Most modern computers use $64$ bits to represent an integer (\emph{how
+  big is that?}); some use $32$. Show Python doesn't care, abstracted
+it away.  In Python 3, everything is \texttt{int}; there is also
+\texttt{long} which can be as big as you want.
+
+What about negative numbers?  One possibility: use one bit for sign
+(plus or minus).  (Turns out there is a better way, ``$2$'s
+complement''; learn about it in CSO or ask if you are curious.)
+
+\subsection*{Representing text}
+
+Basic idea: use a different number to represent each letter.  ASCII
+(American Std. Code for Info. Exch.) --- early 1960's.  Specified
+$128$ different characters, each using $7$ bits.  (In many cases 1 bit
+left over for parity checking or just set to $0$.)
+\begin{itemize}
+\item Show ASCII chart.
+\item Illustrate chr and ord functions in python.
+\end{itemize}
+$128$ characters may have been enough for the white, American,
+English-speaking men who made it up.  But it sure isn't any more.
+Unicode---currently over 137,000 characters. (How many bits needed?
+Often uses a more complex scheme, UTF-8, to allow different numbers of
+bits per character, so files using ASCII don't need to be re-encoded.
+Ask if you're curious.)
+
+\subsection*{Representing images}
+
+Image = grid of colored points (``pixels'' = \emph{pic}ture
+\emph{el}ements).  Each pixel = mix of red, green, blue (additive
+primary colors). (Have you ever put a tiny drop of water on your phone
+screen to see the pixels magnified?  It's pretty interesting, try it
+if you haven't!) Each primary color has 256 possible intensities, from
+0 (off) to 255 (as bright as possible).  So each primary = 8 bits (1
+byte), each pixel = 24 bits.  How many bits/bytes for a
+$500 \times 500$ image?
+
+\begin{reflect}{Brent, F'18}
+  Got too carried away talking about ASCII and Unicode, images,
+  \emph{etc.} (there was also a bunch of stuff at the start of class:
+  handing things back, a quiz, \emph{etc.}) so I didn't actually make
+  it to talking about hexadecimal.  (Apparently neither did Lars.)  So
+  I sent them an email afterwards, reproduced in the LaTeX comment below.
+\end{reflect}
+
+% Hi all,
+
+% There was one thing I didn't quite get to at the end of class today.
+% It's not hard to explain, but important.
+
+% "Hexadecimal" means base 16, just like "decimal" means base 10 and "binary" means base 2.  To write numbers in base 16, we need 16 "digits"---so we use the digits 0-9 as usual and then the letters A-F.  So A represents 10, B represents 11, and so on, up to F which represents 15.  (Often lowercase letters are used as well, it doesn't matter if they are upper- or lowercase.)
+
+% For example, the hexadecimal number 3ACE means
+
+% 3 * 16^3 + A * 16^2 + C * 16^1 + E * 16^0
+% = 3 * 4096 + 10 * 256 + 12 * 16 + 14
+% = 15054
+
+% in base 10.
+
+% Every hexadecimal digit corresponds to exactly 4 bits, so hexadecimal is often used as a convenient and more human-friendly way to represent sequences of bits.  For example, 3ACE is equivalent to 0011101011001110 --- which do you find easier to read?
+
+% You may have seen hexadecimal notation before --- for example when a computer crashes it often displays a long sequence of numbers and letters, which is a hexadecimal number representing the memory address where the crash occurred.  Another place where you see hexadecimal notation is in writing down colors.  We talked in class about how a color is represented by 3 bytes; each byte is 8 bits which can be written using two hexadecimal digits.  For example, the color "lime" can be represented as AAFF32.  AA represents the amount of red (A * 16 + A = 10*16 + 10 = 170), FF is the amount of green (F * 16 + F = 15*16 + 15 = 255), and 32 is the amount of blue (note this is 32 in base 16, which is not the same as 32 in base 10!  3 * 16 + 2 = 50 base 10).
+
+% If you have any questions we can go over them on Wednesday!
+
+\begin{reflect}{Brent}
+  There probably won't be time to cover anything past this point.
+  Including it here just in case there's extra time.
+\end{reflect}
+
+\subsection*{Representing floating-point numbers}
+
+Back to base $10$: what does $123.45$ mean?
+\[ \dots + 4 \times 10^{-1} + 5 \times 10^{-2} \]
+We can do binary ``decimals'' (``binarals''?) the same way: \[
+1101.011 = 1 \times 2^3 + \dots + 1 \times 2^{-1} + 1 \times 2^{-2} =
+13 \frac{3}{8} \]  Also recall ``scientific notation'', \eg $1.23
+\times 10^{17}$.  This is how ``floating point'' numbers are
+represented: scientific notation, but in base $2$.  For example, with
+$64$ bits:
+\begin{itemize}
+\item 1 bit for sign ($\pm$)
+\item $11$ bits for exponent (base $2$ integer)
+\item $52$ bits for value
+\end{itemize}
+\eg $-1011011 \times 2^{-3}$.
+
+How would you represent $0.1_{10}$?  Can't represent exactly using
+base $2$ (infinite)! Show $0.1 + 0.1 + 0.1$ at python prompt.
+
+\subsection*{Video, audio}
+
+Can mention something about how video and audio are represented.
+\begin{itemize}
+\item Video: sequence of frames, each frame is an image.  Of course
+  there is lots of redundancy to take advantage
+  of---\emph{compression}.
+\item Audio: sequence of ``samples''.
+\end{itemize}
+
 
 \class{\notready Mutability, objects, and references}
 
