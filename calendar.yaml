@@ -192,7 +192,9 @@ entries:
         - link:
             text: 'Lab 5: Doublets'
             url: labs/doublets.html
-        - 'HW 5: Strings'
+        - link:
+            text: 'HW 5: Strings'
+            url: homework/modules/codingbat-string-loop.html
     Projects: 'Project 1 Due'
   - Date: 2025-10-03
     Topic: Strings and Loops
