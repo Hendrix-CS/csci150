@@ -187,6 +187,8 @@ entries:
       - kaggle: https://www.kaggle.com/code/byorgey/9-29-25-strings
   - Date: 2025-10-01
     Topic: Strings and Loops
+     9am:
+      - python: lectures/F25/Seme/2025-10-01-String-and-Loops.py
     Assignments:
       rows:
         - link:
