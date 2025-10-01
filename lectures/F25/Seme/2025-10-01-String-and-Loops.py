@@ -27,6 +27,7 @@ def string_counter(s: str, char: str) -> int:
         if s[i] == char:
             count += 1
         i += 1
+
     return count
 
 ## Typical loop structure:
@@ -41,7 +42,29 @@ def string_counter(s: str, char: str) -> int:
 # return accum
 
 def string_find(s: str, char: str) -> int:
-    1
+    i = 0
+    while i < len(s):
+        if s[i] == char:
+            return i
+
+        i += 1
+
+    return -1
+
+def find_last(s: str, char: str) ->int: # should return *last* occurrence, or -1
+    ind = -1
+
+    i = 0
+    while i < len(s):
+        if s[i] == char:
+            ind = i
+
+        i += 1
+
+    return ind
+
+
+
 
 
 # Unfortunately, there is no way to change a string 'in place'
@@ -65,7 +88,19 @@ def string_replace(s: str, old: str, new: str) -> str:
 
 
 def reverse(s: str) -> str:
-    1
+    rev = ''
+
+    i = 0
+    while i < len(s):
+        rev = s[i] + rev
+
+        i += 1
+
+
+    return rev
+
+
+
 
 # Write is_inorder(s: str) -- will take in a lower case word
 # and return True if the characters all appear in alphabetical order
@@ -78,16 +113,32 @@ def reverse(s: str) -> str:
 
 def is_inorder(s: str) -> bool:
 
-
-
-
     i = 0
     while i < len(s) - 1:
-        # check two character -- return False if not in order
-        if s[i] > s[i+1]:
+        if s[i] > s[i + 1]:
+
             return False
+
         i += 1
 
     return True
 
-
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+    # i = 0
+    # while i < len(s) - 1:
+    #     # check two character -- return False if not in order
+    #     if s[i] > s[i+1]:
+    #         return False
+    #     i += 1
+    #
+    # return True
+    #
+    #
