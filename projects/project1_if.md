@@ -30,21 +30,21 @@ is colored as blue.
 
 #### Transcript 1
     Welcome to the baby helper. Answer "yes" or "no" to each question.
-    Is your baby sleeping? <span>no</span>
-    Is she crying? <span>no</span>
+    Is your baby sleeping? no
+    Is she crying? no
     Great, leave her alone.
 
 #### Transcript 2
     Welcome to the baby helper. Answer "yes" or "no" to each question.
-    Is your baby sleeping? <span>no</span>
-    Is she crying? <span>yes</span>
-    Does she need a diaper change? <span>yes</span>
-    Is the diaper merely wet? <span>no</span>
+    Is your baby sleeping? no
+    Is she crying? yes
+    Does she need a diaper change? yes
+    Is the diaper merely wet? no
     Take off the dirty diaper and throw it out.
     Clean her thoroughly and put on a clean diaper.
-    Is the diaper bin full? <span>no</span>
-    Is she cold? <span>no</span>
-    Is she still crying? <span>yes</span>
+    Is the diaper bin full? no
+    Is she cold? no
+    Is she still crying? yes
     She must be hungry. Feed her a bottle.
     At this point, she should be okay. If not, I am at a loss...
 
