@@ -203,6 +203,8 @@ entries:
     Projects: 'Project 1 Due'
   - Date: 2025-10-03
     Topic: Strings and Loops
+    9am:
+      - python: lectures/F25/Seme/2025-10-03-More-Strings-and-Loops.py
     Assignments: 'Quiz 4: While Loops'
 
   ##################################################
