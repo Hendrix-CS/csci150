@@ -1209,33 +1209,24 @@ We know about strings, but we can't actually do anything with them yet.
 
 \item \verb|*| does repetition.
 
-\item Strings have \emph{methods}, i.e. functions you can call on
-  strings.  Do \verb|help(str)|, \verb|help(str.upper)| etc.
-
-\item Point out some useful methods: \verb|upper|, \verb|count|,
-  \verb|replace|, \verb|find|, \verb|isdigit|
-
 \end{itemize}
 
-(If time, do more examples from Friday.)
 
 \newpage
-\class{\notready More string \& loop practice; sentinel loops}
+\class{\ready More string \& loop practice}
 
 \subsection*{Setup}
 \begin{itemize}
-\item Remember to leave time for quiz!
+\item Hand back quizzes.
+\item Homework, due Monday.
+\item Project 1 due today.  Reminder re: extensions.
 \end{itemize}
-
-Today's focus is on getting the students to do more hands-on exercises
-writing code using strings and loops, and to introduce the concept of
-a sentinel loop.
 
 \subsection*{While loop and string practice}
 
-First, write a function to ``explode'' a string, \emph{i.e.} print out
-each character on its own line.  Have the students write it together
-and then type it up collaboratively.
+Warmup/review: write a function to ``explode'' a string,
+\emph{i.e.} print out each character on its own line.  Have the
+students write it together and then type it up collaboratively.
 
 \begin{verbatim}
 def explode(s: str):
@@ -1247,6 +1238,37 @@ def explode(s: str):
 
 Even better if they make some bugs in the above, run it and see what
 is wrong.
+
+One more thing about strings:
+
+\begin{itemize}
+\item Strings have \emph{methods}, i.e. functions you can call on
+  strings.  Do \verb|help(str)|, \verb|help(str.upper)| etc.
+
+\item Point out some useful methods: \verb|upper|, \verb|count|,
+  \verb|replace|, \verb|find|, \verb|isdigit|
+\end{itemize}
+
+Now write this function:
+
+\begin{verbatim}
+# returns True if they say yes and False for no
+# can deal with YES, yes, y, Y  vs NO, no n, N
+# and otherwise reasks
+def yes_or_no() -> bool:
+    success = False
+
+    while not success:
+        ans = input('Please enter yes or no: ')
+
+        if ans.lower() == 'y' or ans.lower() == 'yes':   # yes
+            return True
+        elif ans.lower() == 'n' or ans.lower() == 'no':   # yes
+            return False
+
+        else:
+            print('Please just enter yes or no. ')
+\end{verbatim}
 
 Next, recall \verb|int_input| function from a previous lab: it
 repeatedly prompts the user for a number until they actually enter a
@@ -1299,7 +1321,7 @@ def int_input(prompt: str) -> int:
     valid: bool = False
     while not valid:
         user_input: str = input(prompt)
-        if (user_input[0] == '-' and user_input[1:].isdigit()):
+        if (len(user_input) > 0 and user_input[0] == '-' and user_input[1:].isdigit()):
             valid = True
         elif user_input.isdigit():
             valid = True
@@ -1308,12 +1330,6 @@ def int_input(prompt: str) -> int:
 
     return int(user_input)
 \end{verbatim}
-
-% \subsection*{DNA HW intro}
-
-% Show them HW, do a bit of it together to show them what they should
-% do.  Make sure they understand that they should do everything in a
-% notebook.
 
 \subsection*{More string and loop practice}
 
@@ -1430,157 +1446,95 @@ def triangle(n: int):
 \end{reflect}
 
 \newpage
-\class{\notready Generative AI}
-
-\subsection*{Setup}
+\class{\notready More Strings and Loops}
 
 \begin{itemize}
-\item Remember to leave time for quiz(zes)!
+\item Start with anti-AI slide
+\item Remember to leave time for quiz!
 \end{itemize}
 
-\subsection*{Discussion notes}
+Often, we want to ``walk across'' a string, inspecting each character
+one at a time.  We can use a while loop:
 
-\begin{itemize}
-  \item Generative AI systems
-\begin{itemize}
-  \item
-    ChatGPT (Open AI), Bard (Google), GrammarlyGO, GitHub Copilot
-  \item
-    DALL.E, Stable Diffusion, Midjourney
-  \end{itemize}
-\item
-  How many have tried one?
-\item
-  How do they work?
+\begin{verbatim}
+# General Structure:
+#
+# i = 0
+# while i < len(string):
+#   do whatever to your string
+#   i += 1
 
-  \begin{itemize}
+def string_find(s: str, char: str) -> int:
+    i = 0
+    while i < len(s):
+        if s[i] == char:
+            return i
 
-  \item
-    Fundamentally they are just computer programs running a function:
-    prompt -\textgreater{} response.
-  \item
-    Interesting difference is that they are \textbf{trained}, not
-    written directly with a bunch of Python code.
+        i += 1
 
-    \begin{itemize}
+    return -1
 
-    \item
-      Give it a ton of examples, e.g.~text or images from the Internet.
-    \item
-      ``Learns'' what examples have in common.
+## Typical loop structure:
 
-      \begin{itemize}
+# accum = starting value
+# i = 0
+# while i < len(s):
+#     do things to s/accum as appropriate
+#
+#     i += 1
+#
+# return accum
 
-      \item
-        Training takes a lot of input data and a lot of computational
-        effort. You have to have a ton of computers etc, i.e.~be a big
-        company.
-      \end{itemize}
-    \item
-      Basic version (we've had this for a while): can then
-      \textbf{predict} which new inputs are similar to training data.
+def string_counter(s: str, char: str) -> int:
+    count = 0
+    i = 0
+    while i < len(s):
+        if s[i] == char:
+            count += 1
+        i += 1
 
-      \begin{itemize}
+    return count
 
-      \item
-        Example: Heart Disease lab. Function at the end was generated
-        automatically by looking at data and learning what diseased
-        patients had in common.
-      \end{itemize}
-    \item
-      Advanced version (last few years): can \textbf{generate} new
-      things that are similar.
+# should return *last* occurrence, or -1
+def find_last(s: str, char: str) ->int:
+    ind = -1
 
-      \begin{itemize}
+    i = 0
+    while i < len(s):
+        if s[i] == char:
+            ind = i
 
-      \item
-        Note once the training is done, not as much work to run it in
-        generation mode, mid-sized models can be run on a desktop
-      \end{itemize}
-    \end{itemize}
-  \end{itemize}
-\item
-  What are they good at / not good at?
+        i += 1
 
-  \begin{itemize}
+    return ind
 
-  \item
-    Good at coming up with things that sound / look good
-  \item
-    Have no idea of what is true/false
-  \item
-    Have all the same bias as the training data that went into it.
-  \item
-    Not good at learning new things incrementally
-  \end{itemize}
-\item
-  Try out some examples with ChatGPT.
+# Unfortunately, there is no way to change a string 'in place'
+# If you want to return a manipulated value of a string
+# you must build the whole string from scratch
+def string_replace(s: str, old: str, new: str) -> str:
+    new_str = ''
+    i = 0
+    while i < len(s):
+        if s[i] == old:
+            new_str = new_str + new
+        else:
+            new_str = new_str + s[i]
 
-  \begin{itemize}
+        i += 1
 
-  \item
-    See how we can get it to say something false.
-  \item
-    Try writing some Python code.
-  \end{itemize}
-\item
-  Why bother learning computer programming if you can just tell the
-  computer what you want in English?
+    return new_str
 
-  \begin{itemize}
+def reverse(s: str) -> str:
+    rev = ''
 
-  \item
-    The generated code isn't always correct! You need to understand + be
-    able to review it.
-  \item
-    It ultimately can only do kind of simple, small things, not build
-    big systems. Someone needs to put them together.
-  \end{itemize}
-\item
-  Academic Integrity?
+    i = 0
+    while i < len(s):
+        rev = s[i] + rev
 
-  \begin{itemize}
+        i += 1
 
-  \item
-    Goal: learning!
-  \item
-    Make sure you're clear with faculty on what is allowed.
-  \item
-    Make sure to cite if you used Grammarly, ChatGPT, etc.
-  \item
-    This class: code must be your own.
-
-    \begin{itemize}
-
-    \item
-      Tempting to get code from web searches, now generative AI.
-    \item
-      Don't use these, but if you do, at least cite them.
-    \end{itemize}
-  \end{itemize}
-\item
-  How will these affect society? (discussion)
-
-  \begin{itemize}
-
-  \item
-    Partly depends on choices you make!
-  \item
-    Big companies want you to use them etc.
-  \end{itemize}
-\item More random thoughts dump, need to incorporate above
-  \begin{itemize}
-  \item Big companies have poured literally billions of dollars into
-    this, but no one seems to want it.
-  \item Microsoft has been quietly backing out of plans to build data
-    centers.
-  \item Common argument: in the future employers will want this so you
-    need to learn it.  False!  If everyone is using generative AI the
-    people who have a really valuable skill will be the ones who can
-    do stuff \emph{without} using generative AI!  e.g. Anthropic forbids
-    people from using generative AI in their applications.
-  \end{itemize}
-\end{itemize}
+    return rev
+\end{verbatim}
 
 \newpage
 \class{\notready Lists I}
@@ -4064,5 +4018,160 @@ def normalize(counts: dict[str, int]) -> dict[str, float]:
 
     return freqs
 \end{verbatim}
+
+
+\newpage
+\class{\notready Generative AI}
+
+\subsection*{Setup}
+
+\begin{itemize}
+\item Remember to leave time for quiz(zes)!
+\end{itemize}
+
+\subsection*{Discussion notes}
+
+\begin{itemize}
+  \item Generative AI systems
+\begin{itemize}
+  \item
+    ChatGPT (Open AI), Bard (Google), GrammarlyGO, GitHub Copilot
+  \item
+    DALL.E, Stable Diffusion, Midjourney
+  \end{itemize}
+\item
+  How many have tried one?
+\item
+  How do they work?
+
+  \begin{itemize}
+
+  \item
+    Fundamentally they are just computer programs running a function:
+    prompt -\textgreater{} response.
+  \item
+    Interesting difference is that they are \textbf{trained}, not
+    written directly with a bunch of Python code.
+
+    \begin{itemize}
+
+    \item
+      Give it a ton of examples, e.g.~text or images from the Internet.
+    \item
+      ``Learns'' what examples have in common.
+
+      \begin{itemize}
+
+      \item
+        Training takes a lot of input data and a lot of computational
+        effort. You have to have a ton of computers etc, i.e.~be a big
+        company.
+      \end{itemize}
+    \item
+      Basic version (we've had this for a while): can then
+      \textbf{predict} which new inputs are similar to training data.
+
+      \begin{itemize}
+
+      \item
+        Example: Heart Disease lab. Function at the end was generated
+        automatically by looking at data and learning what diseased
+        patients had in common.
+      \end{itemize}
+    \item
+      Advanced version (last few years): can \textbf{generate} new
+      things that are similar.
+
+      \begin{itemize}
+
+      \item
+        Note once the training is done, not as much work to run it in
+        generation mode, mid-sized models can be run on a desktop
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  What are they good at / not good at?
+
+  \begin{itemize}
+
+  \item
+    Good at coming up with things that sound / look good
+  \item
+    Have no idea of what is true/false
+  \item
+    Have all the same bias as the training data that went into it.
+  \item
+    Not good at learning new things incrementally
+  \end{itemize}
+\item
+  Try out some examples with ChatGPT.
+
+  \begin{itemize}
+
+  \item
+    See how we can get it to say something false.
+  \item
+    Try writing some Python code.
+  \end{itemize}
+\item
+  Why bother learning computer programming if you can just tell the
+  computer what you want in English?
+
+  \begin{itemize}
+
+  \item
+    The generated code isn't always correct! You need to understand + be
+    able to review it.
+  \item
+    It ultimately can only do kind of simple, small things, not build
+    big systems. Someone needs to put them together.
+  \end{itemize}
+\item
+  Academic Integrity?
+
+  \begin{itemize}
+
+  \item
+    Goal: learning!
+  \item
+    Make sure you're clear with faculty on what is allowed.
+  \item
+    Make sure to cite if you used Grammarly, ChatGPT, etc.
+  \item
+    This class: code must be your own.
+
+    \begin{itemize}
+
+    \item
+      Tempting to get code from web searches, now generative AI.
+    \item
+      Don't use these, but if you do, at least cite them.
+    \end{itemize}
+  \end{itemize}
+\item
+  How will these affect society? (discussion)
+
+  \begin{itemize}
+
+  \item
+    Partly depends on choices you make!
+  \item
+    Big companies want you to use them etc.
+  \end{itemize}
+\item More random thoughts dump, need to incorporate above
+  \begin{itemize}
+  \item Big companies have poured literally billions of dollars into
+    this, but no one seems to want it.
+  \item Microsoft has been quietly backing out of plans to build data
+    centers.
+  \item Common argument: in the future employers will want this so you
+    need to learn it.  False!  If everyone is using generative AI the
+    people who have a really valuable skill will be the ones who can
+    do stuff \emph{without} using generative AI!  e.g. Anthropic forbids
+    people from using generative AI in their applications.
+  \end{itemize}
+\end{itemize}
+
 
 \end{document}
