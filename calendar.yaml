@@ -217,6 +217,9 @@ entries:
     Topic: Lists
     9am:
       - python: lectures/F25/Seme/2025-10-06-Lists.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F106%20Lists%2D20251006%5F111022%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/lists.py
   - Date: 2025-10-08
     Topic: List processing examples
     Assignments:
