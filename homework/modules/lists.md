@@ -34,12 +34,16 @@ For each of the following excercises:
 
 Suppose that `lst = [5, 7, 10, 2, 3]`.
 
-Find the vlaue of each expression:
+Find the value of each expression:
 
 1. `lst[2]`
+   
 2. `lst[2:4]`
+   
 3. `lst[:3]`
+ 
 4. `len(lst)`
+ 
 5. Consider the following code.  What is printed by the final line,
    `print(mklist(5))`?
 
