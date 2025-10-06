@@ -215,6 +215,8 @@ entries:
   - Date: 2025-10-06
     Module: '6: Lists'
     Topic: Lists
+    9am:
+      - python: lectures/F25/Seme/2025-10-06-Lists.py
   - Date: 2025-10-08
     Topic: List processing examples
     Assignments:
