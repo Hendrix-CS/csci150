@@ -2,7 +2,7 @@
 layout: work
 type: Lab
 num: 6
-worktitle: ToDo Manager
+worktitle: To Do Manager
 ---
 
 ## Overview
@@ -119,8 +119,9 @@ the lab:
 
 ## Step 1: Bits and Pieces
 
-Create a new Python file called `todo_manager.py`, and put
-your name and date at the top.
+Create a new project in PyCharm (named `Lab6` or `Todo manager` or
+something appropriate).  Within the project, create a new Python file
+called `todo_manager.py`.
 
 Now follow the instructions below to write some functions you will
 need.
@@ -143,12 +144,12 @@ You can also test your function like this:
 	yellow
 	blue
 
-**Hint**: you should not need a `while` loop!  It is possible to
+{% include warning.html content="You should not need a `while` loop!  It is possible to
 implement this function in only one line of code.  Look at your notes
-from class!
+from class!" %}
 
-**Hint**: make sure this function `return`s the result; it should not
-`print` anything!
+{% include warning.html content="Make sure this function `return`s the result; it should not
+`print` anything!" %}
 
 #### 1.2 Print Numbered List
 
