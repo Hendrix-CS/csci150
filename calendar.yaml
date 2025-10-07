@@ -225,7 +225,9 @@ entries:
     Assignments:
       rows:
         - 'Lab 6: To Do Manager'
-        - 'HW 6: Lists'
+        - link:
+            text: 'HW 6: Lists'
+            url: homework/modules/lists.html
   - Date: 2025-10-10
     Topic: Function abstraction
     Assignments: 'Quiz 5: Strings'
