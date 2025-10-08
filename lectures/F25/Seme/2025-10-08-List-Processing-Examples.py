@@ -5,38 +5,81 @@
 
 
 # Reminder from last time
-# join() -- the opposite of split:  str.join(list) will return a string with a the value of str between each entry
+# join() -- the opposite of split:  str.join(list) will return a string with the value of str between each entry
 # only works if the original list is made up of string entries
-
-print(';'.join(['Hi','there','how','are','you?']))
 #
-lst = ['dog','log','lot','tot']
-print('->'.join(lst))
-
-# The newline character   \n
-print('\n'.join(lst))
-
+# print(';'.join(['Hi','there','how','are','you?']))
+# #
+# lst = ['dog','log','lot','tot']
+# print('->'.join(lst))
+# #
+# # # The newline character   \n
+# # s = '\n'
+# # print(len(s))
+# #
+# # print('Hello, how are \n you today?')
+#
+#
+# print('\n'.join(lst))
+#'dog\nlog\nlot\ntot\n'
 # List processing:
 
 # given a list of integers, return their sum
 def list_sum(lst: list[int]) -> int:
+    s = 0
     i = 0
-    our_sum = 0
     while i < len(lst):
-        our_sum += lst[i]
+        s += lst[i]
         i += 1
-    return our_sum
+
+    return s
 
 
 # given a list of integers, return their product
 def list_prod(lst: list[int]) -> int:
-    1
+    p = 1
+    i = 0
+    while i < len(lst):
+        p *= lst[i]
+        i += 1
+
+    return p
+
+
+
+
 
 
 # given a list of integers, lst, and a single integer n,
 # count how many integers in lst are smaller than n
 def small_count(lst: list[int], n: int) -> int:
-    1
+    c = 0
+
+    i = 0
+    while i < len(lst):
+        if lst[i] < n:
+            c += 1
+        i += 1
+
+    return c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -46,7 +89,14 @@ def small_count(lst: list[int], n: int) -> int:
 new_list = ['apples','bananas','pears','oranges','tangerines']
 
 def count_occur(lst: list[str], s: str) -> int:
-    1
+    c = 0
+    i = 0
+    while i < len(lst):
+        if s in lst[i]:
+            c += 1
+        i += 1
+
+    return c
 
 
 
@@ -55,7 +105,16 @@ def count_occur(lst: list[str], s: str) -> int:
 # return True if the list is in alphabetical order
 
 def alpha_order(lst: list[str]) -> bool:
-    1
+
+    i = 0
+    while i < len(lst) - 1:
+        if lst[i] > lst[i + 1]:
+            return False
+
+        i += 1
+
+    return True
+
 
 
 
@@ -73,6 +132,13 @@ def alpha_order(lst: list[str]) -> bool:
 
 # given a list of integers, return a new list which each element tripled
 def triple_list(lst: list[int]) -> list[int]:
-    1
+    new_list = []
+    i = 0
+    while i < len(lst):
+        new_list.append(lst[i] * 3)
+
+        i += 1
+
+    return new_list
 
 
