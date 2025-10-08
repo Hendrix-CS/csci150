@@ -230,6 +230,11 @@ entries:
         - link:
             text: 'HW 6: Lists'
             url: homework/modules/lists.html
+    9am:
+      - python: lectures/F25/Seme/2025-10-08-List-Processing-Examples.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F108%20more%20lists%2D20251008%5F111039%2DMeeting%20Recording%2Emp4
+      - kaggle: https://www.kaggle.com/code/byorgey/10-8-more-lists
   - Date: 2025-10-10
     Topic: Function abstraction
     Assignments: 'Quiz 5: Strings'
