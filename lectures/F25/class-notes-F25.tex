@@ -1537,7 +1537,7 @@ def reverse(s: str) -> str:
 \end{verbatim}
 
 \newpage
-\class{\notready Lists I}
+\class{\ready Lists I}
 
 \subsection*{Lists}
 
@@ -1581,95 +1581,10 @@ type. However, notice that if we ask for the \verb|type| of a list
 Python only says \verb|list|.  We can also specify the type of the
 elements by writing \verb|list[...]|.
 
-\begin{verbatim}
-def sum_list(nums: list[int]) -> int:
-\end{verbatim}
-
 Now have them implement the \verb|sum_list| function.
 
-Next, have them implement this:
 \begin{verbatim}
-# Repeatedly prompt the user for an input until they type 'quit'.
-# Then return the list of all the inputs the user gave (not including
-# the word 'quit').
-def read_inputs() -> list[str]:
-\end{verbatim}
-
-Might be some difficulty with including a stray empty string at the
-beginning, or including the word \verb|"quit"|.  Use this as another
-opportunity to emphasize the use of sentinel loops.
-
-\begin{reflect}{Brent, S'17}
-  First I had them try to write \verb|explode_list| with partners,
-  then we wrote it all together.  Then, I had them work on
-  \verb|read_inputs|, then got a volunteer to come up and type while
-  the class told them what to do.  This worked super well!
-\end{reflect}
-
-\begin{reflect}{Brent, F'19}
-  I left this out since I just had them write \verb|explode_string|
-  recently.
-\end{reflect}
-
-\begin{verbatim}
-# Input: items (list)
-# Print the items in the list, one per line.
-def explode_list(items: list[str]):
-    n = 0
-    while n < len(items):
-        print(items[n])
-        n += 1
-\end{verbatim}
-
-\begin{reflect}{Brent S'16}
-  This is the version from S'16, using a sentinel loop:
-\end{reflect}
-
-\begin{verbatim}
-# Inputs: none
-# Output: a list of strings entered by the user
-#
-# Repeatedly prompt user for inputs until they type
-# 'quit', then return a list of all inputs.
-def read_inputs():
-    inputs = []
-    done = False
-    while not done:
-        word = input('Enter another input, or quit: ')
-        if word.lower() == 'quit':
-            done = True
-        else:
-            inputs.append(word)
-
-    return inputs
-\end{verbatim}
-
-\begin{reflect}{Brent, S'17}
-  And these are the versions from S'17.  Note they don't use sentinel
-  loops.
-\end{reflect}
-\begin{verbatim}
-# Inputs: none
-# Output: list of strings entered by the user
-#
-# Repeatedly prompt the user for inputs until
-# they type 'quit', then return a list of all their inputs.
-def read_inputs():
-    answer = input("What would you like to list? ")
-    stuff = []
-    while answer != "quit":
-        stuff.append(answer)
-        answer = input("What would you like to list? ")
-    return stuff
-
-def read_inputs2():
-    answer = ''
-    stuff = []
-    while answer != "quit":
-        answer = input("What would you like to list? ")
-        if answer != 'quit':
-            stuff.append(answer)
-    return stuff
+def sum_list(nums: list[int]) -> int:
 \end{verbatim}
 
 \newpage
@@ -1677,11 +1592,11 @@ def read_inputs2():
 
 \subsection*{Setup}
 
-Show them \verb|read_inputs| function.
-
-\subsection*{Repetition}
-
-Show them \verb|*| operator on lists (and strings?).
+\begin{itemize}
+\item New HW posted.
+\item Quiz Friday on strings.
+\item Mention my research talk on Thursday!
+\end{itemize}
 
 \subsection*{Element testing}
 
@@ -1725,6 +1640,41 @@ not actually the same.
   \verb|''.join(...)| is the inverse of \verb|list(...)|; for example,
   \[ \verb|''.join(list('banana')) == 'banana'|. \]
 \end{itemize}
+
+Next, have them implement this:
+\begin{verbatim}
+# Repeatedly prompt the user for an input until they type 'quit'.
+# Then return the list of all the inputs the user gave (not including
+# the word 'quit').
+def read_inputs() -> list[str]:
+\end{verbatim}
+
+Might be some difficulty with including a stray empty string at the
+beginning, or including the word \verb|"quit"|.  Use this as another
+opportunity to emphasize the use of sentinel loops.
+
+\begin{reflect}{Brent S'16}
+  This is the version from S'16, using a sentinel loop:
+\end{reflect}
+
+\begin{verbatim}
+# Inputs: none
+# Output: a list of strings entered by the user
+#
+# Repeatedly prompt user for inputs until they type
+# 'quit', then return a list of all inputs.
+def read_inputs():
+    inputs = []
+    done = False
+    while not done:
+        word = input('Enter another input, or quit: ')
+        if word.lower() == 'quit':
+            done = True
+        else:
+            inputs.append(word)
+
+    return inputs
+\end{verbatim}
 
 \subsection*{List appending practice}
 
@@ -1824,15 +1774,6 @@ Have them work in groups (randomly assigned?) to write some list
 practice functions.  Pick some of the following.
 
 \begin{verbatim}
-# Find the sum of a list of integers.
-def listsum(nums: list[int]) -> int:
-    i = 0
-    s = 0
-    while i < len(nums):
-        s += nums[i]
-        i += 1
-    return s
-
 # Find the product of a list of integers.
 def listprod(nums: list[int]) -> int:
     i = 0
