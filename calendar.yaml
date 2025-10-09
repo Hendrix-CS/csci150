@@ -237,6 +237,8 @@ entries:
       - kaggle: https://www.kaggle.com/code/byorgey/10-8-more-lists
   - Date: 2025-10-10
     Topic: Function abstraction
+    9am:
+      - python: lectures/F25/Seme/2025-10-10-Function-Abstraction.py
     Assignments: 'Quiz 5: Strings'
 
   ##################################################
