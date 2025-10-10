@@ -47,43 +47,45 @@ import random
 
 #############################################################
 #############################################################
-# Example # NOT YET MODULARIZED
+# Example # At the bottom of this file is the original code
+# as it stood before class.  We mostly modularized in class
+# Additional things I did after class will be marked in comments
 #
 import random
 
-print("Welcome to Roulette, the simplest Casino Table Game!")
-print()
-print("You will start with a stake of $100.")
-print("You can place any size bet -- whole dollar amounts -- up to your stake.")
-print("There are 38 possible slots -- the numbers 1 - 36, and 0, and 00.")
-print()
-print("Note that 0 and 00 are not considered even!")
-print()
-print()
-print("You can bet on any of the following:")
-print()
-print("1. Evens (pays 1:1)")
-print("2. Odds (pays 1:1)")
-print("3. 1st 12 (pays 2:1)")
-print("4. 2nd 12 (pays 2:1)")
-print("5. 3rd 12 (pays 2:1)")
-print("6. Quit")
-print()
-print()
-input('Press "Enter" to start')
 
-stake = 100
+def print_rules(stake: int):
+    print("Welcome to Roulette, the simplest Casino Table Game!")
+    print()
+    print(f"You will start with a stake of ${stake}.")
+    print("You can place any size bet -- whole dollar amounts -- up to your stake.")
+    print("There are 38 possible slots -- the numbers 1 - 36, and 0, and 00.")
+    print()
+    print("Note that 0 and 00 are not considered even!")
+    print()
+    print()
+    print("You can bet on any of the following:")
+    print()
+    print("1. Evens (pays 1:1)")  # Though I'm not going to, you could imagine even pulling this out into a list of options
+    print("2. Odds (pays 1:1)")
+    print("3. 1st 12 (pays 2:1)")
+    print("4. 2nd 12 (pays 2:1)")
+    print("5. 3rd 12 (pays 2:1)")
+    print("6. Quit")
+    print()
+    print()
+    input('Press "Enter" to start')  # This is here just to 'pause' the code execution so the user can read the rules
 
-cont = True
-while cont:
+
+def choice_input(stake: int) -> int:
     print(f'Your current stake is ${stake}.')
     succ = False
     while not succ:
-        choice = input('What type of bet would you like to make? (1-6): ')
-        if choice.isdigit() and 1 <= int(choice) <= 6:
+        choice_str = input('What type of bet would you like to make? (1-6): ')
+        if choice_str.isdigit() and 1 <= int(choice_str) <= 6:
             succ = True
-            choice = int(choice)
-        else:
+            choice = int(choice_str)
+        else:  # if we modularized the option list above, we could reuse that --that would help avoid any inconsistencies
             print("You can bet on any of the following:")
             print("1. Evens (pays 1:1)")
             print("2. Odds (pays 1:1)")
@@ -91,83 +93,233 @@ while cont:
             print("4. 2nd 12 (pays 2:1)")
             print("5. 3rd 12 (pays 2:1)")
             print("6. Quit")
+    return choice
 
 
-    if choice < 6:
-
-        succ = False
-        while not succ:
-            bet = input(f'Your stake is ${stake}. How much do you want to bet? ')
-            if bet.isdigit() and 1 <= int(bet) <= stake:
-                succ = True
-                bet = int(bet)
-            else:
-                print(f"Please bet in whole dollar amounts, between 1 and {stake}.")
-
-        roll = random.randint(0,37)
-        roll_str = str(roll)
-        if roll_str == "37":
-            roll_str = "00"
-
-        print(f'A {roll_str} was rolled.')
-        if choice == 1:
-            if roll > 0 and roll % 2 == 0:
-                win = True
-                print("You win!")
-                stake = stake + bet
-            else:
-                win = False
-                print("You lose!")
-                stake = stake - bet
-
-        elif choice == 2:
-            if roll < 37 and roll % 2 == 1:
-                win = True
-                print("You win!")
-
-                stake = stake + bet
-            else:
-                win = False
-                print("You lose!")
-                stake = stake - bet
-
-        elif choice == 3:
-            if 1 <= roll <= 12:
-                win = True
-                print("You win!")
-                stake = stake + 2 * bet
-            else:
-                win = False
-                print("You lose!")
-                stake = stake - bet
-
-        elif choice == 4:
-            if 13 <= roll <= 24:
-                win = True
-                print("You win!")
-                stake = stake + 2 * bet
-            else:
-                win = False
-                print("You lose!")
-                stake = stake - bet
-
-        elif choice == 5:
-            if 25 <= roll <= 36:
-                win = True
-                print("You win!")
-                stake = stake + 2 * bet
-            else:
-                win = False
-                print("You lose!")
-                stake = stake - bet
+def bet_input(stake: int) -> int:
+    succ = False
+    while not succ:
+        bet_str = input(f'Your stake is ${stake}. How much do you want to bet? ')
+        if bet_str.isdigit() and 1 <= int(bet_str) <= stake:
+            succ = True
+            bet = int(bet_str)
+        else:
+            print(f"Please bet in whole dollar amounts, between 1 and {stake}.")
+    return bet
 
 
+def pretty_roll(roll: int) -> str:
+    roll_str = str(roll)
+    if roll_str == "37":
+        roll_str = "00"
 
-        if stake <= 0:
-            print("You have run out of money!")
-            cont = False
+    print(f'A {roll_str} was rolled.')
+    return roll_str
+
+
+def even_odd(choice, bet, roll) -> int: # this takes care of the two 1:1 payout options
+    win = False
+    if choice == 1 and (roll > 1 and roll % 2 == 0):
+        win = True
+    elif choice == 2 and (roll < 37 and roll % 2 == 1):
+        win = True
+
+    if win:
+        print('You win!')
+        return bet
     else:
-        print("Thank you for playing!")
-        cont = False
+        print('You lose...')
+        return -bet
 
-print(f"You finished with a total of ${stake}.")
+
+def twelves(choice, bet, roll) -> int: # and the three 2:1 options
+    win = False
+    if choice == 3 and (1 <= roll <= 12):
+        win = True
+    elif choice == 4 and (13 <= roll <= 24):
+        win = True
+    elif choice == 5 and (25 <= roll <= 36):
+        win = True
+
+    if win:
+        print('You win!')
+        return 2 * bet   # since these pay 2:1
+    else:
+        print('You lose...')
+        return -bet
+
+
+# You could imagine adding some of the other common bets -- single number, pair of numbers, etc
+
+def bet_outcome(choice, bet, roll) -> int: #this allows us to expand later if we do add other options
+    if choice <= 2:
+        return even_odd(choice, bet, roll)
+    elif choice <= 5:
+        return twelves(choice, bet, roll)
+
+
+def go_bust(stake) -> bool:  # have you run out of money?
+    if stake <= 0:
+        print('You have lost all of your money!')
+        return False
+    else:
+        return True
+
+
+def play_game(stake: int) -> int:
+    cont = True
+
+    while cont:
+
+        choice = choice_input(stake)
+        if choice == 6:
+            print("Thank you for playing!")
+            cont = False
+
+        else:
+            bet = bet_input(stake)
+            roll = random.randint(0,37)
+            roll_str = pretty_roll(roll)
+
+            #### HERE IS WHERE I ADDED NEW THINGS to this function
+            stake += bet_outcome(choice, bet, roll)
+
+            cont = go_bust(stake)
+
+    return stake
+
+
+def main():
+    stake = 100
+    print_rules(stake)
+
+    stake = play_game(stake)
+
+    print(f"You finished with a total of ${stake}.")
+
+
+main()
+
+#
+# ORIGINAL CODE BEFORE MODULARIZATION
+#
+# print("Welcome to Roulette, the simplest Casino Table Game!")
+# print()
+# print("You will start with a stake of $100.")
+# print("You can place any size bet -- whole dollar amounts -- up to your stake.")
+# print("There are 38 possible slots -- the numbers 1 - 36, and 0, and 00.")
+# print()
+# print("Note that 0 and 00 are not considered even!")
+# print()
+# print()
+# print("You can bet on any of the following:")
+# print()
+# print("1. Evens (pays 1:1)")
+# print("2. Odds (pays 1:1)")
+# print("3. 1st 12 (pays 2:1)")
+# print("4. 2nd 12 (pays 2:1)")
+# print("5. 3rd 12 (pays 2:1)")
+# print("6. Quit")
+# print()
+# print()
+# input('Press "Enter" to start')
+#
+# stake = 100
+#
+# cont = True
+# while cont:
+#     print(f'Your current stake is ${stake}.')
+#     succ = False
+#     while not succ:
+#         choice = input('What type of bet would you like to make? (1-6): ')
+#         if choice.isdigit() and 1 <= int(choice) <= 6:
+#             succ = True
+#             choice = int(choice)
+#         else:
+#             print("You can bet on any of the following:")
+#             print("1. Evens (pays 1:1)")
+#             print("2. Odds (pays 1:1)")
+#             print("3. 1st 12 (pays 2:1)")
+#             print("4. 2nd 12 (pays 2:1)")
+#             print("5. 3rd 12 (pays 2:1)")
+#             print("6. Quit")
+#
+#
+#     if choice < 6:
+#
+#         succ = False
+#         while not succ:
+#             bet = input(f'Your stake is ${stake}. How much do you want to bet? ')
+#             if bet.isdigit() and 1 <= int(bet) <= stake:
+#                 succ = True
+#                 bet = int(bet)
+#             else:
+#                 print(f"Please bet in whole dollar amounts, between 1 and {stake}.")
+#
+#         roll = random.randint(0,37)
+#         roll_str = str(roll)
+#         if roll_str == "37":
+#             roll_str = "00"
+#
+#         print(f'A {roll_str} was rolled.')
+#         if choice == 1:
+#             if roll > 0 and roll % 2 == 0:
+#                 win = True
+#                 print("You win!")
+#                 stake = stake + bet
+#             else:
+#                 win = False
+#                 print("You lose!")
+#                 stake = stake - bet
+#
+#         elif choice == 2:
+#             if roll < 37 and roll % 2 == 1:
+#                 win = True
+#                 print("You win!")
+#
+#                 stake = stake + bet
+#             else:
+#                 win = False
+#                 print("You lose!")
+#                 stake = stake - bet
+#
+#         elif choice == 3:
+#             if 1 <= roll <= 12:
+#                 win = True
+#                 print("You win!")
+#                 stake = stake + 2 * bet
+#             else:
+#                 win = False
+#                 print("You lose!")
+#                 stake = stake - bet
+#
+#         elif choice == 4:
+#             if 13 <= roll <= 24:
+#                 win = True
+#                 print("You win!")
+#                 stake = stake + 2 * bet
+#             else:
+#                 win = False
+#                 print("You lose!")
+#                 stake = stake - bet
+#
+#         elif choice == 5:
+#             if 25 <= roll <= 36:
+#                 win = True
+#                 print("You win!")
+#                 stake = stake + 2 * bet
+#             else:
+#                 win = False
+#                 print("You lose!")
+#                 stake = stake - bet
+#
+#
+#
+#         if stake <= 0:
+#             print("You have run out of money!")
+#             cont = False
+#     else:
+#         print("Thank you for playing!")
+#         cont = False
+#
+# print(f"You finished with a total of ${stake}.")
