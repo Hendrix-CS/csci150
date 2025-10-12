@@ -249,6 +249,10 @@ entries:
   - Date: 2025-10-13
     Module: '7: File I/O'
     Topic: File I/O
+    9am:
+      - python: lectures/F25/Seme/2025-10-13-File-IO.py
+      - text: lectures/F25/Seme/english3.txt
+      - text: lectures/F25/Seme/sample-text-file.txt
     Projects: 'Project 2 assigned'
   - Date: 2025-10-15
     Topic:
