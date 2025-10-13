@@ -2017,6 +2017,91 @@ def f3():
 \end{itemize}
 
 \newpage
+\class{\notready File I/O}
+
+\begin{itemize}
+\item Talk about changes to quizzes etc.  Wednesday: make-up quiz day
+\item Introduce project 2!
+\end{itemize}
+
+Our programs have no state between each time they are called.
+Everything is stored in memory (RAM) during the program, but
+afterwards, it's all gone.  We need hard drive storage to keep it
+around.  Talk a bit about difference between RAM and hard disk, why we
+need both.
+
+Data is stored on hard disk in \emph{files}.  We gave you code to
+read/write files for todo manager lab, but now we're going to learn
+how to do it.  You may find it useful on your word game project;
+you'll get more practice on next week's lab.
+
+Note a file is just a sequence of bits.  Use hexdump to show
+\texttt{english3.txt}.
+
+\subsection*{Reading from a file}
+
+To read from a file:
+
+\begin{verbatim}
+fin = open("myfile.txt", "r")
+\end{verbatim}
+
+Two ways to get stuff out of the file.
+
+\begin{verbatim}
+s = fin.read()
+\end{verbatim}
+
+which returns the entire file as one giant string, or
+
+\begin{verbatim}
+lines = fin.readlines()
+\end{verbatim}
+
+gets a \emph{list} of lines (still has newline characters included).
+To process lines, we can do something like
+\begin{verbatim}
+i = 0
+while i < len(lines):
+  line = lines[i].strip()   # Remove spaces/newlines from both ends
+  # Do something with line
+\end{verbatim}
+
+After both, say \verb|fin.close()| to finish accessing the file.
+
+Examples:
+\begin{itemize}
+\item Read in this python file as a string with \verb|read()|, look at
+  length etc.
+\item Read in \verb|english3.txt| using \verb|read()|, then using
+  \verb|readlines()|.  Make a wordlist, count the number of words that
+  don't contain the letter e.
+\item Read in ???, split lines separated by space?
+\end{itemize}
+
+\subsection*{Writing to a file}
+
+To write to a file:
+
+\begin{verbatim}
+fout = open("myfile.txt", "w")
+\end{verbatim}
+
+WARNING! This will overwrite the file if it exists!
+
+Then to save data in the file, write out as strings:
+
+\begin{verbatim}
+fout.write("hello")
+fout.write("world")
+fout.close()
+\end{verbatim}
+Note the need for newline characters.
+
+Example: define \verb|make_file| function which prompts the user for
+a list of strings, then writes them all to a file.
+
+\newpage
 \class{\notready For loops}
 
 \subsection*{Setup}
@@ -2357,85 +2442,6 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
   Much, much better this year, with more time spent on lists and for
   loops leading up to it!
 \end{reflect}
-
-\newpage
-\class{\notready File I/O}
-
-\begin{itemize}
-\item REMEMBER QUIZ
-\end{itemize}
-
-Our programs have no state between each time they are called.
-Everything is stored in memory (RAM) during the program, but
-afterwards, it's all gone.  We need hard drive storage to keep it
-around.  Talk a bit about difference between RAM and hard disk, why we
-need both.
-
-Data is stored on hard disk in \emph{files}.  We gave you code to
-read/write files for todo manager lab, but now we're going to learn
-how to do it.  You may find it useful on your word game project;
-you'll get more practice on next week's lab.
-
-Note a file is just a sequence of bits.  Use hexdump to show
-\texttt{english3.txt}.
-
-\subsection*{Reading from a file}
-
-To read from a file:
-
-\begin{verbatim}
-fin = open("myfile.txt", "r")
-\end{verbatim}
-
-Two ways to get stuff out of the file.
-
-\begin{verbatim}
-s = fin.read()
-\end{verbatim}
-
-which returns a string that includes all the newline characters, or
-
-\begin{verbatim}
-for line in fin.readlines():
-    l = line.strip()
-\end{verbatim}
-
-which strips them out of each line as it is added. \verb|readlines()|
-returns a list of strings.
-
-After both, say \verb|fin.close()| to finish accessing the file.
-
-Examples:
-\begin{itemize}
-\item Read in this python file as a string with \verb|read()|, look at
-  length etc.
-\item Read in \verb|english3.txt| using \verb|read()|, then using
-  \verb|readlines()|.  Make a wordlist, count the number of words that
-  don't contain the letter e.
-\item Read in ???, split lines separated by space?
-\end{itemize}
-
-\subsection*{Writing to a file}
-
-To write to a file:
-
-\begin{verbatim}
-fout = open("myfile.txt", "w")
-\end{verbatim}
-
-WARNING! This will overwrite the file if it exists!
-
-Then to save data in the file, write out as strings:
-
-\begin{verbatim}
-fout.write("hello")
-fout.write("world")
-fout.close()
-\end{verbatim}
-Note the need for newline characters.
-
-Example: define \verb|make_file| function which prompts the user for
-a list of strings, then writes them all to a file.
 
 \holiday{Spring break}
 \holiday{Spring break}

@@ -258,11 +258,9 @@ entries:
     Topic:
       rows:
         - File I/O
-        - HW 6 review + quiz
+        - Make-up Quiz Day
     Assignments:
       rows:
-        - 'HW 7: File I/O'
-        - 'Quiz 6: Lists'
         - emph:
             'No Lab 7 - Fall break'
   - Date: 2025-10-17
@@ -283,7 +281,7 @@ entries:
         - 'HW 8: For Loops'
   - Date: 2025-10-24
     Topic: Mutability and the heap
-    Assignments: 'Quiz 7: File I/O'
+    Assignments: 'Quiz 6: Lists'
 
   ##################################################
 
