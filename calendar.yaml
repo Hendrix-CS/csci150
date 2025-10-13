@@ -253,7 +253,14 @@ entries:
       - python: lectures/F25/Seme/2025-10-13-File-IO.py
       - text: lectures/F25/Seme/english3.txt
       - text: lectures/F25/Seme/sample-text-file.txt
-    Projects: 'Project 2 assigned'
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1013%20File%20IO%2D20251013%5F111400%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/file_io.py
+    Projects:
+      link:
+        text: 'Project 2 assigned'
+        url: projects/project2.html
+
   - Date: 2025-10-15
     Topic:
       rows:
