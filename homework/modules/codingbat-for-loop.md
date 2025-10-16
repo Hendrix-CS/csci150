@@ -53,7 +53,7 @@ For each of the following excercises:
         if char in v:
             count += 1
     print(count)
-    ```
+ ```
 
 3. What is the value of `new_list` after the code below runs?
 
@@ -65,5 +65,5 @@ For each of the following excercises:
             new_list.append(item // 2)
         else:
             new_list.append(item)
-            
-    ```
+ ```
+
