@@ -279,6 +279,8 @@ entries:
   - Date: 2025-10-20
     Module: '8: For Loops'
     Topic: For loops
+    9am:
+      - python: lectures/F25/Seme/2025-10-20-For-loops.py
   - Date: 2025-10-22
     Topic: Common loop patterns
     Assignments:
