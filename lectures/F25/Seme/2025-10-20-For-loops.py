@@ -79,7 +79,7 @@ def list_f(lst: list[int]):
 #       xx will be the last integer in this sequence < n.
 #       this will contain (n - k - 1) // i entries
 #       It starts at k, and goes up by i until it reaches or exceeds n
-# range(3, 5, 25) would produce 3, 8, 13, 18, 23
+# range(3, 25, 5) would produce 3, 8, 13, 18, 23
 
 # Essentially, range allows us to turn an integer into an iterable.
 
@@ -129,16 +129,44 @@ def str_count_while(s: str, c: str) -> int:
     return count
 
 def str_count(s: str, c: str) -> int:
-    1
+    count = 0
+    for char in s:
+        if char == c:
+            count += 1
+
+        count += 1
+
+    return count
 
 
 
 
+
+lst = ['Hi','Bye','Today','']
 # Given a list of strings, add the character '!' to the end of each
 def excite(lst: list[str]) -> list[str]:
-    1
+    new_list = []
+    for item in lst:
+        new_list.append(item + '!')
+
+
+    return new_list
 
 ######
+
+# What if we want to adjust the list in place
+
+
+lst = ['Hi','Bye','Today','']
+# Given a list of strings, add the character '!' to the end of each
+def excite2(lst: list[str]) -> list[str]:
+
+    for i in range(len(lst)):
+        lst[i] += '!'
+
+
+    return lst
+
 
 # returns true if c is in s, false otherwise
 def string_find(s: str, c: str) -> bool:
