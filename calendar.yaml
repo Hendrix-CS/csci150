@@ -289,7 +289,9 @@ entries:
             text: |
               Lab 8: Caesar's Secrets
             url: https://www.kaggle.com/code/gabrielferrer/caesar-s-secrets
-        - 'HW 8: For Loops'
+        - link:
+            text: 'HW 8: For Loops'
+            url: homework/modules/codingbat-for-loop.html
   - Date: 2025-10-24
     Topic: Mutability and the heap
     Assignments: 'Quiz 6: Lists'
