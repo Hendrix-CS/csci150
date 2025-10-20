@@ -285,8 +285,10 @@ entries:
     Topic: Common loop patterns
     Assignments:
       rows:
-        - |
-            Lab 8: Caesar's Secrets
+        - link:
+            text: |
+              Lab 8: Caesar's Secrets
+            url: https://www.kaggle.com/code/gabrielferrer/caesar-s-secrets
         - 'HW 8: For Loops'
   - Date: 2025-10-24
     Topic: Mutability and the heap
