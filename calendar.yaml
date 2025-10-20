@@ -281,6 +281,9 @@ entries:
     Topic: For loops
     9am:
       - python: lectures/F25/Seme/2025-10-20-For-loops.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1020%20for%20loops%2D20251020%5F111417%2DMeeting%20Recording%2Emp4
+      - kaggle: https://www.kaggle.com/code/byorgey/10-20-for-loops
   - Date: 2025-10-22
     Topic: Common loop patterns
     Assignments:
