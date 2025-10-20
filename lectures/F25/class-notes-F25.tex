@@ -2017,7 +2017,7 @@ def f3():
 \end{itemize}
 
 \newpage
-\class{\notready File I/O}
+\class{\ready File I/O}
 
 \begin{itemize}
 \item Talk about changes to quizzes etc.  Wednesday: make-up quiz day
@@ -2101,15 +2101,18 @@ Note the need for newline characters.
 Example: define \verb|make_file| function which prompts the user for
 a list of strings, then writes them all to a file.
 
+\class{\ready Quiz Makeup}
+
+\holiday{Fall Break}
+
 \newpage
-\class{\notready For loops}
+\class{\ready For loops}
 
 \subsection*{Setup}
 
 \begin{itemize}
-\item Note new CodingBat HW, due after spring break.
-\item Note project 2 due at end of week after spring break.  We'll
-  talk about file I/O on Friday.
+\item Reminder: Quiz 6 on Friday.
+\item Reminder: project 2 due Wednesday next week.
 \end{itemize}
 
 \subsection*{For Loops}
@@ -2120,7 +2123,8 @@ about every list- or string-processing function we have written ever):
 def explode(s: str):
   i: int = 0
   while i < len(s):
-    print(s[i])
+    c = s[i]
+    print(c)
     i += 1
 \end{verbatim}
 Recall how easy it was to make errors like starting index at the wrong
@@ -2171,7 +2175,8 @@ included:
 
 \subsection*{For loop practice}
 
-Write this function together:
+Write this function together.  Show them version with while loop, then
+translate to using a for loop.
 \begin{verbatim}
 # Count the number of times c occurs in s.  For example,
 # count('banana', 'n') = 2
