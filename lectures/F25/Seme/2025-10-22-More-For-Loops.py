@@ -1,7 +1,25 @@
 # Project #2 Wednesday, October 29!!
 
 
+# returns true if c is in s, false otherwise
+def string_find(s: str, c: str) -> bool:
+    1
 
+
+# given a list of ints, return True if there are an even number of odd integers
+def even_odds(lst: list[int]) -> bool:
+    1
+
+
+
+
+### Caution -- you should *NOT* ever adjust the iterable in the loop!
+
+def do_not_do_this(lst):
+    for item in lst:
+        lst.append(5)
+
+    return lst
 
 # Coding Bat: Sample
 def sum67(nums):
@@ -15,29 +33,6 @@ def sum67(nums):
 #
 #
 
-# given a list of integers, if item is a multiple of seven,
-# replace it with item // 7
-
-def sevens(lst: list[int]) -> list[int]:
-    for item in lst:
-        if item % 7 == 0:
-            item = item // 7
-    return lst
-
-
-
-
-
-
-# the above does not work -- it does not change the values of anything *in* the list
-
-def sevens2(lst: List[int]) -> List[int]:
-    1
-
-# the above changes lst. What ifd you wanted to leave lst alone?
-
-def sevens3(lst: List[int]) -> List[int]:
-    1
 
 
 
