@@ -2449,9 +2449,130 @@ elements.  Also note why we do \verb|range(len(nums) - 1)|, so the
   loops leading up to it!
 \end{reflect}
 
-\holiday{Spring break}
-\holiday{Spring break}
-\holiday{Spring break}
+\class{\ready Mutability, objects, and references}
+
+Warm-up: what happens here?  Find partner \& decide.
+\begin{verbatim}
+nums  = [1,2,3]
+nums2 = nums
+nums[1] = 0
+print(nums2)
+\end{verbatim}
+
+Try it at python prompt.  This is really weird!
+
+As hinted before, the fact that lists are mutable (as opposed to
+strings, which are immutable) opens a huge can of worms.  Let's start
+by pulling back the curtain a little bit.  Up until now we have talked
+about variables having values, but we need to be more precise.  Draw
+stack diagram with variables referencing two different lists.
+
+\begin{itemize}
+\item Variables actually don't contain values, they contain
+  \emph{references} to objects.  A reference ``points'' to a certain
+  object (really, a reference is just a number which represents a
+  location in the computer's memory).
+\item Copying the value of a variable into another variable just
+  copies the \emph{reference} (\emph{i.e.} the memory address), so they now
+  point to the same object!
+\item Variables which reference objects that have the same value are
+  \emph{equal}.  You can test equality with \verb|==|.
+\item Variables which reference the \emph{same object} are
+  \emph{identical}. You can test identity with \verb|is| (though you
+  won't need this in the rest of the course).
+\item Note since strings, ints, floats, and booleans are immutable, it
+  didn't matter before; there is no way to tell the difference between
+  two variables with separate copies of a string and two variables
+  referencing the same string.  So we will continue to think of
+  variables as holding ints, strings, etc., not references to them
+  (since it doesn't matter).  But for lists and other things to come
+  it matters quite a bit.
+\end{itemize}
+
+Do this at the REPL, with accompanying pictures drawn on the board:
+\begin{verbatim}
+>>> a = [1,2,3]
+>>> b = [1,2,3]
+>>> a == b
+True
+>>> a is b
+False
+>>> a[0] = 5
+>>> a
+[5, 2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+False
+>>> a = b
+>>> a
+[1, 2, 3]
+>>> b
+[1, 2, 3]
+>>> a == b
+True
+>>> a is b
+True
+>>> a[0] = 5
+>>> a
+[5, 2, 3]
+>>> b
+[5, 2, 3]
+\end{verbatim}
+Note in particular that the assignment \verb|a = b| does not copy the
+value of \verb|b| into \verb|a|, but just makes \verb|a|
+\emph{reference the same thing as} \verb|b|.
+
+Some related things:
+\begin{itemize}
+\item What if you really \emph{do} want to make a \emph{copy} of a
+  list, so modifying it doesn't modify the original?  You can write
+  \verb|some_list[:]|.
+\item Be careful about methods that modify vs functions that make a
+  new thing.  \eg \verb|list.sort()| modifies the list.  But
+  \verb|sorted(list)| makes a new list!  And of course
+  \verb|string.upper()| makes a new string because strings are
+  immutable.  Confusing, don't memorize: the point is you should be
+  careful and look up help to see what things do.  Show
+  \verb|help(list.sort)|, \verb|help(sorted)|, \verb|help(str.upper)|.
+\end{itemize}
+
+[INSERT OPTIONAL RANT ABOUT MUTATION HERE]
+
+\subsection*{Tracing with stack and heap}
+
+This has implications for function parameters as well.  Consider:
+
+\begin{verbatim}
+def release(animals: list[str]):
+  while len(animals) > 2:
+    animals.pop(0)
+
+print(animals)
+release(animals)
+print(animals)
+\end{verbatim}
+
+Formally, to see what's going on, we are going to enhance our tracing
+diagrams one last time: we are going to add a \emph{heap}.  The
+``heap'' is the area of memory where objects are stored. Variables are
+stored on the stack and contain references to things in the heap.
+Every time we create a new list, we draw it in the heap (anywhere!).
+
+Have them try another example:
+
+\begin{verbatim}
+def slicer(nums: list[int]) -> list[int]:
+  first3 = nums[:3]
+  first3[2] *= 3
+  return first3
+
+def main():
+  my_nums = [1,2,8,6,7,12]
+  my_nums = slicer(my_nums)
+\end{verbatim}
+
+Then go over it carefully.
 
 \newpage
 \class{\notready Dictionaries}
@@ -3560,132 +3681,6 @@ Can mention something about how video and audio are represented.
   of---\emph{compression}.
 \item Audio: sequence of ``samples''.
 \end{itemize}
-
-
-\class{\notready Mutability, objects, and references}
-
-Warm-up: what happens here?  Find partner \& decide.
-\begin{verbatim}
-nums  = [1,2,3]
-nums2 = nums
-nums[1] = 0
-print(nums2)
-\end{verbatim}
-
-Try it at python prompt.  This is really weird!
-
-As hinted before, the fact that lists are mutable (as opposed to
-strings, which are immutable) opens a huge can of worms.  Let's start
-by pulling back the curtain a little bit.  Up until now we have talked
-about variables having values, but we need to be more precise.  Draw
-stack diagram with variables referencing two different lists.
-
-\begin{itemize}
-\item Variables actually don't contain values, they contain
-  \emph{references} to objects.  A reference ``points'' to a certain
-  object (really, a reference is just a number which represents a
-  location in the computer's memory).
-\item Copying the value of a variable into another variable just
-  copies the \emph{reference} (\emph{i.e.} the memory address), so they now
-  point to the same object!
-\item Variables which reference objects that have the same value are
-  \emph{equal}.  You can test equality with \verb|==|.
-\item Variables which reference the \emph{same object} are
-  \emph{identical}. You can test identity with \verb|is| (though you
-  won't need this in the rest of the course).
-\item Note since strings, ints, floats, and booleans are immutable, it
-  didn't matter before; there is no way to tell the difference between
-  two variables with separate copies of a string and two variables
-  referencing the same string.  So we will continue to think of
-  variables as holding ints, strings, etc., not references to them
-  (since it doesn't matter).  But for lists and other things to come
-  it matters quite a bit.
-\end{itemize}
-
-Do this at the REPL, with accompanying pictures drawn on the board:
-\begin{verbatim}
->>> a = [1,2,3]
->>> b = [1,2,3]
->>> a == b
-True
->>> a is b
-False
->>> a[0] = 5
->>> a
-[5, 2, 3]
->>> b
-[1, 2, 3]
->>> a == b
-False
->>> a = b
->>> a
-[1, 2, 3]
->>> b
-[1, 2, 3]
->>> a == b
-True
->>> a is b
-True
->>> a[0] = 5
->>> a
-[5, 2, 3]
->>> b
-[5, 2, 3]
-\end{verbatim}
-Note in particular that the assignment \verb|a = b| does not copy the
-value of \verb|b| into \verb|a|, but just makes \verb|a|
-\emph{reference the same thing as} \verb|b|.
-
-Some related things:
-\begin{itemize}
-\item What if you really \emph{do} want to make a \emph{copy} of a
-  list, so modifying it doesn't modify the original?  You can write
-  \verb|some_list[:]|.
-\item Be careful about methods that modify vs functions that make a
-  new thing.  \eg \verb|list.sort()| modifies the list.  But
-  \verb|sorted(list)| makes a new list!  And of course
-  \verb|string.upper()| makes a new string because strings are
-  immutable.  Confusing, don't memorize: the point is you should be
-  careful and look up help to see what things do.  Show
-  \verb|help(list.sort)|, \verb|help(sorted)|, \verb|help(str.upper)|.
-\end{itemize}
-
-[INSERT OPTIONAL RANT ABOUT MUTATION HERE]
-
-\subsection*{Tracing with stack and heap}
-
-This has implications for function parameters as well.  Consider:
-
-\begin{verbatim}
-def release(animals: list[str]):
-  while len(animals) > 2:
-    animals.pop(0)
-
-print(animals)
-release(animals)
-print(animals)
-\end{verbatim}
-
-Formally, to see what's going on, we are going to enhance our tracing
-diagrams one last time: we are going to add a \emph{heap}.  The
-``heap'' is the area of memory where objects are stored. Variables are
-stored on the stack and contain references to things in the heap.
-Every time we create a new list, we draw it in the heap (anywhere!).
-
-Have them try another example:
-
-\begin{verbatim}
-def slicer(nums: list[int]) -> list[int]:
-  first3 = nums[:3]
-  first3[2] *= 3
-  return first3
-
-def main():
-  my_nums = [1,2,8,6,7,12]
-  my_nums = slicer(my_nums)
-\end{verbatim}
-
-Then go over it carefully.
 
 
 % \newpage
