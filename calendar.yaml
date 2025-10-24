@@ -302,6 +302,12 @@ entries:
             url: homework/modules/codingbat-for-loop.html
   - Date: 2025-10-24
     Topic: Mutability and the heap
+    9am:
+      - python: lectures/F25/Seme/2025-10-24-the Heap-and-Mutability.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1024%20Mutability%20%2B%20the%20heap%2D20251024%5F111041%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/project2_demo.py
+      - kaggle: https://www.kaggle.com/code/byorgey/mutability
     Assignments: 'Quiz 6: Lists'
 
   ##################################################
