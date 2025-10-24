@@ -1,7 +1,7 @@
 
 # Project #2 due Wednesday
 # - I am available:
-#      - Friday 10am - 3pm
+#      - Friday 10-11am, 11:45am - 3pm
 #      - Monday 10am - 3pm
 #      - Tuesday  1-3pm
 #  You can also ask questions over the weekend -- but:
@@ -60,9 +60,9 @@ def sum_67(nums: list[int]) -> int:
 # Consider the following two similar pieces of code:
 
 ############ Code Part 1
-def function1(x: int) -> int:
-    x += 1
-    return x
+def function1(a: int) -> int:
+    a += 1
+    return a
 
 def main1():
     x = 5
@@ -71,7 +71,7 @@ def main1():
     print(x)
     print(y)
 
-#main1()
+main1()
 
 ############# Code Part 2
 def function2(c: list[int]) -> list[int]:
@@ -85,7 +85,7 @@ def main2():
     print(a)
     print(b)
 #
-#main2()
+main2()
 
 # What happened?
 
