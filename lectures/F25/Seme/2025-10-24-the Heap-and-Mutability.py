@@ -3,7 +3,7 @@
 # - I am available:
 #      - Friday 10am - 3pm
 #      - Monday 10am - 3pm
-#      - Tuesday 9:45am - 12 noon, 1-3pm
+#      - Tuesday  1-3pm
 #  You can also ask questions over the weekend -- but:
 #   - If you want to show me any code, use a Teams chat
 #   - Send code, not pictures/screenshots
@@ -12,6 +12,49 @@
 #         - The play_again() function never lets me play again
 #     NOT: "Can you look over my code?" or "The whole thing doesn't work."
 #        - I am happy to do those in person today/next week
+
+
+
+####################
+### Project #2 Suggestions
+######################
+
+# Though you might do something differently, here is one option for what
+# you main() might look like for Project #2
+
+# def main():
+#     print_rules()
+#     again = True
+#     while again:
+#         level = get_level()
+#         play_game(level)
+#         again = play_again()
+#     print('Thank you for playing my wordgame!')
+
+
+
+
+# Left Over after CodingBat died in class last time:
+
+def sum_67(nums: list[int]) -> int:
+    sum = 0
+    add = True
+
+    for item in nums:
+        if item == 6:
+            add = False
+
+        if add:
+            sum += item
+
+        if item == 7:
+            add = True
+
+    return sum
+
+
+########
+# New
 
 
 # Consider the following two similar pieces of code:
