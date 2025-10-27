@@ -6,7 +6,7 @@ layout: course-multi
 ---
 <br/>
 
-## <a name="TAs">TA Office Hours (TBD)</a>
+## <a name="TAs">TA Office Hours</a>
 
 | Monday      | Tuesday       | Wednesday   | Thursday        |
 |-------------|---------------|-------------|-----------------|
