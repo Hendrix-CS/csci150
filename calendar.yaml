@@ -315,6 +315,9 @@ entries:
   - Date: 2025-10-27
     Module: '9: Dictionaries'
     Topic: Dictionaries
+    9am:
+      - python: lectures/F25/Seme/2025-10-27-Intro-to-Dictionaries.py
+      - text: lectures/F25/Seme/alice.txt
     11am:
       - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1027%20Dictionaries%2D20251027%5F111113%2DMeeting%20Recording%2Emp4
       - kaggle: https://www.kaggle.com/code/byorgey/10-27-dictionaries
