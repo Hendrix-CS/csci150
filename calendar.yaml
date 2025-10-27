@@ -319,7 +319,9 @@ entries:
     Topic: Dictionaries
     Assignments:
       rows:
-        - 'Lab 9: Asteriskbucks'
+        - link:
+            text: 'Lab 9: Asteriskbucks'
+            url: https://www.kaggle.com/code/gabrielferrer/asteriskbucks/
         - 'HW 9: Dictionaries'
     Projects: 'Project 2 due'
   - Date: 2025-10-31
