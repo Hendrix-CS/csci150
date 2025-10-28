@@ -328,7 +328,9 @@ entries:
         - link:
             text: 'Lab 9: Asteriskbucks'
             url: https://www.kaggle.com/code/gabrielferrer/asteriskbucks/
-        - 'HW 9: Dictionaries'
+        - link:
+            text: 'HW 9: Dictionaries'
+            url: homework/modules/dictionary.html
     Projects: 'Project 2 due'
   - Date: 2025-10-31
     Topic: Final Project discussion
