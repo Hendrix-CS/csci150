@@ -333,7 +333,11 @@ entries:
   - Date: 2025-10-31
     Topic: Final Project discussion
     Assignments: 'Quiz 8: For Loops'
-    Projects: 'Final project assigned'
+    Projects:
+      - link:
+          text: 'Final project'
+          url: projects/final.html
+      - assigned
 
   ##################################################
 

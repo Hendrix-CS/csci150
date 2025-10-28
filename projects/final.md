@@ -5,7 +5,7 @@ num: 3
 worktitle: Final Project
 designdue: Friday, November 14
 finaldue: Friday, December 12 (A4) or Monday, December 15 (A2)
-location: [location TBD]
+location: '[location TBD]'
 ---
 
 ## Description
@@ -25,7 +25,11 @@ Guidelines
 ----------
 
 Unlike the other projects, you may work with one partner for the final
-project. You can also work individually if you wish.
+project. You can also work individually if you wish.  If you wish to
+work with a partner from the other section, ideally you should pick
+one of the two project demo days when you are both available to
+present.  Regardless, you should plan to attend the demo day
+corresponding to your section in order to see everyone else's projects.
 
 You have wide latitude in choosing what to do for your final project.
 The only requirements are that it should be **sufficiently complex** and
@@ -95,7 +99,7 @@ You should turn in
 * A **Level 2** project includes:
   * A design document submitted on-time and meeting the requirements
     given earlier.
-  * Project demo.
+  * Project demo on demo day.
   * An implementation in which the following are true:
     * The program is sufficiently complex and goes beyond what we have
 	  done in class or lab.
@@ -106,7 +110,7 @@ You should turn in
 	* Instructor feedback is properly incorporated into the final program.
 * A **Level 1** project:
   * A design document is submitted.
-  * Project demo.
+  * Project demo on demo day.
   * An implementation in which:
     * The program is sufficiently complex and goes beyond what we have
 	  done in class or lab.
