@@ -5,6 +5,7 @@ num: 3
 worktitle: Final Project
 designdue: Friday, November 14
 finaldue: Friday, December 12 (A4) or Monday, December 15 (A2)
+location: [location TBD]
 ---
 
 ## Description
@@ -76,7 +77,7 @@ Demo
 
 During the scheduled final exam time on {{page.finaldue}} at 9:00am,
 everyone will have the opportunity to demo their projects.  We will
-meet in MC Reynolds 314, and split into 2 or 3 groups.  Each group
+meet in {{page.location}}, and split into 2 or 3 groups.  Each group
 will have a turn to be prepared to demo their projects while the other
 group(s) can wander around and look at everyone else's.
 
@@ -94,7 +95,7 @@ You should turn in
 * A **Level 2** project includes:
   * A design document submitted on-time and meeting the requirements
     given earlier.
-  * Project demo on May 9.
+  * Project demo.
   * An implementation in which the following are true:
     * The program is sufficiently complex and goes beyond what we have
 	  done in class or lab.
@@ -105,7 +106,7 @@ You should turn in
 	* Instructor feedback is properly incorporated into the final program.
 * A **Level 1** project:
   * A design document is submitted.
-  * Project demo on May 9.
+  * Project demo.
   * An implementation in which:
     * The program is sufficiently complex and goes beyond what we have
 	  done in class or lab.
