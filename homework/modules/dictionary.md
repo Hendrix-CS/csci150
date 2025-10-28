@@ -14,7 +14,7 @@ majors in some Natural Sciences departments:
 
   - `d['MATH']`
   - `d['CSCI']`
-  - `d['CHEM'] / 2'
+  - `d['CHEM'] / 2`
 
 2. You learn that three new students have declared Computer Science as their major. How could you updated the dictionary?
 Write actual code to do this!
