@@ -323,6 +323,8 @@ entries:
       - kaggle: https://www.kaggle.com/code/byorgey/10-27-dictionaries
   - Date: 2025-10-29
     Topic: Dictionaries
+    9am:
+      - python: lectures/F25/Seme/2025-10-29-More-Dictionaries.py
     Assignments:
       rows:
         - link:
