@@ -339,6 +339,8 @@ entries:
     Projects: 'Project 2 due'
   - Date: 2025-10-31
     Topic: Final Project discussion
+    9am:
+      - python: lectures/F25/Seme/2025-10-31-Project3-Discussion.py
     Assignments: 'Quiz 8: For Loops'
     Projects:
       - link:
