@@ -357,6 +357,9 @@ entries:
     Topic: Classes
     9am:
       - python: lectures/F25/Seme/2025-11-03-Intro-to-classes.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F113%20Intro%20to%20classes%20%2B%20objects%2D20251103%5F111203%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/Cake.py
   - Date: 2025-11-05
     Topic: Class & object examples
     Assignments:
