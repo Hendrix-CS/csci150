@@ -355,6 +355,8 @@ entries:
   - Date: 2025-11-03
     Module: '10: Classes'
     Topic: Classes
+    9am:
+      - python: lectures/F25/Seme/2025-11-03-Intro-to-classes.py
   - Date: 2025-11-05
     Topic: Class & object examples
     Assignments:
