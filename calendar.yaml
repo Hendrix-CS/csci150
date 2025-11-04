@@ -364,7 +364,9 @@ entries:
     Topic: Class & object examples
     Assignments:
       rows:
-        - 'Lab 10: Water Jugs'
+        - link:
+            text: 'Lab 10: Water Jugs'
+            url: labs/waterjug.html
         - 'HW 10: Classes'
   - Date: 2025-11-07
     Topic: Class & object examples
