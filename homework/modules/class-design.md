@@ -26,10 +26,11 @@ other exercises.
 1.  Suppose the following code is run. What are the values of `a.pts` and `b.pts` at the end on `main()`?
 
 ``` python
-class Thing:
+from dataclasses import dataclass
 
-	def __init__(self, x: int):
-		self.pts = x
+@dataclass
+class Thing:
+	pts: int
 
 	def inc(self):
 		self.pts += 1
@@ -51,6 +52,9 @@ def main():
 	b.dec()
 	b.inc()
 	b.inc()
+
+	print(a.pts)
+	print(b.pts)
 
 main()
 
