@@ -377,6 +377,8 @@ entries:
   - Date: 2025-11-10
     Module: '11: PyGame'
     Topic: PyGame animation
+    9am:
+      - python: lectures/F25/Seme/2025-11-05-Class-Examples-Day1.py
   - Date: 2025-11-12
     Topic: Classes and PyGame
     Assignments:
