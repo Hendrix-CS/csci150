@@ -362,6 +362,12 @@ entries:
       - python: lectures/F25/Yorgey/Cake.py
   - Date: 2025-11-05
     Topic: Class & object examples
+    9am:
+      - python: lectures/F25/Seme/2025-11-05-Class-Examples-Day1.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F115%20more%20class%20%2B%20object%20examples%2D20251105%5F111321%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/Fountain.py
+      - python: lectures/F25/Yorgey/Forecast.py
     Assignments:
       rows:
         - link:
@@ -377,8 +383,6 @@ entries:
   - Date: 2025-11-10
     Module: '11: PyGame'
     Topic: PyGame animation
-    9am:
-      - python: lectures/F25/Seme/2025-11-05-Class-Examples-Day1.py
   - Date: 2025-11-12
     Topic: Classes and PyGame
     Assignments:
