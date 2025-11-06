@@ -2641,7 +2641,7 @@ def frequency_counts(s: str) -> dict[str, int]:
   Only made it to here.  Did frequency counting the following class.
 \end{reflect}
 
-\class{\notready Dictionaries II}
+\class{\ready Dictionaries II}
 
 \begin{itemize}
   \item Last anti-AI slide
@@ -2706,14 +2706,9 @@ Show
 \end{reflect}
 
 \newpage
-\class{\notready Intro to classes \& objects}
+\class{\ready Intro to classes \& objects}
 
 \subsection*{Setup}
-
-\begin{itemize}
-\item New HW assignment, due in one week.
-\item Note no quiz this Wednesday.
-\end{itemize}
 
 Introduce the Birthday Cake Problem: you have a cake with $n$ lit
 candles.  You choose a uniform random number from $1$ to $n$
@@ -2864,10 +2859,10 @@ main()
 \end{itemize}
 
 \newpage
-\class{\notready More classes \& objects}
+\class{\ready More classes \& objects}
 
-More class/object examples: fountain, car.  Here's the code we ended
-up with in spring 2025:
+More class/object examples: fountain, forecast.  Here's the code we ended
+up with in fall 2025:
 
 \begin{verbatim}
 # A fountain has:
@@ -2923,6 +2918,38 @@ class Fountain:
 \begin{verbatim}
 from dataclasses import dataclass
 
+# A forecast can keep track of a bunch of different observations/predictions
+# and tell us their average + other stuff?
+@dataclass
+class Forecast:
+
+    observations: list[float]
+    current_sum: float = 0
+
+    def add_observation(self, obs: float):
+        self.observations.append(obs)
+        self.current_sum += obs
+
+    def average(self):
+        # total: float = 0
+        # for obs in self.observations:
+        #     total += obs
+
+        return self.current_sum / len(self.observations)
+
+    def minimum(self):
+        m: float = self.observations[0]
+        for obs in self.observations:
+            if obs < m:
+                m = obs
+        return m
+\end{verbatim}
+
+In the past I also did a car example:
+
+\begin{verbatim}
+from dataclasses import dataclass
+
 @dataclass
 class Car:
 
@@ -2951,7 +2978,7 @@ class Car:
 \end{verbatim}
 
 \newpage
-\lab{Die Hard/Water Jug}
+\lab{\ready Die Hard/Water Jug}
 
 \begin{reflect}{Brent, S'17}
   This lab seemed to go pretty well this year.  The new step that
@@ -2964,13 +2991,14 @@ class Car:
 \end{reflect}
 
 \newpage
-\class{\notready Classes \& objects III}
+\class{\ready Classes \& objects III}
 
 \subsection*{Setup}
 
 \begin{itemize}
 \item Note HW: class design practice.
 \item Note final project design due in one week.
+\item Leave time for quiz---dictionaries
 \end{itemize}
 
 We did an extended example with multiple interacting classes.  Here's
