@@ -373,7 +373,9 @@ entries:
         - link:
             text: 'Lab 10: Water Jugs'
             url: labs/waterjug.html
-        - 'HW 10: Classes'
+        - link:
+            text: 'HW 10: Classes'
+            url: homework/modules/class-design.html
   - Date: 2025-11-07
     Topic: Class & object examples
     Assignments: 'Quiz 9: Dictionaries'
