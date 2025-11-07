@@ -19,6 +19,41 @@ class Book:
     curr_page: int = 0
     read: bool = False
 
+    def read_book(self,read_pages: int):
+        self.curr_page += read_pages
+
+        if self.curr_page >= self.pages:
+            self.read = True
+            self.curr_page = 0
+
+            print(f'You have finished {self.title}.')
+
+
+
+
+def book_list_creator(file_name: str):
+    lst = []
+
+    with open(file_name,'r') as f:
+        for line in f:
+            data = line.strip().split(';')
+            title = data[0]
+            pages = int(data[1])
+
+            lst.append(Book(title,pages))
+
+        f.close()
+
+
+
+
+    return lst
+
+
+
+
+
+
 
 
 
@@ -28,6 +63,18 @@ class Book:
 class Shelf:
     size: int
     books: list['book']
+
+    def shelve_book(self, b):
+        if len(self.books) < self.size:
+            self.books.append(b)
+        else:
+            print('The shelf is full.')
+
+    def remove_book(self,b):
+        if b in self.books:
+            self.books.remove(b)
+        else:
+            print(f'{b.title} is not on the shelf.')
 
 #### Some notes:
 # We don't currently have a way to keep a book from being shelved on more than one shelf
