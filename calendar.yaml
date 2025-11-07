@@ -381,6 +381,11 @@ entries:
     9am:
       - python: lectures/F25/Seme/2025-11-07-Class-Examples-Day2.py
       - text: lectures/F25/Seme/books.txt
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F117%20classes%20%2B%20objects%20%28RPG%20example%29%2D20251107%5F111234%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/Weapon.py
+      - python: lectures/F25/Yorgey/Character.py
+      - python: lectures/F25/Yorgey/RPG.py
     Assignments: 'Quiz 9: Dictionaries'
 
   ##################################################
