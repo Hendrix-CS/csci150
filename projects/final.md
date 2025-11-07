@@ -5,7 +5,7 @@ num: 3
 worktitle: Final Project
 designdue: Friday, November 14
 finaldue: Friday, December 12 (A4) or Monday, December 15 (A2)
-location: '[location TBD]'
+location: 'Mills Library'
 ---
 
 ## Description
