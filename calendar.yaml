@@ -378,6 +378,9 @@ entries:
             url: homework/modules/class-design.html
   - Date: 2025-11-07
     Topic: Class & object examples
+    9am:
+      - python: lectures/F25/Seme/2025-11-07-Class-Examples-Day2.py
+      - text: lectures/F25/Seme/books.txt
     Assignments: 'Quiz 9: Dictionaries'
 
   ##################################################
