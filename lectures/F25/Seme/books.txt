@@ -1,0 +1,13 @@
+Moby Dick;635
+The Great Gatsby;184
+The Wind in the Willows;224
+Fahrenheit 451;227
+The Bell Jar;234
+The Maltese Falcon;201
+The Scarlet Letter;250
+On the Road;310
+Pride and Prejudice;398
+Catch-22;519
+Ulysses;719
+The Color Purple;304
+Three Body Problem;451

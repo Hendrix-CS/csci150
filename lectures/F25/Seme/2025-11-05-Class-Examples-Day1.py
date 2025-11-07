@@ -100,8 +100,12 @@ class Cake:   # social convention: use uppercase letters for class names
 
     # Blow out a random number of candles
     def blow_out(self):
-        r = random.randint(1, self.num_candles)
-        self.num_candles -= r
+        if self.all_out():
+            print('The cake is out of candles.')
+        else:
+
+            r = random.randint(1, self.num_candles)
+            self.num_candles -= r
 
     def all_out(self) -> bool:
         return self.num_candles == 0
@@ -128,6 +132,44 @@ def average_steps(num_candles: int, num_cakes: int) -> float:
 
 
 
+# Build a Fountain class
+# the objects will be a fountain, with a particular capacity (integer)
+# the fountain is either on or off
+
+@dataclass
+class Fountain:
+    cap: int
+    current: int = 0
+    on: bool = False
+
+    def toggle(self):
+        if not self.on and self.current == 0:
+            print('The fountain is empty! It cannot be turned on.')
+
+        else:
+            self.on = not self.on
+
+    def fill(self, x: int):
+        self.current += x
+
+        if self.current > self.cap:
+            self.current = self.cap
+        elif self.current <= 0:
+            self.current = 0
+            self.on = False
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # A variation on the Player Game from earlier
@@ -135,36 +177,36 @@ def average_steps(num_candles: int, num_cakes: int) -> float:
 
 
 
-# @dataclass
-# class Weapon:
-#     name: str
-#     min_dam: int
-#     max_dam: int
+@dataclass
+class Weapon:
+    name: str
+    min_dam: int
+    max_dam: int
 #
-# @dataclass
-# class Player1:
-#
-#     name: str
-#     health: int
-#     alive: bool = True
-#
-#
-#
-#     def attacks(self, other, weapon):
-#         if not self.alive:
-#             print('You are dead. Sorry!')
-#         else:
-#             if not other.alive:
-#                 print(f"{other.name}'s already dead!")
-#             else:
-#                 damage = random.randint(weapon.min_dam, weapon.max_dam)
-#                 other.health -= damage
-#                 print(f'{self.name} does {damage} damage to {other.name} with an {weapon.name}.')
-#                 if other.health <=0:
-#                     print(f'{self.name} killed {other.name}.')
-#                     other.alive = False
-#
-#
+@dataclass
+class Player1:
+
+    name: str
+    health: int
+    alive: bool = True
+
+
+
+    def attacks(self, other, weapon):
+        if not self.alive:
+            print('You are dead. Sorry!')
+        else:
+            if not other.alive:
+                print(f"{other.name}'s already dead!")
+            else:
+                damage = random.randint(weapon.min_dam, weapon.max_dam)
+                other.health -= damage
+                print(f'{self.name} does {damage} damage to {other.name} with an {weapon.name}.')
+                if other.health <=0:
+                    print(f'{self.name} killed {other.name}.')
+                    other.alive = False
+
+
 #
 #     def status(self):
 #         print(f'{self.name} has {self.health} health points.')
