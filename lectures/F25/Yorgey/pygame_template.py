@@ -9,33 +9,17 @@ def main():
 
     # the while loop below will keep the screen 'active' until you quit (i.e. click the close box)
     running = True
-    # frame = 0
-
-    purple_rect = True
-    purple_rect_pos = (20, 50)
 
     while running:
-        # frame += 1
-        # print(frame)
-        draw_all(surface, purple_rect, purple_rect_pos)     # this is the function which does the drawing
+        draw_all(surface)     # this is the function which does the drawing
         for event in pygame.event.get():   # this looks at the event queue to see if anything has happened.
             if event.type == QUIT:         # 'QUIT' is what happens when the user closes the window
                 running = False
-            elif event.type == KEYDOWN:
-                if event.key == K_r:
-                    purple_rect = not purple_rect
-            elif event.type == MOUSEMOTION:
-                purple_rect_pos = event.pos
-
-                # elif event.key == K_RIGHT:
-                #     purple_rect_x += 10
-                # elif event.key == K_LEFT:
-                #     purple_rect_x -= 10
 
     pygame.quit()
 
 
-def draw_all(surface, purple_rect: bool, purple_rect_pos: tuple[int,int]):
+def draw_all(surface, second_polygon, circle_center):
     surface.fill('white')
 
     # a note on colors:
@@ -47,12 +31,6 @@ def draw_all(surface, purple_rect: bool, purple_rect_pos: tuple[int,int]):
 
     # Drawing Objects
     # pygame.draw.<object> will let us draw things!
-
-    if purple_rect:
-        pygame.draw.rect(surface, 'purple', (purple_rect_pos, (70, 100)), width=10)
-
-    # pygame.draw.polygon(surface, 'chocolate4', [(100, 90), (300, 75), (550, 200), (200, 400)])
-    pygame.draw.aalines(surface, 'chocolate4', True, [(100, 90), (300, 75), (550, 200), (200, 400)])
 
     pygame.display.update()  # update the window once we're ready
 

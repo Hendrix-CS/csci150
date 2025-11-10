@@ -393,8 +393,12 @@ entries:
   - Date: 2025-11-10
     Module: '11: PyGame'
     Topic: PyGame animation
-      9am:
+    9am:
       - python: lectures/F25/Seme/2025-11-10-Pygame-Intro.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1110%20PyGame%2D20251110%5F111042%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/pygame_template.py
+      - python: lectures/F25/Yorgey/pygame_intro.py
   - Date: 2025-11-12
     Topic: Classes and PyGame
     Assignments:
