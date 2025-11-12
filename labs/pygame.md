@@ -218,8 +218,8 @@ location.
 
 ### Step 2.2: Random Colors
 
-Modify your `Face` class so that it has a `color` attribute in addition to its
-`x` and `y` attributes.
+Modify your `Face` class so that it has a `color` field in addition to its
+`x` and `y` fields.
 In the `draw` method of your `Face` class, replace references to the base color used for
 the face with `self.color`. (In the example of Step 1.3, the base color to be replaced was red.)
 
@@ -234,7 +234,7 @@ select a color from that list every time a new `Face` object is created.
 ### Step 3.1: Animation
 
 With the faces being drawn by an object, we
-can now make these objects move. Add new attributes to
+can now make these objects move. Add new fields to
 your `Face`, called `velocity_x` and `velocity_y`, to capture
 the velocity of the `Face`. For now, initialize them to 1, so they will
 be moving at a speed of 1 pixel per update.
@@ -291,11 +291,7 @@ your `surface` object as a parameter to `update()`.
 
 Each time you create a `Face` object, pass to the constructor random
 velocities between -5 and 5 for both the x and y
-dimension. As you do not want the `Face`
-to have a velocity of zero, it is recommended that you generate
-a random number between 1 and 5, and then (using another random
-number) give a 50/50 chance of switching the number to be
-negative.
+dimension.
 
 You should now have faces moving in all directions and bouncing
 off of all the walls of the window.
