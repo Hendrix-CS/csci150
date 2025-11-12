@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 10
+num: 11
 worktitle: Graphics and Animation
 ---
 
@@ -33,27 +33,6 @@ If the above approach does not work, try this:
 * An underlined `install` text should appear near it. Click on it, and it should install PyGame.
 
 <img src="https://hendrix-cs.github.io{{site.baseurl}}/assets/images/pycharm_python_packages.png" width=500>
-
-
-<!-- For today's lab, you'll need PyGame 2.2.0. To download and install it on your -->
-<!-- computer: -->
-<!-- * Create a new PyCharm project. -->
-<!-- * On the bottom of your screen, click `Python Packages`. -->
-<!--   * If this is not visible, you can click `View -> Tool Windows -> Python Packages`. -->
-<!--   * The `Python Packages` pane will appear at the bottom of the Pycharm main window. -->
-<!-- * In the top left of the `Python Packages` pane, enter `pygame` in the search bar. -->
-<!-- * Select the first result - `pygame`. -->
-<!-- * **If pygame is installed with the correct version**, the right side of the pane will show `2.2.0` with three vertical dots next to it. -->
-<!--   * Proceed with the lab  -->
-<!-- * **If pygame is installed with the incorrect version**, you will need to delete it. -->
-<!--   * Click the three vertical dots to open a context menu. -->
-<!--   * Click `Delete Package`. -->
-<!--   * Proceed with re-installing Pygame version 2.2.0 (see below). -->
-<!-- * **If pygame is not installed (or after you have uninstalled it)**, the right side of the screen will show `latest` and `Install Package`.  -->
-<!--   * Click `latest`, which opens a context menu for version selection. -->
-<!--   * Click 2.2.0 -->
-<!--   * Click `Install Package` to install Pygame 2.2.0 -->
-
 
 
 ## Step 1: Faces

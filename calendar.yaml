@@ -403,7 +403,9 @@ entries:
     Topic: Classes and PyGame
     Assignments:
       rows:
-        - 'Lab 11: Faces'
+        - link:
+            text: 'Lab 11: Faces'
+            url: labs/pygame.html
         - emph: 'No homework'
   - Date: 2025-11-14
     Topic: Classes and PyGame
