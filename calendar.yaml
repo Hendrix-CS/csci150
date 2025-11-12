@@ -401,6 +401,9 @@ entries:
       - python: lectures/F25/Yorgey/pygame_intro.py
   - Date: 2025-11-12
     Topic: Classes and PyGame
+    9am:
+      - python: lectures/F25/Seme/2025-11-12-Working-in-pygame.py
+      - mp3: lectures/F25/Seme/doh.mp3
     Assignments:
       rows:
         - link:
