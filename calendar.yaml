@@ -404,6 +404,9 @@ entries:
     9am:
       - python: lectures/F25/Seme/2025-11-12-Working-in-pygame.py
       - mp3: lectures/F25/Seme/doh.mp3
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1112%20animation%20in%20PyGame%2D20251112%5F111029%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/animation.py
     Assignments:
       rows:
         - link:

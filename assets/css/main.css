@@ -73,6 +73,7 @@ img[alt=disco] { width: 24px; }
 img[alt=kaggle] { width: 24px; }
 img[alt=python] { width: 24px; }
 img[alt=text] { width: 24px; }
+img[alt=mp3] {width: 24px; }
 
 /* From Codecademy Make-A-Website */
 .jumbotron {
