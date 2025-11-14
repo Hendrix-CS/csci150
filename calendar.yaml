@@ -415,6 +415,8 @@ entries:
         - emph: 'No homework'
   - Date: 2025-11-14
     Topic: Classes and PyGame
+    9am:
+    - python: lectures/F25/Seme/2025-11-14-More-Pygame.py
     Assignments: 'Quiz 10: Classes'
     Projects: 'Final project design due'
 
