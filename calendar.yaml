@@ -416,7 +416,11 @@ entries:
   - Date: 2025-11-14
     Topic: Classes and PyGame
     9am:
-    - python: lectures/F25/Seme/2025-11-14-More-Pygame.py
+      - python: lectures/F25/Seme/2025-11-14-More-Pygame.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1114%20PyGame%20demo%20game%2D20251114%5F111020%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/game_skeleton.py
+      - python: lectures/F25/Yorgey/game.py
     Assignments: 'Quiz 10: Classes'
     Projects: 'Final project design due'
 
