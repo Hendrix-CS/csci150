@@ -429,6 +429,8 @@ entries:
   - Date: 2025-11-17
     Module: '12: Recursion'
     Topic: Recursion
+    9am:
+      - python: lectures/F25/Seme/2025-11-17-Recursion.py
   - Date: 2025-11-19
     Topic: 'Recursion: trees'
     Assignments:
