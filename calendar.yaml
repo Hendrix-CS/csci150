@@ -438,8 +438,10 @@ entries:
     Topic: 'Recursion: trees'
     Assignments:
       rows:
-        - |
-            Lab 12: Enron's Secrets
+        - link:
+            text: |
+              Lab 12: Enron's Secrets
+            url: https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively
         - 'HW 12: Trees & Recursion'
   - Date: 2025-11-21
     Topic: 'Recursion: applications'
