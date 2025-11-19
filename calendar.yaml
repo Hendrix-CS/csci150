@@ -444,7 +444,9 @@ entries:
             text: |
               Lab 12: Enron's Secrets
             url: https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively
-        - 'HW 12: Trees & Recursion'
+        - link:
+            text: 'HW 12: Trees & Recursion'
+            url: homework/modules/recursion.html
   - Date: 2025-11-21
     Topic: 'Recursion: applications'
     Assignments:
