@@ -438,6 +438,9 @@ entries:
     Topic: 'Recursion: trees'
     9am:
       - python: lectures/F25/Seme/2025-11-19-Recursion.py
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1119%20recursion%2D20251119%5F111210%2DMeeting%20Recording%2Emp4
+      - python: trees.py
     Assignments:
       rows:
         - link:
