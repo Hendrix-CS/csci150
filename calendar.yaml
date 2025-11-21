@@ -452,6 +452,11 @@ entries:
             url: homework/modules/recursion.html
   - Date: 2025-11-21
     Topic: 'Recursion: applications'
+    11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1121%20more%20recursion%2C%20intro%20to%20binary%2D20251121%5F111027%2DMeeting%20Recording%2Emp4
+      - python: lectures/F25/Yorgey/fibonacci.py
+      - python: lectures/F25/Yorgey/collatz_rec.py
+      - pdf: lectures/F25/Yorgey/2025-11-21-binary.pdf
     Assignments:
       emph: 'No Quiz 11'
 
