@@ -452,6 +452,8 @@ entries:
             url: homework/modules/recursion.html
   - Date: 2025-11-21
     Topic: 'Recursion: applications'
+    9am:
+      - python: lectures/F25/Seme/2025-11-21-Efficiency.py
     11am:
       - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1121%20more%20recursion%2C%20intro%20to%20binary%2D20251121%5F111027%2DMeeting%20Recording%2Emp4
       - python: lectures/F25/Yorgey/fibonacci.py
@@ -464,6 +466,8 @@ entries:
 
   - Date: 2025-11-24
     Topic: Binary & information encoding
+    9am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2025-11-25-binary-and-information-encoding
   - Date: 2025-11-26
     Topic:
       emph: 'No class - Thanksgiving'
