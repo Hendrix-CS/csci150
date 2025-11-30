@@ -482,6 +482,8 @@ entries:
 
   - Date: 2025-12-01
     Topic: Generative AI
+    9am:
+      - python: lectures/F25/Seme/2025-12-01-Generative-AI.py
   - Date: 2025-12-03
     Topic: Project workshop
     Assignments: 'Lab: Final project workshop'
