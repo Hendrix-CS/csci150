@@ -489,6 +489,7 @@ entries:
   - Date: 2025-12-03
     Topic: Queues / project workshop
     11am:
+      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F123%20queues%2D20251203%5F111039%2DMeeting%20Recording%2Emp4
       - python: lectures/F25/Yorgey/ourqueue.py
       - python: lectures/F25/Yorgey/fastqueue1.py
       - python: lectures/F25/Yorgey/queuetest.py
