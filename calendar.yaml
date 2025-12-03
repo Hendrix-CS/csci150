@@ -487,10 +487,14 @@ entries:
     11am:
       - python: lectures/F25/Yorgey/TLM.py
   - Date: 2025-12-03
-    Topic: Project workshop
+    Topic: Queues / project workshop
+    11am:
+      - python: lectures/F25/Yorgey/ourqueue.py
+      - python: lectures/F25/Yorgey/fastqueue1.py
+      - python: lectures/F25/Yorgey/queuetest.py
     Assignments: 'Lab: Final project workshop'
   - Date: 2025-12-05
-    Topic: Retrospective
+    Topic: Office hours / project workshop
     Assignments: 'Quiz 12: Trees & Recursion'
 
 # | #  | Name                                                                                       | Completion time | Assigned | Due |
