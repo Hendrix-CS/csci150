@@ -91,12 +91,8 @@ instructors:
 offerings:
   - name: LECTURE 01
     loc: MC Reynolds 110
-    time: MWF 9:10am - 10:00am (A2)
+    time: MWF 8:10am - 9:00am (A1)
     instructor: seme
-  - name: LECTURE 02
-    loc: MC Reynolds 315
-    time: MWF 11:10am - noon (A4)
-    instructor: yorgey
   - name: LAB L1
     loc: Bailey Lab
     time: W 1:10pm - 4:00pm (L8)
