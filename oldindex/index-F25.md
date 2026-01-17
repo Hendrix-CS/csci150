@@ -10,8 +10,8 @@ layout: course-multi
 
 | Monday      | Tuesday       | Wednesday   | Thursday        |
 |-------------|---------------|-------------|-----------------|
-|TBA          | TBA           | TBA         |             TBA |
-
+| Henry (7-9) | Vincent (7-9) | Leigh (5-7) | Sanskruti (6-8) |
+|             |               | Jauss (7-9) |                 |
 
 # <a name="description">Overview</a>
 
@@ -154,8 +154,10 @@ a quiz, you may retake a new version of the quiz after coming to
 office hours with the relevant completed homework assignment; see
 below for more details.
 
-The exception is that Module 10 has no quiz.
+The exceptions are:
 
+- Module 7, which has a quiz but no lab
+- Module 11, which has a lab but no quiz
 
 ### <a name="labs">Labs</a>
 
@@ -252,7 +254,7 @@ If you do not receive credit for a quiz, you may retake it as follows:
   corresponding module with you to the office hours appointment.  It
   does not matter whether you already completed and turned in the homework
   before taking the quiz, or whether you complete it after realizing
-  that you will need to retake the quiz; either way, you *must* bring it
+  that you will need to retake the quiz; either way, you must bring it
   with you.
 - After going over the quiz and homework, if the instructor is
   satisfied that your understanding has improved, you may retake a
@@ -260,7 +262,6 @@ If you do not receive credit for a quiz, you may retake it as follows:
 - Alternatively, the instructor may give you additional practice
   problems to work before coming back to retake the quiz on a later
   date.
-- Generally, a student should attempt a retake within 2 weeks of the original quiz.
 
 Missed quizzes may be made up on a subsequent quiz day (there will
 usually be sufficient time allotted to take more than one quiz), or
@@ -281,9 +282,9 @@ engage your creativity.
 
 | # | Name                                                        | Assigned | Due   |
 |:-:|-------------------------------------------------------------|:--------:|:-----:|
-| 1 | Expect System <!--[Expert System]({{site.baseurl}}/projects/project1_if.html)--> | 2/11     | 2/25  |
-| 2 | Word Games <!--[Word Games]({{site.baseurl}}/projects/project2.html)-->       | 2/27     | 3/20  |
-| 3 | Final Project <!--[Final Project]({{site.baseurl}}/projects/final.html)-->       | 3/30     | 5/8   |
+| 1 | [Expert System]({{site.baseurl}}/projects/project1_if.html) | 9/17     | 10/1  |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)       | 10/13    | 10/29 |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)       | 10/31    | 12/12 |
 
 Each project will have a detailed *specification* explaining the
 required criteria for a successful project.  Each project will be
@@ -331,21 +332,21 @@ if you will need to miss class.
 
 * To earn an A in the course, a student will:
   * Complete the CSCI student survey.
-  * Complete at least 10 out of 11 modules.
+  * Complete at least 11 out of 12 modules.
   * Have at most one unexcused lab absence.
   * Earn at least 8 project points.
 * To earn a B in the course, a student will:
   * Complete the CSCI student survey.
-  * Complete at least 8 out of 11 modules.
+  * Complete at least 9 out of 12 modules.
   * Have at most two unexcused lab absences.
   * Earn at least 6 project points.
 * To earn a C in the course, a student will:
   * Complete the CSCI student survey.
-  * Complete at least 7 out of 11 modules.
+  * Complete at least 8 out of 12 modules.
   * Have at most three unexcused lab absences.
   * Earn at least 4 project points.
 * To earn a D in the course, a student will:
-  * Complete at least 5 out of 11 modules.
+  * Complete at least 6 out of 12 modules.
   * Have at most three unexcused lab absences.
   * Earn at least 3 project points.
 
@@ -353,7 +354,7 @@ This information is summarized in the table below:
 
 | Grade | Modules | Lab unexcused absences | Project points |
 |:-----:|:-------:|:----------------------:|:--------------:|
-| A     | 10      | ≤ 1                    | 8              |
-| B     | 8       | ≤ 2                    | 6              |
-| C     | 7       | ≤ 3                    | 4              |
-| D     | 5       | ≤ 3                    | 3              |
+| A     | 11      | ≤ 1                    | 8              |
+| B     | 9       | ≤ 2                    | 6              |
+| C     | 8       | ≤ 3                    | 4              |
+| D     | 6       | ≤ 3                    | 3              |

@@ -1,123 +1,84 @@
 name: CSCI 150, Foundations of Computer Science
-semester: Spring 2025
+semester: Spring 2026
 period: A2
-columns: [Module, Date, Topic, 9am, 11am, Assignments, Projects]
+columns: [Module, Date, Topic, 8am, Assignments, Projects]
 headers:
   Assignments: 'Module Components'
-codedir: 'lectures/S25'
+codedir: 'lectures/S26'
 
 entries:
 
   ##################################################
 
-  - Date: 2025-08-27
+  - Date: 2026-01-21
     Topic: Introduction to Computer Science
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-08-27-introduction-to-cs
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F827%20Introduction%20to%20CSCI%20150%2D20250827%5F111547%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea54135a6%2D4743%2D4ba4%2Da4f2%2D319f54f3fca0
+    8am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-01-21-introduction-to-cs
     Assignments:
       rows:
         - link:
             text: 'Lab 0: Minecraft'
-            url: https://studio.code.org/join/CRNFJC
+            #url: https://studio.code.org/join/CRNFJC
         - link:
             text: CSCI Student Survey
             url: https://docs.google.com/forms/d/e/1FAIpQLSeQGqE8Y764GekmoTdWrZ7WcYmZRVbO4pel1EeX2GqR7yA4TA/viewform
-  - Date: 2025-08-29
+  - Date: 2026-01-23
     Topic: Algorithms and Errors
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-08-29-algorithms-and-errors
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F829%20Algorithms%20%2B%20Course%20overview%2D20250829%5F111031%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E73c9bbca%2Dbae8%2D47b6%2D9a62%2D809575f36548
-      - pdf: lectures/F25/2025-08-29-algorithms.pdf
-
+    8am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-01-23-algorithms-and-errors
+    
   ##################################################
 
-  - Date: 2025-09-01
-    Topic:
-      emph: 'No class - Labor Day'
-  - Date: 2025-09-03
-    Module: '1: Math & Variables in Python'
-    Topic:
+  - Date: 2026-01-26
+    Module: '1: Math & Variables in Python
+    Topic: 'Math & Variables'
+    
+  - Date: 2026-01-28
+    Topic: Functions
       rows:
         - Python
         - 'Math & Variables'
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-03-intro-to-python-math-and-variables
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F93%20Introduction%20to%20Python%2D20250903%5F111022%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebc05f295%2D9aeb%2D4c8d%2D88e8%2D8318e9b8a426
-      - kaggle: https://www.kaggle.com/code/byorgey/9-3-introduction-to-python
+    
     Assignments:
       rows:
         - link:
             text: 'Lab 1: Kepler, Newton, Einstein'
-            url: https://www.kaggle.com/code/byorgey/kepler-newton-einstein
+            #url: https://www.kaggle.com/code/byorgey/kepler-newton-einstein
         - link:
             text: 'HW 1: Math & Variables'
             url: homework/modules/math-and-variables.html
-  - Date: 2025-09-05
+  - Date: 2026-01-30
     Topic: Functions
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-05-functions
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F95%20More%20Python%2D20250905%5F111043%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec3abac10%2D9ac0%2D4155%2D8861%2D9c50559f8797
-      - pdf: lectures/F25/2025-09-05-function-def.pdf
-      - kaggle: https://www.kaggle.com/code/byorgey/9-3-introduction-to-python
+    
 
   ##################################################
 
-  - Date: 2025-09-08
+  - Date: 2026-02-02
     Module: '2: Booleans & Conditionals'
     Topic: Booleans
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-08-booleans
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FTeams%20Meeting%20Recordings%2F95%20More%20Python%2D20250905%5F111043%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec20f663c%2Df67c%2D4bc5%2D8081%2Dd9f3f7cbcd02
-      - kaggle: https://www.kaggle.com/code/byorgey/9-8-booleans
-  - Date: 2025-09-10
+    
+  - Date: 2026-02-04
     Topic: Conditionals
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-10-conditionals
-    11am:
-      - youtube: https://youtu.be/nEhDzk5t-P8
-      - kaggle: https://www.kaggle.com/code/byorgey/9-10-conditionals
     Assignments:
       rows:
         - link:
             text: 'Lab 2: Heart Disease'
-            url: https://www.kaggle.com/code/gabrielferrer/diagnosing-heart-disease
+            #url: https://www.kaggle.com/code/gabrielferrer/diagnosing-heart-disease
         - link:
             text: 'HW 2: Booleans & Conditionals'
             url: homework/modules/booleans.html
-  - Date: 2025-09-12
-    Topic: Tracing
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-12-tracing
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F912%20Tracing%2D20250912%5F111022%2DMeeting%20Recording%2Emp4
-      - pdf: lectures/F25/2025-09-12-tracing.pdf
+  - Date: 2026-02-06
+    Topic: Function Stack
     Assignments:
       - 'Quiz 1: Math & Variables'
 
   ##################################################
 
-  - Date: 2025-09-15
-    Module: '3: Tracing and the Stack'
-    Topic: 'More tracing & the function stack'
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-15-function-stack-tracing
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F915%20Tracing%20%26%20function%20stack%2D20250915%5F111337%2DMeeting%20Recording%2Emp4
-      - kaggle: https://www.kaggle.com/code/byorgey/9-15-function-tracing
-      - pdf: lectures/F25/2025-09-12-tracing.pdf
-  - Date: 2025-09-17
-    Topic: 'Tracing with the function stack'
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-09-17-more-function-stack-tracing
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F917%20Function%20stack%20tracing%2D20250917%5F111228%2DMeeting%20Recording%2Emp4
-      - pdf: lectures/F25/2025-09-12-tracing.pdf
+  - Date: 2026-02-09
+    Module: '3: The Function Stack'
+    Topic: 'PyCharm & Function Stack'
+  - Date: 2026-02-11
+    Topic: 'Function Stack'
     Assignments:
       rows:
         - link:
@@ -125,378 +86,217 @@ entries:
             url: https://www.kaggle.com/code/gabrielferrer/this-day-in-history
         - link:
             text: 'HW 3: Tracing'
-            url: homework/modules/tracing.html
+    #        url: homework/modules/tracing.html
     Projects:
       - link:
           text: 'Project 1 assigned'
-          url: projects/project1_if.html
-  - Date: 2025-09-19
-    Topic: 'PyCharm'
-    9am:
-      - python: lectures/F25/Seme/2025-09-19-Intro-to-PyCharm.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2FPyCharm%2D20250919%5F113309%2DMeeting%20Recording%2Emp4
+          #url: projects/project1_if.html
+  - Date: 2026-02-13
+    Topic: 'Function Stack & While'
     Assignments: 'Quiz 2: Booleans & Conditionals'
 
   ##################################################
 
-  - Date: 2025-09-22
+  - Date: 2026-02-16
     Module: '4: While Loops'
-    Topic:
-      rows:
-        - I/O
-        - Introduction to while loops
-    9am:
-      - python: lectures/F25/Seme/2025-09-22-the-while-loop.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F922%20IO%2C%20PyCharm%2C%20while%20loops%2D20250922%5F111033%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/io.py
-  - Date: 2025-09-24
+    Topic: 
+      emph: 'No class - Midwinter Break'
+  - Date: 2026-02-18
     Topic: While loops
-    9am:
-      - python: lectures/F25/Seme/2025-09-24-more-while-loops.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F924%20while%20loops%2D20250924%5F111443%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/while.py
     Assignments:
       rows:
         - link:
             text: 'Lab 4: Guess My Number'
-            url: labs/guess.html
+            #url: labs/guess.html
         - link:
             text: 'HW 4: While Loops'
             url: homework/modules/while_loops.html
-  - Date: 2025-09-26
+  - Date: 2026-02-20
     Topic: While loops
-    9am:
-      - python: lectures/F25/Seme/2025-09-26-even-more-while-loops.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F926%20more%20while%20loops%2D20250926%5F111128%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/collatz.py
-    Assignments: 'Quiz 3: Tracing'
-
+    
   ##################################################
 
-  - Date: 2025-09-29
+  - Date: 2026-02-23
     Module: '5: Strings'
     Topic: Strings
-    9am:
-      - python: lectures/F25/Seme/2025-09-29-Strings.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F929%20strings%2D20250929%5F111048%2DMeeting%20Recording%2Emp4
-      - kaggle: https://www.kaggle.com/code/byorgey/9-29-25-strings
-  - Date: 2025-10-01
+  - Date: 2026-02-25
     Topic: Strings and Loops
-    9am:
-      - python: lectures/F25/Seme/2025-10-01-String-and-Loops.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F101%20more%20strings%2D20251001%5F111148%2DMeeting%20Recording%2Emp4
-      - kaggle: https://www.kaggle.com/code/byorgey/9-29-25-strings
     Assignments:
       rows:
         - link:
             text: 'Lab 5: Doublets'
-            url: labs/doublets.html
+            #url: labs/doublets.html
         - link:
             text: 'HW 5: Strings'
             url: homework/modules/codingbat-string-loop.html
     Projects: 'Project 1 Due'
-  - Date: 2025-10-03
-    Topic: Strings and Loops
-    9am:
-      - python: lectures/F25/Seme/2025-10-03-More-Strings-and-Loops.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F103%20more%20strings%20and%20loops%2D20251003%5F111234%2DMeeting%20Recording%2Emp4
-      - kaggle: https://www.kaggle.com/code/byorgey/10-3-more-strings
+  - Date: 2026-02-27
+    Topic: 'Input & Output'
     Assignments: 'Quiz 4: While Loops'
+    Projects:
+      link:
+        text: 'Project 2 assigned'
+        #url: projects/project2.html
 
   ##################################################
 
-  - Date: 2025-10-06
+  - Date: 2026-03-02
     Module: '6: Lists'
     Topic: Lists
-    9am:
-      - python: lectures/F25/Seme/2025-10-06-Lists.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F106%20Lists%2D20251006%5F111022%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/lists.py
-  - Date: 2025-10-08
+  - Date: 2026-03-04
     Topic: List processing examples
     Assignments:
       rows:
         - link:
             text: 'Lab 6: To Do Manager'
-            url: labs/todo-manager.html
+            #url: labs/todo-manager.html
         - link:
             text: 'HW 6: Lists'
             url: homework/modules/lists.html
-    9am:
-      - python: lectures/F25/Seme/2025-10-08-List-Processing-Examples.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F108%20more%20lists%2D20251008%5F111039%2DMeeting%20Recording%2Emp4
-      - kaggle: https://www.kaggle.com/code/byorgey/10-8-more-lists
-  - Date: 2025-10-10
+  - Date: 2026-03-06
     Topic: Function abstraction
-    9am:
-      - python: lectures/F25/Seme/2025-10-10-Function-Abstraction.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1010%20Function%20abstraction%2D20251010%5F111126%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/hilow.py
     Assignments: 'Quiz 5: Strings'
 
   ##################################################
 
-  - Date: 2025-10-13
-    Module: '7: File I/O'
-    Topic: File I/O
-    9am:
-      - python: lectures/F25/Seme/2025-10-13-File-IO.py
-      - text: lectures/F25/Seme/english3.txt
-      - text: lectures/F25/Seme/sample-text-file.txt
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1013%20File%20IO%2D20251013%5F111400%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/file_io.py
-    Projects:
-      link:
-        text: 'Project 2 assigned'
-        url: projects/project2.html
-
-  - Date: 2025-10-15
-    Topic:
-      rows:
-        - File I/O
-        - Make-up Quiz Day
-    Assignments:
-      rows:
-        - emph:
-            'No Lab 7 - Fall break'
-  - Date: 2025-10-17
-    Topic:
-      emph: 'No class - Fall break'
-
-  ##################################################
-
-  - Date: 2025-10-20
-    Module: '8: For Loops'
-    Topic: For loops
-    9am:
-      - python: lectures/F25/Seme/2025-10-20-For-loops.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1020%20for%20loops%2D20251020%5F111417%2DMeeting%20Recording%2Emp4
-      - kaggle: https://www.kaggle.com/code/byorgey/10-20-for-loops
-  - Date: 2025-10-22
-    Topic: More for loops
-    9am:
-      - python: lectures/F25/Seme/2025-10-22-More-For-loops.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1022%20more%20for%20loops%20%2B%20range%2D20251022%5F111106%2DMeeting%20Recording%2Emp4
-      - kaggle: https://www.kaggle.com/code/byorgey/10-20-for-loops
-    Assignments:
-      rows:
-        - link:
-            text: |
-              Lab 8: Caesar's Secrets
-            url: https://www.kaggle.com/code/gabrielferrer/caesar-s-secrets
-        - link:
-            text: 'HW 8: For Loops'
-            url: homework/modules/codingbat-for-loop.html
-  - Date: 2025-10-24
-    Topic: Mutability and the heap
-    9am:
-      - python: lectures/F25/Seme/2025-10-24-the Heap-and-Mutability.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1024%20Mutability%20%2B%20the%20heap%2D20251024%5F111041%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/project2_demo.py
-      - kaggle: https://www.kaggle.com/code/byorgey/mutability
+  - Date: 2026-03-09
+    Topic: 'Binary & Info Encoding'
+    
+  - Date: 2026-03-11
+    Topic: Generative AI
+    Assignments: 'Project 2 Workshop Lab'
+    
+  - Date: 2026-03-13
+    Topic: For Loops
     Assignments: 'Quiz 6: Lists'
+    
+      
 
   ##################################################
 
-  - Date: 2025-10-27
-    Module: '9: Dictionaries'
+  - Date: 2026-03-16
+    Module: '7: For Loops'
+    Topic: For loops
+    Assignments:
+    - link:
+            text: 'HW 7: For Loops'
+            url: homework/modules/codingbat-for-loop.html
+  - Date: 2026-03-18
+    Topic: More for loops
+    Assignments:
+        - link:
+            text: "Lab 7: Caesar's Secrets"
+            #url: https://www.kaggle.com/code/gabrielferrer/caesar-s-secrets
+           
+  - Date: 2026-03-20
+    Topic: Project 2 Demo
+    Assignments: Project 2 Due
+
+ ##################################################
+
+  - Date: 2026-03-23
+    Topic:
+      emph: 'No class - Spring break'
+  - Date: 2026-03-25
+    Topic:
+      emph: 'No class - Spring break'
+  - Date: 2026-03-27
+    Topic:
+      emph: 'No class - Spring break'
+
+  ##################################################
+
+  - Date: 2026-03-30
+    Module: '8: Dictionaries'
     Topic: Dictionaries
-    9am:
-      - python: lectures/F25/Seme/2025-10-27-Intro-to-Dictionaries.py
-      - text: lectures/F25/Seme/alice.txt
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1027%20Dictionaries%2D20251027%5F111113%2DMeeting%20Recording%2Emp4
-      - kaggle: https://www.kaggle.com/code/byorgey/10-27-dictionaries
-  - Date: 2025-10-29
+    Assignments:
+     - link:
+          text: 'Final project'
+          #url: projects/final.html
+  - Date: 2026-04-01
     Topic: Dictionaries
-    9am:
-      - python: lectures/F25/Seme/2025-10-29-More-Dictionaries.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1029%20Dictionaries%20II%2D20251029%5F111045%2DMeeting%20Recording%2Emp4
-      - kaggle: https://www.kaggle.com/code/byorgey/10-27-dictionaries
     Assignments:
       rows:
         - link:
             text: 'Lab 9: Asteriskbucks'
-            url: https://www.kaggle.com/code/gabrielferrer/asteriskbucks/
+            #url: https://www.kaggle.com/code/gabrielferrer/asteriskbucks/
         - link:
-            text: 'HW 9: Dictionaries'
+            text: 'HW 8: Dictionaries'
             url: homework/modules/dictionary.html
     Projects: 'Project 2 due'
-  - Date: 2025-10-31
-    Topic: Final Project discussion
-    9am:
-      - python: lectures/F25/Seme/2025-10-31-Project3-Discussion.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1031%20Final%20project%20discussion%2D20251031%5F111550%2DMeeting%20Recording%2Emp4
-    Assignments: 'Quiz 8: For Loops'
-    Projects:
-      - link:
-          text: 'Final project'
-          url: projects/final.html
-      - assigned
+  - Date: 2026-04-03
+    Topic: Dictionaries
+    Assignments: 'Quiz 7: For Loops'
+  
 
   ##################################################
 
-  - Date: 2025-11-03
-    Module: '10: Classes'
+  - Date: 2026-04-06
+    Module: '9: Classes'
     Topic: Classes
-    9am:
-      - python: lectures/F25/Seme/2025-11-03-Intro-to-classes.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F113%20Intro%20to%20classes%20%2B%20objects%2D20251103%5F111203%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/Cake.py
-  - Date: 2025-11-05
+  - Date: 2026-04-08
     Topic: Class & object examples
-    9am:
-      - python: lectures/F25/Seme/2025-11-05-Class-Examples-Day1.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F115%20more%20class%20%2B%20object%20examples%2D20251105%5F111321%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/Fountain.py
-      - python: lectures/F25/Yorgey/Forecast.py
     Assignments:
       rows:
         - link:
-            text: 'Lab 10: Water Jugs'
-            url: labs/waterjug.html
+            text: 'Lab 9: Water Jugs'
+            #url: labs/waterjug.html
         - link:
-            text: 'HW 10: Classes'
+            text: 'HW 9: Classes'
             url: homework/modules/class-design.html
-  - Date: 2025-11-07
+  - Date: 2026-04-10
     Topic: Class & object examples
-    9am:
-      - python: lectures/F25/Seme/2025-11-07-Class-Examples-Day2.py
-      - text: lectures/F25/Seme/books.txt
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F117%20classes%20%2B%20objects%20%28RPG%20example%29%2D20251107%5F111234%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/Weapon.py
-      - python: lectures/F25/Yorgey/Character.py
-      - python: lectures/F25/Yorgey/RPG.py
-    Assignments: 'Quiz 9: Dictionaries'
+    Assignments: 'Quiz 8: Dictionaries'
 
   ##################################################
 
-  - Date: 2025-11-10
-    Module: '11: PyGame'
+  - Date: 2026-04-13
+    Module: '10: PyGame'
     Topic: PyGame animation
-    9am:
-      - python: lectures/F25/Seme/2025-11-10-Pygame-Intro.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1110%20PyGame%2D20251110%5F111042%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/pygame_template.py
-      - python: lectures/F25/Yorgey/pygame_intro.py
-  - Date: 2025-11-12
+  - Date: 2026-04-15
     Topic: Classes and PyGame
-    9am:
-      - python: lectures/F25/Seme/2025-11-12-Working-in-pygame.py
-      - mp3: lectures/F25/Seme/doh.mp3
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1112%20animation%20in%20PyGame%2D20251112%5F111029%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/animation.py
     Assignments:
       rows:
         - link:
-            text: 'Lab 11: Faces'
+            text: 'Lab 10: Faces'
             url: labs/pygame.html
         - emph: 'No homework'
-  - Date: 2025-11-14
+  - Date: 2026-04-17
     Topic: Classes and PyGame
-    9am:
-      - python: lectures/F25/Seme/2025-11-14-More-Pygame.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1114%20PyGame%20demo%20game%2D20251114%5F111020%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/game_skeleton.py
-      - python: lectures/F25/Yorgey/game.py
-    Assignments: 'Quiz 10: Classes'
+    Assignments: 'Quiz 9: Classes'
     Projects: 'Final project design due'
 
   ##################################################
 
-  - Date: 2025-11-17
-    Module: '12: Recursion'
+  - Date: 2026-04-20
+    Module: '11: Recursion'
     Topic: Recursion
-    9am:
-      - python: lectures/F25/Seme/2025-11-17-Recursion.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1117%20intro%20to%20recursion%2D20251117%5F111338%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/recursion.py
-  - Date: 2025-11-19
+  - Date: 2026-04-22
     Topic: 'Recursion: trees'
-    9am:
-      - python: lectures/F25/Seme/2025-11-19-Recursion.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1119%20recursion%2D20251119%5F111210%2DMeeting%20Recording%2Emp4
-      - python: trees.py
     Assignments:
       rows:
         - link:
             text: |
-              Lab 12: Enron's Secrets
-            url: https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively
+              Lab 11: Enron's Secrets
+            #url: https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively
         - link:
-            text: 'HW 12: Trees & Recursion'
+            text: 'HW 11: Trees & Recursion'
             url: homework/modules/recursion.html
-  - Date: 2025-11-21
+  - Date: 2026-04-24
     Topic: 'Recursion: applications'
-    9am:
-      - python: lectures/F25/Seme/2025-11-21-Efficiency.py
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1121%20more%20recursion%2C%20intro%20to%20binary%2D20251121%5F111027%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/fibonacci.py
-      - python: lectures/F25/Yorgey/collatz_rec.py
-      - pdf: lectures/F25/Yorgey/2025-11-21-binary.pdf
     Assignments:
-      emph: 'No Quiz 11'
+      emph: 'No Quiz 10'
 
   ##################################################
 
-  - Date: 2025-11-24
-    Topic: Binary & information encoding
-    9am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2025-11-25-binary-and-information-encoding
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F1124%20binary%20%2B%20information%20encoding%2D20251124%5F111339%2DMeeting%20Recording%2Emp4
-      - pdf: lectures/F25/Yorgey/2025-11-21-binary.pdf
-  - Date: 2025-11-26
-    Topic:
-      emph: 'No class - Thanksgiving'
-  - Date: 2025-11-28
-    Topic:
-      emph: 'No class - Thanksgiving'
+  - Date: 2026-04-27
+    Topic: Tree and Queues
+  - Date: 2026-04-29
+    Topic: Final Project Workshop
+    Assignments: Final Project Lab
+  - Date: 2026-05-01
+    Topic: Final Project Worksop/Office Hours
 
-  ##################################################
-
-  - Date: 2025-12-01
-    Topic: Generative AI
-    9am:
-      - python: lectures/F25/Seme/2025-12-01-Generative-AI.py
-    11am:
-      - python: lectures/F25/Yorgey/TLM.py
-  - Date: 2025-12-03
-    Topic: Queues / project workshop
-    11am:
-      - stream: https://hendrix.sharepoint.com/sites/Section_32136/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32136%2FShared%20Documents%2FGeneral%2FRecordings%2F123%20queues%2D20251203%5F111039%2DMeeting%20Recording%2Emp4
-      - python: lectures/F25/Yorgey/ourqueue.py
-      - python: lectures/F25/Yorgey/fastqueue1.py
-      - python: lectures/F25/Yorgey/queuetest.py
-    Assignments: 'Lab: Final project workshop'
-  - Date: 2025-12-05
-    Topic: Office hours / project workshop
-    Assignments: 'Quiz 12: Trees & Recursion'
 
 # | #  | Name                                                                                       | Completion time | Assigned | Due |
 # |:--:|--------------------------------------------------------------------------------------------|-----------------|----------|-----|
