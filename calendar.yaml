@@ -11,14 +11,14 @@ entries:
   ##################################################
 
   - Date: 2026-01-21
-    Topic: Introduction to Computer Science
+    Topic: Introduction to Computer Science test
     8am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-01-21-introduction-to-cs
     Assignments:
       rows:
         - link:
             text: 'Lab 0: Minecraft'
-            url: https://studio.code.org/join/KGVMNV
+            #url: https://studio.code.org/join/CRNFJC
         - link:
             text: CSCI Student Survey
             url: https://docs.google.com/forms/d/e/1FAIpQLSeQGqE8Y764GekmoTdWrZ7WcYmZRVbO4pel1EeX2GqR7yA4TA/viewform
@@ -30,11 +30,11 @@ entries:
   ##################################################
 
   - Date: 2026-01-26
-    Module: '1: Math & Variables in Python
+    Module: '1: Math & Variables in Python'
     Topic: 'Math & Variables'
     
   - Date: 2026-01-28
-    Topic: Functions
+    Topic: 
       rows:
         - Python
         - 'Math & Variables'
