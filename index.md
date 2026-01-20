@@ -123,7 +123,7 @@ Upon completing this course, our goal is for you to be able to:
 |                               |              |                                       |                                                                                                       |                                                                                                                            |                          |
 |                               | **M 27 Apr** | Tree and Queues                       |                                                                                                       |                                                                                                                            |                          |
 |                               | **W 29 Apr** | Final Project Workshop                |                                                                                                       | Final Project Lab                                                                                                          |                          |
-|                               | **F 1 May**  | Final Project Worksop/Office Hours    |                                                                                                       |                                                                                                                            |                          |
+|                               | **F 1 May**  | Final Project Worksop/Office Hours    |                                                                                                       | Quiz 11: Recursion                                                                                                                           |                          |
 
 
 <!-- END CALENDAR -->
@@ -133,7 +133,7 @@ Upon completing this course, our goal is for you to be able to:
 ## <a name="modules">Modules</a>
 
 Most of your work in this course will be organized around a series of
-twelve *modules*, each module typically lasting one week and focusing
+eleven *modules*, each module typically lasting one week and focusing
 on a particular topic.  Most modules will have three components:
 
 * A *[lab](#labs)*, in which you get to put into practice what we have been
