@@ -56,6 +56,7 @@ entries:
   - Date: 2026-02-02
     Module: '2: Booleans & Conditionals'
     Topic: Booleans
+    Assignments: HW 1 Due
     
   - Date: 2026-02-04
     Topic: Conditionals
@@ -77,6 +78,7 @@ entries:
   - Date: 2026-02-09
     Module: '3: The Function Stack'
     Topic: 'PyCharm & Function Stack'
+    Assignments: HW 2 Due
   - Date: 2026-02-11
     Topic: 'Function Stack'
     Assignments:
@@ -105,6 +107,7 @@ entries:
     Topic: While loops
     Assignments:
       rows:
+        - HW 3 Due
         - link:
             text: 'Lab 4: Guess My Number'
             #url: labs/guess.html
@@ -119,6 +122,7 @@ entries:
   - Date: 2026-02-23
     Module: '5: Strings'
     Topic: Strings
+    Assignments: HW 4 Due
   - Date: 2026-02-25
     Topic: Strings and Loops
     Assignments:
@@ -143,6 +147,7 @@ entries:
   - Date: 2026-03-02
     Module: '6: Lists'
     Topic: Lists
+    Assignments: HW 5 Due
   - Date: 2026-03-04
     Topic: List processing examples
     Assignments:
@@ -161,6 +166,7 @@ entries:
 
   - Date: 2026-03-09
     Topic: 'Binary & Info Encoding'
+    Assignments: HW 6 Due
     
   - Date: 2026-03-11
     Topic: Generative AI
@@ -210,6 +216,7 @@ entries:
     Module: '8: Dictionaries'
     Topic: Dictionaries
     Assignments:
+     - HW 7 Due
      - link:
           text: 'Final project'
           #url: projects/final.html
@@ -234,6 +241,7 @@ entries:
   - Date: 2026-04-06
     Module: '9: Classes'
     Topic: Classes
+    Assignments: HW 8 Due
   - Date: 2026-04-08
     Topic: Class & object examples
     Assignments:
@@ -252,6 +260,7 @@ entries:
 
   - Date: 2026-04-13
     Module: '10: PyGame'
+    Assignments: HW 9 Due
     Topic: PyGame animation
   - Date: 2026-04-15
     Topic: Classes and PyGame
@@ -291,6 +300,7 @@ entries:
 
   - Date: 2026-04-27
     Topic: Tree and Queues
+    Assignments: HW 11 Due
   - Date: 2026-04-29
     Topic: Final Project Workshop
     Assignments: Final Project Lab
