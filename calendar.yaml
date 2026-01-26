@@ -32,12 +32,13 @@ entries:
   - Date: 2026-01-26
     Module: '1: Math & Variables in Python'
     Topic: 'Math & Variables'
+    8am: Snow!
     
   - Date: 2026-01-28
     Topic: 
       rows:
-        - Python
         - 'Math & Variables'
+        - 'Intro to Functions'
     
     Assignments:
       rows:
