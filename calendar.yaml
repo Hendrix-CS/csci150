@@ -39,6 +39,8 @@ entries:
       rows:
         - 'Math & Variables'
         - 'Intro to Functions'
+    8am: 
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-01-28-math-variables-and-functions
     
     Assignments:
       rows:
