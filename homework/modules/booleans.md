@@ -5,7 +5,7 @@ num: 2
 worktitle: Booleans and Conditionals
 ---
 
-*Due: Monday, September 15*
+*Due: Monday, February 9*
 
 Remember that homework is not formally assessed. However, any problems turned in by the due date will be checked and feedback provided.
 
