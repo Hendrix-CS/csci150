@@ -61,6 +61,8 @@ entries:
   - Date: 2026-02-02
     Module: '2: Booleans & Conditionals'
     Topic: Booleans
+    8am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-02-03-booleans
     Assignments: HW 1 Due
     
   - Date: 2026-02-04
