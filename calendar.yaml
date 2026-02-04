@@ -67,6 +67,8 @@ entries:
     
   - Date: 2026-02-04
     Topic: Conditionals
+    8am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-02-04-conditionals
     Assignments:
       rows:
         - link:
@@ -319,6 +321,7 @@ entries:
 
   - Date: 2026-05-08
     Topic: Final Project Demos
+    Assignments: 2pm
   
 
 
