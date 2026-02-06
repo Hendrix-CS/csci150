@@ -79,6 +79,8 @@ entries:
             url: homework/modules/booleans.html
   - Date: 2026-02-06
     Topic: Function Stack
+    8am: 
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-02-06-the-function-stack
     Assignments:
       - 'Quiz 1: Math & Variables'
 
