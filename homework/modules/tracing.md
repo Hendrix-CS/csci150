@@ -2,10 +2,10 @@
 layout: work
 type: Homework
 num: 3
-worktitle: Function Stack Tracing
+worktitle: Function Stack
 ---
 
-*Due: Monday, September 22*
+*Due: Wednesday, February 21*
 
 
 
@@ -96,7 +96,7 @@ other exercises.
 
 Your solution should be hand-written (or typed) and contain the following:
 
-- For each piece of code, you should turn in a completed trace, including any printed output, which was generated prior to running the code on a machine.
+- For each piece of code, your solujtion should contain what you thought any printed output would be, which was generated prior to running the code on a machine. Ideally, also include any scratch work you did to help you.
 - If your check in step 2 indicated a mistake, correct it, and explain what you got wrong initially and why the code produces the answer it does.
 
 
