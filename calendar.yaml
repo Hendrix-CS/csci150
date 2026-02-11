@@ -100,6 +100,7 @@ entries:
     Topic: 'Function Stack'
     8am:
       - python: lectures/S26/2026-02-11-Function-Stack.py
+      - pdf: lectures/S26/2026-02-11-Function-Stack-Practice-Solutions.py
 
     Assignments:
       rows:
