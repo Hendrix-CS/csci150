@@ -89,9 +89,18 @@ entries:
   - Date: 2026-02-09
     Module: '3: The Function Stack'
     Topic: 'PyCharm & Function Stack'
+    8am:
+      - python: lectures/S26/2026-02-09-PyCharm-and-Function-Stack.py
     Assignments: HW 2 Due
+    Projects:
+      - link:
+          text: 'Project 1 assigned'
+          url: projects/project1_if.html
   - Date: 2026-02-11
     Topic: 'Function Stack'
+    8am:
+      - python: lectures/S26/2026-02-11-Function-Stack.py
+
     Assignments:
       rows:
         - link:
@@ -99,11 +108,7 @@ entries:
             url: https://www.kaggle.com/code/gabrielferrer/this-day-in-history
         - link:
             text: 'HW 3: Tracing'
-    #        url: homework/modules/tracing.html
-    Projects:
-      - link:
-          text: 'Project 1 assigned'
-          #url: projects/project1_if.html
+            url: homework/modules/tracing.html
   - Date: 2026-02-13
     Topic: 'Function Stack & While'
     Assignments: 'Quiz 2: Booleans & Conditionals'
