@@ -112,6 +112,8 @@ entries:
             url: homework/modules/tracing.html
   - Date: 2026-02-13
     Topic: 'Function Stack & While'
+    8am:
+      - python: lectures/S26/2026-02-13-While-and-Function-Stack.py
     Assignments: 'Quiz 2: Booleans & Conditionals'
 
   ##################################################
