@@ -5,13 +5,13 @@ num: 4
 worktitle: While Loops
 ---
 
-*Due: Monday, September 29*
+*Due: Monday, February 23*
 
 This is the first homework that uses CodingBat, an online place to practice writing code with immediate feedback. You will need to make a free account:
 * Go to [codingbat.com](https://codingbat.com)
 * Follow the instructions to make an account -- please use your Hendrix email as your account ID
 * You can use any password you like
-* Under the `prefs` tab (top right, next to your name), enter your professor's email in the Teacher Share Box (`seme@hendrix.edu` or `yorgey@hendrix.edu`)
+* Under the `prefs` tab (top right, next to your name), enter your professor's email in the Teacher Share Box (`seme@hendrix.edu`)
 
 Complete at least **five** of the following exercises in CodingBat.
 
