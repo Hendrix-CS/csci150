@@ -85,7 +85,7 @@ other exercises.
         else:
             print("snaaaaake")
 
-    def main2():
+    def main3():
         f3(2)
         f3(6)
 
