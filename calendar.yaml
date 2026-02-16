@@ -129,7 +129,7 @@ entries:
         - HW 3 Due
         - link:
             text: 'Lab 4: Guess My Number'
-            #url: labs/guess.html
+            url: labs/guess.html
         - link:
             text: 'HW 4: While Loops'
             url: homework/modules/while_loops.html
