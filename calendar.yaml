@@ -124,6 +124,8 @@ entries:
       emph: 'No class - Midwinter Break'
   - Date: 2026-02-18
     Topic: While loops
+    8am:
+      - python: lectures/S26/2026-02-18-More-While-Loops.py
     Assignments:
       rows:
         - HW 3 Due
