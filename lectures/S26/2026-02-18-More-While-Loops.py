@@ -27,19 +27,29 @@
 # parameter n (which you can assume will always be non-negative)
 # and returns the sum 0 + 1 + 2 + ... + n
 
-def sum_to(n: int) -> int:
-   s = 0
-   cur = 0
-   while cur <= n:
-       s += cur
-       cur += 1
 
-   return s
+def sum_to(n: int) -> int:
+    i = 0
+    s = 0
+    while i <= n:
+        s = s + i
+        # or s += i
+        i += 1
+
+    return s
+
 
 
 
 def factorial(n: int) -> int:
-    1
+    i = 1
+    p = 1
+    while i <= n:
+        p = p * i
+        # or s += i
+        i += 1
+
+    return p
 
 # now write factorial(n), which given non-negative n, finds
 #  n! = 1 * 2 * 3 * ... * n.  (Note that 0! = 1, by definition).
@@ -60,17 +70,37 @@ def factorial(n: int) -> int:
 # It should repeatedly ask them until they are eventually successful
 
 def entry() -> int:
-    successful = False
-    while not successful:
-        str_n = input('Enter an integer between 2 and 5, inclusive: ')
-        if str_n.isdigit(): # new command .isdigit()
-            n = int(str_n)
-            if 2 <= n <= 5:
-                successful = True
-        else:
-            print('Please follow directions!')
 
-    return n
+    ans = input('Please enter an integer between 2 and 5: ')
+    while not ans.isdigit() or (int(ans) < 2 or int(ans) > 5):
+        ans = input('Please enter an integer between 2 and 5: ')
+
+
+    numb = int(ans)
+    return numb
+
+
+
+
+
+
+
+###### We did not get to the code below here.  I'll start with the ideas below on Friday
+
+
+
+# def entry() -> int:
+#     successful = False
+#     while not successful:
+#         str_n = input('Enter an integer between 2 and 5, inclusive: ')
+#         if str_n.isdigit(): # new command .isdigit()
+#             n = int(str_n)
+#             if 2 <= n <= 5:
+#                 successful = True
+#         else:
+#             print('Please follow directions!')
+#
+#     return n
 
 
 
