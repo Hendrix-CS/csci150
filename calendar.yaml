@@ -137,6 +137,8 @@ entries:
             url: homework/modules/while_loops.html
   - Date: 2026-02-20
     Topic: While loops
+    8am:
+      - python: lectures/S26/2026-02-20-Even-More-While-Loops.py
     Assignments: 'Quiz 3: Function Stack'
     
   ##################################################
