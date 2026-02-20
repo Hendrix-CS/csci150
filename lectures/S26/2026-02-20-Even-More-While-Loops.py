@@ -3,7 +3,7 @@
 # As noted in the homework itself, you need to make a (free) account on CodingBat
 # codingbat.com/python
 
-# Project #1 is due One Week from Today. Please turn in to the Assignment on Teams
+# Project #1 is due One Week from last Wednesday. Please turn in to the Assignment on Teams
 
 # You also received a grade update from me by email
 # -- if you have any questions or something is missing/incorrect
@@ -13,18 +13,18 @@
 
 
 
-# def entry() -> int:
-#     successful = False
-#     while not successful:
-#         str_n = input('Enter an integer between 2 and 5, inclusive: ')
-#         if str_n.isdigit(): # new command .isdigit()
-#             n = int(str_n)
-#             if 2 <= n <= 5:
-#                 successful = True
-#         else:
-#             print('Please follow directions!')
-#
-#     return n
+def entry() -> int:
+    successful = False
+    while not successful:
+        str_n = input('Enter an integer between 2 and 5, inclusive: ')
+        if str_n.isdigit(): # new command .isdigit()
+            n = int(str_n)
+            if 2 <= n <= 5:
+                successful = True
+        else:
+            print('Please follow directions!')
+
+    return n
 
 
 
@@ -43,7 +43,25 @@
 # Continually prompt the user to enter 'y' or 'n' -- when they do, return that value
 
 def y_or_n() -> str:
-    1
+    successful = False
+    while not successful:
+        ans = input('Please type y or n: ')
+        if ans == 'y' or ans == 'n':
+            successful = True
+        else:
+            print('I did not understand; please try again.')
+    return ans
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,3 +91,28 @@ def collatz_steps(n: int) -> int:
 #main()
 # needs to ask for an integer >= 1
 # for each i between 1 and n, run collatz_steps and print answer
+
+def ask_integer():
+    successful = False
+    while not successful:
+        str_n = input('Enter a positive integer: ')
+        if str_n.isdigit():  # new command .isdigit()
+            n = int(str_n)
+            if n > 0:
+                successful = True
+        else:
+            print('Please follow directions!')
+
+    return n
+
+
+def main():
+    n = ask_integer()
+    i = 1
+    while i <= n:
+        step = collatz_steps(i)
+        print(f'The number {i} took {step} steps.')
+        i += 1
+
+
+main()
