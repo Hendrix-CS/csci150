@@ -146,6 +146,8 @@ entries:
   - Date: 2026-02-23
     Module: '5: Strings'
     Topic: Strings
+    8am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-02-23-strings
     Assignments: HW 4 Due
   - Date: 2026-02-25
     Topic: Strings and Loops
