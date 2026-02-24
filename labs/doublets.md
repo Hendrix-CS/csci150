@@ -42,11 +42,7 @@ the word 'head' may be changed into 'tail' by interposing the words
 >It is, perhaps, needless to state that it is de rigueur that the links should be
 English words, such as might be used in good society.
 
-(More details on the connection between Lewis Carroll and genetics can be found in an article by
-David B. Searls entitled
-[From *Jabberwocky* to Genome: Lewis Carroll and Computational Biology](http://www.liebertonline.com/doi/abs/10.1089/10665270152530881).)
-
-Our task for this lab is to create a Python program that lets a user play the Doublets game
+Your task for this lab is to create a Python program that lets a user play the Doublets game
 and enforces all the rules given above by Lewis Carroll.
 
 ### Step 1 - Develop Pseudocode
@@ -330,7 +326,7 @@ in place:
 ### Step 4 - Play
 
 Once your program is working, use it to help you create at least two
-puzzles, with solutions.  One puzzle should be between two four-letter
+puzzles, with solutions. One puzzle should be between two four-letter
 words, requiring at least four steps; another puzzle should be between
 two five-letter words, requring at least five steps.  If you would
 like a challenge, you can try solving some of the puzzles below, and
@@ -340,4 +336,7 @@ include your solutions:
 * SLEEP -- DREAM
 * APE -- MAN
 
-However, you are also welcome to create your own puzzles.
+However, you are also welcome to create your own puzzles.  For
+example, you could pick a starting word, and then use your program to
+take valid steps until you reach another word you find interesting,
+and use that as your puzzle.

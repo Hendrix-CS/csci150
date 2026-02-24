@@ -155,7 +155,7 @@ entries:
       rows:
         - link:
             text: 'Lab 5: Doublets'
-            #url: labs/doublets.html
+            url: labs/doublets.html
         - link:
             text: 'HW 5: Strings'
             url: homework/modules/codingbat-string-loop.html
