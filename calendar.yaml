@@ -139,7 +139,12 @@ entries:
     Topic: While loops
     8am:
       - python: lectures/S26/2026-02-20-Even-More-While-Loops.py
-    Assignments: 'Quiz 3: Function Stack'
+    Assignments: 
+      rows: 
+        - 'Quiz 3: Function Stack'
+        - link:
+           text: 'Quiz 3 Key'
+           url: lectures/S26/CSCI150-Quiz3-Key.pdf
     
   ##################################################
 
@@ -169,7 +174,7 @@ entries:
     Projects:
       link:
         text: 'Project 2 assigned'
-        #url: projects/project2.html
+        url: projects/project2.html
 
   ##################################################
 
@@ -225,7 +230,7 @@ entries:
            
   - Date: 2026-03-20
     Topic: Project 2 Demo
-    Assignments: Project 2 Due
+    Projects: 'Project 2 Due'
 
  ##################################################
 
@@ -259,7 +264,6 @@ entries:
         - link:
             text: 'HW 8: Dictionaries'
             url: homework/modules/dictionary.html
-    Projects: 'Project 2 due'
   - Date: 2026-04-03
     Topic: Dictionaries
     Assignments: 'Quiz 7: For Loops'
