@@ -2,7 +2,7 @@
 layout: work
 type: Lab
 num: 5
-worktitle: Mutation is the Word
+worktitle: Doublets
 ---
 
 ## Overview
