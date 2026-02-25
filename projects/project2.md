@@ -5,7 +5,7 @@ num: 2
 worktitle: Word Games
 ---
 
-**Due Wednesday, October 29**
+**Due Wednesday, April 1**
 ## Description
 
 For this project, you will create a program for users to play a [word
@@ -63,6 +63,9 @@ The user must be able to
 * make mistakes in entry of information and be prompted to correct their
 input.
 
+In addition, this should actually be *a game*. The user should be prompted with some information
+enter a guess an update based on that and get feedback.
+
 **Your code must make good use of functions**. Using functions will reduce
 the amount of code you need to write as well as make your program easier
 to debug. However, do not write [spaghetti
@@ -86,6 +89,8 @@ turns.
     Integrity](http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html)
     guidelines for CSCI. Get started early, come for help often.  You
     **can** do this project!
+*   We will provide a lot of help! In fact, the Lab period March 11/12 is
+    explicitly set aside for you to have time to work on your project and get assistance!
 
 ## What to Hand In
 
