@@ -8,7 +8,7 @@
 # Quiz #4 on Friday -- While Loops
 
 # Last time, we saw the basic of strings:
-# * Indicies
+# * Indices
 # * Slices
 # * Length
 # * Basic Methods: .find(), .count(), .upper(), .lower(), etc
@@ -19,7 +19,11 @@
 # "Explode" a string -- given a string, print each character, one at a time
 
 def explode_str(s: str):
-    1
+    i = 0
+
+    while i < len(s):
+        print(s[i])
+        i += 1
 
 
 
@@ -38,11 +42,36 @@ def explode_str(s: str):
 
 
 def count_char(s: str, c: str) -> int:
-    1
+    i = 0
+    counter = 0
+    while i < len(s):
+        if s[i] == c:
+            counter += 1
+        i += 1
+    return counter
+
+
+
+
+
+
+
+
+
 
 
 def find_char(s:str, c: str) -> int:
-    1
+    i = 0
+
+    while i < len(s):
+        if s[i] == c:
+            return i
+
+        i += 1
+
+    return -1
+
+
 
 
 # Insert character:
@@ -54,10 +83,19 @@ def find_char(s:str, c: str) -> int:
 
 
 def insert_char(s: str, c: str, i: int) -> str:
-    1
+    j = 0
+    return_str = ''
+    while j < len(s):
+        if i == j:
+            return_str += c
+        return_str +=s[j]
+
+        j += 1
+
+    return return_str
 
 
-
+# **** We did not get to this one in class; We will do it first on Friday.
 
 # Finally, write in_order(s), which takes in a string and returns
 # True when the letters are in alphabetical order -- counting repeats as being ok
