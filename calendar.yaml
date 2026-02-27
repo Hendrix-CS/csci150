@@ -170,6 +170,9 @@ entries:
     Projects: 'Project 1 Due'
   - Date: 2026-02-27
     Topic: 'Input & Output'
+    8am:
+      - python: lectures/S26/2026-02-27-File-Input-Output.py
+
     Assignments: 'Quiz 4: While Loops'
     Projects:
       link:
@@ -181,6 +184,8 @@ entries:
   - Date: 2026-03-02
     Module: '6: Lists'
     Topic: Lists
+    8am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-03-02-lists
     Assignments: HW 5 Due
   - Date: 2026-03-04
     Topic: List processing examples
