@@ -193,7 +193,7 @@ entries:
       rows:
         - link:
             text: 'Lab 6: To Do Manager'
-            #url: labs/todo-manager.html
+            url: labs/todo-manager.html
         - link:
             text: 'HW 6: Lists'
             url: homework/modules/lists.html
@@ -255,10 +255,11 @@ entries:
     Module: '8: Dictionaries'
     Topic: Dictionaries
     Assignments:
-     - HW 7 Due
-     - link:
-          text: 'Final project'
-          #url: projects/final.html
+      rows:
+        - HW 7 Due
+        - link:
+            text: 'Final project'
+            #url: projects/final.html
   - Date: 2026-04-01
     Topic: Dictionaries
     Assignments:
