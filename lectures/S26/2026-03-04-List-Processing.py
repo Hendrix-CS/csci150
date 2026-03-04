@@ -1,3 +1,5 @@
+import spellcheck
+
 # Reminders
 # Quiz #5 (Strings) this Friday
 #
@@ -16,18 +18,44 @@
 #
 
 # Given a list of integers, return the sum:
+# lst = [5, 2, 9, 1]
 def list_sum(lst: list[int]) -> int:
-    1
+    i = 0
+    sum = 0
+    while i < len(lst):
+        sum += lst[i]
+
+        i += 1
+
+    return sum
+
 
 # even_sum -- given a list of integers, return the sum,
 # but only of the *even* numbers in the list
 def even_sum(lst: list[int]) -> int:
-    1
+    i = 0
+    sum = 0
+    while i < len(lst):
+        if lst[i] % 2 == 0:
+            sum += lst[i]
+
+        i += 1
+
+    return sum
+
 
 
 # Given a list of strings, return True only if every word is at least 6 letters long
 def long_words(lst: list[str]) -> bool:
-    1
+    i = 0
+
+    while i < len(lst):
+        if len(lst[i]) < 6:
+            return False
+
+        i += 1
+
+    return True
 
 # valid_words
 # Given a list of strings, return True only if all are valid, using:
@@ -39,16 +67,39 @@ def long_words(lst: list[str]) -> bool:
 # folder as this file
 
 def valid_words(lst: list[str]) -> bool:
-    1
+    i = 0
+
+    while i < len(lst):
+        if not spellcheck.valid_word(lst[i], 'english3.txt'):
+            return False
+
+        i += 1
+
+    return True
+
 
 
 # Given a list of integers, triple any value that is even
 def triple_evens(lst: list[int]):
-    1
+    i = 0
+
+    while i < len(lst):
+        if lst[i] % 2 == 0:
+            lst[i] *= 3
+        i += 1
 
 
 # Given a list of integers, return a *new* list
 # which triples any value that is even
 def triple_evens_new(lst: list[int]) -> list[int]:
-    1
+    i = 0
+    mst = []
+    while i < len(lst):
+        if lst[i] % 2 == 0:
+            mst.append(lst[i] * 3)
+        else:
+            mst.append(lst[i])
+        i += 1
+
+    return mst
     
