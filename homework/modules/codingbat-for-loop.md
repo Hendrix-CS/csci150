@@ -7,7 +7,7 @@ worktitle: For Loop Homework
 
 
 
-*Due: Monday, October 27*
+*Due: Monday, March 30*
 
 Consider the following exercises in CodingBat.  Be
 sure to share your progress with me, by going to "prefs" and entering
