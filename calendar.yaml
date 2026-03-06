@@ -203,7 +203,7 @@ entries:
     Topic: Function abstraction
     8am:
       - python: lectures/S26/2026-03-06-Function-Abstraction.py
-
+      - python: lectures/S26/2026-03-06-roulette-modularization.py
     Assignments: 'Quiz 5: Strings'
 
   ##################################################
@@ -211,9 +211,13 @@ entries:
   - Date: 2026-03-09
     Topic: 'Binary & Info Encoding'
     Assignments: HW 6 Due
+    8am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-03-09-binary-and-information-encoding
     
   - Date: 2026-03-11
     Topic: Generative AI
+    8am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-03-11-generative-ai
     Assignments: 'Project 2 Workshop Lab'
     
   - Date: 2026-03-13
