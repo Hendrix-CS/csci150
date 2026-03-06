@@ -45,8 +45,22 @@ import random
 # if you find yourself saying "it calculates area *and* then also calculates..."
 #   you really have two functions, almost certainly
 
+############ Possible main for a word game:
+# def main():
+#     welcome()
+#     print_rules()
+#     again = True
+#     while again:
+#         level = choose_level()
+#         play_game(level)
+#         again = play_again()
 
-# We are going to look at an example of this
+# Then, you write each of the individual functions as you go.
+
+
+# We are going to look at an example of this --
+# * we started this today, and will continue on Monday
+# * I will post the 'modularized' version on the webpage as well.
 
 
 print("Welcome to Roulette, the simplest Casino Table Game!")
