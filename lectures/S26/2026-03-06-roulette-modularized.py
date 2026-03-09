@@ -12,12 +12,14 @@ def welcome():
 def print_rules():
     print("You can bet on any of the following:")
     print()
-    print("1. Evens (pays 1:1)")
-    print("2. Odds (pays 1:1)")
-    print("3. 1st 12 (pays 2:1)")
-    print("4. 2nd 12 (pays 2:1)")
-    print("5. 3rd 12 (pays 2:1)")
-    print("6. Quit")
+
+    i = 0
+    lst = options()
+
+    while i < len(lst):
+        print(f'{i+1}. {lst[i]}')
+        i += 1
+
     print()
     print()
     input('Press "Enter" to start')
@@ -32,6 +34,8 @@ def options() -> list[str]:
     lst.append("Quit")
 
     return lst
+
+
 def choose_bet(stake: int) -> int:
     print(f'Your current stake is ${stake}.')
     succ = False
@@ -42,14 +46,54 @@ def choose_bet(stake: int) -> int:
             choice = int(choice)
         else:
             print("You can bet on any of the following:")
-            print("1. Evens (pays 1:1)")
-            print("2. Odds (pays 1:1)")
-            print("3. 1st 12 (pays 2:1)")
-            print("4. 2nd 12 (pays 2:1)")
-            print("5. 3rd 12 (pays 2:1)")
-            print("6. Quit")
+            i = 0
+            lst = options()
+
+            while i < len(lst):
+                print(f'{i + 1}. {lst[i]}')
+                i += 1
+
 
     return choice
+
+def ball_roll() -> int:
+    roll = random.randint(0,37)
+    roll_str = str(roll)
+    if roll == 37:
+        roll_str = '00'
+    print(f'The number {roll_str} was rolled.')
+
+    return roll
+
+def place_bet(stake) -> int:
+    succ = False
+    while not succ:
+        bet = input(f'Your stake is ${stake}. How much do you want to bet? ')
+        if bet.isdigit() and 1 <= int(bet) <= stake:
+            succ = True
+            bet = int(bet)
+            return bet
+        else:
+            print(f"Please bet in whole dollar amounts, between 1 and {stake}.")
+
+def even_odd(choice, roll, bet) -> int:
+    if choice == 1 and roll % 2 == 0:
+        return bet
+    elif choice == 2 and roll % 2 != 0 and roll != 37:
+        return bet
+    else:
+        return -bet
+
+def thirds(choice, roll, bet) -> int:
+    if choice == 3 and 1 <= roll <= 12:
+        return 2 * bet
+    elif choice == 4 and 13 <= roll <= 24:
+        return 2 * bet
+    elif choice == 5 and 25 <= roll <= 36:
+        return 2 * bet
+    else:
+        return -bet
+
 
 
 def main():
@@ -60,10 +104,22 @@ def main():
     cont = True
     while cont:
 
-
+        choice = choose_bet(stake)
 
         if stake == 0:
             cont = False
-        # elif choice == 6:
-        #     cont = False
+            print(f'Thanks for playing. You finish with a stake of ${stake}.')
+        elif choice == 6:
+            cont = False
+            print(f'Thanks for playing. You finish with a stake of ${stake}.')
+        else:
+            bet = place_bet(stake)
+            roll = ball_roll()
+            if choice == 1 or choice == 2:
+                stake += even_odd(choice, roll, bet)
+            elif choice == 3 or choice == 4 or choice == 5:
+                stake += thirds(choice, roll, bet)
+
+
+
 
