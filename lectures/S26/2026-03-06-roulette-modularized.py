@@ -104,21 +104,24 @@ def main():
     cont = True
     while cont:
 
-        choice = choose_bet(stake)
+
 
         if stake == 0:
             cont = False
             print(f'Thanks for playing. You finish with a stake of ${stake}.')
-        elif choice == 6:
-            cont = False
-            print(f'Thanks for playing. You finish with a stake of ${stake}.')
         else:
-            bet = place_bet(stake)
-            roll = ball_roll()
-            if choice == 1 or choice == 2:
-                stake += even_odd(choice, roll, bet)
-            elif choice == 3 or choice == 4 or choice == 5:
-                stake += thirds(choice, roll, bet)
+            choice = choose_bet(stake)
+
+            if choice == 6:
+                cont = False
+                print(f'Thanks for playing. You finish with a stake of ${stake}.')
+            else:
+                bet = place_bet(stake)
+                roll = ball_roll()
+                if choice == 1 or choice == 2:
+                    stake += even_odd(choice, roll, bet)
+                elif choice == 3 or choice == 4 or choice == 5:
+                    stake += thirds(choice, roll, bet)
 
 
 
