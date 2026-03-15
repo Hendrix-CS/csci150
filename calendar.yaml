@@ -233,6 +233,8 @@ entries:
   - Date: 2026-03-16
     Module: '7: For Loops'
     Topic: For loops
+    8am:
+      - python: lectures/S26/2026-03-16-For-Loops.py
     Assignments:
     - link:
             text: 'HW 7: For Loops'
