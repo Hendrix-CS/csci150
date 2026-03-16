@@ -19,9 +19,31 @@ def excite_while(lst: list[str]):
         i += 1
 
 
-def excite_for(lst: list[str]):
+def excite_for_doesnt_work(lst: list[str]):
     for word in lst:
         word += '!'
+
+
+
+def excite_for(lst: list[str]):
+    for i in range(len(lst)):
+        lst[i] += '!'
+
+
+# now, we want to build a *new* list, with the !s added
+
+def excite_for_2(lst: list[str]) -> list[str]:
+    new_lst = []
+    for word in lst:
+        new_word = word + '!'
+
+        new_lst.append(new_word)
+
+
+
+    return new_lst
+
+
 
 
 # the first one acted as we expect, but not the second
@@ -30,27 +52,86 @@ def excite_for(lst: list[str]):
 # is not (typically) literally the item in the list
 # so changing it does not change the list
 
-def excite_for_better(lst: list[str]):
-    1
-
-
-
 
 # now some practice with for loops -- we will likely
 # not get through all of these on Monday
 # but will simply continue into Wednesday
 
 # sum the first n integers:
+# 0 + 1 + 2 + ... + (n-1)
 def sum_to_n(n: int) -> int:
-    1
+    s = 0
+    for i in range(n):
+        s += i
+
+    return s
+
+def sum_to_n_while(n: int) -> int:
+    i = 0
+    s = 0
+    while i < n:
+        s += i
+        i += 1
+
+    return s
+
+# sum between: a + (a+1) + (a+2) + ... + b
+def sum_between(a: int, b: int) -> int:
+    s = 0
+    for i in range(a, b + 1):
+        s += i
+
+    return s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # how many vowels (aeiou) are in s
 def count_vowels(s: str) -> int:
-    1
+    c = 0
+    for char in s:
+        if char in 'aeiouy':
+            c += 1
+
+
+    return c
+
+
 
 # how many total vowels are in all words in he list
+# def count_vowels_in_list(lst: list[str]) -> int:
+#     c = 0
+#     for word in lst:
+#         for char in word:
+#             if char in 'aeiou':
+#                 c += 1
+#
+#     return c
+
 def count_vowels_in_list(lst: list[str]) -> int:
-    1
+    c = 0
+    for word in lst:
+        c += count_vowels(word)
+
+
+
+    return c
+
+
+## Wednesday we will start here
 
 
 # return True of the list contains more even than odd integers
