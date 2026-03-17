@@ -3,8 +3,8 @@ layout: work
 type: Project
 num: 3
 worktitle: Final Project
-designdue: Friday, November 14
-finaldue: Friday, December 12 (A4) or Monday, December 15 (A2)
+designdue: Friday, April 17
+finaldue: May 8 (2pm)
 location: 'Mills Library'
 ---
 
@@ -25,11 +25,11 @@ Guidelines
 ----------
 
 Unlike the other projects, you may work with one partner for the final
-project. You can also work individually if you wish.  If you wish to
+project. You can also work individually if you wish.  <!-- If you wish to
 work with a partner from the other section, ideally you should pick
 one of the two project demo days when you are both available to
 present.  Regardless, you should plan to attend the demo day
-corresponding to your section in order to see everyone else's projects.
+corresponding to your section in order to see everyone else's projects.-->
 
 You have wide latitude in choosing what to do for your final project.
 The only requirements are that it should be **sufficiently complex** and
