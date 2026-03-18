@@ -127,17 +127,53 @@ def count_vowels_in_list(lst: list[str]) -> int:
 
 
 # return True of the list contains more even than odd integers
-def more_evens(list: list[int]) -> bool:
-    1
+def more_evens(lst: list[int]) -> bool:
+    evens = 0
+    odds = 0
+    for item in lst:
+        if item % 2 == 0:
+            evens += 1
+        else:
+            odds += 1
+
+    return evens > odds
+
+    # if evens > odds:
+    #     return True
+    # else:
+    #     return False
 
 
 # return True if the list is in increasing order
 def is_sorted(lst: list[int]) -> bool:
-    1
+    # run through the list
+        # compare adjacent entries
+        # if out of order, return False
+
+    # return True
+
+    for i in range(len(lst) - 1):
+        if lst[i] > lst[i + 1]:
+            return False
+
+    # for i in range(1, len(lst)):
+    #     if lst[i - 1] > lst[i]:
+    #         return False
+
+
+    return True
+
+
+
 
 
 def find_max(lst: list[int]) -> int:
-    1
+    m = lst[0]
+    for item in lst:
+        if item > m:
+            m = item
+
+    return m
 
 
 # Warning -- you should not change the length of a list
@@ -147,15 +183,34 @@ def find_max(lst: list[int]) -> int:
 
 # given a list of ints, return a new list with only the evens
 def even_list(lst: list[int]) -> list[int]:
-    1
+    return_lst = []
+    for item in lst:
+        if item % 2 == 0:
+            return_lst.append(item)
+
+    return return_lst
 
 # given a list of ints, change the list so it only has evens
 def even_list_new(lst: list[int]):
-    1
+    return_lst = []
+    for item in lst:
+        if item % 2 != 0:
+            return_lst.append(item)
+
+    for item in return_lst:
+        lst.remove(item)
+
+
 
 # remove from a list all words which contain the letter 'a'
 def remove_a(lst: list[str]):
-    1
+    remove_lst = []
+    for item in lst:
+        if 'a' in item:
+            remove_lst.append(item)
+
+    for item in remove_lst:
+        lst.remove(item)
 
 
 
