@@ -241,6 +241,8 @@ entries:
             url: homework/modules/codingbat-for-loop.html
   - Date: 2026-03-18
     Topic: More for loops
+    8am:
+      - python: lectures/S26/2026-03-16-For-Loops.py
     Assignments:
         - link:
             text: "Lab 7: Caesar's Secrets"
