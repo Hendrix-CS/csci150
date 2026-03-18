@@ -1,3 +1,8 @@
+#### NOTE
+# This is the file used for *both* Monday, March 16 & Wednesday, March 18
+
+# Wednesday's code starts in line 126
+
 # Reminders
 # Homework #7 -- For Loops assigned; due Monday after break
 # Quiz #7 - For Loops, Friday after break
@@ -86,19 +91,6 @@ def sum_between(a: int, b: int) -> int:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # how many vowels (aeiou) are in s
 def count_vowels(s: str) -> int:
     c = 0
@@ -158,7 +150,7 @@ def even_list(lst: list[int]) -> list[int]:
     1
 
 # given a list of ints, change the list so it only has evens
-def even_list_new(lst: list[int]) -> list[int]:
+def even_list_new(lst: list[int]):
     1
 
 # remove from a list all words which contain the letter 'a'
