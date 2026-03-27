@@ -269,14 +269,18 @@ entries:
   - Date: 2026-03-30
     Module: '8: Dictionaries'
     Topic: Dictionaries
+    8am:
+      -  kaggle: https://www.kaggle.com/code/larskseme/2026-03-30-intro-to-dictionaries
     Assignments:
       rows:
         - HW 7 Due
         - link:
             text: 'Final project'
-            #url: projects/final.html
+            url: projects/final.html
   - Date: 2026-04-01
     Topic: Dictionaries
+    8am:
+      - python: lectures/S26/2026-04-01-Dictionaries.py
     Assignments:
       rows:
         - link:
@@ -287,6 +291,9 @@ entries:
             url: homework/modules/dictionary.html
   - Date: 2026-04-03
     Topic: Dictionaries
+    8am:
+      - python: lectures/S26/2026-04-03-Dictionaries-and-Data.py
+      - text: lectures/S26/zipcodes.txt
     Assignments: 'Quiz 7: For Loops'
   
 
