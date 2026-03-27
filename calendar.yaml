@@ -272,8 +272,8 @@ entries:
     8am:
       -  kaggle: https://www.kaggle.com/code/larskseme/2026-03-30-intro-to-dictionaries
     Assignments:
-      rows:
         - HW 7 Due
+    Projects:
         - link:
             text: 'Final project'
             url: projects/final.html
