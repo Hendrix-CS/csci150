@@ -79,7 +79,7 @@ are welcome to use this as a starting point.
 Demo
 ----
 
-During the scheduled final exam time on {{page.finaldue}} at 9:00am,
+During the scheduled final exam time on {{page.finaldue}} at 2:00pm,
 everyone will have the opportunity to demo their projects.  We will
 meet in {{page.location}}, and split into 2 or 3 groups.  Each group
 will have a turn to be prepared to demo their projects while the other
