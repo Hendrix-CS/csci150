@@ -73,7 +73,7 @@ implement your project.
 
 A sample design document for Prof. Seme's *Star Trek* game can be
 found
-[HERE](/projects/CSCI-150-Final-Project-Design-Doc-Sample.pdf). You
+[HERE](/csci150/projects/CSCI-150-Final-Project-Design-Doc-Sample.pdf). You
 are welcome to use this as a starting point.
 
 Demo
