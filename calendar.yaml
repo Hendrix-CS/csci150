@@ -285,7 +285,7 @@ entries:
       rows:
         - link:
             text: 'Lab 8: Asteriskbucks'
-            #url: https://www.kaggle.com/code/gabrielferrer/asteriskbucks/
+            url: https://www.kaggle.com/code/gabrielferrer/asteriskbucks/
         - link:
             text: 'HW 8: Dictionaries'
             url: homework/modules/dictionary.html
