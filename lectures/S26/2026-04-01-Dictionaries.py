@@ -34,12 +34,7 @@ def enrolled_lecture(d: dict[str, int]) -> int:
  # {3: 3, 4: 3, 5: 2, 12: 1, 2: 1}
 
 def length_dict(lst: list[str]) -> dict[int, int]:
-    out_dict = {}
-    for word in lst:
-        if len(word) not in out_dict:
-            out_dict[len(word)] = 0
-        out_dict[len(word)] += 1
-    return out_dict
+    1
 
 
 
