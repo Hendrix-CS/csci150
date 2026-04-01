@@ -281,6 +281,7 @@ entries:
     Topic: Dictionaries
     8am:
       - python: lectures/S26/2026-04-01-Dictionaries.py
+      - text: lectures/S26/alice.txt
     Assignments:
       rows:
         - link:
