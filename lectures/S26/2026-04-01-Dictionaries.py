@@ -38,17 +38,27 @@ def length_dict(lst: list[str]) -> dict[int, int]:
 
 
 
-def word_count(filename: str) -> dict[int, int]:
+# Making the letter frequency count dictionary from the 'Alice.txt'' file
+def freq_count(filename: str) -> dict[str, int]:
     out_dict = {}
-    f = open(filename, 'r')
-    for line in f.readlines():
-        word = line.strip()
-        if len(word) not in out_dict:
-            out_dict[len(word)] = 0
-        out_dict[len(word)] += 1
+    f = open(filename,'r')
+    for char in f.read():
+        if char.isalpha():
+            k = char.lower()
+            if k not in out_dict:
+                out_dict[k] = 0
+            out_dict[k] += 1
+
+    f.close()
     return out_dict
 
 
+
+# Then, we will turn these into their decimal frequencies
+
+
+
+# Can we sort?
 def sorted_explode(d):
     for k in sorted(d):
         print(k, d[k])
