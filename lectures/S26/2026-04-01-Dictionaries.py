@@ -14,13 +14,23 @@ def explode_dictionary(d: dict[str, int]):
 
 # Given the dictionary above, find the total number of students enrolled
 def enrolled(d: dict[str, int]) -> int:
-    1
+    c = 0
+    for k in d:
+        c += d[k]
+
+
+    return c
 
 
 # Modify the above so it does not include students enrolled in labs
 
 def enrolled_lecture(d: dict[str, int]) -> int:
-    1
+    c = 0
+    for k in d:
+        if k[7] != 'L':
+            c += d[k]
+
+    return c
 
 
 # Given a list of strings (words), build a dictionary which:
@@ -28,14 +38,33 @@ def enrolled_lecture(d: dict[str, int]) -> int:
 # * the value is the count of the number of such words
 
 # For example:
-# lst = ['the', 'main', 'point', 'about', 'dictionaries', 'is', 'that', 'they', 'are', 'fun']
+lst = ['the', 'main', 'point', 'about', 'dictionaries', 'is', 'that', 'they', 'are', 'fun']
 #
  # should return
  # {3: 3, 4: 3, 5: 2, 12: 1, 2: 1}
 
 def length_dict(lst: list[str]) -> dict[int, int]:
-    1
+    out_dict = {}
+    for word in lst:
+        length = len(word)
 
+        # if the length is not already in the dictionary
+        if length not in out_dict:
+            out_dict[length] = 1
+        else:
+            out_dict[length] += 1
+
+        # # or:
+        # if length not in out_dict:
+        #     out_dict[length] = 0
+        # out_dict[length] += 1
+
+
+
+    return out_dict
+
+# WHen you build a dictionary from data, you have to first check if the current key
+# is *not* in the dictionary -- if not, you need to add it
 
 
 # Making the letter frequency count dictionary from the 'Alice.txt'' file
@@ -50,7 +79,21 @@ def freq_count(filename: str) -> dict[str, int]:
             out_dict[k] += 1
 
     f.close()
-    return out_dict
+
+    total = 0
+    for k in out_dict:
+        total += out_dict[k]
+
+    new_dict = {}
+    for k in out_dict:
+        new_dict[k] = out_dict[k] / total
+
+
+
+
+
+
+    return new_dict
 
 
 
