@@ -303,6 +303,8 @@ entries:
   - Date: 2026-04-06
     Module: '9: Classes'
     Topic: Classes
+    8am:
+      - python: lectures/S26/2026-04-06-Introduction-to-Classes.py
     Assignments: HW 8 Due
   - Date: 2026-04-08
     Topic: Class & object examples
