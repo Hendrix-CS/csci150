@@ -312,7 +312,7 @@ entries:
       rows:
         - link:
             text: 'Lab 9: Water Jugs'
-            #url: labs/waterjug.html
+            url: labs/waterjug.html
         - link:
             text: 'HW 9: Classes'
             url: homework/modules/class-design.html
