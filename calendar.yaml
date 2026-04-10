@@ -319,7 +319,10 @@ entries:
             text: 'HW 9: Classes'
             url: homework/modules/class-design.html
   - Date: 2026-04-10
-    Topic: Class & object examples
+    Topic: Class & object examples & PyGame
+    8am:
+      - python: lectures/S26/2026-04-10-Classes-Examples.py
+
     Assignments: 'Quiz 8: Dictionaries'
 
   ##################################################
