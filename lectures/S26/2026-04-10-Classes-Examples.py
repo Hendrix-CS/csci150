@@ -6,6 +6,24 @@
 #          please turn in a short document saying so
 
 
-##########
-# We then ran Dr. Yorgey's RPG game and talked about the Class usages
-# These files are on the webpage
+# We talked a bit about classes and the water jug lab
+# I then showed an example where a group made their final project
+# based on that lab
+
+# I then introduced PyGame
+
+import pygame
+from pygame.locals import *
+
+def main():
+    pygame.init()
+    surface = pygame.display.set_mode((640, 400))
+    surface.fill(pygame.Color(255, 255, 255))
+    running = True
+    while running:
+        pygame.display.update()
+        pygame.draw.circle(surface,'red',(50,50),23)
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                running = False
+    pygame.quit()
