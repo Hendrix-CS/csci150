@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Lab
-num: 11
+num: 10
 worktitle: Graphics and Animation
 ---
 
