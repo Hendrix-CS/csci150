@@ -331,8 +331,13 @@ entries:
     Module: '10: PyGame'
     Assignments: HW 9 Due
     Topic: PyGame animation
+    8am:
+      - python: lectures/S26/2026-04-13-PyGame-Introduction.py
   - Date: 2026-04-15
     Topic: Classes and PyGame
+    8am:
+      - python: lectures/S26/2026-04-15-PyGameAnimation.py
+
     Assignments:
       rows:
         - link:
@@ -341,6 +346,8 @@ entries:
         - emph: 'No homework'
   - Date: 2026-04-17
     Topic: Classes and PyGame
+    8am:
+      - python: lectures/S26/2026-04-17-PyGame-Example.py
     Assignments: 'Quiz 9: Classes'
     Projects: 'Final project design due'
 
