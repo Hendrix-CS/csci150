@@ -356,6 +356,8 @@ entries:
   - Date: 2026-04-20
     Module: '11: Recursion'
     Topic: Recursion
+    8am:
+      - python: lectures/S26/2026-04-20-Recursion.py
   - Date: 2026-04-22
     Topic: 'Recursion: trees'
     Assignments:
