@@ -57,7 +57,30 @@ def list_sum(lst: list[int]) -> int:
 
 
 def factorial(n: int) -> int:
-    1
+    if n == 0:
+        return 1
+
+    else:
+        return n * factorial(n - 1)
+
+
+
+def f_while(n: int) -> int:
+    s = 0
+    i = 0
+    while i < n:
+        s += 1
+        i+=1
+    return s
+
+
+
+
+
+
+
+
+
 
 
 
