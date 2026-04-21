@@ -365,7 +365,7 @@ entries:
         - link:
             text: |
               Lab 11: Enron's Secrets
-            #url: https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively
+            url: https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively
         - link:
             text: 'HW 11: Trees & Recursion'
             url: homework/modules/recursion.html
