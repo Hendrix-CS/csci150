@@ -360,6 +360,8 @@ entries:
       - python: lectures/S26/2026-04-20-Recursion.py
   - Date: 2026-04-22
     Topic: 'Recursion: trees'
+    8am:
+      - python: lectures/S26/2026-04-22-Recursion-and-Trees.py
     Assignments:
       rows:
         - link:
