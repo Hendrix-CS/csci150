@@ -1,252 +1,207 @@
 name: CSCI 150, Foundations of Computer Science
-semester: Spring 2026
+semester: Fall 2026
 period: A2
-columns: [Module, Date, Topic, 8am, Assignments, Projects]
+columns: [Module, Date, Topic, 9am, 11am, Assignments, Projects]
 headers:
   Assignments: 'Module Components'
-codedir: 'lectures/S26'
+codedir: 'lectures/F26'
 
 entries:
 
   ##################################################
 
-  - Date: 2026-01-21
+  - Date: 2026-08-26
     Topic: Introduction to Computer Science
-    8am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-01-21-introduction-to-cs
+    9am: Placeholder
+    11am: Placeholder
     Assignments:
       rows:
         - link:
             text: 'Lab 0: Minecraft'
-            url: https://studio.code.org/join/KGVMNV
+            #url: https://studio.code.org/join/KGVMNV
         - link:
             text: CSCI Student Survey
-            url: https://docs.google.com/forms/d/e/1FAIpQLSfFYzOOUaE3CCT3ocnDDentzhdEujBtAPeywT_SukFLyvKJxg/viewform
-  - Date: 2026-01-23
+            url: https://docs.google.com/forms/d/e/1FAIpQLSe4AM1ePv0m4hrfe5MJpcfFv97GFVKjb36tRm1WlvM4SfEOaA/viewform
+  - Date: 2026-08-28
     Topic: Algorithms and Errors
-    8am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-01-23-algorithms-and-errors
+    
     
   ##################################################
 
-  - Date: 2026-01-26
+  - Date: 2026-08-31
     Module: '1: Math & Variables in Python'
     Topic: 'Math & Variables'
-    8am: Snow!
     
-  - Date: 2026-01-28
+  - Date: 2026-09-02
     Topic: 
       rows:
         - 'Math & Variables'
         - 'Intro to Functions'
-    8am: 
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-01-28-math-variables-and-functions
-    
+        
     Assignments:
       rows:
         - link:
             text: 'Lab 1: Kepler, Newton, Einstein'
-            url: https://www.kaggle.com/code/byorgey/kepler-newton-einstein
+            #url: https://www.kaggle.com/code/byorgey/kepler-newton-einstein
         - link:
             text: 'HW 1: Math & Variables'
             url: homework/modules/math-and-variables.html
-  - Date: 2026-01-30
-    Topic: Functions
-    8am: 
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-01-30-functions 
+  - Date: 2026-09-04
+    Topic: Booleans
+    
     
 
   ##################################################
 
-  - Date: 2026-02-02
+  - Date: 2026-09-07
     Module: '2: Booleans & Conditionals'
     Topic: Booleans
-    8am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-02-03-booleans
     Assignments: HW 1 Due
     
-  - Date: 2026-02-04
+  - Date: 2026-09-09
     Topic: Conditionals
-    8am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-02-04-conditionals
     Assignments:
       rows:
         - link:
             text: 'Lab 2: Heart Disease'
-            url: https://www.kaggle.com/code/gabrielferrer/diagnosing-heart-disease
+            #url: https://www.kaggle.com/code/gabrielferrer/diagnosing-heart-disease
         - link:
             text: 'HW 2: Booleans & Conditionals'
             url: homework/modules/booleans.html
-  - Date: 2026-02-06
+  - Date: 2026-09-11
     Topic: Function Stack
-    8am: 
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-02-06-the-function-stack
     Assignments:
       - 'Quiz 1: Math & Variables'
 
   ##################################################
 
-  - Date: 2026-02-09
+  - Date: 2026-09-14
     Module: '3: The Function Stack'
-    Topic: 'PyCharm & Function Stack'
-    8am:
-      - python: lectures/S26/2026-02-09-PyCharm-and-Function-Stack.py
+    Topic: 'Function Stack'
     Assignments: HW 2 Due
     Projects:
       - link:
           text: 'Project 1 assigned'
-          url: projects/project1_if.html
-  - Date: 2026-02-11
-    Topic: 'Function Stack'
-    8am:
-      - python: lectures/S26/2026-02-11-Function-Stack.py
-      - pdf: lectures/S26/2026-02-11-Function-Stack-Practice-Solutions.pdf
+          #url: projects/project1_if.html
 
+  - Date: 2026-09-16
+    Topic: Function Stack
     Assignments:
       rows:
         - link:
             text: 'Lab 3: This Day in History'
-            url: https://www.kaggle.com/code/gabrielferrer/this-day-in-history
+            #url: https://www.kaggle.com/code/gabrielferrer/this-day-in-history
         - link:
-            text: 'HW 3: Tracing'
+            text: 'HW 3: Function Stack'
             url: homework/modules/tracing.html
-  - Date: 2026-02-13
-    Topic: 'Function Stack & While'
-    8am:
-      - python: lectures/S26/2026-02-13-While-and-Function-Stack.py
+  - Date: 2026-09-18
+    Topic: PyCharm Set Up
     Assignments: 'Quiz 2: Booleans & Conditionals'
 
   ##################################################
 
-  - Date: 2026-02-16
+  - Date: 2026-09-21
     Module: '4: While Loops'
-    Topic: 
-      emph: 'No class - Midwinter Break'
-  - Date: 2026-02-18
+    Topic: While Loops
+
+  - Date: 2026-09-23
     Topic: While loops
-    8am:
-      - python: lectures/S26/2026-02-18-More-While-Loops.py
     Assignments:
       rows:
         - HW 3 Due
         - link:
             text: 'Lab 4: Guess My Number'
-            url: labs/guess.html
+            #url: labs/guess.html
         - link:
             text: 'HW 4: While Loops'
             url: homework/modules/while_loops.html
-  - Date: 2026-02-20
-    Topic: While loops
-    8am:
-      - python: lectures/S26/2026-02-20-Even-More-While-Loops.py
+  - Date: 2026-09-25
+    Topic: While loops & Function Stack
     Assignments: 
       rows: 
         - 'Quiz 3: Function Stack'
-        - link:
-           text: 'Quiz 3 Key'
-           url: lectures/S26/CSCI150-Quiz3-Key.pdf
-    
+            
   ##################################################
 
-  - Date: 2026-02-23
+  - Date: 2026-09-28
     Module: '5: Strings'
     Topic: Strings
-    8am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-02-23-strings
     Assignments: HW 4 Due
-  - Date: 2026-02-25
-    Topic: Strings and Loops
-    8am:
-      - python: lectures/S26/2026-02-25-Strings-and-Loops.py
 
+  - Date: 2026-09-30
+    Topic: Strings and Loops
     Assignments:
       rows:
         - link:
             text: 'Lab 5: Doublets'
-            url: labs/doublets.html
+            #url: labs/doublets.html
         - link:
             text: 'HW 5: Strings'
             url: homework/modules/codingbat-string-loop.html
     Projects: 'Project 1 Due'
-  - Date: 2026-02-27
-    Topic: 'Input & Output'
-    8am:
-      - python: lectures/S26/2026-02-27-File-Input-Output.py
 
+  - Date: 2026-10-02
+    Topic: Input and Output
     Assignments: 'Quiz 4: While Loops'
     Projects:
       link:
         text: 'Project 2 assigned'
-        url: projects/project2.html
+        #url: projects/project2.html
 
   ##################################################
 
-  - Date: 2026-03-02
+  - Date: 2026-10-05
     Module: '6: Lists'
     Topic: Lists
-    8am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-03-02-lists
     Assignments: HW 5 Due
-  - Date: 2026-03-04
+
+  - Date: 2026-10-07
     Topic: List processing examples
-    8am:
-      - python: lectures/S26/2026-03-04-List-Processing.py
     Assignments:
       rows:
         - link:
             text: 'Lab 6: To Do Manager'
-            url: labs/todo-manager.html
+            #url: labs/todo-manager.html
         - link:
             text: 'HW 6: Lists'
             url: homework/modules/lists.html
-  - Date: 2026-03-06
+
+  - Date: 2026-10-09
     Topic: Function abstraction
-    8am:
-      - python: lectures/S26/2026-03-06-Function-Abstraction.py
-      - python: lectures/S26/2026-03-06-roulette-modularization.py
     Assignments: 'Quiz 5: Strings'
 
   ##################################################
 
-  - Date: 2026-03-09
-    Topic: 'Binary & Info Encoding'
+  - Date: 2026-10-12
+    Topic: Project 2 Workday
     Assignments: HW 6 Due
-    8am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-03-09-binary-and-information-encoding
     
-  - Date: 2026-03-11
+  - Date: 2026-10-14
     Topic: Generative AI
-    8am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-03-11-generative-ai
-    Assignments: 'Project 2 Workshop Lab'
-    
-  - Date: 2026-03-13
-    Topic: For Loops
-    8am:
-      - kaggle: https://www.kaggle.com/code/larskseme/2026-03-13-for-loops
     Assignments: 'Quiz 6: Lists'
+
+    
+  - Date: 2026-10-16
+    Topic: 
+      emph: 'No class - Fall Break'
     
       
 
   ##################################################
 
-  - Date: 2026-03-16
+  - Date: 2026-10-19
     Module: '7: For Loops'
     Topic: For loops
-    8am:
-      - python: lectures/S26/2026-03-16-For-Loops.py
     Assignments:
     - link:
             text: 'HW 7: For Loops'
             url: homework/modules/codingbat-for-loop.html
-  - Date: 2026-03-18
+  - Date: 2026-10-21
     Topic: More for loops
-    8am:
-      - python: lectures/S26/2026-03-16-For-Loops.py
     Assignments:
         - link:
             text: "Lab 7: Caesar's Secrets"
-            url: https://www.kaggle.com/code/gabrielferrer/caesar-s-secrets
+            #url: https://www.kaggle.com/code/gabrielferrer/caesar-s-secrets
 
   - Date: 2026-03-20
     Topic: Project 2 Demo
@@ -254,145 +209,123 @@ entries:
 
  ##################################################
 
-  - Date: 2026-03-23
-    Topic:
-      emph: 'No class - Spring break'
-  - Date: 2026-03-25
-    Topic:
-      emph: 'No class - Spring break'
-  - Date: 2026-03-27
-    Topic:
-      emph: 'No class - Spring break'
-
-  ##################################################
-
-  - Date: 2026-03-30
+  - Date: 2026-10-26
     Module: '8: Dictionaries'
     Topic: Dictionaries
-    8am:
-      -  kaggle: https://www.kaggle.com/code/larskseme/2026-03-30-intro-to-dictionaries
     Assignments:
         - HW 7 Due
     Projects:
         - link:
             text: 'Final project'
-            url: projects/final.html
-  - Date: 2026-04-01
+            #url: projects/final.html
+  - Date: 2026-10-28
     Topic: Dictionaries
-    8am:
-      - python: lectures/S26/2026-04-01-Dictionaries.py
-      - text: lectures/S26/alice.txt
     Assignments:
       rows:
         - link:
             text: 'Lab 8: Asteriskbucks'
-            url: https://www.kaggle.com/code/gabrielferrer/asteriskbucks/
+            #url: https://www.kaggle.com/code/gabrielferrer/asteriskbucks/
         - link:
             text: 'HW 8: Dictionaries'
             url: homework/modules/dictionary.html
-  - Date: 2026-04-03
+  - Date: 2026-10-30
     Topic: Dictionaries
-    8am:
-      - python: lectures/S26/2026-04-03-Dictionaries-and-Data.py
-      - text: lectures/S26/zipcodes.txt
     Assignments: 'Quiz 7: For Loops'
   
 
   ##################################################
 
-  - Date: 2026-04-06
+  - Date: 2026-11-02
     Module: '9: Classes'
     Topic: Classes
-    8am:
-      - python: lectures/S26/2026-04-06-Introduction-to-Classes.py
     Assignments: HW 8 Due
-  - Date: 2026-04-08
+  - Date: 2026-11-04
     Topic: Class & object examples
-    8am:
-      - python: lectures/S26/2026-04-08-Classes-Day2.py
     Assignments:
       rows:
         - link:
             text: 'Lab 9: Water Jugs'
-            url: labs/waterjug.html
+            #url: labs/waterjug.html
         - link:
             text: 'HW 9: Classes'
             url: homework/modules/class-design.html
-  - Date: 2026-04-10
-    Topic: Class & object examples & PyGame
-    8am:
-      - python: lectures/S26/2026-04-10-Classes-Examples.py
-
+  - Date: 2026-10-06
+    Topic: Class & object examples
     Assignments: 'Quiz 8: Dictionaries'
 
   ##################################################
 
-  - Date: 2026-04-13
+  - Date: 2026-11-09
     Module: '10: PyGame'
     Assignments: HW 9 Due
     Topic: PyGame animation
-    8am:
-      - python: lectures/S26/2026-04-13-PyGame-Introduction.py
-  - Date: 2026-04-15
-    Topic: Classes and PyGame
-    8am:
-      - python: lectures/S26/2026-04-15-PyGameAnimation.py
 
+  - Date: 2026-11-11
+    Topic: Classes and PyGame
     Assignments:
       rows:
         - link:
             text: 'Lab 10: Faces'
-            url: labs/pygame.html
+            #url: labs/pygame.html
         - emph: 'No homework'
-  - Date: 2026-04-17
+  - Date: 2026-11-13
     Topic: Classes and PyGame
-    8am:
-      - python: lectures/S26/2026-04-17-PyGame-Example.py
     Assignments: 'Quiz 9: Classes'
-    Projects: 'Final project design due'
-
+    
   ##################################################
 
-  - Date: 2026-04-20
+  - Date: 2026-11-16
     Module: '11: Recursion'
     Topic: Recursion
-    8am:
-      - python: lectures/S26/2026-04-20-Recursion.py
-  - Date: 2026-04-22
+    Projects: 'Final project design due'
+    
+  - Date: 2026-11-18
     Topic: 'Recursion: trees'
-    8am:
-      - python: lectures/S26/2026-04-22-Recursion-and-Trees.py
     Assignments:
       rows:
         - link:
-            text: |
-              Lab 11: Enron's Secrets
-            url: https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively
+            text: "Lab 11: Enron's Secrets"
+            #url: https://www.kaggle.com/code/gabrielferrer/finding-evidence-recursively
         - link:
             text: 'HW 11: Trees & Recursion'
             url: homework/modules/recursion.html
-  - Date: 2026-04-24
+  - Date: 2026-11-20
     Topic: 'Recursion: applications'
     Assignments:
       emph: 'No Quiz 10'
 
   ##################################################
 
-  - Date: 2026-04-27
+  - Date: 2026-11-23
     Topic: Tree and Queues
     Assignments: HW 11 Due
-  - Date: 2026-04-29
+
+  
+   ##################################################
+
+
+  - Date: 2026-11-30
+    Topic: Final Project Workshop
+ 
+
+  - Date: 2026-12-02
     Topic: Final Project Workshop
     Assignments: Final Project Lab
-  - Date: 2026-05-01
+
+  - Date: 2026-12-04
     Topic: Final Project Workshop/Office Hours
     Assignments: 'Quiz 11: Recursion'
 
    ##################################################
 
-  - Date: 2026-05-08
-    Topic: Final Project Demos
-    Assignments: 2pm
+  - Date: 2026-12-11
+    Topic: Final Project Demos -- Prof. Seme's Class
+    Assignments: 9am
+
+  - Date: 2026-12-14
+    Topic: Final Project Demos -- Dr. Yorgey's Class
+    Assignments: 9am
+
   
 
 
