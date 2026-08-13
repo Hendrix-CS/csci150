@@ -26,7 +26,7 @@ url: "https://hendrix-cs.github.io" # the base hostname & protocol for your site
 
 number: CSCI 150
 title: Foundations of Computer Science
-semester: Spring 2026
+semester: Fall 2026
 hypothesis: false
 
 jumbotext: slidebackground.com
@@ -90,13 +90,17 @@ instructors:
 
 offerings:
   - name: LECTURE 01
-    loc: MC Reynolds 110
-    time: MWF 8:10am - 9:00am (A1)
+    loc: MC Reynolds 314
+    time: MWF 9:10am - 10:00am (A2)
+    instructor: yorgey
+  - name: LECTURE 02
+    loc: MC Reynolds 315
+    time: MWF 11:10am - 12:00pm (A4)
     instructor: seme
   - name: LAB L1
     loc: Bailey Lab
     time: W 1:10pm - 4:00pm (L8)
-    instructor: yorgey
+    instructor: ferrer
   - name: LAB L2
     loc: Bailey Lab
     time: R 1:10pm - 4:00pm (L9)
