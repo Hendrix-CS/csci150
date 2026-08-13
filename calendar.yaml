@@ -46,6 +46,7 @@ entries:
         - link:
             text: 'HW 1: Math & Variables'
             url: homework/modules/math-and-variables.html
+
   - Date: 2026-09-04
     Topic: Booleans
     
@@ -68,6 +69,7 @@ entries:
         - link:
             text: 'HW 2: Booleans & Conditionals'
             url: homework/modules/booleans.html
+
   - Date: 2026-09-11
     Topic: Function Stack
     Assignments:
@@ -94,6 +96,7 @@ entries:
         - link:
             text: 'HW 3: Function Stack'
             url: homework/modules/tracing.html
+
   - Date: 2026-09-18
     Topic: PyCharm Set Up
     Assignments: 'Quiz 2: Booleans & Conditionals'
@@ -103,18 +106,19 @@ entries:
   - Date: 2026-09-21
     Module: '4: While Loops'
     Topic: While Loops
+    Assignments: HW 3 Due
 
   - Date: 2026-09-23
     Topic: While loops
     Assignments:
       rows:
-        - HW 3 Due
         - link:
             text: 'Lab 4: Guess My Number'
             #url: labs/guess.html
         - link:
             text: 'HW 4: While Loops'
             url: homework/modules/while_loops.html
+
   - Date: 2026-09-25
     Topic: While loops & Function Stack
     Assignments: 
@@ -196,6 +200,7 @@ entries:
     - link:
             text: 'HW 7: For Loops'
             url: homework/modules/codingbat-for-loop.html
+
   - Date: 2026-10-21
     Topic: More for loops
     Assignments:
@@ -203,7 +208,7 @@ entries:
             text: "Lab 7: Caesar's Secrets"
             #url: https://www.kaggle.com/code/gabrielferrer/caesar-s-secrets
 
-  - Date: 2026-03-20
+  - Date: 2026-10-23
     Topic: Project 2 Demo
     Projects: 'Project 2 Due'
 
@@ -216,8 +221,9 @@ entries:
         - HW 7 Due
     Projects:
         - link:
-            text: 'Final project'
+            text: 'Final project assigned'
             #url: projects/final.html
+
   - Date: 2026-10-28
     Topic: Dictionaries
     Assignments:
@@ -228,6 +234,7 @@ entries:
         - link:
             text: 'HW 8: Dictionaries'
             url: homework/modules/dictionary.html
+
   - Date: 2026-10-30
     Topic: Dictionaries
     Assignments: 'Quiz 7: For Loops'
@@ -239,6 +246,7 @@ entries:
     Module: '9: Classes'
     Topic: Classes
     Assignments: HW 8 Due
+
   - Date: 2026-11-04
     Topic: Class & object examples
     Assignments:
@@ -249,7 +257,8 @@ entries:
         - link:
             text: 'HW 9: Classes'
             url: homework/modules/class-design.html
-  - Date: 2026-10-06
+
+  - Date: 2026-11-06
     Topic: Class & object examples
     Assignments: 'Quiz 8: Dictionaries'
 
@@ -268,6 +277,7 @@ entries:
             text: 'Lab 10: Faces'
             #url: labs/pygame.html
         - emph: 'No homework'
+
   - Date: 2026-11-13
     Topic: Classes and PyGame
     Assignments: 'Quiz 9: Classes'
@@ -289,6 +299,7 @@ entries:
         - link:
             text: 'HW 11: Trees & Recursion'
             url: homework/modules/recursion.html
+
   - Date: 2026-11-20
     Topic: 'Recursion: applications'
     Assignments:
@@ -299,6 +310,16 @@ entries:
   - Date: 2026-11-23
     Topic: Tree and Queues
     Assignments: HW 11 Due
+
+  - Date: 2026-11-25
+    Topic: 
+      emph: 'No class - Thanksgiving Break'
+
+
+  - Date: 2026-11-27
+    Topic: 
+      emph: 'No class - Thanksgiving Break'
+
 
   
    ##################################################
