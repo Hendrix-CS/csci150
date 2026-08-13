@@ -75,9 +75,8 @@ Upon completing this course, our goal is for you to be able to:
 |                               |              |                                           |             |             | [HW 3: Function Stack](homework/modules/tracing.html)                                                                      |                          |
 |                               | **F 18 Sep** | PyCharm Set Up                            |             |             | Quiz 2: Booleans & Conditionals                                                                                            |                          |
 |                               |              |                                           |             |             |                                                                                                                            |                          |
-| 4: While Loops                | **M 21 Sep** | While Loops                               |             |             |                                                                                                                            |                          |
-|                               | **W 23 Sep** | While loops                               |             |             | HW 3 Due                                                                                                                   |                          |
-|                               |              |                                           |             |             | Lab 4: Guess My Number                                                                                                     |                          |
+| 4: While Loops                | **M 21 Sep** | While Loops                               |             |             | HW 3 Due                                                                                                                   |                          |
+|                               | **W 23 Sep** | While loops                               |             |             | Lab 4: Guess My Number                                                                                                     |                          |
 |                               |              |                                           |             |             | [HW 4: While Loops](homework/modules/while_loops.html)                                                                     |                          |
 |                               | **F 25 Sep** | While loops & Function Stack              |             |             | Quiz 3: Function Stack                                                                                                     |                          |
 |                               |              |                                           |             |             |                                                                                                                            |                          |
@@ -97,9 +96,9 @@ Upon completing this course, our goal is for you to be able to:
 |                               |              |                                           |             |             |                                                                                                                            |                          |
 | 7: For Loops                  | **M 19 Oct** | For loops                                 |             |             | [HW 7: For Loops](homework/modules/codingbat-for-loop.html)                                                                |                          |
 |                               | **W 21 Oct** | More for loops                            |             |             | Lab 7: Caesar's Secrets                                                                                                    |                          |
-|                               | **F 20 Mar** | Project 2 Demo                            |             |             |                                                                                                                            | Project 2 Due            |
+|                               | **F 23 Oct** | Project 2 Demo                            |             |             |                                                                                                                            | Project 2 Due            |
 |                               |              |                                           |             |             |                                                                                                                            |                          |
-| 8: Dictionaries               | **M 26 Oct** | Dictionaries                              |             |             | HW 7 Due                                                                                                                   | Final project            |
+| 8: Dictionaries               | **M 26 Oct** | Dictionaries                              |             |             | HW 7 Due                                                                                                                   | Final project assigned   |
 |                               | **W 28 Oct** | Dictionaries                              |             |             | Lab 8: Asteriskbucks                                                                                                       |                          |
 |                               |              |                                           |             |             | [HW 8: Dictionaries](homework/modules/dictionary.html)                                                                     |                          |
 |                               | **F 30 Oct** | Dictionaries                              |             |             | Quiz 7: For Loops                                                                                                          |                          |
@@ -107,8 +106,7 @@ Upon completing this course, our goal is for you to be able to:
 | 9: Classes                    | **M 2 Nov**  | Classes                                   |             |             | HW 8 Due                                                                                                                   |                          |
 |                               | **W 4 Nov**  | Class & object examples                   |             |             | Lab 9: Water Jugs                                                                                                          |                          |
 |                               |              |                                           |             |             | [HW 9: Classes](homework/modules/class-design.html)                                                                        |                          |
-|                               |              |                                           |             |             |                                                                                                                            |                          |
-|                               | *T 6 Oct*    | Class & object examples                   |             |             | Quiz 8: Dictionaries                                                                                                       |                          |
+|                               | **F 6 Nov**  | Class & object examples                   |             |             | Quiz 8: Dictionaries                                                                                                       |                          |
 |                               |              |                                           |             |             |                                                                                                                            |                          |
 | 10: PyGame                    | **M 9 Nov**  | PyGame animation                          |             |             | HW 9 Due                                                                                                                   |                          |
 |                               | **W 11 Nov** | Classes and PyGame                        |             |             | Lab 10: Faces                                                                                                              |                          |
@@ -121,6 +119,8 @@ Upon completing this course, our goal is for you to be able to:
 |                               | **F 20 Nov** | Recursion: applications                   |             |             | *No Quiz 10*                                                                                                               |                          |
 |                               |              |                                           |             |             |                                                                                                                            |                          |
 |                               | **M 23 Nov** | Tree and Queues                           |             |             | HW 11 Due                                                                                                                  |                          |
+|                               | **W 25 Nov** | *No class - Thanksgiving Break*           |             |             |                                                                                                                            |                          |
+|                               | **F 27 Nov** | *No class - Thanksgiving Break*           |             |             |                                                                                                                            |                          |
 |                               |              |                                           |             |             |                                                                                                                            |                          |
 |                               | **M 30 Nov** | Final Project Workshop                    |             |             |                                                                                                                            |                          |
 |                               | **W 2 Dec**  | Final Project Workshop                    |             |             | Final Project Lab                                                                                                          |                          |
@@ -129,6 +129,7 @@ Upon completing this course, our goal is for you to be able to:
 |                               | **F 11 Dec** | Final Project Demos -- Prof. Seme's Class |             |             | 9am                                                                                                                        |                          |
 |                               |              |                                           |             |             |                                                                                                                            |                          |
 |                               | **M 14 Dec** | Final Project Demos -- Dr. Yorgey's Class |             |             | 9am                                                                                                                        |                          |
+
 
 
 
@@ -292,9 +293,10 @@ engage your creativity.
 
 | # | Name                                                        | Assigned | Due   |
 |:-:|-------------------------------------------------------------|:--------:|:-----:|
-| 1 | [Expert System]({{site.baseurl}}/projects/project1_if.html) | 2/9     | 2/25  |
-| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)     | 2/27     | 3/20  |
-| 3 | [Final Project]({{site.baseurl}}/projects/final.html)      | 3/30     | 5/8   |
+| 1 | [Expert System]({{site.baseurl}}/projects/project1_if.html) | 9/14     | 9/30  |
+| 2 | [Word Games]({{site.baseurl}}/projects/project2.html)     | 10/2     | 10/23  |
+| 3 | [Final Project]({{site.baseurl}}/projects/final.html)      | 10/26     | 12/11 (Seme)   |
+|   |                                                            |           |12/14 (Yorgey) |
 
 Each project will have a detailed *specification* explaining the
 required criteria for a successful project.  Each project will be
