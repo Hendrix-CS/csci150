@@ -25,9 +25,7 @@ To be considered **complete** you must finish at least five CodingBat exercises 
 1. **Predict**: First, complete the exercise *without* using the
    Python interpreter.  (You are welcome to refer to your notes or
    textbook, read Python documentation, look at examples from class,
-   *etc.*; just don't actually run any code.)  *Trace the execution of
-   the code, keeping track of the function stack, all variables, and
-   any output produced.*
+   *etc.*; just don't actually run any code.)  We *strongly* encourage you to show some work here -- if things go wrong, it is easier for us to provide useful feedback!
 
 2. **Check**: Run the code.  Does the actual output agree with what
    you wrote down in step 1?
