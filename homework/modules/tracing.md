@@ -5,7 +5,7 @@ num: 3
 worktitle: Function Stack
 ---
 
-*Due: Wednesday, February 21*
+*Due: Monday, September 21*
 
 
 
