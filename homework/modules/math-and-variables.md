@@ -5,7 +5,7 @@ num: 1
 worktitle: Math and Variables
 ---
 
-*Due: Monday, February 2*
+*Due: Monday, September 7*
 
 Remember that homework is not formally assessed. However, any problems turned in by the due date will be checked and feedback provided.
 
@@ -15,7 +15,7 @@ homework completed and checked by your instructor before you retake the quiz.
 For each exercise you should do the following:
 
 1. **Predict**: First, complete the exercise *without* using the
-   Python interpreter.
+   Python interpreter. We *strongly* encourage you to show some work here -- if things go wrong, it is easier for us to provide useful feedback!
 
 2. **Check**: Run the code in a Kaggle notebook.  Does the actual
    output agree with what you wrote down in step 1?
