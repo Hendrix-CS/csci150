@@ -5,7 +5,7 @@ num: 4
 worktitle: While Loops
 ---
 
-*Due: Monday, February 23*
+*Due: Monday, September 28*
 
 This is the first homework that uses CodingBat, an online place to practice writing code with immediate feedback. You will need to make a free account:
 * Go to [codingbat.com](https://codingbat.com)
@@ -28,7 +28,7 @@ Complete at least **five** of the following exercises in CodingBat.
 In addition, for the following two code snippets:
 
 * **Predict**: First, complete the exercise *without* using the
-   Python interpreter.
+   Python interpreter. We *strongly* encourage you to show some work here -- if things go wrong, it is easier for us to provide useful feedback!
 
 * **Check**: Run the code in a Kaggle notebook or PyCharm.  Does the actual
    output agree with what you wrote down in step 1?
