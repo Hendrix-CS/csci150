@@ -5,7 +5,7 @@ num: 1
 worktitle: Math and Variables
 ---
 
-*Due: Monday, September 7*
+*Due: Wednesday, September 9*
 
 Remember that homework is not formally assessed. However, any problems turned in by the due date will be checked and feedback provided.
 
