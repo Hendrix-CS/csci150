@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Homework
-num: 9
+num: 8
 worktitle: Dictionaries
 ---
 
