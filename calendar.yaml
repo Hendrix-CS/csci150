@@ -56,13 +56,15 @@ entries:
 
   - Date: 2026-09-07
     Module: '2: Booleans & Conditionals'
-    Topic: Booleans
-    Assignments: HW 1 Due
+    Topic: 
+      emph: 'No class - Labor Day'
+  
     
   - Date: 2026-09-09
     Topic: Conditionals
     Assignments:
       rows:
+        - HW 1 Due
         - link:
             text: 'Lab 2: Heart Disease'
             #url: https://www.kaggle.com/code/gabrielferrer/diagnosing-heart-disease
