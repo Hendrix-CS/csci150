@@ -1,7 +1,7 @@
 ---
 layout: work
 type: Homework
-num: 10
+num: 9
 worktitle: Classes
 ---
 
@@ -11,7 +11,7 @@ To receive full credit, for each exercise you should do the following:
    your class definition.
 
 2. **Check**: Run the provided test code.  Does your actual output
-   agree with the given correct output?
+   agree with the given correct output? 
 
 3. **Evaluate**: If the actual output does not match the expected
    output, keep experimenting, consult the textbook or Python
