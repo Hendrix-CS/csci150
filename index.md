@@ -56,7 +56,7 @@ Upon completing this course, our goal is for you to be able to:
 
 | Module                        | Date         | Topic                                     | 9am         | 11am        | Module Components                                                  | Projects                 |
 |-------------------------------|--------------|-------------------------------------------|-------------|-------------|--------------------------------------------------------------------|--------------------------|
-|                               | **W 26 Aug** | Introduction to Computer Science          | Placeholder | Placeholder | Lab 0: Minecraft                                                   |                          |
+|                               | **W 26 Aug** | Introduction to Computer Science          | Placeholder | Placeholder | [Lab 0: Minecraft](https://studio.code.org/join/LHTPML)            |                          |
 |                               |              |                                           |             |             | [CSCI Student Survey](https://forms.gle/BGCcHkZqFWBkoeqA7)         |                          |
 |                               | **F 28 Aug** | Algorithms and Errors                     |             |             |                                                                    |                          |
 |                               |              |                                           |             |             |                                                                    |                          |
