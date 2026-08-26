@@ -13,7 +13,8 @@ entries:
   - Date: 2026-08-26
     Topic: Introduction to Computer Science
     9am: Placeholder
-    11am: Placeholder
+    11am: 
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-08-26-introduction-to-cs
     Assignments:
       rows:
         - link:
