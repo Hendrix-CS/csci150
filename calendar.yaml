@@ -12,8 +12,10 @@ entries:
 
   - Date: 2026-08-26
     Topic: Introduction to Computer Science
-    9am: Placeholder
-    11am: 
+    9am:
+      - pdf: lectures/F26/2026-08-26-intro.pdf
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2FIntro%2D20260826%5F091558%2DMeeting%20Recording%2Emp4
+    11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-08-26-introduction-to-cs
     Assignments:
       rows:
