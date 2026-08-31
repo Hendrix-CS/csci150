@@ -40,13 +40,16 @@ entries:
   - Date: 2026-08-31
     Module: '1: Math & Variables in Python'
     Topic: 'Math & Variables'
+    11am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-08-31-math-and-variables-in-python
+        
     
   - Date: 2026-09-02
     Topic: 
       rows:
         - 'Math & Variables'
         - 'Intro to Functions'
-        
+   
     Assignments:
       rows:
         - link:
