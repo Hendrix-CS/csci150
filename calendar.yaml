@@ -52,6 +52,9 @@ entries:
       rows:
         - 'Math & Variables'
         - 'Intro to Functions'
+    9am:
+      - kaggle: https://www.kaggle.com/code/byorgey/8-31-intro-to-python
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F92%20Math%2C%20variables%20%2B%20functions%20in%20Python%2D20260902%5F091144%2DMeeting%20Recording%2Emp4
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-09-02-math-variables-functions
       - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2009%2002%20Math%20_%20Variables%20_%20Functions-20260902_111018-Meeting%20Recording.mp4?d=w80d3c0e72f2f473a8241bc582a98501a&csf=1&web=1&e=wFAkd3
