@@ -86,6 +86,8 @@ entries:
     
   - Date: 2026-09-09
     Topic: Conditionals
+    11am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-09-09-conditionals
     Assignments:
       rows:
         - HW 1 Due
