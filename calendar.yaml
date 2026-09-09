@@ -93,7 +93,7 @@ entries:
         - HW 1 Due
         - link:
             text: 'Lab 2: Heart Disease'
-            #url: https://www.kaggle.com/code/gabrielferrer/diagnosing-heart-disease
+            url: https://www.kaggle.com/code/gabrielferrer/diagnosing-heart-disease
         - link:
             text: 'HW 2: Booleans & Conditionals'
             url: homework/modules/booleans.html
