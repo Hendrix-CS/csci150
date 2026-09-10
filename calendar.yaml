@@ -86,6 +86,9 @@ entries:
     
   - Date: 2026-09-09
     Topic: Conditionals
+    9am:
+      - kaggle: https://www.kaggle.com/code/byorgey/9-9-conditionals-in-python
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection_32955%2FShared+Documents%2FGeneral%2FRecordings%2F99+Conditionals+in+Python-20260909_091039-Meeting+Recording.mp4
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-09-09-conditionals
       - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2009%2009%20Conditionals-20260909_111143-Meeting%20Recording.mp4?d=w2b1a97ed9c2f4c58b8b0d89b63d3ac3a&csf=1&web=1&e=iwaM5W
