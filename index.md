@@ -8,9 +8,9 @@ layout: course-multi
 
 ## <a name="TAs">TA Office Hours</a>
 
-| Sunday   | Monday      | Tuesday  | Wednesday | Thursday   |
-|----------|-------------|----------|-----------|------------|
-| Luke 6-8 | Vincent 7-9 | Meem 6-8 | Leigh 6-8 | Rachel 7-9 |
+| Sunday   | Monday      | Tuesday        | Wednesday | Thursday   |
+|----------|-------------|----------------|-----------|------------|
+| Luke 6-8 | Vincent 7-9 | Meem 7:30-9:30 | Leigh 6-8 | Rachel 7-9 |
 
 
 # <a name="description">Overview</a>
