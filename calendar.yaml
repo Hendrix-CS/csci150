@@ -104,6 +104,9 @@ entries:
 
   - Date: 2026-09-11
     Topic: Conditionals
+    9am:
+      - kaggle: https://www.kaggle.com/code/byorgey/9-9-conditionals-in-python
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F911%20conditional%20practice%2D20260911%5F091306%2DMeeting%20Recording%2Emp4
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-09-11-conditionals-again
     Assignments:
