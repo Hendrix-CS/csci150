@@ -104,6 +104,8 @@ entries:
 
   - Date: 2026-09-11
     Topic: Conditionals
+    11am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-09-11-conditionals-again
     Assignments:
       - 'Quiz 1: Math & Variables'
 
