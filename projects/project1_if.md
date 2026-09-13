@@ -5,9 +5,7 @@ num: 1
 worktitle: Expert System
 ---
 
-**Due Wednesday, February 25**
-
-**Submit via Teams**
+**Due Wednesday, September 30**
 
 ## Description
 
