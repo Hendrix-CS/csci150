@@ -117,11 +117,13 @@ entries:
   - Date: 2026-09-14
     Module: '3: The Function Stack'
     Topic: 'Function Stack'
+    11am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-09-14-the-function-stack
     Assignments: HW 2 Due
     Projects:
       - link:
           text: 'Project 1 assigned'
-          #url: projects/project1_if.html
+          url: projects/project1_if.html
 
   - Date: 2026-09-16
     Topic: Function Stack
