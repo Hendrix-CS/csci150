@@ -116,7 +116,10 @@ entries:
 
   - Date: 2026-09-14
     Module: '3: The Function Stack'
-    Topic: 'Function Stack'
+    Topic: 'Project 1, print, input, function Stack'
+    9am:
+      - kaggle: https://www.kaggle.com/code/byorgey/9-14-input-output
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F914%20Project%201%20intro%2C%20inputoutput%2C%20function%20stack%2D20260914%5F091324%2DMeeting%20Recording%2Emp4
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-09-14-the-function-stack
     Assignments: HW 2 Due
