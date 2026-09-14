@@ -131,7 +131,7 @@ entries:
       rows:
         - link:
             text: 'Lab 3: This Day in History'
-            #url: https://www.kaggle.com/code/gabrielferrer/this-day-in-history
+            url: https://www.kaggle.com/code/gabrielferrer/this-day-in-history
         - link:
             text: 'HW 3: Function Stack'
             url: homework/modules/tracing.html
