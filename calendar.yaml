@@ -131,6 +131,9 @@ entries:
 
   - Date: 2026-09-16
     Topic: Function Stack
+    11am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-09-16-more-function-stack
+      - pdf: lectures/F26/2026-09-16-More-Function-Stack-Sample-Solutions.pdf
     Assignments:
       rows:
         - link:
