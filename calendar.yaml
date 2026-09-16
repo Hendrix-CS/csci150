@@ -131,6 +131,9 @@ entries:
 
   - Date: 2026-09-16
     Topic: Function Stack
+    9am:
+      - kaggle: https://www.kaggle.com/code/byorgey/9-16-function-stack
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F916%20Function%20stack%2D20260916%5F091421%2DMeeting%20Recording%2Emp4
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-09-16-more-function-stack
       - pdf: lectures/F26/2026-09-16-More-Function-Stack-Sample-Solutions.pdf
