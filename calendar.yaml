@@ -150,6 +150,8 @@ entries:
   - Date: 2026-09-18
     Topic: PyCharm Set Up
     Assignments: 'Quiz 2: Booleans & Conditionals'
+    11am:
+      - python: lectures/F26/seme/2026-09-18-PyCharm-Intro.py
 
   ##################################################
 
