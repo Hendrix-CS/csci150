@@ -158,6 +158,9 @@ entries:
   - Date: 2026-09-21
     Module: '4: While Loops'
     Topic: While Loops
+    9am:
+      - python: lectures/F26/yorgey/while.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/921%20while%20loops-20260921_091101-Meeting%20Recording.mp4
     11am:
       - python: lectures/F26/seme/2026-09-21-While-Loops.py
     Assignments: HW 3 Due
