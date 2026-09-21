@@ -22,18 +22,30 @@
 
 # Suppose I want to print 'Hello' 5 times.
 
-def hello5():
-    print('Hello')
-    print('Hello')
-    print('Hello')
-    print('Hello')
-    print('Hello')
+# def hello5():
+#     print('Hello')
+#     print('Hello')
+#     print('Hello')
+#     print('Hello')
+#     print('Hello')
+#
+#
+# hello5()
+
 
 # This works, but is not very efficient to code -- and not modular
 #  -- what if I wanted it to print 3 times, or 8 times, or some variable number
 
 
 # Better way:
+
+def hello_n(n: int):
+    i = 0
+    while i < n:
+        print('Hello')
+        i += 1
+
+#hello_n(7)
 
 
 
@@ -58,6 +70,34 @@ def hello5():
 #     i += 1   # increment i
 
 # More examples
+
+def print_to_n(n: int):
+    i = 0
+    while i <= n:
+        print(i)
+        i += 1
+
+def sum_to_n(n: int) -> int:
+    i = 0
+    total = 0
+    while i < n:
+        total += i
+
+        i += 1
+
+    return total
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Different Example Type: repeat until some condition is met
 
