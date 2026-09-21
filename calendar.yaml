@@ -158,6 +158,8 @@ entries:
   - Date: 2026-09-21
     Module: '4: While Loops'
     Topic: While Loops
+    11am:
+      - python: lectures/F26/seme/2026-09-21-While-Loops.py
     Assignments: HW 3 Due
 
   - Date: 2026-09-23
