@@ -185,11 +185,16 @@ entries:
 
   - Date: 2026-09-25
     Topic: While loops & Function Stack
+    9am:
+      - python: lectures/F26/yorgey/collatz.py
+      - python: lectures/F26/yorgey/while-practice.py
+      - pdf: lectures/F26/yorgey/2026-09-25-while-function-stack.pdf
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/925%20While%20loop%20+%20function%20practice-20260925_091115-Meeting%20Recording.mp4
     11am:
       - python: lectures/F26/seme/2026-09-25-While-Loops-Function-Stack.py
       - pdf: lectures/F26/seme/2026-09-25-While-Loops-Function-Stack-Practice-Sample-Solutions.pdf
-    Assignments: 
-      rows: 
+    Assignments:
+      rows:
         - 'Quiz 3: Function Stack'
             
   ##################################################
