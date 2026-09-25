@@ -187,7 +187,7 @@ entries:
     Topic: While loops & Function Stack
     11am:
       - python: lectures/F26/seme/2026-09-25-While-Loops-Function-Stack.py
-      - pdf: lectures/F26/seme/2026-09-25-While-Loops-Function-Stack-Sample-Solutions.pdf
+      - pdf: lectures/F26/seme/2026-09-25-While-Loops-Function-Stack-Practice-Sample-Solutions.pdf
     Assignments: 
       rows: 
         - 'Quiz 3: Function Stack'
