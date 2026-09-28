@@ -202,6 +202,9 @@ entries:
   - Date: 2026-09-28
     Module: '5: Strings'
     Topic: Strings
+    9am:
+      - kaggle: https://www.kaggle.com/code/byorgey/9-28-strings
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/928%20strings-20260928_091132-Meeting%20Recording.mp4
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-09-28-strings
     Assignments: HW 4 Due
