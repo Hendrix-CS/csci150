@@ -207,12 +207,15 @@ entries:
       - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/928%20strings-20260928_091132-Meeting%20Recording.mp4
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-09-28-strings
+      - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2009%2028%20Strings-20260928_111011-Meeting%20Recording.mp4?d=w91e59ab2f9ad41b4a4908afdcadc32f7&csf=1&web=1&e=QfpnLD
     Assignments: HW 4 Due
 
   - Date: 2026-09-30
     Topic: Strings and Loops
     11am:
       - python: lectures/F26/seme/2026-09-30-Strings-and-Loops.py
+      - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2009%2030%20Strings%20and%20Loops-20260930_111107-Meeting%20Recording.mp4?d=w4f0ac36c25ea4354a06aac2789caca62&csf=1&web=1&e=5zpy2u
+
     Assignments:
       rows:
         - link:
