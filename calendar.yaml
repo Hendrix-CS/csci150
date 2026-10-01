@@ -212,6 +212,9 @@ entries:
 
   - Date: 2026-09-30
     Topic: Strings and Loops
+    9am:
+      - python: lectures/F26/yorgey/strings.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/930%20string%20+%20loop%20practice-20260930_091415-Meeting%20Recording.mp4
     11am:
       - python: lectures/F26/seme/2026-09-30-Strings-and-Loops.py
       - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2009%2030%20Strings%20and%20Loops-20260930_111107-Meeting%20Recording.mp4?d=w4f0ac36c25ea4354a06aac2789caca62&csf=1&web=1&e=5zpy2u
