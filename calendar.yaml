@@ -237,6 +237,7 @@ entries:
     11am:
       - python: lectures/F26/seme/2026-10-02-Input-and-Output.py
       - text: lectures/F26/seme/alice.txt
+      - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2010%2002%20File%20Input%20and%20Output-20261002_110937-Meeting%20Recording.mp4?d=w690d1333396f473884cc89398141df1a&csf=1&web=1&e=OldNdz
     Assignments: 'Quiz 4: While Loops'
     Projects:
       link:
