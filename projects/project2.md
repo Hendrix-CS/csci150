@@ -5,7 +5,7 @@ num: 2
 worktitle: Word Games
 ---
 
-**Due Friday, March 20**
+**Due Friday, October 23**
 ## Description
 
 For this project, you will create a program for users to play a [word
@@ -89,7 +89,8 @@ turns.
     Integrity](http://ozark.hendrix.edu/~yorgey/ac-integrity-policy.html)
     guidelines for CSCI. Get started early, come for help often.  You
     **can** do this project!
-*   We will provide a lot of help! In fact, the Lab period March 11/12 is
+*   We will provide a lot of help! In fact, the class period on
+    October 12 is
     explicitly set aside for you to have time to work on your project and get assistance!
 
 ## What to Hand In

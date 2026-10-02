@@ -235,7 +235,7 @@ entries:
     Projects:
       link:
         text: 'Project 2 assigned'
-        #url: projects/project2.html
+        url: projects/project2.html
 
   ##################################################
 
