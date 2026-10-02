@@ -230,7 +230,10 @@ entries:
     Projects: 'Project 1 Due'
 
   - Date: 2026-10-02
-    Topic: Input and Output
+    Topic: File Input and Output
+    9am:
+      - python: lectures/F26/yorgey/file_IO.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F102%20project%202%2C%20file%20IO%2D20261002%5F091403%2DMeeting%20Recording%2Emp4
     Assignments: 'Quiz 4: While Loops'
     Projects:
       link:
