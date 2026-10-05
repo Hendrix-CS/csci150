@@ -249,6 +249,9 @@ entries:
   - Date: 2026-10-05
     Module: '6: Lists'
     Topic: Lists
+    9am:
+      - kaggle: https://www.kaggle.com/code/byorgey/10-5-lists
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/105%20Lists-20261005_091207-Meeting%20Recording.mp4
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-10-05-lists
     Assignments: HW 5 Due
