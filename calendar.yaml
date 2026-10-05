@@ -249,6 +249,8 @@ entries:
   - Date: 2026-10-05
     Module: '6: Lists'
     Topic: Lists
+    11am:
+      - kaggle: https://www.kaggle.com/code/larskseme/2026-10-05-lists
     Assignments: HW 5 Due
 
   - Date: 2026-10-07
