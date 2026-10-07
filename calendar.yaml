@@ -259,6 +259,9 @@ entries:
 
   - Date: 2026-10-07
     Topic: List processing examples
+    9am:
+      - kaggle: https://www.kaggle.com/code/byorgey/10-5-lists
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/107%20more%20list%20practice-20261007_091518-Meeting%20Recording.mp4
     11am:
       - python: lectures/F26/seme/2026-10-07-List-Processing.py
     Assignments:
