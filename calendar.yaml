@@ -259,6 +259,8 @@ entries:
 
   - Date: 2026-10-07
     Topic: List processing examples
+    11am:
+      - python: lectures/F26/seme/2026-10-07-List-Processing.py
     Assignments:
       rows:
         - link:
