@@ -282,6 +282,7 @@ entries:
       - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/109%20Function%20Abstraction-20261009_091220-Meeting%20Recording.mp4
     11am:
       - python: lectures/F26/seme/2026-10-09-Function-Abstraction.py
+      - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2010%2009%20Function%20Abstraction-20261009_111017-Meeting%20Recording.mp4?d=wa8c9608ef4b546eda10fd8772f383dbf&csf=1&web=1&e=wAPy9S
     Assignments: 'Quiz 5: Strings'
 
   ##################################################
