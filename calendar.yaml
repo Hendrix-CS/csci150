@@ -276,6 +276,8 @@ entries:
 
   - Date: 2026-10-09
     Topic: Function abstraction
+    11am:
+      - python: lectures/F26/seme/2026-10-09-Function-Abstraction.py
     Assignments: 'Quiz 5: Strings'
 
   ##################################################
