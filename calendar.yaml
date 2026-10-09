@@ -276,6 +276,10 @@ entries:
 
   - Date: 2026-10-09
     Topic: Function abstraction
+    9am:
+      - python: lectures/F26/yorgey/functions.py
+      - python: lectures/F26/yorgey/hilow.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/109%20Function%20Abstraction-20261009_091220-Meeting%20Recording.mp4
     11am:
       - python: lectures/F26/seme/2026-10-09-Function-Abstraction.py
     Assignments: 'Quiz 5: Strings'
