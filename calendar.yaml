@@ -289,18 +289,18 @@ entries:
 
   - Date: 2026-10-12
     Topic: Project 2 Workday
+    9am:
+      - python: lectures/F26/yorgey/project2_demo.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/1012%20Project%202%20demo-20261012_091225-Meeting%20Recording.mp4
     Assignments: HW 6 Due
-    
+
   - Date: 2026-10-14
     Topic: Generative AI
     Assignments: 'Quiz 6: Lists'
 
-    
   - Date: 2026-10-16
-    Topic: 
+    Topic:
       emph: 'No class - Fall Break'
-    
-      
 
   ##################################################
 
