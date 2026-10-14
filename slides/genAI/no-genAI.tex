@@ -1,6 +1,6 @@
 % -*- mode: LaTeX; compile-command: "pdflatex no-genAI.tex" -*-
 
-\documentclass[xcolor={usenames,dvipsnames,svgnames,table},12pt]{beamer}
+\documentclass[hyperref={colorlinks},xcolor={usenames,dvipsnames,svgnames,table},12pt]{beamer}
 
 \mode<presentation>
 {
@@ -56,11 +56,43 @@
 
 \maketitle
 
+\begin{frame}{``AI''?}
+  \begin{itemize}
+  \item ``AI'' has become a meaningless marketing buzzword
+  \item There are many different forms of ``AI'', some of which are
+    well-understood and have been around for decades
+  \item Mostly what people mean these days are Large Language Models (LLMs)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{How do Large Language Models (LLMs) work?}
+  \begin{itemize}
+  \item Trained on a massive amount of input taken from the Internet
+    (expensive, one-time process)
+  \item Learn to predict which word is most likely to come next given
+    some input (multiplying giant matrices of numbers; each word gets
+    a number)
+  \item Generate output by repeatedly predicting next word, then
+    feeding input + previously generated words back in
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Consequences}
+  \begin{itemize}
+  \item No concept of what is true/correct; just generating
+    \emph{likely/plausible} output
+  \item No memory or introspection; no ability to learn
+  \end{itemize}
+\end{frame}
+
 \begin{frame}{Learning}
   \begin{itemize}
   \item Learning = engagement + cognitive effort
   \item You are probably \href{https://www.pnas.org/doi/10.1073/pnas.1821936116}{bad at judging how much you are learning}
-  \item \url{https://arxiv.org/abs/2506.08872}
+  \item \href{https://arxiv.org/abs/2506.08872}{Your Brain on ChatGPT:
+      Accumulation of Cognitive Debt when Using an AI Assistant for
+      Essay Writing Task}
+  \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6868618}{The Generative AI Learning Penalty: Evidence from Chinese Secondary Education}
   \end{itemize}
 \end{frame}
 
@@ -68,15 +100,15 @@
   \begin{itemize}
   \item Bullshitting/hallucination machines
   \item Try having LLMs tell you about something you are an expert in!
-  \item Coding: 10x as many security bugs!
+  \item Coding: long-term technical debt; 10x as many security bugs!
   \end{itemize}
 \end{frame}
 
-\begin{frame}
-  \begin{center}
-    \includegraphics[width=3in]{AGI}
-  \end{center}
-\end{frame}
+% \begin{frame}
+%   \begin{center}
+%     \includegraphics[width=3in]{AGI}
+%   \end{center}
+% \end{frame}
 
 \begin{frame}{Economics}
   \begin{itemize}
@@ -89,7 +121,7 @@
 
 \begin{frame}{Environment}
   \begin{itemize}
-  \item Data centers use a massive amount of electricity and water
+  \item Data centers use a \href{https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/}{massive amount of electricity and water}
   \item Google used to have a ``net zero'' goal
     \begin{itemize}
     \item Energy usage up 27\% over last year, double since 2020
@@ -102,14 +134,25 @@
 \begin{frame}{Justice}
 Generative AI systems are built on a foundation of exploited labor:
   \begin{itemize}
-  \item Low-paid human workers evaluate traumatizing, toxic
-    garbage in order to train AI systems not to generate it
+  \item Low-paid human workers
+    \begin{itemize}
+    \item evaluate traumatizing, toxic garbage in order to train AI
+      systems not to generate it
+    \item take care of the ``last mile'' of ``AI'' services
+    \end{itemize}
   \item Training on copyrighted work with no compensation or
     acknowledgement of copyright holders
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Mental Health}
+  \begin{itemize}
+  \item We are much too quick to assign human characteristics to things
+  \item Chatty, sycophantic LLMs tap into an innate desire for companionship
+    and affirmation
+  \item Many examples of people becoming overdependent on LLMs, and
+    sometimes delusional
+  \end{itemize}
 \end{frame}
 
 \end{document}
