@@ -296,6 +296,9 @@ entries:
 
   - Date: 2026-10-14
     Topic: Generative AI
+    9am:
+      - pdf: slides/genAI/no-genAI.pdf
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F910%20Generative%20AI%2D20261014%5F091147%2DMeeting%20Recording%2Emp4
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-10-14-generative-ai
       - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2010%2014%20Generative%20AI-20261014_110759-Meeting%20Recording.mp4?d=w8c614852af224560ab81c942cda7b0b2&csf=1&web=1&e=eCeC9M
