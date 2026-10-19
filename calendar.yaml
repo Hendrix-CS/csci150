@@ -313,6 +313,9 @@ entries:
   - Date: 2026-10-19
     Module: '7: For Loops'
     Topic: For loops
+    9am:
+      - python: lectures/F26/yorgey/for_loops.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F1019%20For%20loops%2D20261019%5F091126%2DMeeting%20Recording%2Emp4
     11am:
       - python: lectures/F26/seme/2026-10-19-For-Loops.py
 
