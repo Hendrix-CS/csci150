@@ -41,16 +41,30 @@ def print_list(lst: list[int]):
 
 # given a list of integers, return the sum
 def list_sum(lst: list[int]) -> int:
-    1
+    total = 0
+    for item in lst:
+        total += item
+
+    return total
 
 
 # given a list of strings, only print those whose length is at least 5 characters
 def print_long_strings(lst: list[str]):
-    1
+    for item in lst:
+        if len(item) >= 5:
+            print(item)
+
+
 
 # count characters -- given a string s and character c, count occurrences of c in s
 def count_char(s: str, c: str) -> int:
-    1
+    total = 0
+    for char in s:
+        if char == c:
+            total += 1
+
+    return total
+
 
 
 # But, what about something like:
@@ -82,7 +96,11 @@ def print_ints_for(n: int):
 # range(a, n, k) returns the iterable: a, a + k, a + 2 * k, a + 3 * k,... and stops before n
 
 def factorial(n: int) -> int:
-    1
+    total = 1
+    for i in range(1,n + 1):
+        total *= i
+
+    return total
 
 # But what about:
 #
