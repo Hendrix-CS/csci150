@@ -330,7 +330,7 @@ entries:
     Assignments:
         - link:
             text: "Lab 7: Caesar's Secrets"
-            #url: https://www.kaggle.com/code/gabrielferrer/caesar-s-secrets
+            url: https://www.kaggle.com/code/gabrielferrer/caesar-s-secrets
 
   - Date: 2026-10-23
     Topic: Project 2 Demo
