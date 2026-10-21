@@ -327,6 +327,8 @@ entries:
 
   - Date: 2026-10-21
     Topic: More for loops
+    11am:
+      - python: lectures/F26/seme/2026-10-21-More-For-Loops.py
     Assignments:
         - link:
             text: "Lab 7: Caesar's Secrets"
