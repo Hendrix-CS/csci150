@@ -329,6 +329,7 @@ entries:
     Topic: More for loops
     11am:
       - python: lectures/F26/seme/2026-10-21-More-For-Loops.py
+      - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2010%2021%20More%20For%20Loops-20261021_111014-Meeting%20Recording.mp4?d=w085fe006bdf84d428928c212075b03bf&csf=1&web=1&e=BPEueH
     Assignments:
         - link:
             text: "Lab 7: Caesar's Secrets"
