@@ -16,10 +16,15 @@ def is_sorted(lst: list[int]) -> bool:
     return True
 
 # Can we do this with a for loop?
+
 # Yes -- we'll start there on Wednesday
 
 def is_sorted_for(lst: list[int]) -> bool:
-    1
+    for i in range(len(lst) - 1):
+        if lst[i] > lst[i + 1]:
+            return False
+    return True
+
 
 
 
@@ -59,11 +64,52 @@ def is_sorted_for(lst: list[int]) -> bool:
 
 # in the list of ints lst, replace each even int with 1/2 of that number
 def lst_even(lst: list[int]) -> list[int]:
-    1
-# in the string s, replace each instance of a with b
-def string_replace(s: str, a: str, b: str) -> str:
-    1
+
+    # this version changes the original list as well
+    for i in range(len(lst)):
+        if lst[i] % 2 == 0:
+            lst[i] = lst[i] // 2
+
+    #return lst
 
 
 
-# notice that we can replace the string without returning
+    # this version, creates a *new* list, and leaves original alone
+    # return_lst = []
+    # for item in lst:
+    #     if item % 2 == 0:
+    #         return_lst.append(item // 2)
+    #     else:
+    #         return_lst.append(item)
+    #
+    # return return_lst
+
+
+    # this version does not work
+    # since item is not literally the object in the list
+    # it does not affect lst at all
+
+    # for item in lst:
+    #     if item % 2 == 0:
+    #         item = item // 2
+    # return lst
+
+# for strings, we cannot reassign a value at an index:
+# that is, the construction
+# s[i] = new_letter
+# does not work.
+
+# of our three attempts at replacing (some) values in the list above,
+# only mimicking the first one turns out to work
+def str_replace_before_m(s: str) -> str:
+    t = ''
+    for char in s:
+        if char < 'm':
+            t += 'z'
+        else:
+            t += char
+
+    return t
+
+
+
