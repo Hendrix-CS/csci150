@@ -352,7 +352,7 @@ entries:
     Projects:
         - link:
             text: 'Final project assigned'
-            #url: projects/final.html
+            url: projects/final.html
 
   - Date: 2026-10-28
     Topic: Dictionaries

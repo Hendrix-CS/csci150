@@ -3,9 +3,8 @@ layout: work
 type: Project
 num: 3
 worktitle: Final Project
-designdue: Friday, April 17
-finaldue: May 8 (2pm)
-location: 'Mills Library'
+designdue: Monday, November 16
+finaldue: December 11/14 (9am)
 ---
 
 ## Description
@@ -25,11 +24,11 @@ Guidelines
 ----------
 
 Unlike the other projects, you may work with one partner for the final
-project. You can also work individually if you wish.  <!-- If you wish to
+project. You can also work individually if you wish.  If you wish to
 work with a partner from the other section, ideally you should pick
 one of the two project demo days when you are both available to
 present.  Regardless, you should plan to attend the demo day
-corresponding to your section in order to see everyone else's projects.-->
+corresponding to your section in order to see everyone else's projects.
 
 You have wide latitude in choosing what to do for your final project.
 The only requirements are that it should be **sufficiently complex** and
@@ -42,8 +41,8 @@ to help you brainstorm) via email or conversation prior to the design submission
 the deadline to start thinking about your final project will be too
 late.
 
-Projects **must** make use of Python `class`es to encapsulate and
-structure data -- or have a well-reasoned explanation as part of the design document about why classes are uncessary.
+Projects are strongly encouraged to make use of Python `class`es to encapsulate and
+structure data.
 
 Design
 ------
@@ -79,9 +78,9 @@ are welcome to use this as a starting point.
 Demo
 ----
 
-During the scheduled final exam time on {{page.finaldue}} at 2:00pm,
+During the scheduled final exam time on {{page.finaldue}} at 9:00am,
 everyone will have the opportunity to demo their projects.  We will
-meet in {{page.location}}, and split into 2 or 3 groups.  Each group
+<!-- meet in {{page.location}}, and --> split into 2 or 3 groups.  Each group
 will have a turn to be prepared to demo their projects while the other
 group(s) can wander around and look at everyone else's.
 
