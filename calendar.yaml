@@ -347,6 +347,8 @@ entries:
   - Date: 2026-10-26
     Module: '8: Dictionaries'
     Topic: Dictionaries
+    9am:
+      - python: lectures/F26/yorgey/dictionaries.py
     11am:
       - kaggle: https://www.kaggle.com/code/larskseme/2026-10-26-intro-to-dictionaries
     Assignments:
