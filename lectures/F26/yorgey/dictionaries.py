@@ -65,3 +65,36 @@ def frequency_count(s: str) -> dict[str, int]:   # dict[str, int] means keys are
         #     counts[c] += 1
 
     return counts
+
+# Let's generalize to return *normalized* frequencies, i.e. a occurs 20% of the time, etc.
+#   frequency('apple') = {'a': 0.2, 'p': 0.4, 'l': 0.2, 'e': 0.2}
+
+# We will do this by writing a function to normalize a dictionary of counts. But first,
+# we need a function to add up all the values in a dictionary (to find out what we should
+# divide by).
+
+# Add up all the values in the given dictionary.
+# e.g.   dict_sum({'a': 1, 'p': 2, 'l': 1, 'e': 1}) == 5.
+def dict_sum(counts: dict[str, int]) -> int:
+    sum = 0
+    for k in counts:   # a for loop on a dictionary will loop through all the keys.
+        sum += counts[k]
+    return sum
+
+def dict_sum2(counts: dict[str, int]) -> int:
+    sum = 0
+    for n in counts.values():   #   <some dict>.values() returns a list of all the values
+        sum += n                #   .keys() gives a list of keys
+    return sum
+
+def normalize(counts: dict[str, int]) -> dict[str, float]:
+    # (1) call dict_sum to find out the total
+    total = dict_sum(counts)
+    # (2) create a new empty dictionary to hold the normalized frequencies
+    freq_dict: dict[str, float] = {}
+    # (3) loop through counts, put each key in the new dict with a normalized value (divide by total)
+    for k in counts:
+        freq_dict[k] = counts[k] / total
+
+    # (4) return the new dict
+    return freq_dict
