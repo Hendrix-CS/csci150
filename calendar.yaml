@@ -361,6 +361,8 @@ entries:
 
   - Date: 2026-10-28
     Topic: Dictionaries
+    11am:
+      - python: lectures/F26/seme/2026-10-28-More-Dictionaries.py
     Assignments:
       rows:
         - link:
