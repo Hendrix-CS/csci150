@@ -378,6 +378,10 @@ entries:
 
   - Date: 2026-10-30
     Topic: Dictionaries
+    9am:
+      - python: lectures/F26/yorgey/dictionaries.py
+      - python: lectures/F26/yorgey/generator.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/1030%20dictionary%20practice-20261030_091121-Meeting%20Recording.mp4
     11am:
       - python: lectures/F26/seme/2026-10-23-Even-More-Dictionaries.py
       - text: lectures/F26/seme/zip-ar.txt

@@ -98,3 +98,20 @@ def normalize(counts: dict[str, int]) -> dict[str, float]:
 
     # (4) return the new dict
     return freq_dict
+
+# Given a list of words, return a dictionary organizing them by length:
+#   each key k is associated with a list of all words of length k.
+#
+# e.g.
+#   words_by_length(['house', 'mouse', 'hi'])
+#     == {2: ['hi'], 5: ['house', 'mouse']}
+def words_by_length(words: list[str]) -> dict[int, list[str]]:
+    words_of_length: dict[int, list[str]] = {}
+    for word in words:
+        n = len(word)
+        if not (n in words_of_length):
+            words_of_length[n] = []
+
+        words_of_length[n].append(word)
+
+    return words_of_length
