@@ -1,3 +1,8 @@
+# NOTE -- I completely forgot to start the meeting on Teams and record today.
+# If you have questions, I am happy to talk with you -- and *SORRY*
+# I think Dr. Yorgey did record his, so you can watch that as well.
+
+
 # Reminders
 # Quiz Today -- For Loops
 # Final Project
@@ -17,10 +22,32 @@
 # return a dictionary whose keys are integers and values are a *list* of the
 # words with that length.
 
-# s = 'The best thing about dictionaries is that they are a lot of fun'
+s = 'The best thing about dictionaries is that they are a lot of fun'
+print(s.split(' '))
 
 def length_word(s: str) -> dict[int, list[str]]:
-    1
+    out_dict = {}
+    s_lst = s.split(' ')
+    for word in s_lst:
+        length = len(word)
+
+        if length not in out_dict:  ## if this is the first time we have seen this key
+            out_dict[length] = [word]
+        else:
+            out_dict[length].append(word)
+
+        # if length not in out_dict:
+        #     out_dict[length] = []
+        #
+        # out_dict[length].append(word)
+
+    return out_dict
+
+
+
+
+
+
 
 
 # As part of the code for today, there is a file 'zip-ar.txt' which contains all
@@ -33,6 +60,28 @@ def length_word(s: str) -> dict[int, list[str]]:
 
 # We will create and run each in the console
 
-def zip_to_city():
-    1
+def zip_to_city() -> dict[str, list[str]]:
+    zip_dict = {}
+
+    with open('zip-ar.txt','r') as f:
+        for line in f:
+            data = line.strip().split(';')
+            zipc = data[0]
+            city = data[1]
+
+            if zipc not in zip_dict:
+                zip_dict[zipc] = []
+
+            zip_dict[zipc].append(city)
+
+    f.close()
+
+    return zip_dict
+
+
+
+
+
+
+
 
