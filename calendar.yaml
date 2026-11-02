@@ -393,6 +393,8 @@ entries:
   - Date: 2026-11-02
     Module: '9: Classes'
     Topic: Classes
+    11am:
+      - python: lectures/F26/seme/2026-11-02-Introduction-to-Classes.py
     Assignments: HW 8 Due
 
   - Date: 2026-11-04
