@@ -386,13 +386,15 @@ entries:
       - python: lectures/F26/seme/2026-10-23-Even-More-Dictionaries.py
       - text: lectures/F26/seme/zip-ar.txt
     Assignments: 'Quiz 7: For Loops'
-  
 
   ##################################################
 
   - Date: 2026-11-02
     Module: '9: Classes'
     Topic: Classes
+    9am:
+      - python: lectures/F26/yorgey/classes.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F112%20Introduction%20to%20classes%20%5F%20objects%2D20261102%5F091041%2DMeeting%20Recording%2Emp4
     11am:
       - python: lectures/F26/seme/2026-11-02-Introduction-to-Classes.py
     Assignments: HW 8 Due
