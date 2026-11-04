@@ -402,6 +402,9 @@ entries:
 
   - Date: 2026-11-04
     Topic: Class & object examples
+    11am:
+      - python: lectures/F26/seme/2026-11-04-More-Classes.py
+
     Assignments:
       rows:
         - link:
