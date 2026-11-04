@@ -1,4 +1,7 @@
 # Reminders:
+
+# Grade Update emails
+
 #   Quiz this Friday, Dictionaries
 #   Final Project Design Document Due Monday, November 16 (2 weeks)
 # Homework: Assigned -- Classes
@@ -55,3 +58,43 @@ main()
 # -- toggle() -- turns a running fountain off, and an off fountain on, except:
 #       -- a fountain cannot run if there is no water
 # -- get_status() prints a message to the user describing the state of the fountain
+
+
+
+@dataclass
+class Fountain:
+
+    capacity: int
+    current: int
+    running: bool
+
+    # if you want these to have the following default values, use these 2 lines instead
+    # current: int = 0
+    # running: bool = False
+
+    def drain(self):
+        self.current = 0
+        self.running = False
+
+    def add(self, n: int):
+        self.current += n
+        if self.current > self.capacity:
+            self.current = self.capacity
+
+    def toggle(self):
+        self.running = not self.running
+
+        if self.current == 0:
+            self.running = False
+
+    def get_status(self):
+        print(f'The fountain contains {self.current} liters of water.')
+        if self.running:
+            print('The fountain is running.')
+        else:
+            print('The fountain is off.')
+
+
+
+
+
