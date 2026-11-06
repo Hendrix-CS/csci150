@@ -60,6 +60,7 @@ class Player:
         for c in self.hand:
             if c.suit == s and c.rank == r:
                 return True
+        return False
 
     def discard(self, s: str, r: int) -> 'Card':
         for c in self.hand:
