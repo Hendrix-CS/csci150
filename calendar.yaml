@@ -402,6 +402,10 @@ entries:
 
   - Date: 2026-11-04
     Topic: Class & object examples
+    9am:
+      - python: lectures/F26/yorgey/Car.py
+      - python: lectures/F26/yorgey/Fountain.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/Shared%20Documents/General/Recordings/114%20classes%20+%20objects%20practice-20261104_091346-Meeting%20Recording.mp4
     11am:
       - python: lectures/F26/seme/2026-11-04-More-Classes.py
       - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2011%2004%20More%20Classes-20261104_111003-Meeting%20Recording.mp4?d=wc18b87f4655c4d3b998e293f4fda6618&csf=1&web=1&e=xKmfV4
@@ -417,6 +421,11 @@ entries:
 
   - Date: 2026-11-06
     Topic: Class & object examples
+    9am:
+      - python: lectures/F26/yorgey/Die.py
+      - python: lectures/F26/yorgey/Pet.py
+      - python: lectures/F26/yorgey/Game.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F116%20classes%20example%2D20261106%5F091252%2DMeeting%20Recording%2Emp4
     11am:
       - python: lectures/F26/seme/2026-11-06-Even-More-Classes.py
 
