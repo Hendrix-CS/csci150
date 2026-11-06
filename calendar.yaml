@@ -417,6 +417,9 @@ entries:
 
   - Date: 2026-11-06
     Topic: Class & object examples
+    11am:
+      - python: lectures/F26/seme/2026-11-06-Even-More-Classes.py
+
     Assignments: 'Quiz 8: Dictionaries'
 
   ##################################################
