@@ -15,25 +15,18 @@ For today's lab, you'll need PyGame. To download and install it on your
 computer:
 * Create a new PyCharm project.
 * Create a new Python file (e.g. `main.py`) within that project.
-* Type `import pygame` at the top of the file. The word `pygame`
-  will be underlined in red. (If it is not underlined in red, it is
-  because `pygame` is already installed.)
-* Place your cursor atop the word `pygame`. Type Alt-Enter to bring up
-  autocorrections. It should bring up an option to install pygame.
-  The image below shows what this should look like.
 
-<img src="https://hendrix-cs.github.io{{site.baseurl}}/assets/images/pygame_install.png" width=500>
+### PyGame installation
 
-### Alternative PyGame installation
+To install PyGame (note, you will have to do this for each project
+that uses PyGame):
 
-If the above approach does not work, try this:
 * Go to the `View` menu.
 * From the `Tool Windows` menu, select `Python Packages`
-* When the search bar opens up, type `pygame`.
+* When the search bar opens up, type `pygame-ce`.
 * An underlined `install` text should appear near it. Click on it, and it should install PyGame.
 
 <img src="https://hendrix-cs.github.io{{site.baseurl}}/assets/images/pycharm_python_packages.png" width=500>
-
 
 ## Step 1: Faces
 
