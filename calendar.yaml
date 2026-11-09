@@ -436,6 +436,10 @@ entries:
 
   - Date: 2026-11-09
     Module: '10: PyGame'
+    9am:
+      - python: lectures/F26/yorgey/pygame_template.py
+      - python: lectures/F26/yorgey/pygame_intro.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F119%20PyGame%20intro%2D20261109%5F091129%2DMeeting%20Recording%2Emp4
     11am:
       - python: lectures/F26/seme/2026-11-09-PyGame-Introduction.py
     Assignments: HW 9 Due
