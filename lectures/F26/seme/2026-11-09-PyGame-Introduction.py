@@ -25,9 +25,16 @@
 # The PyGame Library
 # Each time you make a new project that uses PyGame, you'll need to:
 
+# hover over the red underlined pygame
+# try to install package (this likely will not work)
 
+# then try:
+# open settings and choose 'Interpreter'
+# Click on the '+' symbol
+# enter 'pygame-ce' in the search bar
+# install
 
-
+# if that did not work, try:
 # * Open the Terminal
 #     - Click on the rectangle that looks like >_
 # * type pip install pygame-ce
@@ -36,6 +43,7 @@
 from dataclasses import dataclass
 import pygame
 from pygame.locals import *
+import random
 
 # Overview of how we'll use PyGame
 # Set-Up
@@ -87,6 +95,9 @@ from pygame.locals import *
 ############
 # Full Example -- We will talk about each of these pieces
 # today and on Wednesday
+
+# This is explicitly designed to allow you to copy and paste and adjust
+# as you need for your Final Project
 ############
 
 # How to draw shapes
@@ -94,7 +105,7 @@ from pygame.locals import *
 # How to 'blit' images to the screen
 # How to play sounds
 # Keyboard input
-# Mouse clicks (next time)
+# Mouse clicks
 
 # Shapes:
 
@@ -137,13 +148,16 @@ class Circle:
     def move(self,x):
         self.x += x
 
+    def new_color(self):
+        self.color = (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+
 
 def draw_all(surface, score, im,c):
     surface.fill('white') # 'blank' the screen with basic background each time
 
     # Draw some shapes
     c.draw(surface)
-    pygame.draw.rect(surface, 'green', (300,200,50,100))
+    pygame.draw.rect(surface, 'green', (500,200,50,100))
 
 
     # Add some text
@@ -156,6 +170,12 @@ def draw_all(surface, score, im,c):
 
     # This needs to be the final line of draw_all -- and only should appear *ONCE*
     pygame.display.update()
+
+def hit(x: int, y: int, c: 'Circle') -> bool:
+    if (x - c.x) ** 2 + (y - c.y) ** 2 <= c.radius ** 2:
+        return True
+    else:
+        return False
 
 
 def main():
@@ -192,6 +212,11 @@ def main():
                     c.move(-5)
                 elif event.key == K_t:
                     pygame.mixer.Sound.play(my_sound)
+            elif event.type == MOUSEBUTTONDOWN:
+                (x, y) = (event.pos[0], event.pos[1])
+
+                if hit(x,y,c):
+                    c.new_color()
 
     pygame.quit()
 
