@@ -436,6 +436,8 @@ entries:
 
   - Date: 2026-11-09
     Module: '10: PyGame'
+    11am:
+      - python: lectures/F26/seme/2026-11-09-PyGame-Introduction.py
     Assignments: HW 9 Due
     Topic: PyGame animation
 
