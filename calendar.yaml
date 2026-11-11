@@ -451,7 +451,7 @@ entries:
       rows:
         - link:
             text: 'Lab 10: Faces'
-            #url: labs/pygame.html
+            url: labs/pygame.html
         - emph: 'No homework'
 
   - Date: 2026-11-13
