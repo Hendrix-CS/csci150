@@ -6,13 +6,19 @@
 
 # "In order to understand recursion, one must first understand recursion."
 
-# Consider the follow function:
+# Consider the following function:
 
 def f(n: int) -> int:
     if n == 0:
         return 0
     else:
         return 1 + f(n - 1)
+
+
+
+
+
+
 
 # Run in the console for a few values of n
 
@@ -21,6 +27,7 @@ def list_sum(lst: list[int]) -> int:
         return 0
     else:
         return lst[0] + list_sum(lst[1:])
+
 
 
 # # Look at the structure of the code we just analyzed
@@ -47,7 +54,17 @@ def list_sum(lst: list[int]) -> int:
 
 
 def factorial(n: int) -> int:
-    1
+    if n == 0:
+        return 1
+
+    else:
+        return n * factorial(n - 1)
+
+def fib(n: int) -> int:
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
 
 
 # There are lots of recursive ideas in mathematics and computer science,
@@ -68,4 +85,8 @@ def factorial(n: int) -> int:
 # File structure on a computer -- Folders, which contain folders, which contain ...
 
 def is_palindrome(s: int) -> bool:
-    1
+    if len(s) == 0 or len(s) == 1:
+        return True
+
+    else:
+        return (s[0] == s[-1]) and is_palindrome(s[1:-1])
