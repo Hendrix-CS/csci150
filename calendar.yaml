@@ -476,6 +476,8 @@ entries:
   - Date: 2026-11-16
     Module: '11: Recursion'
     Topic: Recursion
+    11am:
+      - python: lectures/F26/seme/2026-11-16-Recursion.py
     Projects: 'Final project design due'
     
   - Date: 2026-11-18
