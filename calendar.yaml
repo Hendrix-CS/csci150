@@ -481,6 +481,7 @@ entries:
       - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F1116%20recursion%2D20261116%5F091143%2DMeeting%20Recording%2Emp4
     11am:
       - python: lectures/F26/seme/2026-11-16-Recursion.py
+      - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2011%2016%20Recursion-20261116_111050-Meeting%20Recording.mp4?d=w25d0cc2f4155468e90b411510951fb88&csf=1&web=1&e=F3Tj3i
     Projects: 'Final project design due'
 
   - Date: 2026-11-18
