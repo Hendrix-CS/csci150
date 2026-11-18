@@ -486,6 +486,10 @@ entries:
 
   - Date: 2026-11-18
     Topic: 'Recursion: trees'
+    9am:
+      - python: lectures/F26/yorgey/recursion.py
+      - python: lectures/F26/yorgey/Tree.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F1118%20recursion%20%2B%20trees%2D20261118%5F091110%2DMeeting%20Recording%2Emp4
     Assignments:
       rows:
         - link:
