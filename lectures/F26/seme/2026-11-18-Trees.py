@@ -60,3 +60,23 @@ class Node:
     value: int
     left: 'Node' = None
     right: 'Node' = None
+
+    def insert(self, n: int):
+        if n < self.value:
+            if not self.left:
+                self.left = Node(n)
+            else:
+                self.left.insert(n)
+
+        else:
+            if not self.right:
+                self.right = Node(n)
+            else:
+                self.right.insert(n)
+
+    def find_min(self) -> int:
+        if not self.left:
+            return self.value
+
+        else:
+            return self.left.find_min()
