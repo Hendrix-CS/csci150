@@ -492,6 +492,7 @@ entries:
       - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F1118%20recursion%20%2B%20trees%2D20261118%5F091110%2DMeeting%20Recording%2Emp4
     11am:
       - python: lectures/F26/seme/2026-11-18-Trees.py
+      - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2011%2018%20Recursion%20and%20Trees-20261118_110802-Meeting%20Recording.mp4?d=w9f00ffb26bd343c9831ee2bbd2223a14&csf=1&web=1&e=eZUzvC
     Assignments:
       rows:
         - link:
