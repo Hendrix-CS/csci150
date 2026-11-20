@@ -504,6 +504,9 @@ entries:
 
   - Date: 2026-11-20
     Topic: 'Recursion: applications'
+    11am:
+      - python: lectures/F26/seme/2026-11-20-Recrusion-Applications.py
+
     Assignments:
       emph: 'No Quiz 10'
 
