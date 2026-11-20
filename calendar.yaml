@@ -504,6 +504,9 @@ entries:
 
   - Date: 2026-11-20
     Topic: 'Recursion: applications'
+    9am:
+      - python: lectures/F26/yorgey/memoization.py
+      - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F1120%20more%20recursion%2D20261120%5F091231%2DMeeting%20Recording%2Emp4
     11am:
       - python: lectures/F26/seme/2026-11-20-Recrusion-Applications.py
 
