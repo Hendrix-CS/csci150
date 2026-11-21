@@ -509,7 +509,7 @@ entries:
       - stream: https://hendrix.sharepoint.com/sites/Section_32955/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32955%2FShared%20Documents%2FGeneral%2FRecordings%2F1120%20more%20recursion%2D20261120%5F091231%2DMeeting%20Recording%2Emp4
     11am:
       - python: lectures/F26/seme/2026-11-20-Recrusion-Applications.py
-
+      - stream: https://hendrix.sharepoint.com/:v:/r/sites/Section_32957/Shared%20Documents/General/Recordings/2026%2011%2020%20Recursion%20Applications.mp4?d=w20126409ccf0424a94a0ac48934aace2&csf=1&web=1&e=Ps6JpU
     Assignments:
       emph: 'No Quiz 10'
 
